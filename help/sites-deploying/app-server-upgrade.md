@@ -4,117 +4,97 @@ description: 애플리케이션 서버를 통해 배포된 AEM의 인스턴스�
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 28701105452c347c5470fdb582d783e7aef1adb0
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 0%
+source-wordcount: '477'
+ht-degree: 1%
 
 ---
 
-# Application Server 설치 업그레이드 단계{#upgrade-steps-for-application-server-installations}
+# Application Server 설치 업그레이드 단계 {#upgrade-steps-for-application-server-installations}
 
-이 섹션에서는 Application Server용 AEM 설치를 업데이트하기 위해 수행해야 하는 절차에 대해 설명합니다.
+>[!NOTE]
+>
+>이 페이지에서는 WLP(WebSphere Liberty)에 대한 AEM 6.5 LTS war의 업그레이드 절차에 대해 간략히 설명합니다.
 
-이 절차의 모든 예제에서는 Tomcat을 Application Server로 사용하며 AEM의 작업 버전이 이미 배포되어 있음을 의미합니다. 이 절차는 **AEM 버전 6.4에서 6.5**(으)로 수행된 업그레이드를 문서화하기 위한 것입니다.
+## 업그레이드 전 단계 {#pre-upgrade-steps}
 
-1. 먼저 TomCat을 시작합니다. 대부분의 경우 터미널에서 이 명령을 실행하여 `./catalina.sh` 시작 스크립트를 실행하여 이 작업을 수행할 수 있습니다.
+업그레이드를 실행하기 전에 완료해야 하는 몇 가지 단계가 있습니다. 자세한 내용은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md) 및 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)을 참조하십시오. 또한 시스템이 AEM 6.5 LTS의 요구 사항을 충족하는지 확인하십시오. Analyzer를 통해 업그레이드의 복잡성을 예측하고 업그레이드 계획을 수립하는 방법을 확인하십시오(자세한 내용은 [업그레이드 계획](/help/sites-deploying/upgrade-planning.md) 참조).
 
-   ```shell
-   $CATALINA_HOME/bin/catalina.sh start
-   ```
+### 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
-1. AEM 6.4가 이미 배포된 경우 다음에 액세스하여 번들이 올바르게 작동하는지 확인합니다.
+* **필요한 최소 Java 버전**: WLP 서버에 IBM Sumeru JRE 17을 설치했는지 확인하십시오.
 
-   ```shell
-   https://<serveraddress:port>/cq/system/console/bundles
-   ```
+### 업그레이드 수행 {#performing-the-upgrade}
 
-1. 그런 다음 AEM 6.4 배포를 취소합니다. 이 작업은 TomCat 앱 관리자(`http://serveraddress:serverport/manager/html`)에서 수행할 수 있습니다.
-
-1. 이제 crx2oak 마이그레이션 도구를 사용하여 저장소를 마이그레이션합니다. 이렇게 하려면 [이 위치](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)에서 최신 버전의 crx2oak를 다운로드하십시오.
+1. 업그레이드 작업을 시작하기 전에 인스턴스의 백업을 수행하십시오.
+1. 사용 중인 WLP 서버 버전에 따라 즉석 업그레이드가 필요한지 또는 옆 등급이 필요한지 식별합니다. 현재 WLP 서버가 서블릿 6을 지원하는 경우 바로 업그레이드를 수행하고 이 설명서를 계속할 수 있습니다. 그렇지 않은 경우 사이드 그레이드를 수행해야 합니다. Sidegrade의 경우 Oak 업그레이드 설명서가 포함된 콘텐츠 마이그레이션 - [추가할 TBD 링크]를 따르십시오.
+1. AEM 인스턴스를 중지합니다. 일반적으로 다음 명령을 사용하여 수행할 수 있습니다.
 
    ```shell
-   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
+   <path-to-wlp-directory>/bin/server stop server_name
    ```
-
-1. 다음을 수행하여 sling.properties 파일에서 필요한 속성을 삭제합니다.
-
-   1. `crx-quickstart/launchpad/sling.properties`에 있는 파일을 엽니다.
-   1. 단계 텍스트 다음 속성을 제거하고 파일을 저장합니다.
-
-      1. `sling.installer.dir`
-
-      1. `felix.cm.dir`
-
-      1. `granite.product.version`
-
-      1. `org.osgi.framework.system.packages`
-
-      1. `osgi-core-packages`
-
-      1. `osgi-compendium-services`
-
-      1. `jre-*`
-
-      1. `sling.run.mode.install.options`
 
 1. 더 이상 필요하지 않은 파일 및 폴더를 제거합니다. 특별히 제거해야 하는 항목은 다음과 같습니다.
 
-   * **시작 패드/시작 폴더**&#x200B;입니다. 터미널에서 다음 명령을 실행하여 삭제할 수 있습니다. `rm -rf crx-quickstart/launchpad/startup`
+   * `dropins` 폴더 및 확장된 폴더의 `cq-quickstart-65.war`은(는) 일반적으로 각각 `<path-to-aem-server>/dropins/cq-quickstart-65.war` 및 `<path-to-aem-server>/apps/expanded/cq-quickstart-65.war`에 있습니다.
+   * `launchpad/startup` 폴더입니다. 서버 폴더에 있다고 가정하고 터미널에서 다음 명령을 실행하여 삭제할 수 있습니다.
 
-   * **base.jar 파일**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-
-   * **BootstrapCommandFile_timestamp.txt 파일**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
-
-   * 다음을 실행하여 **sling.options.file**&#x200B;을(를) 제거합니다. `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
-
-1. 이제 AEM 6.5와 함께 사용되는 노드 저장소 및 데이터 저장소를 만듭니다. `crx-quickstart\install` 아래에 다음 이름의 두 파일을 만들어 이 작업을 수행할 수 있습니다.
-
-   * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
-   * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
-
-   이 두 파일은 TarMK 노드 저장소 및 파일 데이터 저장소를 사용하도록 AEM을 구성합니다.
-
-1. 사용 준비가 되도록 구성 파일을 편집합니다. 자세히 알아보기:
-
-   * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`에 다음 줄을 추가하십시오.
-
-     `customBlobStore=true`
-
-   * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`에 다음 줄을 추가합니다.
-
-     ```
-     path=./crx-quickstart/repository/datastore
-     minRecordLength=4096
+     ```shell
+     rm -rf crx-quickstart/launchpad/startup
      ```
 
-1. 이제 AEM 6.5 war 파일에서 실행 모드를 변경해야 합니다. 이를 위해 먼저 AEM 6.5 전쟁을 저장할 임시 폴더를 만듭니다. 이 예제의 폴더 이름은 `temp`입니다. war 파일이 복사되면 임시 폴더 내에서 를 실행하여 해당 내용을 추출합니다.
+   * `base.jar` 파일입니다. 다음 명령을 실행하여 이 작업을 수행할 수 있습니다.
 
+     ```shell
+     find crx-quickstart/launchpad -type f -name 
+     "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \;
+     ```
+
+   * `BootstrapCommandFile_timestamp.txt` 파일:
+
+     ```shell
+     rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt
+     ```
+
+   * 다음을 실행하여 `sling.options` 파일 제거:
+
+     ```shell
+     find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \; 
+     ```
+
+   * `sling.bootstrap.txt` 파일 제거:
+
+     ```shell
+     rm -rf crx-quickstart/launchpad/sling_bootstrap.txt
+     ```
+
+1. `sling.properties` 파일(일반적으로 `crx-quickstart/conf/`에 있음)을 백업하고 삭제합니다.
+1. 서블릿 버전을 `server.xml` 파일에서 **6.0**(으)로 변경
+1. AEM 서버에 대한 시작 매개 변수를 검토하고 시스템 요구 사항에 따라 매개 변수를 업데이트해야 합니다. 자세한 내용은 [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)를 참조하십시오
+1. Java 17을 설치하고 다음을 실행하여 올바로 설치되었는지 확인합니다.
+
+   ```shell
+   java -version
    ```
-   jar xvf aem-quickstart-6.5.0.war
+
+1. 소프트웨어 배포에서 새 war 6.5 LTS를 다운로드하여 `/<path-to-aem-server>/dropins/`에 있는 dropins 폴더에 복사합니다.
+1. AEM 인스턴스 시작: 일반적으로 다음 명령을 사용하여 수행할 수 있습니다.
+
+   ```shell
+   <path-to-wlp-directory>/bin/server start server_name
    ```
 
-1. 콘텐츠가 추출되면 **WEB-INF** 폴더로 이동하여 web.xml 파일을 편집하여 실행 모드를 변경합니다. XML에서 설정된 위치를 찾으려면 `sling.run.modes` 문자열을 찾습니다. 찾으면 다음 코드 행에서 실행 모드를 변경합니다. 이 코드는 기본적으로 작성자로 설정됩니다.
+1. `sling.properties`에 사용자 지정 변경 사항이 있는 경우 아래 지침을 따르십시오.
 
-   ```bash
-   <param-value >author</param-value>
-   ```
+   1. `<path-to-wlp-directory>/bin/server stop server_name`을(를) 실행하여 AEM 인스턴스 중지
+   1. 새로 생성된 `sling.properties` 파일에 사용자 지정 `sling.properties` 변경 내용을 적용합니다(6단계에서 만든 백업 파일 참조)
+   1. AEM 인스턴스를 시작합니다. 일반적으로 다음을 실행하여 수행할 수 있습니다. `<path-to-wlp-directory>/bin/server start server_name`
 
-1. 위의 작성자 값을 변경하고 실행 모드를 `author,crx3,crx3tar`(으)로 설정하십시오. 코드의 최종 블록은 다음과 같아야 합니다.
+## 업그레이드된 코드베이스 배포 {#deploy-upgraded-codebase}
 
-   ```
-   <init-param>
-   <param-name>sling.run.modes</param-name>
-   <param-value>author,crx3,crx3tar</param-value>
-   </init-param>
-   <load-on-startup>100</load-on-startup>
-   </servlet>
-   ```
+즉각적 업그레이드 프로세스가 완료되면 업데이트된 코드 베이스를 배포해야 합니다. 대상 버전의 AEM에서 작동하도록 코드 베이스를 업데이트하는 단계는 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md) 페이지에서 확인할 수 있습니다.
 
-1. 수정된 내용이 포함된 Jar를 다시 만듭니다.
+## 업그레이드 후 확인 및 문제 해결 수행 {#perform-post-upgrade-checks-and-troubleshooting}
 
-   ```bash
-   jar cvf aem65.war
-   ```
-
-1. 마지막으로, TomCat에 새로운 war 파일을 배포합니다.
+자세한 내용은 [업그레이드 확인 및 문제 해결 이후](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)를 참조하십시오.

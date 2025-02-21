@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 가
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. 업그레이드된 Mongo 인스턴스에 연결된 새 6.5 작성자 인스턴스를 만듭니다.
+1. 업그레이드된 Mongo 인스턴스에 연결된 새 6.5.2025 작성자 인스턴스를 만듭니다.
 
 1. 클러스터에서 제거된 MongoDB 노드를 다시 빌드합니다.
 

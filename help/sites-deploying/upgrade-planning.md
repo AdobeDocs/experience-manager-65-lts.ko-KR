@@ -9,162 +9,136 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 4e27e726711b7469e1d3fa1f7662ba54aaeba54a
+source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
 workflow-type: tm+mt
-source-wordcount: '2299'
+source-wordcount: '1203'
 ht-degree: 0%
 
 ---
 
-# 업그레이드 계획{#planning-your-upgrade}
+# 업그레이드 계획 {#planning-your-upgrade}
 
-## AEM 프로젝트 개요 {#aem-project-overview}
+## AEM 업그레이드 개요 {#aem-upgrade-overview}
 
 AEM은 수백만 명의 사용자에게 제공될 수 있는 영향력이 큰 배포에서 종종 사용됩니다. 일반적으로 인스턴스에 배포되는 사용자 정의 애플리케이션이 있어 복잡성을 가중시킵니다. 이러한 배포를 업그레이드하기 위한 모든 노력은 체계적으로 처리되어야 합니다.
 
-이 안내서는 업그레이드를 계획할 때 명확한 목표, 단계 및 결과물을 설정하는 데 도움이 됩니다. 전체적인 프로젝트 수행 및 가이드라인에 초점을 맞추고 있다. 실제 업그레이드 단계에 대한 개요를 제공하지만 적합한 경우 사용 가능한 기술 리소스를 참조합니다. 이 설명서는 문서에서 언급한 사용 가능한 기술 리소스와 함께 사용해야 합니다.
+이 안내서는 업그레이드를 계획할 때 명확한 목표, 단계 및 결과물을 설정하는 데 도움이 됩니다. 전반적인 업그레이드 실행 및 지침에 중점을 둡니다. 실제 업그레이드 단계에 대한 개요를 제공하지만 적합한 경우 사용 가능한 기술 리소스를 참조합니다. 이 설명서는 문서에서 언급한 사용 가능한 기술 리소스와 함께 사용해야 합니다.
 
 AEM 업그레이드 프로세스는 각 단계에 대해 정의된 주요 결과물을 통해 계획, 분석 및 실행 단계를 신중하게 처리해야 합니다.
 
-AEM 버전 6.0 및 최대 6.5에서 바로 업그레이드할 수 있습니다. 5.6.x 이하를 실행하는 고객은 먼저 버전 6.0 이상으로 업그레이드해야 하며 6.0(SP3) 이 권장됩니다. 또한 이제 새 Oak 세그먼트 Tar 형식이 6.3부터 세그먼트 노드 저장소에 사용되며, 6.0, 6.1 및 6.2에서도 이 새 형식으로 저장소를 마이그레이션해야 합니다.
-
->[!CAUTION]
+>[!NOTE]
 >
->AEM 6.2에서 6.3으로 업그레이드하는 경우 버전(**6.2-SP1-CFP1 - -6.2SP1-CFP12.1**) 또는 **6.2SP1-CFP15** 이상)에서 업그레이드해야 합니다. 그렇지 않으면 **6.2SP1-CFP13/6.2SP1CFP14**&#x200B;에서 AEM 6.3으로 업그레이드하는 경우 **6.3.2.2** 이상 버전으로도 업그레이드해야 합니다. 그렇지 않으면 업그레이드 후 AEM Sites이 실패합니다.
+>AEM 6.5 LTS로의 업그레이드는 마지막 6개의 서비스 팩에서 지원됩니다
 
-## 업그레이드 범위 및 요구 사항 {#upgrade-scope-requirements}
+지원되는 운영 체제, Java™ 런타임, httpd 및 Dispatcher 버전을 실행 중인지 확인하는 것이 중요합니다. 자세한 내용은 TBD: AEM 6.5 LTS의 기술 요구 사항에 대한 링크를 참조하십시오. 이러한 구성 요소 업그레이드는 업그레이드 계획에서 고려해야 하며 AEM을 업그레이드하기 전에 수행해야 합니다.
 
-아래에는 일반적인 AEM 업그레이드 프로젝트의 영향을 받는 영역 목록이 있습니다.
+<!-- Alexandru: drafting for now
+
+## Upgrade Scope and Requirements {#upgrade-scope-requirements}
+
+Below you will find a list of areas that are impacted in a typical AEM Upgrade project:
 
 <table>
  <tbody>
   <tr>
-   <td><strong>구성 요소</strong></td>
-   <td><strong>영향</strong></td>
-   <td><strong>설명</strong></td>
+   <td><strong>Component</strong></td>
+   <td><strong>Impact</strong></td>
+   <td><strong>Description</strong></td>
   </tr>
   <tr>
-   <td>운영 체제</td>
-   <td>불확실하지만 미묘한 영향</td>
-   <td>AEM 업그레이드 당시에는 운영 체제를 업그레이드해야 할 시기일 수도 있으며 이 경우 약간의 영향이 있을 수 있습니다.</td>
+   <td>Operating System</td>
+   <td>Uncertain, but subtle effects</td>
+   <td>At the time of the AEM upgrade, it may be time to upgrade the operating system as well and this might have some impact.</td>
   </tr>
   <tr>
-   <td>Java™ 런타임</td>
-   <td>중간 영향</td>
-   <td>AEM 6.3에는 JRE 1.7.x(64비트) 이상이 필요합니다. JRE 1.8은 현재 Oracle에서 지원하는 유일한 버전입니다.</td>
+   <td>Java&trade; Runtime</td>
+   <td>Moderate Impact</td>
+   <td>AEM 6.3 requires JRE 1.7.x (64 bit) or later. JRE 1.8 is the only version currently supported by Oracle.</td>
   </tr>
   <tr>
-   <td>하드웨어</td>
-   <td>중간 영향</td>
-   <td>온라인 개정 정리를 완료하려면 저장소 크기의 25%에 해당하는 사용 가능한 <br /> 디스크 공간과 사용 가능한 15%의 힙 공간이 필요합니다<br />. <br />(으)로 하드웨어를 업그레이드하여 온라인 수정 버전 정리를 위한 충분한 리소스를 <br />(으)로 실행해야 할 수 있습니다. 또한 AEM 6 이전 버전에서 업그레이드하는 경우 <br />이(가) 추가 저장소 요구 사항이 있을 수 있습니다.</td>
+   <td>Hardware</td>
+   <td>Moderate Impact</td>
+   <td>Online Revision Cleanup requires free<br /> disk space equal to 25% of the repository's size and 15% free heap space<br /> to complete successfully. You may need to upgrade your hardware to<br /> ensure sufficient resources for Online Revision Cleanup to fully<br /> run. Also, if upgrading from a version prior to AEM 6, there<br /> may be additional storage requirements.</td>
   </tr>
   <tr>
-   <td>콘텐츠 저장소(CRX 또는 Oak)</td>
-   <td>높은 영향</td>
-   <td>버전 6.1부터 AEM은 CRX2를 지원하지 않으므로 이전 버전에서 업그레이드하는 경우 <br /> Oak(CRX3)으로 마이그레이션해야 합니다. AEM 6.3에서 <br />이(가) 마이그레이션이 필요한 새 세그먼트 노드 저장소를 구현했습니다. 이 용도로 <br /> crx2oak 도구가 사용됩니다.</td>
+   <td>Content Repository (CRX or Oak)</td>
+   <td>High Impact</td>
+   <td>Starting from version 6.1, AEM does not support CRX2, so a migration to<br /> Oak (CRX3) is required if upgrading from an older version. AEM 6.3 has<br /> implemented a new Segment Node Store that also requires a migration. The<br /> crx2oak tool is used for this purpose.</td>
   </tr>
   <tr>
-   <td>AEM 구성 요소/컨텐츠</td>
-   <td>중간 영향</td>
-   <td><code>/libs</code> 및 <code>/apps</code>은(는) 업그레이드를 통해 쉽게 처리되지만, <code>/etc</code>은(는) 일반적으로 사용자 지정을 수동으로 다시 적용해야 합니다.</td>
+   <td>AEM Components/Content</td>
+   <td>Moderate Impact</td>
+   <td><code>/libs</code> and <code>/apps</code> are easily handled through the upgrade, but <code>/etc</code> usually requires some manual reapplication of customizations.</td>
   </tr>
   <tr>
-   <td>AEM 서비스</td>
-   <td>낮은 영향</td>
-   <td>대부분의 AEM 핵심 서비스는 업그레이드를 위해 테스트됩니다. 이 영역은 영향력이 낮은 영역입니다.</td>
+   <td>AEM Services</td>
+   <td>Low Impact</td>
+   <td>Most AEM core services are tested for upgrade. This is an area of low impact.</td>
   </tr>
   <tr>
-   <td>사용자 정의 응용 프로그램 서비스</td>
-   <td>낮은 영향에서 높은 영향</td>
-   <td>Oak에서 인덱스가 자동으로 생성되지 않으므로 응용 프로그램 및 사용자 지정에 따라 JVM, 운영 체제 버전 및 일부 인덱싱 관련<br /> 변경 사항에 대한 <br />개의 종속성이 있을 수 있습니다.</td>
+   <td>Custom Application Services</td>
+   <td>Low to High Impact</td>
+   <td>Depending on the application and customization, there may be<br /> dependencies on JVM, operating system versions, and some indexing related<br /> changes, as indexes are not generated automatically in Oak.</td>
   </tr>
   <tr>
-   <td>사용자 정의 애플리케이션 콘텐츠</td>
-   <td>낮은 영향에서 높은 영향</td>
-   <td>업그레이드를 통해 처리되지 않는 콘텐츠는 업그레이드가 시작되기 전에 <br />을(를) 백업한 다음 저장소로 다시 이동할 수 있습니다.<br /> 대부분의 콘텐츠는 마이그레이션 도구를 통해 처리할 수 있습니다.</td>
+   <td>Custom Application Content</td>
+   <td>Low to High Impact</td>
+   <td>Content that will not be handled through the upgrade can be backed up<br /> before the upgrade takes place and then moved back into the repository.<br /> Most content can be handled through the migration tool.</td>
   </tr>
  </tbody>
 </table>
 
-지원되는 운영 체제, Java™ 런타임, httpd 및 Dispatcher 버전을 실행 중인지 확인하는 것이 중요합니다. 자세한 내용은 [AEM 6.5 기술 요구 사항 페이지](/help/sites-deploying/technical-requirements.md)를 참조하십시오. 이러한 구성 요소 업그레이드는 프로젝트 계획에서 고려해야 하며 AEM을 업그레이드하기 전에 수행해야 합니다.
+It is important to ensure that you are running a supported operating system, Java&trade; runtime, httpd, and Dispatcher version. For more information, see the [AEM 6.5 Technical Requirements page](/help/sites-deploying/technical-requirements.md). Upgrading these components must be accounted for in your project plan and should take place before upgrading AEM. -->
 
-## 프로젝트 단계 {#project-phases}
+## 업그레이드 단계 {#upgrade-phases}
 
-AEM 업그레이드 계획 및 실행에 많은 작업이 필요합니다. Adobe은 이 프로세스에 들어가는 다양한 노력을 명확히 하기 위해 계획 및 실행 연습을 별도의 단계로 분류했습니다. 아래 섹션에서 각 단계는 프로젝트의 미래 단계에서 자주 사용되는 결과물을 생성합니다.
+AEM 업그레이드 계획 및 실행에 많은 작업이 필요합니다. Adobe은 이 프로세스에 들어가는 다양한 노력을 명확히 하기 위해 계획 및 실행 연습을 별도의 단계로 분류했습니다. 아래 섹션에서 각 단계는 업그레이드의 향후 단계에서 자주 사용되는 결과물을 생성합니다.
 
-### 작성자 교육 계획 {#planning-for-author-training}
+<!-- Alexandru:drafting for now
 
-새로운 릴리스에서는 도입될 수 있는 UI 및 사용자 워크플로에 대한 잠재적인 변경 사항이 있습니다. 또한 새로운 릴리스에는 비즈니스에서 사용하는 데 도움이 될 수 있는 새로운 기능이 도입됩니다. Adobe은 도입된 기능 변경 사항을 검토하고 사용자를 효과적으로 사용하도록 교육하기 위한 계획을 구성할 것을 권장합니다.
+### Planning for Author Training {#planning-for-author-training}
 
-![잘라낸 ](assets/unu_cropped.png)
+With any new release, there are potential changes to the UI and user workflows that may be introduced. Also, new releases introduce new features that may be beneficial for the business to use. Adobe recommends reviewing the functional changes that have been introduced and organizing a plan to train your users on using them effectively.
 
-AEM 6.5의 새로운 기능은 [adobe.com의 AEM 섹션](/help/release-notes/release-notes.md)에서 찾을 수 있습니다. 조직에서 일반적으로 사용하는 UI 또는 제품 기능에 대한 변경 사항을 알아 두십시오. 새로운 기능을 살펴보면서 귀사에 유용할 수 있는 모든 기능을 주목하십시오. AEM 6.5의 변경 사항을 살펴본 후 작성자를 위한 교육 계획을 개발하십시오. 여기에는 [Adobe 디지털 학습 서비스](https://learning.adobe.com/)를 통해 제공되는 도움말 기능 비디오 또는 공식 교육 등 자유롭게 사용할 수 있는 리소스가 포함될 수 있습니다.
+![unu_cropped](assets/unu_cropped.png)
+
+New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/release-notes/release-notes.md). Make sure to note any changes to UIs or product features that are commonly used in your organization. As you look through the new features, also take note of any that can be of value to your organization. After looking through what has changed in AEM 6.5, develop a training plan for your authors. This could involve using freely available resources like the help feature videos or formal training offered through [Adobe Digital Learning Services](https://learning.adobe.com/). -->
 
 ### 테스트 계획 만들기 {#creating-a-test-plan}
 
 각 고객의 AEM 구현은 고유하며 비즈니스 요구 사항을 충족하도록 사용자 정의되었습니다. 따라서 테스트 계획에 포함될 수 있도록 시스템에 적용된 모든 사용자 지정을 결정하는 것이 중요합니다. 이 테스트 계획은 Adobe이 업그레이드된 인스턴스에서 수행하는 QA 프로세스를 강화합니다.
 
-![테스트 계획](assets/test-plan.png)
-
-모든 애플리케이션과 사용자 정의 코드가 원하는 대로 계속 실행되는지 확인하려면 업그레이드 후 정확한 프로덕션 환경을 복제하고 테스트해야 합니다. 모든 사용자 지정을 취소하고 성능, 로드 및 보안 테스트를 실행합니다. 테스트 계획을 구성할 때는 일상적인 작업에 사용되는 기본 UI 및 워크플로뿐만 아니라 시스템에 적용된 모든 사용자 지정 사항도 다루어야 합니다. 여기에는 사용자 지정 OSGI 서비스 및 서블릿, Adobe Experience Cloud에 대한 통합, AEM 커넥터를 통한 서드파티와의 통합, 사용자 지정 서드파티 통합, 사용자 지정 구성 요소 및 템플릿, AEM의 사용자 지정 UI 오버레이 및 사용자 지정 워크플로가 포함될 수 있습니다. AEM 6 이전 버전에서 마이그레이션하는 고객의 경우 색인화해야 할 수 있으므로 모든 사용자 지정 쿼리를 분석해야 합니다. 이미 AEM 6.x 버전을 사용 중인 고객의 경우 업그레이드 후에도 색인이 계속 효과적으로 작동할 수 있도록 이러한 쿼리를 계속 테스트해야 합니다.
-
-### 필요한 아키텍처 및 인프라 변경 결정 {#determining-architectural-and-infrastructure-changes-needed}
-
-업그레이드할 때 운영 체제나 JVM과 같은 기술 스택에 있는 다른 구성 요소도 업그레이드해야 할 수 있습니다. 또한 저장소 구성의 변경으로 인해 추가 하드웨어가 필요할 수 있습니다. 이는 6.x 이전 인스턴스에서 마이그레이션하는 고객에게만 적용되지만 고려해야 합니다. 마지막으로, 모니터링, 유지 관리, 백업 및 재해 복구 프로세스 등 운영 관행에 변화가 필요할 수 있습니다.
-
-![doi_cropped](assets/doi_cropped.png)
-
-AEM 6.5에 대한 기술 요구 사항을 검토하고 현재 사용 중인 하드웨어 및 소프트웨어가 충분한지 확인합니다. 운영 프로세스에 대한 잠재적 변경 사항은 다음 문서를 참조하십시오.
-
-**모니터링 및 유지 관리:**
-
-[작업 대시보드](/help/sites-administering/operations-dashboard.md)
-
-[Assets 모니터링 우수 사례](/help/assets/assets-monitoring-best-practices.md)
-
-[JMX 콘솔을 사용한 서버 리소스 모니터링](/help/sites-administering/jmx-console.md)
-
-[개정 정리](/help/sites-deploying/revision-cleanup.md)
-
-**백업/복원 및 재해 복구:**
-
-[백업 및 복원](/help/sites-administering/backup-and-restore.md)
-
-[성능 및 확장성](/help/sites-deploying/performance.md)
-
-[TarMK 콜드 대기로 AEM을 실행하는 방법](/help/sites-deploying/tarmk-cold-standby.md)
+모든 애플리케이션과 사용자 정의 코드가 원하는 대로 계속 실행되는지 확인하려면 업그레이드 후 정확한 프로덕션 환경을 복제하고 테스트해야 합니다. 모든 사용자 지정을 취소하고 성능, 로드 및 보안 테스트를 실행합니다. 테스트 계획을 구성할 때는 일상적인 작업에 사용되는 기본 UI 및 워크플로뿐만 아니라 시스템에 적용된 모든 사용자 지정 사항도 다루어야 합니다. 여기에는 사용자 지정 OSGI 서비스 및 서블릿, Adobe Experience Cloud에 대한 통합, AEM 커넥터를 통한 서드파티와의 통합, 사용자 지정 서드파티 통합, 사용자 지정 구성 요소 및 템플릿, AEM의 사용자 지정 UI 오버레이 및 사용자 지정 워크플로가 포함될 수 있습니다. 또한 사용자 정의 쿼리는 업그레이드 후에도 색인이 계속 효과적으로 작동하는지 확인하기 위해 계속 테스트해야 합니다.
 
 ### 업그레이드 복잡성 평가 {#assessing-upgrade-complexity}
 
-Adobe 고객이 AEM 환경에 적용하는 맞춤화의 양과 특성이 매우 다양하므로, 업그레이드 시 예상되는 전반적인 작업 수준을 파악하기 위해 미리 시간을 투자하는 것이 중요합니다.
+Adobe 고객이 AEM 환경에 적용하는 맞춤화의 양과 특성이 매우 다양하므로, 업그레이드 시 예상되는 전반적인 작업 수준을 파악하기 위해 미리 시간을 투자하는 것이 중요합니다. AEM용 Analyzer를 사용하면 업그레이드의 복잡성을 평가할 수 있습니다.
 
-업그레이드의 복잡성을 평가하는 방법에는 두 가지가 있습니다. 예비 단계에서는 AEM 6.1, 6.2 및 6.3 인스턴스에서 실행할 수 있는 새로 도입된 패턴 감지기를 사용할 수 있습니다. 패턴 감지기는 보고된 패턴을 사용하여 예상되는 업그레이드의 전체 복잡성을 평가하는 가장 쉬운 방법입니다. 패턴 탐지기 보고서에는 사용자 지정 코드베이스에서 사용 중인 사용할 수 없는 API를 식별하기 위한 패턴이 포함됩니다(이 작업은 6.3에서 업그레이드 전 호환성 검사를 사용하여 수행됨).
-
-초기 평가 후, 보다 포괄적인 다음 단계는 테스트 인스턴스에 대한 업그레이드를 수행하고 몇 가지 기본 연기 테스트를 수행하는 것입니다. Adobe은 몇 가지 도 제공합니다. 또한 [사용되지 않거나 제거된 기능](/help/release-notes/release-notes.md#deprecated-and-removed-features) 목록은 업그레이드하려는 버전뿐만 아니라 원본 버전과 대상 버전 사이의 버전도 검토해야 합니다.
-
-![trei_cropped](assets/trei_cropped.png)
-
-최근에 도입된 패턴 감지기는 대부분의 경우 업그레이드 중에 예상되는 사항을 상당히 정확하게 예측할 수 있도록 해 줍니다. 그러나 호환되지 않는 변경 내용이 있는 보다 복잡한 사용자 지정 및 배포의 경우 [바로 업그레이드 수행](/help/sites-deploying/in-place-upgrade.md)의 지침에 따라 개발 인스턴스를 AEM 6.5로 업그레이드할 수 있습니다. 완료되면 이 환경에서 높은 수준의 스모크 테스트를 수행합니다. 이 연습의 목표는 테스트 사례 인벤토리를 완전히 완성하고 공식적인 결함 인벤토리를 생성하는 것이 아니라 6.5 호환성을 위해 코드를 업그레이드하는 데 필요한 작업의 양을 대략적으로 예상하는 것입니다. 이전 섹션에서 결정된 아키텍처 변경 사항과 [패턴 감지](/help/sites-deploying/pattern-detector.md)를 결합하면 프로젝트 관리 팀에 대략적인 견적을 제공하여 업그레이드를 계획할 수 있습니다.
+AEM 6.5 LTS용 AEM Analyzer는 대부분의 경우 업그레이드 중에 예상되는 예측 기능을 상당히 정확하게 제공합니다. 그러나 변경 내용이 호환되지 않는 복잡한 사용자 지정 및 배포의 경우 [바로 업그레이드 수행](/help/sites-deploying/in-place-upgrade.md)의 지침에 따라 개발 인스턴스를 AEM 6.5 LTS로 업그레이드할 수 있습니다. 완료되면 이 환경에서 높은 수준의 스모크 테스트를 수행합니다. 이 연습의 목표는 테스트 사례 인벤토리를 완전히 완성하고 결함의 정식 인벤토리를 생성하는 것이 아니라 6.5 LTS 호환성을 위해 코드를 업그레이드하는 데 필요한 작업의 양을 대략적으로 추정하는 것입니다. 이전 섹션에서 결정된 아키텍처 변경 사항 및 AEM 분석기와 결합하면 프로젝트 관리 팀에 대략적인 견적을 제공하여 업그레이드를 계획할 수 있습니다.
 
 ### 업그레이드 및 롤백 Runbook 구축 {#building-the-upgrade-and-rollback-runbook}
 
-Adobe은 AEM 인스턴스 업그레이드 프로세스를 문서화했지만 각 고객의 네트워크 레이아웃, 배포 아키텍처 및 맞춤화는 이 접근 방식을 미세 조정하고 맞춤화해야 합니다. 따라서 Adobe에서는 제공된 모든 설명서를 검토하고 이를 사용하여 사용자 환경에서 수행할 특정 업그레이드 및 롤백 절차를 요약한 프로젝트별 Runbook을 알리는 것이 좋습니다. CRX2에서 업그레이드하는 경우 CRX2에서 Oak으로 이동할 때 컨텐츠 마이그레이션이 얼마나 오래 걸리는지 평가해야 합니다. 대형 저장소의 경우 상당할 수 있습니다.
+Adobe은 AEM 인스턴스 업그레이드 프로세스를 문서화했지만 각 고객의 네트워크 레이아웃, 배포 아키텍처 및 맞춤화는 이 접근 방식을 미세 조정하고 맞춤화해야 합니다. 따라서 Adobe에서는 제공된 모든 설명서를 검토하고 이를 사용하여 사용자 환경에서 수행할 특정 업그레이드 및 롤백 절차를 요약한 업그레이드별 Runbook을 알릴 것을 권장합니다.
 
-![runbook-diagram](assets/runbook-diagram.png)
+<!--Alexandru:drafting for now
 
-Adobe은 [업그레이드 프로시저](/help/sites-deploying/upgrade-procedure.md)의 업그레이드 및 롤백 절차와 [바로 업그레이드 수행](/help/sites-deploying/in-place-upgrade.md)에서 업그레이드를 적용하기 위한 단계별 지침을 제공했습니다. 업그레이드 중에 실행할 적절한 전환 및 롤백 절차를 결정하려면 시스템 아키텍처, 사용자 정의 및 가동 중지 시간 허용 범위와 함께 이러한 지침을 검토하고 고려해야 합니다. 사용자 지정된 Runbook을 작성할 때 아키텍처 또는 서버 크기에 대한 모든 변경 사항을 포함해야 합니다. 이는 1차 드래프트로 처리되어야 한다는 점에 유의할 필요가 있다. 팀이 QA 및 개발 주기를 완료하고 스테이징 환경에 업그레이드를 배포하면 몇 가지 추가 단계가 필요할 수 있습니다. 이상적으로 이 문서에는 운영 직원에게 전달될 경우 내부 정보에서 업그레이드를 완전히 완료할 수 있도록 충분한 정보가 포함되어 있어야 합니다.
+![runbook-diagram](assets/runbook-diagram.png) -->
 
-### 프로젝트 계획 개발 {#developing-a-project-plan}
+Adobe은 [업그레이드 프로시저](/help/sites-deploying/upgrade-procedure.md)의 업그레이드 및 롤백 절차와 [바로 업그레이드 수행](/help/sites-deploying/in-place-upgrade.md)에서 업그레이드를 적용하기 위한 단계별 지침을 제공했습니다. 업그레이드 중에 실행할 적절한 전환 및 롤백 절차를 결정하려면 시스템 아키텍처, 사용자 정의 및 가동 중지 시간 허용 범위와 함께 이러한 지침을 검토하고 고려해야 합니다. 사용자 지정된 Runbook을 작성할 때 아키텍처 또는 서버 크기에 대한 모든 변경 사항을 포함해야 합니다.
 
-이전 연습의 결과를 사용하여 테스트 또는 개발 노력, 교육 및 실제 업그레이드 실행에 대한 예상 일정을 다루는 프로젝트 계획을 작성할 수 있습니다.
+### 업그레이드 계획 개발 {#developing-an-upgrade-plan}
 
-![개발-프로젝트 계획](assets/develop-project-plan.png)
+이전 연습의 결과를 사용하여 테스트 또는 개발 노력, 교육 및 실제 업그레이드 실행에 대한 예상 일정을 다루는 업그레이드 계획을 작성할 수 있습니다.
+
+<!--Alexandru: drafting for now
+
+![develop-project-plan](assets/develop-project-plan.png) -->
 
 포괄적인 프로젝트 계획에는 다음이 포함되어야 합니다.
 
 * 개발 및 테스트 계획 확정
 * 개발 및 QA 환경 업그레이드
-* AEM 6.5용 사용자 지정 코드 베이스 업데이트
+* AEM 6.5 LTS에 대한 사용자 지정 코드 베이스 업데이트
 * QA 테스트 및 수정 주기
 * 스테이징 환경 업그레이드
 * 통합, 성능 및 로드 테스트
@@ -173,19 +147,23 @@ Adobe은 [업그레이드 프로시저](/help/sites-deploying/upgrade-procedure.
 
 ### 개발 및 QA 수행 {#performing-development-and-qa}
 
-Adobe은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md)를 위한 절차를 AEM 6.5와 호환되도록 제공했습니다. 이 반복 프로세스가 실행되면 필요에 따라 Runbook을 변경해야 합니다. 업그레이드 후 바로 개발하지 않고도 사용자 지정 내용이 이전 버전과 호환되는 방식을 유지하는 방법에 대한 자세한 내용은 [AEM 6.5](/help/sites-deploying/backward-compatibility.md)의 이전 버전 호환성을 참조하십시오.
+Adobe은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md)를 위한 절차를 AEM 6.5 LTS와 호환되도록 제공했습니다. 이 반복 프로세스가 실행되면 필요에 따라 Runbook을 변경해야 합니다.
 
-![patru_cropped](assets/patru_cropped.png)
+<!--Alexandru: drafting for now
 
-개발 및 테스트 프로세스는 일반적으로 반복적인 프로세스입니다. 사용자 지정으로 인해 업그레이드 중에 변경 사항이 발생하면 제품의 전체 섹션을 사용할 수 없게 될 수 있습니다. 개발자가 문제의 근본 원인을 해결했고 테스트 팀이 이러한 기능을 테스트할 수 있게 되면 추가 문제를 발견할 수 있습니다. 업그레이드 프로세스를 조정해야 하는 문제가 발견되면 사용자 지정 업그레이드 Runbook에 추가해야 합니다. 테스트 및 수정을 여러 번 반복한 후 코드 베이스의 유효성을 완전히 검사하고 스테이징 환경에 배포할 준비가 되어야 합니다.
+![patru_cropped](assets/patru_cropped.png) -->
+
+개발 및 테스트 프로세스는 일반적으로 반복적인 프로세스입니다. 업그레이드 프로세스를 조정해야 하는 문제가 발견되면 사용자 지정 업그레이드 Runbook에 추가해야 합니다. 테스트 및 수정을 여러 번 반복한 후 코드 베이스의 유효성을 완전히 검사하고 스테이징 환경에 배포할 준비가 되어야 합니다.
 
 ### 최종 테스트 {#final-testing}
 
 Adobe은 코드베이스가 조직의 QA 팀에서 인증한 후 최종 테스트를 수행할 것을 권장합니다. 이 테스트에는 스테이징 환경에서 Runbook의 유효성을 검사한 다음 사용자 승인, 성능 및 보안 테스트를 수행하는 작업이 포함됩니다.
 
-![cinci_cropped](assets/cinci_cropped.png)
+<!--Alexandru: drafting for now
 
-이 단계는 프로덕션 유사 환경에 대해 Runbook의 단계를 확인할 수 있는 유일한 시간이므로 중요합니다. 환경이 업그레이드되면 최종 사용자가 일상적인 활동에서 시스템을 사용할 때 로그인하고 수행하는 활동을 수행할 수 있는 시간을 갖도록 하는 것이 중요합니다. 사용자가 이전에 고려하지 않은 시스템 일부를 사용하는 것은 드문 일이 아닙니다. 가동 전에 이러한 영역에서 문제를 찾아 수정하면 많은 비용이 드는 생산 중단을 방지하는 데 도움이 될 수 있습니다. AEM의 새 버전에는 기본 플랫폼에 대한 중요한 변경 사항이 포함되어 있으므로 시스템을 처음 시작할 때처럼 시스템에서 성능, 로드 및 보안 테스트를 수행하는 것도 중요합니다.
+![cinci_cropped](assets/cinci_cropped.png) -->
+
+이 단계는 프로덕션 유사 환경에 대해 Runbook의 단계를 확인할 수 있는 유일한 시간이므로 중요합니다. 환경이 업그레이드되면 최종 사용자가 일상적인 활동에서 시스템을 사용할 때 로그인하고 수행하는 활동을 수행할 수 있는 시간을 갖도록 하는 것이 중요합니다. 가동 전에 이러한 영역에서 문제를 찾아 수정하면 많은 비용이 드는 생산 중단을 방지하는 데 도움이 될 수 있습니다.
 
 ### 업그레이드 수행 {#performing-the-upgrade}
 

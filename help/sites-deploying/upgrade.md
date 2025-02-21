@@ -9,28 +9,37 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 956da2542a958ee6548ede63a7e564f5a4705552
+source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 0%
+source-wordcount: '317'
+ht-degree: 1%
 
 ---
 
-# Adobe Experience Manager(AEM) 6.5로 업그레이드 {#upgrading-to-aem}
+# Adobe Experience Manager(AEM) 6.5 LTS로 업그레이드 {#upgrading-to-aem}
+
+>[!NOTE]
+>AEM 6.5 LTS로의 업그레이드는 마지막 6개의 서비스 팩에서 지원됩니다.
 
 이 섹션에서는 AEM 설치를 AEM 6.5로 업그레이드하는 방법에 대해 설명합니다.
 
-* [업그레이드 계획](/help/sites-deploying/upgrade-planning.md)
-* [패턴 감지기를 사용한 업그레이드 복잡성 평가](/help/sites-deploying/pattern-detector.md)
-* [AEM 6.5의 이전 버전과의 호환성](/help/sites-deploying/backward-compatibility.md)
-  <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
-* [업그레이드 프로시저](/help/sites-deploying/upgrade-procedure.md)
-* [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md)
-* [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-* [즉석 업그레이드 수행](/help/sites-deploying/in-place-upgrade.md)
-* [업그레이드 후 확인 및 문제 해결](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
-* [지속 가능한 업그레이드](/help/sites-deploying/sustainable-upgrades.md)
-* [소극적 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md)
+<!-- Alexandru: drafting for now 
+
+* [Planning Your Upgrade](/help/sites-deploying/upgrade-planning.md)
+* [Assessing the Upgrade Complexity with Pattern Detector](/help/sites-deploying/pattern-detector.md)
+* [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
+  This was drafted before: * [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+
+<!--
+* [Upgrade Procedure](/help/sites-deploying/upgrade-procedure.md)
+* [Upgrading Code and Customizations](/help/sites-deploying/upgrading-code-and-customizations.md)
+* [Pre-Upgrade Maintenance Tasks](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
+* [Performing an In-Place Upgrade](/help/sites-deploying/in-place-upgrade.md)
+* [Post Upgrade Checks and Troubleshooting](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+* [Sustainable Upgrades](/help/sites-deploying/sustainable-upgrades.md)
+* [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md)
+
+-->
 
 이러한 절차와 관련된 AEM 인스턴스를 더 쉽게 참조하기 위해 이 문서 전체에서 다음 용어가 사용됩니다.
 
@@ -39,44 +48,33 @@ ht-degree: 0%
 
 ## 변경 사항 {#what-has-changed}
 
+### 업데이트 {#updates}
+
 다음은 AEM의 지난 몇 가지 릴리스에 대한 주요 참고 변경 사항입니다.
 
-AEM 6.0에는 새 Jackrabbit Oak 저장소가 도입되었습니다. 지속성 관리자가 [마이크로 커널](/help/sites-deploying/platform.md#contentbody_title_4)(으)로 대체되었습니다. 버전 6.1부터 CRX2는 더 이상 지원되지 않습니다. 5.6.1 인스턴스에서 CRX2 저장소를 마이그레이션하려면 crx2oak라는 마이그레이션 도구를 실행해야 합니다. 자세한 내용은 [CRX2OAK 마이그레이션 도구 사용](/help/sites-deploying/using-crx2oak.md)을 참조하십시오.
+1. Foundation 계층이 Java 17(Apache Sling, Apache Felix 및 Apache Jackrabbit Oak의 오픈 소스 번들 계층으로 구성)을 지원하도록 업그레이드되었습니다
 
-Assets Insights를 사용 중이고 AEM 6.2 이전 버전에서 업그레이드하는 경우 에셋을 마이그레이션하고 JMX 빈을 통해 ID를 생성해야 합니다. Adobe의 내부 테스트의 경우 TarMK 환경의 125K 자산이 1시간 내에 마이그레이션되었지만 결과는 다를 수 있습니다.
+1. AEM 6.5 LTS jar 패키지는 이제 Jarkarta 서블릿 API 사양 5를 지원하며, war 패키징은 Jarkarta 서블릿 API 사양 5/6을 구현하는 서블릿 컨테이너에 배포할 수 있습니다
 
-6.3에서는 TarMK 구현의 기반이 되는 `SegmentNodeStore`에 대한 새 형식을 도입했습니다. AEM 6.3 이전 버전에서 업그레이드하는 경우 업그레이드의 일부로 시스템 다운타임과 관련된 저장소 마이그레이션이 필요합니다.
+1. AEM 6.5 LTS uber-jar의 패키징이 변경되었습니다. 자세한 내용은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md)를 참조하십시오.
 
-Adobe 엔지니어링은 약 20분 정도 소요될 것으로 예상하고 있습니다. 리인덱싱할 필요는 없습니다. 또한 새 저장소 형식을 사용할 수 있는 crx2oak 도구의 새 버전이 출시되었습니다.
+### 제거된 기존 기능/아티팩트 {#removed-legacy-features-artifacts}
 
-**AEM 6.3에서 AEM 6.5로 업그레이드하는 경우 이 마이그레이션이 필요하지 않습니다.**
+다음 레거시 솔루션은 AEM 6.5 LTS에서 제거되었습니다. 자세한 내용은 TBD: 릴리스 정보 링크 및 업그레이드 후 제거된 [오래된 번들 목록](/help/sites-deploying/obsolete-bundles.md)을 참조하세요.
 
-업그레이드 전 유지 관리 작업이 자동화를 지원하도록 최적화되었습니다.
+1. Social
+1. 상거래
+1. Screens
+1. We-retail
+1. Search &amp; Promote 통합
 
-crx2oak 도구 명령줄 사용 옵션이 자동화에 적합하고 추가 업그레이드 경로를 지원하도록 변경되었습니다.
+**제거된 아티팩트**
 
-업그레이드 후 검사를 자동화할 수도 있습니다.
+1. CRX 탐색기
+1. Crx2oak
+1. Google guava(보안 취약점으로 인해 제거됨)
+1. Abdera-parser(보안 취약성으로 인해 제거됨)
+1. jdom(`org.apache.servicemix.bundles.jdom`)(보안 취약성으로 인해 제거됨)
+1. `com.github.jknack.handlebars`(보안 취약성으로 인해 제거됨)
 
-수정 버전의 주기적 가비지 수집 및 데이터 저장소 가비지 수집은 이제 정기적으로 수행해야 하는 일상적인 유지 관리 작업입니다. AEM 6.3이 도입됨에 따라 Adobe은 온라인 수정 버전 정리를 지원하고 권장합니다. 이러한 작업을 구성하는 방법에 대한 자세한 내용은 [수정 정리](/help/sites-deploying/revision-cleanup.md)를 참조하십시오.
-
-AEM은 업그레이드 계획을 시작할 때 업그레이드 복잡성을 평가하기 위해 [패턴 탐지기](/help/sites-deploying/pattern-detector.md)를 최근에 도입했습니다. 6.5는 기능 중 [이전 버전과의 호환성](/help/sites-deploying/backward-compatibility.md)에도 중점을 두고 있습니다. 마지막으로 [지속 가능한 업그레이드](/help/sites-deploying/sustainable-upgrades.md)에 대한 모범 사례도 추가됩니다.
-
-최신 AEM 버전에서 변경된 사항에 대한 자세한 내용은 전체 릴리스 노트를 참조하십시오.
-
-* [Adobe Experience Manager 6.5 최신 서비스 팩 릴리스 노트](/help/release-notes/release-notes.md)
-
-## 업그레이드 개요 {#upgrade-overview}
-
-AEM 업그레이드는 여러 단계로 구성된 프로세스이며, 때로는 여러 달이 진행되기도 합니다. 업그레이드 프로젝트에 포함된 내용과 이 설명서에 포함된 내용에 대한 개요는 다음과 같습니다.
-
-![screen_shot_2018-03-30at80708am](assets/screen_shot_2018-03-30at80708am.png)
-
-## 업그레이드 흐름 {#upgrade-overview-1}
-
-아래 다이어그램은 전반적인 권장 흐름을 캡처하여 업그레이드 접근 방식을 강조합니다. Adobe에서 도입한 새 기능에 대한 참조를 확인합니다. 업그레이드는 패턴 탐지기([패턴 탐지기 업그레이드 복잡성 평가](/help/sites-deploying/pattern-detector.md) 참조)로 시작해야 합니다. 이렇게 하면 생성된 보고서의 패턴을 기반으로 AEM 6.4와의 호환성을 위해 사용할 경로를 결정할 수 있습니다.
-
-6.5에는 모든 새 기능을 이전 버전과 호환되도록 유지하는 데 중요한 초점이 맞춰져 있었지만, 일부 이전 버전과의 호환성 문제가 여전히 발생하는 경우 호환성 모드를 사용하면 사용자 지정 코드가 6.5를 준수하도록 개발을 일시적으로 연기할 수 있습니다. 이 방법을 사용하면 업그레이드 직후 개발 노력을 피할 수 있습니다([AEM 6.5](/help/sites-deploying/backward-compatibility.md)의 이전 버전과의 호환성 참조).
-
-마지막으로, 6.5 개발 주기에서 지속 가능한 업그레이드([지속 가능한 업그레이드](/help/sites-deploying/sustainable-upgrades.md) 참조) 아래에 도입된 기능을 사용하면 모범 사례를 따라 향후 업그레이드를 보다 효율적이고 원활하게 수행할 수 있습니다.
-
-![6_4_upgrade_overviewflowchart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
+AEM 6.5 LTS는 기능의 이전 버전과의 호환성에 중점을 두고 있으며 분석기 도구와 함께 제공됩니다. 업그레이드 계획을 시작할 때의 복잡성 평가는 [AEM 분석기를 사용한 업그레이드 복잡성 평가](/help/sites-deploying/pattern-detector.md)를 참조하십시오. 그 밖의 변경 사항에 대한 자세한 내용은 여기에서 전체 릴리스 노트를 참조하십시오. TBD: AEM 6.5 LTS의 릴리스 노트 링크
