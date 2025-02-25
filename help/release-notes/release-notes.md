@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보
 description: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보입니다.
-source-git-commit: e062ab3ff820c85ebcbd0052c28e9e719222154f
+source-git-commit: 37dca00eef6918b1a0d3a56c87e0859fbc062e03
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 23%
@@ -17,7 +17,7 @@ ht-degree: 23%
 |---|---|
 | 버전 | 6.5리터 |
 | 유형 | 주요 릴리스 |
-| 일반 가용 날짜 | 2025년 2월 28일 토요일 |
+| 일반 가용 날짜 | 2025년 3월 7일 토요일 |
 
 ## 새로운 기능 {#what-s-new}
 
