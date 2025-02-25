@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 72bf54362948b6429627466111a088bcebfd2a2b
+source-git-commit: 0f125455f975417590e7481e2d34da372d5428c2
 workflow-type: tm+mt
 source-wordcount: '7022'
 ht-degree: 22%
@@ -782,7 +782,7 @@ ht-degree: 22%
       + [Designer FormCalc 참조](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [HTML5 양식에서 스크리블 서명 사용](/help/forms/using/scribble-signature.md)
       + [Designer에서 Page Zero 콘텐츠 변경](/help/forms/using/changing-page-zero-content-designer.md)
-      + [접근성 모범 사례]{#accessibility-best-practices}
+      + 접근성 모범 사례 {#accessibility-best-practices}
          + [소개](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [양식 생성 모범 사례](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
          + [양식 접근성 테스트 기법](/help/forms/using/techniques-for-testing-form-accessibility.md)
