@@ -1,13 +1,13 @@
 ---
-source-git-commit: 0deac9cb7fb13c6fec515739168eb2dbfd9a58c7
+source-git-commit: dc9fe33c0b32fe8bd11ddbf8d25339a6a2003857
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 64%
+source-wordcount: '503'
+ht-degree: 63%
 
 ---
-# Adobe Experience Manager 6.6 설명서에 대한 기여
+# Adobe Experience Manager 6.5 LTS 설명서에 대한 기여
 
-Adobe Experience Manager 6.6 설명서에 기여해 주셔서 감사합니다! 설명서 팀은 전체 리더 커뮤니티와 동료 Adobe 직원의 콘텐츠 기여를 환영합니다.
+Adobe Experience Manager 6.5 LTS 설명서에 기여해 주셔서 감사합니다! 설명서 팀은 전체 리더 커뮤니티와 동료 Adobe 직원의 콘텐츠 기여를 환영합니다.
 
 이 파일은 기여할 수 있는 방법을 설명하고 기여할 때 따라야 할 지침을 설명합니다.
 

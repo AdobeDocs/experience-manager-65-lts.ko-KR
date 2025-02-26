@@ -1,13 +1,13 @@
 ---
-source-git-commit: 61cbd7d51fc0c434adde7f805c37b81c81ad2bfb
+source-git-commit: 8c01084831774686c0b02578dfd03e159ce01b50
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 64%
 
 ---
-# Adobe Experience Manager 6.5 2025 설명서
+# Adobe Experience Manager 6.5 LTS 설명서
 
-Adobe Experience Manager 6.5 2025 설명서용 저장소입니다. 이 설명서에서는 설치, 관리, 작성 용도 및 AEM 6.5 2025를 사용자 지정하는 방법에 대해 설명합니다.
+Adobe Experience Manager 6.5 LTS 설명서용 저장소입니다. 이 설명서에서는 AEM 6.5 LTS의 설치, 관리, 작성 용도 및 사용자 지정 방법에 대해 설명합니다.
 
 이 설명서에 대한 귀하의 기여를 환영합니다. 다음 리소스를 참조하십시오.
 
