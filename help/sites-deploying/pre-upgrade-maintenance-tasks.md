@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 108e1b3d840287e3d694242d934d0fbe4606801c
+source-git-commit: 2eb9307f37098ee9f57ba9383600f74a5e3b2501
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1187'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,6 @@ ht-degree: 0%
 * [quickstart.properties 파일 생성](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [워크플로우 및 감사 로그 삭제 구성](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [업그레이드 전 작업 설치, 구성 및 실행](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
-* [사용자 정의 로그인 모듈 비활성화](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-login-modules)
 * [/install 디렉토리에서 업데이트 제거](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#remove-updates-install-directory)
 * [콜드 대기 인스턴스 중지](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#stop-tarmk-coldstandby-instance)
 * [사용자 정의 예약된 작업 비활성화](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
@@ -146,6 +145,10 @@ TarMK 콜드 대기를 사용하는 경우 콜드 대기 인스턴스를 중지�
 >이 단계는 TarMK 설치에만 필요합니다
 
 TarMK를 사용하는 경우 업그레이드하기 전에 오프라인 개정 정리를 실행해야 합니다. 이렇게 하면 저장소 마이그레이션 단계와 후속 업그레이드 작업이 훨씬 빠르게 실행되고 업그레이드가 완료된 후 온라인 개정 정리가 성공적으로 실행될 수 있습니다. 오프라인 수정 버전 정리 실행에 대한 자세한 내용은 [오프라인 수정 버전 정리 수행](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup)을 참조하십시오.
+
+## 데이터 저장소 가비지 수집 실행 {#execute-datastore-garbage-collection}
+
+CRX3 인스턴스에서 개정 정리를 실행한 후 데이터 저장소 가비지 수집을 실행하여 데이터 저장소에서 참조되지 않은 블롭을 제거해야 합니다. 지침은 [데이터 저장소 가비지 수집](/help/sites-administering/data-store-garbage-collection.md)에 대한 설명서를 참조하십시오.
 
 ## 로그 파일 회전 {#rotate-log-files}
 
