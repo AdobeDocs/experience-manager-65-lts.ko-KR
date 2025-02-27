@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5
-source-git-commit: 0f125455f975417590e7481e2d34da372d5428c2
+source-git-commit: 1d306a12ebff41e5f31e5b7fbe8086cd2e657500
 workflow-type: tm+mt
-source-wordcount: '7022'
+source-wordcount: '7019'
 ht-degree: 22%
 
 ---
@@ -213,7 +213,6 @@ ht-degree: 22%
          + [Dynamic Media Classic과 통합(Scene7)](/help/sites-administering/scene7.md)
          + [통합 문제 해결](/help/sites-administering/troubleshooting-integration-issues.md)
          + [BrightEdge Content Optimizer와 통합](/help/sites-administering/brightedge.md)
-         + [카탈로그 제작자](/help/sites-administering/catalog-producer.md)
          + [Silverpop Engage와 통합](/help/sites-administering/silverpop.md)
          + [Adobe Campaign과 통합](/help/sites-administering/campaign.md)
          + [ExactTarget과 통합](/help/sites-administering/exacttarget.md)
@@ -1442,7 +1441,6 @@ ht-degree: 22%
          + [Oak-run.jar 색인화 사용 사례](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Oak 인덱스 문제 해결](/help/sites-deploying/troubleshooting-oak-indexes.md)
          + [집계된 사용 통계 수집에 선택](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
-         + [문제 해결](/help/sites-deploying/troubleshooting.md)
       + AEM {#configuring} 구성 중
          + [기본 구성 개념](/help/sites-deploying/configuring.md)
          + [로깅](/help/sites-deploying/configure-logging.md)

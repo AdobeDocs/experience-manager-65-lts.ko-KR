@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1759'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,6 @@ ht-degree: 3%
 * [권장 배포](/help/sites-deploying/recommended-deploys.md)
 * [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
 * [Application Server 설치](/help/sites-deploying/application-server-install.md)
-* [문제 해결](/help/sites-deploying/troubleshooting.md)
 * [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
 * [구성](/help/sites-deploying/configuring.md)
 * [AEM 6.5로 업그레이드](/help/sites-deploying/upgrade.md)
@@ -295,7 +294,6 @@ AEM은 웹 브라우저를 시작하고 자동으로 적절한 페이지(일반�
 * [권장 배포](/help/sites-deploying/recommended-deploys.md)
 * [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
 * [Application Server 설치](/help/sites-deploying/application-server-install.md)
-* [문제 해결](/help/sites-deploying/troubleshooting.md)
 * [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
 * [구성](/help/sites-deploying/configuring.md)
 * [AEM 6.5로 업그레이드](/help/sites-deploying/upgrade.md)

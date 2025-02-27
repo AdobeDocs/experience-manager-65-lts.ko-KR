@@ -8,9 +8,9 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1083'
 ht-degree: 2%
 
 ---
@@ -159,7 +159,6 @@ ht-degree: 2%
    <td><br />
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">메모리 부족</a></li>
-     <li><a href="/help/sites-deploying/troubleshooting.md">내 응용 프로그램에서 메모리 부족 오류가 발생합니다.</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html">메모리 문제를 분석합니다.</a><br /> </li>
     </ol> </td>
   </tr>

@@ -1,10 +1,10 @@
 ---
 title: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보
 description: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보입니다.
-source-git-commit: 37dca00eef6918b1a0d3a56c87e0859fbc062e03
+source-git-commit: baa7e84c30117645d6a2e4ef8d8e182a9dd73321
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 23%
+source-wordcount: '796'
+ht-degree: 22%
 
 ---
 
@@ -95,6 +95,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 | 솔루션 | 소셜/커뮤니티는 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
 | Screens | Screens은 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
 | 자산 | 번들이 social에 종속되어 있으므로 `dam-pim` 및 `dam-rating`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
+| 자산 | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()`이(가) 제거되었습니다. | 추가된 대체 API `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()`을(를) 사용합니다. | 6.5LTS GA |
 | Granite | `com.adobe.granite.socketio` 번들이 제거되었습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
 | Granite | `com.adobe.granite.crx-explorer`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
 | 구아바 | 이제 모든 guava 종속성이 AEM에서 제거되었으므로 `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` 번들은 AEM의 일부가 아닙니다. | 고객이 guava에 의존하는 경우 고객이 직접 guava를 추가하거나 가능한 경우 guava 코드를 java 컬렉션 또는 기타 대체 요소로 대체할 수 있습니다. | 6.5LTS GA |

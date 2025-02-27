@@ -8,9 +8,9 @@ topic-tags: deploying
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
@@ -247,8 +247,3 @@ conf 파일에서 메모리 인수를 설정합니다(예: `standalone.conf`).
    * tomcat의 webapps 폴더에 복사합니다.
    * AEM이 설치될 때까지 기다립니다.
 
-## 문제 해결 {#troubleshooting}
-
-설치 중에 발생할 수 있는 문제 처리에 대한 자세한 내용은 다음을 참조하십시오.
-
-* [문제 해결](/help/sites-deploying/troubleshooting.md)

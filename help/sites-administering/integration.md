@@ -8,10 +8,10 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 11%
+source-wordcount: '100'
+ht-degree: 12%
 
 ---
 
@@ -20,7 +20,6 @@ ht-degree: 11%
 * [Adobe Experience Cloud과 통합](/help/sites-administering/marketing-cloud.md)
 * [타사 서비스와 통합](/help/sites-administering/third-party-services.md)
 * [외부 공급자의 Analytics](/help/sites-administering/external-providers.md)
-* [카탈로그 제작자](/help/sites-administering/catalog-producer.md)
 * [스마트 태그 이해, 적용 및 조정](/help/assets/enhanced-smart-tags.md)
 
 AEM을 다른 Adobe 또는 타사 서비스와 통합하는 방법에 대한 정보는 다음과 같습니다.
