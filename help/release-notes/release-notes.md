@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보
 description: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보입니다.
-source-git-commit: 54f3f3019dcceda4307160aa2126c37835f6626e
+source-git-commit: 6a69d4e143c54b22127a1e1ff3546898fcdd0b2d
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '796'
 ht-degree: 23%
 
 ---
@@ -59,7 +59,6 @@ Quickstart는 Eclipse Jetty 11.0.x를 서블릿 엔진으로 사용합니다.
 >
 >Java™ 17은 AEM 6.5 LTS와 함께 사용하기 권장되는 버전입니다.
 
-
 ## 더 이상 사용되지 않으며 제거된 기능 {#deprecated-and-removed-features}
 
 Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 교체하기 위해 제품 기능을 지속해서 평가합니다.
@@ -92,6 +91,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 | Screens | Screens은 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
 | 자산 | 번들이 social에 종속되어 있으므로 `dam-pim` 및 `dam-rating`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
 | 자산 | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()`이(가) 제거되었습니다. | 추가된 대체 API `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()`을(를) 사용합니다. | 6.5LTS GA |
+| 포털 | AEM 포털 디렉터는 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
 | Granite | `com.adobe.granite.socketio` 번들이 제거되었습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
 | Granite | `com.adobe.granite.crx-explorer`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
 | Granite | `crx2oak`은(는) 지원되지 않습니다. | [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)의 관련 버전 선택 | 6.5LTS GA |
@@ -104,7 +104,6 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 | 공개 소스 | `com.sun.javax.mail` 번들에서 `javax.mail` 패키지를 내보내는 중입니다. | 변경할 필요가 없습니다. | 6.5LTS GA |
 | 공개 소스 | 이제 `org.apache.jackrabbit.oak-jackrabbit-api` 번들에서 `org.apache.jackrabbit.api` 패키지를 내보냅니다. | 변경할 필요가 없습니다. | 6.5LTS GA |
 | 공개 소스 | `com.github.jknack.handlebars`은(는) 지원되지 않습니다. | 관련 [버전](https://mvnrepository.com/artifact/com.github.jknack/handlebars) 선택 | 6.5LTS GA |
-
 
 ## 제한된 웹 사이트{#restricted-sites}
 

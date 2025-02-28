@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: cf067a359d9f1fbe46e1614d91ce55bf3ee5bf18
 workflow-type: tm+mt
-source-wordcount: '6073'
+source-wordcount: '6081'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ AEM에서 JSR 286 호환 포틀릿을 실행할 수 있습니다. 포틀릿 구�
 
 >[!CAUTION]
 >
->AEM 포털 디렉터는 AEM 6.4부터 더 이상 사용되지 않습니다. [사용되지 않거나 제거된 기능](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html)을 참조하세요.
+>AEM 포털 디렉터는 AEM 6.4 이후 더 이상 사용되지 않으며 이제 AEM 6.5 LTS에서 더 이상 지원되지 않습니다. [사용되지 않거나 제거된 기능](/help/release-notes/release-notes.md#deprecated-and-removed-features)을 참조하세요.
 
 ## AEM 컨텐트 포틀릿 관리 {#administering-the-aem-content-portlet}
 
