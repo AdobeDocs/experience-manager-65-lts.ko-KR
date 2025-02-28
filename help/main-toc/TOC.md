@@ -1,20 +1,20 @@
 ---
 cloud: Experience Cloud
 product: Adobe Experience Manager
-sub-product: Adobe Experience Manager 6.5
+sub-product: Adobe Experience Manager 6.5 LTS
 solution-title: Experience Cloud
-user-guide-description: Adobe Experience Manager 6.5 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
+user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
-user-guide-title: AEM 6.5
-source-git-commit: 1d306a12ebff41e5f31e5b7fbe8086cd2e657500
+user-guide-title: AEM 6.5 LTS
+source-git-commit: 4a13ad21a3ea4ce6a1db9dac459b2b9ffd0d27c3
 workflow-type: tm+mt
-source-wordcount: '7019'
+source-wordcount: '7020'
 ht-degree: 22%
 
 ---
 
 
-# Adobe Experience Manager 6.5 설명서 {#content}
+# Adobe Experience Manager 6.5 LTS 설명서 {#content}
 
 + 릴리스 정보 {#release-notes}
    + [릴리스 정보](/help/release-notes/release-notes.md)
@@ -44,7 +44,7 @@ ht-degree: 22%
    + [AEM Foundation에 대한 GDPR 요청 처리](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)
    + [권한 관리에 대한 보안 주체 보기](/help/sites-administering/touch-ui-principal-view.md)
    + [컨텐츠 처리 필터](/help/sites-administering/content-disposition-filter.md)
-   + [AEM 6.5의 사용자 지정 사용자 그룹 매핑](/help/sites-administering/cug-mapping.md)
+   + [사용자 정의 사용자 그룹 매핑](/help/sites-administering/cug-mapping.md)
    + [Same Site 쿠키 지원](/help/sites-administering/same-site-cookie-support.md)
    + [Adobe Developer Console에서 JWT 자격 증명 사용 중단](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [AEM용 IMS 통합 설정](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
@@ -1424,7 +1424,7 @@ ht-degree: 22%
       + AEM 플랫폼 {#introduction} 소개
          + [AEM 플랫폼 소개](/help/sites-deploying/platform.md)
          + [기술 요구 사항](/help/sites-deploying/technical-requirements.md)
-         + [AEM 6.5의 스토리지 요소](/help/sites-deploying/storage-elements-in-aem-6.md)
+         + [AEM의 스토리지 요소](/help/sites-deploying/storage-elements-in-aem-6.md)
          + [AEM 및 MongoDB](/help/sites-deploying/aem-with-mongodb.md)
       + AEM {#deploying} 배포 중
          + [배포 및 유지 관리](/help/sites-deploying/deploy.md)
@@ -1436,7 +1436,7 @@ ht-degree: 22%
          + [개정 정리](/help/sites-deploying/revision-cleanup.md)
          + [Oak 쿼리 및 색인화](/help/sites-deploying/queries-and-indexing.md)
          + [TarMK 콜드 대기로 AEM을 실행하는 방법](/help/sites-deploying/tarmk-cold-standby.md)
-         + [AEM 6.5의 RDBMS 지원](/help/sites-deploying/rdbms-support-in-aem.md)
+         + [AEM의 RDBMS 지원](/help/sites-deploying/rdbms-support-in-aem.md)
          + [Oak 실행 Jar를 통한 인덱싱](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Oak-run.jar 색인화 사용 사례](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Oak 인덱스 문제 해결](/help/sites-deploying/troubleshooting-oak-indexes.md)
@@ -1462,11 +1462,11 @@ ht-degree: 22%
          + [Assets 성능 안내서](/help/sites-deploying/assets-performance-sizing.md)
          + [구성 방법 문서](/help/sites-deploying/ht-deploy.md)
          + [웹 콘솔 구성](/help/sites-deploying/configuring-web-console.md)
-      + AEM 6.5로 업그레이드 {#upgrading}
-         + [AEM 6.5로 업그레이드](/help/sites-deploying/upgrade.md)
+      + AEM 6.5 LTS {#upgrading}(으)로 업그레이드
+         + [AEM 6.5 LTS로 업그레이드](/help/sites-deploying/upgrade.md)
          + [업그레이드 계획](/help/sites-deploying/upgrade-planning.md)
          + [패턴 감지기를 사용한 업그레이드 복잡성 평가](/help/sites-deploying/pattern-detector.md)
-         + [AEM 6.5의 이전 버전과의 호환성](/help/sites-deploying/backward-compatibility.md)
+         + [AEM 6.5 LTS의 이전 버전과의 호환성](/help/sites-deploying/backward-compatibility.md)
          + [업그레이드 프로시저](/help/sites-deploying/upgrade-procedure.md)
          + [즉석 업그레이드 수행](/help/sites-deploying/in-place-upgrade.md)
          + [업그레이드 중 다운타임을 줄이기 위해 오프라인 리인덱싱을 사용](/help/sites-deploying/upgrade-offline-reindexing.md)

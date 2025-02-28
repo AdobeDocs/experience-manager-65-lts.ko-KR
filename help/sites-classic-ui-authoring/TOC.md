@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: Adobe Experience Manager
-sub-product: Adobe Experience Manager 6.5 2025
+sub-product: Adobe Experience Manager 6.5 LTS
 solution-title: Experience Cloud
-user-guide-description: Adobe Experience Manager 6.5 2025 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
+user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
-user-guide-title: 2025년 AEM 6.5
+user-guide-title: AEM 6.5 LTS
 role: user
 hide: true
-source-git-commit: 728db3fc315f1e7830d2133c63d096e4f616e9f8
+source-git-commit: 96d94c843d1912abd91577b3373e38bd9fd9ed6c
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 37%
