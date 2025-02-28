@@ -5,9 +5,9 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 055e99ec1c202acacae1be55b48e828f2634b0f4
+source-git-commit: e77dfbdbe5d540590f7552ddd07f5f7b10f7b41e
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3044'
 ht-degree: 1%
 
 ---
@@ -39,10 +39,10 @@ Adobe Experience Manager 실행을 위한 최소 요구 사항:
 >[!NOTE]
 >
 >* 디지털 자산 사용 사례에는 더 많은 기본 메모리가 필요합니다. 자세한 내용은 [배포 및 유지 관리](/help/sites-deploying/deploy.md#default-local-install)를 참조하십시오.
->* [AEM Forms 추가 기능 패키지](/help/forms/using/installing-configuring-aem-forms-osgi.md)에는 15GB의 임시 공간이 필요합니다.
+>* [AEM Forms 추가 기능 패키지](/help/forms/using/installing-configuring-aem-forms-osgi.md) 에는 15GB의 임시 공간이 필요합니다.
 >
 
-자세한 내용은 [하드웨어 크기 조정 지침](/help/managing/hardware-sizing-guidelines.md)을 참조하십시오.
+자세한 내용은 하드웨어 크기 조정 지침을](/help/managing/hardware-sizing-guidelines.md) 참조하세요[.
 
 ### 지원 수준 {#support-levels}
 
@@ -56,15 +56,15 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
  <tbody>
   <tr>
    <td>지원 수준</td>
-   <td>설명<br /> </td>
+   <td>묘사<br /> </td>
   </tr>
   <tr>
    <td><strong>A: 지원됨</strong></td>
-   <td>Adobe은 이 구성에 대한 전체 지원 및 유지 관리 기능을 제공합니다. 이 구성은 Adobe의 품질 보증 프로세스에서 다룹니다.</td>
+   <td>Adobe Systems 에서는 이 구성을 완벽하게 지원하고 유지 관리할 수 있습니다. 이 구성은 Adobe Systems 품질 보증 프로세스에서 다룹니다.</td>
   </tr>
   <tr>
    <td><strong>R: 제한된 지원</strong></td>
-   <td>고객의 프로젝트 성공을 보장하기 위해 Adobe은 제한된 지원 프로그램 내에서 모든 지원을 제공하며 이를 위해서는 특정 조건이 충족되어야 합니다. R 레벨 지원에는 공식적인 고객 요청 및 Adobe의 확인이 필요합니다. 자세한 내용은 Adobe 고객 지원 센터에 문의하십시오.</td>
+   <td>고객의 프로젝트 성공을 보장하기 위해 Adobe Systems 는 특정 조건을 충족해야 하는 제한된 지원 프로그램 내에서 전폭적인 지원을 제공합니다. R 수준 지원을 사용하려면 공식적인 고객 요청 및 Adobe Systems 의 확인이 필요합니다. 자세한 내용은 Adobe Systems 고객 지원 센터에 문의하십시오.</td>
   </tr>
  </tbody>
 </table>
@@ -79,13 +79,13 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
 
 ### Java™ 가상 시스템 {#java-virtual-machines}
 
-애플리케이션 실행에는 JDK(Java™ Development Kit) 배포판에서 제공하는 Java™ Virtual Machine이 필요합니다.
+응용 프로그램을 실행하려면 Java™ Virtual Machine이 필요하며, 이 시스템은 JDK(Java™ Development Kit) 배포에서 제공합니다.
 
-Adobe Experience Manager 는 다음 버전의 Java™ Virtual Machines에서 작동합니다.
+Adobe Experience Manager은 다음 버전의 Java™ 가상 시스템과 함께 작동합니다.
 
 >[!CAUTION]
 >
->Java™ 공급업체의 보안 게시판을 추적합니다. 이렇게 하면 프로덕션 환경의 안전과 보안이 보장됩니다. 또한 항상 최신 Java™ 업데이트를 설치합니다.
+>Java™ 공급업체에서 보안 게시판을 추적합니다. 이렇게 하면 프로덕션 환경의 안전과 보안이 보장됩니다. 또한 항상 최신 Java™ 업데이트를 설치합니다.
 
 | **플랫폼** | **지원 수준** | **링크** |
 |---|---|---|
@@ -108,8 +108,8 @@ Adobe Experience Manager 저장소를 배포하기 위한 다양한 옵션이 �
 | 파일 시스템 `[1]`의 TAR 파일에 바이너리 저장 | 바이너리 | Z: 프로덕션에 지원되지 않음 |
 | Amazon | 바이너리 | A: 지원됨 |
 | Microsoft® Azure Blob 저장소 | 바이너리 | A: 지원됨 |
-| MongoDB Enterprise 6.0 및 7.0 | 저장소 | A: 지원되는 `[3, 4]` |
-| **Apache Lucene(빠른 시작 기본 제공)** | 검색 서비스 | A: 지원됨 |
+| MongoDB Enterprise 6.0 및 7.0 | 저장소 | A: 지원됨 `[3, 4]` |
+| **Apache Lucene(빠른 시작 기본 제공)** | Search 서비스 | A: 지원됨 |
 
 1. &#39;파일 시스템&#39;에는 POSIX와 호환되는 블록 저장소가 포함되어 있습니다. 네트워크 스토리지 기술을 포함합니다. 파일 시스템 성능이 달라질 수 있으며 전체 성능에 영향을 줄 수 있습니다. 네트워크/원격 파일 시스템으로 AEM을 로드합니다.
 1. MongoDB 분할은 AEM에서 지원되지 않습니다.
@@ -117,9 +117,9 @@ Adobe Experience Manager 저장소를 배포하기 위한 다양한 옵션이 �
 
 >[!NOTE]
 >
->MongoDB는 서드파티 소프트웨어 프로그램이며 AEM 라이선싱 패키지에 포함되어 있지 않습니다. 자세한 내용은 [MongoDB 라이선스 정책](https://www.mongodb.com/licensing/server-side-public-license/faq) 페이지를 참조하십시오.
+>MongoDB는 타사 소프트웨어 프로그램이며 AEM 라이선스 패키지에 포함되어 있지 않습니다. 자세한 내용은 [MongoDB 라이선스 정책](https://www.mongodb.com/licensing/server-side-public-license/faq) 페이지를 참조하십시오.
 >
->MongoDB로 AEM 배포 최대한 활용하려면 MongoDB Enterprise 버전 라이선스를 취득하여 전문적인 지원을 받을 Adobe Systems 있습니다. 자세한 내용은 권장 배포를](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) 참조하십시오[.
+>MongoDB를 통해 AEM 배포를 최대한 활용하려면 Adobe에서 MongoDB Enterprise 버전에 라이선스를 부여하여 전문적인 지원을 받는 것이 좋습니다. 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk)를 참조하십시오.
 >
 >라이센스에는 작성자 또는 게시 배포에 사용할 수 있는 하나의 기본 인스턴스와 두 개의 보조 인스턴스로 구성된 표준 복제본 세트가 포함되어 있습니다.
 >
@@ -129,14 +129,6 @@ Adobe Experience Manager 저장소를 배포하기 위한 다양한 옵션이 �
 >
 >자세한 내용은 [Adobe Experience Manager용 MongoDB 페이지](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager)를 참조하세요.
 
->[!NOTE]
->
->위에 나열된 지원되는 관계형 데이터베이스는 타사 소프트웨어이며 AEM 라이선스 패키지에 포함되지 않습니다.
->
->지원되는 관계형 데이터베이스로 AEM 6.5를 실행하려면 데이터베이스 공급업체와의 별도의 지원 계약이 필요합니다. Adobe 고객 지원 센터는 AEM 6.5에서 관계형 데이터베이스 사용과 관련된 자격 문제를 지원합니다.
->
->**대부분의 관계형 데이터베이스는 현재 AEM 6.5의 Level-R에서 지원되며, 위의 Level-R 설명에 명시된 대로 지원 기준과 지원 프로그램이 제공됩니다.**
-
 ### 서블릿 엔진 / 애플리케이션 서버 {#servlet-engines-application-servers}
 
 Adobe Experience Manager은 독립형 서버(quickstart JAR 파일)로 실행하거나 타사 애플리케이션 서버(WAR 파일) 내의 웹 애플리케이션으로 실행할 수 있습니다.
@@ -145,11 +137,10 @@ Adobe Experience Manager은 독립형 서버(quickstart JAR 파일)로 실행하
 
 | Platform | 지원 수준 |
 |---|---|
-| **빠른 시작 내장 서블릿 엔진(Jetty 11.0.x)** | A: 지원됨 |
-| 웹 프로필 24.0.0.7 및 IBM® Sumeru에서 JRE® 17을 여는 IBM® WebSphere® Application Server Continuous Delivery(LibertyProfile) | R: 새 계약에 대한 지원이 제한됨 `[2]` |
-| Apache Tomcat 10.1.x | R: 새 계약에 대한 지원이 제한됨 `[2]` |
+| **Quickstart 기본 제공 서블릿 엔진(Jetty 11.0.x)** | A: 지원됨 |
+| 웹 프로필 24.0.0.7 및 IBM® Sumeru에서 JRE® 17을 여는 IBM® WebSphere® Application Server Continuous Delivery(LibertyProfile) | R: 새 계약에 대한 지원이 제한됨 `[1]` |
+| Apache Tomcat 11.0.x | R: 새 계약에 대한 지원이 제한됨 `[1]` |
 
-1. AEM Forms을 사용하는 배포에 권장됩니다.
 1. 애플리케이션 서버에서 AEM 6.5 배포를 시작하면 제한된 지원으로 이동합니다. 기존 고객은 AEM 6.5로 업그레이드하고 애플리케이션 서버를 계속 사용할 수 있습니다. 신규 고객의 경우 위의 Level-R 설명에 명시된 대로 지원 기준 및 지원 프로그램을 제공합니다.
 
 ### 서버 운영 체제 {#server-operating-systems}
@@ -175,21 +166,6 @@ Adobe Experience Manager은 프로덕션 환경을 위해 다음 서버 플랫�
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
 
-1. Microsoft® Windows 프로덕션 배포는 6.5로 업그레이드하는 고객 및 비프로덕션 사용을 위해 지원됩니다. 새 배포는 AEM Sites 및 Assets에 대한 온디맨드 요청입니다.
-1. AEM Forms은 지원 수준 R 제한 없이 Microsoft® Window Server에서 지원됩니다.
-1. AEM Forms에서는 Microsoft® Windows Server 2016에 대한 지원이 제거되었습니다.
-
->[!NOTE]
->
->AEM Forms 6.5를 설치하는 경우 다음 32비트 Microsoft® Visual C++ 재배포 가능 패키지를 설치했는지 확인하십시오.
->
->* Microsoft® Visual C++ 2008 재배포 가능 패키지
->* Microsoft® Visual C++ 2010 재배포 가능 패키지
->* Microsoft® Visual C++ 2012 재배포 가능 패키지
->* Microsoft® Visual C++ 2013 재배포 가능
->* Microsoft® Visual C++ 2019(VC14.28 이상) 재배포 가능
-
-
 ### 가상 및 클라우드 컴퓨팅 환경 {#virtual-cloud-computing-environments}
 
 Adobe Experience Manager은 클라우드 컴퓨팅 환경의 가상 컴퓨터에서 실행될 수 있습니다. 이러한 환경에는 이 페이지에 나열된 기술 요구 사항을 준수하고 Adobe의 표준 지원 약관에 따라 실행되는 Microsoft® Azure 및 Amazon Web Services(AWS)가 포함됩니다.
@@ -198,21 +174,21 @@ Adobe Experience Manager은 클라우드 컴퓨팅 환경의 가상 컴퓨터에
 
 또한 Adobe은 Adobe Managed Services을 제공하여 Azure 또는 AWS에 AEM을 배포합니다. Adobe Managed Services은 이러한 클라우드 컴퓨팅 환경에서 AEM을 배포하고 운영하는 경험과 기술을 전문가에게 제공합니다. [Adobe Managed Services에 대한 추가 설명서](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t)를 참조하세요.
 
-Azure나 AWS 또는 기타 클라우드 컴퓨팅 환경에서 AEM을 배포하는 다른 모든 경우에는 Adobe의 지원이 가상 컴퓨팅 환경에 포함됩니다. 해당 가상 환경은 이 페이지 에 나열된 기술 사양에 따라 실행되어야 합니다. 이러한 클라우드 환경에서 실행되는 AEM과 관련하여 보고된 모든 문제는 클라우드 컴퓨팅 환경과 관련된 클라우드 서비스와 독립적으로 재현할 수 있어야 합니다. 즉, 클라우드 서비스가 이 페이지 페이지에 나열된 기술 요구 사항의 일부로 지원되지 않는 경우(예: Azure Blob Storage 또는 AWS S3)입니다.
+Azure나 AWS 또는 기타 클라우드 컴퓨팅 환경에서 AEM을 배포하는 다른 모든 경우에는 Adobe의 지원이 가상 컴퓨팅 환경에 포함됩니다. 해당 가상 환경은 이 페이지에 나열된 기술 사양을 준수하여 실행되어야 합니다. 이러한 클라우드 환경에서 실행되는 AEM과 관련하여 보고된 문제는 클라우드 컴퓨팅 환경과 관련된 모든 클라우드 서비스와 별도로 재현할 수 있어야 합니다. 즉, Azure Blob 저장 공간 또는 AWS S3 등 이 페이지에 나열된 기술 요구 사항의 일부로 클라우드 서비스가 지원되지 않는 경우.
 
 Adobe Managed Services 외부의 Azure 또는 AWS에 AEM을 배포하는 방법에 대한 권장 사항을 알려면 Adobe에서 직접 클라우드 공급자와 작업하는 것이 좋습니다. 또는 선택한 클라우드 환경에서 AEM의 배포를 지원하는 Adobe 파트너와 협력합니다. 선택한 클라우드 공급업체 또는 파트너는 특정 성능, 로드, 확장성 및 보안 요구 사항을 충족하도록 아키텍처 크기 조정 사양, 설계 및 구현을 담당합니다.
 
 ### Dispatcher 플랫폼(웹 서버) {#dispatcher-platforms-web-servers}
 
-Dispatcher은 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispatcher 버전을 다운로드합니다](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5를 사용하려면 Dispatcher 버전 4.3.2 이상이 필요합니다.
+Dispatcher은 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispatcher 버전을](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html) 다운로드합니다. Experience Manager 6.5에는 Dispatcher 버전 4.3.2 이상이 필요합니다.
 
-Dispatcher 버전 4.3.2에서 사용할 수 있는 웹 서버는 다음과 같습니다.
+다음 웹 서버는 Dispatcher 버전 4.3.2에서 사용할 수 있습니다.
 
 | Platform | 지원 수준 |
 |---|---|
 | **Apache httpd 2.4.x** `[1,2]` | A: 지원됨 |
 | Microsoft® IIS 10(Internet Information Server) | A: 지원됨 |
-| Microsoft® IIS 8.5(인터넷 정보 서버) | Z: 지원되지 않음 |
+| Microsoft® IIS 8.5(Internet Information Server) | Z: 지원되지 않음 |
 
 1. Apache httpd 소스 코드를 기반으로 구축된 웹 서버는 기반이 되는 httpd 버전만큼 많은 지원을 제공합니다. 확실하지 않은 경우 Adobe에 각 서버 제품과 관련된 지원 수준을 확인하도록 요청하십시오. 다음과 같은 경우:
 
@@ -268,7 +244,7 @@ AEM 사용자 인터페이스는 더 큰 화면(일반적으로 노트북 및 �
    <td>A: 지원됨</td>
   </tr>
   <tr>
-   <td>macOS의 Apple Safari(에버그린)</td>
+   <td>macOS의 Apple Safari(Evergreen)</td>
    <td>A: 지원됨</td>
    <td>A: 지원됨</td>
   </tr>
@@ -293,21 +269,9 @@ AEM 사용자 인터페이스는 더 큰 화면(일반적으로 노트북 및 �
 1. Firefox의 확장 지원 릴리스 [mozilla.org에 대해 자세히 알아보기](https://www.mozilla.org/en-US/firefox/enterprise/)
 1. Apple iPad 지원
 
-### 웹 사이트에서 지원되는 브라우저 {#supported-browsers-for-websites}
+### 웹 사이트에 대해 지원되는 브라우저 {#supported-browsers-for-websites}
 
 일반적으로 AEM Sites에서 렌더링하는 웹 사이트에 대한 브라우저 지원은 AEM 페이지 템플릿, 디자인 및 구성 요소 출력의 구현에 따라 다르며, 따라서 이러한 부분을 구현하는 당사자의 통제 하에 있습니다.
-
-### WebDAV 클라이언트 {#webdav-clients}
-
-**Microsoft® Windows 7+**
-
-Microsoft® Windows 7+를 SSL로 보호되지 않는 AEM 인스턴스에 연결할 경우 Windows에서 비보안 네트워크를 통한 기본 인증을 활성화해야 합니다. WebClient의 Windows 레지스트리를 변경해야 합니다.
-
-1. 레지스트리 하위 키를 찾습니다.
-
-   * HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
-
-1. 2 이상의 값을 사용하여 BasicAuthLevel 레지스트리 항목을 이 하위 키에 추가합니다.
 
 ## 추가 플랫폼 노트 {#additional-platform-notes}
 
@@ -315,7 +279,7 @@ Microsoft® Windows 7+를 SSL로 보호되지 않는 AEM 인스턴스에 연결�
 
 ### IPv4 및 IPv6 {#ipv-and-ipv}
 
-Adobe Experience Manager의 모든 요소(예: Dispatcher)는 IPv4 및 IPv6 네트워크 모두에 설치할 수 있습니다.
+Adobe Experience Manager의 모든 요소(인스턴스, Dispatcher)는 IPv4 및 IPv6 네트워크 모두에 설치할 수 있습니다.
 
 특별한 구성이 필요하지 않으므로 작동이 원활합니다. 필요한 경우 네트워크 유형에 적합한 포맷 사용을 사용하여 IP 주소를 지정합니다.
 
@@ -386,19 +350,19 @@ Linux®에서 Dynamic Media를 사용하는 경우 다음 사전 요구 사항�
 * 마이크로소프트® 윈도우 서버 2016
 * 실제 메모리(RAM) 양의 두 배 이상에 해당하는 스왑 공간
 
-Windows에서 Dynamic Media를 사용하려면 Microsoft® Visual Studio 2010, 2013 및 2015 x64 및 x86용 재배포 가능 패키지를 설치하십시오.
+Windows에서 다이내믹 미디어를 사용하려면 x64 및 x86용 Microsoft® Visual Studio 2010, 2013 및 2015 재배포 가능 패키지를 설치합니다.
 
 Windows x64의 경우
 
 * [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)에서 Microsoft® Visual Studio 2010 재배포 가능 패키지를 가져옵니다.
 * [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)에서 Microsoft® Visual Studio 2013 재배포 가능 패키지를 가져옵니다.
-* [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)에서 Microsoft® Visual Studio 2015 재배포 가능 패키지를 가져옵니다.
+* https://www.microsoft.com/en-us/download/details.aspx?id=48145 에서 [Microsoft® Visual Studio 2015 재배포 가능 패키지 받기](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Windows x86의 경우:
 
 * [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)에서 Microsoft® Visual Studio 2010 재배포 가능 패키지를 가져옵니다.
-* [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)에서 Microsoft® Visual Studio 2013 재배포 가능 패키지를 가져옵니다.
-* [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)에서 Microsoft® Visual Studio 2015 재배포 가능 패키지를 가져옵니다.
+* https://www.microsoft.com/en-in/download/details.aspx?id=40769 에서 [Microsoft® Visual Studio 2013 재배포 가능 패키지 받기](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
+* https://www.microsoft.com/en-us/download/details.aspx?id=52685 에서 [Microsoft® Visual Studio 2015 재배포 가능 패키지 받기](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
 #### macOS {#macos}
 
@@ -491,19 +455,19 @@ Windows x86의 경우:
 * 1024 X 768 픽셀 이상의 모니터 해상도
 * 비디오 하드웨어 가속(옵션)
 * Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
-* Designer을 설치할 수 있는 관리 권한
-* 32비트 AEM Forms Designer용 Microsoft Visual C++ 2019(VC 14.28 이상) 32비트 런타임
+* Designer를 설치하기 위한 관리자 권한
+* Microsoft Visual C++ 2019(VC 14.28 이상) 32비트 AEM Forms 디자이너용 32비트 런타임
 * 64비트 AEM Forms Designer용 Microsoft Visual C++ 2019(VC 14.28 이상) 64비트 런타임(OSGI 및 JEE 스택 모두 해당)
 
 [AEM Forms 디자이너 설치 및 구성](/help/forms/using/installing-configuring-designer.md)
 
-### AEM Assets XMP 메타데이터 쓰기 되돌리기 요구 사항 {#requirements-for-aem-assets-xmp-metadata-write-back}
+### AEM Assets 요구 사항 XMP 메타데이터 원본에 쓰기 {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP 원본에 쓰기 지원되며 다음 플랫폼 및 파일 형식에 사용할 수 있습니다.
 
 * **운영 체제:**
 
-   * Linux®(64비트 시스템에서 32비트 및 32비트 애플리케이션 지원). 32비트 클라이언트 라이브러리를 설치하는 단계는 [64비트 Red Hat® Linux®에서 XMP 추출 및 다시 쓰기를 활성화하는 방법](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)을 참조하십시오.
+   * Linux®(64비트 시스템에서 32비트 및 32비트 애플리케이션 지원) 32비트 클라이언트 라이브러리를 설치하는 단계는 [64비트 Red Hat® Linux®에서 XMP 추출 및 다시 쓰기를 활성화하는 방법](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)을 참조하십시오.
 
    * Windows Server
    * macOS X (64비트)
