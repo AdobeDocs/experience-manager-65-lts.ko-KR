@@ -1,10 +1,10 @@
 ---
 title: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보
 description: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보입니다.
-source-git-commit: baa7e84c30117645d6a2e4ef8d8e182a9dd73321
+source-git-commit: 54f3f3019dcceda4307160aa2126c37835f6626e
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 22%
+source-wordcount: '783'
+ht-degree: 23%
 
 ---
 
@@ -37,17 +37,13 @@ Quickstart는 Eclipse Jetty 11.0.x를 서블릿 엔진으로 사용합니다.
 * 최적의 성능을 위해 기본 GC 값을 다른 값으로 재정의합니다. 자세한 내용은 [설치 및 업데이트](/help/sites-deploying/custom-standalone-install.md) 섹션을 참조하십시오.
 * Java™ 17 유지 관리 업데이트는 Oracle에서 공개적으로 제공되지 않을 경우 AEM 관련 프로젝트에서 고객이 사용할 수 있도록 Adobe에서 배포합니다.
 
-#### Java™ 개발 {#java-development}
+#### Uberjar 패키징 {#uber-jar-packaging}
 
-* 이제 Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies)의 [두 버전, 사용 중지로 표시되지 않은 공용 인터페이스가 포함된 권장 버전 및 사용 중지로 표시된 인터페이스만 포함하는 버전이 있습니다.
+* AEM 6.5 LTS의 Uberjar 패키징에는 약간의 차이가 있다. 자세한 내용은 [참조](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version-update-the-aem-uber-jar-version)를 참조하세요.
 
 #### 업그레이드 {#upgrade}
 
 * 업그레이드 절차에 대한 자세한 내용은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하세요.
-
-#### 저장소 {#repository}
-
-* Adobe Experience Manager 6.5 LTS의 기반은 업데이트된 버전의 OSGi 기반 프레임워크(Apache Sling 및 Apache Felix) 및 Java™ 콘텐츠 저장소(Apache Jackrabbit Oak 1.68.0) 위에 구축됩니다.
 
 ## 설치 및 업데이트 {#install-update}
 
@@ -98,13 +94,17 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 | 자산 | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()`이(가) 제거되었습니다. | 추가된 대체 API `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()`을(를) 사용합니다. | 6.5LTS GA |
 | Granite | `com.adobe.granite.socketio` 번들이 제거되었습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
 | Granite | `com.adobe.granite.crx-explorer`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
+| Granite | `crx2oak`은(는) 지원되지 않습니다. | [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)의 관련 버전 선택 | 6.5LTS GA |
+| Adobe | `com.adobe.cq.cq-searchpromote-integration`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
 | 구아바 | 이제 모든 guava 종속성이 AEM에서 제거되었으므로 `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` 번들은 AEM의 일부가 아닙니다. | 고객이 guava에 의존하는 경우 고객이 직접 guava를 추가하거나 가능한 경우 guava 코드를 java 컬렉션 또는 기타 대체 요소로 대체할 수 있습니다. | 6.5LTS GA |
 | We.Retail | We-retail 샘플 사이트는 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
 | 공개 소스 | `oak-solr-osgi` 번들은 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
 | 공개 소스 | `org.apache.servicemix.bundles.abdera-parser`, `org.apache.servicemix.bundles.jdom` 및 `org.apache.sling.atom.taglib`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
-| 공개 소스 | 이제 `org.apache.commons.io packages`을(를) `org.apache.commons.commons-io`에서 내보냈습니다. | 변경할 필요가 없습니다. | 6.5LTS GA |
+| 공개 소스 | 이제 `org.apache.commons.commons-io`에서 `org.apache.commons.io`개의 패키지를 내보냅니다. | 변경할 필요가 없습니다. | 6.5LTS GA |
 | 공개 소스 | `com.sun.javax.mail` 번들에서 `javax.mail` 패키지를 내보내는 중입니다. | 변경할 필요가 없습니다. | 6.5LTS GA |
 | 공개 소스 | 이제 `org.apache.jackrabbit.oak-jackrabbit-api` 번들에서 `org.apache.jackrabbit.api` 패키지를 내보냅니다. | 변경할 필요가 없습니다. | 6.5LTS GA |
+| 공개 소스 | `com.github.jknack.handlebars`은(는) 지원되지 않습니다. | 관련 [버전](https://mvnrepository.com/artifact/com.github.jknack/handlebars) 선택 | 6.5LTS GA |
+
 
 ## 제한된 웹 사이트{#restricted-sites}
 
