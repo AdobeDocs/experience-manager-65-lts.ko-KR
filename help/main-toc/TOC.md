@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 4a13ad21a3ea4ce6a1db9dac459b2b9ffd0d27c3
+source-git-commit: fe361e43288ad0242faa1d82af086aee9fc7804b
 workflow-type: tm+mt
-source-wordcount: '7020'
+source-wordcount: '7044'
 ht-degree: 22%
 
 ---
@@ -1472,12 +1472,15 @@ ht-degree: 22%
          + [업그레이드 중 다운타임을 줄이기 위해 오프라인 리인덱싱을 사용](/help/sites-deploying/upgrade-offline-reindexing.md)
          + [소극적 컨텐츠 마이그레이션](/help/sites-deploying/lazy-content-migration.md)
          + [CRX2Oak 마이그레이션 도구 사용](/help/sites-deploying/using-crx2oak.md)
+         + [Oak 업그레이드를 사용하여 AEM 6.5에서 AEM 6.5로 LTS 컨텐츠 마이그레이션](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md)
          + [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
          + [업그레이드 후 확인 및 문제 해결](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [사용자 정의 검색 Forms 업그레이드](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [지속 가능한 업그레이드](/help/sites-deploying/sustainable-upgrades.md)
          + [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md)
          + [Application Server 설치 업그레이드 단계](/help/sites-deploying/app-server-upgrade.md)
+         + [WLP(Application Server 설치)에 대한 업그레이드 단계](/help/sites-deploying/app-server-upgrade-wlp.md)
+         + [Application Server 설치 업그레이드 단계(Tomcat)](/help/sites-deploying/app-server-upgrade-tomcat.md)
          + [업그레이드 후 제거된 오래된 번들 목록](/help/sites-deploying/obsolete-bundles.md)
       + 우수 사례 {#practices}
          + [모범 사례 배포](/help/sites-deploying/best-practices.md)
