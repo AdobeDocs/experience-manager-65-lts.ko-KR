@@ -9,7 +9,7 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1794'
 ht-degree: 33%
@@ -61,7 +61,7 @@ ht-degree: 33%
 
 ## 적응형 양식 만들기 {#create-an-adaptive-form}
 
-1. 로컬 [AEM 작성자 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/deploy.html?lang=en#author-and-publish-installs)에 로그인합니다.
+1. 로컬 [AEM 작성자 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html?lang=en#author-and-publish-installs)에 로그인합니다.
 
 1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. 로그인 후 왼쪽 상단 모서리에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms 및 문서]**&#x200B;를 선택합니다.
 

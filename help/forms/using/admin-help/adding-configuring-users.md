@@ -6,7 +6,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: eded255b54ff83f60f73cece8824c778d3a87680
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -175,4 +175,4 @@ MySQL을 사용하는 경우 사용자 ID에 확장 문자가 포함될 수 있�
 
 CQ는 기본 404 핸들러 jsp를 재정의하는 메커니즘을 제공합니다.
 
-오류 처리 페이지를 사용자 지정하는 방법에 대한 자세한 내용은 Adobe Experience Manager 설명서에서 [오류 처리기에 표시된 페이지 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/customizing-errorhandler-pages.html?lang=en)을 참조하십시오.
+오류 처리 페이지를 사용자 지정하는 방법에 대한 자세한 내용은 Adobe Experience Manager 설명서에서 [오류 처리기에 표시된 페이지 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en)을 참조하십시오.

@@ -6,7 +6,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '4534'
 ht-degree: 1%
@@ -87,7 +87,7 @@ ht-degree: 1%
    1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을(를) 선택합니다.
    2. 패키지의 버전 및 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
 1. **we-gov-forms.pkg.all-&lt;version>.zip** 패키지 이름을 선택하고 **[!UICONTROL EULA 약관 동의]**&#x200B;를 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
    ![we gov forms 패키지](assets/wegov_forms_package.jpg)

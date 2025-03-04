@@ -5,7 +5,7 @@ keywords: 사용자 지정 함수를 추가하고, 사용자 지정 함수를 �
 content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3385'
 ht-degree: 2%
@@ -571,7 +571,7 @@ JavaScript 파일(`Function.js` 파일)에 다음 코드를 추가하여 생년�
 
 >[!NOTE]
 >
-> 다음 [사용자 지정 함수](/help/forms/using/assets/customfunctions.zip) 폴더를 참조할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/en/docs/experience-manager-65-2025/content/sites/administering/contentmanagement/package-manager)를 사용하여 AEM 인스턴스에 이 폴더를 다운로드하여 설치하십시오.
+> 다음 [사용자 지정 함수](/help/forms/using/assets/customfunctions.zip) 폴더를 참조할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)를 사용하여 AEM 인스턴스에 이 폴더를 다운로드하여 설치하십시오.
 
 ### 사용자 지정 함수에서 비동기 함수 지원 {#support-of-async-functions}
 

@@ -6,7 +6,7 @@ topic-tags: author
 feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '5538'
 ht-degree: 1%
@@ -104,9 +104,9 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
 
 * **nosamplecontent** 실행 모드는 작성자에게만 권장되며 게시 노드에는 권장되지 않습니다.
 * 적응형 양식, 테마, 템플릿 또는 클라우드 구성과 같은 에셋 작성은 구성된 게시 노드에 게시할 수 있는 작성자 노드에서만 수행됩니다.
-자세한 내용은 [양식 및 문서 게시 및 게시 취소](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)를 참조하십시오.
+자세한 내용은 [양식 및 문서 게시 및 게시 취소](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)를 참조하십시오.
 * 문서 서비스 작업을 지원하기 위한 작성 및 게시에 Forms addon 패키지가 필요하므로 종속성으로 간주할 수 있습니다.
-Forms 관련 샘플 템플릿, 테마 및 DOR 패키지만 원하는 경우 [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)에서 다운로드할 수 있습니다.
+Forms 관련 샘플 템플릿, 테마 및 DOR 패키지만 원하는 경우 [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)에서 다운로드할 수 있습니다.
 
 자세한 내용은 [적응형 양식 작성 소개](/help/forms/using/introduction-forms-authoring.md)의 모범 사례를 참조하십시오.
 
@@ -328,7 +328,7 @@ AEM은 적응형 양식을 현지화하는 데 사용할 수 있는 번역 워�
 
 * 웹 서버 압축 모듈을 통해 HTML을 활성화합니다. 자세한 내용은 [AEM Forms 서버의 성능 조정](/help/forms/using/performance-tuning-aem-forms.md)을 참조하십시오.
 * 대형 양식에 대한 요청 구성당 호출 수를 늘립니다. [크고 복잡한 양식의 성능 최적화](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms)를 참조하십시오.
-* [오류 처리기에 표시되는 사용자 지정 오류 페이지를 만듭니다](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/customizing-errorhandler-pages.html).
+* [오류 처리기에 표시되는 사용자 지정 오류 페이지를 만듭니다](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html).
 * 보안 AEM Forms 서버.
 
    * 프로덕션 서버에 배포된 샘플 콘텐츠 및 샘플 사용자가 없도록 하려면 `nosamplecontent` 실행 모드를 사용하십시오. [프로덕션 준비 모드에서 AEM 실행](/help/sites-administering/production-ready.md)을 참조하십시오.

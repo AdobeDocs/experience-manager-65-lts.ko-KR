@@ -8,7 +8,7 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 0%
@@ -119,7 +119,7 @@ MongoDB 백엔드가 있는 시스템에서 AEM은 부하 또는 성능 테스�
 1. /crx-quickstart/install 폴더 아래에 놓습니다.
 
 >[!NOTE]
->[AEM 6.x 보기 | 성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/configuring-performance.html)
+>[AEM 6.x 보기 | 성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)
 
 기본 설정은 10,000이지만 대부분의 배포에서는 20,000 또는 50,000으로 설정해야 합니다.
 
@@ -147,7 +147,7 @@ MongoDB 백엔드가 있는 시스템에서 AEM은 부하 또는 성능 테스�
 * 오류 로그에서 오류 또는 경고를 확인하십시오. 자세한 내용은 [로깅](/help/sites-deploying/configure-logging.md)을 참조하십시오.
 * 메모리 및 CPU 사용률, 디스크 I/O 또는 네트워크 I/O와 같은 시스템 하드웨어 리소스를 모니터링합니다. 이러한 리소스는 종종 성능 병목 현상의 원인입니다.
 * 페이지의 아키텍처 및 페이지 처리 방법을 최적화하여 URL 매개 변수의 사용을 최소화하여 가능한 한 많은 캐싱을 허용합니다.
-* [성능 최적화](/help/sites-deploying/configuring-performance.md) 및 [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/configuring-performance.html) 설명서를 따르십시오.
+* [성능 최적화](/help/sites-deploying/configuring-performance.md) 및 [성능 조정 팁](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html) 설명서를 따르십시오.
 
 * 작성자 인스턴스에서 특정 페이지 또는 구성 요소를 편집하는 데 문제가 있는 경우 TouchUI 개발자 모드를 사용하여 해당 페이지를 검사합니다. 이렇게 하면 페이지의 각 콘텐츠 영역과 로드 시간에 대한 분류가 제공됩니다.
 * 사이트의 모든 JS 및 CSS를 축소합니다. 이 [블로그 게시물](https://blogs.adobe.com/foxes/enable-js-and-css-minification/)을 참조하세요.

@@ -4,7 +4,7 @@ description: OAuth 2.0 클라이언트 자격 증명 플로우를 사용하여 S
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 68%
@@ -69,4 +69,4 @@ Salesforce 애플리케이션과 AEM 환경 간의 통신을 설정하기 전에
 1. **[!UICONTROL 연결 테스트]**&#x200B;를 클릭합니다.
 1. 연결에 성공하면 **[!UICONTROL 만들기]** 버튼을 클릭합니다.
 
-이제 [양식 데이터 모델을 만들어](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/form-data-model/create-form-data-models.html?lang=en)적응형 Forms과 구성된 데이터 원본을 통합할 수 있습니다.
+이제 [양식 데이터 모델을 만들어](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/form-data-model/create-form-data-models.html?lang=en)적응형 Forms과 구성된 데이터 원본을 통합할 수 있습니다.

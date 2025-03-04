@@ -7,7 +7,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Release Information
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 39%
@@ -24,7 +24,7 @@ ht-degree: 39%
 
 ## Adobe Experience Manager 6.5 Forms 서비스 팩 19(6.5.19.0)에 포함된 항목
 
-Experience Manager 6.5.19.0에는 2019년 4월 6.5의 최초 출시 이후 릴리스된 새로운 기능, 주요 고객 요청 개선 사항, 버그 수정 사항 및 성능, 안정성, 보안 개선 사항이 포함되어 있습니다. Experience Manager 6.5에서 [이 서비스 팩을 설치](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html)합니다.
+Experience Manager 6.5.19.0에는 2019년 4월 6.5의 최초 출시 이후 릴리스된 새로운 기능, 주요 고객 요청 개선 사항, 버그 수정 사항 및 성능, 안정성, 보안 개선 사항이 포함되어 있습니다. Experience Manager 6.5에서 [이 서비스 팩을 설치](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html)합니다.
 
 ### 새로운 기능
 
@@ -60,12 +60,12 @@ XMLFM의 64비트 반복은 향상된 성능, 확장성 및 정교한 메모리 
 
 ## 버그 수정
 
-이 릴리스에는 고객이 보고한 20개 이상의 문제에 대한 수정 사항도 포함되어 있습니다. 서비스 팩에 포함된 자세한 수정 사항 목록은 [릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/release-notes.html?lang=en#forms-6519)를 참조하십시오.
+이 릴리스에는 고객이 보고한 20개 이상의 문제에 대한 수정 사항도 포함되어 있습니다. 서비스 팩에 포함된 자세한 수정 사항 목록은 [릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html?lang=en#forms-6519)를 참조하십시오.
 
 
 ## 서비스 팩 설치
 
-서비스 팩은 JEE의 AEM Forms과 OSGi의 AEM Forms 모두에 대한 새로운 기능과 버그 수정 사항을 제공합니다. 설치 지침이 이전 서비스 팩과 비교하여 변경되었습니다. 설치 지침은 [AEM Forms 서비스 팩 설치 지침](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)을 참조하십시오.
+서비스 팩은 JEE의 AEM Forms과 OSGi의 AEM Forms 모두에 대한 새로운 기능과 버그 수정 사항을 제공합니다. 설치 지침이 이전 서비스 팩과 비교하여 변경되었습니다. 설치 지침은 [AEM Forms 서비스 팩 설치 지침](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)을 참조하십시오.
 
 
 

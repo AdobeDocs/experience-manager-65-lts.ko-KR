@@ -4,7 +4,7 @@ description: 비즈니스 클래스, 대화형 및 반응형 양식을 만드는
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 9bb44a58e919fd038c83cab89620256501137bef
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 5%
@@ -42,7 +42,7 @@ ht-degree: 5%
 
 ### 전제 조건 {#prerequisite}
 
-* [AEM 작성자 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs) 설정
+* [AEM 작성자 인스턴스](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs) 설정
 * 작성자 인스턴스에 [AEM Forms 추가 기능](../../forms/using/installing-configuring-aem-forms-osgi.md)을(를) 설치합니다.
 * 데이터베이스 공급자로부터 JDBC 데이터베이스 드라이버(JAR 파일)를 가져옵니다. 자습서의 예제는 [!DNL MySQL] 데이터베이스를 기반으로 하며 [!DNL Oracle's] [MySQL JDBC 데이터베이스 드라이버](https://dev.mysql.com/downloads/connector/j/5.1.html)를 사용합니다.
 

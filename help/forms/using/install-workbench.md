@@ -6,7 +6,7 @@ topic-tags: author
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -36,11 +36,11 @@ ht-degree: 0%
   </tr>
   <tr>
    <td><p>AEM Forms 및 다른 Adobe 제품과 통합하는 방법에 대한 일반 정보</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms 개요</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms 개요</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>AEM Forms에 사용할 수 있는 모든 설명서</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms 설명서</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms 설명서</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>이 제품 버전에 대한 패치 업데이트, 기술 참고 사항 및 추가 정보</p> </td>
@@ -114,7 +114,7 @@ Workbench는 개발자와 양식 작성자가 자동화된 비즈니스 프로�
   </tr>
   <tr>
    <td><p>Acrobat Pro 또는 Acrobat Pro Extended(Designer 포함)</p> </td>
-   <td><p>없음.<br /> 
+   <td><p>없음<br /> 
 Workbench 설치는 Acrobat Pro 또는 Acrobat Pro Extended와 함께 설치된 컴퓨터에서 Designer 인스턴스를 검색합니다.<br />
 동일한 시스템에 다른 버전의 Designer을 함께 사용할 수 있습니다(예: Workbench 6.4용 Designer 6.4.x 및 Workbench 6.5용 Designer 6.5.0.x). Acrobat 10 Pro 또는 Acrobat 10 Pro Extended 이상과 함께 설치된 Designer 버전은 제거할 필요가 없습니다.
 <br /></p> </td>
@@ -190,7 +190,7 @@ Workbench를 사용하려면 일반적으로 별도의 컴퓨터에서 실행 �
 
 ### 시간 초과 설정 구성 {#configuring-timeout-settings}
 
-기본적으로 Workbench는 활동 또는 비활동에 관계없이 2시간 후에 시간 초과됩니다. 시간 제한 설정을 편집하려면 <a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">관리 콘솔 도움말</a>에서 &quot;사용자 관리 구성 > 고급 시스템 특성 구성&quot;을 참조하십시오.
+기본적으로 Workbench는 활동 또는 비활동에 관계없이 2시간 후에 시간 초과됩니다. 시간 제한 설정을 편집하려면 <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">관리 콘솔 도움말</a>에서 &quot;사용자 관리 구성 > 고급 시스템 특성 구성&quot;을 참조하십시오.
 
 ### HTTPS를 통해 연결하도록 Workbench 구성 {#configuring-workbench-to-connect-over-HTTPS}
 

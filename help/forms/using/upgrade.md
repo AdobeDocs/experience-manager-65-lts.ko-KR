@@ -8,7 +8,7 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 6%
@@ -70,7 +70,7 @@ JEE의 AEM 6.5.18.0 Forms에서는 두 가지 유형의 설치 관리자를 제�
 
 ![전체 설치 관리자 및 패치 설치 관리자](/help/forms/using/assets/full-and-patch-installer.png)
 
-JEE 환경의 최신 서비스 팩을 설치하려면 [AEM 6.5 Forms 서비스 팩 설치 지침](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html) 문서를 참조하십시오.
+JEE 환경의 최신 서비스 팩을 설치하려면 [AEM 6.5 Forms 서비스 팩 설치 지침](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html) 문서를 참조하십시오.
 
 <!--
 [Work in Progress]

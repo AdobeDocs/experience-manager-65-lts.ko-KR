@@ -4,7 +4,7 @@ description: AEM Forms 서버는 JEE 서버와 OSGi 서버에서 모든 서비�
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 3%
@@ -26,4 +26,4 @@ AEM Forms 서버가 완전히 작동하고 모든 애플리케이션이 실행 �
 
 ## 솔루션 {#solution}
 
-이 문제를 해결하려면 서버를 시작하는 동안 [일괄 처리 파일](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example)에 인수 `Dcom.adobe.livecycle.dsc.deferServiceStart=true`을(를) 추가하십시오.
+이 문제를 해결하려면 서버를 시작하는 동안 [일괄 처리 파일](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example)에 인수 `Dcom.adobe.livecycle.dsc.deferServiceStart=true`을(를) 추가하십시오.

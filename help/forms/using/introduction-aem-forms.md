@@ -8,7 +8,7 @@ docset: aem65
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 15%
@@ -36,7 +36,7 @@ AEM Forms은 적응형 양식뿐만 아니라 XFA 양식, PDF forms 및 관련 �
 
 >[!NOTE]
 >
->[AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/deploy.html)에서 사용 가능한 적응형 양식 기능은 탐색 및 평가 목적으로만 사용하도록 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
+>[AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html)에서 사용 가능한 적응형 양식 기능은 탐색 및 평가 목적으로만 사용하도록 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
 
 ![AEM forms 기능](do-not-localize/4th-draft-updated.gif)
 

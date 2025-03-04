@@ -5,7 +5,7 @@ keywords: 핵심 구성 요소, 핵심 구성 요소 적응형 Forms, 6.5의 핵
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 8efb1eb0b4a69cf59fa5853aa335dbf3d6061185
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 11%
@@ -31,7 +31,7 @@ AEM 6.5 Forms 환경에서 적응형 Forms 핵심 구성 요소를 활성화하�
 
 AEM 6.5 Forms 환경에서 적응형 Forms 핵심 구성 요소를 활성화하기 전에:
 
-* [AEM 6.5 Forms 서비스 팩 16(6.5.16.0) 이상으로 업그레이드](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html).
+* [AEM 6.5 Forms 서비스 팩 16(6.5.16.0) 이상으로 업그레이드](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html).
 
 * [Apache Maven](https://maven.apache.org/download.cgi)의 최신 릴리스를 설치하십시오.
 
@@ -130,7 +130,7 @@ AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype)
 
    AEM Archetype 프로젝트가 빌드되면 AEM 패키지가 생성됩니다. 패키지는 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip에서 찾을 수 있습니다.
 
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/package-manager.html?lang=en)를 사용하여 모든 작성자 및 게시 인스턴스에 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip 패키지를 배포하십시오.
+1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en)를 사용하여 모든 작성자 및 게시 인스턴스에 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip 패키지를 배포하십시오.
 
 >[!NOTE]
 >

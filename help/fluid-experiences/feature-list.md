@@ -5,7 +5,7 @@ index: n
 feature: Authoring
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 86%
@@ -16,7 +16,7 @@ ht-degree: 86%
 
 Adobe Experience Manager Fluid Experiences는 헤드리스 컨텐츠 게재를 위한 탄탄한 솔루션을 제공하기 위해 AEM Sites, AEM Dynamic Media 및 AEM Assets의 강력한 기능 세트에서 도출됩니다.
 
-AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점에서 기존의 AEM과 차별화됩니다. 제목이 많은 컨텐츠 제작 및 게재와 하이브리드 사용 사례에 대한 AEM의 강력한 지원은 [전체 AEM Sites, Assets 및 Dynamic Media 솔루션](https://experienceleague.adobe.com/docs/experience-manager-65-2025/user-guide/home.html)에서 사용할 수 있습니다.
+AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점에서 기존의 AEM과 차별화됩니다. 제목이 많은 컨텐츠 제작 및 게재와 하이브리드 사용 사례에 대한 AEM의 강력한 지원은 [전체 AEM Sites, Assets 및 Dynamic Media 솔루션](https://experienceleague.adobe.com/docs/experience-manager-65-lts/user-guide/home.html)에서 사용할 수 있습니다.
 
 다음 테이블에서는 AEM Fluid Experiences의 기능을 정의하고 적절한 지원 설명서에 연결합니다.
 

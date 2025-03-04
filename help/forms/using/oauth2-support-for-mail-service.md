@@ -4,7 +4,7 @@ description: Microsoft&reg(Forms JEE OAuth), Office 365 메일 서버 프로토�
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 5%
@@ -150,7 +150,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   > 작업 알림과 관련된 자세한 정보를 보려면 [여기를 클릭하세요](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > 작업 알림과 관련된 자세한 정보를 보려면 [여기를 클릭하세요](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## 이메일 엔드포인트를 구성하려면 {#configure_email_endpoint}
 
@@ -164,7 +164,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   > 전자 메일 끝점 구성에 대한 자세한 내용을 보려면 [전자 메일 끝점 구성](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-email-endpoints.html)을 클릭하세요.
+   > 전자 메일 끝점 구성에 대한 자세한 내용을 보려면 [전자 메일 끝점 구성](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html)을 클릭하세요.
 
 ## 문제 해결 {#troubleshooting}
 

@@ -11,7 +11,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3792'
 ht-degree: 8%
@@ -403,7 +403,7 @@ Dynamic Media 이미지 사전 설정을 만들면 미리 보거나 게시할 �
     </ul>
     <div>
       선명하게 하기는에 설명되어 있습니다.
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/sharpening_images.pdf">이미지 선명하게 하기</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf">이미지 선명하게 하기</a>.
     </div> </td>
   </tr>
   <tr>

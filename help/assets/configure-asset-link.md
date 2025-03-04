@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 238ff31ed4e5e833a14cb64e3eae75377038a857
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3059'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Asset Link에 사용할 Experience Manager Assets을 구성하려면 다음 작�
 
 1. Creative Cloud 라이선스 사용자를 Experience Manager 사용자와 매핑하려면 [사용자 액세스 제어](#user-access)를 관리하세요.
 
-1. [사용자 지정 쿼리 인덱스](#create-custom-index)을(를) 만들고, InDesign에 대해 [FPO 렌디션](/help/assets/configure-fpo-renditions.md)을(를) 구성하고, [Adobe Stock 통합](/help/assets/aem-assets-adobe-stock.md)을(를) 구성하고, [시각적 또는 유사성 검색](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch)을(를) 구성합니다.
+1. [사용자 지정 쿼리 인덱스](#create-custom-index)을(를) 만들고, InDesign에 대해 [FPO 렌디션](/help/assets/configure-fpo-renditions.md)을(를) 구성하고, [Adobe Stock 통합](/help/assets/aem-assets-adobe-stock.md)을(를) 구성하고, [시각적 또는 유사성 검색](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch)을(를) 구성합니다.
 
 ## 다양한 기능에 대한 사전 요구 사항 및 지원 {#prerequisites}
 
@@ -242,7 +242,7 @@ Experience Manager 6.4 및 Experience Manager 6.5에서 관리자는 사전 정�
 
 이 구성은 비즈니스 계열 사용자와 마케터가 몇 개의 특정 폴더에 사용자 지정 워크플로우를 만드는 등의 경우에 유용합니다. 기획사 사진 촬영의 모든 에셋은 워터마크가 될 수도 있고 프리랜서가 업로드한 모든 에셋을 가공하여 특정 렌디션을 만들 수도 있다고 가정해 보겠습니다.
 
-자세한 내용 및 Experience Manager 구성에 대해서는 [자산에 대한 자동 실행 워크플로](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets)를 참조하십시오.
+자세한 내용 및 Experience Manager 구성에 대해서는 [자산에 대한 자동 실행 워크플로](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets)를 참조하십시오.
 
 
 ## Experience Manager 6.4.x 버전에서 사용자 지정 인덱스 만들기 {#create-custom-index}
@@ -260,7 +260,7 @@ Experience Manager에는 쿼리에 사용되는 인덱스가 포함되어 있습
 
 ## 시각적 또는 유사성 검색 구성 {#configure-visual-similarity-search}
 
-시각적 검색 기능을 사용하면 AEM Assets Asset Link 패널을 사용하여 Adobe 저장소에서 시각적으로 유사한 에셋을 검색할 수 있습니다. 이 기능은 6.5.0 이상 버전에서 사용할 수 있으며 인덱싱된 에셋만 검색됩니다. 자세한 내용은 [시각적 검색을 구성하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch)을 참조하세요.
+시각적 검색 기능을 사용하면 AEM Assets Asset Link 패널을 사용하여 Adobe 저장소에서 시각적으로 유사한 에셋을 검색할 수 있습니다. 이 기능은 6.5.0 이상 버전에서 사용할 수 있으며 인덱싱된 에셋만 검색됩니다. 자세한 내용은 [시각적 검색을 구성하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch)을 참조하세요.
 
 ## Adobe InDesign에 대한 배치 전용 렌디션 생성 {#fpo-renditions}
 

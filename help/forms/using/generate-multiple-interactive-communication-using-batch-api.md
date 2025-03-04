@@ -8,7 +8,7 @@ topic-tags: interactive-communication
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 4%
@@ -86,7 +86,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
    1. 폴더의 **[!UICONTROL 이름]** 및 실제 **[!UICONTROL 경로]**&#x200B;을(를) 지정하십시오. 예: `c:\batchprocessing`
    1. **[!UICONTROL 다음을 사용하여 파일 처리]** 필드에서 **[!UICONTROL 서비스]** 옵션을 선택합니다.
    1. **[!UICONTROL 서비스 이름]** 필드에서 **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** 서비스를 선택합니다.
-   1. **[!UICONTROL 출력 파일 패턴]**&#x200B;을 지정하십시오. 예를들어 %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns)은(는) 감시 폴더가 감시 폴더\입력 폴더의 하위 폴더에서 입력 파일을 찾을 수 있도록 지정합니다.
+   1. **[!UICONTROL 출력 파일 패턴]**&#x200B;을 지정하십시오. 예를들어 %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns)은(는) 감시 폴더가 감시 폴더\입력 폴더의 하위 폴더에서 입력 파일을 찾을 수 있도록 지정합니다.
 1. 고급 매개 변수를 구성합니다.
    1. **[!UICONTROL 고급]** 탭을 열고 다음 사용자 지정 속성을 추가하십시오.
 
@@ -146,7 +146,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
    1. 폴더의 **[!UICONTROL 이름]** 및 실제 **[!UICONTROL 경로]**&#x200B;을(를) 지정하십시오. 예: `c:\batchprocessing`
    1. **[!UICONTROL 다음을 사용하여 파일 처리]** 필드에서 **[!UICONTROL 서비스]** 옵션을 선택합니다.
    1. **[!UICONTROL 서비스 이름]** 필드에서 **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** 서비스를 선택합니다.
-   1. **[!UICONTROL 출력 파일 패턴]**&#x200B;을 지정하십시오. 예를들어 %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns)은(는) 감시 폴더가 감시 폴더\입력 폴더의 하위 폴더에서 입력 파일을 찾을 수 있도록 지정합니다.
+   1. **[!UICONTROL 출력 파일 패턴]**&#x200B;을 지정하십시오. 예를들어 %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns)은(는) 감시 폴더가 감시 폴더\입력 폴더의 하위 폴더에서 입력 파일을 찾을 수 있도록 지정합니다.
 1. 고급 매개 변수를 구성합니다.
    1. **[!UICONTROL 고급]** 탭을 열고 다음 사용자 지정 속성을 추가하십시오.
 
@@ -362,4 +362,4 @@ JSON 파일이 `C:\batch\mergedJsonPath.json`에 있고 아래 대화형 통신 
 
 >[!NOTE]
 >
->CRX 프로토콜만 기본적으로 활성화됩니다. 지원되는 다른 프로토콜을 사용하려면 [구성 관리자를 사용하여 미리 채우기 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en)을 참조하세요.
+>CRX 프로토콜만 기본적으로 활성화됩니다. 지원되는 다른 프로토콜을 사용하려면 [구성 관리자를 사용하여 미리 채우기 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en)을 참조하세요.

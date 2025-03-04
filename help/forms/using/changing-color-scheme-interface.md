@@ -8,7 +8,7 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -30,7 +30,7 @@ AEM Forms 작업 영역 상단에 있는 탐색 모음을 업데이트하려면
 
    >[!NOTE]
    >
-   >자세한 내용은 [WebDAV 액세스](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/webdav-access.html?lang=en)를 참조하십시오.
+   >자세한 내용은 [WebDAV 액세스](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en)를 참조하십시오.
 
 1. 다음 스타일을 추가하여 /apps/ws/css/newStyle.css에서 새 배경 이미지를 참조합니다.
 

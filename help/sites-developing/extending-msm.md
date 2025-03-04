@@ -9,7 +9,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 53%
@@ -31,8 +31,8 @@ ht-degree: 53%
 >이 페이지는 [콘텐츠 재사용: 다중 사이트 관리자](/help/sites-administering/msm.md)와 함께 읽어야 합니다.
 >
 >다음 Sites 저장소 재구성 섹션도 관심을 가질 수 있습니다.
->* [다중 사이트 관리자 블루프린트 구성](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
->* [다중 사이트 관리자 롤아웃 구성](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
+>* [다중 사이트 관리자 블루프린트 구성](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
+>* [다중 사이트 관리자 롤아웃 구성](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >

@@ -4,7 +4,7 @@ description: Adobe Developer App Builder을 사용하여  [!DNL Adobe Experience
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -29,7 +29,7 @@ App Builder은 2020년 여름부터 Adobe의 개발자 미리보기를 통해 �
 
 >[!NOTE]
 >
->App Builder을 사용하려는 AEM as a Cloud Service 고객의 경우 [Adobe Developer App Builder을 사용하여 Adobe Experience Manager as a Cloud Service 확장](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/extending-aem/app-builder.html)을 참조하십시오.
+>App Builder을 사용하려는 AEM as a Cloud Service 고객의 경우 [Adobe Developer App Builder을 사용하여 Adobe Experience Manager as a Cloud Service 확장](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/app-builder.html)을 참조하십시오.
 
 ## 아키텍처 {#architecture}
 

@@ -9,7 +9,7 @@ discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 86%
@@ -186,7 +186,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 ## 규칙 편집기를 통해 오류 핸들러 추가 {#add-error-handler-using-rule-editor}
 
-[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 작업을 통해 적응형 양식과 함께 사용되는 데이터 소스를 기반으로 유효성 검사 기준을 정의합니다. RESTful 웹 서비스를 데이터 소스로 사용하는 경우, Swagger 정의 파일에서 유효성 검사 기준을 정의할 수 있습니다. 적응형 양식에서 오류 핸들러 함수와 규칙 편집기를 사용하여 오류 처리를 효과적으로 관리하고 사용자 정의할 수 있습니다. 규칙이 트리거되면 규칙 편집기를 통해 조건을 정의하고 원하는 작업을 구성하여 수행할 수 있습니다. 적응형 양식에서는 사전 설정된 유효성 검사 기준에 따라 필드에 제공되는 입력의 유효성을 검사합니다. 입력 값이 유효성 검사 기준을 충족하지 않는 경우, 오류 메시지가 적응형 양식의 필드 수준에 표시됩니다.
+[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 작업을 통해 적응형 양식과 함께 사용되는 데이터 소스를 기반으로 유효성 검사 기준을 정의합니다. RESTful 웹 서비스를 데이터 소스로 사용하는 경우, Swagger 정의 파일에서 유효성 검사 기준을 정의할 수 있습니다. 적응형 양식에서 오류 핸들러 함수와 규칙 편집기를 사용하여 오류 처리를 효과적으로 관리하고 사용자 정의할 수 있습니다. 규칙이 트리거되면 규칙 편집기를 통해 조건을 정의하고 원하는 작업을 구성하여 수행할 수 있습니다. 적응형 양식에서는 사전 설정된 유효성 검사 기준에 따라 필드에 제공되는 입력의 유효성을 검사합니다. 입력 값이 유효성 검사 기준을 충족하지 않는 경우, 오류 메시지가 적응형 양식의 필드 수준에 표시됩니다.
 
 >[!NOTE]
 >
@@ -202,7 +202,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 ### 기본 오류 핸들러 함수 추가 {#add-default-errror-handler}
 
 오류 응답이 표준 스키마나 서버측 유효성 검사 실패에 있는 경우, 기본 오류 핸들러를 지원하여 오류 응답을 필드에 표시합니다.
-[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 작업을 통해 기본 오류 핸들러를 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 기본 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인합니다(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`). 규칙 편집기의 서비스 호출 작업을 통해 기본 오류 핸들러를 추가하려면 다음 단계를 실행합니다.
+[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 작업을 통해 기본 오류 핸들러를 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 기본 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인합니다(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`). 규칙 편집기의 서비스 호출 작업을 통해 기본 오류 핸들러를 추가하려면 다음 단계를 실행합니다.
 
 1. 작성 모드에서 적응형 양식을 열고 양식 구성 요소를 선택한 다음 **[!UICONTROL 규칙 편집기]**&#x200B;를 선택하여 규칙 편집기를 엽니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
@@ -231,7 +231,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 사용자 정의 오류 핸들러는 외부 서비스에서 반환된 오류에 응답하고, 최종 사용자에게 사용자 정의된 응답을 게재하도록 설계된 함수(클라이언트 라이브러리)입니다. 주석 `@errorHandler`가 포함된 모든 클라이언트 라이브러리는 사용자 정의 오류 핸들러 함수로 간주됩니다. 이 주석은 `.js` 파일에 지정된 오류 처리기 함수를 식별하는 데 도움이 됩니다.
 
-[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 작업을 통해 사용자 정의 오류 핸들러를 만들고 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 사용자 정의 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인하십시오(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`).
+[규칙 편집기의 호출 서비스](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) 작업을 통해 사용자 정의 오류 핸들러를 만들고 사용하는 방법을 이해하려면 두 필드, **펫 ID** 및 **펫 이름**&#x200B;을 사용하여 간단한 적응형 양식의 예를 살펴본 다음 **펫 ID** 필드의 사용자 정의 오류 핸들러를 사용하여 외부 서비스를 호출하도록 구성된 REST 엔드포인트에서 반환된 다양한 오류를 확인하십시오(예: `200 - OK`,`404 - Not Found`, `400 - Bad Request`).
 
 적응형 양식에서 사용자 정의 오류 핸들러를 추가하고 사용하려면 다음 단계를 수행합니다.
 

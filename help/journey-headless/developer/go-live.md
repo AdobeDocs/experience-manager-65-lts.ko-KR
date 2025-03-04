@@ -4,7 +4,7 @@ description: 이 AEM Headless 개발자 여정 부분에서는 Headless 애플�
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 53%
@@ -216,7 +216,7 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 
 ## 추가 리소스 {#additional-resources}
 
-* [AEM 개발 가이드](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/introduction/the-basics.html)
+* [AEM 개발 가이드](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/the-basics.html)
 
 * [WKND 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
 
@@ -226,7 +226,7 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 
    * [CDN 캐시 제어](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
-   * [CDN 재작성기](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/osgi-configuration-settings.html) 구성(*CDN 재작성기 검색*)
+   * [CDN 재작성기](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/osgi-configuration-settings.html) 구성(*CDN 재작성기 검색*)
 
 * [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
 * [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

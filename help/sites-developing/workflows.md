@@ -8,7 +8,7 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: eff477824f2d1e5dfe5417835e8ced4b7eb85a0f
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 3%
@@ -39,7 +39,7 @@ AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, �
 >
 >* 워크플로우에 참여하려면 [워크플로우 사용](/help/sites-authoring/workflows.md)을 참조하세요.
 >* 워크플로우 및 워크플로우 인스턴스 관리는 [워크플로우 관리](/help/sites-administering/workflows.md)를 참조하십시오.
->* 전체 커뮤니티 문서에 대한 자세한 내용은 [Adobe Experience Manager 워크플로를 사용하여 디지털 Assets 수정](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html)을 참조하십시오.
+>* 전체 커뮤니티 문서에 대한 자세한 내용은 [Adobe Experience Manager 워크플로를 사용하여 디지털 Assets 수정](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html)을 참조하십시오.
 >* [워크플로우에 대한 AEM 전문가에게 문의](https://communities.adobeconnect.com/p5s33iburd54/)를 참조하십시오.
 >* 정보 위치를 변경하려면 [워크플로우 모범 사례 - 위치](/help/sites-developing/workflows-best-practices.md#locations)를 참조하세요.
 >

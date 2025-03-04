@@ -10,7 +10,7 @@ tagskeywords: querybuilder
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 0%
@@ -31,7 +31,7 @@ REST API는 JSON으로 전송되는 응답과 함께 HTTP를 통해 동일한 �
 
 >[!NOTE]
 >
->QueryBuilder API는 JCR API를 사용하여 빌드됩니다. OSGi 번들 내에서 JCR API를 사용하여 Adobe Experience Manager JCR을 쿼리할 수도 있습니다. 자세한 내용은 [JCR API를 사용하는 Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/access-jcr.html)를 참조하십시오.
+>QueryBuilder API는 JCR API를 사용하여 빌드됩니다. OSGi 번들 내에서 JCR API를 사용하여 Adobe Experience Manager JCR을 쿼리할 수도 있습니다. 자세한 내용은 [JCR API를 사용하는 Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/access-jcr.html)를 참조하십시오.
 
 ## Gem 세션 {#gem-session}
 

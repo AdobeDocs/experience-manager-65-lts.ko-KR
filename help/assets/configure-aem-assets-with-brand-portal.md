@@ -9,7 +9,7 @@ feature: Brand Portal
 role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 21%
@@ -76,11 +76,11 @@ AEM 작성자 인스턴스를 설정하려면 AEM 6.5가 있어야 합니다. AE
 
 * Adobe 파트너인 경우 [Adobe 파트너 교육 프로그램](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)을 사용하여 AEM 6.5를 요청하십시오.
 
-AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 [배포 및 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/deploy.html#default-local-install)를 참조하십시오.
+AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 [배포 및 유지 관리](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html#default-local-install)를 참조하십시오.
 
 ### AEM 최신 서비스 팩 다운로드 및 설치 {#servicepack}
 
-자세한 지침은 현재 [AEM 6.5 서비스 팩 릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/release-notes.html)를 참조하세요.
+자세한 지침은 현재 [AEM 6.5 서비스 팩 릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html)를 참조하세요.
 
 최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우 **Adobe 고객 지원 센터에 문의**&#x200B;하십시오.
 
@@ -122,11 +122,11 @@ Brand Portal을 사용하여 AEM Assets을 처음 구성하는 경우 나열된 
 
 #### Adobe Developer Console에서 OAuth 자격 증명 구성 {#config-oauth}
 
-[Adobe Developer Console에서 OAuth 자격 증명을 구성하고](https://experienceleague.adobe.com/en/docs/experience-manager-65-2025/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) Brand Portal API를 선택합니다.
+[Adobe Developer Console에서 OAuth 자격 증명을 구성하고](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console) Brand Portal API를 선택합니다.
 
 #### OAuth를 사용하여 새 Adobe IMS 통합 만들기 {#create-ims-account-configuration}
 
-[OAuth를 사용하여 새 Adobe IMS 통합을 만들고](https://experienceleague.adobe.com/en/docs/experience-manager-65-2025/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) 드롭다운에서 Brand Portal을 선택합니다.
+[OAuth를 사용하여 새 Adobe IMS 통합을 만들고](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) 드롭다운에서 Brand Portal을 선택합니다.
 
 #### 클라우드 서비스 구성 {#configure-cloud-service}
 

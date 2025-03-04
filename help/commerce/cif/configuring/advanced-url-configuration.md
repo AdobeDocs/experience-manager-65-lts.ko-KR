@@ -10,7 +10,7 @@ kt: 4933
 thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 따라서 많은 AEM 프로젝트에서 SEO 문제를 해결해야 합니다. 자세한 내용은 [SEO 및 URL 관리 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65-2025/managing/managing-further-reference/seo-and-url-management.html)를 참조하세요.
+>SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 따라서 많은 AEM 프로젝트에서 SEO 문제를 해결해야 합니다. 자세한 내용은 [SEO 및 URL 관리 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65-lts/managing/managing-further-reference/seo-and-url-management.html)를 참조하세요.
 
 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)는 제품 및 범주 페이지의 URL을 사용자 지정하는 고급 구성을 제공합니다. 많은 구현이 SEO(검색 엔진 최적화) 목적으로 이러한 URL을 사용자 지정합니다. 다음 비디오에서는 `UrlProvider` 서비스 및 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)의 기능을 구성하여 제품 및 범주 페이지의 URL을 사용자 지정하는 방법에 대해 자세히 설명합니다.
 
@@ -109,5 +109,5 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝
 ## 추가 리소스
 
 * [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM 리소스 매핑](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/resource-mapping.html)
+* [AEM 리소스 매핑](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/resource-mapping.html)
 * [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
