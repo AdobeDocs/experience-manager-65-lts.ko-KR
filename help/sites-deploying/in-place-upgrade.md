@@ -5,9 +5,9 @@ topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: c3df47efd4b13dcd8061e5cdac32a75fbf36df4b
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -16,23 +16,27 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 페이지에서는 AEM 6.5 LTS의 업그레이드 절차에 대해 간략히 설명합니다. 응용 프로그램 서버에 배포된 설치가 있는 경우 [응용 프로그램 서버 설치에 대한 업그레이드 단계](/help/sites-deploying/app-server-upgrade.md)를 참조하십시오.
+>이 페이지에서는 AEM 6.5 LTS의 즉각적 업그레이드 절차에 대해 간략히 설명합니다. 응용 프로그램 서버에 배포된 설치가 있는 경우 [응용 프로그램 서버 설치에 대한 업그레이드 단계](/help/sites-deploying/app-server-upgrade.md)를 참조하십시오.
 
 ## 업그레이드 전 단계 {#pre-upgrade-steps}
 
-업그레이드를 실행하기 전에 완료해야 하는 몇 가지 단계가 있습니다. 자세한 내용은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md) 및 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)을 참조하십시오. 또한 시스템이 AEM 6.5 LTS의 요구 사항을 충족하는지 확인하십시오. Analyzer를 통해 업그레이드의 복잡성을 추정하는 데 어떻게 도움이 되는지 알아보고, 자세한 내용은 [업그레이드 계획](/help/sites-deploying/upgrade-planning.md)의 업그레이드 범위 및 요구 사항 섹션을 참조하십시오.
+업그레이드를 실행하기 전에 완료해야 하는 몇 가지 단계가 있습니다. 자세한 내용은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md) 및 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)을 참조하십시오. 또한 시스템이 [AEM 6.5 LTS에 대한 요구 사항](/help/sites-deploying/technical-requirements.md)을 충족하는지 확인하고 [업그레이드 계획 고려 사항](/help/sites-deploying/upgrade-planning.md) 및 [Analyzer](/help/sites-deploying/pattern-detector.md)를 통해 복잡성을 추정하는 방법을 확인하십시오.
 
 <!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
-* **필요한 최소 Java 버전:** 시스템에 Oracle의 JRE 17이 설치되어 있는지 확인하십시오.
+* **필요한 최소 Java 버전:** 시스템에 Oracle의 Java™ 17이 설치되어 있는지 확인하십시오.
 
 ## AEM Quickstart jar 파일 준비 {#prep-quickstart-file}
 
+1. 새 AEM 6.5 LTS jar 파일 다운로드
+
+1. [올바른 업그레이드 시작 명령 확인](/help/sites-deploying/in-place-upgrade.md#determining-the-correct-upgrade-start-command-determining-the-correct-upgrade-start-command)
+
 1. 실행 중인 경우 인스턴스 중지
 
-1. 새 AEM 6.5 LTS jar 파일을 다운로드하여 `crx-quickstart` 폴더 외부의 이전 파일을 바꾸는 데 사용합니다.
+1. 새 AEM 6.5 LTS jar을 사용하여 `crx-quickstart` 폴더 외부의 이전 LTS Jar을 바꿉니다
 
 1. `sling.properties` 파일(일반적으로 `crx-quickstart/conf/`에 있음)을 백업한 다음 삭제합니다.
 
@@ -175,7 +179,7 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 >[!NOTE]
 >
->Java 17에서 일부 Java 8/11 인수에 대한 지원이 제거되었습니다. AEM 6.5 LTS(링크 스텁)에 대한 Java 인수 고려 사항 을 참조하십시오.
+>Java 17에서 일부 Java 8/11 인수에 대한 지원이 제거되었습니다. [Oracle Java™ 17 문서](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) 및 [AEM 6.5 LTS에 대한 Java&amp;trade 인수 고려 사항](https://git.corp.adobe.com/AdobeDocs/experience-manager-65-lts.en/blob/main/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)을 참조하십시오.
 
 업그레이드를 실행하려면 jar 파일을 사용하여 AEM을 시작하여 인스턴스를 불러오는 것이 중요합니다.
 
@@ -193,10 +197,10 @@ Where `/path/to/datastore` represents the path to your File Datastore.
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-1. 기존 jar(이 경우 `crx-quickstart/app/aem-quickstart*.jar`)에 대한 경로를 `crx-quickstart` 폴더의 형제 jar인 새 jar로 바꾸어 명령을 수정합니다. 이전 명령을 예로 들면 다음과 같습니다.
+1. 기존 jar(이 경우 `crx-quickstart/app/aem-quickstart*.jar`)에 대한 경로를 `crx-quickstart` 폴더의 형제 항목인 새 AEM 6.5 LTS jar로 대체하여 명령을 수정합니다. 이전 명령을 예로 들면 다음과 같습니다.
 
    ```shell
-   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.6.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar <AEM-6.5-LTS.jar> -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    이렇게 하면 모든 적절한 메모리 설정, 사용자 지정 실행 모드 및 기타 환경 매개 변수가 업그레이드에 적용됩니다. 업그레이드가 완료되면 이후 시작의 시작 스크립트에서 인스턴스를 시작할 수 있습니다.
