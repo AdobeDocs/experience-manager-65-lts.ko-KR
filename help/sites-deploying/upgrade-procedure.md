@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
+source-git-commit: ae78421de75518894f3996829e554acd9003a6d1
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,6 @@ AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 가
 1. 기본 작성자를 다시 시작하여 제대로 다시 시작되는지 확인합니다.
 1. 기본 작성자의 복제 에이전트를 비활성화합니다.
 1. 기본 작성자 인스턴스에서 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)을 실행합니다.
-1. 필요한 경우 기본 Mongo 인스턴스의 MongoDB를 WiredTiger가 있는 버전 3.2로 업그레이드합니다.
 
 ### 업그레이드 실행 {#Upgrade-execution-1}
 
@@ -114,7 +113,7 @@ AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 가
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. 업그레이드된 Mongo 인스턴스에 연결된 새 6.5.2025 작성자 인스턴스를 만듭니다.
+1. 업그레이드된 Mongo 인스턴스에 연결된 새 AEM 6.5 LTS 작성자 인스턴스를 만듭니다.
 
 1. 클러스터에서 제거된 MongoDB 노드를 다시 빌드합니다.
 
