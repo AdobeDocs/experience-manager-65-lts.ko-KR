@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: ac803ef9ac38380d7ce7fdf4490c428fd0039688
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ AEM 업그레이드 프로세스는 각 단계에 대해 정의된 주요 결과
 >
 >AEM 6.5 LTS로의 업그레이드는 마지막 6개의 서비스 팩에서 지원됩니다
 
-지원되는 운영 체제, Java™ 런타임, httpd 및 Dispatcher 버전을 실행 중인지 확인하는 것이 중요합니다. 자세한 내용은 TBD: AEM 6.5 LTS의 기술 요구 사항에 대한 링크를 참조하십시오. 이러한 구성 요소 업그레이드는 업그레이드 계획에서 고려해야 하며 AEM을 업그레이드하기 전에 수행해야 합니다.
+지원되는 운영 체제, Java™ 런타임, httpd 및 Dispatcher 버전을 실행 중인지 확인하는 것이 중요합니다. 자세한 내용은 [AEM 6.5 LTS에 대한 기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요. 이러한 구성 요소 업그레이드는 업그레이드 계획에서 고려해야 하며 AEM을 업그레이드하기 전에 수행해야 합니다.
 
 <!-- Alexandru: drafting for now
 
@@ -106,15 +106,15 @@ New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/rel
 
 ### 테스트 계획 만들기 {#creating-a-test-plan}
 
-각 고객의 AEM 구현은 고유하며 비즈니스 요구 사항을 충족하도록 사용자 정의되었습니다. 따라서 테스트 계획에 포함될 수 있도록 시스템에 적용된 모든 사용자 지정을 결정하는 것이 중요합니다. 이 테스트 계획은 Adobe이 업그레이드된 인스턴스에서 수행하는 QA 프로세스를 강화합니다.
+각 고객의 AEM 구현은 고유하며 비즈니스 요구 사항을 충족하도록 사용자 정의되었습니다. 따라서 테스트 계획에 포함될 수 있도록 시스템에 적용된 모든 사용자 지정을 결정하는 것이 중요합니다.
 
 모든 애플리케이션과 사용자 정의 코드가 원하는 대로 계속 실행되는지 확인하려면 업그레이드 후 정확한 프로덕션 환경을 복제하고 테스트해야 합니다. 모든 사용자 지정을 취소하고 성능, 로드 및 보안 테스트를 실행합니다. 테스트 계획을 구성할 때는 일상적인 작업에 사용되는 기본 UI 및 워크플로뿐만 아니라 시스템에 적용된 모든 사용자 지정 사항도 다루어야 합니다. 여기에는 사용자 지정 OSGI 서비스 및 서블릿, Adobe Experience Cloud에 대한 통합, AEM 커넥터를 통한 서드파티와의 통합, 사용자 지정 서드파티 통합, 사용자 지정 구성 요소 및 템플릿, AEM의 사용자 지정 UI 오버레이 및 사용자 지정 워크플로가 포함될 수 있습니다. 또한 사용자 정의 쿼리는 업그레이드 후에도 색인이 계속 효과적으로 작동하는지 확인하기 위해 계속 테스트해야 합니다.
 
 ### 업그레이드 복잡성 평가 {#assessing-upgrade-complexity}
 
-Adobe 고객이 AEM 환경에 적용하는 맞춤화의 양과 특성이 매우 다양하므로, 업그레이드 시 예상되는 전반적인 작업 수준을 파악하기 위해 미리 시간을 투자하는 것이 중요합니다. AEM용 Analyzer를 사용하면 업그레이드의 복잡성을 평가할 수 있습니다.
+Adobe 고객이 AEM 환경에 적용하는 맞춤화의 양과 특성이 매우 다양하므로, 업그레이드 시 예상되는 전반적인 작업 수준을 파악하기 위해 미리 시간을 투자하는 것이 중요합니다. [AEM 6.5 LTS용 AEM 분석기](/help/sites-deploying/pattern-detector.md)를 통해 업그레이드의 복잡성을 평가할 수 있습니다.
 
-AEM 6.5 LTS용 AEM Analyzer는 대부분의 경우 업그레이드 중에 예상되는 예측 기능을 상당히 정확하게 제공합니다. 그러나 변경 내용이 호환되지 않는 복잡한 사용자 지정 및 배포의 경우 [바로 업그레이드 수행](/help/sites-deploying/in-place-upgrade.md)의 지침에 따라 개발 인스턴스를 AEM 6.5 LTS로 업그레이드할 수 있습니다. 완료되면 이 환경에서 높은 수준의 스모크 테스트를 수행합니다. 이 연습의 목표는 테스트 사례 인벤토리를 완전히 완성하고 결함의 정식 인벤토리를 생성하는 것이 아니라 6.5 LTS 호환성을 위해 코드를 업그레이드하는 데 필요한 작업의 양을 대략적으로 추정하는 것입니다. 이전 섹션에서 결정된 아키텍처 변경 사항 및 AEM 분석기와 결합하면 프로젝트 관리 팀에 대략적인 견적을 제공하여 업그레이드를 계획할 수 있습니다.
+[AEM 6.5 LTS용 AEM Analyzer](/help/sites-deploying/pattern-detector.md)을(를) 사용하면 대부분의 경우 업그레이드 중에 예상할 수 있는 사항을 상당히 정확하게 예측할 수 있습니다. 그러나 변경 내용이 호환되지 않는 복잡한 사용자 지정 및 배포의 경우 [바로 업그레이드 수행](/help/sites-deploying/in-place-upgrade.md)의 지침에 따라 개발 인스턴스를 AEM 6.5 LTS로 업그레이드할 수 있습니다. 완료되면 이 환경에서 높은 수준의 스모크 테스트를 수행합니다. 이 연습의 목표는 테스트 사례 인벤토리를 완전히 완료하고 정식 결함 인벤토리를 작성하는 것이 아니라 AEM 6.5 LTS 호환성에 대한 코드를 업그레이드하는 데 필요한 작업 양에 대한 대략적인 견적을 제공하는 것입니다. [AEM 분석기](/help/sites-deploying/pattern-detector.md) 및 이전 섹션에서 결정된 아키텍처 변경 사항과 결합하면 프로젝트 관리 팀에 대략적인 견적을 제공하여 업그레이드를 계획할 수 있습니다.
 
 ### 업그레이드 및 롤백 Runbook 구축 {#building-the-upgrade-and-rollback-runbook}
 
@@ -128,7 +128,7 @@ Adobe은 [업그레이드 프로시저](/help/sites-deploying/upgrade-procedure.
 
 ### 업그레이드 계획 개발 {#developing-an-upgrade-plan}
 
-이전 연습의 결과를 사용하여 테스트 또는 개발 노력, 교육 및 실제 업그레이드 실행에 대한 예상 일정을 다루는 업그레이드 계획을 작성할 수 있습니다.
+이전 연습의 결과를 사용하여 테스트 또는 개발 노력의 예상 타임라인 및 실제 업그레이드 실행을 다루는 업그레이드 계획을 작성할 수 있습니다.
 
 <!--Alexandru: drafting for now
 
