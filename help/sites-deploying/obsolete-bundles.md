@@ -8,7 +8,7 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 34693070f2fcb5b468c72118cd5d5fc26d6d9dd0
+source-git-commit: 5b31b74b89334efcae647c216d2ae2be35545b22
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 업그레이드 후 제거된 오래된 번들 목록{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
-AEM 6.5.2025로 업그레이드하면 업그레이드가 수행된 AEM 6.5 servicepack 버전에 따라 다음 번들이 자동으로 제거됩니다.
+AEM 6.5 LTS로 업그레이드할 때 업그레이드가 수행된 AEM 6.5 servicepack 버전에 따라 다음 번들이 자동으로 제거됩니다.
 
 * com.adobe.cq.social.cq-social-activitystreams
 * com.adobe.cq.social.cq-social-as-provider
@@ -95,7 +95,7 @@ AEM 6.5.2025로 업그레이드하면 업그레이드가 수행된 AEM 6.5 servi
 * org.apache.jackrabbit.oak-solr-osgi
 * com.adobe.cq.cq-searchpromote-integration
 
-다음 번들은 새로운 AEM 6.5.2025 인스턴스에 포함되지 않습니다. 업그레이드 후 이러한 번들을 비활성 상태로 찾을 수 있습니다. 수동으로 제거할 수 있습니다.
+다음 번들은 새로운 AEM 6.5 LTS 인스턴스에 포함되지 않습니다. 업그레이드 후 이러한 번들을 비활성 상태로 찾을 수 있습니다. 수동으로 제거할 수 있습니다.
 
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
