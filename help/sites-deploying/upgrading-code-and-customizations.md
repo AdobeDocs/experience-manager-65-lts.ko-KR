@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 168e9f5865d20a53f9abed4bb90aceae9a1c7b6a
+source-git-commit: 3d4e458e4c96c547b94c08d100271ca6cf96f707
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -22,18 +22,15 @@ ht-degree: 0%
 업그레이드를 계획할 때 다음과 같은 구현 영역을 조사하고 해결해야 합니다.
 
 * [코드 베이스 업그레이드](#upgrade-code-base)
-* [6.5 저장소 구조와 일치](#align-repository-structure)
-* [AEM 사용자 지정](#aem-customizations)
 * [테스트 절차](#testing-procedure)
 
 ## 개요 {#overview}
 
-1. **AEM 분석기** - 업그레이드 계획에 설명되어 있고 [AEM 분석기를 사용한 업그레이드 복잡성 평가](/help/sites-deploying/pattern-detector.md) 페이지에서 자세히 설명한 대로 AEM 분석기를 실행합니다. AEM Target 버전에서 사용할 수 없는 API/번들 외에도 해결해야 하는 영역에 대한 자세한 내용을 포함하는 AEM Analyzer 보고서를 가져옵니다. PAEM Analyzer 보고서는 코드의 비호환성을 나타냅니다. 존재하지 않는 경우 배포는 이미 6.5 LTS와 호환됩니다. 6.5 LTS 기능을 사용하기 위해 새로운 개발을 수행하도록 선택할 수는 있지만, 단순히 호환성을 유지하기 위해 필요한 것은 아닙니다.
-
-1. **6.5 LTS용 코드 베이스 개발**- Target 버전의 코드 베이스에 대한 전용 분기 또는 저장소를 만듭니다. 업그레이드 전 호환성의 정보를 사용하여 업데이트할 코드 영역을 계획합니다.
-1. **6.5 LTS Uber jar로 컴파일**- 6.5.2025 uber jar를 가리키도록 코드 기반 POM을 업데이트하고 그에 대한 코드를 컴파일합니다.
+1. **AEM 분석기** - [AEM 분석기를 사용한 업그레이드 복잡성 평가](/help/sites-deploying/pattern-detector.md) 페이지에서 정의한 대로 AEM 분석기를 실행합니다. AEM Target 버전에서 사용할 수 없는 API/번들 외에도 해결해야 하는 영역에 대한 자세한 내용을 포함하는 AEM Analyzer 보고서를 가져옵니다. AEM 분석기 보고서는 코드의 비호환성을 나타냅니다. 존재하지 않는 경우 배포는 AEM 6.5 LTS와 호환됩니다. AEM 6.5 LTS를 사용하기 위해 새로운 개발을 수행하도록 선택할 수는 있지만, 단순히 호환성을 유지하기 위해 필요한 것은 아닙니다.
+1. **6.5 LTS용 코드 베이스 개발**- Target AEM 버전의 코드 베이스에 대한 전용 분기 또는 저장소를 만듭니다. 업그레이드 전 호환성의 정보를 사용하여 업데이트할 코드 영역을 계획합니다.
+1. **6.5 LTS Uber jar로 컴파일**- 코드 기본 POM을 업데이트하여 AEM 6.5 LTS uber jar를 가리키도록 하고 그에 대한 코드를 컴파일합니다.
 1. **6.5 LTS 환경에 배포** - 개발/QA 환경에서 AEM 6.5 LTS의 깨끗한 인스턴스(작성자 + 게시)를 설정해야 합니다. 업데이트된 코드 베이스와 대표적인 콘텐츠 샘플(현재 프로덕션)을 배포해야 합니다.
-1. **QA 유효성 검사 및 버그 수정** - QA는 6.5.2025의 작성자 및 게시 인스턴스 모두에서 응용 프로그램의 유효성을 검사해야 합니다. 발견된 모든 버그를 수정하고 6.5 LTS 코드 베이스에 커밋해야 합니다. 모든 버그가 수정될 때까지 필요에 따라 개발-주기를 반복합니다.
+1. **QA 유효성 검사 및 버그 수정** - QA는 AEM 6.5 LTS의 작성자 및 게시 인스턴스 모두에서 응용 프로그램의 유효성을 검사해야 합니다. 발견된 모든 버그를 수정하고 AEM 6.5 LTS 코드 베이스에 커밋해야 합니다. 모든 버그가 수정될 때까지 필요에 따라 개발-주기를 반복합니다.
 
 업그레이드를 진행하기 전에 AEM 6.5 LTS에 대해 철저하게 테스트된 안정적인 애플리케이션 코드 베이스가 있어야 합니다.
 
@@ -61,23 +58,22 @@ AEM Uber jar에는 Maven 프로젝트의 `pom.xml`에 단일 종속으로 모든
 >
 >AEM 6.5와 AEM 6.5 LTS Uber Jar를 포장하는 방식에는 약간의 차이가 있다. 아래 섹션을 참조하십시오.
 
-**AEM 6.5.x의 경우 두 가지 유형의 Uber Jar가 있습니다**
+**AEM 6.5용 Uber Jars**
 
-1. `uber-jar-6.5.x.jar` - AEM 6.5.x의 모든 공개 API를 포함합니다.
-1. `uber-jar-6.5.x-apis-with-deprecations.jar` - 공개 API와 AEM 6.5.x에서 더 이상 사용되지 않는 API를 모두 포함합니다.
+1. `uber-jar-6.5.x.jar` - AEM 6.5의 모든 공개 API를 포함합니다.
+1. `uber-jar-6.5.x-apis-with-deprecations.jar` - 공개 API와 AEM 6.5에서 더 이상 사용되지 않는 API를 모두 포함합니다.
 
-**AEM 6.5.2025.x용 Uber Jars**
+**AEM 6.5 LTS용 Uber Jars**
 
-AEM 6.5.2025.x의 경우 두 가지 유형의 Uber Jar가 다시 있습니다.
+AEM 6.5 LTS의 경우 두 가지 유형의 Uber Jar가 있습니다.
 
-1. `uber-jar-6.5.2025.x.jar` - AEM 6.5.2025.x의 모든 공개 API를 포함합니다.
-1. `uber-jar-6.5.2025.x-deprecated.jar` - AEM 6.5.2025.x에서 더 이상 사용되지 않는 API만 포함
+1. `uber-jar-6.6.x-apis.jar` - AEM 6.5 LTS의 모든 공개 API를 포함합니다.
+1. `uber-jar-6.6.x-deprecated-apis.jar` - AEM 6.5 LTS에서 더 이상 사용되지 않는 API만 포함합니다.
 
-**주요 차이점: AEM 6.5.x와 AEM 6.5.2025.x Uber Jars**
+**주요 차이점: AEM 6.5와 AEM 6.5 LTS Uber Jars**
 
-* AEM 6.5.x에서 공개 API와 더 이상 사용되지 않는 API가 모두 필요한 경우 `pom.xml` 파일에서 include single jar, `uber-jar-6.5.x-apis-with-deprecations.jar`을(를) 사용할 수 있습니다.
-* AEM 6.5.2025.x에서 공개 API와 더 이상 사용되지 않는 API가 모두 필요한 경우 공개 API의 경우 `uber-jar-6.5.2025.x.jar`, 더 이상 사용되지 않는 API의 경우 `uber-jar-6.5.2025.x-deprecated.jar`인 두 개의 개별 jar를 포함해야 합니다.
-* AEM 6.5.2025.x에서 공개 API와 더 이상 사용되지 않는 API가 모두 필요한 경우 공개 API의 경우 `uber-jar-6.5.2025.x.jar`, 더 이상 사용되지 않는 API의 경우 `uber-jar-6.5.2025.x-deprecated.jar`인 두 개의 개별 jar를 포함해야 합니다.
+* AEM 6.5에서 공개 API와 더 이상 사용되지 않는 API가 모두 필요한 경우 `pom.xml` 파일에 include single jar, `uber-jar-6.5.x-apis-with-deprecations.jar`을(를) 사용할 수 있습니다.
+* AEM 6.5 LTS에서 공개 API와 더 이상 사용되지 않는 API가 모두 필요한 경우 공개 API의 경우 `uber-jar-6.6.x-apis.jar`, 더 이상 사용되지 않는 API의 경우 `uber-jar-6.6.x-deprecated-apis.jar`인 두 개의 개별 jar를 포함해야 합니다.
 
 더 이상 사용되지 않는 API Jar에 대한 **Maven 좌표**
 
@@ -93,7 +89,7 @@ AEM 6.5.2025.x의 경우 두 가지 유형의 Uber Jar가 다시 있습니다.
 
 ### 개발자 노트 {#developer-notes}
 
-* AEM 6.5.2025에는 Google guava 라이브러리가 기본적으로 포함되어 있지 않으므로 요구 사항에 따라 필요한 버전을 설치할 수 있습니다.
+* AEM 6.5 LTS에는 Google guava 라이브러리가 기본적으로 포함되어 있지 않으므로 요구 사항에 따라 필요한 버전을 설치할 수 있습니다.
 * 이제 Sling XSS 번들은 Java HTML Sanitizer 라이브러리를 사용하며 `XSSAPI#filterHTML()` 메서드는 데이터를 다른 API로 전달하는 것이 아니라 HTML 콘텐츠를 안전하게 렌더링하는 데 사용해야 합니다.
 
 ## 테스트 절차 {#testing-procedure}
@@ -102,7 +98,7 @@ AEM 6.5.2025.x의 경우 두 가지 유형의 Uber Jar가 다시 있습니다.
 
 ### 업그레이드 프로시저 테스트 {#testing-upgrade-procedure}
 
-여기에 설명된 업그레이드 절차는 사용자 지정된 실행 설명서에 설명된 대로 개발 및 QA 환경에서 테스트해야 합니다([업그레이드 계획](/help/sites-deploying/upgrade-planning.md) 참조). 업그레이드 절차는 업그레이드 실행 설명서에 모든 단계가 문서화되고 업그레이드 프로세스가 원활해질 때까지 반복해야 합니다
+여기에 설명된 업그레이드 절차는 사용자 지정된 실행 설명서에 설명된 대로 개발 및 QA 환경에서 테스트해야 합니다([업그레이드 계획](/help/sites-deploying/upgrade-planning.md) 참조). 업그레이드 절차는 업그레이드 실행 설명서에 모든 단계가 문서화되고 업그레이드 프로세스가 원활해질 때까지 반복해야 합니다.
 
 ### 구현 테스트 영역  {#implementation-test-areas-}
 
