@@ -9,7 +9,7 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ac803ef9ac38380d7ce7fdf4490c428fd0039688
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -112,9 +112,9 @@ New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/rel
 
 ### 업그레이드 복잡성 평가 {#assessing-upgrade-complexity}
 
-Adobe 고객이 AEM 환경에 적용하는 맞춤화의 양과 특성이 매우 다양하므로, 업그레이드 시 예상되는 전반적인 작업 수준을 파악하기 위해 미리 시간을 투자하는 것이 중요합니다. [AEM 6.5 LTS용 AEM 분석기](/help/sites-deploying/pattern-detector.md)를 통해 업그레이드의 복잡성을 평가할 수 있습니다.
+Adobe 고객이 AEM 환경에 적용하는 맞춤화의 양과 특성이 매우 다양하므로, 업그레이드 시 예상되는 전반적인 작업 수준을 파악하기 위해 미리 시간을 투자하는 것이 중요합니다. [AEM 6.5 LTS용 AEM 분석기](/help/sites-deploying/aem-analyzer.md)를 통해 업그레이드의 복잡성을 평가할 수 있습니다.
 
-[AEM 6.5 LTS용 AEM Analyzer](/help/sites-deploying/pattern-detector.md)을(를) 사용하면 대부분의 경우 업그레이드 중에 예상할 수 있는 사항을 상당히 정확하게 예측할 수 있습니다. 그러나 변경 내용이 호환되지 않는 복잡한 사용자 지정 및 배포의 경우 [바로 업그레이드 수행](/help/sites-deploying/in-place-upgrade.md)의 지침에 따라 개발 인스턴스를 AEM 6.5 LTS로 업그레이드할 수 있습니다. 완료되면 이 환경에서 높은 수준의 스모크 테스트를 수행합니다. 이 연습의 목표는 테스트 사례 인벤토리를 완전히 완료하고 정식 결함 인벤토리를 작성하는 것이 아니라 AEM 6.5 LTS 호환성에 대한 코드를 업그레이드하는 데 필요한 작업 양에 대한 대략적인 견적을 제공하는 것입니다. [AEM 분석기](/help/sites-deploying/pattern-detector.md) 및 이전 섹션에서 결정된 아키텍처 변경 사항과 결합하면 프로젝트 관리 팀에 대략적인 견적을 제공하여 업그레이드를 계획할 수 있습니다.
+[AEM 6.5 LTS용 AEM Analyzer](/help/sites-deploying/pattern-detector.md)을(를) 사용하면 대부분의 경우 업그레이드 중에 예상할 수 있는 사항을 상당히 정확하게 예측할 수 있습니다. 그러나 변경 내용이 호환되지 않는 복잡한 사용자 지정 및 배포의 경우 [바로 업그레이드 수행](/help/sites-deploying/in-place-upgrade.md)의 지침에 따라 개발 인스턴스를 AEM 6.5 LTS로 업그레이드할 수 있습니다. 완료되면 이 환경에서 높은 수준의 스모크 테스트를 수행합니다. 이 연습의 목표는 테스트 사례 인벤토리를 완전히 완료하고 정식 결함 인벤토리를 작성하는 것이 아니라 AEM 6.5 LTS 호환성에 대한 코드를 업그레이드하는 데 필요한 작업 양에 대한 대략적인 견적을 제공하는 것입니다. [AEM 분석기](/help/sites-deploying/aem-analyzer.md) 및 이전 섹션에서 결정된 아키텍처 변경 사항과 결합하면 프로젝트 관리 팀에 대략적인 견적을 제공하여 업그레이드를 계획할 수 있습니다.
 
 ### 업그레이드 및 롤백 Runbook 구축 {#building-the-upgrade-and-rollback-runbook}
 

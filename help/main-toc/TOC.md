@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 8253f7c3b779f9ef08a15c9a5dfc9ae1b437756a
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
-source-wordcount: '7044'
+source-wordcount: '7052'
 ht-degree: 22%
 
 ---
@@ -1466,6 +1466,7 @@ ht-degree: 22%
          + [AEM 6.5 LTS로 업그레이드](/help/sites-deploying/upgrade.md)
          + [업그레이드 계획](/help/sites-deploying/upgrade-planning.md)
          + [패턴 감지기를 사용한 업그레이드 복잡성 평가](/help/sites-deploying/pattern-detector.md)
+         + [AEM Analyzer를 사용한 업그레이드 복잡성 평가](/help/sites-deploying/aem-analyzer.md)
          + [AEM 6.5 LTS의 이전 버전과의 호환성](/help/sites-deploying/backward-compatibility.md)
          + [업그레이드 프로시저](/help/sites-deploying/upgrade-procedure.md)
          + [즉석 업그레이드 수행](/help/sites-deploying/in-place-upgrade.md)
