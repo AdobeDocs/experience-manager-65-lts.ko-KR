@@ -1,16 +1,15 @@
 ---
 title: 메타데이터 스키마는 메타데이터 속성 페이지의 레이아웃을 정의합니다.
 description: 메타데이터 스키마는 에셋에 대해 표시되는 메타데이터 속성 페이지 및 속성 페이지의 레이아웃을 정의합니다. 사용자 지정 메타데이터 스키마를 만들고, 메타데이터 스키마를 편집하고, 메타데이터 스키마를 에셋에 적용하는 방법을 알아봅니다.
-contentOwner: AG
 mini-toc-levels: 1
 role: User,Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: c62ad80108619063025772cd991848a3f7d76be8
 workflow-type: tm+mt
-source-wordcount: '3595'
-ht-degree: 8%
+source-wordcount: '3607'
+ht-degree: 7%
 
 ---
 
@@ -89,21 +88,21 @@ ht-degree: 8%
 **[!UICONTROL 양식 작성]** 탭에는 스키마 양식에서 사용하는 양식 항목이 나열됩니다. **[!UICONTROL 설정]** 탭은 **[!UICONTROL 양식 작성]** 탭에서 선택한 각 항목의 특성을 제공합니다. 다음 표에는 **[!UICONTROL 양식 작성]** 탭에서 사용할 수 있는 양식 항목이 나열되어 있습니다.
 
 | 구성 요소 이름 | 설명 |
-| -------------------------------- | ----------------------------------------------------------------------------------- |
-| [!UICONTROL 섹션 머리글] | 공통 구성 요소 목록의 섹션 머리글을 추가합니다. |
-| [!UICONTROL 한 줄 텍스트] | 한 줄 텍스트 속성을 추가합니다. 문자열로 저장됩니다. |
-| [!UICONTROL 다중 값 텍스트] | 다중 값 텍스트 속성을 추가합니다. 문자열 배열로 저장됩니다. |
-| [!UICONTROL 숫자] | 숫자 구성 요소를 추가합니다. |
-| [!UICONTROL 날짜] | 날짜 구성 요소를 추가합니다. |
-| [!UICONTROL 드롭다운] | 드롭다운 목록을 추가합니다. |
-| [!UICONTROL 표준 태그] | 태그를 추가합니다. |
-| [!UICONTROL 스마트 태그] | 메타데이터 태그를 자동으로 추가하여 검색 기능을 보강합니다. |
-| [!UICONTROL 숨겨진 필드] | 숨겨진 필드를 추가합니다. 자산이 저장될 때 POST 매개 변수로 전송됩니다. |
-| [!UICONTROL 자산 참조자] | 자산이 참조하는 자산 목록을 보려면 이 구성 요소를 추가하십시오. |
-| [!UICONTROL 자산 참조] | 를 추가하여 에셋을 참조하는 에셋 목록을 표시합니다. |
-| [!UICONTROL 제품 참조] | 를 추가하여 자산과 연결된 제품 목록을 표시합니다. |
-| [!UICONTROL 자산 등급] | 를 추가하여 자산 등급 지정 옵션을 표시합니다. |
-| [!UICONTROL 컨텍스트 메타데이터] | 를 추가하여 자산의 속성 페이지에서 다른 메타데이터 탭의 표시를 제어합니다. |
+|----|----|
+| **[!UICONTROL 섹션 머리글]** | 공통 구성 요소 목록의 섹션 머리글을 추가합니다. |
+| **[!UICONTROL 한 줄 텍스트]** | 한 줄 텍스트 속성을 추가합니다. 문자열로 저장됩니다. |
+| **[!UICONTROL 다중 값 텍스트]** | 다중 값 텍스트 속성을 추가합니다. 문자열 배열로 저장됩니다. |
+| **[!UICONTROL 숫자]** | 숫자 구성 요소를 추가합니다. |
+| **[!UICONTROL 날짜]** | 날짜 구성 요소를 추가합니다. |
+| **[!UICONTROL 드롭다운]** | 드롭다운 목록을 추가합니다. |
+| **[!UICONTROL 표준 태그]** | 태그를 추가합니다. 관리자는 경로 값을 변경해야 할 수 있습니다. 예를 들어, `/etc/tags/mac/<tenant_id>/<custom_tag_namespace>`이(가) Experience Manager Assets에서 메타데이터 스키마 양식을 게시하는 경우 경로에 테넌트 정보(예: `/etc/tags/<custom_tag_namespace>`)가 포함되어 있지 않습니다. |
+| **[!UICONTROL 스마트 태그]** | Experience Manager Assets 스마트 태그 추가 기능을 구매하고 구성한 경우 태그가 자동으로 검색됩니다. |
+| **[!UICONTROL 숨겨진 필드]** | 숨겨진 필드를 추가합니다. 자산이 저장될 때 POST 매개 변수로 전송됩니다. |
+| **[!UICONTROL 자산 참조자]** | 이 구성 요소를 추가하여 에셋에서 참조한 에셋 목록을 확인하십시오. |
+| **[!UICONTROL 자산 참조]** | 를 추가하여 에셋을 참조하는 에셋 목록을 표시합니다. |
+| **[!UICONTROL 컨텍스트 메타데이터]** | 를 추가하여 자산의 속성 페이지에서 다른 메타데이터 탭의 표시를 제어합니다. |
+
+<!--| **[!UICONTROL Asset Rating]** |  Average rating of an asset added from Experience Manager Assets before it is published to Brand Portal. |-->
 
 #### 메타데이터 구성 요소 편집 {#edit-the-metadata-component}
 
