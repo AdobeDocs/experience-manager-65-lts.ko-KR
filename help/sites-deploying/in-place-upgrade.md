@@ -5,9 +5,9 @@ topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: c3df47efd4b13dcd8061e5cdac32a75fbf36df4b
+source-git-commit: 67bd9b29ccc525111710a397cca5de1c961486ac
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 >[!NOTE]
 >
->Java 17에서 일부 Java 8/11 인수에 대한 지원이 제거되었습니다. [Oracle Java™ 17 문서](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) 및 [AEM 6.5 LTS에 대한 Java&amp;trade 인수 고려 사항](https://git.corp.adobe.com/AdobeDocs/experience-manager-65-lts.en/blob/main/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)을 참조하십시오.
+>Java 17에서 일부 Java 8/11 인수에 대한 지원이 제거되었습니다. [Oracle Java™ 17 문서](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) 및 [AEM 6.5 LTS에 대한 Java&amp;trade 인수 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)을 참조하십시오.
 
 업그레이드를 실행하려면 jar 파일을 사용하여 AEM을 시작하여 인스턴스를 불러오는 것이 중요합니다.
 

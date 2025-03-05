@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2eb9307f37098ee9f57ba9383600f74a5e3b2501
+source-git-commit: b7304709729915dbcc27533caf88b61cd5657a2c
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -32,17 +32,15 @@ ht-degree: 0%
 * [오프라인 개정 정리 실행](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
 * [데이터 저장소 가비지 수집 실행](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
 * [필요한 경우 데이터베이스 스키마 업그레이드](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#upgradethedatabaseschemaifneeded)
-* [업그레이드를 방해할 수 있는 사용자 삭제](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#delete-users-that-might-hinder-the-upgrade)
-
 * [로그 파일 회전](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#rotate-log-files)
 
 ## 색인 정의 {#index-definitions}
 
-최소한 AEM 서비스 팩 22와 함께 제공되는 AEM 6.5 서비스 팩에 릴리스된 필수 인덱스 정의를 설치했는지 확인하십시오(자세한 내용은 [AEM 6.5 servicepack 릴리스 노트](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/release-notes/release-notes) 참조).
+AEM 서비스 팩 22까지 제공된 AEM 6.5 서비스 팩과 함께 릴리스된 필수 인덱스 정의를 최소한 설치했는지 확인하십시오. 자세한 내용은 [AEM 6.5 servicepack 릴리스 노트](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/release-notes/release-notes)를 참조하세요.
 
 ## 충분한 디스크 공간 확인 {#ensure-sufficient-disk-space}
 
-업그레이드를 실행할 때는 콘텐츠 및 코드 업그레이드 활동 외에도 저장소 마이그레이션을 수행해야 합니다. 마이그레이션은 새로운 세그먼트 Tar 형식으로 저장소의 복사본을 만듭니다. 따라서 두 번째(잠재적으로 더 큰) 저장소 버전을 유지하려면 충분한 디스크 공간이 필요합니다.
+업그레이드를 실행할 때 디스크 공간이 충분한지 확인합니다.
 
 ## AEM 전체 백업 {#fully-back-up-aem}
 
@@ -56,7 +54,6 @@ jar 파일에서 AEM을 시작하면 `crx-quickstart/conf`에 `quickstart.proper
 
 `WorkflowPurgeTask` 및 `com.day.cq.audit.impl.AuditLogMaintenanceTask` 작업에는 별도의 OSGi 구성이 필요하며 이 구성 없이는 작업할 수 없습니다. 업그레이드 전 작업 실행 중에 실패하는 경우 구성 누락이 가장 큰 원인입니다. 따라서 이러한 작업을 실행하지 않으려면 이러한 작업에 대한 OSGi 구성을 추가하거나 업그레이드 전 최적화 작업 목록에서 모두 제거해야 합니다. 워크플로 제거 작업을 구성하는 데 필요한 설명서는 [워크플로 인스턴스 관리](/help/sites-administering/workflows-administering.md)에서 찾을 수 있으며, 감사 로그 유지 관리 작업 구성은 [AEM의 감사 로그 유지 관리](/help/sites-administering/operations-audit-log.md)에서 찾을 수 있습니다.
 
-CQ 5.6의 워크플로 및 감사 로그 제거와 AEM 6.0의 감사 로그 제거에 대해서는 [워크플로 및 감사 노드 제거](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)를 참조하십시오.
 
 ## 업그레이드 전 작업 설치, 구성 및 실행 {#install-configure-run-pre-upgrade-tasks}
 
@@ -144,7 +141,7 @@ TarMK 콜드 대기를 사용하는 경우 콜드 대기 인스턴스를 중지�
 >
 >이 단계는 TarMK 설치에만 필요합니다
 
-TarMK를 사용하는 경우 업그레이드하기 전에 오프라인 개정 정리를 실행해야 합니다. 이렇게 하면 저장소 마이그레이션 단계와 후속 업그레이드 작업이 훨씬 빠르게 실행되고 업그레이드가 완료된 후 온라인 개정 정리가 성공적으로 실행될 수 있습니다. 오프라인 수정 버전 정리 실행에 대한 자세한 내용은 [오프라인 수정 버전 정리 수행](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup)을 참조하십시오.
+TarMK를 사용하는 경우 업그레이드하기 전에 오프라인 개정 정리를 실행해야 합니다. 이렇게 하면 저장소 마이그레이션 단계와 후속 업그레이드 작업이 훨씬 빠르게 실행되고 업그레이드가 완료된 후 온라인 개정 정리가 성공적으로 실행될 수 있습니다. 오프라인 수정 버전 정리 실행에 대한 자세한 내용은 [오프라인 수정 버전 정리 수행](/help/sites-deploying/revision-cleanup.md#revision-cleanuprevision-cleanup)을 참조하십시오.
 
 ## 데이터 저장소 가비지 수집 실행 {#execute-datastore-garbage-collection}
 
