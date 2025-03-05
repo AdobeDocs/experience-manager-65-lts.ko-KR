@@ -4,9 +4,9 @@ description: Webspehere Liberty를 통해 배포된 AEM의 인스턴스를 업�
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6a62741ee0ce22a6fb80cf8c68c6eeafacd2e873
+source-git-commit: cd04a7a493a575cabf416b53869dd3fe4df7ab6b
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '494'
 ht-degree: 1%
 
 ---
@@ -15,20 +15,25 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 페이지에서는 WLP(WebSphere Liberty)에 대한 AEM 6.5 LTS war의 업그레이드 절차에 대해 간략히 설명합니다.
+>이 페이지에서는 WLP(WebSphere® Liberty)의 AEM 6.5 LTS에 대한 업그레이드 절차를 간략하게 설명합니다.
 
 ## 업그레이드 전 단계 {#pre-upgrade-steps}
 
-업그레이드를 실행하기 전에 완료해야 하는 몇 가지 단계가 있습니다. 자세한 내용은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md) 및 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)을 참조하십시오. 또한 시스템이 AEM 6.5 LTS의 요구 사항을 충족하는지 확인하십시오. Analyzer를 통해 업그레이드의 복잡성을 예측하고 업그레이드 계획을 수립하는 방법을 확인하십시오(자세한 내용은 [업그레이드 계획](/help/sites-deploying/upgrade-planning.md) 참조).
+업그레이드를 실행하기 전에 완료해야 하는 몇 가지 단계가 있습니다. 자세한 내용은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md) 및 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)을 참조하십시오. 또한 시스템이 [AEM 6.5 LTS에 대한 요구 사항](/help/sites-deploying/technical-requirements.md)을 충족하는지 확인하십시오.
+
+[업그레이드 계획](/help/sites-deploying/upgrade-planning.md) 및 [AEM 분석기](/help/sites-deploying/pattern-detector.md)를 통해 AEM 업그레이드의 복잡성을 추정하는 방법을 확인하십시오.
 
 ### 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
-* **필요한 최소 Java 버전**: WLP 서버에 IBM Sumeru JRE 17을 설치했는지 확인하십시오.
+* **필요한 최소 Java 버전**: WLP 서버에 IBM® Sumeru JRE 17을 설치했는지 확인하십시오.
 
 ### 업그레이드 수행 {#performing-the-upgrade}
 
-1. 업그레이드 작업을 시작하기 전에 인스턴스의 백업을 수행하십시오.
-1. 사용 중인 WLP 서버 버전에 따라 즉석 업그레이드가 필요한지 또는 옆 등급이 필요한지 식별합니다. 현재 WLP 서버가 서블릿 6을 지원하는 경우 바로 업그레이드를 수행하고 이 설명서를 계속할 수 있습니다. 그렇지 않은 경우 사이드 그레이드를 수행해야 합니다. Sidegrade의 경우 Oak 업그레이드 설명서가 포함된 콘텐츠 마이그레이션 - [추가할 TBD 링크]를 따르십시오.
+1. 업그레이드 작업을 수행하기 전에 AEM 6.5 서버 백업과 같은 [사전 업그레이드](#pre-upgrade-steps) 단계를 완료했는지 확인하십시오
+1. 요구 사항에 따라 다음 업그레이드 경로 중 하나를 선택합니다.
+   1. **원본 위치 업그레이드**: 현재 WLP 서버가 서블릿 6을 지원하는 경우 원본 위치 업그레이드를 수행하고 3단계로 계속할 수 있습니다.
+   1. **Sidegrade**: 새로운 설정을 원하거나 WLP 서버가 Servlet 6을 지원하지 않는 경우 AEM 6.5 LTS로 새 WLP 인스턴스를 설정하고 [AEM 6.5에서 AEM 6.5 LTS로 콘텐츠 마이그레이션 사용 Oak-upgrade](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md) 안내서에 따라 콘텐츠를 마이그레이션한 다음 [업그레이드된 Codebase 배포](#deploy-upgraded-codebase) 섹션으로 건너뜁니다.
+
 1. AEM 인스턴스를 중지합니다. 일반적으로 다음 명령을 사용하여 수행할 수 있습니다.
 
    ```shell
@@ -37,7 +42,7 @@ ht-degree: 1%
 
 1. 더 이상 필요하지 않은 파일 및 폴더를 제거합니다. 특별히 제거해야 하는 항목은 다음과 같습니다.
 
-   * `dropins` 폴더 및 확장된 폴더의 `cq-quickstart-65.war`은(는) 일반적으로 각각 `<path-to-aem-server>/dropins/cq-quickstart-65.war` 및 `<path-to-aem-server>/apps/expanded/cq-quickstart-65.war`에 있습니다.
+   * `dropins` 폴더 및 `expanded` 폴더의 **cq-quickstart-65.war**&#x200B;은(는) 일반적으로 각각 `<path-to-aem-server>/dropins/cq-quickstart-65.war` 및 `<path-to-aem-server>/apps/expanded/cq-quickstart-65.war`에 있습니다.
    * `launchpad/startup` 폴더입니다. 서버 폴더에 있다고 가정하고 터미널에서 다음 명령을 실행하여 삭제할 수 있습니다.
 
      ```shell
@@ -47,8 +52,7 @@ ht-degree: 1%
    * `base.jar` 파일입니다. 다음 명령을 실행하여 이 작업을 수행할 수 있습니다.
 
      ```shell
-     find crx-quickstart/launchpad -type f -name 
-     "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \;
+     find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \;
      ```
 
    * `BootstrapCommandFile_timestamp.txt` 파일:
@@ -71,14 +75,14 @@ ht-degree: 1%
 
 1. `sling.properties` 파일(일반적으로 `crx-quickstart/conf/`에 있음)을 백업하고 삭제합니다.
 1. 서블릿 버전을 `server.xml` 파일에서 **6.0**(으)로 변경
-1. AEM 서버에 대한 시작 매개 변수를 검토하고 시스템 요구 사항에 따라 매개 변수를 업데이트해야 합니다. 자세한 내용은 [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)를 참조하십시오
 1. Java 17을 설치하고 다음을 실행하여 올바로 설치되었는지 확인합니다.
 
    ```shell
    java -version
    ```
 
-1. 소프트웨어 배포에서 새 war 6.5 LTS를 다운로드하여 `/<path-to-aem-server>/dropins/`에 있는 dropins 폴더에 복사합니다.
+1. AEM 서버에 대한 시작 매개 변수를 검토하고 요구 사항에 따라 매개 변수를 업데이트해야 합니다. 자세한 내용은 [Java 17 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)을 참조하십시오
+1. 새 6.5 LTS war을 다운로드하여 `/<path-to-aem-server>/dropins/`에 있는 dropins 폴더에 복사합니다.
 1. AEM 인스턴스 시작: 일반적으로 다음 명령을 사용하여 수행할 수 있습니다.
 
    ```shell
@@ -88,13 +92,13 @@ ht-degree: 1%
 1. `sling.properties`에 사용자 지정 변경 사항이 있는 경우 아래 지침을 따르십시오.
 
    1. `<path-to-wlp-directory>/bin/server stop server_name`을(를) 실행하여 AEM 인스턴스 중지
-   1. 새로 생성된 `sling.properties` 파일에 사용자 지정 `sling.properties` 변경 내용을 적용합니다(6단계에서 만든 백업 파일 참조)
+   1. 사용자 지정 `sling.properties` 변경 내용을 새로 생성된 `sling.properties` 파일에 적용합니다(5단계에서 만든 백업 파일 참조)
    1. AEM 인스턴스를 시작합니다. 일반적으로 다음을 실행하여 수행할 수 있습니다. `<path-to-wlp-directory>/bin/server start server_name`
 
 ## 업그레이드된 코드베이스 배포 {#deploy-upgraded-codebase}
 
-즉각적 업그레이드 프로세스가 완료되면 업데이트된 코드 베이스를 배포해야 합니다. 대상 버전의 AEM에서 작동하도록 코드 베이스를 업데이트하는 단계는 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md) 페이지에서 확인할 수 있습니다.
+업그레이드 프로세스가 완료되면 업데이트된 코드 베이스를 배포해야 합니다. 대상 버전의 AEM에서 작동하도록 코드 베이스를 업데이트하는 단계는 [코드 및 사용자 지정 업그레이드 페이지](/help/sites-deploying/upgrading-code-and-customizations.md)에서 확인할 수 있습니다.
 
 ## 업그레이드 후 확인 및 문제 해결 수행 {#perform-post-upgrade-checks-and-troubleshooting}
 
-자세한 내용은 [업그레이드 확인 및 문제 해결 이후](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)를 참조하십시오.
+[업그레이드 확인 후 및 문제 해결](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)을 참조하세요.
