@@ -4,7 +4,7 @@ description: oak 업그레이드 도구를 사용하여 AEM 6.5에서 AEM 6.5 LT
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8798c608ea168d753be2a08b25a0d0d344b0fef6
+source-git-commit: ef25b11163ca727a9fa99799b713085e594ff520
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 0%
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 마이그레이션을 시작하기 전에 다음 요구 사항이 충족되는지 확인하십시오.
 
-1. Java 호환성: AEM 6.5 LTS가 Java 17에서 실행되도록 설치 및 구성되어야 합니다. 설정되면 AEM 인스턴스를 시작하고 모든 번들이 활성 상태이며 문제 없이 실행되는지 확인합니다
+1. Java 호환성: AEM 6.5 LTS가 Java™ 17에서 실행되도록 설치 및 구성되어야 합니다. 설정되면 AEM 인스턴스를 시작하고 모든 번들이 활성 상태이며 문제 없이 실행되는지 확인합니다
 1. 시스템 리소스: 마이그레이션 프로세스 중에 두 저장소를 모두 처리할 수 있는 적절한 디스크 공간 및 메모리를 확보하십시오
-1. Oak 업그레이드 도구: [공식 Maven 저장소](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)에서 `oak-upgrade` jar를 다운로드합니다. 버전이 AEM 6.5 LTS에서 사용되는 oak-core 버전과 일치하는지 확인하십시오. Oak 업그레이드 도구는 Oracle Java 11 이상에서 실행됩니다
+1. Oak 업그레이드 도구: [공식 Maven 저장소](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)에서 `oak-upgrade` jar를 다운로드합니다. 버전이 AEM 6.5 LTS에서 사용되는 oak-core 버전과 일치하는지 확인하십시오. Oak 업그레이드 도구는 Oracle® Java™ 11 이상에서 실행됩니다
 
 ## 단계별 마이그레이션 프로세스 {#step-by-step-migration-process}
 
