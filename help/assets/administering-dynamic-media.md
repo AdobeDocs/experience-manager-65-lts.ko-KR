@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 role: User, Admin
 feature: Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 2e03224f-b4eb-4bf5-aba9-a6cc292c96c2
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 11%
@@ -41,5 +42,3 @@ Dynamic Media를 관리하는 경우 다음 항목이 중요합니다.
 >**업그레이드하는 경우:**
 >
 >* Experience Manager을 시작하고 실행한 후에는 업로드하는 모든 에셋이 Dynamic Media를 자동으로 활성화합니다(시스템 관리자가 명시적으로 비활성화하지 않은 경우). Experience Manager의 업그레이드된 인스턴스에 있고 Dynamic Media를 처음 사용하는 경우 Dynamic Media가 활성화되도록 에셋을 재처리해야 합니다.
-
-

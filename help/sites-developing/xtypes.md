@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4a78de53-33bf-4999-ba3c-7d0bc33196a4
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3865'
 ht-degree: 0%
@@ -109,7 +110,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   BulkEditorForm은 HTML 양식으로 둘러싸인 [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)를 제공합니다. [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)의 독립 실행형 버전입니다. 가져오기 단추에는 HTML 양식이 필요합니다.
 
-* 단추
+* 버튼
 
   [CQ.Ext.Button](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button)
 

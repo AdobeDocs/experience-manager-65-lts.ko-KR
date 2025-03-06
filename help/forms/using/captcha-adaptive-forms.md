@@ -8,10 +8,11 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 300fcbdc-d884-409b-9011-89cdf2706535
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1832'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -54,7 +55,7 @@ AEM Forms 사용자는 Google의 reCAPTCHA 서비스를 사용하여 적응형 �
    1. 클라우드 구성에 대한 전역 폴더를 활성화하려면 다음을 수행하거나 클라우드 서비스 구성에 대한 다른 폴더를 만들고 구성하려면 이 단계를 건너뜁니다.
       1. 구성 브라우저에서 **[!UICONTROL 전역]** 폴더를 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
       1. 구성 속성 대화 상자에서 **[!UICONTROL 클라우드 구성]**&#x200B;을 사용하도록 설정합니다.
-      1. 구성을 저장하고 대화 상자를 종료하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택하십시오.
+      1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택하여 구성을 저장하고 대화 상자를 종료합니다.
 
    1. 구성 브라우저에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
    1. 구성 만들기 대화 상자에서 폴더의 제목을 지정하고 **[!UICONTROL 클라우드 구성]**&#x200B;을 사용하도록 설정합니다.
@@ -71,7 +72,7 @@ AEM Forms 사용자는 Google의 reCAPTCHA 서비스를 사용하여 적응형 �
       >
       > * 양식 작성자는 중단 없는 양식 제출에 적합한 범위의 점수를 지정할 수 있습니다.
 
-   1. 클라우드 서비스 구성을 만들려면 **[!UICONTROL 만들기]**&#x200B;를 선택하십시오.
+   1. **[!UICONTROL 만들기]**&#x200B;를 선택하여 클라우드 서비스 구성을 만듭니다.
 
    1. 구성 요소 편집 대화 상자에서 이름, 프로젝트 ID, 사이트 키, API 키(2단계 및 3단계에서 획득)를 지정하고 키 유형을 선택한 다음 임계값 점수를 입력합니다. **[!UICONTROL 설정 저장]**&#x200B;을 선택한 다음 **[!UICONTROL 확인]**&#x200B;을 선택하여 구성을 완료합니다.
 
@@ -90,7 +91,7 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
       1. 구성 브라우저에서 **[!UICONTROL 전역]** 폴더를 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
 
       1. 구성 속성 대화 상자에서 **[!UICONTROL 클라우드 구성]**&#x200B;을 사용하도록 설정합니다.
-      1. 구성을 저장하고 대화 상자를 종료하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택하십시오.
+      1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택하여 구성을 저장하고 대화 상자를 종료합니다.
 
    1. 구성 브라우저에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
    1. 구성 만들기 대화 상자에서 폴더의 제목을 지정하고 **[!UICONTROL 클라우드 구성]**&#x200B;을 사용하도록 설정합니다.

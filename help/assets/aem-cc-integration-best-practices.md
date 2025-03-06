@@ -7,7 +7,8 @@ role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 51a2f4bb-5fca-48fa-855d-1d610a5eb7c0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3173'
 ht-degree: 11%
@@ -118,7 +119,7 @@ Experience Manager용 ![Creative Cloud 연결, 사용할 기능 결정](assets/c
 * [!DNL Experience Manager]에 저장된 자산은 복사본이 아니며 [!DNL Adobe Stock]에 다시 연결되는 링크가 아닙니다.
 
 **자산을 [!DNL Adobe Stock]에서[!DNL Creative Cloud]**&#x200B;의 [!DNL Experience Manager]&#x200B;(으)로 저장한 상태로 작업. 이 통합은 [!DNL Adobe Asset Link]과(와) 독립적이지만 [!DNL Adobe Asset Link]은(는) 이러한 방식으로 [!DNL Stock]에서 저장된 이러한 자산을 인식하고 [!DNL Photoshop], [!DNL Illustrator] 또는 [!DNL InDesign]의 [!DNL Adobe Asset Link] 확장 UI에서 이러한 자산에 추가 메타데이터 및 [!DNL Adobe Stock] 로고를 표시합니다. 파일은 [!DNL Experience Manager]에 저장될 때 일반 자산이므로 탐색, 열기 등에 사용할 수 있습니다.
-[!DNL Creative Cloud] 앱에서 [!DNL Adobe Asset Link] 확장을 사용하여 작업하는 크리에이티브 사용자는 [!DNL Adobe Stock]에서 [!DNL Experience Manager]&#x200B;(으)로 이미 라이선스가 부여된 자산에 액세스할 수 있을 뿐만 아니라 [!DNL Creative Cloud] 라이브러리 패널을 사용하여 [!DNL Adobe Stock] 자산을 검색, 미리 보기 및 라이선스할 수도 있습니다.
+[!DNL Creative Cloud] 앱에서 [!DNL Adobe Asset Link] 확장을 사용하여 작업하는 Creative 사용자는 [!DNL Adobe Stock]에서 [!DNL Experience Manager]&#x200B;(으)로 이미 라이선스가 부여된 자산에 액세스할 수 있을 뿐만 아니라 [!DNL Creative Cloud] 라이브러리 패널을 사용하여 [!DNL Adobe Stock] 자산을 검색, 미리 보기 및 라이선스할 수도 있습니다.
 [!DNL Adobe Stock]의 [!DNL Assets] 라이선스가 부여되고 [!DNL Experience Manager]에 저장된 값은 [!DNL Experience Manager Assets] 배포에 액세스하는 더 광범위한 팀에서 사용할 수 있게 되지만 [!DNL Adobe Stock]에서 [!DNL Creative Cloud] 라이브러리 패널을 통해 자산을 라이선스하는 크리에이티브 팀은 기본적으로 [!DNL Creative Cloud] 계정에서만 사용할 수 있도록 합니다.
 
 <!-- 

@@ -7,7 +7,8 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 61a1c41a-7aec-4ffb-b622-905b3ca62c1b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3909'
 ht-degree: 15%
@@ -368,4 +369,3 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
   ![자산 원격 참조를 검색하지 못함](assets/reference-report-failure.png)
 
 * 쿠키가 Sites 서버에서 Google Chrome의 Assets 서버로 전송되지 않으면 Assets 연결이 HTTPS를 통해 전송되지 않기 때문입니다. Assets 인스턴스에서 HTTPS를 사용하지 않는 경우 Assets 서버를 인증하면 `SameSite=None` 헤더를 응답에 추가할 수 없습니다.
-

@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 2a406ca2870e241539819ae62c6a14904ee71211
+exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 2%
@@ -166,4 +167,3 @@ Personalization 자체는 어떠한 형태의 액세스 제어도 생성하지 �
 | 로그아웃 | 사용자가 현재 로그인되어 있음을 나타내며 로그아웃할 수 있는 링크를 제공합니다. |
 | 태그 클라우드 | 웹 사이트 내에서 그래픽으로 표시된 태그를 보여 주는 태그 클라우드 |
 | 티저 | 사용자가 기본 콘텐츠에 액세스할 수 있도록 &quot;괴롭히기&quot; 위해 기본 페이지에 표시되는 콘텐츠(일반적으로 이미지)입니다. |
-

@@ -6,13 +6,13 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2645745a83477509bac81cb5e122eabc44db3961
+exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 15%
 
 ---
-
 
 # AEM Analyzer를 사용한 업그레이드 복잡성 평가 {#assessing-the-upgrade-complexity-with-the-aem-analyzer}
 
@@ -235,8 +235,3 @@ AEM Analyzer 보고서에 대한 만료 시간이 측면 레일에 표시됩니�
 
 * 경우에 따라 제거 작업에서 알림이 표시될 수 있습니다. *&quot;일부 경로가 정상적으로 제거되지 않았습니다. 로그를 확인하고 다시 시도하십시오.*&quot;. 그러나 실제로 경로가 제거된 경우에는 이 메시지를 무시해도 됩니다
 * 마찬가지로 원하는 작업을 수행하는 동안 오류 *(으)로 인해 패키지 작업이 실패할 수 있습니다. 로그를 확인하고 다시 시도하십시오.*&quot;. 세션 만료 때문일 수 있습니다. 이러한 경우 작업을 다시 시도하면 문제가 해결됩니다.
-
-
-
-
-

@@ -8,7 +8,8 @@ topic-tags: deploying
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
+exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 0%
@@ -246,4 +247,3 @@ conf 파일에서 메모리 인수를 설정합니다(예: `standalone.conf`).
    * AEM war 파일을 루트 웹 앱으로 배포하려면 이름을 ROOT.war로 변경합니다. aemaauthor를 컨텍스트 루트로 사용하려면 이름을 aemaauthor.war로 바꿉니다.
    * tomcat의 webapps 폴더에 복사합니다.
    * AEM이 설치될 때까지 기다립니다.
-

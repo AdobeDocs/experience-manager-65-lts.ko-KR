@@ -4,7 +4,8 @@ description: Designer은 독립형 설치 프로그램으로 제공되며 Workbe
 role: Admin, User, Developer
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 526bbc59-62c3-4e6d-a938-e368d07fe6b0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -118,4 +119,3 @@ AEM Forms Designer용 독립형 설치 관리자를 사용하는 경우 다음 �
       1. Designer을 열고 도움말로 이동한 다음 디자이너 정보를 클릭하면 디자이너 버전 정보가 비트 정보와 함께 표시됩니다. 예를 들어, 64비트가 아래와 같이 버전 끝에 기록되어 있습니다.
          `6.5.21.20240522.1.161 | 64 bit`
       1. Designer을 열면 왼쪽 상단에 제품 이름의 64비트 정보가 있는 브랜딩 아이콘이 표시됩니다.
-

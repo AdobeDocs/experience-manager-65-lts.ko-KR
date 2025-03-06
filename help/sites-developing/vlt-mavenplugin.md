@@ -4,7 +4,8 @@ description: Content Package Maven 플러그인을 사용하여 AEM 애플리케
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 99cc79c0-3f31-4389-a21f-b58a70805b30
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%

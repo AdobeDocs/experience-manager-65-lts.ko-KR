@@ -8,7 +8,8 @@ content-type: reference
 feature: Context Hub,Developing,Personalization
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: db4a4a1a-e014-4865-ab8c-d8a5aaefd93a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3106'
 ht-degree: 2%
@@ -130,7 +131,7 @@ CQ_Analytics.JSONPtore 개체를 만듭니다.
 
 **매개변수**
 
-없음.
+없음
 
 **반환**
 
@@ -207,7 +208,7 @@ CQ_Analytics.SessionStore를 확장합니다.
 
 **매개변수**
 
-없음.
+없음
 
 **반환**
 
@@ -232,7 +233,7 @@ CQ_Analytics.JSONStore 개체.
 
 **매개변수**
 
-없음.
+없음
 
 **반환**
 
@@ -244,7 +245,7 @@ CQ_Analytics.JSONStore 개체.
 
 **매개변수**
 
-없음.
+없음
 
 **반환**
 
@@ -359,7 +360,7 @@ CQ_Analytics.PersistedJSONPtore 개체를 만듭니다.
 
 **매개변수**
 
-없음.
+없음
 
 **반환**
 
@@ -445,7 +446,7 @@ CQ_Analytics.PersistedJSONStore 개체.
 
 **매개변수**
 
-없음.
+없음
 
 **반환**
 
@@ -616,7 +617,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 **매개변수**
 
-없음.
+없음
 
 **반환**
 
@@ -652,7 +653,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 **매개변수**
 
-없음.
+없음
 
 **반환**
 
@@ -689,7 +690,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 **매개변수**
 
-없음.
+없음
 
 **반환**
 
@@ -701,7 +702,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 **매개변수**
 
-없음.
+없음
 
 **반환**
 
@@ -713,7 +714,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 **매개변수**
 
-없음.
+없음
 
 **반환**
 
@@ -750,7 +751,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 **매개변수**
 
-없음.
+없음
 
 **반환**
 

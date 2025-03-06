@@ -1,13 +1,13 @@
 ---
 title: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보
 description: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보입니다.
-source-git-commit: 6a69d4e143c54b22127a1e1ff3546898fcdd0b2d
+exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
+source-git-commit: 9bbd7acd498a1a0614db246f9d1326a62c199806
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 23%
 
 ---
-
 
 # Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보 {#release-notes}
 
@@ -111,3 +111,4 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
 * [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
+

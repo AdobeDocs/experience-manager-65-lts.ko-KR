@@ -4,7 +4,8 @@ description: CIF 추가 기능은 상업용 기능을 사용하여 Adobe Experie
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b749ec33-9a78-41d5-889f-73dbdb33ceed
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%

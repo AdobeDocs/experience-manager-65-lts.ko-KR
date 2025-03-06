@@ -4,7 +4,8 @@ description: AEM의 강력하고 유연한 Headless 기능, 각 능력과 프로
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a5c9ca6e-cec3-409b-9fe8-950423a85470
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 81%

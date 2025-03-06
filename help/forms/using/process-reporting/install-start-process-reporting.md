@@ -8,7 +8,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 0%
@@ -281,5 +282,3 @@ AEM Forms 환경에는 환경이 설정된 시점의 데이터가 포함됩니�
 * **[!UICONTROL 동기화]**: 포함된 프로세스 보고 저장소를 AEM Forms 데이터베이스와 동기화합니다.
 * **[!UICONTROL 도움말]**: 프로세스 보고에 대한 도움말 설명서를 봅니다.
 * **[!UICONTROL 로그아웃]**: 프로세스 보고에서 로그아웃
-
-

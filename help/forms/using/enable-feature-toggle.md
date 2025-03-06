@@ -4,7 +4,8 @@ description: 기능 토글 은 관리자가 런타임 환경에서 새로운 기
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: 8b6dea41-540b-498a-b52b-e584a9255f25
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 2%

@@ -8,7 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3322'
 ht-degree: 0%
@@ -442,4 +443,3 @@ PNG가 무손실 포맷이므로, 이전 WebP 및 AVIF가 전달되지 않았으
 이제 스마트 이미징에서 품질 수준에 따라 손실 변환을 지원합니다. 회사 설정을 통해 또는 이미지의 URL 경로에 `qlt=100`을(를) 추가하여 품질을 100으로 설정하여 무손실 변환을 계속 사용할 수 있습니다.
 
 +++
-

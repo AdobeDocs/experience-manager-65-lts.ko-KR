@@ -3,7 +3,8 @@ title: AEM 적응형 양식 6.5에서 턴스타일을 사용하는 방법
 description: 턴스타일 서비스를 통해 손쉽게 양식 보안을 강화할 수 있습니다. 단계별 안내서가 포함되어 있습니다.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: cca80e8d-496b-4d67-a90d-2eadf2931986
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 12%

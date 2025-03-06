@@ -4,7 +4,8 @@ description: AEM에서 콘텐츠 조각 삭제 정책을 정의하기 전에 이
 feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 1460872b-415f-4392-a480-c442790fd0d9
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 100%

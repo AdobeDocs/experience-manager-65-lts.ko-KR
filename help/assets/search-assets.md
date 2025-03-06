@@ -7,7 +7,8 @@ feature: Search, Metadata
 role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '5650'
 ht-degree: 5%
@@ -212,7 +213,7 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 
 ### [!DNL Experience Manager] 데스크톱 앱에서 디지털 자산 검색 {#desktop-app}
 
-크리에이티브 전문가는 데스크톱 앱을 사용하여 [!DNL Experience Manager Assets]을(를) 로컬 데스크톱(Win 또는 Mac)에서 쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 데스크톱 응용 프로그램에서 열리고 로컬로 변경된 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시할 수 있습니다. 변경 사항은 저장소에 새 버전을 만들어 [!DNL Experience Manager]에 다시 저장됩니다. 응용 프로그램에서 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크톱 앱에서 [자산 검색, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하세요.
+Creative 전문가는 데스크톱 앱을 사용하여 [!DNL Experience Manager Assets]을(를) 로컬 데스크톱(Win 또는 Mac)에서 쉽게 검색하고 사용할 수 있도록 합니다. 광고 팀은 데스크톱 응용 프로그램에서 열리고 로컬로 변경된 Mac Finder 또는 Windows 탐색기에 원하는 자산을 쉽게 표시할 수 있습니다. 변경 사항은 저장소에 새 버전을 만들어 [!DNL Experience Manager]에 다시 저장됩니다. 응용 프로그램에서 하나 이상의 키워드, `*` 및 `?` 와일드카드 및 `AND` 연산자를 사용하여 기본 검색을 지원합니다. 데스크톱 앱에서 [자산 검색, 검색 및 미리 보기](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)를 참조하세요.
 
 ### [!DNL Brand Portal]에서 디지털 자산 검색 {#brand-portal}
 

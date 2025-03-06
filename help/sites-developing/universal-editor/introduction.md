@@ -3,13 +3,13 @@ title: 범용 편집기
 description: 범용 편집기의 유연성과 AEM 6.5를 사용하여 Headless 경험을 제공하는 데 어떻게 도움이 되는지 알아봅니다.
 feature: Developing
 role: Developer
-source-git-commit: 1f4024310858c6973681c079439ae82834cf716f
+exl-id: 495df631-5bdd-456b-b115-ec8561f33488
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 1%
 
 ---
-
 
 # 범용 편집기 {#universal-editor}
 

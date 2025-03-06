@@ -4,7 +4,8 @@ description: Adobe Developer App Builder을 사용하여  [!DNL Adobe Experience
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: f9b3df58-c94b-4143-aeec-85ff031bac2e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -64,4 +65,3 @@ App Builder은 안내서를 포함하여 개발자를 위한 비디오 및 설�
 개발을 시작할 준비가 되셨습니까? 다음은 빠르게 진행할 수 있는 샘플 애플리케이션입니다.
 
 * Adobe Developer 웹 사이트의 [App Builder 코드 랩](https://developer.adobe.com/app-builder/docs/resources/)
-

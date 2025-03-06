@@ -6,7 +6,8 @@ contentOwner: Rick Brough
 solution: Experience Manager, Experience Manager Assets
 role: User, Admin
 feature: Collaboration,Dynamic Media Classic
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ee098fae-cc6f-4c6e-8475-1737134543df
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 0%
@@ -160,4 +161,3 @@ Dynamic Media Newsletter by Experience League은 Dynamic Media 및 Dynamic Media
    * 리치 미디어 전략을 개발하는 데 도움이 되도록 Adobe의 온디맨드 웨비나 시리즈에 대해 알아보십시오.
    * 리치 미디어의 주요 사용 사례와 이를 위한 Adobe의 솔루션에 대해 알아보십시오.
    * ... 그리고 훨씬 더!
-

@@ -5,7 +5,8 @@ contentOwner: AG
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2817'
 ht-degree: 1%
@@ -384,4 +385,3 @@ CRXDE에 저장되었지만 페이지에서 렌더링되지 않은 경우(렌더
 **관리자가 사용할 수 있는 구성을 작성자가 사용할 수 없습니다**
 
 인터페이스 구성 업데이트가 작성자 계정이 아닌 관리자에 대해 반영되는 경우 구성 노드의 이름이 `config`이(가) 아닌지 확인하십시오. [`configPath` 속성](/help/sites-developing/components-basics.md#cq-inplaceediting)을 사용합니다.
-

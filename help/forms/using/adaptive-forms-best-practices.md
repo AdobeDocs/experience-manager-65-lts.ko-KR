@@ -6,7 +6,8 @@ topic-tags: author
 feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
+exl-id: b87629fa-85a9-4024-963a-4761bc093e62
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '5538'
 ht-degree: 1%
@@ -416,6 +417,3 @@ AEM Forms(Adobe Experience Manager Forms)에서 사용자 지정 클라이언트
 * **효율적인 개발 프로세스:**
    * 모듈화를 통해 개발자는 특정 기능에 집중할 수 있습니다.
    * 전체 코드 베이스의 복잡성을 줄여 개발자의 부담을 줄여 개발 프로세스를 보다 효율적으로 진행할 수 있습니다.
-
-
-

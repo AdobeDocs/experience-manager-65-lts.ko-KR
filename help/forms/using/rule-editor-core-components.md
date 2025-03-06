@@ -4,7 +4,8 @@ description: 적응형 Forms 규칙 편집기를 사용하면 코딩 또는 스�
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 01fa9744-775e-4185-aba5-e132011b1b89
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '5588'
 ht-degree: 3%

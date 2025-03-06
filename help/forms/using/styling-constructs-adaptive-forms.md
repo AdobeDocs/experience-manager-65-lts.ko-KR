@@ -7,7 +7,8 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 0ecfd918-2c68-4085-8c6e-440499b84fc1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2352'
 ht-degree: 5%
@@ -354,7 +355,7 @@ CSS 속성을 사용한 적응형 양식의 전체 모양 변경은 일반적으
 버튼은 위젯이기도 합니다. 하지만 그들의 스타일은 위젯과 약간 다릅니다. 적응형 양식에서는 다음 중 하나가 버튼을 구성합니다.
 
 * 입력[유형 = 텍스트]
-* 단추
+* 버튼
 * 클래스 .button이 있는 요소
 
 단추에 대한 HTML 코드:
