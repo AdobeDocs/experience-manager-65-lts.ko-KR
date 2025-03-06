@@ -10,7 +10,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 0%
@@ -65,7 +65,7 @@ OSGi 콘솔 `/system/console/bundles`(으)로 이동하여 번들이 시작되�
 
 ### Oak 버전 확인 {#verify-oak-version}
 
-업그레이드 후 Oak 버전이 **1.68.1-B002**(으)로 업데이트되었습니다. Oak 버전을 확인하려면 OSGi 콘솔로 이동하여 Oak 번들과 연결된 버전(Oak 코어, Oak Commons, Oak 세그먼트 Tar)을 확인합니다.
+업그레이드 후 Oak 버전이 **1.68.x**(으)로 업데이트되었습니다. Oak 버전을 확인하려면 OSGi 콘솔로 이동하여 Oak 번들과 연결된 버전(Oak 코어, Oak Commons, Oak 세그먼트 Tar)을 확인합니다.
 
 ### 페이지의 초기 유효성 검사 {#initial-validation-of-pages}
 

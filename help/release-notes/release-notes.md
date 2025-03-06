@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보
 description: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보입니다.
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 9bbd7acd498a1a0614db246f9d1326a62c199806
+source-git-commit: f9fefb530e9cdcced664bede2e11556ab0345876
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '795'
 ht-degree: 23%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 23%
 
 ### [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
-[!DNL Adobe Experience Manager] 6.5 LTS의 플랫폼은 OSGi 기반 프레임워크(Apache Sling 및 Apache Felix) 및 Java™ 콘텐츠 저장소의 업데이트된 버전 위에 빌드합니다. Apache Jackrabbit Oak 1.68.0.
+[!DNL Adobe Experience Manager] 6.5 LTS의 플랫폼은 OSGi 기반 프레임워크(Apache Sling 및 Apache Felix) 및 Java™ 콘텐츠 저장소의 업데이트된 버전 위에 빌드합니다. Apache Jackrabbit Oak 1.68.x.
 
 Quickstart는 Eclipse Jetty 11.0.x를 서블릿 엔진으로 사용합니다.
 
