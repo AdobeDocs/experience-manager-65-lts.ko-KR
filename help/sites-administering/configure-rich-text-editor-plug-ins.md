@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4391'
+source-wordcount: '4381'
 ht-degree: 2%
 
 ---
@@ -285,10 +285,6 @@ Microsoft® Word와 같은 다른 프로그램에서 AEM에 붙여넣을 때 허
 ### 일본어로 단어 분리를 최적화하도록 RTE 구성 {#jpwordwrap}
 
 AEM을 사용하여 일본어 콘텐츠를 작성하는 작성자는 줄바꿈을 사용하지 않도록 문자에 스타일을 적용할 수 있습니다. 이를 통해 작성자는 원하는 위치에서 문장을 끊도록 할 수 있다. 이 기능의 스타일은 CSS 스타일 시트에 사전 정의된 CSS 클래스를 기반으로 합니다.
-
->[!NOTE]
->
->이 기능을 사용하려면 AEM 6.5 서비스 팩 1 이상이 필요합니다.
 
 작성자가 일본어 텍스트에 적용할 수 있는 스타일을 만들려면 다음 단계를 수행합니다.
 

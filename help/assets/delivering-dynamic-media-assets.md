@@ -1,18 +1,13 @@
 ---
 title: Dynamic Media 자산 전송
 description: 비디오 및 이미지와 같은 Dynamic Media 자산을 웹 페이지에 전달하는 방법을 알아봅니다.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: b91173b4-f1d1-4aad-97d2-782bc8aeaeab
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 47b82956b41c3f78bed5ae220c7e993ce29e0385
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '313'
 ht-degree: 19%
 
 ---
@@ -42,9 +37,7 @@ Dynamic Media에는 다음과 같은 몇 가지 옵션이 있습니다.
 * [웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)
 * [반응형 사이트에 최적화된 이미지 게재](/help/assets/responsive-site.md)
 * [컨텐츠의 HTTP2 전달](/help/assets/http2.md)
-* [Dynamic Media Classic을 통해 CDN 캐시 무효화](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [규칙 세트를 사용하여 URL 변환](/help/assets/using-rulesets-to-transform-urls.md)
-
 
 ## Dynamic Media 자산의 HTTP/2 게재 {#http-delivery-of-dynamic-media-assets}
 

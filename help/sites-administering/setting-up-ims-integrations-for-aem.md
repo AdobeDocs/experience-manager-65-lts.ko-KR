@@ -4,10 +4,10 @@ description: AEM용 IMS 통합을 설정하는 방법 알아보기
 feature: Security
 role: Admin
 exl-id: 05ba39fc-4b53-43c0-9a9f-7da3293b1ca2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 63%
+source-wordcount: '397'
+ht-degree: 68%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->Adobe 고객은 [Adobe Developer Console](https://developer.adobe.com/console)을(를) 사용하여 다양한 API에 액세스할 수 있는 자격 증명을 생성합니다. 고객은 OAuth 서버 간 자격 증명에서 단일 페이지 앱에 이르기까지 다양한 자격 증명 유형 중에서 선택합니다. 이제 JWT(자격 증명 유형 서비스 계정)는 더 이상 사용되지 않으며, 서비스 팩 20의 OAuth 서버 간 자격 증명이 제공됩니다. 이 변경 내용은 [다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip)할 수 있는 핫픽스를 사용하여 서비스 팩 11부터 서비스 팩 20까지 이전 서비스 팩으로 다시 포팅할 수 있습니다.
+>Adobe 고객은 [Adobe Developer Console](https://developer.adobe.com/console)을(를) 사용하여 다양한 API에 액세스할 수 있는 자격 증명을 생성합니다. 고객은 OAuth 서버 간 자격 증명에서 단일 페이지 앱에 이르기까지 다양한 자격 증명 유형 중에서 선택합니다. 자격 증명 유형 서비스 계정(JWT)은 이제 OAuth 서버 간 자격 증명을 위해 더 이상 사용되지 않습니다.
 
 Adobe Experience Manager(AEM)는 다른 많은 Adobe 솔루션과 통합할 수 있습니다. 예를 들어 Adobe Target, Adobe Analytics 등이 있습니다.
 

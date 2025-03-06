@@ -6,13 +6,12 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
-source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '7052'
-ht-degree: 22%
+source-wordcount: '6816'
+ht-degree: 23%
 
 ---
-
 
 # Adobe Experience Manager 6.5 LTS 설명서 {#content}
 
@@ -305,7 +304,6 @@ ht-degree: 22%
       + [Dynamic Media 자산 게시](/help/assets/publishing-dynamicmedia-assets.md)
       + [Dynamic Media의 선택적 게시를 사용하여 작업](/help/assets/selective-publishing.md)
       + [Dynamic Media의 방식으로 CDN 캐시 무효화](/help/assets/invalidate-cdn-cache-dynamic-media.md)
-      + [Dynamic Media Classic의 방식으로 CDN 캐시 무효화](/help/assets/invalidate-cdn-cache-dm-classic.md)
       + [벌크 자산 마이그레이션용 기능 팩 18912 설치](/help/assets/bulk-ingest-migrate.md)
       + [선택기를 사용하여 작업](/help/assets/working-with-selectors.md)
    + 자산 확장 {#extending}
@@ -445,20 +443,7 @@ ht-degree: 22%
          + [OSGi에서 Forms 중심 워크플로우 설치 및 구성](/help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md)
          + [대화형 통신 설치 및 구성](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md)
          + [자동 양식 전환 서비스 설치 및 구성](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
-      + JEE에 AEM Forms 설치 {#jee-installation}
-         + [JEE에서 AEM Forms에 대해 지원되는 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md)
-         + [JBoss 턴키를 사용하여 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)
-         + [AEM Forms Document Security 서버 설치 및 구성](/help/forms/using/installing-and-configuring-the-document-security-server.md)
-         + [AEM Forms(단일 서버) 설치 준비 중](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
-         + [JBoss용 JEE에 Adobe Experience Manager Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-         + [WebSphere용 JEE에 Adobe Experience Manager 양식 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
-         + [WebLogic용 JEE에 AEM Forms 설치 및 배포](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
-         + [AEM Forms Workbench 설치](/help/forms/using/install-workbench.md)
-         + [Designer 설치 및 구성](/help/forms/using/installing-configuring-designer.md)
-         + [AEM Forms(서버 클러스터) 설치 준비 중](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
-         + [JBoss 클러스터의 JEE에서 Adobe Experience Manager Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
-         + [WebSphere 클러스터에서 JEE에 Adobe Experience Manager Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
-         + [WebLogic 클러스터에서 JEE의 Adobe Experience Manager Forms 구성](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
+      + [Designer 설치 및 구성](/help/forms/using/installing-configuring-designer.md)
       + AEM Forms {#configure-aem-forms} 구성
          + [AEM Forms 서버의 성능 조정](/help/forms/using/performance-tuning-aem-forms.md)
          + [적응형 양식 캐시 구성](/help/forms/using/configure-adaptive-forms-cache.md)
@@ -471,17 +456,10 @@ ht-degree: 22%
    + AEM Forms {#upgrade-aem-forms} 업그레이드
       + [사용 가능한 업그레이드 경로](/help/forms/using/upgrade.md)
       + OSGi {#aem-forms-osgi-upgrade}에서 AEM Forms 업그레이드
-         + [OSGi에서 AEM 6.5 양식으로 업그레이드](/help/forms/using/upgrade-forms-osgi.md)
+         + [OSGi의 AEM 6.5 LTS 양식으로 업그레이드](/help/forms/using/upgrade-forms-osgi.md)
          + [호환성 패키지 설치](/help/forms/using/compatibility-package.md)
          + [AEM Forms 에셋 및 문서 마이그레이션](/help/forms/using/migration-utility.md)
-      + JEE {#aem-forms-jee-upgrade}의 AEM Forms 업그레이드
-         + [AEM Forms 업그레이드 준비 중](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
-         + [JEE의 Adobe Experience Manager Forms 업그레이드 검사 목록 및 계획](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)
       + [JEE의 AEM 6.5 양식으로 업그레이드](/help/forms/using/upgrade-forms-jee.md)
-      + [JBoss용 JEE의 Adobe Experience Manager Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
-      + [JBoss 턴키용 JEE의 AEM Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
-      + [WebSphere용 JEE의 Adobe Experience Manager Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
-      + [WebLogic용 JEE의 Adobe Experience Manager Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
    + AEM Forms {#manage-administer-aem-forms} 관리
       + [OSGi 그룹 및 권한의 AEM Forms](/help/forms/using/forms-groups-privileges-tasks.md)
       + [양식을 분류할 새 폴더 만들기](/help/forms/using/creating-new-folders-categorize-forms.md)
@@ -809,7 +787,6 @@ ht-degree: 22%
          + [거래 보고서 보기 및 이해](/help/forms/using/viewing-and-understanding-transaction-reports.md)
          + [OSGi의 AEM Forms에 대한 청구 가능 API 목록](/help/forms/using/transaction-reports-billable-apis.md)
          + [사용자 정의 구현을 위한 트랜잭션 레코드](/help/forms/using/record-transaction-custom-implementation.md)
-      + JEE {#transaction-reports-jee}의 AEM Forms에 대한 트랜잭션 보고서
          + [트랜잭션 보고서 활성화 및 보기](/help/forms/using/transaction-report-overview-jee.md)
          + [JEE의 AEM Forms에 대한 청구 가능 API 목록](/help/forms/using/transaction-reports-billable-apis-jee.md)
          + [사용자 지정 구성 요소 API에 대한 트랜잭션 기록](/help/forms/using/record-transaction-custom-component-jee.md)
@@ -1099,12 +1076,8 @@ ht-degree: 22%
       + [Windows Server에서 Word 또는 Excel 파일을 PDF으로 변환할 수 없음](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
       + [Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer 또는 Apple Safari에서 XFA 기반 PDF forms을 열 수 없음](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
       + [CRX 저장소를 복원할 수 없음](/help/forms/using/restore-crx-repository.md)
-      + [AEM 6.5.15.0 서비스 팩을 설치한 후 서비스를 사용할 수 없는 오류 발생](/help/forms/using/aem-service-pack-installation-solution.md)
-      + [JBoss Linux 환경의 AEM Forms JEE 6.5.15.0 서비스 팩 설치 문제](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
       + [AEM Forms 서버가 완전히 실행되고 있지 않더라도 문서 처리](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [출력 서비스, Forms 서비스 또는 기록 문서(DoR) 서비스를 사용할 수 없음](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
-      + [Experience Manager Forms의 Struts 2 RCE 취약성 완화](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
-      + [MySQL용 6.5.12.0(으)로 업그레이드하는 동안 데이터베이스를 백업하지 못했습니다.](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [PDF 생성이 WorkBench에서 많은 수의 PDF를 인쇄하지 못했습니다.](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [AEM SDK을 올바르게 다시 시작하는 방법](/help/forms/using/restart-aem-sdk.md)
       + [PaperCapture 서비스가 PDF에서 OCR을 수행하지 못함](/help/forms/using/papercapture-service-resolution.md)

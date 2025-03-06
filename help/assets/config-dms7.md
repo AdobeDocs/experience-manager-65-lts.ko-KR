@@ -1,19 +1,14 @@
 ---
 title: Dynamic Media 구성 - Scene7 모드
 description: Dynamic Media - Scene7 모드를 구성하는 방법에 대해 알아봅니다.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '6507'
+source-wordcount: '6491'
 ht-degree: 3%
 
 ---
@@ -132,7 +127,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
    * **[!UICONTROL Assets 게시]** - 다음 세 가지 옵션 중에서 선택할 수 있습니다.
       * **[!UICONTROL 즉시]**&#x200B;은(는) 에셋이 업로드되면 시스템이 에셋을 수집하여 URL/임베드를 즉시 제공함을 의미합니다. 에셋을 게시하는 데 필요한 사용자 개입이 없습니다.
-      * **[!UICONTROL 활성화 시]**&#x200B;는 URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 함을 의미합니다.<br><!-- CQDOC-17478, Added March 9, 2021-->Experience Manager 6.5.8부터 Experience Manager 게시 인스턴스는 **[!UICONTROL 활성화 시]** 게시 모드에서만 `dam:scene7Domain` 및 `dam:scene7FileStatus`과(와) 같은 정확한 Dynamic Media 메타데이터 값을 반영합니다. 이 기능을 사용하려면 서비스 팩 8을 설치한 다음 Experience Manager을 다시 시작하십시오. Sling 구성 관리자로 이동합니다. `Scene7ActivationJobConsumer Component`에 대한 구성을 찾거나 새 구성을 만드십시오. **[!UICONTROL Dynamic Media 게시 후 메타데이터 복제]** 확인란을 선택한 다음 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+      * **[!UICONTROL 활성화 시]**&#x200B;는 URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 함을 의미합니다.<br><!-- CQDOC-17478, Added March 9, 2021-->Experience Manager 6.5.8부터 Experience Manager 게시 인스턴스는 **[!UICONTROL 활성화 시]** 게시 모드에서만 `dam:scene7Domain` 및 `dam:scene7FileStatus`과(와) 같은 정확한 Dynamic Media 메타데이터 값을 반영합니다. Sling 구성 관리자로 이동합니다. `Scene7ActivationJobConsumer Component`에 대한 구성을 찾거나 새 구성을 만드십시오. **[!UICONTROL Dynamic Media 게시 후 메타데이터 복제]** 확인란을 선택한 다음 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
         ![Dynamic Media 게시 후 메타데이터 복제 확인란](assets-dm/replicate-metadata-setting.png)
 
@@ -250,7 +245,7 @@ Dynamic Media - Scene7 모드에서 기본 자산 업로드 파일 크기는 2GB
 
 이 기능을 사용하려면 다음 사전 요구 사항과 점에 유의하십시오.
 
-* Dynamic Media - Scene7 모드에서 서비스 팩 6.5.4.0 이상으로 Experience Manager 6.5를 실행해야 합니다.
+* Dynamic Media - Scene7 모드에서 Experience Manager 6.5 LTS를 실행 중이어야 합니다.
 * 이 대용량 업로드 기능은 [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html) 고객에게만 지원됩니다.
 * Experience Manager 인스턴스가 Amazon S3 또는 Microsoft® Azure Blob 저장소로 구성되어 있는지 확인하십시오.
 

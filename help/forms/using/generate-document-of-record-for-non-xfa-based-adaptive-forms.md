@@ -1,17 +1,13 @@
 ---
 title: 적응형 양식을 위한 기록 문서 생성
 description: 적응형 양식에 대한 기록 문서(DoR)를 생성하는 방법을 설명합니다.
-content-type: reference
-topic-tags: adaptive_forms, develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4307'
+source-wordcount: '4283'
 ht-degree: 3%
 
 ---
@@ -31,11 +27,6 @@ ht-degree: 3%
 일반적으로 양식을 제출한 후 고객은 향후 참조를 위해 양식에 작성한 정보를 인쇄 또는 문서 형식으로 기록하기를 원합니다. 이를 기록 문서라고 합니다.
 
 이 문서에서는 적응형 Forms 또는 적응형 양식 조각에 대한 기록 문서를 생성하는 방법에 대해 설명합니다.
-
->[!NOTE]
->
-> 적응형 양식 편집기에서 적응형 양식 조각 및 해당 필드를 사용자 지정할 수 있는 지원은 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
-
 
 >[!NOTE]
 >

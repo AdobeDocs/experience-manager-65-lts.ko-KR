@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: 7b6b02fd-fcb2-45ae-a239-e0c68de2bcbb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 72%
+source-wordcount: '352'
+ht-degree: 75%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe 고객은 [Adobe Developer Console](https://developer.adobe.com/console)�
 
 **조치**: 이제 AEM에서 OAuth 자격 증명을 지원하므로 구성을 마이그레이션합니다.
 
-**관련 AEM 버전**: Adobe Managed Services(서비스 팩 21 이상).
+**관련 AEM 버전**: Adobe Managed Services.
 
 AEM 고객은 AEM을 사용하여 다른 모든 Adobe 솔루션과의 통합을 구성합니다. 예를 들어 Adobe Target, Adobe Analytics 등이 있습니다.
 
@@ -44,6 +44,6 @@ AEM 고객은 AEM을 사용하여 다른 모든 Adobe 솔루션과의 통합을 
 
 **조치**: 언제 JWT에서 OAuth 자격 증명으로 마이그레이션할 수 있는지 확인합니다.
 
-**관련 AEM 버전**: Adobe Managed Services(서비스 팩 21 이상).
+**관련 AEM 버전**: Adobe Managed Services.
 
 고객은 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)를 호출할 수 있도록 Adobe Developer Console 프로젝트를 만듭니다. Adobe Developer 프로젝트의 자격 증명은 사용 중단된 JWT 자격 증명이 만료되는 2025년 1월 전에 OAuth 서버 간 자격 증명 유형으로 마이그레이션해야 합니다.

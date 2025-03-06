@@ -9,9 +9,9 @@ role: User, Admin
 feature: CDN Cache
 solution: Experience Manager, Experience Manager Assets
 exl-id: bce11a49-bbbe-4dda-8144-7f135bb666d9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1277'
 ht-degree: 1%
 
 ---
@@ -21,18 +21,11 @@ ht-degree: 1%
 Dynamic Media 자산은 CDN(Content Delivery Network)에 의해 캐시되어 고객에게 빠르게 게재됩니다. 그러나 이러한 자산을 업데이트할 때에는 해당 변경 사항이 즉시 웹 사이트에 적용되도록 해야 합니다. CDN 캐시를 제거하거나 무효화하면 Dynamic Media에서 제공하는 에셋을 빠르게 업데이트할 수 있습니다. TTL(Time To Live) 값(기본값 10시간)을 사용하여 캐시가 만료될 때까지 기다리는 대신 Dynamic Media 내에서 요청을 보내 몇 분 내에 캐시가 만료되도록 할 수 있습니다.
 
 
-
->[!IMPORTANT]
->
->다음 단계는 Adobe Experience Manager 6.5, 서비스 팩 6(Experience Manager 6.5.6) 이상의 Dynamic Media - Scene7 모드에만 적용됩니다. 이 CDN 무효화 기능을 사용하려면 Adobe Experience Manager - Dynamic Media와 함께 번들로 제공되는 기본 CDN을 사용해야 합니다. 다른 모든 사용자 지정 CDN은 이 기능에서 지원되지 않습니다.<br>Experience Manager 6.5, 서비스 팩 5(Experience Manager 6.5.5) 또는 이전 버전에서 Dynamic Media를 사용하는 경우 [Dynamic Media Classic을 통해 CDN 캐시 무효화](/help/assets/invalidate-cdn-cache-dm-classic.md)에 있는 단계를 따릅니다.
-
-<!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
-
 **Dynamic Media 자산에 대해 CDN 캐시 콘텐츠를 무효화하려면:**
 
 *파트 1/2: CDN 무효화 템플릿 만들기*
 
-1. Experience Manager 6.5.6 이상에서 **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN 무효화]**&#x200B;로 이동합니다.
+1. **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN 무효화]**&#x200B;로 이동합니다.
 
    ![CDN 유효성 검사 기능](/help/assets/assets-dm/cdn-invalidation-template2.png)
 

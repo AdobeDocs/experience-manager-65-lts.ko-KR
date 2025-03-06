@@ -10,9 +10,9 @@ role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 22a2428d-3ebd-4368-983e-d140f99de2dd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '675'
 ht-degree: 21%
 
 ---
@@ -68,11 +68,11 @@ Brand Portal을 사용하여 AEM Assets를 구성하려면 다음 항목이 필�
 
 [최신 AEM 서비스 팩 다운로드 및 설치](#servicepack)
 
-### AEM 6.5 다운로드 및 설치 {#aemquickstart}
+### AEM 6.5 LTS 다운로드 및 설치 {#aemquickstart}
 
-AEM 작성자 인스턴스를 설정하려면 AEM 6.5가 있어야 합니다. AEM을 실행하지 않은 경우 다음 위치에서 다운로드하십시오.
+AEM 작성자 인스턴스를 설정하려면 AEM 6.5 LTS가 있어야 합니다. AEM을 실행하지 않은 경우 다음 위치에서 다운로드하십시오.
 
-* 기존 AEM 고객인 경우 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com)에서 AEM 6.5를 다운로드하십시오.
+* 기존 AEM 고객인 경우 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com)에서 AEM 6.5 LTS를 다운로드하십시오.
 
 * Adobe 파트너인 경우 [Adobe 파트너 교육 프로그램](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)을 사용하여 AEM 6.5를 요청하십시오.
 
@@ -80,7 +80,7 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 
 
 ### AEM 최신 서비스 팩 다운로드 및 설치 {#servicepack}
 
-자세한 지침은 현재 [AEM 6.5 서비스 팩 릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html)를 참조하세요.
+자세한 지침은 현재 [AEM 6.5 LTS 서비스 팩 릴리스 정보](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html)를 참조하세요.
 
 최신 AEM 패키지 또는 서비스 팩을 찾을 수 없는 경우 **Adobe 고객 지원 센터에 문의**&#x200B;하십시오.
 

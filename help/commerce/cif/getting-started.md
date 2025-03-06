@@ -6,9 +6,9 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 15face30-3039-49a0-bfee-56bff21e5c27
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '672'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,6 @@ ht-degree: 3%
 
 AEM 컨텐츠 및 Commerce을 시작하려면 AEM 컨텐츠 및 AEM 6.5용 Commerce 추가 기능을 설치해야 합니다.
 
-## 최소 소프트웨어 요구 사항
-
-[AEM 6.5 서비스 팩](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 7 이상이 필요합니다.
 
 ## 온보딩 {#onboarding}
 

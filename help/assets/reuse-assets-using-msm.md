@@ -8,9 +8,9 @@ feature: Asset Management,Multi Site Manager
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 29365a8a-7d29-41b2-9a54-d12fe802f6ed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '3284'
+source-wordcount: '3261'
 ht-degree: 9%
 
 ---
@@ -27,10 +27,6 @@ ht-degree: 9%
 * 에셋을 한 번 만든 다음 이러한 에셋의 사본을 만들어 사이트의 다른 영역에서 재사용할 수 있습니다.
 * 여러 복사본을 동기화한 다음 원본 기본 복사본을 한 번 업데이트하여 변경 내용을 하위 복사본으로 푸시합니다.
 * 상위 에셋과 하위 에셋 간의 연결을 일시적으로 또는 영구적으로 일시 중단하여 로컬 변경 작업을 수행합니다.
-
-## 사전 요구 사항 {#prereq}
-
-[!DNL Assets]에 MSM을 사용하려면 [!DNL Experience Manager] 6.5 서비스 팩 1 이상을 설치하십시오. 자세한 내용은 [최신 서비스 팩의 릴리스 정보](/help/release-notes/release-notes.md)를 참조하세요.
 
 ## 이점 및 개념 이해 {#concepts}
 

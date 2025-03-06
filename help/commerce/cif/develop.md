@@ -9,9 +9,9 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '765'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 AEM용 Commerce integration framework(CIF)를 기반으로 AEM Commerce 프로젝트를 개발하는 것은 다른 AEM 프로젝트와 동일한 규칙과 모범 사례를 따릅니다. 먼저 다음 사항을 검토하십시오.
 
-- [AEM 6.5 개발 사용 안내서](/help/sites-developing/getting-started.md)
+- [AEM 개발 사용 안내서](/help/sites-developing/getting-started.md)
 - [AEM 핵심 개념](/help/sites-developing/the-basics.md)
 - [AEM 개발 - 가이드라인 및 모범 사례](/help/sites-developing/dev-guidelines-bestpractices.md)
 - [Apache Maven을 사용하여 AEM 프로젝트를 작성하는 방법](/help/sites-developing/ht-projects-maven.md)
@@ -31,17 +31,16 @@ CIF 프로젝트에서 작업하려면 로컬 개발 환경을 사용하는 것�
 
 >[!NOTE]
 >
->다음 지침은 AEM 6.5에 중점을 둔 CIF을 사용하여 AEM Commerce에 대한 로컬 AEM 개발 환경을 설정하는 데 도움이 됩니다. AEM as a Cloud Service을 사용하는 경우 [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) 설명서를 참조하십시오.
+>다음 지침은 AEM 6.5 LTS에 중점을 둔 CIF을 사용하여 AEM Commerce에 대한 로컬 AEM 개발 환경을 설정하는 데 도움이 됩니다. AEM as a Cloud Service을 사용하는 경우 [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) 설명서를 참조하십시오.
 
-AEM 6.5용 AEM Commerce 추가 기능(예: CIF 추가 기능은 로컬 개발에도 사용할 수 있으며 AEM 패키지로 제공됩니다. 기능 팩으로 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 다운로드할 수 있습니다.
+AEM용 AEM Commerce 추가 기능(CIF 추가 기능)은 로컬 개발에도 사용할 수 있으며 AEM 패키지로 제공됩니다. 기능 팩으로 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 다운로드할 수 있습니다.
 
 ### 필수 소프트웨어
 
 다음은 로컬에 설치해야 합니다.
 
-- 로컬 AEM 6.5
-- [AEM 6.5 서비스 팩](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 7 이상
-- [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+- 로컬 AEM 6.5 LTS
+- [Java 17](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/)&#x200B;(3.3.9 이상)
 - [노드 LTS](https://nodejs.org/en/)
 - [npm 6+](https://www.npmjs.com/)
@@ -58,8 +57,6 @@ CIF 추가 기능은 [소프트웨어 배포 포털](https://experience.adobe.co
 ### 로컬 설정
 
 AEM 및 CIF 추가 기능을 사용하여 로컬 CIF 프로젝트를 개발하는 경우 다음 단계를 수행하십시오.
-
-1. AEM 6.5 릴리스를 가져와 AEM 6.5 서비스 팩을 설치합니다. AEM Adobe 6.5 서비스 팩 7이 필요하지만 사용 가능한 마지막 서비스 팩을 설치하는 것이 좋습니다.
 
 1. AEM .jar 압축을 풀고 `crx-quickstart` 폴더를 만들려면 다음을 실행하십시오.
 
