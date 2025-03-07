@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: f65f9e94-0837-48d1-a565-cfb880963790
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e7fc1120d12160ba866ceaddd087fc9acdfcd51d
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -93,10 +93,6 @@ Adobe은 2018/19에 새로운 UI로 전환할 것을 권장합니다. 이 작업
   </tr>
  </tbody>
 </table>
-
-### FAQ {#faq}
-
-클래식 UI의 사용 중단 일정에 대한 정보를 포함하여 자세한 내용은 기술 자료 문서인 [Touch UI 작성 FAQ](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html)를 참조하십시오.
 
 ### UI 선택 {#selecting-your-ui}
 
