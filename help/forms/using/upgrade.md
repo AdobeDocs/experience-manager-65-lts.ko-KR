@@ -9,7 +9,7 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
 exl-id: 93126750-4645-4084-a21b-5362e3cc08a9
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: dde49ddf344d197d07dce883e03d002cc0934b82
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 12%
@@ -30,7 +30,7 @@ AEM 6.5 Forms에는 양식 및 서신을 통해 생성, 관리 및 사용자 경
 
 다음 다이어그램은 OSGi에서 AEM Forms에 사용할 수 있는 업그레이드 경로를 표시합니다.
 
-![OSGi 업그레이드 흐름](/help/forms/using/assets/upgrade-22-lts.png)
+![OSGi 업그레이드 흐름](/help/forms/using/assets/updated-img-forms-upgrade-lts.png)
 
 다음 위치에서 직접 업그레이드를 수행할 수 있습니다.
 

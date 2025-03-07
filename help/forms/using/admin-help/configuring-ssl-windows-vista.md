@@ -1,17 +1,13 @@
 ---
 title: Windows Vista에서 SSL 구성
 description: Windows Vista에서 SSL을 구성하는 방법에 대해 알아봅니다. Java Keytool 을 사용하고 실행하여 인증에 RSA 키를 사용하여 SSL 인증서를 생성합니다.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/configuring_ssl
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ee73f6a1-712c-461f-95e8-85f8c5694293
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: d0f29cb177e98315cd50c2d7e96c3605eec14885
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%

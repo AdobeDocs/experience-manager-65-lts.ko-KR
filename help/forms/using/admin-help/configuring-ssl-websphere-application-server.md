@@ -1,15 +1,13 @@
 ---
 title: WebSphere 애플리케이션 서버에 대한 SSL 구성
 description: WebSphere Application Server용 SSL을 구성하는 방법에 대해 알아봅니다.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/configuring_ssl
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: 0caac293-98b4-4e73-9440-f1db68c94054
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 00d0576a5ea24efcfb40a2c9a44d596a5205f52c
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 0%

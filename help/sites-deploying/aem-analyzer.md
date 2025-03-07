@@ -2,14 +2,13 @@
 title: AEM Analyzer를 사용한 업그레이드 복잡성 평가
 description: AEM Analyzer 를 사용하여 업그레이드의 복잡성을 평가하는 방법을 알아봅니다.
 topic-tags: upgrading
-content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2069'
 ht-degree: 15%
 
 ---
@@ -38,13 +37,13 @@ AEM 6.5 LTS Analyzer 보고서에는 다음 카테고리가 포함됩니다.
 
 ## 사용 가능 {#analyzer-availability}
 
-[소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)에서 AEM 분석기를 zip 파일로 다운로드할 수 있습니다. 원본 AEM 인스턴스에서 [패키지 관리자](/help/sites-administering/package-manager.md)를 통해 패키지를 설치할 수 있습니다.
+[소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 AEM 분석기를 zip 파일로 다운로드할 수 있습니다. 원본 AEM 인스턴스에서 [패키지 관리자](/help/sites-administering/package-manager.md)를 통해 패키지를 설치할 수 있습니다.
 
 ## AEM Analyzer 사용에 대한 중요 고려 사항 {#important-considerations-for-using-aem-analyzer}
 
 AEM Analyzer 실행을 위한 중요한 고려 사항을 이해하려면 아래 섹션을 따르십시오.
 
-* 분석기 보고서는 AEM [패턴 탐지기](/help/sites-deploying/pattern-detector.md)의 출력을 사용하여 작성됩니다. Analyzer에서 사용하는 패턴 탐지기 버전은 AEM Analyzer 설치 패키지에 포함되어 있습니다
+* Analyzer 보고서는 AEM 패턴 감지기의 출력을 사용하여 작성됩니다. Analyzer에서 사용하는 패턴 탐지기 버전은 AEM Analyzer 설치 패키지에 포함되어 있습니다
 * AEM 분석기는 **관리자** 사용자 또는 **관리자** 그룹의 사용자만 실행할 수 있습니다.
 * Analyzer 는 버전 6.5 이상의 AEM 인스턴스에서 지원됩니다.
 

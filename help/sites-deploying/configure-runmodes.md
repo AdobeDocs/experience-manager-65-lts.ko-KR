@@ -1,17 +1,13 @@
 ---
 title: 실행 모드
 description: 실행 모드를 사용하여 특정 목적을 위해 AEM 인스턴스를 조정하는 방법을 알아봅니다.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3370d62eafb9339a9f9c638f3fb2e2ce0f14d9ec
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
@@ -38,18 +34,14 @@ ht-degree: 1%
 
 * `author`
 * `publish`
-* `samplecontent`
-* `nosamplecontent`
 
 상호 배타적인 실행 모드의 두 쌍입니다. 예를 들어 다음과 같은 작업을 수행할 수 있습니다.
 
 * `author` 또는 `publish`을(를) 동시에 정의하지 않음
 
-* `author`을(를) `samplecontent` 또는 `nosamplecontent`과(와) 결합(둘 다 아님)
-
 >[!CAUTION]
 >
->위의 실행 모드(author, publish, samplecontent, nosamplecontent) 중 하나를 사용할 때 설치 시 사용되는 값은 해당 설치의 *전체 수명*&#x200B;에 대한 실행 모드를 정의합니다.
+>위의 실행 모드(작성자, 게시) 중 하나를 사용하는 경우 설치 시 사용되는 값은 해당 설치의 *전체 수명*&#x200B;에 대한 실행 모드를 정의합니다.
 >
 >이러한 실행 모드에 대해 *설치 후에는 변경할 수 없습니다*.
 
@@ -68,16 +60,6 @@ ht-degree: 1%
 * 필요에 따라 . .
 
 각 시작 시 사용자 정의된 실행 모드를 선택할 수도 있습니다.
-
-## samplecontent 및 nosamplecontent 사용 {#using-samplecontent-and-nosamplecontent}
-
-이러한 모드를 사용하여 샘플 콘텐츠의 사용을 제어할 수 있습니다. 샘플 콘텐츠는 빠른 시작을 빌드하기 전에 정의되며 패키지, 구성 등을 포함할 수 있습니다.
-
-* `samplecontent` 실행 모드에서는 이 콘텐츠를 설치합니다(기본 모드).
-
-* `nosamplecontent` 모드에서는 샘플 콘텐츠가 설치되지 않습니다.
-
-nosamplecontent 실행 모드는 프로덕션 설치용으로 설계되었습니다.
 
 ## 실행 모드에 대한 구성 속성 정의 {#defining-configuration-properties-for-a-run-mode}
 

@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9bf502146a309cd0d91f2aaa1778d5b550d424a8
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -87,3 +87,5 @@ Checkpoints won't be copied, because no external datastore has been specified. T
 경고는 무시할 수도 있지만, 이 경우 저장소는 처음 시작할 때 완전히 다시 인덱싱됩니다. 특히 큰 사건에 있어서 그것은 긴 과정일 수도 있습니다. 리인덱싱 프로세스가 완료될 때까지 저장소를 사용할 수 없습니다. `--skip-checkpoints` 옵션을 사용하여 경고를 표시하지 않습니다.
 
 [오프라인 리인덱싱](/help/sites-deploying/upgrade-offline-reindexing.md)를 사용하여 AEM을 시작하기 전에 저장소를 오프라인 리인덱싱할 수도 있습니다. 처음 시작할 때 전체 리인덱싱을 사용하지 않도록 하십시오.
+
+oak 업그레이드 도구 및 고급 사용에 대한 자세한 내용은 [공식 설명서](https://jackrabbit.apache.org/oak/docs/migration.html)를 참조하세요.

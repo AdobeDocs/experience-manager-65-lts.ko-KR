@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
-source-git-commit: b4a1806c48ab0945f83691a597cad214c6d1b645
+source-git-commit: 96fdfc1f754358bc358595c10ba908a4aabce4af
 workflow-type: tm+mt
-source-wordcount: '6819'
+source-wordcount: '6802'
 ht-degree: 23%
 
 ---
@@ -403,7 +403,7 @@ ht-degree: 23%
 + 양식 {#forms}
    + 릴리스 정보 {#release-notes-new-features}
       + [새로운 기능](/help/forms/using/whats-new.md)
-      + [FAQ](/help/forms/using/frequently-asked-questions-faq.md)
+      + [자주 묻는 질문](/help/forms/using/frequently-asked-questions-faq.md)
    + 시작하기 {#getting-started}
       + [AEM Forms 소개](/help/forms/using/introduction-aem-forms.md)
       + [적응형 양식 작성 소개](/help/forms/using/introduction-forms-authoring.md)
@@ -971,12 +971,9 @@ ht-degree: 23%
    + 개발자 참조 {#developer-reference}
       + [HTML 템플릿 언어](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
       + 적응형 양식을 디버깅할 [AEM 플러그인](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
-      + [AEM Forms Java API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
-      + [JEE Java API 참조의 AEM Forms](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
       + [HTML5 Forms용 양식 Bridge API](/help/forms/using/form-bridge-apis.md)
       + [적응형 Forms에 대한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
       + [어셈블러 서비스 및 DDX 참조](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
-      + [Workbench 도움말](https://www.adobe.com/go/learn_aemforms_workbench_65)
       + JEE {#programming-aem-forms-jee}에서 AEM Forms을 사용한 프로그래밍
          + JEE {#introduction-programming-aem-forms-jee}에서 AEM Forms 프로그래밍 소개
             + [Java API QuickStart 소개](/help/forms/developing/introducing-java-api-soap-quick.md)

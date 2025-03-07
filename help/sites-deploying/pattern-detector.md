@@ -1,16 +1,13 @@
 ---
 title: 패턴 감지기를 사용한 업그레이드 복잡성 평가
 description: 패턴 감지기를 사용하여 업그레이드의 복잡성을 평가하는 방법에 대해 알아봅니다.
-contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: upgrading
-content-type: reference
-docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+hide: true
+hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 1%

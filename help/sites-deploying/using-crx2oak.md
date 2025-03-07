@@ -1,15 +1,13 @@
 ---
 title: CRX2Oak 마이그레이션 도구 사용
 description: Adobe Experience Manager과 함께 CRX2Oak 마이그레이션 도구를 사용하는 방법을 알아봅니다. 이 도구는 다른 저장소 간에 데이터를 마이그레이션하는 데 도움이 되도록 설계되었습니다.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: upgrading
-content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+hide: true
+hidefromtoc: true
 exl-id: 542967b2-e2cf-40d1-a805-456dc6e671a9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e13340d0ab84d68a2e7c676787909380d2f516a0
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 0%

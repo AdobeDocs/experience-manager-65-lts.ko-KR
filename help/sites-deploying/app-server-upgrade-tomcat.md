@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b835dbf6fd7f40a2a1e1ca26c8a6870b69a19cbe
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 업그레이드 전 단계 {#pre-upgrade-steps}
 
-업그레이드를 실행하기 전에 완료해야 하는 몇 가지 단계가 있습니다. 자세한 내용은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md) 및 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)을 참조하십시오. 또한 시스템이 [AEM 6.5 LTS에 대한 요구 사항](/help/sites-deploying/technical-requirements.md)을 충족하는지 확인하고 [업그레이드 계획 고려 사항](/help/sites-deploying/upgrade-planning.md) 및 [Analyzer](/help/sites-deploying/pattern-detector.md)를 통해 복잡성을 추정하는 방법을 확인하십시오.
+업그레이드를 실행하기 전에 완료해야 하는 몇 가지 단계가 있습니다. 자세한 내용은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md) 및 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)을 참조하십시오. 또한 시스템이 [AEM 6.5 LTS에 대한 요구 사항](/help/sites-deploying/technical-requirements.md)을 충족하는지 확인하고 [업그레이드 계획 고려 사항](/help/sites-deploying/upgrade-planning.md) 및 [Analyzer](/help/sites-deploying/aem-analyzer.md)를 통해 복잡성을 추정하는 방법을 확인하십시오.
 
 
 ### 마이그레이션 사전 요구 사항 {#migration-prerequisites}
@@ -42,7 +42,7 @@ ht-degree: 0%
    ```
 
 1. AEM 6.5 LTS 호환 Tomcat 서버 설정
-1. AEM 서버에 대한 시작 매개 변수를 검토하고 시스템 요구 사항에 따라 매개 변수를 업데이트해야 합니다. 자세한 내용은 [Java 17 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)을 참조하십시오
+1. AEM 서버에 대한 시작 매개 변수를 검토하고 시스템 요구 사항에 따라 매개 변수를 업데이트해야 합니다. 자세한 내용은 [Java 17 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-considerations)을 참조하십시오
 1. Java 17을 사용하여 Tomcat 서버에 새로 다운로드한 6.5 LTS war을 배포하고 다음을 실행하여 AEM 6.5 LTS Tomcat 서버를 시작합니다.
 
    ```

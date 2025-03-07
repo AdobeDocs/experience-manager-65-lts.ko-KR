@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 82af7ee5b3665dcc33b47e05c8580e9981728888
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 업그레이드를 실행하기 전에 완료해야 하는 몇 가지 단계가 있습니다. 자세한 내용은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md) 및 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)을 참조하십시오. 또한 시스템이 [AEM 6.5 LTS에 대한 요구 사항](/help/sites-deploying/technical-requirements.md)을 충족하는지 확인하십시오.
 
-[업그레이드 계획](/help/sites-deploying/upgrade-planning.md) 및 [AEM 분석기](/help/sites-deploying/pattern-detector.md)를 통해 AEM 업그레이드의 복잡성을 추정하는 방법을 확인하십시오.
+[업그레이드 계획](/help/sites-deploying/upgrade-planning.md) 및 [AEM 분석기](/help/sites-deploying/aem-analyzer.md)를 통해 AEM 업그레이드의 복잡성을 추정하는 방법을 확인하십시오.
 
 ### 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
@@ -82,7 +82,7 @@ ht-degree: 1%
    java -version
    ```
 
-1. AEM 서버에 대한 시작 매개 변수를 검토하고 요구 사항에 따라 매개 변수를 업데이트해야 합니다. 자세한 내용은 [Java 17 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)을 참조하십시오
+1. AEM 서버에 대한 시작 매개 변수를 검토하고 요구 사항에 따라 매개 변수를 업데이트해야 합니다. 자세한 내용은 [Java 17 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-considerations)을 참조하십시오.
 1. 새 6.5 LTS war을 다운로드하여 `/<path-to-aem-server>/dropins/`에 있는 dropins 폴더에 복사합니다.
 1. AEM 인스턴스 시작: 일반적으로 다음 명령을 사용하여 수행할 수 있습니다.
 
