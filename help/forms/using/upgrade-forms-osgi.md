@@ -1,45 +1,25 @@
 ---
-title: OSGi에서 AEM 6.5 Forms으로 업그레이드
-description: AEM 6.1 Forms, AEM 6.2 Forms 및 LiveCycle ES4 SP1에서 AEM 6.3 Forms으로 직접 업그레이드할 수 있습니다.
+title: OSGi에서 AEM 6.5 Forms LTS로 업그레이드
+description: AEM 6.5.22.0 Forms에서 AEM 6.5 Forms LTS로 직접 업그레이드할 수 있습니다.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: installing
-geptopics: SG_AEMFORMS/categories/jee
-role: Admin,User
+role: Admin, User
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms,AEM Forms on OSGi, AEM Forms Upgrade
+feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '853'
 ht-degree: 2%
 
 ---
 
-# OSGi에서 AEM 6.5 Forms으로 업그레이드 {#upgrade-to-aem-forms-osgi}
+# OSGi에서 AEM 6.5 Forms LTS로 업그레이드 {#upgrade-to-aem-forms-osgi}
 
-AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 직접 업그레이드할 수 있습니다.
+[AEM 6.5에서 AEM 6.5 LTS로 업그레이드](/help/sites-deploying/upgrade.md)하려면 AEM 6.5.22.0 Forms 이상으로 업그레이드하십시오. AEM 6.5.22.0에서 AEM 6.5 Forms LTS로 직접 업그레이드할 수 있습니다.
 
-**AEM 6.0 Forms, AEM 6.1 Forms** 및 **AEM 6.2 Forms**&#x200B;에서 AEM 6.5 Forms으로의 직접 업그레이드 경로를 사용할 수 없습니다. 중간 [AEM 6.2 Forms으로 업그레이드](https://helpx.adobe.com/experience-manager/6-2/forms/using/upgrade.html), [AEM 6.3 Forms으로 업그레이드](https://helpx.adobe.com/experience-manager/6-3/forms/using/upgrade.html) 또는 [AEM 6.4 Forms으로 업그레이드](/help/forms/using/upgrade.md)한 다음 AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드합니다.
+AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms 또는 AEM 6.5 Forms을 사용하는 경우 AEM 6.5 Forms LTS로 직접 업그레이드할 수 없습니다. 자세한 업그레이드 경로는 [업그레이드 경로](/help/forms/using/upgrade.md) 설명서를 참조하십시오.
 
-AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드하려면 다음을 수행하십시오.
-
-1. 기존 AEM 인스턴스를 AEM 6.5로 업그레이드합니다. 다음 단계가 나와 있습니다.
-
-   1. AEM 6.3 Forms 또는 AEM 6.4 Forms용 최신 서비스 팩 및 패치를 설치합니다. 자세한 내용은 [AEM Sustainance Hub](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html)를 참조하세요.
-   1. 업그레이드할 소스 인스턴스를 준비합니다. 자세한 단계는 [AEM 6.5로 업그레이드](/help/sites-deploying/upgrade.md)를 참조하십시오.
-   1. [AEM 6.5 빠른 시작](/help/sites-deploying/deploy.md#getting%20the%20software)을 다운로드합니다.
-   1. **(Unix/Linux 기반 설치만 해당)** 기본 운영 체제로 UNIX 또는 Linux를 사용하는 경우 터미널 창을 열고 crx-quickstart가 포함된 폴더로 이동한 다음 다음 명령을 실행합니다.
-
-      `chmod -R 755 ../crx-quickstart`
-
-   1. AEM 인스턴스를 AEM 6.3으로 업그레이드합니다. 단계별 지침은 [AEM 6.5로 업그레이드](/help/sites-deploying/upgrade.md)를 참조하십시오.
-
-      다음 단계를 계속하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 &lt;crx-repository>/error.log 파일에 표시되지 않을 때까지 기다립니다.
-
-      >[!NOTE]
-      >
-      >서버가 실행 중이면 몇 가지 AEM Forms 번들이 설치 상태로 유지됩니다. 번들 수는 설치할 때마다 달라질 수 있습니다. 이러한 번들의 상태를 무시해도 됩니다. 번들은 https://&#39;[server]:[port]&#39;/system/console/에 나열됩니다.
+서비스 팩 AEM Forms 6.5.22.0(으)로 업그레이드한 후 다음 단계에 따라 AEM 6.5 LTS Forms으로 업그레이드하십시오.
 
 1. AEM Forms 추가 기능 패키지를 설치합니다. 다음 단계가 나와 있습니다.
 
@@ -49,20 +29,25 @@ AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드하�
       1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을(를) 선택합니다.
       1. 패키지의 버전 및 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
    1. 운영 체제에 적용할 수 있는 패키지 이름을 선택하고 **[!UICONTROL EULA 약관 동의]**&#x200B;를 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
+   1. [패키지 관리자](/help/sites-administering/package-manager.md)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
    1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
    1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-      [AEM Forms 릴리스](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 문서에 나열된 직접 링크를 사용하여 패키지를 다운로드할 수도 있습니다.
+      [AEM Forms 릴리스](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 문서에 나열된 직접 링크를 사용하여 패키지를 다운로드할 수도 있습니다.
 
-      >[!NOTE]
-      >
-      >패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 중지하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 &lt;crx-repository>/error.log 파일에 나타나고 로그가 안정될 때까지 기다립니다. 또한 몇 가지 패키지는 설치된 상태로 유지될 수 있습니다. 이러한 패키지의 상태를 무시해도 됩니다.
+      패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 중지하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 &lt;crx-repository>/error.log 파일에 나타나고 로그가 안정될 때까지 기다립니다. 또한 몇 가지 패키지는 설치된 상태로 유지될 수 있습니다. 이러한 패키지의 상태를 무시해도 됩니다.
+
+
+      **다음 추가 JVM 명령줄 매개 변수를 사용하여 AEM 인스턴스를 다시 시작하십시오**:
+      `--add-opens java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED`
+
+      서버가 스크립트나 서비스를 통해 시작되는 경우 후속 재시작 후에도 유효하도록 위의 내용을 포함하도록 적절하게 업데이트하십시오.
 
 1. AEM 인스턴스를 다시 시작합니다.
 
    >[!NOTE]
    >
-   SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+   > SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
 1. 설치 후 작업을 수행합니다.
 
@@ -108,3 +93,7 @@ AEM 6.3 Forms 또는 AEM 6.4 Forms에서 AEM 6.5 Forms으로 업그레이드하�
       * `https://'[server]:[port]'/crx/packmgr`
       * `https://'[server]:[port]'/crx/de`
       * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
+
+   >[!NOTE]
+   >
+   >AEM 6.4 Forms에서 crx-repository 구조가 변경되었습니다. 6.3 Forms에서 AEM 6.5 Forms으로 업그레이드하는 경우 새로 만드는 사용자 지정에 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 [AEM의 Forms 저장소 재구성](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)을 참조하십시오.

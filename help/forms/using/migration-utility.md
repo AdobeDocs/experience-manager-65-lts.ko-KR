@@ -1,31 +1,26 @@
 ---
 title: AEM Forms 에셋 및 문서 마이그레이션
-description: 마이그레이션 유틸리티를 사용하면 Adobe Experience Manager(AEM) Forms 에셋 및 문서를 AEM 6.3 Forms 또는 이전 버전에서 AEM 6.4 Forms으로 마이그레이션할 수 있습니다.
+description: 마이그레이션 유틸리티를 사용하면 Adobe Experience Manager(AEM) Forms 에셋 및 문서를 AEM 6.5.22.0 Forms에서 AEM 6.5 Forms LTS로 마이그레이션할 수 있습니다.
 content-type: reference
-topic-tags: correspondence-management, installing
-geptopics: SG_AEMFORMS/categories/jee
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-content-strategy: max-2018
-docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1698'
 ht-degree: 1%
 
 ---
 
 # AEM Forms 에셋 및 문서 마이그레이션{#migrate-aem-forms-assets-and-documents}
 
-마이그레이션 유틸리티는 [적응형 Forms 에셋](../../forms/using/introduction-forms-authoring.md), [클라우드 구성](/help/sites-developing/extending-cloud-config.md) 및 [서신 관리 에셋](/help/forms/using/cm-overview.md)을 이전 버전에서 사용된 형식에서 Adobe Experience Manager(AEM) 6.5 Forms에서 사용된 형식으로 변환합니다. 마이그레이션 유틸리티를 실행하면 다음 항목이 마이그레이션됩니다.
+마이그레이션 유틸리티는 [적응형 Forms 에셋](../../forms/using/introduction-forms-authoring.md), [클라우드 구성](/help/sites-developing/extending-cloud-config.md) 및 [서신 관리 에셋](/help/forms/using/cm-overview.md)을 이전 버전에서 사용된 형식에서 Adobe Experience Manager(AEM) 6.5 LTS Forms에서 사용된 형식으로 변환합니다. 마이그레이션 유틸리티를 실행하면 다음 항목이 마이그레이션됩니다.
 
 * 적응형 양식을 위한 사용자 정의 구성 요소
 * 적응형 양식 및 서신 관리 템플릿
 * 클라우드 구성
-* 서신 관리 및 적응형 양식 에셋
+* 서신 관리 및 적응형 Forms 에셋
 
 >[!NOTE]
 >
@@ -33,11 +28,11 @@ ht-degree: 1%
 
 ## 마이그레이션 방법 {#approach-to-migration}
 
-AEM Forms 6.4, 6.3, 6.2에서 최신 버전의 AEM Forms 6.5로 [업그레이드](../../forms/using/upgrade.md)하거나 새로 설치할 수 있습니다. 이전 설치를 업그레이드했는지 새로 설치했는지 여부에 따라 다음 중 하나를 수행해야 합니다.
+AEM Forms 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md)에서 [AEM Forms 6.5 LTS로 [업그레이드](../../forms/using/upgrade.md)할 수 있습니다. 이전 설치를 업그레이드했는지 새로 설치했는지 여부에 따라 다음 중 하나를 수행해야 합니다.
 
 **업그레이드된 경우**
 
-원본 위치 업그레이드를 수행한 경우 업그레이드된 인스턴스에 이미 에셋과 문서가 있습니다. 그러나 에셋 및 문서를 사용하려면 먼저 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)&#x200B;(서신 관리 호환성 패키지 포함)를 설치해야 합니다
+[바로 업그레이드](/help/sites-deploying/in-place-upgrade.md)를 수행한 경우 업그레이드된 인스턴스에 이미 에셋과 문서가 있습니다. 그러나 에셋 및 문서를 사용하려면 먼저 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)&#x200B;(서신 관리 호환성 패키지 포함)를 설치해야 합니다.
 
 [마이그레이션 유틸리티를 실행](#runningmigrationutility)하여 자산 및 문서를 업데이트해야 합니다.
 
@@ -62,7 +57,7 @@ AEM Forms 6.4, 6.3, 6.2에서 최신 버전의 AEM Forms 6.5로 [업그레이드
 * AEM 6.1 Forms 이후 게시 준비 상태가 더 이상 사용되지 않으므로 게시 준비 상태의 모든 자산이 수정됨 상태로 변경됩니다.
 * 사용자 인터페이스가 AEM Forms 6.3에서 업데이트되므로 맞춤화를 수행하는 단계도 다릅니다. 6.3 이전 버전에서 마이그레이션하는 경우 사용자 지정을 다시 실행합니다.
 * 레이아웃 조각이 `/content/apps/cm/layouts/fragmentlayouts/1001`에서 `/content/apps/cm/modules/fragmentlayouts`(으)로 이동합니다. 에셋의 데이터 사전 참조는 이름 대신 데이터 사전의 경로를 표시합니다.
-* 텍스트 모듈에서 정렬에 사용되는 모든 탭 공간을 재조정해야 합니다. 자세한 내용은 [서신 관리 - 탭 간격을 사용하여 텍스트 정렬](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)을 참조하세요.
+* 텍스트 모듈에서 정렬에 사용되는 모든 탭 공간을 재조정해야 합니다. <!--For more information, see [Correspondence Management - Using tab spacing for arranging text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)-->.
 * Asset Composer 구성이 서신 관리 구성으로 변경되었습니다.
 * Assets은 기존 텍스트 및 기존 목록과 같은 이름의 폴더로 이동됩니다.
 

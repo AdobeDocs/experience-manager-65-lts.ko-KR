@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2337'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 개요 {#overview}
 
-AEM Forms 앱을 사용하면 서버를 기반으로 모바일 장치에서 적응형 양식, 모바일 양식 및 양식 세트를 동기화할 수 있습니다. OSGi의 [Forms 중심 워크플로](/help/forms/using/aem-forms-workflow.md) 또는 JEE의 Forms 워크플로인 워크플로를 정의할 수 있습니다. 예를 들어, 은행 회사를 운영하고 AEM Forms을 사용하여 고객 애플리케이션과 커뮤니케이션을 관리합니다. 고객이 양식을 작성하여 확인을 위해 제출합니다. 모바일 장치에서 양식을 활성화하면 고객이 AEM Forms 앱에서 양식을 채울 수 있습니다. 모바일 장치에서 확인 양식을 활성화하여 확인 워크플로를 관리할 수도 있습니다. 현장 작업자는 고객에게 모바일 장치를 전달하고, 세부 사항을 확인하고, 양식을 제출할 수 있습니다. AEM Forms 앱은 AEM Forms 서버와 동기화되며 모바일 장치에 대해 활성화된 양식을 가져옵니다. 앱이 오프라인 상태이면 데이터를 로컬에 저장합니다.
+AEM Forms 앱을 사용하면 서버를 기반으로 모바일 장치에서 적응형 양식, 모바일 양식 및 양식 세트를 동기화할 수 있습니다. OSGi의 [Forms 중심 워크플로](/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->인 워크플로를 정의할 수 있습니다. 예를 들어, 은행 회사를 운영하고 AEM Forms을 사용하여 고객 애플리케이션과 커뮤니케이션을 관리합니다. 고객이 양식을 작성하여 확인을 위해 제출합니다. 모바일 장치에서 양식을 활성화하면 고객이 AEM Forms 앱에서 양식을 채울 수 있습니다. 모바일 장치에서 확인 양식을 활성화하여 확인 워크플로를 관리할 수도 있습니다. 현장 작업자는 고객에게 모바일 장치를 전달하고, 세부 사항을 확인하고, 양식을 제출할 수 있습니다. AEM Forms 앱은 AEM Forms 서버와 동기화되며 모바일 장치에 대해 활성화된 양식을 가져옵니다. 앱이 오프라인 상태이면 데이터를 로컬에 저장합니다.
 
 AEM Forms 앱의 소스 코드는 소프트웨어 배포를 통해 고객이 사용할 수 있습니다. 소프트웨어 배포의 원본 코드 패키지는 `adobe-aemfd-forms-app-src-pkg-<version>.zip`(으)로 사용할 수 있습니다.
 
@@ -62,9 +62,13 @@ AEM Forms 앱에서 양식을 동기화하려면:
 
 양식이 게시되면 앱은 서버와 동기화되고 양식을 가져옵니다. 작성자 인스턴스에서 여러 양식을 동기화하려면 Forms Manager에서 여러 양식을 선택하고 **[!UICONTROL AEM Forms 앱과 동기화]**&#x200B;를 선택합니다.
 
-## 모바일 장치 지원 {#mobile-device-support}
+<!--
 
-[AEM Forms 앱(이전 모바일 Workspace)을 참조하십시오](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+## Mobile device support {#mobile-device-support}
+
+See [AEM Forms app (previously known as Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+
+-->
 
 ## AEM Forms 앱의 주요 기능 {#key-features-of-aem-forms-app}
 
@@ -72,7 +76,7 @@ AEM Forms 앱에서 양식을 동기화하려면:
 
 앱을 AEM Forms 서버와 동기화하고 모바일 장치의 양식으로 작업할 수 있습니다.
 
-AEM Forms Workflow Server를 사용하면 Workbench 프로세스 및 AEM 받은 편지함 애플리케이션의 시작점과 양식을 연결할 수 있습니다. AEM 받은 편지함 애플리케이션에는 적응형 양식이 연결되어 있을 수 있습니다. 시작점에는 적응형 양식, HTML5 양식 또는 이와 연결된 양식 집합이 있을 수 있습니다. 시작점을 작업으로 제출하거나 작업을 초안으로 저장할 수 있습니다. AEM 받은 편지함 애플리케이션과 시작 지점 간의 차이점에 대한 자세한 내용은 [OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심의 AEM 워크플로우의 작업 및 기능](capabilities-osgi-jee-workflows.md)을 참조하십시오.
+AEM Forms Workflow Server를 사용하면 Workbench 프로세스 및 AEM 받은 편지함 애플리케이션의 시작점과 양식을 연결할 수 있습니다. AEM 받은 편지함 애플리케이션에는 적응형 양식이 연결되어 있을 수 있습니다. 시작점에는 적응형 양식, HTML5 양식 또는 이와 연결된 양식 집합이 있을 수 있습니다. 시작점을 작업으로 제출하거나 작업을 초안으로 저장할 수 있습니다. <!--For more information on differences between an AEM Inbox application and a startpoint see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 AEM Forms 워크플로가 없는 AEM Forms 서버를 사용하면 앱에서 동기화가 활성화된 양식이 AEM Forms 앱에서 렌더링됩니다. Forms은 앱의 Forms 탭에서 사용할 수 있으며 초안으로 제출하거나 저장할 수 있습니다. 적응형 양식 및 모바일 양식은 앱에서 지원됩니다.
 
@@ -123,7 +127,7 @@ AEM Forms 워크플로가 없는 AEM Forms 서버를 사용하면 앱에서 동�
 
 ## AEM 받은 편지함 및 AEM Forms 앱 기능의 차이점 {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Forms 중심 워크플로를 시작하는 두 가지 두드러진 방법에는 [AEM 받은 편지함](/help/forms/using/manage-applications-inbox.md) 및 AEM Forms 앱이 있습니다. 그러나 AEM 받은 편지함 과 AEM Forms 앱의 기능은 다릅니다. AEM 받은 편지함은 [Forms 중심 워크플로](/help/forms/using/aem-forms-workflow.md)에서만 작동하지만, AEM Forms 앱은 Forms 중심 워크플로와 프로세스 관리를 모두 사용합니다. AEM 받은 편지함과 AEM Forms 앱 기능의 차이점에 대한 자세한 내용은 [OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심의 AEM 워크플로우의 작업 및 기능](capabilities-osgi-jee-workflows.md)을 참조하십시오.
+Forms 중심 워크플로를 시작하는 두 가지 두드러진 방법에는 [AEM 받은 편지함](/help/forms/using/manage-applications-inbox.md) 및 AEM Forms 앱이 있습니다. 그러나 AEM 받은 편지함 과 AEM Forms 앱의 기능은 다릅니다. AEM 받은 편지함은 [Forms 중심 워크플로](/help/forms/using/aem-forms-workflow.md)에서만 작동하지만, AEM Forms 앱은 Forms 중심 워크플로와 프로세스 관리를 모두 사용합니다. <!--For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 ## 지원되는 양식 {#supported-forms}
 

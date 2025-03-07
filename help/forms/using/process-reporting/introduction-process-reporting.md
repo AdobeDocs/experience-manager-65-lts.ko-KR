@@ -8,8 +8,10 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: 755df7e2-3603-4c0d-ad07-ec6f27de8c64
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -26,7 +28,7 @@ ht-degree: 0%
 
 또한 프로세스 보고에서는 임시 쿼리를 실행하고 사용자 지정 보고서 보기를 프로세스 보고 사용자 인터페이스에 통합하는 인터페이스를 제공합니다.
 
-지원되는 브라우저 목록에 대해서는 [AEM Forms 지원 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md)을 참조하십시오.
+지원되는 브라우저 목록에 대해서는 [AEM Forms 지원 플랫폼](/help/sites-deploying/technical-requirements.md)을 참조하십시오.
 
 프로세스 보고는 다음과 같은 모듈을 기반으로 구축됩니다.
 

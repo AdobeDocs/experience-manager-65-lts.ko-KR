@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '3044'
+source-wordcount: '3064'
 ht-degree: 1%
 
 ---
@@ -150,12 +150,11 @@ Adobe Experience Manager은 프로덕션 환경을 위해 다음 서버 플랫�
 
 | **플랫폼** | **지원 수준** |
 |---|---|
-| **Linux®, Red Hat® 배포 기반** | A: 지원되는 `[1]` `[3]` |
-| Debian 배포 기반 Linux®에는 다음이 포함됩니다. 우분투 | A: 지원되는 `[1]` `[2]` |
+| **Linux®, Red Hat® 배포 기반** | A: 지원되는 `[1]` `[2]` |
+| Debian 배포 기반 Linux®에는 다음이 포함됩니다. 우분투 | A: 지원되는 `[1]` |
 | Linux®, SUSE® 배포 기반 | A: 지원되는 `[1]` |
 
-1. Linux® 커널 5. x와 6. x에는 Red Hat® Enterprise Linux®, CentOS, Oracle Linux® 및 Amazon Linux®를 비롯한 Red Hat® 배포판의 파생물이 포함되어 있습니다. AEM Forms 추가 기능 기능은 CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 및 Red Hat® Enterprise Linux® 9에서만 지원됩니다.
-1. AEM Forms은 Ubuntu 20.04 LTS에서 지원됩니다.
+1. Linux® 커널 5. x와 6. x에는 Red Hat® Enterprise Linux®, CentOS, Oracle Linux® 및 Amazon Linux®를 비롯한 Red Hat® 배포판의 파생물이 포함되어 있습니다.
 1. Adobe Managed Services에서 지원하는 Linux® 배포.
 
    >[!NOTE]
@@ -166,6 +165,8 @@ Adobe Experience Manager은 프로덕션 환경을 위해 다음 서버 플랫�
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
+   >* glibc-locale.x86_64 (2.17 이상)
+
 
 ### 가상 및 클라우드 컴퓨팅 환경 {#virtual-cloud-computing-environments}
 
@@ -181,7 +182,7 @@ Adobe Managed Services 외부의 Azure 또는 AWS에 AEM을 배포하는 방법�
 
 ### Dispatcher 플랫폼(웹 서버) {#dispatcher-platforms-web-servers}
 
-Dispatcher은 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispatcher 버전을](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html) 다운로드합니다. Experience Manager 6.5에는 Dispatcher 버전 4.3.2 이상이 필요합니다.
+Dispatcher은 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispatcher 버전을 다운로드합니다](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5에는 Dispatcher 버전 4.3.2 이상이 필요합니다.
 
 다음 웹 서버는 Dispatcher 버전 4.3.2에서 사용할 수 있습니다.
 
@@ -342,7 +343,7 @@ Linux®에서 Dynamic Media를 사용하는 경우 다음 사전 요구 사항�
 
 >[!NOTE]
 >
->**서버 호스트 이름을 확인해야 함:** 서버의 호스트 이름을 IP 주소로 확인할 수 있는지 확인하십시오. 가능하지 않은 경우 정규화된 호스트 이름과 IP 주소를 /etc/hosts에 **추가합니다.**
+>**서버 호스트 이름을 확인해야 합니다.** 서버의 호스트 이름을 IP 주소로 확인할 수 있는지 확인하십시오. 가능하지 않은 경우 정규화된 호스트 이름과 IP 주소를 /etc/hosts에 **추가합니다.**
 >
 >`<ip address> <fully qualified hostname>`
 
@@ -356,13 +357,13 @@ Windows에서 다이내믹 미디어를 사용하려면 x64 및 x86용 Microsoft
 Windows x64의 경우
 
 * [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)에서 Microsoft® Visual Studio 2010 재배포 가능 패키지를 가져옵니다.
-* [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)에서 Microsoft® Visual Studio 2013 재배포 가능 패키지를 가져옵니다.
+* https://www.microsoft.com/en-us/download/details.aspx?id=40784 에서 [Microsoft® Visual Studio 2013 재배포 가능 패키지 받기](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 * https://www.microsoft.com/en-us/download/details.aspx?id=48145 에서 [Microsoft® Visual Studio 2015 재배포 가능 패키지 받기](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Windows x86의 경우:
 
 * [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)에서 Microsoft® Visual Studio 2010 재배포 가능 패키지를 가져옵니다.
-* https://www.microsoft.com/en-in/download/details.aspx?id=40769 에서 [Microsoft® Visual Studio 2013 재배포 가능 패키지 받기](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
+* [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)에서 Microsoft® Visual Studio 2013 재배포 가능 패키지를 가져옵니다.
 * https://www.microsoft.com/en-us/download/details.aspx?id=52685 에서 [Microsoft® Visual Studio 2015 재배포 가능 패키지 받기](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
 #### macOS {#macos}
@@ -434,10 +435,12 @@ Windows x86의 경우:
 >또한,
 >
 >* 변환을 수행하려면 PDF Generator에 32비트 버전의 [Acrobat 2020 classic track 버전 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 또는 Acrobat 2017 버전 17.011.30078이 필요합니다.
->* OpenOffice용 PDF Generator 전환은 Windows 및 Linux®에서만 지원됩니다.
->* PDF Generator은 Microsoft® Office Professional Plus 및 Windows 운영 체제에서 전환하는 데 필요한 기타 소프트웨어의 32비트 소매 버전만 지원합니다.
+>* PDF Generator은 변환에 필요한 Microsoft® Office Professional Plus 및 기타 소프트웨어의 32비트 소매 버전만 지원합니다.
+>* Microsoft® Office Professional Plus 설치에서는 소매 또는 MAK/KMS/AD 기반 볼륨 라이선스를 사용할 수 있습니다.
+>* 볼륨 라이선스가 있는 설치가 지정된 기간 내에 KMS 호스트를 찾을 수 없는 것과 같은 이유로 Microsoft® Office 설치가 비활성화되거나 사용이 허가되지 않는 경우, 설치 라이선스를 다시 취득하고 다시 활성화하기 전까지 전환이 실패할 수 있습니다.
 >* PDF Generator은 Linux® 운영 체제에서 32비트 및 64비트 버전의 OpenOffice를 지원합니다.
 >* PDF Generator은 Microsoft® Office 365를 지원하지 않습니다.
+>* OpenOffice용 PDF Generator 전환은 Windows 및 Linux®에서만 지원됩니다.
 >* OCR PDF, PDF 최적화 및 Export PDF 기능은 Windows에서만 지원됩니다.
 >* Acrobat 버전은 PDF Generator 기능을 사용할 수 있도록 AEM Forms과 번들로 제공됩니다. AEM Forms PDF Generator에서 사용하기 위해 AEM Forms 라이선스가 있는 동안 AEM Forms에서만 번들 버전에 프로그래밍 방식으로 액세스합니다. 자세한 내용은 배포에 따른 AEM Forms 제품 설명([온-프레미스](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))을 참조하세요.
 >* PDF Generator 서비스는 Microsoft® Windows 10을 지원하지 않습니다.
@@ -445,7 +448,7 @@ Windows x86의 경우:
 >* PDF Generator이 Microsoft® Project 2019를 사용하여 파일을 변환하지 못했습니다. Microsoft® Project 2016을 계속 사용하여 `.VSD` 및 `.VSDX` 파일을 변환할 수 있습니다.
 >
 
-### AEM Forms Designer 요구 사항 {#requirements-for-aem-forms-designer}
+### AEM Forms 디자이너 요구 사항 {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 또는 Windows® 11
 * PAE, NX 및 SSE2를 지원하는 1GHz 이상의 프로세서.
@@ -454,17 +457,17 @@ Windows x86의 경우:
 * 그래픽 메모리 - 128MB GPU(256MB 권장)
 * 2.35GB의 사용 가능한 하드 디스크 공간
 * 1024 X 768 픽셀 이상의 모니터 해상도
-* 비디오 하드웨어 가속(옵션)
+* 비디오 하드웨어 가속(선택 사항)
 * Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
-* Designer를 설치하기 위한 관리자 권한
+* Designer을 설치할 수 있는 관리 권한
 * Microsoft Visual C++ 2019(VC 14.28 이상) 32비트 AEM Forms 디자이너용 32비트 런타임
-* 64비트 AEM Forms Designer용 Microsoft Visual C++ 2019(VC 14.28 이상) 64비트 런타임(OSGI 및 JEE 스택 모두 해당)
+* Microsoft Visual C++ 2019(VC 14.28 이상) 64비트 AEM Forms Designer용 64비트 런타임(OSGI 및 JEE 스택 모두)
 
 [AEM Forms 디자이너 설치 및 구성](/help/forms/using/installing-configuring-designer.md)
 
 ### AEM Assets 요구 사항 XMP 메타데이터 원본에 쓰기 {#requirements-for-aem-assets-xmp-metadata-write-back}
 
-XMP 원본에 쓰기 지원되며 다음 플랫폼 및 파일 형식에 사용할 수 있습니다.
+XMP 다시 쓰기는 다음 플랫폼 및 파일 형식에 대해 지원 및 활성화됩니다.
 
 * **운영 체제:**
 

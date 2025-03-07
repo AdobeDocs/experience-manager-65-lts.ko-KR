@@ -7,9 +7,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
 exl-id: 4b316ade-4431-41fc-bb8a-7262a17fb456
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1551'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 ## 소개 {#introduction}
 
-기업은 여러 양식, 백엔드 시스템 및 기타 데이터 소스에서 데이터를 수집하고 처리합니다. 데이터 처리에는 검토 및 승인 절차, 반복적인 작업 및 데이터 보관 포함됩니다. 예를 들어, 양식을 검토하고 PDF 문서로 변환할 수 있습니다. 수동으로 수행하면 반복적인 작업에 많은 시간과 많은 리소스가 소요될 수 있습니다.
+기업은 여러 양식, 백엔드 시스템 및 기타 데이터 소스에서 데이터를 수집하고 처리합니다. 데이터 처리에는 검토 및 승인 절차, 반복 작업, 데이터 보관이 포함됩니다. 예를 들어, 양식을 검토하고 PDF 문서로 변환할 수 있습니다. 수동으로 수행하면 반복적인 작업에 많은 시간과 많은 리소스가 소요될 수 있습니다.
 
 OSGi](../../forms/using/aem-forms-workflow.md)에서 Forms 중심의 작업 과정 워크플로우를 사용하여 [적응형 양식 기반 워크플로우를 신속하게 빌드 할 수 있습니다. 이러한 워크플로는 검토 및 승인 워크플로, 비즈니스 프로세스 워크플로 및 기타 반복적인 작업을 자동화하는 데 도움이 될 수 있습니다. 이러한 작업 과정은 또한 문서를 처리하고(PDF 문서 작성, 조합, 배포 및 보관, 문서에 대한 액세스를 제한하는 디지털 서명 추가, 바코드 양식 디코딩 등) 양식 및 문서에서 Adobe Sign 서명 작업 과정을 사용하는 데 도움이 됩니다.
 
@@ -28,9 +28,7 @@ AEM Forms은 강력한 엔터프라이즈급 플랫폼입니다. OSGi에서의 F
 
 >[!NOTE]
 >
->OSGi의 Forms 중심 워크플로우를 사용하면 JEE 스택에 완전한 프로세스 관리 기능을 설치하지 않고도 OSGi 스택에서 다양한 작업을 위한 워크플로우를 빠르게 빌드하고 배포할 수 있습니다. 기능의 차이점과 유사점을 알아보려면 OSGi의 Forms 중심 AEM 워크플로 및 JEE의 프로세스 관리의 [비교](capabilities-osgi-jee-workflows.md)를 참조하십시오.
->
->비교 후 JEE 스택에 프로세스 관리 기능을 설치하도록 선택한 경우 JEE 스택 및 프로세스 관리 기능의 설치 및 구성에 대한 자세한 내용은 [JEE에 AEM Forms 설치 또는 업그레이드](/help/forms/using/introduction-aem-forms.md)를 참조하십시오.
+>OSGi의 Forms 중심 워크플로우를 사용하면 OSGi 스택에서 다양한 작업을 위한 워크플로우를 빠르게 빌드하고 배포할 수 있습니다<!--, without having to install the full-fledged Process Management capability on JEE stack-->.<!-- See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.--><!--After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.-->
 
 ## 배포 토폴로지 {#deployment-topology}
 
@@ -109,17 +107,17 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-   AEM Forms 릴리스](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 문서에 나열된 [직접 링크 를 통해 패키지를 다운로드 할 수도 있습니다.
+   [AEM Forms 릴리스](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
 
-1. 패키지가 설치되면 AEM 인스턴스 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 AEM-Installation-Directory]/crx-quickstart/logs/error.로그 파일에 [표시되지 않고 로그가 안정될 때까지 기다립니다.
+1. 패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 AEM-Installation-Directory]/crx-quickstart/logs/error.로그 파일에 [표시되지 않고 로그가 안정될 때까지 기다립니다.
 
    >[!NOTE]
    >
    > SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 리드 있습니다.
 
-1. 모든 Author 및 Publish 인스턴스에서 1~7단계를 반복합니다.
+1. 모든 작성자 및 Publish 인스턴스에서 1-7단계를 반복합니다.
 
-## 설치 후 구성 {#post-installation-configurations}
+## Post 설치 구성 {#post-installation-configurations}
 
 AEM Forms에는 몇 가지 필수 구성과 선택적 구성이 있습니다. 필수 구성에는 BouncyCastle 라이브러리 및 직렬화 에이전트 구성이 포함됩니다. 선택적 구성에는 Dispatcher 및 Adobe Target 구성이 포함됩니다.
 

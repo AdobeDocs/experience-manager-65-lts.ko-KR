@@ -6,7 +6,7 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '5660'
 ht-degree: 1%
@@ -74,8 +74,8 @@ AEM Forms 문서 서비스 설치 및 구성을 시작하기 전에 다음을 �
 
 * PDF Generator가 Microsoft® Windows 및 Linux®에서 변환을 수행하는 데 필요한 클라이언트 소프트웨어가 설치되어 있습니다.
 
-   * **Microsoft® Windows**: [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) 또는 [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) 설치
-   * **Linux®**: [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) 설치
+   * **Microsoft® Windows**: **Microsoft® Office** 또는 **Apache OpenOffice** 설치
+   * **Linux®**: **Apache OpenOffice** 설치
 
 >[!NOTE]
 >
@@ -654,7 +654,7 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 +++ Adobe Acrobat
 
-* Microsoft® Office(32비트) 및 Adobe Acrobat의 [지원되는 버전](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)만 설치되어 있고 대화 상자 열기를 취소했는지 확인하십시오.
+* Microsoft® Office(32비트) 및 Adobe Acrobat의 [지원되는 버전](/help/sites-deploying/technical-requirements.md)만 설치되어 있고 대화 상자 열기를 취소했는지 확인하십시오.
 * Adobe Acrobat 업데이트 서비스가 비활성화되어 있는지 확인합니다.
 * [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) 배치 파일이 관리자 권한으로 실행되었는지 확인합니다.
 * PDF 구성 UI에 PDF Generator 사용자가 추가되었는지 확인합니다.
@@ -667,7 +667,7 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 **Microsoft® Windows**
 
-* Microsoft Office의 32비트 [지원되는 버전](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)이 설치되어 있고 모든 응용 프로그램에 대해 대화 상자 열기를 취소했는지 확인하십시오.
+* Microsoft Office의 32비트 [지원되는 버전](/help/sites-deploying/technical-requirements.md)이 설치되어 있고 모든 응용 프로그램에 대해 대화 상자 열기를 취소했는지 확인하십시오.
 * PDF 구성 UI에 PDF Generator 사용자가 추가되었는지 확인합니다.
 * PDF Generator 사용자가 관리자 그룹의 구성원인지, 그리고 사용자에 대해 [프로세스 수준 토큰 바꾸기](#grant-the-replace-a-process-level-token-privilege) 권한이 설정되어 있는지 확인하십시오.
 * 사용자가 PDF Generator UI에서 구성되어 있고 다음 작업을 수행하는지 확인합니다.
@@ -681,7 +681,7 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 **Linux®**
 
-* OpenOffice의 [지원되는 버전](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)을 설치하십시오. AEM Forms은 32비트 및 64비트 버전을 모두 지원합니다. 설치 후 모든 OpenOffice 응용 프로그램을 열고 대화 상자 창을 모두 취소한 다음 응용 프로그램을 닫습니다. 응용 프로그램을 다시 열고 OpenOffice 응용 프로그램을 열 때 대화 상자가 표시되지 않도록 합니다.
+* 지원되는 버전의 OpenOffice를 설치합니다. AEM Forms은 32비트 및 64비트 버전을 모두 지원합니다. 설치 후 모든 OpenOffice 응용 프로그램을 열고 대화 상자 창을 모두 취소한 다음 응용 프로그램을 닫습니다. 응용 프로그램을 다시 열고 OpenOffice 응용 프로그램을 열 때 대화 상자가 표시되지 않도록 합니다.
 
 * 환경 변수 `OpenOffice_PATH`을(를) 만들어 [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) 또는 dt(장치 트리) 프로필에 설정된 OpenOffice 설치를 가리키도록 설정합니다.
 * OpenOffice를 설치하는 데 문제가 있는 경우 OpenOffice 설치에 필요한 [32비트 라이브러리](#extrarequirements)를 사용할 수 있는지 확인하십시오.

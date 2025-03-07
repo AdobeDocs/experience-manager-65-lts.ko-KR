@@ -9,8 +9,10 @@ docset: aem65
 feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: cc0a3d56-3adc-4d6e-87a3-9a8587bbe3f2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -19,7 +21,7 @@ ht-degree: 0%
 
 # PDF Generator 작업 소개 {#introduction-to-working-with-pdf-generator}
 
-PDF Generator은 다양한 파일 형식을 PDF으로 변환합니다. 또한 PDF을 다른 파일 형식으로 변환하고 PDF 문서의 크기를 최적화합니다. 지원되는 파일 형식 목록은 [PDF Generator에 대한 소프트웨어 지원](/help/forms/using/aem-forms-jee-supported-platforms.md)을 참조하십시오.
+PDF Generator은 다양한 파일 형식을 PDF으로 변환합니다. 또한 PDF을 다른 파일 형식으로 변환하고 PDF 문서의 크기를 최적화합니다. 지원되는 파일 형식 목록은 [PDF Generator에 대한 소프트웨어 지원](/help/sites-deploying/technical-requirements.md)을 참조하십시오.
 
 **처리를 위해 PDF Generator에 파일 보내기**
 

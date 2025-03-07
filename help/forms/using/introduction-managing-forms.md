@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 7ec29926-a5f6-4080-a981-597f9632f6e8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1544'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ AEM [!DNL Forms]은(는) 양식, 문서, 테마, 편지, 문서 단편, 데이�
 
 ### 양식 및 문서  {#forms-documents}
 
-Forms 및 문서는 대화형 통신, 적응형 양식, 적응형 양식 단편 및 양식 세트를 만드는 옵션을 제공합니다. JEE의 AEM [!DNL Forms]에 대해서만 Forms 및 Documents는 로컬 저장소에서 파일을 가져오고 Workbench와 AEM [!DNL Forms] 자산을 동기화하는 옵션을 제공합니다.
+Forms 및 문서는 대화형 통신, 적응형 양식, 적응형 양식 단편 및 양식 세트를 만드는 옵션을 제공합니다. <!--Only for AEM [!DNL Forms] on JEE, Forms & Documents provides an option to import files from local storage and sync AEM [!DNL Forms] assets with Workbench.-->
 
 만들기 단추는 AEM [!DNL Forms] 자산을 만들거나 업로드하는 프로세스의 시작점입니다. 다음을 만들 수 있는 옵션을 제공합니다.
 

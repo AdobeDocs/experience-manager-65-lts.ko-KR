@@ -6,9 +6,9 @@ feature: Transaction Reports
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 4a075532-5ad9-4b1d-9e04-c0b80d215e00
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,15 @@ AEM Forms 내의 트랜잭션 보고서를 사용하면 AEM Forms 배포의 지�
 
 AEM Forms 기술 스택을 기반으로 트랜잭션을 활성화하는 방법, 청구 가능한 API 목록 및 사용자 지정 레코더 구현에 대한 포괄적인 지침은 다음을 참조하십시오.
 
-**JEE의 AEM Forms에 대한 트랜잭션 보고**
+<!--
 
-* [JEE의 AEM Forms에 대한 트랜잭션 보고서 활성화 및 보기](/help/forms/using/transaction-report-overview-jee.md)
-* [JEE의 AEM Forms에 대한 청구 가능 API 목록](/help/forms/using/transaction-reports-billable-apis-jee.md)
-* [사용자 지정 구성 요소 API에 대한 트랜잭션 기록](/help/forms/using/record-transaction-custom-component-jee.md)
+**Transaction Reporting for AEM Forms on JEE**
+
+* [Enabling and viewing transaction report for AEM Forms on JEE](/help/forms/using/transaction-report-overview-jee.md)
+* [List of billable APIs for AEM Forms on JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
+* [Record a transaction for custom component APIs](/help/forms/using/record-transaction-custom-component-jee.md)
+
+-->
 
 **OSGi에서 AEM Forms에 대한 트랜잭션 보고**
 

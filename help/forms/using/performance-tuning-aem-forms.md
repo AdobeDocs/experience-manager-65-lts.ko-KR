@@ -9,9 +9,9 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 4009c85e-cb8a-4bed-a6ff-7c76fe78a47f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,10 @@ ht-degree: 0%
 다음 AEM 웹 구성 콘솔에서 **모바일 Forms 구성** 구성 요소를 사용하여 AEM Forms에 대한 캐싱 전략을 구성하고 제어할 수 있습니다.
 
 * (OSGi의 AEM Forms) `https://'[server]:[port]'/system/console/configMgr`
-* (JEE의 AEM Forms) `https://'[server]:[port]'/lc/system/console/configMgr`
+
+<!--
+* (AEM Forms on JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
+-->
 
 캐싱에 사용할 수 있는 옵션은 다음과 같습니다.
 
@@ -150,22 +153,25 @@ Apache는 HTTP 프로토콜을 사용하여 CRX과 통신할 수 있습니다. �
    * [AEM 설치 디렉터리]\crx-repository\repository
    * [AEM 설치 디렉터리]\crx-repository\launchpad
 
-* 응용 프로그램 서버 임시 디렉터리. 기본 위치:
+<!--
 
-   * (JBoss®) [AEM 설치 디렉터리]\jboss\standalone\tmp
-   * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (WebSphere®) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+* Application server temporary directory. The default location is:
 
-* **(JEE의 AEM Forms만 해당)** GDS(Global Document Storage) 디렉터리. 기본 위치:
+    * (JBoss&reg;) [AEM installation directory]\jboss\standalone\tmp
+    * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
+    * (WebSphere&reg;) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-   * (JBoss®) [appserver root]/server/&#39;server&#39;/svcnative/DocumentStorage
-   * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere®) [appserver root]/installedApps/adobe/&#39;server&#39;/DocumentStorage
+* **(AEM Forms on JEE only)** Global Document Storage (GDS) directory. The default location is:
 
-* **(JEE의 AEM Forms 전용)** AEM Forms 서버 로그 및 임시 디렉터리. 기본 위치:
+    * (JBoss&reg;) [appserver root]/server/'server'/svcnative/DocumentStorage
+    * (WebLogic) [appserverdomain]/'server'/adobe/LiveCycleServer/DocumentStorage
+    * (WebSphere&reg;) [appserver root]/installedApps/adobe/'server'/DocumentStorage
 
-   * 서버 로그 - [AEM Forms 설치 디렉터리]\Adobe\AEM forms\[app-server]\server\all\logs
-   * 임시 디렉터리 - [AEM Forms 설치 디렉터리]\temp
+* **(AEM Forms on JEE only)** AEM Forms Server logs and temporary directory. The default location is:
+
+    * Server logs - [AEM Forms installation directory]\Adobe\AEM forms\[app-server]\server\all\logs
+    * Temp directory - [AEM Forms installation directory]\temp
+-->
 
 >[!NOTE]
 >
