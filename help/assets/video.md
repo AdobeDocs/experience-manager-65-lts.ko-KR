@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '11126'
+source-wordcount: '10487'
 ht-degree: 2%
 
 ---
@@ -263,10 +263,6 @@ DASH는 국제 표준이고 HLS은 Apple 표준입니다. 둘 다 응용 비디�
  </tbody>
 </table>
 
->[!IMPORTANT]
->
->*비디오에 DASH를 사용하려면 Adobe 기술 지원 팀에서 먼저 계정에서 활성화해야 합니다. [Dynamic Media 계정에서 DASH 사용](#enable-dash)을 참조하세요.
-
 ## Dynamic Media 비디오 솔루션의 아키텍처 {#architecture-of-dynamic-media-video-solution}
 
 다음 그래픽은 DMGateway(Dynamic Media 하이브리드 모드)를 통해 업로드 및 인코딩되고 공개적으로 사용할 수 있도록 된 비디오의 전체 작성 워크플로를 보여 줍니다.
@@ -419,60 +415,6 @@ VBR 대 CBR을 선택할 때는 거의 항상 미디어 파일에 VBR을 사용�
 
 Dynamic Media에서는 MP4 H.264 비디오 인코딩 사전 설정을 사용하는 것이 좋습니다. MP4 파일은 H.264 비디오 코덱을 사용하기 때문에 고품질의 비디오를 제공하지만 압축된 파일 크기입니다.
 
-### Dynamic Media 계정에서 DASH, 다중 캡션 및 오디오 트랙 지원 활성화 {#enable-dash}
-
-**계정에서 DASH 사용 정보**
-DASH(Digital Adaptive Streaming over HTTP)는 비디오 스트리밍에 대한 국제 표준이며 다양한 비디오 뷰어에서 널리 채택됩니다. 계정에서 DASH가 활성화되면 적응형 비디오 스트리밍을 위해 DASH 또는 HLS 중에서 선택할 수 있는 옵션이 제공됩니다. 또는 뷰어 사전 설정에서 재생 유형으로 **[!UICONTROL 자동]**&#x200B;이(가) 선택된 경우 플레이어 간에 자동 전환으로 둘 다 선택할 수 있습니다.
-
-계정에서 DASH를 활성화하면 다음과 같은 몇 가지 주요 이점이 있습니다.
-
-* 적응형 비트율 스트리밍을 위한 DASH 스트림 비디오 패키지 이러한 방식은 전달의 효율성을 높이는 결과를 초래한다. 적응형 스트리밍은 고객에게 최상의 시청 환경을 제공합니다.
-* Dynamic Media 플레이어가 HLS과 DASH 스트리밍 간을 전환하여 브라우저가 최적화된 스트리밍을 통해 최상의 서비스 품질을 보장합니다. Safari 브라우저를 사용하면 비디오 플레이어가 HLS으로 자동 전환됩니다.
-* 비디오 뷰어 사전 설정을 편집하여 선호하는 스트리밍 방법(HLS 또는 DASH)을 구성할 수 있습니다.
-* 최적화된 비디오 인코딩은 DASH 기능을 활성화하는 동안 추가 저장소가 사용되지 않도록 합니다. 비디오 저장 비용을 최적화하기 위해 HLS 및 DASH 모두에 대해 단일 비디오 인코딩 세트가 생성된다.
-* 고객이 보다 쉽게 비디오 게재를 이용할 수 있도록 지원합니다.
-* API를 통해 스트리밍 URL도 가져옵니다.
-
-계정에서 DASH를 활성화하려면 두 단계가 필요합니다.
-
-* DASH를 사용하도록 Dynamic Media 구성. 이 작업은 직접 수행할 수 있습니다.
-* 사용자가 만들고 제출한 Adobe 고객 지원 사례를 통해 수행되는 DASH를 사용하도록 Experience Manager 구성.
-
-계정에서 DASH를 활성화하기 위해 Adobe 지원 사례를 만들면 여러 캡션 및 오디오 트랙 지원도 자동으로 활성화됩니다. 활성화되면 새로 업로드한 모든 비디오가 다중 캡션 및 오디오 트랙 추가를 지원하는 업데이트된 백엔드 아키텍처를 사용하여 처리됩니다.
-
->[!IMPORTANT]
->
->Dynamic Media 계정에서 여러 캡션 및 오디오 트랙 지원을 사용하도록 *이전*&#x200B;에 업로드한 모든 비디오가 [다시 처리되어야 합니다](/help/assets/processing-profiles.md#reprocessing-assets). 이 비디오 재처리 단계는 여러 캡션 및 오디오 트랙 기능을 사용할 수 있도록 필요합니다. 비디오 URL은 재처리 후에도 계속 정상적으로 작동하고 재생됩니다.
-
-**Dynamic Media 계정에서 DASH, 다중 캡션 및 다중 오디오 트랙 지원을 활성화하려면:**
-
-<!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-
-1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
-1. To enable (turn on) DASH, select the checkbox. -->
-1. **DASH에 대한 Dynamic Media 구성** - Experience Manager에서 **[!UICONTROL 도구]** > **[!UICONTROL 작업]** > **[!UICONTROL 웹 콘솔]**&#x200B;로 이동합니다.
-
-1. **[!UICONTROL Adobe Experience Manager 웹 콘솔 구성]** 페이지에서 *AEM Assets Dynamic Media 비디오 고급 스트리밍 기능 플래그*(으)로 스크롤합니다.
-
-1. 이름 왼쪽에서 대시를 활성화(켜기)하려면 확인란을 선택합니다.
-
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-
-1. 이제 Admin Console을 사용하여 [새 지원 사례 만들기](https://helpx.adobe.com/kr/enterprise/using/support-for-experience-cloud.html)를 시작합니다.
-1. 지원 사례를 생성하려면 다음 정보를 제공하면서 지침을 따르십시오.
-
-   * 기본 담당자 이름, 이메일, 전화.
-   * Dynamic Media 계정의 이름입니다.
-   * Experience Manager의 Dynamic Media 계정에서 DASH, 다중 캡션 및 다중 오디오 트랙 지원을 활성화하도록 지정합니다.
-
-1. Adobe 고객 지원 센터는 요청이 제출된 순서에 따라 고객 대기 목록에 사용자를 추가합니다.
-1. Adobe에서 요청을 처리할 준비가 되면 고객 지원 센터에서 연락하여 지원 대상 날짜를 조정하고 설정합니다.
-1. 고객 지원 센터에서 완료 후 알려 줍니다.
-1. 이제 다음 중 하나를 수행할 수 있습니다.
-
-   * 평소대로 [비디오 뷰어 사전 설정](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)을 만듭니다.
-   * [비디오에 여러 캡션 및 오디오 트랙을 추가](#add-msma)하세요.
-
 ## 비디오 보고서 보기 {#viewing-video-reports}
 
 >[!NOTE]
@@ -610,7 +552,6 @@ Adobe 고객 지원 센터에서 활성화(켜기)해야 하는 기능 전환을
 
 * Dynamic Media가 AEM 환경에서 설정되었습니다.
 * [Dynamic Media 비디오 프로필이 비디오가 수집되는 폴더에 적용됩니다](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-* [Dynamic Media 계정에서 여러 캡션 및 오디오 트랙을 사용할 수 있습니다](#enable-dash).
 
 추가된 캡션 및 캡션은 WebVTT 및 Adobe `.vtt` 형식으로 지원됩니다. 또한 추가된 오디오 트랙 파일은 MP3 포맷으로 지원됩니다.
 
@@ -842,10 +783,6 @@ Dynamic Media는 URL 수정자를 통해 비디오가 포함된 단일 캡션의
 
 
 ## 비디오에 폐쇄 캡션 추가 {#adding-captions-to-video}
-
->[!IMPORTANT]
->
->Adobe은 Dynamic Media 계정에서 [여러 캡션 및 오디오 추적 기능을 활성화](#enable-dash)할 것을 권장합니다. 이렇게 하면 최신 Dynamic Media 백엔드 아키텍처와 캡션, 자막 및 오디오 트랙을 비디오에 추가하는 간소화된 워크플로우를 활용할 수 있습니다.
 
 단일 비디오 또는 응용 비디오 세트에 자막 기능을 추가하여 비디오를 글로벌 시장으로 확장할 수 있습니다. 폐쇄 캡션을 추가하면 오디오를 더빙하거나 원어민을 사용하여 각 언어의 오디오를 다시 녹음할 필요가 없습니다. 이 비디오는 녹화된 언어로 재생됩니다. 외국어 캡션이 표시되므로 다른 언어를 사용하는 사람도 오디오 부분을 이해할 수 있습니다.
 

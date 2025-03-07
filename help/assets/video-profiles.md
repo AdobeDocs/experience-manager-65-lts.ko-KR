@@ -11,16 +11,16 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: b7ee16db-fde2-4d06-b06c-945b6d876f8d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '3770'
-ht-degree: 8%
+source-wordcount: '3711'
+ht-degree: 5%
 
 ---
 
 # 비디오 프로필 {#video-profiles}
 
-Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필이 포함되어 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 시청 환경을 제공하도록 최적화되었습니다. 응용 비디오 인코딩 프로필을 사용하여 기본 소스 비디오를 인코딩하면 재생 중에 비디오 플레이어가 고객의 인터넷 연결 속도에 따라 비디오 스트림의 품질을 자동으로 조정합니다. 이 기능을 적응형 비트율 스트리밍이라고 합니다.
+Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필이 포함되어 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 시청 환경을 제공하도록 최적화되었습니다. 응용 비디오 인코딩 프로필을 사용하여 기본 소스 비디오를 인코딩하면 비디오 플레이어가 재생 품질을 최적화합니다. 고객의 인터넷 연결 속도에 따라 비디오 스트림을 자동으로 조정합니다. 이 기능을 적응형 비트율 스트리밍이라고 합니다.
 
 다음은 비디오의 품질을 결정하는 다른 요소입니다.
 
@@ -30,7 +30,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 * **비디오 플레이어 크기**
 
-  기본적으로 응용 비디오 인코딩 프로필의 &quot;너비&quot;는 &quot;자동&quot;으로 설정됩니다. 다시 말하지만 재생 중에는 플레이어 크기에 따라 최상의 품질이 사용됩니다.
+  기본적으로 응용 비디오 인코딩 프로필의 &quot;너비&quot;는 &quot;자동&quot;으로 설정됩니다. 재생 중에 비디오 플레이어는 크기에 따라 최상의 품질을 자동으로 선택합니다.
 
 [비디오 인코딩 모범 사례](/help/assets/video.md#best-practices-for-encoding-videos)를 참조하세요.
 
@@ -40,7 +40,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 >
 >비디오의 메타데이터 및 관련 비디오 이미지 썸네일을 생성하려면 비디오 자체가 Dynamic Media의 인코딩 프로세스를 거쳐야 합니다. Adobe Experience Manager에서 Dynamic Media를 활성화하고 비디오 클라우드 서비스를 설정한 경우 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로우가 비디오를 인코딩합니다. This workflow captures workflow process history and failure information. [비디오 인코딩 및 YouTube 게시 진행 모니터링](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress)을 참조하십시오. Dynamic Media를 사용하도록 설정하고 비디오 클라우드 서비스를 설정한 경우 비디오를 업로드할 때 **[!UICONTROL Dynamic Media 인코딩 비디오]** 워크플로가 자동으로 적용됩니다. Dynamic Media를 사용하지 않는 경우 **[!UICONTROL DAM 자산 업데이트]** 워크플로우가 적용됩니다.
 >
->메타데이터는 에셋을 검색할 때 유용합니다. 썸네일은 인코딩 중에 생성되는 정적 비디오 이미지입니다. Experience Manager 시스템에 필요하며 사용자 인터페이스에 사용되어 카드 보기, 검색 결과 보기 및 에셋 목록 보기에서 비디오를 시각적으로 식별하는 데 도움이 됩니다. 인코딩된 비디오의 렌디션 아이콘(페인트 팔레트)을 선택하면 생성된 썸네일을 볼 수 있습니다.
+>메타데이터는 에셋을 검색할 때 유용합니다. 썸네일은 인코딩 중에 생성되는 정적 비디오 이미지입니다. Experience Manager 시스템에서는 이러한 기능이 필요하고 사용자 인터페이스에서 이를 사용하여 카드 보기, 검색 결과 보기 및 에셋 목록 보기에서 비디오를 시각적으로 식별하는 데 도움이 됩니다. 인코딩된 비디오의 렌디션 아이콘(페인트 팔레트)을 선택하면 생성된 썸네일을 볼 수 있습니다.
 
 비디오 프로필 작성이 완료되면 폴더 또는 여러 폴더에 적용합니다. [폴더에 비디오 프로필 적용](#applying-a-video-profile-to-folders)을 참조하세요.
 
@@ -109,7 +109,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 * 초당 30프레임(FPS).
 * 300MB의 파일 크기입니다.
 
-Adobe Sensei은 9000프레임으로 제한됩니다. 즉, 30FPS로 5분. 비디오의 FPS가 더 높으면 지원되는 최대 비디오 지속 시간이 줄어듭니다. 예를 들어 60FPS 비디오는 Adobe Sensei 및 스마트 자르기에서 지원되려면 2분 30초 정도 있어야 합니다.
+Adobe Sensei은 9000프레임으로 제한됩니다. 즉, 30FPS로 5분. 비디오의 FPS가 더 높으면 지원되는 최대 비디오 지속 시간이 줄어듭니다. 예를 들어 Adobe Sensei 및 스마트 자르기는 최소 2분 30분인 경우에만 60FPS 비디오를 지원합니다.
 
 ![비디오용 스마트 자르기](assets/smart-crop-video.png)
 
@@ -117,7 +117,7 @@ Adobe Sensei은 9000프레임으로 제한됩니다. 즉, 30FPS로 5분. 비디�
 >
 >비디오 스마트 자르기가 작동하려면 비디오 프로필에 비디오 인코딩 사전 설정을 하나 이상 포함해야 합니다.
 
-비디오에 스마트 자르기를 사용하려면 적응형 또는 점진적 비디오 인코딩 프로필을 만듭니다. 프로필의 일부로 **[!UICONTROL 스마트 자르기 비율]** 도구를 사용하여 미리 정의된 종횡비를 선택합니다. 예를 들어 비디오 인코딩 사전 설정을 정의한 후 종횡비가 16×9인 &quot;모바일 가로&quot; 정의와 종횡비가 9×16인 &quot;모바일 세로&quot; 정의를 추가할 수 있습니다. 선택할 수 있는 기타 양상 또는 자르기 비율에는 1×1, 4×3 및 4×5가 포함됩니다.
+비디오에 스마트 자르기를 사용하려면 적응형 또는 점진적 비디오 인코딩 프로필을 만듭니다. 프로필의 일부로 **[!UICONTROL 스마트 자르기 비율]** 도구를 사용하여 미리 정의된 종횡비를 선택합니다. 예를 들어 비디오 인코딩 사전 설정을 정의한 후 종횡비가 16 × 9인 &quot;모바일 가로&quot; 정의를 추가할 수 있습니다. 종횡비가 9 × 16인 &quot;모바일 세로&quot; 정의를 추가할 수도 있습니다. 선택할 수 있는 기타 양상 또는 자르기 비율에는 1 × 1, 4 × 3 및 4 × 5가 포함됩니다.
 
 ![스마트 자르기로 비디오 인코딩 프로필 편집](assets/edit-smart-crop-video2.png)
 
@@ -137,7 +137,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 비디오 인코딩 프로필을 만들 때 대부분의 인코딩 옵션이 사용자를 돕기 위해 권장되는 기본 설정으로 미리 채워집니다. 그러나 권장 기본값 이외의 값을 선택하면 재생 중 비디오 품질이 저하되고 기타 성능 문제가 발생할 수 있습니다.
 
-따라서 프로필의 모든 MP4 H.264 비디오 인코딩 사전 설정에 대해 다음 값이 프로필의 개별 인코딩 사전 설정에서 동일한지 확인하여 적응형 비트율 스트리밍을 가능하게 합니다.
+따라서 적응형 비트율 스트리밍을 활성화하기 위해 시스템은 프로필의 모든 MP4 H.264 비디오 인코딩 사전 설정에 대한 특정 값을 확인합니다. 다음 값은 프로필 내의 개별 인코딩 사전 설정에서 일관되게 유지되어야 합니다.
 
 * 비디오 형식 코덱 - MP4 H.264(.mp4)
 * 오디오 코덱
@@ -148,7 +148,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 * H264 프로필
 * 오디오 샘플링 속도
 
-값이 같지 않으면 그대로 프로필을 계속 만들 수 있습니다. 단, 적응형 비트율 스트리밍은 불가능합니다. 대신 사용자는 단일 비트 전송률 스트리밍을 경험합니다. 프로필의 개별 인코딩 사전 설정에서 동일한 값을 사용하도록 인코딩 설정을 편집하는 것이 좋습니다. **[!UICONTROL 적응형 스트리밍을 위한 인코딩]**&#x200B;이 활성화된 경우 비디오 프로필/사전 설정 편집기에서 적응형 비디오 인코딩 설정의 패리티를 적용합니다.
+값이 같지 않으면 그대로 프로필을 계속 만들 수 있습니다. 단, 적응형 비트율 스트리밍은 불가능합니다. 대신 사용자는 단일 비트 전송률 스트리밍을 경험합니다. Adobe에서는 프로필의 개별 인코딩 사전 설정에서 동일한 값을 사용하도록 인코딩 설정을 편집할 것을 권장합니다. **[!UICONTROL 적응형 스트리밍을 위한 인코딩]**&#x200B;이 활성화된 경우 비디오 프로필/사전 설정 편집기에서 적응형 비디오 인코딩 설정의 패리티를 적용합니다.
 
 [점진적 스트리밍을 위한 비디오 인코딩 프로필 만들기](#creating-a-video-encoding-profile-for-progressive-streaming)도 참조하세요.
 
@@ -164,9 +164,9 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 1. 프로필의 이름과 설명을 입력합니다.
 1. 비디오 인코딩 사전 설정 만들기/편집 페이지에서 **[!UICONTROL 비디오 인코딩 사전 설정 추가]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 기본]** 탭에서 비디오 및 오디오 옵션을 설정합니다.
-선택한 비디오 형식 코덱에 따라 추가 설명 또는 권장 설정을 보려면 각 옵션 옆에 있는 정보 아이콘을 선택합니다.
-1. 비디오 크기 제목에서 **[!UICONTROL 종횡비 유지]**&#x200B;가 선택되어 있는지 확인하십시오.
-1. 비디오 프레임 크기 해상도를 픽셀 단위로 설정합니다. **[!UICONTROL Auto]** 값을 사용하여 소스 종횡비(너비 대 높이 비율)와 일치하도록 자동으로 조정합니다. 예를 들어 Auto x 480 또는 640 x Auto가 있습니다.
+각 옵션 옆의 정보 아이콘을 선택합니다. 선택한 비디오 형식 코덱을 기반으로 설명 또는 권장 설정에 대해 읽을 수 있습니다.
+1. 비디오 크기 제목에서 **[!UICONTROL 종횡비 유지]** 옵션이 선택되어 있는지 확인하십시오.
+1. 비디오 프레임 크기 해상도를 픽셀 단위로 설정합니다. **[!UICONTROL Auto]** 값을 사용하여 원본 종횡비(너비 대 높이 비율)와 자동으로 일치하도록 조정합니다. 예를 들어 Auto × 480 또는 640은 Auto를 ×.
 
 1. 다음 중 하나를 수행하십시오.
 
@@ -216,18 +216,18 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 1. 프로필의 이름과 설명을 입력합니다.
 1. 비디오 인코딩 사전 설정 만들기/편집 페이지에서 **[!UICONTROL 비디오 인코딩 사전 설정 추가]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 기본]** 탭에서 비디오 및 오디오 옵션을 설정합니다.
-선택한 비디오 형식 코덱에 따라 추가 설명 또는 권장 설정을 보려면 각 옵션 옆에 있는 정보 아이콘을 선택합니다.
+각 옵션 옆에 있는 정보 아이콘을 선택합니다. 선택한 비디오 형식 코덱을 기반으로 추가 설명 또는 권장 설정에 대해 읽을 수 있습니다.
 1. (선택 사항) [비디오 크기] 제목에서 **[!UICONTROL 종횡비 유지]**&#x200B;를 선택 취소합니다.
 1. 다음 작업을 수행합니다.
    * **[!UICONTROL 너비]** 필드에 **[!UICONTROL auto]**&#x200B;을(를) 입력합니다.
    * **[!UICONTROL 높이]** 필드에 값을 픽셀 단위로 입력하십시오.
-비디오의 크기를 시각화하려면 [높이] 정보 아이콘을 선택하여 **[!UICONTROL 크기 계산기]** 페이지를 엽니다. **[!UICONTROL 크기 계산기]** 페이지를 사용하여 원하는 비디오 차원(파란색 상자)을 추가로 설정하십시오. 완료되면 대화 상자의 오른쪽 상단 모서리에서 **[!UICONTROL X]**&#x200B;을(를) 선택합니다.
+비디오의 크기를 시각화하려면 [높이] 정보 아이콘을 선택하여 **[!UICONTROL 크기 계산기]** 페이지를 엽니다. **[!UICONTROL 크기 계산기]** 페이지에서 원하는 방식으로 비디오 차원을 추가로 설정합니다(파란색 상자). 완료되면 대화 상자의 오른쪽 상단 모서리에서 **[!UICONTROL X]**&#x200B;을(를) 선택합니다.
 1. (선택 사항) 다음 중 하나를 수행합니다.
 
    * **[!UICONTROL 고급]** 탭을 선택하고 **[!UICONTROL 기본값 사용]** 확인란이 선택되어 있는지 확인하십시오(권장).
 
    * **[!UICONTROL 기본값 사용]** 확인란의 선택을 취소하고 원하는 비디오 설정과 오디오 설정을 지정합니다.
-선택한 비디오 형식 코덱에 따라 추가 설명 또는 권장 설정을 보려면 각 옵션 옆에 있는 정보 아이콘을 선택합니다.
+각 옵션 옆에 있는 정보 아이콘을 선택합니다. 선택한 비디오 형식 코덱을 기반으로 추가 설명 또는 권장 설정에 대해 읽을 수 있습니다.
 
 1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장]**&#x200B;을 선택하여 사전 설정을 저장합니다.
 1. 다음 중 하나를 수행하십시오.
@@ -252,7 +252,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 ## 사용자가 추가한 비디오 인코딩 매개 변수 사용 {#using-custom-added-video-encoding-parameters}
 
-기존 비디오 인코딩 프로필을 편집하여 Experience Manager에서 비디오 프로필을 만들거나 편집할 때 사용자 인터페이스에서 볼 수 없는 고급 비디오 인코딩 매개 변수를 활용할 수 있습니다. minBitrate 및 maxBitrate와 같은 하나 이상의 고급 매개 변수를 기존 프로필에 추가합니다.
+기존 비디오 인코딩 프로필을 편집하여 고급 비디오 인코딩 매개 변수에 액세스할 수 있습니다. 이러한 매개 변수는 Experience Manager에서 비디오 프로필을 만들거나 편집할 때 사용자 인터페이스에서 사용할 수 없습니다. minBitrate 및 maxBitrate와 같은 하나 이상의 고급 매개 변수를 기존 프로필에 추가합니다.
 
 **사용자 지정 추가된 비디오 인코딩 매개 변수를 사용하려면:**
 
@@ -281,9 +281,9 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>키프레임 사이의 대상 프레임 수입니다. 2~10초마다 키프레임을 생성할 수 있도록 이 값을 계산합니다. 예를 들어 초당 30프레임인 경우 키프레임 간격은 60-300이어야 합니다.<br /> <br /> 낮은 키프레임 간격은 응용 비디오 인코딩을 위한 스트림 찾기 및 스트림 전환 동작을 개선하며 동작이 많은 비디오의 품질을 향상시킬 수도 있습니다. 그러나 키프레임은 파일 크기를 늘리기 때문에 낮은 키프레임 간격은 일반적으로 주어진 비트율로 전반적인 비디오 품질이 저하됩니다.</td>
+   <td>키프레임 사이의 대상 프레임 수입니다. 2~10초마다 키프레임을 생성할 수 있도록 이 값을 계산합니다. 예를 들어 초당 30프레임인 경우 키프레임 간격은 60-300이어야 합니다.<br /> <br /> 낮은 키프레임 간격은 응용 비디오 인코딩을 위한 스트림 찾기 및 스트림 전환 동작을 개선하며, 높은 동작이 포함된 비디오의 품질을 향상시킬 수 있습니다. 그러나 키프레임은 파일 크기를 늘리기 때문에 낮은 키프레임 간격은 일반적으로 주어진 비트율로 전반적인 비디오 품질이 저하됩니다.</td>
    <td><code>String</code></td>
-   <td><p>양수입니다.</p> <p>기본값은 300입니다.</p> <p>DASH 또는 HLS에 대한 권장 값은 60-90입니다. 비디오에 DASH를 사용하려면 먼저 계정에서 활성화해야 합니다. <a href="/help/assets/video.md#enable-dash">계정에서 DASH 사용</a>을 참조하세요.)</p> </td>
+   <td><p>양수입니다.</p> <p>기본값은 300입니다.</p> <p>DASH 또는 HLS에 대한 권장 값은 60-90입니다.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -301,7 +301,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
    <td><code>audioBitrateCustom</code></td>
    <td>오디오 코덱에서 지원하는 경우 오디오 스트림에 대한 상수 비트 전송률을 적용하려면 값을 <code>true</code>(으)로 설정하십시오.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>기본값은 <code>false</code>입니다.</p> <p>DASH 또는 HLS에 대한 권장 값은 <code>false</code>입니다. 비디오에 DASH를 사용하려면 먼저 계정에서 활성화해야 합니다. <a href="/help/assets/video.md#enable-dash">계정에서 DASH 사용</a>을 참조하세요.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>기본값은 <code>false</code>입니다.</p> <p>DASH 또는 HLS에 대한 권장 값은 <code>false</code>입니다.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -336,7 +336,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 적응형 비트율 스트리밍에 대한 설명을 보려면 정보 아이콘을 선택합니다. 점진적 비디오 프로필을 편집하는 경우 이 확인란을 선택하지 마십시오.
 1. 비디오 인코딩 사전 설정 제목 아래에서 프로필을 구성하는 비디오 인코딩 사전 설정을 추가, 편집 또는 삭제합니다.
 
-   **[!UICONTROL 기본]** 및 **[!UICONTROL 고급]** 탭에서 각 옵션 옆에 있는 정보 아이콘을 선택하여 선택한 비디오 형식 코덱에 따른 추가 설명 또는 권장 설정을 확인하십시오.
+   **[!UICONTROL 기본]** 및 **[!UICONTROL 고급]** 탭에서 각 옵션 옆에 있는 정보 아이콘을 선택합니다. 선택한 비디오 형식 코덱을 기반으로 추가 설명 또는 권장 설정에 대해 읽을 수 있습니다.
 
 1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
@@ -351,7 +351,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
    Dynamic Media - 하이브리드 모드에서 WebM 비디오 사전 설정이 비디오 프로필의 일부인 경우 모든 사전 설정이 MP4여야 하므로 **[!UICONTROL 적응형 스트리밍을 위해 인코딩]**&#x200B;할 수 없습니다.
 1. 비디오 인코딩 사전 설정 제목 아래에서 프로필을 구성하는 비디오 인코딩 사전 설정을 추가, 편집 또는 삭제합니다.
 
-   기본 및 고급 탭에서 권장 설정 및 설명을 보려면 각 옵션 옆에 있는 정보 아이콘을 선택합니다.
+   기본 및 고급 탭에서 각 옵션 옆에 있는 정보 아이콘을 선택합니다. 권장 설정 및 설명에 대해 읽어볼 수 있습니다.
 
 1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
@@ -368,7 +368,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 폴더에 다른 비디오 프로필을 할당하면 새 프로필이 이전 프로필을 재정의합니다. 이전의 기존 폴더 자산은 변경되지 않습니다. 새 프로필은 나중에 폴더에 추가되는 에셋에 적용됩니다.
 
-프로필이 할당된 폴더는 카드 이름에서 프로필 이름의 모양으로 사용자 인터페이스에 표시됩니다.
+사용자 인터페이스는 카드 이름에 프로필 이름을 표시하여 지정된 프로필이 있는 폴더를 나타냅니다.
 
 ![chlimage_1-517](assets/chlimage_1-517.png)
 
@@ -378,9 +378,9 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 
 ### 특정 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-specific-folders}
 
-You can apply a video profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Properties]**. This section describes how to apply video profiles to folders both ways.
+You can apply a video profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Properties]**. 이 섹션에서는 비디오 프로필을 두 가지 방법으로 폴더에 적용하는 방법에 대해 설명합니다.
 
-Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
+사용자 인터페이스는 카드 이름에 프로필 이름을 표시하여 지정된 프로필이 있는 폴더를 나타냅니다.
 
 [처리 프로필을 편집한 후 폴더에서 자산 재처리](processing-profiles.md#reprocessing-assets)도 참조하십시오.
 
@@ -388,14 +388,15 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 1. Experience Manager 로고를 선택하고 **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 비디오 프로필]**&#x200B;로 이동합니다.
 1. 폴더 또는 여러 폴더에 적용할 비디오 프로필을 선택합니다.
-1. **[!UICONTROL 폴더에 프로필 적용]**&#x200B;을 선택하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택한 다음 **[!UICONTROL 적용]**&#x200B;을 선택합니다. 프로필이 이미 할당된 폴더는 **[!UICONTROL 카드 보기]**에서 폴더 이름 바로 아래에 프로필 이름이 표시됩니다.
-[비디오 프로필 처리 작업의 진행 상황을 모니터링](#monitoring-the-progress-of-an-encoding-job)할 수 있습니다.
+1. **[!UICONTROL 폴더에 프로필 적용]**&#x200B;을 선택하고 새로 업로드한 자산을 받는 데 사용할 폴더 또는 여러 폴더를 선택한 다음 **[!UICONTROL 적용]**&#x200B;을 선택합니다. 사용자 인터페이스는 카드 이름에 프로필 이름을 표시하여 지정된 프로필이 있는 폴더를 나타냅니다.
+
+   [비디오 프로필 처리 작업의 진행 상황을 모니터링](#monitoring-the-progress-of-an-encoding-job)할 수 있습니다.
 
 #### 속성에서 폴더에 비디오 프로필 적용 {#applying-video-profiles-to-folders-from-properties}
 
 1. Experience Manager 로고를 선택하고 **[!UICONTROL Assets]**(으)로 이동한 다음 비디오 프로필을 적용할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 선택하여 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
-1. **[!UICONTROL 비디오 프로필]** 탭을 선택하고 드롭다운 메뉴에서 프로필을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
+1. **[!UICONTROL 비디오 프로필]** 탭을 선택하고 드롭다운 메뉴에서 프로필을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다. 사용자 인터페이스는 카드 이름에 프로필 이름을 표시하여 지정된 프로필이 있는 폴더를 나타냅니다.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 [비디오 프로필 처리 작업의 진행 상황을 모니터링](#monitoring-the-progress-of-an-encoding-job)할 수 있습니다.
@@ -423,7 +424,7 @@ Folders that have a profile already assigned to it are indicated by the display 
 
 폴더에서 비디오 프로필을 제거하면 모든 하위 폴더는 자동으로 상위 폴더에서 프로필 제거를 상속합니다. 그러나 폴더 내에서 발생한 모든 파일 처리는 그대로 유지됩니다.
 
-You can remove a video profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings]**. This section describes how to remove video profiles from folders both ways.
+You can remove a video profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings]**. 이 섹션에서는 두 가지 방법으로 폴더에서 비디오 프로필을 제거하는 방법을 설명합니다.
 
 ### 프로필 사용자 인터페이스를 통해 폴더에서 비디오 프로필 제거 {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
@@ -437,4 +438,4 @@ You can remove a video profile from a folder from within the **[!UICONTROL Tools
 
 1. Experience Manager 로고를 선택하고 **[!UICONTROL Assets]**(으)로 이동한 다음 비디오 프로필을 제거할 폴더로 이동합니다.
 1. 폴더에서 확인 표시를 선택한 다음 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
-1. **[!UICONTROL 비디오 프로필]** 탭을 선택하고 드롭다운 메뉴에서 **[!UICONTROL 없음]**&#x200B;을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다. Folders that have a profile already assigned to it are indicated by the display of the profile&#39;s name directly below the folder name.
+1. **[!UICONTROL 비디오 프로필]** 탭을 선택하고 드롭다운 메뉴에서 **[!UICONTROL 없음]**&#x200B;을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다. 사용자 인터페이스는 카드 이름에 프로필 이름을 표시하여 지정된 프로필이 있는 폴더를 나타냅니다.
