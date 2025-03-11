@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 57302061656ebf37a49041753dd5eb34e7ba22ef
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1221'
 ht-degree: 3%
 
 ---
@@ -38,21 +38,21 @@ ht-degree: 3%
    * [압축을 푼 설치 디렉토리](#unpacked-install-directory)
    * [시작 및 중지](#starting-and-stopping)
 
-이러한 기본 사항을 숙지하면 다음 하위 페이지에서 보다 고급 세부 정보를 찾을 수 있습니다.
+<!-- Once you have familiarized yourself with these basics, you can find in more advanced and detailed information in the following subpages:
 
-* [기술 요구 사항](/help/sites-deploying/technical-requirements.md)
-* [권장 배포](/help/sites-deploying/recommended-deploys.md)
-* [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
-* [Application Server 설치](/help/sites-deploying/application-server-install.md)
-* [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
-* [구성](/help/sites-deploying/configuring.md)
-* [AEM 6.5로 업그레이드](/help/sites-deploying/upgrade.md)
-* [구성 방법 문서](/help/sites-deploying/ht-deploy.md)
-* [웹 콘솔](/help/sites-deploying/web-console.md)
-* [복제 문제 해결](/help/sites-deploying/troubleshoot-rep.md)
-* [모범 사례](/help/sites-deploying/best-practices.md)
-* [AEM 플랫폼 소개](/help/sites-deploying/platform.md)
-* [성능 지침](/help/sites-deploying/performance-guidelines.md)
+* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
+* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
+* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
+* [Application Server Install](/help/sites-deploying/application-server-install.md)
+* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
+* [Configuring](/help/sites-deploying/configuring.md)
+* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
+* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
+* [Web Console](/help/sites-deploying/web-console.md)
+* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
+* [Best Practices](/help/sites-deploying/best-practices.md)
+* [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
+* [Performance Guidelines](/help/sites-deploying/performance-guidelines.md) -->
 
 ## 기본 개념 {#basic-concepts}
 
@@ -79,7 +79,7 @@ AEM 서버는 **Java 기반**&#x200B;이며 해당 플랫폼을 지원하는 대
 
 >[!NOTE]
 >
->AEM 6.5 빠른 시작에서 사용할 수 있는 적응형 Forms 기능은 탐색 및 평가 목적으로만 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
+>AEM 6.5 LTS QuickStart에서 사용할 수 있는 적응형 Forms 기능은 탐색 및 평가 목적으로만 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
 
 ### 일반적인 배포 시나리오 {#typical-deployment-scenarios}
 
@@ -102,37 +102,23 @@ AEM 용어에서 &quot;인스턴스&quot;는 서버에서 실행되는 AEM의 �
 
 ### 온프레미스 {#on-premise}
 
-회사 환경의 서버에 AEM을 설치할 수 있습니다. 일반적인 설치 인스턴스는 개발, 테스트 및 게시 환경을 포함합니다. AEM 소프트웨어를 로컬에 설치하는 방법에 대한 기본 정보는 [시작하기](/help/sites-deploying/deploy.md#getting%20started)를 참조하십시오.
+회사 환경의 서버에 AEM을 설치할 수 있습니다. 일반적인 설치 인스턴스는 개발, 테스트 및 게시 환경을 포함합니다. AEM 소프트웨어를 로컬에 설치하는 방법에 대한 기본 정보는 [시작하기](#getting-started)를 참조하십시오.
 
-일반적인 온-프레미스 배포에 대한 자세한 내용은 [권장 배포](/help/sites-deploying/recommended-deploys.md)를 참조하세요.
+<!-- To learn more about the typical on-premises deployments, see [Recommended Deployments](/help/sites-deploying/recommended-deploys.md). -->
 
 ### Cloud Manager을 사용한 Managed Services {#managed-services-using-cloud-manager}
 
-AEM Managed Services은 디지털 환경 관리를 위한 완전한 솔루션입니다. 온-프레미스 배포의 모든 제어, 보안 및 사용자 지정 이점을 유지하면서 클라우드에서 경험 전달 솔루션의 이점을 제공합니다. AEM Managed Services을 사용하면 클라우드에 배포하고 Adobe의 모범 사례 및 지원에 의존하여 고객이 보다 빠르게 시작할 수 있습니다. 조직 및 비즈니스 사용자는 최소의 시간에 고객을 참여시키고 시장 점유율을 높이며 IT 부담을 줄이면서 혁신적인 마케팅 캠페인을 창출하는 데 집중할 수 있습니다.
-
-AEM Managed Services 고객은 다음과 같은 이점을 실현할 수 있습니다.
-
-**출시 기간 단축:** Adobe Managed Services의 유연한 클라우드 인프라를 통해 조직은 성공적인 디지털 경험을 신속하게 계획, 출시 및 최적화할 수 있습니다. Adobe은 추가적인 자본, 하드웨어 또는 소프트웨어 필요 없이 클라우드 아키텍처를 관리하고 Adobe의 고객 솔루션 엔지니어는 AEM 아키텍처, 프로비저닝, 백엔드 앱에 연결하기 위한 사용자 정의 및 Go-Live 모범 사례를 지원합니다.
-
-**더 높은 성능:** 비즈니스에 안정적인 디지털 환경을 제공합니다. 4가지 서비스 가용성 옵션 99.5%, 99.9%, 99.95% 및 99.99%. 또한 자동 백업 및 다중 모드 재해 복구 모델을 통해 안정성과 비상 상황을 관리할 수 있습니다.
-
-**최적화된 IT 비용:** 사전 예방적 지침 및 전문 지식은 조직이 최신 버전의 AEM을 최신 상태로 유지할 수 있도록 지원합니다. Adobe Platinum 유지 관리 및 지원은 AMS Enterprise/Basic의 새로운 배포에 자동으로 포함되며, 조직의 미션 크리티컬 애플리케이션 유지 관리를 위한 기술 전문 지식 및 운영 경험을 제공합니다. 무료 기본 Analytics 또는 Target 기능은 분석 및 개인화에 대한 요구 사항이 제한된 중간 시장 조직에 특히 더 많은 가치를 제공합니다.
-
-**최고 보안:** 제한된 액세스 시설, 방화벽 시스템 뒤 또는 가상 사설 클라우드 내에서 고객 응용 프로그램을 호스팅하여 엔터프라이즈급 물리적, 네트워크 및 데이터 보안을 보장합니다. 여기에는 강력한 데이터 스토리지 암호화, 항바이러스성 및 데이터 격리를 갖춘 단일 테넌트 가상 시스템이 포함됩니다.
-
-**Cloud Manager**: Adobe Experience Manager Managed Services 서비스의 일부인 Cloud Manager은 조직에서 클라우드에서 Adobe Experience Manager을 자체 관리할 수 있도록 해주는 셀프서비스 포털입니다. 여기에는 IT 팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 맞춤화 또는 업데이트 제공 속도를 높일 수 있는 최신 CI/CD(지속적 통합 및 지속적 배포) 파이프라인이 포함되어 있습니다. Cloud Manager은 Adobe Managed Service 고객만 사용할 수 있습니다.
-
-Cloud Manager 및 해당 리소스에 대한 자세한 내용은 [**Cloud Manager 사용 안내서**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)를 참조하세요.
+<i>곧 발표될 예정입니다.</i>
 
 ## 시작하기 {#getting-started}
 
 ### 사전 요구 사항 {#prerequisites}
 
-프로덕션 인스턴스는 공식적으로 지원되는 OS를 실행하는 전용 컴퓨터에서 실행되지만([기술 요구 사항](/help/sites-deploying/technical-requirements.md) 참조), Experience Manager 서버는 실제로 [**Java™ Standard Edition 8**](https://www.oracle.com/java/technologies/downloads/#java8)을 지원하는 모든 시스템에서 실행됩니다.
+프로덕션 인스턴스는 공식적으로 지원되는 OS를 실행하는 전용 컴퓨터에서 실행되지만([기술 요구 사항](/help/sites-deploying/technical-requirements.md) 참조), Experience Manager 서버는 실제로 [**Java™ Standard Edition 17**](https://www.oracle.com/java/technologies/downloads/#java17)을 지원하는 모든 시스템에서 실행됩니다.
 
 AEM에 익숙해지고 개발하기 위해 Apple OS X를 실행하는 로컬 시스템이나 Microsoft® Windows 또는 Linux®의 데스크탑 버전을 실행하는 로컬 시스템에 설치된 인스턴스를 사용하는 것이 일반적입니다.
 
-클라이언트측에서 AEM은 데스크톱 및 태블릿 운영 체제에서 모든 최신 브라우저(**Microsoft® Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **Safari** 8+)에서 작동합니다. 자세한 내용은 [지원되는 클라이언트 플랫폼](/help/sites-deploying/technical-requirements.md#supported-client-platforms)을 참조하십시오.
+클라이언트측에서 AEM은 데스크톱 및 태블릿 운영 체제에서 모든 최신 브라우저(**Microsoft® Edge**, **Chrome **51+** **, **Firefox **47+, **Safari** 8+)에서 작동합니다. 자세한 내용은 [지원되는 클라이언트 플랫폼](/help/sites-deploying/technical-requirements.md#supported-client-platforms)을 참조하십시오.
 
 ### 소프트웨어 가져오기 {#getting-the-software}
 
@@ -140,9 +126,9 @@ AEM에 익숙해지고 개발하기 위해 Apple OS X를 실행하는 로컬 시
 
 AEM 소프트웨어 패키지는 두 가지 형태로 제공됩니다.
 
-* **cq-quickstart-6.5.0.jar:** 실행해야 하는 모든 내용이 포함된 독립 실행형 실행 파일 *jar*.
+* **CQ AEM 6.5 LTS jar:** 실행해야 하는 모든 항목이 포함된 독립 실행형 실행 파일 *jar*&#x200B;입니다.
 
-* **cq-quickstart-6.5.0.war:** 타사 응용 프로그램 서버에 배포할 *war* 파일입니다.
+* **CQ AEM 6.5 LTS war:** 타사 응용 프로그램 서버에 배포할 *war* 파일입니다.
 
 다음 섹션에서는 **독립 실행형 설치**&#x200B;에 대해 설명합니다. 응용 프로그램 서버에 AEM을 설치하는 방법에 대한 자세한 내용은 [응용 프로그램 서버 설치](/help/sites-deploying/application-server-install.md)를 참조하십시오.
 
@@ -164,18 +150,18 @@ AEM 소프트웨어 패키지는 두 가지 형태로 제공됩니다.
 
    ```shell
    <aem-install>/
-       cq-quickstart-6.5.0.jar
+       <aem-65-lts>.jar
        license.properties
    ```
 
    `license.properties` 파일을 제공하지 않으면 AEM에서 브라우저를 시작할 때 라이선스 키를 입력할 수 있는 **시작** 화면으로 리디렉션합니다. 아직 라이센스 키가 없는 경우 Adobe에 유효한 라이센스 키를 요청해야 합니다.
 
-1. GUI 환경에서 인스턴스를 시작하려면 **`cq-quickstart-6.5.0.jar`** 파일을 두 번 클릭하십시오.
+1. GUI 환경에서 인스턴스를 시작하려면 **`<aem-65-lts>.jar`** 파일을 두 번 클릭하십시오.
 
    또는 명령줄에서 AEM을 시작할 수 있습니다.
 
    ```shell
-       java -Xmx1024M -jar cq-quickstart-6.5.0.jar
+       java -Xmx1024M -jar <aem-65-lts>.jar
    ```
 
 AEM에서 jar 파일의 압축을 풀고 직접 설치하고 시작하는 데 몇 분이 소요됩니다. 위의 절차를 수행하면 다음과 같은 결과가 발생합니다.
@@ -217,7 +203,7 @@ AEM에서 jar 파일의 압축을 풀고 직접 설치하고 시작하는 데 �
 설치 사용자 정의에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
-* [실행 모드](/help/sites-deploying/configure-runmodes.md)
+<!-- * [Run Modes](/help/sites-deploying/configure-runmodes.md) -->
 
 ### 압축을 푼 설치 디렉토리 {#unpacked-install-directory}
 
@@ -226,7 +212,7 @@ quickstart jar를 처음 실행하면 새 하위 디렉터리(`crx-quickstart`)�
 ```xml
 <aem-install>/
     license.properties
-    cq-quickstart-6.5.0.jar
+    <aem-65-lts>.jar
     crx-quickstart/
         app/
         bin/
@@ -279,28 +265,28 @@ AEM은 웹 브라우저를 시작하고 자동으로 적절한 페이지(일반�
 `https://localhost:4502/`
 
 ![로그인 화면](assets/screen_shot_2019-04-08at83533am.png)
+<!-- 
+After you are logged in, you have access to AEM. For more information, depending on your role, see the following:
 
-로그인하면 AEM에 액세스할 수 있습니다. 자세한 내용은 역할에 따라 다음을 참조하십시오.
+* [Authoring](/help/sites-authoring/first-steps.md)
+* [Administering](/help/sites-administering/home.md)
+* [Developing](/help/sites-developing/getting-started.md)
+* [Managing](/help/managing/best-practices.md)
 
-* [작성](/help/sites-authoring/first-steps.md)
-* [관리](/help/sites-administering/home.md)
-* [개발](/help/sites-developing/getting-started.md)
-* [관리](/help/managing/best-practices.md)
+## Advanced Deployment {#advanced-deployment}
 
-## 고급 배포 {#advanced-deployment}
+The above section should give you a good understanding of the basics of AEM installation. However, installing a full production system of AEM can involve considerably more complexity. For full coverage of advanced installation see the following subpages:
 
-위의 섹션에서는 AEM 설치의 기본 사항을 잘 이해할 수 있습니다. 그러나 AEM의 전체 프로덕션 시스템을 설치하면 훨씬 더 복잡해질 수 있습니다. 고급 설치에 대한 전체 내용은 다음 하위 페이지를 참조하십시오.
-
-* [기술 요구 사항](/help/sites-deploying/technical-requirements.md)
-* [권장 배포](/help/sites-deploying/recommended-deploys.md)
-* [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
-* [Application Server 설치](/help/sites-deploying/application-server-install.md)
-* [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
-* [구성](/help/sites-deploying/configuring.md)
-* [AEM 6.5로 업그레이드](/help/sites-deploying/upgrade.md)
-* [구성 방법 문서](/help/sites-deploying/ht-deploy.md)
-* [웹 콘솔](/help/sites-deploying/web-console.md)
-* [복제 문제 해결](/help/sites-deploying/troubleshoot-rep.md)
-* [모범 사례](/help/sites-deploying/best-practices.md)
-* [AEM 플랫폼 소개](/help/sites-deploying/platform.md)
-* [성능 지침](/help/sites-deploying/performance-guidelines.md)
+* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
+* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
+* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
+* [Application Server Install](/help/sites-deploying/application-server-install.md)
+* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
+* [Configuring](/help/sites-deploying/configuring.md)
+* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
+* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
+* [Web Console](/help/sites-deploying/web-console.md)
+* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
+* [Best Practices](/help/sites-deploying/best-practices.md)
+* [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
+* [Performance Guidelines](/help/sites-deploying/performance-guidelines.md) -->

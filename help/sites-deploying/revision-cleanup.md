@@ -9,9 +9,9 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
 workflow-type: tm+mt
-source-wordcount: '5696'
+source-wordcount: '5139'
 ht-degree: 0%
 
 ---
@@ -78,18 +78,15 @@ AEM 6.3 이상에서는 온라인 수정 정리 라는 이 기능의 온라인 �
 
 ## 전체 및 꼬리 압축 모드  {#full-and-tail-compaction-modes}
 
-**AEM 6.5**&#x200B;에서 온라인 수정 정리 프로세스의 **압축** 단계에 대해 **두 개의 새 모드**&#x200B;를 도입했습니다.
+**AEM 6.5 LTS**&#x200B;은(는) 온라인 수정 정리 프로세스의 **압축** 단계에 대해 **2개 모드**&#x200B;를 가지고 있습니다.
 
-* **전체 압축** 모드는 전체 저장소의 모든 세그먼트와 tar 파일을 다시 작성합니다. 따라서 이후의 정리 단계에서는 저장소의 최대 가비지 양을 제거할 수 있습니다. 전체 압축은 전체 저장소에 영향을 미치므로 완료하는 데 상당한 시스템 리소스와 시간이 필요합니다. 전체 압축은 AEM 6.3의 압축 단계에 해당합니다.
+* **전체 압축** 모드는 전체 저장소의 모든 세그먼트와 tar 파일을 다시 작성합니다. 따라서 이후의 정리 단계에서는 저장소의 최대 가비지 양을 제거할 수 있습니다. 전체 압축은 전체 저장소에 영향을 미치므로 완료하는 데 상당한 시스템 리소스와 시간이 필요합니다.
 * **테일 압축** 모드는 저장소의 가장 최근 세그먼트와 tar 파일만 다시 작성합니다. 가장 최근 세그먼트 및 tar 파일은 마지막으로 전체 또는 테일 압축을 실행한 이후 추가된 파일입니다. 따라서 이후의 정리 단계에서는 저장소의 최근 부분에 포함된 휴지통만 제거할 수 있습니다. 꼬리 압축은 저장소의 일부에만 영향을 주므로 전체 압축보다 시스템 리소스와 완료 시간이 훨씬 적게 필요합니다.
 
 이러한 압축 모드는 효율과 리소스 소비 간의 상충관계를 구성합니다. 테일 압축은 효율성이 떨어지지만 정상적인 시스템 운영에 미치는 영향도 적습니다. 반면 전체 압축은 더 효과적이지만 정상적인 시스템 작동에 더 큰 영향을 미칩니다.
 
-또한 AEM 6.5는 압축 시 더욱 효율적인 콘텐츠 중복 제거 메커니즘을 도입하여 저장소의 디스크 내 풋프린트를 더욱 줄입니다.
+AEM 6.5 LTS는 압축 시 효율적인 콘텐츠 중복 제거 메커니즘을 제공하여 저장소의 디스크 내 풋프린트를 더욱 줄입니다.
 
-아래 두 차트는 AEM 6.3에 비해 AEM 6.5에서 디스크의 평균 실행 시간 및 평균 풋프린트가 감소했음을 보여주는 내부 실험실 테스트 결과를 보여 줍니다.
-
-![onrc-duration-6_4vs63](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
 
 ### 전체 및 테일 압축 구성 방법 {#how-to-configure-full-and-tail-compaction}
 
@@ -108,7 +105,7 @@ AEM 6.3 이상에서는 온라인 수정 정리 라는 이 기능의 온라인 �
 새 압축 모드를 사용할 때는 다음 사항에 유의하십시오.
 
 * I/O 작업, IO 대기 중인 CPU, 커밋 큐 크기 등과 같은 입력/출력(I/O) 활동을 모니터링할 수 있습니다. 이렇게 하면 시스템이 I/O에 바인딩되고 있으며 업사이징이 필요한지 여부를 확인하는 데 도움이 됩니다.
-* `RevisionCleanupTaskHealthCheck`은(는) 온라인 수정 정리 작업의 전체 상태를 나타냅니다. AEM 6.3에서와 동일한 방식으로 작동하며 전체 압축과 꼬리 압축을 구분하지 않습니다.
+* `RevisionCleanupTaskHealthCheck`은(는) 온라인 수정 정리 작업의 전체 상태를 나타냅니다.
 * 로그 메시지는 압축 모드에 대한 관련 정보를 전달합니다. 예를 들어, 온라인 개정 정리가 시작되면 해당 로그 메시지는 압축 모드를 나타냅니다. 또한, 경우에 따라 시스템에서 꼬리 압축을 실행하도록 예약되었을 때 전체 압축으로 되돌리고 로그 메시지는 이러한 변경을 나타냅니다. 아래의 로그 샘플은 압축 모드와 꼬리에서 전체 압축으로의 변화를 나타냅니다.
 
 ```
@@ -123,83 +120,6 @@ TarMK GC: no base state available, running full compaction instead
 **디스크의 크기를 처음 예상한 저장소의 크기보다 최소 2~3배 크게 설정하는 것이 좋습니다.**
 
 ## 온라인 개정 정리 FAQ {#online-revision-cleanup-frequently-asked-questions}
-
-### AEM 6.5 업그레이드 고려 사항 {#aem-upgrade-considerations}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td>질문 </td>
-   <td>답변</td>
-  </tr>
-  <tr>
-   <td>AEM 6.5로 업그레이드할 때 알아야 할 사항은 무엇입니까?</td>
-   <td><p>TarMK의 지속성 형식은 AEM 6.5에서 변경됩니다. 이러한 변경 사항에는 사전 예방적 마이그레이션 단계가 필요하지 않습니다. 기존 저장소는 사용자에게 투명한 롤링 마이그레이션을 거칩니다. 마이그레이션 프로세스는 AEM 6.5(또는 관련 도구)가 저장소에 처음 액세스할 때 시작됩니다.</p> <p><strong>AEM 6.5 지속성 형식으로의 마이그레이션이 시작되면 저장소를 이전 AEM 6.3 지속성 형식으로 되돌릴 수 없습니다.</strong></p> </td>
-  </tr>
- </tbody>
-</table>
-
-### Oak Segment Tar로 마이그레이션 {#migrating-to-oak-segment-tar}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td><strong>질문</strong></td>
-   <td><strong>답변</strong></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>저장소를 마이그레이션해야 하는 이유는 무엇입니까?</strong></td>
-   <td><p>AEM 6.3에서는 특히 온라인 수정 정리 성능 및 효능 향상을 위해 스토리지 형식의 변경이 필요했습니다. 이러한 변경 사항은 이전 버전과 호환되지 않으며, 이전 Oak 세그먼트로 만든 저장소(AEM 6.2 및 이전 버전)를 마이그레이션해야 합니다.</p> <p>스토리지 형식 변경의 추가적인 이점:</p>
-    <ul>
-     <li>확장성 향상(세그먼트 크기가 최적화됨).</li>
-     <li>더 빠른 <a href="/help/sites-administering/data-store-garbage-collection.md" target="_blank">데이터 저장소 가비지 수집</a>.<br /> </li>
-     <li>향후 개선을 위한 기반 작업</li>
-    </ul> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>이전 Tar 포맷은 계속 지원됩니까?</strong></td>
-   <td>새 Oak 세그먼트 Tar만 AEM 6.3 이상에서 지원됩니다.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>콘텐츠 마이그레이션이 항상 필수입니까?</strong></td>
-   <td>예. 새 인스턴스로 시작하지 않으면 항상 콘텐츠를 마이그레이션해야 합니다.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>6.3 이상으로 업그레이드하고 나중에 마이그레이션을 수행할 수 있습니까(예: 다른 유지 관리 기간 사용)?</strong></td>
-   <td>아니요, 위에서 설명한 대로 컨텐츠 마이그레이션은 필수입니다.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>마이그레이션할 때 다운타임을 방지할 수 있습니까?</strong></td>
-   <td>아니요. 실행 중인 인스턴스에서 수행할 수 없는 일회성 작업입니다.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>실수로 잘못된 저장소 형식에 대해 를 실행하면 어떻게 됩니까?</strong></td>
-   <td>oak-segment-tar 리포지토리에 대해 oak-segment 모듈을 실행하려고 하면(또는 반대로) "잘못된 세그먼트 형식"이라는 메시지와 함께 <em>IllegalStateException</em>(으)로 시작이 실패합니다. 데이터 손상이 발생하지 않습니다.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>검색 색인의 색인 재지정이 필요합니까?</strong></td>
-   <td>아니요. oak-segment에서 oak-segment-tar로 마이그레이션하면 컨테이너 형식이 변경됩니다. 포함된 데이터는 영향을 받지 않으며 수정되지 않습니다.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>마이그레이션 도중 및 마이그레이션 후에 필요한 예상 디스크 공간을 가장 잘 계산하는 방법</strong></td>
-   <td>마이그레이션은 세그먼트 저장소를 새 형식으로 다시 만드는 것과 같습니다. 마이그레이션 중에 필요한 추가 디스크 공간을 예상하는 데 사용할 수 있습니다. 마이그레이션 후 이전 세그먼트 저장소를 삭제하여 공간을 다시 확보할 수 있습니다.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>마이그레이션 기간을 가장 잘 예측하는 방법</strong></td>
-   <td>마이그레이션 전에 <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup">오프라인 수정 버전 정리</a>를 실행하면 마이그레이션 성능이 크게 향상될 수 있습니다. 모든 고객은 업그레이드 프로세스의 전제 조건으로 실행하는 것이 좋습니다. 일반적으로 마이그레이션 전에 오프라인 개정 정리 작업이 실행되었다고 가정할 때 마이그레이션 기간은 오프라인 개정 정리 작업의 기간과 비슷해야 합니다.</td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
 
 ### 온라인 개정 정리 실행 {#running-online-revision-cleanup}
 
@@ -243,11 +163,6 @@ TarMK GC: no base state available, running full compaction instead
   <tr>
    <td><strong>일반적으로 작성자와 게시의 온라인 수정 버전 정리 창이 서로 다릅니까?</strong></td>
    <td>이는 근무 시간 및 고객 온라인 존재의 트래픽 패턴에 따라 다릅니다. 유지 관리 기간은 최상의 정리 효과를 위해 기본 제작 시간 외에 구성해야 합니다. 여러 AEM 게시 인스턴스(TarMK 팜)의 경우, 온라인 개정 정리를 위한 유지 관리 창은 서로 엇갈려야 합니다.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>온라인 개정 정리를 실행하기 전에 사전 요구 사항이 있습니까?</strong></td>
-   <td><p>온라인 개정 정리 는 AEM 6.3 이상 릴리스에서만 사용할 수 있습니다. 또한 이전 버전의 AEM을 사용하는 경우 새 <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak 세그먼트 Tar</a>(으)로 마이그레이션해야 합니다.</p> </td>
    <td> </td>
   </tr>
   <tr>

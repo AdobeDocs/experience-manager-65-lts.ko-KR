@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d716571f490fe4bf3b7e58ea2ca85bbe6703ec0d
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,13 @@ ht-degree: 0%
 다음 애플리케이션 서버의 설치 단계가 설명되어 있습니다.
 
 * [WebSphere](#websphere)
-* [JBoss](#jboss-eap)
-* [Oracle WebLogic 12.1.3/12.2](#oracle-weblogic)
-* [Tomcat 8/8.5](#tomcat)
+* [Tomcat 11.0.x](#tomcat)
 
 웹 애플리케이션 설치, 서버 구성 및 서버 시작 및 중지 방법에 대한 자세한 내용은 해당 애플리케이션 서버 설명서를 참조하십시오.
 
->[!NOTE]
+<!-- >[!NOTE]
 >
->WAR 배포에서 Dynamic Media를 사용하는 경우 [Dynamic Media 설명서](/help/assets/config-dynamic.md#enabling-dynamic-media)를 참조하십시오.
+>If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media). -->
 
 ## 일반 설명 {#general-description}
 
@@ -49,7 +47,7 @@ AEM은 단일 war 파일로 제공됩니다.
 * 실행 모드는 `author`입니다.
 * 인스턴스(Repository, Felix OSGI 환경, 번들 등)가 `${user.dir}/crx-quickstart`에 설치되어 있습니다. `${user.dir}`이(가) 현재 작업 디렉터리이며 crx-quickstart의 이 경로는 `sling.home`입니다.
 
-* 컨텍스트 루트는 war 파일 이름입니다(예: `aem-6`).
+* 컨텍스트 루트는 war 파일 이름입니다(예: `aem-65-lts`).
 
 #### 구성 {#configuration}
 
@@ -95,7 +93,7 @@ AEM은 단일 war 파일로 제공됩니다.
 
 ## 애플리케이션 서버 설치 절차 {#application-servers-installation-procedures}
 
-### WebSphere® 8.5 {#websphere}
+### WebSphere® 24.0.0.7 {#websphere}
 
 배포하기 전에 위의 [일반 설명](#general-description)을 읽으십시오.
 
@@ -124,66 +122,7 @@ AEM은 단일 war 파일로 제공됩니다.
 
 * AEM 웹 애플리케이션 시작
 
-#### JBoss® EAP 6.3.0/6.4.0 {#jboss-eap}
-
-배포하기 전에 위의 [일반 설명](#general-description)을 읽으십시오.
-
-**JBoss® 서버 준비**
-
-conf 파일에서 메모리 인수를 설정합니다(예: `standalone.conf`).
-
-* JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
-
-배포 스캐너를 사용하여 AEM 웹 응용 프로그램을 설치하는 경우 인스턴스의 xml 파일에서 `deployment-timeout` 특성을 설정하는 `deployment-timeout,`을(를) 늘리는 것이 좋습니다(예: `configuration/standalone.xml)`:
-
-```xml
-<subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
-            <deployment-scanner path="deployments" relative-to="jboss.server.base.dir" scan-interval="5000" deployment-timeout="1000"/>
-</subsystem>
-```
-
-**AEM 웹 응용 프로그램 배포**
-
-* JBoss® 관리 콘솔에서 AEM 웹 애플리케이션을 업로드합니다.
-
-* AEM 웹 애플리케이션을 활성화합니다.
-
-#### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
-
-배포하기 전에 위의 [일반 설명](#general-description)을 읽으십시오.
-
-관리 서버만 있는 간단한 서버 레이아웃을 사용합니다.
-
-**WebLogic Server 준비**
-
-* `${myDomain}/config/config.xml`보안 구성 섹션에 추가:
-
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` 올바른 위치를 확인하려면 [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd)을(를) 참조하십시오. 기본적으로 섹션의 끝에 위치를 지정하면 됩니다.
-
-* VM 메모리 설정 늘리기:
-
-   * `${myDomain}/bin/setDomainEnv.cmd` 열기(resp .sh) WLS_MEM_ARGS를 검색합니다. `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m` 집합과 같이 설정합니다.
-   * WebLogic Server 다시 시작
-
-* `${myDomain}`에서 패키지 폴더를 만들고 cq 폴더 및 그 안에 플랜 폴더를 만듭니다.
-
-**AEM 웹 응용 프로그램 배포**
-
-* AEM war 파일 다운로드
-* AEM war 파일을 ${myDomain}/packages/cq 폴더에 넣습니다.
-* 필요한 경우 `WEB-INF/web.xml`에서 구성하십시오(일반 설명의 위 참조).
-
-   * `WEB-INF/web.xml`파일 압축 풀기
-   * sling.run.modes 매개 변수를 게시로 변경
-   * sling.home 초기 매개 변수의 주석을 제거하고 필요에 따라 이 경로를 설정합니다(일반 설명 참조).
-   * web.xml 파일 다시 압축
-
-* AEM war 파일을 애플리케이션으로 배포(다른 설정의 경우 기본 설정 사용)
-* 설치하는 데 시간이 걸릴 수 있습니다...
-* 일반 설명에서 위에 언급된 대로 설치가 완료되었는지 확인합니다(예: error.log 추적).
-* WebLogic `/console`에서 웹 응용 프로그램의 구성 탭에서 컨텍스트 루트를 변경할 수 있습니다.
-
-#### Tomcat 8/8.5 {#tomcat}
+#### Tomcat 11.0.x {#tomcat}
 
 배포하기 전에 위의 [일반 설명](#general-description)을 읽으십시오.
 

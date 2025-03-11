@@ -3,14 +3,13 @@ title: CIF 제품 및 카테고리 선택기 사용
 description: 고객 상거래 구성 요소에서 CIF 제품 및 범주 선택기를 사용하여 작성자와 마케터가 상거래 제품 및 카탈로그 데이터를 효율적으로 사용할 수 있도록 지원하는 방법에 대해 알아봅니다.
 sub-product: Commerce
 topics: Development
-version: Cloud Service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 25442753-8309-452b-881a-d33ab159d5b2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%
