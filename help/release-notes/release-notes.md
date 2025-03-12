@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보
-description: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보입니다.
+description: 다음은 Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보입니다.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
@@ -8,7 +8,7 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: e7fc1120d12160ba866ceaddd087fc9acdfcd51d
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 23%
+ht-degree: 24%
 
 ---
 
@@ -62,7 +62,7 @@ Quickstart는 Eclipse Jetty 11.0.x를 서블릿 엔진으로 사용합니다.
 >
 >Java™ 17은 AEM 6.5 LTS와 함께 사용하기 권장되는 버전입니다.
 
-## 더 이상 사용되지 않으며 제거된 기능 {#deprecated-and-removed-features}
+## 더 이상 사용되지 않고 제거된 기능 {#deprecated-and-removed-features}
 
 Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 교체하기 위해 제품 기능을 지속해서 평가합니다.
 
