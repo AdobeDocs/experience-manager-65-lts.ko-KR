@@ -1,16 +1,11 @@
 ---
 title: AEM Sites 개발 시작하기 - WKND 튜토리얼
 description: AEM 인스턴스를 빌드하는 방법을 알아봅니다. 플랫폼과 구성 요소에 대해 자세히 알아보고 개발 도구 및 개인화에 대한 정보를 살펴보십시오.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: introduction
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: eac6c640-1c00-4fd9-9858-50fa2a0ea1ef
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: fa066f9b822f1d5883e79610b239b13224a62fe0
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 80%

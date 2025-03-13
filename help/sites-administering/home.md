@@ -1,20 +1,20 @@
 ---
-title: AEM 6.5 관리 사용 안내서
-description: AEM 6.5 관리에 대해 자세히 알아봅니다. 이 안내서에서는 사이트 기능, 배포 작업, 보안 기능, 개인화, 통합 등에 대한 내용을 다룹니다.
+title: AEM 6.5 LTS 관리 사용 안내서
+description: AEM 6.5 LTS 관리에 대해 알아봅니다. 이 안내서에서는 사이트 기능, 배포 작업, 보안 기능, 개인화, 통합 등을 다룹니다.
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 1ef575fc-5fc4-43ca-978e-911118dad438
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3db401e19e0d819760acb3b470d0beda2c16dc5d
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 88%
+source-wordcount: '67'
+ht-degree: 14%
 
 ---
 
-# AEM 6.5 관리 사용 안내서
+# AEM 6.5 LTS 관리 사용 안내서
 
-AEM 6.5 관리에 대해 자세히 알아봅니다. 이 안내서에서는 사이트 기능, 배포 작업, 보안 기능, 개인화, 통합 등에 대한 내용을 다룹니다.
+AEM 6.5 LTS 관리에 대해 알아봅니다. 이 안내서에서는 사이트 기능, 배포 작업, 보안 기능, 개인화, 통합 등을 다룹니다.
 
 ## 주요 관리 문서
 
