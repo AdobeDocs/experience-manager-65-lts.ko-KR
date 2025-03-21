@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
 workflow-type: tm+mt
-source-wordcount: '6216'
+source-wordcount: '6217'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ AEM 작성자는 `mongod` 인스턴스에 연결되고 각 AEM 작성자는 세 
 
 ### 운영 체제 {#operating-systems}
 
-AEM 6에서 지원되는 운영 체제 목록은 [기술 요구 사항 페이지](/help/sites-deploying/technical-requirements.md)를 참조하십시오.
+AEM 6.5 LTS에서 지원되는 운영 체제 목록은 [기술 요구 사항 페이지](/help/sites-deploying/technical-requirements.md)를 참조하십시오.
 
 ### 환경 {#environments}
 
@@ -649,7 +649,7 @@ Header set X-Content-Type-Options "nosniff"  env=jsonp_request
 Header setifempty Content-Type application/javascript env=jsonp_request
 ```
 
-#### 컨텐츠 보안 정책 {#content-security-policy}
+#### 콘텐츠 보안 정책 {#content-security-policy}
 
 기본 Dispatcher 설정을 사용하면 CSP라고도 하는 컨텐츠 보안 정책을 열 수 있습니다. 이 설정을 사용하면 페이지가 브라우저 샌드박스의 기본 정책을 준수하는 모든 도메인에서 리소스를 로드할 수 있습니다.
 

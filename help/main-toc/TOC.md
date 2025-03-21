@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 96fdfc1f754358bc358595c10ba908a4aabce4af
+source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
 workflow-type: tm+mt
-source-wordcount: '6802'
+source-wordcount: '6798'
 ht-degree: 23%
 
 ---
@@ -367,7 +367,7 @@ ht-degree: 23%
       + [인스턴스에 대해 콘텐츠 조각 기능 활성화](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
       + [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md)
-      + [베리에이션 - 조각 콘텐츠 작성](/help/assets/content-fragments/content-fragments-variations.md)
+      + [변형 - 조각 콘텐츠 작성](/help/assets/content-fragments/content-fragments-variations.md)
       + [콘텐츠 조각 관련 콘텐츠](/help/assets/content-fragments/content-fragments-assoc-content.md)
       + [메타데이터 - 조각 속성](/help/assets/content-fragments/content-fragments-metadata.md)
       + [콘텐츠 조각 - 삭제 고려 사항](/help/assets/content-fragments/content-fragments-delete.md)
@@ -1130,7 +1130,7 @@ ht-degree: 23%
       + [AEM 헤드리스 콘텐츠 설계 여정 개요](/help/journey-headless/architect/overview.md)
       + [AEM을 통한 Headless용 콘텐츠 모델링 - 소개](/help/journey-headless/architect/introduction.md)
       + [AEM을 통한 Headless용 콘텐츠 모델링 기본 사항 알아보기](/help/journey-headless/architect/basics.md)
-      + [AEM의 콘텐츠 조각 모델 만들기에 대해 알아보기](/help/journey-headless/architect/model-structure.md)
+      + [AEM에서 콘텐츠 조각 모델 만들기에 대해 알아보기](/help/journey-headless/architect/model-structure.md)
    + AEM Headless 콘텐츠 작성 여정 {#author}
       + [AEM Headless 콘텐츠 작성 여정 - 개요](/help/journey-headless/author/overview.md)
       + [AEM을 통한 Headless 작성 - 소개](/help/journey-headless/author/introduction.md)
@@ -1407,7 +1407,6 @@ ht-degree: 23%
          + [개정 정리](/help/sites-deploying/revision-cleanup.md)
          + [Oak 쿼리 및 색인화](/help/sites-deploying/queries-and-indexing.md)
          + [TarMK 콜드 대기로 AEM을 실행하는 방법](/help/sites-deploying/tarmk-cold-standby.md)
-         + [AEM의 RDBMS 지원](/help/sites-deploying/rdbms-support-in-aem.md)
          + [Oak 실행 Jar를 통한 인덱싱](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Oak-run.jar 색인화 사용 사례](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Oak 인덱스 문제 해결](/help/sites-deploying/troubleshooting-oak-indexes.md)
