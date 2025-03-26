@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
+source-git-commit: 5405b449377e464b7311b09f2f854488e404c1fd
 workflow-type: tm+mt
 source-wordcount: '6798'
 ht-degree: 23%
@@ -1281,7 +1281,7 @@ ht-degree: 23%
          + [React를 사용하여 시작하기](/help/sites-developing/spa-getting-started-react.md)
          + [SPA에 대한 React 구성 요소 구현](/help/sites-developing/spa-implementing-react-component.md)
          + [Angular를 사용하여 시작하기](/help/sites-developing/spa-getting-started-angular.md)
-         + [SPA 심층 분석](/help/sites-developing/spa-deep-dives.md)
+         + [SPA 심층 분석](/help/sites-developing/spa-deep-dives-gems.md)
          + [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md)
          + [SPA 편집기 개요](/help/sites-developing/spa-overview.md)
          + [SPA 블루프린트](/help/sites-developing/spa-blueprint.md)
