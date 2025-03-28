@@ -1,6 +1,6 @@
 ---
 title: AEM Forms 소개
-description: 이 AEM 6.5 LTS 안내서를 사용하여 디지털 양식을 작성, 관리, 게시 및 업데이트합니다. 설치, 업그레이드 및 구성에 대한 도움말을 확인하고 적응형 양식 작성에 대해 알아봅니다.
+description: 이 AEM 6.5 LTS 안내서를 사용하여 디지털 양식을 작성하고, 관리하고, 게시하고, 업데이트합니다. 설치, 업그레이드 및 구성에 대한 도움말을 확인하고 적응형 양식 작성에 대해 알아봅니다.
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
@@ -8,7 +8,7 @@ exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
 source-git-commit: 3b83225e1150f1e623997c9ece6329de995148be
 workflow-type: tm+mt
 source-wordcount: '951'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 

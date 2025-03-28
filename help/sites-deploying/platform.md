@@ -1,6 +1,6 @@
 ---
 title: AEM 플랫폼 소개
-description: AEM 플랫폼과 Adobe Experience Manager 6.5 LTS 설치 및 배포를 비롯한 가장 중요한 구성 요소뿐만 아니라 Adobe Managed Services 클라우드 배포를 비롯한 아키텍처에 대해 알아봅니다.
+description: AEM 플랫폼과 Adobe Experience Manager 6.5 LTS 설치 및 배포를 포함한 가장 중요한 구성 요소는 물론 Adobe Managed Services 클라우드 배포를 포함한 아키텍처에 대해 알아봅니다.
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Architect
@@ -10,7 +10,7 @@ exl-id: c9ea613d-f1d1-49be-bd52-95d489442f46
 source-git-commit: 4666e698b05510e2ed90995f7e7098e7f8d860da
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
