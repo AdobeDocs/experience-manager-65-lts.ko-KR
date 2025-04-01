@@ -1,13 +1,14 @@
 ---
-title: 자주 묻는 질문(FAQ)
+title: 자주 묻는 질문 (FAQ)
 description: AEM 6.5 LTS에 대한 FAQ입니다.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 2e9f8f59fd068e9e296c20e1d930fdbe2f5d30b1
+exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
+source-git-commit: 3677c3921a7dd603afd251aebf4be67947fb1e02
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +22,7 @@ Adobe은 제공하는 애플리케이션의 보안 및 안정성에 대한 노�
 
 ## 온-프레미스 고객입니다. AEM 6.5 LTS로 업그레이드하지 않으면 어떻게 됩니까?
 
-AEM 6.5 LTS에는 Oracle Java 17에 대한 지원을 포함하여 중요한 보안 및 안정성 업데이트가 포함되어 있습니다. Adobe은 최소 3년 동안 AEM 6.5를 계속 지원하지만 조직에서는 6.5 LTS로의 업그레이드 계획을 시작하는 것이 좋습니다.
+AEM 6.5 LTS에는 Oracle Java 17에 대한 지원을 포함하여 중요한 보안 및 안정성 업데이트가 포함되어 있습니다. Adobe은 최소 2년 동안 AEM 6.5를 계속 지원하지만 조직에서는 6.5 LTS로의 업그레이드 계획을 시작하는 것이 좋습니다.
 
 ## 기존 사용자 지정 및 통합이 영향을 받습니까?
 
