@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2147'
 ht-degree: 8%
 
 ---
@@ -83,7 +83,7 @@ AEM에서 이메일을 보낼 수 있으려면 **일 CQ 메일 서비스**&#x200
 
 ## 워크플로우 이메일 알림 서비스 구성 {#configuring-the-workflow-email-notification-service}
 
-워크플로우 이메일 알림을 받을 때 보낸 사람 이메일 주소와 호스트 URL 접두어가 모두 기본값으로 설정됩니다. 웹 콘솔에서 **일 CQ 워크플로우 전자 메일 알림 서비스**&#x200B;를 구성하여 이러한 값을 변경할 수 있습니다. 이 경우 저장소에서 변경 사항을 유지하는 것이 좋습니다.
+워크플로우 이메일 알림을 받을 때 보낸 사람 이메일 주소와 호스트 URL 접두어가 모두 기본값으로 설정됩니다. 웹 콘솔에서 **일 CQ 워크플로우 전자 메일 알림 서비스**&#x200B;를 구성하여 이러한 값을 변경할 수 있습니다. 이렇게 하면 저장소에서 변경 사항을 유지해야 합니다.
 
 기본 구성은 웹 콘솔에서 다음과 같이 표시됩니다.
 
