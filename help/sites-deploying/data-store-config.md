@@ -1,5 +1,5 @@
 ---
-title: AEM 6에서 노드 저장소 및 데이터 저장소 구성
+title: AEM 6.5 LTS에서 노드 저장소 및 데이터 저장소 구성
 description: 노드 저장소 및 데이터 저장소를 구성하는 방법과 데이터 저장소 가비지 수집을 수행하는 방법에 대해 알아봅니다.
 content-type: reference
 topic-tags: deploying
@@ -10,14 +10,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3330'
 ht-degree: 0%
 
 ---
 
-# AEM 6에서 노드 저장소 및 데이터 저장소 구성{#configuring-node-stores-and-data-stores-in-aem}
+# AEM 6.5 LTS에서 노드 저장소 및 데이터 저장소 구성{#configuring-node-stores-and-data-stores-in-aem}
 
 ## 소개 {#introduction}
 
@@ -46,19 +46,10 @@ Adobe Experience Manager(AEM)에서 바이너리 데이터는 컨텐츠 노드�
 
 ## 노드 저장소 구성 {#node-store-configurations}
 
->[!CAUTION]
->
->최신 버전의 Oak에서는 OSGi 구성 파일에 대해 새로운 이름 지정 체계 및 형식을 사용합니다. 새 이름 지정 체계를 사용하려면 구성 파일 이름이 **.config**&#x200B;이고 새 형식을 사용하려면 값을 입력해야 합니다. 자세한 내용은 [Apache Sling 프로비저닝 모델 및 Apache SlingStart - 기본 구성 형식](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format)을 참조하십시오.
->
->이전 버전의 Oak에서 업그레이드하는 경우 먼저 `crx-quickstart/install`폴더를 백업해야 합니다. 업그레이드 후 폴더의 내용을 업그레이드된 설치로 복원하고 구성 파일의 확장자를 **.cfg**&#x200B;에서 **.config**(으)로 수정합니다.
-
 ### 세그먼트 노드 저장소 {#segment-node-store}
 
-세그먼트 노드 저장소는 AEM6에서 Adobe의 TarMK 구현의 기반입니다. 구성에 `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` PID를 사용합니다.
+세그먼트 노드 저장소는 AEM 6.5 LTS에서 Adobe의 TarMK 구현의 기반입니다. 구성에 `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` PID를 사용합니다.
 
->[!CAUTION]
->
->세그먼트 노드 저장소에 대한 PID가 AEM 6의 `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions`에서 AEM 6.3의 `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService`(으)로 변경되었습니다. 이 변경 사항을 반영하도록 필요한 구성을 조정해야 합니다.
 
 다음 옵션을 구성할 수 있습니다.
 
@@ -86,7 +77,7 @@ customBlobStore=B"true"
 
 * `mongouri`: Mongo 데이터베이스에 연결하는 데 필요한 [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/)입니다. 기본값은 `mongodb://localhost:27017`입니다.
 
-* `db`: Mongo 데이터베이스의 이름입니다. 기본값은 기본 데이터베이스 이름으로 **Oak** ``. However, new AEM 6 installations use **aem-author** ``입니다.
+* `db`: Mongo 데이터베이스의 이름입니다. 기본값은 **aem-author**&#x200B;입니다.
 
 * `cache`: 캐시 크기(MB)입니다. 이는 DocumentNodeStore에서 사용되는 다양한 캐시에 분산됩니다. 기본값은 `256`입니다.
 
@@ -143,9 +134,9 @@ AEM은 Amazon의 Simple Storage Service(S3)에 데이터를 저장하도록 구�
 
 >[!NOTE]
 >
->AEM 6.5는 Amazon의 S3에 데이터 저장을 지원하지만, 공급업체가 Amazon의 S3 API를 자체적으로 구현할 수 있는 다른 플랫폼에 데이터를 저장하는 것에는 지원이 확장되지 않습니다.
+>AEM 6.5 LTS는 Amazon의 S3에 데이터 저장을 지원하지만, 공급업체가 Amazon의 S3 API를 자체적으로 구현할 수 있는 다른 플랫폼에 데이터를 저장하는 것에는 지원이 확장되지 않습니다.
 
-S3 데이터 저장소 기능을 활성화하려면 S3 데이터 저장소 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. [Adobe 저장소](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)&#x200B;(으)로 이동하여 기능 팩의 1.10.x 버전(예: com.adobe.granite.oak.s3connector-1.10.0.zip)에서 최신 버전을 다운로드합니다. 또한 [AEM 6.5 릴리스 노트](/help/release-notes/release-notes.md) 페이지에 나열된 최신 AEM 서비스 팩을 다운로드하여 설치해야 합니다.
+S3 데이터 저장소 기능을 활성화하려면 S3 데이터 저장소 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. [Adobe 저장소](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)&#x200B;(으)로 이동하여 기능 팩의 1.60.x 버전(예: com.adobe.granite.oak.s3connector-1.60.2.zip)에서 최신 버전을 다운로드합니다. 또한 [AEM 6.5 LTS 릴리스 노트](/help/release-notes/release-notes.md) 페이지에 나열된 최신 AEM 서비스 팩을 다운로드하여 설치해야 합니다.
 
 >[!NOTE]
 >
@@ -189,9 +180,9 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 1. 파일을 편집하고 설정에 필요한 구성 옵션을 추가합니다.
 1. AEM을 시작합니다.
 
-## 1.10.x S3 Connector 새 버전으로 업그레이드 {#upgrading-to-a-new-version-of-the-s-connector}
+## 새 버전의 1.60.x S3 Connector로 업그레이드 {#upgrading-to-a-new-version-of-the-s-connector}
 
-새 버전의 1.10.x S3 커넥터(예: 1.10.0에서 1.10.4로)로 업그레이드하려면 다음 단계를 수행합니다.
+새 버전의 1.60.x S3 커넥터로 업그레이드하려면 다음 단계를 따르십시오.
 
 1. AEM 인스턴스를 중지합니다.
 
@@ -205,7 +196,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
    >
    >위에 표시된 파일 이름은 일러스트레이션 용도로만 사용됩니다.
 
-1. [Adobe 저장소](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)에서 최신 버전의 1.10.x 기능 팩을 다운로드합니다.
+1. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)에서 1.60.x 기능 팩의 최신 버전을 다운로드합니다.
 1. 콘텐츠를 별도의 폴더로 압축 해제한 다음 `jcr_root/libs/system/install/15`(으)로 이동합니다.
 1. jar 파일을 AEM 설치 폴더의 **&lt;aem-install>**/crx-quickstart/install/15에 복사합니다.
 1. AEM을 시작하고 커넥터 기능을 확인합니다.
@@ -413,7 +404,7 @@ S3를 사용하여 바이너리 없는 복제를 구성하려면 다음 단계�
 
 AEM은 Microsoft®의 Azure 스토리지 서비스에 데이터를 저장하도록 구성할 수 있습니다. 구성에 `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID를 사용합니다.
 
-Azure 데이터 저장소 기능을 활성화하려면 Azure 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. [Adobe 저장소](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/)&#x200B;(으)로 이동하여 기능 팩의 1.6.x 버전(예: com.adobe.granite.oak.azureblobconnector-1.6.3.zip)에서 최신 버전을 다운로드합니다.
+Azure 데이터 저장소 기능을 활성화하려면 Azure 커넥터가 포함된 기능 팩을 다운로드하여 설치해야 합니다. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip)&#x200B;(으)로 이동하여 기능 팩의 1.9.x 버전(예: com.adobe.granite.oak.azureblobconnector-1.9.16.zip)에서 최신 버전을 다운로드합니다.
 
 >[!NOTE]
 >

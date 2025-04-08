@@ -1,6 +1,6 @@
 ---
-title: AEM 6.5의 스토리지 요소
-description: AEM 6.5에서 사용할 수 있는 노드 저장소 구현 및 저장소 유지 관리 방법에 대해 알아봅니다.
+title: AEM 6.5 LTS의 스토리지 요소
+description: AEM 6.5 LTS에서 사용할 수 있는 노드 저장소 구현 및 저장소 유지 관리 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -10,35 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: e51842b5-fa91-42d2-a490-5a7e867dada7
-source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
 
-# AEM 6.5의 스토리지 요소{#storage-elements-in-aem}
+# AEM 6.5 LTS의 스토리지 요소{#storage-elements-in-aem}
 
 이 문서에서는 다음 사항을 다룹니다.
 
-* [AEM 6의 스토리지 개요](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
+* [AEM 6.5 LTS의 스토리지 개요](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [저장소 유지 관리](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)
 
-## AEM 6의 스토리지 개요 {#overview-of-storage-in-aem}
+## AEM 6.5 LTS의 스토리지 개요 {#overview-of-storage-in-aem}
 
-AEM 6에서 가장 중요한 변경 사항 중 하나는 저장소 수준의 혁신입니다.
+AEM 6.5 LTS에서 가장 중요한 변경 사항 중 하나는 저장소 수준의 혁신입니다.
 
-현재 AEM6에서 사용할 수 있는 노드 스토리지 구현은 Tar 스토리지와 MongoDB 스토리지라는 두 가지가 있습니다.
+현재 AEM 6.5 LTS에서 사용할 수 있는 노드 스토리지 구현은 Tar 스토리지와 MongoDB 스토리지라는 두 가지가 있습니다.
 
 ### Tar 스토리지 {#tar-storage}
 
 #### Tar 저장소를 사용하여 새로 설치된 AEM 인스턴스 실행 {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
->[!CAUTION]
->
->세그먼트 노드 저장소의 PID가 org.apache.jackrabbit.oak에서 변경되었습니다.AEM AEM 6.3의 org.apache.jackrabbit.oak.segment.SegmentNodeStoreService에 대한 이전 버전의 **plugins**.segment.SegmentNodeStoreService. 변경 사항이 반영되도록 필요한 구성을 조정해야 합니다.
-
-기본적으로 AEM 6은 기본 구성 옵션을 사용하여 Tar 저장소를 사용하여 노드 및 바이너리를 저장합니다. 다음을 수행하여 저장소 설정을 수동으로 구성할 수 있습니다.
+기본적으로 AEM 6.5 LTS는 기본 구성 옵션을 사용하여 Tar 저장소를 사용하여 노드 및 바이너리를 저장합니다. 다음을 수행하여 저장소 설정을 수동으로 구성할 수 있습니다.
 
 1. AEM 6.5 LTS quickstart jar를 다운로드하여 새 폴더에 저장합니다.
 1. 다음을 실행하여 AEM 압축을 풉니다.
@@ -47,7 +43,7 @@ AEM 6에서 가장 중요한 변경 사항 중 하나는 저장소 수준의 혁
 
 1. 설치 디렉터리에 이름이 `crx-quickstart\install`인 폴더를 만듭니다.
 
-1. 새로 만든 폴더에 `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` 파일을 만듭니다.
+1. 새로 만든 폴더에 `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` 파일을 만듭니다.
 
 1. 파일을 편집하고 구성 옵션을 설정합니다. AEM의 Tar 스토리지 구현의 기반이 되는 세그먼트 노드 스토어에 다음 옵션을 사용할 수 있습니다.
 
@@ -57,6 +53,10 @@ AEM 6에서 가장 중요한 변경 사항 중 하나는 저장소 수준의 혁
 1. AEM을 시작합니다.
 
 ### Mongo 스토리지 {#mongo-storage}
+
+>[!NOTE]
+>
+>Mongo의 최소 지원 버전은 Mongo 6입니다.
 
 #### Mongo 스토리지로 새로 설치한 AEM 인스턴스 실행 {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
@@ -71,12 +71,12 @@ AEM 6.5 LTS는 아래 절차에 따라 MongoDB 스토리지에서 실행되도�
 1. 설치 디렉터리에 이름이 `crx-quickstart\install`인 폴더를 만듭니다.
 1. `crx-quickstart\install` 디렉터리에 사용할 구성의 이름으로 구성 파일을 만들어 노드 저장소를 구성합니다.
 
-   AEM의 MongoDB 저장소 구현의 기반이 되는 문서 노드 저장소는 `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg` 파일을 사용합니다
+   AEM의 MongoDB 저장소 구현의 기반이 되는 문서 노드 저장소는 `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config` 파일을 사용합니다
 
 1. 파일을 편집하고 구성 옵션을 설정합니다. 다음 옵션을 사용할 수 있습니다.
 
    * `mongouri`: Mongo 데이터베이스에 연결하는 데 필요한 [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/)입니다. 기본값은 `mongodb://localhost:27017`입니다.
-   * `db`: Mongo 데이터베이스의 이름입니다. 기본적으로 새 AEM 6 설치에서는 **aem-author**&#x200B;을(를) 데이터베이스 이름으로 사용합니다.
+   * `db`: Mongo 데이터베이스의 이름입니다. 기본적으로 새 AEM 6.5 LTS 설치에서는 **aem-author**&#x200B;을(를) 데이터베이스 이름으로 사용합니다.
    * `cache`: 캐시 크기(MB)입니다. 이 캐시 크기는 DocumentNodeStore에서 사용되는 다양한 캐시에 분산됩니다. 기본값은 256입니다.
    * `changesSize`: 비교 출력을 캐시하기 위해 Mongo에서 사용되는 제한 컬렉션 크기(MB)입니다. 기본값은 256입니다.
    * `customBlobStore`: 사용자 지정 데이터 저장소가 사용됨을 나타내는 부울 값입니다. 기본값은 false입니다.

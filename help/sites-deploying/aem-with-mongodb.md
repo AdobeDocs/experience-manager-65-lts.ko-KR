@@ -12,14 +12,18 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '6217'
+source-wordcount: '5965'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager 및 MongoDB{#aem-with-mongodb}
+
+>[!NOTE]
+>
+>Mongo의 최소 지원 버전은 Mongo 6입니다.
 
 이 문서에서는 MongoDB와 함께 AEM(Adobe Experience Manager)를 성공적으로 배포하는 데 필요한 작업 및 고려 사항에 대한 지식을 향상하고자 합니다.
 
@@ -74,8 +78,6 @@ MongoDB는 일반적으로 SSD 스토리지 또는 SSD와 동등한 성능을 �
 
 ### RAM {#ram}
 
-MMAP 스토리지 엔진을 사용하는 MongoDB 버전 2.6 및 3.0을 사용하려면 데이터베이스 및 해당 인덱스의 작업 집합이 RAM에 적합해야 합니다.
-
 RAM이 부족하면 성능이 크게 저하됩니다. 작업 집합 및 데이터베이스의 크기는 응용 프로그램에 따라 크게 달라집니다. 몇 가지 예상이 가능하지만 필요한 RAM의 양을 결정하는 가장 안정적인 방법은 AEM 애플리케이션을 빌드하고 부하 테스트하는 것입니다.
 
 로드 테스트 프로세스를 지원하기 위해 전체 데이터베이스 크기에 대한 작업 집합의 비율을 다음과 같이 가정할 수 있습니다.
@@ -85,11 +87,9 @@ RAM이 부족하면 성능이 크게 저하됩니다. 작업 집합 및 데이�
 
 이러한 비율은 SSD 배포의 경우 2TB 데이터베이스에 200GB의 RAM이 필요함을 의미합니다.
 
-MongoDB 3.0의 WiredTiger 스토리지 엔진에도 동일한 제한 사항이 적용되지만 작업 세트, RAM 및 페이지 폴트 간의 상관 관계는 그리 강력하지 않습니다. WiredTiger는 MMAP 스토리지 엔진과 동일한 방식으로 메모리 매핑을 사용하지 않습니다.
-
 >[!NOTE]
 >
->Adobe에서는 MongoDB 3.0을 사용하는 AEM 6.1 배포에 WiredTiger 스토리지 엔진을 사용하는 것이 좋습니다.
+>Adobe에서는 MongoDB 6 이상을 사용하는 AEM 6.5 LTS 배포에 WiredTiger 스토리지 엔진을 사용하는 것이 좋습니다.
 
 ### 데이터 저장소 {#data-store}
 
@@ -235,8 +235,6 @@ MongoDB 배포에 대해 영구 캐시 구성을 활성화하여 I/O 읽기 성�
 
 ### 운영 체제 지원 {#operating-system-support}
 
-MongoDB 2.6은 RAM과 디스크 간의 운영 체제 수준 관리에 민감한 메모리 매핑 스토리지 엔진을 사용합니다. MongoDB 인스턴스의 쿼리 및 읽기 성능은 종종 페이지 오류라고 하는 느린 I/O 작업을 방지하거나 제거하는 데 의존합니다. 이러한 문제는 특히 `mongod` 프로세스에 적용되는 페이지 오류입니다. 이를 운영 체제 수준의 페이지 오류와 혼동하지 마십시오.
-
 빠른 작업을 위해 MongoDB 데이터베이스는 이미 RAM에 있는 데이터에만 액세스해야 합니다. 액세스해야 하는 데이터는 인덱스 및 데이터로 구성됩니다. 이러한 인덱스 및 데이터 컬렉션을 작업 세트라고 합니다. 작업 세트가 사용 가능한 RAM MongoDB보다 큰 경우 디스크에서 해당 데이터를 페이징해야 I/O 비용이 발생하여 메모리에 이미 있는 다른 데이터를 제거할 수 있습니다. 데이터가 디스크에서 다시 로드되는 경우 페이지 장애가 우세하고 성능이 저하됩니다. 작업 세트가 동적이고 가변적인 경우 작업을 지원하기 위해 더 많은 페이지 오류가 발생합니다.
 
 MongoDB는 다양한 Linux® 버전, Windows 및 macOS을 포함한 여러 운영 체제에서 실행됩니다. 자세한 내용은 [https://docs.mongodb.com/manual/installation/#supported-platforms](https://docs.mongodb.com/manual/installation/#supported-platforms)을(를) 참조하십시오. 선택한 운영 체제에 따라 MongoDB에는 다른 운영 체제 수준의 권장 사항이 있습니다. [https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration](https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration)에 문서화되어 있으며 편의상 여기에 요약되어 있습니다.
@@ -246,7 +244,6 @@ MongoDB는 다양한 Linux® 버전, Windows 및 macOS을 포함한 여러 운�
 * 투명 조각 및 조각 모음을 끕니다. 자세한 내용은 [투명 대용량 페이지 설정](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/)을 참조하십시오.
 * 사용 사례에 맞게 데이터베이스 파일을 저장하는 장치에서 [미리 보기 설정을 조정](https://docs.mongodb.com/manual/administration/production-notes/#readahead)합니다.
 
-   * MMAPv1 스토리지 엔진의 경우 작업 집합이 사용 가능한 RAM보다 크고 문서 액세스 패턴이 임의인 경우 미리 보기를 32 또는 16으로 낮추는 것이 좋습니다. 다른 설정을 평가하여 상주 메모리를 최대화하고 페이지 폴트 수를 낮추는 최적의 값을 찾을 수 있습니다.
    * WiredTiger 스토리지 엔진의 경우 저장 매체 유형(회전, SSD 등)에 관계없이 readahead를 0으로 설정합니다. 일반적으로, 테스트에서 더 높은 미리 읽기 가치에서 측정 가능하고 반복 가능하며 신뢰할 수 있는 이점을 표시하지 않는 한 권장되는 미리 읽기 설정을 사용하십시오. [MongoDB Professional 지원](https://docs.mongodb.com/manual/administration/production-notes/#readahead)에서 0이 아닌 미리 읽기 구성에 대한 조언과 지침을 제공할 수 있습니다.
 
 * 가상 환경에서 RHEL 7/CentOS 7을 실행하는 경우 튜닝된 도구를 비활성화합니다.
@@ -358,11 +355,13 @@ WiredTiger 내부 캐시의 크기를 조정하려면 [storage.wiredTiger.engine
 
 ### 누마 {#numa}
 
-NUMA(Non-Uniform Memory Access)를 사용하면 커널이 프로세서 코어에 메모리를 매핑하는 방법을 관리할 수 있습니다. 이 프로세스는 코어가 필요한 데이터에 액세스할 수 있도록 메모리 액세스를 더 빠르게 만들려고 시도하지만 NUMA는 읽기를 예측할 수 없어 추가적인 지연을 초래하는 MMAP을 방해합니다. 따라서 모든 운영 체제에서 `mongod` 프로세스에 대해 NUMA를 사용하지 않도록 설정해야 합니다.
+NUMA(Non-Uniform Memory Access)를 사용하면 커널이 프로세서 코어에 메모리를 매핑하는 방법을 관리할 수 있습니다.
 
 본질적으로, NUMA 아키텍처에서 메모리는 CPU에 연결되고, CPU는 버스에 연결된다. SMP 또는 UMA 아키텍처에서 메모리는 버스에 연결되고 CPU에 의해 공유된다. 스레드는 NUMA CPU에 메모리를 할당할 때 정책에 따라 할당합니다. 기본적으로 스레드의 로컬 CPU에 연결된 메모리는 사용 가능한 공간이 없는 한 할당하는 것입니다. 이 시점에서 더 높은 비용으로 사용 가능한 CPU의 메모리를 사용합니다. 일단 할당되면, 메모리는 CPU들 사이에서 이동하지 않는다. 할당은 상위 스레드에서 상속된 정책에 의해 수행되며, 상위 스레드는 궁극적으로 프로세스를 시작한 스레드입니다.
 
-컴퓨터를 멀티코어 균일 메모리 아키텍처로 보는 많은 데이터베이스에서 이 시나리오는 먼저 CPU이 가득 차고 나중에 보조 CPU이 채워지는 것으로 이어집니다. 특히 중앙 스레드가 메모리 버퍼를 할당하는 경우 더욱 그렇습니다. 해결 방법은 다음 명령을 실행하여 `mongod` 프로세스를 시작하는 데 사용되는 기본 스레드의 NUMA 정책을 변경하는 것입니다.
+NUMA(Non-Uniform Memory Access)가 있는 시스템에서 MongoDB를 실행하면 일정 기간 동안 성능이 느려지고 사용 가능한 모든 RAM을 사용할 수 없으며 시스템 프로세스 사용량이 많아지는 등 여러 가지 운영 문제가 발생할 수 있습니다.
+
+해결 방법은 다음 명령을 실행하여 `mongod` 프로세스를 시작하는 데 사용되는 기본 스레드의 NUMA 정책을 변경하는 것입니다.
 
 ```shell
 numactl --interleaved=all <mongod> -f config
@@ -676,10 +675,6 @@ MongoDB 성능에 대한 일반 정보는 [MongoDB 성능 분석](https://docs.m
 MongoMK는 단일 데이터베이스와 함께 여러 AEM 인스턴스의 동시 사용을 지원하지만 동시 설치는 지원되지 않습니다.
 
 이 문제를 해결하려면 먼저 단일 멤버로 설치를 실행하고 첫 번째 멤버 설치가 완료된 후 다른 멤버를 추가해야 합니다.
-
-### 페이지 이름 길이 {#page-name-length}
-
-AEM이 MongoMK 지속성 관리자 배포에서 실행 중인 경우 [페이지 이름은 150자로 제한됩니다.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >

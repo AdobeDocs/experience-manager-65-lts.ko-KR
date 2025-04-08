@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9baa4111-831a-4b68-9ce5-82aeeb06e07f
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: d0e6fe09ddafabd5da06d53a69b85adad295e415
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
@@ -96,6 +96,10 @@ MicroKernel은 AEM 6.2부터 지속성 관리자 역할을 합니다. 필요에 
 * 페일오버
 
 ### 단일 데이터 센터에서 고가용성을 위한 MongoMK 장애 조치 기능이 있는 Oak 클러스터 {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
+
+>[!NOTE]
+>
+>Mongo의 최소 지원 버전은 Mongo 6입니다.
 
 이 접근 방식은 여러 Oak 인스턴스가 단일 데이터 센터 내의 MongoDB 복제본 세트에 액세스하고 결과적으로 AEM 작성 환경에 대한 활성-활성 클러스터를 생성함을 의미합니다. MongoDB의 복제본 세트는 하드웨어나 네트워크 장애 시 고가용성과 이중화를 제공하는 데 사용됩니다.
 
