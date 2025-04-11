@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: cafc7120-114e-487a-8b81-9c695318731e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 1%
@@ -139,13 +139,13 @@ JS, CSS 또는 테마 라이브러리를 필터링하기 위한 특성을 포함
 >
 >콘텐츠 및 구성에서 코드를 더 잘 분리하려면 `/apps`에서 클라이언트 라이브러리를 찾아 `allowProxy` 속성을 사용하여 `/etc.clientlibs`을(를) 통해 노출하는 것이 좋습니다.
 
-`/apps` 아래의 클라이언트 라이브러리에 액세스하려면 프록시 서블릿을 사용하십시오. ACL은 여전히 클라이언트 라이브러리 폴더에 적용되지만 `allowProxy` 속성이 `true`(으)로 설정된 경우 서블릿에서 `/etc.clientlibs/`을(를) 통해 콘텐츠를 읽을 수 있습니다.
+`/apps` 아래의 클라이언트 라이브러리에 액세스할 수 있도록 하려면 프록시 서블릿을 사용합니다. ACL은 여전히 클라이언트 라이브러리 폴더에 적용되지만 `allowProxy` 속성이 `true`(으)로 설정된 경우 서블릿에서 `/etc.clientlibs/`을(를) 통해 콘텐츠를 읽을 수 있습니다.
 
 정적 리소스는 클라이언트 라이브러리 폴더 아래의 리소스 아래에 있는 경우 프록시를 통해서만 액세스할 수 있습니다.
 
 예:
 
-* `/apps/myproject/clientlibs/foo`에 clientlib이 있습니다.
+* `/apps/myprojects/clientlibs/foo`에 clientlib이 있습니다.
 * `/apps/myprojects/clientlibs/foo/resources/icon.png`에 정적 이미지가 있습니다.
 
 그런 다음 `foo`의 `allowProxy` 속성을 true로 설정합니다.
