@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 86613671-dacd-487e-b6ff-88365289e591
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,6 @@ AEM에서는 다음을 구성할 수 있습니다.
 * 보관할 버전 수
 * 버전 회전(최대 크기 또는 시간 간격)
 * 로그 메시지를 작성할 때 사용할 형식
-
->[!NOTE]
->
->이 [기술 자료 문서](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html)에서는 request.log 및 access.log 파일을 회전하는 방법을 설명합니다.
 
 ## 개인 서비스용 로거 및 라이터 {#loggers-and-writers-for-individual-services}
 

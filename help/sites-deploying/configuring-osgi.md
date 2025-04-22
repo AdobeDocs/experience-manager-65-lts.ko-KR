@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3bf3ba2e-f5f2-428a-a1fc-36f885350f6b
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '1954'
+source-wordcount: '1900'
 ht-degree: 0%
 
 ---
@@ -174,9 +174,6 @@ AEM의 [웹 콘솔](/help/sites-deploying/web-console.md)은(는) 번들을 구�
 * 서비스 이름에 따른 필터
 * 실행 모드에 따른 필터
 
->[!NOTE]
->
->[특정 인스턴스에만 리포지토리 기반 구성을 정의하는 방법](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html)도 읽어 보십시오.
 
 ### 저장소에 새 구성 추가 {#adding-a-new-configuration-to-the-repository}
 
@@ -186,9 +183,9 @@ AEM의 [웹 콘솔](/help/sites-deploying/web-console.md)은(는) 번들을 구�
 
 1. 서비스의 **영구 ID**(PID)입니다.
 
-   웹 콘솔에서 **구성** 필드를 참조합니다. 이름은 번들 이름 뒤에 대괄호로 표시됩니다(또는 페이지 아래쪽의 **구성 정보**&#x200B;에).
+   웹 콘솔에서 **구성**&#x200B;을(를) 참조합니다. 페이지 아래쪽에 있는 **구성 정보**&#x200B;에 이름이 표시됩니다.
 
-   예를 들어 `com.day.cq.wcm.core.impl.VersionManagerImpl.` 노드를 만들어 **AEM WCM 버전 관리자**&#x200B;를 구성하십시오.
+   예를 들어 `com.day.cq.wcm.core.impl.VersionManagerImpl.`에서 **AEM WCM 버전 관리자**&#x200B;를 구성할 수 있습니다.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
@@ -237,13 +234,13 @@ AEM의 [웹 콘솔](/help/sites-deploying/web-console.md)은(는) 번들을 구�
 
    >[!NOTE]
    >
-   >팩터리 구성을 만들 때 이름에 `-<identifier>`을(를) 추가합니다.
+   >팩터리 구성을 만들 때 이름에 `~<identifier>`을(를) 추가합니다.
    >
-   >`org.apache.sling.commons.log.LogManager.factory.config-<identifier>`(으)로
+   >`org.apache.sling.commons.log.LogManager.factory.config~<identifier>`(으)로
    >
    >`<identifier>`은(는) 인스턴스를 식별하기 위해 입력해야 하는 자유 텍스트로 대체됩니다(이 정보는 생략할 수 없음). 예를 들면 다음과 같습니다.
    >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >`org.apache.sling.commons.log.LogManager.factory.config~MINE`
 
 1. 구성할 각 매개 변수에 대해 이 노드에 속성을 만듭니다.
 
@@ -310,23 +307,7 @@ AEM의 [웹 콘솔](/help/sites-deploying/web-console.md)은(는) 번들을 구�
 
 ### 표준 구성 {#standard-configurations}
 
-다음 목록은 저장소에서 사용할 수 있는(표준 설치에서) 몇 가지 구성을 보여줍니다.
-
-* 작성자 - AEM WCM 필터:
-
-  `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
-
-* 게시 - AEM WCM 필터:
-
-  `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
-
-* 게시 - AEM WCM 페이지 통계:
-
-  `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
-
->[!NOTE]
->
->이러한 구성은 `/libs`에 있으므로 직접 편집하지 말고 사용자 지정 전에 응용 프로그램 영역(`/apps`)에 복사해야 합니다.
+표준 구성이 `/libs`에 있는 경우 직접 편집할 수는 없지만 사용자 지정하기 전에 응용 프로그램 영역(`/apps`)에 복사해야 합니다.
 
 인스턴스의 모든 구성 노드를 나열하려면 CRXDE Lite의 **쿼리** 기능을 사용하여 다음 SQL 쿼리를 제출하십시오.
 
