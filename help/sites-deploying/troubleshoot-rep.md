@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1221'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,7 @@ ht-degree: 0%
 
 **활성화 단추를 클릭할 때 복제가 전혀 트리거되지 않습니까? 그렇지 않으면 다음을 수행하십시오.**
 
-1. /crx/explorer로 이동한 다음 관리자로 로그인합니다.
-1. &quot;Content Explorer&quot; 열기
+1. /crx/de/index.jsp으로 이동한 다음 관리자로 로그인합니다.
 1. /bin/replicate 또는 /bin/replicate.json 노드가 있는지 확인합니다. 노드가 있으면 삭제하고 저장합니다.
 
 **복제가 복제 에이전트 큐에서 큐에 올라가고 있습니까?**
@@ -76,12 +75,12 @@ ht-degree: 0%
 경우에 따라 모든 복제 로깅을 디버그 수준의 별도 로그 파일에 추가하도록 설정하는 것이 유용합니다. 이를 위해 진행되는 작업:
 
 1. https://host:port/system/console/configMgr으로 이동한 다음 관리자로 로그인합니다.
-1. Apache Sling Logging Logger 팩터리를 찾고 팩터리 구성 오른쪽의 **+** 단추를 클릭하여 인스턴스를 만듭니다. 이렇게 하면 새 로깅 로거가 만들어집니다.
+1. Apache Sling 로깅 로거 구성을 찾고 공장 구성 오른쪽의 **+** 단추를 클릭하여 인스턴스를 만듭니다. 이렇게 하면 새 로깅 로거가 만들어집니다.
 1. 다음과 같이 구성을 설정합니다.
 
    * 로그 수준: 디버그
-   * 로그 파일 경로: logs/replication.log
-   * 카테고리: com.day.cq.replication
+   * 로그 파일: logs/replication.log
+   * 로거: com.day.cq.replication
 
 1. 어떤 식으로든 이 문제가 슬링 이벤트/작업과 관련이 있다고 의심되는 경우 이 Java™ 패키지를 다음 범주에 추가할 수도 있습니다.org.apache.sling.event
 

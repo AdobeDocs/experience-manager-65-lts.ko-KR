@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3287'
 ht-degree: 2%
 
 ---
@@ -60,18 +60,26 @@ ht-degree: 2%
 
 ### 복제 - 기본 제공 {#replication-out-of-the-box}
 
-AEM의 표준 설치에 포함된 we-retail 웹 사이트를 사용하여 복제를 설명할 수 있습니다.
+[페이지 만들기 및 구성](/help/sites-authoring/managing-pages.md)을 수행하여 페이지를 만듭니다.
 
 이 예제를 따르고 기본 복제 에이전트를 사용하려면 다음을 사용하여 [AEM 설치](/help/sites-deploying/deploy.md)하십시오.
 
+
 * `4502` 포트의 작성자 환경
 * `4503` 포트의 게시 환경
+
+이 복제는 작성자 환경에서 다음을 통해 수행됩니다.
+
+* **기본 에이전트(게시)**
+이 에이전트는 기본 게시 인스턴스에 콘텐츠를 복제합니다.
+이에 대한 세부 사항(구성 및 로그)은 작성 환경의 도구 콘솔에서 액세스할 수 있습니다. 또는
+  `http://localhost:4502/etc/replication/agents.author/publish.html`
 
 >[!NOTE]
 >
 >기본적으로 활성화됨:
 >
->* 작성자의 에이전트 : 기본 에이전트(게시)
+>* 작성자의 에이전트 : 기본 에이전트(게시)가 아닌 경우 계속 진행하기 전에 활성화해야 합니다.
 >
 >기본적으로 효과적으로 비활성화됨(AEM 6.1부터) :
 >
@@ -84,19 +92,13 @@ AEM의 표준 설치에 포함된 we-retail 웹 사이트를 사용하여 복제
 #### 복제(작성자-게시) {#replication-author-to-publish}
 
 1. 작성 환경의 지원 페이지로 이동합니다.
-   **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
+   **https://localhost:4502/content/site1/test.html** `<pi>`
 1. 새 텍스트를 추가할 수 있도록 페이지를 편집합니다.
 1. 변경 내용을 게시할 수 있도록 **페이지를 활성화**&#x200B;합니다.
 1. 게시 환경에서 지원 페이지를 엽니다.
-   **https://localhost:4503/content/we-retail/us/en/experience.html**
+   **https://localhost:4503/content/site1/test.html**
 1. 이제 작성자에 입력한 변경 사항을 볼 수 있습니다.
 
-이 복제는 작성자 환경에서 다음을 통해 수행됩니다.
-
-* **기본 에이전트(게시)**
-이 에이전트는 기본 게시 인스턴스에 콘텐츠를 복제합니다.
-이에 대한 세부 사항(구성 및 로그)은 작성 환경의 도구 콘솔에서 액세스할 수 있습니다. 또는
-  `https://localhost:4502/etc/replication/agents.author/publish.html`
 
 #### 복제 에이전트 - 기본 제공 {#replication-agents-out-of-the-box}
 
@@ -108,7 +110,7 @@ AEM의 표준 설치에 포함된 we-retail 웹 사이트를 사용하여 복제
 * Dispatcher 플러시
 Dispatcher 캐시 관리에 사용됩니다. 자세한 내용은 [작성 환경에서 Dispatcher 캐시 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) 및 [게시 인스턴스에서 Dispatcher 캐시 무효화](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)를 참조하십시오.
 
-* [역방향 복제](#reverse-replication-publish-to-author)
+* [역방향 복제](#configuring-reverse-replication)
 게시에서 작성자로 복제하는 데 사용됩니다. 포럼, 블로그 및 댓글과 같은 커뮤니티 기능에는 역방향 복제가 사용되지 않습니다. 보낼 편지함이 활성화되지 않아 사실상 비활성화됩니다. 역방향 복제를 사용하려면 사용자 지정 구성이 필요합니다.
 
 * 정적 에이전트
