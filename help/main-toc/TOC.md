@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
-source-git-commit: bec8386db59691ae2d0346afc0cbd48fbc4890de
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '6800'
+source-wordcount: '6797'
 ht-degree: 22%
 
 ---
@@ -387,7 +387,7 @@ ht-degree: 22%
       + [번역을 위한 자산 준비](/help/assets/preparing-assets-for-translation.md)
       + [Experience Manager에서 에셋 다운로드](/help/assets/download-assets-from-aem.md)
       + [Lightbox](/help/assets/light-box.md)
-      + [Assets 인사이트](/help/assets/asset-insights.md)
+      + [자산 인사이트](/help/assets/asset-insights.md)
       + [DTM을 통해 자산 통찰력 활성화](/help/assets/use-dtm-for-asset-insights.md)
       + [자산 통찰력 구성](/help/assets/configure-asset-insights.md)
       + [에셋 체크인 및 체크아웃](/help/assets/check-out-and-submit-assets.md)
@@ -782,7 +782,7 @@ ht-degree: 22%
       + [사용자 지정 도구 모음 레이아웃 만들기](/help/forms/using/creating-custom-toolbar-layout.md)
       + [사용된 템플릿을 기반으로 구성 요소 표시](/help/forms/using/displaying-components-based-on-template.md)
       + [사용자 지정 적응형 양식 테마 만들기](/help/forms/using/creating-custom-adaptive-form-themes.md)
-   + 거래 보고서 {#transaction-reports}
+   + 트랜잭션 보고서 {#transaction-reports}
       + [거래 보고 개요](/help/forms/using/transaction-reports-overview-jee-osgi.md)
       + OSGi의 AEM Forms에 대한 거래 보고서 {#transaction-reports-osgi}
          + [거래 보고서](/help/forms/using/transaction-reports-overview.md)
@@ -1092,7 +1092,7 @@ ht-degree: 22%
    + 통합 {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [서드파티 상거래 솔루션](/help/commerce/cif/integrating/third-party.md)
-   + AEM 상점 첫 화면 {#storefront}
+   + AEM Storefront {#storefront}
       + [시작하기](/help/commerce/cif/getting-started.md)
       + 작성 {#authoring}
          + [상거래 경험](/help/commerce/cif/authoring/authoring-commerce-experiences.md)
@@ -1226,7 +1226,7 @@ ht-degree: 22%
       + [AEM Headful 및 Headless](/help/sites-developing/headful-headless.md)
       + 헤드리스 환경 관리 {#headless}
          + [헤드리스 및 AEM](/help/sites-developing/headless/introduction.md)
-         + 헤드리스 여정 {#journeys}
+         + Headless 여정 {#journeys}
             + Headless 개발자 여정 {#developer}
                + [AEM의 헤드리스 이해](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/overview.html)
                + [CMS Headless 개발에 대해 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/learn-about.html)
@@ -1432,7 +1432,6 @@ ht-degree: 22%
          + [성능 최적화](/help/sites-deploying/configuring-performance.md)
          + [Assets 성능 안내서](/help/sites-deploying/assets-performance-sizing.md)
          + [구성 방법 문서](/help/sites-deploying/ht-deploy.md)
-         + [웹 콘솔 구성](/help/sites-deploying/configuring-web-console.md)
       + AEM 6.5 LTS로 업그레이드 {#upgrading}
          + [AEM 6.5 LTS로 업그레이드](/help/sites-deploying/upgrade.md)
          + [업그레이드 계획](/help/sites-deploying/upgrade-planning.md)
