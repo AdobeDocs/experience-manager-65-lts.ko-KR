@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager 인스턴스 모니터링 및 유지 관리
-description: Adobe Experience Manager 인스턴스 모니터하고 유지 관리하는 방법에 대해 알아보십시오.
+description: Adobe Experience Manager 인스턴스를 모니터링하고 유지 관리하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '5792'
+source-wordcount: '5601'
 ht-degree: 0%
 
 ---
@@ -61,10 +61,6 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 >
 >이 테스트가 없으면 백업이 무용지물이 될 수 있습니다(최악의 경우).
 
->[!NOTE]
->
->백업 성능에 대한 자세한 내용은 성능](/help/sites-deploying/configuring-performance.md#backup-performance) 뒤로 섹션을 참조하십시오[.
-
 ### 소프트웨어 설치 백업 {#backing-up-your-software-installation}
 
 설치 후 또는 구성이 크게 변경된 경우 소프트웨어 설치의 백업 백업을 만듭니다.
@@ -72,7 +68,7 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 이 작업을 [수행하려면 전체 저장소](#backing-up-your-repository) 백업을 한 후 다음을 수행합니다.
 
 1. AEM 정지.
-1. 파일 시스템에서 전체 `<cq-installation-dir>`을(를) 백업합니다.
+1. 파일 시스템에서 전체를 `<cq-installation-dir>` 뒤로 올리십시오.
 
 >[!CAUTION]
 >
@@ -96,11 +92,11 @@ CRX 설명서의 [백업 및 복원](/help/sites-administering/backup-and-restor
 
 **버전 제거** 도구는 저장소의 노드 또는 노드 계층 구조를 제거하기 위한 것입니다. 기본 목적은 이전 버전의 노드를 제거하여 저장소 크기를 줄이는 데 도움이 됩니다.
 
-이 섹션에서는 AEM의 버전 관리 기능과 관련된 유지 관리 작업을 다룹니다. **버전 제거** 도구는 저장소의 노드 또는 노드 계층 구조를 제거하기 위한 것입니다. 주요 목적은 이전 버전의 노드를 제거하여 저장소 크기를 줄이는 데 도움이 되는 것입니다.
+이 섹션에서는 AEM의 버전 관리 기능과 관련된 유지 관리 작업을 다룹니다. **버전 제거** 도구는 저장소의 노드 또는 노드 계층 구조를 제거하기 위한 것입니다. 기본 목적은 이전 버전의 노드를 제거하여 저장소 크기를 줄이는 데 도움이 됩니다.
 
 ### 개요 {#overview}
 
-**버전** 삭제 도구 은 주별 유지 관리 작업으로 사용할 수 있습니다. 처음 사용하기 전에 추가한 다음 구성해야 합니다. 그 후에는 요청 시 또는 매주 실행할 수 있습니다.
+**버전 제거** 도구는 주간 유지 관리 작업으로 사용할 수 있습니다. 을 처음 사용하기 전에 을 추가한 다음 구성해야 합니다. 그 후에는 요청 시 또는 매주 실행할 수 있습니다.
 
 ### 웹 사이트 버전 삭제 {#purging-versions-of-a-web-site}
 
@@ -160,7 +156,7 @@ CRX 설명서의 [백업 및 복원](/help/sites-administering/backup-and-restor
 >
 >* http://localhost:4502/etc/versioning/purge.html
 >
->삭제된 노드는 저장소를 복원하지 않으면 되돌릴 수 없습니다. 제거하기 전에 항상 드라이 실행을 수행하여 구성을 관리하십시오.
+>저장소 복원 없이는 삭제된 노드를 되돌릴 수 없습니다. 퍼지하기 전에 항상 시험 실행을 수행하여 구성을 관리하십시오.
 
 #### 시험 실행 - 콘솔 분석 {#analyzing-the-console}
 
@@ -209,11 +205,11 @@ AEM WCM은 자세한 로그를 기록합니다. 압축을 풀고 빠른 시작�
 
 * `{original_filename}.yyyy-MM-dd` 패턴에 따라 `error.log` 파일의 이름이 바뀝니다. 예를 들어 2010년 7월 11일에 현재 로그 파일의 이름이 `error.log-2010-07-10`으로 바뀌고 새 `error.log`이(가) 만들어집니다.
 
-* 이전 로그 파일은 삭제되지 않으므로 오래된 로그 파일을 주기적으로 정리하여 디스크 사용량을 제한해야 합니다.
+* 이전 로그 파일은 삭제되지 않으므로 디스크 사용을 제한하기 위해 이전 로그 파일을 정기적으로 정리해야 합니다.
 
 >[!NOTE]
 >
->AEM 설치를 업그레이드하는 경우 AEM에서 더 이상 사용되지 않는 기존 로그 파일은 디스크에 남아 있습니다. 위험 없이 제거할 수 있습니다. 모든 새 로그 항목은 새 로그 파일에 기록됩니다.
+>AEM 설치를 업그레이드하는 경우 AEM에서 더 이상 사용하지 않는 기존 로그 파일은 디스크에 남아 있습니다. 위험 없이 제거할 수 있습니다. 모든 새 로그 항목이 새 로그 파일에 기록됩니다.
 
 ### 로그 파일 찾기 {#finding-the-log-files}
 
@@ -278,7 +274,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 | 0 | 치명적인 오류 | 작업이 실패하여 설치 관리자를 진행할 수 없습니다. |
 |---|---|---|
 | 1 | 오류 | 작업이 실패했습니다. 설치가 진행되지만 AEM WCM의 일부가 올바르게 설치되지 않아 작동하지 않습니다. |
-| 2 | 경고 | 작업이 성공했지만 문제가 발생했습니다. AEM WCM이 제대로 작동할 수도 있고 작동하지 않을 수도 있습니다. |
+| 2 | 경고 | 작업이 성공했지만 문제가 발생했습니다. AEM WCM이 제대로 작동하거나 작동하지 않을 수 있습니다. |
 | 3 | 정보 | 작업이 성공했습니다. |
 
 ### 사용자 지정 로그 파일 만들기 {#create-a-custom-log-file}
@@ -294,7 +290,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    * 이름: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
 
-     Where `<identifier>` 는 인스턴스 식별을 위해 입력해야 하는 무료 텍스트로 대체됩니다(이 정보는 생략할 수 없음).
+     `<identifier>`은(는) 인스턴스를 식별하기 위해 입력해야 하는 자유 텍스트로 대체됩니다(이 정보는 생략할 수 없음).
 
      예, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
@@ -316,7 +312,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
      유형: String[]&#x200B;(String + Multi)
 
-     값: 로거가 메시지를 기록할 OSGi 서비스를 지정합니다. 예를 들어 다음과 같습니다.
+     값: 로거가 메시지를 기록할 OSGi 서비스를 지정합니다(예: 다음 모두).
 
       * `org.apache.sling`
       * `org.apache.felix`
@@ -334,7 +330,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
         유형: `String`
 
-        값: 필요에 따라 로그 메시지의 패턴을 지정합니다. 예를 들어
+        값: 필요에 따라 로그 메시지의 패턴을 지정합니다. 예:
 
         `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
@@ -435,7 +431,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >새 파일이 만들어지는 시점(및 기존 파일의 이름이 이름 패턴에 따라 변경됨)을 나타냅니다.
    >
    >* 숫자로 크기 제한을 지정할 수 있습니다. 크기 표시기가 제공되지 않으면 바이트 수로 간주하거나 크기 표시기 중 하나(`KB`, `MB` 또는 `GB`)를 추가할 수 있습니다(대/소문자가 무시됨).
-   >* 시간/날짜 일정은 패턴으로 `java.util.SimpleDateFormat` 지정할 수 있습니다. 파일이 회전되는 기간 이후를 정의합니다. 또한 회전된 파일에 추가된 접미어(식별용).
+   >* 시간/날짜 일정을 `java.util.SimpleDateFormat` 패턴으로 지정할 수 있습니다. 파일이 회전된 후 기간을 정의합니다. 또한 회전된 파일에 추가되는 접미사(식별용)입니다.
    >
    >기본값은 &#39;.&#39;yyyy-MM-dd(일별 로그 회전용).
    >
@@ -538,13 +534,13 @@ OSGi 이벤트는 AEM 웹 콘솔의 **구성 상태** 탭 > **로그 파일** �
 
 [성능 최적화](/help/sites-deploying/configuring-performance.md)는 개발 중에 포커스를 받는 대화형 프로세스입니다. 배포 후 특정 간격이나 이벤트 후에 검토됩니다.
 
-최적화를 위해 정보를 수집하는 동안 사용되는 방법은 또한 지속적인 모니터링에 사용될 수 있다.
+최적화를 위해 정보를 수집하는 동안 사용되는 방법은 지속적인 모니터링에도 사용할 수 있습니다.
 
 >[!NOTE]
 >
->성능을 개선하는 데 사용할 수 있는 [구성](/help/sites-deploying/configuring-performance.md#configuring-for-performance)도 확인할 수 있습니다.
+>성능](/help/sites-deploying/configuring-performance.md#configuring-for-performance) 향상에 사용할 수 있는 특정 [구성도 확인할 수 있습니다.
 
-다음은 발생하는 일반적인 성능 문제를 찾아 대응하는 방법에 대한 제안과 함께 나열합니다.
+다음은 발생하는 일반적인 성능 문제와 이를 발견하고 해결하는 방법에 대한 제안을 나열합니다.
 
 | 영역 | 증상 | 용량 증가... | 볼륨을 줄이려면... |
 |---|---|---|---|
@@ -651,11 +647,6 @@ OSGi 이벤트는 AEM 웹 콘솔의 **구성 상태** 탭 > **로그 파일** �
    <td>JConsole</td>
    <td>JVM 지표 및 스레드를 관찰합니다.</td>
    <td><p>사용: jconsole</p> <p><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">jconsole</a> 및 <a href="#monitoring-performance-using-jconsole">JConsole을 사용하여 성능 모니터링</a>을 참조하십시오.</p> <p><strong>참고:</strong> JDK 1.8을 사용하는 JConsole은 플러그 인을 사용하여 확장할 수 있습니다(예: Top 또는 TDA(스레드 덤프 분석기)).</p> </td>
-  </tr>
-  <tr>
-   <td>Java™ VisualVM</td>
-   <td>JVM 지표, 스레드, 메모리 및 프로파일링을 관찰합니다.</td>
-   <td><p>사용법: visualvm 또는 visualvm<br /> </p> <p><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a> 및 <a href="#monitoring-performance-using-j-visualvm">VisualVM을 사용하여 성능 모니터링</a>을 참조하십시오.</p> <p><strong>참고:</strong> JDK 1.8을 사용하면 VisualVM을 플러그인으로 확장할 수 있습니다. VisualVM은 JDK 9 이후 중단됩니다. 대신 Java™ Flight Recorder를 사용하십시오.</p> </td>
   </tr>
   <tr>
    <td>트러스/스트레이스, lsof</td>
@@ -925,31 +916,6 @@ Percentage of the requests served within a certain time (ms)
 
    이제 다른 옵션을 선택할 수 있습니다.
 
-### (J)VisualVM을 이용한 성능 모니터링 {#monitoring-performance-using-j-visualvm}
-
-JDK 6-8의 경우 도구 명령을 `visualvm` 사용할 수 있습니다. JDK를 설치한 후 다음을 수행할 수 있습니다.
-
-1. AEM 인스턴스를 시작합니다.
-
-   >[!NOTE]
-   >
-   >Java™ 5를 사용하는 경우 JVM을 시작하는 Java™ 명령줄에 `-Dcom.sun.management.jmxremote` 인수를 추가할 수 있습니다. JMX는 기본적으로 Java™ 6으로 활성화됩니다.
-
-1. 다음 중 하나를 실행합니다.
-
-   * `jvisualvm`: JDK 1.6 bin 폴더(테스트된 버전)의
-   * `visualvm`: [VisualVM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/)에서 다운로드할 수 있습니다(출혈 에지 버전).
-
-1. `Local` 응용 프로그램 내에서 `com.day.crx.quickstart.Main`을(를) 두 번 클릭합니다. 개요가 기본값으로 표시됩니다.
-
-   ![chlimage_1-2](assets/chlimage_1-2.png)
-
-   이제 모니터를 포함한 다른 옵션을 선택할 수 있습니다.
-
-   ![chlimage_1-3](assets/chlimage_1-3.png)
-
-이 도구를 사용하여 스레드 덤프와 메모리 헤드 덤프를 생성할 수 있습니다. 이 정보는 기술 지원 팀에서 요청하는 경우가 많습니다.
-
 ### 정보 수집 {#information-collection}
 
 설치에 대해 가능한 한 많이 알고 있으면 성능에 변화를 일으켰을 수 있는 원인과 이러한 변화가 정당한지 추적하는 데 도움이 될 수 있습니다. 중요한 변경 사항을 쉽게 볼 수 있도록 이러한 지표를 정기적으로 수집합니다.
@@ -1039,11 +1005,11 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 에셋의 평균 크기는 얼마입니까? {#what-is-the-average-size-of-the-assets}
 
-폴더의 전체 크기를 확인하려면 다음을 수행합니다.`/var/dam`
+`/var/dam` 폴더의 전체 크기를 확인하려면:
 
-1. WebDAV를 사용하여 저장소를 로컬 파일 시스템에 매핑합니다.
+1. WebDAV를 사용하여 로컬 파일 시스템에 저장소를 매핑합니다.
 
-1. 명령줄을 사용합니다.
+1. 다음 명령줄을 사용합니다.
 
    ```shell
    cd /Volumes/localhost/var
@@ -1103,16 +1069,11 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 >* [스레드 덤프](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
 >* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 >* [기본 제공 프로파일러를 사용하여 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
->* [느리고 차단된 프로세스 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### CPU 100% {#cpu-at}
 
-시스템의 CPU이 100%에서 계속 실행되는 경우 다음을 참조하십시오.
-
-* 기술 자료:
-
-   * [느리고 차단된 프로세스 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+시스템의 CPU이 100%에서 계속 실행되는 경우 AEM 로그를 확인하고 top, top 또는 jstack과 같은 도구를 사용하여 CPU 스레드가 높은 사용자를 식별합니다. 무한 루프, 차단된 스레드 또는 과도한 가비지 수집에 대한 스레드 덤프를 분석합니다.
 
 ### 메모리 부족 {#out-of-memory}
 
@@ -1139,29 +1100,26 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
    * [Apache Sling JavaScript 핸들러](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
    * [Apache Sling 로깅 구성](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [CQ HTML 라이브러리 관리자](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ WCM 디버그 필터링](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [거](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+   * [CQ WCM 디버그 필터](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [로거](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* 버전 제거를 구성 [했는지 여부 및 방법](/help/sites-deploying/version-purging.md)
+* [버전 제거](/help/sites-deploying/version-purging.md)를 구성했는지 여부 및 방법
 * 기술 자료:
 
    * [열려 있는 파일이 너무 많음](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
-   * [저널이 너무 많은 디스크 공간을 사용함](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### 정기적인 성능 저하 {#regular-performance-degradation}
 
-재부팅할 때마다(때로는 일주일 이상) 인스턴스 성능이 저하되는 경우 다음을 확인할 수 있습니다.
+재부팅할 때마다(때때로 1주일 이상) 인스턴스 성능이 저하되는 경우 다음을 확인할 수 있습니다.
 
 * [메모리 부족](#outofmemory)
-* 기술 자료:
-
-   * [닫히지 않은 세션](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
+* [닫히지 않은 세션](/help/sites-administering/troubleshoot.md#checking-for-unclosed-jcr-sessions-checking-for-unclosed-jcr-sessions)
 
 ### JVM 조정 {#jvm-tuning}
 
-JVM(Java™ Virtual Machine)은 튜닝과 관련하여 개선되었습니다(특히 Java™ 7 이후). 따라서, 적절한 고정 JVM 크기를 지정하고 기본값을 사용하는 것이 종종 적절합니다.
+튜닝과 관련하여 Java™ 가상 머신(JVM)이 개선되었습니다. 따라서, 적절한 고정 JVM 크기를 지정하고 기본값을 사용하는 것이 종종 적절합니다.
 
-기본 설정이 적합하지 않은 경우 GC 성능을 모니터 및 평가하는 방법을 설정하는 것이 중요합니다. JVM을 조정하기 전에 이를 수행하십시오. 이 프로세스에는 힙 크기, 알고리즘 및 기타 측면을 포함한 모니터링 요소가 포함될 수 있습니다.
+기본 설정이 적합하지 않다면 GC 성능을 모니터링하고 평가하는 방법을 설정하는 것이 중요합니다. JVM을 튜닝하기 전에 이 작업을 수행하십시오. 이 프로세스에는 힙 크기, 알고리즘 및 기타 측면을 포함하는 모니터링 요소가 포함될 수 있습니다.
 
 몇 가지 일반적인 선택 사항은 다음과 같습니다.
 
@@ -1190,12 +1148,6 @@ JVM(Java™ Virtual Machine)은 튜닝과 관련하여 개선되었습니다(특
   ```
 
 * 그런 다음 JConsole을 사용하여 JVM에 연결합니다. 다음을 참조하십시오.
-  ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
+  ` [https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html](https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html)`
 
 사용 중인 메모리 양, 사용 중인 GC 알고리즘, 실행 소요 시간 및 이 프로세스가 애플리케이션 성능에 미치는 영향을 확인할 수 있습니다. 그것이 없으면, 동조는 단지 &quot;무작위로 뒤틀리는 꼭지&quot;일 뿐입니다.
-
->[!NOTE]
->
->Oracle의 VM에 대한 정보는 다음과 같습니다.
->
->[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

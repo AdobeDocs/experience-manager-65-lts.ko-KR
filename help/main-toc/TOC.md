@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '6797'
-ht-degree: 22%
+source-wordcount: '6795'
+ht-degree: 23%
 
 ---
 
@@ -1428,7 +1428,6 @@ ht-degree: 22%
          + [작업 오프로드](/help/sites-deploying/offloading.md)
          + [리소스 매핑](/help/sites-deploying/resource-mapping.md)
          + [일관성 및 순회 검사](/help/sites-deploying/consistency-check.md)
-         + [성능 지침](/help/sites-deploying/performance-guidelines.md)
          + [성능 최적화](/help/sites-deploying/configuring-performance.md)
          + [Assets 성능 안내서](/help/sites-deploying/assets-performance-sizing.md)
          + [구성 방법 문서](/help/sites-deploying/ht-deploy.md)
