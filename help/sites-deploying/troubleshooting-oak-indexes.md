@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,6 @@ AEM의 내부 리인덱싱 프로세스는 수행적 콘텐츠 쿼리를 지원�
 1. AEM이 일반적인 비동기 인덱싱 작업을 재개할 때까지 약 45분 정도 기다립니다.
 
 ## 스레드 풀이 오버로드됨 {#thread-pool-overloaded}
-
->[!NOTE]
->
->AEM 6.1의 경우 [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)이 설치되어 있는지 확인하십시오.
 
 예외적인 상황에서는 비동기 인덱싱을 관리하는 데 사용되는 스레드 풀이 오버로드될 수 있습니다. 인덱싱 프로세스를 분리하기 위해 스레드 풀을 구성하여 다른 AEM 작업이 적시에 콘텐츠를 인덱싱하는 Oak의 기능을 방해하지 않도록 할 수 있습니다. 이 경우 다음을 수행합니다.
 

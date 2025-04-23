@@ -1,6 +1,6 @@
 ---
 title: Oak 쿼리 및 색인화
-description: Adobe Experience Manager(AEM) 6.5에서 색인을 구성하는 방법에 대해 알아봅니다.
+description: Adobe Experience Manager(AEM) 6.5 LTS에서 색인을 구성하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '2577'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 문서는 AEM 6에서의 인덱스 구성에 대해 설명합니다. 쿼리 및 인덱싱 성능 최적화에 대한 모범 사례는 [쿼리 및 인덱싱 모범 사례](/help/sites-deploying/best-practices-for-queries-and-indexing.md)를 참조하세요.
+>이 문서는 AEM 6.5 LTS의 색인 구성에 대한 내용입니다. 쿼리 및 인덱싱 성능 최적화에 대한 모범 사례는 [쿼리 및 인덱싱 모범 사례](/help/sites-deploying/best-practices-for-queries-and-indexing.md)를 참조하세요.
 
 ## 소개 {#introduction}
 
@@ -50,7 +50,7 @@ Apache Oak 기반 백엔드를 사용하면 서로 다른 인덱서를 저장소
 
 하나의 인덱서는 인덱스 정의가 저장소 자체에 저장되는 **Property Index**&#x200B;입니다.
 
-**Apache Lucene** 및 **Solr**&#x200B;에 대한 구현도 기본적으로 사용할 수 있으며, 둘 다 전체 텍스트 인덱싱을 지원합니다.
+전체 텍스트 인덱싱을 지원하는 **Apache Lucene**&#x200B;에 대한 구현을 기본적으로 사용할 수 있습니다.
 
 사용 가능한 다른 인덱서가 없는 경우 **순회 인덱스**&#x200B;이(가) 사용됩니다. 즉, 콘텐츠가 색인화되지 않고 콘텐츠 노드를 트래버스하여 쿼리와 일치하는 항목을 찾습니다.
 
@@ -109,7 +109,7 @@ Ordered 인덱스는 속성 인덱스의 확장입니다. 하지만 더 이상 �
 
 ### Lucene 전체 텍스트 색인 {#the-lucene-full-text-index}
 
-Apache Lucene 기반의 전체 텍스트 인덱서는 AEM 6에서 사용할 수 있습니다.
+Apache Lucene 기반의 전체 텍스트 인덱서는 AEM 6.5 LTS에서 사용할 수 있습니다.
 
 전체 텍스트 색인이 구성된 경우 색인화된 다른 조건이 있는지 여부와 경로 제한이 있는지 여부에 관계없이 전체 텍스트 조건이 있는 모든 쿼리는 전체 텍스트 색인을 사용합니다.
 
@@ -308,7 +308,7 @@ select * from [nt:base] where [alias] = '/admin'
 
 #### 컴포지션을 통한 분석기 만들기 {#creating-analyzers-via-composition}
 
-`Tokenizers`, `TokenFilters` 및 `CharFilters`을(를) 기반으로 분석기를 구성할 수도 있습니다. 이렇게 하려면 분석기를 지정하고 나열된 순서로 적용되는 선택적 토큰라이저와 필터의 하위 노드를 만들면 됩니다. [https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)도 참조하세요.
+`Tokenizers`, `TokenFilters` 및 `CharFilters`을(를) 기반으로 분석기를 구성할 수도 있습니다. 이렇게 하려면 분석기를 지정하고 나열된 순서로 적용되는 선택적 토큰라이저와 필터의 하위 노드를 만들면 됩니다.
 
 이 노드 구조를 예로 들어 보겠습니다.
 
@@ -359,87 +359,6 @@ select * from [nt:base] where [alias] = '/admin'
 팩토리에 필요한 모든 구성 매개 변수가 해당 노드의 속성으로 지정됩니다.
 
 외부 파일의 컨텐츠를 로드해야 하는 정지어 로드와 같은 경우에는 해당 파일에 대해 `nt:file` 형식의 자식 노드를 만들어 컨텐츠를 제공할 수 있습니다.
-
-### Solr 인덱스 {#the-solr-index}
-
-Solr 인덱스의 목적은 전체 텍스트 검색이지만 경로, 속성 제한 및 기본 유형 제한 사항별로 검색을 인덱싱하는 데 사용할 수도 있습니다. 즉, Oak의 Solr 인덱스를 모든 유형의 JCR 쿼리에 사용할 수 있습니다.
-
-AEM의 통합은 저장소 수준에서 수행되므로 Solr은 AEM과 함께 제공되는 새로운 저장소 구현인 Oak에서 사용할 수 있는 색인 중 하나입니다.
-
-AEM 인스턴스를 사용하여 원격 서버로 작동하도록 구성할 수 있습니다.
-
-### 단일 원격 Solr 서버로 AEM 구성 {#configuring-aem-with-a-single-remote-solr-server}
-
-원격 Solr 서버 인스턴스에서 작동하도록 AEM을 구성할 수도 있습니다.
-
-1. 최신 버전의 Solr을 다운로드하여 추출하십시오. 이 작업을 수행하는 방법에 대한 자세한 내용은 [Apache Solr 설치 설명서](https://solr.apache.org/guide/6_6/installing-solr.html)를 참조하십시오.
-1. 이제 두 개의 Solr 샤드를 만듭니다. 이렇게 하려면 Solr의 압축을 푼 폴더에 각 분할에 대한 폴더를 만들면 됩니다.
-
-   * 첫 번째 분할에 대해 폴더를 만듭니다.
-
-   `<solrunpackdirectory>\aemsolr1\node1`
-
-   * 두 번째 분할에 대해 폴더를 만듭니다.
-
-   `<solrunpackdirectory>\aemsolr2\node2`
-
-1. Solr 패키지에서 예제 인스턴스를 찾습니다. 패키지 루트의 &quot; `example`&quot; 폴더에 있습니다.
-1. 예제 인스턴스에서 다음 폴더를 두 개의 공유 폴더(`aemsolr1\node1` 및 `aemsolr2\node2`)에 복사합니다.
-
-   * `contexts`
-   * `etc`
-   * `lib`
-   * `resources`
-   * `scripts`
-   * `solr-webapp`
-   * `webapps`
-   * `start.jar`
-
-1. 두 개의 공유 폴더 각각에 &quot; `cfg`&quot;이라는 폴더를 만듭니다.
-1. Solr 및 Zookeeper 구성 파일을 새로 만든 `cfg`개 폴더에 배치합니다.
-
-   >[!NOTE]
-   >
-   >Solr 및 ZooKeeper 구성에 대한 자세한 내용은 [Solr 구성 설명서](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr) 및 [ZooKeeper 시작 안내서](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html)를 참조하십시오.
-
-1. `aemsolr1\node1`(으)로 이동하여 다음 명령을 실행하여 ZooKeeper 지원을 통해 첫 번째 분할을 시작합니다.
-
-   ```xml
-   java -Xmx2g -Dbootstrap_confdir=./cfg/oak/conf -Dcollection.configName=myconf -DzkRun -DnumShards=2 -jar start.jar
-   ```
-
-1. `aemsolr2\node2`(으)로 이동하여 다음 명령을 실행하여 두 번째 분할을 시작합니다.
-
-   ```xml
-   java -Xmx2g -Djetty.port=7574 -DzkHost=localhost:9983 -jar start.jar
-   ```
-
-1. 두 Shards가 모두 시작된 후 `http://localhost:8983/solr/#/`의 Solr 인터페이스에 연결하여 모든 기능이 실행되고 있는지 테스트하십시오.
-1. AEM을 시작하고 `http://localhost:4502/system/console/configMgr`의 웹 콘솔로 이동합니다.
-1. **Oak Solr 원격 서버 구성**&#x200B;에서 다음 구성을 설정합니다.
-
-   * Solr HTTP URL: `http://localhost:8983/solr/`
-
-1. **Oak Solr** 서버 공급자의 드롭다운 목록에서 **원격 Solr**&#x200B;을(를) 선택하십시오.
-
-1. CRXDE로 이동한 다음 관리자로 로그인합니다.
-1. **oak:index** 아래에 **solrIndex** 노드를 만들고 다음 속성을 설정합니다.
-
-   * **유형:** 문자열(유형 문자열)
-   * **비동기:** 비동기(유형 문자열)
-   * **다시 인덱싱:** true(부울 유형)
-
-1. 변경 사항을 저장합니다.
-
-#### Solr에 대한 권장 구성 {#recommended-configuration-for-solr}
-
-다음은 이 문서에 설명된 세 가지 Solr 배포 모두에서 사용할 수 있는 기본 구성의 예입니다. AEM에 이미 있는 전용 속성 인덱스를 수용하므로 다른 애플리케이션에는 사용하지 마십시오.
-
-아카이브를 제대로 사용하려면 아카이브 내용을 Solr Home 디렉토리에 직접 배치해야 합니다. 다중 노드 배포가 있는 경우 각 노드의 루트 폴더 바로 아래로 이동해야 합니다.
-
-권장 Solr 구성 파일
-
-[파일 가져오기](assets/recommended-conf.zip)
 
 ### AEM 색인화 도구 {#aem-indexing-tools}
 
