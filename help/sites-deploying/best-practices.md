@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 4%
+source-wordcount: '374'
+ht-degree: 5%
 
 ---
 
@@ -71,10 +71,6 @@ ht-degree: 4%
 </table>
 
 ## UI {#ui}
-
-사용자 인터페이스에 대한 우수 사례는 다음과 같습니다.
-
-[고객을 위한 사용자 인터페이스 권장 사항](/help/sites-deploying/ui-recommendations.md)
 
 AEM에는 현재 동일한 릴리스에 클래식 및 터치에 적합한 UI의 두 가지 UI가 있습니다. 따라서 고객은 프로젝트 구현 중에 사용할 항목을 결정해야 합니다. 이 문서는 올바른 선택을 찾는 데 도움을 주기 위한 것입니다.
 

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '611'
 ht-degree: 3%
 
 ---
@@ -100,10 +100,6 @@ ht-degree: 3%
 </table>
 
 즉, 클래식 UI에서 Touch UI로 UI 섹션을 마이그레이션하면 *ExtJS 위젯*&#x200B;을(를) *Sling 구성 요소*&#x200B;에 포팅할 수 있습니다. 이를 쉽게 하기 위해 터치 UI는 UI에 대한 일부 Sling 구성 요소(Granite UI 구성 요소라고 함)를 이미 제공하고 있는 Granite UI 프레임워크를 기반으로 합니다.
-
-시작하기 전에 상태 및 관련 권장 사항을 확인하십시오.
-
-* [고객을 위한 사용자 인터페이스 권장 사항](/help/sites-deploying/ui-recommendations.md)
 
 Touch UI 개발의 기본 사항은 견고한 기반을 제공합니다.
 

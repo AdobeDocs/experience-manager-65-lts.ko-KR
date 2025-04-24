@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4834'
 ht-degree: 1%
 
 ---
@@ -51,8 +51,6 @@ ht-degree: 1%
   [표준 사용자 인터페이스](/help/sites-developing/touch-ui-concepts.md)는 [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) 및 [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui)의 기본 기술을 사용하여 Adobe Experience Cloud에 대한 통합 사용자 경험을 기반으로 합니다.
 * **클래식 UI**
 AEM 6.4에서 더 이상 사용되지 않는 ExtJS 기술을 기반으로 한 사용자 인터페이스입니다.
-
-자세한 내용은 [고객을 위한 UI 인터페이스 권장 사항](/help/sites-deploying/ui-recommendations.md)을 참조하십시오.
 
 터치 지원 UI, 클래식 UI 또는 둘 다를 지원하도록 구성 요소를 구현할 수 있습니다. 표준 인스턴스를 보면 원래 클래식 UI나 터치 지원 UI 또는 둘 다에 맞게 디자인된 즉시 사용 가능한 구성 요소도 표시됩니다.
 

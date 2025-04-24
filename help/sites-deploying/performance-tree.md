@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c83fcf96-cc45-40a0-9a50-c60406096de1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1075'
 ht-degree: 2%
 
 ---
@@ -154,7 +154,7 @@ ht-degree: 2%
   <tr>
    <td><strong>19단계</strong></td>
    <td>100% CPU</td>
-   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html</a></td>
+   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#cpu-at">100%의 CPU</a> 보기</td>
   </tr>
   <tr>
    <td><strong>20단계</strong></td>
@@ -288,7 +288,7 @@ ht-degree: 2%
   <tr>
    <td><strong>단계 45<br /> 및 47</strong><br /> </td>
    <td>HTTP/2 사용</td>
-   <td>37, 38 및 39단계는 Gem 세션 을 참조하십시오. 또한 HTTP/2 지원에서 <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">이</a> 포럼 게시물을 확인하십시오.<br /> </td>
+   <td>37, 38 및 39단계는 Gem 세션을 참조하십시오.<br /> </td>
   </tr>
   <tr>
    <td><strong>49단계</strong></td>
