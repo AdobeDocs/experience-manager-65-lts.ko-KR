@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 438d383aa7a08334d9977411fd37395f89133834
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 65%
+source-wordcount: '1567'
+ht-degree: 63%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 65%
    * 을 눌러 페이지에 적용한 변경 내용을 실행 취소할 수 있습니다.
 * 페이지의 현재 버전을 이전 버전과 비교:
    * 텍스트 및 이미지의 차이점을 강조 표시합니다.
+
+>[!NOTE]
+>
+>AEM 저장소에서는 콘텐츠만 버전이 관리됩니다. 코드, CSS 및 JavaScript과 같은 동적 리소스의 버전이 관리되지 않습니다.
+>
+>* 버전을 볼 때는 저장소의 현재 코드, CSS 및 JavaScript으로 콘텐츠를 봅니다.
+>* 버전을 복원하면 콘텐츠만 복원되고 저장소의 현재 코드, CSS 및 JavaScript이 적용됩니다.
 
 ## 새 버전 만들기 {#creating-a-new-version}
 
