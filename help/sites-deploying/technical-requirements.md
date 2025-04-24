@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: e337b682a0ee2b35940671991bd82b30d9d50128
 workflow-type: tm+mt
-source-wordcount: '3064'
+source-wordcount: '2961'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Adobe Experience Manager 실행을 위한 최소 요구 사항:
 
 ### 지원 수준 {#support-levels}
 
-이 문서에서는 Adobe Experience Manager에 대해 지원되는 클라이언트 및 서버 플랫폼을 나열합니다. Adobe은 권장 구성과 기타 구성 모두에 대해 여러 수준의 지원을 제공합니다.
+이 문서에서는 Adobe Experience Manager에 대해 지원되는 클라이언트 및 서버 플랫폼을 나열합니다. Adobe Systems 에서는 권장 구성과 기타 구성 모두에 대해 여러 수준의 지원을 제공합니다.
 
 ### 지원되는 구성 {#supported-configurations}
 
@@ -112,7 +112,7 @@ Adobe Experience Manager 저장소를 배포하기 위한 다양한 옵션이 �
 | MongoDB Enterprise 6.0 및 7.0 | 저장소 | A: 지원됨 `[3, 4]` |
 | **Apache Lucene(빠른 시작 기본 제공)** | Search 서비스 | A: 지원됨 |
 
-1. &#39;파일 시스템&#39;에는 POSIX와 호환되는 블록 저장소가 포함되어 있습니다. 네트워크 스토리지 기술을 포함합니다. 파일 시스템 성능이 달라질 수 있으며 전체 성능에 영향을 줄 수 있습니다. 네트워크/원격 파일 시스템으로 AEM을 로드합니다.
+1. &#39;파일 시스템&#39;에는 POSIX와 호환되는 블록 스토리지가 포함됩니다. 네트워크 스토리지 기술을 포함합니다. 파일 시스템 성능이 달라질 수 있으며 전체 성능에 영향을 줄 수 있습니다. 네트워크/원격 파일 시스템으로 AEM을 로드합니다.
 1. MongoDB 분할은 AEM에서 지원되지 않습니다.
 1. MongoDB 스토리지 엔진 WiredTiger는 만 지원됩니다.
 
@@ -153,13 +153,14 @@ Adobe Experience Manager은 프로덕션 환경을 위해 다음 서버 플랫�
 | **Linux®, Red Hat® 배포 기반** | A: 지원되는 `[1]` `[2]` |
 | Debian 배포 기반 Linux®에는 다음이 포함됩니다. 우분투 | A: 지원되는 `[1]` |
 | Linux®, SUSE® 배포 기반 | A: 지원되는 `[1]` |
+| Microsoft® 윈도우 서버 2022 | R: 지원됨 |
 
 1. Linux® 커널 5. x와 6. x에는 Red Hat® Enterprise Linux®, CentOS, Oracle Linux® 및 Amazon Linux®를 비롯한 Red Hat® 배포판의 파생물이 포함되어 있습니다.
 1. Adobe Managed Services에서 지원하는 Linux® 배포.
 
    >[!NOTE]
    >
-   >Linux 기반 서버(OSGI 및 JEE 스택)의 경우 AEM Forms 추가 기능에는 다음과 같은 런타임 종속성이 필요합니다.
+   >Linux 기반 서버의 경우 AEM Forms 추가 기능을 사용하려면 다음과 같은 런타임 종속성이 필요합니다.
    >* glibc.x86_64 (2.17-196)
    >* libX11.x86_64 (1.6.7-4)
    >* zlib.x86-64 (1.2.7-17)
@@ -182,7 +183,7 @@ Adobe Managed Services 외부의 Azure 또는 AWS에 AEM을 배포하는 방법�
 
 ### Dispatcher 플랫폼(웹 서버) {#dispatcher-platforms-web-servers}
 
-Dispatcher은 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispatcher 버전을 다운로드합니다](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5에는 Dispatcher 버전 4.3.2 이상이 필요합니다.
+Dispatcher는 캐싱 및 로드 밸런싱 구성 요소입니다. [최신 Dispatcher 버전을](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html) 다운로드합니다. Experience Manager 6.5에는 Dispatcher 버전 4.3.2 이상이 필요합니다.
 
 다음 웹 서버는 Dispatcher 버전 4.3.2에서 사용할 수 있습니다.
 
@@ -268,7 +269,7 @@ AEM 사용자 인터페이스는 더 큰 화면(일반적으로 노트북 및 �
  </tbody>
 </table>
 
-1. Firefox의 확장 지원 릴리스 [mozilla.org에 대해 자세히 알아보기](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Firefox [의 확장 지원 릴리스 mozilla.org 에서 더 알아보기](https://www.mozilla.org/en-US/firefox/enterprise/)
 1. Apple iPad 지원
 
 ### 웹 사이트에 대해 지원되는 브라우저 {#supported-browsers-for-websites}
@@ -277,7 +278,7 @@ AEM 사용자 인터페이스는 더 큰 화면(일반적으로 노트북 및 �
 
 ## 추가 플랫폼 노트 {#additional-platform-notes}
 
-이 섹션에서는 Adobe Experience Manager 및 해당 추가 기능 실행에 대한 특수 참고 사항과 보다 자세한 정보를 제공합니다.
+이 섹션에서는 Adobe Experience Manager 및 해당 추가 기능을 실행하는 방법에 대한 특별 참고 사항과 자세한 정보를 제공합니다.
 
 ### IPv4 및 IPv6 {#ipv-and-ipv}
 
@@ -339,32 +340,32 @@ Linux®에서 Dynamic Media를 사용하는 경우 다음 사전 요구 사항�
 >
 >다중 노드 구성은 다른 노드가 소진되기 전에 하나 이상의 노드에서 메모리 소진을 초래할 수 있다. 메모리 소진이 발생하면 커널은 사용 가능한 메모리가 있더라도 프로세스(예: 이미지 서버 또는 플랫폼 서버)를 종료하기로 결정할 수 있습니다.
 >
->따라서 Adobe에서는 커널이 이러한 프로세스를 중단하지 않도록 **numa=off** 부팅 옵션을 사용하여 NUMA를 해제하는 시스템을 실행하는 것이 좋습니다.
+>Adobe Systems따라서 이러한 시스템을 실행하는 경우 커널이 이러한 프로세스를 종료하지 않도록 numa=off **부팅 옵션을 사용하여** NUMA를 끄는 것이 좋습니다.
 
 >[!NOTE]
 >
->**서버 호스트 이름을 확인해야 합니다.** 서버의 호스트 이름을 IP 주소로 확인할 수 있는지 확인하십시오. 가능하지 않은 경우 정규화된 호스트 이름과 IP 주소를 /etc/hosts에 **추가합니다.**
+>**서버 호스트 이름을 확인해야 함:** 서버의 호스트 이름을 IP 주소로 확인할 수 있는지 확인하십시오. 가능하지 않은 경우 정규화된 호스트 이름과 IP 주소를 /etc/hosts에 **추가합니다.**
 >
 >`<ip address> <fully qualified hostname>`
 
 #### Windows {#windows}
 
 * 마이크로소프트® 윈도우 서버 2016
-* 실제 메모리(RAM) 양의 두 배 이상에 해당하는 스왑 공간
+* 물리적 메모리(RAM)의 최소 두 배 정도의 공간 교체
 
-Windows에서 다이내믹 미디어를 사용하려면 x64 및 x86용 Microsoft® Visual Studio 2010, 2013 및 2015 재배포 가능 패키지를 설치합니다.
+Windows에서 Dynamic Media를 사용하려면 Microsoft® Visual Studio 2010, 2013 및 2015 x64 및 x86용 재배포 가능 패키지를 설치하십시오.
 
 Windows x64의 경우
 
 * [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)에서 Microsoft® Visual Studio 2010 재배포 가능 패키지를 가져옵니다.
 * https://www.microsoft.com/en-us/download/details.aspx?id=40784 에서 [Microsoft® Visual Studio 2013 재배포 가능 패키지 받기](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* https://www.microsoft.com/en-us/download/details.aspx?id=48145 에서 [Microsoft® Visual Studio 2015 재배포 가능 패키지 받기](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)에서 Microsoft® Visual Studio 2015 재배포 가능 패키지를 가져옵니다.
 
 Windows x86의 경우:
 
 * [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)에서 Microsoft® Visual Studio 2010 재배포 가능 패키지를 가져옵니다.
 * [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)에서 Microsoft® Visual Studio 2013 재배포 가능 패키지를 가져옵니다.
-* https://www.microsoft.com/en-us/download/details.aspx?id=52685 에서 [Microsoft® Visual Studio 2015 재배포 가능 패키지 받기](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+* [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)에서 Microsoft® Visual Studio 2015 재배포 가능 패키지를 가져옵니다.
 
 #### macOS {#macos}
 
@@ -379,14 +380,10 @@ Windows x86의 경우:
  <tbody>
   <tr>
    <th><p><strong>제품</strong></p> </th>
-   <th><p><strong>PDF으로 전환하기 위해 지원되는 형식</strong></p> </th>
+   <th><p><strong>PDF로 변환하기 위해 지원되는 형식</strong></p> </th>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 클래식 트랙</a> 최신 버전</td>
-   <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF</td>
-  </tr>
-  <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> 최신 버전(더 이상 사용되지 않음)</td>
    <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF</td>
   </tr>
   <tr>
@@ -394,37 +391,17 @@ Windows x86의 경우:
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF 및 TXT</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2016(더 이상 사용되지 않음)</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF 및 TXT</td>
-  </tr>
-  <tr>
-   <td>WordPerfect 2020<br /> </td>
+   <td>워드퍼펙트 2020<br /> </td>
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016(더 이상 사용되지 않음)<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2019<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2016(더 이상 사용되지 않음)<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2016(더 이상 사용되지 않음)<br /> </td>
-   <td>MPP</td>
+   <td>마이크로소프트® 퍼블리셔 2019<br /> </td>
+   <td>선술집</td>
   </tr>
   <tr>
    <td>오픈오피스 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, TXT</td>
   </tr>
-  <tr>
-   <td>OpenOffice 4.1.2(더 이상 사용되지 않음)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, TXT</td>
-  </tr>  
  </tbody>
 </table>
 
@@ -448,33 +425,33 @@ Windows x86의 경우:
 >* PDF Generator이 Microsoft® Project 2019를 사용하여 파일을 변환하지 못했습니다. Microsoft® Project 2016을 계속 사용하여 `.VSD` 및 `.VSDX` 파일을 변환할 수 있습니다.
 >
 
-### AEM Forms 디자이너 요구 사항 {#requirements-for-aem-forms-designer}
+### AEM Forms Designer 요구 사항 {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 또는 Windows® 11
-* PAE, NX 및 SSE2를 지원하는 1GHz 이상의 프로세서.
-* 32비트 OS의 경우 1GB RAM 또는 64비트 OS의 경우 2GB RAM
-* 32비트의 경우 16GB 디스크 공간 또는 64비트 OS의 경우 20GB 디스크 공간
+* PAE, NX 및 SSE2를 지원하는 1GHz 이상의 프로세서
+* 32비트용 RAM 1GB 또는 64비트 OS용 RAM 2GB
+* 32비트용 16GB 디스크 공간 또는 64비트 OS용 20GB 디스크 공간
 * 그래픽 메모리 - 128MB GPU(256MB 권장)
 * 2.35GB의 사용 가능한 하드 디스크 공간
 * 1024 X 768 픽셀 이상의 모니터 해상도
-* 비디오 하드웨어 가속(선택 사항)
+* 비디오 하드웨어 가속(옵션)
 * Acrobat Pro DC, Acrobat Standard DC 또는 Adobe Acrobat Reader DC
 * Designer을 설치할 수 있는 관리 권한
 * Microsoft Visual C++ 2019(VC 14.28 이상) 32비트 AEM Forms 디자이너용 32비트 런타임
-* Microsoft Visual C++ 2019(VC 14.28 이상) 64비트 AEM Forms Designer용 64비트 런타임(OSGI 및 JEE 스택 모두)
+* Microsoft Visual C++ 2019(VC 14.28 이상) 64비트 AEM Forms 디자이너용 64비트 런타임
 
 [AEM Forms 디자이너 설치 및 구성](/help/forms/using/installing-configuring-designer.md)
 
 ### AEM Assets 요구 사항 XMP 메타데이터 원본에 쓰기 {#requirements-for-aem-assets-xmp-metadata-write-back}
 
-XMP 다시 쓰기는 다음 플랫폼 및 파일 형식에 대해 지원 및 활성화됩니다.
+XMP 원본에 쓰기 지원되며 다음 플랫폼 및 파일 형식에 사용할 수 있습니다.
 
 * **운영 체제:**
 
    * Linux®(64비트 시스템에서 32비트 및 32비트 애플리케이션 지원) 32비트 클라이언트 라이브러리를 설치하는 단계는 [64비트 Red Hat® Linux®에서 XMP 추출 및 다시 쓰기를 활성화하는 방법](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)을 참조하십시오.
 
    * Windows Server
-   * macOS X (64비트)
+   * macOS X(64비트)
 
 * **파일 형식**: JPEG, PNG, TIFF, PDF, INDD, AI 및 EPS.
 
