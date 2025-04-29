@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -59,16 +59,6 @@ ht-degree: 0%
    1. &quot;쿼리&quot; 상자에 이 쿼리 /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) 순서를 @slingevent:created로 입력합니다
    1. &quot;검색&quot;을 클릭합니다.
    1. 결과에서 상위 항목은 최신 슬링 이벤트 작업입니다. 각 복제본을 클릭하고 대기열 맨 위에 표시되는 복제본과 일치하는 중단된 복제본을 찾습니다.
-
-1. Sling 이벤트 프레임워크 작업 큐에 문제가 있을 수 있습니다. /system/console에서 org.apache.sling.event 번들을 다시 시작하십시오.
-1. 작업 처리가 꺼져 있을 수 있습니다. Sling 이벤트 탭의 Felix 콘솔에서 확인할 수 있습니다. 표시 여부 확인 - Apache Sling 이벤트(작업 처리가 비활성화됨!)
-
-   * 그렇다면 Felix 콘솔의 구성 탭에서 Apache Sling 작업 이벤트 핸들러 를 확인하십시오. &#39;작업 처리 사용&#39; 확인란이 선택 취소되었을 수 있습니다. 이 옵션이 선택되어 있고 여전히 &#39;작업 처리가 비활성화되어 있음&#39;이 표시되면, 작업 처리를 비활성화하는 /apps/system/config 아래에 오버레이가 있는지 확인합니다. 부울 값을 true로 설정하여 jobmanager.enabled에 대한 osgi:config 노드를 생성하고 활성화가 시작되었으며 큐에 작업이 더 이상 없는지 다시 확인해 보십시오.
-
-1. 또한 DefaultJobManager 구성이 일관성 없는 상태가 될 수 있습니다. 이 문제는 누군가가 OSGiconsole을 통해 &#39;Apache Sling 작업 이벤트 핸들러&#39; 구성을 수동으로 수정할 때(예: &#39;작업 처리 활성화됨&#39; 속성을 비활성화했다가 다시 활성화하고 구성을 저장) 발생할 수 있습니다.
-
-   * 이 시점에서 crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config에 저장된 DefaultJobManager 구성이 일관되지 않은 상태가 됩니다. 그리고 &#39;Apache Sling Job Event Handler&#39; 속성에 &#39;Job Processing Enabled&#39;가 확인 상태로 표시되지만, Sling Eventing 탭으로 이동하면 JOB PROCESSING IS DISABLED이고 복제가 작동하지 않는다는 메시지가 표시됩니다.
-   * 이 문제를 해결하려면 OSGi 콘솔의 구성 페이지로 이동하여 &#39;Apache Sling 작업 이벤트 핸들러&#39; 구성을 삭제합니다. 그런 다음 클러스터의 기본 노드를 재시작하여 구성을 일관된 상태로 다시 전환합니다. 이렇게 하면 문제가 해결되고 복제가 다시 시작됩니다.
 
 **replication.log 만들기**
 

@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '3287'
+source-wordcount: '3270'
 ht-degree: 2%
 
 ---
@@ -347,8 +347,6 @@ Dispatcher 캐시 관리에 사용됩니다. 자세한 내용은 [작성 환경�
   선택하면 에이전트가 활성화된 페이지에 버전 관리를 적용하지 않습니다.
 
 ## 복제 에이전트 구성 {#configuring-your-replication-agents}
-
-MSSL을 사용하여 복제 에이전트를 게시 인스턴스에 연결하는 방법에 대한 자세한 내용은 [상호 SSL을 사용하여 복제](/help/sites-deploying/mssl-replication.md)를 참조하십시오.
 
 ### 작성자 환경에서 복제 에이전트 구성 {#configuring-your-replication-agents-from-the-author-environment}
 
