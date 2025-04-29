@@ -4,10 +4,8 @@ description: AEM 플랫폼과 Adobe Experience Manager 6.5 LTS 설치 및 배포
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Architect
-hide: true
-hidefromtoc: true
 exl-id: c9ea613d-f1d1-49be-bd52-95d489442f46
-source-git-commit: 4666e698b05510e2ed90995f7e7098e7f8d860da
+source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 5%
