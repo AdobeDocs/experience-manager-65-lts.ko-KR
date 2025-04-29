@@ -4,9 +4,9 @@ description: 범용 편집기의 유연성과 AEM 6.5를 사용하여 Headless �
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3f6d0791968ad3017256dcd5ecea617bc7c8ed83
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1174'
 ht-degree: 1%
 
 ---
@@ -38,9 +38,9 @@ ht-degree: 1%
 
 유니버설 편집기는 다음에서 지원합니다.
 
-* AEM 6.5 LTS
+* AEM 6.5 LTS GA
    * 온-프레미스 및 AMS 호스팅이 모두 지원됩니다.
-* [AEM 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)&#x200B;(서비스 팩 21 또는 22 + 기능 팩)
+* [AEM 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)&#x200B;(서비스 팩 21 또는 22 + 기능 팩 이상)
    * 온-프레미스 및 AMS 호스팅이 모두 지원됩니다.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)&#x200B;(릴리스 `2023.8.13099` 이상)
 
@@ -50,29 +50,15 @@ ht-degree: 1%
 
 범용 편집기를 테스트하려면 다음 작업을 수행해야 합니다.
 
-1. [AEM 작성 인스턴스를 업데이트하고 구성합니다.](#update-configure-aem)
+1. [AEM 작성 인스턴스에서 서비스를 구성합니다.](#configure-aem)
 1. [로컬 유니버설 편집기 서비스를 설정합니다.](#set-up-ue)
 1. [Universal Editor Service를 허용하도록 Dispatcher를 조정합니다.](#update-dispatcher)
 
 설정이 완료되면 응용 프로그램을 [유니버설 편집기를 사용하도록 계측할 수 있습니다.](#instrumentation)
 
-### AEM 업데이트 {#update-aem}
+### 서비스 구성 {#configure-aem}
 
-AEM 6.5와 함께 범용 편집기를 사용하려면 서비스 팩 21 또는 22와 AEM용 기능 팩이 필요합니다.
-
-#### 최신 서비스 팩 적용 {#latest}
-
-AEM 6.5용 서비스 팩 21 또는 22 이상을 실행 중인지 확인하십시오. [소프트웨어 배포](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)에서 최신 서비스 팩을 다운로드할 수 있습니다.
-
-#### 범용 편집기 기능 팩 설치 {#feature-pack}
-
-**AEM용 유니버설 편집기 기능 팩 6.5** [소프트웨어 배포에 사용 가능](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)을(를) 설치합니다.
-
-이미 서비스 팩 23 이상을 실행 중인 경우 기능 팩이 필요하지 않습니다.
-
-### 서비스 구성 {#configure-services}
-
-기능 팩은 추가 구성이 필요한 많은 새 패키지를 설치합니다.
+범용 편집기는 구성해야 하는 여러 서비스를 사용합니다.
 
 #### `login-token` 쿠키에 대해 SameSite 특성을 설정합니다. {#samesite-attribute}
 
