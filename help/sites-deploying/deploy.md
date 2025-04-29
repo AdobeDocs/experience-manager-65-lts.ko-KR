@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
+source-git-commit: 79551cfa77420fae965ecac8060fd2005beff558
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1376'
 ht-degree: 3%
 
 ---
@@ -38,20 +38,20 @@ ht-degree: 3%
    * [압축을 푼 설치 디렉토리](#unpacked-install-directory)
    * [시작 및 중지](#starting-and-stopping)
 
-<!-- Once you have familiarized yourself with these basics, you can find in more advanced and detailed information in the following subpages:
+이러한 기본 사항을 숙지하면 다음 하위 페이지에서 보다 고급 세부 정보를 찾을 수 있습니다.
 
-* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
-* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
-* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
-* [Application Server Install](/help/sites-deploying/application-server-install.md)
-* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
-* [Configuring](/help/sites-deploying/configuring.md)
-* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
-* [Web Console](/help/sites-deploying/web-console.md)
-* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
-* [Best Practices](/help/sites-deploying/best-practices.md)
-* [Introduction to the AEM Platform](/help/sites-deploying/platform.md) -->
+* [기술 요구 사항](/help/sites-deploying/technical-requirements.md)
+* [권장 배포](/help/sites-deploying/recommended-deploys.md)
+* [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
+* [Application Server 설치](/help/sites-deploying/application-server-install.md)
+* [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
+* [구성](/help/sites-deploying/configuring.md)
+* [AEM 6.5 LTS로 업그레이드](/help/sites-deploying/upgrade.md)
+* [구성 방법 문서](/help/sites-deploying/ht-deploy.md)
+* [웹 콘솔](/help/sites-deploying/web-console.md)
+* [복제 문제 해결](/help/sites-deploying/troubleshoot-rep.md)
+* [모범 사례](/help/sites-deploying/best-practices.md)
+* [AEM 플랫폼 소개](/help/sites-deploying/platform.md)
 
 ## 기본 개념 {#basic-concepts}
 
@@ -265,28 +265,28 @@ AEM은 웹 브라우저를 시작하고 자동으로 적절한 페이지(일반�
 
 ![로그인 화면](assets/screen_shot_2019-04-08at83533am.png)
 
-<!-- 
-After you are logged in, you have access to AEM. For more information, depending on your role, see the following:
 
-* [Authoring](/help/sites-authoring/first-steps.md)
-* [Administering](/help/sites-administering/home.md)
-* [Developing](/help/sites-developing/getting-started.md)
-* [Managing](/help/managing/best-practices.md)
+로그인하면 AEM에 액세스할 수 있습니다. 자세한 내용은 역할에 따라 다음을 참조하십시오.
 
-## Advanced Deployment {#advanced-deployment}
+* [작성](/help/sites-authoring/first-steps.md)
+* [관리](/help/sites-administering/home.md)
+* [개발](/help/sites-developing/getting-started.md)
+* [관리](/help/managing/best-practices.md)
 
-The above section should give you a good understanding of the basics of AEM installation. However, installing a full production system of AEM can involve considerably more complexity. For full coverage of advanced installation see the following subpages:
+## 고급 배포 {#advanced-deployment}
 
-* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
-* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
-* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
-* [Application Server Install](/help/sites-deploying/application-server-install.md)
-* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
-* [Configuring](/help/sites-deploying/configuring.md)
-* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
-* [Web Console](/help/sites-deploying/web-console.md)
-* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
-* [Best Practices](/help/sites-deploying/best-practices.md)
-* [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
- -->
+위의 섹션에서는 AEM 설치의 기본 사항을 잘 이해할 수 있습니다. 그러나 AEM의 전체 프로덕션 시스템을 설치하면 훨씬 더 복잡해질 수 있습니다. 고급 설치에 대한 전체 내용은 다음 하위 페이지를 참조하십시오.
+
+* [기술 요구 사항](/help/sites-deploying/technical-requirements.md)
+* [권장 배포](/help/sites-deploying/recommended-deploys.md)
+* [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
+* [Application Server 설치](/help/sites-deploying/application-server-install.md)
+* [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
+* [구성](/help/sites-deploying/configuring.md)
+* [AEM 6.5 LTS로 업그레이드](/help/sites-deploying/upgrade.md)
+* [구성 방법 문서](/help/sites-deploying/ht-deploy.md)
+* [웹 콘솔](/help/sites-deploying/web-console.md)
+* [복제 문제 해결](/help/sites-deploying/troubleshoot-rep.md)
+* [모범 사례](/help/sites-deploying/best-practices.md)
+* [AEM 플랫폼 소개](/help/sites-deploying/platform.md)
+
