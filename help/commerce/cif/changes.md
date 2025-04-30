@@ -5,7 +5,7 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: aced89a0-dec1-49fe-afbc-3ddf1318b900
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%
@@ -60,4 +60,4 @@ AEM은 제품 및 범주에 할당된 AEM 카탈로그 템플릿을 사용하여
 
 >[!NOTE]
 >
->AEM Managed Service 또는 AEM On-Premise와 함께 CIF을 사용하는 방법에 대한 추가 설명서는 [Commerce integration framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)을(를) 참조하십시오.
+>AEM Managed Service 또는 AEM On-Premise와 함께 CIF을 사용하는 방법에 대한 추가 설명서는 [Commerce integration framework](https://developer.adobe.com/apis/experiencecloud/commerce-integration-framework/getting-started.html)을(를) 참조하십시오.

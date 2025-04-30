@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 22%
@@ -39,7 +39,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구
 >
 >* [clientlibs](/help/sites-developing/clientlibs.md)을(를) 사용하고 만드는 중입니다.
 >* [오버레이](/help/sites-developing/overlays.md)를 사용하고 만드는 중입니다.
->* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+>* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
 >
 
 
@@ -150,7 +150,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구
 
 1. 선택적으로:
 
-   * 추가 데이터를 연결하려면 [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)에
+   * 추가 데이터를 연결하려면 [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)에
      `pageInfoProviderType` 속성입니다.
 
    예를 들어 아래 (GitHub에서) 첨부된 클래스/번들을 참조하십시오.

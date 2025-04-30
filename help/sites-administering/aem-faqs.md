@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: b2e73e28-fa34-436d-8a20-848d353e3b8c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%
@@ -105,9 +105,9 @@ AEM은 작성 인스턴스의 콘솔 및 페이지 작성 기능을 사용자 �
 
 #### CoralUI 2와 CoralUI 3 기반 구성 요소의 차이점은 무엇입니까? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-Granite UI Foundation의 새 Sling 구성 요소 집합이 Coral3에 대해 만들어지고 [/libs/granite/ui/components/coral/foundation 아래에 있습니다.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) CoralUI 2 기반 구성 요소 세트와 CoralUI 3 기반 구성 요소 세트가 있습니다. 새 세트는 이전 세트의 복사-붙여넣기가 아니라 정리됩니다(예: 스트리밍, 더 이상 사용되지 않는 기능 제거). 따라서 페이지는 CoralUI 3 기반 또는 CoralUI 2 기반 세트만 사용하는 것이 좋습니다.
+Granite UI Foundation의 새 Sling 구성 요소 집합이 Coral3에 대해 만들어지고 [/libs/granite/ui/components/coral/foundation 아래에 있습니다.](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) CoralUI 2 기반 구성 요소 세트와 CoralUI 3 기반 구성 요소 세트가 있습니다. 새 세트는 이전 세트의 복사-붙여넣기가 아니라 정리됩니다(예: 스트리밍, 더 이상 사용되지 않는 기능 제거). 따라서 페이지는 CoralUI 3 기반 또는 CoralUI 2 기반 세트만 사용하는 것이 좋습니다.
 
-자세한 내용은 [CoralUI 3 기반 마이그레이션 가이드](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html)를 참조하세요.
+자세한 내용은 [CoralUI 3 기반 마이그레이션 가이드](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html)를 참조하세요.
 
 #### AEM Assets에서 검색 구성 요소를 사용자 지정하는 방법 {#how-to-customize-the-search-component-in-aem-assets}
 

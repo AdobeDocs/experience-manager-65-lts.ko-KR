@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '5177'
 ht-degree: 0%
@@ -107,7 +107,7 @@ AEM과 함께 제공되는 표준 보고서의 경우:
 쿼리:
 
 * [`reportbase`](#report-base) 구성 요소의 일부로 정의됩니다.
-* [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html)을(를) 기반으로 합니다.
+* [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html)을(를) 기반으로 합니다.
 * 보고서의 기반으로 사용되는 데이터를 검색합니다. 결과 세트(테이블)의 각 행은 쿼리에서 반환된 대로 노드에 연결됩니다. 그런 다음 이 데이터 집합에서 [개별 열](#column-base-component)에 대한 특정 정보를 추출합니다.
 
 * 일반적으로 다음으로 구성됩니다.

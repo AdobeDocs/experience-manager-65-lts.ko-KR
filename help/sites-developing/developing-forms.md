@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d1475168-6625-4d27-9c3b-01e415c2f398
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 1%
@@ -315,7 +315,7 @@ JavaScript에서 조건은 필드를 참조하기 위해 요소 이름 속성의
 
 ### Forms에 사용할 스크립트 개발 {#developing-scripts-for-use-with-forms}
 
-스크립트를 작성할 때 사용할 수 있는 API 요소에 대한 자세한 내용은 [양식 관련 javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html)을 참조하십시오.
+스크립트를 작성할 때 사용할 수 있는 API 요소에 대한 자세한 내용은 [양식 관련 javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html)을 참조하십시오.
 
 양식을 제출하기 전에 서비스를 호출하고 실패한 경우 서비스를 취소하는 등의 작업에 이 옵션을 사용할 수 있습니다.
 

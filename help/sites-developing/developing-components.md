@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3200'
 ht-degree: 1%
@@ -110,13 +110,13 @@ AEM 6.0과 함께 도입된 [HTML 템플릿 언어(HTL)](https://experienceleagu
 
 ## 미리 보기 동작 구성 {#configuring-the-preview-behavior}
 
-[WCM 모드](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키는 페이지를 새로 고치지 않은 경우에도 **미리 보기** 모드로 전환할 때 설정됩니다.
+[WCM 모드](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키는 페이지를 새로 고치지 않은 경우에도 **미리 보기** 모드로 전환할 때 설정됩니다.
 
 렌더링이 WCM 모드에 민감한 구성 요소의 경우, 특별히 자신을 새로 고치도록 정의한 다음 쿠키 값을 사용해야 합니다.
 
 >[!NOTE]
 >
->터치 사용 UI에서 값 `EDIT` 및 `PREVIEW`만 [WCM 모드](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키에 사용됩니다.
+>터치 사용 UI에서 값 `EDIT` 및 `PREVIEW`만 [WCM 모드](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) 쿠키에 사용됩니다.
 
 ## 대화 상자 만들기 및 구성 {#creating-and-configuring-a-dialog}
 

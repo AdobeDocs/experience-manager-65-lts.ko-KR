@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 38%
@@ -109,7 +109,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 목록을 적당한 크기로 유지하고 사용 사례와도 관련되게 하려면 필터를 사용자 정의 조건자 형태로 구현할 수 있습니다. 예를 들어 사용자가 특정 리소스에 대한 경로를 선택할 수 있도록 [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) 구성 요소를 사용하는 경우 표시되는 경로는 다음과 같은 방법으로 필터링될 수 있습니다.
 
-* [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) 상호 작용을 구현하여 사용자 정의 조건자를 구현합니다.
+* [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html) 상호 작용을 구현하여 사용자 정의 조건자를 구현합니다.
 * 조건자의 이름을 지정하고, `pathbrowser`를 사용할 때 해당 이름을 참조합니다.
 
 사용자 지정 술어 만들기에 대한 자세한 내용은 [Query Builder의 사용자 지정 술어 평가기 구현](/help/sites-developing/implementing-custom-predicate-evaluator.md)을 참조하십시오.

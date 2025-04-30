@@ -9,7 +9,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 63f42a35-fbd5-4b1b-bba1-1bdcfd23dd33
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '1601'
 ht-degree: 6%
@@ -104,7 +104,7 @@ AEM Managed Services 고객은 이미 조직이 프로비저닝되어 있어야 
 
 시스템 관리자는 이 도구를 사용하여 고객 디렉터리에 있는 사용자 그룹을 [!DNL Admin Console]의 제품 구성 및 사용자 그룹과 매핑할 수 있으며, 새 UST 버전을 사용하여 [!DNL Admin Console]에서 사용자 그룹을 동적으로 만들 수도 있습니다.
 
-사용자 동기화를 설정하려면 조직에서 [[!DNL User Management] API](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/setup.html)를 사용하는 것과 같은 방식으로 자격 증명 집합을 만들어야 합니다.
+사용자 동기화를 설정하려면 조직에서 [[!DNL User Management] API](https://developer.adobe.com/apis/cloudplatform/usermanagement/docs/setup.html)를 사용하는 것과 같은 방식으로 자격 증명 집합을 만들어야 합니다.
 
 ![image2018-9-23_13-36-56](assets/image2018-9-23_13-36-56.png)
 

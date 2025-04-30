@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 997637d5-1627-4102-8b7c-a0cfd871a7b2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Adobe Experience Manager(AEM)를 사용하면 이미지, `.js` 및 `.css` 파일
 
 ## 사이트에 대한 페이지 내보내기 구성 만들기 {#creating-a-page-exporter-configuration-for-your-site}
 
-페이지 내보내기는 [콘텐츠 동기화 프레임워크](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html)를 기반으로 합니다. **페이지 속성** 대화 상자에서 사용할 수 있는 구성은 페이지에 필요한 종속성을 정의하는 내보내기 템플릿입니다.
+페이지 내보내기는 [콘텐츠 동기화 프레임워크](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html)를 기반으로 합니다. **페이지 속성** 대화 상자에서 사용할 수 있는 구성은 페이지에 필요한 종속성을 정의하는 내보내기 템플릿입니다.
 
 페이지 내보내기가 트리거되면 내보내기 템플릿이 참조됩니다. 페이지 경로와 디자인 경로는 모두 동적으로 적용됩니다. 그런 다음 표준 콘텐츠 동기화 기능을 사용하여 zip 파일을 만듭니다.
 
@@ -108,7 +108,7 @@ Adobe Experience Manager(AEM)를 사용하면 이미지, `.js` 및 `.css` 파일
 
 ### 페이지 내보내기 구성 노드 {#page-exporter-configuration-nodes}
 
-[콘텐츠 동기화 프레임워크](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html)를 사용하므로 템플릿은 노드 구조로 구성됩니다. 각 노드에는 zip 파일 생성 프로세스의 특정 작업을 정의하는 `type` 속성이 있습니다.
+[콘텐츠 동기화 프레임워크](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html)를 사용하므로 템플릿은 노드 구조로 구성됩니다. 각 노드에는 zip 파일 생성 프로세스의 특정 작업을 정의하는 `type` 속성이 있습니다.
 
 <!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
@@ -178,14 +178,14 @@ Adobe Experience Manager(AEM)를 사용하면 이미지, `.js` 및 `.css` 파일
 As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-일부 특정 요구 사항을 충족하려면 [사용자 지정 업데이트 처리기](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html)를 구현하십시오.
+일부 특정 요구 사항을 충족하려면 [사용자 지정 업데이트 처리기](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/handler/package-summary.html)를 구현하십시오.
 
 <!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## 프로그래밍 방식으로 페이지 내보내기 {#programmatically-exporting-a-page}
 
-페이지를 프로그래밍 방식으로 내보내려면 [PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI 서비스를 사용할 수 있습니다. 이 서비스를 사용하면 다음 작업을 수행할 수 있습니다.
+페이지를 프로그래밍 방식으로 내보내려면 [PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI 서비스를 사용할 수 있습니다. 이 서비스를 사용하면 다음 작업을 수행할 수 있습니다.
 
 * 페이지를 내보내고 HTTP 서블릿 응답에 씁니다.
 * 페이지를 내보내고 특정 위치에 zip 파일을 저장합니다.

@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2313'
 ht-degree: 2%
@@ -269,7 +269,7 @@ Facet 추출을 지원하고 기본 및 하위 에셋에 대해 두 개의 버�
 
 ### memberOf {#memberof}
 
-특정 [sling 리소스 컬렉션](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)에 속하는 항목을 찾습니다.
+특정 [sling 리소스 컬렉션](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)에 속하는 항목을 찾습니다.
 
 이는 필터링 전용 술어이며 검색 색인을 사용할 수 없습니다. 패싯 추출을 지원하지 않습니다.
 

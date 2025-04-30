@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: a3595673-8d43-4ef2-a00e-ec8aa8d9cb55
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 6%
@@ -188,7 +188,7 @@ AEM의 기본 콘솔이 나열됩니다.
 
 ### 링크 선택 메커니즘 {#link-selection-mechanism}
 
-`/libs/cq/core/components/welcome/welcome.jsp`에서는 속성이 있는 노드에서 쿼리를 실행하는 [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html)을 사용합니다.
+`/libs/cq/core/components/welcome/welcome.jsp`에서는 속성이 있는 노드에서 쿼리를 실행하는 [ConsoleUtil](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ConsoleUtil.html)을 사용합니다.
 
 * 값이 `cq:Console`인 `jcr:mixinTypes`
 

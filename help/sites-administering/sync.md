@@ -10,7 +10,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2224'
 ht-degree: 1%
@@ -33,7 +33,7 @@ AEM 6.1부터는 사용자 동기화가 활성화되면 사용자 데이터가 �
 
 ## Sling 배포 {#sling-distribution}
 
-사용자 데이터는 [ACL](/help/sites-administering/security.md)과(와) 함께 Oak JCR 아래 계층인 [Oak Core](/help/sites-deploying/platform.md)에 저장되고 [Oak API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/oak/api/package-tree.html)를 사용하여 액세스됩니다. 자주 업데이트하지 않으면 [Sling 콘텐츠 배포](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md)&#x200B;(Sling 배포)를 사용하여 사용자 데이터를 다른 게시 인스턴스와 동기화하는 것이 좋습니다.
+사용자 데이터는 [ACL](/help/sites-administering/security.md)과(와) 함께 Oak JCR 아래 계층인 [Oak Core](/help/sites-deploying/platform.md)에 저장되고 [Oak API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-tree.html)를 사용하여 액세스됩니다. 자주 업데이트하지 않으면 [Sling 콘텐츠 배포](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md)&#x200B;(Sling 배포)를 사용하여 사용자 데이터를 다른 게시 인스턴스와 동기화하는 것이 좋습니다.
 
 Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화의 이점은 다음과 같습니다.
 

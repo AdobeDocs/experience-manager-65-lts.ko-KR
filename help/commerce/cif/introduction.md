@@ -6,7 +6,7 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 88be03c6-2342-4441-836d-f13b8cdfd629
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 88%
@@ -67,7 +67,7 @@ AEM의 강력한 CIF 도구를 통해 콘텐츠 제작자는 확장 가능하고
 
 ### 통합
 
-[Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), 마이크로서비스 기반의 서버를 사용하지 않는 PaaS와 [CIF의 참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference)을 사용하여 생태계(예: 상거래 솔루션)을 Experience Cloud에 연결합니다.
+[Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html), 마이크로서비스 기반의 서버를 사용하지 않는 PaaS와 [CIF의 참조 구현](https://github.com/adobe/commerce-cif-graphql-integration-reference)을 사용하여 생태계(예: 상거래 솔루션)을 Experience Cloud에 연결합니다.
 
 ## 입증된 패턴 및 모범 사례
 

@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6fb6e522-fb81-4ba2-90b2-aad68f8bfa9e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Sling 리소스 병합을 사용하면 오버레이/재정의 리소스 및/또�
 
 >[!CAUTION]
 >
->Sling 리소스 병합 및 관련 메서드는 [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)에서만 사용할 수 있습니다. 즉, 표준 터치 지원 UI에만 적절합니다. 특히 이 방식으로 정의된 무시는 구성 요소의 터치 지원 대화 상자에만 적용할 수 있습니다.
+>Sling 리소스 병합 및 관련 메서드는 [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)에서만 사용할 수 있습니다. 즉, 표준 터치 지원 UI에만 적절합니다. 특히 이 방식으로 정의된 무시는 구성 요소의 터치 지원 대화 상자에만 적용할 수 있습니다.
 >
 >다른 영역(터치 지원 구성 요소 또는 클래식 UI의 다른 측면 포함)에 대한 오버레이/무시는 원래 위치에서 맞춤화가 정의될 위치로 적절한 노드 및 구조를 복사하는 작업이 포함됩니다.
 

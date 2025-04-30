@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d44e6ea8-b4e5-4ed7-a6d0-de1da2709e18
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2340'
 ht-degree: 1%
@@ -92,7 +92,7 @@ AEM WCM의 콘텐츠에 액세스하는 방법에는 세 가지가 있습니다.
 
 * `global.jsp`에 도입된 `currentPage` 개체를 통해:
 
-  `currentPage` 개체는 페이지의 인스턴스입니다([AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) 참조). 페이지 클래스는 콘텐츠에 액세스하는 몇 가지 메서드를 제공합니다.
+  `currentPage` 개체는 페이지의 인스턴스입니다([AEM API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html) 참조). 페이지 클래스는 콘텐츠에 액세스하는 몇 가지 메서드를 제공합니다.
 
   예: `String pageTitle = currentPage.getTitle();`
 

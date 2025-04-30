@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Security
 role: Developer
 exl-id: abc2747f-cfd8-4ee1-bbc0-5ad89beb383a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -34,7 +34,7 @@ AEM에서 제공하는 XSS 보호 메커니즘은 [OWASP(Open Web Application Se
 
 >[!NOTE]
 >
->Adobe에서는 AEM에서 제공한 [XSSAPI](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html)를 사용하여 항상 XSS 보호 API에 액세스할 것을 권장합니다.
+>Adobe에서는 AEM에서 제공한 [XSSAPI](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/xss/XSSAPI.html)를 사용하여 항상 XSS 보호 API에 액세스할 것을 권장합니다.
 
 또한 Apache용 [mod_security](https://www.modsecurity.org)과(와) 같은 웹 응용 프로그램 방화벽은 배포 환경의 보안에 대한 신뢰할 수 있는 중앙 집중식 제어를 제공하고 이전에 탐지되지 않은 교차 사이트 스크립팅 공격으로부터 보호할 수 있습니다.
 

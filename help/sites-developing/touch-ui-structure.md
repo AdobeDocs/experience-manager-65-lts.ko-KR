@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 1fcf6de4-30b5-46cb-9c1d-109a160d5030
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 5%
@@ -167,4 +167,4 @@ AEM에는 편집, 미리보기, 주석 달기 등 페이지 작성을 위해 이
 
 터치 사용 UI와 관련된 개념에 대한 자세한 내용은 [AEM 터치 사용 UI의 개념](/help/sites-developing/touch-ui-concepts.md)을 참조하십시오.
 
-자세한 기술 정보는 터치 사용 페이지 편집기의 [JS 설명서 집합](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)을 참조하십시오.
+자세한 기술 정보는 터치 사용 페이지 편집기의 [JS 설명서 집합](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)을 참조하십시오.

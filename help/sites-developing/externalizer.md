@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 5beeae99-7ef4-49a0-aaad-3ab07429ebc2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Adobe Experience Manager(AEM)에서 **외부화**&#x200B;은(는) 미리 구성�
 
 인스턴스가 웹 레이어 뒤에서 실행 중인 경우 외부로 표시되는 URL을 알 수 없고 경우에 따라 링크가 요청 범위 외부에서 만들어져야 하므로 이 서비스는 이러한 외부 URL을 구성하고 빌드할 수 있는 중앙 위치를 제공합니다.
 
-이 페이지에서는 **외부화** 서비스를 구성하는 방법과 사용 방법을 설명합니다. 자세한 내용은 [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html)을 참조하세요.
+이 페이지에서는 **외부화** 서비스를 구성하는 방법과 사용 방법을 설명합니다. 자세한 내용은 [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html)을 참조하세요.
 
 ## 외부화 서비스 구성 {#configuring-the-externalizer-service}
 
@@ -128,4 +128,4 @@ Adobe Experience Manager(AEM)에서 **외부화**&#x200B;은(는) 미리 구성�
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html)에서 더 많은 예제를 찾을 수 있습니다.
+1. [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html)에서 더 많은 예제를 찾을 수 있습니다.

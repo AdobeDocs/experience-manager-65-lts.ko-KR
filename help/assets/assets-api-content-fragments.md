@@ -6,7 +6,7 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 23%
@@ -261,7 +261,7 @@ Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식
 
 >[!NOTE]
 >
->자세한 내용은 [API 참조](/help/assets/assets-api-content-fragments.md#api-reference)를 참조하십시오. 특히, [Adobe Experience Manager Assets API - 콘텐츠 조각](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
+>자세한 내용은 [API 참조](/help/assets/assets-api-content-fragments.md#api-reference)를 참조하십시오. 특히, [Adobe Experience Manager Assets API - 콘텐츠 조각](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
 
 ### 읽기/게재 {#read-delivery}
 
@@ -385,7 +385,7 @@ Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식
 
 자세한 API 참조는 여기를 참조하십시오.
 
-* [Adobe Experience Manager Assets API - 콘텐츠 조각](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - 콘텐츠 조각](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
    * [사용 가능한 기능](/help/assets/mac-api-assets.md#assets)
