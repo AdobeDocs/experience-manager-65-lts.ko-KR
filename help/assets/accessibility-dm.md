@@ -70,4 +70,4 @@ Dynamic Media는 자막이 있는 비디오 및 적응형 비디오 세트 배�
 >[!MORELIKETHIS]
 >
 >* [Adobe 솔루션에 대한 접근성](https://www.adobe.com/accessibility.html)
->*  [!DNL Experience Manager Assets]](/help/assets/accessibility.md)의 [접근성
+>*  [!DNL Experience Manager Assets][&#128279;](/help/assets/accessibility.md)의 접근성

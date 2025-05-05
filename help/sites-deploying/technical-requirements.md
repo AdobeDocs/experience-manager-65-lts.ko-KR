@@ -43,7 +43,7 @@ Adobe Experience Manager 실행을 위한 최소 요구 사항:
 >* [AEM Forms 추가 기능 패키지](/help/forms/using/installing-configuring-aem-forms-osgi.md) 에는 15GB의 임시 공간이 필요합니다.
 >
 
-자세한 내용은 하드웨어 크기 조정 지침을](/help/managing/hardware-sizing-guidelines.md) 참조하세요[.
+자세한 내용은 하드웨어 크기 조정 지침을[&#128279;](/help/managing/hardware-sizing-guidelines.md) 참조하세요.
 
 ### 지원 수준 {#support-levels}
 
@@ -449,7 +449,7 @@ XMP 원본에 쓰기 지원되며 다음 플랫폼 및 파일 형식에 사용�
 
 * **운영 체제:**
 
-   * Linux®(64비트 시스템에서 32비트 및 32비트 애플리케이션 지원). 32비트 클라이언트 라이브러리를 설치하는 단계는 64비트 Red Hat® Linux®](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)에서 XMP 추출 및 다시 쓰기를 활성화하는 방법을 참조하십시오[.
+   * Linux®(64비트 시스템에서 32비트 및 32비트 애플리케이션 지원). 32비트 클라이언트 라이브러리를 설치하는 단계는 64비트 Red Hat® Linux®[&#128279;](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)에서 XMP 추출 및 다시 쓰기를 활성화하는 방법을 참조하십시오.
 
    * Windows Server
    * macOS X (64비트)

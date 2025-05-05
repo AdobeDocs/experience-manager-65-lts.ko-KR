@@ -32,8 +32,10 @@ AEM Forms 서비스 팩 6.5.21.0(으)로 업그레이드한 후 `PaperCapture` �
 1. 다운로드한 폴더의 컨텐츠를 추출하고 복사합니다.
 1. 해당 애플리케이션 서버의 아래 경로로 이동합니다.
    * **jboss**:
+
      `..\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\PaperCaptureSvc`
    * **weblogic**:
+
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **websphere**:\
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`

@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## 마이그레이션 방법 {#approach-to-migration}
 
-AEM Forms 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md)에서 [AEM Forms 6.5 LTS로 [업그레이드](../../forms/using/upgrade.md)할 수 있습니다. 이전 설치를 업그레이드했는지 새로 설치했는지 여부에 따라 다음 중 하나를 수행해야 합니다.
+AEM Forms 6.5.22.0[&#128279;](/help/forms/using/upgrade-forms-osgi.md)에서 AEM Forms 6.5 LTS로 [업그레이드](../../forms/using/upgrade.md)할 수 있습니다. 이전 설치를 업그레이드했는지 새로 설치했는지 여부에 따라 다음 중 하나를 수행해야 합니다.
 
 **업그레이드된 경우**
 

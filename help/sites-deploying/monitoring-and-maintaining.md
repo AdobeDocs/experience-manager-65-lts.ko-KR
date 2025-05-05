@@ -249,7 +249,7 @@ AEM WCM 및 저장소에 대한 모든 액세스 요청이 여기에 등록됩�
 
 >[!NOTE]
 >
->ImageServer 및 s7액세스 로그는 **시스템/콘솔/상태**번들리스트**페이지에서 생성된 전체 다운로드**패키지에 포함되지 않습니다. 지원을 위해 [!DNL Dynamic Media] 문제가 있는 경우 고객 지원 센터에 문의할 때 ImageServer 및 s7액세스 로그를 추가하십시오.
+>ImageServer 및 s7액세스 로그는 **시스템/콘솔/상태**&#x200B;번들리스트&#x200B;**페이지에서 생성된 전체 다운로드**&#x200B;패키지에 포함되지 않습니다. 지원을 위해 [!DNL Dynamic Media] 문제가 있는 경우 고객 지원 센터에 문의할 때 ImageServer 및 s7액세스 로그를 추가하십시오.
 
 ### DEBUG 로그 수준 활성화 {#activating-the-debug-log-level}
 
@@ -536,7 +536,7 @@ OSGi 이벤트는 AEM 웹 콘솔의 **구성 상태** 탭 > **로그 파일** �
 
 >[!NOTE]
 >
->성능](/help/sites-deploying/configuring-performance.md#configuring-for-performance) 향상에 사용할 수 있는 특정 [구성도 확인할 수 있습니다.
+>성능[&#128279;](/help/sites-deploying/configuring-performance.md#configuring-for-performance) 향상에 사용할 수 있는 특정 구성도 확인할 수 있습니다.
 
 다음은 발생하는 일반적인 성능 문제와 이를 발견하고 해결하는 방법에 대한 제안을 나열합니다.
 

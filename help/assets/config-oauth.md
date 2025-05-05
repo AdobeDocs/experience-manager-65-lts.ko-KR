@@ -52,6 +52,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
+
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * 새 OAuth 구성의 클라이언트 ID로 `auth.token.provider.client.id`을(를) 업데이트합니다.
    * `auth.access.token.request`을(를) `"https://ims-na1.adobelogin.com/ims/token/v3"`(으)로 업데이트

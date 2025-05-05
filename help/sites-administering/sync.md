@@ -81,7 +81,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 **사용자 동기화 사용**
 
-* 작성자의 ****
+* 작성자의 **&#x200B;**
 
    * 관리자 권한으로 로그인
    * [웹 콘솔에 액세스](/help/sites-deploying/configuring-osgi.md)
@@ -303,9 +303,11 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
    * 이름이 *sling.id.file*&#x200B;인 파일을 검색하고 삭제합니다.
 
       * 예를 들어 Linux® 시스템의 경우:
+
         `rm -i $(find . -type f -name sling.id.file)`
 
       * 예를 들어 Windows 시스템의 경우:
+
         `use windows explorer and search for *sling.id.file*`
 
 1. 게시 인스턴스 시작

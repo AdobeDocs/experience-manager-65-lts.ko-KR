@@ -99,7 +99,7 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 
 >[!CAUTION]
 >
->경험 조각에는 ****** [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)만 지원됩니다.
+>경험 조각에는 **&#x200B;**&#x200B;** [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)만 지원됩니다.
 >
 >경험 조각은 편집 가능한 템플릿을 기반으로 하는 페이지에서만 사용할 수 있습니다.
 
@@ -110,9 +110,11 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 1. 두 가지 모두:
 
    1. 템플릿의 리소스 유형(초기 노드)은 다음 항목에서 상속해야 합니다.
+
       `cq/experience-fragments/components/xfpage`
 
    1. 그리고 템플릿 이름은 다음으로 시작해야 합니다.
+
       `experience-fragments`
 이렇게 하면 이 폴더의 `cq:allowedTemplates` 속성에 `experience-fragment`(으)로 시작하는 이름을 가진 모든 템플릿이 포함되므로 사용자가 /content/experience-fragments에서 경험 조각을 만들 수 있습니다. 고객은 이 속성을 업데이트하여 자체 명명 구성표 또는 템플릿 위치를 포함할 수 있습니다.
 

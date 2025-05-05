@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 코드 베이스 업그레이드 {#upgrade-code-base}
 
-### 버전 제어 {#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}에서 6.5 LTS 코드에 대한 전용 분기 만들기
+### 버전 제어에서 6.5 LTS 코드에 대한 전용 분기 만들기 {#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}
 
 AEM 구현에 필요한 모든 코드 및 구성은 일부 버전의 제어를 사용하여 관리되어야 합니다. AEM 타겟 버전의 코드 베이스에 필요한 변경 사항을 관리하기 위해 버전 제어의 전용 분기를 만들어야 합니다. AEM의 대상 버전 및 후속 버그 수정에 대한 코드 베이스의 반복적인 테스트는 이 분기에서 관리됩니다.
 

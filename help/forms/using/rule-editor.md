@@ -105,7 +105,7 @@ forms-power-users 그룹에 추가된 사용자는 새 스크립트를 만들고
 
 ### 언제 {#whenruletype}
 
-**When** 규칙 형식은 **condition-action-alternate action** 규칙 구문을 따르거나 경우에 따라 **condition-action** 구문을 따릅니다. 이 규칙 유형에서는 먼저 평가 조건을 지정한 다음 조건이 충족될 경우 트리거할 작업을 지정합니다( `True`). When 규칙 유형을 사용하는 동안 여러 AND 및 OR 연산자를 사용하여 중첩 표현식을](#nestedexpressions) 만들 [수 있습니다.
+**When** 규칙 형식은 **condition-action-alternate action** 규칙 구문을 따르거나 경우에 따라 **condition-action** 구문을 따릅니다. 이 규칙 유형에서는 먼저 평가 조건을 지정한 다음 조건이 충족될 경우 트리거할 작업을 지정합니다( `True`). When 규칙 유형을 사용하는 동안 여러 AND 및 OR 연산자를 사용하여 중첩 표현식을[&#128279;](#nestedexpressions) 만들 수 있습니다.
 
 When 규칙 유형을 사용하면 양식 개체에 대한 조건을 평가하고 하나 이상의 개체에 대해 작업을 수행할 수 있습니다.
 
@@ -376,7 +376,7 @@ Enable 규칙 유형과 유사한 **Disable** 규칙 유형을 사용하면 조�
 
 하나 이상의 유효한 규칙이 적용된 양식 개체는 녹색 점으로 표시됩니다. 양식 개체에 적용된 규칙이 잘못된 경우 양식 개체는 노란색 점으로 표시됩니다.
 
-함수 탭에는 Sum Of, Min Of, Max Of, Average Of, Number Of 및 Validate Form과 같은 기본 제공 함수 집합이 포함되어 있습니다. 이러한 함수를 사용하여 반복 가능한 패널 및 테이블 행의 값을 계산하고 규칙을 작성할 때 작업 및 조건문에 사용할 수 있습니다. 그러나 사용자 지정 함수도](#custom-functions) 만들 [수 있습니다.
+함수 탭에는 Sum Of, Min Of, Max Of, Average Of, Number Of 및 Validate Form과 같은 기본 제공 함수 집합이 포함되어 있습니다. 이러한 함수를 사용하여 반복 가능한 패널 및 테이블 행의 값을 계산하고 규칙을 작성할 때 작업 및 조건문에 사용할 수 있습니다. 그러나 사용자 지정 함수도[&#128279;](#custom-functions) 만들 수 있습니다.
 
 ![함수 탭](assets/functions.png)
 

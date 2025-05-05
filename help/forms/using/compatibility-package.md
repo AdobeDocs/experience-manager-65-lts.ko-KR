@@ -27,7 +27,7 @@ AEMFD 호환성 패키지를 통해 [AEM Forms에서 다음 자산을 사용할 
 
 자세한 내용은 [호환성 패키지를 설치하여 AEM Forms 6.5와 호환되도록 만든 Assets](../../forms/using/compatibility-package.md#assetsmadecompatible)을(를) 참조하십시오.
 
-## AEM Forms 6.5 LTS {#add-support-for-aem-forms-and-assets-in-aem-forms-6.5.lts}에서 AEM Forms 6.5, 6.4, 6.3 및 6.2 자산에 대한 지원 추가
+## AEM Forms 6.5 LTS에서 AEM Forms 6.5, 6.4, 6.3 및 6.2 자산에 대한 지원 추가 {#add-support-for-aem-forms-and-assets-in-aem-forms-6.5.lts}
 
 업그레이드를 수행한 후 다음을 수행하여 AEMFD 호환성 패키지를 설치하고 에셋을 6.5와 호환되도록 합니다.
 

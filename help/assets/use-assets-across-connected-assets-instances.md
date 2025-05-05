@@ -47,7 +47,7 @@ ht-degree: 15%
   | | [!DNL Sites] as a [!DNL Cloud Service] | AMS의 [!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites] 온-프레미스 |
   |---|---|---|---|
   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 지원됨 | 지원됨 | 지원됨 |
-  | AMS **의**[!DNL Experience Manager] 6.5 [!DNL Assets] | 지원됨 | 지원됨 | 지원됨 |
+  | AMS **의**&#x200B;[!DNL Experience Manager] 6.5 [!DNL Assets] | 지원됨 | 지원됨 | 지원됨 |
   | **[!DNL Experience Manager]6.5 [!DNL Assets] 온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
 ### 지원되는 파일 형식 {#mimetypes}
@@ -93,6 +93,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 1. 기존 [!DNL Sites] 배포에 액세스하거나 다음 명령을 사용하여 배포를 만드십시오.
 
    1. JAR 파일의 폴더에서 터미널에서 다음 명령을 실행하여 각 [!DNL Experience Manager] 서버를 만듭니다.
+
       `java -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
    1. 몇 분 후에 [!DNL Experience Manager] 서버가 성공적으로 시작됩니다. 이 [!DNL Sites] 배포를 웹 페이지 작성을 위한 로컬 시스템으로 간주합니다(예: `https://[local_sites]:4502`).

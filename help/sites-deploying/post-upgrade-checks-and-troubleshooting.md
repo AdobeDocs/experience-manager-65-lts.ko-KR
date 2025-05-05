@@ -95,7 +95,7 @@ MongoMK 또는 새 TarMK 세그먼트 형식을 사용하는 경우, 개정 정�
 
 ### 테스트 계획 실행 {#execute-test-plan}
 
-**테스트 프로시저** 섹션](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure)에서 [코드 및 사용자 지정 업그레이드에 정의된 대로 자세한 테스트 계획을 실행하십시오.
+**테스트 프로시저** 섹션[&#128279;](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure)에서 코드 및 사용자 지정 업그레이드에 정의된 대로 자세한 테스트 계획을 실행하십시오.
 
 ## 업그레이드 관련 문제 분석 {#analyzing-issues-with-the-upgrade}
 

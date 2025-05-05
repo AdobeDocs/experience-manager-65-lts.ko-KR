@@ -77,7 +77,7 @@ ht-degree: 37%
    + [Adobe Campaign 구성 요소](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
    + [Adobe Campaign 타기팅](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
    + [AEM에서 Adobe Campaign Forms 만들기](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
-+ 클래식 UI {#assets}에서 Assets 작성
++ 클래식 UI에서 Assets 작성 {#assets}
    + [자산 작업](/help/sites-classic-ui-authoring/classicui-assets.md)
    + [Dynamic Media Assets 제공](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
    + [페이지에 Dynamic Media Assets 추가](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
