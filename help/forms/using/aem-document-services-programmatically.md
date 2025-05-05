@@ -26,7 +26,7 @@ ht-degree: 1%
 
 * DocAssurance 서비스 API를 사용하기 전에 [DocAssurance 서비스를 구성](/help/forms/using/install-configure-document-services.md)합니다.
 
-* AEM Maven 프로젝트로 [AEM Forms 클라이언트 SDK](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)을(를) 다운로드하고 구성합니다. AEM 문서 서비스를 사용하여 Maven 프로젝트를 작성하는 데 필요한 클라이언트 클래스를 사용할 수 있습니다.
+* AEM Maven 프로젝트로 [AEM Forms 클라이언트 SDK](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)을(를) 다운로드하고 구성합니다. AEM 문서 서비스를 사용하여 Maven 프로젝트를 작성하는 데 필요한 클라이언트 클래스를 사용할 수 있습니다.
 
 * [Maven을 사용하여 AEM 프로젝트를 빌드하는 방법](/help/sites-developing/ht-projects-maven.md) 알아보기
 
@@ -68,7 +68,7 @@ DocAssurance 서비스를 사용하여 다음 작업을 수행할 수 있습니�
 
 >[!NOTE]
 >
->이 모든 서비스는 Javadoc을 URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)에서 찾을 수 있는 입력 매개 변수로 Document 개체를 사용합니다.
+>이 모든 서비스는 Javadoc을 URL [https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/index.html)에서 찾을 수 있는 입력 매개 변수로 Document 개체를 사용합니다.
 
 ### 보이지 않는 서명 필드 추가 {#adding-an-invisible-signature-field}
 
@@ -4463,7 +4463,7 @@ PDF Generator 서비스는 기본 파일 형식을 PDF으로 변환하는 API를
 GeneratePDFService는 .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf(더 이상 사용되지 않음), .jpg, .bmp, .tif, .png, .html 및 기타 여러 파일 형식 등의 다양한 파일 형식을 PDF으로 변환할 수 있는 API를 제공합니다. 또한 PDF을 다양한 파일 형식으로 내보내고 PDF를 최적화할 수 있는 API를 제공합니다. 이 서비스는 다음 API를 지원합니다.
 
 * **createPDF**: 지원되는 파일 형식을 PDF 문서로 변환합니다. Microsoft Word, Microsoft PowerPoint, Microsoft Excel 및 Microsoft 프로젝트와 같은 파일 형식을 지원합니다. 이러한 애플리케이션 외에도 모든 서드파티 일반 PDF 생성 애플리케이션 유형을 API에 연결할 수도 있습니다.
-* **exportPDF**: PDF 문서를 지원되는 파일 형식으로 변환합니다. 이 메서드는 PDF을 입력으로 수락하고 PDF의 콘텐츠를 지정된 파일 형식 형식으로 내보냅니다. PDF 문서를 Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01(CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word 문서( doc, docx) Microsoft Excel 통합 문서( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript ps(), Rich Text Format( rtf), Text(Accessible)( txt(Plain)( txt TIFF tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB)로 내보낼 수 있습니다 a-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF PDF/A-3b(sRGB) 형식 PDF 출력에 대해 [사용자 지정 Preflight 프로필](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)을 지정할 수도 있습니다.
+* **exportPDF**: PDF 문서를 지원되는 파일 형식으로 변환합니다. 이 메서드는 PDF을 입력으로 수락하고 PDF의 콘텐츠를 지정된 파일 형식 형식으로 내보냅니다. PDF 문서를 Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01(CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word 문서( doc, docx) Microsoft Excel 통합 문서( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript ps(), Rich Text Format( rtf), Text(Accessible)( txt(Plain)( txt TIFF tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB)로 내보낼 수 있습니다 a-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF PDF/A-3b(sRGB) 형식 PDF 출력에 대해 [사용자 지정 Preflight 프로필](https://helpx.adobe.com/kr/acrobat/using/preflight-profiles-acrobat-pro.html)을 지정할 수도 있습니다.
 
 * **optimizePDF**: PDF 문서를 최적화하고 PDF 문서를 한 유형에서 다른 유형으로 변환합니다. 메서드는 PDF 문서를 입력으로 수락합니다.
 * **htmlToPdf2**: HTML 페이지를 PDF 문서로 변환합니다. HTML 페이지의 URL을 입력으로 허용합니다.

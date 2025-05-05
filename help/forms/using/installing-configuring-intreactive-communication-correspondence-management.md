@@ -97,7 +97,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 1. 패키지 관리자(https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) 열고 [패키지&#x200B;]&#x200B;**업로드를 클릭하여**&#x200B;패키지를 업로드.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-   AEM Forms 릴리스[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) 문서에 나열된 직접 링크 를 통해 패키지를 다운로드 할 수도 있습니다.
+   AEM Forms 릴리스[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) 문서에 나열된 직접 링크 를 통해 패키지를 다운로드 할 수도 있습니다.
 
 1. 패키지가 설치되면 AEM 인스턴스 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms Server를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 AEM-Installation-Directory&rbrack;/crx-quickstart/logs/error.로그 파일에 &lbrack;표시되지 않고 로그가 안정적일 때까지 기다립니다.
 

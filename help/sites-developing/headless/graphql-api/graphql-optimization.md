@@ -84,7 +84,7 @@ GraphQL 쿼리와 해당 JSON 응답은 CDN을 사용할 때 `GET` 요청으로 
 
 다음을 참조하십시오.
 
-* [AEM에서 CDN 사용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
+* [AEM에서 CDN 사용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#using-dispatcher-with-a-cdn)
 
 #### HTTP 캐시 제어 헤더 설정 {#set-http-cache-control-headers}
 

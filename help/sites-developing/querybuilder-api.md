@@ -36,11 +36,11 @@ REST API는 JSON으로 전송되는 응답과 함께 HTTP를 통해 동일한 �
 
 ## Gem 세션 {#gem-session}
 
-[Adobe Experience Manager(AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html)은(는) Adobe 전문가가 제공하는 Adobe Experience Manager에 대한 일련의 기술적인 분석입니다. 이 쿼리 빌더 전용 세션은 도구의 개요 및 사용에 유용합니다.
+[Adobe Experience Manager(AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=ko)은(는) Adobe 전문가가 제공하는 Adobe Experience Manager에 대한 일련의 기술적인 분석입니다. 이 쿼리 빌더 전용 세션은 도구의 개요 및 사용에 유용합니다.
 
 >[!NOTE]
 >
->AEM Gem 세션 [쿼리 빌더에 대한 자세한 개요를 보려면 AEM QueryBuilder를 쉽게 만든 검색 양식](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html)을 참조하십시오.
+>AEM Gem 세션 [쿼리 빌더에 대한 자세한 개요를 보려면 AEM QueryBuilder를 쉽게 만든 검색 양식](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=ko)을 참조하십시오.
 
 ## 샘플 쿼리 {#sample-queries}
 

@@ -16,7 +16,7 @@ ht-degree: 15%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
 AEM Forms의 최신 기능 및 향상된 기능에 대한 자세한 내용은 [AEM Forms의 새로운 기능](../../forms/using/whats-new.md)을 참조하세요.

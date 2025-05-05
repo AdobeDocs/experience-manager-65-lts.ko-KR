@@ -20,7 +20,7 @@ ht-degree: 0%
 * [How to Use the Log Viewer](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 -->
 
-* [워크플로우 및 감사 로그를 제거하는 방법](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24590)
+* [워크플로우 및 감사 로그를 제거하는 방법](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-24590)
 
 * [성능 조정 팁](/help/sites-deploying/configuring-performance.md)
 

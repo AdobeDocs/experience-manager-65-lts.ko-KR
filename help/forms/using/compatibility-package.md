@@ -16,7 +16,7 @@ ht-degree: 3%
 
 ## 개요 {#overview}
 
-대화형 통신은 AEM Forms 6.5 LTS에서 고객 커뮤니케이션을 만들기 위한 기본적이고 권장되는 방법입니다. AEM Forms 6.5 LTS에서 문자를 계속 사용하려면 최신 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)를 설치해야 합니다.
+대화형 통신은 AEM Forms 6.5 LTS에서 고객 커뮤니케이션을 만들기 위한 기본적이고 권장되는 방법입니다. AEM Forms 6.5 LTS에서 문자를 계속 사용하려면 최신 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)를 설치해야 합니다.
 
 AEMFD 호환성 패키지를 통해 [AEM Forms에서 다음 자산을 사용할 수 있습니다. 6.5.22.0, 6.4, 6.3 및 6.2(AEM Forms 6.5 LTS](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms))
 
@@ -31,9 +31,9 @@ AEMFD 호환성 패키지를 통해 [AEM Forms에서 다음 자산을 사용할 
 
 업그레이드를 수행한 후 다음을 수행하여 AEMFD 호환성 패키지를 설치하고 에셋을 6.5와 호환되도록 합니다.
 
-[AEM 호환성 패키지](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)가 미리 설치되어 있는지 확인하십시오.
+[AEM 호환성 패키지](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)가 미리 설치되어 있는지 확인하십시오.
 
-1. 최신 AEM 6.5 LTS [호환성 패키지](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)를 설치하십시오.
+1. 최신 AEM 6.5 LTS [호환성 패키지](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)를 설치하십시오.
 
    패키지를 업로드하고 설치하는 방법에 대한 자세한 내용은 [패키지를 사용하여 작업하는 방법](/help/sites-administering/package-manager.md)을 참조하세요.
 

@@ -32,7 +32,7 @@ AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms 또는
    1. [패키지 관리자](/help/sites-administering/package-manager.md)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
    1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-      [AEM Forms 릴리스](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 문서에 나열된 직접 링크를 사용하여 패키지를 다운로드할 수도 있습니다.
+      [AEM Forms 릴리스](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 문서에 나열된 직접 링크를 사용하여 패키지를 다운로드할 수도 있습니다.
 
       패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 중지하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 &lt;crx-repository>/error.log 파일에 나타나고 로그가 안정될 때까지 기다립니다. 또한 몇 가지 패키지는 설치된 상태로 유지될 수 있습니다. 이러한 패키지의 상태를 무시해도 됩니다.
 
@@ -52,7 +52,7 @@ AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms 또는
 
      마이그레이션 유틸리티를 사용하면 이전 버전의 적응형 양식 및 서신 관리 에셋이 AEM 6.5 양식과 호환될 수 있습니다. 이 유틸리티는 AEM 소프트웨어 배포에서 다운로드할 수 있습니다. 마이그레이션 유틸리티를 구성하고 사용하는 방법에 대한 단계별 정보는 [마이그레이션 유틸리티](../../forms/using/migration-utility.md)를 참조하십시오.
 
-     [초안 및 제출 구성 요소 통합](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)에 샘플 을 사용하고 있으며 이전 버전에서 업그레이드하는 경우 업그레이드를 수행한 후 다음 SQL 쿼리를 실행하십시오.
+     [초안 및 제출 구성 요소 통합](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)에 샘플 을 사용하고 있으며 이전 버전에서 업그레이드하는 경우 업그레이드를 수행한 후 다음 SQL 쿼리를 실행하십시오.
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am
@@ -93,4 +93,4 @@ AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms 또는
 
    >[!NOTE]
    >
-   >AEM 6.4 Forms에서 crx-repository 구조가 변경되었습니다. 6.3 Forms에서 AEM 6.5 Forms으로 업그레이드하는 경우 새로 만드는 사용자 지정에 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 [AEM의 Forms 저장소 재구성](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)을 참조하십시오.
+   >AEM 6.4 Forms에서 crx-repository 구조가 변경되었습니다. 6.3 Forms에서 AEM 6.5 Forms으로 업그레이드하는 경우 새로 만드는 사용자 지정에 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 [AEM의 Forms 저장소 재구성](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)을 참조하십시오.
