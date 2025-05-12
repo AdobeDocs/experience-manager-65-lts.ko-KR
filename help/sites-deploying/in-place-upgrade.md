@@ -6,9 +6,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: db9bf14ec9fefcbafb7b6d749de966e97c54abda
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
-* **필요한 최소 Java 버전:** 시스템에 Oracle의 Java™ 17이 설치되어 있는지 확인하십시오.
+* **필요한 최소 Java 버전:** 시스템에 Oracle Java™ 17/21이 설치되어 있는지 확인하십시오.
 
 ## AEM Quickstart jar 파일 준비 {#prep-quickstart-file}
 
@@ -180,7 +180,7 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 >[!NOTE]
 >
->Java 17에서 일부 Java 8/11 인수에 대한 지원이 제거되었습니다. [Oracle Java™ 17 문서](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) 및 [AEM 6.5 LTS에 대한 Java&amp;trade 인수 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)을 참조하십시오.
+>Java 17/21에서 일부 Java 8/11 인수에 대한 지원이 제거되었습니다. [Oracle Java™ 17 문서](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html), [Oracle Java™ 21 문서](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html) 및 [AEM 6.5 LTS에 대한 Java&amp;trade 인수 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations)을 참조하십시오.
 
 업그레이드를 실행하려면 jar 파일을 사용하여 AEM을 시작하여 인스턴스를 불러오는 것이 중요합니다.
 

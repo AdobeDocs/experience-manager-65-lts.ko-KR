@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: 3677c3921a7dd603afd251aebf4be67947fb1e02
+source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '263'
 ht-degree: 1%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 1%
 
 ## Adobe이 AEM용 6.5 LTS를 출시한 이유는 무엇입니까?
 
-Adobe은 제공하는 애플리케이션의 보안 및 안정성에 대한 노력을 아끼지 않고 있습니다. AEM 6.5 장기 지원은 AEM 6.5에 대한 향후 업데이트를 위한 기반을 마련합니다. 특히 AEM 6.5 LTS에는 Oracle Java 17에 대한 지원이 포함되어 있으며 이는 새로운 AEM 기능과 혁신적인 기능을 제공하는 AEM 지점이 될 것입니다.
+Adobe은 제공하는 애플리케이션의 보안 및 안정성에 대한 노력을 아끼지 않고 있습니다. AEM 6.5 장기 지원은 AEM 6.5에 대한 향후 업데이트를 위한 기반을 마련합니다. 특히 AEM 6.5 LTS는 Oracle Java 17 및 Java 21에 대한 지원을 포함하며 새로운 AEM 기능과 혁신을 제공하는 AEM 지점이 될 것입니다.
 
 ## 온-프레미스 고객입니다. AEM 6.5 LTS로 업그레이드하지 않으면 어떻게 됩니까?
 
-AEM 6.5 LTS에는 Oracle Java 17에 대한 지원을 포함하여 중요한 보안 및 안정성 업데이트가 포함되어 있습니다. Adobe은 최소 2년 동안 AEM 6.5를 계속 지원하지만 조직에서는 6.5 LTS로의 업그레이드 계획을 시작하는 것이 좋습니다.
+AEM 6.5 LTS에는 Oracle Java 17 및 Java 21에 대한 지원을 포함하여 중요한 보안 및 안정성 업데이트가 포함되어 있습니다. Adobe은 최소 2년 동안 AEM 6.5를 계속 지원하지만 조직에서는 6.5 LTS로의 업그레이드 계획을 시작하는 것이 좋습니다.
 
 ## 기존 사용자 지정 및 통합이 영향을 받습니까?
 

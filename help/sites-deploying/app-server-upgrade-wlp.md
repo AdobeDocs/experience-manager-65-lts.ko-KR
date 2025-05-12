@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: 82af7ee5b3665dcc33b47e05c8580e9981728888
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ### 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
-* **필요한 최소 Java 버전**: WLP 서버에 IBM® Sumeru JRE 17을 설치했는지 확인하십시오.
+* **필요한 최소 Java 버전**: WLP 서버에 IBM® Sumeru JRE 17/21을 설치했는지 확인하십시오.
 
 ### 업그레이드 수행 {#performing-the-upgrade}
 
@@ -76,13 +76,13 @@ ht-degree: 1%
 
 1. `sling.properties` 파일(일반적으로 `crx-quickstart/conf/`에 있음)을 백업하고 삭제합니다.
 1. 서블릿 버전을 `server.xml` 파일에서 **6.0**(으)로 변경
-1. Java 17을 설치하고 다음을 실행하여 올바로 설치되었는지 확인합니다.
+1. Java 17/Java 21을 설치하고 다음을 실행하여 올바로 설치되었는지 확인합니다.
 
    ```shell
    java -version
    ```
 
-1. AEM 서버에 대한 시작 매개 변수를 검토하고 요구 사항에 따라 매개 변수를 업데이트해야 합니다. 자세한 내용은 [Java 17 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-considerations)을 참조하십시오.
+1. AEM 서버에 대한 시작 매개 변수를 검토하고 요구 사항에 따라 매개 변수를 업데이트해야 합니다. 자세한 내용은 [Java 17/Java 21 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-considerations)을 참조하십시오.
 1. 새 6.5 LTS war을 다운로드하여 `/<path-to-aem-server>/dropins/`에 있는 dropins 폴더에 복사합니다.
 1. AEM 인스턴스 시작: 일반적으로 다음 명령을 사용하여 수행할 수 있습니다.
 

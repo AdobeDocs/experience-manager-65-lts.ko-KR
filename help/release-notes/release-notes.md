@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0afd255ec5c9d3db37f2f059782b35052761b1cf
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 24%
+source-wordcount: '805'
+ht-degree: 28%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 24%
 
 ## 새로운 기능 {#what-s-new}
 
-[!DNL Adobe Experience Manager] 6.5 LTS는 [!DNL Adobe Experience Manager] 6.5 코드 베이스에 대한 업그레이드 릴리스입니다. 새롭고 향상된 기능, 주요 고객 수정 사항, 우선 순위가 높은 고객 개선 사항 및 제품 안정화를 위한 일반적인 버그 수정을 제공합니다. 또한 SP22까지 [!DNL Adobe Experience Manager] 6.5 서비스 팩 릴리스도 포함됩니다.
+[!DNL Adobe Experience Manager] 6.5 LTS는 [!DNL Adobe Experience Manager] 6.5 코드 베이스에 대한 업그레이드 릴리스입니다. 주요 고객 수정 사항, 우선 순위가 높은 고객 개선 사항 및 제품 안정화를 위한 일반적인 버그 수정 사항을 제공합니다. 또한 SP22까지 [!DNL Adobe Experience Manager] 6.5 서비스 팩 릴리스도 포함됩니다.
 
 아래 목록은 개요를 제공하며 후속 페이지에는 전체 세부 정보가 나열됩니다.
 
@@ -36,9 +36,9 @@ Quickstart는 Eclipse Jetty 11.0.x를 서블릿 엔진으로 사용합니다.
 
 #### Java™ 지원  {#java-support}
 
-* Java™ 17 지원
+* Java™ 17 및 Java™ 21 지원
 * 최적의 성능을 위해 기본 GC 값을 다른 값으로 재정의합니다. 자세한 내용은 [설치 및 업데이트](/help/sites-deploying/custom-standalone-install.md) 섹션을 참조하십시오.
-* Java™ 17 유지 관리 업데이트는 Oracle에서 공개적으로 제공되지 않을 경우 AEM 관련 프로젝트에서 고객이 사용할 수 있도록 Adobe에서 배포합니다.
+* Java™ 17 및 Java™ 21 유지 관리 업데이트는 Oracle에서 공개적으로 제공되지 않을 경우 AEM 관련 프로젝트에서 고객이 사용할 수 있도록 Adobe에서 배포합니다.
 
 #### Uberjar 패키징 {#uber-jar-packaging}
 
@@ -60,7 +60,7 @@ Quickstart는 Eclipse Jetty 11.0.x를 서블릿 엔진으로 사용합니다.
 
 >[!NOTE]
 >
->Java™ 17은 AEM 6.5 LTS와 함께 사용하기 권장되는 버전입니다.
+>Java™ 17/Java™ 21은 AEM 6.5 LTS와 함께 사용할 수 있는 권장 버전입니다.
 
 ## 더 이상 사용되지 않고 제거된 기능 {#deprecated-and-removed-features}
 
@@ -81,7 +81,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 
 | 영역 | 기능 | 대체 | 버전(SP) |
 |---|---|---|---|
-| Sites | [SPA 편집기](/help/sites-developing/spa-overview.md) | AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음과 같습니다<br>.- 시각적 편집을 위한 [범용 편집기](/help/sites-developing/universal-editor/introduction.md)<br>- 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md) | 6.5LTS GA |
+| Sites | [SPA 편집기](/help/sites-developing/spa-overview.md) | AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음과 같습니다<br>.- 시각적 편집을 위한 [범용 편집기](/help/sites-developing/universal-editor/introduction.md)<br>- 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md) | 6.5 LTS GA |
 
 ### 제거된 기능 {#removed-features}
 
@@ -89,29 +89,29 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 
 | 영역 | 기능 | 대체 | 버전(SP) |
 |--- |--- |--- |--- |
-| 상거래 | AEM CIF Classic은 지원되지 않습니다. | [AEM CIF](/help/commerce/cif/migration.md)로 마이그레이션해야 합니다. | 6.5LTS GA |
-| 솔루션 | 소셜/커뮤니티는 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
-| Screens | Screens은 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
-| 자산 | 번들이 social에 종속되어 있으므로 `dam-pim` 및 `dam-rating`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
-| 자산 | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()`이(가) 제거되었습니다. | 추가된 대체 API `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()`을(를) 사용합니다. | 6.5LTS GA |
-| 포털 | AEM 포털 디렉터는 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
-| Granite | `com.adobe.granite.socketio` 번들이 제거되었습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
-| Granite | `com.adobe.granite.crx-explorer`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
-| Granite | `crx2oak`은(는) 지원되지 않습니다. | [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)의 관련 버전 선택 | 6.5LTS GA |
-| Adobe | `com.adobe.cq.cq-searchpromote-integration`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
-| 구아바 | 이제 모든 guava 종속성이 AEM에서 제거되었으므로 `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` 번들은 AEM의 일부가 아닙니다. | 고객이 guava에 의존하는 경우 고객이 직접 guava를 추가하거나 가능한 경우 guava 코드를 java 컬렉션 또는 기타 대체 요소로 대체할 수 있습니다. | 6.5LTS GA |
-| We.Retail | We-retail 샘플 사이트는 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
-| 공개 소스 | `oak-solr-osgi` 번들은 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
-| 공개 소스 | `org.apache.servicemix.bundles.abdera-parser`, `org.apache.servicemix.bundles.jdom` 및 `org.apache.sling.atom.taglib`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5LTS GA |
-| 공개 소스 | 이제 `org.apache.commons.commons-io`에서 `org.apache.commons.io`개의 패키지를 내보냅니다. | 변경할 필요가 없습니다. | 6.5LTS GA |
-| 공개 소스 | `com.sun.javax.mail` 번들에서 `javax.mail` 패키지를 내보내는 중입니다. | 변경할 필요가 없습니다. | 6.5LTS GA |
-| 공개 소스 | 이제 `org.apache.jackrabbit.oak-jackrabbit-api` 번들에서 `org.apache.jackrabbit.api` 패키지를 내보냅니다. | 변경할 필요가 없습니다. | 6.5LTS GA |
-| 공개 소스 | `com.github.jknack.handlebars`은(는) 지원되지 않습니다. | 관련 [버전](https://mvnrepository.com/artifact/com.github.jknack/handlebars) 선택 | 6.5LTS GA |
+| 상거래 | AEM CIF Classic은 지원되지 않습니다. | [AEM CIF](/help/commerce/cif/migration.md)로 마이그레이션해야 합니다. | 6.5 LTS GA |
+| 솔루션 | 소셜/커뮤니티는 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
+| Screens | Screens은 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
+| 자산 | 번들이 social에 종속되어 있으므로 `dam-pim` 및 `dam-rating`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
+| 자산 | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()`이(가) 제거되었습니다. | 추가된 대체 API `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()`을(를) 사용합니다. | 6.5 LTS GA |
+| 포털 | AEM 포털 디렉터는 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
+| Granite | `com.adobe.granite.socketio` 번들이 제거되었습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
+| Granite | `com.adobe.granite.crx-explorer`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
+| Granite | `crx2oak`은(는) 지원되지 않습니다. | [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)의 관련 버전 선택 | 6.5 LTS GA |
+| Adobe | `com.adobe.cq.cq-searchpromote-integration`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
+| 구아바 | 이제 모든 guava 종속성이 AEM에서 제거되었으므로 `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` 번들은 AEM의 일부가 아닙니다. | 고객이 guava에 의존하는 경우 고객이 직접 guava를 추가하거나 가능한 경우 guava 코드를 java 컬렉션 또는 기타 대체 요소로 대체할 수 있습니다. | 6.5 LTS GA |
+| We.Retail | We-retail 샘플 사이트는 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
+| 공개 소스 | `oak-solr-osgi` 번들은 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
+| 공개 소스 | `org.apache.servicemix.bundles.abdera-parser`, `org.apache.servicemix.bundles.jdom` 및 `org.apache.sling.atom.taglib`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
+| 공개 소스 | 이제 `org.apache.commons.commons-io`에서 `org.apache.commons.io`개의 패키지를 내보냅니다. | 변경할 필요가 없습니다. | 6.5 LTS GA |
+| 공개 소스 | `com.sun.javax.mail` 번들에서 `javax.mail` 패키지를 내보내는 중입니다. | 변경할 필요가 없습니다. | 6.5 LTS GA |
+| 공개 소스 | 이제 `org.apache.jackrabbit.oak-jackrabbit-api` 번들에서 `org.apache.jackrabbit.api` 패키지를 내보냅니다. | 변경할 필요가 없습니다. | 6.5 LTS GA |
+| 공개 소스 | `com.github.jknack.handlebars`은(는) 지원되지 않습니다. | 관련 [버전](https://mvnrepository.com/artifact/com.github.jknack/handlebars) 선택 | 6.5 LTS GA |
 
 ## 제한된 웹 사이트{#restricted-sites}
 
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이고 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko/docs/customer-one/using/home).
+* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 

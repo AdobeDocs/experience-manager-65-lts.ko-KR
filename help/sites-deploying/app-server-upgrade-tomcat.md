@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: b835dbf6fd7f40a2a1e1ca26c8a6870b69a19cbe
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ### 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
-* **필요한 최소 Java 버전**: Tomcat 서버에 Oracle® JRE 17을 설치했는지 확인하십시오.
+* **필요한 최소 Java 버전**: Tomcat 서버에 Oracle® JRE 17/21을 설치했는지 확인하십시오.
 * **Tomcat 서버**: 6.5 LTS에 필요한 Tomcat 서버 버전은 **11.0.x**&#x200B;입니다.
 
 ### 업그레이드 수행 {#performing-the-upgrade}
@@ -35,15 +35,15 @@ ht-degree: 0%
 1. AEM 6.5가 이미 배포된 경우 *`https://<serveraddress:port>/system/console/bundles`*&#x200B;에 액세스하여 번들이 올바르게 작동하는지 확인하십시오.
 1. 그런 다음 AEM 6.5를 중지합니다. 이 작업은 Tomcat 앱 관리자(*`https://<serveraddress:port>/manager/html`*)에서 수행할 수 있습니다.
 1. 업그레이드 작업을 수행하기 전에 AEM 6.5 서버 백업과 같은 [업그레이드 전](#pre-upgrade-steps) 작업을 완료했는지 확인하십시오
-1. Java 17을 설치하고 다음 명령을 실행하여 올바로 설치되었는지 확인합니다.
+1. Java 17/Java 21을 설치하고 다음 명령을 실행하여 올바로 설치되었는지 확인합니다.
 
    ```
    java –version
    ```
 
 1. AEM 6.5 LTS 호환 Tomcat 서버 설정
-1. AEM 서버에 대한 시작 매개 변수를 검토하고 시스템 요구 사항에 따라 매개 변수를 업데이트해야 합니다. 자세한 내용은 [Java 17 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-considerations)을 참조하십시오
-1. Java 17을 사용하여 Tomcat 서버에 새로 다운로드한 6.5 LTS war을 배포하고 다음을 실행하여 AEM 6.5 LTS Tomcat 서버를 시작합니다.
+1. AEM 서버에 대한 시작 매개 변수를 검토하고 시스템 요구 사항에 따라 매개 변수를 업데이트해야 합니다. 자세한 내용은 [Java 17/Java 21 고려 사항](/help/sites-deploying/custom-standalone-install.md#java-considerations)을 참조하십시오
+1. Java 17/Java 21을 사용하여 Tomcat 서버에 새로 다운로드한 6.5 LTS war을 배포하고 다음을 실행하여 AEM 6.5 LTS Tomcat 서버를 시작합니다.
 
    ```
    $CATALINA_HOME/bin/catalina.sh start
