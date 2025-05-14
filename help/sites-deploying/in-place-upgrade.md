@@ -6,9 +6,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: 9e58e4c993929f792bd71bf70b3e64719e761b7f
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
    java -Xmx4096m -jar aem-quickstart.jar -unpack
    ```
 
-1. 압축 해제 명령은 `crx-quickstart/conf/` 폴더 아래에 새 `sling.properties` 파일을 생성합니다. 이제 새로 생성된 `sling.properties` 파일에 사용자 지정 변경 사항을 적용할 수 있습니다.
+1. 사용자 정의 sling.properties를 적용해야 하는 경우 새 로컬 AEM 인스턴스를 생성하고 crx-quickstart/conf 디렉토리에서 sling.properties 파일을 검색합니다. 필요한 사용자 지정 변경 사항을 이 파일에 적용한 다음, 업그레이드 중인 AEM 인스턴스의 crx-quickstart/conf 디렉토리에 복사합니다. 사용자 지정 속성이 없는 경우 이 단계를 건너뛸 수 있습니다.
 
 <!-- Alexandru: drafting temporarily
 
