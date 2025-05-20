@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 28%
+source-wordcount: '927'
+ht-degree: 25%
 
 ---
 
@@ -62,7 +62,7 @@ Quickstart는 Eclipse Jetty 11.0.x를 서블릿 엔진으로 사용합니다.
 >
 >Java™ 17/Java™ 21은 AEM 6.5 LTS와 함께 사용할 수 있는 권장 버전입니다.
 
-## 더 이상 사용되지 않고 제거된 기능 {#deprecated-and-removed-features}
+## 더 이상 사용되지 않으며 제거된 기능 {#deprecated-and-removed-features}
 
 Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 교체하기 위해 제품 기능을 지속해서 평가합니다.
 
@@ -81,7 +81,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 
 | 영역 | 기능 | 대체 | 버전(SP) |
 |---|---|---|---|
-| Sites | [SPA 편집기](/help/sites-developing/spa-overview.md) | AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기는 다음과 같습니다<br>.- 시각적 편집을 위한 [범용 편집기](/help/sites-developing/universal-editor/introduction.md)<br>- 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md) | 6.5 LTS GA |
+| Sites | [SPA 편집기](/help/sites-developing/spa-overview.md) | AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기:<br>- 시각적 편집을 위한 [범용 편집기](/help/sites-developing/universal-editor/introduction.md)<br>- 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md) | 6.5 LTS GA |
 
 ### 제거된 기능 {#removed-features}
 
@@ -108,10 +108,28 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 | 공개 소스 | 이제 `org.apache.jackrabbit.oak-jackrabbit-api` 번들에서 `org.apache.jackrabbit.api` 패키지를 내보냅니다. | 변경할 필요가 없습니다. | 6.5 LTS GA |
 | 공개 소스 | `com.github.jknack.handlebars`은(는) 지원되지 않습니다. | 관련 [버전](https://mvnrepository.com/artifact/com.github.jknack/handlebars) 선택 | 6.5 LTS GA |
 
+## 알려진 문제 {#known-issues}
+
+### SSL 전용 기능을 사용한 Dispatcher 연결 실패 {#ssl-only-feature}
+
+AEM 배포에서 SSL 전용 기능을 활성화하는 경우 Dispatcher와 AEM 인스턴스 간 연결에 영향을 주는 알려진 문제가 있습니다. 이 기능을 활성화하면 상태 검사가 실패하고 Dispatcher와 AEM 인스턴스 간의 통신이 중단될 수 있습니다.
+
+**영향:**
+* HTTP 500 응답 코드를 사용한 상태 검사 실패
+* Dispatcher와 AEM 인스턴스 간 트래픽 오류
+* Dispatcher를 통해 콘텐츠를 제대로 제공할 수 없음
+
+**영향을 받는 환경:**
+* dispatcher 구성을 사용한 AEM 배포
+* SSL 전용 기능이 활성화된 시스템
+
+**솔루션:**
+이 문제가 발생하는 경우 Adobe 고객 지원 센터에 문의하십시오. 이 문제를 해결하기 위해 핫픽스 [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.0.zip)을(를) 사용할 수 있습니다. 필요한 핫픽스를 적용할 때까지 SSL 전용 기능을 활성화하지 마십시오.
+
 ## 제한된 웹 사이트{#restricted-sites}
 
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이고 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko/docs/customer-one/using/home).
+* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
