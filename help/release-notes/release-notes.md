@@ -1,14 +1,14 @@
 ---
 title: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보
-description: 다음은 Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보입니다.
+description: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보를 확인하십시오.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
+source-git-commit: abba652bb5d7eb9b5f902ce99c07f2186e313173
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 25%
+source-wordcount: '1016'
+ht-degree: 19%
 
 ---
 
@@ -32,17 +32,17 @@ ht-degree: 25%
 
 [!DNL Adobe Experience Manager] 6.5 LTS의 플랫폼은 OSGi 기반 프레임워크(Apache Sling 및 Apache Felix) 및 Java™ 콘텐츠 저장소의 업데이트된 버전 위에 빌드합니다. Apache Jackrabbit Oak 1.68.x.
 
-Quickstart는 Eclipse Jetty 11.0.x를 서블릿 엔진으로 사용합니다.
+Eclipse Jetty 11.0.x는 빠른 시작을 위한 서블릿 엔진으로 사용됩니다.
 
 #### Java™ 지원  {#java-support}
 
 * Java™ 17 및 Java™ 21 지원
 * 최적의 성능을 위해 기본 GC 값을 다른 값으로 재정의합니다. 자세한 내용은 [설치 및 업데이트](/help/sites-deploying/custom-standalone-install.md) 섹션을 참조하십시오.
-* Java™ 17 및 Java™ 21 유지 관리 업데이트는 Oracle에서 공개적으로 제공되지 않을 경우 AEM 관련 프로젝트에서 고객이 사용할 수 있도록 Adobe에서 배포합니다.
+* Adobe은 Oracle에서 공개적으로 제공되지 않을 경우 AEM 관련 프로젝트에서 고객 사용을 위해 Java™ 17 및 Java™ 21 유지 관리 업데이트를 배포합니다.
 
 #### Uberjar 패키징 {#uber-jar-packaging}
 
-* AEM 6.5 LTS의 Uberjar 패키징에는 약간의 차이가 있다. 자세한 내용은 [AEM Uber Jar 버전 업데이트](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)를 참조하십시오.
+* AEM 6.5 LTS의 Uberjar 포장에 약간의 차이가 있다. 자세한 내용은 [AEM Uber Jar 버전 업데이트](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)를 참조하십시오.
 
 #### 업그레이드 {#upgrade}
 
@@ -64,7 +64,7 @@ Quickstart는 Eclipse Jetty 11.0.x를 서블릿 엔진으로 사용합니다.
 
 ## 더 이상 사용되지 않으며 제거된 기능 {#deprecated-and-removed-features}
 
-Adobe는 항상 이전 기능과의 호환성을 신중하게 고려하면서 전반적인 고객 가치를 향상하도록 오랜 시간에 걸쳐 오래된 기능을 새롭게 만들거나 더 현대적인 대안으로 교체하기 위해 제품 기능을 지속해서 평가합니다.
+Adobe은 지속적으로 제품 기능을 검토하여 이전 기능을 현대화하거나 교체하여 고객 가치를 향상시킵니다. 이러한 변경은 이전 버전과의 호환성을 신중하게 고려하여 이루어집니다.
 
 Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 알리기 위해 다음 규칙이 적용됩니다.
 
@@ -75,7 +75,8 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 
 ### 더 이상 사용되지 않는 기능 {#deprecated-features}
 
-이 섹션에는 AEM 6.5 LTS에서 더 이상 사용되지 않는 것으로 표시된 기능이 나와 있습니다. 일반적으로 향후 릴리스에서 제거될 예정인 기능은 먼저 대체 기능을 제공하며 사용 중단되는 것으로 설정됩니다.
+이 섹션에서는 Adobe이 AEM 6.5 LTS에서 더 이상 사용되지 않는 기능을 나열합니다. 일반적으로 Adobe은 향후 릴리스에서 제거하기 전에 기능을 더 이상 사용하지 않으며, 대체 기능을 제공합니다.
+
 
 현재 배포에서 해당 기능을 사용 중인지 검토하고 이들 구현을 변경하여 제공되는 대체 기능을 사용하도록 계획을 세우는 것이 좋습니다.
 
@@ -89,7 +90,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 
 | 영역 | 기능 | 대체 | 버전(SP) |
 |--- |--- |--- |--- |
-| 상거래 | AEM CIF Classic은 지원되지 않습니다. | [AEM CIF](/help/commerce/cif/migration.md)로 마이그레이션해야 합니다. | 6.5 LTS GA |
+| 상거래 | AEM CIF Classic은 지원되지 않습니다. | [AEM CIF](/help/commerce/cif/migration.md)(으)로 마이그레이션합니다. | 6.5 LTS GA |
 | 솔루션 | 소셜/커뮤니티는 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
 | Screens | Screens은 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
 | 자산 | 번들이 social에 종속되어 있으므로 `dam-pim` 및 `dam-rating`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
@@ -97,7 +98,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 | 포털 | AEM 포털 디렉터는 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
 | Granite | `com.adobe.granite.socketio` 번들이 제거되었습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
 | Granite | `com.adobe.granite.crx-explorer`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
-| Granite | `crx2oak`은(는) 지원되지 않습니다. | [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)의 관련 버전 선택 | 6.5 LTS GA |
+| Granite | `crx2oak`은(는) 지원되지 않습니다. | [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)의 관련 버전을 선택하십시오. | 6.5 LTS GA |
 | Adobe | `com.adobe.cq.cq-searchpromote-integration`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
 | 구아바 | 이제 모든 guava 종속성이 AEM에서 제거되었으므로 `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` 번들은 AEM의 일부가 아닙니다. | 고객이 guava에 의존하는 경우 고객이 직접 guava를 추가하거나 가능한 경우 guava 코드를 java 컬렉션 또는 기타 대체 요소로 대체할 수 있습니다. | 6.5 LTS GA |
 | We.Retail | We-retail 샘플 사이트는 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
@@ -110,17 +111,34 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 
 ## 알려진 문제 {#known-issues}
 
+### AEM 6.5.21-6.5.23 및 AEM 6.5 LTS GA의 JSP 스크립팅 번들 문제**
+
+AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `org.apache.sling.scripting.jsp:2.6.0` 번들과 함께 제공됩니다. 이 문제는 일반적으로 AEM 인스턴스가 많은 동시 요청을 처리할 때 로드가 높은 상태에서 발생합니다.
+
+이 문제가 발생하면 `org.apache.sling.scripting.jsp:2.6.0`에 대한 참조와 함께 다음 예외 중 하나가 오류 로그에 표시될 수 있습니다.
+
+* `java.io.IOException: classFile.delete() failed`
+* `java.io.IOException: tmpFile.renameTo(classFile) failed`
+* `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
+* `java.io.FileNotFoundException`
+
+이 오류가 발생하면 유일한 복구 방법은 AEM 인스턴스를 다시 시작하는 것입니다.
+
+Adobe 고객 지원 센터에 문의하여 이 릴리스 노트를 참조하여 문제를 해결하십시오.
+
 ### SSL 전용 기능을 사용한 Dispatcher 연결 실패 {#ssl-only-feature}
 
-AEM 배포에서 SSL 전용 기능을 활성화하는 경우 Dispatcher와 AEM 인스턴스 간 연결에 영향을 주는 알려진 문제가 있습니다. 이 기능을 활성화하면 상태 검사가 실패하고 Dispatcher와 AEM 인스턴스 간의 통신이 중단될 수 있습니다.
+AEM 배포에서 SSL 전용 기능을 활성화할 때 Dispatcher 인스턴스와 AEM 인스턴스 간 연결에 영향을 주는 알려진 문제가 있습니다. 이 기능을 활성화하면 상태 검사가 실패하고 Dispatcher 및 AEM 인스턴스 간의 통신이 중단될 수 있습니다.
 
 **영향:**
+
 * HTTP 500 응답 코드를 사용한 상태 검사 실패
-* Dispatcher와 AEM 인스턴스 간 트래픽 오류
-* Dispatcher를 통해 콘텐츠를 제대로 제공할 수 없음
+* Dispatcher 및 AEM 인스턴스 간 트래픽 오류
+* Dispatcher을 통해 콘텐츠를 제대로 제공할 수 없습니다.
 
 **영향을 받는 환경:**
-* dispatcher 구성을 사용한 AEM 배포
+
+* Dispatcher 구성을 사용한 AEM 배포
 * SSL 전용 기능이 활성화된 시스템
 
 **솔루션:**
@@ -131,5 +149,5 @@ AEM 배포에서 SSL 전용 기능을 활성화하는 경우 Dispatcher와 AEM �
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이고 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko/docs/customer-one/using/home).
+* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
