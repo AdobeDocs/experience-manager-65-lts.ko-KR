@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: abba652bb5d7eb9b5f902ce99c07f2186e313173
+source-git-commit: 02b9f90dc9ef504f04a9b1f692358089d4626094
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 19%
@@ -111,7 +111,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 
 ## 알려진 문제 {#known-issues}
 
-### AEM 6.5.21-6.5.23 및 AEM 6.5 LTS GA의 JSP 스크립팅 번들 문제**
+### AEM 6.5.21-6.5.23 및 AEM 6.5 LTS GA의 JSP 스크립팅 번들 문제
 
 AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `org.apache.sling.scripting.jsp:2.6.0` 번들과 함께 제공됩니다. 이 문제는 일반적으로 AEM 인스턴스가 많은 동시 요청을 처리할 때 로드가 높은 상태에서 발생합니다.
 
@@ -149,5 +149,5 @@ AEM 배포에서 SSL 전용 기능을 활성화할 때 Dispatcher 인스턴스�
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이고 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko/docs/customer-one/using/home).
+* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
