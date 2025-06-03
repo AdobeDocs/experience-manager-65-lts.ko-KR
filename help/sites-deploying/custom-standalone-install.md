@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
+source-git-commit: dc92f670e7025f9490abbcecff4b485af331bd6d
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -73,10 +73,6 @@ Oracle Java 17 또는 Java 21을 실행하는 경우 AEM을 시작할 때 명령
 * 개발 중에 파일 시스템에 무언가를 넣는 것이 더 쉬울 수 있습니다.
 * 문제가 발생하면 웹 콘솔과 저장소에 연결할 수 없습니다. 이를 통해 추가 번들을 이 디렉토리에 넣을 수 있으며 설치해야 합니다.
 * `crx-quickstart/install` 폴더는 빠른 시작을 시작하기 전에 만들 수 있으며 추가 패키지를 넣을 수 있습니다.
-
->[!NOTE]
->
->예를 보려면 [서버 시작 시 자동으로 CRX 패키지를 설치하는 방법](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html)을 참조하십시오.
 
 ## Adobe Experience Manager as a Windows Service 설치 및 시작 {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
