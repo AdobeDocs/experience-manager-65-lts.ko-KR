@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 ### 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
 * **필요한 최소 Java 버전**: Tomcat 서버에 Oracle® JRE 17/21을 설치했는지 확인하십시오.
-* **Tomcat 서버**: 6.5 LTS에 필요한 Tomcat 서버 버전은 **11.0.x**&#x200B;입니다.
+* **Tomcat 서버**: AEM 6.5 LTS에서 지원되는 Tomcat 서버 버전은 **10.0.x** 및 **10.1.x**&#x200B;입니다.
 
 ### 업그레이드 수행 {#performing-the-upgrade}
 

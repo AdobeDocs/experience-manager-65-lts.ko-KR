@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: 5f968f5dc0696a683cc063d330c8edfba05f11ab
+source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 다음 애플리케이션 서버의 설치 단계가 설명되어 있습니다.
 
 * [WebSphere](#websphere)
-* [Tomcat 11.0.x](#tomcat)
+* [Tomcat 10.0.x/10.1.x](#tomcat)
 
 웹 애플리케이션 설치, 서버 구성 및 서버 시작 및 중지 방법에 대한 자세한 내용은 해당 애플리케이션 서버 설명서를 참조하십시오.
 
@@ -122,7 +122,7 @@ AEM은 단일 war 파일로 제공됩니다.
 
 * AEM 웹 애플리케이션 시작
 
-#### Tomcat 11.0.x {#tomcat}
+#### Tomcat 10.0.x/10.1.x {#tomcat}
 
 배포하기 전에 위의 [일반 설명](#general-description)을 읽으십시오.
 
