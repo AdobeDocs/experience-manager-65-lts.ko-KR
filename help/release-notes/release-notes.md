@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 02b9f90dc9ef504f04a9b1f692358089d4626094
+source-git-commit: 2a83d6d4f25a866eacd87d6e2a4318b99c158ea0
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1002'
 ht-degree: 19%
 
 ---
@@ -122,9 +122,7 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
 * `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
 * `java.io.FileNotFoundException`
 
-이 오류가 발생하면 유일한 복구 방법은 AEM 인스턴스를 다시 시작하는 것입니다.
-
-Adobe 고객 지원 센터에 문의하여 이 릴리스 노트를 참조하여 문제를 해결하십시오.
+이 문제를 해결하기 위해 핫픽스 [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip)을(를) 사용할 수 있습니다.
 
 ### SSL 전용 기능을 사용한 Dispatcher 연결 실패 {#ssl-only-feature}
 
@@ -142,12 +140,12 @@ AEM 배포에서 SSL 전용 기능을 활성화할 때 Dispatcher 인스턴스�
 * SSL 전용 기능이 활성화된 시스템
 
 **솔루션:**
-이 문제가 발생하는 경우 Adobe 고객 지원 센터에 문의하십시오. 이 문제를 해결하기 위해 핫픽스 [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.0.zip)을(를) 사용할 수 있습니다. 필요한 핫픽스를 적용할 때까지 SSL 전용 기능을 활성화하지 마십시오.
+이 문제가 발생하는 경우 Adobe 고객 지원 센터에 문의하십시오. 이 문제를 해결하기 위해 핫픽스 [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip)을(를) 사용할 수 있습니다. 필요한 핫픽스를 적용할 때까지 SSL 전용 기능을 활성화하지 마십시오.
 
 ## 제한된 웹 사이트{#restricted-sites}
 
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이고 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko/docs/customer-one/using/home).
+* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
