@@ -10,9 +10,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 7584fa1c544f9dd499b4007a9158e25b783f620c
 workflow-type: tm+mt
-source-wordcount: '2577'
+source-wordcount: '2594'
 ht-degree: 1%
 
 ---
@@ -211,6 +211,10 @@ Lucene은 `n`개의 단어를 검색할 때 두 목록(또는 라운드 로빈 `
 | --- | --- | --- |
 
 여러 항목이 발견되면 점수별로 정렬됩니다.
+
+>[!NOTE]
+>
+>이 섹션에서 설명하는 검색 메커니즘은 Linux `grep` 명령처럼 부분 일치가 아닌 Lucene 인덱싱을 사용합니다.
 
 ### Lucene 속성 색인 {#the-lucene-property-index}
 
