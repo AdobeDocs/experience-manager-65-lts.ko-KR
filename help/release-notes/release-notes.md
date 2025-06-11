@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보
-description: Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보를 확인하십시오.
+description: Adobe Experience Manager 6.5 LTS에 대한 최신 릴리스 정보를 찾아보십시오.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
@@ -8,7 +8,7 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 2a83d6d4f25a866eacd87d6e2a4318b99c158ea0
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
@@ -147,5 +147,5 @@ AEM 배포에서 SSL 전용 기능을 활성화할 때 Dispatcher 인스턴스�
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이고 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko/docs/customer-one/using/home).
+* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
