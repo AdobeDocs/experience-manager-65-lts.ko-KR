@@ -5,12 +5,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: cb5495f9-bc54-4515-ae15-55a5397500aa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 0%
 
 ---
+
 
 # Adobe Experience Manager 내에서 외부 SPA 편집 {#editing-external-spa-within-aem}
 
@@ -27,9 +29,9 @@ ht-degree: 0%
 사전 요구 사항은 간단합니다.
 
 * AEM 인스턴스가 로컬에서 실행 중인지 확인합니다.
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko&#available-properties)을(를) 사용하여 기본 AEM SPA 프로젝트를 만듭니다.
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties)을(를) 사용하여 기본 AEM SPA 프로젝트를 만듭니다.
    * 이는 외부 SPA를 포함하도록 업데이트되는 AEM 프로젝트의 기초가 됩니다.
-   * 이 문서의 샘플은 [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko#spa-editor)의 시작점을 사용합니다.
+   * 이 문서의 샘플은 [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor)의 시작점을 사용합니다.
 * 즉시 통합하고자 하는 작동 중인 외부 React SPA가 있습니다.
 
 ## AEM 프로젝트에 SPA 업로드 {#upload-spa-to-aem-project}
@@ -371,7 +373,7 @@ RemotePage 구성 요소에서는 구현이 GitHub의 [webpack-manifest-plugin](
 
 다음 참조 자료는 AEM의 컨텍스트에서 SPA를 이해하는 데 도움이 될 수 있습니다.
 
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko)
 * [React를 사용하여 AEM에서 SPA 시작하기](spa-getting-started-react.md)
 * [SPA 참조 자료(API 참조)](spa-reference-materials.md)

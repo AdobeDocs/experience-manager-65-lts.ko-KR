@@ -9,12 +9,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 798b9ad8-47fa-432d-8887-9de63c20cfca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '2023'
 ht-degree: 1%
 
 ---
+
 
 # SPA 블루프린트{#spa-blueprint}
 
@@ -99,7 +101,7 @@ SPA 구성 요소는 페이지 모델과 동기화되어야 하며 그에 따라
 
 #### 구현 {#implementations}
 
-#### 반응 {#react}
+#### React {#react}
 
 npm 모듈: [@adobe/aem-react-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 

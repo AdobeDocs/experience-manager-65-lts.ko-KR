@@ -7,12 +7,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: aceec3ac-abdf-4ae2-b197-f58cb7faea5f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 65%
 
 ---
+
 
 # SPA 소개 및 워크스루 {#spa-introduction-and-walkthrough}
 
@@ -46,7 +48,7 @@ SPA 편집기는 AEM 내에서 SPA를 지원하는 복합 솔루션을 제공합
 >
 >이 문서에서는 데모용으로만 [WKND Spa 프로젝트 앱](https://github.com/adobe/aem-guides-wknd-spa)을 사용합니다. 를 프로젝트 작업에 사용하지 마십시오.
 >
->모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK을 사용하는 [AEM Project Archetype,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)을(를) 사용해야 합니다.
+>모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK을 사용하는 [AEM Project Archetype,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을(를) 사용해야 합니다.
 
 ### SPA란 무엇입니까? {#what-is-a-spa}
 
@@ -177,7 +179,7 @@ SPA가 최종 사용자를 위해 동작하는 방식을 경험한 다음 SPA �
    * 페이지 본문에는 콘텐츠가 없습니다. 주로 스타일 시트와 `clientlib-react.min.js` 등 다양한 스크립트에 대한 호출로 구성됩니다.
    * 해당 스크립트는 이 애플리케이션의 기본 드라이버이고 모든 콘텐츠 렌더링을 담당합니다.
 
-1. 브라우저 기본 내장 도구를 사용하여 페이지를 검사합니다. DOM 콘텐츠가 완전히 로드되어 있는지 확인합니다.
+1. 브라우저의 기본 제공 도구를 사용하여 페이지를 검사합니다. DOM 콘텐츠가 완전히 로드되어 있는지 확인합니다.
 
    ![4단계](assets/spa-walkthrough-step-1-4.png)
 
