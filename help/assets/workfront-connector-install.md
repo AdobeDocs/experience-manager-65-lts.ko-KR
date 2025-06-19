@@ -6,9 +6,9 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: dd6eec1e-fa63-410a-bcd3-61892861fd0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 3%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
-[!DNL Adobe Experience Manager]에서 관리자 액세스 권한이 있는 사용자가 향상된 커넥터를 설치합니다. 설치하기 전에 플랫폼 지원 및 기타 [커넥터에 대한 필수 구성 요소](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)를 검토하십시오.
+[!DNL Adobe Experience Manager]에서 관리자 액세스 권한이 있는 사용자가 향상된 커넥터를 설치합니다. 설치하기 전에 플랫폼 지원 및 기타 [커넥터에 대한 필수 구성 요소](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)를 검토하십시오.
 
 >[!IMPORTANT]
 >
@@ -28,14 +28,14 @@ ht-degree: 3%
 >
 >* Adobe은 이 커넥터를 중복 커넥터로 만드는 [!DNL Adobe Workfront] 및 [!DNL Adobe Experience Manager]에 대한 업데이트를 릴리스할 수 있습니다. 이러한 경우 고객은 이 커넥터를 사용하지 않도록 전환해야 할 수 있습니다.
 >
->* Adobe은 향상된 커넥터 버전 1.7.4 이상을 지원합니다. 이전 프리릴리스 및 사용자 지정 버전은 지원되지 않습니다. 향상된 커넥터 버전을 확인하려면 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en)의 왼쪽 창에서 사용할 수 있는 `digital.hoodoo` 그룹으로 이동하십시오.
+>* Adobe은 향상된 커넥터 버전 1.7.4 이상을 지원합니다. 이전 프리릴리스 및 사용자 지정 버전은 지원되지 않습니다. 향상된 커넥터 버전을 확인하려면 [패키지 관리자](/help/sites-administering/package-manager.md)의 왼쪽 창에서 사용할 수 있는 `digital.hoodoo` 그룹으로 이동하십시오.
 >
 >* [Workfront for Experience Manager Assets 강화 커넥터에 대한 파트너 인증 시험](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)을 참조하세요. 시험에 대한 자세한 내용은 [시험 가이드](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)를 참조하세요.
 
 커넥터를 설치하려면 다음 단계를 수행하십시오.
 
 1. [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip)에서 커넥터를 다운로드합니다.
-1. [방화벽을 구성합니다](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html).
+1. [방화벽을 구성합니다](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html).
 1. Dispatcher에서 이름이 `authorization`, `username` 및 `apikey`인 HTTP 헤더를 허용합니다. `/bin/workfront-tools`에 `GET`, `POST` 및 `PUT` 요청을 허용합니다.
 1. [!DNL Experience Manager] 저장소에 다음 경로가 없는지 확인하십시오.
 
@@ -49,7 +49,6 @@ ht-degree: 3%
 1. [!DNL Experience Manager] 사용자 그룹에 `wf-workfront-users`을(를) 만들고 `/content/dam`에 `jcr:all` 권한을 할당합니다.
 1. **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**&#x200B;에 대한 기본 제공 인덱스 정의에 사용자 지정 속성을 추가하십시오. 아래 단계를 실행합니다.
    * **`wfReferenceNumber`**(이)라는 **`nt:unstructured`** 속성을 다음 위치에 추가:
-
      `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`
    * `true`(으)로 리인덱싱 플래그를 전환하여 `index /oak:index/ntFolderDamLucene`을(를) 리인덱싱합니다.
 

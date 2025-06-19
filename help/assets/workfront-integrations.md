@@ -6,10 +6,10 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 5181d278-2e6e-41f7-891e-1067a03de016
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 9%
+source-wordcount: '1112'
+ht-degree: 4%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 9%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Workfront]은(는) 업무의 전체 라이프사이클을 한 곳에서 관리할 수 있도록 도와주는 작업 관리 애플리케이션입니다. [!DNL Workfront]과(와) [!DNL Adobe Experience Manager Assets] 간의 통합을 통해 조직은 작업과 디지털 에셋 관리를 본질적으로 연결하여 콘텐츠 속도와 마켓 출시 속도를 개선할 수 있습니다. Workfront에서 작업을 관리하는 맥락에서 사용자는 필요한 문서 및 이미지에 액세스할 수 있습니다.
 
-[!DNL Workfront for Experience Manager enhanced connector]은(는) 통합 워크플로우를 통해 향상된 비즈니스 프로세스를 가능하게 하고 개인화된 통합 클라이언트 환경과 중앙 저장소를 제공합니다. Adobe은 표준 커넥터와 두 솔루션을 통합할 수 있는 향상된 커넥터를 제공합니다. 비교하려면 아래의 지원되는 기능을 확인하고 [새로운 기능 [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)을 확인하세요.
+[!DNL Workfront for Experience Manager enhanced connector]은(는) 통합 워크플로우를 통해 향상된 비즈니스 프로세스를 가능하게 하고 개인화된 통합 클라이언트 환경과 중앙 저장소를 제공합니다. Adobe은 표준 커넥터와 두 솔루션을 통합할 수 있는 향상된 커넥터를 제공합니다. 비교하려면 아래의 지원되는 기능을 확인하고 [새로운 기능 [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)을 확인하세요.
 
 [!DNL Workfront for Experience Manage enhanced connector]을(를) 통해 조직은 다음을 수행할 수 있습니다.
 
@@ -32,7 +32,7 @@ ht-degree: 9%
 * Experience Manager 워크플로우를 사용하여 구성 가능한 조건에 따라 Workfront 개체 상태를 설정합니다.
 * Experience Manager 게시 환경 또는 Brand Portal에 자산을 게시합니다.
 
-플랫폼 지원 및 향상된 커넥터에 대한 [필수 구성 요소](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)를 참조하세요.
+플랫폼 지원 및 향상된 커넥터에 대한 [필수 구성 요소](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)를 참조하세요.
 
 >[!IMPORTANT]
 >
@@ -40,7 +40,7 @@ ht-degree: 9%
 >
 >* Adobe은 이 커넥터를 중복 커넥터로 만드는 [!DNL Adobe Workfront] 및 [!DNL Adobe Experience Manager]에 대한 업데이트를 릴리스할 수 있습니다. 이러한 경우 고객은 이 커넥터를 사용하지 않도록 전환해야 할 수 있습니다.
 >
->* Adobe은 향상된 커넥터 버전 1.7.4 이상을 지원합니다. 이전 프리릴리스 및 사용자 지정 버전은 지원되지 않습니다. 향상된 커넥터 버전을 확인하려면 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en)의 왼쪽 창에서 사용할 수 있는 `digital.hoodoo` 그룹으로 이동하십시오.
+>* Adobe은 향상된 커넥터 버전 1.7.4 이상을 지원합니다. 이전 프리릴리스 및 사용자 지정 버전은 지원되지 않습니다. 향상된 커넥터 버전을 확인하려면 [패키지 관리자](/help/sites-administering/package-manager.md)의 왼쪽 창에서 사용할 수 있는 `digital.hoodoo` 그룹으로 이동하십시오.
 >
 >* [Workfront for Experience Manager Assets 강화 커넥터에 대한 파트너 인증 시험](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)을 참조하세요. 시험에 대한 자세한 내용은 [시험 가이드](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)를 참조하세요.
 

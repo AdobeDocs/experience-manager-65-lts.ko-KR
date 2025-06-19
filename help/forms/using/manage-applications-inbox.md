@@ -1,17 +1,13 @@
 ---
 title: AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리
 description: AEM 받은 편지함 을 사용하면 애플리케이션 제출을 통해 Forms 중심의 워크플로우를 시작하고 작업을 관리할 수 있습니다.
-contentOwner: vishgupt
-topic-tags: document_services, publish
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1066'
 ht-degree: 3%
 
 ---
@@ -140,7 +136,7 @@ AEM 받은 편지함은 활성 작업만 표시합니다. 완료된 작업이 �
      | allowExplicitSharing | allowExplicitSharing | 부울 |
 
 
-   * AEM 패키지를 통해 인덱스를 배포합니다. [AEM 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ko) 프로젝트를 사용하여 배포 가능한 AEM 패키지를 만들 수 있습니다. 다음 샘플 코드를 사용하여 AEM Archetype 프로젝트에 인덱스를 추가합니다.
+   * AEM 패키지를 통해 인덱스를 배포합니다. [AEM 원형](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) 프로젝트를 사용하여 배포 가능한 AEM 패키지를 만들 수 있습니다. 다음 샘플 코드를 사용하여 AEM Archetype 프로젝트에 인덱스를 추가합니다.
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,8 +146,6 @@ AEM 받은 편지함은 활성 작업만 표시합니다. 완료된 작업이 �
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [속성 인덱스를 만들고 true로 설정합니다](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [속성 인덱스를 만들고 true로 설정합니다](/help/sites-deploying/queries-and-indexing.md#the-property-index).
 
-1. CRX DE에서 인덱스를 구성하거나 패키지를 통해 배포한 후 [저장소를 다시 인덱싱합니다](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
-
-https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html
+1. CRX DE에서 인덱스를 구성하거나 패키지를 통해 배포한 후 저장소를 다시 인덱싱합니다.

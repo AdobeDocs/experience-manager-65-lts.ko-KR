@@ -7,9 +7,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
 exl-id: 4b316ade-4431-41fc-bb8a-7262a17fb456
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1550'
 ht-degree: 4%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 4%
 
 ## 소개 {#introduction}
 
-기업은 여러 양식, 백엔드 시스템 및 기타 데이터 소스에서 데이터를 수집하고 처리합니다. 데이터 처리에는 검토 및 승인 절차, 반복 작업, 데이터 보관이 포함됩니다. 예를 들어, 양식을 검토하고 PDF 문서로 변환할 수 있습니다. 수동으로 수행하면 반복적인 작업에 많은 시간과 많은 리소스가 소요될 수 있습니다.
+기업은 여러 양식, 백엔드 시스템 및 기타 데이터 소스에서 데이터를 수집하고 처리합니다. 데이터 처리에는 검토 및 승인 절차, 반복 작업, 데이터 보관이 포함됩니다. 예를 들어 양식을 검토하여 PDF 문서로 변환합니다. 반복적인 작업을 수동으로 수행하는 경우 많은 시간과 많은 리소스가 소요될 수 있습니다.
 
-OSGi[&#128279;](../../forms/using/aem-forms-workflow.md)에서 Forms 중심의 작업 과정 워크플로우를 사용하여 적응형 양식 기반 워크플로우를 신속하게 빌드 할 수 있습니다. 이러한 워크플로는 검토 및 승인 워크플로, 비즈니스 프로세스 워크플로 및 기타 반복적인 작업을 자동화하는 데 도움이 될 수 있습니다. 이러한 작업 과정은 또한 문서를 처리하고(PDF 문서 작성, 조합, 배포 및 보관, 문서에 대한 액세스를 제한하는 디지털 서명 추가, 바코드 양식 디코딩 등) 양식 및 문서에서 Adobe Sign 서명 작업 과정을 사용하는 데 도움이 됩니다.
+[OSGi의 Forms 중심 워크플로](../../forms/using/aem-forms-workflow.md)를 사용하여 적응형 양식 기반 워크플로를 신속하게 빌드할 수 있습니다. 이러한 워크플로를 통해 검토 및 승인 워크플로, 비즈니스 프로세스 워크플로 및 기타 반복적인 작업을 자동화할 수 있습니다. 이러한 워크플로는 문서 처리(PDF 문서 만들기, 조합, 배포 및 보관, 디지털 서명 추가 등을 통해 문서 액세스를 제한, 바코드 양식 디코딩)와 양식 및 문서와 함께 Adobe Sign 서명 워크플로를 사용하는 데에도 도움이 됩니다.
 
-설정이 완료되면 이러한 워크플로우를 수동으로 트리거하여 정의된 프로세스를 완료하거나 사용자가 양식 또는 대화형 통신을 제출할 때 프로그래밍 방식으로 실행할 수 있습니다. 이 기능은 AEM Forms 추가 기능 패키지에 포함되어 있습니다.
+설정되면 이러한 워크플로우를 수동으로 트리거하여 정의된 프로세스를 완료하거나 사용자가 양식 또는 대화형 통신을 제출할 때 프로그래밍 방식으로 실행할 수 있습니다. 이 기능은 AEM Forms 추가 기능 패키지에 포함되어 있습니다.
 
 AEM Forms은 강력한 엔터프라이즈급 플랫폼입니다. OSGi에서의 Forms 중심 워크플로우는 AEM Forms의 기능 중 하나일 뿐입니다. 전체 기능 목록은 [AEM Forms 소개](introduction-aem-forms.md)를 참조하십시오.
 
@@ -104,20 +104,20 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
    1. **[!UICONTROL 솔루션]** 드롭다운 목록에서 **[!UICONTROL Forms]**&#x200B;을(를) 선택합니다.
    2. 패키지의 버전 및 유형을 선택합니다. **[!UICONTROL 다운로드 검색]** 옵션을 사용하여 결과를 필터링할 수도 있습니다.
 1. 운영 체제에 적용할 수 있는 패키지 이름을 선택하고 **[!UICONTROL EULA 약관 동의]**&#x200B;를 선택한 다음 **[!UICONTROL 다운로드]**&#x200B;를 선택합니다.
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
+1. [패키지 관리자](/help/sites-administering/package-manager.md)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
    [AEM Forms 릴리스](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
 
-1. 패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 AEM-Installation-Directory&rbrack;/crx-quickstart/logs/error.로그 파일에 &lbrack;표시되지 않고 로그가 안정될 때까지 기다립니다.
+1. 패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 [AEM-Installation-Directory]/crx-quickstart/logs/error.log 파일에 나타나지 않고 로그가 안정될 때까지 기다리십시오.
 
    >[!NOTE]
    >
-   > SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 리드 있습니다.
+   > SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
 
-1. 모든 작성자 및 Publish 인스턴스에서 1-7단계를 반복합니다.
+1. 모든 Author 및 Publish 인스턴스에서 1~7단계를 반복합니다.
 
-## Post 설치 구성 {#post-installation-configurations}
+## 설치 후 구성 {#post-installation-configurations}
 
 AEM Forms에는 몇 가지 필수 구성과 선택적 구성이 있습니다. 필수 구성에는 BouncyCastle 라이브러리 및 직렬화 에이전트 구성이 포함됩니다. 선택적 구성에는 Dispatcher 및 Adobe Target 구성이 포함됩니다.
 

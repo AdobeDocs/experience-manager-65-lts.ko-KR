@@ -1,17 +1,13 @@
 ---
 title: 인터페이스의 색상 구성표 변경
 description: AEM Forms 작업 영역 사용자 인터페이스 부분의 색상 구성표를 선택적으로 수정하는 방법입니다.
-contentOwner: robhagat
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: f15ead5f-d48c-401c-98c5-b58f93776f82
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '208'
 ht-degree: 0%
 
 ---
@@ -31,7 +27,7 @@ AEM Forms 작업 영역 상단에 있는 탐색 모음을 업데이트하려면
 
    >[!NOTE]
    >
-   >자세한 내용은 [WebDAV 액세스](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en)를 참조하십시오.
+   >자세한 내용은 [WebDAV 액세스](/help/sites-administering/webdav-access.md)를 참조하십시오.
 
 1. 다음 스타일을 추가하여 /apps/ws/css/newStyle.css에서 새 배경 이미지를 참조합니다.
 
