@@ -204,7 +204,7 @@ AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, �
 
 ### 워크플로우 및 Forms {#workflows-and-forms}
 
-일반적으로 워크플로는 AEM에서 양식 제출을 처리하는 데 사용됩니다. 표준 AEM 인스턴스에서 사용할 수 있는 [핵심 구성 요소 양식 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) 또는 [AEM Forms 솔루션](/help/forms/using/aem-forms-workflow.md)을 사용할 수 있습니다.
+일반적으로 워크플로는 AEM에서 양식 제출을 처리하는 데 사용됩니다. 표준 AEM 인스턴스에서 사용할 수 있는 [핵심 구성 요소 양식 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=ko) 또는 [AEM Forms 솔루션](/help/forms/using/aem-forms-workflow.md)을 사용할 수 있습니다.
 
 양식을 작성할 때 양식 제출을 워크플로우 모델과 쉽게 연결할 수 있습니다. 예를 들어 저장소의 특정 위치에 콘텐츠를 저장하거나 사용자에게 양식 제출 및 해당 콘텐츠에 대해 알릴 수 있습니다.
 
