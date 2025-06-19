@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 330f5cc5-1af4-4777-b386-b0755e6781df
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d37df3dc09122909adbb62ede6634939af105e06
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ AEM의 [워크플로 모델](/help/sites-developing/workflows.md#model)은(는) 
 
 >[!CAUTION]
 >
->수행되는 단계는 인스턴스가 생성될 때 *워크플로 모델에서 정의한 단계입니다*. 자세한 내용은 [워크플로우 개발](/help/sites-developing/workflows.md#model)을 참조하십시오.
+>수행되는 단계는 인스턴스가 생성될 때 *워크플로 모델에서 정의한 단계입니다*. 자세한 내용은 [워크플로 개발 및 확장 - 모델](/help/sites-developing/workflows.md#model)을 참조하십시오.
 
 워크플로 인스턴스는 다음 수명 주기에서 진행됩니다.
 
