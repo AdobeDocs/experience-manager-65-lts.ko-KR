@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 625affd0-0e1a-4db8-812f-b6ce70cfe035
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1453'
 ht-degree: 3%
 
 ---
@@ -39,10 +39,9 @@ AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, �
 >
 >* 워크플로우에 참여하려면 [워크플로우 사용](/help/sites-authoring/workflows.md)을 참조하세요.
 >* 워크플로우 및 워크플로우 인스턴스 관리는 [워크플로우 관리](/help/sites-administering/workflows.md)를 참조하십시오.
->* 전체 커뮤니티 문서에 대한 자세한 내용은 [Adobe Experience Manager 워크플로를 사용하여 디지털 Assets 수정](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html)을 참조하십시오.
+>* 전체 커뮤니티 문서에 대해서는 [Adobe Experience Manager 워크플로를 사용하여 디지털 Assets 수정](/help/assets/assets-workflow.md)을 참조하십시오.
 >* [워크플로우에 대한 AEM 전문가에게 문의](https://communities.adobeconnect.com/p5s33iburd54/)를 참조하십시오.
 >* 정보 위치를 변경하려면 [워크플로우 모범 사례 - 위치](/help/sites-developing/workflows-best-practices.md#locations)를 참조하세요.
->
 
 ## 모델 {#model}
 
@@ -52,7 +51,7 @@ AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, �
 
 워크플로우 모델의 버전이 관리됩니다. 워크플로 인스턴스를 실행할 때는 워크플로가 시작될 때 사용할 수 있는 대로 워크플로의 런타임 모델을 사용하고 유지합니다.
 
-**동기화**&#x200B;가 워크플로 모델 편집기[&#128279;](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model)에서 트리거될 때 런타임 모델이 생성됩니다.
+**동기화**&#x200B;가 워크플로 모델 편집기](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model)에서 트리거될 때 런타임 모델이 [생성됩니다.
 
 특정 인스턴스가 시작된 후 *후*&#x200B;에 발생하는 워크플로 모델 또는 생성된 런타임 모델에 대한 편집 내용이 해당 인스턴스에 적용되지 않습니다.
 
@@ -201,11 +200,11 @@ AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, �
    | 5단계 | 완료 |
    | 6단계 | 완료 |
 
-1. 워크플로우를 실행하면 단계 이름 대신 단계 이름에 따라 진행 상황을 볼 수 있습니다. [받은 편지함](/help/sites-authoring/inbox.md)에 나열된 워크플로 항목[&#128279;](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)의 작업 세부 정보 창에 있는 워크플로 정보 탭에 워크플로 진행률이 표시됩니다.
+1. 워크플로우를 실행하면 단계 이름 대신 단계 이름에 따라 진행 상황을 볼 수 있습니다. [받은 편지함](/help/sites-authoring/inbox.md)에 나열된 워크플로 항목](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)의 작업 세부 정보 창에 있는 [워크플로 정보 탭에 워크플로 진행률이 표시됩니다.
 
 ### 워크플로우 및 Forms {#workflows-and-forms}
 
-일반적으로 워크플로는 AEM에서 양식 제출을 처리하는 데 사용됩니다. 표준 AEM 인스턴스에서 사용할 수 있는 [핵심 구성 요소 양식 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=ko) 또는 [AEM Forms 솔루션](/help/forms/using/aem-forms-workflow.md)을 사용할 수 있습니다.
+일반적으로 워크플로는 AEM에서 양식 제출을 처리하는 데 사용됩니다. 표준 AEM 인스턴스에서 사용할 수 있는 [핵심 구성 요소 양식 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) 또는 [AEM Forms 솔루션](/help/forms/using/aem-forms-workflow.md)을 사용할 수 있습니다.
 
 양식을 작성할 때 양식 제출을 워크플로우 모델과 쉽게 연결할 수 있습니다. 예를 들어 저장소의 특정 위치에 콘텐츠를 저장하거나 사용자에게 양식 제출 및 해당 콘텐츠에 대해 알릴 수 있습니다.
 

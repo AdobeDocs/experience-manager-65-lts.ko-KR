@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 1ea2f849-ef36-47bf-ac3a-49d1984efca5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7d1ab7984bc890aa4f079357061f44784a3bd1fe
 workflow-type: tm+mt
-source-wordcount: '9070'
+source-wordcount: '9057'
 ht-degree: 64%
 
 ---
@@ -312,7 +312,7 @@ Adobe Flash와 같은 특정 미디어 형식의 콘텐츠 재생을 지원하�
 
 * [성공 기준 이해 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
 * [성공 기준을 충족하는 방법 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/kr/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
 
 ### 캡션(라이브) (1.2.4)  {#captions-live}
 
@@ -328,10 +328,9 @@ Adobe Flash와 같은 특정 미디어 형식의 콘텐츠 재생을 지원하�
 
 위의 [캡션(사전 기록된)](#captions-pre-recorded)에 대해 제공된 지침을 따르십시오. 하지만, 미디어의 라이브 특성 때문에, 캡션 제공은 가능한 한 빨리 그리고 일어나고 있는 일에 대응하여 만들어져야 합니다. 따라서 실시간 캡션 기능이나 음성을 텍스트로 변환하는 도구의 사용을 고려해 보아야 합니다.
 
-이 문서에서는 지침을 자세히 다루지 않지만 다음 리소스에서 유용한 정보를 확인할 수 있습니다.
+자세한 지침은 이 문서의 범위를 벗어나지만 다음 리소스에서 유용한 정보를 제공합니다.
 
 * [WebAIM: 실시간 캡션 기능](https://webaim.org/techniques/captions/realtime)
-* [AccessIT(워싱턴 대학교): 음성 인식 기능을 사용하여 캡션을 자동으로 생성할 수 있습니까?](https://www.washington.edu/doit/programs/accessit?1209)
 
 #### 추가 정보 - 캡션 (라이브) (1.2.4) {#more-information-captions-live}
 
@@ -450,7 +449,7 @@ AEM을 사용하면 적절한 HTML 요소를 사용하여 웹 페이지를 만�
 
   >[!NOTE]
   >
-  >시스템 관리자가 **테이블 속성**&#x200B;[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+  >시스템 관리자가 **테이블 속성**[ 대화 상자에서 이러한 값에 대한 지원을 추가할 수 있지만, 기본적으로 이러한 요소와 속성을 직접 사용할 수는 없습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
   **테이블**&#x200B;을(를) 추가할 때 대화 상자를 사용하여 **테이블 속성**&#x200B;을(를) 구성할 수 있습니다.
 
@@ -941,7 +940,7 @@ AEM에서는 **텍스트 필드**&#x200B;와 같은 양식 구성 요소를 페�
 
 #### 이미지 버튼 {#image-buttons}
 
-이미지 단추를 사용하면(예: **이미지 단추** 구성 요소) 편집 대화 상자의 **제목 및 텍스트** 탭에 있는 **제목** 필드에서 실제로 레이블이 아니라 이미지에 대한 대체 텍스트를 제공합니다. 따라서 아래 예에는 `Submit`이라는 텍스트가 있는 이미지에 편집 대화 상자의 `Submit`제목 필드를 사용하여 추가된 **&#x200B;**&#x200B;이라는 대체 텍스트가 있습니다.
+이미지 단추를 사용하면(예: **이미지 단추** 구성 요소) 편집 대화 상자의 **제목 및 텍스트** 탭에 있는 **제목** 필드에서 실제로 레이블이 아니라 이미지에 대한 대체 텍스트를 제공합니다. 따라서 아래 예에는 `Submit`이라는 텍스트가 있는 이미지에 편집 대화 상자의 `Submit`제목 필드를 사용하여 추가된 ****&#x200B;이라는 대체 텍스트가 있습니다.
 
 ![제목 필드(편집 대화 상자)에 대체 텍스트가 설정된 이미지 단추.](assets/chlimage_1-23a.png)
 
@@ -951,7 +950,7 @@ AEM에서는 **텍스트 필드**&#x200B;와 같은 양식 구성 요소를 페�
 
 ![라디오 그룹에 항목을 추가하고 있습니다. 그룹 제목은 제목 필드에 정의된 &#39;Contact me by&#39;입니다.](assets/chlimage_1-24a.png)
 
-하지만 그룹 제목과 라디오 버튼 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이 연결을 만들어야 하며, 이 작업은 페이지 소스 코드를 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성**&#x200B;[ 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+하지만 그룹 제목과 라디오 버튼 자체 간에 프로그래밍 방식의 연결은 없습니다. 템플릿 편집자는 필요한 `fieldset` 및 `legend` 태그로 제목을 둘러싸서 이 연결을 만들어야 하며, 이 작업은 페이지 소스 코드를 편집해야만 수행할 수 있습니다. 또는 시스템 관리자가 이러한 요소가 **필드 속성**[ 대화 상자에 나타나도록 이에 대한 지원을 추가할 수 있습니다(추가 HTML 요소 및 속성에 대한 지원 추가 참조](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 #### Forms에 대한 추가 고려 사항 {#additional-considerations-for-forms}
 

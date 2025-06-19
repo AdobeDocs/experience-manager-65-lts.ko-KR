@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ed55397c-6777-4d00-a6e2-8b1b025e533f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -73,8 +73,6 @@ ERD 의미의 선언된 데이터 구조에 대해서는 걱정하지 않는 것
 >[!CAUTION]
 >
 >콘텐츠 저장소의 구성 방식은 성능에도 영향을 줄 수 있습니다. 최상의 성능을 위해 컨텐츠 저장소의 개별 노드에 연결된 하위 노드 수는 1,000개를 초과할 수 없습니다.
->
->[CRX에서 처리할 수 있는 데이터의 양](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)을 참조하세요.
 
 #### 예 {#example-2}
 

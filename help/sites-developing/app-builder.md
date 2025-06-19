@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f9b3df58-c94b-4143-aeec-85ff031bac2e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ App Builder은 고객이 다양한 사용 사례에서 Adobe Experience Manager�
 * 핵심 서비스 확장성 - 사용자 정의 기능 및 비즈니스 논리를 통해 기본 동작을 확장하여 핵심 애플리케이션 기능을 확장합니다.
 * 사용자 경험 확장성 - 핵심 경험을 확장하여 비즈니스 요구 사항을 지원하거나 고객별 디지털 속성, 상점 및 백오피스 앱을 빌드합니다.
 
-App Builder은 2020년 여름부터 Adobe의 개발자 미리보기를 통해 기업 고객 및 파트너가 사용할 수 있습니다. App Builder의 GA(일반 공급)가 2021년 12월로 예정되어 있습니다. Adobe은 개발자가 Adobe의 [평가판 프로그램](https://developer.adobe.com/app-builder/trial/)을 통해 App Builder을 사용해 보는 것을 환영합니다.
+App Builder은 2020년 여름부터 Adobe의 개발자 미리보기를 통해 기업 고객 및 파트너가 사용할 수 있습니다. App Builder의 GA(일반 공급)가 2021년 12월로 예정되어 있습니다. Adobe은 개발자가 Adobe의 [평가판 프로그램](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/set-up#access-and-credentials)을 통해 App Builder을 사용해 보는 것을 환영합니다.
 
 >[!NOTE]
 >
->App Builder을 사용하려는 AEM as a Cloud Service 고객의 경우 [Adobe Developer App Builder을 사용하여 Adobe Experience Manager as a Cloud Service 확장](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/app-builder.html)을 참조하십시오.
+>App Builder을 사용하려는 AEM as a Cloud Service 고객의 경우 [Adobe Developer App Builder을 사용하여 Adobe Experience Manager as a Cloud Service 확장](/help/sites-developing/app-builder.md)을 참조하십시오.
 
 ## 아키텍처 {#architecture}
 
@@ -45,13 +45,13 @@ Adobe Developer App Builder은 기본 솔루션 대신 AEM과 같은 Adobe Cloud
 
 ![아키텍처](assets/appbuilder-architecture.jpg)
 
-App Builder 아키텍처에 대한 자세한 내용은 [아키텍처 개요](https://developer.adobe.com/app-builder/docs/guides/)를 참조하십시오.
+App Builder 아키텍처에 대한 자세한 내용은 [아키텍처 개요](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview)를 참조하십시오.
 
 ## App Builder 시작 {#additional-resources}
 
 App Builder을 시작하는 데 도움이 되도록 다음 작업을 시작하는 데 도움이 되는 일련의 설명서가 만들어졌습니다.
 
-* [App Builder 시작](https://developer.adobe.com/app-builder/docs/getting_started/)
+* [App Builder 시작](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app)
 
 ## 설명서를 사용하여 학습 계속 {#appbuilder-documentation}
 

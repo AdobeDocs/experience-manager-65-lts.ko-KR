@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 9f879ab6-6806-4e94-836c-0a7813940914
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '5425'
+source-wordcount: '5405'
 ht-degree: 1%
 
 ---
@@ -421,13 +421,9 @@ Dynamic Media Classic 자산은 보안 미리 보기를 통해 사용할 수 있
 자산을 게시하지 않고 Dynamic Media Classic에 푸시하려면 먼저 다음을 설정해야 합니다.
 
 1. [Admin Console을 사용하여 지원 사례를 만듭니다](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). 지원 사례에서 Dynamic Media Classic 계정에 대한 보안 미리 보기 활성화를 요청합니다.
-1. [Dynamic Media Classic 계정에 대한 보안 미리 보기를 설정합니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=ko).
+1. [Dynamic Media Classic 계정에 대한 보안 미리 보기를 설정합니다](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
 
 이러한 단계는 Dynamic Media Classic에서 보안 테스트 설정을 만들기 위해 따라야 하는 단계와 동일합니다.
-
->[!NOTE]
->
->설치 환경이 UNIX® 64비트 운영 체제인 경우 설정해야 하는 다른 구성 옵션에 대한 자세한 내용은 [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)을(를) 참조하십시오.
 
 #### 게시되지 않은 상태에서 에셋을 푸시하기 위한 알려진 제한 사항  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -454,7 +450,7 @@ Dynamic Media Classic 자산은 보안 미리 보기를 통해 사용할 수 있
 1. **[!UICONTROL 고급]** 탭을 선택합니다.
 1. **[!UICONTROL 보안 보기 사용]** 드롭다운 메뉴에서 **[!UICONTROL AEM 게시 활성화 시]**&#x200B;를 선택하여 게시하지 않고 자산을 Dynamic Media Classic에 푸시합니다. (기본적으로 이 값은 **[!UICONTROL 즉시]**(Dynamic Media Classic 자산이 즉시 게시됨)로 설정됩니다.)
 
-   공개하기 전에 자산을 테스트하는 방법에 대한 자세한 내용은 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=ko)를 참조하세요.
+   공개하기 전에 자산을 테스트하는 방법에 대한 자세한 내용은 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html)를 참조하세요.
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -569,7 +565,7 @@ Digital Asset Manager/Dynamic Media Classic 에셋의 동기화에 의해 트리
 
    예: `psprocess="rasterize"&psresolution=120` .
 
-   사용할 수 있는 업로드 작업 매개 변수에 대한 자세한 내용은 [Adobe Dynamic Media Classic 이미지 프로덕션 시스템 API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=ko)를 참조하십시오.
+   사용할 수 있는 업로드 작업 매개 변수에 대한 자세한 내용은 [Adobe Dynamic Media Classic 이미지 프로덕션 시스템 API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html)를 참조하십시오.
 
    >[!NOTE]
    >

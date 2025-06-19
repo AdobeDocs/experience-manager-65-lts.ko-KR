@@ -10,7 +10,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '2224'
 ht-degree: 1%
@@ -33,7 +33,7 @@ AEM 6.1부터는 사용자 동기화가 활성화되면 사용자 데이터가 �
 
 ## Sling 배포 {#sling-distribution}
 
-사용자 데이터는 [ACL](/help/sites-administering/security.md)과(와) 함께 Oak JCR 아래 계층인 [Oak Core](/help/sites-deploying/platform.md)에 저장되고 [Oak API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-tree.html)를 사용하여 액세스됩니다. 자주 업데이트하지 않으면 [Sling 콘텐츠 배포](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md)&#x200B;(Sling 배포)를 사용하여 사용자 데이터를 다른 게시 인스턴스와 동기화하는 것이 좋습니다.
+사용자 데이터는 [ACL](/help/sites-administering/security.md)과(와) 함께 Oak JCR 아래 계층인 [Oak Core](/help/sites-deploying/platform.md)에 저장되고 [Oak API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-summary.html)를 사용하여 액세스됩니다. 자주 업데이트하지 않으면 [Sling 콘텐츠 배포](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md)&#x200B;(Sling 배포)를 사용하여 사용자 데이터를 다른 게시 인스턴스와 동기화하는 것이 좋습니다.
 
 Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화의 이점은 다음과 같습니다.
 
@@ -75,13 +75,13 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 1. 최신 코드가 설치되어 있는지 확인합니다.
 
-* [AEM 플랫폼 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)
+* [AEM 플랫폼 업데이트](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)
 
-### 1. Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리 {#apache-sling-distribution-agent-sync-agents-factory}
+### &#x200B;1. Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리 {#apache-sling-distribution-agent-sync-agents-factory}
 
 **사용자 동기화 사용**
 
-* 작성자의 **&#x200B;**
+* 작성자의 ****
 
    * 관리자 권한으로 로그인
    * [웹 콘솔에 액세스](/help/sites-deploying/configuring-osgi.md)
@@ -98,7 +98,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 ![Apache Sling 배포 에이전트](assets/chlimage_1-20.png)
 
-### 2. 인증된 사용자 만들기 {#createauthuser}
+### &#x200B;2. 인증된 사용자 만들기 {#createauthuser}
 
 **권한 구성**
 
@@ -152,7 +152,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 * [액세스 권한 관리](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * [응답을 처리하는 동안 작업 예외 수정](#modify-operation-exception-during-response-processing) 섹션의 문제를 해결합니다.
 
-### 3. Adobe Granite 배포 - 암호화된 암호 전송 비밀 공급자 {#adobegraniteencpasswrd}
+### &#x200B;3. Adobe Granite 배포 - 암호화된 암호 전송 비밀 공급자 {#adobegraniteencpasswrd}
 
 **권한 구성**
 
@@ -175,7 +175,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 ![암호화된 전송 비밀 공급자](assets/chlimage_1-22.png)
 
-### 4. Apache Sling 배포 에이전트 - 큐 에이전트 팩토리 {#apache-sling-distribution-agent-queue-agents-factory}
+### &#x200B;4. Apache Sling 배포 에이전트 - 큐 에이전트 팩토리 {#apache-sling-distribution-agent-queue-agents-factory}
 
 **사용자 동기화 사용**
 
@@ -198,7 +198,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 ![큐 에이전트 팩터리](assets/chlimage_1-23.png)
 
-### 5. Adobe Social Sync - 차이점 관찰자 팩토리 {#diffobserver}
+### &#x200B;5. Adobe Social Sync - 차이점 관찰자 팩토리 {#diffobserver}
 
 **그룹 동기화 사용**
 
@@ -220,7 +220,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 ![비교 관찰자 팩터리](assets/screen-shot_2019-05-24at090809.png)
 
-### 6. Apache Sling 배포 트리거 - 예약된 트리거 팩토리 {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### &#x200B;6. Apache Sling 배포 트리거 - 예약된 트리거 팩토리 {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **(선택 사항) 폴링 간격 수정**
 
@@ -248,7 +248,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 기본 구성은 단일 게시 인스턴스에 대한 것입니다. 사용자 동기화를 활성화하는 이유는 게시 팜의 경우와 같이 여러 게시 인스턴스를 동기화하기 위함이므로 추가 게시 인스턴스를 동기화 에이전트 팩토리에 추가해야 합니다.
 
-### 7. Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리 {#apache-sling-distribution-agent-sync-agents-factory-1}
+### &#x200B;7. Apache Sling 배포 에이전트 - 동기화 에이전트 팩토리 {#apache-sling-distribution-agent-sync-agents-factory-1}
 
 **게시 인스턴스 추가:**
 
@@ -280,7 +280,7 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
 
 * `Save` 선택
 
-### 8. 고유 Sling ID {#unique-sling-id}
+### &#x200B;8. 고유 Sling ID {#unique-sling-id}
 
 >[!CAUTION]
 >
@@ -303,11 +303,9 @@ Sling 배포를 사용하여 기존 복제와 비교하여 사용자 동기화�
    * 이름이 *sling.id.file*&#x200B;인 파일을 검색하고 삭제합니다.
 
       * 예를 들어 Linux® 시스템의 경우:
-
         `rm -i $(find . -type f -name sling.id.file)`
 
       * 예를 들어 Windows 시스템의 경우:
-
         `use windows explorer and search for *sling.id.file*`
 
 1. 게시 인스턴스 시작

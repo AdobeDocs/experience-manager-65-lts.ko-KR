@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '5965'
 ht-degree: 0%
@@ -656,7 +656,7 @@ CSP를 사용하면 정책을 미세 조정할 수 있습니다. 그러나 복�
 
 >[!NOTE]
 >
->이 작동 방식에 대한 자세한 내용은 [CSP(콘텐츠 보안 정책)의 OWASP 페이지](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)를 참조하십시오.
+>이 작동 방식에 대한 자세한 내용은 [CSP(콘텐츠 보안 정책)의 OWASP 페이지](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)를 참조하십시오.
 
 ### 크기 조정 {#sizing}
 

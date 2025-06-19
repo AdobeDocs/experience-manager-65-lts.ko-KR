@@ -1,28 +1,24 @@
 ---
 title: Adobe Sign과 AEM Forms 통합
 description: AEM 적응형 Forms에 대한 Adobe Sign을 구성하는 방법에 대해 알아봅니다. Adobe Sign은 워크플로우를 개선하고 법률, 판매, 급여, 인적 자원 관리 등의 다양한 영역에 대한 문서를 처리합니다.
-contentOwner: sashanka
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: develop
-docset: aem65
 feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: fdf95738-3075-43d6-9d51-64c83cf0f0b7
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2071'
+source-wordcount: '2069'
 ht-degree: 16%
 
 ---
 
 # AEM [!DNL Forms]과(와) [!DNL Adobe Sign] 통합{#integrate-adobe-sign-with-aem-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=ko#adobe-acrobat-sign-for-government) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=en#adobe-acrobat-sign-for-government) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Sign]은(는) 적응형 양식용 전자 서명 워크플로를 사용합니다. 전자 서명은 법무, 판매, 임금, 인적 자원 관리 등의 다양한 분야에서 문서를 처리하는 워크플로를 개선합니다.
@@ -40,9 +36,9 @@ ht-degree: 16%
 
 [!DNL Adobe Sign]을(를) AEM [!DNL Forms]과(와) 통합하려면 다음이 필요합니다.
 
-* 활성 [Adobe Sign 개발자 계정](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html)
+* 활성 [Adobe Sign 개발자 계정](https://www.adobe.com/acrobat/business/developer-form.html)
 * [SSL 사용](/help/sites-administering/ssl-by-default.md) AEM [!DNL Forms] 서버.
-* [Adobe Sign API 애플리케이션](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+* [Adobe Sign API 애플리케이션](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * [!DNL Adobe Sign] API 애플리케이션의 자격 증명(클라이언트 ID 및 클라이언트 보안).
 * 다시 구성할 때는 작성자 및 게시 인스턴스 모두에서 기존 [!DNL Adobe Sign] 구성을 제거하십시오.
 * 작성자에 대해 [동일한 암호 키](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed)를 사용하고 인스턴스를 게시합니다.
@@ -91,12 +87,12 @@ ht-degree: 16%
 
    여기에서
 
-   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL &#x200B; Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/kr/sign/using/identify-account-shard.html)을 가리켜야 합니다.
+   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL  Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/sign/using/identify-account-shard.html)을 가리켜야 합니다.
 
    >[!NOTE]
    >
    >* **Adobe Acrobat Sign 구성 만들기** 페이지를 열어 두십시오. 닫지 마세요. 향후 단계에 설명된 대로 [!DNL Adobe Acrobat Sign] 응용 프로그램에 대한 OAuth 설정을 구성한 후 **클라이언트 ID** 및 **클라이언트 암호**&#x200B;을(를) 검색할 수 있습니다.
-   >* Adobe Sign 계정에 로그인한 후 **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API 정보]** > **[!UICONTROL REST API 메서드 설명서]** > **[!UICONTROL OAuth 액세스 토큰]**&#x200B;으로 이동하여 Adobe Sign OAuth URL 및 액세스 토큰 URL과 관련된 정보에 액세스합니다.
+   > * Adobe Sign 계정에 로그인한 후 **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API 정보]** > **[!UICONTROL REST API 메서드 설명서]** > **[!UICONTROL OAuth 액세스 토큰]**&#x200B;으로 이동하여 Adobe Sign OAuth URL 및 액세스 토큰 URL과 관련된 정보에 액세스합니다.
 
 1. [!DNL Adobe Sign] 애플리케이션에 대한 OAuth 설정을 구성합니다.
 
@@ -147,13 +143,13 @@ ht-degree: 16%
 1. **[!UICONTROL Forms 일반 구성 서비스].** 열기
 1. **[!UICONTROL 허용]** 필드에서 모든 사용자(익명 또는 로그인한 모든 사용자)를 **선택**&#x200B;하고 첨부 파일을 미리 보고 양식을 확인 및 서명할 수 있으며 **[!UICONTROL 저장]을 클릭합니다.** 작성자 인스턴스가 [!DNL Adobe Sign]을(를) 사용하도록 구성되어 있습니다.
 1. 구성을 게시합니다.
-1. [복제](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/replication.html)를 사용하여 해당 게시 인스턴스에 동일한 구성을 만드십시오.
+1. [복제](/help/sites-deploying/replication.md)를 사용하여 해당 게시 인스턴스에 동일한 구성을 만드십시오.
 
 이제 [!DNL Adobe Sign]이(가) AEM [!DNL Forms]과(와) 통합되어 적응형 양식에서 사용할 수 있습니다. [적응형 양식에서 Adobe Sign 서비스를 사용하려면](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form) 적응형 양식 속성에서 위에 만든 구성 컨테이너를 지정하십시오.
 
 >[!NOTE]
 >
->Adobe Sign 샌드박스를 구성하려면 [Adobe Sign](#adobe-sign)에 설명된 것과 동일한 구성 단계를 따를 수 있습니다.
+> Adobe Sign 샌드박스를 구성하려면 [Adobe Sign](#adobe-sign)에 설명된 것과 동일한 구성 단계를 따를 수 있습니다.
 
 ## AEM Forms과 Adobe Acrobat Sign Solutions for Government 연결 {#adobe-acrobat-sign-for-government}
 
@@ -189,8 +185,8 @@ AEM Forms과 Adobe Acrobat Sign 솔루션 연결을 시작하기 전에
 >[!NOTE]
 >
 >
->* `re-direct URL`은(는) [최상위](https://en.wikipedia.org/wiki/Top-level_domain) 도메인을 포함해야 합니다. 예, `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
->* 로컬 URL을 `re-direct URL`(으)로 사용하지 마십시오. 예: `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
+> * `re-direct URL`은(는) [최상위](https://en.wikipedia.org/wiki/Top-level_domain) 도메인을 포함해야 합니다. 예, `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
+> * 로컬 URL을 `re-direct URL`(으)로 사용하지 마십시오. 예: `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
 
 
 #### 리디렉션 URL 및 범위를 Adobe Sign 팀과 공유하고 자격 증명을 받습니다
@@ -240,11 +236,11 @@ Adobe Acrobat Sign `scopes`(아래 나열)과 이전 섹션의 마지막 단계�
 
    여기에서
 
-   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL &#x200B; Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/kr/sign/using/identify-account-shard.html)을 가리켜야 합니다.
+   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL  Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/sign/using/identify-account-shard.html)을 가리켜야 합니다.
 
    >[!NOTE]
    >
-   >* Adobe Sign 계정에 로그인한 후 **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API 정보]** > **[!UICONTROL REST API 메서드 설명서]** > **[!UICONTROL OAuth 액세스 토큰]**&#x200B;으로 이동하여 Adobe Sign oAuth URL 및 액세스 토큰 URL과 관련된 정보에 액세스합니다.
+   > * Adobe Sign 계정에 로그인한 후 **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API 정보]** > **[!UICONTROL REST API 메서드 설명서]** > **[!UICONTROL OAuth 액세스 토큰]**&#x200B;으로 이동하여 Adobe Sign oAuth URL 및 액세스 토큰 URL과 관련된 정보에 액세스합니다.
 
 1. 이전 섹션의 정부 솔루션 담당자([Adobe Professional Services 팀 구성원])용 Adobe Acrobat Sign에서 공유한 자격 증명을 [**[!UICONTROL 클라이언트 ID]** 및 **[!UICONTROL 클라이언트 암호]**]로 사용합니다.
 
@@ -262,7 +258,7 @@ Adobe Acrobat Sign `scopes`(아래 나열)과 이전 섹션의 마지막 단계�
 1. **[!UICONTROL 허용]** 필드에서 모든 사용자(익명 또는 로그인한 모든 사용자)를 **선택**&#x200B;하고 첨부 파일을 미리 보고 양식을 확인 및 서명할 수 있으며 **[!UICONTROL 저장]을 클릭합니다.** 작성자 인스턴스가 [!DNL Adobe Sign]을(를) 사용하도록 구성되어 있습니다.
 
 1. 구성을 게시합니다.
-1. [복제](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/replication.html)를 사용하여 해당 게시 인스턴스에 동일한 구성을 만드십시오.
+1. [복제](/help/sites-deploying/replication.md)를 사용하여 해당 게시 인스턴스에 동일한 구성을 만드십시오.
 
 이제 [적응형 양식에서 Adobe Acrobat Sign 필드 추가](working-with-adobe-sign.md) 또는 [AEM 워크플로](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)를 사용할 수 있습니다. Cloud Service 구성에 사용된 구성 컨테이너를 [!DNL Adobe Acrobat Sign]에 대해 사용 중인 모든 적응형 Forms에 추가해야 합니다. 적응형 양식의 속성에서 구성 컨테이너를 지정할 수 있습니다.
 

@@ -9,9 +9,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0001c874-7468-4750-a377-03156674f4b9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1305'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,7 @@ AEM 6.4 이상 버전에서는 AEM에 시작 시퀀스 시 디스크에서 인�
 
 ### Runbook 및 체험판 실행 준비 {#prepare-a-runbook-and-trial-run}
 
-프로덕션에서 업그레이드를 실행하기 전에 [Runbook](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook)을(를) 준비하고 몇 가지 시도를 수행하는 것이 좋습니다.
+프로덕션에서 업그레이드를 실행하기 전에 [Runbook](/help/sites-deploying/upgrade-planning.md#building-the-upgrade-and-rollback-runbook)을(를) 준비하고 몇 가지 시도를 수행하는 것이 좋습니다.
 
 ### 오프라인 색인화가 있는 문서 순회 모드 {#doc-traversal-mode-with-offline-indexing}
 

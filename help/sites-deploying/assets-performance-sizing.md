@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,3 @@ NAS에서 지연 시간 및 처리량이 나쁜 이유는 네트워크 토폴로
 
 * 선택적 렌디션 생성: 에셋 처리 워크플로에 조건을 추가하여 필요한 렌디션만 생성하므로 선택한 에셋에 대해서만 비용이 더 많이 드는 렌디션이 생성됩니다.
 * 인스턴스 간 공유 데이터 저장소: 디스크 공간이 부족할 때 더 많은 구성 노력과 데이터 저장소의 자동 정리를 잃어 버리는 비용으로 필요한 디스크 공간을 상당히 줄일 수 있습니다.
-
-## 추가 참조 {#further-reading}
-
-* [느리고 차단된 프로세스 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)

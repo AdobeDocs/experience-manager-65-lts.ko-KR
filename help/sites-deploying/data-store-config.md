@@ -8,7 +8,7 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '3330'
 ht-degree: 0%
@@ -436,7 +436,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 * azureSas=&quot;&quot;: 커넥터 버전 1.6.3에서 Azure SAS(Shared Access Signature) 지원이 추가되었습니다. **SAS와 저장소 자격 증명이 모두 구성 파일에 있는 경우 SAS에 우선 순위가 있습니다.** SAS에 대한 자세한 내용은 [공식 문서](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)를 참조하십시오. &#39;=&#39; 문자가 &#39;\=&#39;처럼 이스케이프되는지 확인하십시오.
 
 * azureBlobEndpoint=&quot;&quot;: Azure Blob 끝점입니다. 예: https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot;: 저장소 계정 이름입니다. Microsoft® Azure 인증 자격 증명에 대한 자세한 내용은 [공식 설명서](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account)를 참조하세요.
+* accessKey=&quot;&quot;: 저장소 계정 이름입니다. Microsoft® Azure 인증 자격 증명에 대한 자세한 내용은 [공식 설명서](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create)를 참조하세요.
 
 * secretKey=&quot;&quot;: 저장소 액세스 키입니다. &#39;=&#39; 문자가 &#39;\=&#39;처럼 이스케이프되는지 확인하십시오.
 * container=&quot;&quot;: Microsoft® Azure Blob 저장 공간 컨테이너 이름입니다. 컨테이너는 블롭 한 세트의 그룹입니다. 자세한 내용은 [공식 설명서](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN)를 참조하세요.

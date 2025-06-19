@@ -1,17 +1,13 @@
 ---
 title: 기본 구성 개념
 description: 고유한 특정 요구 사항에 맞게 Adobe Experience Manager을 구성하는 방법에 대해 알아봅니다.
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2093'
+source-wordcount: '2085'
 ht-degree: 0%
 
 ---
@@ -180,11 +176,11 @@ AEM 내의 사용자 관리(액세스 권한 할당 포함)에 대해서는 [사
 
 Dispatcher은 캐싱, 로드 밸런싱 또는 둘 모두를 위한 Adobe Experience Manager의 도구입니다. 엔터프라이즈급 웹 서버와 함께 사용할 수 있습니다.
 
-자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR), 특히 자세한 구성 정보는 [Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko)을 참조하십시오.
+자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html), 특히 자세한 구성 정보는 [Dispatcher 구성](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)을 참조하십시오.
 
 ### AEM LiveCycle Connector 구성 {#configuring-aem-livecycle-connector}
 
-AEM Doc Services 및 AEM Doc Security가 출시되면서 이제 AEM은 LiveCycle Doc Services를 호출하여 XFA 양식을 렌더링하고, 문서를 PDF으로 변환하고, 문서를 정책으로 보호하는 기능을 갖게 되었습니다. 자세한 내용은 [AEM LiveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html)를 참조하십시오.
+AEM Doc Services 및 AEM Doc Security가 출시되면서 이제 AEM은 LiveCycle Doc Services를 호출하여 XFA 양식을 렌더링하고, 문서를 PDF으로 변환하고, 문서를 정책으로 보호하는 기능을 갖게 되었습니다.
 
 ### 작업 오프로딩 및 토폴로지 관리 {#job-offloading-and-topology-administration}
 

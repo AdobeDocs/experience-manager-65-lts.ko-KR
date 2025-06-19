@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b30bb90b-adca-4d3a-ae15-bede70e1c39a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 3%
@@ -56,8 +56,8 @@ Adobe Experience Manager(AEM)에서 페이지를 편집할 때 개발자 모드�
 >
 >다음을 참조하십시오.
 >
->* 기술 자료 문서, [AEM TouchUI 문제 해결](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)을 참조하십시오.
->* [AEM 6.0 개발자 모드](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=ko)에 대한 AEM Gems 세션.
+>* 기술 자료 문서, [AEM TouchUI 문제 해결](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)을 참조하십시오.
+>* [AEM 6.0 개발자 모드](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html)에 대한 AEM Gems 세션.
 >
 
 ## 개발자 모드 열기 {#opening-developer-mode}

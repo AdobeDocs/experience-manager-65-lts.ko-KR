@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 22%
@@ -64,7 +64,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구
 
 >[!NOTE]
 >
->추가 팁과 도구는 기술 자료 문서인 [AEM TouchUI 문제 해결](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)을 참조하십시오.
+>추가 팁과 도구는 기술 자료 문서인 [AEM TouchUI 문제 해결](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)을 참조하십시오.
 
 ## 콘솔의 기본 보기 사용자 정의 {#customizing-the-default-view-for-a-console}
 
@@ -151,7 +151,6 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구
 1. 선택적으로:
 
    * 추가 데이터를 연결하려면 [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)에
-
      `pageInfoProviderType` 속성입니다.
 
    예를 들어 아래 (GitHub에서) 첨부된 클래스/번들을 참조하십시오.

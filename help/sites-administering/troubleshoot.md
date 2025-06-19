@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 802130c3-9cb8-46b7-98c2-fd9e83d18ec3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '475'
 ht-degree: 2%
 
 ---
@@ -94,7 +94,7 @@ ht-degree: 2%
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-자세한 내용은 [JVM에서 스레드 덤프를 가져오는 방법](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=ko) 설명서를 참조하십시오
+자세한 내용은 [JVM에서 스레드 덤프를 가져오는 방법](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) 설명서를 참조하십시오
 
 ### 닫히지 않은 JCR 세션 확인 {#checking-for-unclosed-jcr-sessions}
 
@@ -104,7 +104,7 @@ AEM WCM에 대한 기능이 개발되면 JCR 세션을 열 수 있습니다(데�
 * CacheManager의 대부분을 볼 수 있습니다. resize로그 파일의 모든 항목을 표시합니다. 다음 숫자(size=&lt;x>)는 캐시 수를 보여주며, 각 세션은 여러 개의 캐시를 엽니다.
 * 때때로 시스템에서 메모리가 부족합니다(심각도에 따라 몇 시간, 며칠 또는 몇 주 후).
 
-닫히지 않은 세션을 분석하고 세션을 닫지 않는 코드를 확인하려면 기술 자료 문서 [닫히지 않은 세션 분석](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)을 참조하세요.
+닫히지 않은 세션 분석을 시작하려면 기술 자료 문서 [닫히지 않은 리소스 확인자](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)를 참조하세요.
 
 ### Adobe Experience Manager 웹 콘솔 사용 {#using-the-adobe-experience-manager-web-console}
 

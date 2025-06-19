@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 79551cfa77420fae965ecac8060fd2005beff558
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 3%
+source-wordcount: '1363'
+ht-degree: 4%
 
 ---
 
@@ -233,10 +233,6 @@ quickstart jar를 처음 실행하면 새 하위 디렉터리(`crx-quickstart`)�
 인스턴스가 UI에서 설치된 경우 브라우저 창이 자동으로 열리고 인스턴스의 호스트 및 포트와 온/오프 스위치를 표시하는 데스크탑 애플리케이션 창도 열립니다.
 
 ![시작 화면](assets/screen_shot_.png)
-
->[!NOTE]
->
->symlink를 사용하는 경우 [symlink의 문제](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html)를 살펴보십시오.
 
 ### 시작 및 중지 {#starting-and-stopping}
 
