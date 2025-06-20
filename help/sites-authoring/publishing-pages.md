@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 68%
+source-wordcount: '1701'
+ht-degree: 67%
 
 ---
+
 
 # 페이지 게시 {#publishing-pages}
 
@@ -25,13 +26,13 @@ ht-degree: 68%
 >게시와 관련된 특정 용어는 혼동될 수 있습니다.
 >
 >* **게시/게시 취소**
->  이 용어는 콘텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
+>  >  이 용어는 콘텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
 >
 >* **활성화/비활성화**
->  게시/게시 취소와 동의어입니다.
+>  >  게시/게시 취소와 동의어입니다.
 >
 >* **복제**
->  사용자 댓글을 게시하거나 역복제할 때와 같이 한 환경에서 다른 환경으로의 데이터(예: 페이지 컨텐츠, 파일, 코드, 사용자 댓글) 이동을 설명하는 기술 용어입니다.
+>  >  사용자 댓글을 게시하거나 역복제할 때와 같이 한 환경에서 다른 환경으로의 데이터(예: 페이지 컨텐츠, 파일, 코드, 사용자 댓글) 이동을 설명하는 기술 용어입니다.
 
 ## 권한 부족 {#insufficient-privileges}
 
@@ -141,7 +142,7 @@ ht-degree: 68%
 
    컨텐츠 추가 단추를 클릭하면 [경로 브라우저](/help/sites-authoring/author-environment-tools.md#path-browser)가 시작되어 컨텐츠를 선택할 수 있습니다.
 
-   필요한 페이지를 선택한 후 **선택**&#x200B;을 클릭하여 컨텐츠를 마법사에 추가하거나 **취소**&#x200B;를 클릭하여 선택 사항을 취소하고 마법사로 돌아갈 수 있습니다.
+   필요한 페이지를 선택한 후 **선택**&#x200B;을 클릭하여 컨텐츠를 마법사에 추가하거나 **취소**를 클릭하여 선택 사항을 취소하고 마법사로 돌아갈 수 있습니다.
 
    마법사로 돌아가면 목록에서 항목을 선택하여 다음과 같은 추가 옵션을 구성할 수 있습니다.
 
@@ -196,6 +197,10 @@ ht-degree: 68%
    **게시** 또는 **나중에 게시**&#x200B;를 클릭하여 게시를 완료할 수 있습니다.
 
    ![chlimage_1-4](assets/chlimage_1-4.png)
+
+>[!TIP]
+>
+>게시를 위한 컨텐츠 예약은 컨텐츠를 복제하고 게시 워크플로를 준수합니다. 게시를 취소하지 않고 이미 게시된 콘텐츠를 일시적으로 숨기려면 페이지 속성에서 사용할 수 있는 [**설정 시간** 및 **해제 시간**&#x200B;을 고려하십시오.](/help/sites-authoring/editing-page-properties.md#on-time)
 
 ## 페이지 게시 취소 {#unpublishing-pages}
 
