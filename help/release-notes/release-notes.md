@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2a83d6d4f25a866eacd87d6e2a4318b99c158ea0
+source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1019'
 ht-degree: 20%
 
 ---
@@ -53,6 +53,10 @@ Eclipse Jetty 11.0.x는 빠른 시작을 위한 서블릿 엔진으로 사용됩
 설치 요구 사항은 [설치 지침](/help/sites-deploying/custom-standalone-install.md)을 참조하십시오.
 
 자세한 지침은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하세요.
+
+>[!NOTE]
+>
+> 새로 AEM 6.5 LTS를 설치하는 경우 색인 정의를 별도로 설치해야 합니다. 자세한 내용은 [이](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)을(를) 참조하세요.
 
 ## 지원되는 플랫폼 {#supported-platforms}
 
@@ -147,5 +151,5 @@ AEM 배포에서 SSL 전용 기능을 활성화할 때 Dispatcher 인스턴스�
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이고 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko/docs/customer-one/using/home).
+* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 

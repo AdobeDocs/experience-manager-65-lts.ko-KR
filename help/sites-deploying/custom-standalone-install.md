@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: dc92f670e7025f9490abbcecff4b485af331bd6d
+source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1542'
 ht-degree: 0%
 
 ---
@@ -314,6 +314,10 @@ AEM WCM을 구성할 수 있는 많은 가능성이 있지만 특정 작업을 �
 
 * 시스템의 보안을 유지하는 데 필요한 작업은 [보안 확인 목록](/help/sites-administering/security-checklist.md)을 참조하세요.
 * AEM WCM과 함께 설치된 기본 사용자 및 그룹 목록을 검토합니다. 다른 계정에 대해 작업을 수행할지 여부를 확인하십시오. 자세한 내용은 [보안 및 사용자 관리](/help/sites-administering/security.md)를 참조하십시오.
+
+>[!NOTE]
+>
+> 새로 AEM 6.5 LTS를 설치하는 경우 색인 정의를 별도로 설치해야 합니다. 자세한 내용은 [이](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)을(를) 참조하세요.
 
 ## CRXDE Lite 및 웹 콘솔 액세스 {#accessing-crxde-lite-and-the-web-console}
 

@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 색인 정의 {#index-definitions}
 
-AEM 서비스 팩 22까지 제공된 AEM 6.5 서비스 팩과 함께 릴리스된 필수 인덱스 정의를 최소한 설치했는지 확인하십시오. 자세한 내용은 [AEM 6.5 servicepack 릴리스 노트](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/release-notes/release-notes)를 참조하세요.
+최신 AEM 6.5 서비스 팩과 함께 릴리스된 필수 인덱스 정의를 설치했는지 확인하십시오. 자세한 내용은 [AEM 6.5 servicepack 릴리스 노트](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/release-notes/release-notes)를 참조하세요.
 
 ## 충분한 디스크 공간 확인 {#ensure-sufficient-disk-space}
 
