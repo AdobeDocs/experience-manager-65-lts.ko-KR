@@ -6,9 +6,9 @@ role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 110b7175-d398-40ff-886e-5817a1df0ec9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ce0da5056e0821c94eb06a05c663a3939b37f940
 workflow-type: tm+mt
-source-wordcount: '3059'
+source-wordcount: '3056'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Asset Link에 사용할 Experience Manager Assets을 구성하려면 다음 작�
 
 1. Creative Cloud 라이선스 사용자를 Experience Manager 사용자와 매핑하려면 [사용자 액세스 제어](#user-access)를 관리하세요.
 
-1. [사용자 지정 쿼리 인덱스](#create-custom-index)을(를) 만들고, InDesign에 대해 [FPO 렌디션](/help/assets/configure-fpo-renditions.md)을(를) 구성하고, [Adobe Stock 통합](/help/assets/aem-assets-adobe-stock.md)을(를) 구성하고, [시각적 또는 유사성 검색](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch)을(를) 구성합니다.
+1. [사용자 지정 쿼리 인덱스](#create-custom-index)을(를) 만들고, InDesign에 대해 [FPO 렌디션](/help/assets/configure-fpo-renditions.md)을(를) 구성하고, [Adobe Stock 통합](/help/assets/aem-assets-adobe-stock.md)을(를) 구성하고, [시각적 또는 유사성 검색](/help/assets/search-assets.md#configvisualsearch)을(를) 구성합니다.
 
 ## 다양한 기능에 대한 사전 요구 사항 및 지원 {#prerequisites}
 
@@ -33,7 +33,7 @@ Asset Link에 사용할 Experience Manager Assets을 구성하려면 다음 작�
 
 | Assets 기능 | Experience Manager 버전 및 지원 요구 사항 |
 |--- |--- |
-| Asset Link 는 기본적으로 작동합니다 | Experience Manager 6.5 및 6.5.2 이상 </br> Experience Manager 6.4.4 및 6.4.6 이상 </br> Adobe에서는 AAL을 사용하기 전에 최신 [Experience Manager 서비스 팩(SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)을 설치할 것을 권장합니다. |
+| Asset Link 는 기본적으로 작동합니다 | Experience Manager 6.5 및 6.5.2 이상 </br> Experience Manager 6.4.4 및 6.4.6 이상 </br> Adobe에서는 AAL을 사용하기 전에 최신 [Experience Manager 서비스 팩(SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)을 설치할 것을 권장합니다. |
 | 패키지 설치 후 자산 링크가 작동합니다 | Experience Manager 6.4.0 - 6.4.3의 경우 [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 패키지를 설치하십시오. |
 | Adobe Stock 통합 | Experience Manager 6.4.2 이상 |
 | 시각적 또는 유사성 검색 | Experience Manager 6.5.0 이상 |
@@ -54,7 +54,7 @@ Adobe은 대부분의 구성 작업을 자동화하고 몇 가지 수동 작업�
    다음 속성을 설정하고 변경 사항을 저장합니다.
 
    * [!UICONTROL 그룹 매핑]: 필요한 경우가 아니면 비워 둡니다. 자세한 내용은 [그룹 매핑](#group-mapping)을 참조하세요.
-   * [!UICONTROL 조직]: Adobe Admin Console에서 사용 중인 조직 ID를 입력하십시오. 조직 ID에 대한 자세한 내용은 [사용자 그룹 만들기](https://helpx.adobe.com/kr/enterprise/using/create-aal-user-group.html)를 참조하십시오.
+   * [!UICONTROL 조직]: Adobe Admin Console에서 사용 중인 조직 ID를 입력하십시오. 조직 ID에 대한 자세한 내용은 [사용자 그룹 만들기](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html)를 참조하십시오.
 
 1. **[!UICONTROL Adobe Granite Bearer 인증 처리기]** 구성을 찾은 다음 클릭하여 편집합니다.
 
@@ -126,7 +126,7 @@ Experience Manager용 Adobe IMS 조직과 Enterprise용 Creative Cloud(CCE)를 �
 >* Experience Manager 및 CCE와 동일한 Adobe IMS 조직을 사용하는 경우 기존 구성이 계속 작동합니다.
 
 
-**전제 조건**
+**사전 요구 사항**
 
 1. AAL에 대해 베어러 인증이 구성된 실행 중인 Experience Manager 인스턴스.
 1. Experience Manager 6.5 인스턴스에 다음 패키지(서비스 팩 11)를 설치합니다.
@@ -243,8 +243,7 @@ Experience Manager 6.4 및 Experience Manager 6.5에서 관리자는 사전 정�
 
 이 구성은 비즈니스 계열 사용자와 마케터가 몇 개의 특정 폴더에 사용자 지정 워크플로우를 만드는 등의 경우에 유용합니다. 기획사 사진 촬영의 모든 에셋은 워터마크가 될 수도 있고 프리랜서가 업로드한 모든 에셋을 가공하여 특정 렌디션을 만들 수도 있다고 가정해 보겠습니다.
 
-자세한 내용 및 Experience Manager 구성에 대해서는 [자산에 대한 자동 실행 워크플로](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets)를 참조하십시오.
-
+자세한 내용 및 Experience Manager 구성에 대해서는 [자산에 대한 자동 실행 워크플로](/help/assets/assets-workflow.md#auto-execute-workflow-on-some-assets)를 참조하십시오.
 
 ## Experience Manager 6.4.x 버전에서 사용자 지정 인덱스 만들기 {#create-custom-index}
 
@@ -261,7 +260,7 @@ Experience Manager에는 쿼리에 사용되는 인덱스가 포함되어 있습
 
 ## 시각적 또는 유사성 검색 구성 {#configure-visual-similarity-search}
 
-시각적 검색 기능을 사용하면 AEM Assets Asset Link 패널을 사용하여 Adobe 저장소에서 시각적으로 유사한 에셋을 검색할 수 있습니다. 이 기능은 6.5.0 이상 버전에서 사용할 수 있으며 인덱싱된 에셋만 검색됩니다. 자세한 내용은 [시각적 검색을 구성하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch)을 참조하세요.
+시각적 검색 기능을 사용하면 AEM Assets Asset Link 패널을 사용하여 Adobe 저장소에서 시각적으로 유사한 에셋을 검색할 수 있습니다. 이 기능은 6.5.0 이상 버전에서 사용할 수 있으며 인덱싱된 에셋만 검색됩니다. 자세한 내용은 [시각적 검색을 구성하는 방법](/help/assets/search-assets.md#configvisualsearch)을 참조하세요.
 
 ## Adobe InDesign에 대한 배치 전용 렌디션 생성 {#fpo-renditions}
 
@@ -270,7 +269,7 @@ Experience Manager은 배치에만 사용되는 렌디션(FPO)을 제공합니�
 
 ## Adobe Stock과 통합 {#adobe-stock-integration}
 
-조직은 Adobe Stock 계정을 Experience Manager Assets과 통합합니다. 이 기능은 마케터가 라이선스가 있는 고품질의 로열티가 없는 사진, 벡터, 일러스트레이션, 비디오, 템플릿 및 3D 자산을 광고 및 마케팅 프로젝트에 사용할 수 있도록 도와줍니다. 크리에이티브 전문가는 Asset Link 패널을 사용하여 이러한 에셋을 사용할 수 있습니다.
+조직은 Adobe Stock 계정을 Experience Manager Assets과 통합합니다. 이 기능은 마케터가 라이선스가 있는 고품질의 로열티가 없는 사진, 벡터, 일러스트레이션, 비디오, 템플릿 및 3D 자산을 광고 및 마케팅 프로젝트에 사용할 수 있도록 도와줍니다. Creative 전문가는 Asset Link 패널을 사용하여 이러한 에셋을 사용할 수 있습니다.
 
 Adobe Stock과 통합하려면 [Experience Manager Assets의 Adobe Stock 자산](/help/assets/aem-assets-adobe-stock.md)을 참조하세요. Adobe Stock과의 통합을 위해 Experience Manager 6.4.2 이상이 필요합니다.
 
@@ -283,7 +282,7 @@ Adobe Asset Link를 구성하거나 사용할 때 문제가 발생하는 경우 
 * 배포가 사전 요구 사항을 충족하는지 확인합니다. 특히 적절한 기능 팩이나 패키지가 설치되어 있는지 확인하십시오.
 * 조직의 파트너 또는 시스템 통합자에게 문의하십시오.
 * Creative Cloud 사용자가 체크아웃된 자산에서 을 확인할 수 없는 경우 이메일 ID에서 도메인 이름의 대/소문자를 확인합니다. 수정하려면 [수동 구성](#manual-configuration)을 참조하세요.
-* 자세한 내용은 [자산 링크 문제 해결](https://helpx.adobe.com/kr/enterprise/kb/asset-link-troubleshooting.html)을 참조하세요.
+* 자세한 내용은 [자산 링크 문제 해결](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html)을 참조하세요.
 
 
 >[!MORELIKETHIS]

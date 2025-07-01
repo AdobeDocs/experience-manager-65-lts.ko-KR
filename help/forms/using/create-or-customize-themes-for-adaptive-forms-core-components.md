@@ -2,16 +2,13 @@
 title: 적응형 양식 테마를 만들거나 사용자 지정하는 방법
 description: BEM 사양을 사용하여 적응형 Forms 핵심 구성 요소에 대한 테마를 만들거나 사용자 지정하는 방법에 대해 알아봅니다
 keywords: 적응형 양식 핵심 구성 요소 테마 만들기, 새 테마 만들기, 테마 맞춤화, 새 테마 업로드, 양식에서 테마 사용, 테마 삭제, AEM 6.5 양식에서 테마 만들기
-contentOwner: Khushwant Singh
-topic-tags: Adaptive Forms
-docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7eddd03e7b1256f2f2b54bdd92672d5a1e4440d1
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '1938'
 ht-degree: 6%
 
 ---
@@ -81,7 +78,7 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 
 * [Apache Maven의 최신 릴리스를 설치하십시오.](https://maven.apache.org/download.cgi) Apache Maven은 일반적으로 Java™ 프로젝트에 사용되는 빌드 자동화 도구입니다. 최신 릴리스를 설치하면 테마 맞춤화에 필요한 종속성이 확보됩니다.
 
-* Adobe Experience Manager[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/clientlibs.html)에서 클라이언트 라이브러리를 만드는 방법을 알아봅니다. AEM은 클라이언트측 코드를 저장소에 저장하고, 범주로 구성하고, 각 코드 범주가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 클라이언트 라이브러리를 제공합니다.
+* Adobe Experience Manager](/help/sites-developing/clientlibs.md)에서 [클라이언트 라이브러리를 만드는 방법을 알아봅니다. AEM은 클라이언트측 코드를 저장소에 저장하고, 범주로 구성하고, 각 코드 범주가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 클라이언트 라이브러리를 제공합니다.
 
 * 일반 텍스트 편집기를 설치합니다. 예를 들어 Microsoft® Visual Studio Code입니다. Microsoft® 같은 일반 텍스트 편집기를 사용하면 Visual Studio Code에서 테마 파일을 편집하고 수정할 수 있는 사용자 친화적인 환경을 제공합니다.
 
@@ -111,7 +108,7 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 
 문서에 제공된 예제는 **캔버스** 테마를 기반으로 하지만 동일한 지침을 사용하여 모든 테마를 복제하고 사용자 지정할 수 있습니다. 이러한 지침은 모든 테마에 적용되므로 특정 요구 사항에 따라 테마를 수정할 수 있습니다.
 
-#### 1. 테마의 Git 저장소 복제 {#clone-git-repo-of-theme}
+#### &#x200B;1. 테마의 Git 저장소 복제 {#clone-git-repo-of-theme}
 
 적응형 Forms 기반의 핵심 구성 요소에 대한 테마를 복제하려면 다음 테마 중 하나를 선택하십시오.
 
@@ -141,9 +138,9 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 
 명령을 성공적으로 실행한 후에는 `aem-forms-theme-canvas` 폴더의 컴퓨터에서 테마의 로컬 복사본을 사용할 수 있습니다.
 
-#### 2. 테마 맞춤화 {#customize-the-theme}
+#### &#x200B;2. 테마 맞춤화 {#customize-the-theme}
 
-개별 구성 요소를 사용자 정의하거나 테마의 전역 변수를 사용하여 테마 수준을 유연하게 변경할 수 있습니다. 전역 변수를 수정하면 모든 개별 구성 요소에 연쇄적으로 영향을 미칩니다. 예를 들어 전역 변수를 사용하여 적응형 양식 내에 있는 모든 구성 요소의 테두리 색상을 변경하거나 콜 투 액션 (CTA) 버튼에 생생한 채우기 색상을 적용할 수 있습니다. 다음과 같은 작업을 수행할 수 있습니다.
+개별 구성 요소를 사용자 정의하거나 테마의 전역 변수를 사용하여 테마 수준을 유연하게 변경할 수 있습니다. 전역 변수를 수정하면 모든 개별 구성 요소에 연쇄적으로 영향을 미칩니다. 예를 들어 전역 변수를 사용하여 적응형 양식 내에 있는 모든 구성 요소의 테두리 색상을 변경하거나 Call to action(CTA) 버튼에 생생한 채우기 색상을 적용할 수 있습니다. 다음과 같은 작업을 수행할 수 있습니다.
 
 * [테마 수준 스타일 설정](#theme-customization-global-level)
 
@@ -190,7 +187,7 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 >
 > 스타일이 테마와 구성 요소 수준에서 모두 정의되면 구성 요소 수준에서 정의된 스타일이 우선합니다.
 
-#### 3. 배포할 테마 준비 {#generate-the-clientlib}
+#### &#x200B;3. 배포할 테마 준비 {#generate-the-clientlib}
 
 AEM 인스턴스에 테마를 배포하려면 클라이언트 라이브러리로 변환해야 합니다. 테마를 클라이언트 라이브러리로 변환하려면 다음 단계를 따르십시오.
 
@@ -215,7 +212,7 @@ AEM 인스턴스에 테마를 배포하려면 클라이언트 라이브러리로
 
    ![클라이언트 라이브러리 위치](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. 로컬 환경에 테마 배포 {#deploy-the-theme-on-a-local-environment}
+#### &#x200B;4. 로컬 환경에 테마 배포 {#deploy-the-theme-on-a-local-environment}
 
 테마를 로컬 개발 또는 테스트 환경에 배포하려면 다음 단계를 따르십시오.
 
@@ -266,7 +263,7 @@ An Adaptive Form with the selected theme is created.
 The selected theme is applied to the Adaptive Form. 
 -->
 
-#### 5. 프로덕션 환경에 테마 배포 {#deploy-theme}
+#### &#x200B;5. 프로덕션 환경에 테마 배포 {#deploy-theme}
 
 로컬 개발 환경에서 테마를 성공적으로 테스트하면 작성 및 게시 인스턴스를 포함하여 프로덕션 환경에 테마를 배포할 수 있습니다. 다음 단계에 따라 프로덕션 환경에 테마를 배포합니다.
 
@@ -291,7 +288,7 @@ The selected theme is applied to the Adaptive Form.
 적응형 양식에 테마를 적용하는 단계는 다음과 같습니다.
 
 1. 로컬 AEM 작성자 인스턴스에 로그인합니다.
-1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. **Adobe Experience Manager** > **Forms** > **Forms 및 문서**&#x200B;를 선택합니다.
+1. Experience Manager 로그인 페이지에서 자격 증명을 입력합니다. **Adobe Experience Manager** > **양식** > **양식 및 문서**&#x200B;를 선택합니다.
 1. **만들기** > **적응형 Forms**&#x200B;을 클릭합니다.
 1. 적응형 Forms 핵심 구성 요소 템플릿을 선택하고 **다음**&#x200B;을(를) 클릭합니다. **속성 추가**&#x200B;가 나타납니다.
 1. 적응형 양식에 대해 **이름**&#x200B;을(를) 지정하십시오.
@@ -344,4 +341,4 @@ The selected theme is applied to the Adaptive Form.
 * [적응형 Forms 기반의 핵심 구성 요소에 대한 테마 만들기 또는 사용자 지정](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [적응형 Forms 기반의 핵심 구성 요소용 템플릿 만들기](template-editor.md)
 * [AEM Sites 페이지 또는 경험 조각에 적응형 양식 만들기 또는 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ko)
+* [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

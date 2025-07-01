@@ -1,17 +1,13 @@
 ---
 title: AEM Forms 작업 영역 작업
 description: 프로세스 워크플로에 대한 이 빠른 개요를 통해 AEM Forms 작업 영역을 시작하십시오.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 exl-id: 7374797f-4154-402b-bb59-075134763c58
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 823923ab074bae1705cc1991e4079897e4c5cac8
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -133,8 +129,4 @@ AEM Forms 작업 공간 결과물에는 CRX에 배포된 CRX 패키지, 전체 �
 
 기본적으로 새 프로세스의 경우 XDP 양식은 데스크탑에서 PDF 형식으로 렌더링되고 태블릿에서 HTML 형식으로 렌더링됩니다. XDP 양식을 항상 HTML 형식으로 렌더링할 수 있습니다. 자세한 내용은 [새 렌더링 및 제출 서비스](/help/forms/using/new-render-submit-service.md)를 참조하십시오.
 
-[프로필](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html)과(와) 함께 작동하는 [Mobile Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) 기능을 통해 XDP 양식의 HTML 렌디션을 사용할 수 있습니다. 기본적으로 &#39;새 HTML 양식 렌더링&#39;에서는 변경할 수 있는 `default.html` 프로필을 사용합니다. XDP 양식을 HTML 형식으로 렌더링하기 전에 발생하는 사용자 지정 변경 사항을 추가할 수도 있습니다.
-
-## AEM Forms 작업 영역 앱 {#aem-forms-workspace-app}
-
-모바일 디바이스에서 비즈니스 프로세스를 작업하려면 AEM Forms의 AEM Forms 작업 영역 앱 서비스를 사용하면 됩니다. 자세한 내용은 [AEM Forms 작업 영역 앱 개요](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html)를 참조하십시오.
+[프로필](/help/forms/using/custom-profile.md)과(와) 함께 작동하는 [Mobile Forms](/help/forms/using/introduction.md) 기능을 통해 XDP 양식의 HTML 렌디션을 사용할 수 있습니다. 기본적으로 &#39;새 HTML 양식 렌더링&#39;에서는 변경할 수 있는 `default.html` 프로필을 사용합니다. XDP 양식을 HTML 형식으로 렌더링하기 전에 발생하는 사용자 지정 변경 사항을 추가할 수도 있습니다.

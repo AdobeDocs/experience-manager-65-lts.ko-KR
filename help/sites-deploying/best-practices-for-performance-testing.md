@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1765'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 0%
 * AEM은 문제가 있는 쿼리, 요청 및 오류 메시지를 빠르게 볼 수 있는 기본 도구를 제공합니다. 자세한 내용은 작업 대시보드 설명서의 [진단 도구](/help/sites-administering/operations-dashboard.md#diagnosis-tools) 섹션을 참조하십시오.
 * Apache는 성능 및 로드 테스트 및 기능 동작에 사용할 수 있는 **JMeter**(이)라는 제품을 제공합니다. 오픈 소스 소프트웨어이며 자유롭게 사용할 수 있지만, 엔터프라이즈 제품보다 기능 세트가 작고 학습 곡선이 더 가파르다. JMeter는 Apache 웹 사이트([https://jmeter.apache.org/](https://jmeter.apache.org/))에서 찾을 수 있습니다.
 
-* **Load Runner**&#x200B;은(는) 엔터프라이즈급 부하 테스트 제품입니다. 무료 평가 버전을 사용할 수 있습니다. 자세한 내용은 [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)을(를) 참조하십시오.
+* **Load Runner**&#x200B;은(는) 엔터프라이즈급 부하 테스트 제품입니다. 무료 평가 버전을 사용할 수 있습니다. 자세한 내용은 [OpenText Professional 성능 엔지니어링](https://www.opentext.com/products/professional-performance-engineering)에서 확인할 수 있습니다.
 
 * 모바일 또는 반응형 웹 사이트를 테스트할 때 별도의 도구 세트를 사용해야 합니다. 네트워크 대역폭을 조절하거나 3G 또는 EDGE과 같은 느린 모바일 연결을 시뮬레이션하여 작동합니다. 보다 널리 사용되는 도구 중 하나는 다음과 같습니다.
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 Touch UI의 **개발자 모드**
 
-AEM 6의 터치 UI에 있는 새로운 기능 중 하나는 개발자 모드입니다. 작성자가 편집 모드와 미리보기 모드 간을 전환할 수 있는 것처럼 개발자는 작성자 UI에서 개발자 모드로 전환할 수 있습니다. 이렇게 하면 페이지의 각 구성 요소에 대한 렌더링 시간을 확인하고 오류에 대한 스택 추적을 볼 수 있습니다. 개발자 모드에 대한 자세한 내용은 이 [CQ Gems 프레젠테이션](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=ko)을 참조하세요.
+AEM 6의 터치 UI에 있는 새로운 기능 중 하나는 개발자 모드입니다. 작성자가 편집 모드와 미리보기 모드 간을 전환할 수 있는 것처럼 개발자는 작성자 UI에서 개발자 모드로 전환할 수 있습니다. 이렇게 하면 페이지의 각 구성 요소에 대한 렌더링 시간을 확인하고 오류에 대한 스택 추적을 볼 수 있습니다. 개발자 모드에 대한 자세한 내용은 이 [CQ Gems 프레젠테이션](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html)을 참조하세요.
 
 **rlog.jar을 사용하여 요청 로그를 읽습니다**
 

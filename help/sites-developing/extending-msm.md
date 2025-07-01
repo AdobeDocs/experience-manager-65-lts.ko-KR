@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
 workflow-type: tm+mt
-source-wordcount: '2444'
-ht-degree: 53%
+source-wordcount: '2422'
+ht-degree: 54%
 
 ---
 
@@ -30,10 +30,6 @@ ht-degree: 53%
 >[!NOTE]
 >
 >이 페이지는 [콘텐츠 재사용: 다중 사이트 관리자](/help/sites-administering/msm.md)와 함께 읽어야 합니다.
->
->다음 Sites 저장소 재구성 섹션도 관심을 가질 수 있습니다.
->* [다중 사이트 관리자 블루프린트 구성](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
->* [다중 사이트 관리자 롤아웃 구성](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >
@@ -208,15 +204,12 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 이 노드에 다음 속성을 추가합니다.
    * **이름**: `jcr:title`
-
      **유형**: `String`
      **값**: UI에 표시되는 식별 제목입니다.
    * **이름**: `jcr:description`
-
      **유형**: `String`
      **값**: 선택적 설명입니다.
    * **이름**: `cq:trigger`
-
      **유형**: `String`
      **값**: 사용할 [롤아웃 트리거](/help/sites-administering/msm-sync.md#rollout-triggers). 다음 중에서 선택:
       * `rollout`
@@ -689,7 +682,6 @@ MSM은 저장된 언어 및 국가 코드 목록을 사용하여 페이지의 �
       * **유형**: `String`
 
       * **값**: 고려 중인 속성의 이름을 사용하며 속성 `name`의 값과 비슷합니다. 예를 들어 다음을 참조하십시오.
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 `cq-msm-lockable`이 정의된 경우 체인을 끊거나 닫으면 다음과 같은 방식으로 MSM과 상호 작용합니다.

@@ -11,9 +11,9 @@ thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 5f6171f8-20ca-4c31-a99f-a5bc07a63baf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e4cf6ae3392cef2ffd7e8fff3226b50c95f5a248
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '803'
 ht-degree: 3%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 따라서 많은 AEM 프로젝트에서 SEO 문제를 해결해야 합니다. 자세한 내용은 [SEO 및 URL 관리 모범 사례](https://experienceleague.adobe.com/docs/experience-manager-65-lts/managing/managing-further-reference/seo-and-url-management.html)를 참조하세요.
+>SEO(검색 엔진 최적화)는 많은 마케터의 주요 관심사가 되었습니다. 따라서 많은 AEM 프로젝트에서 SEO 문제를 해결해야 합니다. 자세한 내용은 [SEO 및 URL 관리 모범 사례](/help/managing/seo-and-url-management.md)를 참조하세요.
 
 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)는 제품 및 범주 페이지의 URL을 사용자 지정하는 고급 구성을 제공합니다. 많은 구현이 SEO(검색 엔진 최적화) 목적으로 이러한 URL을 사용자 지정합니다. 다음 비디오에서는 `UrlProvider` 서비스 및 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)의 기능을 구성하여 제품 및 범주 페이지의 URL을 사용자 지정하는 방법에 대해 자세히 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/38586/?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## 구성 {#configuration}
 
@@ -40,7 +40,7 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝
 
 제품 페이지의 URL을 구성하고 다음 옵션을 지원합니다.
 
-* `{{page}}.html/{{sku}}.html#{{variant_sku}}`(기본값)
+* `{{page}}.html/{{sku}}.html#{{variant_sku}}` (기본값)
 * `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
@@ -62,7 +62,7 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝
 
 범주 또는 제품 목록 페이지의 URL을 구성하고 다음 옵션을 지원합니다.
 
-* `{{page}}.html/{{url_path}}.html`(기본값)
+* `{{page}}.html/{{url_path}}.html` (기본값)
 * `{{page}}.html/{{url_key}}.html`
 
 [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)가 있는 경우:
@@ -110,5 +110,5 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝
 ## 추가 리소스
 
 * [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM 리소스 매핑](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/resource-mapping.html)
+* [AEM 리소스 매핑](/help/sites-deploying/resource-mapping.md)
 * [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

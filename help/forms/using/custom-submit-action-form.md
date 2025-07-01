@@ -1,17 +1,13 @@
 ---
 title: 적응형 양식에 대한 사용자 정의 제출 액션 작성
 description: AEM Forms을 사용하면 적응형 양식에 대한 사용자 지정 제출 액션을 만들 수 있습니다. 이 문서에서는 적응형 양식에 대한 사용자 지정 제출 액션을 추가하는 절차에 대해 설명합니다.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: customization
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 exl-id: dc3bd697-5b1a-4efe-9554-c6aa1575c1c0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 98097c29b1b9cfb436f9431e8b7dca6e6a58634a
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1543'
 ht-degree: 1%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html) |
 | AEM 6.5 | 이 문서 |
 
 적응형 양식을 처리하려면 제출 액션이 필요합니다. 제출 액션은 적응형 양식을 사용하여 제출하는 데이터에 대해 수행되는 작업을 결정합니다. Adobe Experience Manager(AEM)에는 사용자가 제출한 데이터를 사용하여 수행할 수 있는 사용자 지정 작업을 보여 주는 [기본 제출 작업](../../forms/using/configuring-submit-actions.md)이 포함되어 있습니다. 예를 들어 이메일 전송 또는 데이터 저장과 같은 작업을 수행할 수 있습니다.
@@ -106,7 +102,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 ## 사용자 지정 제출 액션 만들기 {#creating-a-custom-submit-action}
 
-CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 지정 제출 작업을 만들려면 다음 단계를 수행하십시오. 적응형 양식에는 CRX 저장소에 데이터를 저장하는 기본 제출 액션 저장소 콘텐츠(더 이상 사용되지 않음)가 포함되어 있습니다. 또한 CQ는 전자 메일을 보내는 데 사용할 수 있는 [메일](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) API를 제공합니다. 메일 API를 사용하기 전에 시스템 콘솔을 통해 일별 CQ 메일 서비스를 [구성](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko&amp;wcmmode=disabled)합니다. 콘텐츠 저장(더 이상 사용되지 않음) 작업을 다시 사용하여 저장소에 데이터를 저장할 수 있습니다. 컨텐츠 저장(더 이상 사용되지 않음) 작업은 CRX 저장소의 /libs/fd/af/components/guidesubmittype/store에서 사용할 수 있습니다.
+CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 지정 제출 작업을 만들려면 다음 단계를 수행하십시오. 적응형 양식에는 CRX 저장소에 데이터를 저장하는 기본 제출 액션 저장소 콘텐츠(더 이상 사용되지 않음)가 포함되어 있습니다. 또한 CQ는 전자 메일을 보내는 데 사용할 수 있는 [메일](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) API를 제공합니다. 메일 API를 사용하기 전에 시스템 콘솔을 통해 일별 CQ 메일 서비스를 [구성](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&wcmmode=disabled)합니다. 콘텐츠 저장(더 이상 사용되지 않음) 작업을 다시 사용하여 저장소에 데이터를 저장할 수 있습니다. 컨텐츠 저장(더 이상 사용되지 않음) 작업은 CRX 저장소의 /libs/fd/af/components/guidesubmittype/store에서 사용할 수 있습니다.
 
 1. URL https://&lt;server>:&lt;port>/crx/de/index.jsp에서 CRXDE Lite에 로그인합니다. /apps/custom_submit_action 폴더에 sling:Folder 및 name store_and_mail 속성을 사용하여 노드를 만듭니다. custom_submit_action 폴더가 아직 없는 경우 만듭니다.
 
@@ -142,7 +138,7 @@ CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 
 
    작업에 post.POST.jsp 스크립트를 추가합니다. (/apps/custom_submit_action/store_and_mail/).
 
-   기본 제공 저장소 작업(post.POST.jsp 스크립트)을 실행합니다. CQ가 코드에 제공하는 [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)&#x200B;(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API를 사용하여 스토어 작업을 실행하십시오. JSP 파일에 다음 코드를 추가합니다.
+   기본 제공 저장소 작업(post.POST.jsp 스크립트)을 실행합니다. CQ가 코드에 제공하는 [FormsHelper.runAction](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String,java.lang.String,org.apache.sling.api.resource.Resource,org.apache.sling.api.SlingHttpServletRequest,org.apache.sling.api.SlingHttpServletResponse))&#x200B;(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API를 사용하여 스토어 작업을 실행하십시오. JSP 파일에 다음 코드를 추가합니다.
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
@@ -152,7 +148,7 @@ CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 
 
    `String mailTo = properties.get("mailTo");`
 
-   마지막으로 CQ Mail API를 사용하여 이메일을 보냅니다. [SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) 클래스를 사용하여 아래와 같이 전자 메일 개체를 만듭니다.
+   마지막으로 CQ Mail API를 사용하여 이메일을 보냅니다. [SimpleEmail](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/commons/mail/SimpleEmail.html) 클래스를 사용하여 아래와 같이 전자 메일 개체를 만듭니다.
 
    >[!NOTE]
    >

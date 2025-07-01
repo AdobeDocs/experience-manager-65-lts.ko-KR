@@ -8,9 +8,9 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3832'
+source-wordcount: '3805'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 서신 만들기 사용자 인터페이스에서 서신 만들기 {#create-correspondence-in-the-create-correspondence-user-interface}
 
-서신 관리에서 [편지 템플릿이 작성되면](../../forms/using/create-letter.md) 최종 사용자/에이전트/클레임 조정자는 서신 작성 사용자 인터페이스에서 편지를 열고 데이터를 입력하고, 콘텐츠를 설정하고, 첨부 파일을 관리하여 서신을 작성할 수 있습니다. 마지막으로, 청구 조정자 또는 에이전트는 미리보기 모드에서 콘텐츠를 관리하고 편지를 제출할 수 있습니다.
+서신 관리에서 [편지 템플릿이 작성되면](/help/forms/using/create-letter.md) 최종 사용자/에이전트/클레임 조정자는 서신 작성 사용자 인터페이스에서 편지를 열고 데이터를 입력하고, 콘텐츠를 설정하고, 첨부 파일을 관리하여 서신을 작성할 수 있습니다. 마지막으로, 청구 조정자 또는 에이전트는 미리보기 모드에서 콘텐츠를 관리하고 편지를 제출할 수 있습니다.
 
 ### 서신 미리 보기 {#preview-a-correspondence}
 
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 1. 편지 HTML 미리 보기(모바일 양식 미리 보기)가 기본적으로 데이터 탭에 초점이 맞춰져 열립니다.
 
-   모바일 양식 및 모바일 양식에서 지원하는 기능에 대한 자세한 내용은 [Mobile Forms과 PDF forms의 기능 차이점](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html)을 참조하세요.
+   모바일 양식 및 모바일 양식에서 지원하는 기능에 대한 자세한 내용은 [Mobile Forms과 PDF forms의 기능 차이점](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md)을 참조하세요.
 
    탭에는 데이터, 컨텐트 및 첨부 파일의 세 가지가 있습니다. 데이터 요소(자리 표시자 변수 및 레이아웃 필드)가 없는 경우 문자가 콘텐츠 탭이 표시된 로 직접 열립니다. 첨부 파일 탭은 첨부 파일이 있거나 라이브러리 액세스가 활성화된 경우에만 사용할 수 있습니다.
 
    >[!NOTE]
    >
-   >편지 미리 보기의 HTML 또는 PDF 렌디션 모드 간 전환에 대한 자세한 내용은 [편지 렌디션 모드 변경](#changerenditionmode)을 참조하십시오. 서신 관리 및 AEM의 PDF 지원에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/kr/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오. <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >편지 미리 보기의 HTML 또는 PDF 렌디션 모드 간 전환에 대한 자세한 내용은 [편지 렌디션 모드 변경](#changerenditionmode)을 참조하십시오. 서신 관리 및 AEM의 PDF 지원에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
 
 ### 데이터 입력 {#enterdata}
 
@@ -111,17 +111,13 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >그러나 붙여넣은 텍스트의 서식에는 [제한 사항](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html)이 있습니다.
+   >그러나 붙여넣은 텍스트의 서식에는 몇 가지 제한 사항이 있습니다.
 
    Tab 키를 사용하여 편지에 있는 텍스트와 숫자를 들여쓸 수 있습니다. 예를들어 Tab 키를 사용하여 목록의 여러 텍스트 열을 표 형식으로 정렬할 수 있습니다.
 
    ![tabspaces](assets/tabspaces.png)
 
    예: Tab 키를 사용하여 텍스트 여러 열을 표 형식으로 정렬
-
-   >[!NOTE]
-   >
-   >텍스트 모듈과 문자의 탭 간격 설정에 대한 자세한 내용은 [텍스트 정렬에 탭 간격을 사용하는 방법에 대한 자세한 정보](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)를 참조하십시오.
 
 1. 필요한 경우 서신에 특수 문자를 삽입합니다. 예를 들어 특수 문자 팔레트를 사용하여 다음을 삽입할 수 있습니다.
 
@@ -375,7 +371,7 @@ HTML5 Forms의 스크립팅 지원에 대한 자세한 내용은 [HTML5 Forms에
 
 기본적으로 서신 만들기 UI는 HTML 또는 모바일 양식을 사용하여 편지 미리 보기를 렌더링합니다. 모바일 양식 미리 보기는 브라우저의 기본 플러그인을 사용하며 추가 플러그인이 필요하지 않으므로 어떤 브라우저에서도 렌더링하는 데 문제가 없습니다. 편지 미리 보기 모드를 PDF으로 변경할 수 있습니다. 그러나 브라우저 제한으로 인해 편지의 대화형 PDF 미리보기의 다양한 기능에 대한 문제가 발생할 수 있습니다.
 
-편지 미리 보기와의 브라우저 호환성에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/kr/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
+편지 미리 보기와의 브라우저 호환성에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
 
 편지의 미리보기 모드를 변경하려면 다음 단계를 완료하십시오.
 

@@ -1,18 +1,13 @@
 ---
 title: Adobe Experience Manager 구성 요소 - 기본 사항
 description: 새 구성 요소를 개발하기 시작하려면 해당 구성 요소의 구조 및 구성에 대한 기본 사항을 이해해야 합니다.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4834'
+source-wordcount: '4819'
 ht-degree: 1%
 
 ---
@@ -64,13 +59,13 @@ AEM 6.4에서 더 이상 사용되지 않는 ExtJS 기술을 기반으로 한 �
 
 Adobe에서는 마크업 및 렌더링을 담당하는 코드를 구성 요소의 콘텐츠를 선택하는 데 사용되는 논리를 제어하는 코드와 별도로 유지하는 것이 좋습니다.
 
-이 철학은 기본 비즈니스 논리를 정의하는 데 실제 프로그래밍 언어를 사용하도록 의도적으로 제한된 템플릿 언어인 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)에서 지원됩니다. 이 (선택 사항) 논리는 특정 명령을 사용하여 HTL에서 호출됩니다. 이 메커니즘은 주어진 뷰에 대해 호출되는 코드를 강조 표시하고, 필요한 경우 동일한 구성 요소의 다른 뷰에 대해 특정 논리를 허용합니다.
+이 철학은 기본 비즈니스 논리를 정의하는 데 실제 프로그래밍 언어를 사용하도록 의도적으로 제한된 템플릿 언어인 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)에서 지원됩니다. 이 (선택 사항) 논리는 특정 명령을 사용하여 HTL에서 호출됩니다. 이 메커니즘은 주어진 뷰에 대해 호출되는 코드를 강조 표시하고, 필요한 경우 동일한 구성 요소의 다른 뷰에 대해 특정 논리를 허용합니다.
 
 ### HTL과 JSP {#htl-vs-jsp}
 
 HTL은 AEM 6.0과 함께 도입된 HTML 템플릿 언어입니다.
 
-이제 AEM에서 HTL이 권장 스크립팅 언어이므로 자체 구성 요소를 개발할 때 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)을 사용할지 JSP(Java™ Server Pages)를 사용할지 여부는 간단해야 합니다.
+이제 AEM에서 HTL이 권장 스크립팅 언어이므로 자체 구성 요소를 개발할 때 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)을 사용할지 JSP(Java™ Server Pages)를 사용할지 여부는 간단해야 합니다.
 
 HTL과 JSP는 모두 클래식 및 터치 지원 UI 모두에 대한 구성 요소 개발에 사용할 수 있습니다. HTL은 터치 지원 UI용이고 JSP는 클래식 UI용이라고 가정하는 경향이 있을 수 있지만, 이는 잘못된 인식이며 타이밍으로 인한 더 많은 것입니다. 터치 지원 UI 및 HTL은 거의 동일한 기간에 AEM에 통합되었습니다. 이제 HTL이 권장 언어이므로 터치 지원 UI용 경향이 있는 새 구성 요소에 사용되고 있습니다.
 
@@ -312,7 +307,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>설정된 경우 이 속성은 셀 ID로 간주됩니다. 자세한 내용은 기술 자료 문서 <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">디자인 셀 ID를 작성하는 방법</a>을 참조하십시오.<br /> </td>
+   <td>설정하면 이 속성은 셀 ID로 간주됩니다.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -597,7 +592,7 @@ AEM 내의 구성 요소는 세 가지 계층을 따릅니다.
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* 예를 들어 `cq:editConfig`의 자식 노드를 찾으려면 `cq:DropTargetConfig` 유형의 `cq:dropTargets`을(를) 검색하고 **&#x200B; CRXDE Lite**&#x200B;에서 쿼리 도구를 사용하여 다음 XPath 쿼리 문자열로 검색할 수 있습니다.
+* 예를 들어 `cq:editConfig`의 자식 노드를 찾으려면 `cq:DropTargetConfig` 유형의 `cq:dropTargets`을(를) 검색하고** CRXDE Lite**에서 쿼리 도구를 사용하여 다음 XPath 쿼리 문자열로 검색할 수 있습니다.
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
