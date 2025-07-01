@@ -74,7 +74,7 @@ ht-degree: 0%
 
 Touch UI의 **개발자 모드**
 
-AEM 6의 터치 UI에 있는 새로운 기능 중 하나는 개발자 모드입니다. 작성자가 편집 모드와 미리보기 모드 간을 전환할 수 있는 것처럼 개발자는 작성자 UI에서 개발자 모드로 전환할 수 있습니다. 이렇게 하면 페이지의 각 구성 요소에 대한 렌더링 시간을 확인하고 오류에 대한 스택 추적을 볼 수 있습니다. 개발자 모드에 대한 자세한 내용은 이 [CQ Gems 프레젠테이션](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html)을 참조하세요.
+AEM 6의 터치 UI에 있는 새로운 기능 중 하나는 개발자 모드입니다. 작성자가 편집 모드와 미리보기 모드 간을 전환할 수 있는 것처럼 개발자는 작성자 UI에서 개발자 모드로 전환할 수 있습니다. 이렇게 하면 페이지의 각 구성 요소에 대한 렌더링 시간을 확인하고 오류에 대한 스택 추적을 볼 수 있습니다. 개발자 모드에 대한 자세한 내용은 이 [CQ Gems 프레젠테이션](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=ko)을 참조하세요.
 
 **rlog.jar을 사용하여 요청 로그를 읽습니다**
 
