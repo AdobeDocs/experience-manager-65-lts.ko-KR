@@ -1,14 +1,13 @@
 ---
 title: 자산 템플릿
 description: ' [!DNL Adobe Experience Manager Assets] 의 자산 템플릿과 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아봅니다.'
-contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1557'
 ht-degree: 1%
 
 ---
@@ -90,7 +89,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >[!DNL Experience Manager Assets]이(가) [!DNL InDesign] 템플릿에서 데이터를 추출하고 편집할 수 있도록 하려면 [!DNL Experience Manager] 배포가 [!DNL InDesign Server]과(와) 통합되어야 합니다. 자세한 내용은 [Experience Manager Assets과 InDesign Server 통합](/help/assets/indesign.md)을 참조하십시오.
+   >[!DNL Experience Manager]이(가) [!DNL InDesign Server] 템플릿에서 데이터를 추출하고 편집할 수 있도록 하려면 [!DNL Experience Manager Assets] 배포가 [!DNL InDesign]과(와) 통합되어야 합니다. 자세한 내용은 [Experience Manager Assets과 InDesign Server 통합](/help/assets/indesign.md)을 참조하십시오.
 
 1. 편집 가능한 필드의 텍스트를 수정하려면 편집 가능한 필드 목록에서 텍스트 필드를 클릭하고 필드의 텍스트를 편집합니다.
 
@@ -124,10 +123,8 @@ ht-degree: 1%
    >
    >[!DNL Experience Manager]이(가) 이미지를 확인하도록 하려면 다음을 수행하십시오.
    >
-   >* [!DNL InDesign]개의 템플릿을 만드는 동안 이미지를 포함합니다([링크 및 포함된 그래픽 정보](https://helpx.adobe.com/kr/indesign/using/graphics-links.html) 참조).
+   >* [!DNL InDesign]개의 템플릿을 만드는 동안 이미지를 포함합니다([링크 및 포함된 그래픽 정보](https://helpx.adobe.com/indesign/using/graphics-links.html) 참조).
    >* 로컬 파일 시스템에 [!DNL Experience Manager]을(를) 탑재한 다음 누락된 아이콘을 [!DNL Experience Manager]의 기존 자산에 매핑합니다.
-   >
-   >[!DNL InDesign] 문서 작업에 대한 자세한 내용은 [Experience Manager에서 InDesign 문서 작업 모범 사례](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)를 참조하십시오.
 
 1. 브로셔에 대한 PDF 렌디션을 생성하려면 대화 상자에서 Acrobat 옵션을 선택한 다음 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.
 1. 자료 조각은 시작한 폴더에 생성됩니다. 렌디션을 보려면 자료를 열고 GlobalNav 목록에서 **[!UICONTROL 렌디션]**&#x200B;을 선택하십시오.
@@ -177,4 +174,4 @@ ht-degree: 1%
 
 ## 우수 사례 및 제한 사항 {#best-practices-limitations-tips}
 
-* [!DNL Experience Manager]의 [!DNL InDesign] 편집기는 태그 수준에서 작동하며 단일 태그의 모든 텍스트는 단일 엔터티로 간주됩니다. 편집할 때 텍스트 서식과 스타일을 유지하려면 각 단락(또는 스타일이 다른 텍스트)에 개별적으로 태그를 지정합니다.
+* [!DNL InDesign]의 [!DNL Experience Manager] 편집기는 태그 수준에서 작동하며 단일 태그의 모든 텍스트는 단일 엔터티로 간주됩니다. 편집할 때 텍스트 서식과 스타일을 유지하려면 각 단락(또는 스타일이 다른 텍스트)에 개별적으로 태그를 지정합니다.

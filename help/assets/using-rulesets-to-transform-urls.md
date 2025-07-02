@@ -9,9 +9,9 @@ role: User, Admin,Developer
 feature: Configuration,Rulesets
 solution: Experience Manager, Experience Manager Assets
 exl-id: 8f005ada-275a-444f-9883-64d847fd9959
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ce717f045221a65f88766d1d5f62d0fa33a3ffcd
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -34,8 +34,6 @@ Dynamic Media에서 규칙 세트를 배포하여 URL을 변환할 수 있습니
 
 * `$`, `{` 및 `}`과(와) 같은 인코딩할 특정 문자와 ImageServer에 디코딩될 특정 문자를 요청합니다. 예를 들어 Facebook은 특수 문자가 포함된 URL에서 잘 작동하지 않습니다.
 
-  [URL에서 특수 문자 제거](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)를 참조하십시오.
-
 Dynamic Media의 맥락에서 XML 기반 시스템을 사용하여 에셋 정보를 관리하는 웹 사이트는 XML 파일을 Dynamic Media에 업로드할 수 있습니다. 이러한 파일 중 하나를 Dynamic Media 에셋을 제공하기 위한 전처리 규칙 세트 파일로 지정할 수 있습니다. 이 파일은 Dynamic Media와 통합되는 시스템의 비즈니스 논리에 맞게 표준 URL 프로토콜 형식을 재구성합니다. 규칙 세트 정의 파일 경로로 사용할 XML 파일을 지정합니다.
 
 >[!CAUTION]
@@ -43,25 +41,22 @@ Dynamic Media의 맥락에서 XML 기반 시스템을 사용하여 에셋 정보
 >규칙 세트를 사용할 때는 주의하십시오. 규칙 세트를 사용하면 Dynamic Media 콘텐츠가 웹 사이트에 표시되지 않을 수 있습니다.
 
 고유한 규칙 세트를 만드는 데 도움이 될 수 있는 샘플 규칙 세트가 있습니다.
-[규칙 집합 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html?lang=ko)를 참조하십시오.
+[규칙 집합 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)를 참조하십시오.
 
 모든 규칙 세트 생성과 마찬가지로 xmlvalid와 같은 XML 유효성 검사기 프로그램을 사용하여 업로드하기 전에 XML 파일이 유효한지 확인하십시오.
-[규칙 집합 문제 해결](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)도 참조하세요.
 
 또한 라이브 프로덕션 환경에 영향을 주지 않는 스테이징 환경에서 규칙 세트를 먼저 테스트해야 합니다.
 프로덕션 환경과 스테이징 환경에서는 일반적으로 서로 다른 로그인이 필요합니다.
 
-로그인 정보는 [Adobe Dynamic Media Classic 데스크톱 응용 프로그램을 참조하십시오](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#sign-in-dmc-app).
+로그인 정보는 [Adobe Dynamic Media Classic 데스크톱 응용 프로그램을 참조하십시오](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
 <!-- OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
 * **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
-[규칙 집합에서 &#39;is&#39; 이미지 대신 &#39;asset&#39; 사용](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html)도 참조하세요.
-
 **XML 규칙 집합을 배포하려면:**
 
-1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#sign-in-dmc-app)에 로그인합니다.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)에 로그인합니다.
 
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
 

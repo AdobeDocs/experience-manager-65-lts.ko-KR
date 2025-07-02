@@ -9,9 +9,9 @@ feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: dc405bec510b0f72e916df343790572b3cd51526
 workflow-type: tm+mt
-source-wordcount: '3322'
+source-wordcount: '3307'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ ht-degree: 0%
 
 | 이미지(URL) | 썸네일 | 크기(JPEG) | 스마트 이미징을 사용한 크기(WebP) | 스마트 이미징을 사용한 크기(AVIF) | WebP를 통한 % 감소 | AVIF를 사용한 % 감소 |
 |---|---|---|---|---|---|---|
-| [이미지 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![그림1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90.2 KB | 26.89% | 37.79% |
-| [이미지 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![사진2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16.01% | 72.57% |
-| [이미지 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![그림3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87.1 KB | 14.47% | 60.58% |
-| [이미지 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![그림4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8.25% | 51.85% |
+| [이미지 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![그림1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90.2 KB | 26.89% | 37.79% |
+| [이미지 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![사진2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16.01% | 72.57% |
+| [이미지 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![그림3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87.1 KB | 14.47% | 60.58% |
+| [이미지 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![그림4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8.25% | 51.85% |
 
 위와 유사하게, Adobe도 더 큰 샘플 세트로 테스트를 실행했습니다. 형식 AVIF는 WebP에 비해 20%의 추가 크기 감소를 제공했으며, JPEG에 비해 27%의 추가 크기 감소를 제공했습니다. 모두 동일한 시각적 품질입니다. 전체적으로 AVIF는 JPEG에 비해 최대 41%의 평균 크기 감소를 제공합니다.
 
@@ -88,7 +88,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 이미지의 URL에 `bfc=off`을(를) 추가하여 스마트 이미징을 끌 수 있습니다.
 
-Dynamic Media 이미지 제공 및 렌더링 API에서 [bfc](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)도 참조하세요.
+Dynamic Media 이미지 제공 및 렌더링 API에서 [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)도 참조하세요.
 
 ### 장치 픽셀 비율(DPR) 최적화 정보 {#dpr}
 
@@ -134,7 +134,7 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 * Adobe Sensei 기술을 사용하여 이미지 요청에 지정된 품질(`qlt`)에 따라 변환합니다.
 * TTL(Time To Live) 독립적. 이전에는 스마트 이미징이 작동하려면 최소 TTL이 12시간 이상이어야 했습니다.
 * 이전에는 원본 이미지와 파생 이미지가 모두 캐시되었으며 캐시를 무효화하는 2단계 프로세스였습니다. 최신 스마트 이미징에서는 파생 함수만 캐시되므로 한 단계의 캐시 무효화 프로세스를 사용할 수 있습니다.
-* 규칙 세트에서 사용자 지정 헤더를 사용하는 고객은 이전 버전의 스마트 이미징과 달리 이러한 헤더가 차단되지 않으므로 최신 스마트 이미징의 혜택을 받을 수 있습니다. 예를 들어, [이미지 응답에 사용자 지정 헤더 값 추가|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)에 제시된 대로 &quot;Timing Allow Origin&quot; 및 &quot;X-Robot&quot;이 있습니다.
+* 규칙 세트에서 사용자 지정 헤더를 사용하는 고객은 이전 버전의 스마트 이미징과 달리 이러한 헤더가 차단되지 않으므로 최신 스마트 이미징의 혜택을 받을 수 있습니다. 예를 들어 &quot;Timing Allow Origin&quot; 및 &quot;X-Robot&quot;이 있습니다.
 
 ## 자주 묻는 질문
 
@@ -255,7 +255,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
       * *`company.com`* 또는 *`mycompany.scene7.com`*&#x200B;과(와) 같은 모든 관련 도메인을 나열합니다.
       * 스마트 이미징은 일반 도메인과 사용자 지정 도메인을 모두 지원합니다.
-      * 도메인을 식별하려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 열고 회사 계정에 로그인하세요.
+      * 도메인을 식별하려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 열고 회사 계정에 로그인하세요.
 
          1. **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다.
          1. 도메인을 확인하려면 **[!UICONTROL 게시된 서버 이름]** 필드를 찾으십시오.
@@ -336,9 +336,9 @@ TTL을 조정하려면 다음을 수행하십시오.
 >**X-Adobe-Smart-Imaging = -1(WebP 제공)**
 >
 >`X-Adobe-Smart-Imaging`의 값이 -1이고 WebP가 계속 배달 중인 경우 스마트 이미징이 활성화됩니다. 그러나 캐시가 오래되어 크기 이점이 계산되지 않았습니다. 이미지의 URL에서 `cache=update`(한 번만)을 사용하여 이 문제를 해결할 수 있습니다.
->수정자 사용의 예:
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->전체 캐시를 무효화하려면 지원 사례를 만들어야 합니다.
+>>수정자 사용의 예:
+>>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>>전체 캐시를 무효화하려면 지원 사례를 만들어야 합니다.
 
 +++
 

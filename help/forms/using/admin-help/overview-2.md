@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 8aeacdb7-68a7-476f-a725-f9ad7406cc9c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 02b9eb98d1fdf1b090166a6ae7c0a4379487d2e1
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -35,8 +35,6 @@ AEM forms에서는 키 쌍을 생성하는 옵션을 제공하지 않습니다. 
 [https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html](https://docs.oracle.com/javase/tutorial/security/toolsign/step3.html)
 
 [https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html](https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html)
-
-[https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL](https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL)
 
 지원되는 서명 유형은 다음과 같습니다. AEM 양식으로 가져올 수 있습니다.
 

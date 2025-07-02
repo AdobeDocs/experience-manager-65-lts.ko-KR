@@ -1,19 +1,15 @@
 ---
 title: 클러스터 환경에서의 백업 및 리스토어 전략
 description: AEM Forms 구현에서 추가 사용자 정의 데이터를 다른 데이터베이스에 저장하는 경우, AEM Forms 데이터와 계속 동기화되도록 이 데이터를 백업하는 전략을 구현해야 합니다.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1391'
 ht-degree: 0%
 
 ---
@@ -53,7 +49,7 @@ ht-degree: 0%
    1. 하위 디렉토리를 포함하여 모든 보조 클러스터 노드의 모든 파일을 백업합니다.
    1. 각 클러스터 노드의 저장소/시스템 ID를 별도로 백업합니다.
 
-   자세한 단계는 [백업 및 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)을 참조하세요.
+   자세한 단계는 [백업 및 복원](/help/sites-administering/backup-and-restore.md)을 참조하세요.
 
 1. 고객 글꼴과 같은 다른 모든 데이터를 백업합니다.
 1. 클러스터를 다시 시작합니다.
@@ -72,7 +68,7 @@ ht-degree: 0%
    1. 하위 디렉토리를 포함하여 모든 보조 클러스터 노드의 모든 파일을 백업합니다.
    1. 각 클러스터 노드의 repository/system.id 를 별도로 백업합니다.
 
-   자세한 단계는 [백업 및 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)을 참조하세요.
+   자세한 단계는 [백업 및 복원](/help/sites-administering/backup-and-restore.md)을 참조하세요.
 
 1. 고객 글꼴과 같은 다른 모든 데이터를 백업합니다.
 1. 클러스터를 다시 시작합니다.
@@ -135,7 +131,7 @@ AEM 보조 노드의 재해 복구 시나리오에 사용할 파일을 백업하
    1. 노드에서 파일 clusterNode/revision.log 을 삭제합니다.
    1. 존재하는 경우 노드에서 .lock을 삭제합니다.
    1. 존재하는 경우 노드에서 repository/system.id을 삭제합니다.
-   1. 노드에서 파일 &ast;&ast;/listener.properties(있는 경우)를 삭제합니다.
+   1. 노드에서 파일 &amp;ast;&amp;ast;/listener.properties(있는 경우)를 삭제합니다.
    1. 개별 클러스터 노드의 경우 repository/cluster_node.id을 복원합니다.
 
 >[!NOTE]
@@ -165,7 +161,7 @@ AEM 보조 노드의 재해 복구 시나리오에 사용할 파일을 백업하
    1. 모든 클러스터 노드에서 파일 clusterNode/revision.log 을 삭제합니다.
    1. 존재하는 경우 모든 클러스터 노드에서 .lock을 삭제합니다.
    1. 존재하는 경우 repository/system.id 모든 클러스터 노드를 삭제합니다.
-   1. 모든 클러스터 노드에서 파일 &ast;&ast;/listener.properties(있는 경우)를 삭제합니다.
+   1. 모든 클러스터 노드에서 파일 &amp;ast;&amp;ast;/listener.properties(있는 경우)를 삭제합니다.
    1. 개별 클러스터 노드의 경우 repository/cluster_node.id을 복원합니다.
 
 >[!NOTE]
@@ -178,15 +174,15 @@ AEM 보조 노드의 재해 복구 시나리오에 사용할 파일을 백업하
 
 ## 서신 관리 솔루션 게시 노드 백업 및 복원 {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-클러스터된 환경에 게시자 노드에 기본-보조 관계가 없습니다. [백업 및 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)을 수행하여 게시자 노드를 백업할 수 있습니다.
+클러스터된 환경에 게시자 노드에 기본-보조 관계가 없습니다. [백업 및 복원](/help/sites-administering/backup-and-restore.md)을 수행하여 게시자 노드를 백업할 수 있습니다.
 
 ### 단일 게시자 노드 복구 {#recover-a-single-publisher-node}
 
 1. 복구해야 하는 노드를 종료하고 노드가 다시 시작될 때까지 게시 활동을 수행하지 않습니다.
-1. [백업 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)을 사용하여 게시 노드를 복원합니다.
+1. [백업 복원](/help/sites-administering/backup-and-restore.md)을 사용하여 게시 노드를 복원합니다.
 
 ### 클러스터 복구 {#recover-a-cluster}
 
 1. 클러스터를 종료합니다.
-1. [백업 복원](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)을 사용하여 게시 노드를 복원합니다.
+1. [백업 복원](/help/sites-administering/backup-and-restore.md)을 사용하여 게시 노드를 복원합니다.
 1. 주 노드 다음에 작성자 클러스터의 보조 노드가 올 때 시작합니다.

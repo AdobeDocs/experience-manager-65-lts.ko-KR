@@ -10,9 +10,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
 workflow-type: tm+mt
-source-wordcount: '6200'
+source-wordcount: '6185'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ PDF Generator에서 지원되는 파일 형식에 대한 애플리케이션 설�
 
 1. 모든 섹션을 완료한 후 **[!UICONTROL 저장]** 또는 **[!UICONTROL 다른 이름으로 저장]**&#x200B;을 클릭하고 설정 이름을 지정하십시오.
 
-다양한 파일 유형에 대한 지원을 사용자 지정할 수 있습니다. ([AEM 양식을 사용한 프로그래밍](https://www.adobe.com/go/learn_lc_programming_11)에서 &quot;[추가 기본 파일 형식에 대한 지원 추가](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)&quot;을(를) 참조하십시오.)
+다양한 파일 유형에 대한 지원을 사용자 지정할 수 있습니다.
 
 ## 기본 설정 변경 {#change-the-default-settings}
 
@@ -267,7 +267,7 @@ PDF Generator은 PDF 파일의 크기를 줄이는 기능을 지원합니다. �
 
    >[!NOTE]
    >
-   >*이 옵션을&#x200B;**일부 글꼴 임베드 취소**&#x200B;와 함께 사용하는 경우&#x200B;**임베드 취소할 글꼴 추가**&#x200B;목록의 글꼴은 여전히 완전히 임베드 해제됩니다.*
+   >*이 옵션을&#x200B;**일부 글꼴 임베드 취소**와 함께 사용하는 경우&#x200B;**임베드 취소할 글꼴 추가**목록의 글꼴은 여전히 완전히 임베드 해제됩니다.*
 
    >[!NOTE]
    >
@@ -384,7 +384,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 ### 정리 {#clean-up}
 
-문서에서 불필요한 항목을 제거하려면 **정리**&#x200B;를 선택하십시오.
+문서에서 불필요한 항목을 제거하려면 **정리**를 선택하십시오.
 이러한 항목에는 해당 문서를 사용할 때 더 이상 사용되지 않거나 필요하지 않은 요소가 포함됩니다. 특정 요소를 제거하면 PDF 기능에 심각한 영향을 줄 수 있습니다. 기본적으로 기능에 영향을 주지 않는 요소만 선택됩니다. 다른 옵션 제거에 대한 의미를 잘 모를 경우 기본 선택 항목을 사용하십시오.
 
 **압축**

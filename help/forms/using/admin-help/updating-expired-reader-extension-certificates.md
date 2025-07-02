@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 83dbd00e-28ad-4a2e-ac22-3658fb6f639b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 7a1bbcb84a0be301bba4473f30ca4a8d9ea3f906
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ A. 상황 재평가에 따라 2023년 1월 7일 이전에 이전 &quot;Adobe 루
 
 **Q. 추가 질문이 있는 경우 누구에게 문의해야 합니까?**
 
-A. [Adobe 지원 센터](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager#support)에 문의하거나 지원 티켓을 제출할 수 있습니다.
+A. [Adobe 지원 센터](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support)에 문의하거나 지원 티켓을 제출할 수 있습니다.
 
 **Q. 2023년 1월 7일 이전에 인증서를 업데이트하지 않으면 어떻게 됩니까?**
 
@@ -46,7 +46,7 @@ A. 새 Acrobat Reader 확장 인증서에 대한 설명에 프로그램 이름�
 
 **Q. 최신 인증서를 얻는 방법은 무엇입니까?**
 
-A. 자격이 있는 모든 Forms 고객(활성 라이선스가 있음)은 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com/)에서 새 인증서(&quot;Adobe Root CA G2&quot;를 기반으로 하는 인증서)를 다운로드할 수 있습니다. Adobe 라이선스 웹 사이트에서 인증서를 찾을 수 없는 경우 [Adobe 지원 센터](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager&amp;lang=en#support)에 문의하거나 지원 티켓을 받으십시오.
+A. 자격이 있는 모든 Forms 고객(활성 라이선스가 있음)은 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com/)에서 새 인증서(&quot;Adobe Root CA G2&quot;를 기반으로 하는 인증서)를 다운로드할 수 있습니다. Adobe 라이선스 웹 사이트에서 인증서를 찾을 수 없는 경우 [Adobe 지원 센터](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=en#support)에 문의하거나 지원 티켓을 받으십시오.
 
 **Q. &quot;Adobe 루트 CA&quot;(이전 인증 기관)에서 발급한 인증서를 사용하여 확장된 PDF 문서가 2023년 1월 7일 이후에도 계속 작동합니까?**
 
@@ -74,7 +74,7 @@ A. 예. 동일한 Acrobat Reader 확장 인증서를 여러 환경에서 사용�
 
 **Q. PDF 문서에 적용된 사용 권한을 확인하려면 어떻게 해야 합니까?**
 
-A. [getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) API를 사용하여 PDF 문서에 적용된 사용 권한에 대한 정보를 검색할 수 있습니다.
+A. [getDocumentUsageRights](/help/forms/developing/acrobat-reader-dc-extensions-service.md) API를 사용하여 PDF 문서에 적용된 사용 권한에 대한 정보를 검색할 수 있습니다.
 
 **Q. Acrobat Reader 확장 인증서 파일의 암호를 변경하려면 어떻게 해야 합니까?**
 
@@ -190,4 +190,4 @@ Remove usage rights from existing rights-enabled PDF documents before applying u
 
 #### Apply the usage rights to PDF documents 
 
-To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html?lang=ko).  -->
+To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).  -->

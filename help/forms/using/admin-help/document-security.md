@@ -1,20 +1,15 @@
 ---
 title: 문서 보안이란?
 description: 문서 보안을 사용하여 사전 정의된 기밀 설정을 만들고, 저장하고, 적용하고, 정보를 안전하게 배포하는 방법에 대해 알아봅니다.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5e7fe85e-3c7f-4a37-8f65-5c0ad4bbd66c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 32da9c3f13cb1eba130e96e03ab97617d18e1486
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3218'
 ht-degree: 0%
 
 ---
@@ -26,7 +21,7 @@ Document Security는 승인된 사용자만 문서를 사용할 수 있도록 �
 * Adobe PDF 파일
 * Microsoft® Word, Excel 및 PowerPoint 파일
 
-정책이 지원되는 파일 형식을 보호하는 방법에 대한 자세한 내용은 [추가 문서 보안 정보](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/use-document-security/document-security-offerings.html?lang=en)를 참조하십시오.
+정책이 지원되는 파일 형식을 보호하는 방법에 대한 자세한 내용은 [추가 문서 보안 정보](/help/forms/using/document-security-offerings.md)를 참조하십시오.
 
 문서 보안을 사용하면 미리 정의된 기밀 유지 설정을 문서에 쉽게 만들고 저장하고 적용할 수 있습니다. 정보가 범위를 넘어 확산되지 않도록 문서를 배포한 후 수신자가 문서를 사용하는 방법을 모니터링하고 제어할 수도 있습니다.
 

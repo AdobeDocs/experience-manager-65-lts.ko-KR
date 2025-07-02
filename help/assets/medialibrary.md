@@ -7,7 +7,7 @@ feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 50a980e5-3b35-4485-9a5b-44d1a42a837c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 51f6da4da0bb3f79aa6fa17371b8084b72de7546
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager] 플랫폼은 자산을 관리하는 다양한 기능을 제공합니다. Media Library를 사용하면 저장소에 적은 수의 에셋을 업로드하고, 웹 페이지에서 해당 에셋을 검색 및 사용할 수 있으며, 에셋에 대한 간단한 에셋 관리 작업을 수행할 수 있습니다.
@@ -37,7 +37,7 @@ Media Library가 Sites의 일부로 설치됩니다. Sites 라이센스 및 설�
 
 Experience Manager Assets은 엔터프라이즈급 DAM 기능을 제공합니다. Assets 기능은 단일 패키지로 [!DNL Experience Manager]과(와) 함께 제공됩니다. 그러나 Assets 라이선스를 구입하지 않은 사용자는 고급 DAM 기능을 사용할 자격이 없습니다. Assets 라이선스가 없으면 [미디어 라이브러리 기능](#use-media-library)만 사용할 수 있습니다.
 
-라이선스가 부여되지 않은 [!DNL Assets] 기능을 의도하지 않게 사용하지 않도록 하려면 [!DNL Experience Manager]에서 모든 [!DNL Assets]별 워크플로, 구성 요소, 분류, 옵션 및 [!DNL Assets] 관리자를 제거하십시오. 이렇게 하면 사용자가 라이선스를 부여하지 않은 [!DNL Assets] 기능을 실수로 사용하지 않도록 방지합니다.
+라이선스가 부여되지 않은 [!DNL Assets] 기능을 의도하지 않게 사용하지 않도록 하려면 [!DNL Assets]에서 모든 [!DNL Assets]별 워크플로, 구성 요소, 분류, 옵션 및 [!DNL Experience Manager] 관리자를 제거하십시오. 이렇게 하면 사용자가 라이선스를 부여하지 않은 [!DNL Assets] 기능을 실수로 사용하지 않도록 방지합니다.
 
 ## 미디어 라이브러리 사용 {#use-media-library}
 
@@ -87,12 +87,12 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >
 >[!DNL Experience Manager Assets]은(는) 많은 고급 DAM 사용 사례를 충족합니다. 미디어 라이브러리 라이선스는 미디어 라이브러리를 사용하여 나열된 사용 사례만 이행할 수 있는 권한을 부여합니다. 사용 사례가 나열되지 않으면 Media Library 라이선스와 함께 사용하지 마십시오. 질문이 있는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
-[!DNL Assets] 라이선스 없이 스마트 태그, [!DNL Asset] 링크, [!DNL Asset] 선택기, 일괄 태그 지정, 자산 워크플로 수정 또는 표준 [!DNL Adobe Experience Manager] 사용자 인터페이스를 사용하여 미디어 라이브러리에 액세스할 수 없습니다.
+[!DNL Asset] 라이선스 없이 스마트 태그, [!DNL Asset] 링크, [!DNL Adobe Experience Manager] 선택기, 일괄 태그 지정, 자산 워크플로 수정 또는 표준 [!DNL Assets] 사용자 인터페이스를 사용하여 미디어 라이브러리에 액세스할 수 없습니다.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
 >[!MORELIKETHIS]
 >
->* [DAM 기능 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/home.html)
->* [[!DNL Experience Manager] 6.5 Managed Services 제품 설명](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager] 6.5 온-프레미스 제품 설명](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+>* [DAM 기능 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/assets/assets)
+>* [[!DNL Experience Manager] 6.5 Managed Services 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+>* [[!DNL Experience Manager] 6.5 온-프레미스 제품 설명](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)

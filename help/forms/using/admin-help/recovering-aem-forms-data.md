@@ -2,16 +2,13 @@
 title: AEM 양식 데이터 복구
 description: 이 문서에서는 AEM 양식 데이터를 복구하는 데 필요한 단계에 대해 설명합니다.
 contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 6345edda-cdc6-4e13-ade6-2dd6de9d9616
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f7adcbe7700d0ea9cbd18eb0b59bcd76f56e8cc5
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -98,7 +95,7 @@ AEM forms는 다음 실패에서 안정적으로 복구되어야 합니다.
 
    * **독립 실행형**
 
-     *작성자 및 게시 인스턴스 복원*: 재해가 발생하면 [백업 및 복원에 설명된 단계를 수행하여 저장소를 마지막으로 백업된 상태로 복원할 수 있습니다.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
+     *작성자 및 게시 인스턴스 복원*: 재해가 발생하면 [백업 및 복원](/help/sites-administering/backup-and-restore.md)에 설명된 단계를 수행하여 저장소를 마지막으로 백업된 상태로 복원할 수 있습니다.
 
      작성자 노드의 전체 복원은 Forms Manager 및 AEM Forms Workspace 데이터의 복원도 확인합니다.
 

@@ -1,17 +1,15 @@
 ---
 title: 사용자 추가 및 구성
 description: 관리 콘솔의 사용자 관리 설정을 사용하면 사용자를 만들거나 삭제하고 다른 사용자 설정을 구성할 수 있습니다.
-contentOwner: admin
-geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9dcdf84b70a3b0ea6fb332cd2cf8ccf1d4476489
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -28,7 +26,7 @@ ht-degree: 0%
 
 사용자를 만들 때 사용자를 그룹에 추가하고 그룹에 역할을 할당할 수 있습니다.
 
-1. 관리 콘솔에서 **[!UICONTROL 설정 > 사용자 관리 > 사용자 및 그룹]**&#x200B;을 클릭하고 **[!UICONTROL 새 사용자]**&#x200B;를 클릭합니다.
+1. 관리 콘솔에서 **[!UICONTROL 설정 > 사용자 관리 > 사용자 및 그룹]**&#x200B;을 클릭하고 **[!UICONTROL 새 사용자]**를 클릭합니다.
 .
 1. **[!UICONTROL 일반 설정]**&#x200B;에서 필요에 따라 정보를 입력한 다음 **[!UICONTROL 다음]**&#x200B;을 클릭합니다. 설정에 대한 자세한 내용은 [사용자 설정](adding-configuring-users.md#user-settings)을 참조하세요.
 1. (선택 사항) 그룹에 사용자를 추가하려면 **[!UICONTROL 그룹 찾기]**&#x200B;를 클릭하고 다음 작업을 수행합니다.
@@ -41,10 +39,6 @@ ht-degree: 0%
 
 1. (선택 사항) 사용자에게 역할을 할당하려면 **[!UICONTROL 역할 찾기]**&#x200B;를 클릭하고 할당할 역할에 대한 확인란을 선택한 다음 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 마침]**&#x200B;을 클릭합니다.
-
-   >[!NOTE]
-   >
-   >사용자에게 로그인 문제가 발생하면 [JEE의 AEM Forms 사용자가 OSGi측의 AEM Forms에 로그인하지 못함](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html)을 참조하십시오.
 
 ## 사용자 설정 {#user-settings}
 
@@ -178,4 +172,4 @@ MySQL을 사용하는 경우 사용자 ID에 확장 문자가 포함될 수 있�
 
 CQ는 기본 404 핸들러 jsp를 재정의하는 메커니즘을 제공합니다.
 
-오류 처리 페이지를 사용자 지정하는 방법에 대한 자세한 내용은 Adobe Experience Manager 설명서에서 [오류 처리기에 표시된 페이지 사용자 지정](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en)을 참조하십시오.
+오류 처리 페이지를 사용자 지정하는 방법에 대한 자세한 내용은 Adobe Experience Manager 설명서에서 [오류 처리기에 표시된 페이지 사용자 지정](/help/sites-developing/customizing-errorhandler-pages.md)을 참조하십시오.

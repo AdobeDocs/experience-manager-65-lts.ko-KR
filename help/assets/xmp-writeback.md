@@ -1,15 +1,14 @@
 ---
 title: 표현물로 XMP 원본에 쓰기
 description: XMP 원본에 쓰기 기능이 에셋에 대한 메타데이터 변경 사항을 에셋의 모든 또는 특정 변환에 전파하는 방법을 알아봅니다.
-contentOwner: AG
 role: User, Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 863ec2b6d8a6e22705c2f48a4f7bbb76fa34f7c7
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '780'
 ht-degree: 6%
 
 ---
@@ -18,18 +17,18 @@ ht-degree: 6%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
+| AEM 6.5 LTS | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]의 이 XMP 원본에 쓰기 기능은 메타데이터 변경 내용을 원본 자산의 렌디션에 복제합니다. Assets 내에서 또는 에셋을 업로드하는 동안 에셋의 메타데이터를 변경하면 변경 사항이 에셋 계층의 메타데이터 노드에 처음 저장됩니다.
 
 XMP 원본에 쓰기 기능을 사용하면 메타데이터 변경 내용을 에셋의 모든 표현물 또는 특정 표현물로 전파할 수 있습니다. 이 기능은 등록된 네임스페이스를 사용하는 메타데이터 속성만 다시 씁니다. 즉, 이름이 `dc:title`인 속성은 다시 기록되지만 이름이 `mytitle`인 속성은 기록되지 않습니다.
 
-제목이 `Classic Leather`인 자산의 [!UICONTROL Title] 속성을 `Nylon`(으)로 수정하는 시나리오를 생각해 보십시오.
+제목이 [!UICONTROL 인 자산의 ]Title`Classic Leather` 속성을 `Nylon`(으)로 수정하는 시나리오를 생각해 보십시오.
 
 ![메타데이터](assets/metadata.png)
 
-이 경우 [!DNL Experience Manager Assets]은(는) 자산 계층 구조에 저장된 자산 메타데이터의 `dc:title` 매개 변수에 **[!UICONTROL Title]** 속성의 변경 내용을 저장합니다.
+이 경우 [!DNL Experience Manager Assets]은(는) 자산 계층 구조에 저장된 자산 메타데이터의 **[!UICONTROL 매개 변수에]** Title`dc:title` 속성의 변경 내용을 저장합니다.
 
 ![metadata_stored](assets/metadata_stored.png)
 
@@ -60,7 +59,7 @@ XMP 원본에 쓰기 기능이 메타데이터를 렌디션 썸네일 140.100.pn
    ![step_properties](assets/step_properties.png)
 
 1. 변경 사항을 저장합니다.
-1. 새 특성이 있는 [!DNL Dynamic Media] 이미지의 피라미드 TIFF 렌디션을 다시 생성하려면 [!UICONTROL DAM 메타데이터 원본에 쓰기] 워크플로우에 **[!UICONTROL Dynamic Media 프로세스 이미지 Assets]** 단계를 추가하십시오.
+1. 새 특성이 있는 [!DNL Dynamic Media] 이미지의 피라미드 TIFF 렌디션을 다시 생성하려면 **[!UICONTROL DAM 메타데이터 원본에 쓰기]** 워크플로우에 [!UICONTROL Dynamic Media 프로세스 이미지 Assets] 단계를 추가하십시오.
 
    PTIFF renditions are only created and stored locally in a Dynamic Media Hybrid implementation.
 
@@ -69,8 +68,6 @@ XMP 원본에 쓰기 기능이 메타데이터를 렌디션 썸네일 140.100.pn
 메타데이터 변경 사항은 에셋의 렌디션 thumbnail.140.100.png 및 thumbnail.319.319.png에 전파되며 나머지는 전파되지 않습니다.
 
 >[!NOTE]
->
->64비트 Linux의 XMP 원본에 쓰기 문제는 [64비트 RedHat Linux에서 XMP 원본에 쓰기 기능을 사용하는 방법](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)을 참조하십시오.
 >
 >지원되는 플랫폼에 대해서는 [XMP 메타데이터 다시 쓰기 필수 구성 요소](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)를 참조하십시오.
 

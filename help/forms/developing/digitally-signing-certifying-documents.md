@@ -1,19 +1,15 @@
 ---
 title: 디지털 서명 및 인증 문서
 description: 서명 서비스를 사용하여 PDF 문서에 디지털 서명 필드를 추가 및 삭제하고, PDF 문서의 서명 필드 이름을 검색하고, 서명 필드를 수정하고, PDF 문서에 디지털 서명하고, PDF 문서를 인증하고, PDF 문서에서 디지털 서명을 확인하고, PDF 문서의 모든 디지털 서명을 확인하고, 서명 필드에서 디지털 서명을 제거합니다.
-contentOwner: admin
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: operations
 role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 30ed51ad-4f69-41eb-9fca-d29d644aa4ba
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9a11887b6bb8446772e5a41246da1023f40ce507
 workflow-type: tm+mt
-source-wordcount: '16917'
+source-wordcount: '16909'
 ht-degree: 0%
 
 ---
@@ -32,11 +28,11 @@ ht-degree: 0%
 
 **서명 필드 이름**
 
-일부 서명 서비스 작업에서는 작업을 수행할 서명 필드의 이름을 지정해야 합니다. 예를 들어 PDF 문서에 서명할 때 서명할 서명 필드의 이름을 지정합니다. 서명 필드의 전체 이름이 `form1[0].Form1[0].SignatureField1[0]`이라고 가정합니다. `form1[0].Form1[0].SignatureField1[0]` 대신 `SignatureField1[0]`을(를) 지정할 수 있습니다.
+일부 서명 서비스 작업에서는 작업을 수행할 서명 필드의 이름을 지정해야 합니다. 예를 들어 PDF 문서에 서명할 때 서명할 서명 필드의 이름을 지정합니다. 서명 필드의 전체 이름이 `form1[0].Form1[0].SignatureField1[0]`이라고 가정합니다. `SignatureField1[0]` 대신 `form1[0].Form1[0].SignatureField1[0]`을(를) 지정할 수 있습니다.
 
 경우에 따라 충돌로 인해 서명 서비스가 잘못된 필드에 서명(또는 서명 필드 이름이 필요한 다른 작업을 수행)하게 됩니다. 이 충돌은 이름 `SignatureField1[0]`이(가) 같은 PDF 문서에서 둘 이상의 위치에 있기 때문입니다. 예를 들어, 이름이 `form1[0].Form1[0].SignatureField1[0]`과(와) `form1[0].Form1[0].SubForm1[0].SignatureField1[0]`인 두 개의 서명 필드가 포함된 PDF 문서에 `SignatureField1[0]`을(를) 지정한다고 가정해 보겠습니다. 이 경우 서명 서비스는 문서의 모든 서명 필드를 반복하는 동안 찾은 첫 번째 서명 필드에 서명합니다.
 
-PDF 문서 내에 여러 서명 필드가 있는 경우 서명 필드의 전체 이름을 지정하는 것이 좋습니다. 즉, `SignatureField1[0]` 대신 `form1[0].Form1[0].SignatureField1[0]`을(를) 지정하십시오.
+PDF 문서 내에 여러 서명 필드가 있는 경우 서명 필드의 전체 이름을 지정하는 것이 좋습니다. 즉, `form1[0].Form1[0].SignatureField1[0]` 대신 `SignatureField1[0]`을(를) 지정하십시오.
 
 서명 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
@@ -120,12 +116,12 @@ PDF 문서에 서명 필드를 추가하려면 다음 작업을 수행하십시�
 1. 서명 클라이언트 만들기
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `SignatureServiceClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `SignatureServiceClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 서명 필드가 추가된 PDF 문서 가져오기
 
    * 해당 생성자를 사용하고 PDF 문서의 위치를 지정하는 문자열 값을 전달하여 서명 필드가 추가된 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다.
-   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
+   * 생성자를 사용하고 `com.adobe.idp.Document` 개체를 전달하여 `java.io.FileInputStream` 개체를 만듭니다.
 
 1. 서명 필드 추가
 
@@ -150,7 +146,7 @@ PDF 문서에 서명 필드를 추가하려면 다음 작업을 수행하십시�
 1. PDF 문서를 PDF 파일로 저장
 
    * `java.io.File` 개체를 만들고 파일 확장명이 .pdf인지 확인하십시오.
-   * `com.adobe.idp` 호출. `Document` 개체의 `copyToFile` 메서드를 사용하여 `Document` 개체의 내용을 파일에 복사합니다. `com.adobe.idp`을(를) 사용하는지 확인하십시오. `addSignatureField` 메서드에서 반환된 `Document` 개체입니다.
+   * `com.adobe.idp` 호출. `Document` 개체의 `copyToFile` 메서드를 사용하여 `Document` 개체의 내용을 파일에 복사합니다. `com.adobe.idp`을(를) 사용하는지 확인하십시오. `Document` 메서드에서 반환된 `addSignatureField` 개체입니다.
 
 **추가 참조**
 
@@ -171,8 +167,8 @@ PDF 문서에 서명 필드를 추가하려면 다음 작업을 수행하십시�
 1. 서명 클라이언트 만들기
 
    * 기본 생성자를 사용하여 `SignatureServiceClient` 개체를 만듭니다.
-   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `SignatureServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * `SignatureServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `SignatureServiceClient.Endpoint.Address` 생성자를 사용하여 `System.ServiceModel.EndpointAddress` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `System.ServiceModel.BasicHttpBinding` 필드의 값을 가져와 `SignatureServiceClient.Endpoint.Binding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
@@ -187,7 +183,7 @@ PDF 문서에 서명 필드를 추가하려면 다음 작업을 수행하십시�
    * 해당 생성자를 호출하고 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
    * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
-   * 해당 `MTOM` 속성을 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
+   * 해당 `BLOB` 속성을 바이트 배열의 내용으로 할당하여 `MTOM` 개체를 채웁니다.
 
 1. 서명 필드 추가
 
@@ -205,8 +201,8 @@ PDF 문서에 서명 필드를 추가하려면 다음 작업을 수행하십시�
 1. PDF 문서를 PDF 파일로 저장
 
    * 해당 생성자를 호출하고 서명 필드와 파일을 열 모드를 포함할 PDF 문서의 파일 위치를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
-   * `addSignatureField` 메서드에서 반환된 `BLOB` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `binaryData` 데이터 멤버의 값을 가져와서 바이트 배열을 채웁니다.
-   * 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
+   * `BLOB` 메서드에서 반환된 `addSignatureField` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `binaryData` 데이터 멤버의 값을 가져와서 바이트 배열을 채웁니다.
+   * 해당 생성자를 호출하고 `System.IO.BinaryWriter` 개체를 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * `System.IO.BinaryWriter` 개체의 `Write` 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열의 내용을 PDF 파일에 씁니다.
 
 **추가 참조**
@@ -281,16 +277,16 @@ PDF 문서에 서명 필드를 추가하려면 다음 작업을 수행하십시�
 1. 서명 클라이언트 만들기
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `SignatureServiceClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `SignatureServiceClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 서명 필드가 포함된 PDF 문서 가져오기
 
    * 해당 생성자를 사용하고 PDF 문서의 위치를 지정하는 문자열 값을 전달하여 서명 필드가 포함된 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다.
-   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
+   * 생성자를 사용하고 `com.adobe.idp.Document` 개체를 전달하여 `java.io.FileInputStream` 개체를 만듭니다.
 
 1. 서명 필드 이름 검색
 
-   * `SignatureServiceClient` 개체의 `getSignatureFieldList` 메서드를 호출하고 서명 필드가 포함된 PDF 문서가 포함된 `com.adobe.idp.Document` 개체를 전달하여 서명 필드 이름을 검색합니다. 이 메서드는 각 요소에 `PDFSignatureField` 개체가 포함된 `java.util.List` 개체를 반환합니다. 이 개체를 사용하면 표시 여부와 같은 서명 필드에 대한 추가 정보를 얻을 수 있습니다.
+   * `SignatureServiceClient` 개체의 `getSignatureFieldList` 메서드를 호출하고 서명 필드가 포함된 PDF 문서가 포함된 `com.adobe.idp.Document` 개체를 전달하여 서명 필드 이름을 검색합니다. 이 메서드는 각 요소에 `java.util.List` 개체가 포함된 `PDFSignatureField` 개체를 반환합니다. 이 개체를 사용하면 표시 여부와 같은 서명 필드에 대한 추가 정보를 얻을 수 있습니다.
    * `java.util.List` 개체를 반복하여 서명 필드 이름이 있는지 확인합니다. PDF 문서의 각 서명 필드에 대해 별도의 `PDFSignatureField` 개체를 가져올 수 있습니다. 서명 필드의 이름을 가져오려면 `PDFSignatureField` 개체의 `getName` 메서드를 호출하십시오. 이 메서드는 서명 필드 이름을 지정하는 문자열 값을 반환합니다.
 
 **추가 참조**
@@ -318,8 +314,8 @@ PDF 문서에 서명 필드를 추가하려면 다음 작업을 수행하십시�
 1. 서명 클라이언트 만들기
 
    * 기본 생성자를 사용하여 `SignatureServiceClient` 개체를 만듭니다.
-   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `SignatureServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * `SignatureServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `SignatureServiceClient.Endpoint.Address` 생성자를 사용하여 `System.ServiceModel.EndpointAddress` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `System.ServiceModel.BasicHttpBinding` 필드의 값을 가져와 `SignatureServiceClient.Endpoint.Binding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
@@ -334,11 +330,11 @@ PDF 문서에 서명 필드를 추가하려면 다음 작업을 수행하십시�
    * 해당 생성자를 호출하고 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
    * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
-   * `MTOM` 필드에 바이트 배열 내용을 할당하여 `BLOB` 개체를 채웁니다.
+   * `BLOB` 필드에 바이트 배열 내용을 할당하여 `MTOM` 개체를 채웁니다.
 
 1. 서명 필드 이름 검색
 
-   * `SignatureServiceClient` 개체의 `getSignatureFieldList` 메서드를 호출하고 서명 필드가 포함된 PDF 문서가 포함된 `BLOB` 개체를 전달하여 서명 필드 이름을 검색합니다. 이 메서드는 각 요소에 `PDFSignatureField` 개체가 포함된 `MyArrayOfPDFSignatureField` 컬렉션 개체를 반환합니다.
+   * `SignatureServiceClient` 개체의 `getSignatureFieldList` 메서드를 호출하고 서명 필드가 포함된 PDF 문서가 포함된 `BLOB` 개체를 전달하여 서명 필드 이름을 검색합니다. 이 메서드는 각 요소에 `MyArrayOfPDFSignatureField` 개체가 포함된 `PDFSignatureField` 컬렉션 개체를 반환합니다.
    * `MyArrayOfPDFSignatureField` 개체를 반복하여 서명 필드 이름이 있는지 확인합니다. PDF 문서의 각 서명 필드에 대해 `PDFSignatureField` 개체를 가져올 수 있습니다. 서명 필드의 이름을 가져오려면 `PDFSignatureField` 개체의 `getName` 메서드를 호출하십시오. 이 메서드는 서명 필드 이름을 지정하는 문자열 값을 반환합니다.
 
 **추가 참조**
@@ -403,9 +399,9 @@ PDF 문서의 서명 필드를 수정하려면 다음 작업을 수행합니다.
 다음 시드 값 사전 값을 설정할 수 있습니다.
 
 * **수정 검사**: 서명이 서명 필드에 적용될 때 해지 검사를 수행할지 여부를 지정합니다.
-* **인증서 옵션**: 인증서 시드 값 사전에 값을 할당합니다. 인증서 옵션을 지정하기 전에 인증서 시드 값 사전에 익숙해지는 것이 좋습니다. ([PDF 참조](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)를 참조하세요.)
+* **인증서 옵션**: 인증서 시드 값 사전에 값을 할당합니다. 인증서 옵션을 지정하기 전에 인증서 시드 값 사전에 익숙해지는 것이 좋습니다.
 * **다이제스트 옵션**: 서명에 사용되는 다이제스트 알고리즘을 지정합니다. 유효한 값은 SHA1, SHA256, SHA384, SHA512 및 RIPEMD160입니다.
-* **필터**: 서명 필드에 사용되는 필터를 지정합니다. 예를 들어 Adobe.PPKLite 필터를 사용할 수 있습니다. ([PDF 참조](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)를 참조하세요.)
+* **필터**: 서명 필드에 사용되는 필터를 지정합니다. 예를 들어 Adobe.PPKLite 필터를 사용할 수 있습니다.
 * **플래그 옵션**: 이 서명 필드와 연결된 플래그 값을 지정합니다. 값이 1이면 서명자는 항목에 대해 지정된 값만 사용해야 합니다. 값이 0이면 다른 값이 허용됨을 의미합니다. 다음은 비트 위치입니다.
 
    * **1(필터):** 서명 필드에 서명하는 데 사용할 서명 처리기입니다.
@@ -449,12 +445,12 @@ PDF 문서의 서명 필드를 수정하려면 다음 작업을 수행합니다.
 1. 서명 클라이언트 만들기
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `SignatureServiceClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `SignatureServiceClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 수정할 서명 필드가 포함된 PDF 문서 가져오기
 
    * 생성자를 사용하고 PDF 문서의 위치를 지정하는 문자열 값을 전달하여 수정할 서명 필드가 포함된 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다.
-   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
+   * 생성자를 사용하고 `com.adobe.idp.Document` 개체를 전달하여 `java.io.FileInputStream` 개체를 만듭니다.
 
 1. 사전 값 설정
 
@@ -483,7 +479,7 @@ PDF 문서의 서명 필드를 수정하려면 다음 작업을 수행합니다.
 1. PDF 문서를 PDF 파일로 저장
 
    * `java.io.File` 개체를 만들고 파일 이름 확장명이 .pdf인지 확인하십시오.
-   * `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하여 `com.adobe.idp.Document` 개체의 내용을 파일에 복사합니다. `modifySignatureField` 메서드가 반환한 `com.adobe.idp.Document` 개체를 사용하는지 확인하십시오.
+   * `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하여 `com.adobe.idp.Document` 개체의 내용을 파일에 복사합니다. `com.adobe.idp.Document` 메서드가 반환한 `modifySignatureField` 개체를 사용하는지 확인하십시오.
 
 ### 웹 서비스 API를 사용하여 서명 필드 수정 {#modify-signature-fields-using-the-web-service-api}
 
@@ -500,8 +496,8 @@ PDF 문서의 서명 필드를 수정하려면 다음 작업을 수행합니다.
 1. 서명 클라이언트 만들기
 
    * 기본 생성자를 사용하여 `SignatureServiceClient` 개체를 만듭니다.
-   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `SignatureServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * `SignatureServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `SignatureServiceClient.Endpoint.Address` 생성자를 사용하여 `System.ServiceModel.EndpointAddress` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `System.ServiceModel.BasicHttpBinding` 필드의 값을 가져와 `SignatureServiceClient.Endpoint.Binding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
@@ -516,7 +512,7 @@ PDF 문서의 서명 필드를 수정하려면 다음 작업을 수행합니다.
    * 해당 생성자를 호출하고 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
    * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
-   * 해당 `MTOM` 속성을 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
+   * 해당 `BLOB` 속성을 바이트 배열의 내용으로 할당하여 `MTOM` 개체를 채웁니다.
 
 1. 사전 값 설정
 
@@ -545,8 +541,8 @@ PDF 문서의 서명 필드를 수정하려면 다음 작업을 수행합니다.
 1. PDF 문서를 PDF 파일로 저장
 
    * 해당 생성자를 호출하고 서명 필드를 포함할 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
-   * `addSignatureField` 메서드가 반환하는 `BLOB` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `MTOM` 데이터 멤버의 값을 가져와서 바이트 배열을 채웁니다.
-   * 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
+   * `BLOB` 메서드가 반환하는 `addSignatureField` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `MTOM` 데이터 멤버의 값을 가져와서 바이트 배열을 채웁니다.
+   * 해당 생성자를 호출하고 `System.IO.BinaryWriter` 개체를 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * `System.IO.BinaryWriter` 개체의 `Write` 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열의 내용을 PDF 파일에 씁니다.
 
 **추가 참조**
@@ -712,12 +708,12 @@ PDF 문서에 디지털 서명하려면 보안 자격 증명도 참조해야 합
 1. 서명 클라이언트 만들기
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `SignatureServiceClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `SignatureServiceClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 서명할 PDF 문서 가져오기
 
    * 생성자를 사용하고 PDF 문서의 위치를 지정하는 문자열 값을 전달하여 디지털 서명할 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다.
-   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
+   * 생성자를 사용하고 `com.adobe.idp.Document` 개체를 전달하여 `java.io.FileInputStream` 개체를 만듭니다.
 
 1. PDF 문서에 서명
 
@@ -725,7 +721,7 @@ PDF 문서에 디지털 서명하려면 보안 자격 증명도 참조해야 합
 
    * 서명할 PDF 문서를 나타내는 `com.adobe.idp.Document` 개체입니다.
    * 디지털 서명을 포함할 서명 필드의 이름을 나타내는 문자열 값입니다.
-   * PDF 문서에 디지털 서명하는 데 사용되는 자격 증명을 나타내는 `Credential` 개체입니다. `Credential` 개체의 정적 `getInstance` 메서드를 호출하고 보안 자격 증명에 해당하는 별칭 값을 지정하는 문자열 값을 전달하여 `Credential` 개체를 만듭니다.
+   * PDF 문서에 디지털 서명하는 데 사용되는 자격 증명을 나타내는 `Credential` 개체입니다. `Credential` 개체의 정적 `Credential` 메서드를 호출하고 보안 자격 증명에 해당하는 별칭 값을 지정하는 문자열 값을 전달하여 `getInstance` 개체를 만듭니다.
    * PDF 문서를 요약하는 데 사용할 해시 알고리즘을 나타내는 정적 데이터 멤버를 지정하는 `HashAlgorithm` 개체입니다. 예를 들어 SHA1 알고리즘을 사용하도록 `HashAlgorithm.SHA1`을(를) 지정할 수 있습니다.
    * PDF 문서가 디지털 서명된 이유를 나타내는 문자열 값입니다.
    * 서명자의 연락처 정보를 나타내는 문자열 값입니다.
@@ -740,7 +736,7 @@ PDF 문서에 디지털 서명하려면 보안 자격 증명도 참조해야 합
 1. 서명된 PDF 문서 저장
 
    * `java.io.File` 개체를 만들고 파일 확장명이 .pdf인지 확인하십시오.
-   * `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하고 `java.io.File`을(를) 전달하여 `Document` 개체의 내용을 파일에 복사합니다. `sign` 메서드에서 반환된 `com.adobe.idp.Document` 개체를 사용하는지 확인하십시오.
+   * `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하고 `java.io.File`을(를) 전달하여 `Document` 개체의 내용을 파일에 복사합니다. `com.adobe.idp.Document` 메서드에서 반환된 `sign` 개체를 사용하는지 확인하십시오.
 
 **추가 참조**
 
@@ -767,8 +763,8 @@ PDF 문서에 디지털 서명하려면 보안 자격 증명도 참조해야 합
 1. 서명 클라이언트 만들기
 
    * 기본 생성자를 사용하여 `SignatureServiceClient` 개체를 만듭니다.
-   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `SignatureServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * `SignatureServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `SignatureServiceClient.Endpoint.Address` 생성자를 사용하여 `System.ServiceModel.EndpointAddress` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `System.ServiceModel.BasicHttpBinding` 필드의 값을 가져와 `SignatureServiceClient.Endpoint.Binding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
@@ -783,7 +779,7 @@ PDF 문서에 디지털 서명하려면 보안 자격 증명도 참조해야 합
    * 해당 생성자를 호출하고 서명할 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
    * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
-   * 해당 `MTOM` 속성을 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
+   * 해당 `BLOB` 속성을 바이트 배열의 내용으로 할당하여 `MTOM` 개체를 채웁니다.
 
 1. PDF 문서에 서명
 
@@ -808,8 +804,8 @@ PDF 문서에 디지털 서명하려면 보안 자격 증명도 참조해야 합
 1. 서명된 PDF 문서 저장
 
    * 해당 생성자를 호출하여 `System.IO.FileStream` 개체를 만듭니다. 서명된 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
-   * `sign` 메서드에서 반환된 `BLOB` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `MTOM` 데이터 멤버의 값을 가져와서 바이트 배열을 채웁니다.
-   * 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
+   * `BLOB` 메서드에서 반환된 `sign` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `MTOM` 데이터 멤버의 값을 가져와서 바이트 배열을 채웁니다.
+   * 해당 생성자를 호출하고 `System.IO.BinaryWriter` 개체를 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * `System.IO.BinaryWriter` 개체의 `Write` 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열의 내용을 PDF 파일에 씁니다.
 
 **추가 참조**
@@ -917,15 +913,15 @@ Forms 및 서명 API(Java)를 사용하여 대화형 양식에 디지털 서명�
 1. Forms 및 Signatures 클라이언트 만들기
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `SignatureServiceClient` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `FormsServiceClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `SignatureServiceClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `FormsServiceClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. Forms 서비스를 사용하여 대화형 양식 얻기
 
    * 생성자를 사용하여 Forms 서비스에 전달할 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다. PDF 문서의 위치를 지정하는 문자열 값을 전달합니다.
-   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
+   * 생성자를 사용하고 `com.adobe.idp.Document` 개체를 전달하여 `java.io.FileInputStream` 개체를 만듭니다.
    * 생성자를 사용하여 Forms 서비스에 전달할 양식 데이터가 포함된 XML 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다. XML 파일의 위치를 지정하는 문자열 값을 전달합니다.
-   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
+   * 생성자를 사용하고 `com.adobe.idp.Document` 개체를 전달하여 `java.io.FileInputStream` 개체를 만듭니다.
    * 런타임 옵션을 설정하는 데 사용되는 `PDFFormRenderSpec` 개체를 만듭니다. `PDFFormRenderSpec` 개체의 `setGenerateServerAppearance` 메서드를 호출하고 `true`을(를) 전달합니다.
    * `FormsServiceClient` 개체의 `renderPDFForm2` 메서드를 호출하고 다음 값을 전달하십시오.
 
@@ -945,7 +941,7 @@ Forms 및 서명 API(Java)를 사용하여 대화형 양식에 디지털 서명�
 
    * 서명할 PDF 문서를 나타내는 `com.adobe.idp.Document` 개체입니다. 이 개체가 Forms 서비스에서 가져온 `com.adobe.idp.Document` 개체인지 확인하십시오.
    * 서명된 서명 필드의 이름을 나타내는 문자열 값입니다.
-   * PDF 문서에 디지털 서명하는 데 사용되는 자격 증명을 나타내는 `Credential` 개체입니다. `Credential` 개체의 정적 `getInstance` 메서드를 호출하여 `Credential` 개체를 만듭니다. 보안 자격 증명에 해당하는 별칭 값을 지정하는 문자열 값을 전달합니다.
+   * PDF 문서에 디지털 서명하는 데 사용되는 자격 증명을 나타내는 `Credential` 개체입니다. `Credential` 개체의 정적 `Credential` 메서드를 호출하여 `getInstance` 개체를 만듭니다. 보안 자격 증명에 해당하는 별칭 값을 지정하는 문자열 값을 전달합니다.
    * PDF 문서를 요약하는 데 사용할 해시 알고리즘을 나타내는 정적 데이터 멤버를 지정하는 `HashAlgorithm` 개체입니다. 예를 들어 SHA1 알고리즘을 사용하도록 `HashAlgorithm.SHA1`을(를) 지정할 수 있습니다.
    * PDF 문서가 디지털 서명된 이유를 나타내는 문자열 값입니다.
    * 서명자의 연락처 정보를 나타내는 문자열 값입니다.
@@ -960,7 +956,7 @@ Forms 및 서명 API(Java)를 사용하여 대화형 양식에 디지털 서명�
 1. 서명된 PDF 문서 저장
 
    * `java.io.File` 개체를 만들고 파일 이름 확장명이 .pdf인지 확인하십시오.
-   * `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하고 `java.io.File`을(를) 전달하여 `Document` 개체의 내용을 파일에 복사합니다. `sign` 메서드가 반환한 `com.adobe.idp.Document` 개체를 사용하는지 확인하십시오.
+   * `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출하고 `java.io.File`을(를) 전달하여 `Document` 개체의 내용을 파일에 복사합니다. `com.adobe.idp.Document` 메서드가 반환한 `sign` 개체를 사용하는지 확인하십시오.
 
 **추가 참조**
 
@@ -991,8 +987,8 @@ Forms 및 서명 API(웹 서비스)를 사용하여 대화형 양식에 디지�
 1. Forms 및 Signatures 클라이언트 만들기
 
    * 기본 생성자를 사용하여 `SignatureServiceClient` 개체를 만듭니다.
-   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `SignatureServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * `SignatureServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `SignatureServiceClient.Endpoint.Address` 생성자를 사용하여 `System.ServiceModel.EndpointAddress` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `System.ServiceModel.BasicHttpBinding` 필드의 값을 가져와 `SignatureServiceClient.Endpoint.Binding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
@@ -1012,13 +1008,13 @@ Forms 및 서명 API(웹 서비스)를 사용하여 대화형 양식에 디지�
    * 해당 생성자를 호출하고 서명할 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
    * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
-   * 해당 `MTOM` 속성을 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
+   * 해당 `BLOB` 속성을 바이트 배열의 내용으로 할당하여 `MTOM` 개체를 채웁니다.
    * 해당 생성자를 사용하여 `BLOB` 개체를 만듭니다. `BLOB` 개체는 양식 데이터를 저장하는 데 사용됩니다.
    * 해당 생성자를 호출하고 양식 데이터가 포함된 XML 파일의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
    * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
-   * 해당 `MTOM` 속성을 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
-   * 런타임 옵션을 설정하는 데 사용되는 `PDFFormRenderSpec` 개체를 만듭니다. `PDFFormRenderSpec` 개체의 `generateServerAppearance` 필드에 값 `true`을(를) 할당합니다.
+   * 해당 `BLOB` 속성을 바이트 배열의 내용으로 할당하여 `MTOM` 개체를 채웁니다.
+   * 런타임 옵션을 설정하는 데 사용되는 `PDFFormRenderSpec` 개체를 만듭니다. `true` 개체의 `PDFFormRenderSpec` 필드에 값 `generateServerAppearance`을(를) 할당합니다.
    * `FormsServiceClient` 개체의 `renderPDFForm2` 메서드를 호출하고 다음 값을 전달하십시오.
 
       * 렌더링할 PDF 양식을 포함하는 `BLOB` 개체입니다.
@@ -1055,8 +1051,8 @@ Forms 및 서명 API(웹 서비스)를 사용하여 대화형 양식에 디지�
 1. 서명된 PDF 문서 저장
 
    * 해당 생성자를 호출하여 `System.IO.FileStream` 개체를 만듭니다. 서명된 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
-   * `sign` 메서드에서 반환된 `BLOB` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `MTOM` 데이터 멤버의 값을 가져와서 바이트 배열을 채웁니다.
-   * 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
+   * `BLOB` 메서드에서 반환된 `sign` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `MTOM` 데이터 멤버의 값을 가져와서 바이트 배열을 채웁니다.
+   * 해당 생성자를 호출하고 `System.IO.BinaryWriter` 개체를 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * `System.IO.BinaryWriter` 개체의 `Write` 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열의 내용을 PDF 파일에 씁니다.
 
 **추가 참조**
@@ -1173,12 +1169,12 @@ PDF 문서를 성공적으로 인증하려면 서명 서비스에서 PDF 문서�
 1. 서명 클라이언트 만들기
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `SignatureServiceClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `SignatureServiceClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 인증할 PDF 문서 가져오기
 
    * 생성자를 사용하고 PDF 문서의 위치를 지정하는 문자열 값을 전달하여 인증할 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다.
-   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
+   * 생성자를 사용하고 `com.adobe.idp.Document` 개체를 전달하여 `java.io.FileInputStream` 개체를 만듭니다.
 
 1. PDF 문서 인증
 
@@ -1186,7 +1182,7 @@ PDF 문서를 성공적으로 인증하려면 서명 서비스에서 PDF 문서�
 
    * 인증할 PDF 문서를 나타내는 `com.adobe.idp.Document` 개체입니다.
    * 서명을 포함할 서명 필드의 이름을 나타내는 문자열 값입니다.
-   * PDF 문서를 인증하는 데 사용되는 자격 증명을 나타내는 `Credential` 개체입니다. `Credential` 개체의 정적 `getInstance` 메서드를 호출하고 보안 자격 증명에 해당하는 별칭 값을 지정하는 문자열 값을 전달하여 `Credential` 개체를 만듭니다.
+   * PDF 문서를 인증하는 데 사용되는 자격 증명을 나타내는 `Credential` 개체입니다. `Credential` 개체의 정적 `Credential` 메서드를 호출하고 보안 자격 증명에 해당하는 별칭 값을 지정하는 문자열 값을 전달하여 `getInstance` 개체를 만듭니다.
    * PDF 문서를 요약하는 데 사용되는 해시 알고리즘을 나타내는 정적 데이터 멤버를 지정하는 `HashAlgorithm` 개체입니다. 예를 들어 SHA1 알고리즘을 사용하도록 `HashAlgorithm.SHA1`을(를) 지정할 수 있습니다.
    * PDF 문서가 인증된 이유를 나타내는 문자열 값입니다.
    * 서명자의 연락처 정보를 나타내는 문자열 값입니다.
@@ -1231,8 +1227,8 @@ PDF 문서를 성공적으로 인증하려면 서명 서비스에서 PDF 문서�
 1. 서명 클라이언트 만들기
 
    * 기본 생성자를 사용하여 `SignatureServiceClient` 개체를 만듭니다.
-   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `SignatureServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * `SignatureServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `SignatureServiceClient.Endpoint.Address` 생성자를 사용하여 `System.ServiceModel.EndpointAddress` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `System.ServiceModel.BasicHttpBinding` 필드의 값을 가져와 `SignatureServiceClient.Endpoint.Binding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
@@ -1247,7 +1243,7 @@ PDF 문서를 성공적으로 인증하려면 서명 서비스에서 PDF 문서�
    * 해당 생성자를 호출하고 인증할 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
    * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하고 바이트 배열, 시작 위치 및 읽을 스트림 길이를 전달하여 바이트 배열을 스트림 데이터로 채웁니다.
-   * `MTOM` 데이터 멤버에 바이트 배열의 내용을 할당하여 `BLOB` 개체를 채웁니다.
+   * `BLOB` 데이터 멤버에 바이트 배열의 내용을 할당하여 `MTOM` 개체를 채웁니다.
 
 1. PDF 문서 인증
 
@@ -1277,8 +1273,8 @@ PDF 문서를 성공적으로 인증하려면 서명 서비스에서 PDF 문서�
 1. 인증된 PDF 문서를 PDF 파일로 저장
 
    * 해당 생성자를 호출하고 인증된 PDF 문서를 포함할 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
-   * `certify` 메서드에서 반환된 `BLOB` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `binaryData` 데이터 멤버의 값을 가져와서 바이트 배열을 채웁니다.
-   * 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
+   * `BLOB` 메서드에서 반환된 `certify` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `binaryData` 데이터 멤버의 값을 가져와서 바이트 배열을 채웁니다.
+   * 해당 생성자를 호출하고 `System.IO.BinaryWriter` 개체를 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * `System.IO.BinaryWriter` 개체의 `Write` 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열의 내용을 PDF 파일에 씁니다.
 
 **추가 참조**
@@ -1345,9 +1341,9 @@ PDF 문서에서 서명을 확인할 때 서명 서비스에서 사용하는 다
 * 해지 확인
 * 시간 스탬핑 값
 
-이러한 옵션을 설정하는 과정의 일부로 확인 시간을 지정할 수 있습니다. 예를 들어 현재 시간(유효성 검사기의 컴퓨터에 있는 시간)을 선택하여 현재 시간을 사용할 수 있습니다. 다른 시간 값에 대한 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)에서 `VerificationTime` 열거 값을 참조하십시오.
+이러한 옵션을 설정하는 과정의 일부로 확인 시간을 지정할 수 있습니다. 예를 들어 현재 시간(유효성 검사기의 컴퓨터에 있는 시간)을 선택하여 현재 시간을 사용할 수 있습니다. 다른 시간 값에 대한 자세한 내용은 `VerificationTime`AEM Forms API 참조[에서 ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) 열거 값을 참조하십시오.
 
-유효성 검사 프로세스의 일부로 해지 검사를 수행할지 여부도 지정할 수 있습니다. 예를 들어 해지 확인을 수행하여 인증서가 해지되었는지 확인할 수 있습니다. 해지 확인 옵션에 대한 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)의 `RevocationCheckStyle` 열거 값을 참조하십시오.
+유효성 검사 프로세스의 일부로 해지 검사를 수행할지 여부도 지정할 수 있습니다. 예를 들어 해지 확인을 수행하여 인증서가 해지되었는지 확인할 수 있습니다. 해지 확인 옵션에 대한 자세한 내용은 `RevocationCheckStyle`AEM Forms API 참조[의 ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) 열거 값을 참조하십시오.
 
 인증서에 대한 해지 검사를 수행하려면 `CRLOptionSpec` 개체를 사용하여 CRL(인증서 해지 목록) 서버에 대한 URL을 지정하십시오. 그러나 CRL 서버에 대한 URL을 지정하지 않으면 서명 서비스가 인증서에서 URL을 가져옵니다.
 
@@ -1410,12 +1406,12 @@ Java(서명 서비스 API)를 사용하여 디지털 서명을 확인합니다.
 1. 서명 클라이언트 만들기
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `SignatureServiceClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `SignatureServiceClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 확인할 서명이 포함된 PDF 문서 가져오기
 
    * 생성자를 사용하여 확인할 서명이 포함된 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다. PDF 문서의 위치를 지정하는 문자열 값을 전달합니다.
-   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
+   * 생성자를 사용하고 `com.adobe.idp.Document` 개체를 전달하여 `java.io.FileInputStream` 개체를 만듭니다.
 
 1. PKI 런타임 옵션 설정
 
@@ -1468,8 +1464,8 @@ Java(서명 서비스 API)를 사용하여 디지털 서명을 확인합니다.
 1. 서명 클라이언트 만들기
 
    * 기본 생성자를 사용하여 `SignatureServiceClient` 개체를 만듭니다.
-   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `SignatureServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * `SignatureServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `SignatureServiceClient.Endpoint.Address` 생성자를 사용하여 `System.ServiceModel.EndpointAddress` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `System.ServiceModel.BasicHttpBinding` 필드의 값을 가져와 `SignatureServiceClient.Endpoint.Binding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
@@ -1484,13 +1480,13 @@ Java(서명 서비스 API)를 사용하여 디지털 서명을 확인합니다.
    * 해당 생성자를 호출하여 `System.IO.FileStream` 개체를 만듭니다. 서명된 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
    * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
    * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하여 바이트 배열을 스트림 데이터로 채웁니다. 읽을 바이트 배열, 시작 위치 및 스트림 길이를 전달합니다.
-   * 해당 `MTOM` 속성을 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
+   * 해당 `BLOB` 속성을 바이트 배열의 내용으로 할당하여 `MTOM` 개체를 채웁니다.
 
 1. PKI 런타임 옵션 설정
 
    * 해당 생성자를 사용하여 `PKIOptions` 개체를 만듭니다.
    * `PKIOptions` 개체의 `verificationTime` 데이터 멤버에 확인 시간을 지정하는 `VerificationTime` 열거형 값을 할당하여 확인 시간을 설정합니다.
-   * 해지 검사를 수행할지 여부를 지정하는 `RevocationCheckStyle` 열거형 값을 `PKIOptions` 개체의 `revocationCheckStyle` 데이터 멤버에 할당하여 해지 검사 옵션을 설정합니다.
+   * 해지 검사를 수행할지 여부를 지정하는 `PKIOptions` 열거형 값을 `revocationCheckStyle` 개체의 `RevocationCheckStyle` 데이터 멤버에 할당하여 해지 검사 옵션을 설정합니다.
 
 1. 디지털 서명 확인
 
@@ -1569,9 +1565,9 @@ PDF 문서에서 모든 서명을 확인할 때 서명 서비스에서 사용하
 * 해지 확인
 * 시간 스탬핑 값
 
-이러한 옵션을 설정하는 과정의 일부로 확인 시간을 지정할 수 있습니다. 예를 들어 현재 시간(유효성 검사기의 컴퓨터에 있는 시간)을 선택하여 현재 시간을 사용할 수 있습니다. 다른 시간 값에 대한 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)에서 `VerificationTime` 열거 값을 참조하십시오.
+이러한 옵션을 설정하는 과정의 일부로 확인 시간을 지정할 수 있습니다. 예를 들어 현재 시간(유효성 검사기의 컴퓨터에 있는 시간)을 선택하여 현재 시간을 사용할 수 있습니다. 다른 시간 값에 대한 자세한 내용은 `VerificationTime`AEM Forms API 참조[에서 ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) 열거 값을 참조하십시오.
 
-유효성 검사 프로세스의 일부로 해지 검사를 수행할지 여부도 지정할 수 있습니다. 예를 들어 해지 확인을 수행하여 인증서가 해지되었는지 확인할 수 있습니다. 해지 확인 옵션에 대한 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)의 `RevocationCheckStyle` 열거 값을 참조하십시오.
+유효성 검사 프로세스의 일부로 해지 검사를 수행할지 여부도 지정할 수 있습니다. 예를 들어 해지 확인을 수행하여 인증서가 해지되었는지 확인할 수 있습니다. 해지 확인 옵션에 대한 자세한 내용은 `RevocationCheckStyle`AEM Forms API 참조[의 ](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) 열거 값을 참조하십시오.
 
 인증서에 대한 해지 검사를 수행하려면 `CRLOptionSpec` 개체를 사용하여 CRL(인증서 해지 목록) 서버에 대한 URL을 지정하십시오. 그러나 CRL 서버에 대한 URL을 지정하지 않으면 서명 서비스가 인증서에서 URL을 가져옵니다.
 
@@ -1628,12 +1624,12 @@ Java(서명 서비스 API)를 사용하여 여러 디지털 서명을 확인합�
 1. 서명 클라이언트 만들기
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `SignatureServiceClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `SignatureServiceClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 확인할 서명이 포함된 PDF 문서 가져오기
 
    * 생성자를 사용하여 확인할 여러 디지털 서명이 포함된 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다. PDF 문서의 위치를 지정하는 문자열 값을 전달합니다.
-   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
+   * 생성자를 사용하고 `com.adobe.idp.Document` 개체를 전달하여 `java.io.FileInputStream` 개체를 만듭니다.
 
 1. PKI 런타임 옵션 설정
 
@@ -1653,7 +1649,7 @@ Java(서명 서비스 API)를 사용하여 여러 디지털 서명을 확인합�
 
 1. 모든 서명 반복
 
-   * `PDFDocumentVerificationInfo` 개체의 `getVerificationInfos` 메서드를 호출하여 모든 서명을 반복합니다. 이 메서드는 각 요소가 `PDFSignatureVerificationInfo` 개체인 `java.util.List` 개체를 반환합니다. `java.util.Iterator` 개체를 사용하여 서명 목록을 반복합니다.
+   * `PDFDocumentVerificationInfo` 개체의 `getVerificationInfos` 메서드를 호출하여 모든 서명을 반복합니다. 이 메서드는 각 요소가 `java.util.List` 개체인 `PDFSignatureVerificationInfo` 개체를 반환합니다. `java.util.Iterator` 개체를 사용하여 서명 목록을 반복합니다.
    * `PDFSignatureVerificationInfo` 개체를 사용하면 `PDFSignatureVerificationInfo` 개체의 `getStatus` 메서드를 호출하여 서명 상태를 확인하는 등의 작업을 수행할 수 있습니다. 이 메서드는 정적 데이터 멤버가 서명의 상태에 대해 알리는 `SignatureStatus` 개체를 반환합니다. 예를 들어 서명을 알 수 없는 경우 이 메서드는 `SignatureStatus.DocumentSignatureUnknown`을(를) 반환합니다.
 
 **추가 참조**
@@ -1683,8 +1679,8 @@ Java(서명 서비스 API)를 사용하여 여러 디지털 서명을 확인합�
 1. 서명 클라이언트 만들기
 
    * 기본 생성자를 사용하여 `SignatureServiceClient` 개체를 만듭니다.
-   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `SignatureServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * `SignatureServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `SignatureServiceClient.Endpoint.Address` 생성자를 사용하여 `System.ServiceModel.EndpointAddress` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `System.ServiceModel.BasicHttpBinding` 필드의 값을 가져와 `SignatureServiceClient.Endpoint.Binding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
@@ -1699,13 +1695,13 @@ Java(서명 서비스 API)를 사용하여 여러 디지털 서명을 확인합�
    * 해당 생성자를 호출하여 `System.IO.FileStream` 개체를 만듭니다. PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달합니다.
    * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
    * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하여 바이트 배열을 스트림 데이터로 채웁니다. 읽을 바이트 배열, 시작 위치 및 스트림 길이를 전달합니다.
-   * 해당 `MTOM` 속성을 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
+   * 해당 `BLOB` 속성을 바이트 배열의 내용으로 할당하여 `MTOM` 개체를 채웁니다.
 
 1. PKI 런타임 옵션 설정
 
    * 해당 생성자를 사용하여 `PKIOptions` 개체를 만듭니다.
    * `PKIOptions` 개체의 `verificationTime` 데이터 멤버에 확인 시간을 지정하는 `VerificationTime` 열거형 값을 할당하여 확인 시간을 설정합니다.
-   * 해지 검사를 수행할지 여부를 지정하는 `RevocationCheckStyle` 열거형 값을 `PKIOptions` 개체의 `revocationCheckStyle` 데이터 멤버에 할당하여 해지 검사 옵션을 설정합니다.
+   * 해지 검사를 수행할지 여부를 지정하는 `PKIOptions` 열거형 값을 `revocationCheckStyle` 개체의 `RevocationCheckStyle` 데이터 멤버에 할당하여 해지 검사 옵션을 설정합니다.
 
 1. 모든 디지털 서명 검색
 
@@ -1719,7 +1715,7 @@ Java(서명 서비스 API)를 사용하여 여러 디지털 서명을 확인합�
 
 1. 모든 서명 반복
 
-   * `PDFDocumentVerificationInfo` 개체의 `verificationInfos` 데이터 멤버를 가져와서 모든 서명을 반복합니다. 이 데이터 멤버는 각 요소가 `PDFSignatureVerificationInfo` 개체인 `Object` 배열을 반환합니다.
+   * `PDFDocumentVerificationInfo` 개체의 `verificationInfos` 데이터 멤버를 가져와서 모든 서명을 반복합니다. 이 데이터 멤버는 각 요소가 `Object` 개체인 `PDFSignatureVerificationInfo` 배열을 반환합니다.
    * `PDFSignatureVerificationInfo` 개체를 사용하면 `PDFSignatureVerificationInfo` 개체의 `status` 데이터 멤버를 가져와서 서명 상태를 확인하는 등의 작업을 수행할 수 있습니다. 이 데이터 멤버는 정적 데이터 멤버가 서명 상태에 대해 알리는 `SignatureStatus` 개체를 반환합니다. 예를 들어 서명을 알 수 없는 경우 이 메서드는 `SignatureStatus.DocumentSignatureUnknown`을(를) 반환합니다.
 
 **추가 참조**
@@ -1801,12 +1797,12 @@ PDF 문서에서 디지털 서명을 성공적으로 제거하려면 디지털 �
 1. 서명 클라이언트를 만듭니다.
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `SignatureServiceClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `SignatureServiceClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 제거할 서명이 포함된 PDF 문서 가져오기
 
    * 생성자를 사용하고 PDF 문서의 위치를 지정하는 문자열 값을 전달하여 제거할 서명이 포함된 PDF 문서를 나타내는 `java.io.FileInputStream` 개체를 만듭니다.
-   * 생성자를 사용하고 `java.io.FileInputStream` 개체를 전달하여 `com.adobe.idp.Document` 개체를 만듭니다.
+   * 생성자를 사용하고 `com.adobe.idp.Document` 개체를 전달하여 `java.io.FileInputStream` 개체를 만듭니다.
 
 1. 서명 필드에서 디지털 서명 제거
 
@@ -1820,7 +1816,7 @@ PDF 문서에서 디지털 서명을 성공적으로 제거하려면 디지털 �
 1. PDF 문서를 PDF 파일로 저장
 
    * `java.io.File` 개체를 만들고 파일 확장명이 .pdf인지 확인하십시오.
-   * `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출합니다. `java.io.File` 개체를 전달하여 `com.adobe.idp.Document` 개체의 내용을 파일에 복사합니다. `clearSignatureField` 메서드에서 반환된 `Document` 개체를 사용하는지 확인하십시오.
+   * `com.adobe.idp.Document` 개체의 `copyToFile` 메서드를 호출합니다. `java.io.File` 개체를 전달하여 `com.adobe.idp.Document` 개체의 내용을 파일에 복사합니다. `Document` 메서드에서 반환된 `clearSignatureField` 개체를 사용하는지 확인하십시오.
 
 **추가 참조**
 
@@ -1847,8 +1843,8 @@ PDF 문서에서 디지털 서명을 성공적으로 제거하려면 디지털 �
 1. 서명 클라이언트 만들기
 
    * 기본 생성자를 사용하여 `SignatureServiceClient` 개체를 만듭니다.
-   * `System.ServiceModel.EndpointAddress` 생성자를 사용하여 `SignatureServiceClient.Endpoint.Address` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
-   * `SignatureServiceClient.Endpoint.Binding` 필드의 값을 가져와 `System.ServiceModel.BasicHttpBinding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
+   * `SignatureServiceClient.Endpoint.Address` 생성자를 사용하여 `System.ServiceModel.EndpointAddress` 개체를 만듭니다. WSDL을 지정하는 문자열 값을 AEM Forms 서비스에 전달합니다(예: `http://localhost:8080/soap/services/SignatureService?WSDL`). `lc_version` 특성은 사용할 필요가 없습니다. 이 속성은 서비스 참조를 만들 때 사용됩니다.)
+   * `System.ServiceModel.BasicHttpBinding` 필드의 값을 가져와 `SignatureServiceClient.Endpoint.Binding` 개체를 만듭니다. 반환 값을 `BasicHttpBinding`(으)로 캐스팅합니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
@@ -1863,7 +1859,7 @@ PDF 문서에서 디지털 서명을 성공적으로 제거하려면 디지털 �
    * 해당 생성자를 호출하고 서명된 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * `System.IO.FileStream` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `System.IO.FileStream` 개체의 `Length` 속성을 가져와서 바이트 배열의 크기를 결정할 수 있습니다.
    * `System.IO.FileStream` 개체의 `Read` 메서드를 호출하여 바이트 배열을 스트림 데이터로 채웁니다. 읽을 바이트 배열, 시작 위치 및 스트림 길이를 전달합니다.
-   * 해당 `MTOM` 속성을 바이트 배열의 내용으로 할당하여 `BLOB` 개체를 채웁니다.
+   * 해당 `BLOB` 속성을 바이트 배열의 내용으로 할당하여 `MTOM` 개체를 채웁니다.
 
 1. 서명 필드에서 디지털 서명 제거
 
@@ -1877,8 +1873,8 @@ PDF 문서에서 디지털 서명을 성공적으로 제거하려면 디지털 �
 1. PDF 문서를 PDF 파일로 저장
 
    * 해당 생성자를 호출하고 빈 서명 필드가 포함된 PDF 문서의 파일 위치와 파일을 열 모드를 나타내는 문자열 값을 전달하여 `System.IO.FileStream` 개체를 만듭니다.
-   * `sign` 메서드에서 반환된 `BLOB` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `MTOM` 데이터 멤버의 값을 가져와서 바이트 배열을 채웁니다.
-   * 해당 생성자를 호출하고 `System.IO.FileStream` 개체를 전달하여 `System.IO.BinaryWriter` 개체를 만듭니다.
+   * `BLOB` 메서드에서 반환된 `sign` 개체의 내용을 저장하는 바이트 배열을 만듭니다. `BLOB` 개체의 `MTOM` 데이터 멤버의 값을 가져와서 바이트 배열을 채웁니다.
+   * 해당 생성자를 호출하고 `System.IO.BinaryWriter` 개체를 전달하여 `System.IO.FileStream` 개체를 만듭니다.
    * `System.IO.BinaryWriter` 개체의 `Write` 메서드를 호출하고 바이트 배열을 전달하여 바이트 배열의 내용을 PDF 파일에 씁니다.
 
 **추가 참조**
