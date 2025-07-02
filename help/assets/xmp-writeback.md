@@ -24,7 +24,7 @@ ht-degree: 6%
 
 XMP 원본에 쓰기 기능을 사용하면 메타데이터 변경 내용을 에셋의 모든 표현물 또는 특정 표현물로 전파할 수 있습니다. 이 기능은 등록된 네임스페이스를 사용하는 메타데이터 속성만 다시 씁니다. 즉, 이름이 `dc:title`인 속성은 다시 기록되지만 이름이 `mytitle`인 속성은 기록되지 않습니다.
 
-제목이 [!UICONTROL 인 자산의 ]Title`Classic Leather` 속성을 `Nylon`(으)로 수정하는 시나리오를 생각해 보십시오.
+제목이 [!UICONTROL 인 자산의 &#x200B;]Title`Classic Leather` 속성을 `Nylon`(으)로 수정하는 시나리오를 생각해 보십시오.
 
 ![메타데이터](assets/metadata.png)
 

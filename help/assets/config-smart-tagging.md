@@ -49,7 +49,7 @@ Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스�
 
 ### Adobe Developer Console 통합 만들기 {#create-adobe-io-integration}
 
-스마트 컨텐츠 서비스 API를 사용하려면 Adobe Developer Console에서 통합을 만들어 [!UICONTROL 에 클라우드 구성의 ]Assets 스마트 태깅 서비스 설정[!UICONTROL 에 대한 ]API 키[!UICONTROL (Adobe Developer Console 통합의 ]클라이언트 ID[!UICONTROL  필드에서 생성됨), ]조직 ID[!UICONTROL  및 ]클라이언트 암호[!DNL Experience Manager]를 얻으십시오.
+스마트 컨텐츠 서비스 API를 사용하려면 Adobe Developer Console에서 통합을 만들어 [!UICONTROL 에 클라우드 구성의 &#x200B;]Assets 스마트 태깅 서비스 설정[!UICONTROL 에 대한 &#x200B;]API 키[!UICONTROL (Adobe Developer Console 통합의 &#x200B;]클라이언트 ID[!UICONTROL &#x200B; 필드에서 생성됨), &#x200B;]조직 ID[!UICONTROL &#x200B; 및 &#x200B;]클라이언트 암호[!DNL Experience Manager]를 얻으십시오.
 
 1. 브라우저에서 [https://developer.adobe.com](https://developer.adobe.com/)에 액세스합니다. 적절한 계정을 선택하고 연결된 조직 역할이 시스템 **관리자**&#x200B;인지 확인하십시오.
 
@@ -57,7 +57,7 @@ Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스�
 
 1. **[!UICONTROL API 추가]** 페이지에서 **[!UICONTROL Experience Cloud]**&#x200B;를 선택하고 **[!UICONTROL 스마트 컨텐츠]**&#x200B;를 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-1. **[!UICONTROL OAuth 서버 간]**&#x200B;을(를) 선택합니다. **[!UICONTROL 다음]**을 클릭합니다.
+1. **[!UICONTROL OAuth 서버 간]**&#x200B;을(를) 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 이 구성을 수행하는 방법에 대한 자세한 내용은 요구 사항에 따라 Developer Console 설명서를 참조하십시오.
 
    * 개요:
@@ -72,7 +72,7 @@ Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스�
 
 1. **[!UICONTROL 제품 프로필 선택]** 페이지에서 **[!UICONTROL 스마트 컨텐츠 서비스]**&#x200B;를 선택합니다. **[!UICONTROL 구성된 API 저장]**&#x200B;을 클릭합니다.
 
-   페이지에 구성에 대한 자세한 정보가 표시됩니다. 스마트 태그를 구성하려면 [!UICONTROL 에 있는 클라우드 구성의 ]Assets 스마트 태그 지정 서비스 설정[!DNL Experience Manager]에서 이 값을 복사하고 추가하려면 이 페이지를 열어 두십시오.
+   페이지에 구성에 대한 자세한 정보가 표시됩니다. 스마트 태그를 구성하려면 [!UICONTROL 에 있는 클라우드 구성의 &#x200B;]Assets 스마트 태그 지정 서비스 설정[!DNL Experience Manager]에서 이 값을 복사하고 추가하려면 이 페이지를 열어 두십시오.
 
    ![Developer Console의 OAuth 자격 증명](assets/ims-configuration-developer-console.png)
 
