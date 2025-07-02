@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 22dd8daa-b8c6-4e7d-bca3-3958a79fb4b5
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 402b42d8ce5539739205a85d99bcb035d382a036
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '110'
 ht-degree: 3%
 
 ---
@@ -29,4 +29,4 @@ AEM Forms 서버가 완전히 작동하고 모든 애플리케이션이 실행 �
 
 ## 솔루션 {#solution}
 
-이 문제를 해결하려면 서버를 시작하는 동안 [일괄 처리 파일](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example)에 인수 `Dcom.adobe.livecycle.dsc.deferServiceStart=true`을(를) 추가하십시오.
+이 문제를 해결하려면 서버를 시작하는 동안 `Dcom.adobe.livecycle.dsc.deferServiceStart=true`일괄 처리 파일[에 인수 ](/help/sites-deploying/command-line-start-and-stop.md#windows-platform-start-bat-script-example)을(를) 추가하십시오.

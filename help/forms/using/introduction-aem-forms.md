@@ -5,9 +5,9 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
-source-git-commit: 3b83225e1150f1e623997c9ece6329de995148be
+source-git-commit: d9f6415aabcbc55af23824d9e0ab33c418f6761f
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '950'
 ht-degree: 15%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 15%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | 이 문서 |
 
 AEM Forms의 최신 기능 및 향상된 기능에 대한 자세한 내용은 [AEM Forms의 새로운 기능](../../forms/using/whats-new.md)을 참조하세요.
@@ -33,7 +33,7 @@ AEM Forms은 적응형 양식뿐만 아니라 XFA 양식, PDF forms 및 관련 �
 
 >[!NOTE]
 >
->[AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html)에서 사용 가능한 적응형 양식 기능은 탐색 및 평가 목적으로만 사용하도록 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
+>[AEM 6.5 QuickStart](/help/sites-deploying/deploy.md)에서 사용 가능한 적응형 양식 기능은 탐색 및 평가 목적으로만 사용하도록 설계되었습니다. 프로덕션 용도로 사용하려면 적응형 양식 기능에 적절한 라이선싱이 필요하므로 AEM Forms에 대해 유효한 라이선스를 확보해야 합니다.
 
 ![AEM forms 기능](do-not-localize/4th-draft-updated.gif)
 
@@ -96,7 +96,7 @@ AEM Forms은 디지털 비즈니스 프로세스를 모바일 장치로 확장�
 * ECM(엔터프라이즈 컨텐츠 관리 커넥터)
 * 양식 데이터를 엔터프라이즈 시스템과 연결하기 위한 XML 및 SOAP 등 개방형 표준 지원
 * 즉시 사용 가능한 HTML 보고서 는 백로그, 작업 대기열 및 주요 성능 지표(KPI)를 모니터링합니다
-* 비즈니스 운영에 대한 실시간 통찰력을 위한 맞춤형 대시보드
+* 비즈니스 운영에 대한 실시간 insight을 위한 맞춤형 대시보드
 * 서드파티 보고 도구와의 연결을 위한 API
 
 ![세 번째 초안](do-not-localize/3rd-draft.gif)

@@ -1,18 +1,13 @@
 ---
 title: AEM에서 문서 보안으로 보호된 PDF 문서를 검색할 수 있도록 설정
 description: DRM으로 보호된 AEM 문서에 대해 전체 텍스트 검색을 수행할 수 있도록 기본 PDF 검색을 활성화하는 방법을 알아봅니다.
-contentOwner: khsingh
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ad86398d-0dc9-4168-b409-4d231b8d586b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 757c26274b39f5fb37a090f320493abd1af44c42
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -66,7 +61,7 @@ AEM 검색은 AEM assets를 검색 및 찾고 일반 텍스트 파일, Microsoft
 
 #### 상호 인증을 사용하여 Adobe LiveCycle Client SDK 번들 구성 {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. JEE에서 AEM Forms에 대한 상호 인증을 활성화합니다. 자세한 내용은 [CAC 및 상호 인증](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html)을 참조하십시오.
+1. JEE에서 AEM Forms에 대한 상호 인증을 활성화합니다.
 1. AEM 웹 콘솔을 엽니다. URL은 https://&#39;[server]:[port]&#39;/system/console/configMgr입니다.
 1. **Adobe LiveCycle Client SDK** 번들을 찾아 엽니다. 다음 속성에 대한 값을 지정합니다.
 

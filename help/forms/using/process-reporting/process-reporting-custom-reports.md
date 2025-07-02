@@ -1,19 +1,15 @@
 ---
 title: 진행 중인 사용자 정의 보고서 보고
 description: 사용자 지정 보고서를 만들고 이러한 보고서를 JEE 프로세스 보고 UI의 AEM Forms에 추가할 수 있습니다.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: process-reporting
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5670fede-4567-445e-8eeb-84349405db0e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 7e7c9f2414504ade45d6695641e08108afed0bd2
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '835'
 ht-degree: 1%
 
 ---
@@ -26,14 +22,14 @@ QueryBuilder의 REST 인터페이스를 사용하거나 QueryBuilder API를 사�
 
 사용자 정의 보고서를 추가하기 전에 다음 템플릿 절차를 수행하십시오.
 
-1. 사용자 지정 보고서에 사용된 데이터는 프로세스 보고에서 사용할 수 있어야 합니다. 데이터의 가용성을 확인하려면 cron 작업을 예약하거나 프로세스 보고 UI에서 **[동기화](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** 옵션을 사용하십시오.
-1. 원하는 쿼리를 캡슐화하는 URL 요청은 적절한 쿼리 결과 개체를 반환해야 합니다. 쿼리를 만들려면 [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=ko)의 REST 인터페이스를 사용하여 QueryBuilder API를 사용하여 OSGi 서비스를 만들 수 있습니다. 동적 또는 정적 쿼리를 만들 수 있습니다.
+1. 사용자 지정 보고서에 사용된 데이터는 프로세스 보고에서 사용할 수 있어야 합니다. 데이터의 가용성을 확인하려면 cron 작업을 예약하거나 프로세스 보고 UI에서 **동기화** 옵션을 사용하십시오.
+1. 원하는 쿼리를 캡슐화하는 URL 요청은 적절한 쿼리 결과 개체를 반환해야 합니다. 쿼리를 만들려면 [QueryBuilder](/help/sites-developing/querybuilder-api.md)의 REST 인터페이스를 사용하여 QueryBuilder API를 사용하여 OSGi 서비스를 만들 수 있습니다. 동적 또는 정적 쿼리를 만들 수 있습니다.
 
 1. 결과를 표시할 사용자 지정 사용자 인터페이스를 만듭니다. 독립형 사용자 인터페이스를 만들거나 결과를 기존 프로세스 보고 UI와 통합할 수 있습니다.
 
 ## QueryBuilder의 REST 인터페이스 사용 {#using-the-rest-interface-of-the-querybuilder}
 
-CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 공유 쿼리 빌더의 기능을 노출합니다. 다음 단계를 수행하기 전에 [CRX QueryBuilder REST 인터페이스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=ko)를 사용하는 방법을 알아보십시오.
+CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 공유 쿼리 빌더의 기능을 노출합니다. 다음 단계를 수행하기 전에 [CRX QueryBuilder REST 인터페이스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)를 사용하는 방법을 알아보십시오.
 
 1. URL `https://'[server]:[port]'/lc/bin/querybuilder.json`(으)로 이동
 1. 프로세스 보고 저장 영역 노드 구조 및 노드 속성을 기반으로 쿼리를 만듭니다.
@@ -50,7 +46,7 @@ CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 
 
 ## Query Builder API를 사용하여 서비스 만들기  {#creating-a-service-using-query-builder-api-nbsp}
 
-Query Builder API를 사용하여 서비스를 만들기 위한 필수 조건은 [CQ OSGI 번들 만들기 및 배포](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 및 [Query Builder API 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=ko)입니다.
+Query Builder API를 사용하여 서비스를 만들기 위한 필수 조건은 [CQ OSGI 번들 만들기 및 배포](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 및 [Query Builder API 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)입니다.
 
 1. 적절한 주석을 사용하여 OSGi 서비스를 만듭니다. QueryBuilder에 액세스하려면 다음을 사용합니다.
 
@@ -66,7 +62,7 @@ Query Builder API를 사용하여 서비스를 만들기 위한 필수 조건은
     predicateGroup.setAllRequired(true);
    ```
 
-1. 새로 생성된 predicateGroup에 술어를 추가합니다. 몇 가지 유용한 조건자 구문은 [5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 JcrBoolPropertyPredicateEvaluator, 5.3[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [JcrPropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [RangePropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [DateRangePredicateEvaluator 및 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 TypePredicateEvaluator입니다.
+1. 새로 생성된 predicateGroup에 술어를 추가합니다. 몇 가지 유용한 조건자 구문은 [5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 JcrBoolPropertyPredicateEvaluator, 5.3[의 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)JcrPropertyPredicateEvaluator, 5.3[의 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)RangePropertyPredicateEvaluator, 5.3[의 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)DateRangePredicateEvaluator 및 5.3[의 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)TypePredicateEvaluator입니다.
 
    정적 보고서의 경우 술어를 하드코딩하지만 동적 보고서의 경우 요청에서 술어를 가져옵니다.
 
@@ -636,7 +632,7 @@ response.setCharacterEncoding("utf-8");
 결과를 표시하기 위한 별도의 UI를 만들기 위한 필수 조건은 [Sling 기본 사항](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [CRX 노드 만들기](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node) 및 적절한 [액세스 권한 제공](/help/sites-developing/developing-with-crxde-lite.md#access-control)입니다.
 
 1. 별도의 UI를 만듭니다.
-1. 모든 플러그 가능한 보고서에 대해 `/content/process-reporting-runtime/custom-reports` 노드에 하위 `nt:unstructured` 노드를 만듭니다.
+1. 모든 플러그 가능한 보고서에 대해 `nt:unstructured` 노드에 하위 `/content/process-reporting-runtime/custom-reports` 노드를 만듭니다.
 
    * **id**- 보고서의 고유 ID 번호를 지정합니다.
    * **이름**- 보고서 이름을 지정합니다. 이름이 UI에 표시됩니다.
@@ -644,7 +640,7 @@ response.setCharacterEncoding("utf-8");
    * **설명**- 보고서에 대한 한 줄 설명을 지정합니다. 설명 필드를 비워 둘 수 있습니다.
    * **icon**- 보고서를 그림으로 나타낼 이미지를 지정합니다. 아이콘 필드를 비워 둘 수 있습니다.
 
-   ![&#128279;](assets/node_properties_new.png) 노드의 속성
+   ![ 노드의 ](assets/node_properties_new.png)속성
 
    노드 속성
 

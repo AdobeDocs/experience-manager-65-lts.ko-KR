@@ -1,16 +1,13 @@
 ---
 title: AEM의 문서 단편
 description: 서신 관리의 텍스트, 목록, 조건 및 레이아웃 조각과 같은 문서 조각을 사용하면 고객 서신의 정적, 동적 및 반복 가능한 구성 요소를 구성할 수 있습니다.
-topic-tags: correspondence-management
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ece49f03-e711-439f-9c2d-6308fe2998ae
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4f2374a48687d39f7d365e09d9055edf583e2c20
 workflow-type: tm+mt
-source-wordcount: '6905'
+source-wordcount: '6895'
 ht-degree: 0%
 
 ---
@@ -92,10 +89,6 @@ ht-degree: 0%
 
    ![pastetextmodule](assets/pastetexttextmodule.png)
 
-   >[!NOTE]
-   >
-   >그러나 붙여넣은 텍스트의 서식에는 [제한 사항](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html)이 있습니다.
-
 1. 필요한 경우 문서 조각에 특수 문자를 삽입합니다. 예를 들어 특수 문자 팔레트를 사용하여 다음을 삽입할 수 있습니다.
 
    * 통화 기호(예: €,, £)
@@ -110,7 +103,7 @@ ht-degree: 0%
 
    ![textbackgroundcolorapplied](assets/textbackgroundcolorapplied.png)
 
-   기본 색상 팔레트에 있는 기본 색상 `**[A]**`을(를) 직접 선택하거나 슬라이더 `**[B]**`을(를) 사용하여 색상의 적절한 음영을 선택한 후 **선택**&#x200B;을(를) 선택할 수 있습니다.
+   기본 색상 팔레트에 있는 기본 색상 `**[A]**`을(를) 직접 선택하거나 슬라이더 **을(를) 사용하여 색상의 적절한 음영을 선택한 후**&#x200B;선택`**[B]**`을(를) 선택할 수 있습니다.
 
    필요한 경우 [고급] 탭으로 이동하여 적절한 색조, 밝기 및 채도 `**[C]**`을(를) 선택하여 정확한 색상을 만든 다음 `**[D]**` 선택을 선택하여 텍스트를 강조 표시할 색상을 적용합니다.
 

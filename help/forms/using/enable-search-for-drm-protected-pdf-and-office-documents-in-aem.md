@@ -1,17 +1,14 @@
 ---
 title: AEM에서 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검색할 수 있도록 설정
 description: DRM으로 보호된 AEM 문서에 대해 전체 텍스트 검색을 수행할 수 있도록 기본 PDF 검색을 활성화하는 방법을 알아봅니다.
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 noindex: true
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5e9d3f3c-8fc4-4d01-9f1e-62d3c29ab9e5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: cd6caaf9de907488db14df2a6396fa60efa2d42c
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '664'
 ht-degree: 1%
 
 ---
@@ -49,7 +46,7 @@ AEM에서 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검�
 
 ### 상호 인증을 사용하여 AEM Forms 클라이언트 SDK 번들 구성 {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
-1. JEE에서 AEM Forms에 대한 상호 인증을 활성화합니다. 자세한 내용은 [CAC 및 상호 인증](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html)을 참조하십시오.
+1. JEE에서 AEM Forms에 대한 상호 인증을 활성화합니다.
 1. AEM 구성 관리자를 열고 관리자로 로그인합니다. 기본 URL은 https://&lt;serverName>:&lt;port>/lc/system/console/configMgr입니다.
 1. AEM Forms 클라이언트 SDK 번들을 검색하여 엽니다. 다음 속성에 대한 값을 지정합니다.
 
