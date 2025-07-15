@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
+source-git-commit: 2c2e8defbaab13a31beeb7c6978af5da19535e70
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 20%
+source-wordcount: '1074'
+ht-degree: 18%
 
 ---
 
@@ -108,9 +108,9 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 교체가 임박했음을 
 | We.Retail | We-retail 샘플 사이트는 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
 | 공개 소스 | `oak-solr-osgi` 번들은 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
 | 공개 소스 | `org.apache.servicemix.bundles.abdera-parser`, `org.apache.servicemix.bundles.jdom` 및 `org.apache.sling.atom.taglib`은(는) 지원되지 않습니다. | 대체할 수 있는 항목이 없습니다. | 6.5 LTS GA |
-| 공개 소스 | 이제 `org.apache.commons.commons-io`에서 `org.apache.commons.io`개의 패키지를 내보냅니다. | 변경할 필요가 없습니다. | 6.5 LTS GA |
-| 공개 소스 | `com.sun.javax.mail` 번들에서 `javax.mail` 패키지를 내보내는 중입니다. | 변경할 필요가 없습니다. | 6.5 LTS GA |
-| 공개 소스 | 이제 `org.apache.jackrabbit.oak-jackrabbit-api` 번들에서 `org.apache.jackrabbit.api` 패키지를 내보냅니다. | 변경할 필요가 없습니다. | 6.5 LTS GA |
+| 공개 소스 | 이제 `org.apache.commons.io`에서 `org.apache.commons.commons-io`개의 패키지를 내보냅니다. | 변경할 필요가 없습니다. | 6.5 LTS GA |
+| 공개 소스 | `javax.mail` 번들에서 `com.sun.javax.mail` 패키지를 내보내는 중입니다. | 변경할 필요가 없습니다. | 6.5 LTS GA |
+| 공개 소스 | 이제 `org.apache.jackrabbit.api` 번들에서 `org.apache.jackrabbit.oak-jackrabbit-api` 패키지를 내보냅니다. | 변경할 필요가 없습니다. | 6.5 LTS GA |
 | 공개 소스 | `com.github.jknack.handlebars`은(는) 지원되지 않습니다. | 관련 [버전](https://mvnrepository.com/artifact/com.github.jknack/handlebars) 선택 | 6.5 LTS GA |
 
 ## 알려진 문제 {#known-issues}
@@ -130,18 +130,21 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
 
 ### SSL 전용 기능을 사용한 Dispatcher 연결 실패 {#ssl-only-feature}
 
-AEM 배포에서 SSL 전용 기능을 활성화할 때 Dispatcher 인스턴스와 AEM 인스턴스 간 연결에 영향을 주는 알려진 문제가 있습니다. 이 기능을 활성화하면 상태 검사가 실패하고 Dispatcher 및 AEM 인스턴스 간의 통신이 중단될 수 있습니다.
+AEM 배포에서 SSL 전용 기능을 활성화할 때 Dispatcher 인스턴스와 AEM 인스턴스 간 연결에 영향을 주는 알려진 문제가 있습니다. 이 기능을 활성화하면 상태 검사가 실패하고 Dispatcher 및 AEM 인스턴스 간의 통신이 중단될 수 있습니다. 이 문제는 특히 고객이 `https + IP`을(를) 통해 Dispatcher 인스턴스에서 AEM 인스턴스로 연결하려고 할 때 발생하며 SNI(서버 이름 표시) 유효성 검사 문제와 관련되어 있습니다.
 
 **영향:**
 
-* HTTP 500 응답 코드를 사용한 상태 검사 실패
+* HTTP 400 응답 코드를 사용한 상태 검사 실패
 * Dispatcher 및 AEM 인스턴스 간 트래픽 오류
 * Dispatcher을 통해 콘텐츠를 제대로 제공할 수 없습니다.
+* Dispatcher 구성에서 IP 주소가 있는 HTTPS를 사용할 때 연결 실패
+* HTTPS + IP를 통해 연결할 때 HTTP 400 &quot;잘못된 SNI&quot; 오류 발생
 
 **영향을 받는 환경:**
 
 * Dispatcher 구성을 사용한 AEM 배포
 * SSL 전용 기능이 활성화된 시스템
+* AEM 인스턴스에 대한 `https + IP` 연결 메서드를 사용하는 Dispatcher 구성
 
 **솔루션:**
 이 문제가 발생하는 경우 Adobe 고객 지원 센터에 문의하십시오. 이 문제를 해결하기 위해 핫픽스 [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip)을(를) 사용할 수 있습니다. 필요한 핫픽스를 적용할 때까지 SSL 전용 기능을 활성화하지 마십시오.
@@ -151,5 +154,5 @@ AEM 배포에서 SSL 전용 기능을 활성화할 때 Dispatcher 인스턴스�
 이러한 웹 사이트는 고객만 사용할 수 있습니다. 고객이고 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/ko/docs/customer-one/using/home).
+* [Adobe 고객 지원 센터에 문의](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
