@@ -4,9 +4,10 @@ description: AEM 6.5 LTS에 대한 기술 관련 FAQ.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 2352420843c613884ad3cae487ed048bd775e294
+exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
+source-git-commit: ec722773ce3acff1d0de861523db8ff7df552c4b
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '247'
 ht-degree: 2%
 
 ---
@@ -28,6 +29,14 @@ Felix 상태 검사 프레임워크에 대한 자세한 내용은 [felix 설명�
 ### AEM Groovy 콘솔 지원
 
 AEM 6.5에서 사용 중이던 AEM Groovy 콘솔 버전이 guava 종속성 누락으로 인해 AEM 6.5 LTS에서 작동하지 않을 수 있습니다. 새로 지원되는 AEM Groovy 콘솔 버전은 [19.0.8](https://mvnrepository.com/artifact/be.orbinson.aem/aem-groovy-console/19.0.8)입니다.
+
+### AEM 6.5 LTS에서 사용자 동기화를 지원합니까?
+
+예. AEM 6.5 LTS는 사용자 동기화를 지원합니다. AEM 6.5와 6.5 LTS 간의 사용자 동기화 기능에는 변화가 없습니다.
+
+### Maven Central의 Uber JAR가 손상된 것 같습니다. 문제가 무엇입니까?
+
+`apis` 분류자와 함께 Uber JAR를 사용하고 있는지 확인합니다. AEM 6.5 LTS에서 Uber JAR의 패키징 구조가 변경되었습니다. 자세한 내용은 [AEM Uber Jar 버전 업데이트](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)를 참조하십시오.
 
 ## 추가 도움말 보기
 
