@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: 3d0353f207aeaf39198ba55dc37cc4194f25133d
+source-git-commit: a57a71a64cd454b37087abdf01be120d20ab791c
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '263'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,3 @@ AEM 6.5 LTS는 이전 버전과의 호환성을 유지하는 것을 목표로 �
 * [AEM 분석기 도구](/help/sites-deploying/aem-analyzer.md)를 사용하여 업그레이드의 복잡성을 평가합니다.
 * 업그레이드 프로세스에 충분한 시간과 리소스를 계획하고 할당합니다.
 * Adobe 지원 및 지원 세션에 참여하여 지침 및 지원을 받을 수 있습니다.
-
-## AEM 6.5 LTS에서 사용자 동기화가 지원됩니까?
-
-예. AEM 6.5 LTS에서 사용자 동기화가 지원됩니다.
