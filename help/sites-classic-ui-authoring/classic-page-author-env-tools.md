@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: c4ac3f14-f45a-44f6-a232-69cae483a776
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: dc46c3e2689df1069eea6980ef615f639db42e92
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '931'
 ht-degree: 8%
 
 ---
@@ -156,7 +156,7 @@ AEM 내에서 다양한 **도움말** 리소스에 직접 액세스할 수 있�
 
 AEM을 사용하면 현재 작업 중인 페이지에 연결된 페이지를 볼 수 있습니다.
 
-직접 페이지 참조를 표시하려면 다음을 수행하십시오.
+페이지 참조를 표시하려면:
 
 1. 사이드 킥에서 **페이지** 탭 아이콘을 선택합니다.
 
@@ -165,6 +165,10 @@ AEM을 사용하면 현재 작업 중인 페이지에 연결된 페이지를 볼
 1. **참조 표시...**&#x200B;를 선택합니다. AEM은 참조 창을 열고 경로를 포함하여 선택한 페이지를 참조하는 페이지를 표시합니다.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
+
+AEM에는 선택한 페이지를 직접 참조하는 모든 페이지와 간접 참조가 표시됩니다. 페이지를 이동하거나 삭제해야 하는 경우 업데이트되는 모든 링크를 이해하는 데 도움이 됩니다.
+
+## 추가 Sidekick 작업 {#additional-actions}
 
 특정 상황에서 Sidekick은 다음을 포함하여 추가 작업을 사용할 수 있습니다.
 

@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2919'
 ht-degree: 53%
 
 ---
@@ -556,15 +556,16 @@ AEM UI가 터치를 사용하므로 터치 장치(예: 모바일 또는 태블�
 
 ### 참조 {#references}
 
-**참조**&#x200B;은(는) 선택한 리소스에 대한 모든 연결을 표시합니다. 예를 들어 페이지의 **사이트** 콘솔 [참조](/help/sites-authoring/author-environment-tools.md#showingpagereferences)는 다음과 같은 정보를 표시합니다.
+**참조**&#x200B;은(는) 선택한 리소스에 대한 연결을 표시합니다. 예를 들어 페이지의 **사이트** 콘솔 [참조](/help/sites-authoring/author-environment-tools.md#showingpagereferences)는 다음과 같은 정보를 표시합니다.
 
+* [블루프린트](/help/sites-administering/msm.md)
 * [론치](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copy](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [언어 사본](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * 콘텐츠 참조:
 
-   * 다른 페이지에서 선택한 페이지로의 링크
-   * 참조 구성 요소가 선택한 페이지에서 빌린 컨텐츠, 선택한 페이지에 빌려준 컨텐츠 또는 두 컨텐츠 모두
+   * 다른 페이지에서 선택한 페이지로 직접 연결
+   * 참조 구성 요소가 선택한 페이지에서 빌린 컨텐츠, 선택한 페이지에 빌려준 컨텐츠 또는 선택한 페이지에 빌려준 컨텐츠
 
 ![bh-28](assets/bh-28.png)
 

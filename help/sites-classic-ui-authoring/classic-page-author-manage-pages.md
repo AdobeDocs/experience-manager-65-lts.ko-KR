@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: bff63900-0007-472d-a910-bf20b8013668
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1898'
 ht-degree: 20%
 
 ---
@@ -106,7 +106,7 @@ ht-degree: 20%
 | 제목 | 파생되는 이름 |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&ast;ç+ | sc---c-.html |
+| SC%&amp;&amp;ast;ç+ | sc---c-.html |
 
 #### 이름 {#name}
 
@@ -266,7 +266,7 @@ AEM은 이름 변경 또는 이동되는 페이지에 대한 내부 링크를 �
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   이 페이지에는 이동 중인 페이지를 참조하는 모든 페이지도 나열됩니다. 참조하는 페이지의 상태에 따라 페이지의 해당 링크를 조정하거나 페이지를 다시 게시할 수 있습니다.
+   또한 이 페이지에는 이동되는 페이지를 직접 또는 간접적으로 참조하는 모든 페이지가 나열됩니다. 참조하는 페이지의 상태에 따라 페이지의 해당 링크를 조정하거나 페이지를 다시 게시할 수 있습니다.
 
 1. 다음 필드를 적절히 입력합니다.
 
