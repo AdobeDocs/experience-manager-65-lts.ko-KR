@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 6a72ba56-8222-4853-adc6-ee8f3d395d9d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1280'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Adobe Campaign에 고유한 양식을 만들려면 먼저 AEM 애플리케이션
 
 >[!NOTE]
 >
->Adobe Campaign Classic 또는 Adobe Campaign Standard을 사용할 때 각각 페이지의 **jcr:content** 노드에 있는 **acMapping** 속성이 **mapRecipient** 또는 **profile**(으)로 설정되어 있는지 확인하십시오
+>Adobe Campaign Classic 또는 Adobe Campaign Standard을 사용할 때 각각 페이지의 **jcr** 노드에 있는 **acMapping:content** 속성이 **mapRecipient** 또는 **profile**(으)로 설정되어 있는지 확인하십시오
 >
 
 1. AEM의 Sites에서 페이지를 만들려는 위치로 이동합니다.
@@ -78,7 +78,7 @@ Adobe Campaign 전용 Forms에는 특정 구성 요소가 있습니다. 이러�
 
 >[!NOTE]
 >
->원하는 템플릿을 사용할 수 없는 경우 [사용할 수 있는 템플릿 만들기](/help/sites-authoring/adobe-campaign.md)를 참조하십시오.
+>원하는 템플릿을 사용할 수 없는 경우 [사용할 수 있는 템플릿 만들기](/help/sites-authoring/campaign.md)를 참조하십시오.
 
 이 섹션에서는 Adobe Campaign에 대한 특정 링크만 자세히 설명합니다. Adobe Experience Manager에서 양식을 사용하는 방법에 대한 보다 일반적인 개요는 [편집 모드 구성 요소](/help/sites-authoring/default-components-foundation.md)를 참조하십시오.
 

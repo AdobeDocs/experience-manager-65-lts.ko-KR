@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 20de763d-dd07-4ba6-a54d-a2b3b9b7e1ec
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '2859'
+source-wordcount: '2857'
 ht-degree: 11%
 
 ---
+
 
 # Adobe Campaign 구성 요소{#adobe-campaign-components}
 
@@ -265,7 +267,7 @@ Dynamic Media Classic(Scene7) 이미지 템플릿은 계층화된 이미지 파�
 
 >[!NOTE]
 >
->**nms:seedMember** 스키마 또는 확장 중 하나에 정의된 필드만 고려합니다. **nms:seedMember**&#x200B;에 연결된 테이블의 특성을 사용할 수 없습니다.
+>**nms:seedMember** 스키마 또는 해당 확장 중 하나에 정의된 필드만 고려됩니다. **nms:seedMember**&#x200B;에 연결된 테이블의 특성을 사용할 수 없습니다.
 
 ## Adobe Campaign 양식 구성 요소 {#adobe-campaign-form-components}
 
@@ -447,7 +449,7 @@ Adobe Campaign 프로필 데이터 **을(를) 표시하고 수정하는 각 양�
 [대부분의 Adobe Campaign 구성 요소에 공통되는 설정](#settings-common-to-most-components) 외에 다음을 구성할 수 있습니다.
 
 * **제약 조건 - 제약 조건** 드롭다운
-&#x200B;- **없음** 또는 **숫자 -**&#x200B;을(를) 선택하여 숫자 또는 제한 없음을 추가할 수 있습니다. 숫자를 선택하는 경우 필드에 입력하는 응답 사용자는 숫자여야 합니다.
+- **없음** 또는 **숫자 -**&#x200B;을(를) 선택하여 숫자 또는 제한 없음을 추가할 수 있습니다. 숫자를 선택하는 경우 필드에 입력하는 응답 사용자는 숫자여야 합니다.
 
 * **제한 메시지** 또한 제한 메시지를 추가하여 사용자가 답변의 서식을 올바르게 지정하는 방법을 알 수 있습니다.
 * **스타일 - 너비** **+** 및 **-** 아이콘을 클릭하거나 탭하거나 숫자를 입력하여 필드의 너비를 조정합니다.

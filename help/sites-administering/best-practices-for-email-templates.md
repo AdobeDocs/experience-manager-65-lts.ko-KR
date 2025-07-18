@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1072'
 ht-degree: 1%
 
 ---
+
 
 # 이메일 템플릿에 대한 우수 사례 {#best-practices-for-email-templates}
 
@@ -23,7 +25,7 @@ ht-degree: 1%
 >
 >이 문서는 더 이상 사용되지 않는 기초 구성 요소 기반 AEM 이메일 구성 요소에 적용됩니다.
 >
->사용자는 최신 [핵심 구성 요소 전자 메일 구성 요소를 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=ko)
+>사용자는 최신 [핵심 구성 요소 전자 메일 구성 요소를 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 이 문서에서는 이메일 디자인 관련 모범 사례 중 일부를 설명합니다. 이렇게 하면 이메일 캠페인 템플릿이 제대로 개발됩니다.
 
@@ -33,7 +35,7 @@ AEM에서 사용할 수 있는 데모 캠페인은 이러한 모든 모범 사�
 
 >[!NOTE]
 >
->모든 캠페인 콘텐츠는 `cq/personalization/components/ambitpage` 유형의 `master` 페이지에 만들어야 합니다.
+>모든 캠페인 콘텐츠는 `master` 유형의 `cq/personalization/components/ambitpage` 페이지에 만들어야 합니다.
 >
 >예를 들어 계획된 캠페인 구조가 다음과 같은 경우
 >
@@ -45,7 +47,7 @@ AEM에서 사용할 수 있는 데모 캠페인은 이러한 모든 모범 사�
 
 >[!NOTE]
 >
->Adobe Campaign용 메일 템플릿을 만들 때 템플릿의 **jcr:content** 노드에 값이 **mapRecipient**&#x200B;인 속성 **acMapping**&#x200B;을(를) 포함해야 합니다. 그렇지 않으면 Adobe Campaign의 **페이지 속성**&#x200B;에서 Experience Manager 템플릿을 선택할 수 없습니다(필드가 비활성화됨).
+>Adobe Campaign용 메일 템플릿을 만들 때 템플릿의 **jcr** 노드에 값이 **mapRecipient**&#x200B;인 속성 **acMapping:content**&#x200B;을(를) 포함해야 합니다. 그렇지 않으면 Adobe Campaign의 **페이지 속성**&#x200B;에서 Experience Manager 템플릿을 선택할 수 없습니다(필드가 비활성화됨).
 
 ## 템플릿/페이지 구성 요소 {#template-page-component}
 
