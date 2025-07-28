@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 4aa45f02-ff89-4e40-a15d-e62c5879a87d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: cf2f70432ccf9ebc80847cf5ec6acfe630feb39f
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 1%
@@ -40,7 +40,9 @@ ht-degree: 1%
 1. Experience Manager Forms 서버를 중지합니다.
 1. 애플리케이션 서버에 대해 다음 JVM 인수를 구성합니다.
 
-   `-Djdk.xml.xpathExprOpLimit=2000`
+   `-Djdk.xml.xpathExprGrpLimit=100`
+   `-Djdk.xml.xpathExprOpLimit=10000`
+   `-Djdk.xml.xpathTotalOpLimit=10000`
 
    기본 제한에 도달하지 않도록 JVM의 시스템 속성을 상당히 높은 값으로 설정합니다.
 

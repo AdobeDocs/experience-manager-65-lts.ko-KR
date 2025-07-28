@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
+source-git-commit: 90e63ad3be32b7ce551c5e3579c722ef75d97f95
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1564'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Quickstart jar 파일의 이름을 바꾸어 포트 번호를 설정할 수도 �
 
 quickstart jar 파일의 이름을 바꿀 때 따라야 할 다양한 규칙이 있습니다.
 
-* 파일 이름을 바꿀 때는 `cq5-publish-p4503.jar`과(와) 같이 `cq;`(으)로 시작해야 합니다.
+* 파일 이름을 바꿀 때는 `cq;`과(와) 같이 `cq5-publish-p4503.jar`(으)로 시작해야 합니다.
 
 * cq5-publish-p4503.jar 또는 cq5-author-p6754.jar에서와 같이 *always*&#x200B;이(가) 포트 번호 접두사로 -p를 사용하는 것이 좋습니다.
 
@@ -48,10 +48,16 @@ quickstart jar 파일의 이름을 바꿀 때 따라야 할 다양한 규칙이 
 
 Oracle Java 17 또는 Java 21을 실행하는 경우 AEM을 시작할 때 명령줄에 스위치를 추가해야 합니다.
 
-다음은 Java 17/Java 21에서 AEM을 시작할 때 추가 JVM 매개 변수가 어떻게 표시되어야 하는지에 대한 샘플입니다.
+* 다음은 Java 17/Java 21에서 AEM을 시작할 때 추가 JVM 매개 변수가 어떻게 표시되어야 하는지에 대한 샘플입니다.
 
 ```shell
 -XX:+UseG1GC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang=org.apache.sling.commons.threads -Djdk.util.zip.disableZip64ExtraFieldValidation=true
+```
+
+* [Forms만 해당] 다음은 AEM Forms이 Java 17/Java21에서 올바르게 작동하도록 하는 샘플입니다. 다음 추가 JVM 매개 변수를 포함합니다.
+
+```shell
+--add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
 ```
 
 ## 실행 모드 {#run-modes}
@@ -120,7 +126,7 @@ AEM as a Windows 서비스를 설치하고 시작하려면 다음을 수행하�
 >
 >AEM as service를 설치할 때 Configuration Manager에서 `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm`의 로그 디렉터리에 대한 절대 경로를 제공해야 합니다.
 
-서비스를 제거하려면 **서비스** 제어판 또는 명령줄에서 **중지**&#x200B;를 클릭하고 폴더로 이동한 다음 `instsrv.bat -uninstall cq5`을(를) 입력하십시오. `net start`을(를) 입력하면 **서비스** 제어판의 목록 또는 명령줄의 목록에서 서비스가 제거됩니다.
+서비스를 제거하려면 **서비스** 제어판 또는 명령줄에서 **중지**&#x200B;를 클릭하고 폴더로 이동한 다음 `instsrv.bat -uninstall cq5`을(를) 입력하십시오. **을(를) 입력하면**&#x200B;서비스`net start` 제어판의 목록 또는 명령줄의 목록에서 서비스가 제거됩니다.
 
 ## 임시 작업 디렉터리 위치 재정의 {#redefining-the-location-of-the-temporary-work-directory}
 
