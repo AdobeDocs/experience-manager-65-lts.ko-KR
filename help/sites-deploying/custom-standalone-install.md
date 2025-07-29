@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 90e63ad3be32b7ce551c5e3579c722ef75d97f95
+source-git-commit: 93aa6218c36b52bfcd7a204e6f0b65871a4b365b
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1563'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Oracle Java 17 또는 Java 21을 실행하는 경우 AEM을 시작할 때 명령
 -XX:+UseG1GC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang=org.apache.sling.commons.threads -Djdk.util.zip.disableZip64ExtraFieldValidation=true
 ```
 
-* [Forms만 해당] 다음은 AEM Forms이 Java 17/Java21에서 올바르게 작동하도록 하는 샘플입니다. 다음 추가 JVM 매개 변수를 포함합니다.
+* [Forms만 해당] 아래 샘플은 AEM Forms이 Java 17/Java21에서 작동하도록 하는 샘플이며, 다음과 같은 추가 JVM 매개 변수를 포함합니다.
 
 ```shell
 --add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
