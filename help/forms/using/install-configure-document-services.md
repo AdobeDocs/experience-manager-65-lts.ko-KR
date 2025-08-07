@@ -6,9 +6,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: 2534fb5af913603b69597e7be713156b427a1094
+source-git-commit: 29b6cd70a59e3a90cd081ba09c98bd015a7426fc
 workflow-type: tm+mt
-source-wordcount: '10213'
+source-wordcount: '10247'
 ht-degree: 1%
 
 ---
@@ -199,7 +199,7 @@ PDF Generator 서비스를 사용하여 Microsoft® Word, Microsoft® Excel, Mic
 >* Adobe Acrobat, Microsoft® Word, Excel 및 Powerpoint는 Microsoft® Windows에서만 사용할 수 있습니다. UNIX 기반 운영 체제를 사용하는 경우 OpenOffice를 설치하여 리치 텍스트 파일과 지원되는 Microsoft® Office 파일을 PDF 문서로 변환합니다.
 >* PDF Generator 서비스를 사용하도록 구성된 모든 사용자에 대해 Adobe Acrobat 및 타사 소프트웨어를 설치한 후 표시되는 모든 대화 상자를 닫습니다.
 >* 설치된 모든 소프트웨어를 한 번 이상 시작합니다. PDF Generator 서비스를 사용하도록 구성된 모든 사용자의 대화 상자를 모두 닫습니다.
->* [Adobe Acrobat 일련 번호의 만료 날짜를 확인](https://helpx.adobe.com/kr/enterprise/kb/volume-license-expiration-check.html)하고 라이선스 업데이트 또는 만료 날짜를 기준으로 [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)하는 날짜를 설정하십시오.
+>* [Adobe Acrobat 일련 번호의 만료 날짜를 확인](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html)하고 라이선스 업데이트 또는 만료 날짜를 기준으로 [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)하는 날짜를 설정하십시오.
 
 Acrobat을 설치한 후 Microsoft® Word를 엽니다. **Acrobat** 탭에서 **PDF 만들기**&#x200B;를 클릭하고 컴퓨터에서 사용할 수 있는 .doc 또는 .docx 파일을 PDF 문서로 변환합니다. 전환이 성공하면 AEM Forms은 PDF Generator 서비스와 함께 Acrobat을 사용할 준비가 되었습니다.
 
@@ -242,6 +242,12 @@ Microsoft Office용 Adobe Acrobat Pro DC 설치 프로세스는 라이선스 유
 
 * **라이선스 유형**: 소매 또는 볼륨 라이선스
 * **배포 유형**: 단일 사용자 또는 여러 사용자
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>이 비디오에서는 소매 라이선스 - 단일 사용자 구성의 설치 프로세스를 보여 줍니다. 다른 배포 시나리오(소매 - 여러 사용자, 볼륨 라이선스 - 단일 사용자 또는 볼륨 라이선스 - 여러 사용자)에 대해서는 아래의 해당 탭에 있는 9단계 지침을 참조하여 배포 유형에 맞게 적절한 서버 시작 및 라이선스 활성화를 확인하십시오.
 
 각 탭에는 특정 설정에 최적화된 맞춤 지침이 포함되어 있으므로 구성 문제를 방지하고 적절한 라이선스 준수를 보장할 수 있습니다.
 
@@ -692,7 +698,7 @@ FRL 패키지 관리를 위한 전용 서비스 계정을 만드는 것이 좋�
 모든 프로세스를 완료한 후 빠른 작업 테스트를 수행하여 설치가 유효한지 확인합니다.
 
 1. RDP(원격 데스크톱)를 사용하여 서버에 로그인하고 서비스를 사용하여 AEM Forms 서버를 시작합니다.
-2. RDP(원격 데스크톱)를 사용하여 서버에 로그인하고 Windows 서비스를 사용하여 AEM Forms 서버를 시작합니다. 서버가 실행되면 RDP 창을 닫지 마십시오. 대신 사용자를 로그오프하여 정상적으로 로그아웃하십시오. 이렇게 하면 서비스가 백그라운드에서 계속 실행되는 동안 세션이 깨끗하게 종료됩니다.
+2. 서버가 실행되면 RDP 창을 닫지 마십시오. 대신 사용자를 로그오프하여 정상적으로 로그아웃하십시오. 이렇게 하면 서비스가 백그라운드에서 계속 실행되는 동안 세션이 깨끗하게 종료됩니다.
 
 ###### 10단계: PDF Generator 서비스 테스트
 
@@ -1050,7 +1056,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 1. [패키지 관리자](/help/sites-administering/package-manager.md)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-   [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
+   [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
 
 1. 패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 중지하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log 파일에 나타나지 않고 로그가 안정될 때까지 기다리십시오.
 
