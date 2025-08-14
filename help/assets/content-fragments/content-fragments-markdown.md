@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5ca53958-dfcd-4058-a04c-c750ab4d9a6e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a8ff456d323e848cc0c6296670b39834682a36b9
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 88%
+source-wordcount: '522'
+ht-degree: 86%
 
 ---
 
@@ -130,7 +130,7 @@ ht-degree: 88%
 
 순차 목록과 비순차 목록을 만들 수 있습니다.
 
-순서가 없는 무순차 목록을 만들려면 목록에 있는 항목 앞에 &ast; 기호를 사용하십시오. 예:
+순서가 없는 무순차 목록을 만들려면 목록에 있는 항목 앞에 &amp;ast; 기호를 사용하십시오. 예:
 
     `* item in list`
 
@@ -166,7 +166,7 @@ ht-degree: 88%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-코드 범위를 나타내려면 백틱 따옴표(&grave;)로 묶습니다. 서식이 미리 지정된 코드 블록과 달리 코드 범위는 일반 단락 내의 코드를 나타냅니다.
+코드 범위를 나타내려면 백틱 따옴표(`` ` ``)로 묶습니다. 서식이 미리 지정된 코드 블록과 달리 코드 범위는 일반 단락 내의 코드를 나타냅니다.
 
 예:
 
