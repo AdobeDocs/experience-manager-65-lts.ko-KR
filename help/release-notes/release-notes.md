@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8c726951cbd99660d2cfd23abef8857a6f4fcf36
+source-git-commit: b6a5e6bacfee72e162ce3bc035f909c02fbbf6db
 workflow-type: tm+mt
-source-wordcount: '4939'
+source-wordcount: '4935'
 ht-degree: 14%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 14%
 
 [!DNL Experience Manager] 6.5 LTS, SP1에는 새로운 기능, 고객이 요청한 주요 개선 사항 및 버그 수정이 포함되어 있습니다. 또한 2025년 3월 6.5 LTS의 최초 출시 이후 발표된 성능, 안정성 및 보안 개선 사항이 포함되어 있습니다. 6.5 LTS에 [이 서비스 팩을 설치](#install-update)합니다.
 
-## 주요 기능 및 개선 사항
+<!-- ## Key features and enhancements -->
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
