@@ -968,7 +968,7 @@ ht-degree: 25%
       + [프로세스 보고 문제 해결](/help/forms/using/process-reporting/troubleshooting-process-management.md)
    + 개발자 참조 {#developer-reference}
       + [HTML 템플릿 언어](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
-      + 적응형 양식을 디버깅할 [AEM 플러그인](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
+      + [적응형 양식을 디버깅할 AEM 플러그인](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
       + [HTML5 Forms용 양식 Bridge API](/help/forms/using/form-bridge-apis.md)
       + [적응형 Forms에 대한 JavaScript 라이브러리 API 참조](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
       + [어셈블러 서비스 및 DDX 참조](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
