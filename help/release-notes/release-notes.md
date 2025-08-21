@@ -24,7 +24,7 @@ ht-degree: 94%
 
 ## 새로운 기능 {#what-s-new}
 
-[!DNL Adobe Experience Manager] 6.5 LTS는 [!DNL Adobe Experience Manager] 6.5 코드 베이스에 대한 업그레이드 릴리스입니다. 이 릴리스는 주요 고객 수정 사항, 우선 순위가 높은 고객 개선 사항 및 제품 안정화를 위한 일반적인 버그 수정을 제공합니다. 또한 SP22까지의 [!DNL Adobe Experience Manager] 6.5 서비스 팩 릴리스를 포함합니다.
+[!DNL Adobe Experience Manager] 6.5 LTS는 [!DNL Adobe Experience Manager] 6.5 코드 베이스에 대한 업그레이드 릴리스입니다. 이 릴리스는 주요 고객 수정 사항, 우선순위가 높은 고객 개선 사항 및 제품 안정화를 위한 일반적인 버그 수정을 제공합니다. 또한 SP22까지의 [!DNL Adobe Experience Manager] 6.5 서비스 팩 릴리스를 포함합니다.
 
 아래 목록은 개요를 제공하며, 다음 페이지에는 전체 세부 사항이 나열됩니다.
 
@@ -84,7 +84,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 대체 예정 사실을 �
 
 현재 배포에서 해당 기능을 사용 중인지 검토하고 이들 구현을 변경하여 제공되는 대체 기능을 사용하도록 계획을 세우는 것이 좋습니다.
 
-| 영역 | 기능 | 대체 | 버전(SP) |
+| 영역 | 기능 | 대체 | 버전 (SP) |
 |---|---|---|---|
 | Sites | [SPA 편집기](/help/sites-developing/spa-overview.md) | AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기:<br>- 시각적 편집을 위한 [범용 편집기](/help/sites-developing/universal-editor/introduction.md)<br>- 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md) | 6.5 LTS GA |
 
@@ -92,7 +92,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 대체 예정 사실을 �
 
 이 섹션에는 AEM 6.5 LTS에서 제거된 기능이 나열됩니다. 이전 릴리스에서는 이러한 기능이 더 이상 사용되지 않는다고 표시되었습니다.
 
-| 영역 | 기능 | 대체 | 버전(SP) |
+| 영역 | 기능 | 대체 | 버전 (SP) |
 |--- |--- |--- |--- |
 | Commerce | AEM CIF Classic은 지원되지 않습니다. | [AEM CIF](/help/commerce/cif/migration.md)로 마이그레이션합니다. | 6.5 LTS GA |
 | 솔루션 | 소셜/Communities는 지원되지 않습니다. | 사용 가능한 대체 기능이 없습니다. | 6.5 LTS GA |
