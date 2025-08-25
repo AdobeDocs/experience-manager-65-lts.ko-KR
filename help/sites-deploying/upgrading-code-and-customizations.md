@@ -11,7 +11,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 0%
@@ -73,7 +73,7 @@ AEM 6.5 LTS의 경우 두 가지 유형의 Uber Jar가 있습니다.
 
 **주요 차이점: AEM 6.5와 AEM 6.5 LTS Uber Jars**
 
-* AEM 6.5에서 공개 API와 더 이상 사용되지 않는 API가 모두 필요한 경우 `pom.xml` 파일에 include single jar, `uber-jar-6.5.x-apis-with-deprecations.jar`을(를) 사용할 수 있습니다.
+* AEM 6.5에서 공개 API와 더 이상 사용되지 않는 API가 모두 필요한 경우 `uber-jar-6.5.x-apis-with-deprecations.jar` 파일에 include single jar, `pom.xml`을(를) 사용할 수 있습니다.
 * AEM 6.5 LTS에서 공개 API와 더 이상 사용되지 않는 API가 모두 필요한 경우 공개 API의 경우 `uber-jar-6.6.x-apis.jar`, 더 이상 사용되지 않는 API의 경우 `uber-jar-6.6.x-deprecated-apis.jar`인 두 개의 개별 jar를 포함해야 합니다.
 
 더 이상 사용되지 않는 API Jar에 대한 **Maven 좌표**
@@ -83,7 +83,7 @@ AEM 6.5 LTS의 경우 두 가지 유형의 Uber Jar가 있습니다.
     <groupId>com.adobe.aem</groupId>
     <artifactId>uber-jar</artifactId>
     <version>6.6.0</version>
-    <classifier>apis</classifier>
+    <classifier>deprecated-apis</classifier>
     <scope>provided</scope>
 </dependency>
 ```
