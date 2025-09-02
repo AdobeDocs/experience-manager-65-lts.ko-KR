@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6b101bcb474abe07a72d5fd04895f858eef34587
+source-git-commit: e9fc4a6294588b527a3b19d64101c81f0eb7bf55
 workflow-type: tm+mt
-source-wordcount: '5228'
+source-wordcount: '5238'
 ht-degree: 19%
 
 ---
@@ -297,7 +297,6 @@ HTL 스크립트 엔진 팩토리가 작동하지 못하게 하는 OSGi 종속�
 #### Quickstart{#foundation-quickstart-65-lts-sp1}
 
 * 패키지 관리자를 통해 설치할 때 차단 목록에 추가된으로 표시되지 않도록 Guava 번들의 버전 범위를 조정하도록 제거 스크립트를 업데이트했습니다. (GRANITE-59559)
-* 구문 분석 오류를 트리거하지 않고 대용량 패키지 설치를 지원하도록 서버 구성을 업데이트하여 JDK 17을 사용하여 Tomcat 11에서 AEMFD 패키지를 업로드하는 동안 발생하는 다중 부분 구성 오류를 해결했습니다. (GRANITE-58327)
 * 인터페이스에서 클래식 확인란의 처리를 수정하여 복제 에이전트를 편집할 때 오류(`#1660`)가 표시되는 복제 UI 문제를 해결했습니다. (GRANITE-58302)
 * 누락된 서비스 권한을 해결하고, 구성 처리를 업데이트하고, 필요한 서비스를 올바르게 초기화하도록 하여 JDK 21로 AEM 6.5 LTS를 실행할 때 S3 데이터 저장소에 대한 여러 시작 오류를 해결했습니다. (GRANITE-57082)
 * AEM 6.5의 유지 관리 및 유지 관리 전략을 정의했습니다. 이 수정 사항에는 다음 사항이 포함되어 있습니다.
@@ -369,6 +368,11 @@ Eclipse Jetty 11.0.x는 Quickstart의 서블릿 엔진으로 사용됩니다.
 ## 설치 및 업데이트 {#install-update}
 
 설정 요구 사항에 대한 자세한 내용은 [설치 지침](/help/sites-deploying/custom-standalone-install.md)을 참조하십시오.
+
+>[!NOTE]
+>
+> 이전 6.5 SP에서 LTS SP1로 직접 업그레이드하는 경우 6.5 ~ 6.5 LTS GA에 대해 제공된 지침 [업그레이드](/help/sites-deploying/upgrade.md)을(를) 따르십시오.
+
 
 세부 지침은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하십시오.
 
@@ -452,7 +456,11 @@ AEM 6.5.21, 6.5.22, 6.5.23 및 AEM 6.5 LTS GA는 알려진 문제가 포함된 `
 
 이 문제를 해결하기 위해 핫픽스 [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip)이 제공됩니다.
 
-### SSL 전용 기능을 사용한 Dispatcher 연결 실패 {#ssl-only-feature}
+### SSL 전용 기능을 사용한 Dispatcher 연결 실패(AEM 6.5 LTS SP1 이상에서 해결됨){#ssl-only-feature}
+
+>[!NOTE]
+>
+> 이 문제는 AEM 6.5 LTS GA 릴리스에만 적용됩니다.
 
 AEM 배포에서 SSL 전용 기능을 활성화하면 Dispatcher와 AEM 인스턴스 간의 연결에 영향을 미치는 알려진 문제가 있습니다. 이 기능을 활성화한 후에는 상태 검사가 실패할 수 있으며 Dispatcher와 AEM 인스턴스 간의 통신이 중단될 수 있습니다. 이 문제는 고객이 Dispatcher에서 AEM 인스턴스로 `https + IP`를 통해 연결을 시도할 때 발생합니다. 이는 SNI(서버 이름 표시) 유효성 검사 문제와 관련이 있습니다.
 
