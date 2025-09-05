@@ -459,7 +459,7 @@ Eclipse Jetty 11.0.x는 Quickstart의 서블릿 엔진으로 사용됩니다.
 
 ## AEM Forms 추가 기능 설치 및 업데이트 {#install-update-aem-forms-add-on}
 
-자세한 지침은 [AEM Forms 서비스 팩 설치 지침](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions)을 참조하십시오.
+자세한 지침은 [AEM Forms 서비스 팩 설치 지침](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions)을 참조하십시오.
 
 
 
