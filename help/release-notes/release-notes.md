@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 516fb71493cad9d4f4105bb09f56fe95d2971974
+source-git-commit: d6b324ed961dc59a22e8e33109a5ba5262553aa7
 workflow-type: tm+mt
-source-wordcount: '7204'
-ht-degree: 72%
+source-wordcount: '7221'
+ht-degree: 71%
 
 ---
 
@@ -456,6 +456,12 @@ Eclipse Jetty 11.0.x는 Quickstart의 서블릿 엔진으로 사용됩니다.
 >[!NOTE]
 >
 > 새 AEM 6.5 LTS 설치의 경우 인덱스 정의를 별도로 설치해야 합니다. 더 자세한 내용은 [이 문서](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)를 참조하십시오.
+
+## AEM Forms 추가 기능 설치 및 업데이트 {#install-update-aem-forms-add-on}
+
+자세한 지침은 [AEM Forms 서비스 팩 설치 지침](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions)을 참조하십시오.
+
+
 
 ## 지원되는 플랫폼 {#supported-platforms}
 
