@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: 66f0240a32830ba629b656e7f9aef84af2efc91c
+source-git-commit: 713dc1615ef1751c2fdbf67b5f97690ce6eed676
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '590'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,7 @@ Experience Hub에서는 Adobe Experience Manager 내의 콘텐츠, 에셋 및 �
 
 다시 상상한 AEM Experience Hub 작업 영역(4분 9초)을 잠깐 둘러보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3471448?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -50,11 +50,11 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 >
 >표시되는 위젯, 도구 및 아티팩트는 사용자 페르소나, 권한 및 AEM 배포 유형(AEM as a Cloud Service 또는 Managed Services 6.5/6.5 LTS)에 따라 다릅니다.
 
-이러한 솔루션은 이제 **도구** 또는 **서비스**&#x200B;의 기본 탐색으로 이동됩니다. 또한 새로운 탐색 요소를 사용하면 Assets, Sites, Forms, Content Fragments, Launches 등과 같이 활성화된 솔루션에 관련된 Adobe Experience Manager 주요 기능에 빠르게 액세스할 수 있습니다.
+이러한 솔루션은 이제 **도구** 또는 **서비스**&#x200B;의 기본 탐색으로 이동됩니다. 또한 새로운 탐색 요소를 통해 활성화되는 솔루션에 관련된 주요 Adobe Experience Manager 기능에 빠르게 액세스할 수 있습니다. 이러한 솔루션에는 Assets, Sites, Forms, 콘텐츠 조각, Launches 등이 포함됩니다.
 
 ![Experience Hub 환경](/help/assets/assets-experience-hub/experience-hub-author-environments-ams.png)
 
-이러한 기능은 액세스 권한이 있는 기본 프로덕션 환경에서 사용하거나 여러 AEM 인스턴스에 액세스할 수 있는 경우 타깃팅할 특정 환경을 선택할 수 있습니다.
+이러한 기능은 액세스할 수 있는 기본 프로덕션 환경에서 사용할 수 있습니다. 또는 여러 AEM 인스턴스에 액세스할 수 있는 경우 타깃팅할 특정 환경을 선택할 수 있습니다.
 
 ![프로덕션 및 스테이징 환경](/help/assets/assets-experience-hub/experience-hub-prod-stage-ams.png)
 
@@ -66,7 +66,7 @@ Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이
 
 ![Experience Hub 위젯](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
 
-**작성 환경** 섹션에는 사용자가 액세스할 수 있는 모든 AEM 환경이 표시되며, 솔루션 및 페이지에 대한 특정 단축키를 사용하면 목록의 맨 위에 표시할 특정 환경을 고정할 수 있습니다.
+**작성 환경** 섹션에는 액세스 가능한 모든 AEM 환경이 표시됩니다. 솔루션에 대한 특정 단축키 및 해당 단축키를 사용할 수 있으며, 목록 맨 위에 표시할 특정 환경을 고정할 수도 있습니다.
 
 아래 이미지에 표시된 **최근 항목** 섹션에는 AEM에서 최근에 방문한 페이지가 나열됩니다. 임차인의 라이선스에 따라 위젯에는 프로그램, 파이프라인 실행, Assets, 페이지 편집기 및 양식 편집기와 같은 항목이 포함될 수 있습니다.
 
@@ -82,4 +82,4 @@ Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이
 
 ## AEM 내 AI 어시스턴트
 
-[필수 조건을 완료](/help/ai-assistant-in-aem.md#get-access)한 고객의 경우 AEM의 AI 도우미를 해당 조직의 사용자가 사용할 수 있습니다. AEM의 [AI 길잡이](/help/ai-assistant-in-aem.md)를 참조하세요.
+[필수 조건을 완료](/help/ai-assistant-in-aem.md#get-access)한 고객의 경우 AEM의 AI Assistant를 해당 조직의 사용자가 사용할 수 있습니다. AEM의 [AI 길잡이](/help/ai-assistant-in-aem.md)를 참조하세요.
