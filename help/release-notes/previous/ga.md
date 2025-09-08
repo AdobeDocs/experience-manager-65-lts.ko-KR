@@ -4,10 +4,11 @@ description: Adobe Experience Manager 6.5 LTS에 대한 최신 릴리스 정보�
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 922b2391b45ac1a08987f286cdbd736fe9a383c8
-workflow-type: tm+mt
+exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
+source-git-commit: eda8fc347ee8c68c1022495cbe8d48175c819be3
+workflow-type: ht
 source-wordcount: '1068'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +66,7 @@ Eclipse Jetty 11.0.x는 Quickstart의 서블릿 엔진으로 사용됩니다.
 >
 >Java™ 17/Java™ 21은 AEM 6.5 LTS와 함께 사용하는 것이 권장되는 버전입니다.
 
-## 이제 사용되지 않는 기능과 제거된 기능 {#deprecated-and-removed-features}
+## 더 이상 사용되지 않는 기능과 제거된 기능 {#deprecated-and-removed-features}
 
 Adobe는 기존 기능을 현대화하거나 대체하여 고객 가치를 개선하기 위해 제품 기능을 지속적으로 검토합니다. 이러한 변경 사항은 이전 버전과의 호환성을 신중하게 고려하여 적용됩니다.
 
@@ -76,7 +77,7 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 대체 예정 사실을 �
 
 이 프로세스에서 고객에게 하나 이상의 릴리스 주기를 제공하여, 실제 제거 전에 더 이상 사용되지 않는 기능의 새 버전이나 후속 버전에 대한 구현을 채택할 수 있도록 합니다.
 
-### 이제 사용되지 않는 기능 {#deprecated-features}
+### 더 이상 사용되지 않는 기능 {#deprecated-features}
 
 이 섹션에는 Adobe가 AEM 6.5 LTS에서 더 이상 사용되지 않는 기능이 나열됩니다. 일반적으로 Adobe는 향후 릴리스에서 해당 기능을 제거하기 전에 해당 기능을 더 이상 사용하지 않도록 설정하고 사용할 수 있는 대안을 제공합니다.
 
