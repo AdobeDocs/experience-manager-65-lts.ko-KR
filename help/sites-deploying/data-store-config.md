@@ -8,9 +8,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: 826074f588c60c77c9ec32b3f94b47ab9aa0c12d
 workflow-type: tm+mt
-source-wordcount: '3330'
+source-wordcount: '3345'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ customBlobStore=B"false"
 
 >[!NOTE]
 >
->사용자 지정 데이터 저장소를 사용하려면 각 노드 저장소 구성 파일([세그먼트 노드 저장소](/help/sites-deploying/data-store-config.md#segment-node-store) 또는 [문서 노드 저장소](/help/sites-deploying/data-store-config.md#document-node-store))에서 `customBlobStore`이(가) `true`(으)로 설정되어 있는지 확인해야 합니다.
+>사용자 지정 데이터 저장소를 사용하려면 각 노드 저장소 구성 파일(`customBlobStore`세그먼트 노드 저장소`true` 또는 [문서 노드 저장소](/help/sites-deploying/data-store-config.md#segment-node-store))에서 [이(가) ](/help/sites-deploying/data-store-config.md#document-node-store)(으)로 설정되어 있는지 확인해야 합니다.
 
 ### 파일 데이터 저장소 {#file-data-store}
 
@@ -184,19 +184,19 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
 1. AEM 인스턴스를 중지합니다.
 
-1. AEM 설치 폴더의 `<aem-install>/crx-quickstart/install/15`(으)로 이동하여 해당 콘텐츠를 백업합니다.
-1. 백업 후 `<aem-install>/crx-quickstart/install/15` 폴더에서 모든 jar 파일을 삭제하여 S3 커넥터의 이전 버전과 해당 종속성을 삭제합니다. 예를 들면 다음과 같습니다.
+1. AEM 설치 폴더의 `<aem-install>/crx-quickstart/install`(으)로 이동하여 모든 하위 폴더를 백업합니다.
+1. 백업 후 `<aem-install>/crx-quickstart/install/` 폴더 아래의 모든 폴더에서 모든 jar 파일을 삭제하여 S3 커넥터의 이전 버전과 해당 종속성을 삭제합니다. 예를 들면 다음과 같습니다.
 
-   * **oak-blob-cloud-1.6.1.jar**
-   * **aws-java-sdk-osgi-1.10.76.jar**
+   * **15/oak-blob-cloud-1.78.XXX.jar**
+   * **15/aws-java-sdk-osgi-1.12.XXX.jar**
 
    >[!NOTE]
    >
    >위에 표시된 파일 이름은 일러스트레이션 용도로만 사용됩니다.
 
-1. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)에서 1.60.x 기능 팩의 최신 버전을 다운로드합니다.
-1. 콘텐츠를 별도의 폴더로 압축 해제한 다음 `jcr_root/libs/system/install/15`(으)로 이동합니다.
-1. jar 파일을 AEM 설치 폴더의 **&lt;aem-install>**/crx-quickstart/install/15에 복사합니다.
+1. [Maven 저장소에서 1.60.x 기능 팩의 최신 버전을 다운로드합니다.](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
+1. 콘텐츠를 별도의 폴더로 압축 해제한 다음 `jcr_root/libs/system/install/`(으)로 이동합니다.
+1. 모든 하위 폴더를 AEM 설치 폴더의 **&lt;aem-install>**/crx-quickstart/install/ 로 복사합니다.
 1. AEM을 시작하고 커넥터 기능을 확인합니다.
 
 아래 설명된 옵션과 함께 구성 파일을 사용할 수 있습니다.
@@ -359,7 +359,7 @@ S3를 사용하여 바이너리 없는 복제를 구성하려면 다음 단계�
 
    * `FileDataStore`을(를) 사용하는 경우 `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` 파일을 만들어 `<aem-install>/crx-quickstart/install` 폴더에 배치합니다.
 
-   * S3을 데이터 저장소로 사용하는 경우 위와 같이 `<aem-install>/crx-quickstart/install` 폴더에 이름이 `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config`인 파일을 만듭니다.
+   * S3을 데이터 저장소로 사용하는 경우 위와 같이 `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` 폴더에 이름이 `<aem-install>/crx-quickstart/install`인 파일을 만듭니다.
 
 1. 동일한 데이터 저장소를 가리키도록 각 인스턴스의 데이터 저장소 구성 파일을 수정합니다. 자세한 내용은 [데이터 저장소 구성](/help/sites-deploying/data-store-config.md#data-store-configurations)을 참조하세요.
 1. 인스턴스가 기존 서버에서 복제된 경우 저장소가 오프라인 상태인 동안 최신 oak-run 도구를 사용하여 새 인스턴스의 `clusterId`을(를) 제거해야 합니다. 실행해야 하는 명령은 다음과 같습니다.
@@ -474,7 +474,7 @@ secretKey="28932hfjlkwdo8fufsdfas\=\="
 1. *https://&lt;serveraddress:port>/system/console/jmx*&#x200B;의 JMX 콘솔로 이동
 1. **RepositoryManagement를 검색하는 중입니다.** 저장소 관리자 MBean을 찾으면 이를 클릭하여 사용 가능한 옵션을 표시합니다.
 1. 페이지 끝으로 스크롤하여 **startDataStoreGC(부울 markOnly)** 링크를 클릭합니다.
-1. 다음 대화 상자에서 `markOnly` 매개 변수에 대해 `false`을(를) 입력한 다음 **호출**&#x200B;을(를) 클릭합니다.
+1. 다음 대화 상자에서 `false` 매개 변수에 대해 `markOnly`을(를) 입력한 다음 **호출**&#x200B;을(를) 클릭합니다.
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
@@ -493,13 +493,13 @@ secretKey="28932hfjlkwdo8fufsdfas\=\="
 >공유 데이터 저장소 설정을 사용 중이고 데이터 저장소 가비지 수집이 비활성화된 경우 Lucene 이진 정리 작업을 실행하면 디스크 공간이 갑자기 늘어날 수 있습니다. 다음을 수행하여 모든 작성자 및 게시 인스턴스에서 BlobTracker를 비활성화하는 것이 좋습니다.
 >
 >1. AEM 인스턴스를 중지합니다.
->2. `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` 파일에 `blobTrackSnapshotIntervalInSecs=L"0"` 매개 변수를 추가합니다. 이 매개 변수를 사용하려면 Oak 1.12.0, 1.10.2 이상이 필요합니다.
+>2. `blobTrackSnapshotIntervalInSecs=L"0"` 파일에 `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` 매개 변수를 추가합니다. 이 매개 변수를 사용하려면 Oak 1.12.0, 1.10.2 이상이 필요합니다.
 >3. AEM 인스턴스를 다시 시작합니다.
 
 최신 버전의 AEM에서는 둘 이상의 저장소에서 공유하는 데이터 저장소에서 데이터 저장소 가비지 수집을 실행할 수도 있습니다. 공유 데이터 저장소에서 데이터 저장소 가비지 수집을 실행하려면 다음 단계를 수행하십시오.
 
 1. 데이터 저장소 가비지 수집에 대해 구성된 유지 관리 작업이 데이터 저장소를 공유하는 모든 저장소 인스턴스에서 비활성화되도록 합니다.
-1. 데이터 저장소를 공유하는 **모두** 저장소 인스턴스에서 [이진 가비지 수집](/help/sites-deploying/data-store-config.md#data-store-garbage-collection)에 언급된 단계를 개별적으로 실행합니다. 그러나 호출 단추를 클릭하기 전에 `markOnly` 매개 변수에 대해 `true`을(를) 입력해야 합니다.
+1. 데이터 저장소를 공유하는 [모두](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) 저장소 인스턴스에서 **이진 가비지 수집**&#x200B;에 언급된 단계를 개별적으로 실행합니다. 그러나 호출 단추를 클릭하기 전에 `true` 매개 변수에 대해 `markOnly`을(를) 입력해야 합니다.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -507,6 +507,6 @@ secretKey="28932hfjlkwdo8fufsdfas\=\="
 
    1. JMX 콘솔로 이동하고 저장소 관리자 Mbean을 선택합니다.
    1. **startDataStoreGC(부울 markOnly)** 링크를 클릭합니다.
-   1. 다음 대화 상자에서 `markOnly` 매개 변수에 대해 `false`을(를) 다시 입력하십시오.
+   1. 다음 대화 상자에서 `false` 매개 변수에 대해 `markOnly`을(를) 다시 입력하십시오.
 
    검색된 모든 파일은 이전에 사용한 표시 단계를 사용하여 정렬하고 데이터 저장소에서 사용하지 않은 나머지 파일을 삭제합니다.
