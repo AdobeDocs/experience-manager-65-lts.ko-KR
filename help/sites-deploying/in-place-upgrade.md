@@ -1,19 +1,19 @@
 ---
-title: 즉석 업그레이드 수행
+title: 인플레이스 업그레이드 수행
 description: AEM 6.5 LTS에 대한 즉각적 업그레이드를 수행하는 방법을 알아봅니다.
 topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: 9e58e4c993929f792bd71bf70b3e64719e761b7f
+source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 즉석 업그레이드 수행 {#performing-an-in-place-upgrade}
+# 인플레이스 업그레이드 수행 {#performing-an-in-place-upgrade}
 
 >[!NOTE]
 >
@@ -22,8 +22,6 @@ ht-degree: 0%
 ## 업그레이드 전 단계 {#pre-upgrade-steps}
 
 업그레이드를 실행하기 전에 완료해야 하는 몇 가지 단계가 있습니다. 자세한 내용은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md) 및 [업그레이드 전 유지 관리 작업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)을 참조하십시오. 또한 시스템이 [AEM 6.5 LTS에 대한 요구 사항](/help/sites-deploying/technical-requirements.md)을 충족하는지 확인하고 [업그레이드 계획 고려 사항](/help/sites-deploying/upgrade-planning.md) 및 [Analyzer](/help/sites-deploying/pattern-detector.md)를 통해 복잡성을 추정하는 방법을 확인하십시오.
-
-<!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
@@ -171,8 +169,8 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 1. S3 커넥터(버전 1.60.2)를 추출하고 `crx-quickstart/install` 아래에 있는 다음 폴더의 내용을 다음과 같이 복사합니다.
 
-   1. `crx-quickstart/install/1` 아래의 `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1` 복사
-   1. `crx-quickstart/install/15` 아래의 `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15` 복사
+   1. `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1` 아래의 `crx-quickstart/install/1` 복사
+   1. `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15` 아래의 `crx-quickstart/install/15` 복사
 
 이제 [올바른 업그레이드 시작 명령 결정](#determining-the-correct-upgrade-start-command) 섹션의 정보를 사용하여 결정된 새 명령을 사용하여 AEM 인스턴스를 시작합니다.
 

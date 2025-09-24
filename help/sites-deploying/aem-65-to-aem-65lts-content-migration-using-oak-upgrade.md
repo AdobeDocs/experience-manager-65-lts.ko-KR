@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: 9bf502146a309cd0d91f2aaa1778d5b550d424a8
+source-git-commit: 69033442fda82d9efdd1ba2f55a45173c8ffc6ec
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 1. Java 호환성: AEM 6.5 LTS가 Java™ 17에서 실행되도록 설치 및 구성되어야 합니다. 설정되면 AEM 인스턴스를 시작하고 모든 번들이 활성 상태이며 문제 없이 실행되는지 확인합니다
 1. 시스템 리소스: 마이그레이션 프로세스 중에 두 저장소를 모두 처리할 수 있는 적절한 디스크 공간 및 메모리를 확보하십시오
-1. Oak 업그레이드 도구: [공식 Maven 저장소](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)에서 `oak-upgrade` jar를 다운로드합니다. 버전이 AEM 6.5 LTS에서 사용되는 oak-core 버전과 일치하는지 확인하십시오. Oak 업그레이드 도구는 Oracle® Java™ 11 이상에서 실행됩니다
+1. Oak 업그레이드 도구: `oak-upgrade`공식 Maven 저장소[에서 ](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) jar를 다운로드합니다. 버전이 AEM 6.5 LTS에서 사용되는 oak-core 버전과 일치하는지 확인하십시오. Oak 업그레이드 도구는 Oracle® Java™ 11 이상에서 실행됩니다
 
 ## 단계별 마이그레이션 프로세스 {#step-by-step-migration-process}
 
@@ -86,6 +86,6 @@ Checkpoints won't be copied, because no external datastore has been specified. T
 
 경고는 무시할 수도 있지만, 이 경우 저장소는 처음 시작할 때 완전히 다시 인덱싱됩니다. 특히 큰 사건에 있어서 그것은 긴 과정일 수도 있습니다. 리인덱싱 프로세스가 완료될 때까지 저장소를 사용할 수 없습니다. `--skip-checkpoints` 옵션을 사용하여 경고를 표시하지 않습니다.
 
-[오프라인 리인덱싱](/help/sites-deploying/upgrade-offline-reindexing.md)를 사용하여 AEM을 시작하기 전에 저장소를 오프라인 리인덱싱할 수도 있습니다. 처음 시작할 때 전체 리인덱싱을 사용하지 않도록 하십시오.
+[오프라인 리인덱싱](/help/sites-deploying/offline-reindexing.md)를 사용하여 AEM을 시작하기 전에 저장소를 오프라인 리인덱싱할 수도 있습니다. 처음 시작할 때 전체 리인덱싱을 사용하지 않도록 하십시오.
 
 oak 업그레이드 도구 및 고급 사용에 대한 자세한 내용은 [공식 설명서](https://jackrabbit.apache.org/oak/docs/migration.html)를 참조하세요.

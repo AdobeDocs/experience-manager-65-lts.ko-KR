@@ -1,5 +1,5 @@
 ---
-title: 업그레이드 프로시저
+title: 업그레이드 절차
 description: Adobe Experience Manager(AEM)를 업그레이드하는 절차에 대해 알아봅니다.
 contentOwner: sarchiz
 topic-tags: upgrading
@@ -11,26 +11,20 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 255ef365-0da5-4bc9-b099-2e3bc67dd25a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 0%
 
 ---
 
-# 업그레이드 프로시저 {#upgrade-procedure}
+# 업그레이드 절차 {#upgrade-procedure}
 
 >[!NOTE]
 >
 >업그레이드는 대부분의 Adobe Experience Manager(AEM) 업그레이드가 제대로 수행되므로 작성자 계층에 대한 다운타임이 필요합니다. 이러한 모범 사례를 따르면 게시 계층 다운타임을 최소화하거나 제거할 수 있습니다.
 
 AEM 환경을 업그레이드할 때 작성자와 최종 사용자 모두의 가동 중지 시간을 최소화하기 위해 작성자 환경 또는 게시 환경 업그레이드 접근 방식의 차이점을 고려해야 합니다. 이 페이지에서는 현재 AEM 6.x 버전에서 실행 중인 AEM 토폴로지를 업그레이드하는 높은 수준의 절차에 대해 설명합니다. 작성 계층과 게시 계층, Mongo 및 TarMK 기반 배포 프로세스가 서로 다르기 때문에 각 계층과 마이크로커널은 별도의 섹션에 나열되어 있습니다. 배포를 실행할 때 Adobe에서는 먼저 작성자 환경을 업그레이드하고 성공을 결정한 다음 게시 환경으로 진행할 것을 권장합니다.
-
-<!--
->[!IMPORTANT]
->
->The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
--->
 
 ## TarMK 작성자 계층 {#tarmk-author-tier}
 
