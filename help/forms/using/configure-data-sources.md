@@ -195,7 +195,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. AEM 클라우드 서
 >[!NOTE]
 >
 >양식 데이터 모델이 [OData 버전 4](https://www.odata.org/documentation/)을(를) 지원합니다.
->>온라인 또는 온프레미스에서 Microsoft Dynamics 365를 구성하는 방법에 대한 단계별 지침은 [Microsoft Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md)을 참조하십시오.
+>&#x200B;>온라인 또는 온프레미스에서 Microsoft Dynamics 365를 구성하는 방법에 대한 단계별 지침은 [Microsoft Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md)을 참조하십시오.
 
 1. **[!UICONTROL 도구 > 클라우드 서비스 > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 

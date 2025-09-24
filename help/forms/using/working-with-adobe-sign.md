@@ -141,7 +141,7 @@ AEM [!DNL Adobe Sign]과(와) [!DNL Forms] 통합은 다음을 지원합니다.
 
 1. **[!UICONTROL Adobe Sign] 필드** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png) 아이콘을 선택합니다. [!DNL Adobe Sign] 필드를 선택하고 추가하는 옵션이 표시됩니다.
 
-   **[!UICONTROL Type]** 드롭다운 필드를 확장하여 [!DNL Adobe Sign] 필드를 선택하고 완료 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 선택하여 [!DNL Adobe Sign] 블록에 선택한 필드를 추가합니다. **[!UICONTROL Type]** 드롭다운 필드에는 서명, 서명자 정보 및 데이터 필드 형식이 포함됩니다. [!DNL Adobe Sign]Type[!DNL Forms] 드롭다운 상자에만 나열된 AEM [!UICONTROL  지원 필드와 ] 통합 [!DNL Adobe Sign] 필드에 대한 자세한 내용은 [Adobe Sign 설명서](https://helpx.adobe.com/sign/help/field-types.html)를 참조하십시오.
+   **[!UICONTROL Type]** 드롭다운 필드를 확장하여 [!DNL Adobe Sign] 필드를 선택하고 완료 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 선택하여 [!DNL Adobe Sign] 블록에 선택한 필드를 추가합니다. **[!UICONTROL Type]** 드롭다운 필드에는 서명, 서명자 정보 및 데이터 필드 형식이 포함됩니다. [!DNL Adobe Sign]Type[!DNL Forms] 드롭다운 상자에만 나열된 AEM [!UICONTROL &#x200B; 지원 필드와 &#x200B;] 통합 [!DNL Adobe Sign] 필드에 대한 자세한 내용은 [Adobe Sign 설명서](https://helpx.adobe.com/sign/help/field-types.html)를 참조하십시오.
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 

@@ -54,7 +54,7 @@ AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experie
 >[!NOTE]
 >
 >[AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM 폴더인지 확인합니다.
->>존재함. 첨부 파일을 임시로 저장하려면 디렉토리가 필요합니다. 디렉토리가 없으면 생성합니다.
+>&#x200B;>존재함. 첨부 파일을 임시로 저장하려면 디렉토리가 필요합니다. 디렉토리가 없으면 생성합니다.
 
 >[!CAUTION]
 >
