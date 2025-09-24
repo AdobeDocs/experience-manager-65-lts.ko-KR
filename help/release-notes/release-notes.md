@@ -6,9 +6,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7103'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -155,7 +155,7 @@ XMP 메타데이터가 잘못 포맷되어 `ValidationDataServlet`에서 이미�
 
 #### MSM - Live Copy{#sites-msm-live-copies-65-lts-sp1}
 
-* AEM 6.5 온프레미스에서 고스트 구성 요소 상속을 다시 활성화할 때 발생하는 JavaScript 오류 `ns.ui.alert is not a function`을 수정했습니다. (SITES-31993)
+* AEM 6.5 온프레미스에서 고스트 구성 요소 상속을 다시 활성화할 때 발생하는 JavaScript 오류 `ns.ui.alert is not a function`를 수정했습니다. (SITES-31993)
 * AEM 6.5에서 “나중에” 롤아웃 옵션을 사용하면 날짜를 선택하지 않고도 계속 진행할 수 있는 문제가 해결되었습니다. (SITES-31374)
 
 #### 페이지 편집기{#sites-pageeditor-65-lts-sp1}
@@ -317,7 +317,7 @@ HTL 스크립트 엔진 팩토리의 기능을 차단하는 OSGi 종속성 주�
 
 * 여러 `ResourceAccessGate` 참조가 `ResourceAccessSecurityImpl`을 초기화할 때 발생하는 `ClassCastException` 문제를 해결하기 위해 Sling ResourceAccessSecurity를 버전 1.1.2로 업데이트했습니다. (NPR-42750)
 * Adobe Stock 통합에서 라이선스 대화 상자가 회색으로 표시되는 문제를 해결했습니다. 이 문제는 `sunt:initList` 함수에서 필수 입력 필드가 제거되어 발생했습니다. 해당 함수는 Coral Foundation 클라이언트 라이브러리에서 발견되었습니다. 필수 필드를 유지하고 적절한 라이선스 대화 상자 기능을 활성화하기 위해 클라이언트 라이브러리를 업데이트했습니다. (NPR-42748)
-* `org.apache.sling.scripting.jsp 2.6.0`(으)로 인해 예기치 않은 JSP 컴파일 오류가 수정되었습니다. (NPR-42640)
+* `org.apache.sling.scripting.jsp 2.6.0`으로 인해 예기치 않은 JSP 컴파일 오류가 수정되었습니다. (NPR-42640)
 
 <!--
 * Backported the fix for Sling Scripting issue that caused `DataTimeParseException` and `String.length()` null pointer exceptions during package installation. Updated Sling Scripting to version 2.8.3-1.0.10.6 to reduce installation errors and improve stability. (NPR-42640) -->
@@ -355,25 +355,25 @@ HTL 스크립트 엔진 팩토리의 기능을 차단하는 OSGi 종속성 주�
 
 * 사용자가 exportDataAPI를 사용하여 XFA 기반 PDF에 대한 데이터를 내보낼 때 결과 XML이 Acrobat Reader를 사용하여 수동으로 내보낸 XML 데이터와 불일치합니다. Acrobat Reader에서 생성된 출력과 비교했을 때 일부 필드의 값이 출력에 누락되었습니다. (LC-3922791)
 * Workbench의 출력 서비스를 사용하여 태그가 지정된 PDF를 생성하면 목차 항목의 참조 태그 아래에 예기치 않은 레이블 태그가 추가됩니다. (LC-3922756)
-* 출력 서비스를 사용하여 동적이고 입력 가능한 PDF를 PDF/A 형식으로 평면화할 때 동적 상태가 보존되지 않습니다. 이 문제는 특히 태깅을 사용하는 경우 데이터 손실 및 잠재적인 규정 준수 문제로 이어집니다. (LC-3922708)
+* 출력 서비스를 사용하여 동적이고 입력 가능한 PDF를 PDF/A 형식으로 평면화할 때 동적 상태가 보존되지 않습니다. 이 문제는 특히 태그 지정이 활성화된 경우 데이터 손실과 잠재적인 규정 준수 문제가 발생됩니다. (LC-3922708)
 * 사용자가 AEM Forms Designer에서 필드 캡션을 하단 또는 오른쪽 정렬로 배치하면 태그 트리에 해당 값이 없는 캡션만 포함되어 접근성 태그 지정이 불완전해집니다. (LC-3922619)
-* 생성된 PDF의 QR 코드를 읽을 수 없게 됩니다. QR 코드에 대한 대체 텍스트도 접근성 테스트에 실패하여 화면 판독기 호환성에 영향을 줍니다. (LC-3922551)
-* 사용자가 에이전트 UI에서 문자를 렌더링할 때 FormService render() API로 인해 콘텐츠가 올바르게 표시되지 않습니다. (LC-3922461)
+* 생성된 PDF의 QR 코드를 읽을 수 없게 됩니다. QR 코드에 대한 대체 텍스트도 접근성 테스트에 실패하여 화면 판독기 호환성에 영향을 미칩니다. (LC-3922551)
+* 사용자가 에이전트 UI에서 문자를 렌더링하면 FormService render() API로 인해 콘텐츠가 올바르게 표시되지 않습니다. (LC-3922461)
 * 사용자가 AEM Forms에서 Sunken Square 스타일이 있는 XDP에서 PDF/A 파일을 생성하려고 하면 테두리 렌더링 문제가 발생합니다. (LC-3922180)
 * XSD 스키마에 바인딩된 동적 양식을 병합하면 일부 바인딩된 양식 데이터가 최종 PDF에 유지되지 않으므로 부분적인 데이터 손실이 발생합니다. (LC-3922008)
 * 사용자가 AEM Forms 6.5.13 이상 버전에서 extractData API를 사용하여 대화형 PDF에서 데이터를 내보내려고 하면 수동 내보내기와 비교하여 데이터가 누락됩니다. (LC-3921983)
-* AEM Forms Designer 또는 출력 서비스를 사용하여 XDP 양식을 정적 PDF로 변환하면 여러 `Link-OBJR` 태그가 만들어집니다. 이 문제로 인해 하나의 통합된 링크 태그가 예상되기 때문에 접근성 준수 문제가 발생합니다. (LC-3921977)
+* AEM Forms Designer 또는 출력 서비스를 사용하여 XDP 양식을 정적 PDF로 변환하면 여러 `Link-OBJR` 태그가 생성됩니다. 이 문제들은 단일 통합 링크 태그가 예상되기 때문에 접근성 준수 문제가 발생합니다. (LC-3921977)
 
 ### 적응형 양식
 
 * AEM Forms에서 루트 패널에 “제목에 리치 텍스트 허용”을 활성화하면 중첩된 패널에서 “기록 문서에서 제목 제외”가 기록 문서에 루트 패널의 제목을 잘못 숨깁니다. 이는 생성된 기록 문서에서 수행됩니다. (FORMS-19696)
-* JSON 스키마의 `sling:resourceType`을(를) 통해 할당된 사용자 지정 `aem:afProperties`은(는) 무시됩니다. 렌더링 중에 사용자 정의 리소스 유형이 무시됩니다. (FORMS-19691)
+* 시스템이 JSON 스키마에서 `aem:afProperties`를 통해 할당된 사용자 정의 `sling:resourceType`을 무시합니다. 렌더링 중에 사용자 정의 리소스 유형이 무시됩니다. (FORMS-19691)
 * 사용자가 URI를 사용하여 미리 채워진 첨부 파일로 적응형 양식을 제출하면 바이너리 데이터가 누락되어 NullPointerException으로 인해 양식 제출이 실패합니다. (FORMS-19371) (FORMS-19486)
 * 사용자가 &#39;양식 및 문서&#39; 섹션에 PDF를 업로드하면 타임라인 기능이 작동을 멈춥니다. (FORMS-19407)(FORMS-19234)
-* 사용자가 AEM Forms의 기본 제공(OOTB) 파일 첨부 구성 요소로 파일을 업로드하면 보안 취약성이 식별됩니다. 이 문제는 권한 없는 업체에 의해 제출 프로세스에 대한 잠재적인 차단으로 이어집니다. (FORMS-19271)
+* 사용자가 AEM Forms의 기본 제공(OOTB) 파일 첨부 구성 요소로 파일을 업로드하면 보안 취약성이 식별됩니다. 이 문제로 인해 승인되지 않은 엔티티에 의한 제출 프로세스의 잠재적인 가로채기로 이어집니다. (FORMS-19271)
 * 사용자가 기록 문서(DoR)를 자동으로 생성하도록 AEM Forms의 기본 제공 적응형 양식을 구성하면 Acrobat Reader의 문서 속성에 있는 “제목” 필드에 캡처된 DoR 제목이 표시되지 않습니다. 기본적으로 양식 제목은 파일 이름 대신 나타나지 않습니다. (FORMS-19263)
 * 사용자가 에이전트 UI에서 대화형 커뮤니케이션을 열면 미리 채워진 데이터를 완전히 지울 수 없습니다. 제거 시 동일한 데이터로 자동으로 채워집니다. (FORMS-19151)
-* 사용자가 에이전트 UI에서 날짜 필드를 미리 볼 때 날짜가 예기치 않게 변경됩니다. 이 문제는 VM의 UTC 설정과 시스템의 날짜 해석 간 시간대 불일치로 인해 발생합니다. (FORMS-19115)
+* 사용자가 에이전트 UI에서 날짜 필드를 미리 볼 때 날짜가 예기치 않게 변경됩니다. 이 문제는 VM의 UTC 설정과 시스템의 날짜 해석 간의 시간대 불일치로 인해 발생합니다. (FORMS-19115)
 * 사용자가 양식을 제출하면 파일 첨부 파일이 중복되어 동일한 파일이 여러 번 업로드될 수 있습니다. (FORMS-19045)(FORMS-19051)
 * 문서 보안에서 정책 세트에 코디네이터를 추가하는 작업은 프로덕션 및 하위 환경 모두에서 실패합니다. (FORMS-18603, FORMS-18212, FORMS-19697)
 * 사용자가 데스크탑 모드에서 빈 필드의 “datepicker-calendar-icon”을 클릭하면 정의되지 않은 _$focusedDate 변수로 인해 오류가 발생하여 관련 사용자 정의 스크립트가 중단됩니다. (FORMS-18483)(FORMS-18268)
@@ -383,28 +383,28 @@ HTL 스크립트 엔진 팩토리의 기능을 차단하는 OSGi 종속성 주�
 * 사용자가 WebToPDF 옵션을 사용하여 HTML 파일을 PDF로 변환하면 출력 PDF에 메타데이터 및 제목 태그를 포함한 헤더 섹션이 누락됩니다. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224)
 * AEM JEE Process Manager SDK에서 사용자가 retryAction(long actionOid) 메서드를 호출하면 시스템이 tb_action_instance 테이블에서 발견된 첫 번째 작업을 잘못 재시도합니다. 이 워크플로는 특정 작업 ID가 제공되거나 ID가 null인 경우에도 발생하여 의도하지 않은 비헤이비어가 발생합니다. (FORMS-18187)
 * 사용자는 오류 메시지가 표시되지 않고 초안 저장 및 제출 기능이 실패하는 문제에 직면합니다. (FORMS-18069)
-* XSD 기반 기초 구성 요소에서 핵심 구성 요소로 전환하면 JSON 스키마에서 파일 간 참조의 구현이 방지되어 적응형 Forms 마이그레이션에 영향을 줍니다. (FORMS-18065)
+* XSD 기반 기초 구성 요소에서 핵심 구성 요소로 전환하면 JSON 스키마에서 교차 파일 참조를 구현할 수 없어 적응형 양식 마이그레이션에 영향을 미칩니다. (FORMS-18065)
 * 사용자가 에이전트 UI에서 문자를 미리 볼 때 IC 시간 변환 문제로 인해 날짜 필드에 잘못된 값이 표시됩니다. 이러한 불일치는 VM 환경과 시스템의 시간 해석(UTC 및 현지 시간) 간의 시간대 차이로 인해 발생합니다. (FORMS-17988) (FORMS-17248)
 * 사용자가 AEM Forms에서 Notice IC 템플릿을 사용하여 문자를 미리 보면 동일한 서버에서도 PDF 생성 시간이 1.5초에서 10초 이상까지 크게 다릅니다. 이 불일치는 비즈니스에 중요한 워크플로에 영향을 미칩니다. (FORMS-17951)
 * 사용자가 &#39;데이터 소스&#39; 옵션을 사용하여 적응형 양식의 스크리블 서명 오브젝트를 XDP에 바인딩하면 변경 사항을 저장할 수 없습니다. 유효한 값을 사용할 때도 종횡비 유효성 검사 오류가 지속적으로 발생하기 때문입니다. (FORMS-17587)
-* 사용자가 문서 조각에 대해 숨겨진 필드가 많은 특정 XDP를 사용하면 AEM에서 `cm:optional` 속성이 false로 설정된 CRX 노드를 만들며, 이로 인해 IC(대화형 통신) 제출이 실패합니다. (FORMS-17538)
+* 사용자가 문서 조각에 숨겨진 필드가 많은 특정 XDP를 사용할 때, AEM은 `cm:optional` 속성이 false로 설정된 CRX 노드를 생성하여 인터랙티브 커뮤니케이션(IC) 제출이 실패하게 됩니다. (FORMS-17538)
 * 고객이 문자를 미리 볼 때, 숫자 상자 필드가 Lead 및 Frac에 대한 숫자 제한이 정의된 경우 음수 값을 올바르게 처리하지 못합니다. 이 문제는 빼기 기호를 숫자의 일부로 처리하는 parseFloat를 사용하기 때문에 발생합니다. (FORMS-17451)
-* 편지를 미리 보면 Adobe.json 파일에 &quot;*&quot; 와일드카드를 사용하는 것을 볼 수 있으므로, 해당 목적과 잠재적인 수정 가능성에 대해 우려가 제기됩니다. (FORMS-17317)
+* 레터를 미리 볼 때 Adobe.json 파일에서 “*” 와일드카드가 사용되는 것이 발견되어 그 목적 및 잠재적 수정에 대한 우려가 제기됩니다. (FORMS-17317)
 * 사용자가 고정 금리 저축 공동 계좌 신청 시 화면 판독기를 사용하면 제목이 클릭 가능한 것으로 잘못 안내되어 접근성 문제가 발생합니다. (FORMS-17038)
 * 양식이 임베드되면 생성된 iframe에 제목 속성이 누락되어 접근성 규정 준수 문제가 발생합니다. (FORMS-17010)
 * Forms Manager UI를 사용하여 양식을 다운로드하면 테마 및 조각과 같은 관련 종속성이 항상 포함됩니다. (FORMS-15811)
 * 사용자가 모바일 디바이스(iOS 및 Android™)에서 양식에 액세스하면 첫 번째 페이지의 &#39;다음&#39; 및 &#39;이전&#39; 버튼이 비활성화됩니다. 그러나 화면 판독기는 비활성화된 것으로 식별하지 않습니다. (FORMS-15773)
 * 사용자가 조각 및 지연 로딩이 활성화된 상태에서 큰 양식을 저장하면 초안을 검색하지 못하여 워크플로가 중단됩니다. (FORMS-19890, FORMS-19808)
-* 사용자는 핵심 구성 요소를 기반으로 하는 적응형 양식에 대한 양식 속성을 저장하는 데 문제를 겪었습니다. 이 오류는 기초 구성 요소 기반 적응형 양식의 중복 스크립트가 포함되어 핵심 구성 요소 기반 적응형 양식에 충돌이 발생하여 발생했습니다. 편집기 (FORMS-17474)
+* 사용자는 핵심 구성 요소를 기반으로 하는 적응형 양식에 대한 양식 속성을 저장하는 데 문제를 겪었습니다. 이 오류는 기초 구성 요소 편집기를 기반으로 하는 적응형 양식의 중복 스크립트가 포함되어 핵심 구성 요소를 기반으로 하는 적응형 양식에서 충돌이 발생했기 때문입니다. 편집기 (FORMS-17474)
 * 사용자는 iframe에서 Adobe Sign GovCloud 서명 페이지가 렌더링되지 않는 문제를 경험했습니다. (FORMS-16803)
-* 사용자에게 핵심 구성 요소의 AF(적응형 Forms) 조각에 대한 참조를 선택할 때 오류가 발생했습니다. “참조를 렌더링할 수 없습니다. 절대 경로가 아닙니다”라는 오류 메시지가 나타나 참조를 제대로 렌더링할 수 없습니다. (FORMS-19678)
+* 사용자는 핵심 구성 요소 적응형 양식(AF) 조각에 대한 참조를 선택할 때 오류를 경험합니다. “참조를 렌더링할 수 없습니다. 절대 경로가 아닙니다”라는 오류 메시지가 나타나 참조를 제대로 렌더링할 수 없습니다. (FORMS-19678)
 * Acrobat DC를 사용한 다중 스레드 변환에 대한 지원이 추가되어 사용자가 Word, Excel 및 PowerPoint 문서를 PDF 문서로 동시에 더 효율적으로 변환할 수 있습니다. (FORMS-21310)
 * AEM 서비스 팩 24에 `com.adobe.granite.toggle.impl.dev` 번들을 포함하여 Forms 추가 기능에서 제거하여 더 간소화된 개발 프로세스를 지원합니다. (FORMS-20139)
 * forms-foundation에서 FeatureToggleRenderConditionServlet을 제거했고 forms add-on에서 com.adobe.granite.toggle.impl.dev 번들을 제거했습니다. 이 업데이트는 Forms 추가 기능 설치 후 렌더링 조건이 올바르게 해결되도록 하여 고객을 위한 구성 요소 기능을 개선합니다. (FORMS-20138)
-* 사용자는 적응형 양식에서 장기 실행 쿼리로 인해 성능이 저하되는 문제를 경험했습니다. 이 업데이트는 효율성을 개선하기 위해 쿼리 변경 사항을 백포트합니다. 이제 고객은 aemformsAFReferences 태그 이름으로 색인을 만들 수 있습니다. (FORMS-21411)
-* 사용자는 WebtoPDF를 사용하여 HTML을 PDF(Portable Document Format)로 변환할 때 헤더 위치가 잘못 정렬되는 문제를 경험했습니다. 이 문제는 문서 레이아웃의 일관성과 출력의 가독성에 영향을 주었습니다. (FORMS-21502, FORMS-21540)
+* 사용자는 적응형 양식에서 장기 실행 쿼리로 인해 성능이 저하되는 문제를 경험했습니다. 이 업데이트는 효율성을 개선하기 위해 쿼리 변경 사항을 백포트합니다. 이제 고객들은 aemformsAFReferences라는 태그 이름으로 인덱스를 생성할 수 있습니다. (FORMS-21411)
+* 사용자는 WebtoPDF를 사용하여 HTML을 PDF(Portable Document Format)로 변환할 때 헤더 위치가 잘못 정렬되는 문제를 경험했습니다. 이 문제는 문서 레이아웃 일관성 및 출력의 가독성에 영향을 미쳤습니다. (FORMS-21502, FORMS-21540)
 * 사용자는 PreFlight 확인에 성공했음에도 불구하고 PDF/A-1b 유효성 검사 실패를 경험했습니다. 이 문제는 PDF 유효성 검사 도구를 사용하는 기업 고객의 문서 규정 준수 검사에 영향을 미쳤습니다. (FORMS-20196)
-* 사용자가 UI에서 번역되지 않은 문자열을 경험하여 혼란을 초래하고 인터페이스를 이해하는 데 어려움이 있었습니다. (FORMS-6542)
+* 사용자는 UI에 번역되지 않은 문자열을 경험하여 인터페이스를 이해하는 데 혼란과 어려움을 겪었습니다. (FORMS-6542)
 * 사용자는 이메일 알림 문제를 경험했습니다. 이메일 보내기 워크플로 단계에서 이메일을 보내는 데 실패하여 자동화된 커뮤니케이션 프로세스에 영향을 미쳤습니다. (FORMS-17961)
 * 사용자는 양식 워크플로에 대한 테스트 실패를 경험했고, 이로 인해 워크플로 프로세스를 효율적으로 완료하는 기능에 영향을 받았습니다. (FORMS-16231)
 * 사용자는 AEM Forms에서 PDF 파일의 타임라인 기능을 사용할 수 없었습니다. 이 문제는 사용자가 문서 변경 사항 및 수정을 효율적으로 추적하는 능력에 영향을 미쳤습니다. AEM Forms 영역의 &#39;양식 및 문서&#39; 섹션에 PDF를 업로드하면 타임라인 보기가 작동을 멈춥니다. (FORMS-19408)
@@ -413,12 +413,12 @@ HTL 스크립트 엔진 팩토리의 기능을 차단하는 OSGi 종속성 주�
 
 ### Forms Captcha
 
-* 기초 구성 요소를 기반으로 하는 적응형 Forms에 대한 `Hcaptcha` 및 `Turnstile` 지원이 추가되었습니다. (FORMS-16562)
-* `Create hCaptcha Configuration` 대화 상자에서 아이콘 겹침 문제가 발생했습니다. 필수 필드를 입력할 때 정보 아이콘이 오류 아이콘과 겹쳐 구성 설정 중에 혼란을 야기했습니다. (FORMS-16916)
-* 사용자가 Foundation 구성 요소를 기반으로 하는 적응형 Forms에서 reCAPTCHA에 대해 잘못된 구성을 선택했습니다. 양식에 대해 구성 컨테이너가 선택되지 않은 경우 `conf/global` 폴더의 여러 구성으로 인해 문제가 발생했습니다. (FORMS-19237)
+* 기초 구성 요소를 기반으로 한 적응형 양식에 대한 `Hcaptcha` 및 `Turnstile` 지원이 추가되었습니다. (FORMS-16562)
+* 사용자는 `Create hCaptcha Configuration` 대화 상자에서 아이콘 겹침 문제를 경험했습니다. 필수 필드를 입력할 때 정보 아이콘이 오류 아이콘과 겹쳐 구성 설정 중에 혼란을 야기했습니다. (FORMS-16916)
+* 사용자는 기초 구성 요소를 기반으로 하는 적응형 양식에서 reCAPTCHA에 대해 잘못된 구성이 선택되는 문제를 경험했습니다. 양식에 대해 구성 컨테이너가 선택되지 않은 경우 `conf/global` 폴더의 여러 구성으로 인해 문제가 발생했습니다. (FORMS-19237)
 * 사용자는 reCAPTCHA가 렌더링되지 않는 문제를 경험했습니다. 이 문제는 기업 고객의 양식 제출 및 보안 유효성 검사에 영향을 미쳤습니다. (FORMS-17136, FORMS-19596)
 * 사용자는 reCAPTCHA Enterprise의 크기가 사용자 인터페이스(UI)에 반영되지 않는 문제를 경험합니다. (FORMS-16574)
-* `ReCaptchaConfigurationServiceImpl`에서 ResourceResolver가 닫히지 않아 사용자가 ReCaptcha 기능에 문제가 발생하여 양식을 제출하는 동안 간헐적인 유효성 검사 오류가 발생했습니다. (FORMS-19241)
+* 사용자는 `ReCaptchaConfigurationServiceImpl`의 비공개 ResourceResolver로 인해 ReCaptcha 기능에 문제가 발생하여 양식 제출 중에 간헐적인 유효성 검사 실패를 경험했습니다. (FORMS-19241)
 * 사용자는 양식이 Sites에서 작성될 때 reCAPTCHA 유효성 검사 문제를 경험했습니다. AEM Forms가 양식 이름을 올바르게 인식하지 못하여 유효성 검사 실패가 발생했습니다. (FORMS-20486)
 * 사용자는 기업 reCAPTCHA 점수가 1.0일 때도 양식 제출을 경험했으며, 이는 잠재적인 보안 위험으로 이어졌습니다. (FORMS-16766){{$include }}
 * 제출 오류 코드를 400으로 업데이트하여 적응형 양식에서 reCAPTCHA 경고를 개선했습니다. 또한 로그 경고를 개선하여 시간 초과, 만료 및 봇 감지 실패를 구분함으로써 문제 해결 정확도와 시스템 관찰 가능성을 향상했습니다. (FORMS-19240)
@@ -427,7 +427,7 @@ HTL 스크립트 엔진 팩토리의 기능을 차단하는 OSGi 종속성 주�
 
 ### Forms 관리 UI
 
-* 사용자가 `Forms` > `Create Watchfolder` >` Watchfolder` 만들기 프로세스에서 지역화되지 않은 문자열을 경험했습니다. 감시 폴더를 만들 때 `Watchfolder creation` 및 `Watchfolder created successfully`과(와) 같은 문자열을 찾을 수 없어 사용자 인터페이스 환경에 영향을 줍니다. (FORMS-15234)
+* 사용자는 `Forms` > `Create Watchfolder` >` Watchfolder` 생성 과정에서 현지화되지 않은 문자열을 경험했습니다. 감시 폴더를 만들 때 `Watchfolder creation` 및 `Watchfolder created successfully`와 같은 문자열이 발견되지 않아 사용자 인터페이스 경험에 영향을 미쳤습니다. (FORMS-15234)
 
 ## [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
@@ -547,11 +547,11 @@ When this issue occurs, one of the following exceptions may appear in the error 
 
 A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) is available to resolve this problem. -->
 
-### SSL 전용 기능을 사용한 Dispatcher 연결 실패(AEM 6.5 LTS SP1 이상에서 수정됨){#ssl-only-feature}
+### SSL 전용 기능을 사용한 Dispatcher 연결 실패 (AEM 6.5 LTS SP1 이상에서 수정됨){#ssl-only-feature}
 
 >[!NOTE]
 >
-> 이 문제는 AEM 6.5 LTS GA 릴리스에만 적용됩니다.
+> 이 문제는 AEM 6.5 LTS GA 릴리스에서만 발생합니다.
 
 AEM 배포에서 SSL 전용 기능을 활성화하면 Dispatcher와 AEM 인스턴스 간의 연결에 영향을 미치는 알려진 문제가 있습니다. 이 기능을 활성화한 후에는 상태 검사가 실패할 수 있으며 Dispatcher와 AEM 인스턴스 간의 통신이 중단될 수 있습니다. 이 문제는 고객이 Dispatcher에서 AEM 인스턴스로 `https + IP`를 통해 연결을 시도할 때 발생합니다. 이는 SNI(서버 이름 표시) 유효성 검사 문제와 관련이 있습니다.
 
