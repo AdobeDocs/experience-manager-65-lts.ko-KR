@@ -23,7 +23,7 @@ ht-degree: 7%
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=ko)를 참조하십시오.
 
 Adobe Experience Manager(AEM)의 그룹에 [그룹을 만들고](/help/sites-administering/user-group-ac-admin.md#group-administration) 정책 및 [사용자](/help/sites-administering/user-group-ac-admin.md#user-administration)를 할당할 수 있습니다. 이러한 정책은 그룹에 속한 사용자의 권한을 제어합니다.
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference)를 참조하십시오.
 
 워크플로우 모델을 사용하여 비즈니스 논리를 자동화된 반복 프로세스로 변환합니다. 모델은 일련의 단계를 정의하고 실행하는 데 도움이 됩니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다. 비즈니스 논리를 달성하기 위해 [모델에 다양한 AEM 워크플로 단계를 포함할 수 있습니다](/help/sites-developing/workflows-models.md#extending-aem).
 

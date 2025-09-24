@@ -22,7 +22,7 @@ ht-degree: 2%
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ko)를 참조하십시오.
 
 
 AEM Document Services는 PDF 문서 생성, 어셈블 및 보안을 위한 일련의 OSGi 서비스입니다. 문서 서비스에는 다음 서비스가 포함됩니다.
