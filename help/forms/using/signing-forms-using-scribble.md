@@ -8,22 +8,23 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 9d1a22da-2eb3-4c79-8c4d-4d0a3ed7fe3b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 9%
+source-wordcount: '727'
+ht-degree: 18%
 
 ---
 
 # 스크리블 서명을 사용하여 양식에 전자 서명 적용{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html)를 참조하십시오.
 
 
 **스크리블 서명** 구성 요소와 **서명 단계** 구성 요소를 사용하여 적응형 양식에 스크리블 서명을 그릴 수 있습니다. 서명 단계 구성 요소는 적응형 양식의 PDF 버전을 표시합니다. 서명 단계 구성 요소를 사용하려면 기록 문서 옵션을 활성화하거나 양식 템플릿 기반 적응형 양식이 필요합니다.
@@ -33,11 +34,11 @@ ht-degree: 9%
 ## 서명 창에서 사용할 수 있는 다양한 옵션
 
 * **A:** 캔버스에 서명을 그리려면 **페인트 브러시** 아이콘을 클릭하세요.
-* **B:** 캔버스에서 서명을 지우려면 **지우기** 아이콘을 클릭하십시오.
-* **C:** **지리적 위치** 아이콘을 클릭하여 서명과 함께 지리적 위치를 추가하십시오.
-* **D:** 캔버스에 이름을 입력하려면 **키보드** 아이콘을 클릭하십시오.
+* **B:** 캔버스의 서명을 지우려면 **지우기** 아이콘을 클릭합니다.
+* **C:** 서명과 함께 지리적 위치를 추가하려면 **지리적 위치** 아이콘을 클릭합니다.
+* **D:** 키보드 **아이콘을 클릭하여 캔버스에 이름을 입력합니다.**
 
-스크리블 서명 창에서 완료![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 선택하면 서명을 편집할 수 없습니다. 서명을 편집하려면 현재 서명을 무시하고 위의 [페인트 브러쉬/키보드] 옵션을 사용하여 다시 서명해야 합니다.
+스크리블 서명 창에서 완료![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 아이콘을 선택하면 서명을 편집할 수 없습니다. 서명을 편집하고 싶은 경우, 현재 서명을 무시하고 위의 페인트 브러시/키보드 옵션을 사용하여 다시 서명해야 합니다.
 
 **구성** ![구성](assets/configure.png) 아이콘을 선택하여 스크리블 서명 캔버스의 종횡비를 설정할 수 있습니다.
 * 스크리블 서명 캔버스의 종횡비가 1보다 작은 경우 지리적 위치 정보가 스크리블 서명 캔버스의 맨 아래에 추가됩니다.

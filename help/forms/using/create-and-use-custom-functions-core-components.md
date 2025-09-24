@@ -6,10 +6,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3385'
-ht-degree: 2%
+source-wordcount: '3394'
+ht-degree: 1%
 
 ---
 
@@ -24,10 +24,11 @@ ht-degree: 2%
 사용자 지정 함수의 최신 기능을 사용하려면 AEM Forms 핵심 구성 요소 환경에서 [최신 양식 버전](https://github.com/adobe/aem-core-forms-components/tree/release/650)을 설정해야 합니다. </span>
 
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM 6.5 | 이 문서 |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions)를 참조하십시오.
 
 ## 소개
 
@@ -60,8 +61,8 @@ AEM Forms 6.5에는 규칙 편집기를 사용하여 복잡한 비즈니스 규�
 
 >[!NOTE]
 >`[functionName]`은(는) 함수 이름입니다. 공백은 허용되지 않습니다.
->`<Function Name>` 는 적응형 Forms 규칙 편집기에 있는 함수의 표시 이름입니다.
->함수 이름이 함수 자체의 이름과 동일한 경우 구문에서 `[functionName]`을(를) 생략할 수 있습니다.
+>>`<Function Name>` 는 적응형 Forms 규칙 편집기에 있는 함수의 표시 이름입니다.
+>>함수 이름이 함수 자체의 이름과 동일한 경우 구문에서 `[functionName]`을(를) 생략할 수 있습니다.
 
 #### 매개변수
 
@@ -355,7 +356,7 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 
 ### AEM Project Archetype을 사용하여 클라이언트 라이브러리 만들기{#create-client-library-archetype}
 
-[AEM Project Archetype을 사용하여 만든 프로젝트](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)에 클라이언트 라이브러리를 추가하여 사용자 지정 함수를 추가할 수 있습니다.
+[AEM Project Archetype을 사용하여 만든 프로젝트](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)에 클라이언트 라이브러리를 추가하여 사용자 지정 함수를 추가할 수 있습니다.
 기존 프로젝트 <!--and have already the project structure as shown in the image below,-->이(가) 있는 경우 [사용자 지정 함수](#create-add-custom-function)를 로컬 프로젝트에 직접 추가할 수 있습니다.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -437,7 +438,7 @@ Archetype 프로젝트를 만들거나 기존 프로젝트를 사용한 후에 �
 
 **filter.xml에 새 폴더 포함**:
 
-1. [AEMaaCS 프로젝트 디렉터리]에서 `/ui.apps/src/main/content/META-INF/vault/filter.xml` 파일로 이동합니다.
+1. `/ui.apps/src/main/content/META-INF/vault/filter.xml`AEMaaCS 프로젝트 디렉터리[에서 ] 파일로 이동합니다.
 
 1. 파일을 열고 끝에 다음 줄을 추가합니다.
 
@@ -469,9 +470,9 @@ Archetype 프로젝트를 만들거나 기존 프로젝트를 사용한 후에 �
 
 1. 변경 사항을 저장합니다.
 
-1. `clientlibs` 폴더 아래에 `js` 폴더를 만듭니다.
-1. `js` 폴더 아래에 `functions.js`(이)라는 JavaScript 파일을 만듭니다.
-1. `clientlibs` 폴더 아래에 `js.txt` 파일을 만듭니다.
+1. `js` 폴더 아래에 `clientlibs` 폴더를 만듭니다.
+1. `functions.js` 폴더 아래에 `js`(이)라는 JavaScript 파일을 만듭니다.
+1. `js.txt` 폴더 아래에 `clientlibs` 파일을 만듭니다.
 1. 변경 사항을 저장합니다.
 생성된 폴더 구조 형태는 다음과 같습니다.
 
@@ -532,7 +533,7 @@ JavaScript 파일에 다음 코드를 추가하여 생년월일(YYYY-MM-DD)을 �
 
 ![사용자 지정 함수 클라이언트 라이브러리를 추가](/help/forms/using//assets/calculateage-customfunction.png)
 
-이제 AEM Forms 6.5[&#128279;](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)에서 규칙 편집기의 호출 서비스를 사용하여 사용자 지정 함수를 구성하고 사용하는 방법에 대해 알아보겠습니다
+이제 AEM Forms 6.5[에서 ](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)규칙 편집기의 호출 서비스를 사용하여 사용자 지정 함수를 구성하고 사용하는 방법에 대해 알아보겠습니다
 
 ## 적응형 양식에서 사용자 정의 함수 사용 {#use-custom-functions}
 
@@ -572,7 +573,7 @@ JavaScript 파일(`Function.js` 파일)에 다음 코드를 추가하여 생년�
 
 >[!NOTE]
 >
-> 다음 [사용자 지정 함수](/help/forms/using/assets/customfunctions.zip) 폴더를 참조할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)를 사용하여 AEM 인스턴스에 이 폴더를 다운로드하여 설치하십시오.
+> 다음 [사용자 지정 함수](/help/forms/using/assets/customfunctions.zip) 폴더를 참조할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)를 사용하여 AEM 인스턴스에 이 폴더를 다운로드하여 설치하십시오.
 
 ### 사용자 지정 함수에서 비동기 함수 지원 {#support-of-async-functions}
 
@@ -609,7 +610,7 @@ JavaScript 파일(`Function.js` 파일)에 다음 코드를 추가하여 생년�
 }
 ```
 
-위의 예에서 asyncFunction 함수는 `asynchronous function`입니다. `https://petstore.swagger.io/v2/store/inventory`에 `GET`을(를) 요청하여 비동기 작업을 수행합니다. `await`을(를) 사용하여 응답을 기다리고 `response.json()`을(를) 사용하여 응답 본문을 JSON으로 구문 분석한 다음 데이터를 반환합니다. `callAsyncFunction` 함수는 `asyncFunction` 함수를 호출하고 콘솔에 응답 데이터를 표시하는 동기 사용자 지정 함수입니다. `callAsyncFunction` 함수는 동기식이지만 비동기 asyncFunction 함수를 호출하고 그 결과를 `then` 및 `catch` 문으로 처리합니다.
+위의 예에서 asyncFunction 함수는 `asynchronous function`입니다. `GET`에 `https://petstore.swagger.io/v2/store/inventory`을(를) 요청하여 비동기 작업을 수행합니다. `await`을(를) 사용하여 응답을 기다리고 `response.json()`을(를) 사용하여 응답 본문을 JSON으로 구문 분석한 다음 데이터를 반환합니다. `callAsyncFunction` 함수는 `asyncFunction` 함수를 호출하고 콘솔에 응답 데이터를 표시하는 동기 사용자 지정 함수입니다. `callAsyncFunction` 함수는 동기식이지만 비동기 asyncFunction 함수를 호출하고 그 결과를 `then` 및 `catch` 문으로 처리합니다.
 
 작동 여부를 확인하려면 단추를 추가하고 단추 클릭 시 비동기 함수를 호출하는 단추에 대한 규칙을 만들어 보겠습니다.
 
@@ -689,11 +690,11 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 이 예제에서는 단추를 클릭하면 `personaldetails` 패널의 유효성 검사가 수행됩니다. 패널에서 오류가 감지되지 않으면 버튼을 클릭할 때 다른 패널인 `feedback` 패널이 표시됩니다.
 
-`Next` 단추에 대한 규칙을 만들어 `personaldetails` 패널의 유효성을 검사하고 사용자가 `Next` 단추를 클릭할 때 `feedback` 패널이 표시되도록 하겠습니다.
+`Next` 단추에 대한 규칙을 만들어 `personaldetails` 패널의 유효성을 검사하고 사용자가 `feedback` 단추를 클릭할 때 `Next` 패널이 표시되도록 하겠습니다.
 
 ![속성 설정](/help/forms/using/assets/custom-function-set-property.png)
 
-`Next` 단추를 클릭할 때 `personaldetails` 패널의 유효성을 검사한 위치를 보여 주는 아래 그림을 참조하십시오. `personaldetails` 내의 모든 필드의 유효성을 검사하면 `feedback` 패널이 표시됩니다.
+`personaldetails` 단추를 클릭할 때 `Next` 패널의 유효성을 검사한 위치를 보여 주는 아래 그림을 참조하십시오. `personaldetails` 내의 모든 필드의 유효성을 검사하면 `feedback` 패널이 표시됩니다.
 
 ![속성 양식 미리 보기 설정](/help/forms/using/assets/set-property-form-preview.png)
 
@@ -728,7 +729,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![전자 메일 주소 유효성 검사 패턴](/help/forms/using/assets/custom-function-validation-pattern.png)
 
-이제 다음 단계는 단추 클릭에서 `contact` 필드의 유효성을 검사하는 `Next` 단추에 대한 규칙을 만드는 것입니다.
+이제 다음 단계는 단추 클릭에서 `Next` 필드의 유효성을 검사하는 `contact` 단추에 대한 규칙을 만드는 것입니다.
 
 ![유효성 검사 패턴](/help/forms/using/assets/custom-function-validate.png)
 
@@ -764,7 +765,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 >
 > `reset()` 함수에서 인수가 전달되지 않으면 폼의 유효성을 검사합니다.
 
-이 예제에서는 `Clear` 단추를 클릭하면 `personaldetails` 패널이 재설정됩니다. 다음 단계는 단추 클릭 시 패널을 재설정하는 `Clear` 단추에 대한 규칙을 만드는 것입니다.
+이 예제에서는 `personaldetails` 단추를 클릭하면 `Clear` 패널이 재설정됩니다. 다음 단계는 단추 클릭 시 패널을 재설정하는 `Clear` 단추에 대한 규칙을 만드는 것입니다.
 
 ![지우기 단추](/help/forms/using/assets/custom-function-reset-field.png)
 
@@ -849,7 +850,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 ![데이터 제출](/help/forms/using/assets/custom-function-submit-data.png)
 
-사용자가 `comments` 텍스트 상자를 비워 두면 `NA` 값이 서버에 제출된다는 것을 증명하려면 아래 `console window` 그림을 참조하십시오.
+사용자가 `console window` 텍스트 상자를 비워 두면 `comments` 값이 서버에 제출된다는 것을 증명하려면 아래 `NA` 그림을 참조하십시오.
 
 ![콘솔 창에서 데이터 제출](/help/forms/using/assets/custom-function-submit-data-form.png)
 
@@ -984,7 +985,7 @@ In case, the custom submit action fails to perform as expected in existing AEM p
 
    * AEM 프로젝트의 경우 사용자는 `submitForm('custom:submitSuccess', 'custom:submitError')`의 모든 인스턴스를 `submitForm()`(으)로 바꾸고 프로젝트를 배포해야 합니다.
 
-   * 기존 양식의 경우 사용자 지정 제출 처리기가 제대로 작동하지 않으면 사용자가 규칙 편집기를 사용하여 **제출** 단추에서 `submitForm` 규칙을 열고 저장해야 합니다. 이 작업은 `submitForm('custom:submitSuccess', 'custom:submitError')`의 기존 규칙을 양식의 `submitForm()`(으)로 바꿉니다.
+   * 기존 양식의 경우 사용자 지정 제출 처리기가 제대로 작동하지 않으면 사용자가 규칙 편집기를 사용하여 `submitForm`제출&#x200B;**단추에서** 규칙을 열고 저장해야 합니다. 이 작업은 `submitForm('custom:submitSuccess', 'custom:submitError')`의 기존 규칙을 양식의 `submitForm()`(으)로 바꿉니다.
 
 
 * 사용자 정의 함수에 대한 코드가 들어 있는 JavaScript 파일에 오류가 있는 경우 사용자 정의 함수가 적응형 양식의 규칙 편집기에 나열되지 않습니다. 사용자 지정 함수 목록을 확인하려면 `error.log` 파일로 이동하여 오류를 확인할 수 있습니다. 오류가 발생하면 사용자 지정 함수 목록이 비어 있습니다.

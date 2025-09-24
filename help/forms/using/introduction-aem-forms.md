@@ -5,21 +5,20 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
-source-git-commit: d9f6415aabcbc55af23824d9e0ab33c418f6761f
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '943'
 ht-degree: 15%
 
 ---
 
-# AEM Forms 소개{#introduction-to-aem-forms}
+# AEM Forms 소개 {#introduction-to-aem-forms}
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
 
-AEM Forms의 최신 기능 및 향상된 기능에 대한 자세한 내용은 [AEM Forms의 새로운 기능](../../forms/using/whats-new.md)을 참조하세요.
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html)를 참조하십시오.
 
 ## AEM Forms 정보 {#about-aem-forms}
 

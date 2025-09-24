@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 900ec6cd-d780-46eb-8ab1-907e563d81d7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1268'
-ht-degree: 2%
+source-wordcount: '1277'
+ht-degree: 3%
 
 ---
 
 # 양식 데이터 모델 사용{#use-form-data-model}
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html)를 참조하십시오.
 
 
 ![영웅 이미지](do-not-localize/data-integration.png)
@@ -81,11 +82,11 @@ AEM Forms 데이터 통합을 사용하면 다양한 백엔드 데이터 소스�
 
 자세한 내용은 다음 문서를 참조하십시오.
 
-[대화형 통신 만들기](../../forms/using/create-interactive-communication.md)
+[인터랙티브 커뮤니케이션 만들기](../../forms/using/create-interactive-communication.md)
 
 [대화형 커뮤니케이션의 텍스트](/help/forms/using/texts-interactive-communications.md)
 
-[대화형 통신의 조건](/help/forms/using/conditions-interactive-communications.md)
+[인터랙티브 커뮤니케이션 조건](/help/forms/using/conditions-interactive-communications.md)
 
 [목록 조각](/help/forms/using/lists.md)
 

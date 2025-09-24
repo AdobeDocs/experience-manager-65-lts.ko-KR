@@ -1,5 +1,5 @@
 ---
-title: AEM 문서 서비스 개요
+title: AEM Document Services 개요
 description: AEM Document Services는 PDF 문서 생성, 어셈블 및 보안을 위한 일련의 OSGi 서비스입니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,19 +9,20 @@ feature: Document Services,Reader Extensions, Forms Service,PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 03e87c5a-c106-4b4c-9b42-8ce7a04d9c0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 1%
+source-wordcount: '1422'
+ht-degree: 2%
 
 ---
 
-# AEM 문서 서비스 개요{#overview-of-aem-document-services}
+# AEM Document Services 개요{#overview-of-aem-document-services}
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html)를 참조하십시오.
 
 
 AEM Document Services는 PDF 문서 생성, 어셈블 및 보안을 위한 일련의 OSGi 서비스입니다. 문서 서비스에는 다음 서비스가 포함됩니다.
@@ -114,7 +115,7 @@ Doc Assurance 서비스에는 서명, 암호화 및 Reader 확장의 세 가지 
 
 ### 암호화 서비스 {#encryption-service}
 
-암호화 서비스를 사용하면 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 해당 내용을 읽을 수 없게 됩니다. 전체 PDF 문서(컨텐츠, 메타데이터 및 첨부 파일 포함), 메타데이터 이외의 모든 문서 또는 첨부 파일만 암호화할 수 있습니다. 승인된 사용자는 문서의 내용을 해독하여 콘텐츠에 액세스할 수 있습니다. PDF 문서가 암호로 암호화되어 있는 경우 Adobe Reader 또는 Acrobat에서 문서를 보려면 먼저 사용자가 열기 암호를 지정해야 합니다. PDF 문서가 인증서로 암호화되어 있는 경우 사용자는 개인 키(인증서)를 사용하여 PDF 문서의 암호를 해독해야 합니다. PDF 문서를 해독하는 데 사용되는 개인 키는 해당 문서를 암호화하는 데 사용되는 공개 키와 일치해야 합니다.
+암호화 서비스를 사용하면 문서를 암호화하고 해독할 수 있습니다. 문서가 암호화되면 해당 콘텐츠를 읽을 수 없게 됩니다. 전체 PDF 문서(컨텐츠, 메타데이터 및 첨부 파일 포함), 메타데이터 이외의 모든 문서 또는 첨부 파일만 암호화할 수 있습니다. 승인된 사용자는 문서의 내용을 해독하여 콘텐츠에 액세스할 수 있습니다. PDF 문서가 암호로 암호화되어 있는 경우 Adobe Reader 또는 Acrobat에서 문서를 보려면 먼저 사용자가 열기 암호를 지정해야 합니다. PDF 문서가 인증서로 암호화되어 있는 경우 사용자는 개인 키(인증서)를 사용하여 PDF 문서의 암호를 해독해야 합니다. PDF 문서를 해독하는 데 사용되는 개인 키는 해당 문서를 암호화하는 데 사용되는 공개 키와 일치해야 합니다.
 
 ### Reader 확장 서비스 {#reader-extension-service}
 

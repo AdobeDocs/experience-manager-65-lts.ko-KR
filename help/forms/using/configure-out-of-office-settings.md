@@ -5,19 +5,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: ea10d2e1-9f17-4757-ae2e-67447ff0ad0a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 5%
+source-wordcount: '835'
+ht-degree: 3%
 
 ---
 
 # 부재 중 설정 구성 {#configure-out-of-office-settings}
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html)를 참조하십시오.
 
 부재 예정인 경우 해당 기간 동안 자신에게 할당된 항목에 대한 처리 방법을 지정할 수 있습니다.
 
@@ -40,7 +41,7 @@ ht-degree: 5%
 다음 단계를 수행하여 계정에 대해 부재 중 설정을 활성화하고 받은 편지함 항목을 다른 사용자에게 위임합니다.
 
 1. AEM 인스턴스에 로그인. ![받은 편지함](assets/bell.svg) 아이콘을 선택하고 **[!UICONTROL 모두 보기]**&#x200B;를 선택합니다. 받은 편지함 항목 목록이 나타납니다.
-1. **[!UICONTROL 만들기]** 단추 옆에 있는 ![보기 선택기](assets/viewlist.svg) 또는 ![보기 선택기](assets/calendar.svg) 아이콘을 선택하고 **[!UICONTROL 설정]**&#x200B;을 선택합니다. 설정 대화 상자가 나타납니다.
+1. ![만들기](assets/viewlist.svg) 단추 옆에 있는 ![보기 선택기](assets/calendar.svg) 또는 **[!UICONTROL 보기 선택기]** 아이콘을 선택하고 **[!UICONTROL 설정]**&#x200B;을 선택합니다. 설정 대화 상자가 나타납니다.
 1. 설정 대화 상자에서 **[!UICONTROL 부재 중]** 탭을 엽니다.
 1. 부재 설정을 사용하려면 **[!UICONTROL 사용/사용 안 함]** 단추를 선택하세요.
 1. 설정에 **[!UICONTROL 시작 시간]** 및 **[!UICONTROL 종료 시간]**&#x200B;을 지정하십시오. 지정된 기간 동안에만 항목이 위임됩니다. **[!UICONTROL 종료 시간]** 필드를 비워 두면 무제한 기간 동안 항목을 위임할 수 있습니다.
@@ -49,7 +50,7 @@ ht-degree: 5%
 
    또한 워크플로 모델에 관계 없이 모든 항목을 특정 사용자에게 할당하려면 워크플로 모델 드롭다운 목록에서 **[!UICONTROL 모든 워크플로]**&#x200B;를 선택하십시오. <br>
 
-   일부를 제외한 모든 워크플로 모델의 항목을 특정 사용자에게 할당하려면 워크플로 모델 드롭다운 목록에서 **[!UICONTROL 모든 워크플로]**&#x200B;를 선택하고 **[!UICONTROL + 예외 추가]**&#x200B;를 선택한 다음 제외할 워크플로 모델을 지정합니다.
+   일부를 제외한 모든 워크플로 모델의 항목을 특정 사용자에게 할당하려면 워크플로 모델 드롭다운 목록에서 **[!UICONTROL 모든 워크플로]**&#x200B;를 선택하고 **[!UICONTROL + 예외 추가]**를 선택한 다음 제외할 워크플로 모델을 지정합니다.
    <br>
 
    피할당자를 더 추가할 수 있도록 단계를 반복합니다. <br>

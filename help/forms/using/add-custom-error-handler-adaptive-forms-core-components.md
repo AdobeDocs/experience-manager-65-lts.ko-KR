@@ -8,19 +8,20 @@ feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User
 exl-id: de6f259f-87d9-4862-a20e-3825be15dd6e
-source-git-commit: ab105ae9c322cf1149062ee7ec30b2007f06dcfb
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2273'
-ht-degree: 87%
+source-wordcount: '2282'
+ht-degree: 86%
 
 ---
 
 # 적응형 양식의 오류 핸들러(핵심 구성 요소) {#error-handlers-in-adaptive-form}
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/add-custom-error-handler-adaptive-forms-core-components.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/add-custom-error-handler-adaptive-forms-core-components.html)를 참조하십시오.
 
 AEM Forms에서는 양식 제출에 필요한 기본 성공 사례와 오류 핸들러를 제공합니다. 또한 오류 핸들러 함수를 사용자 정의할 수 있는 기능을 제공합니다. 예를 들어 특정 오류 코드의 백엔드에서 사용자 정의 워크플로를 호출하거나 서비스가 중단되었음을 고객에게 알려 줄 수 있습니다. 핸들러는 서버 응답을 기반으로 실행되는 클라이언트측 함수입니다. API를 통해 외부 서비스를 호출할 때 데이터를 유효성 검사를 위해 서버로 전송하면 서버는 제출의 성공 여부 또는 오류 이벤트에 대한 정보가 포함된 응답을 클라이언트에 반환합니다. 정보가 매개변수로서 관련 핸들러에 전달되면 함수를 실행할 수 있습니다. 오류 핸들러는 발생한 오류 또는 유효성 검사 문제를 관리하고 표시하는 데 도움이 됩니다.
 
@@ -170,7 +171,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 적응형 Forms에서 오류 핸들러를 사용하기 전에
 
 * [환경에 맞는 적응형 Forms 핵심 구성 요소를 사용하도록 설정](enable-adaptive-forms-core-components.md).
-* [사용자 지정 함수를 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=ko#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.)에 대한 기본 지식입니다.
+* [사용자 지정 함수를 만들기](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.)에 대한 기본 지식입니다.
 * [Apache Maven](https://maven.apache.org/download.cgi)의 최신 릴리스를 설치하십시오.
 
 ## 규칙 편집기를 통해 오류 핸들러 추가 {#add-error-handler-using-rule-editor}
@@ -245,9 +246,9 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 1. 변경 사항을 저장합니다.
 
-1. `clientlibs` 폴더 아래에 `js` 폴더를 만듭니다.
-1. `js` 폴더 아래에 `functions.js`(이)라는 JavaScript 파일을 만듭니다.
-1. `clientlibs` 폴더 아래에 `js.txt` 파일을 만듭니다.
+1. `js` 폴더 아래에 `clientlibs` 폴더를 만듭니다.
+1. `functions.js` 폴더 아래에 `js`(이)라는 JavaScript 파일을 만듭니다.
+1. `js.txt` 폴더 아래에 `clientlibs` 파일을 만듭니다.
 1. 변경 사항을 저장합니다.
 생성된 폴더 구조 형태는 다음과 같습니다.
 
@@ -293,7 +294,7 @@ AEM Forms 버전의 기능 개선과 후속 업데이트를 통해서 기존 실
 
 ![적응형 양식 컨테이너 구성에서 클라이언트 라이브러리의 이름 추가](/help/forms/using/assets/client-library-category-name-core-component.png)
 
-이 경우 클라이언트 라이브러리 이름은 `.content.xml` 파일에서 `customfunctionsdemo`(으)로 제공됩니다.
+이 경우 클라이언트 라이브러리 이름은 `customfunctionsdemo` 파일에서 `.content.xml`(으)로 제공됩니다.
 
 **[!UICONTROL 규칙 편집기의 호출 서비스]** 작업을 통해 사용자 정의 오류 핸들러를 사용하려면
 

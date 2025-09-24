@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e95c4cc4-1800-4bd8-a3c4-c6c868a1276d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '4159'
+source-wordcount: '4168'
 ht-degree: 0%
 
 ---
 
 # 양식 데이터 모델 작업{#work-with-form-data-model}
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html)를 참조하십시오.
 
 ![데이터 통합](do-not-localize/data-integeration.png)
 
@@ -165,7 +166,7 @@ Forms 데이터 통합을 처음 사용하지만 데이터 소스를 구성하�
 
    직원 데이터 원본에 대해 구성된 읽기 및 쓰기 서비스
 
-1. [인수를 사용자 프로필 특성, 요청 특성 또는 리터럴 값에 바인딩](#bindargument)하려면 읽기 서비스 인수에 대해 ![aem_6_3_edit](assets/aem_6_3_edit.png)을(를) 선택하고 바인딩 값을 지정하십시오.
+1. ![인수를 사용자 프로필 특성, 요청 특성 또는 리터럴 값에 바인딩](assets/aem_6_3_edit.png)하려면 읽기 서비스 인수에 대해 [aem_6_3_edit](#bindargument)을(를) 선택하고 바인딩 값을 지정하십시오.
 1. **[!UICONTROL 완료]**&#x200B;를 선택하여 인수를 저장하고, **[!UICONTROL 완료]**&#x200B;를 선택하여 속성을 저장한 다음 **[!UICONTROL 저장]**&#x200B;을 선택하여 양식 데이터 모델을 저장합니다.
 
 ### 바인딩 읽기 서비스 인수 {#bindargument}
@@ -176,7 +177,7 @@ Forms 데이터 통합을 처음 사용하지만 데이터 소스를 구성하�
 
 **[!UICONTROL 바인딩 대상]** 드롭다운 메뉴에서 **[!UICONTROL 리터럴]**&#x200B;을(를) 선택하고 **[!UICONTROL 바인딩 값]** 필드에 값을 입력하십시오. 값과 연관된 세부 정보는 데이터 소스에서 검색됩니다. 정적 값과 연관된 세부 정보를 검색하려면 이 옵션을 사용합니다.
 
-이 예제에서는 `mobilenum` 인수에 대한 값으로 **4367655678**&#x200B;과(와) 관련된 세부 정보를 데이터 원본에서 검색합니다. 모바일 번호 인수에 대한 값을 전달하는 경우 관련된 세부 정보에는 고객 이름, 고객 주소 및 구/군/시 등의 속성이 포함될 수 있습니다.
+이 예제에서는 **인수에 대한 값으로** 4367655678`mobilenum`과(와) 관련된 세부 정보를 데이터 원본에서 검색합니다. 모바일 번호 인수에 대한 값을 전달하는 경우 관련된 세부 정보에는 고객 이름, 고객 주소 및 구/군/시 등의 속성이 포함될 수 있습니다.
 
 ![리터럴 값](assets/fdm_binding_literal_new.png)
 
@@ -190,7 +191,7 @@ Forms 데이터 통합을 처음 사용하지만 데이터 소스를 구성하�
 
 ![사용자 프로필](assets/binding_crxde_user_profile_new.png)
 
-이 예제에서는 `grios` 사용자에 대한 **[!UICONTROL 바인딩 값]** 필드에 `profile.empid`을(를) 지정합니다.
+이 예제에서는 `profile.empid` 사용자에 대한 **[!UICONTROL 바인딩 값]** 필드에 `grios`을(를) 지정합니다.
 
 ![인수 편집](assets/edit_argument_user_profile_new.png)
 
@@ -369,9 +370,9 @@ OData 서비스에서는 탐색 속성을 사용하여 두 데이터 모델 개�
 </EntityType>
 ```
 
-양식 데이터 모델에서 OData 서비스를 구성할 경우 엔티티 컨테이너의 모든 탐색 속성을 양식 데이터 모델의 서비스를 통해 사용할 수 있습니다. 이 TripPin OData 서비스 예제에서 양식 데이터 모델에서 `GET LINK` 서비스 하나를 사용하여 `Person` 엔터티 컨테이너의 세 가지 탐색 속성을 읽을 수 있습니다.
+양식 데이터 모델에서 OData 서비스를 구성할 경우 엔티티 컨테이너의 모든 탐색 속성을 양식 데이터 모델의 서비스를 통해 사용할 수 있습니다. 이 TripPin OData 서비스 예제에서 양식 데이터 모델에서 `Person` 서비스 하나를 사용하여 `GET LINK` 엔터티 컨테이너의 세 가지 탐색 속성을 읽을 수 있습니다.
 
-다음은 TripPin OData 서비스의 `Person` 엔터티에 있는 세 개의 탐색 속성에 대해 결합된 서비스인 양식 데이터 모델의 `GET LINK of Person /People` 서비스를 강조 표시합니다.
+다음은 TripPin OData 서비스의 `GET LINK of Person /People` 엔터티에 있는 세 개의 탐색 속성에 대해 결합된 서비스인 양식 데이터 모델의 `Person` 서비스를 강조 표시합니다.
 
 ![nav-prop-service](assets/nav-prop-service.png)
 

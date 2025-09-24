@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b27fceaf-38f8-433e-96c6-4f98bafa31af
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '961'
 ht-degree: 1%
 
 ---
 
 # 양식 데이터 모델 만들기{#create-form-data-model}
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html)를 참조하십시오.
 
 
 ![영웅 이미지](do-not-localize/data-integration.png)
@@ -79,7 +80,7 @@ AEM Forms 데이터 통합은 양식 데이터 모델을 만들고 작업할 수
 
    Source 업데이트 탭에서:
 
-   * **[!UICONTROL 컨텍스트 인식 구성]** 필드에서 찾아보기 아이콘을 선택하고 추가하려는 데이터 원본에 대한 클라우드 구성이 있는 구성 노드를 선택하십시오. 노드를 선택하지 않으면 **[!UICONTROL 소스 추가]**&#x200B;를 선택하면 `global` 노드에만 있는 클라우드 구성이 나열됩니다.
+   * **[!UICONTROL 컨텍스트 인식 구성]** 필드에서 찾아보기 아이콘을 선택하고 추가하려는 데이터 원본에 대한 클라우드 구성이 있는 구성 노드를 선택하십시오. 노드를 선택하지 않으면 `global`소스 추가&#x200B;**[!UICONTROL 를 선택하면]** 노드에만 있는 클라우드 구성이 나열됩니다.
 
    * 새 데이터 원본을 추가하려면 **[!UICONTROL 원본 추가]**&#x200B;를 선택하고 양식 데이터 모델에 추가할 데이터 원본을 선택하십시오. `global`에 구성된 모든 데이터 원본과 선택한 구성 노드(있는 경우)가 표시됩니다.
 

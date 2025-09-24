@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 30b7b311-574d-4b01-8b48-0342c160d4d4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2073'
+source-wordcount: '2085'
 ht-degree: 2%
 
 ---
 
 # 데이터 소스 구성{#configure-data-sources}
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html)를 참조하십시오.
 
 
 ![데이터 통합](do-not-localize/data-integeration.png)
@@ -87,7 +88,7 @@ AEM 웹 콘솔의 사용자 프로필 커넥터 구성을 사용하여 AEM 사�
 
    >[!NOTE]
    >
-   >위의 예에서 **&#42;**&#x200B;은(는) CRXDE 구조에서 AEM 사용자 프로필의 `profile/empLocation/` 노드 아래에 있는 모든 노드를 나타냅니다. 즉, 양식 데이터 모델은 `profile/empLocation/` 노드 아래의 모든 노드에 있는 `string` 유형의 `city` 속성에 액세스할 수 있습니다. 그러나 지정된 속성이 포함된 노드는 일관된 구조를 따라야 합니다.
+   >위의 예에서 **&#42;**&#x200B;은(는) CRXDE 구조에서 AEM 사용자 프로필의 `profile/empLocation/` 노드 아래에 있는 모든 노드를 나타냅니다. 즉, 양식 데이터 모델은 `city` 노드 아래의 모든 노드에 있는 `string` 유형의 `profile/empLocation/` 속성에 액세스할 수 있습니다. 그러나 지정된 속성이 포함된 노드는 일관된 구조를 따라야 합니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택하여 구성을 저장합니다.
 
@@ -161,7 +162,7 @@ RESTful 서비스를 구성하려면 다음을 수행합니다.
 
    * **[!UICONTROL 활성 상태 유지]** 필드에 영구 HTTP 연결이 활성 상태로 유지되는 기간을 지정하십시오. 기본값은 15초입니다.
 
-   * **[!UICONTROL 연결 시간 초과]** 필드에 [!DNL Experience Manager Forms] 서버가 연결을 설정할 때까지 기다리는 기간을 지정합니다. 기본값은 10초입니다.
+   * [!DNL Experience Manager Forms]연결 시간 초과&#x200B;**[!UICONTROL 필드에]** 서버가 연결을 설정할 때까지 기다리는 기간을 지정합니다. 기본값은 10초입니다.
 
    * **[!UICONTROL 소켓 시간 제한]** 필드에 두 데이터 패킷 간 비활성 최대 기간을 지정합니다. 기본값은 30초입니다.
 
@@ -194,7 +195,7 @@ OData 서비스는 서비스 루트 URL로 식별됩니다. AEM 클라우드 서
 >[!NOTE]
 >
 >양식 데이터 모델이 [OData 버전 4](https://www.odata.org/documentation/)을(를) 지원합니다.
->온라인 또는 온프레미스에서 Microsoft Dynamics 365를 구성하는 방법에 대한 단계별 지침은 [Microsoft Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md)을 참조하십시오.
+>>온라인 또는 온프레미스에서 Microsoft Dynamics 365를 구성하는 방법에 대한 단계별 지침은 [Microsoft Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md)을 참조하십시오.
 
 1. **[!UICONTROL 도구 > 클라우드 서비스 > 데이터 원본]**(으)로 이동합니다. 클라우드 구성을 만들 폴더를 선택하려면 를 선택합니다.
 

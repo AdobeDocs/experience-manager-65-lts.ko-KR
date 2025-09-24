@@ -9,21 +9,22 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 6f68090f-4ded-42c3-a074-3a18b27e754d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '6086'
+source-wordcount: '6095'
 ht-degree: 2%
 
 ---
 
 # 테마 만들기 및 사용 {#creating-and-using-themes}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html)를 참조하십시오.
 
 ## 소개 {#introduction}
 
@@ -46,7 +47,7 @@ AEM Forms을 사용하여 테마를 만들거나, 다운로드하거나, 업로�
 
 1. **Adobe Experience Manager**&#x200B;을 클릭하고 **Forms**&#x200B;을 클릭한 다음 **테마**&#x200B;를 클릭합니다.
 
-1. 테마 페이지에서 **만들기 > 테마**&#x200B;를 클릭합니다.
+1. 테마 페이지에서 **만들기 > 테마**를 클릭합니다.
 테마를 만드는 마법사가 실행됩니다.
 
 1. 테마 만들기 마법사의 기본 탭에서 테마의 **제목** 및 **이름**&#x200B;을(를) 제공합니다. 필수 필드입니다.
@@ -82,7 +83,7 @@ AEM Forms을 사용하여 테마를 만들거나, 다운로드하거나, 업로�
 1. **Adobe Experience Manager**&#x200B;을 클릭하고 **Forms**&#x200B;을 클릭한 다음 **테마**&#x200B;를 클릭합니다.
 
 1. 테마 페이지에서 **만들기 > 파일 업로드**&#x200B;를 클릭합니다.
-1. 파일 업로드 프롬프트에서 컴퓨터에서 테마 패키지를 찾아 선택하고 **업로드**&#x200B;를 클릭합니다.
+1. 파일 업로드 프롬프트에서 컴퓨터에서 테마 패키지를 찾아 선택하고 **업로드**를 클릭합니다.
 업로드한 테마는 테마 페이지에서 사용할 수 있습니다.
 
 ## 테마의 메타데이터 {#metadata-of-a-theme}
@@ -145,7 +146,7 @@ AEM Forms을 사용하여 테마를 만들거나, 다운로드하거나, 업로�
   </tr>
   <tr>
    <td>8.</td>
-   <td>게시 시간</td>
+   <td>게시 시작 시각</td>
    <td>예</td>
    <td>테마를 자동으로 게시할 시간입니다.</td>
   </tr>
@@ -180,7 +181,7 @@ AEM Forms을 사용하여 테마를 만들거나, 다운로드하거나, 업로�
      <li>이 테마에 해당하는 clientlib이 저장되는 '/etc' 내의 사용자 정의 저장소 경로입니다.</li>
      <li>기본값 - '/etc/clientlibs/fd/themes' + 테마 에셋의 상대 경로.</li>
      <li>위치가 없으면 폴더 계층 구조가 자동으로 생성됩니다.</li>
-     <li>이 값을 변경하면 clientlib 노드 구조가 입력한 새 위치로 이동됩니다.<br /> <em><strong>참고:</strong> 기본 clientlib 위치를 변경하는 경우 CRXDE 리포지토리에서 <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code>을(를) <code>forms-users</code>(으)로, <code>crx:replicate</code>, <code>jcr:read</code>을(를) 새 위치에서 <code>fd-service</code>(으)로 할당합니다. <code>forms-user</code></em>에 대해 <code>deny jcr:addChildNodes</code>을(를) 추가하여 다른 ACL도 연결합니다.</li>
+     <li>이 값을 변경하면 clientlib 노드 구조가 입력한 새 위치로 이동됩니다.<br /> <em><strong>참고:</strong> 기본 clientlib 위치를 변경하는 경우 CRXDE 리포지토리에서 <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code>을(를) <code>forms-users</code>(으)로, <code>crx:replicate</code>, <code>jcr:read</code>을(를) 새 위치에서 <code>fd-service</code>(으)로 할당합니다. <code>deny jcr:addChildNodes</code>에 대해 <code>forms-user</code></em>을(를) 추가하여 다른 ACL도 연결합니다.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -528,7 +529,7 @@ Adobe Fonts 구성을 사용하도록 테마를 구성하려면 다음 단계를
 
 #### 테마 편집기에서 글꼴 선택 {#selecting-fonts-in-theme-editor}
 
-&#x200B;+ 단추를 사용하여 글꼴을 추가할 수 있습니다. 글꼴을 추가하면 사이드바에 나열됩니다.
++ 단추를 사용하여 글꼴을 추가할 수 있습니다. 글꼴을 추가하면 사이드바에 나열됩니다.
 
 ![테마 편집기에 나열된 새 글꼴](assets/theme-font.png)
 

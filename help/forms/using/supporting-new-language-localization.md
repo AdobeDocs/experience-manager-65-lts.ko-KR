@@ -9,19 +9,20 @@ feature: Adaptive Forms,Foundation Components
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 2%
+source-wordcount: '841'
+ht-degree: 7%
 
 ---
 
 # 적응형 양식 지역화를 위한 새 로케일 지원{#supporting-new-locales-for-adaptive-forms-localization}
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html)를 참조하십시오.
 
 ## 로케일 사전 정보 {#about-locale-dictionaries}
 
@@ -82,9 +83,9 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 
 ### 로케일에 대한 XFA 클라이언트 라이브러리 추가 {#add-xfa-client-library-for-a-locale-br}
 
-`etc/<folderHierarchy>` 아래에 `cq:ClientLibraryFolder` 형식의 노드를 만들고 `xfaforms.I18N.<locale>` 범주를 사용하여 다음 파일을 클라이언트 라이브러리에 추가하십시오.
+`cq:ClientLibraryFolder` 아래에 `etc/<folderHierarchy>` 형식의 노드를 만들고 `xfaforms.I18N.<locale>` 범주를 사용하여 다음 파일을 클라이언트 라이브러리에 추가하십시오.
 
-* `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`에 정의된 대로 `<locale>`에 대해 `xfalib.locale.Strings`을(를) 정의하는 **I18N.js**.
+* **에 정의된 대로**&#x200B;에 대해 `xfalib.locale.Strings`을(를) 정의하는 `<locale>`I18N.js`/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
 
 * 다음을 포함하는 **js.txt**:
 
@@ -96,12 +97,12 @@ I18N.js
 
 ### 로케일에 대한 적응형 양식 클라이언트 라이브러리 추가 {#add-adaptive-form-client-library-for-a-locale-br}
 
-`etc/<folderHierarchy>` 아래에 `cq:ClientLibraryFolder` 유형의 노드를 만드십시오. 이 노드는 범주가 `guides.I18N.<locale>`(으)로, 종속성이 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 및 `guide.common`(으)로 설정되어 있습니다. &quot;
+`cq:ClientLibraryFolder` 아래에 `etc/<folderHierarchy>` 유형의 노드를 만드십시오. 이 노드는 범주가 `guides.I18N.<locale>`(으)로, 종속성이 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 및 `guide.common`(으)로 설정되어 있습니다. &quot;
 
 클라이언트 라이브러리에 다음 파일을 추가합니다.
 
-* [로케일 집합 지정](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)에 설명된 XFA 사양에 따라 `<locale>`에 대해 &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` 패턴을 가진 `guidelib.i18n`을(를) 정의하는 **i18n.js**. `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`에서 지원되는 다른 로케일에 대해 정의된 방법도 확인할 수 있습니다.
-* `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`에 정의된 대로 `<locale>`에 대해 `guidelib.i18n.strings` 및 `guidelib.i18n.LogMessages`을(를) 정의하는 **LogMessages.js**.
+* **로케일 집합 지정**&#x200B;에 설명된 XFA 사양에 따라 `guidelib.i18n`에 대해 &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` 패턴을 가진 `<locale>`을(를) 정의하는 [i18n.js](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf). `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`에서 지원되는 다른 로케일에 대해 정의된 방법도 확인할 수 있습니다.
+* **에 정의된 대로**&#x200B;에 대해 `guidelib.i18n.strings` 및 `guidelib.i18n.LogMessages`을(를) 정의하는 `<locale>`LogMessages.js`/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
 * 다음을 포함하는 **js.txt**:
 
 ```text
@@ -113,12 +114,12 @@ LogMessages.js
 
 추가하려는 `<locale>`이(가) `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`에 없는 경우에만 이 단계를 수행하십시오.
 
-1. 아직 없는 경우 `etc`에 `nt:unstructured` 노드 `languages`을(를) 만듭니다.
+1. 아직 없는 경우 `nt:unstructured`에 `languages` 노드 `etc`을(를) 만듭니다.
 
 1. 다중 값 문자열 속성 `languages`이(가) 아직 없는 경우 노드에 추가하십시오.
 1. `<locale>` 기본 로케일 값 `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`을(를) 추가합니다(아직 없는 경우).
 
-1. `/etc/languages`의 `languages` 속성 값에 `<locale>`을(를) 추가합니다.
+1. `<locale>`의 `languages` 속성 값에 `/etc/languages`을(를) 추가합니다.
 
 `<locale>`이(가) `https://'[server]:[port]'/libs/cq/i18n/translator.html`에 나타납니다.
 
@@ -128,7 +129,7 @@ LogMessages.js
 
 >[!NOTE]
 >
-> SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+> SDK를 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 다른 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
 ## 스페인어 지원 추가용 샘플 라이브러리 {#sample-libraries-for-adding-support-for-spanish}
 

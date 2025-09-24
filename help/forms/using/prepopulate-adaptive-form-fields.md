@@ -9,21 +9,22 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 69734a2b-7f9d-4661-a1e9-3bf6e362c272
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 3%
+source-wordcount: '2213'
+ht-degree: 2%
 
 ---
 
 # 적응형 양식 필드 미리 채우기{#prefill-adaptive-form-fields}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html)를 참조하십시오.
 
 ## 소개 {#introduction}
 
@@ -207,7 +208,7 @@ JSON 스키마 모델을 사용하는 필드의 경우, 데이터는 아래 샘�
 
 ### 양식 모델이 없는 적응형 양식 {#adaptive-form-with-no-form-model}
 
-양식 모델이 없는 적응형 양식의 경우 모든 필드의 데이터는 `<afUnboundData> tag`의 `<data>` 태그 아래에 있습니다.
+양식 모델이 없는 적응형 양식의 경우 모든 필드의 데이터는 `<data>`의 `<afUnboundData> tag` 태그 아래에 있습니다.
 
 또한 다음 사항에 유의하십시오.
 
@@ -313,7 +314,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 
 ### slingRequest에서 데이터 속성 설정 {#setting-data-attribute-in-slingrequest}
 
-`slingRequest`에서 `data` 특성을 설정할 수도 있습니다. 여기서 `data` 특성은 아래 샘플 코드(예: XML용)에 표시된 대로 XML 또는 JSON이 포함된 문자열입니다.
+`data`에서 `slingRequest` 특성을 설정할 수도 있습니다. 여기서 `data` 특성은 아래 샘플 코드(예: XML용)에 표시된 대로 XML 또는 JSON이 포함된 문자열입니다.
 
 ```javascript
 <%
@@ -333,7 +334,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 
 모든 데이터가 포함된 간단한 XML 또는 JSON 문자열을 작성하여 slingRequest에서 설정할 수 있습니다. 이 작업은 slingRequest 데이터 속성을 설정할 수 있는 페이지에 포함하려는 모든 구성 요소에 대해 렌더러 JSP에서 쉽게 수행할 수 있습니다.
 
-예를 들어 특정 유형의 헤더가 있는 페이지에 특정 디자인을 사용하려는 경우. 이를 위해 페이지 구성 요소에 포함하고 `data` 특성을 설정할 수 있는 자신의 `header.jsp`을(를) 작성할 수 있습니다.
+예를 들어 특정 유형의 헤더가 있는 페이지에 특정 디자인을 사용하려는 경우. 이를 위해 페이지 구성 요소에 포함하고 `header.jsp` 특성을 설정할 수 있는 자신의 `data`을(를) 작성할 수 있습니다.
 
 또 다른 좋은 예는 Facebook, Twitter 또는 LinkedIn과 같은 소셜 계정을 통해 로그인할 때 데이터를 미리 채우는 사용 사례입니다. 이 경우 사용자 계정에서 데이터를 가져오고 데이터 매개 변수를 설정하는 간단한 JSP를 `header.jsp`에 포함할 수 있습니다.
 
@@ -391,11 +392,9 @@ prefill-page component.zip
    1. Configuration.af.clientside.datamerge.enabled.name 옵션을 활성화합니다
 * 명령줄에서 을 활성화하거나 비활성화하려면 다음을 수행합니다.
    * 활성화하려면 다음 cURL 명령을 실행합니다.
-
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
    * 비활성화하려면 다음 cURL 명령을 실행합니다.
-
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-  클라이언트에서 데이터 미리 채우기 옵션을 최대한 활용하려면 미리 채우기 서비스를 업데이트하여 [FileAttachmentMap](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) 및 [CustomContext](https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)을(를) 반환합니다
+  클라이언트에서 데이터 미리 채우기 옵션을 최대한 활용하려면 미리 채우기 서비스를 업데이트하여 [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) 및 [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)을(를) 반환합니다

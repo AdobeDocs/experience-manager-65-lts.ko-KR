@@ -9,19 +9,20 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: 606cd19d-b244-4c4d-ab25-7709351dcfe0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 1%
+source-wordcount: '1052'
+ht-degree: 3%
 
 ---
 
 # 포털에 양식 게시 소개{#introduction-to-publishing-forms-on-a-portal}
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=ko-KR) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html)를 참조하십시오.
 
 
 ## AEM Forms 포털 구성 요소 개요 {#aem-forms-portal-components-overview}
@@ -90,6 +91,6 @@ Forms 포털을 사용하면 양식 저장소의 양식을 포털 페이지에 �
 * [API를 사용하여 웹 페이지의 목록 양식](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [초안 및 제출 구성 요소 사용](../../forms/using/draft-submission-component.md)
 * [초안 및 제출된 양식의 스토리지 사용자 지정](../../forms/using/draft-submission-component.md#customizing-the-storage)
-* [초안 및 제출 구성 요소와 데이터베이스를 통합하기 위한 샘플](integrate-draft-submission-database.md)
+* [초안 및 제출 구성 요소를 데이터베이스와 통합하기 위한 샘플](integrate-draft-submission-database.md)
 * [Forms 포털 구성 요소에 대한 템플릿 맞춤화](../../forms/using/customizing-templates-forms-portal-components.md)
 * [포털에 양식 게시 소개](../../forms/using/introduction-publishing-forms.md)

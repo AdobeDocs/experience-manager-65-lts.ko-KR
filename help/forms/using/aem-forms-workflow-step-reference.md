@@ -1,23 +1,24 @@
 ---
-title: OSGi의 Forms 중심 워크플로우 - 단계 참조
+title: OSGi의 Forms 중심 워크플로 - 단계 참조
 description: OSGi 단계의 Forms 중심 워크플로우를 통해 적응형 양식 기반 워크플로우를 신속하게 구축할 수 있습니다.
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
 exl-id: 13d84b04-dab6-453f-bc0d-62a5f557c4f2
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '7604'
+source-wordcount: '7613'
 ht-degree: 0%
 
 ---
 
-# OSGi의 Forms 중심 워크플로우 - 단계 참조 {#forms-centric-workflow-on-osgi-step-reference}
+# OSGi의 Forms 중심 워크플로 - 단계 참조 {#forms-centric-workflow-on-osgi-step-reference}
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference)를 참조하십시오.
 
 워크플로우 모델을 사용하여 비즈니스 논리를 자동화된 반복 프로세스로 변환합니다. 모델은 일련의 단계를 정의하고 실행하는 데 도움이 됩니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다. 비즈니스 논리를 달성하기 위해 [모델에 다양한 AEM 워크플로 단계를 포함할 수 있습니다](/help/sites-developing/workflows-models.md#extending-aem).
 
@@ -88,9 +89,9 @@ Forms 중심 워크플로우 단계는 AEM 워크플로우에서 AEM Forms 관�
 * **할당자 > 옵션 할당:** 사용자에게 작업을 할당할 메서드를 지정합니다. 참가자 선택기 스크립트를 사용하여 작업을 사용자 또는 그룹에 동적으로 할당하거나 작업을 특정 AEM 사용자 또는 그룹에 할당할 수 있습니다.
 * **참가자 선택기:** 옵션 할당 필드에서 **사용자 또는 그룹에 동적으로** 옵션을 선택하면 이 옵션을 사용할 수 있습니다. ECMAScript 또는 서비스를 사용하여 사용자 또는 그룹을 동적으로 선택할 수 있습니다.
 
-* **참가자:** 이 필드는 **참가자 선택기** 필드에서 **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** 옵션을 선택하면 사용할 수 있습니다. 필드에서는 RandomParticipantChooser 옵션의 사용자 또는 그룹을 선택할 수 있습니다.
+* **참가자:** 이 필드는 **[!UICONTROL 참가자 선택기]** 필드에서 **com.adobe.granite.workflow.core.process.RandomParticipantChooser** 옵션을 선택하면 사용할 수 있습니다. 필드에서는 RandomParticipantChooser 옵션의 사용자 또는 그룹을 선택할 수 있습니다.
 
-* **피할당자:** **참가자 선택기** 필드에서 **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]**&#x200B;을(를) 선택하면 이 필드를 사용할 수 있습니다. 필드에서는 문자열 데이터 유형의 변수를 선택하여 할당자를 정의할 수 있습니다.
+* **피할당자:** **[!UICONTROL 참가자 선택기]** 필드에서 **com.adobe.fd.workspace.step.service.VariableParticipantChooser**&#x200B;을(를) 선택하면 이 필드를 사용할 수 있습니다. 필드에서는 문자열 데이터 유형의 변수를 선택하여 할당자를 정의할 수 있습니다.
 
 * **인수:** 참가자 선택기 필드에서 RandomParticipantChoose 스크립트 이외의 스크립트를 선택하면 이 필드를 사용할 수 있습니다. 이 필드에서는 참가자 선택기 필드에서 선택한 스크립트에 대해 쉼표로 구분된 인수 목록을 제공할 수 있습니다.
 
@@ -260,12 +261,12 @@ Forms 중심 워크플로우 단계는 AEM 워크플로우에서 AEM Forms 관�
    * **워크플로 메타데이터에서 검색:** 사용할 값이 워크플로 메타데이터 속성에 저장되면 옵션을 사용합니다. 예를 들어 emailAddress입니다.
    * **[!UICONTROL 페이로드 관련]**: 페이로드 관련 경로에 저장된 첨부 파일을 검색하려면 옵션을 사용하십시오. 옵션을 선택하고 첨부 파일을 포함하는 폴더 이름을 지정하거나 텍스트 상자에 첨부 파일 이름을 지정합니다.
 
-     예를 들어, CRX 저장소의 페이로드 관련 폴더에 `attachment\attachment-folder` 위치에 첨부 파일이 있는 경우 **[!UICONTROL 페이로드 관련]** 옵션을 선택한 후 텍스트 상자에 `attachment\attachment-folder`을(를) 지정합니다.
+     예를 들어, CRX 저장소의 페이로드 관련 폴더에 `attachment\attachment-folder` 위치에 첨부 파일이 있는 경우 `attachment\attachment-folder`페이로드 관련&#x200B;**[!UICONTROL 옵션을 선택한 후 텍스트 상자에]**&#x200B;을(를) 지정합니다.
    * **JSON 점 표기법:** 사용할 값이 JSON 파일에 있는 경우 옵션을 사용합니다. 예: insurance.customerDetails.emailAddress. JSON 점 표기법 옵션은 입력 JSON의 입력 필드 매핑 옵션을 선택한 경우에만 사용할 수 있습니다.
    * **입력 JSON의 입력 필드 매핑:** JSON 파일의 경로를 지정하여 JSON 파일에서 일부 서비스 인수의 입력 값을 가져옵니다. JSON 파일의 경로는 페이로드에 상대적이거나 절대 경로이거나 JSON 또는 양식 데이터 모델 유형의 변수를 사용하여 입력 JSON 문서를 선택할 수 있습니다.
 
 * **서비스에 대한 입력 > 변수 또는 JSON 파일을 사용하여 입력 데이터 제공:** 절대 경로, 페이로드 관련 경로 또는 변수에 저장된 JSON 파일에서 모든 인수의 값을 가져오려면 옵션을 선택하십시오.
-* **다음을 사용하여 입력 JSON 문서 선택**: 모든 서비스 인수의 값이 들어 있는 JSON 파일입니다. JSON 파일의 경로는 페이로드에 상대적인 **이거나**&#x200B;절대 경로일 수 있습니다.**&#x200B;** JSON 또는 양식 데이터 모델 데이터 형식의 변수를 사용하여 입력 JSON 문서를 검색할 수도 있습니다.
+* **다음을 사용하여 입력 JSON 문서 선택**: 모든 서비스 인수의 값이 들어 있는 JSON 파일입니다. JSON 파일의 경로는 페이로드에 상대적인 **이거나**&#x200B;절대 경로일 수 있습니다.**** JSON 또는 양식 데이터 모델 데이터 형식의 변수를 사용하여 입력 JSON 문서를 검색할 수도 있습니다.
 
 * **JSON 점 표기법:** 지정된 JSON 파일의 모든 개체를 서비스 인수에 대한 입력으로 사용하려면 필드를 비워 둡니다. 서비스 인수에 대한 입력으로 지정된 JSON 파일의 특정 JSON 개체를 읽으려면 JSON 개체에 대한 점 표기법을 지정하십시오. 예를 들어 섹션의 시작 부분에 나열된 것과 유사한 JSON이 있는 경우 insurance.customerDetails를 지정하여 고객의 모든 세부 정보를 서비스에 대한 입력으로 제공합니다.
 * **서비스 출력 > 변수 또는 메타데이터에 출력 값 매핑 및 쓰기:** 출력 값을 crx-repository에 있는 워크플로 인스턴스 메타데이터 노드의 속성으로 저장하는 옵션을 선택합니다. 메타데이터 속성의 이름을 지정하고 메타데이터 속성으로 매핑할 해당 서비스 출력 속성을 선택합니다. 예를 들어 출력 서비스에서 반환된 phone_number를 워크플로우 메타데이터의 phone_number 속성과 매핑합니다. 마찬가지로 출력을 Long 데이터 형식의 변수에 저장할 수 있습니다. **[!UICONTROL 매핑할 서비스 출력 특성]** 옵션에 대한 속성을 선택하면 선택한 속성의 데이터를 저장할 수 있는 변수만 **[!UICONTROL 출력을 저장]** 옵션에 대해 채워집니다.

@@ -9,21 +9,22 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2c0a5185-7759-447a-b4c6-36feaa4a23d3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '6607'
+source-wordcount: '6615'
 ht-degree: 2%
 
 ---
 
 # 적응형 양식 규칙 편집기{#adaptive-forms-rule-editor}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html)를 참조하십시오.
 
 ## 개요 {#overview}
 
@@ -72,13 +73,13 @@ forms-power-users 그룹에 추가된 사용자는 새 스크립트를 만들고
 
 * 규칙을 작성할 때 일반적으로 경험하는 규칙은 규칙을 작성하는 객체의 컨텍스트에서 생각하는 것입니다. 필드 A에서 사용자가 지정하는 값에 따라 필드 B를 숨기거나 표시하려고 한다고 가정합니다. 이 경우 필드 A에서 조건을 평가하고 반환되는 값을 기반으로 필드 B에서 작업을 트리거합니다.
 
-  따라서 필드 B(조건을 평가하는 객체)에 규칙을 작성하는 경우 조건-작업 구문 또는 시기 규칙 유형을 사용합니다. 마찬가지로 필드 A에서 작업 조건 구문 또는 보기 또는 숨기기 규칙 유형을 사용합니다.
+  따라서 필드 B(조건을 평가하는 객체)에 규칙을 작성하는 경우 조건-작업 구문 또는 시기 규칙 유형을 사용합니다. 마찬가지로 필드 A에서 작업 조건 구문 또는 표시 또는 숨기기 규칙 유형을 사용합니다.
 
 * 한 가지 조건을 기반으로 여러 작업을 수행해야 하는 경우가 있습니다. 이러한 경우 조건-작업 구문을 사용하는 것이 좋습니다. 이 구문에서는 한 번 조건을 평가하고 여러 작업 문을 지정할 수 있습니다.
 
   예를 들어, 사용자가 필드 A에 지정한 값을 확인하는 조건에 따라 필드 B, C 및 D를 숨기려면 조건-작업 구문 또는 필드 A에 규칙 유형을 입력할 때 하나의 규칙을 작성하고 필드 B, C 및 D의 가시성을 제어하는 작업을 지정합니다. 그렇지 않으면 필드 B, C 및 D에 세 개의 별도 규칙이 필요합니다. 여기서 각 규칙은 조건을 확인하고 해당 필드를 표시하거나 숨깁니다. 이 예제에서는 3개의 객체에 대한 규칙 유형 표시 또는 숨기기보다 When 규칙 유형을 하나의 객체에 작성하는 것이 더 효율적입니다.
 
-* 여러 조건을 기반으로 작업을 트리거하려면 작업 조건 구문을 사용하는 것이 좋습니다. 예를 들어 필드 B, C 및 D의 조건을 평가하여 필드 A를 표시하거나 숨기기 하려면 필드 A에서 보기 또는 규칙 유형 숨기기를 사용합니다.
+* 여러 조건을 기반으로 작업을 트리거하려면 작업 조건 구문을 사용하는 것이 좋습니다. 예를 들어 필드 B, C 및 D의 조건을 평가하여 필드 A를 표시하거나 숨기려면 필드 A에서 규칙 유형 표시 또는 숨기기를 사용합니다.
 * 규칙에 한 조건에 대한 한 가지 작업이 포함된 경우 조건-작업 또는 작업 조건 구문을 사용합니다.
 * 규칙이 조건을 확인하고 필드에 값을 제공하거나 필드를 종료할 때 즉시 작업을 수행하는 경우 조건이 평가되는 필드에 조건-작업 구문 또는 When 규칙 유형이 있는 규칙을 작성하는 것이 좋습니다.
 * 사용자가 When 규칙이 적용되는 객체의 값을 변경할 때 When 규칙의 조건이 평가됩니다. 그러나 값을 미리 채우는 경우처럼 서버측에서 값이 변경될 때 작업을 트리거하려면 필드가 초기화될 때 작업을 트리거하는 When 규칙을 작성하는 것이 좋습니다.
@@ -105,11 +106,11 @@ forms-power-users 그룹에 추가된 사용자는 새 스크립트를 만들고
 
 ### 언제 {#whenruletype}
 
-**When** 규칙 형식은 **condition-action-alternate action** 규칙 구문을 따르거나 경우에 따라 **condition-action** 구문을 따릅니다. 이 규칙 유형에서는 먼저 평가 조건을 지정한 다음 조건이 충족될 경우 트리거할 작업을 지정합니다( `True`). When 규칙 유형을 사용하는 동안 여러 AND 및 OR 연산자를 사용하여 중첩 표현식을[&#128279;](#nestedexpressions) 만들 수 있습니다.
+**When** 규칙 형식은 **condition-action-alternate action** 규칙 구문을 따르거나 경우에 따라 **condition-action** 구문을 따릅니다. 이 규칙 유형에서는 먼저 평가할 조건을 지정한 다음 조건이 충족되면 트리거할 작업(`True`)을 지정합니다. When 규칙 유형을 사용하는 동안 여러 AND 및 OR 연산자를 사용하여 [중첩 식](#nestedexpressions)을 만들 수 있습니다.
 
-When 규칙 유형을 사용하면 양식 개체에 대한 조건을 평가하고 하나 이상의 개체에 대해 작업을 수행할 수 있습니다.
+When 규칙 유형을 사용하여 양식 객체의 조건을 평가하고 하나 이상의 객체에 작업을 수행할 수 있습니다.
 
-간단히 말해서 일반적인 When 규칙 구조는 다음과 같습니다.
+쉽게 말해, 일반적인 When 규칙은 다음과 같이 구성됩니다.
 
 `When on Object A:`
 
@@ -118,7 +119,7 @@ When 규칙 유형을 사용하면 양식 개체에 대한 조건을 평가하�
 `Then, do the following:`
 
 개체 B에 대한 작업 2;
-그리고
+및
 개체 C에 대한 작업 3;
 
 _
@@ -202,25 +203,25 @@ When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있�
 
 **[!UICONTROL Set Value of]** 규칙 형식을 사용하면 지정된 조건을 충족하는지 여부에 따라 양식 개체의 값을 설정할 수 있습니다. 값은 다른 개체의 값, 리터럴 문자열, 수학적 식이나 함수에서 파생된 값, 다른 개체의 속성 값 또는 양식 데이터 모델 서비스의 출력으로 설정할 수 있습니다. 마찬가지로 구성 요소, 문자열, 속성 또는 함수나 수학 표현식에서 파생된 값에 대한 조건을 확인할 수 있습니다.
 
-규칙 유형의 값 설정 은 패널 및 도구 모음 버튼과 같은 일부 양식 객체에 사용할 수 없습니다. 표준 규칙 세트 값의 구조는 다음과 같습니다.
+규칙 유형의 값 설정 은 패널 및 도구 모음 버튼과 같은 일부 양식 객체에 사용할 수 없습니다. 표준 규칙 값 설정(Set Value Of rule)의 구조는 다음과 같습니다.
 
 
 
-개체 A의 값을 다음으로 설정합니다.
+개체 A의 값을 다음으로 설정:
 
 (문자열 ABC) 또는
-(객체 C의 객체 속성 X) 또는
+(객체 C의 객체 등록 정보 X) 또는
 (함수의 값) 또는
-(수학 표현식의 값) 또는
-(데이터 모델 서비스 또는 웹 서비스의 출력 값);
+(수학 표현식의 값) OR
+(데이터모델 서비스 또는 웹서비스의 출력값)
 
-시기(선택 사항):
+다음과 같은 경우(선택 사항):
 
 (조건 1 및 조건 2 및 조건 3)은 TRUE입니다.
 
 
 
-다음 예에서는 field의 `dependentid` 값을 입력으로 사용하고 필드 값을 `Relation` 양식 데이터 모델 서비스의 인수 `getDependent` 출력 `Relation` 으로 설정합니다.
+다음 예제에서는 `dependentid` 필드의 값을 입력으로 취하여 `Relation` 필드의 값을 `Relation` 양식 데이터 모델 서비스의 `getDependent` 인수의 출력으로 설정합니다.
 
 ![set-value-web-service](assets/set-value-web-service.png)
 
@@ -372,11 +373,11 @@ Enable 규칙 유형과 유사한 **Disable** 규칙 유형을 사용하면 조�
 
 규칙 편집기 사용자 인터페이스의 왼쪽 창에는 두 개의 탭, 즉 **[!UICONTROL Forms 개체]** 및 **[!UICONTROL 함수]**&#x200B;가 있습니다.
 
-양식 개체 탭에는 적응형 양식에 포함된 모든 개체의 계층 보기가 표시됩니다. 객체의 제목과 유형이 표시됩니다. 규칙을 작성할 때 양식 개체를 규칙 편집기로 드래그 앤 드롭할 수 있습니다. 규칙 만들거나 편집하는 동안 개체 또는 함수를 자리 표시자로 끌어다 놓으면 자리 표시자는 자동으로 적절한 값 유형을 사용합니다.
+양식 개체 탭에는 적응형 양식에 포함된 모든 개체의 계층 보기가 표시됩니다. 객체의 제목과 유형이 표시됩니다. 규칙을 작성할 때 양식 개체를 규칙 편집기로 드래그 앤 드롭할 수 있습니다. 개체 또는 함수를 자리 표시자로 드래그 앤 드롭할 때 규칙을 만들거나 편집할 때 자리 표시자는 자동으로 적절한 값 유형을 사용합니다.
 
-하나 이상의 유효한 규칙이 적용된 양식 개체는 녹색 점으로 표시됩니다. 양식 개체에 적용된 규칙이 잘못된 경우 양식 개체는 노란색 점으로 표시됩니다.
+하나 이상의 유효한 규칙이 적용된 양식 개체는 녹색 점으로 표시됩니다. 양식 객체에 적용된 규칙 중 하나라도 유효하지 않으면 양식 객체가 노란색 점으로 표시됩니다.
 
-함수 탭에는 Sum Of, Min Of, Max Of, Average Of, Number Of 및 Validate Form과 같은 기본 제공 함수 집합이 포함되어 있습니다. 이러한 함수를 사용하여 반복 가능한 패널 및 테이블 행의 값을 계산하고 규칙을 작성할 때 작업 및 조건문에 사용할 수 있습니다. 그러나 사용자 지정 함수도[&#128279;](#custom-functions) 만들 수 있습니다.
+함수 탭에는 Sum Of, Min Of, Max Of, Average Of, Number 및 Validate Form과 같은 기본 함수 집합이 포함되어 있습니다. 이러한 함수를 사용하여 반복 가능한 패널 및 테이블 행에서 값을 계산하고 규칙을 작성할 때 작업 및 조건 문에서 사용할 수 있습니다. 그러나 [사용자 지정 함수](#custom-functions)를 만들 수도 있습니다.
 
 ![함수 탭](assets/functions.png)
 
@@ -608,7 +609,7 @@ forms-power-users 그룹에 추가된 사용자는 코드 편집기를 사용할
 구문: `@return {type}`
 또는 `@returns {type}`을(를) 사용할 수 있습니다.
 함수 목적 등 함수에 대한 정보를 추가합니다.
-{type}은(는) 함수의 반환 형식을 나타냅니다. 허용되는 반환 유형은 다음과 같습니다.
+  {type}은(는) 함수의 반환 형식을 나타냅니다. 허용되는 반환 유형은 다음과 같습니다.
 
    1. 문자열
    1. 숫자
@@ -621,7 +622,7 @@ forms-power-users 그룹에 추가된 사용자는 코드 편집기를 사용할
 
   규칙@this 작성된 적응형 양식 구성 요소를 참조하려면 AEM을 사용하십시오.
 
-  다음 예제는 필드 값을 기반으로 합니다. 다음 예에서 규칙은 양식의 필드를 숨깁니다. `this.value`의 `this` 부분이 규칙이 작성된 기본 적응형 양식 구성 요소를 참조합니다.
+  다음 예제는 필드 값을 기반으로 합니다. 다음 예에서 규칙은 양식의 필드를 숨깁니다. `this`의 `this.value` 부분이 규칙이 작성된 기본 적응형 양식 구성 요소를 참조합니다.
 
   ```
      /**
@@ -890,10 +891,10 @@ AEM 6.1 Forms 기능 팩 1 이전 AEM Forms 버전에서 양식 작성자 및 �
 
 ![example-validate](assets/example-validate.png)
 
-시각적 개체 편집기 규칙
+시각적 편집기의 규칙
 
-이 규칙은 코드 편집기에 다음과 같이 표시됩니다.
+규칙은 코드 편집기에 다음과 같이 표시됩니다.
 
-![예제 유효성 검사 코드](assets/example-validate-code.png)
+![example-validate-code](assets/example-validate-code.png)
 
-코드 편집기 규칙
+코드 편집기의 규칙

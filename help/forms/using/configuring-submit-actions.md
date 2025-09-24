@@ -1,5 +1,5 @@
 ---
-title: 제출 액션 구성
+title: 제출 작업 구성
 description: Forms을 사용하면 제출 액션을 구성하여 제출 후 적응형 양식이 처리되는 방식을 정의할 수 있습니다. 기본 제공 제출 액션을 사용하거나 직접 작성할 수 있습니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -8,21 +8,22 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2602'
 ht-degree: 48%
 
 ---
 
-# 제출 액션 구성 {#configuring-the-submit-action}
+# 제출 작업 구성 {#configuring-the-submit-action}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html)를 참조하십시오.
 
 
 ## 제출 액션 소개 {#introduction-to-submit-actions}
@@ -41,7 +42,7 @@ ht-degree: 48%
 * 이메일 보내기
 * 이메일을 통해 PDF 보내기
 * Forms Workflow 호출
-* Forms 데이터 모델을 사용하여 제출
+* 양식 데이터 모델을 사용하여 제출
 * Forms 포털 제출 액션
 * AEM 워크플로우 호출
 * Power Automate에 제출
@@ -53,7 +54,7 @@ ht-degree: 48%
 >[!NOTE]
 >
 >[AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM 폴더인지 확인합니다.
->존재함. 첨부 파일을 임시로 저장하려면 디렉토리가 필요합니다. 디렉토리가 없으면 생성합니다.
+>>존재함. 첨부 파일을 임시로 저장하려면 디렉토리가 필요합니다. 디렉토리가 없으면 생성합니다.
 
 >[!CAUTION]
 >
@@ -124,7 +125,7 @@ Rest 끝점 제출 작업 구성
 
 Forms Workflow에 제출 액션을 구성하는 방법에 대한 자세한 내용은 [양식 워크플로우를 사용하여 양식 데이터 제출 및 처리](../../forms/using/submit-form-data-livecycle-process.md)를 참조하십시오.
 
-## Forms 데이터 모델을 사용하여 제출 {#submit-using-form-data-model}
+## 양식 데이터 모델을 사용하여 제출 {#submit-using-form-data-model}
 
 **양식 데이터 모델을 사용하여 제출** 제출 액션은 양식 데이터 모델에서 지정된 데이터 모델 개체에 대해 제출된 적응형 양식 데이터를 해당 데이터 원본에 기록합니다. 제출 액션을 구성할 때 제출된 데이터를 해당 데이터 소스에 다시 쓸 데이터 모델 개체를 선택할 수 있습니다.
 
@@ -173,7 +174,7 @@ Forms 포털 및 제출 액션에 대한 자세한 내용은 [초안 및 제출 
 
 >[!NOTE]
 >
->Microsoft® SharePoint 목록에 제출 기능은 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
+> Microsoft® SharePoint 목록에 제출 기능은 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
 
 **[!UICONTROL SharePoint에 제출]** 제출 액션은 적응형 양식을 Microsoft® SharePoint 저장소와 연결합니다. 양식 데이터 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® Sharepoint Storage에 제출할 수 있습니다.
 
@@ -194,12 +195,12 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 1. **[!UICONTROL 제목]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 보안]** 및 **[!UICONTROL OAuth URL]**&#x200B;을 지정합니다. OAuth URL의 클라이언트 ID, 클라이언트 보안, 테넌트 ID를 검색하는 방법에 대한 자세한 내용은 [Microsoft® Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)을 참조하십시오.
    * Microsoft® Azure 포털에서 앱의 `Client ID` 및 `Client Secret`를 검색할 수 있습니다.
    * Microsoft® Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`로 추가합니다. `[author-instance]`를 작성자 인스턴스의 URL로 대체합니다.
-   * 읽기/쓰기 권한을 제공하려면 **Microsoft® 그래프** 탭에서 API 권한 `offline_access` 및 `Sites.Manage.All`을(를) 추가하십시오. SharePoint 데이터와 원격으로 상호 작용하려면 **Sharepoint** 탭에 `AllSites.Manage` 권한을 추가하십시오.
+   * 읽기/쓰기 권한을 제공하려면 `offline_access`Microsoft® 그래프`Sites.Manage.All` 탭에서 API 권한 **및**&#x200B;을(를) 추가하십시오. SharePoint 데이터와 원격으로 상호 작용하려면 `AllSites.Manage`Sharepoint **탭에** 권한을 추가하십시오.
    * OAuth URL 사용: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Microsoft® Azure 포털에서 `<tenant-id>`를 앱의 `tenant-id`로 대체합니다.
 
      >[!NOTE]
      >
-     >**클라이언트 보안** 필드는 Azure Active Directory 애플리케이션 구성에 따라 필수 또는 선택 사항입니다. 애플리케이션을 구성하여 클라이언트 보안을 사용하는 경우 클라이언트 보안을 제공해야 합니다.
+     > **클라이언트 보안** 필드는 Azure Active Directory 애플리케이션 구성에 따라 필수 또는 선택 사항입니다. 애플리케이션을 구성하여 클라이언트 보안을 사용하는 경우 클라이언트 보안을 제공해야 합니다.
 
 1. **[!UICONTROL 연결]**&#x200B;을 클릭합니다. 연결이 완료되면 `Connection Successful` 메시지가 나타납니다.
 1. 드롭다운 목록에서 **[!UICONTROL SharePoint 사이트]** 및 **[!UICONTROL SharePoint 목록]**&#x200B;을 선택합니다.
@@ -218,16 +219,16 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 
 >[!NOTE]
 >
->Microsoft® SharePoint 목록에서는 다음 열 유형이 지원되지 않습니다.
->* 이미지 열
->* 메타데이터 열
->* 개인 열
->* 외부 데이터 열
+> Microsoft® SharePoint 목록에서는 다음 열 유형이 지원되지 않습니다.
+> * 이미지 열
+> * 메타데이터 열
+> * 개인 열
+> * 외부 데이터 열
 
 
 >[!NOTE]
 >
->구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)합니다.
+> 구성의 값을 설정하려면 [AEM SDK를 사용하여 OSGi 구성을 생성](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ko#generating-osgi-configurations-using-the-aem-sdk-quickstart)하고 Cloud Service 인스턴스에 [구성을 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ko#deployment-process)합니다.
 
 ## 적응형 양식에서 서버측 유효성 재검사 {#server-side-revalidation-in-adaptive-form}
 

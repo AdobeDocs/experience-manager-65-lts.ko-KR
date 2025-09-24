@@ -1,25 +1,26 @@
 ---
-title: Adobe Sign과 AEM Forms 통합
+title: Adobe Sign을 AEM Forms와 통합
 description: AEM 적응형 Forms에 대한 Adobe Sign을 구성하는 방법에 대해 알아봅니다. Adobe Sign은 워크플로우를 개선하고 법률, 판매, 급여, 인적 자원 관리 등의 다양한 영역에 대한 문서를 처리합니다.
 feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: fdf95738-3075-43d6-9d51-64c83cf0f0b7
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2079'
 ht-degree: 16%
 
 ---
 
-# AEM [!DNL Forms]과(와) [!DNL Adobe Sign] 통합{#integrate-adobe-sign-with-aem-forms}
+# AEM [!DNL Adobe Sign]과(와) [!DNL Forms] 통합{#integrate-adobe-sign-with-aem-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=ko#adobe-acrobat-sign-for-government) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=en#adobe-acrobat-sign-for-government)를 참조하십시오.
 
 [!DNL Adobe Sign]은(는) 적응형 양식용 전자 서명 워크플로를 사용합니다. 전자 서명은 법무, 판매, 임금, 인적 자원 관리 등의 다양한 분야에서 문서를 처리하는 워크플로를 개선합니다.
 
@@ -43,9 +44,9 @@ ht-degree: 16%
 * 다시 구성할 때는 작성자 및 게시 인스턴스 모두에서 기존 [!DNL Adobe Sign] 구성을 제거하십시오.
 * 작성자에 대해 [동일한 암호 키](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed)를 사용하고 인스턴스를 게시합니다.
 
-## AEM [!DNL Forms]을(를) 사용하여 [!DNL Adobe Sign] 구성 {#configure-adobe-sign-with-aem-forms}
+## AEM [!DNL Adobe Sign]을(를) 사용하여 [!DNL Forms] 구성 {#configure-adobe-sign-with-aem-forms}
 
-전제 조건이 갖추어지면 다음 단계를 통해 작성자 인스턴스에서 AEM [!DNL Forms]을(를) 사용하여 [!DNL Adobe Sign]을(를) 구성하십시오.
+전제 조건이 갖추어지면 다음 단계를 통해 작성자 인스턴스에서 AEM [!DNL Adobe Sign]을(를) 사용하여 [!DNL Forms]을(를) 구성하십시오.
 
 1. AEM [!DNL Forms] 작성자 인스턴스에서 **도구** ![hammer](assets/hammer.png) > **[!UICONTROL 일반]** > **[!UICONTROL 구성 브라우저]**&#x200B;로 이동합니다.
 1. **[!UICONTROL 구성 브라우저]** 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
@@ -55,20 +56,20 @@ ht-degree: 16%
 
    >[!NOTE]
    >
-   >1~4단계를 실행하여 구성 컨테이너를 만들고 컨테이너에 [!DNL Adobe Sign] 구성을 만들거나 **도구** ![hammer](assets/hammer.png) > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Adobe Sign]**&#x200B;에서 기존 `global` 폴더를 사용할 수 있습니다. 새 구성 컨테이너에서 구성을 만드는 경우 적응형 양식을 만들 때 **[!UICONTROL 구성 컨테이너]** 필드에 컨테이너 이름을 지정해야 합니다.
+   >1~4단계를 실행하여 구성 컨테이너를 만들고 컨테이너에 [!DNL Adobe Sign] 구성을 만들거나 `global`도구&#x200B;**** hammer![ > ](assets/hammer.png)클라우드 서비스&#x200B;**[!UICONTROL >]** Adobe Sign **[!UICONTROL 에서 기존]** 폴더를 사용할 수 있습니다. 새 구성 컨테이너에서 구성을 만드는 경우 적응형 양식을 만들 때 **[!UICONTROL 구성 컨테이너]** 필드에 컨테이너 이름을 지정해야 합니다.
 
    >[!NOTE]
    >
-   >클라우드 서비스 구성 페이지의 URL이 **HTTPS**(으)로 시작하는지 확인하십시오. 그렇지 않으면 AEM [!DNL Forms] 서버에 대해 [SSL을 사용하도록 설정](/help/sites-administering/ssl-by-default.md)합니다.
+   >클라우드 서비스 구성 페이지의 URL이 **HTTPS**(으)로 시작하는지 확인하십시오. 그렇지 않으면 AEM [ 서버에 대해 ](/help/sites-administering/ssl-by-default.md)SSL을 사용하도록 설정[!DNL Forms]합니다.
 
 
-1. 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 탭하여 AEM [!DNL Forms]에서 [!DNL Adobe Sign] 구성을 만듭니다.
+1. 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 탭하여 AEM [!DNL Adobe Sign]에서 [!DNL Forms] 구성을 만듭니다.
 1. **[!UICONTROL Adobe Sign 구성 만들기]** 페이지의 **[!UICONTROL 일반]** 탭에서 구성에 대한 **[!UICONTROL 이름]**&#x200B;을 지정하고 **[!UICONTROL 다음]**&#x200B;을 탭합니다. 원할 경우 제목을 지정하고 구성에 대한 썸네일을 찾아 선택할 수 있습니다.
 1. 이제 **[!UICONTROL 솔루션을 선택]**&#x200B;하여 [!DNL Adobe Acrobat Sign]을(를) 선택할 수 있습니다.
 
    ![Adobe Acrobat Sign Solutions](/help/forms/using/assets/adobe-sign-solution.png)
 
-1. 현재 브라우저 창의 URL을 메모장에 복사하고 URL에서 /`ui#/aem` 부분을 제거합니다. 이후 단계에서 [!DNL AEM Forms]&#x200B;(으)로 [!DNL Adobe Acrobat Sign] 응용 프로그램을 구성하려면 수정된 URL이 필요합니다. [!UICONTROL 다음]을 누릅니다.
+1. 현재 브라우저 창의 URL을 메모장에 복사하고 URL에서 /`ui#/aem` 부분을 제거합니다. 이후 단계에서 [!DNL Adobe Acrobat Sign]&#x200B;(으)로 [!DNL AEM Forms] 응용 프로그램을 구성하려면 수정된 URL이 필요합니다. [!UICONTROL 다음]을 누릅니다.
 
 1. **[!UICONTROL 설정]** 탭에서,
    * **[!UICONTROL OAuth URL]** 필드에 Adobe Sign 데이터베이스 분할이 포함된 기본 URL이 포함되어 있습니다. URL 형식은 다음과 같습니다.
@@ -87,11 +88,11 @@ ht-degree: 16%
 
    여기에서
 
-   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL &#x200B; Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/kr/sign/using/identify-account-shard.html)을 가리켜야 합니다.
+   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL  Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/sign/using/identify-account-shard.html)을 가리켜야 합니다.
 
    >[!NOTE]
    >
-   >* **Adobe Acrobat Sign 구성 만들기** 페이지를 열어 두십시오. 닫지 마세요. 향후 단계에 설명된 대로 [!DNL Adobe Acrobat Sign] 응용 프로그램에 대한 OAuth 설정을 구성한 후 **클라이언트 ID** 및 **클라이언트 암호**&#x200B;을(를) 검색할 수 있습니다.
+   >* **Adobe Acrobat Sign 구성 만들기** 페이지를 열어 두십시오. 닫지 마세요. 향후 단계에 설명된 대로 **응용 프로그램에 대한 OAuth 설정을 구성한 후**&#x200B;클라이언트 ID **및**&#x200B;클라이언트 암호[!DNL Adobe Acrobat Sign]을(를) 검색할 수 있습니다.
    > * Adobe Sign 계정에 로그인한 후 **[!UICONTROL Acrobat Sign API]** > **[!UICONTROL API 정보]** > **[!UICONTROL REST API 메서드 설명서]** > **[!UICONTROL OAuth 액세스 토큰]**&#x200B;으로 이동하여 Adobe Sign OAuth URL 및 액세스 토큰 URL과 관련된 정보에 액세스합니다.
 
 1. [!DNL Adobe Sign] 애플리케이션에 대한 OAuth 설정을 구성합니다.
@@ -209,7 +210,7 @@ Adobe Acrobat Sign `scopes`(아래 나열)과 이전 섹션의 마지막 단계�
 
 #### 수신한 자격 증명을 사용하여 AEM Forms과 Adobe Acrobat Sign Solutions for Government를 연결합니다.
 
-1. 브라우저에서 `re-direct URL`을(를) 엽니다. [AEM 인스턴스에서 리디렉션 URL 만들기](#create-redirect-url) 섹션의 마지막 단계에서 `re-direct URL`을(를) 만들고 기록했습니다.
+1. 브라우저에서 `re-direct URL`을(를) 엽니다. `re-direct URL`AEM 인스턴스에서 리디렉션 URL 만들기[ 섹션의 마지막 단계에서 ](#create-redirect-url)을(를) 만들고 기록했습니다.
 
 1. **[!UICONTROL Adobe Sign 구성 만들기]** 페이지의 **[!UICONTROL 일반]** 탭에서 구성에 대한 **[!UICONTROL 이름]**&#x200B;을 지정하고 **[!UICONTROL 다음]**&#x200B;을 선택합니다. 필요에 따라 **[!UICONTROL 제목]**&#x200B;을 지정하고 구성에 대한 **[!UICONTROL 썸네일]**&#x200B;을 찾아 선택할 수 있습니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
@@ -236,7 +237,7 @@ Adobe Acrobat Sign `scopes`(아래 나열)과 이전 섹션의 마지막 단계�
 
    여기에서
 
-   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL &#x200B; Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/kr/sign/using/identify-account-shard.html)을 가리켜야 합니다.
+   **na1**&#x200B;은 기본값 데이터베이스 분할을 의미합니다. 데이터베이스 분할의 값을 수정할 수 있습니다. [!DNL  Adobe Acrobat Sign] 클라우드 구성이 [올바른 분할](https://helpx.adobe.com/sign/using/identify-account-shard.html)을 가리켜야 합니다.
 
    >[!NOTE]
    >
@@ -272,7 +273,7 @@ Adobe Acrobat Sign `scopes`(아래 나열)과 이전 섹션의 마지막 단계�
    브라우저 창에서 다음 URL을 열 수도 있습니다.
    `https://[localhost]:'port'/system/console/configMgr`
 
-1. **[!UICONTROL Adobe Sign 구성 서비스]** 옵션을 찾아 엽니다. **[!UICONTROL 상태 업데이트 스케줄러 표현식]** 필드에 [cron 표현식](https://en.wikipedia.org/wiki/Cron#CRON_expression)을 지정하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 예를 들어 매일 오전 00:00에 구성 서비스를 실행하려면 **[!UICONTROL 상태 업데이트 스케줄러 표현식]** 필드에 `0 0 0 1/1 * ? *`을(를) 지정합니다.
+1. **[!UICONTROL Adobe Sign 구성 서비스]** 옵션을 찾아 엽니다. [상태 업데이트 스케줄러 표현식](https://en.wikipedia.org/wiki/Cron#CRON_expression) 필드에 **[!UICONTROL cron 표현식]**&#x200B;을 지정하고 **[!UICONTROL 저장]**&#x200B;을 클릭합니다. 예를 들어 매일 오전 00:00에 구성 서비스를 실행하려면 `0 0 0 1/1 * ? *`상태 업데이트 스케줄러 표현식&#x200B;**[!UICONTROL 필드에]**&#x200B;을(를) 지정합니다.
 
 [!DNL Adobe Sign]의 동기화 상태 기본 간격이 변경되었습니다.
 

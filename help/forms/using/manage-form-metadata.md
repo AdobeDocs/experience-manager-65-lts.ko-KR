@@ -9,19 +9,20 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 712590c6-2348-4c0d-93b9-686e6478ca03
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1967'
+source-wordcount: '1973'
 ht-degree: 2%
 
 ---
 
 # 양식 메타데이터 관리{#manage-form-metadata}
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html)를 참조하십시오.
 
 ## 개요  {#overview-nbsp}
 
@@ -277,7 +278,7 @@ AEM Forms은 이 도구에서 지원되는 양식 유형의 메타데이터 스�
 
    1. 잠긴 섹션은 편집할 수 없으며 즉시 제공되는 모든 메타데이터 속성에 대한 필드를 포함합니다.
 
-   1. &#x200B;+ 기호를 클릭하여 탭을 더 추가할 수 있습니다.
+   1. + 기호를 클릭하여 탭을 더 추가할 수 있습니다.
 
    1. 의 **[!UICONTROL 양식 작성]** 섹션에서 스키마 페이지로 필드 구성 요소를 끌어 원하는 형식의 사용자 지정 필드를 추가할 수 있습니다.
    1. 이 필드에 대한 사양은 필드를 클릭한 후 **[!UICONTROL 설정]** 섹션에서 제공할 수 있습니다.

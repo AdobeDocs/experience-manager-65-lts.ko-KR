@@ -9,19 +9,20 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a1791374-d05c-4f60-b178-152a7bc06c45
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3142'
-ht-degree: 55%
+source-wordcount: '3151'
+ht-degree: 54%
 
 ---
 
 # 적응형 양식 작성 소개 {#introduction-to-authoring-adaptive-forms}
 
-| 버전 | 문서 링크 |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+## 적용 대상 {#applies-to}
+
+이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
+
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html)를 참조하십시오.
 
 
 ## 개요 {#overview}
@@ -152,11 +153,11 @@ XML 및 JSON 스키마는 조직의 백엔드 시스템에서 데이터를 생�
   </tr>
   <tr>
    <td>이메일</td>
-   <td><p>이메일 주소를 캡처하는 필드를 추가합니다. 이메일 구성 요소는 기본적으로 다음 정규 표현식을 사용하여 이메일 주소를 확인합니다.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>이메일 주소를 캡처하는 필드를 추가합니다. 이메일 구성 요소는 기본적으로 다음 정규 표현식을 사용하여 이메일 주소를 확인합니다.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>파일 첨부</td>
-   <td><p>사용자가 지원 문서를 검색하여 양식에 첨부할 수 있는 단추를 추가합니다. 파일 첨부 구성 요소에 여러 파일을 첨부할 수 있습니다. 구성 요소의 속성 브라우저에서 첨부 파일에 대한 **[!UICONTROL 최대 파일 크기]** 및 **[!UICONTROL 지원되는 파일 유형]**&#x200B;을 지정할 수도 있습니다. </p> <p><strong> 메모: </strong><ul> <li> 구성 요소는 \ / : * ? 문자를 포함하는 문자(.) 로 시작하는 파일 이름을 가진 파일의 첨부를 지원하지 않습니다. " &lt; &gt; | ; % $ 또는 nul, prn, con, lpt 또는 com과 같은 Windows 운영 체제용으로 예약된 특수 파일 이름을 포함합니다. </li> <li> Apple Safari 브라우저에서 연 첨부 파일 구성 요소에 여러 파일을 첨부하려면 파일을 하나씩 선택하고 첨부합니다. 한 번에 여러 파일을 선택하여 첨부할 수 없습니다.</li> <li>첨부 파일 구성 요소는 Adobe Sign에 대해 활성화된 적응형 양식에서 사전 정의된 파일 형식 집합을 지원합니다. 자세한 내용은 <a href="https://helpx.adobe.com/kr/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">지원되는 파일 형식</a>을 참조하십시오. </li></ul></p> </td>
+   <td><p>사용자가 지원 문서를 검색하여 양식에 첨부할 수 있는 단추를 추가합니다. 파일 첨부 구성 요소에 여러 파일을 첨부할 수 있습니다. 구성 요소의 속성 브라우저에서 첨부 파일에 대한 **[!UICONTROL 최대 파일 크기]** 및 **[!UICONTROL 지원되는 파일 유형]**을 지정할 수도 있습니다. </p> <p><strong> 메모: </strong><ul> <li> 구성 요소는 \ / : * ? 문자를 포함하는 문자(.) 로 시작하는 파일 이름을 가진 파일의 첨부를 지원하지 않습니다. " &lt; &gt; | ; % $ 또는 nul, prn, con, lpt 또는 com과 같은 Windows 운영 체제용으로 예약된 특수 파일 이름을 포함합니다. </li> <li> Apple Safari 브라우저에서 연 첨부 파일 구성 요소에 여러 파일을 첨부하려면 파일을 하나씩 선택하고 첨부합니다. 한 번에 여러 파일을 선택하여 첨부할 수 없습니다.</li> <li>첨부 파일 구성 요소는 Adobe Sign에 대해 활성화된 적응형 양식에서 사전 정의된 파일 형식 집합을 지원합니다. 자세한 내용은 <a href="https://helpx.adobe.com/kr/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">지원되는 파일 형식</a>을 참조하십시오. </li></ul></p> </td>
   </tr>
   <tr>
    <td>첨부 파일 나열</td>
