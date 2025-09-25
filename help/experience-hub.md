@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: d6a13f6753fa522c43f5f807f8143118eaaea170
+source-git-commit: 1eb3dda408e165f1d57c4bdfb2d724e38d00c9b7
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '591'
 ht-degree: 11%
 
 ---
@@ -20,7 +20,7 @@ Experience Hub에서는 Adobe Experience Manager 내의 콘텐츠, 에셋 및 �
 
 다시 상상한 AEM Experience Hub 작업 영역(2분 39초)을 간단히 살펴볼 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475199/?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -36,8 +36,7 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
    언제든지 이 사전 설정을 변경할 수 있습니다.
 
-   ![콘텐츠 작성자 사전 설정을 표시하는 드롭다운 목록이 선택되었습니다](/help/assets/assets-experience-hub/experience-hub-role-selection.png)
-
+   ![선택한 콘텐츠 작성자를 표시하는 사전 설정 드롭다운 목록](/help/assets/assets-experience-hub/experience-hub-role-selection.png)
 
 향상된 탐색 및 대화형 위젯으로 Adobe Experience Manager 페이지가 새로 고쳐졌습니다. 이전 솔루션 카드 컬렉션에서는 다음과 같은 도구에 대한 액세스를 제공했습니다.
 
