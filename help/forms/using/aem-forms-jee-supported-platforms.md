@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 hide: true
 hidefromtoc: true
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 6ba07ca04dde793e5750b65bbe5fc9c51418ac90
 workflow-type: tm+mt
-source-wordcount: '4005'
-ht-degree: 1%
+source-wordcount: '4117'
+ht-degree: 3%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 1%
 
 <div class="preview">
 
-Adobe은 패치 설치 프로그램과 함께 JEE에 AEM 6.5 Forms 서비스 팩 18(6.5.18.0)이 포함된 [전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)를 릴리스했습니다. 전체 설치 관리자는 새 플랫폼을 지원하며 패치 설치 관리자에는 버그 수정만 포함됩니다.
-새로 설치하거나 JEE의 AEM 6.5 Forms 환경에 최신 소프트웨어를 사용할 계획이라면, 2019년 4월 08일에 릴리스된 AEM 6.5 Forms 설치 프로그램이나 2022년 3월 03일에 릴리스된 AEM Forms 6.5.12 Adobe 설치 프로그램 대신 2023년 8월 31일에 릴리스된 [JEE의 AEM 6.5.18.0 Forms 전체 설치 프로그램](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)을 사용하는 것이 좋습니다.
+Adobe은 패치 설치 프로그램과 함께 JEE에 AEM 6.5 Forms 서비스 팩 18([)이 포함된 ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)전체 설치 관리자6.5.18.0를 릴리스했습니다. 전체 설치 관리자는 새 플랫폼을 지원하며 패치 설치 관리자에는 버그 수정만 포함됩니다.
+새로 설치하거나 JEE의 AEM 6.5 Forms 환경에 최신 소프트웨어를 사용할 계획이라면, 2019년 4월 08일에 릴리스된 AEM 6.5 Forms 설치 프로그램이나 2022년 3월 03일에 릴리스된 AEM Forms 6.5.12 Adobe 설치 프로그램 대신 2023년 8월 31일에 릴리스된 [JEE의 AEM 6.5.18.0 Forms 전체 설치 프로그램](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)을 사용하는 것이 좋습니다.
 
 </div>
 
@@ -43,7 +43,7 @@ AEM Forms on JEE 서버는 지원되는 운영 체제, 애플리케이션 서버
 
 #### 전체 설치 관리자
 
-- **전체 설치 관리자에 대한 업그레이드 지원**: 전체 설치 관리자는 여섯 번째 AEM 서비스 팩 릴리스마다 릴리스됩니다. 예를 들어 6.5.12.0 및 6.5.18.0 SP 릴리스와 함께 릴리스된 전체 설치 프로그램이 있습니다. AEM Forms에서는 마지막 두 개의 전체 설치 관리자에서만 직접 업그레이드할 수 있습니다. 예를 들어 AEM Forms은 마지막 두 개의 전체 설치 관리자, 즉 6.5.12.0 및 6.5.6.0에서만 6.5.18.0 버전으로 직접 업그레이드할 수 있습니다. 이전 업그레이드로부터 업그레이드해야 하는 경우 다중 홉 업그레이드를 사용하여 먼저 지원되는 전체 설치 관리자 릴리스로 이동한 다음 최신 릴리스로 전환할 수 있습니다.
+- **전체 설치 관리자에 대한 업그레이드 지원**: 전체 설치 관리자는 여섯 번째 AEM 서비스 팩 릴리스마다 릴리스됩니다. 예를 들어 6.5.12.0 및 6.5.18.0 SP 릴리스와 함께 릴리스된 전체 설치 프로그램이 있습니다. AEM Forms에서는 마지막 두 개의 전체 설치 관리자에서만 직접 업그레이드할 수 있습니다. 예를 들어 AEM Forms은 마지막 두 개의 전체 설치 관리자, 즉 6.5.18.0 및 6.5.12.0에서만 6.5.6.0 버전으로 직접 업그레이드할 수 있습니다. 이전 업그레이드로부터 업그레이드해야 하는 경우 다중 홉 업그레이드를 사용하여 먼저 지원되는 전체 설치 관리자 릴리스로 이동한 다음 최신 릴리스로 전환할 수 있습니다.
 
 - **사용 중단 및 제거**: 플랫폼 지원은 전체 설치 관리자 릴리스마다 업데이트됩니다. 전체 설치 프로그램 릴리스 동안 platform matrix에서 더 이상 사용되지 않는 것으로 표시된 모든 소프트웨어는 후속 전체 설치 프로그램 릴리스에서 지원되는 platform matrix에서 제거될 수 있으며, 이는 소프트웨어에 대한 지원이 종료되었음을 나타냅니다.
 
@@ -53,7 +53,7 @@ AEM Forms on JEE 서버는 지원되는 운영 체제, 애플리케이션 서버
 
 - **패치 설치 관리자 지침**: 패치 설치 관리자를 사용하여 업데이트하는 동안 기본 전체 설치 관리자 버전이 두 개 이하의 이전 릴리스인지 확인하는 것이 중요합니다. 예를 들어 서비스 팩 6.5.19.0을(를) 설치하는 동안 기본 전체 설치 관리자 버전이 6.5.18.0 또는 6.5.12.0인지 확인하십시오.
 
-- **패치 업그레이드 지원**: 지원되는 최신 플랫폼으로 업그레이드하기 전까지 최신 서비스 팩으로 계속 업그레이드할 수 있습니다. 예를 들어 6.5.19.0에 대해 지원되는 플랫폼 조합으로 전환하는 경우 서비스 팩 6.5.12.0에서 6.5.19.0(으)로 업그레이드할 수 있습니다.
+- **패치 업그레이드 지원**: 지원되는 최신 플랫폼으로 업그레이드하기 전까지 최신 서비스 팩으로 계속 업그레이드할 수 있습니다. 예를 들어 6.5.12.0에 대해 지원되는 플랫폼 조합으로 전환하는 경우 서비스 팩 6.5.19.0에서 6.5.19.0(으)로 업그레이드할 수 있습니다.
 
 ### 권장 구성 {#recommendedconfigurations}
 
@@ -67,7 +67,7 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
   </tr>
   <tr>
    <td>A: 지원됨<br /> </td>
-   <td>Adobe은 이 구성에 대한 전체 지원 및 유지 관리 기능을 제공합니다. 이 구성은 Adobe의 품질 보증 프로세스에서 다룹니다.</td>
+   <td>Adobe는 이 구성에 대한 전체 지원과 유지 관리를 제공합니다. 이 구성은 Adobe 품질 보증 프로세스에 따라 처리됩니다.</td>
   </tr>
   <tr>
    <td>R: 제한된 지원</td>
@@ -112,6 +112,11 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
   </tr>
   <tr> 
+   <td><p>Oracle Java™ SE 17(64비트) <sup> [8] </sup> </p>  </td>
+   <td><p>A: 지원됨</p> </td>
+   <td><p>마이너 릴리스 및 업데이트 </p> </td>
+  </tr>
+  <tr> 
    <td><p>Oracle Java™ SE 11(64비트) <sup> [8] </sup> </p>  </td>
    <td><p>A: 지원됨</p> </td>
    <td><p>마이너 릴리스 및 업데이트 </p> </td>
@@ -128,6 +133,11 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
   </tr>
   <tr>
    <td>Oracle Java™ SE 8(64비트)</td>
+   <td>A: 지원됨</td>
+   <td>마이너 릴리스 및 업데이트</td>
+  </tr>
+  <tr>
+   <td>IBM® J17 가상 컴퓨터(Websphere Liberty 전용)<br /> </td>
    <td>A: 지원됨</td>
    <td>마이너 릴리스 및 업데이트</td>
   </tr>
@@ -164,12 +174,17 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
    <td><p>지원됨</p> </td>
   </tr>
   <tr>
-   <td><p> MongoDB Enterprise 5.0</p> </td>
+   <td><p> MongoDB Enterprise 7.0 </p> </td>
+   <td><p>저장소 마이크로커널</p> </td>
+   <td><p>지원됨</p> </td>
+  </tr>
+  <tr>
+   <td><p> MongoDB Enterprise 6.0</p> </td>
    <td><p>저장소 마이크로커널</p> </td>
    <td><p>지원됨</p> </td>
   </tr>
     <tr>
-   <td><p> MongoDB Enterprise 6.0 </p> </td>
+   <td><p> MongoDB Enterprise 5.0 </p> </td>
    <td><p>저장소 마이크로커널</p> </td>
    <td><p>지원됨</p> </td>
   </tr>
@@ -183,6 +198,11 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
    <td><p>지원됨</p> </td>
   </tr>
   <tr>
+   <td><p>Microsoft® SQL Server 2022 </p> </td>
+   <td><p>저장소 마이크로커널</p> </td>
+   <td><p>지원됨</p> </td>
+  </tr>
+  <tr>
    <td><p>Microsoft® SQL Server 2019 </p> </td>
    <td><p>저장소 마이크로커널</p> </td>
    <td><p>지원됨</p> </td>
@@ -190,6 +210,11 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
   <tr>
    <td>IBM® DB2® 11.1(더 이상 사용되지 않음)</td>
    <td>저장소 마이크로커널</td>
+   <td>R: 제한된 지원</td>
+  </tr>
+  <tr>
+   <td>MySQL 8.4</td>
+   <td>-</td>
    <td>R: 제한된 지원</td>
   </tr>
   <tr>
@@ -223,8 +248,18 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
   </tr>
   <tr>
    <td>MySQL</td>
+   <td><p>MySQL 커넥터/J 8.4</p> </td>
+   <td><p>JEE 설치 시 AEM Forms 제공</p> </td>
+  </tr>
+  <tr>
+   <td>MySQL</td>
    <td><p>MySQL 커넥터/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar(버전 5.1.44)</p> </td>
    <td><p>JEE 설치 시 AEM Forms 제공</p> </td>
+  </tr>
+  <tr>
+   <td>Microsoft® SQL Server<br /> </td>
+   <td><p>Microsoft® SQL Server JDBC 드라이버 12.10.0<br /> </p> <p>sqljdbc12.10.0.jar</p> </td>
+   <td><p>Microsoft® 웹 사이트에서 다운로드합니다.</p> </td>
   </tr>
   <tr>
    <td>Microsoft® SQL Server<br /> </td>
@@ -249,6 +284,11 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
    <td><p><strong>지원되는 패치 정의</strong></p> </td>
   </tr>
   <tr>
+   <td>Oracle WebLogic Server 14.1.2 <sup>[9]</sup></td>
+   <td>A: 지원됨</td>
+   <td>서비스 팩 및 주요 업데이트</td>
+  </tr>
+  <tr>
    <td>Oracle WebLogic Server 12.2.1(12c R2)(더 이상 사용되지 않음) <sup>[9]</sup></td>
    <td>A: 지원됨</td>
    <td>서비스 팩 및 주요 업데이트</td>
@@ -262,6 +302,11 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
    <td>IBM® WebSphere® Application Server 9.0.0.10 <sup>[1] [4]</sup><br /> </td>
    <td>A: 지원됨</td>
    <td>서비스 팩 및 주요 업데이트</td>
+  </tr>
+  <tr>
+   <td><p>JBoss® EAP(Enterprise Application Platform) 7.4.22 <sup>[2] [3] [7]</sup> </p> </td>
+   <td><p>A: 지원됨</p> </td>
+   <td><p>지원되는 EAP 버전에 대한 패치 및 누적 패치</p> </td>
   </tr>
   <tr>
    <td><p>JBoss® EAP(Enterprise Application Platform) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
@@ -302,12 +347,12 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
    <td>서비스 팩 및 주요 업데이트</td>
   </tr>
   <tr>
-   <td><p>Red Hat® Enterprise Linux® 8(커널 4.x)(64비트)</p> </td>
+   <td><p>Red Hat® Enterprise Linux® 9(커널 5.x)(64비트)</p> </td>
    <td><p>A: 지원됨</p> </td>
    <td><p>마이너 릴리스, 누적 업데이트 및 중요 업데이트</p> </td>
   </tr>
   <tr>
-   <td><p>Red Hat® Enterprise Linux® 7(커널 3.x)(64비트)(더 이상 사용되지 않음)</td>
+   <td><p>Red Hat® Enterprise Linux® 8(커널 4.x)(64비트)</td>
    <td><p>A: 지원됨</p> </td>
    <td><p>마이너 릴리스, 누적 업데이트 및 중요 업데이트</p> </td>
   </tr>
@@ -431,6 +476,10 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택할 때 다음 예외
    <td>8.5 수정 팩 2</td>
   </tr>
   <tr>
+   <td> IBM® Content Manager 클라이언트</td>
+   <td>8.7 </td>
+  </tr>
+  <tr>
    <td> IBM® Content Manager 클라이언트(더 이상 사용되지 않음)</td>
    <td>8.5 </td>
   </tr>
@@ -458,7 +507,7 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 지원되는 Cordova�
    <th><p><strong>PDF으로 전환하기 위해 지원되는 형식</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 클래식 트랙</a> 최신 버전</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 클래식 트랙</a> 최신 버전</td>
    <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF</td>
   </tr>
   <tr>
@@ -472,6 +521,10 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 지원되는 Cordova�
   <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Project 2019<br /> </td>
+   <td>MPP</td>
   </tr>
   <tr>
    <td>오픈오피스 4.1.10</td>
@@ -492,7 +545,7 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 지원되는 Cordova�
 >- PDF Generator은 Microsoft® Office 365를 지원하지 않습니다.
 >- OpenOffice용 PDF Generator 전환은 Windows 및 Linux®에서만 지원됩니다.
 >- OCR PDF, PDF 최적화 및 Export PDF 기능은 Windows에서만 지원됩니다.
->- Acrobat 버전은 PDF Generator 기능을 사용할 수 있도록 AEM Forms과 번들로 제공됩니다. 번들형 버전은 AEM Forms PDF Generator에서 사용할 경우 AEM Forms 라이선스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스해야 합니다. 자세한 내용은 배포에 따른 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-managed-services.html))을 참조하십시오.&quot;
+>- Acrobat 버전은 PDF Generator 기능을 사용할 수 있도록 AEM Forms과 번들로 제공됩니다. 번들형 버전은 AEM Forms PDF Generator에서 사용할 경우 AEM Forms 라이선스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스해야 합니다. 자세한 내용은 배포에 따른 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))을 참조하십시오.&quot;
 >- PDF Generator 서비스는 Microsoft® Windows 10을 지원하지 않습니다.
 >- PDF Generator이 Microsoft® Visio 2019를 사용하여 파일을 변환하지 못했습니다.
 >- PDF Generator이 Microsoft® Project 2019를 사용하여 파일을 변환하지 못했습니다.
@@ -544,8 +597,8 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/)과(�
 
 추가 요구 사항은 다음을 참조하십시오.
 
-- [JEE 배포의 단일 서버 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_kr)
-- [JEE 배포의 클러스터된 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_kr)
+- [JEE 배포의 단일 서버 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- [JEE 배포의 클러스터된 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ### Adobe Acrobat 및 Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -716,7 +769,7 @@ AEM Forms on JEE는 지원되는 소프트웨어의 지정된 주 버전 및 부
 
 ## 타사 패치 지원 정책 {#third-party-patch-support-policy}
 
-AEM Forms on JEE에 대한 타사 소프트웨어 요구 사항은 해당 제품 문서의 &quot;시스템 요구 사항&quot; 섹션에 설명되어 있습니다. [https://adobe.com/go/learn_aemforms_documentation_65_kr](https://adobe.com/go/learn_aemforms_documentation_65_kr)에서 모든 설명서에 액세스합니다.
+AEM Forms on JEE에 대한 타사 소프트웨어 요구 사항은 해당 제품 문서의 &quot;시스템 요구 사항&quot; 섹션에 설명되어 있습니다. [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65)에서 모든 설명서에 액세스합니다.
 
 JEE의 서드파티 참조 플랫폼인 AEM Forms은 JEE의 AEM Forms을 개발 및 릴리스하는 동안 현재 존재하는 서드파티 인프라의 특정 패치 수준과 JEE의 해당 버전의 AEM Forms에서 지원하는 인프라의 최소 패치/서비스 팩 수준을 설명합니다.
 
@@ -744,7 +797,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -827,7 +880,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -892,12 +945,12 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | | Microsoft® SQL Server 2016 |
 |  | | Microsoft® 윈도우 서버 2016 |
 
-### 릴리스 6.5.10.0(20222년 9월 1일)
+### 릴리스 6.5.10.0(2022년 9월 1일)
 
 | 추가된 지원 | 제거된 지원 | 지원 중단됨 |
 | -------------- | --------------- | ------------------- |
 | 응용 프로그램 서버 JBoss™ EAP 7.4용 Oracle Java® SE 11(64비트) SDK | | [Adobe Acrobat 2017 - Adobe Acrobat 2017에 대한 핵심 지원은 2022년 6월 6일에 종료됩니다.](https://helpx.adobe.com/kr/support/programs/eol-matrix.html) |
-|  | | Red Hat® Enterprise Linux® 7(커널 3.x)(64비트) |
+|  | Red Hat® Enterprise Linux® 7(커널 3.x)(64비트) | |
 |  | | Microsoft® Windows Server 2016(64비트) |
 |  | | Microsoft® Office 2016 |
 |  | | OpenOffice 4.1.2 |
