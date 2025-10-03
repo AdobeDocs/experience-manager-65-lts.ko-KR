@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
-workflow-type: ht
-source-wordcount: '7103'
-ht-degree: 100%
+source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
+workflow-type: tm+mt
+source-wordcount: '7319'
+ht-degree: 97%
 
 ---
 
@@ -448,6 +448,43 @@ Eclipse Jetty 11.0.x는 Quickstart의 서블릿 엔진으로 사용됩니다.
 ### 업그레이드 {#upgrade}
 
 * 업그레이드 절차에 대한 자세한 내용은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하십시오.
+
+#### AEM 6.5 LTS 서비스 팩 업그레이드에 대한 우수 사례
+
+<!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
+
+**환경**
+적용 대상: AEM 6.5 LTS(온-프레미스) 고객이 서비스 팩 1(SP1)을 설치하는 경우 SP1은 Quickstart JAR로 제공됩니다.
+
+**이 문제가 되는 이유**
+AEM 6.5용 SP1 LTS는 패키지 관리자를 통해 설치하기 위해 ZIP이 아닌 Quickstart JAR로 제공됩니다. 온프레미스 고객은 Quickstart JAR를 교체하고 압축을 푼 다음 다시 시작하여 업그레이드합니다. 이 방법은 Adobe의 내부 업그레이드 절차와 일치합니다.
+
+**권장 업그레이드 흐름(작성자 또는 게시)**
+
+1. AEM 6.5 LTS 인스턴스가 정상이고 액세스할 수 있는지 확인합니다.
+1. 소프트웨어 배포에서 SP1 Quickstart JAR(예: `cq-quickstart-6.6.x.jar`)를 다운로드합니다.
+1. 실행 중인 인스턴스를 중지합니다.
+1. `crx-quickstart/` 외부 AEM 설치 디렉터리에서 이전 Quickstart JAR를 SP1 JAR로 바꿉니다.
+1. JAR 압축을 풉니다.
+
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
+   필요에 따라 힙 플래그를 조정합니다.
+
+1. 역할 및 포트와 일치하도록 압축 해제된 JAR의 이름을 변경합니다(예: `cq-author-4502.jar` 또는 `cq-publish-4503.jar`).
+1. AEM을 시작하고 UI(도움말 > 정보) 및 로그에서 업그레이드를 확인합니다.
+
+**위생 관리**
+
+* 프로덕션 전에 하위/테스트 환경에서 업그레이드를 실행합니다.
+* 시작하기 전에 복원 가능한 전체 백업(저장소와 모든 외부 데이터 저장소)을 수행합니다.
+* Adobe의 즉석 업그레이드 지침 및 기술 요구 사항(LTS에 Java 17/21 권장)을 검토하십시오.
+
+>[!NOTE]
+>
+>위에 표시된 파일 이름(예: `cq-quickstart-6.6.x.jar`)은 이 LTS 릴리스에서 관찰된 SP1 빠른 시작 아티팩트 이름을 반영합니다. 항상 소프트웨어 배포에서 다운로드한 정확한 파일 이름을 사용하십시오.
 
 ## 설치 및 업데이트 {#install-update}
 
