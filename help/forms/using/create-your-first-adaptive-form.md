@@ -114,7 +114,7 @@ AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experie
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-[Forms 포털](/help/forms/using/embed-adaptive-form-aem-sites.md)을 사용하여 적응형 양식을 독립 실행형 양식(단일 페이지 애플리케이션)으로 게시하거나, AEM [!DNL Site]Sites 페이지[에 포함하거나, AEM ](../../forms/using/introduction-publishing-forms.md)에 나열할 수 있습니다.
+[Forms 포털](/help/forms/using/embed-adaptive-form-aem-sites.md)을 사용하여 적응형 양식을 독립 실행형 양식(단일 페이지 애플리케이션)으로 게시하거나, AEM [!DNL Site]Sites 페이지[에 포함하거나, AEM &#x200B;](../../forms/using/introduction-publishing-forms.md)에 나열할 수 있습니다.
 
 목표:
 

@@ -239,7 +239,7 @@ Adobe Experience Manager(AEM)를 구현하기 위해 프로젝트를 관리하�
 
   개발 전에 배포, 릴리스, 테스트 및 문제 보고에 필요한 모든 지원 프로세스를 설정해야 합니다.
 
-  [Adobe 지원 포털](https://experienceleague.adobe.com/ko?support-solution=General&amp;support-tab=home#support)도 참조하세요.
+  [Adobe 지원 포털](https://experienceleague.adobe.com/ko?support-solution=General&support-tab=home#support)도 참조하세요.
 
 ### 운영 계획 및 운영 {#operations-planning-and-operations}
 

@@ -108,7 +108,7 @@ customBlobStore=B"false"
 
 >[!NOTE]
 >
->사용자 지정 데이터 저장소를 사용하려면 각 노드 저장소 구성 파일(`customBlobStore`세그먼트 노드 저장소`true` 또는 [문서 노드 저장소](/help/sites-deploying/data-store-config.md#segment-node-store))에서 [이(가) ](/help/sites-deploying/data-store-config.md#document-node-store)(으)로 설정되어 있는지 확인해야 합니다.
+>사용자 지정 데이터 저장소를 사용하려면 각 노드 저장소 구성 파일(`customBlobStore`세그먼트 노드 저장소`true` 또는 [문서 노드 저장소](/help/sites-deploying/data-store-config.md#segment-node-store))에서 [이(가) &#x200B;](/help/sites-deploying/data-store-config.md#document-node-store)(으)로 설정되어 있는지 확인해야 합니다.
 
 ### 파일 데이터 저장소 {#file-data-store}
 

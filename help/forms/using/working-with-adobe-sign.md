@@ -85,7 +85,7 @@ AEM [!DNL Adobe Sign]과(와) [!DNL Forms] 통합은 다음을 지원합니다.
 
    1. 적응형 양식에 대해 **[!UICONTROL 이름]** 및 **[!UICONTROL 제목]**&#x200B;을 지정하십시오.
 
-   1. AEM [을(를) 사용하여 ](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)을(를) 구성하는 동안 만든 [!DNL Adobe Sign]구성 컨테이너[!DNL Forms]을(를) 선택하십시오.
+   1. AEM [을(를) 사용하여 &#x200B;](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)을(를) 구성하는 동안 만든 [!DNL Adobe Sign]구성 컨테이너[!DNL Forms]을(를) 선택하십시오.
 
       >[!NOTE]
       >
@@ -105,7 +105,7 @@ AEM [!DNL Adobe Sign]과(와) [!DNL Forms] 통합은 다음을 지원합니다.
 
 1. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 양식]** > **[!UICONTROL 양식 및 문서]**&#x200B;로 이동합니다.
 1. 적응형 양식을 선택하고 **[!UICONTROL 속성]**&#x200B;을 선택합니다.
-1. **[!UICONTROL 기본]** 탭에서 AEM [을(를) 사용하여 ](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)을(를) 구성하는 동안 만든 [!DNL Adobe Sign]구성 컨테이너[!DNL Forms]을(를) 선택합니다.
+1. **[!UICONTROL 기본]** 탭에서 AEM [을(를) 사용하여 &#x200B;](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)을(를) 구성하는 동안 만든 [!DNL Adobe Sign]구성 컨테이너[!DNL Forms]을(를) 선택합니다.
 1. **[!UICONTROL 양식 모델]** 탭에서 다음 옵션 중 하나를 선택합니다.
 
    * **[!UICONTROL 양식 서식 파일을 기록 문서 서식 파일로 연결]** 옵션을 선택하고 기록 문서 서식 파일을 선택하십시오. 양식 템플릿 기반 적응형 양식을 사용하는 경우 서명을 위해 전송된 문서에 관련 양식 템플릿을 기반으로 하는 필드만 표시됩니다. 적응형 양식의 모든 필드가 표시되지는 않습니다.

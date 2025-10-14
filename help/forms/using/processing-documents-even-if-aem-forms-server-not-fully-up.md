@@ -29,4 +29,4 @@ AEM Forms 서버가 완전히 작동하고 모든 애플리케이션이 실행 �
 
 ## 솔루션 {#solution}
 
-이 문제를 해결하려면 서버를 시작하는 동안 `Dcom.adobe.livecycle.dsc.deferServiceStart=true`일괄 처리 파일[에 인수 ](/help/sites-deploying/command-line-start-and-stop.md#windows-platform-start-bat-script-example)을(를) 추가하십시오.
+이 문제를 해결하려면 서버를 시작하는 동안 `Dcom.adobe.livecycle.dsc.deferServiceStart=true`일괄 처리 파일[에 인수 &#x200B;](/help/sites-deploying/command-line-start-and-stop.md#windows-platform-start-bat-script-example)을(를) 추가하십시오.

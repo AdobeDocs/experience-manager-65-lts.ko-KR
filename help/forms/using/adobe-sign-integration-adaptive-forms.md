@@ -56,11 +56,11 @@ AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experie
 
    >[!NOTE]
    >
-   >1~4단계를 실행하여 구성 컨테이너를 만들고 컨테이너에 [!DNL Adobe Sign] 구성을 만들거나 `global`도구&#x200B;**&#x200B;** hammer![ > ](assets/hammer.png)클라우드 서비스&#x200B;**[!UICONTROL >]** Adobe Sign **[!UICONTROL 에서 기존]** 폴더를 사용할 수 있습니다. 새 구성 컨테이너에서 구성을 만드는 경우 적응형 양식을 만들 때 **[!UICONTROL 구성 컨테이너]** 필드에 컨테이너 이름을 지정해야 합니다.
+   >1~4단계를 실행하여 구성 컨테이너를 만들고 컨테이너에 [!DNL Adobe Sign] 구성을 만들거나 `global`도구&#x200B;**&#x200B;** hammer![&#x200B; > &#x200B;](assets/hammer.png)클라우드 서비스&#x200B;**[!UICONTROL >]** Adobe Sign **[!UICONTROL 에서 기존]** 폴더를 사용할 수 있습니다. 새 구성 컨테이너에서 구성을 만드는 경우 적응형 양식을 만들 때 **[!UICONTROL 구성 컨테이너]** 필드에 컨테이너 이름을 지정해야 합니다.
 
    >[!NOTE]
    >
-   >클라우드 서비스 구성 페이지의 URL이 **HTTPS**(으)로 시작하는지 확인하십시오. 그렇지 않으면 AEM [ 서버에 대해 ](/help/sites-administering/ssl-by-default.md)SSL을 사용하도록 설정[!DNL Forms]합니다.
+   >클라우드 서비스 구성 페이지의 URL이 **HTTPS**(으)로 시작하는지 확인하십시오. 그렇지 않으면 AEM [&#x200B; 서버에 대해 &#x200B;](/help/sites-administering/ssl-by-default.md)SSL을 사용하도록 설정[!DNL Forms]합니다.
 
 
 1. 구성 페이지에서 **[!UICONTROL 만들기]**&#x200B;를 탭하여 AEM [!DNL Adobe Sign]에서 [!DNL Forms] 구성을 만듭니다.
@@ -210,7 +210,7 @@ Adobe Acrobat Sign `scopes`(아래 나열)과 이전 섹션의 마지막 단계�
 
 #### 수신한 자격 증명을 사용하여 AEM Forms과 Adobe Acrobat Sign Solutions for Government를 연결합니다.
 
-1. 브라우저에서 `re-direct URL`을(를) 엽니다. `re-direct URL`AEM 인스턴스에서 리디렉션 URL 만들기[ 섹션의 마지막 단계에서 ](#create-redirect-url)을(를) 만들고 기록했습니다.
+1. 브라우저에서 `re-direct URL`을(를) 엽니다. `re-direct URL`AEM 인스턴스에서 리디렉션 URL 만들기[&#x200B; 섹션의 마지막 단계에서 &#x200B;](#create-redirect-url)을(를) 만들고 기록했습니다.
 
 1. **[!UICONTROL Adobe Sign 구성 만들기]** 페이지의 **[!UICONTROL 일반]** 탭에서 구성에 대한 **[!UICONTROL 이름]**&#x200B;을 지정하고 **[!UICONTROL 다음]**&#x200B;을 선택합니다. 필요에 따라 **[!UICONTROL 제목]**&#x200B;을 지정하고 구성에 대한 **[!UICONTROL 썸네일]**&#x200B;을 찾아 선택할 수 있습니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
