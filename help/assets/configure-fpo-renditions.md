@@ -7,7 +7,7 @@ feature: Renditions
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7f66bc81-c4f7-4267-93b8-b78097ebbb16
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
@@ -18,10 +18,10 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/configure-fpo-renditions.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/configure-fpo-renditions.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
-Experience Manager에서 Adobe InDesign 문서로 대형 에셋을 배치할 때 크리에이티브 전문가는 [에셋을 배치](https://helpx.adobe.com/kr/indesign/using/placing-graphics.html)한 후 상당한 시간을 기다려야 합니다. 한편, 사용자는 InDesign 사용이 차단된다. 이는 크리에이티브 흐름을 방해하고 사용자 경험에 부정적인 영향을 미칩니다. Adobe을 사용하면 시작할 InDesign 문서에 작은 크기의 렌디션을 임시로 배치할 수 있습니다. 인쇄 및 게시 워크플로와 같이 최종 출력이 필요한 경우 원본 전체 해상도 에셋이 배경의 임시 렌디션을 대체합니다. 백그라운드에서 이 비동기식 업데이트는 디자인 프로세스를 가속화하여 생산성을 높이고 크리에이티브 프로세스를 방해하지 않습니다.
+Experience Manager에서 Adobe InDesign 문서로 대형 에셋을 배치할 때 크리에이티브 전문가는 [에셋을 배치](https://helpx.adobe.com/indesign/using/placing-graphics.html)한 후 상당한 시간을 기다려야 합니다. 한편, 사용자는 InDesign 사용이 차단된다. 이는 크리에이티브 흐름을 방해하고 사용자 경험에 부정적인 영향을 미칩니다. Adobe을 사용하면 시작할 InDesign 문서에 작은 크기의 렌디션을 임시로 배치할 수 있습니다. 인쇄 및 게시 워크플로와 같이 최종 출력이 필요한 경우 원본 전체 해상도 에셋이 배경의 임시 렌디션을 대체합니다. 백그라운드에서 이 비동기식 업데이트는 디자인 프로세스를 가속화하여 생산성을 높이고 크리에이티브 프로세스를 방해하지 않습니다.
 
 Adobe Experience Manager(AEM)는 배치에만 사용되는 변환(FPO)을 제공합니다. 이러한 FPO 렌디션은 파일 크기는 작지만 종횡비가 동일합니다. 에셋에 FPO 렌디션을 사용할 수 없는 경우 Adobe InDesign은 원본 에셋을 대신 사용합니다. 이 대체 메커니즘을 사용하면 크리에이티브 워크플로우가 중단 없이 진행될 수 있습니다.
 
@@ -92,7 +92,7 @@ Experience Manager에서 DAM 자산 업데이트 워크플로우는 새 자산�
 
 1. 변경 내용을 활성화하려면 **[!UICONTROL 동기화]**&#x200B;를 클릭하세요.
 
-ImageMagick 명령줄 기능에 대한 자세한 내용은 [https://imagemagick.org](https://imagemagick.org)을(를) 참조하십시오.
+ImageMagick 명령줄 기능에 대한 자세한 내용은 `https://imagemagick.org` 웹 사이트를 참조하십시오.
 
 ## Experience Manager 워크플로우를 사용하여 기존 에셋의 렌디션 생성 {#generate-renditions-of-existing-assets-using-aem-workflow}
 
@@ -121,7 +121,7 @@ ImageMagick 처리 기능을 사용하여 기존 에셋의 FPO 렌디션을 생�
 
 1. [구성에서 1단계부터 3단계까지 수행하여 Experience Manager 워크플로](#generate-renditions-of-existing-assets-using-aem-workflow) 섹션을 사용하여 기존 에셋의 렌디션을 생성합니다.
 
-1. ImageMagick[&#128279;](#generate-renditions-of-new-assets-using-imagemagick) 섹션을 사용하여 새 자산의 렌디션을 생성하려면 구성에서 4단계~8단계를 수행하십시오.
+1. ImageMagick[ 섹션을 사용하여 새 자산의 렌디션을 생성하려면 ](#generate-renditions-of-new-assets-using-imagemagick)구성에서 4단계~8단계를 수행하십시오.
 
 
 ## FPO 표현물 보기 {#view-fpo-renditions}

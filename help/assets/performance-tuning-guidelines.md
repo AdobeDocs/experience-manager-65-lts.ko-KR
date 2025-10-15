@@ -7,16 +7,16 @@ role: Architect, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43079a69-cd12-4853-9fff-96f9d177987a
-source-git-commit: e432b4e74f453ed222b2a295f1a6ef9e7b409223
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2709'
 ht-degree: 0%
 
 ---
 
 <!-- TBD: Get reviewed by engineering. -->
 
-# [!DNL Adobe Experience Manager Assets] 성능 조정 가이드 {#assets-performance-tuning-guide}
+# [!DNL Adobe Experience Manager Assets] 성능 조정 안내서 {#assets-performance-tuning-guide}
 
 [!DNL Experience Manager Assets] 설치 프로그램에 여러 하드웨어, 소프트웨어 및 네트워크 구성 요소가 포함되어 있습니다. 배포 시나리오에 따라 성능 병목 현상을 제거하기 위해 하드웨어, 소프트웨어 및 네트워크 구성 요소에 대한 특정 구성 변경이 필요할 수 있습니다.
 
@@ -211,7 +211,7 @@ Adobe ImageMagick를 사용하여 표현물을 생성하도록 [!UICONTROL DAM �
 
 >[!NOTE]
 >
->ImageMagick `policy.xml` 및 `configure.xml` 파일은 `/usr/lib64/ImageMagick-&#42;/config/`이(가) 아닌 `/etc/ImageMagick/`에서 사용할 수 있습니다. 구성 파일의 위치는 [ImageMagick 설명서](https://www.imagemagick.org/script/resources.php)를 참조하십시오.
+>ImageMagick `policy.xml` 및 `configure.xml` 파일을 `/usr/lib64/ImageMagick-&#42;/config/` 대신 `/etc/ImageMagick/`에서 사용할 수 있습니다. 구성 파일의 위치는 ImageMagick 설명서(`https://www.imagemagick.org/script/resources.php` 웹 사이트)를 참조하십시오.
 
 Adobe Managed Services(AMS)에서 [!DNL Experience Manager]을(를) 사용하는 경우 많은 대용량 PSD 또는 PSB 파일을 처리할 계획이면 Adobe 고객 지원 센터에 문의하십시오. Adobe 고객 지원 담당자와 협력하여 AMS 배포에 대한 이러한 모범 사례를 구현하고 Adobe 소유 형식에 가장 적합한 도구와 모델을 선택하십시오. [!DNL Experience Manager]은(는) 30000 x 23000 픽셀보다 큰 고해상도 PSB 파일을 처리하지 못할 수 있습니다.
 
