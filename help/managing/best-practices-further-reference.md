@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ### AEM의 기능 {#features-within-aem}
 
-AEM을 구현할 때(특히 처음으로) [AEM의 기능 및 워크플로](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)를 검토하여 원하거나 필요한 영역을 확인하십시오.
+AEM을 구현할 때(특히 처음으로) [AEM의 기능 및 워크플로](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)를 검토하여 원하거나 필요한 영역을 확인하십시오.
 
 사용 중인 AEM의 기능과 디자인에 미치는 영향을 고려하십시오. 예를 들면 다음과 같습니다.
 
