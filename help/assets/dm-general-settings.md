@@ -48,7 +48,7 @@ Dynamic Media 게시 설정 페이지는 Adobe Dynamic Media 서버에서 웹 �
    * [Illustrator](#illustrator-tab) 탭
 
    ![Dynamic Media 일반 설정 페이지](/help/assets/assets-dm/dm-general-settings.png)
-   *이미지 편집&#x200B;**[!UICONTROL 탭이 선택된]**Dynamic Media 일반 설정 페이지.*<br><br>
+   *이미지 편집&#x200B;**[!UICONTROL 탭이 선택된]**&#x200B;Dynamic Media 일반 설정 페이지.*<br><br>
 
 1. 완료되면 페이지의 오른쪽 상단 근처에서 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
@@ -82,7 +82,7 @@ Dynamic Media 게시 설정 페이지는 Adobe Dynamic Media 서버에서 웹 �
 
   기존 수동 자르기 정의의 유지를 제어합니다.
 
-  Dynamic Media 뷰어 참조 가이드의 `preserveCrop`UploadPostJob[ 및 ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html)ReprocessAssetsJob[에서도 ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html)을(를) 참조하십시오.
+  Dynamic Media 뷰어 참조 가이드의 `preserveCrop`UploadPostJob[&#x200B; 및 &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html)ReprocessAssetsJob[에서도 &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html)을(를) 참조하십시오.
 
 ## 기본 업로드 옵션 {#default-upload-options}
 

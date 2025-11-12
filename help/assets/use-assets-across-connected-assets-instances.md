@@ -173,7 +173,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
    * 로컬 [!DNL Sites]의 [!UICONTROL Dynamic Media 동기화 모드]에서 **[!UICONTROL 기본적으로 비활성화됨]**&#x200B;을(를) 선택합니다. [!DNL Sites] 배포에는 [!DNL Dynamic Media] 계정에 대한 읽기 전용 액세스 권한이 있어야 합니다.
    * 로컬 [!DNL Sites]의 **[!UICONTROL Assets 게시]** 옵션에서 **[!UICONTROL 선택적 게시]**&#x200B;를 선택합니다. **[!UICONTROL 모든 콘텐츠 동기화]**&#x200B;를 선택하지 마십시오.
 
-1. 이미지 핵심 구성 요소에서 [[!DNL Dynamic Media] 지원을 사용하도록 설정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). 이 기능을 사용하면 로컬 [ 배포의 웹 페이지에서 작성자가 ](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)개의 이미지를 사용할 때 기본 [!DNL Dynamic Media]이미지 구성 요소[!DNL Dynamic Media]에 [!DNL Sites]개의 이미지가 표시됩니다.
+1. 이미지 핵심 구성 요소에서 [[!DNL Dynamic Media] 지원을 사용하도록 설정](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). 이 기능을 사용하면 로컬 [&#x200B; 배포의 웹 페이지에서 작성자가 &#x200B;](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)개의 이미지를 사용할 때 기본 [!DNL Dynamic Media]이미지 구성 요소[!DNL Dynamic Media]에 [!DNL Sites]개의 이미지가 표시됩니다.
 
 ## 원격 자산 사용 {#use-remote-assets}
 
@@ -228,7 +228,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 [!DNL Assets] 배포에서 참조를 보고 관리하려면 다음 단계를 따르십시오.
 
 1. [!DNL Assets] 콘솔에서 자산을 선택하고 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
-1. **[!UICONTROL 참조]** 탭을 클릭합니다. **[!UICONTROL 배포에서 자산을 사용하려면]**&#x200B;로컬 참조[!DNL Assets]를 참조하십시오. 연결된 Assets 기능을 사용하여 자산을 가져온 [!UICONTROL  배포에서 자산을 사용하려면 **]원격 참조[!DNL Sites]를 참조하십시오.
+1. **[!UICONTROL 참조]** 탭을 클릭합니다. **[!UICONTROL 배포에서 자산을 사용하려면]**&#x200B;로컬 참조[!DNL Assets]를 참조하십시오. 연결된 Assets 기능을 사용하여 자산을 가져온 [!UICONTROL &#x200B; 배포에서 자산을 사용하려면 **]원격 참조[!DNL Sites]를 참조하십시오.
 
    ![자산 속성 페이지의 원격 참조](assets/connected-assets-remote-reference.png)
 
@@ -240,9 +240,9 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 
 ### 원격 DAM의 자산 업데이트 관리 {#manage-updates-in-remote-dam}
 
-원격 DAM과 [ 배포 간에 ](#configure-a-connection-between-sites-and-assets-deployments)연결을 구성[!DNL Sites]한 후 원격 DAM의 자산을 [!DNL Sites] 배포에서 사용할 수 있게 됩니다. 그런 다음 원격 DAM 에셋 또는 폴더에서의 작업을 업데이트하고, 삭제하고, 이름을 바꾸고, 이동할 수 있습니다. 업데이트는 [!DNL Sites] 배포에서 자동으로 사용할 수 있으며 약간의 지연이 있습니다. 또한 로컬 [!DNL Experience Manager Sites] 페이지에서 원격 DAM의 자산을 사용하는 경우 원격 DAM의 자산에 대한 업데이트가 [!DNL Sites] 페이지에 표시됩니다.
+원격 DAM과 [&#x200B; 배포 간에 &#x200B;](#configure-a-connection-between-sites-and-assets-deployments)연결을 구성[!DNL Sites]한 후 원격 DAM의 자산을 [!DNL Sites] 배포에서 사용할 수 있게 됩니다. 그런 다음 원격 DAM 에셋 또는 폴더에서의 작업을 업데이트하고, 삭제하고, 이름을 바꾸고, 이동할 수 있습니다. 업데이트는 [!DNL Sites] 배포에서 자동으로 사용할 수 있으며 약간의 지연이 있습니다. 또한 로컬 [!DNL Experience Manager Sites] 페이지에서 원격 DAM의 자산을 사용하는 경우 원격 DAM의 자산에 대한 업데이트가 [!DNL Sites] 페이지에 표시됩니다.
 
-자산을 한 위치에서 다른 위치로 이동하는 동안 자산이 [ 페이지에 표시되도록 ](/help/assets/manage-assets.md)참조를 조정[!DNL Sites]하십시오. 로컬 [!DNL Sites] 배포에서 액세스할 수 없는 위치로 자산을 이동하면 해당 자산이 Sites 배포에 표시되지 않습니다.
+자산을 한 위치에서 다른 위치로 이동하는 동안 자산이 [&#x200B; 페이지에 표시되도록 &#x200B;](/help/assets/manage-assets.md)참조를 조정[!DNL Sites]하십시오. 로컬 [!DNL Sites] 배포에서 액세스할 수 없는 위치로 자산을 이동하면 해당 자산이 Sites 배포에 표시되지 않습니다.
 
 원격 DAM에서 자산에 대한 메타데이터 속성을 업데이트할 수도 있으며 변경 내용은 로컬 [!DNL Sites] 배포에서 사용할 수 있습니다.
 
@@ -314,7 +314,7 @@ Experience Manager을 사용하면 원격 DAM 배포를 소스로 여러 Experie
 
 ## 제한 사항 및 우수 사례 {#tip-and-limitations}
 
-* 에셋 사용에 대한 통찰력을 얻으려면 [ 인스턴스에서 ](/help/assets/asset-insights.md)Assets Insight[!DNL Sites] 기능을 구성하십시오.
+* 에셋 사용에 대한 통찰력을 얻으려면 [&#x200B; 인스턴스에서 &#x200B;](/help/assets/asset-insights.md)Assets Insight[!DNL Sites] 기능을 구성하십시오.
 
 * 원격 자산을 [이미지 구성 요소 구성 대화 상자](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog)&#x200B;(으)로 끌 수 없습니다. 그러나 **[!UICONTROL 구성]**&#x200B;을 클릭하지 않고 사이트 페이지의 이미지 구성 요소로 원격 자산을 직접 드래그할 수 있습니다.
 

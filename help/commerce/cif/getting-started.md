@@ -48,7 +48,7 @@ AEM은 AEM에 대한 액세스 가능한 GraphQL 종단점이 있는 상거래 �
 
 AEM 컨텐츠, Commerce 추가 기능 및 CIF 핵심 구성 요소는 AEM 서버측과 클라이언트측 연결을 모두 사용합니다. 클라이언트측 CIF 핵심 구성 요소 및 CIF 추가 기능 제작 도구는 기본적으로 `/api/graphql`에 연결됩니다. 필요한 경우 CIF Cloud Service 구성을 통해 조정할 수 있습니다(아래 참조).
 
-CIF 추가 기능은 `/api/graphql`로컬 개발[에 선택적으로 사용할 수 있는 ](develop.md)의 GraphQL 프록시 서블릿을 제공합니다. 프로덕션 배포의 경우 AEM Dispatcher을 통해 또는 다른 네트워크 계층(CDN 등)에서 상거래 GraphQL 엔드포인트에 대한 역방향 프록시를 설정하는 것이 좋습니다.
+CIF 추가 기능은 `/api/graphql`로컬 개발[에 선택적으로 사용할 수 있는 &#x200B;](develop.md)의 GraphQL 프록시 서블릿을 제공합니다. 프로덕션 배포의 경우 AEM Dispatcher을 통해 또는 다른 네트워크 계층(CDN 등)에서 상거래 GraphQL 엔드포인트에 대한 역방향 프록시를 설정하는 것이 좋습니다.
 
 ## 저장소 및 카탈로그 구성 {#catalog}
 
