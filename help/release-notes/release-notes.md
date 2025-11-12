@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
-workflow-type: ht
-source-wordcount: '7319'
-ht-degree: 100%
+source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+workflow-type: tm+mt
+source-wordcount: '7381'
+ht-degree: 99%
 
 ---
 
@@ -608,6 +608,18 @@ AEM 배포에서 SSL 전용 기능을 활성화하면 Dispatcher와 AEM 인스�
 
 **솔루션:**
 이 문제가 발생하면 Adobe 고객 지원 센터에 문의하십시오. 이 문제를 해결하기 위해 핫픽스 [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip)이 제공됩니다. 필요한 핫픽스를 적용하기 전에는 SSL 전용 기능을 활성화하지 마십시오.
+
+### AEM 6.5 LTS SP1의 보안 UI에 대한 빈 권한 페이지
+
+>[!NOTE]
+>
+> 이 문제는 AEM 6.5 LTS SP1 릴리스에만 적용됩니다.
+
+AEM 6.5 LTS SP1의 도구 -> 보안 아래의 권한 페이지에 액세스하면 사용자 또는 그룹에 대한 권한이 표시되지 않고 빈 페이지가 표시됩니다.
+
+**솔루션:**
+이 문제를 해결하기 위해 핫픽스 [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip)을(를) 사용할 수 있습니다.
+
 
 ## OSGi 번들 및 콘텐츠 패키지 포함됨{#osgi-bundles-and-content-packages-included}
 
