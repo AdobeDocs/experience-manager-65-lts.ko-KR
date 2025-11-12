@@ -1,5 +1,5 @@
 ---
-title: TarMK 콜드 대기로 AEM을 실행하는 방법
+title: TarMK 콜드 스탠바이로 AEM을 실행하는 방법
 description: TarMK 콜드 대기 설정을 생성, 구성 및 유지 관리하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,20 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: c576955f2e93de5e5fdc2d0e0f8bd8ba8810df63
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 0%
+source-wordcount: '2680'
+ht-degree: 1%
 
 ---
 
-# TarMK 콜드 대기로 AEM을 실행하는 방법{#how-to-run-aem-with-tarmk-cold-standby}
+# TarMK 콜드 스탠바이로 AEM을 실행하는 방법{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## 소개 {#introduction}
 
 Tar 마이크로 커널의 콜드 대기 용량을 사용하면 하나 이상의 대기 Adobe Experience Manager(AEM) 인스턴스를 기본 인스턴스에 연결할 수 있습니다. 동기화 프로세스는 기본 인스턴스에서 대기 인스턴스로만 수행됨을 의미합니다.
 
-대기 인스턴스의 목적은 마스터 저장소의 라이브 데이터 사본을 보장하고 어떤 이유로든 마스터를 사용할 수 없는 경우 데이터 손실 없이 빠른 전환을 보장하는 것입니다.
+대기 인스턴스의 목적은 주 리포지토리의 라이브 데이터 사본을 보장하고, 어떤 이유로든 기본 인스턴스를 사용할 수 없는 경우 데이터 손실 없이 빠른 전환을 보장하는 것입니다.
 
 컨텐츠는 파일 또는 저장소 손상에 대한 무결성 검사 없이 기본 인스턴스와 대기 인스턴스 간에 선형적으로 동기화됩니다. 이러한 설계로 인해 대기 인스턴스는 기본 인스턴스의 정확한 복사본이며 기본 인스턴스의 불일치를 완화할 수 없습니다.
 
@@ -43,7 +43,7 @@ Tar 마이크로 커널의 콜드 대기 용량을 사용하면 하나 이상의
 
 ## 작동 방식 {#how-it-works}
 
-기본 AEM 인스턴스에서 TCP 포트가 열려 수신 메시지를 수신 대기합니다. 현재 슬레이브가 마스터에게 보내는 메시지에는 두 가지 유형이 있습니다.
+기본 AEM 인스턴스에서 TCP 포트가 열려 수신 메시지를 수신 대기합니다. 현재 대기 모드에서 기본 서버로 보내는 두 가지 유형의 메시지가 있습니다.
 
 * 현재 헤드의 세그먼트 ID를 요청하는 메시지
 * 지정된 ID로 세그먼트 데이터를 요청하는 메시지
@@ -72,7 +72,7 @@ Tar 마이크로 커널의 콜드 대기 용량을 사용하면 하나 이상의
 
 #### 보안 {#security}
 
-모든 인스턴스가 동일한 인트라넷 보안 영역에서 실행된다고 가정할 경우 보안 위반 위험이 크게 줄어듭니다. 그러나 슬레이브와 마스터 간에 SSL 연결을 활성화하여 추가 보안 계층을 추가할 수 있습니다. 이렇게 하면 중간자에 의해 데이터가 손상될 가능성이 줄어듭니다.
+모든 인스턴스가 동일한 인트라넷 보안 영역에서 실행된다고 가정할 경우 보안 위반 위험이 크게 줄어듭니다. 그러나 대기 인스턴스와 기본 인스턴스 간에 SSL 연결을 활성화하여 추가 보안 계층을 추가할 수 있습니다. 이렇게 하면 중간자에 의해 데이터가 손상될 가능성이 줄어듭니다.
 
 또한 수신 요청의 IP 주소를 제한하여 연결할 수 있는 대기 인스턴스를 지정할 수 있습니다. 이렇게 하면 인트라넷의 어느 누구도 저장소를 복사할 수 없도록 하는 데 도움이 됩니다.
 
@@ -93,7 +93,7 @@ Tar 마이크로 커널의 콜드 대기 용량을 사용하면 하나 이상의
 
 TarMK 콜드 대기 설정을 생성하려면 먼저 기본 설치 폴더의 전체 설치 폴더를 새 위치로 파일 시스템 복사를 수행하여 대기 인스턴스를 생성합니다. 그런 다음 해당 역할(`primary` 또는 `standby`)을 지정하는 실행 모드로 각 인스턴스를 시작할 수 있습니다.
 
-다음은 하나의 마스터와 하나의 대기 인스턴스로 설정을 만들기 위해 따라야 하는 절차입니다.
+다음은 하나의 기본 인스턴스와 하나의 대기 인스턴스로 설정을 만들기 위해 수행해야 하는 절차입니다.
 
 1. AEM을 설치합니다.
 
@@ -102,7 +102,7 @@ TarMK 콜드 대기 설정을 생성하려면 먼저 기본 설치 폴더의 전
 
    1. `aem-primary/crx-quickstart/install` 아래에 있을 수 있는 이전 OSGi 구성을 확인하고 삭제합니다.
 
-   1. `aem-primary/crx-quickstart/install` 아래에 `install.primary` 폴더 만들기
+   1. `install.primary` 아래에 `aem-primary/crx-quickstart/install` 폴더 만들기
 
    1. `aem-primary/crx-quickstart/install/install.primary` 아래에 기본 설정 노드 저장소 및 데이터 저장소에 필요한 구성을 만듭니다.
    1. 같은 위치에 `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`이라는 파일을 만든 다음 적절하게 구성하십시오. 구성 옵션에 대한 자세한 내용은 [구성](/help/sites-deploying/tarmk-cold-standby.md#configuration)을 참조하십시오.
@@ -155,14 +155,14 @@ TarMK 콜드 대기 설정을 생성하려면 먼저 기본 설치 폴더의 전
 1. 그런 다음 대기 인스턴스를 준비합니다. 기본 인스턴스와 동일한 단계를 수행하여 이 작업을 수행할 수 있습니다.
 
    1. `aem-standby/crx-quickstart/install`에 포함될 수 있는 모든 파일을 삭제합니다.
-   1. `aem-standby/crx-quickstart/install` 아래에 `install.standby` 폴더 만들기
+   1. `install.standby` 아래에 `aem-standby/crx-quickstart/install` 폴더 만들기
 
    1. 라는 두 개의 구성 파일을 만듭니다.
 
       * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
       * `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
 
-   1. `aem-standby/crx-quickstart/install` 아래에 `crx3` 폴더 만들기
+   1. `crx3` 아래에 `aem-standby/crx-quickstart/install` 폴더 만들기
 
    1. 데이터 저장소 구성을 만들어 `aem-standby/crx-quickstart/install/crx3` 아래에 배치합니다. 이 예제에서 만들어야 하는 파일은 다음과 같습니다.
 
@@ -218,7 +218,7 @@ TarMK 콜드 대기 설정을 생성하려면 먼저 기본 설치 폴더의 전
 >
 >언제든지 Sling 설정 웹 콘솔에서 **기본** 또는 **대기** 실행 모드가 있는지 확인하여 인스턴스의 역할을 확인할 수 있습니다.
 >
->*https://localhost:4502/system/console/status-slingsettings*(으)로 이동하여 **&quot;실행 모드&quot;** 줄을 확인하면 이 작업을 수행할 수 있습니다.
+>이 작업은 *https://localhost:4502/system/console/status-slingsettings*(으)로 이동하여 **&quot;실행 모드&quot;** 줄을 확인하여 수행할 수 있습니다.
 
 ## 최초 동기화 {#first-time-synchronization}
 
@@ -336,7 +336,7 @@ TarMK 콜드 대기 설정을 생성하려면 먼저 기본 설치 폴더의 전
 
 ## 모니터링 {#monitoring}
 
-이 기능은 JMX 또는 MBean을 사용하여 정보를 노출합니다. [JMX 콘솔](/help/sites-administering/jmx-console.md)을 사용하여 대기 및 마스터의 현재 상태를 검사할 수 있습니다. `type org.apache.jackrabbit.oak:type="Standby"`의 MBean에서 `Status`(이)라는 정보를 찾을 수 있습니다.
+이 기능은 JMX 또는 MBean을 사용하여 정보를 노출합니다. [JMX 콘솔](/help/sites-administering/jmx-console.md)을 사용하여 대기 및 기본 콘솔의 현재 상태를 검사할 수 있습니다. `type org.apache.jackrabbit.oak:type="Standby"`의 MBean에서 `Status`(이)라는 정보를 찾을 수 있습니다.
 
 **대기**
 
@@ -365,7 +365,7 @@ TarMK 콜드 대기 설정을 생성하려면 먼저 기본 설치 폴더의 전
 
 * `Mode:`은(는) 항상 `primary` 값을 표시합니다.
 
-또한 마스터에 연결된 최대 10개의 클라이언트(대기 인스턴스)에 대한 정보를 검색할 수 있습니다. MBean ID는 인스턴스의 UUID입니다. 이러한 MBean에는 호출할 수 있는 메서드가 없지만 몇 가지 유용한 읽기 전용 특성은 다음과 같습니다.
+또한 기본 클라이언트에 연결된 최대 10개의 클라이언트(대기 인스턴스)에 대한 정보를 검색할 수 있습니다. MBean ID는 인스턴스의 UUID입니다. 이러한 MBean에는 호출할 수 있는 메서드가 없지만 몇 가지 유용한 읽기 전용 특성은 다음과 같습니다.
 
 * `Name:` 클라이언트의 ID입니다.
 * `LastSeenTimestamp:` 텍스트 표시 중 마지막 요청의 타임스탬프입니다.
@@ -402,7 +402,7 @@ Adobe에서는 시간이 지남에 따라 과도한 저장소 증가를 방지�
 
 또는 기본 저장소에서 압축을 실행한 후 수동으로 기본 저장소를 대기 저장소에 복사할 수 있습니다. 기본적으로 압축이 실행될 때마다 대기 저장소를 다시 빌드합니다.
 
-### 데이터 저장소 가비지 컬렉션 {#data-store-garbage-collection}
+### 데이터 저장소 가비지 수집 {#data-store-garbage-collection}
 
 그렇지 않으면 삭제된 바이너리가 파일 시스템에 남아 결국 드라이브를 채우게 되므로 파일 데이터 저장소 인스턴스에서 가비지 수집을 수시로 실행하는 것이 중요합니다. 가비지 수집을 실행하려면 아래 절차를 따르십시오.
 

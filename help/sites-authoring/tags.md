@@ -1,16 +1,11 @@
 ---
 title: 태그 사용
 description: 태그는 웹 사이트 내의 콘텐츠를 빠르고 손쉽게 분류할 수 있는 방법입니다.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 73fe62f4-a3a6-4cfa-9b31-517653c05269
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: aba5065cf209caf085efe85ca7e0ca9ff1b5d9a2
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 92%
@@ -35,7 +30,7 @@ ht-degree: 92%
 1. **SEO 사용** - 페이지 속성으로 적용된 태그는 페이지의 메타태그에 자동으로 표시되므로 검색 엔진에서 확인 가능합니다.
 1. **단순한 정교성** - 단순히 단어와 버튼 터치만으로 태그를 만들 수 있습니다. 그런 다음, 제목, 설명 및 무제한 레이블을 추가하여 태그에 더 많은 의미 체계를 제공할 수 있습니다.
 1. **핵심 일관성** - 태그 지정 시스템은 AEM의 핵심 구성 요소로서 모든 AEM 기능에서 콘텐츠를 분류하는 데 사용됩니다. 또한 태그 지정 API는 개발자가 동일한 분류법에 액세스할 수 있는 태그 지정 지원 애플리케이션을 작성하는 데 사용할 수 있습니다.
-1. **구조 및 유연성 조합** - AEM은 페이지 및 경로 중첩으로 인해 구조화된 정보로 작업하는 데 이상적입니다. 전체 텍스트 검색 기능이 내장되어 있으므로 비구조적인 정보로 작업할 때에도 동일한 성능을 발휘합니다. 태그 지정은 구조 및 유연성의 장점을 결합합니다.
+1. **구조 및 유연성 조합** - AEM은 페이지 및 경로 중첩으로 인해 구조화된 정보로 작업하는 데 이상적입니다. 전체 텍스트 검색 기능을 기본 제공하므로 비구조적인 정보로 작업할 때에도 동일한 성능을 발휘합니다. 태그 지정은 구조 및 유연성의 장점을 결합합니다.
 
 사이트의 콘텐츠 구조 및 자산의 메타데이터 스키마를 디자인할 때는 태그 지정이 제공하는 액세스 가능한 간단한 접근 방법을 고려하십시오.
 

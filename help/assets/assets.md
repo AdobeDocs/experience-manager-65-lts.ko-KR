@@ -6,9 +6,9 @@ feature: Asset Management
 role: Leader, Architect, User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 2f2eb576-4924-4314-b348-c4b290a57fe3
-source-git-commit: aafd340d9ef03f9bf12ed23aad5eb03dc055af38
+source-git-commit: 6944befc6ca7367e229b3eb7b41fef9cc177a1df
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '903'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/overview) |
-| AEM 6.5 | 이 문서 |
+| AEM 6.5 LTS | 이 문서 |
 
 AEM [!DNL Assets]은(는) [!DNL Experience Manager] 플랫폼의 일부이며 기업이 디지털 자산을 관리하고 배포할 수 있도록 해 주는 DAM(디지털 자산 관리) 도구입니다. 조직의 사용자는 웹, 인쇄 및 디지털 배포에 사용할 이미지, 비디오, 문서, 오디오 클립, 3D 파일 및 리치 미디어와 같은 다양한 유형의 디지털 자산을 관리, 저장 및 액세스할 수 있습니다.
 
@@ -26,7 +26,7 @@ AEM [!DNL Assets]은(는) [!DNL Experience Manager] 플랫폼의 일부이며 �
 
 [!DNL Assets]은(는) 조직의 주요 디지털 자산을 전사적으로 공유하고 배포합니다. 조직의 사용자는 웹 인터페이스(또는 CIFS 또는 WebDAV 폴더)를 통해 이미지, 그래픽, 오디오, 비디오 및 문서와 같은 디지털 자산을 저장, 관리 및 액세스할 수 있습니다.
 
-[!DNL Experience Manager]의 [!DNL Assets] 기능을 사용하면 다음 작업을 수행할 수 있습니다.
+[!DNL Assets]의 [!DNL Experience Manager] 기능을 사용하면 다음 작업을 수행할 수 있습니다.
 
 * 이미지, 문서, 오디오 파일 및 비디오 파일을 다양한 파일 형식으로 추가 및 공유할 수 있습니다.
 * 태그, Lightbox 또는 별(즐겨찾기)로 그룹화하여 자산을 관리합니다. 자산에 주석을 추가합니다.

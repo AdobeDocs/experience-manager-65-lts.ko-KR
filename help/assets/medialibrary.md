@@ -1,15 +1,14 @@
 ---
 title: 기본 디지털 자산 관리에 미디어 라이브러리 사용
 description: 자산 관리를 위한 [!DNL Experience Manager Assets] 및 미디어 라이브러리입니다.
-contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 50a980e5-3b35-4485-9a5b-44d1a42a837c
-source-git-commit: 51f6da4da0bb3f79aa6fa17371b8084b72de7546
+source-git-commit: 92c9dd0043b644e258b75a999ad1d556689907a7
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '541'
 ht-degree: 2%
 
 ---
@@ -18,8 +17,8 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
+| AEM 6.5 LTS | 이 문서 |
 
 [!DNL Adobe Experience Manager] 플랫폼은 자산을 관리하는 다양한 기능을 제공합니다. Media Library를 사용하면 저장소에 적은 수의 에셋을 업로드하고, 웹 페이지에서 해당 에셋을 검색 및 사용할 수 있으며, 에셋에 대한 간단한 에셋 관리 작업을 수행할 수 있습니다.
 
@@ -90,9 +89,3 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 [!DNL Asset] 라이선스 없이 스마트 태그, [!DNL Asset] 링크, [!DNL Adobe Experience Manager] 선택기, 일괄 태그 지정, 자산 워크플로 수정 또는 표준 [!DNL Assets] 사용자 인터페이스를 사용하여 미디어 라이브러리에 액세스할 수 없습니다.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
-
->[!MORELIKETHIS]
->
->* [DAM 기능 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/assets/assets)
->* [[!DNL Experience Manager] 6.5 Managed Services 제품 설명](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager] 6.5 온-프레미스 제품 설명](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-on-premise.html)

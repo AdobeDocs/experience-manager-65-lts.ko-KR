@@ -1,25 +1,25 @@
 ---
 title: ' [!DNL Adobe Stock] 자산 관리'
-description: ' [!DNL Adobe Experience Manager] 내에서  [!DNL Adobe Stock] 자산을 검색, 가져오기, 라이선스 및 관리합니다. 라이센스가 부여된 자산을 다른 디지털 자산으로 사용합니다.'
+description: ' [!DNL Adobe Stock]  내에서  [!DNL Adobe Experience Manager]자산을 검색, 가져오기, 라이선스 및 관리합니다. 라이센스가 부여된 자산을 다른 디지털 자산으로 사용합니다.'
 contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 33f539d2-ae00-4f43-a27a-55c1b55a6c0c
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: b40c803de59f85fb34536849370ff3e77bba473a
 workflow-type: tm+mt
-source-wordcount: '2191'
-ht-degree: 3%
+source-wordcount: '2158'
+ht-degree: 4%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets]에서 [!DNL Adobe Stock]개 자산 사용 {#use-adobe-stock-assets-in-aem-assets}
+# [!DNL Adobe Stock]에서 [!DNL Adobe Experience Manager Assets]개 자산 사용 {#use-adobe-stock-assets-in-aem-assets}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=ko) |
-| AEM 6.5 | 이 문서 |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
+| AEM 6.5 LTS | 이 문서 |
 
 <!-- old content
 
@@ -41,13 +41,13 @@ Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL 
 
 ## [!DNL Experience Manager]과(와) [!DNL Adobe Stock]을(를) 통합하기 위한 필수 구성 요소 {#integrate-aem-and-adobe-stock}
 
-[!DNL Experience Manager Assets]은(는) 사용자에게 [!DNL Experience Manager]에서 직접 [!DNL Adobe Stock] 자산을 검색, 미리 보기, 저장 및 라이선스를 제공할 수 있는 기능을 제공합니다.
+[!DNL Experience Manager Assets]은(는) 사용자에게 [!DNL Adobe Stock]에서 직접 [!DNL Experience Manager] 자산을 검색, 미리 보기, 저장 및 라이선스를 제공할 수 있는 기능을 제공합니다.
 
 이 통합을 활성화하려면 다음 요구 사항을 충족해야 합니다.
 
 * 엔터프라이즈 [!DNL Adobe Stock] 계획입니다.
 * 기본 Stock 제품 프로필에 대한 [!DNL Admin Console]의 권한이 있는 사용자입니다.
-* [!DNL Adobe Developer Console]에서 통합을 만들기 위해 [!DNL Developer Access profile]에 대한 권한이 있는 사용자입니다.
+* [!DNL Developer Access profile]에서 통합을 만들기 위해 [!DNL Adobe Developer Console]에 대한 권한이 있는 사용자입니다.
 
 엔터프라이즈 [!DNL Adobe Stock] 계획,
 
@@ -101,33 +101,33 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 
 개발자로서 다음 단계를 실행하여 [!DNL Adobe Experience Manager]과(와) [!DNL Adobe Stock]을(를) 통합하십시오.
 
-1. [&#x200B; [!DNL Developer Console]에서 프로그램 설정](#set-up-a-program-in-developer-console)
-1. [&#x200B; [!DNL AEM] 작성자 인스턴스에 구성 추가](#add-configuration-in-the-aem-author-instance)
+1. [ [!DNL Developer Console]에서 프로그램 설정](#set-up-a-program-in-developer-console)
+1. [ [!DNL AEM] 작성자 인스턴스에 구성 추가](#add-configuration-in-the-aem-author-instance)
 
 ### [!DNL Developer Console]에서 프로그램 설정 {#set-up-a-program-in-developer-console}
 
 [!DNL Developer Console]에서 프로그램을 설정하려면 다음 단계를 수행하십시오.
 1. [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/14431/user/servicesandapis)&#x200B;(으)로 이동하여 조직에 로그인합니다.
-1. **[!UICONTROL 프로젝트]** 대시보드에서 사용할 수 있는 **[!UICONTROL 새 프로젝트 만들기]**&#x200B;를 선택하십시오.
+1. **[!UICONTROL 프로젝트]** 대시보드에서 사용할 수 있는 **[!UICONTROL 새 프로젝트 만들기]**를 선택하십시오.
    ![aem assets와 adobe stock 통합](/help/assets/assets/create-new-project-in-adobe-dev-console.png)
 1. **[!UICONTROL 프로젝트에 추가]**&#x200B;를 클릭하고 **[!UICONTROL API]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL Adobe Stock]**&#x200B;을(를) 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 자격 증명 이름]**&#x200B;을(를) 지정하고 **[!UICONTROL OAuth 서버 간]**&#x200B;이(가) 선택되었는지 확인하고 **[!UICONTROL 다음]**&#x200B;을(를) 클릭합니다.
 1. **[!UICONTROL AEM Assets]** **[!UICONTROL 제품 프로필]**&#x200B;을 선택하고 **[!UICONTROL 구성된 API 저장]**&#x200B;을 클릭합니다. [!DNL Developer Console]에서 프로젝트를 만들었음을 확인하는 성공 메시지가 표시됩니다. 프로젝트 대시보드가 열리고 맨 위에 프로젝트 이름이 표시됩니다. **[!UICONTROL API]**&#x200B;에 **[!UICONTROL Adobe Stock]**, **[!UICONTROL 제품 프로필]**&#x200B;에 **[!UICONTROL AEM Assets]**, **[!UICONTROL 연결된 자격 증명]**&#x200B;에 **[!UICONTROL OAuth 서버 간]** 자격 증명 카드입니다.
    ![aem assets와 adobe stock 통합](/help/assets/assets/adc-project-name.png)
-1. **[!UICONTROL OAuth 서버 간]** 자격 증명 카드를 선택하면 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;가 표시됩니다. **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL 범위]**, **[!UICONTROL 자격 증명 이름]**, **[!UICONTROL 기술 계정 ID]**, **[!UICONTROL 조직 ID]**&#x200B;부터 [AEM 작성자 인스턴스에 구성을 추가](#add-configuration-in-the-aem-author-instance)까지 프로젝트의 이러한 [!DNL OAuth Server-to-Server] 자격 증명 세부 정보를 사용하십시오.
+1. **[!UICONTROL OAuth 서버 간]** 자격 증명 카드를 선택하면 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;가 표시됩니다. [!DNL OAuth Server-to-Server]클라이언트 ID **[!UICONTROL ,]**&#x200B;클라이언트 암호&#x200B;**[!UICONTROL ,]**&#x200B;범위&#x200B;**[!UICONTROL ,]**&#x200B;자격 증명 이름&#x200B;**[!UICONTROL ,]**&#x200B;기술 계정 ID **[!UICONTROL ,]**&#x200B;조직 ID **[!UICONTROL 부터]** AEM 작성자 인스턴스에 구성을 추가[까지 프로젝트의 이러한 ](#add-configuration-in-the-aem-author-instance) 자격 증명 세부 정보를 사용하십시오.
    ![aem assets 및 adobe stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
 ### [!DNL AEM] 작성자 인스턴스에 구성 추가 {#add-configuration-in-the-aem-author-instance}
 
 다음 단계를 실행하여 [!DNL AEM] 작성자 인스턴스에 구성을 추가합니다.
 
-1. [&#x200B; [!DNL AEM] 작성자 인스턴스에서 새  [!DNL Adobe Stock IMS configuration] 을(를) 설정합니다.](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
-1. [&#x200B; [!DNL Adobe Stock]에 연결할 클라우드 구성 추가](#add-cloud-configuration-to-connect-adobe-stock)
+1. [ [!DNL Adobe Stock IMS configuration] 작성자 인스턴스에서 새  [!DNL AEM] 을(를) 설정합니다.](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [ [!DNL Adobe Stock]에 연결할 클라우드 구성 추가](#add-cloud-configuration-to-connect-adobe-stock)
 
-#### [!DNL AEM author] 인스턴스에서 새 [!DNL Adobe Stock IMS configuration] 설정 {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
+#### [!DNL Adobe Stock IMS configuration] 인스턴스에서 새 [!DNL AEM author] 설정 {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
 
-다음 단계를 실행하여 [!DNL AEM] 작성자 인스턴스에서 새 [!DNL Adobe Stock IMS configuration]을(를) 설정합니다.
+다음 단계를 실행하여 [!DNL Adobe Stock IMS configuration] 작성자 인스턴스에서 새 [!DNL AEM]을(를) 설정합니다.
 1. [!DNL AEM] 작성자 인스턴스로 이동합니다.
 1. ![aem assets 및 adobe stock](/help/assets/assets/Hammer.svg)을 클릭하고 **[!UICONTROL 보안]**&#x200B;을 선택한 다음 **[!UICONTROL Adobe IMS 구성]**&#x200B;을 선택합니다.
 1. 새 IMS 구성을 만들려면 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지에는 **[!UICONTROL 클라우드 솔루션]**, **[!UICONTROL 제목]**, **[!UICONTROL 인증 서버]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 암호]**, **[!UICONTROL 범위]** 및 **[!UICONTROL 조직 ID]**&#x200B;와 같은 여러 필드가 표시됩니다. 다음 지침에 따라 다음 필드에 세부 사항을 지정합니다.
@@ -141,7 +141,6 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
    * **[!UICONTROL 범위]**: 프로젝트 대시보드로 이동하여 왼쪽 창에서 사용할 수 있는 **[!UICONTROL OAuth 서버 간]** 옵션을 클릭하고 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;를 선택한 다음 **[!UICONTROL 범위]**&#x200B;를 복사하여 여기에 붙여넣으십시오([7](#set-up-a-program-in-developer-console)단계 참조).
 
    * **[!UICONTROL 조직 ID]**: 프로젝트 대시보드로 이동하여 왼쪽 창에서 사용할 수 있는 **[!UICONTROL OAuth 서버 간]** 옵션을 클릭하고 **[!UICONTROL 자격 증명 세부 정보]**&#x200B;를 선택한 다음 **[!UICONTROL 조직 ID]**&#x200B;을(를) 복사하여 여기에 붙여넣으십시오([7](#set-up-a-program-in-developer-console)단계 참조).
-
      ![aem assets 및 adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭하면 **[!UICONTROL Adobe IMS 구성]** 페이지가 열리고 사용자가 만든 [!DNL Adobe Stock] 통합이 표시됩니다.
 
@@ -150,13 +149,13 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 다음 단계를 실행하여 [!DNL Adobe Stock]에 연결할 클라우드 구성을 추가하십시오.
 
 1. [!DNL AEM author] 인스턴스로 이동합니다.
-1. ![aem assets 및 adobe stock](/help/assets/assets/Hammer.svg)을(를) 클릭하고 **[!UICONTROL 클라우드 서비스]**&#x200B;를 선택한 다음 **[!UICONTROL Adobe Stock]**&#x200B;을(를) 찾아 선택합니다.
+1. ![aem assets 및 adobe stock](/help/assets/assets/Hammer.svg)을(를) 클릭하고 **[!UICONTROL 클라우드 서비스]**&#x200B;를 선택한 다음 **[!UICONTROL Adobe Stock]**을(를) 찾아 선택합니다.
    ![aem과 adobe stock 사용](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)
 1. **[!UICONTROL 만들기]**&#x200B;를 클릭하면 **[!UICONTROL Adobe Stock 구성]** 페이지에 여러 필드가 표시됩니다. 다음 지침에 따라 다음 필드에 세부 사항을 지정합니다.
    * **[!UICONTROL 제목]**: **[!UICONTROL Adobe IMS 기술 계정 구성]** 페이지([단계 3](#set-up-adobe-stock-ims-configuration-in-aem-author-instance) 참조)로 이동하여 제목을 복사하고 여기에 붙여넣으십시오.
    * **[!UICONTROL 연결된 Adobe IMS 구성]**: 만든 [!DNL Adobe Stock] 통합을 선택하십시오.
    * **[!UICONTROL 로케일]**: **[!UICONTROL 영어(미국)]**&#x200B;를 선택합니다.
-1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 저장 및 닫기]**를 클릭합니다.
    ![aem과 adobe stock 사용](/help/assets/assets/adobe-stock-config-page.png)
 
 <!-- old content
@@ -303,7 +302,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 1. Click **[!UICONTROL Save & Close]**. 
 -->
-[!DNL Experience Manager Assets] 작성자 인스턴스가 이제 [!DNL Adobe Stock]과(와) 통합되었습니다. 여러 [!DNL Adobe Stock] 구성(예: 로케일 기반 구성)을 만들 수 있습니다. 이제 [!DNL Experience Manager] 사용자 인터페이스 내에서 [!DNL Adobe Stock] 자산에 액세스하고, 검색하고, 라이선스를 부여할 수 있습니다.
+[!DNL Experience Manager Assets] 작성자 인스턴스가 이제 [!DNL Adobe Stock]과(와) 통합되었습니다. 여러 [!DNL Adobe Stock] 구성(예: 로케일 기반 구성)을 만들 수 있습니다. 이제 [!DNL Adobe Stock] 사용자 인터페이스 내에서 [!DNL Experience Manager] 자산에 액세스하고, 검색하고, 라이선스를 부여할 수 있습니다.
 
 ![search-stock-assets](assets/aem-stock-searchstocks.png)
 
@@ -357,11 +356,11 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 1. 왼쪽 패널에서 `user_id` 또는 `name`을(를) 입력하여 사용자를 검색합니다. 두 번 클릭하여 사용자 속성을 엽니다.
 
-1. **[!UICONTROL 권한]** 탭으로 이동하여 [!DNL Adobe Stock] 클라우드 구성에 `read` 권한을 허용합니다. `/conf/global/settings/stock`.
+1. **[!UICONTROL 권한]** 탭으로 이동하여 `read` 클라우드 구성에 [!DNL Adobe Stock] 권한을 허용합니다. `/conf/global/settings/stock`.
 
    >[!CAUTION]
    >
-   >클라우드 구성이 허용되지 않으면 사용자는 [!DNL Experience Manager] 인터페이스에서 **[!UICONTROL Assets]**&#x200B;에만 액세스할 수 있습니다.
+   >클라우드 구성이 허용되지 않으면 사용자는 **[!UICONTROL 인터페이스에서]** Assets[!DNL Experience Manager]에만 액세스할 수 있습니다.
    >
    >[!UICONTROL Assets] 및 [!DNL Adobe Stock] 자산에 대한 액세스를 허용하려면 사용자에게 클라우드 구성이 허용되는지 확인하십시오.
 
@@ -373,7 +372,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 ## Adobe Stock 에셋 액세스 {#access-stock-assets}
 
-[!DNL Adobe Stock] 클라우드 구성에 대한 권한이 있는 관리자가 아닌 사용자는 [!DNL Experience Manager] 인터페이스에서 [!DNL Adobe Stock] 자산을 검색하고 라이선스를 부여할 수 있습니다.
+[!DNL Adobe Stock] 클라우드 구성에 대한 권한이 있는 관리자가 아닌 사용자는 [!DNL Adobe Stock] 인터페이스에서 [!DNL Experience Manager] 자산을 검색하고 라이선스를 부여할 수 있습니다.
 
 [!DNL Adobe Stock]개의 자산에 액세스하기 전에 [!DNL Adobe Stock] 클라우드 구성을 활성화하는 추가 단계를 수행해야 합니다. 일회성 활동입니다. 사용자에게 여러 [!DNL Adobe Stock] 클라우드 구성에 대한 권한이 할당된 경우 사용자는 **[!UICONTROL 사용자 환경 설정]**&#x200B;에서 원하는 구성을 선택할 수 있습니다.
 
@@ -398,13 +397,13 @@ To configure the [!DNL Adobe Stock] cloud service:
 | test-doc1 | DAM 사용자 | /conf/global /settings/stock/cloud-config | 아니요 | 오류: 데이터를 로드하지 못했습니다. | 아니요 |
 | test-doc1 | DAM 사용자 | **allow**: /conf/global /settings/stock     **거부**: /cloud-config | Stock 구성이 표시되지 않음 | 예 | 아니요 |
 
-## [!DNL Experience Manager]에서 [!DNL Adobe Stock]개 자산 사용 및 관리 {#usemanage}
+## [!DNL Adobe Stock]에서 [!DNL Experience Manager]개 자산 사용 및 관리 {#usemanage}
 
-조직에서 이 기능을 사용하여 해당 사용자가 [!DNL Experience Manager Assets]에서 [!DNL Adobe Stock]개의 자산을 사용하여 작업하도록 허용할 수 있습니다. [!DNL Experience Manager] 사용자 인터페이스에서 [!DNL Adobe Stock]개의 자산을 검색하고 필요한 자산의 라이선스를 제공할 수 있습니다.
+조직에서 이 기능을 사용하여 해당 사용자가 [!DNL Adobe Stock]에서 [!DNL Experience Manager Assets]개의 자산을 사용하여 작업하도록 허용할 수 있습니다. [!DNL Experience Manager] 사용자 인터페이스에서 [!DNL Adobe Stock]개의 자산을 검색하고 필요한 자산의 라이선스를 제공할 수 있습니다.
 
-[!DNL Experience Manager]에서 [!DNL Adobe Stock] 자산에 라이센스가 부여되면 일반 자산처럼 사용하고 관리할 수 있습니다. [!DNL Experience Manager]에서 사용자는 자산을 검색 및 미리 보고, 자산을 복사 및 게시하고, [!DNL Brand Portal]에서 자산을 공유하고, [!DNL Experience Manager] 데스크톱 앱을 통해 자산에 액세스하고 사용할 수 있습니다.
+[!DNL Adobe Stock]에서 [!DNL Experience Manager] 자산에 라이센스가 부여되면 일반 자산처럼 사용하고 관리할 수 있습니다. [!DNL Experience Manager]에서 사용자는 자산을 검색 및 미리 보고, 자산을 복사 및 게시하고, [!DNL Brand Portal]에서 자산을 공유하고, [!DNL Experience Manager] 데스크톱 앱을 통해 자산에 액세스하고 사용할 수 있습니다.
 
-![[!DNL Adobe Experience Manager] 작업 공간에서 [!DNL Adobe Stock]개 에셋 검색 및 결과 필터링](assets/adobe-stock-search-results-workspace.png)
+![[!DNL Adobe Stock] 작업 공간에서 [!DNL Adobe Experience Manager]개 에셋 검색 및 결과 필터링](assets/adobe-stock-search-results-workspace.png)
 
 **A.** 제공된 [!DNL Adobe Stock] ID의 자산과 유사한 자산을 검색합니다. **B.** Search assets that match your selection of shape or orientation. **C.** 지원되는 자산 유형 중 하나 검색 **D.** 필터 창 열기 또는 축소 **E.** 라이선스 및 [!DNL Experience Manager]에 선택한 자산 저장 **F.** 워터마크 [!DNL Experience Manager]에 자산 저장 **G.** 선택한 자산과 유사한 [!DNL Adobe Stock] 웹 사이트에서 자산 탐색 **H.** [!DNL Adobe Stock] 웹 사이트에서 선택한 자산 보기 **I.** 검색 결과에서 선택한 자산 수 **J.** 카드 보기와 목록 보기 간 전환
 
@@ -420,7 +419,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 >[!NOTE]
 >
->[!DNL Adobe Stock]에서 검색한 Assets이 [!DNL Experience Manager]에 표시됩니다. 사용자가 [자산을 저장](/help/assets/aem-assets-adobe-stock.md#saveassets) 또는 [라이선스를 사용하고 자산을 저장](/help/assets/aem-assets-adobe-stock.md#licenseassets)한 후에만 [!DNL Adobe Stock]자산을 가져와서 [!DNL Experience Manager] 저장소에 저장합니다. [!DNL Experience Manager]에 이미 저장된 Assets은 쉽게 참조하고 액세스할 수 있도록 표시되고 강조 표시됩니다. 또한 [!DNL Stock] 자산은 소스를 [!DNL Stock]&#x200B;(으)로 표시하기 위해 일부 추가 메타데이터와 함께 저장됩니다.
+>[!DNL Adobe Stock]에서 검색한 Assets이 [!DNL Experience Manager]에 표시됩니다. 사용자가 [!DNL Adobe Stock]자산을 저장[!DNL Experience Manager] 또는 [라이선스를 사용하고 자산을 저장](/help/assets/aem-assets-adobe-stock.md#saveassets)한 후에만 [자산을 가져와서 ](/help/assets/aem-assets-adobe-stock.md#licenseassets) 저장소에 저장합니다. [!DNL Experience Manager]에 이미 저장된 Assets은 쉽게 참조하고 액세스할 수 있도록 표시되고 강조 표시됩니다. 또한 [!DNL Stock] 자산은 소스를 [!DNL Stock]&#x200B;(으)로 표시하기 위해 일부 추가 메타데이터와 함께 저장됩니다.
 
 ![검색 필터 [!DNL Experience Manager] 및 강조 표시된 [!DNL Adobe Stock]개 자산을 검색 결과에서](assets/aem-search-filters2.jpg)
 
@@ -438,12 +437,12 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 사용자는 [!DNL Adobe Stock] 엔터프라이즈 플랜의 할당량을 사용하여 [!DNL Adobe Stock] 자산의 라이선스를 부여할 수 있습니다. 에셋에 라이선스를 부여하면 에셋은 워터마크 없이 저장되고 [!DNL Experience Manager Assets]에서 검색 및 사용에 사용할 수 있습니다.
 
-[!DNL Experience Manager Assets]![&#128279;](assets/aem-stock_licenseandsave.jpg)에서 [!DNL Adobe Stock]개 자산을 라이선스하고 저장하는 대화 상자
+![에서 [!DNL Adobe Stock]개 자산을 라이선스하고 저장하는 [!DNL Experience Manager Assets]](assets/aem-stock_licenseandsave.jpg)대화 상자
 
 
 ### 메타데이터 및 자산 속성 액세스 {#access-metadata-and-asset-properties}
 
-사용자는 [!DNL Experience Manager]에 저장된 에셋에 대한 [!DNL Adobe Stock] 메타데이터 속성을 포함하여 메타데이터에 액세스하고 미리 볼 수 있으며 에셋에 대해 **[!UICONTROL 라이선스 참조]**&#x200B;를 추가할 수 있습니다. 그러나 라이선스 참조에 대한 업데이트는 [!DNL Experience Manager]과(와) [!DNL Adobe Stock] 웹 사이트 간에 동기화되지 않습니다.
+사용자는 [!DNL Adobe Stock]에 저장된 에셋에 대한 [!DNL Experience Manager] 메타데이터 속성을 포함하여 메타데이터에 액세스하고 미리 볼 수 있으며 에셋에 대해 **[!UICONTROL 라이선스 참조]**&#x200B;를 추가할 수 있습니다. 그러나 라이선스 참조에 대한 업데이트는 [!DNL Experience Manager]과(와) [!DNL Adobe Stock] 웹 사이트 간에 동기화되지 않습니다.
 
 사용자는 라이선스가 부여된 에셋과 라이선스가 없는 에셋 모두에 대한 속성을 볼 수 있습니다.
 
@@ -451,8 +450,6 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 
 ## 알려진 제한 사항 {#known-limitations}
-
-* **[!DNL Experience Manager] 서비스 팩 6.5.7.0 이상**&#x200B;과(와) 통합되는 동안 문제 발생: [!DNL Experience Manager] 6.5.7.0 이상과 통합하는 동안 예기치 않은 문제가 확인되었습니다. 이 문제는 테스트 중이며 [!DNL Experience Manager] 6.5.11.0에서 사용할 수 있습니다. [!DNL Customer Support]에게 연락하여 즉시 핫픽스를 받으십시오.
 
 * **사용자 라이선스를 제한하는 기능이 제대로 작동하지 않습니다**: 스톡 구성에 대한 `read` 권한이 있는 모든 사용자는 [!DNL Adobe Stock] 자산을 검색하고 라이선스를 부여할 수 있습니다.
 
@@ -466,9 +463,9 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 >[!MORELIKETHIS]
 >
->* [자산 사용  [!DNL Adobe Stock] 에 대한 비디오 튜토리얼 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=ko)
->* [[!DNL Adobe Stock] 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/kr/enterprise/using/adobe-stock-enterprise.html)
->* [[!DNL Adobe Stock] FAQ](https://helpx.adobe.com/kr/stock/faq.html)
+>* [자산 사용  [!DNL Adobe Stock] 에 대한 비디오 튜토리얼 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] 엔터프라이즈 플랜 도움말](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] FAQ](https://helpx.adobe.com/stock/faq.html)
 
 
 <!--old content

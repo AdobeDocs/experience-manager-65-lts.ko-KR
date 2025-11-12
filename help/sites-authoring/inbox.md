@@ -1,13 +1,13 @@
 ---
 title: 작업을 관리할 받은 편지함
-description: Adobe Experience Manager 6.5의 받은 편지함으로 작업 관리.
+description: Adobe Experience Manager 6.5 LTS의 받은 편지함으로 작업 관리.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 077407ef-1d7f-47ad-b924-0afa19f21119
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 524f1bcea6761e299141bc1d1496e32c498ffd14
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1156'
 ht-degree: 62%
 
 ---

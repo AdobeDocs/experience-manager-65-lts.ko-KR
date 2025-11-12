@@ -1,23 +1,18 @@
 ---
-title: 마케팅 캠페인 관리자 작업
+title: Marketing Campaign Manager 작업
 description: 마케팅 캠페인 관리자(MCM)는 멀티채널 캠페인을 관리하는 데 도움이 되는 콘솔입니다. 이 마케팅 자동화 소프트웨어를 사용하면 모든 브랜드, 캠페인 및 경험을 관련 세그먼트, 목록, 리드 및 보고서와 함께 관리할 수 있습니다.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: fb2fd382-e06a-4779-a4c5-e483ef42796d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 120c3fd005ce94021758ffbd14dd6b552de7afe9
 workflow-type: tm+mt
 source-wordcount: '1161'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 마케팅 캠페인 관리자 작업{#working-with-the-marketing-campaign-manager}
+# Marketing Campaign Manager 작업{#working-with-the-marketing-campaign-manager}
 
 AEM에서 마케팅 캠페인 관리자(MCM)는 멀티채널 캠페인을 관리하는 데 도움이 되는 콘솔입니다. 이 마케팅 자동화 소프트웨어를 사용하면 모든 브랜드, 캠페인 및 경험을 관련 세그먼트, 목록, 리드 및 보고서와 함께 관리할 수 있습니다.
 
@@ -175,7 +170,7 @@ AEM MCM에서 리드를 수동으로 입력하거나 메일링 목록과 같이 
    * **새로운...** 경험 만들기(예: Adobe Target 오퍼, 티저 및 뉴스레터).
    * **특정 티저 페이지 또는 뉴스레터의 세부 정보를 편집**&#x200B;합니다(두 번 클릭해도 됨).
    * 특정 티저 페이지 또는 뉴스레터의 **속성...**&#x200B;을(를) 정의합니다.
-   * **경험의 모양과 느낌(티저 페이지 또는 뉴스레터)을 시뮬레이션**&#x200B;합니다.
+   * **경험의 모양과 느낌(티저 페이지 또는 뉴스레터)을 시뮬레이션**합니다.
 시뮬레이션된 페이지가 열리면 사이드 킥을 열어 해당 페이지의 편집 모드로 전환할 수 있습니다.
 
    * 페이지에 대해 생성된 노출 횟수를 **분석...**&#x200B;합니다.

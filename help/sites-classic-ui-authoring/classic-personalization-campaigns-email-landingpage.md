@@ -1,19 +1,14 @@
 ---
 title: 효과적인 뉴스레터 랜딩 페이지 만들기
 description: 효과적인 뉴스레터 랜딩 페이지는 최대한 많은 사람들이 뉴스레터(또는 기타 이메일 마케팅 캠페인)에 등록하도록 도와줍니다. 뉴스레터 등록에서 수집한 정보를 사용하여 리드를 받을 수 있습니다.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 92f4946d-1f49-4286-a51e-84b2a46a6b8a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f69262246bafca44f88ff15a4c86125f5335507e
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 0%
+source-wordcount: '602'
+ht-degree: 2%
 
 ---
 

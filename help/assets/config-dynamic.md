@@ -1,25 +1,19 @@
 ---
-title: Dynamic Media 구성 - 하이브리드 모드
+title: Dynamic Media - 하이브리드 모드 구성
 description: Dynamic Media - 하이브리드 모드를 구성하는 방법에 대해 알아봅니다.
 mini-toc-levels: 3
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
-legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 6252e61f-44b5-4931-80a0-426c6883092e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 846b45f6ab83599eb709573a77422f2aba1ef047
 workflow-type: tm+mt
-source-wordcount: '7738'
-ht-degree: 1%
+source-wordcount: '7607'
+ht-degree: 2%
 
 ---
 
-# Dynamic Media 구성 - 하이브리드 모드 {#configuring-dynamic-media-hybrid-mode}
+# Dynamic Media - 하이브리드 모드 구성 {#configuring-dynamic-media-hybrid-mode}
 
 >[!IMPORTANT]
 >
@@ -169,7 +163,7 @@ Dynamic Media의 고객인 경우 모든 Dynamic Media 콘텐츠에 대한 게�
 
 ## Dynamic Media 활성화 {#enabling-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/kr/products/experience-manager/assets/dynamic-media.html)은(는) 기본적으로 비활성화되어 있습니다. Dynamic Media 기능을 이용하려면 `dynamicmedia` 실행 모드(예: `publish` 실행 모드)를 사용하여 Dynamic Media를 활성화해야 합니다. 활성화하기 전에 [기술 요구 사항](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)을 검토하십시오.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)은(는) 기본적으로 비활성화되어 있습니다. Dynamic Media 기능을 이용하려면 `dynamicmedia` 실행 모드(예: `publish` 실행 모드)를 사용하여 Dynamic Media를 활성화해야 합니다. 활성화하기 전에 [기술 요구 사항](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)을 검토하십시오.
 
 >[!NOTE]
 >
@@ -214,7 +208,7 @@ Dynamic Media를 활성화하려면 명령줄 또는 빠른 시작 파일 이름
    >
    >* s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access 로그는 `/is/image` 및 `/is/content`을(를) 통해 Dynamic Media에 수행된 각 요청을 기록합니다.
    >
-   >이러한 로그는 Dynamic Media가 활성화된 경우에만 사용됩니다. `system/console/status-Bundlelist` 페이지에서 생성된 **전체 다운로드** 패키지에 포함되지 않습니다. Dynamic Media 문제가 있는 경우 고객 지원 센터에 문의할 때 이 두 로그를 모두 문제에 추가하십시오.
+   >이러한 로그는 Dynamic Media가 활성화된 경우에만 사용됩니다. **페이지에서 생성된**&#x200B;전체 다운로드`system/console/status-Bundlelist` 패키지에 포함되지 않습니다. Dynamic Media 문제가 있는 경우 고객 지원 센터에 문의할 때 이 두 로그를 모두 문제에 추가하십시오.
 
 ### Experience Manager을 다른 포트 또는 컨텍스트 경로에 설치한 경우... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -226,10 +220,10 @@ Dynamic Media가 활성화되면 Dynamic Media를 사용하여 이미지 에셋�
 
 Experience Manager:
 
-* [Externalizer](/help/sites-developing/externalizer.md)의 **self-domain**&#x200B;은(는) 포트 번호와 컨텍스트 경로를 모두 검색하는 데 사용됩니다.
+* **Externalizer**&#x200B;의 [self-domain](/help/sites-developing/externalizer.md)은(는) 포트 번호와 컨텍스트 경로를 모두 검색하는 데 사용됩니다.
 * 구성된 **자체 도메인**&#x200B;이 없으면 Jetty HTTP 서비스에서 포트 번호 및 컨텍스트 경로를 검색합니다.
 
-Experience Manager QuickStart WAR 배포에서는 포트 번호와 컨텍스트 경로를 파생할 수 없으므로 **자체 도메인**&#x200B;을 구성해야 합니다. **자체 도메인**&#x200B;을 구성하는 방법에 대해서는 [외부화 설명서](/help/sites-developing/externalizer.md)를 참조하십시오.
+Experience Manager QuickStart WAR 배포에서는 포트 번호와 컨텍스트 경로를 파생할 수 없으므로 **자체 도메인**&#x200B;을 구성해야 합니다. [자체 도메인](/help/sites-developing/externalizer.md)을 구성하는 방법에 대해서는 **외부화 설명서**&#x200B;를 참조하십시오.
 
 >[!NOTE]
 >
@@ -258,22 +252,6 @@ Dynamic Media를 사용하도록 설정한 후 사용하지 않도록 설정하�
    >Dynamic Media 실행 모드가 비활성화되면 `cqdam.pyramid.tiff` 렌디션을 생성하는 워크플로 단계를 자동으로 건너뜁니다. 동적 렌디션 지원 및 기타 Dynamic Media 기능도 비활성화됩니다.
    >
    >또한 Experience Manager 서버를 구성한 후 Dynamic Media 실행 모드가 비활성화되면 해당 실행 모드에 따라 업로드된 모든 자산이 유효하지 않습니다.
-
-## (선택 사항) Dynamic Media 사전 설정 및 구성을 6.3에서 6.5 제로 다운타임으로 마이그레이션 {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
-
-Experience Manager - Dynamic Media를 6.3에서 6.5로 업그레이드하는 경우(이제 다운타임 없는 배포 기능이 포함됨) 다음 curl 명령을 실행해야 합니다. 이 명령은 CRXDE Lite의 `/etc`에서 `/conf`(으)로 모든 사전 설정 및 구성을 마이그레이션합니다.
-
->[!NOTE]
->
->호환성 모드에서 Experience Manager 인스턴스를 실행하는 경우(즉, 호환성 패키지가 설치되어 있는 경우) 이 명령을 실행할 필요가 없습니다.
-
-호환성 패키지가 있거나 없는 모든 업그레이드의 경우 다음 Linux® curl 명령을 실행하여 원래 Dynamic Media와 함께 제공되었던 기본 즉시 사용 가능한 뷰어 사전 설정을 복사할 수 있습니다.
-
-`curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
-
-`/etc`에서 만든 사용자 지정 뷰어 사전 설정 및 구성을 `/conf`(으)로 마이그레이션하려면 다음 Linux® curl 명령을 실행하십시오.
-
-`curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
 ## 이미지 복제 구성 {#configuring-image-replication}
 
@@ -330,7 +308,7 @@ Dynamic Media 이미지 게재 서비스에 이미지를 복제할 수 있도록
    * **[!UICONTROL KeyStore 파일]**&#x200B;을(를) 선택하십시오. Adobe에서 제공한 KeyStore 파일로 이동하여 선택한 다음 **[!UICONTROL 열기]**&#x200B;를 선택합니다.
    * **[!UICONTROL KeyStore 파일 암호]** 필드에 KeyStore 파일 암호를 입력합니다. 이 암호는 5단계에서 만든 KeyStore 암호가 **아니요**&#x200B;이지만 Adobe에서 제공하는 KeyStore 파일 암호입니다. 프로비저닝 중에 받은 환영 전자 메일의 암호입니다. KeyStore 파일 암호를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
    * **[!UICONTROL 개인 키 암호]** 필드에 개인 키 암호를 입력합니다(이전 단계에서 입력한 것과 동일한 개인 키 암호일 수 있음). Adobe은 프로비저닝 중에 전송된 시작 이메일에 개인 키 암호를 제공합니다. 개인 키 암호를 받지 않은 경우 Adobe 고객 지원 센터에 문의하십시오.
-   * **[!UICONTROL 개인 키 별칭]** 필드에 개인 키 별칭을 입력합니다. 예, `*companyname*-alias`. Adobe은 프로비저닝 중에 전송된 시작 이메일에 개인 키 별칭을 제공합니다. 개인 키 별칭을 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
+   * **[!UICONTROL 개인 키 별칭]** 필드에 개인 키 별칭을 입력합니다. 예를 들어, `*companyname*-alias`과 같이 입력합니다. Adobe은 프로비저닝 중에 전송된 시작 이메일에 개인 키 별칭을 제공합니다. 개인 키 별칭을 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
@@ -348,7 +326,7 @@ Dynamic Media 이미지 게재 서비스에 이미지를 복제할 수 있도록
    * **[!UICONTROL 사용]** - 복제 에이전트를 사용하려면 이 확인란을 선택하십시오.
    * **[!UICONTROL 지역]** - 북미, 유럽 또는 아시아 지역으로 설정합니다.
    * **[!UICONTROL 테넌트 ID]** - 이 값은 복제 서비스에 게시하는 회사/테넌트의 이름입니다. 이 값은 프로비저닝 중에 Adobe이 보낸 환영 이메일에서 제공하는 테넌트 ID입니다. 이 정보를 받지 못한 경우 Adobe 고객 지원 센터에 문의하십시오.
-   * **[!UICONTROL 키 저장소 별칭]** - 이 값은 [인증 설정](#setting-up-authentication)에서 키를 생성할 때 설정된 **새 별칭** 값과 동일합니다(예: `replication`). ([인증 설정](#setting-up-authentication)의 7단계를 참조하세요.)
+   * **[!UICONTROL 키 저장소 별칭]** - 이 값은 **인증 설정**&#x200B;에서 키를 생성할 때 설정된 [새 별칭](#setting-up-authentication) 값과 동일합니다(예: `replication`). ([인증 설정](#setting-up-authentication)의 7단계를 참조하세요.)
    * **[!UICONTROL 키 저장소 암호]** - **[!UICONTROL 키 저장소 만들기]**&#x200B;를 탭했을 때 만들어진 KeyStore 암호입니다. Adobe은 이 암호를 제공하지 않습니다. [인증 설정](#setting-up-authentication)의 5단계를 참조하세요.
 
    다음 이미지는 샘플 데이터가 있는 복제 에이전트를 보여 줍니다.
@@ -711,7 +689,7 @@ JCR을 통해 설정 프로세스의 일부로 자체 기본 카탈로그 설정
   <tr>
    <td> </td>
    <td><strong>필터</strong></td>
-   <td><strong>MIME 유형</strong></td>
+   <td><strong>Mime 유형</strong></td>
    <td><strong>렌디션</strong></td>
   </tr>
   <tr>
@@ -784,7 +762,7 @@ JCR을 통해 설정 프로세스의 일부로 자체 기본 카탈로그 설정
 
 1. **[!UICONTROL 필터 이미지]**&#x200B;를 찾아 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL 복사]**&#x200B;를 선택합니다.
 1. 왼쪽 폴더 트리에서 `/etc/replication/agents.author/publish`(으)로 이동
-1. `jcr:content`을(를) 찾아 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL 만들기]** > **[!UICONTROL 노드 만들기]**(으)로 이동합니다. `nt:unstructured` 유형의 `damRenditionFilters` 이름을 입력하십시오.
+1. `jcr:content`을(를) 찾아 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL 만들기]** > **[!UICONTROL 노드 만들기]**(으)로 이동합니다. `damRenditionFilters` 유형의 `nt:unstructured` 이름을 입력하십시오.
 1. `damRenditionFilters`을(를) 찾아 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL 붙여넣기]**&#x200B;를 선택합니다.
 
 이 단계에서는 Experience Manager 게시 인스턴스를 설정하여 이미지를 비프로덕션 환경에 전달합니다. 원본 이미지 및 정적 변환은 게시 인스턴스에 필요하지 않으므로 복제에서 제외됩니다.
@@ -793,7 +771,7 @@ JCR을 통해 설정 프로세스의 일부로 자체 기본 카탈로그 설정
 >
 >작성자에 여러 필터가 있는 경우 각 에이전트에는 서로 다른 사용자가 할당되어야 합니다. granite 코드는 사용자당 하나의 필터 모델을 적용합니다. 필터 설정마다 항상 다른 사용자가 있어야 합니다.
 >
->서버에서 필터를 두 개 이상 사용하고 있습니까? 예를 들어 게시할 복제에 대한 한 개의 필터와 s7delivery에 대한 두 번째 필터입니다. 그렇다면 이 두 필터에 `jcr:content` 노드에서 다른 **userId**&#x200B;이(가) 할당되어 있는지 확인해야 합니다. 다음 이미지를 참조하십시오.
+>서버에서 필터를 두 개 이상 사용하고 있습니까? 예를 들어 게시할 복제에 대한 한 개의 필터와 s7delivery에 대한 두 번째 필터입니다. 그렇다면 이 두 필터에 **노드에서 다른** userId`jcr:content`이(가) 할당되어 있는지 확인해야 합니다. 다음 이미지를 참조하십시오.
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
@@ -812,7 +790,7 @@ JCR을 통해 설정 프로세스의 일부로 자체 기본 카탈로그 설정
 
    ![chlimage_1-512](assets/chlimage_1-512.png)
 
-   자산 `Fiji Red.jpg`의 `dc:format`이(가) `image/jpeg`입니다.
+   자산 `dc:format`의 `Fiji Red.jpg`이(가) `image/jpeg`입니다.
 
    이 필터가 형식에 관계없이 모든 이미지에 적용되도록 하려면 값을 `image/*`(으)로 설정합니다. 여기서 `*`은(는) 모든 형식의 모든 이미지에 적용되는 정규 표현식입니다.
 
@@ -834,7 +812,7 @@ JCR을 통해 설정 프로세스의 일부로 자체 기본 카탈로그 설정
 
    ![chlimage_1-513](assets/chlimage_1-4.png)
 
-   위의 예를 사용하여 PTIFF(피라미드 TIFF)만 복제하려는 경우 `cqdam`로 시작하는 모든 표현물이 포함된 `+cqdam,*`을(를) 입력합니다. 이 예제에서 해당 렌디션은 `cqdam.pyramid.tiff`입니다.
+   위의 예를 사용하여 PTIFF(피라미드 TIFF)만 복제하려는 경우 `+cqdam,*`로 시작하는 모든 표현물이 포함된 `cqdam`을(를) 입력합니다. 이 예제에서 해당 렌디션은 `cqdam.pyramid.tiff`입니다.
 
    원본만 복제하려면 `+original`을(를) 입력해야 합니다.
 
@@ -865,7 +843,7 @@ Dynamic Media 이미지 서버 설정을 구성하려면 다음 작업을 수행
    >
    >일반적으로 기본값을 변경할 필요가 없습니다. 그러나 기본값을 변경하는 경우 변경 사항을 적용하려면 번들을 다시 시작해야 합니다.
 
-   | 속성 | 기본값 | 설명 |
+   | 속성 | 기본 값 | 설명 |
    | --- | --- | --- |
    | `TcpPort.name` | *`empty`* | ImageServer 프로세스와의 통신에 사용할 포트 번호입니다. 기본적으로 사용 가능한 포트는 자동으로 검색됩니다. |
    | `AllowRemoteAccess.name` | *`empty`* | ImageServer 프로세스에 대한 원격 액세스를 허용하거나 허용하지 않습니다. false인 경우 이미지 서버는 localhost에서만 수신합니다.localhost를 가리키는 <br> 기본 외부화 설정은 특정 VM 인스턴스의 실제 도메인 또는 IP 주소를 지정해야 합니다. 그 이유는 localhost가 VM의 상위 시스템을 가리키기 때문입니다.<br>VM의 도메인 또는 IP 주소에 호스트 파일 항목이 있어야 VM에서 자체적으로 확인할 수 있습니다. |
@@ -882,7 +860,7 @@ Dynamic Media 이미지 서버 설정을 구성하려면 다음 작업을 수행
    >
    >Dynamic Media 이미지 서버는 자체 디스크 캐시를 사용하여 응답을 캐시합니다. Experience Manager HTTP 캐시와 Dispatcher을 사용하여 Dynamic Media 이미지 서버의 응답을 캐시할 수 없습니다.
 
-   | 속성 | 기본값 | 설명 |
+   | 속성 | 기본 값 | 설명 |
    |---|---|---|
    | 캐시 활성화됨 | 선택됨 | 응답 캐시의 사용 여부 |
    | 캐시 루트 | 캐시 | 응답 캐시 폴더에 대한 하나 이상의 경로. 상대 경로는 내부 s7imaging 번들 폴더에 대해 확인됩니다. |
@@ -909,16 +887,16 @@ Dynamic Media 이미지 서버 설정을 구성하려면 다음 작업을 수행
 
 매니페스트 설정 표 및 그 기본값:
 
-| 속성 | 기본값 | 설명 |
+| 속성 | 기본 값 | 설명 |
 | --- | --- | --- |
-| `bkgcolor` | `FFFFFF` | 기본 배경색입니다. 실제 이미지 데이터를 포함하지 않는 응답 이미지의 영역을 채우는 데 사용되는 RGB 값입니다. 이미지 제공 API에서 [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html?lang=ko#image-serving-api)도 참조하세요. |
-| `defaultpix` | `300,300` | 기본 보기 크기입니다. 요청에서 wid=, hei= 또는 scl=을 사용하여 보기 크기를 명시적으로 지정하지 않을 경우, 서버에서 응답 이미지가 이 너비 및 높이보다 크지 않도록 제한합니다.<br>쉼표로 구분된 0보다 큰 두 개의 정수로 지정되었습니다. 폭 및 높이(픽셀 단위). 두 값 중 하나 또는 모두를 0으로 설정하여 구속을 해제할 수 있습니다. 중첩/포함된 요청에는 적용되지 않습니다.<br>이미지 제공 API에서 [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html?lang=ko#image-serving-api)도 참조하십시오.<br>그러나 일반적으로 뷰어 사전 설정 또는 이미지 사전 설정을 사용하여 자산을 전달합니다. Defaultpix는 뷰어 사전 설정 또는 이미지 사전 설정을 사용하지 않는 자산에만 적용됩니다. |
-| `defaultthumbpix` | `100,100` | 기본 썸네일 크기입니다. 썸네일 요청(`req=tmb`)에 대해 attribute::DefaultPix 대신 사용됩니다.<br>서버에서 응답 이미지가 이 너비 및 높이보다 크지 않도록 제한합니다. 썸네일 요청(`req=tmb`)이 크기를 명시적으로 지정하지 않고 `wid=`, `hei=` 또는 `scl=`을 사용하여 보기 크기를 명시적으로 지정하지 않으면 이 작업은 true입니다.<br>쉼표로 구분된 0보다 큰 두 개의 정수로 지정되었습니다. 폭 및 높이(픽셀 단위). 두 값 중 하나 또는 모두를 0으로 설정하여 구속을 해제할 수 있습니다.<br>중첩/포함된 요청에는 적용되지 않습니다.<br>이미지 제공 API에서 [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html?lang=ko#image-serving-api)도 참조하십시오. |
-| `expiration` | `36000000` | 기본 클라이언트 캐시 TTL(Time to Live). 특정 카탈로그 레코드에 유효한 카탈로그::Expiration 값이 없는 경우 기본 만료 간격을 제공합니다.<br>실수, 0 이상. 응답 데이터가 생성된 이후 만료까지 남은 시간(밀리초). 응답 이미지를 항상 즉시 만료하여 클라이언트 캐싱을 효과적으로 비활성화하려면 0으로 설정합니다. 기본적으로 이 값은 10시간으로 설정되어 있습니다. 즉, 새 이미지가 게시되는 경우 이전 이미지가 사용자의 캐시를 벗어나는 데 10시간이 걸립니다. 캐시를 더 빨리 정리해야 하는 경우 고객 지원 센터에 문의하십시오.<br>이미지 제공 API의 [만료](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html?lang=ko)도 참조하세요. |
-| `jpegquality` | `80` | 기본 JPEG 인코딩 속성입니다. JPEG 응답 이미지의 기본 특성을 지정합니다.<br>쉼표로 구분된 정수와 플래그입니다. 첫 번째 값은 1..100 범위에 있으며 품질을 정의합니다. 두 번째 값은 정상적인 동작에 대해 0일 수 있고, JPEG 인코더에 의해 채용된 RGB 색도 다운샘플링을 비활성화하기 위해 1일 수 있다.<br>이미지 제공 API에서 [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html?lang=ko#image-serving-api)도 참조하세요. |
-| `maxpix` | `2000,2000` | 응답 이미지 크기 제한. 클라이언트로 반환되는 응답 이미지의 최대 너비 및 높이입니다.<br>너비 또는 높이가 특성::MaxPix보다 큰 응답 이미지를 요청하면 서버에서 오류가 반환됩니다.<br>이미지 제공 API에서 [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=ko#image-serving-api)도 참조하십시오. |
-| `resmode` | `SHARP2` | 기본 재샘플링 모드. 이미지 데이터 크기를 조정하는 데 사용할 기본 재샘플링 및 보간 특성을 지정합니다.<br>요청에 `resMode=`이(가) 지정되지 않은 경우 사용됩니다.<br>허용되는 값은 `BILIN`, `BICUB` 또는 `SHARP2`입니다.<br>열거형입니다. `bilin`의 경우 2, `bicub`의 경우 3, `sharp2` 보간 모드의 경우 4로 설정합니다. 최상의 결과를 얻으려면 `sharp2` 사용<br>이미지 제공 API에서 [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html?lang=ko#image-serving-api)도 참조하세요. |
-| `resolution` | `72` | 기본 오브젝트 확인. 특정 카탈로그 레코드에 유효한 catalog::Resolution 값이 없는 경우 기본 개체 해상도를 제공합니다.<br>실수입니다. 0보다 큽니다. 일반적으로 인치당 픽셀로 표시되지만, 미터당 픽셀과 같은 다른 단위로도 표시할 수 있습니다.<br>이미지 제공 API의 [해상도](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html?lang=ko#image-serving-api)도 참조하세요. |
+| `bkgcolor` | `FFFFFF` | 기본 배경색입니다. 실제 이미지 데이터를 포함하지 않는 응답 이미지의 영역을 채우는 데 사용되는 RGB 값입니다. 이미지 제공 API에서 [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api)도 참조하세요. |
+| `defaultpix` | `300,300` | 기본 보기 크기입니다. 요청에서 wid=, hei= 또는 scl=을 사용하여 보기 크기를 명시적으로 지정하지 않을 경우, 서버에서 응답 이미지가 이 너비 및 높이보다 크지 않도록 제한합니다.<br>쉼표로 구분된 0보다 큰 두 개의 정수로 지정되었습니다. 폭 및 높이(픽셀 단위). 두 값 중 하나 또는 모두를 0으로 설정하여 구속을 해제할 수 있습니다. 중첩/포함된 요청에는 적용되지 않습니다.<br>이미지 제공 API에서 [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api)도 참조하십시오.<br>그러나 일반적으로 뷰어 사전 설정 또는 이미지 사전 설정을 사용하여 자산을 전달합니다. Defaultpix는 뷰어 사전 설정 또는 이미지 사전 설정을 사용하지 않는 자산에만 적용됩니다. |
+| `defaultthumbpix` | `100,100` | 기본 썸네일 크기입니다. 썸네일 요청(`req=tmb`)에 대해 attribute::DefaultPix 대신 사용됩니다.<br>서버에서 응답 이미지가 이 너비 및 높이보다 크지 않도록 제한합니다. 썸네일 요청(`req=tmb`)이 크기를 명시적으로 지정하지 않고 `wid=`, `hei=` 또는 `scl=`을 사용하여 보기 크기를 명시적으로 지정하지 않으면 이 작업은 true입니다.<br>쉼표로 구분된 0보다 큰 두 개의 정수로 지정되었습니다. 폭 및 높이(픽셀 단위). 두 값 중 하나 또는 모두를 0으로 설정하여 구속을 해제할 수 있습니다.<br>중첩/포함된 요청에는 적용되지 않습니다.<br>이미지 제공 API에서 [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api)도 참조하십시오. |
+| `expiration` | `36000000` | 기본 클라이언트 캐시 TTL(Time to Live). 특정 카탈로그 레코드에 유효한 카탈로그::Expiration 값이 없는 경우 기본 만료 간격을 제공합니다.<br>실수, 0 이상. 응답 데이터가 생성된 이후 만료까지 남은 시간(밀리초). 응답 이미지를 항상 즉시 만료하여 클라이언트 캐싱을 효과적으로 비활성화하려면 0으로 설정합니다. 기본적으로 이 값은 10시간으로 설정되어 있습니다. 즉, 새 이미지가 게시되는 경우 이전 이미지가 사용자의 캐시를 벗어나는 데 10시간이 걸립니다. 캐시를 더 빨리 정리해야 하는 경우 고객 지원 센터에 문의하십시오.<br>이미지 제공 API의 [만료](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html)도 참조하세요. |
+| `jpegquality` | `80` | 기본 JPEG 인코딩 속성입니다. JPEG 응답 이미지의 기본 특성을 지정합니다.<br>쉼표로 구분된 정수와 플래그입니다. 첫 번째 값은 1..100 범위에 있으며 품질을 정의합니다. 두 번째 값은 정상적인 동작에 대해 0일 수 있고, JPEG 인코더에 의해 채용된 RGB 색도 다운샘플링을 비활성화하기 위해 1일 수 있다.<br>이미지 제공 API에서 [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api)도 참조하세요. |
+| `maxpix` | `2000,2000` | 응답 이미지 크기 제한. 클라이언트로 반환되는 응답 이미지의 최대 너비 및 높이입니다.<br>너비 또는 높이가 특성::MaxPix보다 큰 응답 이미지를 요청하면 서버에서 오류가 반환됩니다.<br>이미지 제공 API에서 [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api)도 참조하십시오. |
+| `resmode` | `SHARP2` | 기본 재샘플링 모드. 이미지 데이터 크기를 조정하는 데 사용할 기본 재샘플링 및 보간 특성을 지정합니다.<br>요청에 `resMode=`이(가) 지정되지 않은 경우 사용됩니다.<br>허용되는 값은 `BILIN`, `BICUB` 또는 `SHARP2`입니다.<br>열거형입니다. `bilin`의 경우 2, `bicub`의 경우 3, `sharp2` 보간 모드의 경우 4로 설정합니다. 최상의 결과를 얻으려면 `sharp2` 사용<br>이미지 제공 API에서 [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api)도 참조하세요. |
+| `resolution` | `72` | 기본 오브젝트 확인. 특정 카탈로그 레코드에 유효한 catalog::Resolution 값이 없는 경우 기본 개체 해상도를 제공합니다.<br>실수입니다. 0보다 큽니다. 일반적으로 인치당 픽셀로 표시되지만, 미터당 픽셀과 같은 다른 단위로도 표시할 수 있습니다.<br>이미지 제공 API의 [해상도](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api)도 참조하세요. |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | 이 값은 비디오 재생 시간의 스냅숏을 나타내며 [encoding.com](https://www.encoding.com/)에 전달됩니다. 자세한 내용은 [비디오 축소판 정보](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode)를 참조하세요. |
 
 ## Dynamic Media 색상 관리 구성 {#configuring-dynamic-media-color-management}
@@ -933,9 +911,9 @@ CMYK, RGB 또는 회색 출력을 사용하여 Dynamic Media 색상 관리를 �
 
 고급 사용 사례에서는 수동 구성 `icc=` 수정자를 사용하여 출력 색상 프로필을 명시적으로 선택할 수 있습니다.
 
-* `icc` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=ko](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=ko)
+* `icc` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html)
 
-* `iccEmbed` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=ko](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=ko)
+* `iccEmbed` - [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
 >
@@ -950,7 +928,7 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 을 12445.
 
 1. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)&#x200B;(으)로 이동하여 `cq-6.3.0-featurepack-12445`을(를) 다운로드합니다.
 
-   [!DNL Adobe Experience Manager]에서 패키지를 사용하는 방법에 대한 자세한 내용은 [패키지를 사용하여 작업하는 방법](/help/sites-administering/package-manager.md)을 참조하십시오.
+   [에서 패키지를 사용하는 방법에 대한 자세한 내용은 ](/help/sites-administering/package-manager.md)패키지를 사용하여 작업하는 방법[!DNL Adobe Experience Manager]을 참조하십시오.
 
 1. 기능 팩을 설치합니다.
 
@@ -983,55 +961,55 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 을 12445.
    <td><strong>설명</strong></td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=ko">iccprofilergb</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
    <td>문자열</td>
    <td>&lt;비어 있음&gt;</td>
    <td>기본 RGB 색상 프로필의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=ko">iccprofilecmyk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilecmyk</a></td>
    <td>문자열</td>
    <td>&lt;비어 있음&gt;</td>
    <td>기본 CMYK 색상 프로파일의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=ko">iccprofilegray</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">iccprofilegray</a></td>
    <td>문자열</td>
    <td>&lt;비어 있음&gt;</td>
    <td>기본 회색 색상 프로파일의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=ko">iccprofilesrcrgb</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
    <td>문자열</td>
    <td>&lt;비어 있음&gt;</td>
    <td>임베드된 색상 프로파일이 없는 RGB 이미지에 사용되는 기본 RGB 색상 프로파일의 이름</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=ko">iccprofilesrcmyk</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrcmyk</a></td>
    <td>문자열</td>
    <td>&lt;비어 있음&gt;</td>
    <td>임베드된 색상 프로파일이 없는 CMYK 이미지에 사용되는 기본 CMYK 색상 프로파일의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=ko">iccprofilescrgray</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilescrgray</a></td>
    <td>문자열</td>
    <td>&lt;비어 있음&gt;</td>
    <td>임베드된 색상 프로파일이 없는 CMYK 이미지에 사용되는 기본 회색 색상 프로파일의 이름입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=ko">iccblackpointcompensation</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">iccblackpointcompensation</a></td>
    <td>부울</td>
    <td>참</td>
    <td>색상 교정 중에 검은 점 보상이 수행되는지 여부를 지정합니다. Adobe에서는 이 설정이 켜져 있을 것을 권장합니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=ko">아이스디더</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">아이스디더</a></td>
    <td>부울</td>
    <td>거짓</td>
    <td>색상 교정 중에 디더링을 수행할지 여부를 지정합니다.</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=ko">iccrenderintent</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
    <td>문자열</td>
    <td>상대적</td>
    <td><p>렌더링 의도를 지정합니다. 허용되는 값은 <strong>가시 범위, 상대, 채도, 절대입니다. </strong><i></i>Adobe에서는 기본적으로 <strong>상대 </strong><i></i>을(를) 권장합니다.</p> </td>
@@ -1247,28 +1225,28 @@ Dynamic Media 색상 관리 기능을 사용하려면 기능 팩 을 12445.
   </tr>
   <tr>
    <td>뷰어 URL 복사</td>
-   <td><p>URL 복사 대화 상자에는 다음과 유사한 URL이 표시됩니다(URL은 데모용으로만 사용).</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&contentRoot=%2F</code></p> <p>여기서 <code>PUBLISHNODE</code>은(는) 일반 Experience Manager 게시 노드를 참조하고 <code>IMAGESERVICEPUBLISHNODE</code>은(는) 이미지 서비스 URL을 참조합니다.</p> <p><a href="/help/assets/delivering-dynamic-media-assets.md">Dynamic Media Assets 배달</a>도 참조하세요.</p> </td>
+   <td><p>URL 복사 대화 상자에는 다음과 유사한 URL이 표시됩니다(URL은 데모용으로만 사용).</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>여기서 <code>PUBLISHNODE</code>은(는) 일반 Experience Manager 게시 노드를 참조하고 <code>IMAGESERVICEPUBLISHNODE</code>은(는) 이미지 서비스 URL을 참조합니다.</p> <p><a href="/help/assets/delivering-dynamic-media-assets.md">Dynamic Media Assets 배달</a>도 참조하세요.</p> </td>
   </tr>
   <tr>
    <td>뷰어의 포함 코드 복사</td>
    <td><p>포함 코드 복사 대화 상자에는 다음과 유사한 코드 조각이 표시됩니다(코드 샘플은 데모용으로만 사용됨).</p> <p><code class="code">&lt;style type="text/css"&gt;
-       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
+       #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
        height:auto;
-       &rbrace;
+       }
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
        "containerId" : "s7basiczoom_div",
-       "params" : &lbrace;
+       "params" : {
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
-       &rbrace;).init();
+       "asset" : "/content/dam/path/to/Image.jpg" }
+       }).init();
        &lt;/script&gt;</code></p> <p>여기서 <code>PUBLISHNODE</code>은(는) 일반 Experience Manager 게시 노드를 참조하고 <code>IMAGESERVICEPUBLISHNODE</code>은(는) 이미지 서비스 URL을 참조합니다.</p> <p><a href="/help/assets/delivering-dynamic-media-assets.md">Dynamic Media Assets 배달</a>도 참조하세요.</p> </td>
   </tr>
  </tbody>

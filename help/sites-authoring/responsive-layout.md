@@ -1,15 +1,11 @@
 ---
 title: 컨텐츠 페이지에 대한 응답형 레이아웃
 description: Adobe Experience Manager을 사용하면 레이아웃 컨테이너 구성 요소를 사용하여 페이지에 대한 응답형 레이아웃을 구현할 수 있습니다.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 06c1c7bc-aecb-4c35-bf30-dcc852540d6c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e4d365adbfc08ddd51af692237779ed4e11c532d
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 71%
@@ -136,7 +132,7 @@ AEM을 사용하면 디바이스의 폭에 따라 레이아웃을 정의할 수 
 
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
-   * 파란색 점선은 선택한 장치(여기서는 **iPhone 6**)에 대한 *접기*&#x200B;를 나타냅니다.
+   * 파란색 점선은 선택한 장치(여기서는 *iPhone 6*)에 대한 **접기**&#x200B;를 나타냅니다.
 
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 

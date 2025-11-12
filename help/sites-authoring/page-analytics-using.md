@@ -1,20 +1,14 @@
 ---
 title: 페이지 콘텐츠의 효과를 측정하기 위한 페이지 분석 데이터 보기
 description: 페이지 분석 데이터를 사용하여 페이지 콘텐츠의 효과를 측정합니다
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
-docset: aem65
-legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: b47591ac-10ff-4b87-b75d-68ed635ceca8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 87f0e0530b14c8cb7d25ee139ec89d75551fb16e
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 4%
+source-wordcount: '437'
+ht-degree: 5%
 
 ---
 
@@ -77,7 +71,7 @@ Analytics-Administrators 사용자 그룹의 구성원은 작성자가 추가 An
 
 ### 사이트에서 컨텐츠 인사이트 열기 {#opening-content-insights-from-sites}
 
-사이트 콘솔에서 [콘텐츠 인사이트](/help/sites-authoring/content-insights.md)를 열어 페이지 효율성을 자세히 조사하십시오.
+사이트 콘솔에서 [컨텐츠 Insight](/help/sites-authoring/content-insights.md)을(를) 열어 페이지 효과를 자세히 조사하십시오.
 
 1. 사이트 콘솔에서 컨텐츠 인사이트를 보려는 페이지를 선택합니다.
 1. 도구 모음에서 Analytics 및 권장 사항 아이콘을 클릭합니다.
@@ -90,4 +84,4 @@ Analytics-Administrators 사용자 그룹의 구성원은 작성자가 추가 An
 >
 >Adobe Analytics API 내의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
 >
->이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics[에서 제공한 ](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)ActivityMap 플러그인을 사용해야 합니다.

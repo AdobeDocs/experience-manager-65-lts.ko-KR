@@ -1,13 +1,13 @@
 ---
 title: 개인화 및 콘텐츠 타겟팅
-description: Adobe Experience Manager 6.5에서 개인화된 콘텐츠를 만드는 방법을 알아봅니다.
+description: Adobe Experience Manager 6.5 LTS가 어떻게 개인화된 콘텐츠를 만들 수 있는지 알아봅니다.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Architect,Developer
 exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8a4f8ce12a67985f659d0e565f2950c97179bc01
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '527'
 ht-degree: 73%
 
 ---
@@ -56,7 +56,7 @@ AEM의 타겟팅 모드를 사용하여 [타겟팅된 콘텐츠를 작성](/help
 
 ### AEM {#aem}
 
-AEM에서는 페이지 요청을 처리하고 표시할 콘텐츠를 결정하는 내장 타겟팅 엔진을 제공합니다. AEM 타기팅 엔진을 사용하는 경우 경험의 대상자를 정의하기 위해 AEM에서 만들어진 세그먼트를 사용해야 하는 제한이 있습니다.
+AEM에서는 페이지 요청을 처리하고 표시할 콘텐츠를 결정하는 타기팅 엔진을 기본 제공합니다. AEM 타기팅 엔진을 사용하는 경우 경험의 대상자를 정의하기 위해 AEM에서 만들어진 세그먼트를 사용해야 하는 제한이 있습니다.
 
 ### Adobe Target {#adobe-target}
 

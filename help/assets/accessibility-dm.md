@@ -8,7 +8,7 @@ feature: Accessibility
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 0aebf16a-4115-4656-b583-1a293478c9a1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 33f9dccea41417e84d8fdd0aac25a7e1e6327aac
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## [!DNL Dynamic Media]에서 키보드 접근성 지원
 
-[!DNL Dynamic Media]은(는) [!DNL Adobe Experience Manager Assets]에 대한 플러그인이므로 대부분의 키보드 제어 동작은 [!DNL Experience Manager Assets]과(와) 동일합니다. 예를 들어 [!DNL Dynamic Media]의 `Cancel` 단추에는 [!DNL Experience Manager Assets]과(와) 동일한 포커스 강조 표시가 있으며 [!DNL Experience Manager Assets]과(와) 마찬가지로 `Spacebar` 키에 반응합니다. [Assets의 키보드 단축키](/help/assets/accessibility.md#keyboard-shortcuts)를 참조하십시오.
+[!DNL Dynamic Media]은(는) [!DNL Adobe Experience Manager Assets]에 대한 플러그인이므로 대부분의 키보드 제어 동작은 [!DNL Experience Manager Assets]과(와) 동일합니다. 예를 들어 `Cancel`의 [!DNL Dynamic Media] 단추에는 [!DNL Experience Manager Assets]과(와) 동일한 포커스 강조 표시가 있으며 `Spacebar`과(와) 마찬가지로 [!DNL Experience Manager Assets] 키에 반응합니다. [Assets의 키보드 단축키](/help/assets/accessibility.md#keyboard-shortcuts)를 참조하십시오.
 
 [!DNL Dynamic Media]의 개별 사용자 인터페이스 요소에서 지원하는 키 입력이 명확하고 검색하기 쉽습니다. [!DNL Dynamic Media]의 키보드 컨트롤은 다음과 같습니다.
 
@@ -38,8 +38,6 @@ ht-degree: 0%
    * 다음 네 개의 `Tab` 정지는 프레임의 네 모퉁이입니다. 프레임 모서리에 포커스를 놓으면 코너가 강조 표시됩니다. 키보드의 화살표 키를 사용하여 포커스가 있는 모서리를 이동할 수 있습니다.
 [단일 이미지의 스마트 자르기 또는 스마트 색상 견본 편집](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)을 참조하십시오.
 
-<!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
-
 <!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
 
 <!-- I think we should definitely mention this in the DM-specific area of documentation for keyboard support. -->
@@ -54,12 +52,12 @@ ht-degree: 0%
 
 모든 기본 [!DNL Dynamic Media] 뷰어 구성 요소는 고객을 위해 키보드 접근성을 지원합니다.
 
-Dynamic Media 뷰어 참조 안내서에서 [키보드 접근성 및 탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=ko)을 참조하십시오.
+Dynamic Media 뷰어 참조 안내서에서 [키보드 접근성 및 탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)을 참조하십시오.
 
 ## [!DNL Dynamic Media] 뷰어에서 보조 기술 지원 {#assistive-technology-support-for-dm-viewers}
 
 모든 [!DNL Dynamic Media] 뷰어 구성 요소는 ARIA(Accessible Rich Internet Applications) 역할 및 특성을 지원하여 화면 판독기와 같은 보조 기술과의 통합을 향상시킵니다.
-Dynamic Media 뷰어 참조 안내서의 뷰어 사용자 지정 항목에서 **보조 기술 지원** 도움말 항목을 참조하십시오. 예를 들어 비디오 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=ko) 또는 대화형 이미지 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=ko#viewers-for-aem-assets-only)을 참조하십시오.
+Dynamic Media 뷰어 참조 안내서의 뷰어 사용자 지정 항목에서 **보조 기술 지원** 도움말 항목을 참조하십시오. 예를 들어 비디오 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) 또는 대화형 이미지 뷰어의 경우 [보조 기술 지원](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only)을 참조하십시오.
 
 ## Dynamic Media에서 자막 지원 {#closed-caption-support}
 
@@ -70,4 +68,4 @@ Dynamic Media는 자막이 있는 비디오 및 적응형 비디오 세트 배�
 >[!MORELIKETHIS]
 >
 >* [Adobe 솔루션에 대한 접근성](https://www.adobe.com/accessibility.html)
->*  [!DNL Experience Manager Assets][&#128279;](/help/assets/accessibility.md)의 접근성
+>* [의  [!DNL Experience Manager Assets]](/help/assets/accessibility.md)접근성

@@ -1,16 +1,13 @@
 ---
 title: 스타일 시스템
 description: 스타일 시스템을 사용하여 템플릿 작성자는 페이지에서 구성 요소를 편집할 때 콘텐츠 작성자가 선택할 수 있도록 구성 요소의 콘텐츠 정책에 스타일 클래스를 정의할 수 있습니다. 이러한 스타일은 보다 유연하게 사용할 수 있도록 구성 요소를 시각적으로 변형한 대체물일 수 있습니다.
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: a3d42a73-e1b2-4f76-b98a-89cd98eea2c9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 1b01d338c8400f38e4f062cb3ee592062f560a67
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1292'
 ht-degree: 83%
 
 ---
@@ -62,7 +59,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 ## 사용 {#use}
 
-이 기능을 보여 주기 위해 핵심 구성 요소의 [제목 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)에 대한 [WKND](https://www.adobe.com/go/aem_cmp_title_v2_kr)의 구현을 예로 사용할 것입니다.
+이 기능을 보여 주기 위해 핵심 구성 요소의 [제목 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)에 대한 [WKND](https://www.adobe.com/go/aem_cmp_title_v2_kr)의 구현을 예로 사용할 것입니다.
 
 다음 섹션 [콘텐츠 작성자](#as-a-content-author) 및 [템플릿 작성자](#as-a-template-author)에서는 WKND의 스타일 시스템을 사용하여 스타일 시스템의 기능을 테스트하는 방법을 설명합니다.
 
@@ -129,7 +126,7 @@ AEM에서는 마지막 세 단계만 실제로 수행됩니다. 즉, 필요한 C
 
 ### 편집 대화 상자에서 스타일 탭 활성화 {#enable-styles-tab-edit}
 
-이제 AEM 버전 6.5.3.0부터 편집 대화 상자의 선택적 스타일 탭을 사용할 수 있습니다. 디자인 대화 상자 탭과 달리 편집 대화 상자의 탭은 스타일 시스템이 작동하는 데 꼭 필요한 것은 아니지만 콘텐츠 작성자가 스타일을 설정할 수 있는 선택 가능한 대체 인터페이스입니다.
+이제 편집 대화 상자의 선택적 스타일 탭을 사용할 수 있습니다. 디자인 대화 상자 탭과 달리 편집 대화 상자의 탭은 스타일 시스템이 작동하는 데 꼭 필요한 것은 아니지만 콘텐츠 작성자가 스타일을 설정할 수 있는 선택 가능한 대체 인터페이스입니다.
 
 편집 대화 상자 탭은 디자인 대화 상자 탭과 유사한 방식으로 포함될 수 있습니다.
 

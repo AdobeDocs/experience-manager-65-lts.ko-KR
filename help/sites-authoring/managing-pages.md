@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: c99c7b2616e652ae372e98349d5de3b658a0beb1
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 74%
+source-wordcount: '2468'
+ht-degree: 75%
 
 ---
 
@@ -242,7 +242,7 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 사용 �
 
 >[!CAUTION]
 >
->페이지가 만들어지면 해당 템플릿을 변경할 수 없습니다. 대신 [새 템플릿으로 launch를 만들 수는 있지만 &#x200B;](/help/sites-authoring/launches-creating.md#create-launch-with-new-template)그렇게 되면 이미 존재하는 컨텐츠는 모두 잃게 됩니다.
+>페이지가 만들어지면 해당 템플릿을 변경할 수 없습니다. 대신 [새 템플릿으로 launch를 만들 수는 있지만 ](/help/sites-authoring/launches-creating.md#create-launch-with-new-template)그렇게 되면 이미 존재하는 컨텐츠는 모두 잃게 됩니다.
 
 ### 편집할 페이지 열기 {#opening-a-page-for-editing}
 
@@ -390,15 +390,11 @@ AEM에서는 이름을 바꾸거나 이동하는 페이지를 참조하는 모�
 
   ![비동기 페이지 이동](assets/asynchronous-page-move.png)
 
-비동기 작업의 상태는 [**전역 탐색** > &#x200B;](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)도구&#x200B;**>**&#x200B;작업&#x200B;**>**&#x200B;작업&#x200B;**의**&#x200B;비동기 작업 상태&#x200B;**대시보드**&#x200B;에서 확인할 수 있습니다.
+비동기 작업의 상태는 [**전역 탐색** > ](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)도구&#x200B;**>**&#x200B;작업&#x200B;**>**&#x200B;작업&#x200B;**의**&#x200B;비동기 작업 상태&#x200B;**대시보드**&#x200B;에서 확인할 수 있습니다.
 
 >[!NOTE]
 >
 >비동기 작업 처리와 페이지 이동/이름 바꾸기 작업에 대한 제한을 구성하는 방법에 대한 자세한 내용은 관리 사용 안내서에서 [비동기 작업](/help/sites-administering/asynchronous-jobs.md) 문서를 참조하십시오.
-
->[!NOTE]
->
->비동기 페이지 이동을 처리하려면 AEM 6.5.3.0 이상이 필요합니다.
 
 ### 페이지 삭제 {#deleting-a-page}
 

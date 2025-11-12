@@ -1,22 +1,18 @@
 ---
-title: Adobe Campaign 작업
+title: Adobe Campaign을 사용한 작업
 description: Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 개인화하고 게재할 수 있는 솔루션 세트입니다.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 4a659a56-ba49-4bfa-8fc2-e0d033f27809
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: f9995f10cd8cc282cbc3ce2cb2df1b4591594139
 workflow-type: tm+mt
 source-wordcount: '126'
-ht-degree: 2%
+ht-degree: 27%
 
 ---
 
-# Adobe Campaign 작업{#working-with-adobe-campaign}
+# Adobe Campaign을 사용한 작업{#working-with-adobe-campaign}
 
 Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 개인화하고 게재할 수 있는 솔루션 세트입니다.
 
@@ -35,5 +31,5 @@ Adobe Campaign은 온라인과 오프라인의 모든 채널에서 캠페인을 
 
 또한 통합을 사용자 정의하려면 다음 항목을 참조하십시오.
 
-* [사용자 지정 Adobe Campaign 확장](/help/sites-developing/extending-campaign-extensions.md)
-* [사용자 정의 양식 매핑 만들기](/help/sites-developing/extending-campaign-form-mapping.md)
+* [사용자 정의 Adobe Campaign 확장](/help/sites-developing/extending-campaign-extensions.md)
+* [사용자 지정 양식 매핑 만들기](/help/sites-developing/extending-campaign-form-mapping.md)

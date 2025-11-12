@@ -6,9 +6,9 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 15face30-3039-49a0-bfee-56bff21e5c27
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 0b337740dffb9e6421e6d2c44a1ae222dfa37711
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '676'
 ht-degree: 3%
 
 ---
@@ -22,15 +22,15 @@ AEM 컨텐츠 및 Commerce을 시작하려면 AEM 컨텐츠 및 AEM 6.5용 Comme
 
 AEM Content 및 Commerce에 대한 온보딩은 두 단계 과정으로 이루어집니다.
 
-1. AEM 6.5용 AEM 컨텐츠 및 Commerce 추가 기능 설치
+1. AEM 6.5 LTS용 AEM 컨텐츠 및 Commerce 추가 기능 설치
 
 2. AEM과 상거래 솔루션 연결
 
-### AEM 6.5용 AEM 컨텐츠 및 Commerce 추가 기능 설치 {#install-add-on}
+### AEM 6.5 LTS용 AEM 컨텐츠 및 Commerce 추가 기능 설치 {#install-add-on}
 
-[소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 포털에서 AEM 6.5용 AEM Commerce 추가 기능을 다운로드하여 설치하십시오.
+[소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 포털에서 AEM 6.5 LTS용 AEM Commerce 추가 기능을 다운로드하여 설치하십시오.
 
-필요한 AEM 6.5 서비스 팩을 시작 및 설치합니다. 사용 가능한 마지막 서비스 팩을 설치하는 것이 좋습니다.
+필요한 AEM 6.5 LTS 서비스 팩을 시작 및 설치합니다. 사용 가능한 마지막 서비스 팩을 설치하는 것이 좋습니다.
 
 >[!NOTE]
 >
@@ -42,13 +42,13 @@ AEM은 AEM에 대한 액세스 가능한 GraphQL 종단점이 있는 상거래 �
 
 선택적으로, 인증이 필요한 추가 CIF 기능을 사용하도록 인증 헤더를 제공할 수 있습니다.
 
-[AEM Project Archetype](https://github.com/adobe/aem-project-archetype) 및 [기본 구성](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json)에 이미 포함된 [AEM Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)에서 생성된 프로젝트를 조정해야 합니다.
+[AEM Project Archetype](https://github.com/adobe/aem-project-archetype) 및 [기본 구성](https://github.com/adobe/aem-cif-guides-venia)에 이미 포함된 [AEM Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json)에서 생성된 프로젝트를 조정해야 합니다.
 
-`com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json`의 `url` 값을 상거래 시스템의 GraphQL 끝점으로 바꿉니다. 이 구성은 OSGI 콘솔을 통해 또는 프로젝트를 통해 OSGI 구성을 배포하여 수행할 수 있습니다. 스테이징 및 프로덕션 시스템에 대한 다양한 구성은 다양한 AEM 실행 모드를 사용하여 지원됩니다.
+`url`의 `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` 값을 상거래 시스템의 GraphQL 끝점으로 바꿉니다. 이 구성은 OSGI 콘솔을 통해 또는 프로젝트를 통해 OSGI 구성을 배포하여 수행할 수 있습니다. 스테이징 및 프로덕션 시스템에 대한 다양한 구성은 다양한 AEM 실행 모드를 사용하여 지원됩니다.
 
 AEM 컨텐츠, Commerce 추가 기능 및 CIF 핵심 구성 요소는 AEM 서버측과 클라이언트측 연결을 모두 사용합니다. 클라이언트측 CIF 핵심 구성 요소 및 CIF 추가 기능 제작 도구는 기본적으로 `/api/graphql`에 연결됩니다. 필요한 경우 CIF Cloud Service 구성을 통해 조정할 수 있습니다(아래 참조).
 
-CIF 추가 기능은 [로컬 개발](develop.md)에 선택적으로 사용할 수 있는 `/api/graphql`의 GraphQL 프록시 서블릿을 제공합니다. 프로덕션 배포의 경우 AEM Dispatcher을 통해 또는 다른 네트워크 계층(CDN 등)에서 상거래 GraphQL 엔드포인트에 대한 역방향 프록시를 설정하는 것이 좋습니다.
+CIF 추가 기능은 `/api/graphql`로컬 개발[에 선택적으로 사용할 수 있는 ](develop.md)의 GraphQL 프록시 서블릿을 제공합니다. 프로덕션 배포의 경우 AEM Dispatcher을 통해 또는 다른 네트워크 계층(CDN 등)에서 상거래 GraphQL 엔드포인트에 대한 역방향 프록시를 설정하는 것이 좋습니다.
 
 ## 저장소 및 카탈로그 구성 {#catalog}
 

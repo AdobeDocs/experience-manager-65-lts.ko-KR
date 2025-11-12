@@ -1,15 +1,11 @@
 ---
 title: 캠페인 생성 시 세분화 이해
 description: 세그먼테이션은 캠페인을 만들 때 중요하게 고려해야 하는 사항입니다.
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 7167c672-8d24-4493-aff6-b5b453074bff
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 36022b939d598a43ee7f5339ed04122e476205b7
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 46%

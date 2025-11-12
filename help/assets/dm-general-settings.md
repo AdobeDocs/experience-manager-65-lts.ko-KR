@@ -1,18 +1,14 @@
 ---
 title: Dynamic Media 일반 설정 구성
 description: Dynamic Media에서 일반 설정을 관리하는 방법을 알아봅니다. 여기에서 게시 서버 이름과 원본 서버 이름을 설정하고 이미지 덮어쓰기 옵션을 설정할 수 있습니다. 또한 이미지의 언샵 마스킹을 위한 기본 업로드 옵션과 PostScript, Adobe Photoshop, PDF 및 Adobe Illustrator 파일을 처리하는 방법에 대한 업로드 옵션이 있습니다.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
 exl-id: 99cd5f46-f1aa-46f5-b112-311724e00490
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 298d0505a6c0561202e77008b3c352066d4e72b7
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2498'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 **[!UICONTROL Dynamic Media 일반 설정]**&#x200B;을(를) 구성하는 방법은 다음 경우에만 사용할 수 있습니다.
 
 * Scene7 모드에서 Dynamic Media를 실행하고 있습니다. [Scene7 모드에서 Dynamic Media 사용](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)을 참조하십시오.
-* Adobe Experience Manager 6.5.11 이상에 *기존* **[!UICONTROL Dynamic Media 구성]**(**[!UICONTROL Cloud Services]**&#x200B;에서)이 있습니다. [클라우드 서비스에서 Dynamic Media 구성 만들기](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)를 참조하십시오.
+* *기존* **[!UICONTROL Dynamic Media 구성]**(**[!UICONTROL Cloud Services]**&#x200B;에서)이 있습니다. [클라우드 서비스에서 Dynamic Media 구성 만들기](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)를 참조하십시오.
 * 관리자 권한이 있는 Experience Manager 시스템 관리자입니다.
 
 Dynamic Media 일반 설정 은 숙련된 웹 사이트 개발자 및 프로그래머가 사용하도록 설계되었습니다. Adobe Dynamic Media는 이러한 게시 설정을 변경하는 사용자에게 Adobe Experience Manager의 Dynamic Media 및 기본 이미징 기술에 익숙할 것을 권장합니다.
@@ -52,7 +48,7 @@ Dynamic Media 게시 설정 페이지는 Adobe Dynamic Media 서버에서 웹 �
    * [Illustrator](#illustrator-tab) 탭
 
    ![Dynamic Media 일반 설정 페이지](/help/assets/assets-dm/dm-general-settings.png)
-   **[!UICONTROL 이미지 편집]** 탭이 선택된 *Dynamic Media 일반 설정 페이지.*<br><br>
+   *이미지 편집&#x200B;**[!UICONTROL 탭이 선택된]**Dynamic Media 일반 설정 페이지.*<br><br>
 
 1. 완료되면 페이지의 오른쪽 상단 근처에서 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
@@ -86,7 +82,7 @@ Dynamic Media 게시 설정 페이지는 Adobe Dynamic Media 서버에서 웹 �
 
   기존 수동 자르기 정의의 유지를 제어합니다.
 
-  Dynamic Media 뷰어 참조 가이드의 [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=ko) 및 [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=ko)에서도 `preserveCrop`을(를) 참조하십시오.
+  Dynamic Media 뷰어 참조 가이드의 `preserveCrop`UploadPostJob[ 및 ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html)ReprocessAssetsJob[에서도 ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html)을(를) 참조하십시오.
 
 ## 기본 업로드 옵션 {#default-upload-options}
 
@@ -130,7 +126,7 @@ Adobe® Photoshop® 파일에서 템플릿을 만들고, 레이어를 유지하�
 | **[!UICONTROL 템플릿 만들기]** | PSD 파일의 레이어로 템플릿을 만듭니다. |
 | **[!UICONTROL 텍스트 추출]** | 사용자가 뷰어에서 텍스트를 검색할 수 있도록 텍스트를 추출합니다. |
 | **[!UICONTROL 레이어를 배경 크기로 확장]** | 리핑된 이미지 레이어의 크기를 배경 레이어의 크기로 확장합니다. |
-| **[!UICONTROL 레이어 이름 지정]** | 리핑된 이미지 레이어의 크기를 배경 레이어의 크기로 확장합니다.<br>· **[!UICONTROL 레이어 이름]** - PSD 파일에서 레이어 이름 뒤에 이미지 이름을 지정합니다. 예를 들어 원래 PSD 파일에서 Price Tag 라는 레이어는 Price Tag 라는 이미지가 됩니다. 그러나 PSD 파일의 레이어 이름이 기본 Photoshop 레이어 이름(배경, 레이어 1, 레이어 2 등)이면 PSD 파일에서 해당 레이어 번호의 이름을 따라 이미지 이름이 지정됩니다. <br>· **[!UICONTROL Photoshop 및 레이어 번호]** - 원래 레이어 이름을 무시하고 PSD 파일에서 레이어 번호 뒤에 이미지 이름을 지정합니다. 이미지 이름은 Photoshop 파일 이름과 추가된 레이어 번호로 지정됩니다. 예를 들어, 이름이 `Spring Ad.psd`인 파일의 두 번째 레이어는 Photoshop에 기본이 아닌 이름이 있더라도 이름이 `Spring Ad_2`입니다.<br>· **[!UICONTROL Photoshop 및 레이어 이름]** - PSD 파일 뒤에 레이어 이름 또는 레이어 번호가 오는 이미지 이름을 지정합니다. PSD 파일의 레이어 이름이 기본 Photoshop 레이어 이름인 경우 레이어 번호가 사용됩니다. 예를 들어, PSD 파일 `SpringAd`의 `Price Tag` 레이어 이름은 `Spring Ad_Price Tag`입니다. 기본 이름이 Layer 2인 레이어를 `Spring Ad_2`이라고 합니다. |
+| **[!UICONTROL 레이어 이름 지정]** | 리핑된 이미지 레이어의 크기를 배경 레이어의 크기로 확장합니다.<br>· **[!UICONTROL 레이어 이름]** - PSD 파일에서 레이어 이름 뒤에 이미지 이름을 지정합니다. 예를 들어 원래 PSD 파일에서 Price Tag 라는 레이어는 Price Tag 라는 이미지가 됩니다. 그러나 PSD 파일의 레이어 이름이 기본 Photoshop 레이어 이름(배경, 레이어 1, 레이어 2 등)이면 PSD 파일에서 해당 레이어 번호의 이름을 따라 이미지 이름이 지정됩니다. <br>· **[!UICONTROL Photoshop 및 레이어 번호]** - 원래 레이어 이름을 무시하고 PSD 파일에서 레이어 번호 뒤에 이미지 이름을 지정합니다. 이미지 이름은 Photoshop 파일 이름과 추가된 레이어 번호로 지정됩니다. 예를 들어, 이름이 `Spring Ad.psd`인 파일의 두 번째 레이어는 Photoshop에 기본이 아닌 이름이 있더라도 이름이 `Spring Ad_2`입니다.<br>· **[!UICONTROL Photoshop 및 레이어 이름]** - PSD 파일 뒤에 레이어 이름 또는 레이어 번호가 오는 이미지 이름을 지정합니다. PSD 파일의 레이어 이름이 기본 Photoshop 레이어 이름인 경우 레이어 번호가 사용됩니다. 예를 들어, PSD 파일 `Price Tag`의 `SpringAd` 레이어 이름은 `Spring Ad_Price Tag`입니다. 기본 이름이 Layer 2인 레이어를 `Spring Ad_2`이라고 합니다. |
 | **[!UICONTROL 앵커]** | PSD 파일에서 만든 레이어 컴포지션에서 생성된 템플릿에서 이미지가 고정되는 방식을 지정합니다. 기본적으로 앵커는 가운데입니다. 가운데 앵커를 사용하면 대체 이미지의 종횡비에 관계없이 대체 이미지가 동일한 공간을 가장 잘 채울 수 있습니다. 템플릿을 참조하고 매개 변수 대체를 사용할 때 이 이미지를 대체하는 다른 양상의 이미지가 동일한 공간을 효과적으로 차지합니다. 템플릿에서 할당된 공간을 채우기 위해 응용 프로그램에 교체 이미지가 필요한 경우 다른 설정으로 변경합니다. |
 
 ### PDF 탭 {#pdf-tab}
