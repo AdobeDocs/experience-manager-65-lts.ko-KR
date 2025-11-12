@@ -82,7 +82,7 @@ Dynamic Media 게시 설정 페이지는 Adobe Dynamic Media 서버에서 웹 �
 
   기존 수동 자르기 정의의 유지를 제어합니다.
 
-  Dynamic Media 뷰어 참조 가이드의 `preserveCrop`UploadPostJob[&#x200B; 및 &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html)ReprocessAssetsJob[에서도 &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html)을(를) 참조하십시오.
+  Dynamic Media 뷰어 참조 가이드의 `preserveCrop`UploadPostJob[&#x200B; 및 &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=ko)ReprocessAssetsJob[에서도 &#x200B;](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=ko)을(를) 참조하십시오.
 
 ## 기본 업로드 옵션 {#default-upload-options}
 

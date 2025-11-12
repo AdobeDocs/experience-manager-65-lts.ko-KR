@@ -17,7 +17,7 @@ ht-degree: 2%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=ko) |
 | AEM 6.5 LTS | 이 문서 |
 
 [!DNL Adobe Experience Manager] 플랫폼은 자산을 관리하는 다양한 기능을 제공합니다. Media Library를 사용하면 저장소에 적은 수의 에셋을 업로드하고, 웹 페이지에서 해당 에셋을 검색 및 사용할 수 있으며, 에셋에 대한 간단한 에셋 관리 작업을 수행할 수 있습니다.
