@@ -8,7 +8,7 @@ exl-id: c9ea613d-f1d1-49be-bd52-95d489442f46
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -46,7 +46,7 @@ Oak은 [JSR-283](https://jcp.org/en/jsr/detail?id=283)&#x200B;(JCR 2.0) 사양�
 Oak 코어는 스토리지 레이어에 다음과 같은 여러 계층을 추가합니다.
 
 * 액세스 수준 제어
-* 검색 및 색인 지정
+* 검색 및 색인화
 * 관찰
 
 ### OAK JS {#oak-jcr}
@@ -129,4 +129,4 @@ AEM 플랫폼에 대한 자세한 내용은 아래 기사도 참조하십시오.
 * [AEM 6에서 노드 저장소 및 데이터 저장소 구성](/help/sites-deploying/data-store-config.md)
 * [Oak 쿼리 및 색인화](/help/sites-deploying/queries-and-indexing.md)
 * [AEM 6의 스토리지 요소](/help/sites-deploying/storage-elements-in-aem-6.md)
-* [AEM 및 MongoDB](/help/sites-deploying/aem-with-mongodb.md)
+* [MongoDB를 사용한 AEM](/help/sites-deploying/aem-with-mongodb.md)
