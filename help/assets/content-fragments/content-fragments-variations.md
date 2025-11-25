@@ -5,14 +5,14 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e0fb43e63eb876049447d12ab379fd92aa1ee4b6
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 59%
+source-wordcount: '2350'
+ht-degree: 58%
 
 ---
 
-# 베리에이션 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
+# 변형 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
 
 [변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)은(는) AEM 콘텐츠 조각의 중요한 기능으로, 특정 채널 및/또는 시나리오에서 사용할 마스터 콘텐츠의 사본을 만들고 편집할 수 있기 때문에 headless 콘텐츠 전달을 보다 유연하게 해 줍니다.
 
@@ -349,7 +349,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
    찾으면 썸네일을 클릭하여 필요한 에셋을 선택합니다.
 
-1. **선택**&#x200B;을 사용하여 자산을 현재 위치에서 콘텐츠 조각의 단락 시스템에 추가합니다.
+1. **선택**&#x200B;을 사용하여 에셋을 현재 위치에서 콘텐츠 조각의 단락 시스템에 추가합니다.
 
    >[!CAUTION]
    >
@@ -406,6 +406,12 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 변형을 사용하면 **기본** 콘텐츠를 표시하고 목적에 따라 변경할 수 있습니다(필요한 경우).
 
 변형을 만들려면 다음 작업을 수행하십시오.
+
+>[!NOTE]
+>
+>변형은 작성 환경 및 전달 시에도 콘텐츠 조각에 처리 시간을 추가합니다. 변형 수를 관리 가능한 최소값으로 유지하는 것이 좋습니다.
+>
+>가장 좋은 방법은 콘텐츠 조각당 10개의 변형을 초과하지 않는 것입니다.
 
 1. 조각을 열고 사이드 패널이 표시되는지 확인합니다.
 1. 사이드 패널의 아이콘 막대에서 **변형**&#x200B;을 선택합니다.
