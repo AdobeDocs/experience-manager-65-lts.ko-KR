@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+source-git-commit: 5dfcc115fd2e1991a8a4701597b0fb25b374e3ee
 workflow-type: tm+mt
-source-wordcount: '7381'
-ht-degree: 99%
+source-wordcount: '7405'
+ht-degree: 98%
 
 ---
 
@@ -410,6 +410,7 @@ HTL 스크립트 엔진 팩토리의 기능을 차단하는 OSGi 종속성 주�
 * 사용자는 AEM Forms에서 PDF 파일의 타임라인 기능을 사용할 수 없었습니다. 이 문제는 사용자가 문서 변경 사항 및 수정을 효율적으로 추적하는 능력에 영향을 미쳤습니다. AEM Forms 영역의 &#39;양식 및 문서&#39; 섹션에 PDF를 업로드하면 타임라인 보기가 작동을 멈춥니다. (FORMS-19408)
 * 사용자는 OData와 상호 작용할 때 null 포인터 예외를 경험합니다. 이로 인해 데이터 검색 프로세스가 중단됩니다. (FORMS-20348)
 * 오픈 소스 Java 라이브러리인 Guava가 제거된 후 google.common.collect 라이브러리도 제거되었습니다. 이 업데이트는 적응형 양식을 사용하는 기업 고객을 위한 더 나은 호환성 및 성능을 보장합니다. (FORMS-17031)
+* SSV(서버 측 유효성 검사)를 활성화하면 양식 제출이 실패할 수 있습니다. 이 문제가 발생하면 [Adobe 지원](https://business.adobe.com/in/support/main.html)에 지원을 요청하십시오. (FORMS-21966)
 
 ### Forms Captcha
 
