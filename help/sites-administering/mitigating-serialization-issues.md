@@ -1,5 +1,5 @@
 ---
-title: AEM의 직렬화 문제 완화
+title: AEM에서 직렬화 문제 완화
 description: AEM에서 직렬화 문제를 완화하는 방법에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,18 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: eef69d02-2e88-4f44-98bb-d98fa297e3a2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ffb467630ee061bce5a9cab4e8a311e70b2aeb38
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 0%
+source-wordcount: '914'
+ht-degree: 1%
 
 ---
 
-# AEM의 직렬화 문제 완화{#mitigating-serialization-issues-in-aem}
+# AEM에서 직렬화 문제 완화{#mitigating-serialization-issues-in-aem}
 
 ## 개요 {#overview}
 
-Adobe의 AEM 팀은 **CVE-2015-7501**&#x200B;에 설명된 취약점을 완화하는 데 도움이 되도록 오픈 소스 프로젝트 [NotSoSerial](https://github.com/kantega/notsoserial)과(와) 긴밀히 협력했습니다. NotSoSerial은 [Apache 2 라이선스](https://www.apache.org/licenses/LICENSE-2.0)에 따라 라이선스가 부여되며 자체 [BSD 유사 라이선스](https://asm.ow2.io/)에 따라 라이선스가 부여된 ASM 코드를 포함합니다.
+Adobe의 AEM 팀은 [CVE-2015-7501](https://github.com/kantega/notsoserial)에 설명된 취약점을 완화하는 데 도움이 되도록 오픈 소스 프로젝트 **NotSoSerial**&#x200B;과(와) 긴밀히 협력했습니다. NotSoSerial은 [Apache 2 라이선스](https://www.apache.org/licenses/LICENSE-2.0)에 따라 라이선스가 부여되며 자체 [BSD 유사 라이선스](https://asm.ow2.io/)에 따라 라이선스가 부여된 ASM 코드를 포함합니다.
 
 이 패키지에 포함된 에이전트 jar는 Adobe의 수정된 NotSoSerial 배포입니다.
 
@@ -28,11 +28,15 @@ NotSoSerial은 Java™ 수준 문제에 대한 Java™ 수준 솔루션이며 AE
 
 기본적으로 에이전트는 현재 알려진 취약성 클래스에 대해 차단 목록에 추가하다 검사를 수행합니다. 이 차단 목록에 추가하다는 이러한 유형의 취약성 목록에서 여러분을 보호하기 위한 것입니다.
 
-이 문서의 [&#x200B; 에이전트 구성](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) 섹션에 따라 차단 목록에 추가하다 및 허용 목록에 추가하다를 구성할 수 있습니다.
+이 문서의 [ 에이전트 구성](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) 섹션에 따라 차단 목록에 추가하다 및 허용 목록에 추가하다를 구성할 수 있습니다.
 
 이 에이전트는 알려진 최신 취약한 계층을 완화하는 데 도움을 주기 위한 것입니다. 프로젝트가 신뢰할 수 없는 데이터를 역직렬화하는 경우에도 서비스 거부 공격, 메모리 부족 공격 및 알 수 없는 향후 역직렬화 공격에 취약할 수 있습니다.
 
 Adobe은 공식적으로 Java™ 6, 7 및 8을 지원합니다. 그러나 NotSoSerial은 Java™ 5도 지원한다는 것이 Adobe의 이해입니다.
+
+>[!WARNING]
+>
+>NotSoSerial은 Java™ 17 이상에서 사용할 수 없습니다.
 
 ## 에이전트 설치 {#installing-the-agent}
 
