@@ -5,13 +5,12 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: bb270a983d9d3f7d116a179886daf763e7e2341e
+source-git-commit: fbe90ee89a2c20496800b545ec5637e829e7c7d7
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 1%
 
 ---
-
 
 # Adobe Experience Manager Forms 6.5 LTS 핫픽스{#aem-form-hotfix}
 
@@ -37,7 +36,7 @@ ht-degree: 1%
     <ul>
     <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-win-pkg-6.1.176-RHF-002.zip">Windows의 AEM 서비스 팩 6.5 LTS용 핫픽스2</a></li>
     <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]hotfix-on-add-on/adobe-aemfd-linux-pkg-6.1.176-RHF-002.zip">Linux의 AEM 서비스 팩 6.5 LTS용 핫픽스2</a></li>
-     <li>OSX- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.1.176-RHF-002.zip">OSX의 AEM 서비스 팩 6.5 LTS용 핫픽스2</a></li>
+     <li>MacOS- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]1-hotfix-on-add-on/adobe-aemfd-osx-pkg-6.1.176-RHF-002.zip">MacOS의 AEM 서비스 팩 6.5 LTS용 핫픽스2</a></li>
     <td>
     <ul>
     <li>SSV(서버 측 유효성 검사)를 활성화했을 때 제출이 실패할 수 있는 문제를 해결하여 양식 제출 안정성을 개선했습니다. 문제가 발생하면 [Adobe Experience Manager Forms 지원](https://business.adobe.com/in/support/main.html)에 문의하십시오.
