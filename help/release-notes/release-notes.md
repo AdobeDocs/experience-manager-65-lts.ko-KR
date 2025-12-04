@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 5dfcc115fd2e1991a8a4701597b0fb25b374e3ee
+source-git-commit: 0d68ed7cb5fe2bf942ffc62f99da9b005ce00410
 workflow-type: tm+mt
 source-wordcount: '7405'
 ht-degree: 98%
@@ -320,9 +320,6 @@ HTL 스크립트 엔진 팩토리의 기능을 차단하는 OSGi 종속성 주�
 * `org.apache.sling.scripting.jsp 2.6.0`으로 인해 예기치 않은 JSP 컴파일 오류가 수정되었습니다. (NPR-42640)
 
 <!--
-* Backported the fix for Sling Scripting issue that caused `DataTimeParseException` and `String.length()` null pointer exceptions during package installation. Updated Sling Scripting to version 2.8.3-1.0.10.6 to reduce installation errors and improve stability. (NPR-42640) -->
-
-<!--
 #### Translation{#foundation-translation-65-lts-sp1} -->
 
 #### 사용자 인터페이스{#foundation-ui-65-lts-sp1}
@@ -571,19 +568,6 @@ Adobe Experience Manager(AEM) 기능의 제거 또는 대체 예정 사실을 �
 
 <!-- DO THESE KNOWN ISSUES CARRY OVER EACH RELEASE? THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
-<!-- REMOVED THIS SECTION AS PER CQDOC-23046
-### Issue with JSP scripting bundle in AEM 6.5.21-6.5.23 and AEM 6.5 LTS GA
-
-AEM 6.5.21, 6.5.22, 6.5.23, and AEM 6.5 LTS GA ship with the `org.apache.sling.scripting.jsp:2.6.0` bundle, which contains a known issue. The issue typically occurs under high load when the AEM instance handles many concurrent requests.
-
-When this issue occurs, one of the following exceptions may appear in the error logs alongside references to `org.apache.sling.scripting.jsp:2.6.0`:
-
-* `java.io.IOException: classFile.delete() failed`
-* `java.io.IOException: tmpFile.renameTo(classFile) failed`
-* `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
-* `java.io.FileNotFoundException`
-
-A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) is available to resolve this problem. -->
 
 ### SSL 전용 기능을 사용한 Dispatcher 연결 실패 (AEM 6.5 LTS SP1 이상에서 수정됨){#ssl-only-feature}
 
