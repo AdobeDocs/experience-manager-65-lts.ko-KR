@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: e0fb43e63eb876049447d12ab379fd92aa1ee4b6
+source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 58%
+source-wordcount: '2309'
+ht-degree: 59%
 
 ---
 
@@ -406,12 +406,6 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 변형을 사용하면 **기본** 콘텐츠를 표시하고 목적에 따라 변경할 수 있습니다(필요한 경우).
 
 변형을 만들려면 다음 작업을 수행하십시오.
-
->[!NOTE]
->
->변형은 작성 환경 및 전달 시에도 콘텐츠 조각에 처리 시간을 추가합니다. 변형 수를 관리 가능한 최소값으로 유지하는 것이 좋습니다.
->
->가장 좋은 방법은 콘텐츠 조각당 10개의 변형을 초과하지 않는 것입니다.
 
 1. 조각을 열고 사이드 패널이 표시되는지 확인합니다.
 1. 사이드 패널의 아이콘 막대에서 **변형**&#x200B;을 선택합니다.
