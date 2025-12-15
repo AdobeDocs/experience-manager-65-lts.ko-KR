@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: e0a31fe9bc3297a4cb6e72765482c24cebb3ad29
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 72%
+source-wordcount: '2326'
+ht-degree: 73%
 
 ---
 
@@ -109,13 +109,6 @@ AEM의 콘텐츠 조각 모델은 Headless 콘텐츠의 기반 역할을 하는 
    * 한 줄 텍스트 행의 필드를 하나 이상 추가합니다. 최대 길이를 정의할 수 있습니다.
 * **여러 줄 텍스트**
    * 리치 텍스트, 일반 텍스트 또는 Markdown일 수 있는 텍스트 영역입니다.
-
-     >[!NOTE]
-     >
-     >성능상의 이유로 한 모델에 10개 이상의 리치 텍스트 필드를 포함하는 것은 권장되지 않습니다.
-     >
-     >필요한 경우 [중첩된 콘텐츠 조각](#fragment-reference-nested-fragments)을 사용하는 것이 좋습니다.
-
 * **숫자**
    * 숫자 필드를 하나 이상 추가합니다.
 * **부울**
@@ -423,7 +416,7 @@ type CompanyModel {
 1. **도구**, **에셋**&#x200B;으로 이동한 후 **콘텐츠 조각 모델**&#x200B;을 엽니다.
 
 1. 콘텐츠 조각 모델을 포함하는 폴더로 이동합니다.
-1. 모델을 선택한 후 도구 모음에서 **게시**&#x200B;를 클릭합니다.
+1. 모델을 선택한 후 도구 모음에서 **게시**를 클릭합니다.
 게시된 상태가 콘솔에 표시됩니다.
 
    >[!NOTE]
@@ -439,7 +432,7 @@ type CompanyModel {
 1. **도구**, **에셋**&#x200B;으로 이동한 후 **콘텐츠 조각 모델**&#x200B;을 엽니다.
 
 1. 콘텐츠 조각 모델을 포함하는 폴더로 이동합니다.
-1. 모델을 선택한 다음 도구 모음에서 **게시 취소**&#x200B;를 선택합니다.
+1. 모델을 선택한 다음 도구 모음에서 **게시 취소**를 선택합니다.
 게시된 상태가 콘솔에 표시됩니다.
 
 ## 콘텐츠 조각 모델 - 속성 {#content-fragment-model-properties}
