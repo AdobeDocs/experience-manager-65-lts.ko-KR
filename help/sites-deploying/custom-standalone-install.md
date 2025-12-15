@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 독립 실행형 설치
+title: 사용자 정의 독립 실행형 설치
 description: 독립형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 알아봅니다.
 content-type: reference
 topic-tags: deploying
@@ -7,14 +7,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 93aa6218c36b52bfcd7a204e6f0b65871a4b365b
+source-git-commit: 5c7ead37f55175bb565f8661c0c156f76f135131
 workflow-type: tm+mt
 source-wordcount: '1563'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# 사용자 지정 독립 실행형 설치{#custom-standalone-install}
+# 사용자 정의 독립 실행형 설치{#custom-standalone-install}
 
 이 섹션에서는 독립형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 설명합니다. AEM 6을 새로 설치한 후 백엔드 저장소 유형을 선택하는 방법에 대한 자세한 내용은 [저장소 요소](/help/sites-deploying/storage-elements-in-aem-6.md)를 읽을 수도 있습니다.
 
@@ -57,7 +57,7 @@ Oracle Java 17 또는 Java 21을 실행하는 경우 AEM을 시작할 때 명령
 * [Forms만 해당] 아래 샘플은 AEM Forms이 Java 17/Java21에서 작동하도록 하는 샘플이며, 다음과 같은 추가 JVM 매개 변수를 포함합니다.
 
 ```shell
---add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
 ```
 
 ## 실행 모드 {#run-modes}
@@ -323,7 +323,7 @@ AEM WCM을 구성할 수 있는 많은 가능성이 있지만 특정 작업을 �
 
 >[!NOTE]
 >
-> 새로 AEM 6.5 LTS를 설치하는 경우 색인 정의를 별도로 설치해야 합니다. 자세한 내용은 [이](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)을(를) 참조하세요.
+> 새 AEM 6.5 LTS 설치의 경우 인덱스 정의를 별도로 설치해야 합니다. 자세한 내용은 [여기](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions)를 참조하십시오.
 
 ## CRXDE Lite 및 웹 콘솔 액세스 {#accessing-crxde-lite-and-the-web-console}
 
