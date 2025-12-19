@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0d68ed7cb5fe2bf942ffc62f99da9b005ce00410
+source-git-commit: 6ca845ce5f4b97bfc5a360b3426f7284fb9cd401
 workflow-type: tm+mt
-source-wordcount: '7405'
-ht-degree: 98%
+source-wordcount: '7476'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,11 @@ ht-degree: 98%
 
 [!DNL Experience Manager] 6.5 LTS, SP1에는 새로운 기능, 고객 요청을 반영한 주요 개선 사항 및 버그 수정이 포함되어 있습니다. 여기에는 2025년 3월 6.5 LTS가 처음 출시된 이후 적용된 성능, 안정성, 보안 개선 사항도 포함됩니다. 6.5 LTS에 [이 서비스 팩을 설치](#install-update)하십시오.
 
-<!-- ## Key features and enhancements -->
+## 주요 기능 및 개선 사항
+
+### 양식
+
+이제 JEE의 AEM 6.5 Forms LTS를 사용할 수 있습니다. 지원되는 환경에 대한 자세한 내용은 지원되는 플랫폼 조합 문서를 참조하십시오. 설치 관리자 링크는 AEM Forms 릴리스 페이지에서 사용할 수 있습니다.
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -213,10 +217,7 @@ XMP 메타데이터가 잘못 포맷되어 `ValidationDataServlet`에서 이미�
 
 #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp1}
 
-
-
 ### [!DNL Forms]{#forms-65-lts-sp1}
-
 
 #### Forms Designer 
 
@@ -231,8 +232,6 @@ XMP 메타데이터가 잘못 포맷되어 `ValidationDataServlet`에서 이미�
 #### [!DNL Adaptive Forms] {#adaptive-forms-65-lts-sp1}
 
 #### [!DNL Forms Designer] {#forms-designer-65-lts-sp1} -->
-
-
 
 ### 기초 {#foundation-65-lts-sp1}
 
@@ -605,6 +604,9 @@ AEM 6.5 LTS SP1의 도구 -> 보안 아래의 권한 페이지에 액세스하�
 **솔루션:**
 이 문제를 해결하기 위해 핫픽스 [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip)을(를) 사용할 수 있습니다.
 
+### FORMS JEE
+
+* Linux 환경의 사용자는 Windows 스타일 줄 끝으로 인해 설치 관리자 또는 LCM(구성 관리자) 스크립트 오류가 발생할 수 있습니다. 설치 관리자 또는 LCM을 실행하기 전에 dos2unix를 사용하여 모든 .sh 파일을 변환하여 실행 오류를 방지합니다.
 
 ## OSGi 번들 및 콘텐츠 패키지 포함됨{#osgi-bundles-and-content-packages-included}
 
