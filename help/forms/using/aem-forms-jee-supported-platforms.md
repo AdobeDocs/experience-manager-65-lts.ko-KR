@@ -8,9 +8,9 @@ docset: aem65
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 9a2fca4b6bd2efae268206596a178ad90e8ac80e
+source-git-commit: f3ee715a8f65c6ea781948064a83f59097b3ceae
 workflow-type: tm+mt
-source-wordcount: '3094'
+source-wordcount: '3078'
 ht-degree: 3%
 
 ---
@@ -82,7 +82,7 @@ Adobe은 이러한 구성을 권장하며 표준 소프트웨어 유지 관리 �
 >AEM Forms 고객이 소유 비용을 절감하고, 배포 아키텍처를 단순화하고, 개발 스택을 현대화할 수 있도록 Adobe Experience Manager 엔터프라이즈 플랫폼은 독립형 OSGi 기반 배포를 위해 애플리케이션 서버 기반 배포에서 탈피하고 있습니다. Adobe은 인프라 구성 요소 매트릭스가 축소된 AEM Forms JEE 스택을 계속 지원합니다.
 >새 설치의 경우, 가능한 경우 양식 데이터 모델을 사용한 모바일, 다중 채널 대화형 통신 및 백엔드 데이터 통합용 응답형 Forms에 대한 최신 혁신 기능을 사용하도록 최신 OSGi 스택에 AEM Forms을 배포하는 것이 좋습니다.
 >
->Adobe은 기존 사용자가 JEE 스택에 AEM Forms을 계속 배포해야 한다는 것을 인지합니다. 이러한 시나리오에서 Adobe은 이 설명서에 설명된 대로 지원되는 인프라에 AEM Forms JEE를 배포해야 합니다. AEM 6.5 Forms으로 업그레이드하고 이전 AEM Forms 릴리스에서 지원되지 않는 플랫폼을 사용하는 경우 Adobe 지원 팀에 문의하여 지원되는 플랫폼으로 업그레이드하는 데 도움을 받을 수 있습니다.
+>Adobe은 기존 사용자가 JEE 스택에 AEM Forms을 계속 배포해야 한다는 것을 인지합니다. 이러한 시나리오에서 Adobe은 이 설명서에 설명된 대로 지원되는 인프라에 AEM Forms JEE를 배포해야 합니다. AEM 6.5 Forzms로 업그레이드하고 이전 AEM Forms 릴리스에서 지원되지 않는 플랫폼을 사용하는 경우 Adobe 지원팀에 문의하여 지원되는 플랫폼으로 업그레이드하는 데 도움을 받을 수 있습니다.
 
 ### Java™ 가상 시스템(JVM) {#java-virtual-machines-jvm}
 
@@ -292,7 +292,6 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택할 때 다음 예외
 - JEE의 AEM Forms은 TarMK 콜드 대기를 지원하지 않습니다.
 - JEE의 AEM Forms은 수직 클러스터링을 지원하지 않습니다.
 - JEE의 AEM Forms은 클러스터된 환경에서 MySQL 데이터베이스를 지원하지 않습니다.
-- 제거되거나 업데이트된 플랫폼 목록은 [AEM 6.5 Forms의 새로운 기능 요약](../../forms/using/whats-new.md) 문서를 참조하십시오.
 
 ### LDAP 서버(선택 사항) {#ldap-servers-optional}
 
@@ -372,7 +371,7 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 지원되는 Cordova�
    <th><p><strong>PDF으로 전환하기 위해 지원되는 형식</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 클래식 트랙</a> 최신 버전</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 클래식 트랙</a> 최신 버전</td>
    <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF 및 DWF</td>
   </tr>
   <tr>
@@ -410,7 +409,7 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 지원되는 Cordova�
 >- PDF Generator은 Microsoft® Office 365를 지원하지 않습니다.
 >- OpenOffice용 PDF Generator 전환은 Windows 및 Linux®에서만 지원됩니다.
 >- OCR PDF, PDF 최적화 및 Export PDF 기능은 Windows에서만 지원됩니다.
->- Acrobat 버전은 PDF Generator 기능을 사용할 수 있도록 AEM Forms과 번들로 제공됩니다. 번들형 버전은 AEM Forms PDF Generator에서 사용할 경우 AEM Forms 라이선스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스해야 합니다. 자세한 내용은 배포에 따른 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/kr/legal/product-descriptions/adobe-experience-manager-managed-services.html))을 참조하십시오.&quot;
+>- Acrobat 버전은 PDF Generator 기능을 사용할 수 있도록 AEM Forms과 번들로 제공됩니다. 번들형 버전은 AEM Forms PDF Generator에서 사용할 경우 AEM Forms 라이선스 기간 동안 AEM Forms을 통해서만 프로그래밍 방식으로 액세스해야 합니다. 자세한 내용은 배포에 따른 AEM Forms 제품 설명([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 또는 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))을 참조하십시오.&quot;
 >- PDF Generator 서비스는 Microsoft® Windows 10을 지원하지 않습니다.
 >- PDF Generator이 Microsoft® Visio 2019를 사용하여 파일을 변환하지 못했습니다.
 >- PDF Generator이 Microsoft® Project 2019를 사용하여 파일을 변환하지 못했습니다.
@@ -462,8 +461,8 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/)과(�
 
 추가 요구 사항은 다음을 참조하십시오.
 
-- [JEE 배포의 단일 서버 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_kr)
-- [JEE 배포의 클러스터된 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_kr)
+- [JEE 배포의 단일 서버 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- [JEE 배포의 클러스터된 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ### Adobe Acrobat 및 Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -630,7 +629,7 @@ AEM Forms on JEE는 지원되는 소프트웨어의 지정된 주 버전 및 부
 
 ## 타사 패치 지원 정책 {#third-party-patch-support-policy}
 
-AEM Forms on JEE에 대한 타사 소프트웨어 요구 사항은 해당 제품 문서의 &quot;시스템 요구 사항&quot; 섹션에 설명되어 있습니다. [https://adobe.com/go/learn_aemforms_documentation_65_kr](https://adobe.com/go/learn_aemforms_documentation_65_kr)에서 모든 설명서에 액세스합니다.
+AEM Forms on JEE에 대한 타사 소프트웨어 요구 사항은 해당 제품 문서의 &quot;시스템 요구 사항&quot; 섹션에 설명되어 있습니다. [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65)에서 모든 설명서에 액세스합니다.
 
 JEE의 서드파티 참조 플랫폼인 AEM Forms은 JEE의 AEM Forms을 개발 및 릴리스하는 동안 현재 존재하는 서드파티 인프라의 특정 패치 수준과 JEE의 해당 버전의 AEM Forms에서 지원하는 인프라의 최소 패치/서비스 팩 수준을 설명합니다.
 
@@ -658,7 +657,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -741,7 +740,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -810,7 +809,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/kr/support/programs/eol-matrix.html)|
+| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
 |  | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)| |
 |  | | Microsoft&reg; Windows Server 2016 (64-bit)|
 |  | | Microsoft&reg; Office 2016 |
