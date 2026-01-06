@@ -4,7 +4,7 @@ description: AEM Forms 6.5 LTS용 핫픽스를 다운로드하여 설치하는 �
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 504240bdad9e964460a9fcdc555228c7cb02e314
+source-git-commit: 979a817293034d09189417cdf729f476c77cdde3
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 1%
@@ -15,6 +15,7 @@ ht-degree: 1%
 # Adobe Experience Manager Forms 6.5 LTS 핫픽스{#aem-form-hotfix}
 
 이 문서에서는 알려진 문제를 해결하고, 시스템 안정성을 개선하며, AEM Forms 6.5 LTS의 전반적인 성능을 개선하기 위해 구현된 주요 수정 사항을 나열합니다.
+
 
 >[!NOTE]
 >
