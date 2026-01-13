@@ -5,10 +5,10 @@ feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: 9a953caa-47d3-4e06-a27d-2a0c3fc72597
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: c2947923fb83b57bc0e1c068af52558dd0a04867
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 84%
+source-wordcount: '1577'
+ht-degree: 83%
 
 ---
 
@@ -225,11 +225,11 @@ GraphQL 쿼리를 시작하고 AEM 콘텐츠 조각에서 쿼리가 작동하는
 
 ### 샘플 쿼리 - 모든 도시의 이름 {#sample-names-all-cities}
 
-이 샘플 쿼리는 `city` 스키마에 있는 모든 항목의 `name`을(를) 반환하는 간단한 쿼리입니다.
+이 샘플 쿼리는 `name` 스키마에 있는 모든 항목의 `city`을(를) 반환하는 간단한 쿼리입니다.
 
 **샘플 쿼리**
 
-```xmgraphqll
+```graphql
 query {
   cityList {
     items {
@@ -316,7 +316,7 @@ query {
 
 ### 샘플 쿼리 - 이름이 붙은 변형이 있는 모든 도시 {#sample-cities-named-variation}
 
-`city` Berlin에 대해 &quot;Berlin Center&quot;(`berlin_centre`)라는 변형을 만드는 경우 쿼리를 사용하여 변형의 세부 정보를 반환할 수 있습니다.
+`berlin_centre` Berlin에 대해 &quot;Berlin Center&quot;(`city`)라는 변형을 만드는 경우 쿼리를 사용하여 변형의 세부 정보를 반환할 수 있습니다.
 
 **샘플 쿼리**
 
@@ -539,7 +539,7 @@ query {
 
 ### 샘플 쿼리 - 이름이 “Jobs” 또는 “Smith”인 모든 사람 {#sample-all-persons-jobs-smith}
 
-이 샘플 쿼리는 이름이 `Jobs` 또는 `Smith`인 모든 `persons`을(를) 필터링합니다.
+이 샘플 쿼리는 이름이 `persons` 또는 `Jobs`인 모든 `Smith`을(를) 필터링합니다.
 
 **샘플 쿼리**
 
@@ -593,7 +593,7 @@ query {
 
 ### 샘플 쿼리 - 이름이 “Jobs”가 아닌 모든 사람 {#sample-all-persons-not-jobs}
 
-이 샘플 쿼리는 이름이 `Jobs` 또는 `Smith`인 모든 `persons`을(를) 필터링합니다.
+이 샘플 쿼리는 이름이 `persons` 또는 `Jobs`인 모든 `Smith`을(를) 필터링합니다.
 
 **샘플 쿼리**
 
@@ -1649,7 +1649,7 @@ query {
 
 * 하나 이상의 [샘플 콘텐츠 조각 구조 모델](#sample-content-fragment-models-schemas) - GraphQL 스키마의 기반 형성
 
-* 위 모델을 기반으로 하는 [샘플 콘텐츠 모델](#sample-content-fragments)
+* 위 모델을 기반으로 하는 [샘플 콘텐츠 조각](#sample-content-fragments)
 
 ### 샘플 콘텐츠 조각 모델 (스키마) {#sample-content-fragment-models-schemas}
 
