@@ -19,7 +19,7 @@ ht-degree: 19%
 
 * [Adobe Developer Console과 통합](#integrate-adobe-io).
 * [스마트 컨텐츠 서비스를 교육합니다](#training-the-smart-content-service).
-* 최신 [[!DNL Experience Manager] 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)을 설치하십시오.
+* 최신 [[!DNL Experience Manager] 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)을 설치하십시오.
 
 >[!IMPORTANT]
 >
@@ -270,4 +270,4 @@ Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스�
 >
 >* [개요 및 스마트 태그 교육 방법](enhanced-smart-tags.md)
 >* [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-oauth.md)
->* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=ko)
