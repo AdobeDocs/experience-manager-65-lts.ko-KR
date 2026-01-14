@@ -9,9 +9,9 @@ feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
-source-git-commit: dc405bec510b0f72e916df343790572b3cd51526
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
-source-wordcount: '3307'
+source-wordcount: '3306'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 스마트 이미징 기본 정보 {#what-is-smart-imaging}
 
-스마트 이미징 기술은 Adobe Sensei AI 기능을 적용하며 기존 &quot;이미지 사전 설정&quot;과 함께 작동합니다. 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 제공 성능을 향상시키는 데 사용됩니다.
+스마트 이미징 기술은 Adobe AI 기능을 적용하며 기존 &quot;이미지 사전 설정&quot;과 함께 작동합니다. 클라이언트 브라우저 기능을 기반으로 이미지 형식, 크기 및 품질을 자동으로 최적화하여 이미지 제공 성능을 향상시키는 데 사용됩니다.
 
 이제 AVIF 및 WebP가 모두 지원되는 향상된 스마트 이미징을 통해 LCP(최대 콘텐츠풀 페인트)에 대한 더 나은 Google 코어 웹 바이탈 점수를 얻으십시오.
 
@@ -88,7 +88,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 이미지의 URL에 `bfc=off`을(를) 추가하여 스마트 이미징을 끌 수 있습니다.
 
-Dynamic Media 이미지 제공 및 렌더링 API에서 [bfc](https://experienceleague.adobe.com/ko/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)도 참조하세요.
+Dynamic Media 이미지 제공 및 렌더링 API에서 [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)도 참조하세요.
 
 ### 장치 픽셀 비율(DPR) 최적화 정보 {#dpr}
 
@@ -131,7 +131,7 @@ DPR 및 네트워크 대역폭 값은 번들 CDN의 감지된 클라이언트측
 
 * 최신 스마트 이미징을 사용하는 웹 페이지에 대한 Google SEO 등급이 개선되었습니다.
 * 최적화된 컨텐츠를 즉시 제공합니다(런타임 시).
-* Adobe Sensei 기술을 사용하여 이미지 요청에 지정된 품질(`qlt`)에 따라 변환합니다.
+* Adobe AI 기술을 사용하여 이미지 요청에 지정된 품질(`qlt`)에 따라 변환합니다.
 * TTL(Time To Live) 독립적. 이전에는 스마트 이미징이 작동하려면 최소 TTL이 12시간 이상이어야 했습니다.
 * 이전에는 원본 이미지와 파생 이미지가 모두 캐시되었으며 캐시를 무효화하는 2단계 프로세스였습니다. 최신 스마트 이미징에서는 파생 함수만 캐시되므로 한 단계의 캐시 무효화 프로세스를 사용할 수 있습니다.
 * 규칙 세트에서 사용자 지정 헤더를 사용하는 고객은 이전 버전의 스마트 이미징과 달리 이러한 헤더가 차단되지 않으므로 최신 스마트 이미징의 혜택을 받을 수 있습니다. 예를 들어 &quot;Timing Allow Origin&quot; 및 &quot;X-Robot&quot;이 있습니다.
@@ -221,7 +221,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-+++계정에 대해 스마트 이미징을 활성화하는 프로세스는 무엇입니까?
++++계정에 대해 스마트 이미징을 활성화하는 프로세스는 무엇입니까? 
 
 스마트 이미징을 사용하려면 기존 URL 또는 사전 설정에 `bfc=on`, `dpr=on,dprValue` 또는 `network=on` 또는 세 매개 변수 설정을 모두 추가하십시오. 이러한 변경 작업을 수동으로 수행하지 않으려면 지원 사례를 만들어 기본적으로 스마트 이미징을 활성화할 수 있습니다.
 
@@ -255,7 +255,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
       * *`company.com`* 또는 *`mycompany.scene7.com`*&#x200B;과(와) 같은 모든 관련 도메인을 나열합니다.
       * 스마트 이미징은 일반 도메인과 사용자 지정 도메인을 모두 지원합니다.
-      * 도메인을 식별하려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 열고 회사 계정에 로그인하세요.
+      * 도메인을 식별하려면 [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)을 열고 회사 계정에 로그인하세요.
 
          1. **[!UICONTROL 설정]** > **[!UICONTROL 응용 프로그램 설정]** > **[!UICONTROL 일반 설정]**(으)로 이동합니다.
          1. 도메인을 확인하려면 **[!UICONTROL 게시된 서버 이름]** 필드를 찾으십시오.
@@ -278,7 +278,7 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++스마트 이미징을 사용하여 계정을 활성화할 수 있는 시기는 언제입니까?
++++스마트 이미징에서 계정이 언제 활성화될 것으로 예상할 수 있습니까?
 
 고객 지원 팀은 대기 목록에 따라 요청을 받은 순서대로 요청을 처리합니다.
 
@@ -288,7 +288,7 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++스마트 이미징을 사용하도록 전환할 때의 위험은 무엇입니까?
++++스마트 이미징을 사용하도록 전환할 때 발생하는 위험은 무엇입니까?
 
 고객 웹 페이지에는 위험이 없습니다. 그러나 스마트 이미징으로 전환하면 CDN 캐시가 지워집니다. 이 작업에는 Experience Manager의 Dynamic Media Classic 또는 Dynamic Media의 새 구성으로 이동하는 작업이 포함됩니다.
 
@@ -317,7 +317,7 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++성능 향상을 어떻게 알 수 있습니까? 스마트 이미징의 이점을 알 수 있는 방법이 있습니까?
++++성능 향상은 어떻게 알 수 있습니까? 스마트 이미징의 이점을 알 수 있는 방법이 있습니까?
 
 스마트 이미징 헤더는 스마트 이미징의 이점을 결정합니다. 스마트 이미징을 사용하도록 설정하면 이미지를 요청한 후 **[!UICONTROL 응답 헤더]** 제목 아래에 다음 강조 표시된 예와 같이 `-X-Adobe-Smart-Imaging`이(가) 표시됩니다.
 
@@ -336,9 +336,9 @@ TTL을 조정하려면 다음을 수행하십시오.
 >**X-Adobe-Smart-Imaging = -1(WebP 제공)**
 >
 >`X-Adobe-Smart-Imaging`의 값이 -1이고 WebP가 계속 배달 중인 경우 스마트 이미징이 활성화됩니다. 그러나 캐시가 오래되어 크기 이점이 계산되지 않았습니다. 이미지의 URL에서 `cache=update`(한 번만)을 사용하여 이 문제를 해결할 수 있습니다.
->&#x200B;>수정자 사용의 예:
->&#x200B;>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->&#x200B;>전체 캐시를 무효화하려면 지원 사례를 만들어야 합니다.
+>수정자 사용의 예:
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>전체 캐시를 무효화하려면 지원 사례를 만들어야 합니다.
 
 +++
 
@@ -380,7 +380,7 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++이미지의 URL에서 TIFF 이미지를 다운로드하려고 합니다. 어떻게 해야 합니까?
++++이미지의 URL에서 TIFF 이미지를 다운로드하고 싶습니다. 어떻게 해야 합니까?
 
 이미지의 URL 경로에 `fmt=tif` 및 `bfc=off`을(를) 추가합니다.
 
@@ -404,7 +404,7 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++스마트 이미징에서 어떤 이미지 제공 명령이 지원되거나 무시됩니까?
++++스마트 이미징을 사용할 때 지원되거나 무시되는 이미지 제공 명령은 무엇입니까?
 
 `fmt` 및 `qlt` 명령만 무시됩니다. 나머지 모든 명령은 지원됩니다.
 
@@ -428,7 +428,7 @@ TTL을 조정하려면 다음을 수행하십시오.
 
 +++
 
-+++스마트 이미징 PNG가 무손실 WebP/AVIF로 변환하는 이유는 무엇입니까?
++++스마트 이미징 PNG가 여전히 무손실 WebP/AVIF로 변환되는 이유는 무엇입니까?
 
 PNG가 무손실 포맷이므로, 이전 WebP 및 AVIF가 전달되지 않았으므로, 크기가 예상보다 큽니다. 스마트 이미징에서 이제 손실 변환을 지원합니다. 이 문제를 해결하기 위해 이미지 요청에서 수정자 `cache=update`(한 번만)을(를) 사용할 수 있습니다. 이 수정자 사용의 예:
 

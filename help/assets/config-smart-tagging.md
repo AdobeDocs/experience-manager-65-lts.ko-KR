@@ -5,21 +5,21 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
-source-git-commit: 1cedead501597fb655c2c7b87336b29cbf048294
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1896'
 ht-degree: 19%
 
 ---
 
 # 스마트 태그 지정을 위해 [!DNL Assets] 준비 {#configure-asset-tagging-using-the-smart-content-service}
 
-스마트 컨텐츠 서비스를 사용하여 자산에 태그를 지정하려면 [!DNL Experience Manager Assets]을(를) Adobe Developer Console과 통합하여 [!DNL Adobe Sensei]의 스마트 서비스를 사용하십시오. 구성하고 나면 몇 가지 이미지와 태그를 사용하여 서비스를 교육합니다.
+스마트 컨텐츠 서비스를 사용하여 자산에 태그를 지정하려면 [!DNL Experience Manager Assets]을(를) Adobe Developer Console과 통합하여 [!DNL Adobe AI]의 스마트 서비스를 사용하십시오. 구성하고 나면 몇 가지 이미지와 태그를 사용하여 서비스를 교육합니다.
 스마트 컨텐츠 서비스를 사용하기 전에 다음을 확인하십시오.
 
 * [Adobe Developer Console과 통합](#integrate-adobe-io).
 * [스마트 컨텐츠 서비스를 교육합니다](#training-the-smart-content-service).
-* 최신 [[!DNL Experience Manager] 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)을 설치하십시오.
+* 최신 [[!DNL Experience Manager] 서비스 팩](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)을 설치하십시오.
 
 >[!IMPORTANT]
 >
@@ -49,7 +49,7 @@ Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스�
 
 ### Adobe Developer Console 통합 만들기 {#create-adobe-io-integration}
 
-스마트 컨텐츠 서비스 API를 사용하려면 Adobe Developer Console에서 통합을 만들어 [!UICONTROL 에 클라우드 구성의 &#x200B;]Assets 스마트 태깅 서비스 설정[!UICONTROL 에 대한 &#x200B;]API 키[!UICONTROL (Adobe Developer Console 통합의 &#x200B;]클라이언트 ID[!UICONTROL &#x200B; 필드에서 생성됨), &#x200B;]조직 ID[!UICONTROL &#x200B; 및 &#x200B;]클라이언트 암호[!DNL Experience Manager]를 얻으십시오.
+스마트 컨텐츠 서비스 API를 사용하려면 Adobe Developer Console에서 통합을 만들어 [!UICONTROL 에 클라우드 구성의 ]Assets 스마트 태깅 서비스 설정[!UICONTROL 에 대한 ]API 키[!UICONTROL (Adobe Developer Console 통합의 ]클라이언트 ID[!UICONTROL  필드에서 생성됨), ]조직 ID[!UICONTROL  및 ]클라이언트 암호[!DNL Experience Manager]를 얻으십시오.
 
 1. 브라우저에서 [https://developer.adobe.com](https://developer.adobe.com/)에 액세스합니다. 적절한 계정을 선택하고 연결된 조직 역할이 시스템 **관리자**&#x200B;인지 확인하십시오.
 
@@ -57,7 +57,7 @@ Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스�
 
 1. **[!UICONTROL API 추가]** 페이지에서 **[!UICONTROL Experience Cloud]**&#x200B;를 선택하고 **[!UICONTROL 스마트 컨텐츠]**&#x200B;를 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 
-1. **[!UICONTROL OAuth 서버 간]**&#x200B;을(를) 선택합니다. **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL OAuth 서버 간]**&#x200B;을(를) 선택합니다. **[!UICONTROL 다음]**을 클릭합니다.
 이 구성을 수행하는 방법에 대한 자세한 내용은 요구 사항에 따라 Developer Console 설명서를 참조하십시오.
 
    * 개요:
@@ -72,7 +72,7 @@ Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스�
 
 1. **[!UICONTROL 제품 프로필 선택]** 페이지에서 **[!UICONTROL 스마트 컨텐츠 서비스]**&#x200B;를 선택합니다. **[!UICONTROL 구성된 API 저장]**&#x200B;을 클릭합니다.
 
-   페이지에 구성에 대한 자세한 정보가 표시됩니다. 스마트 태그를 구성하려면 [!UICONTROL 에 있는 클라우드 구성의 &#x200B;]Assets 스마트 태그 지정 서비스 설정[!DNL Experience Manager]에서 이 값을 복사하고 추가하려면 이 페이지를 열어 두십시오.
+   페이지에 구성에 대한 자세한 정보가 표시됩니다. 스마트 태그를 구성하려면 [!UICONTROL 에 있는 클라우드 구성의 ]Assets 스마트 태그 지정 서비스 설정[!DNL Experience Manager]에서 이 값을 복사하고 추가하려면 이 페이지를 열어 두십시오.
 
    ![Developer Console의 OAuth 자격 증명](assets/ims-configuration-developer-console.png)
 
@@ -94,7 +94,7 @@ Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스�
    | 제목 | 구성하는 IMS 계정의 제목을 추가합니다. |
    | 인증 서버 | `https://ims-na1.adobelogin.com` 추가 |
    | 클라이언트 ID | [Adobe Developer 콘솔](https://developer.adobe.com/console/)을 통해 제공될 예정입니다. |
-   | 클라이언트 암호 | [Adobe Developer 콘솔](https://developer.adobe.com/console/)을 통해 제공될 예정입니다. |
+   | 클라이언트 비밀 | [Adobe Developer 콘솔](https://developer.adobe.com/console/)을 통해 제공될 예정입니다. |
    | 범위 | [Adobe Developer 콘솔](https://developer.adobe.com/console/)을 통해 제공될 예정입니다. |
    | 조직 ID | [Adobe Developer 콘솔](https://developer.adobe.com/console/)을 통해 제공될 예정입니다. |
 
@@ -118,7 +118,7 @@ Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스�
    | -------- | ---------------------------- |
    | 제목 | 구성하는 IMS 계정의 제목을 추가합니다. |
    | 연관된 Adobe IMS 구성 | 드롭다운에서 구성을 선택합니다. |
-   | 서비스 URL | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. 예, `https://smartcontent.adobe.io/apac`. `na`, `emea` 또는 `apac`을(를) Experience Manager 작성자 인스턴스가 호스팅되는 지역으로 지정할 수 있습니다. |
+   | 서비스 URL | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. 예를 들어, `https://smartcontent.adobe.io/apac`과 같이 입력합니다. `na`, `emea` 또는 `apac`을(를) Experience Manager 작성자 인스턴스가 호스팅되는 지역으로 지정할 수 있습니다. |
 
    >[!NOTE]
    >
@@ -188,7 +188,7 @@ Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스�
 
 최상의 결과를 얻기 위해 교육 세트의 이미지는 다음 지침을 따릅니다.
 
-**Quantity and size:** Minimum 30 images per tag. Minimum of 500 pixels on the longer side.
+**수량 및 크기:** 태그당 최소 30개의 이미지가 필요합니다. Minimum of 500 pixels on the longer side.
 
 **일관성**: 특정 태그에 사용되는 이미지가 시각적으로 유사합니다.
 
@@ -208,7 +208,7 @@ Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스�
 
 ![교육에 대한 지침을 설명하는 그림 이미지](/help/assets/assets/do-not-localize/distraction.png)
 
-**Completeness:** If an image qualifies for more than one tag, add all applicable tags before including the image for training. 예를 들어 `raincoat` 및 `model-side-view`과(와) 같은 태그의 경우 교육을 위해 태그를 포함하기 전에 적격 에셋에 태그를 모두 추가하십시오.
+**완전성:** 이미지가 여러 태그 기준에 해당된다면, 학습에 포함하기 전에 모든 관련 태그를 추가하세요. 예를 들어 `raincoat` 및 `model-side-view`과(와) 같은 태그의 경우 교육을 위해 태그를 포함하기 전에 적격 에셋에 태그를 모두 추가하십시오.
 
 ![교육에 대한 지침을 설명하는 그림 이미지](/help/assets/assets/do-not-localize/completeness.png)
 
@@ -222,7 +222,7 @@ Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스�
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-폴더에 대해 이 옵션을 선택하면 [!DNL Experience Manager]에서 자동으로 교육 워크플로를 실행하여 폴더 자산 및 해당 태그에 대한 스마트 컨텐츠 서비스를 교육합니다. 기본적으로 교육 워크플로우는 매주 토요일 오전 12시 30분에 실행됩니다.
+폴더에 대해 이 옵션을 선택하면 [!DNL Experience Manager]에서 자동으로 교육 워크플로를 실행하여 폴더 자산 및 해당 태그에 대한 스마트 컨텐츠 서비스를 교육합니다. 기본적으로 교육 워크플로우는 매주 토요일 오전 12:30에 실행됩니다.
 
 ### 온디맨드 교육 {#on-demand-training}
 
@@ -250,7 +250,7 @@ Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스�
 1. In the **[!UICONTROL Asset Reports]** page, select the report you generated. 보고서를 보려면 도구 모음에서 **[!UICONTROL 보기]**&#x200B;를 클릭하십시오.
 1. 보고서의 세부 사항을 검토합니다.
 
-   The report displays the training status for the tags you trained. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Content Service is trained for the tag. Yellow color indicates that the service is not completely trained for a particular tag. In this case, add more images with the particular tag and run the training workflow to train the service completely on the tag.
+   The report displays the training status for the tags you trained. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Content Service is trained for the tag. Yellow color indicates that the service is not completely trained for a particular tag. 이 경우, 해당 태그가 지정된 이미지를 더 추가하고 학습 워크플로우를 실행하여 서비스가 태그를 완전히 학습하도록 하세요.
 
    이 보고서에 태그가 표시되지 않으면 이러한 태그에 대한 교육 워크플로우를 다시 실행하십시오.
 
@@ -270,4 +270,4 @@ Adobe Developer Console과 통합하면 요청을 스마트 컨텐츠 서비스�
 >
 >* [개요 및 스마트 태그 교육 방법](enhanced-smart-tags.md)
 >* [OAuth 자격 증명에 대한 스마트 태그 문제 해결](config-oauth.md)
->* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=ko)
+>* 스마트 태그에 대한 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
