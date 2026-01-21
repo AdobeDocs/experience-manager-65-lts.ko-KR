@@ -1,5 +1,5 @@
 ---
-title: 업그레이드 계획
+title: 업그레이드 계획 수립
 description: 이 문서는 AEM 업그레이드를 계획할 때 명확한 목표, 단계 및 결과물을 설정하는 데 도움이 됩니다.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3fe5421e-e97e-43c4-b34b-b84bf189a779
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 425b3fae2658d78b0885f5034ff4c61da625d9d4
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
 
 ---
 
-# 업그레이드 계획 {#planning-your-upgrade}
+# 업그레이드 계획 수립 {#planning-your-upgrade}
 
 ## AEM 업그레이드 개요 {#aem-upgrade-overview}
 
@@ -29,7 +29,7 @@ AEM 업그레이드 프로세스는 각 단계에 대해 정의된 주요 결과
 
 >[!NOTE]
 >
->AEM 6.5 LTS로의 업그레이드는 마지막 6개의 서비스 팩에서 지원됩니다
+>지원되는 모든 6.5 서비스 팩에서 AEM 6.5 LTS로 업그레이드할 수 있습니다.
 
 지원되는 운영 체제, Java™ 런타임, httpd 및 Dispatcher 버전을 실행 중인지 확인하는 것이 중요합니다. 자세한 내용은 [AEM 6.5 LTS에 대한 기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요. 이러한 구성 요소 업그레이드는 업그레이드 계획에서 고려해야 하며 AEM을 업그레이드하기 전에 수행해야 합니다.
 
