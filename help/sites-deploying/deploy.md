@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: add91325feaa96338526edcdde977d1f619e09d4
 workflow-type: tm+mt
 source-wordcount: '1363'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
@@ -42,8 +42,8 @@ ht-degree: 4%
 
 * [기술 요구 사항](/help/sites-deploying/technical-requirements.md)
 * [권장 배포](/help/sites-deploying/recommended-deploys.md)
-* [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
-* [Application Server 설치](/help/sites-deploying/application-server-install.md)
+* [사용자 정의 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
+* [애플리케이션 서버 설치](/help/sites-deploying/application-server-install.md)
 * [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
 * [구성](/help/sites-deploying/configuring.md)
 * [AEM 6.5 LTS로 업그레이드](/help/sites-deploying/upgrade.md)
@@ -137,7 +137,7 @@ AEM 소프트웨어 패키지는 두 가지 형태로 제공됩니다.
 
    UNIX® 설치 위치: **/opt/aem**
 
-   Windows 설치 위치: **`C:\Program Files\aem`**
+   Windows 설치 위치: **`C:\aem`**
 
    마찬가지로, 바탕 화면의 오른쪽 폴더에 샘플 인스턴스를 설치하는 것이 일반적입니다. 어떤 경우든 Adobe은 일반적으로 이 위치를 다음과 같이 참조합니다.
 
@@ -173,11 +173,11 @@ AEM에서 jar 파일의 압축을 풀고 직접 설치하고 시작하는 데 �
 
 **`https://localhost:4502`**
 
-작성자 인스턴스의 결과는 **`localhost:4503`**&#x200B;의 **게시 인스턴스**&#x200B;에 연결하도록 자동으로 구성됩니다.
+작성자 인스턴스의 결과는 **의**&#x200B;게시 인스턴스&#x200B;**`localhost:4503`**&#x200B;에 연결하도록 자동으로 구성됩니다.
 
 ### 작성자 및 게시 설치 {#author-and-publish-installs}
 
-기본 설치(**`localhost:4502`**&#x200B;의 **작성자** 인스턴스)를 처음 시작하기 전에 `jar` 파일의 이름을 바꾸는 것만으로 변경할 수 있습니다. 이름 지정 패턴은 다음과 같습니다.
+기본 설치(**의**&#x200B;작성자&#x200B;**`localhost:4502`** 인스턴스)를 처음 시작하기 전에 `jar` 파일의 이름을 바꾸는 것만으로 변경할 수 있습니다. 이름 지정 패턴은 다음과 같습니다.
 
 **`cq-<instance-type>-p<port-number>.jar`**
 
@@ -201,7 +201,7 @@ AEM에서 jar 파일의 압축을 풀고 직접 설치하고 시작하는 데 �
 
 설치 사용자 정의에 대한 자세한 내용은 다음을 참조하십시오.
 
-* [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
+* [사용자 정의 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
 <!-- * [Run Modes](/help/sites-deploying/configure-runmodes.md) -->
 
 ### 압축을 푼 설치 디렉토리 {#unpacked-install-directory}
@@ -275,8 +275,8 @@ AEM은 웹 브라우저를 시작하고 자동으로 적절한 페이지(일반�
 
 * [기술 요구 사항](/help/sites-deploying/technical-requirements.md)
 * [권장 배포](/help/sites-deploying/recommended-deploys.md)
-* [사용자 지정 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
-* [Application Server 설치](/help/sites-deploying/application-server-install.md)
+* [사용자 정의 독립 실행형 설치](/help/sites-deploying/custom-standalone-install.md)
+* [애플리케이션 서버 설치](/help/sites-deploying/application-server-install.md)
 * [명령줄 시작 및 중지](/help/sites-deploying/command-line-start-and-stop.md)
 * [구성](/help/sites-deploying/configuring.md)
 * [AEM 6.5 LTS로 업그레이드](/help/sites-deploying/upgrade.md)
