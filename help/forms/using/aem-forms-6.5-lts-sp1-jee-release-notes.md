@@ -4,7 +4,8 @@ description: ' [!DNL Adobe Experience Manager] 6.5 LTS SP1에 대한 릴리스 �
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 27ec3c516b0746fd7e0d82f86750fbb4ef410711
+exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
+source-git-commit: c13c6c3d5511a5355570e999e378e4bdf0d7a88f
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 3%
@@ -67,7 +68,7 @@ JBoss EAP 8의 AEM Forms은 보안 자격 증명을 관리하는 데 Elytron을 
 
 ## 업그레이드
 
-자세한 업그레이드 지침은 [JEE의 AEM Forms 6.5 LTS SP1용 업그레이드 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)를 참조하십시오.
+자세한 업그레이드 지침은 [JEE의 AEM Forms 6.5 LTS SP1용 업그레이드 안내서](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)를 참조하십시오.
 
 ## 설치
 
