@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: a9cbab12-62a6-4779-955f-2858166945e6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # We.Gov 및 We.Finance 참조 사이트 안내 {#we-gov-reference-site-walkthrough}
 
-## 전제 조건 {#pre-requisites}
+## 사전 요구 사항 {#pre-requisites}
 
 [We.Gov 및 We.Finance 참조 사이트 설정 및 구성](../../forms/using/forms-install-configure-gov-reference-site.md)에 설명된 대로 참조 사이트를 설정합니다.
 
@@ -94,7 +94,7 @@ We.Gov 데모 패키지는 다음과 같은 기본 제공 가상 사용자와 �
    *https://&lt;aemserver>:&lt;port>/aem/start.html*
 
 1. **전자 메일 클라이언트**: 전자 메일을 보는 기본 방법(Gmail, Outlook)
-1. **CTA**: 클릭 유도 문안
+1. **CTA**: Call to action
 1. **탐색**: 브라우저 페이지에서 특정 참조 지점을 찾습니다.
 1. **AFC**: 자동 양식 전환
 
@@ -224,10 +224,10 @@ Aya는 서비스 요청 신청을 완료하기 전에 집에서 몇 가지 문�
 1. 다음 **동적 논리**&#x200B;를 사용하여 **가족 상태** 드롭다운을 사용하여 동적 기능을 보여 줍니다.
 
    1. **단일**: 다음 친족 패널 표시
-   1. **기혼**: 결혼 여부 패널 표시
+   1. **기혼**: 결혼 종속 패널 표시
    1. **이혼**: 다음 친족 패널 표시
    1. **홀드됨**: 다음 친족 패널 표시
-   1. **자녀가 있습니까?**:(예/아니요) 라디오 단추를 클릭하여 자식 종속 패널을 표시합니다.
+   1. **자녀가 있습니까?**: (예/아니요) 라디오 단추를 클릭하여 자식 종속 패널을 표시합니다.
 
       1. (추가/제거) 단추를 사용하여 여러 하위 종속 패널을 추가/제거합니다.
 
@@ -306,7 +306,7 @@ Aya는 서비스 요청 신청을 완료하기 전에 집에서 몇 가지 문�
 
    1. 또는 가장:
 
-      1. **다음 사용자로 가장** 필드에 `George`을(를) 입력합니다.
+      1. `George`다음 사용자로 가장&#x200B;**필드에**&#x200B;을(를) 입력합니다.
 
       1. 가장하려면 [확인]을 클릭하십시오.
 
@@ -365,7 +365,7 @@ George는 Aya의 애플리케이션을 승인하며, 기존의 자동화된 워�
 
    1. 또는 가장:
 
-      1. **다음 사용자로 가장** 필드에 `Camila`을(를) 입력합니다.
+      1. `Camila`다음 사용자로 가장&#x200B;**필드에**&#x200B;을(를) 입력합니다.
 
       1. 가장하려면 [확인]을 클릭하십시오.
 

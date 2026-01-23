@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
 exl-id: 7b26e5cb-3aab-4f69-a0f1-42268c39bba8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 73%
@@ -32,7 +32,7 @@ Headless 게재를 위해 AEM의 콘텐츠 조각을 사용하여 페이지 독�
 1. 이전에 만든 [폴더로 이동합니다.](create-assets-folder.md)
 1. **만들기 > 콘텐츠 조각**&#x200B;을 클릭합니다.
 1. 콘텐츠 조각 생성은 두 단계의 마법사로 표시됩니다. 먼저 콘텐츠 조각을 만드는 데 사용할 모델을 선택하고 **다음**&#x200B;을 클릭합니다.
-   * 사용 가능한 모델은 콘텐츠 조각을 생성하고 있는 에셋 폴더[&#128279;](create-assets-folder.md)에 대해 정의한 **클라우드 구성**&#x200B;에 따라 다릅니다.
+   * 사용 가능한 모델은 콘텐츠 조각을 생성하고 있는 에셋 폴더](create-assets-folder.md)에 대해 정의한 [**클라우드 구성**&#x200B;에 따라 다릅니다.
    * `We could not find any models` 메시지가 표시되면 에셋 폴더의 구성을 확인하십시오.
 
    ![콘텐츠 조각 모델 선택](assets/content-fragment-model-select.png)

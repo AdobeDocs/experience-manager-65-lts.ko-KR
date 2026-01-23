@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: cb00bc09-580a-4c73-b202-d4110fa2f645
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 이 자습서는 [첫 번째 적응형 양식을 만들기](/help/forms/using/create-your-first-adaptive-form.md) 시리즈의 단계입니다. Adobe에서는 전체 자습서 사용 사례를 이해하고, 수행하고, 시연하려면 연대순으로 시리즈를 따르는 것이 좋습니다.
 
-## 튜토리얼 기본 정보 {#about-the-tutorial}
+## 튜토리얼 정보 {#about-the-tutorial}
 
 규칙을 사용하여 적응형 양식에 대화형, 비즈니스 논리 및 스마트 유효성 검사를 추가할 수 있습니다. 적응형 양식에는 규칙 편집기가 내장되어 있습니다. 규칙 편집기는 안내식 둘러보기와 유사한 드래그 앤 드롭 기능을 제공합니다. 드래그 앤 드롭 방법은 규칙을 만드는 가장 빠르고 쉬운 방법입니다. 규칙 편집기는 코딩 기술을 테스트하거나 규칙을 다음 수준으로 이행하는 데 관심이 있는 사용자를 위한 코드 창도 제공합니다.
 
@@ -89,13 +89,13 @@ ht-degree: 0%
 
    ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-1. [!UICONTROL 양식 개체] 탭의 **[!UICONTROL 배달 주소, 상태 및 우편번호]** 필드를 **[!UICONTROL 개체 삭제의 해당 tablename .property(예: customerdetails .shippingAddress)로 끌어서 놓거나**&#x200B;[!UICONTROL &#x200B; INPUT &#x200B;]&#x200B;**상자에서]** 필드를 선택하십시오. tablename 접두사가 붙은 모든 필드(예: 이 사용 사례의 경우 customerdetails)는 업데이트 서비스의 입력 데이터 역할을 합니다. 이 필드에 제공된 모든 콘텐츠는 데이터 소스에서 업데이트됩니다.
+1. **[!UICONTROL 양식 개체]** 탭의 [!UICONTROL 배달 주소, 상태 및 우편번호] 필드를 **[!UICONTROL 개체 삭제의 해당 tablename .property(예: customerdetails .shippingAddress)로 끌어서 놓거나]** INPUT **[!UICONTROL 상자에서]** 필드를 선택하십시오. tablename 접두사가 붙은 모든 필드(예: 이 사용 사례의 경우 customerdetails)는 업데이트 서비스의 입력 데이터 역할을 합니다. 이 필드에 제공된 모든 콘텐츠는 데이터 소스에서 업데이트됩니다.
 
    >[!NOTE]
    >
    >**[!UICONTROL 이름]** 및 **[!UICONTROL 고객 ID]** 필드를 해당 tablename.property(예: customerdetails.name)로 드래그 앤 드롭하지 마십시오. 실수로 고객의 이름과 ID를 업데이트하지 않도록 도와줍니다.
 
-1. [!UICONTROL 양식 개체] 탭에서 **[!UICONTROL 고객 ID]** 필드를 **[!UICONTROL 입력]** 상자의 ID 필드로 끌어서 놓습니다. 접두사가 있는 tablename이 없는 필드(예: 이 사용 사례의 경우 customerdetails)는 업데이트 서비스의 검색 매개 변수 역할을 합니다. 이 사용 사례의 **[!UICONTROL id]** 필드는 **customerdetails** 테이블의 레코드를 고유하게 식별합니다.
+1. **[!UICONTROL 양식 개체]** 탭에서 [!UICONTROL 고객 ID] 필드를 **[!UICONTROL 입력]** 상자의 ID 필드로 끌어서 놓습니다. 접두사가 있는 tablename이 없는 필드(예: 이 사용 사례의 경우 customerdetails)는 업데이트 서비스의 검색 매개 변수 역할을 합니다. 이 사용 사례의 **[!UICONTROL id]** 필드는 **customerdetails** 테이블의 레코드를 고유하게 식별합니다.
 1. **[!UICONTROL 완료]**&#x200B;를 선택하여 규칙을 저장합니다. 규칙 편집기 창에서 **[!UICONTROL 닫기]**&#x200B;를 선택합니다.
 1. 적응형 양식을 미리 봅니다. 고객의 세부 정보를 검색하고 배송 주소를 업데이트한 다음 양식을 제출합니다. 동일한 고객의 세부 정보를 다시 검색하면 업데이트된 배송 주소가 표시됩니다.
 

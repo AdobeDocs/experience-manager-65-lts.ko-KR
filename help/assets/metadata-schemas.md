@@ -7,7 +7,7 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf5c2dff-db68-4e82-8217-ff35069dcb81
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '3607'
 ht-degree: 7%
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 조직은 자산 검색, 사용, 상호 운용성 등을 향상시키는 메타데이터 모델을 고안합니다. 올바른 메타데이터 애플리케이션은 메타데이터 기반 워크플로우 및 프로세스를 유지 관리하는 데 불가항력적입니다. 조직 전체의 메타데이터 전략 및 표준을 준수하기 위해 DAM 사용자가 조정할 수 있도록 도와주는 메타데이터 스키마를 사용할 수 있습니다. [!DNL Adobe Experience Manager]을(를) 사용하면 쉽고 유연한 방법으로 메타데이터 스키마를 만들고 유지 관리하고 적용할 수 있습니다.
@@ -290,7 +290,7 @@ The schema editor lets you add or delete a tab. 기본 스키마 양식에는 **
 
 #### 다양한 MIME 유형에 기존 스키마 템플릿 사용 {#use-an-existing-schema-template-for-various-mime-types}
 
-다른 MIME 유형에 기존 템플릿을 사용할 수 있습니다. 예를 들어 MIME 유형 `image/png`의 자산에 대해 `image/jpeg` 양식을 사용하십시오.
+다른 MIME 유형에 기존 템플릿을 사용할 수 있습니다. 예를 들어 MIME 유형 `image/jpeg`의 자산에 대해 `image/png` 양식을 사용하십시오.
 
 이 경우 CRX 저장소의 `/etc/dam/metadataeditor/mimetypemappings`에 노드를 만듭니다. 노드 이름을 지정하고 다음 속성을 정의합니다.
 
@@ -374,7 +374,7 @@ The schema editor lets you add or delete a tab. 기본 스키마 양식에는 **
 
    ![폴더에 에셋을 업로드할 때 에셋 카드 보기에 필수 메타데이터가 누락되었다는 메시지](assets/metadata-missing-info-card-view.png)
 
-1. (선택 사항) `https://[aem_server]:[port]/system/console/components/`에 액세스합니다. 기본적으로 사용하지 않도록 설정된 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 구성 요소를 구성하고 사용하도록 설정합니다. [!DNL Experience Manager]이(가) 에셋에 대한 메타데이터의 유효성을 확인하는 빈도를 설정하십시오. 이 구성은 자산 `jcr:content`에 속성 `hasValidMetadata`을(를) 추가합니다. [!DNL Experience Manager]은(는) 이 속성을 사용하여 검색 결과에서 잘못된 자산을 필터링합니다. 확인 후 자산을 추가하면 예약된 다음 확인까지 자산에 `hasValidMetadata` 플래그가 지정되지 않습니다. 따라서 자산은 예약된 다음 검사 이후까지 잘못된 메타데이터에 대한 검색 필터에 표시되지 않습니다.
+1. (선택 사항) `https://[aem_server]:[port]/system/console/components/`에 액세스합니다. 기본적으로 사용하지 않도록 설정된 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 구성 요소를 구성하고 사용하도록 설정합니다. [!DNL Experience Manager]이(가) 에셋에 대한 메타데이터의 유효성을 확인하는 빈도를 설정하십시오. 이 구성은 자산 `hasValidMetadata`에 속성 `jcr:content`을(를) 추가합니다. [!DNL Experience Manager]은(는) 이 속성을 사용하여 검색 결과에서 잘못된 자산을 필터링합니다. 확인 후 자산을 추가하면 예약된 다음 확인까지 자산에 `hasValidMetadata` 플래그가 지정되지 않습니다. 따라서 자산은 예약된 다음 검사 이후까지 잘못된 메타데이터에 대한 검색 필터에 표시되지 않습니다.
 
    >[!CAUTION]
    >

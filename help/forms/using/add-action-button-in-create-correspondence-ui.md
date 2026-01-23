@@ -1,5 +1,5 @@
 ---
-title: 서신 UI 만들기에 사용자 지정 작업/버튼 추가
+title: 서신 UI 만들기에서 사용자 정의 작업/버튼 추가
 description: 서신 UI 만들기에서 사용자 지정 작업/버튼을 추가하는 방법 알아보기
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1853'
 ht-degree: 2%
 
 ---
@@ -264,7 +264,7 @@ Adobe Asset Composer 빌딩 블록 번들을 다시 시작하면 사용자 지�
           };
           /**
            * Should the action be enabled in toolbar
-           * @param extraParams additional arguements that may be passed to handler (For future use)
+           * @param extraParams additional arguments that may be passed to handler (For future use)
            * @return flag indicating whether the action should be enabled
            */
          CCRCustomActionHandler.prototype.actionEnabled = function(extraParams){
@@ -321,7 +321,7 @@ Adobe Asset Composer 빌딩 블록 번들을 다시 시작하면 사용자 지�
       '</div>';
       ```
 
-### <span class="acrolinxCursorMarker"> 작업을 사용하려면 LiveCycle 프로세스를 추가하십시오.</code> 처리 중 {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### <span class="acrolinxCursorMarker"> 작업을 사용하려면 LiveCycle 프로세스를 추가하십시오.</code> {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling} 처리 중
 
 이 시나리오에서는 첨부된 components.zip 파일의 일부인 다음 구성 요소를 활성화합니다.
 

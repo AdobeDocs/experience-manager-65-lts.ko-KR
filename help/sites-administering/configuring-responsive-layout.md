@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 4%
+source-wordcount: '1388'
+ht-degree: 5%
 
 ---
 
@@ -135,7 +135,7 @@ CRXDE Lite 또는 XML을 사용하여 정의할 수 있습니다.
 
 #### XML을 사용하여 중단점 구성 {#configuring-breakpoints-using-xml}
 
-중단점은 적절한 템플릿(또는 콘텐츠) 폴더 아래의 `.context.html`의 `<jcr:content>` 섹션 내에 있습니다.
+중단점은 적절한 템플릿(또는 콘텐츠) 폴더 아래의 `<jcr:content>`의 `.context.html` 섹션 내에 있습니다.
 
 예제 정의:
 
@@ -193,7 +193,7 @@ CRXDE Lite 또는 XML을 사용하여 정의할 수 있습니다.
 
 AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성합니다. 프로젝트에 이러한 부분을 포함해야 합니다.
 
-또한 추가 구성 및 함수 호출을 제공하려면 [클라이언트 라이브러리](https://experienceleague.adobe.com/docs/?lang=ko)를 만들어야 합니다. 다음 LESS 추출은 프로젝트에 추가해야 하는 최소값의 예입니다.
+또한 추가 구성 및 함수 호출을 제공하려면 [클라이언트 라이브러리](https://experienceleague.adobe.com/docs/)를 만들어야 합니다. 다음 LESS 추출은 프로젝트에 추가해야 하는 최소값의 예입니다.
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -249,7 +249,7 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성합니다. �
 
 * `afterchildedit`
 
-응답형 격자에 포함된 응용 이미지의 내용을 올바르게 크기 조정하고 업데이트하려면 `REFRESH_PAGE` 수신자로 설정된 `afterEdit`을(를) 포함된 모든 구성 요소의 `EditConfig` 파일에 추가해야 합니다.
+응답형 격자에 포함된 응용 이미지의 내용을 올바르게 크기 조정하고 업데이트하려면 `afterEdit` 수신자로 설정된 `REFRESH_PAGE`을(를) 포함된 모든 구성 요소의 `EditConfig` 파일에 추가해야 합니다.
 
 예:
 
@@ -269,7 +269,7 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성합니다. �
 
 작성자가 컨텐츠 페이지에 응답형 그리드를 더 추가할 수 있도록 하려면 페이지에 대해 레이아웃 컨테이너 구성 요소를 활성화해야 합니다. 다음 중 하나를 사용하여 이 작업을 수행할 수 있습니다.
 
-* **작성 환경**
+* **작성자 환경**
 
   [디자인 모드](/help/sites-authoring/default-components-designmode.md)를 사용하여 페이지에 대한 **레이어 컨테이너** 구성 요소를 활성화합니다.
 
@@ -281,7 +281,7 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성합니다. �
 
 레이아웃 컨테이너의 각 특정 인스턴스에 사용할 수 있는 열 수를 구성할 수 있습니다.
 
-1. **작성 환경**
+1. **작성자 환경**
 
    레이아웃 컨테이너의 각 특정 인스턴스에 사용할 수 있는 열 수를 구성할 수 있습니다.
 
@@ -307,7 +307,7 @@ AEM에서는 LESS를 사용하여 필요한 CSS의 일부를 생성합니다. �
 
 프로젝트의 요구 사항을 지원하기 위해 응답형 그리드를 중첩해야 하는 경우가 있을 수 있습니다. 그러나 Adobe이 권장하는 모범 사례는 구조를 최대한 평평하게 유지하는 것입니다.
 
-중첩된 응답형 격자를 사용하지 않을 수 없는 경우에는 다음을 확인하십시오.
+중첩된 응답형 그리드를 사용하지 않을 수 없는 경우에는 다음을 확인합니다.
 
 * 모든 컨테이너(컨테이너, 탭, 아코디언 등)에는 `layout = responsiveGrid` 속성이 있습니다.
 * 컨테이너 계층 구조에서 `layout = simple` 속성을 혼합하지 마십시오.

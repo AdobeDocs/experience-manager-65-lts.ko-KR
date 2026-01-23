@@ -1,5 +1,5 @@
 ---
-title: JMX 콘솔을 사용한 서버 리소스 모니터링
+title: JMX 콘솔을 사용하여 서버 리소스 모니터링
 description: JMX 콘솔을 사용하여 서버 리소스를 모니터링하는 방법에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Operations
 role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '4830'
-ht-degree: 0%
+source-wordcount: '4829'
+ht-degree: 1%
 
 ---
 
-# JMX 콘솔을 사용한 서버 리소스 모니터링{#monitoring-server-resources-using-the-jmx-console}
+# JMX 콘솔을 사용하여 서버 리소스 모니터링{#monitoring-server-resources-using-the-jmx-console}
 
 JMX 콘솔을 사용하여 CRX 서버의 서비스를 모니터링하고 관리할 수 있습니다. 다음 섹션에서는 JMX 프레임워크를 통해 노출되는 속성 및 작업을 요약합니다.
 
@@ -290,7 +290,7 @@ CRX 저장소에 대한 정보
   </tr>
   <tr>
    <td>option.observation.supported</td>
-   <td>true는 저장소 변경 내용에 대한 비동기 관찰이 지원됨을 나타냅니다. 비동기 관찰을 지원하면 각 변경 사항이 발생할 때 애플리케이션에서 알림을 수신하고 응답할 수 있습니다.</td>
+   <td>true는 저장소 변경 내용에 대한 비동기 관찰이 지원됨을 나타냅니다. 비동기 관찰을 지원하면 응용 프로그램에서 각 변경 사항이 발생할 때 알림을 받고 응답할 수 있습니다.</td>
   </tr>
   <tr>
    <td>query.jcrscore</td>
@@ -691,7 +691,7 @@ CRX 저장소에 대한 정보
 * **도메인:** com.adobe.granite.replication
 * **유형:** 에이전트
 * **이름:** 값 없음
-* **속성:** {id=&quot;*이름*&quot;}. 여기서 *이름*&#x200B;은(는) 에이전트 이름 속성의 값입니다.
+* **속성:** {id="*Name*"}. 여기서 *이름*&#x200B;은(는) 에이전트 이름 속성의 값입니다.
 
 ### 속성 {#attributes-3}
 
