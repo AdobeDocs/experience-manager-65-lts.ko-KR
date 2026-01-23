@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 2%
@@ -137,7 +137,7 @@ Personalization 자체는 어떠한 형태의 액세스 제어도 생성하지 �
 
 개인화를 위해 AEM에는 다양한 구성 요소가 제공됩니다. 일부는 사용자가 로그인하여 프로필을 편집할 수 있도록 허용하고, 일부는 내 가젯과 같이 사용자가 특정 페이지를 구성할 수 있도록 허용합니다.
 
-| Sidekick의 제목 | 용도 |
+| Sidekick의 제목 | 목적 |
 |---|---|
 | 확인된 암호 필드 | 암호 및 암호 확인을 요청합니다. |
 | 결합된 로그인 등록 | 사용자가 기존 계정에 로그인하거나 새 계정에 등록할 수 있도록 허용합니다. |

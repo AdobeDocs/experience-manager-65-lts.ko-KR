@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 6659ca39-f297-40b9-88e2-d942aa653e9b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1745'
 ht-degree: 10%
 
 ---
@@ -44,8 +44,8 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
    * 컨테이너 태그가 아닌 태그는 리프 태그라고 합니다
    * 태그 네임스페이스는 리프 태그 또는 컨테이너 태그입니다
 
-* 태그를 [검색 구성 요소](https://helpx.adobe.com/kr/experience-manager/core-components/using/quick-search.html)에서 사용하여 콘텐츠를 쉽게 찾을 수 있습니다.
-* 태그는 [Teaser 구성 요소](https://helpx.adobe.com/kr/experience-manager/core-components/using/teaser.html)에서 사용되며, 이 구성 요소는 사용자의 태그 클라우드를 모니터링하여 타깃팅된 콘텐츠를 제공합니다.
+* 태그를 [검색 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html)에서 사용하여 콘텐츠를 쉽게 찾을 수 있습니다.
+* 태그는 [Teaser 구성 요소](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html)에서 사용되며, 이 구성 요소는 사용자의 태그 클라우드를 모니터링하여 타깃팅된 콘텐츠를 제공합니다.
 * 태깅이 콘텐츠의 중요한 측면인 경우
 
    * 태그를 사용하는 페이지로 태그를 패키징해야 합니다
@@ -183,7 +183,7 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
 >[!NOTE]
 >
->작성자는 태그의 `title`을(를) [편집](#editing-tags)할 수 있고 태그를 이동하거나 이름을 바꿀 수 없습니다.
+>작성자는 태그의 [을(를) ](#editing-tags)편집`title`할 수 있고 태그를 이동하거나 이름을 바꿀 수 없습니다.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -252,11 +252,11 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
       * 예를 들어 http://localhost:4502/useradmin으로 이동합니다.
 
    * 왼쪽 창에서 [읽기 권한](/help/sites-administering/security.md#permissions)을 부여할 그룹을 선택합니다
-   * 오른쪽 창에서 태그 네임스페이스에 대한 **경로**&#x200B;를 찾습니다
+   * 오른쪽 창에서 태그 네임스페이스에 대한 **경로**를 찾습니다
 
       * 예: `/content/cq:tags/mycommunity`
 
-   * **읽기** 열에서 `checkbox`을(를) 선택합니다.
+   * `checkbox`읽기&#x200B;**열에서**&#x200B;을(를) 선택합니다.
    * **저장** 선택
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
@@ -277,9 +277,9 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
 ### 여러 언어로 태그 제목 정의 {#defining-tag-titles-in-multiple-languages}
 
-다음은 **Animals** 태그의 `title`을(를) 영어에서 독어와 프랑스어로 번역하는 방법을 설명합니다.
+다음은 `title`Animals **태그의**&#x200B;을(를) 영어에서 독어와 프랑스어로 번역하는 방법을 설명합니다.
 
-먼저 **Stock Photography** 네임스페이스 아래에서 태그를 선택하고 **`Edit`**&#x200B;아이콘을 선택합니다([태그 편집](#editing-tags) 섹션 참조).
+먼저 **Stock Photography** 네임스페이스 아래에서 태그를 선택하고 **`Edit`**아이콘을 선택합니다([태그 편집](#editing-tags) 섹션 참조).
 
 [태그 편집] 패널에서는 태그 제목을 현지화할 언어를 선택할 수 있습니다.
 
@@ -305,4 +305,4 @@ AEM 내의 태그 기능 중 일부는 다음과 같습니다.
 
   태깅 프레임워크에 대한 정보와 사용자 지정 애플리케이션에서 태그를 확장 및 포함하는 정보입니다.
 
-* [클래식 UI 태깅 콘솔](/help/sites-administering/classic-console.md)
+* [클래식 UI 태그 지정 콘솔](/help/sites-administering/classic-console.md)

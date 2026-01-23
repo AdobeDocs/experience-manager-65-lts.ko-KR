@@ -1,5 +1,5 @@
 ---
-title: 이메일 템플릿에 대한 우수 사례
+title: 이메일 템플릿 모범 사례
 description: AEM에서 이메일 템플릿 만들기에 대한 모범 사례를 확인하십시오.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,21 +11,21 @@ feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
 index: false
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# 이메일 템플릿에 대한 우수 사례 {#best-practices-for-email-templates}
+# 이메일 템플릿 모범 사례 {#best-practices-for-email-templates}
 
 >[!CAUTION]
 >
 >이 문서는 더 이상 사용되지 않는 기초 구성 요소 기반 AEM 이메일 구성 요소에 적용됩니다.
 >
->사용자는 최신 [핵심 구성 요소 전자 메일 구성 요소를 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=ko)
+>사용자는 최신 [핵심 구성 요소 전자 메일 구성 요소를 사용하는 것이 좋습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 이 문서에서는 이메일 디자인 관련 모범 사례 중 일부를 설명합니다. 이렇게 하면 이메일 캠페인 템플릿이 제대로 개발됩니다.
 
@@ -98,7 +98,7 @@ AEM에서 사용할 수 있는 데모 캠페인은 이러한 모든 모범 사�
 
 /libs/mcm/campaign/components/image
 
-| **우수 사례** | **구현** |
+| **모범 사례** | **구현** |
 |---|---|
 | 이미지에 *alt* 특성 추가 | *alt* 특성이 이미지 구성 요소에 필수로 정의되었습니다. |
 | 이미지의 경우 *png* 형식 대신 *jpg* 사용 | 이미지는 항상 이미지 구성 요소에 의해 JPG으로 제공됩니다. |
@@ -128,7 +128,7 @@ AEM에서 사용할 수 있는 데모 캠페인은 이러한 모든 모범 사�
 
 ### 범용 {#generic}
 
-| **우수 사례** | **구현** |
+| **모범 사례** | **구현** |
 |---|---|
 | W3C 유효성 검사기를 사용하여 HTML 코드를 수정합니다. 열려 있는 모든 태그가 제대로 닫혀 있는지 확인하십시오. | 코드가 확인되었습니다. XHTML 전환 Doctype의 경우에만 `<html>` 요소에 대해 누락된 xmlns 특성이 없습니다. |
 | JavaScript 또는 Flash를 사용하지 마십시오. 이메일 클라이언트에서 이러한 기술을 지원하지 않는 경우가 많습니다. | JavaScript 또는 Flash는 뉴스레터 템플릿에서 사용되지 않습니다. |

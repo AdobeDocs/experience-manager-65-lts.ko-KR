@@ -6,10 +6,10 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 453331b3-41f7-4bf1-90fc-afeaf40577c8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '204'
-ht-degree: 12%
+ht-degree: 14%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 12%
 * 거부
 * 이동
 
-타임라인에 표시할 활동 로그를 로그 파일이 저장된 CRX의 `/var/audit/com.day.cq.dam/content/dam` 위치에서 가져옵니다. 또한 [Adobe 자산 링크](https://helpx.adobe.com/kr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 또는 [Experience Manager 데스크톱 앱](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=ko)을 통해 새 자산을 업로드하거나 기존 자산을 수정하고 [!DNL Experience Manager]에 체크 인하면 타임라인 활동이 기록됩니다.
+타임라인에 표시할 활동 로그를 로그 파일이 저장된 CRX의 `/var/audit/com.day.cq.dam/content/dam` 위치에서 가져옵니다. 또한 [!DNL Experience Manager]Adobe 자산 링크[ 또는 ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)Experience Manager 데스크톱 앱[을 통해 새 자산을 업로드하거나 기존 자산을 수정하고 ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)에 체크 인하면 타임라인 활동이 기록됩니다.
 
 >[!NOTE]
 >

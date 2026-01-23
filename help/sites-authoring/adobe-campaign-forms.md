@@ -9,14 +9,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 6a72ba56-8222-4853-adc6-ee8f3d395d9d
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: 3bc6f5aab61b6ea0ae1d6d909bf2d36fd7e4dbe4
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 1%
 
 ---
 
-# AEM에서 Adobe Campaign Forms 만들기 {#creating-adobe-campaign-forms-in-aem}
+# AEM에서 Adobe Campaign 양식 작성 {#creating-adobe-campaign-forms-in-aem}
 
 AEM을 사용하면 웹 사이트에서 Adobe Campaign과 상호 작용하는 양식을 만들고 사용할 수 있습니다. 특정 필드를 양식에 삽입하여 Adobe Campaign 데이터베이스에 매핑할 수 있습니다.
 
@@ -56,7 +56,7 @@ Adobe Campaign에 고유한 양식을 만들려면 먼저 AEM 애플리케이션
 >
 
 1. AEM의 Sites에서 페이지를 만들려는 위치로 이동합니다.
-1. 페이지를 만들고 **Adobe Campaign Classic 프로필**&#x200B;또는&#x200B;**Adobe Campaign Standard 프로필**&#x200B;을 선택한 후 **다음**&#x200B;을 클릭하세요.
+1. 페이지를 만들고 **Adobe Campaign Classic 프로필** 또는 **Adobe Campaign Standard 프로필**&#x200B;을 선택한 후 **다음**&#x200B;을 클릭하세요.
 
    ![chlimage_1-43](assets/chlimage_1-43a.png)
 
@@ -70,7 +70,7 @@ Adobe Campaign에 고유한 양식을 만들려면 먼저 AEM 애플리케이션
 
    ![chlimage_1-44](assets/chlimage_1-44a.png)
 
-1. 페이지의 **양식 시작** 구성 요소에서 양식 유형을 선택합니다. **구독, 구독 취소,**&#x200B;또는&#x200B;**프로필 저장**. 양식당 한 가지 유형만 사용할 수 있습니다. 이제 [양식의 콘텐츠를 편집](#editing-form-content)할 수 있습니다.
+1. 페이지의 **양식 시작** 구성 요소에서 양식 유형을 선택합니다. **구독, 구독 취소,** 또는 **프로필 저장**. 양식당 한 가지 유형만 사용할 수 있습니다. 이제 [양식의 콘텐츠를 편집](#editing-form-content)할 수 있습니다.
 
 ## 양식 콘텐츠 편집 {#editing-form-content}
 

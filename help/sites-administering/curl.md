@@ -1,5 +1,5 @@
 ---
-title: AEM에서 cURL 사용
+title: AEM과 함께 cURL 사용
 description: 일반적인 Adobe Experience Manager 작업에 cURL을 사용하는 방법에 대해 알아봅니다.
 contentOwner: Silviu Raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 45d49917-d20f-470c-bf95-6e701de67a11
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '855'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# AEM에서 cURL 사용{#using-curl-with-aem}
+# AEM과 함께 cURL 사용{#using-curl-with-aem}
 
 관리자는 어떤 시스템에서든 일반적인 작업을 자동화하거나 단순화해야 하는 경우가 많습니다. 예를 들어 AEM에서 사용자 관리, 패키지 설치 및 OSGi 번들 관리는 일반적으로 수행해야 하는 작업입니다.
 
@@ -75,7 +75,7 @@ cURL의 소스 리포지토리는 GitHub에서도 찾을 수 있습니다.
 
 >[!NOTE]
 >
->다음 예제에서는 AEM이 포트 `4502`의 `localhost`에서 실행 중이며 암호가 `admin`인 사용자 `admin`을(를) 사용한다고 가정합니다. 추가 명령 자리 표시자는 꺾쇠 괄호로 설정됩니다.
+>다음 예제에서는 AEM이 포트 `localhost`의 `4502`에서 실행 중이며 암호가 `admin`인 사용자 `admin`을(를) 사용한다고 가정합니다. 추가 명령 자리 표시자는 꺾쇠 괄호로 설정됩니다.
 
 ### 패키지 관리 {#package-management}
 
@@ -290,7 +290,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 자세한 내용은 [AEM에서 CRXDE Lite 사용](/help/sites-administering/enabling-crxde-lite.md)을 참조하십시오.
 
-### 데이터 저장소 가비지 컬렉션 {#data-store-garbage-collection}
+### 데이터 저장소 가비지 수집 {#data-store-garbage-collection}
 
 자세한 내용은 [데이터 저장소 가비지 수집](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection)을 참조하십시오.
 
@@ -298,7 +298,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 자세한 내용은 [Adobe Analytics 및 Adobe Target 선택](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script)을 참조하십시오.
 
-### 단일 사인온 {#single-sign-on}
+### Single Sign On {#single-sign-on}
 
 #### 테스트 헤더 보내기 {#send-test-header}
 
@@ -310,7 +310,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 >[!NOTE]
 >
->다음 예제에서는 AEM이 포트 `4502`의 `localhost`에서 실행 중이며 암호가 `admin`인 사용자 `admin`을(를) 사용한다고 가정합니다. 추가 명령 자리 표시자는 꺾쇠 괄호로 설정됩니다.
+>다음 예제에서는 AEM이 포트 `localhost`의 `4502`에서 실행 중이며 암호가 `admin`인 사용자 `admin`을(를) 사용한다고 가정합니다. 추가 명령 자리 표시자는 꺾쇠 괄호로 설정됩니다.
 
 ### 페이지 관리 {#page-management}
 

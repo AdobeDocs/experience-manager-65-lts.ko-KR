@@ -11,7 +11,7 @@ thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 5f6171f8-20ca-4c31-a99f-a5bc07a63baf
-source-git-commit: e4cf6ae3392cef2ffd7e8fff3226b50c95f5a248
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 3%
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)는 제품 및 범주 페이지의 URL을 사용자 지정하는 고급 구성을 제공합니다. 많은 구현이 SEO(검색 엔진 최적화) 목적으로 이러한 URL을 사용자 지정합니다. 다음 비디오에서는 `UrlProvider` 서비스 및 [Sling 매핑](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)의 기능을 구성하여 제품 및 범주 페이지의 URL을 사용자 지정하는 방법에 대해 자세히 설명합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/38586/?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## 구성 {#configuration}
 
@@ -75,7 +75,7 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝
 
 >[!NOTE]
 > 
->`url_path`은(는) `/` 슬래시로 구분된 제품이나 범주의 상위 항목 `url_keys`과(와) 제품이나 범주의 `url_key`의 연결입니다.
+>`url_path`은(는) `url_keys` 슬래시로 구분된 제품이나 범주의 상위 항목 `url_key`과(와) 제품이나 범주의 `/`의 연결입니다.
 
 ### 특정 범주/제품 페이지 {#specific-pages}
 
@@ -105,7 +105,7 @@ SEO 요구 사항에 따라 `UrlProvider` 서비스를 구성하려면 프로젝
 
 >[!NOTE]
 >
->프로젝트에서 사용하는 외부 도메인을 사용하여 이 구성을 조정해야 합니다. Sling 매핑은 호스트 이름과 도메인을 기반으로 작동합니다. 따라서 이 구성은 기본적으로 비활성화되며 배포 전에 활성화해야 합니다. 이를 위해 `ui.content/src/main/content/jcr_root/etc/map.publish/https`에서 Sling 매핑 `hostname.adobeaemcloud.com` 폴더의 이름을 사용된 도메인 이름에 따라 바꾸고 `resource.resolver.map.location="/etc/map.publish"`을(를) 프로젝트의 `JcrResourceResolver` 구성에 추가하여 이 구성을 사용하도록 설정합니다.
+>프로젝트에서 사용하는 외부 도메인을 사용하여 이 구성을 조정해야 합니다. Sling 매핑은 호스트 이름과 도메인을 기반으로 작동합니다. 따라서 이 구성은 기본적으로 비활성화되며 배포 전에 활성화해야 합니다. 이를 위해 `hostname.adobeaemcloud.com`에서 Sling 매핑 `ui.content/src/main/content/jcr_root/etc/map.publish/https` 폴더의 이름을 사용된 도메인 이름에 따라 바꾸고 `resource.resolver.map.location="/etc/map.publish"`을(를) 프로젝트의 `JcrResourceResolver` 구성에 추가하여 이 구성을 사용하도록 설정합니다.
 
 ## 추가 리소스
 

@@ -10,7 +10,7 @@ feature: 360 VR Video
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 17e45464-3de4-40a8-b102-ccc9eaba92a3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Dynamic Media - Scene7 모드에는 360 비디오 자산의 배송에 대한 기
 
 Adobe Premier Pro를 사용하여 360/VR 푸티지를 보고 편집할 수 있습니다. 예를 들어, 장면에 로고와 텍스트를 적절하게 배치하고, 등장방형 미디어용으로 특별히 설계된 효과와 전환을 적용할 수 있습니다.
 
-[360/VR 비디오 편집](https://helpx.adobe.com/kr/premiere-pro/how-to/edit-360-vr-video.html)을 참조하세요.
+[360/VR 비디오 편집](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)을 참조하세요.
 
 ## 360 비디오 뷰어에 사용할 자산 업로드 {#uploading-assets-for-use-with-the-video-viewer}
 
@@ -51,7 +51,7 @@ Adobe Experience Manager에 업로드된 360개의 비디오 자산은 자산 �
 
 **360 비디오 뷰어에 사용할 자산을 업로드합니다.**
 
-1. 360 비디오 자산 전용의 폴더를 만들었습니다.
+1. 360 비디오 자산 전용 폴더를 만듭니다.
 1. [응용 비디오 프로필을 폴더에 적용](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    360 비디오 콘텐츠를 렌더링하면 표준 비 360 비디오 콘텐츠보다 소스 비디오 해상도 및 인코딩된 표현물 해상도에 대한 요구 사항이 더 높아집니다.

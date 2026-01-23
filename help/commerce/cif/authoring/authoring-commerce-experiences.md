@@ -5,9 +5,9 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: b749ec33-9a78-41d5-889f-73dbdb33ceed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 개요 {#overview}
 
-CIF 추가 기능은 상업용 기능을 사용하여 AEM 작성을 확장합니다. 이를 통해 작성자는 컨텍스트를 벗어나지 않고 제품 데이터 및 콘텐츠에 액세스하여 상거래 관련 경험을 효율적으로 구축하고 관리할 수 있습니다.
+CIF 추가 기능은 상업용 기능을 사용하여 AEM 작성을 확장합니다. 이를 통해 작성자는 컨텍스트를 벗어나지 않고도 제품 데이터 및 콘텐츠에 액세스하여 상거래 관련 경험을 효율적으로 구축하고 관리할 수 있습니다.
 
 ## 선택기 {#pickers}
 
@@ -64,7 +64,7 @@ CIF 추가 기능은 상업용 기능을 사용하여 AEM 작성을 확장합니
 
 ![제품 데이터 사이드 패널](/help/commerce/cif/assets/authoring/products-side-panel.png)
 
-에셋에 아날로그로 연결되는 제품은 페이지에서 다운로드할 수 있습니다(제품 티저 구성 요소는 기본적으로 생성됨). 또는 구성 요소(현재 지원되는 것은 제품 티저 및 제품 캐러셀임).
+에셋에 아날로그로 연결된 제품을 드래그하여 페이지(기본적으로 제품 티저 구성 요소 생성)나 구성 요소(현재 지원되는 것은 제품 티저 및 제품 캐러셀)에 놓을 수 있습니다.
 
 ### RTE를 사용하여 텍스트 필드에 링크 추가 {#rte}
 
@@ -80,7 +80,7 @@ CIF 제품 카탈로그 페이지는 즉시 렌더링되는 가상 페이지입�
 
 ### 관련 제품 콘텐츠 액세스 {#associated-content}
 
-범용 편집기가 페이지에서 1:n 제품을 인식하면 사이드 패널에 &quot;연결된 Commerce 컨텐츠&quot; 탭이 자동으로 표시됩니다. 이 탭을 사용하면 작성자가 제품과 함께 태그가 지정된 AEM 콘텐츠에 빠르게 액세스할 수 있습니다(자세한 내용은 [관련 AEM 콘텐츠로 제품 데이터 보강](./enrich-product-associated-content.md) 참조). 이 탭은 페이지에 여러 제품이 있는 경우 콘텐츠 유형 및 특정 제품을 필터링할 수 있는 드롭다운을 제공합니다. 컨텐츠 사용은 &quot;Assets&quot; 탭의 컨텐츠를 사용하는 것과 정확히 동일하게 작동합니다.
+범용 편집기에서 페이지의 1:n 제품을 인식하면 사이드 패널에 &quot;연결된 Commerce 컨텐츠&quot; 탭이 자동으로 표시됩니다. 이 탭을 사용하면 작성자가 제품과 함께 태그가 지정된 AEM 콘텐츠에 빠르게 액세스할 수 있습니다(자세한 내용은 [관련 AEM 콘텐츠로 제품 데이터 보강](./enrich-product-associated-content.md) 참조). 이 탭은 페이지에 여러 제품이 있는 경우 콘텐츠 유형 및 특정 제품을 필터링할 수 있는 드롭다운을 제공합니다. 컨텐츠 사용은 &quot;Assets&quot; 탭의 컨텐츠를 사용하는 것과 정확히 동일하게 작동합니다.
 
 ![제품 데이터 사이드 패널](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 
