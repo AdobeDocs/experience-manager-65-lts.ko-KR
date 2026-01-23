@@ -1,15 +1,15 @@
 ---
 title: JBoss EAP 8(Linux)을 사용하는 AEM Forms 6.5 LTS에서 스크립트 실행이 실패합니다
-description: Linux 환경에서 JBoss EAP 8.0(AEM Forms 6.5.1 LTS)을 설정하면 셸 스크립트나 시작 파일을 실행하는 동안 오류가 발생할 수 있습니다
+description: Linux 환경에서 JBoss EAP 8.0을 설정하면 셸 스크립트나 시작 파일을 실행하는 동안 오류가 발생할 수 있습니다
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5d020671efaa4527a5f6dbb4b779c7a3351888a4
+source-git-commit: d397e6a51ad2a52da5ccb0a690e1acd3fafcee3c
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '236'
 ht-degree: 1%
 
 ---

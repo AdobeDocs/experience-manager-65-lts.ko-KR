@@ -1,15 +1,15 @@
 ---
 title: 데이터베이스 자격 증명 저장소 설정(Elytron 기반)
-description: JBoss EAP 8은 도메인 모드 설정에 자동화된 스크립트를 사용하여 AEM Forms에서 안전한 데이터베이스 암호 관리를 위해 Elytron 자격 증명 저장소를 지원합니다.
+description: JBoss EAP 8은 도메인 모드 설정을 위해 AEM Forms에서 보안 데이터베이스 암호 관리를 위한 Elytron 자격 증명 저장소를 지원합니다.
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5d020671efaa4527a5f6dbb4b779c7a3351888a4
+source-git-commit: d397e6a51ad2a52da5ccb0a690e1acd3fafcee3c
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '379'
 ht-degree: 2%
 
 ---
