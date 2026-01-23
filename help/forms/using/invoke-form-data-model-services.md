@@ -21,7 +21,7 @@ ht-degree: 13%
 
 ## 개요 {#overview}
 
-AEM Forms을 사용하면 양식 작성자가 적응형 양식 필드 내에서 양식 데이터 모델에 구성된 서비스를 호출하여 양식 채우기 경험을 보다 단순화하고 향상시킬 수 있습니다. 데이터 모델 서비스를 호출하려면 시각적 편집기에서 규칙을 만들거나 `guidelib.dataIntegrationUtils.executeOperation`규칙 편집기[의 코드 편집기에서 ](/help/forms/using/rule-editor.md) API를 사용하여 JavaScript을 지정할 수 있습니다.
+AEM Forms을 사용하면 양식 작성자가 적응형 양식 필드 내에서 양식 데이터 모델에 구성된 서비스를 호출하여 양식 채우기 경험을 보다 단순화하고 향상시킬 수 있습니다. 데이터 모델 서비스를 호출하려면 시각적 편집기에서 규칙을 만들거나 `guidelib.dataIntegrationUtils.executeOperation`규칙 편집기[의 코드 편집기에서 &#x200B;](/help/forms/using/rule-editor.md) API를 사용하여 JavaScript을 지정할 수 있습니다.
 
 이 문서는 `guidelib.dataIntegrationUtils.executeOperation` API를 사용하여 서비스를 호출하는 JavaScript 작성에 중점을 둡니다.
 
