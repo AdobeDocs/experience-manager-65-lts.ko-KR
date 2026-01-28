@@ -1,5 +1,5 @@
 ---
-title: 코드 및 사용자 지정 업그레이드
+title: 코드 및 사용자 정의 업그레이드
 description: AEM에서 코드 및 사용자 지정을 업그레이드하는 방법에 대해 자세히 알아보십시오.
 contentOwner: sarchiz
 topic-tags: upgrading
@@ -11,14 +11,14 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
+source-git-commit: c1935b95d4e9e8e3773f2ff9825c759f97738304
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 0%
+source-wordcount: '1097'
+ht-degree: 1%
 
 ---
 
-# 코드 및 사용자 지정 업그레이드{#upgrading-code-and-customizations}
+# 코드 및 사용자 정의 업그레이드{#upgrading-code-and-customizations}
 
 업그레이드를 계획할 때 다음과 같은 구현 영역을 조사하고 해결해야 합니다.
 
@@ -92,6 +92,7 @@ AEM 6.5 LTS의 경우 두 가지 유형의 Uber Jar가 있습니다.
 
 * AEM 6.5 LTS에는 Google guava 라이브러리가 기본적으로 포함되어 있지 않으므로 요구 사항에 따라 필요한 버전을 설치할 수 있습니다.
 * 이제 Sling XSS 번들은 Java HTML Sanitizer 라이브러리를 사용하며 `XSSAPI#filterHTML()` 메서드는 데이터를 다른 API로 전달하는 것이 아니라 HTML 콘텐츠를 안전하게 렌더링하는 데 사용해야 합니다.
+* Apache Felix HTTP SSL 필터 구성 업데이트: AEM 6.5 LTS에서 `org.apache.felix.http.sslfilter` 번들이 버전 1.2.6에서 2.0.2로 업그레이드되었습니다. 이 업그레이드의 일부로 OSGi 구성 PID `org.apache.felix.http.sslfilter.SslFilter`이(가) 더 이상 사용되지 않으며 새 PID `org.apache.felix.http.sslfilter.Configuration`(으)로 대체되었습니다. 배포에서 SSL 필터를 사용하는 경우 OSGi 구성 관리자(`/system/console/configMgr`)를 사용하여 기존 구성을 수동으로 새 PID로 마이그레이션해야 합니다. 구성을 마이그레이션하지 않으면 업그레이드 후 SSL 필터가 예상대로 적용되지 않을 수 있습니다.
 
 ## 테스트 절차 {#testing-procedure}
 
