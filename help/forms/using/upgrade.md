@@ -9,7 +9,7 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
 exl-id: 93126750-4645-4084-a21b-5362e3cc08a9
-source-git-commit: f37da2418465de645d18e6cdaf46bcd5ebb32427
+source-git-commit: 2cab77b98b35ff1cb6cbfb615d82166ca123c198
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=ko)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html)를 참조하십시오.
 
 
 AEM 6.5 LTS Forms에는 양식 및 서신을 통해 생성, 관리 및 사용자 경험을 간소화하는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다. AEM 6.5 LTS의 모든 새로운 기능과 향상된 기능에 대해 알아보려면 [새로운 기능 요약 문서](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/release-notes/release-notes)를 참조하세요.
@@ -35,7 +35,7 @@ AEM 6.5 LTS Forms에는 양식 및 서신을 통해 생성, 관리 및 사용자
 
 다음 위치에서 직접 업그레이드를 수행할 수 있습니다.
 
-* AEM 6.5.23.0에서 AEM Forms 6.5 LTS로
+* AEM 6.5.17.0에서 AEM Forms 6.5 LTS로
 
 다음 다이어그램은 JEE의 AEM Forms LTS에 사용 가능한 업그레이드 경로를 표시합니다.
 
@@ -47,7 +47,7 @@ AEM 6.5 LTS Forms에는 양식 및 서신을 통해 생성, 관리 및 사용자
 
 
 <!--
-AEM 6.5.18.0 Forms on JEE provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko).
+AEM 6.5.18.0 Forms on JEE provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 **Full installer**: You can use the full installer to set up fresh AEM Forms instances or perform upgrades from AEM 6.5.x.x Forms on JEE to AEM 6.5.18.0 Forms on JEE.
 
