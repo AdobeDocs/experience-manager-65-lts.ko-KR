@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8f5a06dc80943362acebfd7b19fed13c051417d1
+source-git-commit: 6a6a79663579e4d63e68ae6c9a4bec97f24032f9
 workflow-type: tm+mt
-source-wordcount: '7751'
+source-wordcount: '7745'
 ht-degree: 93%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 93%
 
 ### 양식
 
-이제 JEE의 AEM 6.5 Forms LTS를 사용할 수 있습니다. 지원되는 환경에 대한 자세한 내용은 [지원되는 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md) 조합 문서를 참조하십시오. 설치 관리자 링크는 [AEM Forms 릴리스](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 페이지에서 사용할 수 있습니다.
+이제 JEE의 AEM 6.5 Forms LTS를 사용할 수 있습니다. 지원되는 환경에 대한 자세한 내용은 [지원되는 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md) 조합 문서를 참조하십시오. 설치 관리자 링크는 [AEM Forms 릴리스](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 페이지에서 사용할 수 있습니다.
 
 #### AEM Forms 6.5 LTS SP1에 포함된 제품
 
@@ -75,8 +75,6 @@ JBoss EAP 8의 AEM Forms은 보안 자격 증명을 관리하는 데 Elytron을 
 
 자세한 내용은 **javax에서 jakarta 네임스페이스로 마이그레이션**&#x200B;을 참조하십시오.
 
-**javax에서 jakarta 네임스페이스로 마이그레이션**
-
 #### `javax`에서 `jakarta` 네임스페이스로 마이그레이션
 
 **AEM Forms 6.5 LTS SP1**&#x200B;부터 **Jakarta Servlet API 5/6**&#x200B;을 구현하는 응용 프로그램 서버만 지원됩니다. **Jakarta EE 9 이상**&#x200B;에서 모든 API가 `javax.{}` 네임스페이스에서 `jakarta.`(으)로 전환되었습니다.
@@ -110,9 +108,9 @@ JBoss EAP 8의 AEM Forms은 보안 자격 증명을 관리하는 데 Elytron을 
 
 다음은 마이그레이션 중에 필요한 네임스페이스 변경 사항에 대한 일반적인 예입니다.
 
-이전(javax)    이후(자카르타)
-javax.servlet. **jakarta.servlet**
-javax.servlet.http. **jakarta.servlet.http.**
+* 이전(javax)    이후(자카르타)
+* javax.servlet. **jakarta.servlet**
+* javax.servlet.http. **jakarta.servlet.http.**
 
 **샘플 가져오기 매핑**
 
@@ -532,7 +530,7 @@ Eclipse Jetty 11.0.x는 Quickstart의 서블릿 엔진으로 사용됩니다.
 ### 업그레이드 {#upgrade}
 
 * 업그레이드 절차에 대한 자세한 내용은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하십시오.
-* 자세한 업그레이드 지침은 [JEE의 AEM Forms 6.5 LTS SP1용 업그레이드 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)를 참조하십시오.
+* 자세한 업그레이드 지침은 [JEE의 AEM Forms 6.5 LTS SP1용 업그레이드 안내서](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)를 참조하십시오.
 
 #### AEM 6.5 LTS 서비스 팩 업그레이드에 대한 모범 사례
 
