@@ -58,7 +58,7 @@ AEM의 표준 참조 구현으로 `We.Retail`은(는) AEM의 가장 강력한 �
 
 ### 첫 단계 {#first-steps}
 
-1. AEM이 시작되거나 `We.Retail`이(가) 설치되면 **`We.Retail`**&#x200B;사이트 콘솔[에서 ](/help/sites-authoring/basic-handling.md#global-navigation) 사이트를 사용할 수 있습니다.
+1. AEM이 시작되거나 `We.Retail`이(가) 설치되면 **`We.Retail`**&#x200B;사이트 콘솔[에서 &#x200B;](/help/sites-authoring/basic-handling.md#global-navigation) 사이트를 사용할 수 있습니다.
 1. 예를 들어 다음 페이지를 열 수 있으며 아래 [부록](#appendix)에 표시된 것과 같이 표시되어야 합니다.
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
