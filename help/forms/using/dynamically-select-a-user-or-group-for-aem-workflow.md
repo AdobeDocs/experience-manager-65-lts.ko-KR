@@ -1,30 +1,30 @@
 ---
-title: AEM Forms 중심 워크플로우 단계에 대해 사용자 또는 그룹을 동적으로 선택합니다.
-description: 런타임 시 AEM Forms 워크플로우에 대한 사용자 또는 그룹을 선택하는 방법을 알아봅니다.
+title: AEM Forms 중심 워크플로 단계에 대해 동적으로 사용자 또는 그룹 선택
+description: 런타임 시 AEM Forms 워크플로의 사용자 또는 그룹을 선택하는 방법을 알아봅니다.
 content-type: troubleshooting
 topic-tags: publish
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services
 exl-id: b3b3567f-df0a-4a24-849c-dcc0b745de63
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 1%
+source-wordcount: '865'
+ht-degree: 3%
 
 ---
 
-# AEM Forms 중심 워크플로우 단계에 대해 사용자 또는 그룹을 동적으로 선택합니다. {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# AEM Forms 중심 워크플로 단계에 대해 동적으로 사용자 또는 그룹 선택 {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
-런타임 시 AEM Forms 워크플로우에 대한 사용자 또는 그룹을 선택하는 방법을 알아봅니다.
+런타임 시 AEM Forms 워크플로의 사용자 또는 그룹을 선택하는 방법을 알아봅니다.
 
-대규모 조직에서는 프로세스에 사용할 사용자를 동적으로 선택해야 하는 요구 사항이 있습니다. 예를 들어, 고객에 대한 에이전트의 근접도를 기반으로 고객을 지원할 현장 에이전트를 선택합니다. 이러한 시나리오에서는 에이전트가 동적으로 선택됩니다.
+대규모 조직에서는 프로세스에 대해 동적으로 사용자를 선택해야 하는 요구 사항이 있습니다. 예를 들어, 고객에 대한 에이전트의 근접도를 기반으로 고객을 지원할 현장 에이전트를 선택합니다. 이러한 시나리오에서는 에이전트가 동적으로 선택됩니다.
 
-[OSGi에서 Forms 중심 워크플로](/help/forms/using/aem-forms-workflow.md)의 작업 및 Adobe Sign 단계를 할당하면 사용자를 동적으로 선택할 수 있는 옵션이 제공됩니다. ECMAScript 또는 OSGi 번들을 사용하여 작업 할당 단계의 할당자를 동적으로 선택하거나 문서 서명 단계의 서명자를 선택할 수 있습니다.
+[OSGi에서 Forms 중심 워크플로](/help/forms/using/aem-forms-workflow.md)의 작업 및 Adobe Sign 단계를 할당하면 동적으로 사용자를 선택하는 옵션이 제공됩니다. ECMAScript 또는 OSGi 번들을 사용하여 작업 할당 단계를 위해 동적으로 피할당자를 선택하거나 문서 서명 단계를 위해 서명자를 선택할 수 있습니다.
 
-## ECMAScript를 사용하여 사용자 또는 그룹을 동적으로 선택 {#use-ecmascript-to-dynamically-select-a-user-or-group}
+## ECMAScript를 사용하여 동적으로 사용자 또는 그룹을 선택합니다. {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
-ECMAScript는 스크립팅 언어입니다. 클라이언트측 스크립팅 및 서버 애플리케이션에 사용됩니다. ECMAScript를 사용하여 사용자 또는 그룹을 동적으로 선택하려면 다음 단계를 수행하십시오.
+ECMAScript는 스크립팅 언어입니다. 클라이언트측 스크립팅 및 서버 애플리케이션에 사용됩니다. ECMAScript를 사용하여 동적으로 사용자 또는 그룹을 선택하려면 다음 단계를 수행하십시오.
 
 1. CRXDE Lite을 엽니다. URL은 `https://'[server]:[port]'/crx/de/index.jsp`입니다.
 1. 다음 경로에서 확장명이 .ecma인 파일을 만듭니다. 경로(노드 구조)가 없는 경우 만듭니다.
@@ -32,25 +32,25 @@ ECMAScript는 스크립팅 언어입니다. 클라이언트측 스크립팅 및 
    * (작업 할당 단계 경로) `/apps/fd/dashboard/scripts/participantChooser`
    * (서명 단계 경로) `/apps/fd/workflow/scripts/adobesign`
 
-1. 사용자를 동적으로 선택하는 논리가 있는 ECMAScript를 .ecma 파일에 추가합니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
+1. 사용자를 동적으로 선택하는 논리를 가진 ECMAScript를 `.ecma` 파일에 추가하십시오. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 
    샘플 스크립트의 경우 사용자 또는 그룹을 동적으로 선택하려면 [샘플 ECMAScripts를 참조하십시오](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
 
 1. 스크립트의 표시 이름을 추가합니다. 이 이름은 워크플로우 단계에 표시됩니다. 이름을 지정하려면 다음을 수행합니다.
 
-   1. 스크립트 노드를 확장하고 **[!UICONTROL jcr:content]** 노드를 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL Mixins]**&#x200B;을 클릭합니다.
+   1. 스크립트 노드를 확장하고 **`jcr:content`** 노드를 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL Mixins]**&#x200B;을 클릭합니다.
    1. Mixins 편집 대화 상자에서 `mix:title` 속성을 추가하고 **확인**&#x200B;을 클릭합니다.
-   1. 스크립트의 jcr:content 노드에 다음 속성을 추가합니다.
+   1. 스크립트의 `jcr:content` 노드에 다음 속성을 추가하십시오.
 
       | 이름 | 유형 | 값 |
       |--- |--- |--- |
-      | jcr:title | 문자열 | 스크립트 이름을 지정합니다. 예를 들어 가장 가까운 필드 에이전트를 선택합니다. 이 이름은 작업 할당 및 문서 서명 단계에 표시됩니다. |
+      | `jcr:title` | 문자열 | 스크립트 이름을 지정합니다. 예를 들어 가장 가까운 필드 에이전트를 선택합니다. 이 이름은 `Assign Task` 및 서명 문서 단계에 표시됩니다. |
 
    1. **모두 저장**&#x200B;을 클릭합니다. AEM Workflow의 구성 요소에서 스크립트를 선택할 수 있습니다.
 
       ![스크립트](assets/script.png)
 
-### 사용자 또는 그룹을 동적으로 선택하는 샘플 ECMAScript {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
+### 샘플 ECMAScript를 사용하여 동적으로 사용자 또는 그룹 선택 {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
 
 다음 샘플 ECMAScript는 작업 할당 단계를 위해 할당자를 동적으로 선택합니다. 이 스크립트에서는 페이로드의 경로를 기반으로 사용자가 선택됩니다. 이 스크립트를 사용하기 전에 스크립트에 언급된 모든 사용자가 AEM에 있는지 확인하십시오. 스크립트에 언급된 사용자가 AEM에 없는 경우 관련 프로세스가 실패할 수 있습니다.
 
@@ -113,11 +113,11 @@ function getAdobeSignRecipients() {
 }
 ```
 
-## Java 인터페이스를 사용하여 사용자 또는 그룹을 동적으로 선택 {#use-java-interface-to-dynamically-choose-a-user-or-group}
+## Java 인터페이스를 사용하여 동적으로 사용자 또는 그룹을 선택합니다. {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-[RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 Adobe Sign의 사용자 또는 그룹을 동적으로 선택하고 작업 단계를 할당할 수 있습니다. [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하는 OSGi 번들을 만들어 AEM Forms 서버에 배포할 수 있습니다. 이 옵션을 AEM Workflow의 작업 할당 및 Adobe Sign 구성 요소에서 선택할 수 있습니다.
+[RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 Adobe Sign 및 작업 할당 단계에 대해 동적으로 사용자 또는 그룹을 선택할 수 있습니다. [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하는 OSGi 번들을 만들어 AEM Forms 서버에 배포할 수 있습니다. 이 옵션을 AEM Workflow의 `Assign Task` 및 Adobe Sign 구성 요소에서 선택할 수 있습니다.
 
-아래 나열된 코드 샘플을 컴파일하려면 [AEM Forms 클라이언트 SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) jar 및 [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 파일이 필요합니다. 이러한 jar 파일을 OSGi 번들 프로젝트에 외부 종속성으로 추가합니다. 모든 Java IDE를 사용하여 OSGi 번들을 만들 수 있습니다. 다음 절차에서는 Eclipse를 사용하여 OSGi 번들을 만드는 단계를 제공합니다.
+아래 나열된 코드 샘플을 컴파일하려면 [AEM Forms 클라이언트 SDK](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) jar 및 [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 파일이 필요합니다. 이러한 jar 파일을 OSGi 번들 프로젝트에 외부 종속성으로 추가합니다. 모든 Java IDE를 사용하여 OSGi 번들을 만들 수 있습니다. 다음 절차에서는 Eclipse를 사용하여 OSGi 번들을 만드는 단계를 제공합니다.
 
 1. Eclipse IDE를 엽니다. **[!UICONTROL 파일]**> **[!UICONTROL 새 프로젝트]**(으)로 이동합니다.
 1. 마법사 선택 화면에서 **[!UICONTROL Maven 프로젝트]**&#x200B;를 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
@@ -224,7 +224,7 @@ function getAdobeSignRecipients() {
    </project>
    ```
 
-1. [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 작업 할당 단계의 사용자 또는 그룹을 동적으로 선택하는 소스 코드를 추가하십시오. 샘플 코드가 필요하면 [Java 인터페이스를 사용하여 사용자 또는 그룹을 동적으로 선택하는 샘플](#-sample-scripts-for)을 참조하십시오.
+1. [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 작업 할당 단계에 대해 동적으로 사용자 또는 그룹을 선택하는 소스 코드를 추가하십시오. 샘플 코드가 필요하면 [Java 인터페이스를 사용하여 사용자 또는 그룹을 동적으로 선택하는 샘플](#-sample-scripts-for)을 참조하십시오.
 1. 명령 프롬프트를 열고 OSGi 번들 프로젝트가 포함된 디렉터리로 이동합니다. 다음 명령을 사용하여 OSGi 번들을 생성합니다.
 
    `mvn clean install`
