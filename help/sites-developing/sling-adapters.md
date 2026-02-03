@@ -76,7 +76,7 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
 
 * 둘의 조합.
 
-첫 번째 경우 Java™ 문서에는 `adaptTo-targets`이(가) 가능한 내용이 표시될 수 있습니다. 그러나 JCR 기반 리소스와 같은 특정 하위 클래스의 경우에는 가능하지 않은 경우가 많습니다. 후자의 경우 `AdapterFactory`의 구현은 일반적으로 번들의 전용 클래스에 속하므로 클라이언트 API에 노출되거나 Java™ 문서에 나열되지 않습니다. 이론적으로는 `AdapterFactory`OSGi[ 서비스 런타임에서 모든 ](/help/sites-deploying/configuring-osgi.md) 구현에 액세스하여 &quot;적응성&quot;(소스 및 타겟) 구성을 볼 수 있지만 서로 매핑하지는 않을 수 있습니다. 결국 내부 논리에 따라 달라지는데, 이를 반드시 문서화해야 한다. 따라서 참조입니다.
+첫 번째 경우 Java™ 문서에는 `adaptTo-targets`이(가) 가능한 내용이 표시될 수 있습니다. 그러나 JCR 기반 리소스와 같은 특정 하위 클래스의 경우에는 가능하지 않은 경우가 많습니다. 후자의 경우 `AdapterFactory`의 구현은 일반적으로 번들의 전용 클래스에 속하므로 클라이언트 API에 노출되거나 Java™ 문서에 나열되지 않습니다. 이론적으로는 `AdapterFactory`OSGi[&#x200B; 서비스 런타임에서 모든 &#x200B;](/help/sites-deploying/configuring-osgi.md) 구현에 액세스하여 &quot;적응성&quot;(소스 및 타겟) 구성을 볼 수 있지만 서로 매핑하지는 않을 수 있습니다. 결국 내부 논리에 따라 달라지는데, 이를 반드시 문서화해야 한다. 따라서 참조입니다.
 
 ## 참조 {#reference}
 
@@ -338,7 +338,7 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
 
 #### 보안 {#security}
 
-**승인 가능**, **사용자 및 **그룹**&#x200B;이(가) 다음에 적용됩니다.
+**승인 가능**, **사용자 및 &#x200B;** 그룹**&#x200B;이(가) 다음에 적용됩니다.
 
 | [노드](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | 사용자/그룹 홈 노드를 반환합니다. |
 | --- | --- |
@@ -364,4 +364,4 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
 
 #### 기타 {#other}
 
-또한 Sling/JCR/OCM은 사용자 지정 OCM(` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)`개체 콘텐츠 매핑[) 개체에 대한 ](https://jackrabbit.apache.org/jcr/object-content-mapping.html)도 제공합니다.
+또한 Sling/JCR/OCM은 사용자 지정 OCM(` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)`개체 콘텐츠 매핑[) 개체에 대한 &#x200B;](https://jackrabbit.apache.org/jcr/object-content-mapping.html)도 제공합니다.
