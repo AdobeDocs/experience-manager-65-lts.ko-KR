@@ -4,7 +4,7 @@ description: JBoss EAP 8은 도메인 모드 설정을 위해 AEM Forms에서 �
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 2%
@@ -17,6 +17,7 @@ ht-degree: 2%
 ## Elytron을 사용하여 데이터베이스 자격 증명 저장소 구성
 
 JBoss EAP 8은 **Elytron 자격 증명 저장소**&#x200B;를 사용하여 AEM Forms 배포에 대한 데이터베이스 암호를 안전하게 관리합니다. Adobe은 도메인 모드에서 Elytron 기반 자격 증명 저장소의 만들기 및 구성을 단순화할 수 있도록 **자동화된 스크립트**&#x200B;를 제공합니다.
+
 
 JBoss 도메인 컨트롤러&#x200B;**를 시작하기 전에**&#x200B;이 설치를 완료해야 합니다.
 

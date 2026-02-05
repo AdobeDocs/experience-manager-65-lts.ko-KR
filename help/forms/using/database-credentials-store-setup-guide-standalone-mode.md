@@ -4,7 +4,7 @@ description: 독립형 모드에서 JBoss/Red Hat EAP의 AEM Forms JEE에 대한
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 0%
@@ -17,6 +17,7 @@ ht-degree: 0%
 ## 개요
 
 이 안내서에서는 **독립 실행형 모드**&#x200B;에서 JBoss/Red Hat EAP의 AEM Forms JEE용 **데이터베이스 자격 증명 저장소 설정**&#x200B;에 대해 다룹니다. 수동 설치를 수행할 때 필요합니다.
+
 
 **이 안내서는 다음을 다룹니다.**
 

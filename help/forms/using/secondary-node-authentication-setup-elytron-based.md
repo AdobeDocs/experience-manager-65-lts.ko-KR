@@ -4,7 +4,7 @@ description: JBoss EAP 8은 Elytron을 사용하여 주 도메인 컨트롤러�
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 3%
@@ -19,6 +19,7 @@ ht-degree: 3%
 JBoss EAP 8은 **Elytron**&#x200B;을(를) 사용하여 클러스터된 배포에서 **기본 및 보조 노드** 간의 통신을 인증합니다. 이 구성을 통해 보조 노드를 주 도메인 컨트롤러에 안전하게 등록하고 통신할 수 있습니다.
 
 환경 및 보안 요구 사항에 따라 두 가지 설정 옵션을 사용할 수 있습니다.
+
 
 ## 사전 요구 사항
 
