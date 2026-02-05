@@ -1,6 +1,6 @@
 ---
 title: Forms 포털에서 제출된 양식으로 작동하는 API
-description: AEM Forms은 forms 포털에서 제출된 양식 데이터를 쿼리하고 작업을 수행하는 데 사용할 수 있는 API를 제공합니다.
+description: AEM Forms은 Forms 포털에서 제출된 양식 데이터를 쿼리하고 작업을 수행하는 데 사용할 수 있는 API를 제공합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
@@ -8,22 +8,22 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a24d0218-d534-49c9-81c1-12b38d794caa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 5%
+source-wordcount: '512'
+ht-degree: 6%
 
 ---
 
 # Forms 포털에서 제출된 양식으로 작동하는 API {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-AEM Forms은 forms 포털을 통해 제출된 양식 데이터를 쿼리하는 데 사용할 수 있는 API를 제공합니다. 또한 이 문서에 설명된 API를 사용하여 주석을 게시하거나 제출된 양식의 속성을 업데이트할 수 있습니다.
+AEM Forms은 Forms 포털을 통해 제출된 양식 데이터를 쿼리하는 데 사용할 수 있는 API를 제공합니다. 또한 이 문서에 설명된 API를 사용하여 주석을 게시하거나 제출된 양식의 속성을 업데이트할 수 있습니다.
 
 >[!NOTE]
 >
->[제출 검토자를 양식에 연결](/help/forms/using/adding-reviewers-form.md)에 설명된 대로 API를 호출하는 사용자를 검토자 그룹에 추가해야 합니다.
+>API를 호출하는 사용자를 검토자 그룹에 추가해야 합니다. [제출 검토자를 양식에 연결](/help/forms/using/adding-reviewers-form.md)을 참조하십시오.
 
-## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
+## GET `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 모든 적격 양식 목록을 반환합니다.
 
@@ -57,7 +57,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## GET `/content/forms/portal/submission.review.json?func=getAllSubmissions` {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 제출된 모든 양식의 세부 정보를 반환합니다. 그러나 URL 매개 변수를 사용하여 결과를 제한할 수 있습니다.
 
@@ -85,11 +85,11 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (옵션)</td>
-   <td>정렬 결과에 대한 속성을 지정합니다. 기본값은 마지막 수정 시간을 기준으로 결과를 정렬하는 <strong>jcr:lastModified</strong>입니다.</td>
+   <td>정렬 결과에 대한 속성을 지정합니다. 기본값은 마지막으로 수정한 시간을 기준으로 결과를 정렬하는 <code>jcr:lastModified</code>입니다.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (옵션)</td>
-   <td>결과 정렬 순서를 지정합니다. 기본값은 결과를 내림차순으로 정렬하는 <strong>desc</strong>입니다. 결과를 오름차순으로 정렬하도록 <code>asc</code>을(를) 지정할 수 있습니다.</td>
+   <td>결과 정렬 순서를 지정합니다. 기본값은 <code>desc</code>이며, 내림차순으로 결과를 정렬합니다. 결과를 오름차순으로 정렬하도록 <code>asc</code>을(를) 지정할 수 있습니다.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (옵션)</td>
@@ -97,7 +97,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>search</code> <br /> (옵션)</td>
-   <td>양식 속성에서 지정된 값을 검색하고 일치하는 값이 있는 양식을 반환합니다. 기본값은 <strong>"</strong>입니다.</td>
+   <td>양식 속성에서 지정된 값을 검색하고 일치하는 값이 있는 양식을 반환합니다. 기본값은 <code>""</code>입니다.</td>
   </tr>
  </tbody>
 </table>
@@ -127,7 +127,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 {"total":1,"items":[{"formName":"form2","formPath":"/content/dam/formsanddocuments/forms-review/form2","submitID":"1403037413508500","formType":"af","jcr:lastModified":"2015-11-05T17:52:32.243+05:30","owner":"admin"}]}
 ```
 
-## POST /content/forms/portal/submission.review.json?func=addComment {#post-content-forms-portal-submission-review-json-func-addcomment-br}
+## `/content/forms/portal/submission.review.json?func=addComment` 게시물 {#post-content-forms-portal-submission-review-json-func-addcomment-br}
 
 지정된 제출 인스턴스에 주석을 추가합니다.
 
@@ -158,7 +158,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET `/content/forms/portal/submission.review.json?func=getComments`   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 지정된 제출 인스턴스에 게시된 모든 주석을 반환합니다.
 
@@ -196,7 +196,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 [{"owner":"fr1","comment":"API test comment","time":1446726988250}]
 ```
 
-## POST /content/forms/portal/submission.review.json?func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
+## `/content/forms/portal/submission.review.json?func=updateSubmission` 게시물 {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
 지정된 제출된 양식 인스턴스의 지정된 속성 값을 업데이트합니다.
 
@@ -212,7 +212,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 
 ### 응답 {#response-4}
 
-게시된 업데이트에 대한 정보가 있는 JSON 개체를 반환합니다.
+게시된 업데이트에 대한 정보와 함께 JSON 개체를 반환합니다.
 
 ### 예 {#example-4}
 

@@ -1,5 +1,5 @@
 ---
-title: 서신 만들기 UI를 사용자 정의 포털과 통합
+title: 맞춤형 포털과 서신 작성 솔루션 통합
 description: 서신 만들기 UI를 사용자 정의 포털과 통합하는 방법을 알아봅니다
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,22 +9,22 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 496b125b-b091-4843-ba9f-2479dbeba07b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '403'
 ht-degree: 4%
 
 ---
 
-# 서신 만들기 UI를 사용자 정의 포털과 통합{#integrating-create-correspondence-ui-with-your-custom-portal}
+# 사용자 지정 포털과 `Create Correspondence` 솔루션 통합{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## 개요 {#overview}
 
-이 문서에서는 서신 만들기 솔루션을 환경과 통합하는 방법에 대해 자세히 설명합니다.
+이 문서에서는 `Create Correspondence` 솔루션을 환경에 통합하는 방법에 대해 자세히 설명합니다.
 
 ## URL 기반 호출 {#url-based-invocation}
 
-사용자 지정 포털에서 서신 만들기 애플리케이션을 호출하는 한 가지 방법은 다음 요청 매개 변수로 URL을 준비하는 것입니다.
+사용자 지정 포털에서 `Create Correspondence` 응용 프로그램을 호출하는 한 가지 방법은 다음 요청 매개 변수로 URL을 준비하는 것입니다.
 
 * 문자 템플릿의 식별자(cmLetterId 매개 변수 사용).
 
@@ -39,16 +39,16 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->서신 만들기 애플리케이션을 호출하기 전에 데이터를 저장하고 업로드하여 지정된 dataURL에서 서신 만들기 UI를 호출합니다. 이 작업은 사용자 정의 포털 자체에서 수행하거나 다른 백엔드 프로세스를 통해 수행할 수 있습니다.
+>`Create Correspondence` 응용 프로그램을 호출하기 전에 데이터를 저장하고 업로드하여 지정된 dataURL에서 `Create Correspondence` UI를 호출합니다. 이 프로세스는 사용자 정의 포털 자체나 다른 백엔드 프로세스를 통해 수행할 수 있습니다.
 
 ## 인라인 데이터 기반 호출 {#inline-data-based-invocation}
 
-응답 만들기 애플리케이션을 호출하는 또 다른(및 보다 안전한) 방법은 POST 요청으로 응답 만들기 애플리케이션을 호출하기 위해 매개 변수 및 데이터를 보내는 동안(최종 사용자에게 숨기기) https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html에서 URL을 히트하는 것입니다. 즉, 이전 접근 방법에서는 불가능하거나 이상적이지 않았던 서신 작성 애플리케이션 인라인(cmData 매개 변수를 사용하여 동일한 요청의 일부로)에 대한 XML 데이터를 전달할 수 있습니다.
+`Create Correspondence` 응용 프로그램을 호출하는 다른 보다 안전한 방법은 https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html의 URL로 이동하는 것입니다. `Create Correspondence` 응용 프로그램을 POST 요청으로 호출하기 위해 매개 변수 및 데이터를 보내는 동안 이 URL을 실행하여 최종 사용자에게 숨깁니다. 또한 이 워크플로는 `Create Correspondence` 응용 프로그램의 XML 데이터를 인라인으로 전달할 수 있음을 의미합니다(`cmData` 매개 변수를 사용하여 동일한 요청의 일부). 이 워크플로우는 이전 접근 방식에서는 불가능했거나 이상적이었습니다.
 
 ### 편지 지정을 위한 매개변수 {#parameters-for-specifying-letter}
 
 | **이름** | **유형** | **설명** |
-|---|---|---|
+| --- | --- | --- |
 | cmLetterInstanceId | 문자열 | 편지 인스턴스에 대한 식별자. |
 | cmLetterId | 문자열 | Letter 템플릿의 이름입니다. |
 
@@ -105,4 +105,4 @@ ht-degree: 4%
  </tbody>
 </table>
 
-cmDataURL에 http 또는 cq 프로토콜을 사용하는 경우 http/cq의 URL은 익명으로 액세스할 수 있어야 합니다.
+`cmDataURL`에 대해 http 또는 cq 프로토콜을 사용하는 경우 `http/cq`의 URL에 익명으로 액세스할 수 있어야 합니다.
