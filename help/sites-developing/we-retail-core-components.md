@@ -86,10 +86,10 @@ ht-degree: 5%
 
 ## 추가 참조 {#further-information}
 
-핵심 구성 요소에 대한 자세한 내용은 작성 안내서 [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction)에서 기능 개요를 참조하십시오. 기술 개요는 [핵심 구성 요소 개발](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) 안내서를 참조하십시오.
+핵심 구성 요소에 대한 자세한 내용은 작성 안내서 [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction)에서 기능 개요를 참조하십시오. 기술 개요는 [핵심 구성 요소 개발](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/overview) 안내서를 참조하십시오.
 
 
 
-핵심 구성 요소에 대한 자세한 내용은 작성 문서 [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction)에서 핵심 구성 요소 기능에 대한 개요를 참조하고 개발자 문서 [핵심 구성 요소 개발](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview)에서 기술적인 내용을 참조하십시오.
+핵심 구성 요소에 대한 자세한 내용은 작성 문서 [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction)에서 핵심 구성 요소 기능에 대한 개요를 참조하고 개발자 문서 [핵심 구성 요소 개발](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/overview)에서 기술적인 내용을 참조하십시오.
 
 [편집 가능한 템플릿](/help/sites-developing/we-retail-editable-templates.md)을 조사할 수도 있습니다. 편집 가능한 템플릿에 대한 자세한 내용은 작성 문서 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 또는 개발자 문서 페이지 [템플릿 - 편집 가능](/help/sites-developing/page-templates-editable.md)을 참조하십시오.

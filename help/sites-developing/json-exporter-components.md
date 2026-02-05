@@ -35,7 +35,7 @@ JSON 내보내기는 [Sling 모델](https://sling.apache.org/documentation/bundl
 
 >[!NOTE]
 >
->Sling 모델을 사용하는 예는 [AEM에서 Sling 모델 내보내기 개발](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter)을 참조하십시오.
+>Sling 모델을 사용하는 예는 [AEM에서 Sling 모델 내보내기 개발](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter)을 참조하십시오.
 
 Sling 모델 구현 클래스에는 다음 주석이 포함되어야 합니다.
 
@@ -91,8 +91,8 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 ## 관련 설명서 {#related-documentation}
 
-* Assets 사용 안내서의 [콘텐츠 조각 항목](https://experienceleague.adobe.com/en/docs/experience-manager-64/assets/home#)
+* Assets 사용 안내서의 [콘텐츠 조각 항목](https://experienceleague.adobe.com/ko/docs/experience-manager-64/assets/home#)
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)
 * [콘텐츠 서비스를 위한 JSON 내보내기 도구](/help/sites-developing/json-exporter.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)
+* [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)
