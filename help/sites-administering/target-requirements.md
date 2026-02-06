@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: e1771229-b2ce-406a-95a5-99b11fafbe34
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 7%
+source-wordcount: '511'
+ht-degree: 5%
 
 ---
 
@@ -29,9 +29,9 @@ AEM을 Adobe Target과 통합하려면 유효한 Adobe Target 계정이 있어�
 
 >[!NOTE]
 >
->통합을 사용하려면 Target 팀이 계정을 활성화해야 합니다.
+>Target 팀이 통합을 사용하려면 계정을 활성화해야 합니다.
 >
->그렇지 않은 경우 [Adobe 고객 지원 센터](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=ko)에 문의하십시오.
+>그렇지 않은 경우 [Adobe 고객 지원 센터](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information)에 문의하십시오.
 
 ## 대상 복제 에이전트 활성화 {#enabling-the-target-replication-agent}
 
@@ -44,21 +44,21 @@ AEM을 Adobe Target과 통합하려면 유효한 Adobe Target 계정이 있어�
 
    >[!NOTE]
    >
-   >테스트 및 대상 복제 에이전트를 구성할 때 **전송** 탭에서 URI는 기본적으로 **tnt:///**(으)로 설정됩니다. 이 URI를 **https://admin.testandtarget.omniture.com**(으)로 바꾸지 마십시오.
+   >테스트 및 대상 복제 에이전트를 구성할 때 **전송** 탭에서 URI는 기본적으로 `tnt:///`(으)로 설정됩니다. 이 URI를 `https://admin.testandtarget.omniture.com`(으)로 바꾸지 마십시오.
    >
-   >**tnt:///**&#x200B;과의 연결을 테스트하려고 하면 오류가 발생합니다. 이 URI는 내부 전용이므로 예상되는 동작입니다. **연결 테스트**&#x200B;에는 사용하지 마십시오.
+   >`tnt:///`과의 연결을 테스트하려고 하면 예상되는 동작인 오류가 표시됩니다. 그 이유는 URI가 내부용으로만 사용되기 때문입니다. **연결 테스트**&#x200B;에서는 를 사용하지 마십시오.
 
-## 활동 설정 노드 보안 설정 {#securing-the-activity-settings-node}
+## 활동 설정 노드 보안 {#securing-the-activity-settings-node}
 
-일반 사용자가 액세스할 수 없도록 게시 인스턴스에서 활동 설정 노드 **cq:ActivitySettings**&#x200B;를 보호합니다. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스에만 액세스할 수 있어야 합니다.
+일반 사용자가 액세스할 수 없도록 게시 인스턴스에서 활동 설정 노드 **cq:ActivitySettings**&#x200B;을(를) 보호합니다. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스에만 액세스할 수 있어야 합니다.
 
-**cq:ActivitySettings** 노드는 CRXDE lite에서 `/content/campaigns/*nameofbrand*`* *활동 jcr:content 노드 아래의* *예: `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`에서 사용할 수 있습니다. 이 노드는 구성 요소를 타겟팅한 후에만 만들어집니다.
+**cq:ActivitySettings** 노드는 CRXDE Lite `/content/campaigns/*nameofbrand*`* *활동 `jcr:content` 노드 아래에서 사용할 수 있습니다. 예를 들어, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`과 같이 입력합니다. 이 노드는 구성 요소를 타겟팅한 후에만 만들어집니다.
 
-활동의 jcr:content 아래에 있는 **cq:ActivitySettings** 노드는 다음 ACL에 의해 보호됩니다.
+활동의 **아래에 있는:ActivitySettings** cq`jcr:content` 노드는 다음 ACL에 의해 보호됩니다.
 
-* 모든 사용자에 대해 모두 거부
-* &quot;target-activity-authors&quot;에 대해 jcr:read, rep:write 허용(작성자는 기본 제공 이 그룹의 구성원임)
-* &quot;targetservice&quot;에 대해 jcr:read, rep:write 허용
+* 모두를 위해 모두 거부.
+* `jcr:read,rep:write`에 대해 `target-activity-authors`을(를) 허용합니다(작성자는 기본 이 그룹의 구성원임).
+* `jcr:read,rep:write`에 대해 `targetservice`을(를) 허용합니다.
 
 이러한 설정은 일반 사용자가 노드 속성에 액세스할 수 없도록 합니다. 작성자 및 게시에서 동일한 ACL을 사용합니다. 자세한 내용은 [사용자 관리 및 보안](/help/sites-administering/security.md)을 참조하십시오.
 
