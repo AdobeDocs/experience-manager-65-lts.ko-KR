@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: bc621086-8128-4836-a580-dca99f61c439
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d894bb145d70fba819cc8452056e9e46112e69d9
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1750'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 [경험 조각](/help/sites-authoring/experience-fragments.md)은(는) 페이지 내에서 참조할 수 있는 콘텐츠 및 레이아웃을 포함한 하나 이상의 구성 요소 그룹입니다.
 
-경험 조각 기본 및/또는 변형은 다음을 사용합니다.
+기본 또는 변형 경험 조각 또는 둘 다에서 사용하는 것은 다음과 같습니다.
 
 * `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
-`/libs/cq/experience-fragments/components/xfpage/xfpage.html`이(가) 없으므로 (으)로 되돌아감
+`/libs/cq/experience-fragments/components/xfpage/xfpage.html`이(가) 없으므로 다음으로 되돌아갑니다.
 
 * `sling:resourceSuperType` : `wcm/foundation/components/page`
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 URL에서 `.plain.` 선택기를 사용하여 일반 HTML 렌디션에 액세스할 수 있습니다.
 
-브라우저에서 사용할 수 있지만 기본 목적은 다른 애플리케이션(예: 서드파티 웹 앱, 사용자 정의 모바일 구현)이 URL만 사용하여 경험 조각의 콘텐츠에 직접 액세스할 수 있도록 하는 것입니다.
+이 기능은 브라우저에서 사용할 수 있습니다. 그러나 주요 목적은 다른 애플리케이션(예: 서드파티 웹 앱, 사용자 지정 모바일 구현)이 URL만 사용하여 경험 조각의 콘텐츠에 직접 액세스할 수 있도록 하는 것입니다.
 
 일반 HTML 렌디션은 다음과 같은 경로에 프로토콜, 호스트 및 컨텍스트 경로를 추가합니다.
 
@@ -49,26 +49,26 @@ URL에서 `.plain.` 선택기를 사용하여 일반 HTML 렌디션에 액세스
 
 >[!NOTE]
 >
->링크는 항상 게시 인스턴스를 참조합니다. 이 링크는 서드파티가 사용하므로 작성자 인스턴스가 아닌 게시 인스턴스에서 항상 호출됩니다.
+>링크는 항상 게시 인스턴스를 참조합니다. 서드파티는 이를 사용하므로 작성 인스턴스가 아닌 게시 인스턴스에서 항상 링크를 호출합니다.
 >
 >자세한 내용은 [URL 외부화](/help/sites-developing/externalizer.md)를 참조하십시오.
 
 ![xf-14](assets/xf-14.png)
 
-일반 렌디션 선택기는 추가 스크립트와 달리 변환기를 사용하며 [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html)은(는) 변환기로 사용됩니다. 다음에서 구성됩니다.
+일반 렌디션 선택기는 추가 스크립트와 달리 변환기를 사용합니다. [`Sling Rewriter`](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html)은(는) 변환기로 사용되며 다음과 같이 구성됩니다.
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
 ### HTML 렌디션 생성 구성 {#configuring-html-rendition-generation}
 
-HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩니다. 파이프라인이 `/libs/experience-fragments/config/rewriter/experiencefragments`에 정의되어 있습니다. HTML 변환기는 다음 옵션을 지원합니다.
+HTML 렌디션은 `Sling Rewriter` 파이프라인을 사용하여 생성됩니다. 파이프라인이 `/libs/experience-fragments/config/rewriter/experiencefragments`에 정의되어 있습니다. HTML 변환기는 다음 옵션을 지원합니다.
 
 * `allowedCssClasses`
    * 최종 렌디션에 남겨야 하는 CSS 클래스와 일치하는 RegEx 표현식입니다.
-   * 이 기능은 고객이 일부 특정 CSS 클래스를 삭제하려는 경우 유용합니다
+   * 고객이 특정 CSS 클래스를 삭제하려는 경우 유용합니다.
 * `allowedTags`
    * 최종 렌디션에서 사용할 수 있는 HTML 태그 목록입니다.
-   * 기본적으로 html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link 및 script 태그가 허용됩니다(구성 불필요).
+   * 기본적으로 시스템은 구성 없이 html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, `noscript`, div, link 및 script를 허용합니다.
 
 오버레이를 사용하여 재작성기를 구성하는 것이 좋습니다. [오버레이](/help/sites-developing/overlays.md) 참조
 
@@ -76,47 +76,45 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 
 소셜 변형은 소셜 미디어(텍스트 및 이미지)에 게시할 수 있습니다. Adobe Experience Manager(AEM)에서 이러한 소셜 변형에는 텍스트 구성 요소, 이미지 구성 요소와 같은 구성 요소가 포함될 수 있습니다.
 
-소셜 게시물에 대한 이미지 및 텍스트는 원하는 수준의 깊이(빌딩 블록 또는 레이아웃 컨테이너 내)에서 이미지 리소스 유형 또는 텍스트 리소스 유형에서 가져올 수 있습니다.
+모든 이미지 또는 텍스트 리소스 유형에서 원하는 깊이로 소셜 게시물 이미지 및 텍스트를 가져올 수 있습니다. 리소스는 빌딩 블록이나 레이아웃 컨테이너에서 가져올 수 있습니다.
 
-또한 소셜 변형을 사용하면 빌딩 블록을 사용할 수 있으며 게시 환경에서 소셜 작업을 수행할 때 이를 고려합니다.
+또한 소셜 변형을 사용하면 구성 요소를 사용할 수 있으며 게시 환경에서 소셜 작업을 수행할 때 이를 고려합니다.
 
 소셜 미디어 네트워크에 올바른 텍스트와 이미지를 게시하려면 사용자 지정된 구성 요소를 개발하는 경우 일부 규칙을 준수해야 합니다.
 
-이를 위해 다음 속성을 사용해야 합니다.
+다음 속성을 사용해야 합니다.
 
-* 이미지 추출용
+* 이미지 추출의 경우
 
    * `fileReference`
    * `fileName`
 
-* 텍스트 추출용
+* 텍스트 추출의 경우,
 
    * `text`
 
-이 규칙을 사용하지 않는 구성 요소는 고려되지 않습니다.
+이 규칙을 사용하는 구성 요소만 고려됩니다.
 
 ## 경험 조각용 템플릿 {#templates-for-experience-fragments}
 
 >[!CAUTION]
 >
->경험 조각에는 **&#x200B;**&#x200B;** [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)만 지원됩니다.
+>경험 조각에는 ****** [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)만 지원됩니다.
 >
 >경험 조각은 편집 가능한 템플릿을 기반으로 하는 페이지에서만 사용할 수 있습니다.
 
 경험 조각용 새 템플릿을 개발할 때 [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)에 대한 표준 사례를 따를 수 있습니다.
 
-**경험 조각 만들기** 마법사에서 감지한 경험 조각 템플릿을 만들려면 다음 규칙 세트 중 하나를 따라야 합니다.
+**경험 조각 만들기** 마법사에서 감지하는 경험 조각 템플릿을 만들려면 다음 규칙 세트 중 하나를 따라야 합니다.
 
 1. 두 가지 모두:
 
    1. 템플릿의 리소스 유형(초기 노드)은 다음 항목에서 상속해야 합니다.
-
       `cq/experience-fragments/components/xfpage`
 
    1. 그리고 템플릿 이름은 다음으로 시작해야 합니다.
-
       `experience-fragments`
-이렇게 하면 이 폴더의 `cq:allowedTemplates` 속성에 `experience-fragment`(으)로 시작하는 이름을 가진 모든 템플릿이 포함되므로 사용자가 /content/experience-fragments에서 경험 조각을 만들 수 있습니다. 고객은 이 속성을 업데이트하여 자체 명명 구성표 또는 템플릿 위치를 포함할 수 있습니다.
+이 폴더의 `/content/experience-fragments` 속성에 `cq:allowedTemplates`(으)로 시작하는 이름을 가진 모든 템플릿이 포함되어 있으므로 사용자가 `experience-fragment`에서 경험 조각을 만들 수 있습니다. 고객은 이 속성을 업데이트하여 자체 명명 구성표 또는 템플릿 위치를 포함할 수 있습니다.
 
 1. [허용된 템플릿](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder)은(는) 경험 조각 콘솔에서 구성할 수 있습니다.
 <!--
@@ -132,7 +130,7 @@ HTML 렌디션은 Sling 재작성기 파이프라인을 사용하여 생성됩�
 
 경험 조각과 함께/경험 조각에서 사용할 [구성 요소 개발](/help/sites-developing/components.md)은(는) 표준 사례를 따릅니다.
 
-유일한 추가 구성은 구성 요소가 템플릿에서 [허용되는지 확인하는 것입니다. 이 작업은 콘텐츠 정책](/help/sites-developing/page-templates-editable.md#content-policies)을 통해 수행됩니다.
+유일한 추가 구성은 구성 요소가 템플릿에서 허용되는지 확인하는 것입니다. 이 기능은 [콘텐츠 정책](/help/sites-developing/page-templates-editable.md#content-policies)을 통해 수행됩니다.
 
 ## 경험 조각 링크 재작성기 공급자 - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
@@ -153,15 +151,16 @@ AEM에서는 경험 조각을 만들 수 있습니다. 경험 조각:
 
 이 기능은 AEM의 작성자 인스턴스에서 [사용할 수 있습니다](/help/sites-administering/experience-fragments-target.md#Prerequisites). 유효한 Adobe Target 구성 및 링크 외부화에 대한 구성이 필요합니다.
 
-링크 외부화는 Target 오퍼의 HTML 버전을 생성할 때 필요한 올바른 URL을 결정하고 이를 Adobe Target으로 전송하는 데 사용됩니다. 이는 Adobe Target에서 Target HTML 오퍼 내의 모든 링크에 공개적으로 액세스할 수 있어야 하므로 필요합니다. 즉, 링크가 참조하는 모든 리소스 및 경험 조각을 사용하려면 먼저 게시해야 합니다.
+링크 외부화는 Target 오퍼의 HTML 버전을 생성할 때 필요한 올바른 URL을 결정하고 이를 Adobe Target으로 전송하는 데 사용됩니다. Adobe Target을 사용하려면 Target HTML 오퍼의 모든 링크에 대한 공개 액세스 권한이 필요합니다. 경험 조각 및 해당 링크가 사용하기 전에 참조하는 모든 리소스를 게시합니다.
+
 
 기본적으로 Target HTML 오퍼를 구성하면 AEM의 사용자 지정 Sling 선택기로 요청이 전송됩니다. 이 선택기를 `.nocloudconfigs.html`이라고 합니다. 이름에서 알 수 있듯이 경험 조각의 일반 HTML 렌더링을 만들지만, 클라우드 구성(불필요한 정보)은 포함하지 않습니다.
 
-HTML 페이지를 생성한 후 Sling 재작성기 파이프라인이 출력을 수정합니다.
+HTML 페이지를 생성한 후 `Sling Rewriter` 파이프라인이 출력을 수정합니다.
 
-1. `html`, `head` 및 `body` 요소가 `div` 요소로 대체되었습니다. `meta`, `noscript` 및 `title` 요소가 제거됩니다. 이 요소는 원래 `head` 요소의 자식 요소이며 `div` 요소로 대체될 때는 고려되지 않습니다.
+1. `html`, `head` 및 `body` 요소가 `div` 요소로 대체되었습니다. `meta`, `noscript` 및 `title` 요소가 제거됩니다. 이 요소는 원래 `head` 요소의 자식 요소이며 `div` 요소로 대체할 때 고려되지 않습니다.
 
-   이 작업은 HTML Target 오퍼가 Target 활동에 포함될 수 있도록 하기 위해 수행됩니다.
+   이 프로세스는 HTML Target 오퍼가 Target 활동에 포함될 수 있도록 하기 위해 수행됩니다.
 
 1. AEM은 게시된 리소스를 가리키도록 HTML에 있는 모든 내부 링크를 수정합니다.
 
@@ -176,24 +175,24 @@ HTML 페이지를 생성한 후 Sling 재작성기 파이프라인이 출력을 
    >
    >일반적으로 HTML의 내부 링크는 상대 링크이지만 사용자 지정 구성 요소가 HTML에서 전체 URL을 제공하는 경우가 있을 수 있습니다. 기본적으로 AEM은 이러한 완전한 URL을 무시하고 수정하지 않습니다.
 
-   이러한 특성의 링크는 AEM Link Externalizer `publishLink()`을(를) 통해 실행되어 게시된 인스턴스에 있는 것처럼 URL을 다시 만듭니다. 따라서 공개적으로 사용할 수 있습니다.
+   이러한 특성의 링크는 AEM 링크 외부화 `publishLink()`을(를) 통해 URL을 게시된 인스턴스에 있는 것처럼 다시 만들며, 따라서 공개적으로 사용할 수 있습니다.
 
-기본 구현을 사용하는 경우 위에 설명된 프로세스로 경험 조각에서 Target 오퍼를 생성한 다음 Adobe Target으로 내보내기에 충분해야 합니다. 그러나 이 프로세스에서 설명되지 않는 사용 사례는 다음과 같습니다.
+기본 구현을 사용하는 경우 위에 설명된 프로세스로 경험 조각에서 Target 오퍼를 생성한 다음 Adobe Target으로 내보내기에 충분합니다. 그러나 다음을 포함하여 이 프로세스에서 설명되지 않는 일부 사용 사례가 있습니다.
 
-* 게시 인스턴스에서만 사용할 수 있는 Sling 매핑
-* Dispatcher 리디렉션
+* Sling 매핑은 게시 인스턴스에서만 사용할 수 있습니다.
+* Dispatcher 리디렉션.
 
 이러한 사용 사례에서 AEM은 링크 재작성기 공급자 인터페이스를 제공합니다.
 
 ### 링크 재작성기 공급자 인터페이스 {#link-rewriter-provider-interface}
 
-[default](#default-link-rewriting)에서 다루지 않는 더 복잡한 경우에는 AEM에서 링크 재작성기 공급자 인터페이스를 제공합니다. 번들에 서비스로 구현할 수 있는 `ConsumerType` 인터페이스입니다. 경험 조각에서 렌더링된 대로 AEM이 HTML 오퍼의 내부 링크에 대해 수행하는 수정 사항을 우회합니다. 이 인터페이스를 사용하면 비즈니스 요구 사항에 맞게 내부 HTML 링크를 다시 작성하는 프로세스를 사용자 지정할 수 있습니다.
+[default](#default-link-rewriting)에서 다루지 않는 더 복잡한 경우에는 AEM에서 링크 재작성기 공급자 인터페이스를 제공합니다. 이 워크플로는 번들에서 서비스로 구현할 수 있는 `ConsumerType` 인터페이스입니다. 경험 조각에서 렌더링된 대로 AEM이 HTML 오퍼의 내부 링크에 대해 수행하는 수정 사항을 우회합니다. 이 인터페이스를 사용하면 비즈니스 요구 사항에 맞게 내부 HTML 링크를 다시 작성하는 프로세스를 사용자 지정할 수 있습니다.
 
 이 인터페이스를 서비스로 구현하는 사용 사례의 예는 다음과 같습니다.
 
-* Sling 매핑은 게시 인스턴스에서는 활성화되지만 작성자 인스턴스에서는 활성화되지 않습니다
-* Dispatcher 또는 유사한 기술은 URL을 내부적으로 리디렉션하는 데 사용됩니다
-* 리소스에 대한 `sling:alias mechanisms`이(가) 있습니다.
+* Sling 매핑은 게시 인스턴스에서는 활성화되지만 작성자 인스턴스에서는 활성화되지 않습니다.
+* Dispatcher 또는 유사한 기술을 사용하여 URL을 내부적으로 리디렉션합니다.
+* 리소스에 대해 `sling:alias`개의 메커니즘이 있습니다.
 
 >[!NOTE]
 >
@@ -260,7 +259,8 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 
 #### shouldRewrite {#shouldrewrite}
 
-특정 경험 조각 변형에서 Target으로 내보내기에 대한 호출이 수행될 때 링크를 다시 작성해야 하는지 여부를 시스템에 표시해야 합니다. 이 작업은 메서드를 구현하여 수행합니다.
+특정 경험 조각 변형에서 Target으로 내보내기에 대한 호출이 수행될 때 링크를 다시 작성해야 하는지 여부를 시스템에 표시해야 합니다. 다음 메서드를 사용하여 이 **구현**&#x200B;을 수행할 수 있습니다.
+
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
@@ -275,7 +275,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 
 이 메서드는 Target으로 내보내기 시스템이 현재 다시 작성 중인 경험 조각 변형을 매개 변수로 수신합니다.
 
-위의 예에서는 다음을 다시 작성하려고 합니다.
+위의 예에서 다음을 다시 작성하려고 합니다.
 
 * `src`에 있는 링크
 
@@ -284,7 +284,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 * 특정 경험 조각:
   `/content/experience-fragment/master`
 
-Target으로 내보내기 시스템을 통과한 다른 경험 조각은 무시되며 이 서비스에서 구현한 변경 사항의 영향을 받지 않습니다.
+Target으로 내보내기 시스템에서는 이 경험 조각을 통과하는 다른 경험 조각을 무시하며 이 서비스는 경험 조각에 영향을 주지 않습니다.
 
 #### rewriteLink {#rewritelink}
 
@@ -317,7 +317,7 @@ rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", a
 
 서비스를 만들 때 주어진 입력을 기반으로 결정을 내린 다음 그에 따라 링크를 다시 작성할 수 있습니다.
 
-이 예제에서는 URL의 `/etc.clientlibs` 부분을 제거하고 적절한 외부 도메인을 추가합니다. 단순하게 유지하기 위해 `rewriteLinkExample2`과(와) 같이 서비스에 대한 Resource Resolver에 액세스할 수 있는 것으로 간주합니다.
+예를 들어 URL의 `/etc.clientlibs` 부분을 제거하고 적절한 외부 도메인을 추가합니다. 단순하게 유지하려면 `rewriteLinkExample2`과(와) 같이 서비스에 대한 Resource Resolver에 액세스할 수 있는 권한이 있다고 가정해 보십시오.
 
 >[!NOTE]
 >
@@ -354,10 +354,10 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 #### 우선 순위 - getPriority {#priorities-getpriority}
 
-서로 다른 종류의 경험 조각을 만족하기 위해 여러 서비스가 필요하거나, 모든 경험 조각에 대한 외부화 및 매핑을 처리하는 일반 서비스가 있는 경우가 드물지 않습니다. 이러한 경우 사용할 서비스에 대해 충돌이 발생할 수 있으므로 AEM에서는 다른 서비스에 대해 **우선 순위**&#x200B;를 정의할 수 있습니다. 우선 순위는 다음 방법을 사용하여 지정합니다.
+다양한 유형의 경험 조각을 지원하려면 여러 서비스가 필요할 수 있습니다. 또한 일반 서비스를 사용하여 모든 경험 조각을 외부화하고 매핑할 수 있습니다. 이러한 경우 사용할 서비스에 대해 충돌이 발생할 수 있으므로 AEM에서는 다른 서비스에 대해 **우선 순위**&#x200B;를 정의할 수 있습니다. 우선 순위는 다음 방법을 사용하여 지정합니다.
 
 * `getPriority()`
 
 이 메서드를 사용하면 동일한 경험 조각에 대해 `shouldRewrite()` 메서드가 true를 반환하는 여러 서비스를 사용할 수 있습니다. `getPriority()` 메서드에서 가장 많은 숫자를 반환하는 서비스는 경험 조각 변형을 처리하는 서비스입니다.
 
-예를 들어, 모든 경험 조각에 대한 기본 매핑을 처리하는 `GenericLinkRewriterProvider`이(가) 있을 수 있으며, `shouldRewrite()` 메서드가 모든 경험 조각 변형에 대해 `true`을(를) 반환하는 경우 이 작업을 수행할 수 있습니다. 여러 특정 경험 조각의 경우 특수 처리가 필요할 수 있으므로 이 경우 일부 경험 조각 변형에 대해서만 `shouldRewrite()` 메서드가 true를 반환하는 `SpecificLinkRewriterProvider`을(를) 제공할 수 있습니다. `SpecificLinkRewriterProvider`이(가) 이러한 경험 조각 변형을 처리하도록 선택되었는지 확인하려면 `GenericLinkRewriterProvider.`보다 높은 숫자인 `getPriority()` 메서드로 반환해야 합니다.
+예를 들어, 모든 경험 조각에 대한 기본 매핑을 처리하는 `GenericLinkRewriterProvider`이(가) 있을 수 있으며, `shouldRewrite()` 메서드가 모든 경험 조각 변형에 대해 `true`을(를) 반환하는 경우 이 작업을 수행할 수 있습니다. 여러 특정 경험 조각의 경우 특수 처리가 필요할 수 있으므로 이 경우 일부 경험 조각 변형에 대해서만 `SpecificLinkRewriterProvider` 메서드가 true를 반환하는 `shouldRewrite()`을(를) 제공할 수 있습니다. `SpecificLinkRewriterProvider`이(가) 이러한 경험 조각 변형을 처리하도록 선택되었는지 확인하려면 `getPriority()`보다 높은 숫자인 `GenericLinkRewriterProvider.` 메서드로 반환해야 합니다.

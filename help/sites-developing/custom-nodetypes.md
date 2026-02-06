@@ -9,16 +9,16 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 255f52f3-aff4-432c-a541-3ce03e626742
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1703'
 ht-degree: 5%
 
 ---
 
 # 사용자 지정 노드 유형{#custom-node-types}
 
-Adobe Experience Manager(AEM)는 Sling을 기반으로 하며 JCR 저장소를 사용하므로 다음 두 가지 모두에서 제공하는 노드 유형을 사용할 수 있습니다.
+Adobe Experience Manager(AEM)는 Sling을 기반으로 하며 JCR 저장소를 사용하기 때문에 두 가지 모두에서 제공하는 노드 유형을 다음과 함께 사용할 수 있습니다.
 
 * [JCR 노드 유형](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling 노드 유형](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
@@ -27,7 +27,7 @@ AEM에서는 이러한 노드 유형 외에도 다양한 사용자 지정 노드
 
 ## 감사 {#audit}
 
-### cq:AuditEvent {#cq-auditevent}
+### `cq:AuditEvent` {#cq-auditevent}
 
 **설명**
 
@@ -55,7 +55,7 @@ AEM에서는 이러한 노드 유형 외에도 다양한 사용자 지정 노드
 
 ## 댓글 {#comment}
 
-### cq:Comment {#cq-comment}
+### `cq:Comment` {#cq-comment}
 
 **설명**
 
@@ -74,7 +74,7 @@ AEM에서는 이러한 노드 유형 외에도 다양한 사용자 지정 노드
 * `- userIdentifier (string)`
 * `- authorizableId (string)`
 
-### cq:CommentAttachment {#cq-commentattachment}
+### `cq:CommentAttachment` {#cq-commentattachment}
 
 **설명**
 
@@ -86,7 +86,7 @@ AEM에서는 이러한 노드 유형 외에도 다양한 사용자 지정 노드
    * `- * (undefined)`
    * `- * (undefined) multiple`
 
-### cq:CommentContent {#cq-commentcontent}
+### `cq:CommentContent` {#cq-commentcontent}
 
 **설명**
 
@@ -103,7 +103,7 @@ AEM에서는 이러한 노드 유형 외에도 다양한 사용자 지정 노드
 * `- userIdentifier (string)`
 * `- authorizableId (string)`
 
-### cq:GeoLocation {#cq-geolocation}
+### `cq:GeoLocation` {#cq-geolocation}
 
 **설명**
 
@@ -118,7 +118,7 @@ AEM에서는 이러한 노드 유형 외에도 다양한 사용자 지정 노드
 * `- latitude (double)`
 * `- longitude (double)`
 
-### cq:Trackback {#cq-trackback}
+### `cq:Trackback` {#cq-trackback}
 
 **설명**
 
@@ -130,7 +130,7 @@ AEM에서는 이러한 노드 유형 외에도 다양한 사용자 지정 노드
 
 ## 코어 {#core}
 
-### cq:Page {#cq-page}
+### `cq:Page` {#cq-page}
 
 **설명**
 
@@ -144,17 +144,17 @@ AEM에서는 이러한 노드 유형 외에도 다양한 사용자 지정 노드
    * `+ jcr:content (nt:base) = nt:unstructured copy primary`
    * `+ * (nt:base) = nt:base version`
 
-### cq:PseudoPage {#cq-pseudopage}
+### `cq:PseudoPage` {#cq-pseudopage}
 
 **설명**
 
-노드를 의사 페이지로 표시하는 mixin 형식을 정의합니다. 즉, 페이지 및 WCM 편집 지원에 맞게 조정할 수 있음을 의미합니다.
+이 mixin 유형은 노드를 의사 페이지로 표시합니다. 즉, 페이지 및 WCM 편집 지원에 맞게 조정할 수 있음을 의미합니다.
 
 **정의**
 
 * `[cq:PseudoPage] mixin`
 
-### cq:PageContent {#cq-pagecontent}
+### `cq:PageContent` {#cq-pagecontent}
 
 **설명**
 
@@ -166,7 +166,7 @@ WCM에서 사용되는 최소 속성으로 페이지 콘텐츠의 기본 노드�
 * `@prop cq:allowedTemplates` - 허용된 템플릿 경로를 결정하는 데 사용되는 정규 표현식 목록입니다.
 * `@prop pageTitle` - `<title>` 태그에 표시되는 제목입니다.
 * `@prop navTitle` - 탐색에 사용된 제목입니다.
-* `@prop hideInNav` - 탐색 시 페이지를 숨길지 여부를 지정합니다.
+* `@prop hideInNav` - 탐색에서 페이지를 숨길지 여부를 지정합니다.
 * `@prop onTime` - 이 페이지가 유효하게 되는 시간.
 * `@prop offTime` - 이 페이지가 유효하지 않게 되는 시간.
 * `@prop cq:lastModified` - 페이지(또는 해당 단락)가 마지막으로 수정된 날짜입니다.
@@ -178,6 +178,7 @@ WCM에서 사용되는 최소 속성으로 페이지 콘텐츠의 기본 노드�
 >페이지 콘텐츠에서 이 유형을 사용해야 하는 것은 아닙니다.
 
 **정의**
+
 * `[cq:PageContent] > nt:unstructured, mix:title, mix:created, cq:OwnerTaggable, sling:VanityPath, cq:ReplicationStatus, sling:Resource orderable`
    * `- cq:template (string)`
    * `- cq:allowedTemplates (string) multiple`
@@ -191,7 +192,7 @@ WCM에서 사용되는 최소 속성으로 페이지 콘텐츠의 기본 노드�
    * `- cq:designPath (string)`
    * `- jcr:language (string)`
 
-### cq:Template {#cq-template}
+### `cq:Template` {#cq-template}
 
 **설명**
 
@@ -223,7 +224,7 @@ CQ 템플릿을 정의합니다.
    * `- allowedChildren (string) multiple`
    * `- ranking (long)`
 
-### cq:Component {#cq-component}
+### `cq:Component` {#cq-component}
 
 **설명**
 
@@ -240,13 +241,13 @@ CQ 구성 요소를 정의합니다.
 * `@node cq:editConfig` - 편집 막대의 매개 변수를 정의하는 구성입니다.
 * `@node cq:childEditConfig` - 하위 구성 요소에 상속된 편집 구성입니다.
 * `@node cq:htmlTag` - 구성 요소가 포함될 때 &quot;주변&quot; `div` 태그에 추가되는 추가 태그 특성을 정의합니다.
-* `@node icon.png`- 특성 아이콘이 있는 파일입니다.
+* `@node icon.png` - 특성 아이콘이 있는 파일입니다.
 * `@node thumbnail.png` - 특징적인 썸네일 이미지가 들어 있는 파일입니다.
 * `@prop allowedParents` - 상위 구성 요소로 허용되는 구성 요소의 경로를 결정하는 정규 표현식 패턴입니다.
 * `@prop allowedChildren` - 하위 구성 요소로 허용되는 구성 요소의 경로를 결정하는 정규 표현식 패턴입니다.
 * `@node virtual` - 구성 요소 끌어서 놓기에 사용된 가상 구성 요소를 반영하는 하위 노드를 포함합니다.
 * `@prop componentGroup` - 구성 요소 끌어다 놓기에 사용되는 구성 요소 그룹의 이름입니다.
-* `@node cq:infoProviders` - 하위 노드를 포함합니다. 각 하위 노드에는 `PageInfoProvider`을(를) 참조하는 `className` 속성이 있습니다.
+* `@node cq:infoProviders` - 하위 노드를 포함합니다. 각 하위 노드에는 `className`을(를) 참조하는 `PageInfoProvider` 속성이 있습니다.
 
 **정의**
 
@@ -271,7 +272,7 @@ CQ 구성 요소를 정의합니다.
    * `- componentGroup (string)`
    * `+ cq:infoProviders (nt:base) = nt:unstructured copy`
 
-### cq:ComponentMixin {#cq-componentmixin}
+### `cq:ComponentMixin` {#cq-componentmixin}
 
 **설명**
 
@@ -281,23 +282,23 @@ CQ 구성 요소를 mixin 유형으로 정의합니다.
 
 `[cq:ComponentMixin] > cq:Component mixin`
 
-### cq:EditConfig {#cq-editconfig}
+### `cq:EditConfig` {#cq-editconfig}
 
 **설명**
 
-&quot;편집 막대&quot;에 대한 구성을 정의합니다.
+`editbar`에 대한 구성을 정의합니다.
 
 * `@prop cq:dialogMode` - 대화 상자의 모드:
    * `floating` - 보통의 부동 대화 상자
    * `inline` - 인라인 편집
    * `auto` - 자동 감지(사용 가능한 공간에 따라 다름)
-* `@node cq:inplaceEditing` - 이 구성 요소에 대한 즉석 편집 구성입니다.
+* `@node cq:inplaceEditing` - 이 구성 요소에 대한 편집 구성이 제대로 되어 있습니다.
 * `@prop cq:layout`- 편집 막대 레이아웃:
    * `editbar` - 편집 막대
    * `rollover` - 롤오버 프레임
    * `auto` - 자동 감지
-* `@node cq:formParameters`- 대화 상자 양식에 추가할 추가 매개 변수.
-* `@prop cq:actions`- 작업 목록(편집 막대 단추 또는 메뉴 항목).
+* `@node cq:formParameters` - 대화 상자 양식에 추가할 추가 매개 변수.
+* `@prop cq:actions` - 작업 목록(편집 막대 단추 또는 메뉴 항목).
 * `@node cq:actionConfigs` - 편집 막대 또는 메뉴 항목에 대한 위젯 구성
 * `@prop cq:emptyText` - 시각적 컨텐츠가 없는 경우 표시될 텍스트입니다.
 * `@node cq:dropTargets` - `{@link cq:DropTargetConfig}`개 노드의 컬렉션입니다.
@@ -313,7 +314,7 @@ CQ 구성 요소를 mixin 유형으로 정의합니다.
    * `+ cq:dropTargets (nt:base) = nt:unstructured`
    * `+ cq:listeners (nt:base) = cq:EditListenersConfig`
 
-### cq:DropTargetConfig {#cq-droptargetconfig}
+### `cq:DropTargetConfig` {#cq-droptargetconfig}
 
 **설명**
 
@@ -331,7 +332,7 @@ CQ 구성 요소를 mixin 유형으로 정의합니다.
    * `- propertyName (string)`
    * `+ parameters (nt:base) = nt:unstructured`
 
-### cq:VirtualComponent {#cq-virtualcomponent}
+### `cq:VirtualComponent` {#cq-virtualcomponent}
 
 **설명**
 
@@ -340,7 +341,7 @@ CQ 구성 요소를 mixin 유형으로 정의합니다.
 * `@prop jcr:title` - 이 구성 요소의 제목입니다.
 * `@prop jcr:description` - 이 구성 요소에 대한 설명입니다.
 * `@node cq:editConfig` - 편집 막대의 매개 변수를 정의하는 구성 편집
-* `@node cq:childEditConfig`- 하위 구성 요소에 상속된 구성을 편집합니다.
+* `@node cq:childEditConfig` - 하위 구성 요소에 상속된 구성을 편집합니다.
 * `@node icon.png` - 특성 아이콘이 있는 파일입니다.
 * `@node thumbnail.png` - 특징적인 썸네일 이미지가 들어 있는 파일입니다.
 * `@prop allowedParents` - 상위 구성 요소로 허용되는 구성 요소의 경로를 결정하는 정규 표현식 패턴입니다.
@@ -360,7 +361,7 @@ CQ 구성 요소를 mixin 유형으로 정의합니다.
 `- allowedChildren (string) multiple`
 `- componentGroup (string)`
 
-### cq:EditListenersConfig {#cq-editlistenersconfig}
+### `cq:EditListenersConfig` {#cq-editlistenersconfig}
 
 **설명**
 
@@ -392,7 +393,7 @@ CQ 구성 요소를 mixin 유형으로 정의합니다.
 
 ## DAM {#dam}
 
-### dam:AssetContent {#dam-assetcontent}
+### `dam:AssetContent` {#dam-assetcontent}
 
 **설명**
 
@@ -404,7 +405,7 @@ DAM 에셋의 콘텐츠.
    * `+ metadata (nt:unstructured)`
    * `+ renditions (nt:folder)`
 
-### dam:Asset {#dam-asset}
+### `dam:Asset` {#dam-asset}
 
 **설명**
 
@@ -416,7 +417,7 @@ DAM 에셋.
 `+ jcr:content (dam:AssetContent) = dam:AssetContent copy primary`
 `+ * (nt:base) = nt:base version`
 
-### dam:썸네일 {#dam-thumbnail}
+### `dam:Thumbnail` {#dam-thumbnail}
 
 **설명**
 
@@ -430,7 +431,7 @@ DAM 자산을 나타내는 축소판입니다.
 
 ## 게재 컨테이너 목록 {#delivery-container-list}
 
-### cq:containerList {#cq-containerlist}
+### `cq:containerList` {#cq-containerlist}
 
 **설명**
 
@@ -443,14 +444,14 @@ DAM 자산을 나타내는 축소판입니다.
 
 ## 게재 페이지 {#delivery-page}
 
-### cq:Cq4PageAttributes {#cq-cq-pageattributes}
+### `cq:Cq4PageAttributes` {#cq-cq-pageattributes}
 
 **설명**
 
-노드 유형 `cq:attributes`은(는) ContentBus 버전 태그에 사용됩니다. 이 노드에는 일련의 속성만 있으며 그 중 사전 정의된 &quot;created&quot;, &quot;csd&quot; 및 &quot;timestamp&quot;가 있습니다.
+노드 유형 `cq:attributes`은(는) ContentBus 버전 태그에 사용됩니다. 이 노드에는 `created`, `csd`, `timestamp` 속성이 미리 정의된 일련의 속성만 있습니다.
 
 * `@prop created (long) mandatory copy` - 버전 정보의 생성 타임스탬프(일반적으로 이전 버전의 체크 인 시간 또는 페이지 생성 시간).
-* `@prop csd (string) mandatory copy` - csd 표준 특성, 페이지 노드의 cq:csd 속성 복사본
+* `@prop csd (string) mandatory copy` - `csd` 표준 특성, 페이지 노드의 `cq:csd` 속성 복사본
 * `@prop timestamp (long) mandatory copy` - 마지막 버전 수정 타임스탬프이며, 일반적으로 체크 인 시간입니다.
 * `@prop * (string) copy` - 부모 노드로 버전이 지정된 추가 특성입니다.
 
@@ -462,7 +463,7 @@ DAM 자산을 나타내는 축소판입니다.
    * `- timestamp (long) mandatory copy`
    * `- &ast; (string) copy`
 
-### cq:Cq4ContentPage {#cq-cq-contentpage}
+### `cq:Cq4ContentPage` {#cq-cq-contentpage}
 
 **설명**
 
@@ -472,7 +473,7 @@ DAM 자산을 나타내는 축소판입니다.
 
 * `@prop cq:csd` - 페이지의 ContentBus CSD입니다.
 * `@node cq:content` - 페이지의 콘텐츠입니다. 페이지 노드가 &quot;컨텐츠 없이 존재함&quot; 또는 &quot;삭제됨&quot; 상태인 경우 이 하위 노드가 존재하지 않습니다.
-* `@node cq:attributes` - 이전에 버전 태그라고 했던 페이지 특성 목록입니다. 이 노드는 cq:contentPage 유형에 필수입니다. 페이지의 버전이 관리될 때 속성 노드의 버전이 관리됩니다.
+* `@node cq:attributes` - 이전에 버전 태그라고 했던 페이지 특성 목록입니다. 이 노드는 `cq:contentPage` 형식에 필수입니다. 페이지 노드의 버전이 지정되는 경우 속성 노드의 버전이 지정됩니다.
 
 **정의**
 
@@ -482,16 +483,16 @@ DAM 자산을 나타내는 축소판입니다.
 
 ## 가져오기 {#importer}
 
-### cq:PollConfig {#cq-pollconfig}
+### `cq:PollConfig` {#cq-pollconfig}
 
 **설명**
 
 폴 구성.
 
 * `@prop source (String) mandatory` - 데이터 원본 URI입니다. 필수이며 비워둘 수 없습니다.
-* `@prop target (String)` - 데이터 원본에서 검색된 데이터가 저장되는 대상 위치입니다. 선택 사항이며 기본값은 cq:PollConfig 노드로 설정됩니다.
+* `@prop target (String)` - 데이터 원본에서 검색된 데이터가 저장되는 대상 위치입니다. 선택 사항이며 기본값은 cq:PollConfig 노드입니다.
 * `@prop interval (Long)` - 데이터 원본에서 새 데이터나 업데이트된 데이터를 폴링할 간격(초)입니다. 선택 사항이며 기본값은 30분(1,800초)입니다.
-* [Adobe Experience Manager에 대한 사용자 지정 데이터 가져오기 서비스를 만드는 중](https://helpx.adobe.com/experience-manager/using/polling.html)
+* [Adobe Experience Manager에 대한 사용자 지정 데이터 가져오기 서비스를 만드는 중](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 **정의**
 
@@ -501,7 +502,7 @@ DAM 자산을 나타내는 축소판입니다.
    * `- target (String)`
    * `- interval (Long)`
 
-### cq:PollConfigFolder {#cq-pollconfigfolder}
+### `cq:PollConfigFolder` {#cq-pollconfigfolder}
 
 **설명**
 
@@ -513,7 +514,7 @@ DAM 자산을 나타내는 축소판입니다.
 
 ## 위치 {#location}
 
-### cq:GeoLocation {#cq-geolocation-1}
+### `cq:GeoLocation` {#cq-geolocation-1}
 
 **설명**
 
@@ -531,7 +532,7 @@ DAM 자산을 나타내는 축소판입니다.
 
 ## 발송자 {#mailer}
 
-### cq:mailerMessage {#cq-mailermessage}
+### `cq:mailerMessage` {#cq-mailermessage}
 
 **설명**
 
@@ -547,7 +548,7 @@ MailerService 노드 유형입니다. 발송자는 해당 mixin을 갖는 노드
 
 ## MSM {#msm}
 
-### cq:LiveRelationship {#cq-liverelationship}
+### `cq:LiveRelationship` {#cq-liverelationship}
 
 **설명**
 
@@ -560,7 +561,7 @@ LiveRelationship 믹스인을 정의합니다. 기본 소스(제어) 노드와 �
    * `- cq:lastRolledoutBy (string)`
    * `- cq:sourceUUID (string)`
 
-### cq:LiveSync {#cq-livesync}
+### `cq:LiveSync` {#cq-livesync}
 
 **설명**
 
@@ -577,7 +578,7 @@ LiveSync mixin을 정의합니다. 노드가 기본 소스(제어) 노드 및 �
 `+ * (cq:LiveSyncAction) = cq:LiveSyncAction`
 `+ cq:LiveSyncConfig (nt:base) = cq:LiveSyncConfig`
 
-### cq:LiveSyncCanceled {#cq-livesynccancelled}
+### `cq:LiveSyncCancelled` {#cq-livesynccancelled}
 
 **설명**
 
@@ -590,7 +591,7 @@ LiveSyncCanceled 믹스인을 정의합니다. 상위 항목 중 하나로 인�
 * `[cq:LiveSyncCancelled] > cq:LiveRelationship mixin`
    * `- cq:isCancelledForChildren (boolean)`
 
-### cq:LiveSyncAction {#cq-livesyncaction}
+### `cq:LiveSyncAction` {#cq-livesyncaction}
 
 **설명**
 
@@ -603,7 +604,7 @@ LiveSync에 첨부된 LiveSyncAction을 정의합니다.
 
 * `[cq:LiveSyncAction] > nt:unstructured`
 
-### cq:LiveSyncConfig {#cq-livesyncconfig}
+### `cq:LiveSyncConfig` {#cq-livesyncconfig}
 
 **설명**
 
@@ -616,11 +617,11 @@ Live Sync 구성.
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-AEM 5.4의 경우 목록 끝에 을 추가합니다.
+AEM 5.4의 경우 목록의 끝에 을 추가합니다.
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
-### cq:BlueprintAction {#cq-blueprintaction}
+### `cq:BlueprintAction` {#cq-blueprintaction}
 
 **설명**
 
@@ -632,7 +633,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
 
 ## Platform {#platform}
 
-### cq:Console {#cq-console}
+### `cq:Console` {#cq-console}
 
 **설명**
 
@@ -645,14 +646,14 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
 
 ## 복제 {#replication}
 
-### cq:ReplicationStatus {#cq-replicationstatus}
+### `cq:ReplicationStatus` {#cq-replicationstatus}
 
 **설명**
 
 복제 상태 정보 mixin을 정의합니다.
 
-* `@prop cq:lastPublished`- 페이지를 마지막으로 게시한 날짜입니다(더 이상 사용되지 않음).
-* `@prop cq:lastPublishedBy`- 페이지를 마지막으로 게시한 사용자(더 이상 사용되지 않음)입니다.
+* `@prop cq:lastPublished` - 페이지를 마지막으로 게시한 날짜(더 이상 사용되지 않음).
+* `@prop cq:lastPublishedBy` - 페이지를 마지막으로 게시한 사용자(더 이상 사용되지 않음).
 * `@prop cq:lastReplicated` - 페이지를 마지막으로 복제한 날짜입니다.
 * `@prop cq:lastReplicatedBy` - 페이지를 마지막으로 복제한 사용자입니다.
 * `@prop cq:lastReplicationAction` - 복제 작업: 활성화 또는 비활성화.
@@ -671,17 +672,17 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
 
 ## 보안 {#security}
 
-### cq:ApplicationPrivilege {#cq-applicationprivilege}
+### `cq:ApplicationPrivilege` {#cq-applicationprivilege}
 
 **설명**
 
-응용 프로그램 권한을 정의합니다.
+애플리케이션 권한을 정의합니다.
 
 **정의**
 
 * `[cq:ApplicationPrivilege] mixin`
 
-### cq:PrivilegeAcl {#cq-privilegeacl}
+### `cq:PrivilegeAcl` {#cq-privilegeacl}
 
 **설명**
 
@@ -696,11 +697,11 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
    * `- cq:isPathDependent (boolean)`
    * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
-### cq:PrivilegeAce {#cq-privilegeace}
+### `cq:PrivilegeAce` {#cq-privilegeace}
 
 **설명**
 
-응용 프로그램 권한 ACE를 정의합니다.
+애플리케이션 권한에 대한 ACE를 정의합니다.
 
 * `@prop path`
 * `@prop deny`
@@ -711,17 +712,17 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
    * `- path mandatory`
    * `- deny (boolean)`
 
-### cq:ApplicationPrivilege {#cq-applicationprivilege-1}
+### `cq:ApplicationPrivilege` {#cq-applicationprivilege-1}
 
 **설명**
 
-응용 프로그램 권한을 정의합니다.
+애플리케이션 권한을 정의합니다.
 
 **정의**
 
 * `[cq:ApplicationPrivilege] mixin`
 
-### cq:PrivilegeAcl {#cq-privilegeacl-1}
+### `cq:PrivilegeAcl` {#cq-privilegeacl-1}
 
 **설명**
 
@@ -736,11 +737,11 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
    * `- cq:isPathDependent (boolean)`
    * `+ * (cq:PrivilegeAce) = cq:PrivilegeAce`
 
-### cq:PrivilegeAce {#cq-privilegeace-1}
+### `cq:PrivilegeAce` {#cq-privilegeace-1}
 
 **설명**
 
-응용 프로그램 권한 ACE를 정의합니다.
+애플리케이션 권한에 대한 ACE를 정의합니다.
 
 * `@prop path`
 * `@prop deny`
@@ -753,7 +754,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
 
 ## 사이트 가져오기 {#site-importer}
 
-### cq:ComponentExtractorSource {#cq-componentextractorsource}
+### `cq:ComponentExtractorSource` {#cq-componentextractorsource}
 
 **설명**
 
@@ -765,7 +766,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
 
 ## 태그 지정 {#tagging}
 
-### cq:Tag {#cq-tag}
+### `cq:Tag` {#cq-tag}
 
 **설명**
 
@@ -779,7 +780,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
    * `- * (undefined)`
    * `+ * (nt:base) = cq:Tag version`
 
-### cq:Taggable {#cq-taggable}
+### `cq:Taggable` {#cq-taggable}
 
 **설명**
 
@@ -792,7 +793,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
 * `[cq:Taggable]`
    * `- cq:tags (string) multiple`
 
-### cq:OwnerTaggable {#cq-ownertaggable}
+### `cq:OwnerTaggable` {#cq-ownertaggable}
 
 **설명**
 
@@ -802,22 +803,22 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
 
 * `[cq:OwnerTaggable] > cq:Taggable`
 
-### cq:UserTaggable {#cq-usertaggable}
+### `cq:UserTaggable` {#cq-usertaggable}
 
 **설명**
 
-모든 사용자/공개 웹 사이트는 cq:userContent 내에서 사용되는 콘텐츠(Web2.0 스타일)에 태그를 지정할 수 있습니다.
+모든 사용자 또는 공개 웹 사이트는 `cq:userContent` 내에서 사용되는 콘텐츠(Web2.0 스타일)에 태그를 지정할 수 있습니다.
 
 **정의**
 
 * `[cq:UserTaggable] > cq:Taggable`
    * `mixin`
 
-### cq:AllowsUserContent {#cq-allowsusercontent}
+### `cq:AllowsUserContent` {#cq-allowsusercontent}
 
 **설명**
 
-사용자가 수정할 수 있는 `cq:userContent` 하위 노드를 추가합니다. 각 사용자에는 일반적으로 mixin `cq:UserTaggable`을(를) 가진 자체 `cq:userContent/<userid>` 하위 노드가 있습니다.
+사용자가 편집할 수 있는 `cq:userContent` 하위 노드를 추가합니다. 각 사용자에는 일반적으로 mixin `cq:userContent/<userid>`을(를) 가진 자체 `cq:UserTaggable` 하위 노드가 있습니다.
 
 **정의**
 
@@ -831,11 +832,11 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
    * `mixin`
    * `+ cq:userContent (cq:UserContent)`
 
-### cq:UserContent {#cq-usercontent}
+### `cq:UserContent` {#cq-usercontent}
 
 **설명**
 
-사용자가 수정할 수 있습니다.
+사용자가 편집할 수 있습니다.
 
 **정의**
 
@@ -845,7 +846,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
    * `// other content`
    * `+ * (nt:base)`
 
-### cq:UserData {#cq-userdata}
+### `cq:UserData` {#cq-userdata}
 
 **설명**
 
@@ -857,7 +858,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
 
 ## 위젯 {#widgets}
 
-### cq:ClientLibraryFolder {#cq-clientlibraryfolder}
+### `cq:ClientLibraryFolder` {#cq-clientlibraryfolder}
 
 **설명**
 
@@ -869,7 +870,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
    * `- categories (string) multiple`
    * `- dependencies (string) multiple`
 
-### cq:Widget {#cq-widget}
+### `cq:Widget` {#cq-widget}
 
 **설명**
 
@@ -883,7 +884,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
    * `- title (string)`
    * `+ items (nt:base) = cq:WidgetCollection copy`
 
-### cq:WidgetCollection {#cq-widgetcollection}
+### `cq:WidgetCollection` {#cq-widgetcollection}
 
 **설명**
 
@@ -895,7 +896,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
    * `orderable`
    * `+ * (cq:Widget) = cq:Widget copy`
 
-### cq:Dialog {#cq-dialog}
+### `cq:Dialog` {#cq-dialog}
 
 **설명**
 
@@ -905,7 +906,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
 
 * `[cq:Dialog] > cq:Widget orderable`
 
-### cq:Panel {#cq-panel}
+### `cq:Panel` {#cq-panel}
 
 **설명**
 
@@ -915,7 +916,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
 
 `[cq:Panel] > cq:Widget orderable`
 
-### cq:TabPanel {#cq-tabpanel}
+### `cq:TabPanel` {#cq-tabpanel}
 
 **설명**
 
@@ -926,7 +927,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
 * `[cq:TabPanel]` > `cq:Panel orderable`
    * `- activeTab (long)`
 
-### cq:Field {#cq-field}
+### `cq:Field` {#cq-field}
 
 **설명**
 
@@ -941,7 +942,7 @@ AEM 5.4의 경우 목록 끝에 을 추가합니다.
 
 ## Wiki {#wiki}
 
-### wiki:Topic {#wiki-topic}
+### `wiki:Topic` {#wiki-topic}
 
 **설명**
 
@@ -962,7 +963,7 @@ Wiki 주제
    * `- wiki:logMessage (string)`
    * `- wiki:quietSave (boolean)`
 
-### wiki:User {#wiki-user}
+### `wiki:User` {#wiki-user}
 
 **설명**
 
@@ -973,7 +974,7 @@ Wiki 주제
 * `[wiki:User] mixin`
    * `- wiki:subscriptions (string) multiple`
 
-### wiki:속성 {#wiki-properties}
+### `wiki:Properties` {#wiki-properties}
 
 **설명**
 
@@ -987,7 +988,7 @@ Wiki 속성
 
 ## 워크플로 {#workflow}
 
-### cq:Workflow {#cq-workflow}
+### `cq:Workflow` {#cq-workflow}
 
 **설명**
 
@@ -1012,7 +1013,7 @@ Wiki 속성
    * `+ metaData (nt:unstructured)`
    * `+ workItems (nt:unstructured)`
 
-### cq:WorkItem {#cq-workitem}
+### `cq:WorkItem` {#cq-workitem}
 
 **설명**
 
@@ -1030,7 +1031,7 @@ Wiki 속성
    * `- sling:resourceType (String) = "cq/workflow/components/workitem" mandatory autocreated`
    * `+ metaData (nt:unstructured)`
 
-### cq:Load {#cq-payload}
+### `cq:Payload` {#cq-payload}
 
 **설명**
 
@@ -1047,7 +1048,7 @@ Wiki 속성
    * `- * (undefined)`
    * `- * (undefined) multiple`
 
-### cq:WorkflowData {#cq-workflowdata}
+### `cq:WorkflowData` {#cq-workflowdata}
 
 **설명**
 
@@ -1061,11 +1062,12 @@ Wiki 속성
    * `+ payload (cq:Payload)`
    * `+ metaData (nt:unstructured) copy`
 
-### cq:WorkflowModel {#cq-workflowmodel}
+### `cq:WorkflowModel` {#cq-workflowmodel}
 
 **설명**
 
 워크플로우 구성 자동 할당 구성은 아래 구조를 따릅니다.
+
 * `workflows`
    * `+ name1`
       * `- cq:path`
@@ -1086,7 +1088,7 @@ Wiki 속성
    * `+ metaData (nt:unstructured)`
       * `copy`
 
-### cq:WorkflowNode {#cq-workflownode}
+### `cq:WorkflowNode` {#cq-workflownode}
 
 **설명**
 
@@ -1106,7 +1108,7 @@ Wiki 속성
    * `+ timeoutConfiguration (nt:unstructured)`
       * `copy`
 
-### cq:WorkflowTransition {#cq-workflowtransition}
+### `cq:WorkflowTransition` {#cq-workflowtransition}
 
 **설명**
 
@@ -1121,7 +1123,7 @@ Wiki 속성
    * `+ metaData (nt:unstructured)`
       * `copy`
 
-### cq:OrTab {#cq-ortab}
+### `cq:OrTab` {#cq-ortab}
 
 **설명**
 
@@ -1130,10 +1132,10 @@ Wiki 속성
 **정의**
 
 * `[cq:OrTab]`
-   * `- workflowId (String) // not compulsory as this node will already be attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already be attached to the workflow node`
    * `- nodeId (String)`
 
-### cq:Wait {#cq-wait}
+### `cq:Wait` {#cq-wait}
 
 **설명**
 
@@ -1142,11 +1144,11 @@ Wiki 속성
 **정의**
 
 * `[cq:Wait]`
-   * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
    * `- destNodeId (String)`
    * `- fromNodeId (String)`
 
-### cq:WorkflowStack {#cq-workflowstack}
+### `cq:WorkflowStack` {#cq-workflowstack}
 
 **설명**
 
@@ -1159,7 +1161,7 @@ Wiki 속성
    * `- parentInstanceId (String)`
    * `- nodeId (String)`
 
-### cq:ProcessStack {#cq-processstack}
+### `cq:ProcessStack` {#cq-processstack}
 
 **설명**
 
@@ -1168,12 +1170,12 @@ Wiki 속성
 **정의**
 
 * `[cq:ProcessStack]`
-   * `- workflowId (String) // not compulsory as this node will be already attached to the workflow node`
+   * `- workflowId (String) // not compulsory as this node is already attached to the workflow node`
    * `- containerWorkflowModelId (String)`
    * `- containerWorkflowNodeId`
    * `- containerWorkflowEndNodeId // still needed (if name already defines that id)`
 
-### cq:WorkflowLaunch {#cq-workflowlauncher}
+### `cq:WorkflowLauncher` {#cq-workflowlauncher}
 
 **설명**
 
