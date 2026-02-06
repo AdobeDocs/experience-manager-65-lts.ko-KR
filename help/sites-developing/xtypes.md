@@ -182,7 +182,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.Component](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  모든 `Ext` 구성 요소에 대한 기본 클래스입니다. Component의 모든 하위 클래스는 `Ext`Container[ 클래스에서 제공하는 생성, 렌더링 및 삭제의 자동화된 ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 구성 요소 수명 주기에 참여할 수 있습니다. 컨테이너를 만들 때 [항목](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 구성 옵션을 통해 구성 요소를 컨테이너에 추가할 수 있습니다.
+  모든 `Ext` 구성 요소에 대한 기본 클래스입니다. Component의 모든 하위 클래스는 `Ext`Container[&#x200B; 클래스에서 제공하는 생성, 렌더링 및 삭제의 자동화된 &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 구성 요소 수명 주기에 참여할 수 있습니다. 컨테이너를 만들 때 [항목](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 구성 옵션을 통해 구성 요소를 컨테이너에 추가할 수 있습니다.
 
 * `componentextractor`
 
@@ -909,7 +909,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   `TreePanel`은(는) 트리 구조 데이터의 트리 구조 UI 표현을 제공합니다.
 
-  [에 추가된 ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)TreeNode`TreePanel`에는 응용 프로그램에서 사용하는 메타데이터가 각각 [특성](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 속성에 포함될 수 있습니다.
+  [에 추가된 &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)TreeNode`TreePanel`에는 응용 프로그램에서 사용하는 메타데이터가 각각 [특성](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 속성에 포함될 수 있습니다.
 
 * `trigger`
 
