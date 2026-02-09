@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6a6a79663579e4d63e68ae6c9a4bec97f24032f9
+source-git-commit: 7c3f5d203be1ee2daa3274f76eade9af2ab9c821
 workflow-type: tm+mt
-source-wordcount: '7745'
+source-wordcount: '7751'
 ht-degree: 93%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 93%
 
 ### 양식
 
-이제 JEE의 AEM 6.5 Forms LTS를 사용할 수 있습니다. 지원되는 환경에 대한 자세한 내용은 [지원되는 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md) 조합 문서를 참조하십시오. 설치 관리자 링크는 [AEM Forms 릴리스](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 페이지에서 사용할 수 있습니다.
+이제 JEE의 AEM 6.5 Forms LTS를 사용할 수 있습니다. 지원되는 환경에 대한 자세한 내용은 [지원되는 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md) 조합 문서를 참조하십시오. 설치 관리자 링크는 [AEM Forms 릴리스](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 페이지에서 사용할 수 있습니다.
 
 #### AEM Forms 6.5 LTS SP1에 포함된 제품
 
@@ -530,7 +530,7 @@ Eclipse Jetty 11.0.x는 Quickstart의 서블릿 엔진으로 사용됩니다.
 ### 업그레이드 {#upgrade}
 
 * 업그레이드 절차에 대한 자세한 내용은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하십시오.
-* 자세한 업그레이드 지침은 [JEE의 AEM Forms 6.5 LTS SP1용 업그레이드 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)를 참조하십시오.
+* 자세한 업그레이드 지침은 [JEE의 AEM Forms 6.5 LTS SP1용 업그레이드 안내서](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)를 참조하십시오.
 
 #### AEM 6.5 LTS 서비스 팩 업그레이드에 대한 모범 사례
 
@@ -617,12 +617,12 @@ Adobe은 투명성을 보장하고 적절한 계획을 수립할 수 있도록 A
 
 이 섹션에는 Adobe가 AEM 6.5 LTS에서 더 이상 사용되지 않는 기능이 나열됩니다. 일반적으로 Adobe는 향후 릴리스에서 해당 기능을 제거하기 전에 해당 기능을 더 이상 사용하지 않도록 설정하고 사용할 수 있는 대안을 제공합니다.
 
-
 현재 배포에서 해당 기능을 사용 중인지 검토하고 이들 구현을 변경하여 제공되는 대체 기능을 사용하도록 계획을 세우는 것이 좋습니다.
 
 | 영역 | 기능 | 대체 | 버전 (SP) |
 | --- | --- | --- | --- |
 | Sites | [SPA 편집기](/help/sites-developing/spa-overview.md) | AEM에서 Headless 콘텐츠를 관리하기 위한 권장 편집기:<br>- 시각적 편집을 위한 [범용 편집기](/help/sites-developing/universal-editor/introduction.md)<br>- 양식 기반 편집을 위한 [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md) | 6.5 LTS GA |
+| [!DNL Foundation] | com.adobe.granite.oauth.server 지원 | Adobe IMS 통합 |  |
 
 ### 제거된 기능 {#removed-features}
 
