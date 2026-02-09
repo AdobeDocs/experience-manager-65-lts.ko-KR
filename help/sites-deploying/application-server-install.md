@@ -1,5 +1,5 @@
 ---
-title: Application Server 설치
+title: 애플리케이션 서버 설치
 description: 애플리케이션 서버에 Adobe Experience Manager을 설치하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
+source-git-commit: 2a33cb4b8aa1dcfd989cf61465492d563f9cd99a
 workflow-type: tm+mt
 source-wordcount: '843'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Application Server 설치{#application-server-install}
+# 애플리케이션 서버 설치{#application-server-install}
 
 >[!NOTE]
 >
@@ -53,9 +53,9 @@ AEM은 단일 war 파일로 제공됩니다.
 
 다음과 같은 방법으로 기본 동작을 변경할 수 있습니다.
 
-* 실행 모드 : 배포 전에 AEM war 파일의 `WEB-INF/web.xml` 파일에서 `sling.run.modes` 매개 변수를 구성합니다.
+* 실행 모드 : 배포 전에 AEM war 파일의 `sling.run.modes` 파일에서 `WEB-INF/web.xml` 매개 변수를 구성합니다.
 
-* sling.home: 배포하기 전에 AEM war 파일의 `WEB-INF/web.xml` 파일에서 `sling.home` 매개 변수를 구성합니다.
+* sling.home: 배포하기 전에 AEM war 파일의 `sling.home` 파일에서 `WEB-INF/web.xml` 매개 변수를 구성합니다.
 
 * 컨텍스트 루트: AEM war 파일 이름 바꾸기
 
@@ -143,15 +143,15 @@ AEM은 단일 war 파일로 제공됩니다.
         ```xml
         <?xml version='1.0' encoding='utf-8'?>
         <tomcat-users>
-        role rolename="manager"/>
-        role rolename="tomcat"/>
-        <role rolename="admin"/>
-        <role rolename="role1"/>
-        <role rolename="manager-gui"/>
-        <user username="both" password="tomcat" roles="tomcat,role1"/>
-        <user username="tomcat" password="tomcat" roles="tomcat"/>
-        <user username="admin" password="admin" roles="admin,manager-gui"/>
-        <user username="role1" password="tomcat" roles="role1"/>
+          <role rolename="manager"/>
+          <role rolename="tomcat"/>
+          <role rolename="admin"/>
+          <role rolename="role1"/>
+          <role rolename="manager-gui"/>
+          <user username="both" password="tomcat" roles="tomcat,role1"/>
+          <user username="tomcat" password="tomcat" roles="tomcat"/>
+          <user username="admin" password="admin" roles="admin,manager-gui"/>
+          <user username="role1" password="tomcat" roles="role1"/>
         </tomcat-users>
         ```
 
@@ -165,7 +165,7 @@ AEM은 단일 war 파일로 제공됩니다.
 
      `webapps/manager/WEB-INF/web.xml`
 
-     `max-file-size` 및 `max-request-size`을(를) 최소 500MB로 늘립니다. 아래 예제 `web.xml` 파일에서 다음 `multipart-config`을(를) 참조하십시오.
+     `max-file-size` 및 `max-request-size`을(를) 최소 500MB로 늘립니다. 아래 예제 `multipart-config` 파일에서 다음 `web.xml`을(를) 참조하십시오.
 
      ```xml
      <multipart-config>
@@ -186,6 +186,6 @@ AEM은 단일 war 파일로 제공됩니다.
       * 초기 `sling.home` 매개 변수의 주석 처리를 제거하고 필요에 따라 이 경로를 설정하십시오.
       * `web.xml` 파일을 다시 압축합니다.
 
-   * AEM war 파일을 루트 웹 앱으로 배포하려면 이름을 `ROOT.war`(으)로 바꾸십시오. `aemauthor`을(를) 컨텍스트 루트로 사용하려면 이름을 `aemauthor.war`(으)로 바꾸십시오.
+   * AEM war 파일을 루트 웹 앱으로 배포하려면 이름을 `ROOT.war`(으)로 바꾸십시오. `aemauthor.war`을(를) 컨텍스트 루트로 사용하려면 이름을 `aemauthor`(으)로 바꾸십시오.
    * Tomcat의 webapps 폴더에 복사
    * AEM이 설치될 때까지 기다립니다.

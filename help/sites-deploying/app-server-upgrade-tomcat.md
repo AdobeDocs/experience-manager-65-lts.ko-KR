@@ -5,18 +5,18 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
+source-git-commit: 2a33cb4b8aa1dcfd989cf61465492d563f9cd99a
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
 
-# Application Server 설치 업그레이드 단계(Tomcat) {#upgrade-steps-for-application-server-installations-tomcat}
+# Application Server 설치 업그레이드 단계(Tomcat - Sidegrade) {#upgrade-steps-for-application-server-installations-tomcat}
 
 >[!NOTE]
 >
->이 페이지에서는 Tomcat의 AEM 6.5 LTS 업그레이드 절차에 대해 간략히 설명합니다.
+>이 페이지에서는 Tomcat의 AEM 6.5에서 AEM 6.5 LTS로 업그레이드하는 절차를 간략하게 설명합니다. AEM 6.5 LTS에서 AEM 6.5 LTS Servicepack으로 업그레이드하려면 [다음을 참조하세요](/help/sites-deploying/app-server-upgrade-tomcat-inplace.md)
 
 ## 업그레이드 전 단계 {#pre-upgrade-steps}
 
