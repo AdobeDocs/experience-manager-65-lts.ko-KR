@@ -5,10 +5,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0b4d1cb7-b3a7-4bcd-ad37-d718b2a0abd5
-source-git-commit: 2a33cb4b8aa1dcfd989cf61465492d563f9cd99a
+source-git-commit: 1d0fe9ee81a2e38f7887b6f884a13d1ba1462304
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 15%
+source-wordcount: '81'
+ht-degree: 14%
 
 ---
 
@@ -19,6 +19,6 @@ ht-degree: 15%
 AEM에서 지원하는 각 애플리케이션 서버에 대한 안내서를 따르십시오.
 
 * [애플리케이션 서버 설치 업그레이드 단계(Websphere Liberty)](/help/sites-deploying/app-server-upgrade-wlp.md)
-* [Application Server 설치 업그레이드 단계(Tomcat - Sidegrade)](/help/sites-deploying/app-server-upgrade-tomcat.md)
-* [Application Server 설치 업그레이드 단계(Tomcat - 즉석 업그레이드)](/help/sites-deploying/app-server-upgrade-tomcat-inplace.md)
+* [Application Server 설치 업그레이드 단계(Tomcat)](/help/sites-deploying/app-server-upgrade-tomcat.md)
+* [JBOSS EAP 8(windows)의 AEM 6.5 LTS 업그레이드 단계](/help/forms/using/upgrading-aem-6.5-lts-on-jboss-eap-8)
 
