@@ -39,7 +39,7 @@ ht-degree: 93%
 
 ### 양식
 
-이제 JEE의 AEM 6.5 Forms LTS를 사용할 수 있습니다. 지원되는 환경에 대한 자세한 내용은 [지원되는 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md) 조합 문서를 참조하십시오. 설치 관리자 링크는 [AEM Forms 릴리스](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 페이지에서 사용할 수 있습니다.
+이제 JEE의 AEM 6.5 Forms LTS를 사용할 수 있습니다. 지원되는 환경에 대한 자세한 내용은 [지원되는 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md) 조합 문서를 참조하십시오. 설치 관리자 링크는 [AEM Forms 릴리스](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 페이지에서 사용할 수 있습니다.
 
 #### AEM Forms 6.5 LTS SP1에 포함된 제품
 
@@ -530,7 +530,7 @@ Eclipse Jetty 11.0.x는 Quickstart의 서블릿 엔진으로 사용됩니다.
 ### 업그레이드 {#upgrade}
 
 * 업그레이드 절차에 대한 자세한 내용은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하십시오.
-* 자세한 업그레이드 지침은 [JEE의 AEM Forms 6.5 LTS SP1용 업그레이드 안내서](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)를 참조하십시오.
+* 자세한 업그레이드 지침은 [JEE의 AEM Forms 6.5 LTS SP1용 업그레이드 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)를 참조하십시오.
 
 #### AEM 6.5 LTS 서비스 팩 업그레이드에 대한 모범 사례
 
