@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 7c3f5d203be1ee2daa3274f76eade9af2ab9c821
+source-git-commit: f895a226e35b8d41b54245bdd25908f48ffc3045
 workflow-type: tm+mt
 source-wordcount: '7751'
 ht-degree: 93%
@@ -21,7 +21,7 @@ ht-degree: 93%
 | 버전 | 서비스 팩 1(SP1), GRANITE-61551에 대한 핫픽스 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | 유형 | 서비스 팩 릴리스 |
 | 날짜 | 2025년 9월 9일 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| 다운로드 URL | [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fcq-6.5.lts.1-hotfix-GRANITE-61551-1.2.zip) |
+| 다운로드 URL | [소프트웨어 배포]&#x200B;(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-61551-1.4.zip) |
 
 <!-- OLD URL TO JAR
 (https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack-lts/cq-quickstart-6.6.1.jar) | -->
@@ -39,7 +39,7 @@ ht-degree: 93%
 
 ### 양식
 
-이제 JEE의 AEM 6.5 Forms LTS를 사용할 수 있습니다. 지원되는 환경에 대한 자세한 내용은 [지원되는 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md) 조합 문서를 참조하십시오. 설치 관리자 링크는 [AEM Forms 릴리스](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 페이지에서 사용할 수 있습니다.
+이제 JEE의 AEM 6.5 Forms LTS를 사용할 수 있습니다. 지원되는 환경에 대한 자세한 내용은 [지원되는 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md) 조합 문서를 참조하십시오. 설치 관리자 링크는 [AEM Forms 릴리스](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 페이지에서 사용할 수 있습니다.
 
 #### AEM Forms 6.5 LTS SP1에 포함된 제품
 
@@ -530,7 +530,7 @@ Eclipse Jetty 11.0.x는 Quickstart의 서블릿 엔진으로 사용됩니다.
 ### 업그레이드 {#upgrade}
 
 * 업그레이드 절차에 대한 자세한 내용은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하십시오.
-* 자세한 업그레이드 지침은 [JEE의 AEM Forms 6.5 LTS SP1용 업그레이드 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)를 참조하십시오.
+* 자세한 업그레이드 지침은 [JEE의 AEM Forms 6.5 LTS SP1용 업그레이드 안내서](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)를 참조하십시오.
 
 #### AEM 6.5 LTS 서비스 팩 업그레이드에 대한 모범 사례
 
@@ -569,7 +569,7 @@ AEM 6.5 LTS용 SP1은 패키지 관리자를 통해 설치하기 위해 ZIP이 �
 >
 >위에 표시된 파일 이름(예: `cq-quickstart-6.6.x.jar`)은 이 LTS 릴리스에서 관찰된 SP1 Quickstart 아티팩트 이름을 반영하므로 항상 소프트웨어 배포에서 다운로드한 정확한 파일 이름을 사용하십시오.
 
-## 설치 및 업데이트 {#install-update}
+## 설치 및 업데이트{#install-update}
 
 설정 요구 사항에 대한 자세한 내용은 [설치 지침](/help/sites-deploying/custom-standalone-install.md)을 참조하십시오.
 
