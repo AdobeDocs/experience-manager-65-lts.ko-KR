@@ -28,7 +28,7 @@ ht-degree: 1%
 >
 >* Adobe은 이 커넥터를 중복 커넥터로 만드는 [!DNL Adobe Workfront] 및 [!DNL Adobe Experience Manager]에 대한 업데이트를 릴리스할 수 있습니다. 이러한 경우 고객은 이 커넥터를 사용하지 않도록 전환해야 할 수 있습니다.
 >
->* Adobe은 향상된 커넥터 버전 1.7.4 이상을 지원합니다. 이전 프리릴리스 및 사용자 지정 버전은 지원되지 않습니다. 향상된 커넥터 버전을 확인하려면 `digital.hoodoo`패키지 관리자[의 왼쪽 창에서 사용할 수 있는 ](/help/sites-administering/package-manager.md) 그룹으로 이동하십시오.
+>* Adobe은 향상된 커넥터 버전 1.7.4 이상을 지원합니다. 이전 프리릴리스 및 사용자 지정 버전은 지원되지 않습니다. 향상된 커넥터 버전을 확인하려면 `digital.hoodoo`패키지 관리자[의 왼쪽 창에서 사용할 수 있는 &#x200B;](/help/sites-administering/package-manager.md) 그룹으로 이동하십시오.
 >
 >* [Workfront for Experience Manager Assets 강화 커넥터에 대한 파트너 인증 시험](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)을 참조하세요. 시험에 대한 자세한 내용은 [시험 가이드](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)를 참조하세요.
 
@@ -107,7 +107,7 @@ Adobe Workfront 문서와 Assets 간의 메타데이터 매핑은 AEM 메타데�
    * 작업 사용자 정의 양식 필드
    * 프로젝트 개요 필드(ID, 이름, 설명 또는 참조 번호)
 
-1. [!DNL Workfront]Workfront 사용자 정의 양식 필드[!UICONTROL 에서 선택한 ] 필드가 Workfront 사용자 유형 미리 필드인 경우 매핑할 Workfront 사용자 필드를 지정해야 합니다. 이렇게 하려면 Workfront 참조 개체 필드에서 값 가져오기 를 선택한 다음 매핑할 값을 검색할 [!UICONTROL Workfront 사용자 정의 양식 필드]의 이름을 지정하십시오.
+1. [!DNL Workfront]Workfront 사용자 정의 양식 필드[!UICONTROL 에서 선택한 &#x200B;] 필드가 Workfront 사용자 유형 미리 필드인 경우 매핑할 Workfront 사용자 필드를 지정해야 합니다. 이렇게 하려면 Workfront 참조 개체 필드에서 값 가져오기 를 선택한 다음 매핑할 값을 검색할 [!UICONTROL Workfront 사용자 정의 양식 필드]의 이름을 지정하십시오.
 
    ![메타데이터 매핑 구성](/help/assets/assets/wf-metadata-mapping-config1.png)
 
