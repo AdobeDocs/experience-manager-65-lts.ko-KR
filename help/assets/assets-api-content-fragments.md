@@ -6,10 +6,10 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: e799e9c99a12cad108ae2c035797e5887a2f4ef1
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 23%
+source-wordcount: '1939'
+ht-degree: 22%
 
 ---
 
@@ -20,8 +20,17 @@ ht-degree: 23%
 | AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=ko) |
 | AEM 6.5 | 이 문서 |
 
-
 ## 개요 {#overview}
+
+>[!CAUTION]
+>
+>Assets HTTP API의 콘텐츠 조각 지원이 이제 [사용되지 않음](/help/release-notes/release-notes.md#deprecated-features)입니다.
+>
+>[콘텐츠 조각 및 콘텐츠 조각 모델 관리 OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/65lts/)&#x200B;(으)로 대체되었습니다.
+
+>[!NOTE]
+>
+>Experience Manager API에 대한 최신 정보는 [Adobe Experience Manager API](https://developer.adobe.com/experience-cloud/experience-manager-apis/)를 참조하십시오.
 
 AEM의 Headless 게재 기능의 중요한 부분인 Assets HTTP API에서의 콘텐츠 조각 지원에 대해 알아봅니다.
 
@@ -40,7 +49,7 @@ API를 사용하면 Adobe Experience Manager 프론트엔드 애플리케이션�
 
 예를 들어 프레임워크 기반 또는 사용자 지정 SPA(단일 페이지 애플리케이션)에서는 HTTP API를 통해 제공되는 콘텐츠(종종 JSON 형식)가 필요합니다.
 
-[AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)는 이러한 목적에 필요한 읽기 작업을 수행하고 JSON 출력을 사용자 지정할 수 있는 매우 포괄적이고 유연하며 사용자 지정 가능한 API를 제공하지만, 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 구현에 AEM WCM(웹 콘텐츠 관리) 노하우가 필요합니다. 모든 SPA 개발 조직에서 이러한 지식을 직접 액세스할 수 있는 것은 아닙니다.
+[AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 이러한 목적에 필요한 읽기 작업을 수행하고 JSON 출력을 사용자 지정할 수 있는 매우 포괄적이고 유연하며 사용자 지정 가능한 API를 제공하지만, 전용 AEM 템플릿을 기반으로 하는 페이지에서 호스팅해야 하므로 구현에 AEM WCM(웹 콘텐츠 관리) 노하우가 필요합니다. 모든 SPA 개발 조직에서 이러한 지식을 직접 액세스할 수 있는 것은 아닙니다.
 
 이때 Assets REST API를 사용할 수 있습니다. 이를 통해 개발자는 페이지에 에셋을 먼저 임베드할 필요 없이 에셋(예: 이미지 및 콘텐츠 조각)에 직접 액세스하고 콘텐츠를 직렬화된 JSON 형식으로 전달할 수 있습니다.
 
@@ -103,7 +112,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
 <table>
  <thead>
   <tr>
-   <td>Aspect</td>
+   <td>측면</td>
    <td>Assets REST API<br/> </td>
    <td>AEM 구성 요소<br/>(Sling 모델을 사용하는 구성 요소)</td>
   </tr>
@@ -121,7 +130,7 @@ HTTP 메서드는 실행할 작업을 결정합니다.
   </tr>
   <tr>
    <td>액세스</td>
-   <td><p>직접 액세스할 수 있습니다.</p> <p>리포지토리의 <code>/content/dam</code>에 매핑된 <code>/api/assets </code>끝점을 사용합니다.</p> 
+   <td><p>직접 액세스할 수 있습니다.</p> <p>리포지토리의 <code>/api/assets </code>에 매핑된 <code>/content/dam</code>끝점을 사용합니다.</p> 
    <p>예제 경로는 다음과 같습니다. <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
     <td><p>AEM 페이지에서 AEM 구성 요소를 통해 참조해야 합니다.</p> <p><code>.model</code> 선택기를 사용하여 JSON 표현을 만듭니다.</p> <p>예제 경로는 다음과 같습니다.<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
@@ -153,8 +162,8 @@ Assets REST API가 특정 인증 요구 사항 없이 환경 내에서 사용되
 >
 >자세한 내용은 다음을 참조하십시오.
 >
->* [CORS/AEM 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ko)
->* [비디오 - AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=ko)에서 CORS용 개발
+>* [CORS/AEM 설명](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [비디오 - AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)에서 CORS용 개발
 >
 
 특정 인증 요구 사항이 있는 환경에서는 OAuth가 권장됩니다.
@@ -344,7 +353,7 @@ Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식
   다음은 생성된 오류 메시지(단공간)와 함께 이 오류 상태가 반환될 때의 일반적인 시나리오를 나열합니다.
 
    * 상위 폴더가 없습니다(`POST`을(를) 통해 콘텐츠 조각을 만드는 경우).
-   * 제공된 콘텐츠 조각 모델이 없거나(cq:model이 누락됨), 잘못된 경로 또는 권한 문제로 인해 읽을 수 없거나, 유효한 조각 모델이 없습니다.
+   * 콘텐츠 조각 모델이 제공되지 않았거나(cq:model이(가) 누락됨), 잘못된 경로 또는 권한 문제로 인해 읽을 수 없거나, 올바른 조각 모델이 없습니다.
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
@@ -395,4 +404,4 @@ Assets에는 여러 표현물이 있을 수 있습니다. 일반적으로 자식
 자세한 내용은 다음을 참조하십시오.
 
 * [Assets HTTP API 설명서](/help/assets/mac-api-assets.md)
-* [AEM Gem 세션: OAuth](https://helpx.adobe.com/kr/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem 세션: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

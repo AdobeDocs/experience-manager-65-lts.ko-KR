@@ -7,7 +7,7 @@ feature: Assets HTTP API,Developer Tools
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7bb4aec8-e6c0-416a-a318-d3120f9688c4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f0385f595035dfd0dce77fc7eb8b2413eaf5431a
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 ## 개요 {#overview}
@@ -28,7 +28,7 @@ ht-degree: 1%
 API에 액세스하려면:
 
 1. `https://[hostname]:[port]/api.json`에서 API 서비스 문서를 엽니다.
-1. `https://[hostname]:[server]/api/assets.json`(으)로 이어지는 [!DNL Assets] 서비스 링크를 따르십시오.
+1. [!DNL Assets]&#x200B;(으)로 이어지는 `https://[hostname]:[server]/api/assets.json` 서비스 링크를 따르십시오.
 
 API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형에 대한 응답 코드입니다. JSON 응답은 선택 사항이며 예를 들어 PDF 파일에 사용하지 못할 수 있습니다. 추가적인 분석 또는 작업을 위해 응답 코드를 사용합니다.
 
@@ -36,7 +36,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 >[!CAUTION]
 >
->[HTTP API가 `jcr` 네임스페이스의 메타데이터 속성을 업데이트합니다](#update-asset-metadata). 그러나 Experience Manager 사용자 인터페이스는 `dc` 네임스페이스의 메타데이터 속성을 업데이트합니다.
+>[HTTP API가 ](#update-asset-metadata) 네임스페이스의 메타데이터 속성을 업데이트합니다`jcr`. 그러나 Experience Manager 사용자 인터페이스는 `dc` 네임스페이스의 메타데이터 속성을 업데이트합니다.
 
 ## 콘텐츠 조각 {#content-fragments}
 
@@ -63,7 +63,7 @@ API 응답은 일부 MIME 유형에 대한 JSON 파일이며 모든 MIME 유형�
 
 >[!NOTE]
 >
->폴더 또는 에셋의 일부 속성이 다른 접두사에 매핑됩니다. `jcr:title`, `jcr:description` 및 `jcr:language`의 `jcr` 접두사가 `dc` 접두사로 대체되었습니다. 따라서 반환된 JSON에서 `dc:title` 및 `dc:description`에는 각각 `jcr:title` 및 `jcr:description`의 값이 포함됩니다.
+>폴더 또는 에셋의 일부 속성이 다른 접두사에 매핑됩니다. `jcr`, `jcr:title` 및 `jcr:description`의 `jcr:language` 접두사가 `dc` 접두사로 대체되었습니다. 따라서 반환된 JSON에서 `dc:title` 및 `dc:description`에는 각각 `jcr:title` 및 `jcr:description`의 값이 포함됩니다.
 
 **링크** 폴더에는 세 개의 링크가 있습니다.
 
@@ -103,9 +103,9 @@ Experience Manager에서 자산은 다음 요소를 포함합니다.
 
 >[!NOTE]
 >
->가독성을 위해 다음 예제에서는 전체 cURL 표기법을 생략합니다. 실제로 표기법은 `cURL`에 대한 스크립트 래퍼인 [Resty](https://github.com/micha/resty)과(와) 상호 연관성이 있습니다.
+>가독성을 위해 다음 예제에서는 전체 cURL 표기법을 생략합니다. 실제로 표기법은 [에 대한 스크립트 래퍼인 ](https://github.com/micha/resty)Resty`cURL`과(와) 상호 연관성이 있습니다.
 
-**전제 조건**
+**사전 요구 사항**
 
 * `https://[aem_server]:[port]/system/console/configMgr`에 액세스합니다.
 * **[!UICONTROL Adobe Granite CSRF 필터]**(으)로 이동합니다.
@@ -123,7 +123,7 @@ Experience Manager에서 자산은 다음 요소를 포함합니다.
 * 404 - 찾을 수 없음 - 폴더가 없거나 액세스할 수 없습니다.
 * 500 - 내부 서버 오류 - 다른 문제가 발생한 경우.
 
-**응답**: 반환된 엔터티의 클래스가 에셋 또는 폴더입니다. 포함된 엔티티의 등록 정보는 각 엔티티의 전체 등록 정보 세트의 하위 집합입니다. 엔터티의 전체 표현을 가져오려면 클라이언트는 `self`의 `rel`을(를) 가진 링크가 가리키는 URL의 콘텐츠를 검색해야 합니다.
+**응답**: 반환된 엔터티의 클래스가 에셋 또는 폴더입니다. 포함된 엔티티의 등록 정보는 각 엔티티의 전체 등록 정보 세트의 하위 집합입니다. 엔터티의 전체 표현을 가져오려면 클라이언트는 `rel`의 `self`을(를) 가진 링크가 가리키는 URL의 콘텐츠를 검색해야 합니다.
 
 ## 폴더 만들기 {#create-a-folder}
 
@@ -318,6 +318,6 @@ curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.p
 
 ## 팁 및 제한 사항 {#tips-best-practices-limitations}
 
-* [HTTP API가 `jcr` 네임스페이스의 메타데이터 속성을 업데이트합니다](#update-asset-metadata). 그러나 Experience Manager 사용자 인터페이스는 `dc` 네임스페이스의 메타데이터 속성을 업데이트합니다.
+* [HTTP API가 ](#update-asset-metadata) 네임스페이스의 메타데이터 속성을 업데이트합니다`jcr`. 그러나 Experience Manager 사용자 인터페이스는 `dc` 네임스페이스의 메타데이터 속성을 업데이트합니다.
 
 * Assets HTTP API는 전체 메타데이터를 반환하지 않습니다. 네임스페이스는 하드코딩되고 해당 네임스페이스만 반환됩니다. 전체 메타데이터에 대해서는 자산 경로 `/jcr_content/metadata.json`을(를) 참조하십시오.
