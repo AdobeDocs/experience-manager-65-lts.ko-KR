@@ -389,7 +389,7 @@ Eclipse Jetty 11.0.x는 Quickstart의 서블릿 엔진으로 사용됩니다.
 ### 업그레이드 {#upgrade}
 
 * 업그레이드 절차에 대한 자세한 내용은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하십시오.
-* 자세한 업그레이드 지침은 [JEE의 AEM Forms 6.5 LTS SP1용 업그레이드 안내서](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)를 참조하십시오.
+* 자세한 업그레이드 지침은 [JEE의 AEM Forms 6.5 LTS SP1용 업그레이드 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)를 참조하십시오.
 
 #### AEM 6.5 LTS 서비스 팩 업그레이드에 대한 모범 사례
 
@@ -564,5 +564,5 @@ AEM 배포에서 SSL 전용 기능을 활성화하면 Dispatcher와 AEM 인스�
 이들 웹 사이트는 고객만 사용할 수 있습니다. 고객이시며 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)에 문의하십시오.
+* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)에 문의하십시오.
 
