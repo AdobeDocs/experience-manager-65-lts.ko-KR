@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 56a6a366aa563cab3a0385c619041238f04b31c5
+source-git-commit: ad26ea17d3d8fba351c31199607003ab4981c53d
 workflow-type: tm+mt
-source-wordcount: '5867'
-ht-degree: 21%
+source-wordcount: '6060'
+ht-degree: 20%
 
 ---
 
@@ -302,9 +302,9 @@ AEM Headless에는 메인 라인 빌드와 종속성 및 번들 버전 충돌을
 <!--
 #### Jetty{#foundation-jetty-65-lts-sp2}
 
-#### Localization{#foundation-localization-65-lts-sp2}
+#### Localization{#foundation-localization-65-lts-sp2} 
 
-#### Oak {#foundation-oak-65-lts-sp2}
+
 
 #### Omnisearch{#foundation-omnisearch-65-lts-sp2}
 
@@ -313,9 +313,36 @@ AEM Headless에는 메인 라인 빌드와 종속성 및 번들 버전 충돌을
 #### Projects{#foundation-projects-65-lts-sp2}
 -->
 
+#### Oak {#foundation-oak-65-lts-sp2}
+
+AEM 6.5 LTS 서비스 팩 2에는 S3 Connector 1.60.10 이상이 필요합니다. 이제 S3 데이터 저장소 구성에 `crossRegionAccess` 및 `mode`이(가) 포함되어 있으므로 관리자는 필요한 경우 교차 영역 버킷 액세스를 활성화하고 저장소를 GCP로 전환할 수 있습니다. 이제 `s3EndPoint`에 `s3Region`에 정렬된 영역이 필요하거나, 드라이버가 끝점을 생성하도록 영역이 비어 있습니다. (GRANITE-64873)
+
+
 #### Quickstart{#foundation-quickstart-65-lts-sp2}
 
-AEM 6.5 LTS SP2는 Sling, Oak 및 Felix용 foundation 레이어 번들 세트를 업데이트합니다. 이러한 업그레이드는 핵심 런타임 안정성을 강화하고 플랫폼 간에 종속성 버전을 조정합니다. (GRANITE-61874)
+* 허용 목록에 추가하다 Sling은 포괄적인 용어와 새로운 PID를 사용하도록 관리 로그인 구성을 업데이트합니다. 이 변경 사항은 Sling JCR Base 3.2.0에 맞게 조정됩니다. (GRANITE-63756)
+
+  **영향**
+
+   * Sling은 이러한 PID를 더 이상 사용하지 않으므로 구성에서 제거해야 합니다.
+      * 팩터리 PID: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment`
+      * 전역 PID: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist`
+이러한 이전 구성은 `whitelist.name` 및 `whitelist.bundles`과(와) 같은 속성을 사용합니다.
+
+   * Sling은 더 이상 사용되지 않는 PID에 대해 부분 이전 버전과의 호환성을 제공하지만 새 구성에 대해서는 사용하지 않습니다. 대신 최신 `LoginAdminAllowList.*` PID를 사용하십시오.
+   * 허용 목록에 추가하다 더 이상 사용되지 않는 구성과 새로운 구성을 동시에 실행하지 마십시오. 혼합 구성은 모호성을 만들고 의도하지 않은 비헤이비어를 생성할 수 있습니다. AEM 6.5 LTS SP2로 마이그레이션하는 경우 더 이상 사용되지 않는 PID를 완전히 제거하십시오.
+
+  **수행할 작업**
+
+   1. 허용 목록에 추가하다 `LoginAdminWhitelist*` PID를 사용하는 PID 구성 찾기
+   1. 다음 코드를 적절한 새 PID로 바꿉니다.
+
+      * 팩터리 PID: `org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
+      * 전역 PID: `org.apache.sling.jcr.base.LoginAdminAllowList`
+
+      자세한 내용은 [관리자 로그인을 위해 더 이상 사용되지 않는 허용 목록에 추가하다 번들 접근](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login)을 참조하십시오.
+
+* AEM 6.5 LTS SP2는 Sling, Oak 및 Felix용 foundation 레이어 번들 세트를 업데이트합니다. 이러한 업그레이드는 핵심 런타임 안정성을 강화하고 플랫폼 간에 종속성 버전을 조정합니다. (GRANITE-61874)
 
 <!--
 #### Security{#foundation-security-65-lts-sp2}
@@ -362,7 +389,7 @@ Eclipse Jetty 11.0.x는 Quickstart의 서블릿 엔진으로 사용됩니다.
 ### 업그레이드 {#upgrade}
 
 * 업그레이드 절차에 대한 자세한 내용은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하십시오.
-* 자세한 업그레이드 지침은 [JEE의 AEM Forms 6.5 LTS SP1용 업그레이드 안내서](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)를 참조하십시오.
+* 자세한 업그레이드 지침은 [JEE의 AEM Forms 6.5 LTS SP1용 업그레이드 안내서](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)를 참조하십시오.
 
 #### AEM 6.5 LTS 서비스 팩 업그레이드에 대한 모범 사례
 
@@ -537,5 +564,5 @@ AEM 배포에서 SSL 전용 기능을 활성화하면 Dispatcher와 AEM 인스�
 이들 웹 사이트는 고객만 사용할 수 있습니다. 고객이시며 액세스 권한이 필요한 경우 Adobe 계정 관리자에게 문의하십시오.
 
 * [licensing.adobe.com에서 제품 다운로드](https://licensing.adobe.com/)
-* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)에 문의하십시오.
+* [Adobe 고객 지원 센터](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience)에 문의하십시오.
 
