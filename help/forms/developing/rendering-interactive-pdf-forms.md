@@ -1,5 +1,5 @@
 ---
-title: 대화형 PDF forms 렌더링
+title: 대화형 PDF 양식 렌더링
 description: Forms 서비스를 사용하여 대화형 PDF forms을 클라이언트 장치(일반적으로 웹 브라우저)에 렌더링하여 사용자로부터 정보를 수집합니다. Forms 서비스를 사용하여 Java API 및 웹 서비스 API를 사용하여 대화형 양식을 렌더링할 수 있습니다.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: de61c579-50ed-423b-adca-60329f3f0b89
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '2455'
 ht-degree: 0%
 
 ---
 
-# 대화형 PDF forms 렌더링 {#rendering-interactive-pdf-forms}
+# 대화형 PDF 양식 렌더링 {#rendering-interactive-pdf-forms}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
@@ -152,7 +152,7 @@ Forms 애플리케이션에서 리소스의 경로는 다음과 같습니다.
 * Designer에서 양식 디자인을 디자인할 때 제출 단추 사용
 * Forms 서비스 클라이언트 API 사용
 
-대상 URL이 양식 디자인 내에 정의된 경우 Forms 서비스 클라이언트 API로 재정의하지 마십시오. 즉, Forms API를 사용하여 대상 URL을 설정하면 양식 디자인에서 지정된 URL이 API를 사용하여 지정된 URL로 재설정됩니다. PDF 양식을 양식 디자인에 지정된 대상 URL에 제출하려면 프로그래밍 방식으로 대상 URL을 빈 문자열로 설정합니다.
+대상 URL이 양식 디자인 내에 정의된 경우 Forms 서비스 클라이언트 API로 재정의하지 마십시오. 즉, Forms API를 사용하여 대상 URL을 설정하면 양식 디자인에서 지정된 URL이 API를 사용하여 지정된 URL로 재설정됩니다. 양식 디자인에 지정된 대상 URL에 PDF 양식을 제출하려면 프로그래밍 방식으로 대상 URL을 빈 문자열로 설정합니다.
 
 제출 단추와 계산 단추가 포함된 폼이 있는 경우(서버에서 실행되는 해당 스크립트 포함), 해당 스크립트를 실행하기 위해 폼이 전송되는 URL을 프로그래밍 방식으로 정의할 수 있습니다. 양식 디자인에서 제출 단추를 사용하여 양식 데이터가 게시되는 URL을 지정합니다. ([양식 데이터 계산](/help/forms/developing/calculating-form-data.md)을 참조하십시오.)
 
@@ -191,7 +191,7 @@ Forms API(Java)를 사용하여 대화형 PDF 양식 렌더링:
 1. Forms 클라이언트 API 개체 만들기
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `FormsServiceClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `FormsServiceClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. URI 값 지정
 
@@ -227,11 +227,11 @@ Forms API(Java)를 사용하여 대화형 PDF 양식 렌더링:
 
 1. 클라이언트 웹 브라우저에 양식 데이터 스트림 작성
 
-   * `FormsResult` 개체의 `getOutputContent` 메서드를 호출하여 `com.adobe.idp.Document` 개체를 만듭니다.
-   * 해당 `getContentType` 메서드를 호출하여 `com.adobe.idp.Document` 개체의 콘텐츠 형식을 가져옵니다.
-   * `setContentType` 메서드를 호출하고 `com.adobe.idp.Document` 개체의 콘텐츠 형식을 전달하여 `javax.servlet.http.HttpServletResponse` 개체의 콘텐츠 형식을 설정합니다.
-   * `javax.servlet.http.HttpServletResponse` 개체의 `getOutputStream` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저에 쓰는 데 사용되는 `javax.servlet.ServletOutputStream` 개체를 만듭니다.
-   * `com.adobe.idp.Document` 개체의 `getInputStream` 메서드를 호출하여 `java.io.InputStream` 개체를 만듭니다.
+   * `com.adobe.idp.Document` 개체의 `FormsResult` 메서드를 호출하여 `getOutputContent` 개체를 만듭니다.
+   * 해당 `com.adobe.idp.Document` 메서드를 호출하여 `getContentType` 개체의 콘텐츠 형식을 가져옵니다.
+   * `javax.servlet.http.HttpServletResponse` 메서드를 호출하고 `setContentType` 개체의 콘텐츠 형식을 전달하여 `com.adobe.idp.Document` 개체의 콘텐츠 형식을 설정합니다.
+   * `javax.servlet.ServletOutputStream` 개체의 `javax.servlet.http.HttpServletResponse` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저에 쓰는 데 사용되는 `getOutputStream` 개체를 만듭니다.
+   * `java.io.InputStream` 개체의 `com.adobe.idp.Document` 메서드를 호출하여 `getInputStream` 개체를 만듭니다.
    * `InputStream` 개체의 `read` 메서드를 호출하고 바이트 배열을 인수로 전달하여 바이트 배열을 만들어 양식 데이터 스트림으로 채웁니다.
    * `javax.servlet.ServletOutputStream` 개체의 `write` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저로 보냅니다. 바이트 배열을 `write` 메서드에 전달합니다.
 
@@ -286,11 +286,11 @@ Forms API(웹 서비스)를 사용하여 대화형 PDF 양식 렌더링:
 
 1. 클라이언트 웹 브라우저에 양식 데이터 스트림 작성
 
-   * `com.adobe.idp.services.holders.FormsResultHolder` 개체의 `value` 데이터 멤버의 값을 가져와서 `FormResult` 개체를 만듭니다.
-   * `FormsResult` 개체의 `getOutputContent` 메서드를 호출하여 양식 데이터를 포함하는 `BLOB` 개체를 만듭니다.
-   * 해당 `getContentType` 메서드를 호출하여 `BLOB` 개체의 콘텐츠 형식을 가져옵니다.
-   * `setContentType` 메서드를 호출하고 `BLOB` 개체의 콘텐츠 형식을 전달하여 `javax.servlet.http.HttpServletResponse` 개체의 콘텐츠 형식을 설정합니다.
-   * `javax.servlet.http.HttpServletResponse` 개체의 `getOutputStream` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저에 쓰는 데 사용되는 `javax.servlet.ServletOutputStream` 개체를 만듭니다.
+   * `FormResult` 개체의 `com.adobe.idp.services.holders.FormsResultHolder` 데이터 멤버의 값을 가져와서 `value` 개체를 만듭니다.
+   * `BLOB` 개체의 `FormsResult` 메서드를 호출하여 양식 데이터를 포함하는 `getOutputContent` 개체를 만듭니다.
+   * 해당 `BLOB` 메서드를 호출하여 `getContentType` 개체의 콘텐츠 형식을 가져옵니다.
+   * `javax.servlet.http.HttpServletResponse` 메서드를 호출하고 `setContentType` 개체의 콘텐츠 형식을 전달하여 `BLOB` 개체의 콘텐츠 형식을 설정합니다.
+   * `javax.servlet.ServletOutputStream` 개체의 `javax.servlet.http.HttpServletResponse` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저에 쓰는 데 사용되는 `getOutputStream` 개체를 만듭니다.
    * 바이트 배열을 만들고 `BLOB` 개체의 `getBinaryData` 메서드를 호출하여 바이트 배열을 채웁니다. 이 작업은 `FormsResult` 개체의 콘텐츠를 바이트 배열에 할당합니다.
    * `javax.servlet.http.HttpServletResponse` 개체의 `write` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저로 보냅니다. 바이트 배열을 `write` 메서드에 전달합니다.
 

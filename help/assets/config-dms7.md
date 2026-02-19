@@ -1,19 +1,19 @@
 ---
-title: Dynamic Media 구성 - Scene7 모드
+title: Dynamic Media - Scene7 모드 구성
 description: Dynamic Media - Scene7 모드를 구성하는 방법에 대해 알아봅니다.
 role: User, Admin
 mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
-source-wordcount: '6491'
+source-wordcount: '6494'
 ht-degree: 3%
 
 ---
 
-# Dynamic Media 구성 - Scene7 모드{#configuring-dynamic-media-scene-mode}
+# Dynamic Media - Scene7 모드 구성{#configuring-dynamic-media-scene-mode}
 
 개발, 스테이징 및 프로덕션과 같은 다양한 환경에 대해 설정된 Adobe Experience Manager을 사용하는 경우 해당 환경 각각에 대해 Dynamic Media Cloud Services를 구성합니다.
 
@@ -43,7 +43,7 @@ Dynamic Media - Scene7 모드에서 기본 업로드 파일 크기는 2GB 이하
 
 ## Scene7 모드에서 Dynamic Media 활성화 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media](https://business.adobe.com/kr/products/experience-manager/assets/dynamic-media.html)은(는) 기본적으로 비활성화되어 있습니다. Dynamic Media 기능을 이용하려면 이 기능을 활성화해야 합니다.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)은(는) 기본적으로 비활성화되어 있습니다. Dynamic Media 기능을 이용하려면 이 기능을 활성화해야 합니다.
 
 >[!WARNING]
 >
@@ -75,13 +75,13 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 기능 팩 18912 설치는 *선택 사항*&#x200B;입니다.
 
-기능 팩 18912을 사용하면 FTP를 통해 자산을 대량 수집하거나 Dynamic Media - 하이브리드 모드 또는 Dynamic Media Classic에서 Experience Manager의 Dynamic Media - Scene7 모드로 자산을 마이그레이션할 수 있습니다. [Adobe Professional Services](https://business.adobe.com/kr/customers/consulting-services/main.html)에서 사용할 수 있습니다.
+기능 팩 18912을 사용하면 FTP를 통해 자산을 대량 수집하거나 Dynamic Media - 하이브리드 모드 또는 Dynamic Media Classic에서 Experience Manager의 Dynamic Media - Scene7 모드로 자산을 마이그레이션할 수 있습니다. [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)에서 사용할 수 있습니다.
 
 자세한 내용은 [일괄 에셋 18912을 위한 기능 팩 설치](/help/assets/bulk-ingest-migrate.md)를 참조하십시오.
 
 ## 클라우드 서비스에서 Dynamic Media 구성 만들기 {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
@@ -115,7 +115,6 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 1. 연결에 성공하면 다음을 설정하십시오. 별표(*)가 있는 제목은 필수입니다.
 
    * **[!UICONTROL 회사]** - Dynamic Media 계정의 이름입니다.
-
      >[!IMPORTANT]
      >
      >Experience Manager 인스턴스에서는 Cloud Services의 Dynamic Media 구성이 하나만 지원됩니다. 구성을 두 개 이상 추가하지 마십시오. Experience Manager 인스턴스의 여러 Dynamic Media 구성이 Adobe에서 지원되거나 권장되지 _않습니다_.
@@ -128,7 +127,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
    * **[!UICONTROL Assets 게시]** - 다음 세 가지 옵션 중에서 선택할 수 있습니다.
       * **[!UICONTROL 즉시]**&#x200B;은(는) 에셋이 업로드되면 시스템이 에셋을 수집하여 URL/임베드를 즉시 제공함을 의미합니다. 에셋을 게시하는 데 필요한 사용자 개입이 없습니다.
-      * **[!UICONTROL 활성화 시]**&#x200B;는 URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 함을 의미합니다.<br><!-- CQDOC-17478, Added March 9, 2021-->Experience Manager 6.5.8부터 Experience Manager 게시 인스턴스는 **[!UICONTROL 활성화 시]** 게시 모드에서만 `dam:scene7Domain` 및 `dam:scene7FileStatus`과(와) 같은 정확한 Dynamic Media 메타데이터 값을 반영합니다. Sling 구성 관리자로 이동합니다. `Scene7ActivationJobConsumer Component`에 대한 구성을 찾거나 새 구성을 만드십시오. **[!UICONTROL Dynamic Media 게시 후 메타데이터 복제]** 확인란을 선택한 다음 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+      * **[!UICONTROL 활성화 시]**&#x200B;는 URL/포함 링크가 제공되기 전에 먼저 자산을 명시적으로 게시해야 함을 의미합니다.<br><!-- CQDOC-17478, Added March 9, 2021-->Experience Manager 6.5.8부터 Experience Manager 게시 인스턴스는 `dam:scene7Domain`활성화 시`dam:scene7FileStatus` 게시 모드에서만 **[!UICONTROL 및]**&#x200B;과(와) 같은 정확한 Dynamic Media 메타데이터 값을 반영합니다. Sling 구성 관리자로 이동합니다. `Scene7ActivationJobConsumer Component`에 대한 구성을 찾거나 새 구성을 만드십시오. **[!UICONTROL Dynamic Media 게시 후 메타데이터 복제]** 확인란을 선택한 다음 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
         ![Dynamic Media 게시 후 메타데이터 복제 확인란](assets-dm/replicate-metadata-setting.png)
 
@@ -142,7 +141,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    * **[!UICONTROL Dynamic Media 동기화 모드]**
       * **[!UICONTROL 기본적으로 사용됨]** - 폴더만 제외하도록 표시하지 않으면 기본적으로 모든 폴더에 구성이 적용됩니다. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 기본적으로 비활성화됨]** - 선택한 폴더를 Dynamic Media에 동기화하도록 명시적으로 표시할 때까지 구성이 폴더에 적용되지 않습니다.
-선택한 폴더를 Dynamic Media와 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 선택합니다. **[!UICONTROL 세부 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택하십시오. 완료되면 **[!UICONTROL 저장]**&#x200B;을 선택합니다. *다음 세 가지 옵션은 이전에&#x200B;**[!UICONTROL 모든 콘텐츠 동기화]**&#x200B;를 선택한 경우 사용할 수 없습니다.* [Dynamic Media의 폴더 수준에서 선택적 게시 작업](/help/assets/selective-publishing.md)도 참조하세요.
+선택한 폴더를 Dynamic Media와 동기화하도록 표시하려면 자산 폴더를 선택한 다음 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 선택합니다. **[!UICONTROL 세부 정보]** 탭의 **[!UICONTROL Dynamic Media 동기화 모드]** 드롭다운 목록에서 다음 세 가지 옵션 중 하나를 선택하십시오. 완료되면 **[!UICONTROL 저장]**&#x200B;을 선택합니다. *다음 세 가지 옵션은 이전에&#x200B;**[!UICONTROL 모든 콘텐츠 동기화]**를 선택한 경우 사용할 수 없습니다.* [Dynamic Media의 폴더 수준에서 선택적 게시 작업](/help/assets/selective-publishing.md)도 참조하세요.
          * **[!UICONTROL 상속됨]** - 폴더에 명시적 동기화 값이 없습니다. 대신 폴더는 상위 폴더 중 하나 또는 클라우드 구성의 기본 모드에서 동기화 값을 상속합니다. 상속된 의 자세한 상태는 도구 설명을 통해 표시됩니다.
          * **[!UICONTROL 하위 폴더에 대해 사용]** - Dynamic Media와의 동기화를 위해 이 하위 트리의 모든 항목을 포함합니다. 폴더별 설정은 클라우드 구성의 기본 모드를 재정의합니다.
          * **[!UICONTROL 하위 폴더에 대해 사용 안 함]** - 이 하위 트리의 모든 항목을 Dynamic Media로 동기화하지 못하도록 제외합니다.
@@ -247,8 +246,8 @@ Dynamic Media - Scene7 모드에서 기본 자산 업로드 파일 크기는 2GB
 이 기능을 사용하려면 다음 사전 요구 사항과 점에 유의하십시오.
 
 * Dynamic Media - Scene7 모드에서 Experience Manager 6.5 LTS를 실행 중이어야 합니다.
-* 이 대용량 업로드 기능은 [*Managed Services*](https://business.adobe.com/kr/products/experience-manager/managed-services.html) 고객에게만 지원됩니다.
-* Experience Manager 인스턴스가 Amazon S3 또는 Microsoft® Azure Blob 저장소로 구성되어 있는지 확인하십시오.
+* 이 대용량 업로드 기능은 [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html) 고객에게만 지원됩니다.
+* Experience Manager 인스턴스가 Amazon S3 또는 Microsoft® Azure Blob 스토리지로 구성되어 있는지 확인하십시오.
 
   >[!NOTE]
   >
@@ -466,7 +465,7 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
 
 **기본 이름 지정을 구성하려면:**
 
-1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started)을 연 다음 계정에 로그인하세요.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하세요.
 
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
@@ -500,7 +499,7 @@ Dynamic Media는 일괄처리 집합 사전 설정을 사용하여 뷰어에 표
 
 **일괄처리 집합 사전 설정을 만들려면:**
 
-1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started)을 연 다음 계정에 로그인하세요.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하세요.
 
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
@@ -556,7 +555,7 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 
 **2D 회전 집합의 자동 생성을 위한 일괄처리 집합 사전 설정을 만들려면:**
 
-1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started)을 연 다음 계정에 로그인하세요.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하세요.
 
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
@@ -569,7 +568,7 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 1. In the Batch Set Type drop-down menu, select **[!UICONTROL Asset Set]**.
 1. [하위 유형] 드롭다운 목록에서 **[!UICONTROL 다축 회전 집합]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 자산 이름 지정 규칙]**&#x200B;을 확장한 다음 파일 이름 지정 드롭다운 목록에서 **[!UICONTROL 사용자 지정]**&#x200B;을 선택합니다.
-1. Use the **[!UICONTROL Match]** and, optionally, **[!UICONTROL Base Name]** attributes to define a regular expression for the naming of image assets that make up the grouping.
+1. **[!UICONTROL Match]** 속성과 필요 시 **[!UICONTROL Base Name]** 속성을 사용하여 그룹을 구성하는 이미지 에셋의 이름 규칙을 위한 정규식을 정의합니다.
 
    예를 들어 리터럴 Match 정규 표현식은 다음과 같이 표시될 수 있습니다.
 
@@ -695,7 +694,7 @@ Scene7 업로드 연결 설정은 Experience Manager 자산을 Dynamic Media Cla
 
 **Dynamic Media Classic 업로드 연결을 업데이트하려면:**
 
-1. `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`(으)로 이동
+1. 다음으로 이동 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. **[!UICONTROL 연결 수]** 필드 및/또는 **[!UICONTROL 활성 작업 시간 초과]** 필드에서 원하는 대로 수를 변경합니다.
 
    **[!UICONTROL 연결 수]** 설정은 Experience Manager에서 Dynamic Media로의 업로드에 허용되는 최대 HTTP 연결 수를 제어합니다. 일반적으로 사전 정의된 10개의 연결이면 됩니다.
@@ -720,7 +719,7 @@ Scene7 업로드 연결 설정은 Experience Manager 자산을 Dynamic Media Cla
 
 Dynamic Media를 사용하여 이미징이나 비디오 또는 두 가지 모두를 수행하는 경우 Adobe에서 제공하는 기본 필터를 그대로 사용할 수 있습니다. 다음 필터는 기본적으로 활성화되어 있습니다.
 
-|   | 필터 | MIME 유형 | 렌디션 |
+|   | 필터 | Mime 유형 | 렌디션 |
 | --- | --- | --- | --- |
 | Dynamic Media 이미지 게재 | filter-image<br>filter-sets | **image/**<br> Contains **applications/**(으)로 시작하고 **set**(으)로 끝납니다. | 기본 제공되는 &quot;filter-images&quot;(대화형 이미지를 포함한 단일 이미지 자산에 적용) 및 &quot;filter-sets&quot;(스핀 세트, 이미지 세트, 혼합 미디어 세트 및 회전판 세트에 적용)는 다음과 같습니다.<br>· 원본 이미지 및 정적 이미지 렌디션의 복제에서 제외합니다. |
 | Dynamic Media 비디오 게재 | filter-video | **비디오/**(으)로 시작 | 기본 제공되는 &quot;비디오 필터링&quot;은 <br>· 원본 비디오 및 정적 썸네일 표현물을 복제하지 않도록 제외합니다. |
@@ -744,7 +743,7 @@ Dynamic Media를 사용하여 이미징이나 비디오 또는 두 가지 모두
 
    ![chlimage_1-18](assets/chlimage_1-3.png)
 
-   자산 `Fiji Red.jpg`의 `dc:format`이(가) `image/jpeg`입니다.
+   자산 `dc:format`의 `Fiji Red.jpg`이(가) `image/jpeg`입니다.
 
    이 필터가 형식에 관계없이 모든 이미지에 적용되도록 하려면 값을 `image/*`(으)로 설정합니다. 여기서 `*`은(는) 모든 형식의 모든 이미지에 적용되는 정규 표현식입니다.
 

@@ -6,9 +6,9 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 810be820-b577-4035-9fda-3d919361c58c
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1696'
 ht-degree: 1%
 
 ---
@@ -17,18 +17,18 @@ ht-degree: 1%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager]에서 관리자 액세스 권한이 있는 사용자가 향상된 커넥터를 설치한 후 구성합니다. 설치 지침은 [커넥터 설치](/help/assets/workfront-integrations.md)를 참조하십시오.
 
 >[!IMPORTANT]
 >
->* Adobe에서는 인증된 파트너 또는 [!DNL Adobe Professional Services]을(를) 통해서만 [!DNL Adobe Workfront for Experience Manager enhanced connector]을(를) 배포하고 구성해야 합니다. 인증 파트너 또는 [!DNL Adobe Professional Services] 없이 배포 및 구성된 경우 Adobe에서 지원하지 않습니다.
+>* Adobe에서는 인증된 파트너 또는 [!DNL Adobe Workfront for Experience Manager enhanced connector]을(를) 통해서만 [!DNL Adobe Professional Services]을(를) 배포하고 구성해야 합니다. 인증 파트너 또는 [!DNL Adobe Professional Services] 없이 배포 및 구성된 경우 Adobe에서 지원하지 않습니다.
 >
 >* Adobe은 이 커넥터를 중복 커넥터로 만드는 [!DNL Adobe Workfront] 및 [!DNL Adobe Experience Manager]에 대한 업데이트를 릴리스할 수 있습니다. 이러한 경우 고객은 이 커넥터를 사용하지 않도록 전환해야 할 수 있습니다.
 >
->* Adobe은 향상된 커넥터 버전 1.7.4 이상을 지원합니다. 이전 프리릴리스 및 사용자 지정 버전은 지원되지 않습니다. 향상된 커넥터 버전을 확인하려면 [패키지 관리자](/help/sites-administering/package-manager.md)의 왼쪽 창에서 사용할 수 있는 `digital.hoodoo` 그룹으로 이동하십시오.
+>* Adobe은 향상된 커넥터 버전 1.7.4 이상을 지원합니다. 이전 프리릴리스 및 사용자 지정 버전은 지원되지 않습니다. 향상된 커넥터 버전을 확인하려면 `digital.hoodoo`패키지 관리자[의 왼쪽 창에서 사용할 수 있는 ](/help/sites-administering/package-manager.md) 그룹으로 이동하십시오.
 >
 >* [Workfront for Experience Manager Assets 강화 커넥터에 대한 파트너 인증 시험](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)을 참조하세요. 시험에 대한 자세한 내용은 [시험 가이드](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)를 참조하세요.
 
@@ -59,9 +59,9 @@ ht-degree: 1%
 ### 연결된 폴더 구조 구성 {#linked-folder-structure}
 
 1. 클라우드 서비스의 프로젝트 연결 폴더 탭으로 이동합니다.
-1. 연결된 폴더 상위 경로: 연결된 폴더를 만들려는 DAM의 폴더를 선택합니다. 비워 두면 기본값은 /content/dam으로 설정됩니다. Workfront 도구 메타데이터 스키마 및 Workfront 연결된 폴더 메타데이터 스키마가 선택한 폴더에 적용되었는지 확인합니다.
+1. 연결된 폴더 상위 경로: DAM에서 연결된 폴더를 만들 폴더를 선택합니다. 비워 두면 기본값은 /content/dam으로 설정됩니다. Workfront 도구 메타데이터 스키마 및 Workfront 연결된 폴더 메타데이터 스키마가 선택한 폴더에 적용되었는지 확인합니다.
 1. 연결된 폴더 구조: 쉼표로 구분된 값을 입력합니다. 각 값은 `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name 또는 일부 &quot;Literal String Value&quot;(이 마지막 값은 따옴표로 묶음)여야 합니다. 현재 Portfolio,Program,Year,DE:Project Type,Name으로 설정되어 있습니다.
-1. 권한 구성: `wf-workfront-users` 그룹에 대해 `/conf/workfront-tools/settings/cloudconfigs`에 `jcr:all permissions` 권한을 추가합니다.
+1. 권한 구성: `jcr:all permissions` 그룹에 대해 `/conf/workfront-tools/settings/cloudconfigs`에 `wf-workfront-users` 권한을 추가합니다.
 1. Workfront의 폴더 제목에 구조의 모든 폴더가 포함되어야 하는 경우 폴더 구조 이름 확인란을 사용하여 Workfront에서 연결된 폴더 제목을 작성해야 합니다. 그렇지 않으면 마지막 폴더의 제목입니다.
 1. 하위 폴더 다중 필드를 사용하면 연결된 폴더의 하위 폴더로 만들어야 하는 폴더 목록을 지정할 수 있습니다.
 1. 프로젝트 상태: 연결된 폴더를 만들 프로젝트의 상태를 선택합니다.
@@ -79,10 +79,10 @@ Workfront 프로젝트와 AEM 폴더 간의 메타데이터 매핑은 AEM 폴더
 
 매핑을 구성하려면 다음 단계를 수행합니다.
 
-1. `wf-workfront-users` 그룹에 대해 `/conf/global/settings/dam/adminui-extension/foldermetadataschema`에 `jcr:read` 권한을 추가하십시오.
+1. `jcr:read` 그룹에 대해 `/conf/global/settings/dam/adminui-extension/foldermetadataschema`에 `wf-workfront-users` 권한을 추가하십시오.
 1. **[!UICONTROL 도구]** > **[!UICONTROL Assets]** > **[!UICONTROL 폴더 메타데이터 스키마]**&#x200B;로 이동합니다.
-1. 편집하려는 폴더 메타데이터 스키마 양식을 선택하고 편집을 누릅니다.
-1. 편집하려는 폴더 메타데이터 스키마 양식 필드를 선택하고 오른쪽 패널에서 설정 탭을 선택합니다.
+1. 편집할 폴더 메타데이터 스키마 양식을 선택하고 편집을 누릅니다.
+1. 편집할 폴더 메타데이터 스키마 양식 필드를 선택하고 오른쪽 패널에서 설정 탭을 선택합니다.
 1. [!UICONTROL Workfront 필드에서 매핑됨] 필드에서 선택한 AEM 폴더 속성에 매핑할 Workfront 필드의 이름을 선택합니다. 사용 가능한 옵션은 다음과 같습니다.
 
    * 프로젝트 사용자 정의 양식 필드
@@ -107,7 +107,7 @@ Adobe Workfront 문서와 Assets 간의 메타데이터 매핑은 AEM 메타데�
    * 작업 사용자 정의 양식 필드
    * 프로젝트 개요 필드(ID, 이름, 설명 또는 참조 번호)
 
-1. [!UICONTROL Workfront 사용자 정의 양식 필드]에서 선택한 [!DNL Workfront] 필드가 Workfront 사용자 유형 미리 필드인 경우 매핑할 Workfront 사용자 필드를 지정해야 합니다. 이렇게 하려면 Workfront 참조 개체 필드에서 값 가져오기 를 선택한 다음 매핑할 값을 검색할 [!UICONTROL Workfront 사용자 정의 양식 필드]의 이름을 지정하십시오.
+1. [!DNL Workfront]Workfront 사용자 정의 양식 필드[!UICONTROL 에서 선택한 ] 필드가 Workfront 사용자 유형 미리 필드인 경우 매핑할 Workfront 사용자 필드를 지정해야 합니다. 이렇게 하려면 Workfront 참조 개체 필드에서 값 가져오기 를 선택한 다음 매핑할 값을 검색할 [!UICONTROL Workfront 사용자 정의 양식 필드]의 이름을 지정하십시오.
 
    ![메타데이터 매핑 구성](/help/assets/assets/wf-metadata-mapping-config1.png)
 
@@ -126,7 +126,7 @@ Adobe Workfront 문서와 Assets 간의 메타데이터 매핑은 AEM 메타데�
    * 접두사 `DE:`(으)로 식별된 사용자 정의 양식 필드.
    * 이름으로 식별되는 편집 가능한 필드. 필드 이름이 [[!DNL Workfront] API 탐색기](https://experience.workfront.com/s/api-explorer)에 있습니다.
 
-* `aem-mapped-property`은(는) 다음과 같을 수 있습니다.
+* `aem-mapped-property`는 다음과 같습니다.
 
    * 리터럴 값. 따옴표로 묶어야 합니다.
    * AEM 속성. 이 참조는 워크플로우 페이로드에 상대적이어야 합니다.
@@ -197,12 +197,12 @@ Experience Manager의 워크플로 편집기에서 [!UICONTROL Workfront - 사�
 
 1. **[!UICONTROL Workfront에서 전송할 때 자동으로 자산 게시]**&#x200B;를 선택합니다. 이 옵션을 사용하면 Workfront에서 AEM으로 에셋을 전송할 때 에셋을 자동으로 게시할 수 있습니다. 이 기능은 Workfront 사용자 정의 양식 필드 및 설정해야 하는 값을 지정하여 조건부로 활성화할 수 있습니다. 문서가 AEM으로 전송될 때마다 해당 조건을 충족하면 자산이 자동으로 게시됩니다.
 
-1. **[!UICONTROL 프로젝트 완료 시 모든 프로젝트 자산을 Brand Portal에 게시]**&#x200B;를 선택합니다. 이 옵션을 사용하면 에셋이 속한 Workfront 프로젝트의 상태가 `Complete`(으)로 변경될 때 에셋을 [!DNL Brand Portal]에 자동으로 게시할 수 있습니다.
+1. **[!UICONTROL 프로젝트 완료 시 모든 프로젝트 자산을 Brand Portal에 게시]**&#x200B;를 선택합니다. 이 옵션을 사용하면 에셋이 속한 Workfront 프로젝트의 상태가 [!DNL Brand Portal]&#x200B;(으)로 변경될 때 에셋을 `Complete`에 자동으로 게시할 수 있습니다.
 
 ![자동 게시 구성](/help/assets/assets/wf-auto-publish-config.png)
 
 ## Workfront 문서 사용자 정의 양식 업데이트 {#subscribe-workfront-doc-custom-form-updates}
 
-[!DNL Workfront] 문서 사용자 정의 양식의 변경 내용을 구독하려면 **[!UICONTROL 고급]** 탭에서 관련 옵션을 선택하십시오. 이 업데이트를 구독하면 [!DNL Workfront] 문서 사용자 지정 양식의 해당 필드가 변경될 때 매핑된 [!DNL Experience Manager] 메타데이터 필드가 업데이트됩니다.
+[!DNL Workfront] 문서 사용자 정의 양식의 변경 내용을 구독하려면 **[!UICONTROL 고급]** 탭에서 관련 옵션을 선택하십시오. 이 업데이트를 구독하면 [!DNL Experience Manager] 문서 사용자 지정 양식의 해당 필드가 변경될 때 매핑된 [!DNL Workfront] 메타데이터 필드가 업데이트됩니다.
 
-[!DNL Experience Manager]![&#128279;](/help/assets/assets/wf-custom-form-update.png)의 Workfront 문서 사용자 지정 양식 업데이트 구성
+![의 [!DNL Experience Manager]](/help/assets/assets/wf-custom-form-update.png)Workfront 문서 사용자 지정 양식 업데이트 구성

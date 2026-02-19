@@ -1,20 +1,20 @@
 ---
 title: JEE Workbench의 AEM Forms에서 스크립트 서비스 실행을 사용하여 XML 데이터를 작성하는 방법
-description: JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드
+description: JEE Workbench의 AEM Forms에서 실행 스크립트 서비스를 사용하여 XML 데이터 빌드
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2f49cb29-698b-43ab-971f-81e2b18e6fa9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터 빌드 {#using-execute-script-service-forms-jee-workbench}
+# JEE Workbench의 AEM Forms에서 실행 스크립트 서비스를 사용하여 XML 데이터 빌드 {#using-execute-script-service-forms-jee-workbench}
 
 XML 정보는 프로세스에서 작성되어 JEE Workspace의 AEM Forms 애플리케이션에 전송되거나, 시스템 설정에 사용되거나, 양식 간에 정보를 전달하는 등 JEE의 AEM Forms Flex Process Management 워크플로와 관련된 다양한 XML이 있습니다. AEM Forms on JEE 개발자가 XML을 관리해야 하는 경우가 많으며, 이를 위해서는 AEM Forms on JEE 프로세스를 통해 XML을 관리해야 하는 경우가 많습니다.
 
@@ -34,7 +34,7 @@ JEE Workbench의 AEM Forms에서 사용할 수 있는 표준 AEM Forms on JEE �
 1. 시작 지점을 정의하거나 나중에 시작 지점을 추가하도록 간단하게 선택합니다.
 1. 이제 프로세스가 만들어지고 [!UICONTROL 프로세스 디자인] 창에서 자동으로 열립니다. 이 창에서 프로세스 디자인 창 상단의 활동 선택기 아이콘을 클릭하고 새 활동을 스윔으로 드래그합니다. 이때 [!UICONTROL 활동 정의]가 표시됩니다(아래 그림 참조).
    ![활동 정의](assets/define-activity.jpg)
-1. executeScript 서비스는 `Foundation` 서비스 집합에서 찾을 수 있습니다. 서비스 이름에 작업 이름이 `executeScript`인 `Execute Script – 1.0`(으)로 개체가 나열됩니다. 을(를) 클릭하여 이 항목을 선택합니다.
+1. executeScript 서비스는 `Foundation` 서비스 집합에서 찾을 수 있습니다. 서비스 이름에 작업 이름이 `Execute Script – 1.0`인 `executeScript`(으)로 개체가 나열됩니다. 을(를) 클릭하여 이 항목을 선택합니다.
 1. 이제 이 프로세스를 만들어야 하며 기본적으로 [!UICONTROL 프로세스 속성] 창이 왼쪽 창에 나타납니다.
 
 #### &quot;스크립트 실행&quot; 서비스를 사용하여 프로세스에 스크립트 추가 {#add-script-to-process-with-execute-script}

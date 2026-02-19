@@ -7,10 +7,10 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 5e1f1f3c-a2f3-4bf1-ba96-a02f8b16c180
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -44,15 +44,15 @@ Rights Management SPI를 사용하려면 프로젝트의 클래스 경로에 `ed
 
 ## 외부 사용자 초대 핸들러 구현 정의 {#define-invite-external-users-handler}
 
-외부 사용자 초대 핸들러를 개발하려면 `com.adobe.edc.server.spi.ersp.InvitedUserProvider` 인터페이스를 구현하는 Java 클래스를 만들어야 합니다. 이 클래스에는 관리 콘솔을 통해 액세스할 수 있는 **초대된 사용자 추가** 페이지를 사용하여 전자 메일 주소를 제출하면 Rights Management 서비스가 호출하는 `invitedUser` 메서드가 포함되어 있습니다.
+외부 사용자 초대 핸들러를 개발하려면 `com.adobe.edc.server.spi.ersp.InvitedUserProvider` 인터페이스를 구현하는 Java 클래스를 만들어야 합니다. 이 클래스에는 관리 콘솔을 통해 액세스할 수 있는 `invitedUser`초대된 사용자 추가&#x200B;**페이지를 사용하여 전자 메일 주소를 제출하면 Rights Management 서비스가 호출하는** 메서드가 포함되어 있습니다.
 
-`invitedUser` 메서드가 **초대된 사용자 추가** 페이지에서 제출된 문자열 형식의 전자 메일 주소를 포함하는 `java.util.List` 인스턴스를 수락합니다. `invitedUser` 메서드는 `InvitedUserProviderResult` 개체의 배열을 반환합니다. 이 개체는 일반적으로 사용자 개체에 대한 전자 메일 주소의 매핑입니다(null을 반환하지 않음).
+`invitedUser` 메서드가 `java.util.List`초대된 사용자 추가&#x200B;**페이지에서 제출된 문자열 형식의 전자 메일 주소를 포함하는** 인스턴스를 수락합니다. `invitedUser` 메서드는 `InvitedUserProviderResult` 개체의 배열을 반환합니다. 이 개체는 일반적으로 사용자 개체에 대한 전자 메일 주소의 매핑입니다(null을 반환하지 않음).
 
 >[!NOTE]
 >
 >이 섹션에서는 외부 사용자 초대 핸들러를 만드는 방법을 보여 주는 것 외에도 AEM Forms API를 사용합니다.
 
-외부 사용자 초대 처리기의 구현에 이름이 `createLocalPrincipalAccount`인 사용자 정의 메서드가 있습니다. 이 메서드는 이메일 주소를 매개 변수 값으로 지정하는 문자열 값을 수락합니다. `createLocalPrincipalAccount` 메서드는 `EDC_EXTERNAL_REGISTERED`(이)라는 로컬 도메인이 있다고 가정합니다. 이 도메인 이름을 원하는 대로 구성할 수 있습니다. 하지만 프로덕션 애플리케이션의 경우 엔터프라이즈 도메인과 통합할 수 있습니다.
+외부 사용자 초대 처리기의 구현에 이름이 `createLocalPrincipalAccount`인 사용자 정의 메서드가 있습니다. 이 메서드는 이메일 주소를 매개 변수 값으로 지정하는 문자열 값을 수락합니다. `createLocalPrincipalAccount` 메서드는 `EDC_EXTERNAL_REGISTERED`(이)라는 로컬 도메인이 있다고 가정합니다. 이 도메인 이름을 원하는 대로 구성할 수 있지만, 프로덕션 애플리케이션의 경우 엔터프라이즈 도메인과 통합할 수 있습니다.
 
 `createUsers` 메서드는 모든 이메일 주소를 반복하고 해당 사용자 개체(`EDC_EXTERNAL_REGISTERED` 도메인의 로컬 사용자)를 만듭니다. 마지막으로 `doEmails` 메서드가 호출됩니다. 이 방법은 의도적으로 시료에 스터브로 남겨 둔다. 프로덕션 구현에서는 새로 생성된 사용자에게 초대 이메일 메시지를 보내는 애플리케이션 논리를 포함합니다. 실제 응용 프로그램의 응용 프로그램 논리 흐름을 보여 주기 위해 샘플에 남습니다.
 
@@ -93,7 +93,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
     local_user.setEmail( email_address ); 
     local_user.setEmailAliases( aliases ); 
          
-    //  You may wish to disable the local user until, for example, his registration is processed by a confirmation link 
+    //  You may want to disable the local user until, for example, his registration is processed by a confirmation link 
     //local_user.setDisabled( true ); 
  
     DirectoryManager directory_manager = new DirectoryManagerServiceClient( _factory ); 
@@ -236,11 +236,11 @@ A. 구성 요소 B. JAVA 파일에 필요한 외부 JAR 파일
 관리 콘솔을 사용하여 초대할 외부 사용자를 추가하려면 다음 작업을 수행하십시오.
 
 1. Workbench를 사용하여 외부 사용자 초대 핸들러의 JAR 파일을 배포합니다.
-1. 응용 프로그램 서버를 다시 시작합니다.
+1. 애플리케이션 서버를 다시 시작합니다.
 
    >[!NOTE]
    >
-   > SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+   > SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
 1. 관리 콘솔에 로그인합니다.
 1. **[!UICONTROL 서비스]** > **[!UICONTROL Rights Management]** > **[!UICONTROL 구성]** > 초대됨 **[!UICONTROL 사용자 등록]**&#x200B;을 클릭합니다.

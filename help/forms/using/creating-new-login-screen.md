@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 3e20857b-05bb-4f44-8011-550bdaf857c5
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 
 1. 관리자 권한으로 `/lc/crx/de`에 로그인합니다.
 1. 다음 작업을 수행합니다.
 
-   1. `/apps/livecycle/core/content`에 있는 `/libs/livecycle/core/content`의 계층 구조를 복제합니다.
+   1. `/libs/livecycle/core/content`에 있는 `/apps/livecycle/core/content`의 계층 구조를 복제합니다.
 
       동일한 (노드/폴더) 속성 및 액세스 제어를 유지합니다.
 
@@ -35,7 +35,7 @@ AEM Forms 로그인 화면을 사용하는 모든 AEM Forms 모듈의 로그인 
 
 1. 다음 작업을 수행합니다.
 
-   1. `/apps/livecycle/core/components/login`에 있는 `/libs/livecycle/core/components/login`의 계층 구조를 복제합니다. 동일한 (노드/폴더) 속성 및 액세스 제어를 유지합니다.
+   1. `/libs/livecycle/core/components/login`에 있는 `/apps/livecycle/core/components/login`의 계층 구조를 복제합니다. 동일한 (노드/폴더) 속성 및 액세스 제어를 유지합니다.
 
    1. 구성 요소 폴더를 `/libs/livecycle/core`에서 `/apps/livecycle/core`(으)로 복사합니다.
 
@@ -241,7 +241,7 @@ String browserLocale = "en";
    * 변환 전: `/libs/livecycle/core/content`
    * `/apps/livecycle/core/content`에
 
-1. `/apps/livecycle/core/content/login.` 노드에서 `login.js` 및 `jquery-1.8.0.min.js` 파일을 삭제합니다.
+1. `login.js` 노드에서 `jquery-1.8.0.min.js` 및 `/apps/livecycle/core/content/login.` 파일을 삭제합니다.
 1. CSS 파일의 스타일을 수정합니다.
 1. 새 스타일을 추가하려면:
 
@@ -293,7 +293,7 @@ css.newLoginContentArea {
 
    1. 새 이미지를 추가합니다.
 
-1. `/apps/livecycle/core/content/login`에 추가된 새 이미지에 해당하는 새 스타일을 `/apps/livecycle/core/content/login/login.css,`에 추가합니다.
+1. `/apps/livecycle/core/content/login/login.css,`에 추가된 새 이미지에 해당하는 새 스타일을 `/apps/livecycle/core/content/login`에 추가합니다.
 1. `login.jsp`의 `/apps/livecycle/core/components`에서 새 스타일을 사용합니다.
 
 예:
