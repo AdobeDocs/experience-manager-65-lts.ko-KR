@@ -43,7 +43,7 @@ Dynamic Media - Scene7 모드에서 기본 업로드 파일 크기는 2GB 이하
 
 ## Scene7 모드에서 Dynamic Media 활성화 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)은(는) 기본적으로 비활성화되어 있습니다. Dynamic Media 기능을 이용하려면 이 기능을 활성화해야 합니다.
+[Dynamic Media](https://business.adobe.com/kr/products/experience-manager/assets/dynamic-media.html)은(는) 기본적으로 비활성화되어 있습니다. Dynamic Media 기능을 이용하려면 이 기능을 활성화해야 합니다.
 
 >[!WARNING]
 >
@@ -75,13 +75,13 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 기능 팩 18912 설치는 *선택 사항*&#x200B;입니다.
 
-기능 팩 18912을 사용하면 FTP를 통해 자산을 대량 수집하거나 Dynamic Media - 하이브리드 모드 또는 Dynamic Media Classic에서 Experience Manager의 Dynamic Media - Scene7 모드로 자산을 마이그레이션할 수 있습니다. [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)에서 사용할 수 있습니다.
+기능 팩 18912을 사용하면 FTP를 통해 자산을 대량 수집하거나 Dynamic Media - 하이브리드 모드 또는 Dynamic Media Classic에서 Experience Manager의 Dynamic Media - Scene7 모드로 자산을 마이그레이션할 수 있습니다. [Adobe Professional Services](https://business.adobe.com/kr/customers/consulting-services/main.html)에서 사용할 수 있습니다.
 
 자세한 내용은 [일괄 에셋 18912을 위한 기능 팩 설치](/help/assets/bulk-ingest-migrate.md)를 참조하십시오.
 
 ## 클라우드 서비스에서 Dynamic Media 구성 만들기 {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
@@ -246,7 +246,7 @@ Dynamic Media - Scene7 모드에서 기본 자산 업로드 파일 크기는 2GB
 이 기능을 사용하려면 다음 사전 요구 사항과 점에 유의하십시오.
 
 * Dynamic Media - Scene7 모드에서 Experience Manager 6.5 LTS를 실행 중이어야 합니다.
-* 이 대용량 업로드 기능은 [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html) 고객에게만 지원됩니다.
+* 이 대용량 업로드 기능은 [*Managed Services*](https://business.adobe.com/kr/products/experience-manager/managed-services.html) 고객에게만 지원됩니다.
 * Experience Manager 인스턴스가 Amazon S3 또는 Microsoft® Azure Blob 스토리지로 구성되어 있는지 확인하십시오.
 
   >[!NOTE]
@@ -465,7 +465,7 @@ Experience Manager Assets에서 지원되지 않는 형식에 대한 사용자 �
 
 **기본 이름 지정을 구성하려면:**
 
-1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하세요.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started)을 연 다음 계정에 로그인하세요.
 
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
@@ -499,7 +499,7 @@ Dynamic Media는 일괄처리 집합 사전 설정을 사용하여 뷰어에 표
 
 **일괄처리 집합 사전 설정을 만들려면:**
 
-1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하세요.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started)을 연 다음 계정에 로그인하세요.
 
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
@@ -555,7 +555,7 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 
 **2D 회전 집합의 자동 생성을 위한 일괄처리 집합 사전 설정을 만들려면:**
 
-1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)을 연 다음 계정에 로그인하세요.
+1. [Dynamic Media Classic 데스크톱 응용 프로그램](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ko#getting-started)을 연 다음 계정에 로그인하세요.
 
    자격 증명 및 로그인 세부 정보는 프로비저닝 시 Adobe에서 제공했습니다. 이 정보가 없는 경우 Adobe 고객 지원 센터에 문의하십시오.
 
