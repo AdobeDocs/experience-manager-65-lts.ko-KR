@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
 exl-id: 686d5510-8cdb-49eb-9ed0-f360be9bdc6d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d680ecf942886a61579cf72f82809e3dbbcfd394
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 86%
@@ -71,7 +71,7 @@ GraphiQL IDE는 쿼리를 지속할 수 있는 **기본** 방법입니다. **cUR
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -117,7 +117,7 @@ GraphiQL IDE는 쿼리를 지속할 수 있는 **기본** 방법입니다. **cUR
 
    ```shell
    $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -143,7 +143,7 @@ GraphiQL IDE는 쿼리를 지속할 수 있는 **기본** 방법입니다. **cUR
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-wrapped" \
        -d \
@@ -156,7 +156,7 @@ GraphiQL IDE는 쿼리를 지속할 수 있는 **기본** 방법입니다. **cUR
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
        -d \
@@ -169,7 +169,7 @@ GraphiQL IDE는 쿼리를 지속할 수 있는 **기본** 방법입니다. **cUR
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-parameters" \
        -d \
@@ -265,7 +265,7 @@ query getAdventuresByActivity($activity: String!) {
 
 ## 지속 쿼리 캐싱 {#caching-persisted-queries}
 
-지속 쿼리는 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 및 CDN(Content Delivery Network) 계층에서 캐시될 수 있어 궁극적으로 요청하는 클라이언트 애플리케이션의 성능이 향상되므로 이를 사용하는 것이 좋습니다.
+지속 쿼리는 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 및 CDN(Content Delivery Network) 계층에서 캐시될 수 있어 궁극적으로 요청하는 클라이언트 애플리케이션의 성능이 향상되므로 이를 사용하는 것이 좋습니다.
 
 기본적으로 AEM은 TTL(Time To Live) 정의에 따라 캐시를 무효화합니다. 이러한 TTL은 다음 매개변수로 정의할 수 있습니다. 이러한 매개변수는 다양한 방법으로 액세스할 수 있으며, 사용되는 메커니즘에 따라 이름이 다양합니다.
 
@@ -353,7 +353,7 @@ curl -u admin:admin -X POST \
 
 ### OSGi 구성으로 캐시 관리 {#cache-osgi-configration}
 
-캐시를 전체적으로 관리하려면 **지속 쿼리 서비스 구성**&#x200B;에 대해 [OSGi 설정을 구성](/help/sites-deploying/configuring-osgi.md)할 수 있습니다. 그렇지 않으면 이 OSGi 구성은 [게시 인스턴스의 기본값](#publish-instances)을 사용합니다.
+캐시를 전체적으로 관리하려면 [지속 쿼리 서비스 구성](/help/sites-deploying/configuring-osgi.md)에 대해 **OSGi 설정을 구성**&#x200B;할 수 있습니다. 그렇지 않으면 이 OSGi 구성은 [게시 인스턴스의 기본값](#publish-instances)을 사용합니다.
 
 >[!NOTE]
 >
