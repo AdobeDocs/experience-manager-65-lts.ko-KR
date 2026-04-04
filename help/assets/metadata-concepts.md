@@ -71,7 +71,7 @@ ht-degree: 7%
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform]&#x200B;(XMP)은 [!DNL Experience Manager Assets]에서 모든 메타데이터 관리에 사용하는 개방형 표준입니다. 이 표준은 모든 파일 형식에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe을 비롯한 여러 회사는 풍부한 콘텐츠 모델을 제공하기 때문에 XMP standard를 지원합니다. XMP standard 및 [!DNL Experience Manager Assets]의 사용자는 빌드할 강력한 플랫폼이 있습니다. 자세한 내용은 [XMP](https://www.adobe.com/products/xmp.html)을 참조하세요.
+[!DNL Extensible Metadata Platform]&#x200B;(XMP)은 [!DNL Experience Manager Assets]에서 모든 메타데이터 관리에 사용하는 개방형 표준입니다. 이 표준은 모든 파일 형식에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe을 비롯한 여러 회사는 풍부한 콘텐츠 모델을 제공하기 때문에 XMP standard를 지원합니다. XMP standard 및 [!DNL Experience Manager Assets]의 사용자는 빌드할 강력한 플랫폼이 있습니다. 자세한 내용은 [XMP](https://www.adobe.com/kr/products/xmp.html)을 참조하세요.
 
 ### ID3 {#id}
 
