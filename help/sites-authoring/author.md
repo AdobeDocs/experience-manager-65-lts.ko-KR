@@ -81,4 +81,4 @@ AEM에서는 두 가지 환경을 제공합니다.
 
 #### Dispatcher {#dispatcher}
 
-웹 사이트 방문자가 체감하는 성능을 최적화하기 위해 **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)**&#x200B;에서 부하 분산 및 캐싱을 구현합니다.
+웹 사이트 방문자가 체감하는 성능을 최적화하기 위해 **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)**&#x200B;에서 부하 분산 및 캐싱을 구현합니다.
