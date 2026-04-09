@@ -137,7 +137,7 @@ function Home() {
 
 그런 다음 SPA에 추가하고 콘텐츠를 검색할 수 있습니다.
 
-1. SPA에서 이에 대한 해당 구성 요소를 만듭니다. 하위 구성 요소가 SPA 프로젝트 내의 해당 AEM 리소스 유형에 매핑되어 있는지 확인합니다. 이 예제에서는 앞의 `AEMText`과(와) 동일한 `AEMImage` 및 [ 구성 요소를 사용합니다.](#component-does-not-exist)
+1. SPA에서 이에 대한 해당 구성 요소를 만듭니다. 하위 구성 요소가 SPA 프로젝트 내의 해당 AEM 리소스 유형에 매핑되어 있는지 확인합니다. 이 예제에서는 앞의 `AEMText`과(와) 동일한 `AEMImage` 및 [&#x200B; 구성 요소를 사용합니다.](#component-does-not-exist)
 
    ```javascript
    import React from 'react';
