@@ -3,9 +3,9 @@ title: 데이터 보호 및 데이터 개인 정보 보호 규정 - Adobe Experi
 description: 다양한 데이터 보호 및 데이터 개인 정보 보호 규정에 대한 Adobe Experience Manager 지원을 알아봅니다. 여기에는 EU 일반 데이터 보호 규정(GDPR), 캘리포니아 소비자 개인 정보 보호법 및 새로운 AEM 프로젝트 구현 시 이들 규정을 준수하는 방법이 포함되어 있습니다.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
+role: Developer,Leader,User
 exl-id: 6faf8e4f-ca2a-4d68-a354-fb0aa6c2644b
-source-git-commit: 4a93e17da1157253a681bf8b3a38252962d8fb59
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 98%
@@ -104,7 +104,7 @@ Adobe Experience Manager 통합은 데이터 보호 및 개인 정보 보호(예
 
 * [Adobe Target - 개인정보 보호 개요](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)
 
-* [Adobe Analytics 데이터 개인정보 보호 워크플로](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=ko)
+* [Adobe Analytics 데이터 개인정보 보호 워크플로](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
 
 ## AEM Forms {#aem-forms}
 

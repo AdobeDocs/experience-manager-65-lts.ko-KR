@@ -7,12 +7,12 @@ content-type: reference
 topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: debcc73f-c2bb-4e3a-8ebf-c7590264d289
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 4%
+source-wordcount: '640'
+ht-degree: 5%
 
 ---
 
@@ -74,7 +74,7 @@ Analytics-Administrators 사용자 그룹의 구성원은 작성자가 추가 An
 
 ### 사이트에서 컨텐츠 인사이트 열기 {#opening-content-insights-from-sites}
 
-사이트 콘솔에서 [콘텐츠 인사이트](/help/sites-authoring/content-insights.md)를 열어 페이지 효율성을 자세히 조사하십시오.
+사이트 콘솔에서 [컨텐츠 Insight](/help/sites-authoring/content-insights.md)을(를) 열어 페이지 효과를 자세히 조사하십시오.
 
 1. 사이트 콘솔에서 컨텐츠 인사이트를 보려는 페이지를 선택합니다.
 1. 도구 모음에서 Analytics 및 권장 사항 아이콘을 클릭합니다.

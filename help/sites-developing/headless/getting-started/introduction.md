@@ -3,9 +3,9 @@ title: Headless 시작 안내서
 description: 이 빠른 시작 안내서를 통해 콘텐츠 모델, 콘텐츠 조각 및 GraphQL API와 같은 Adobe Experience Manager(AEM) 6.5의 강력한 Headless 기능의 필수 사항에 대해 알아보십시오.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 867613e7-59fe-4948-a19a-bd196aec737b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 39%

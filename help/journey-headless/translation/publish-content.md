@@ -3,9 +3,9 @@ title: 번역된 콘텐츠 게시
 description: 번역된 콘텐츠를 게시하고 콘텐츠가 업데이트될 때 번역을 업데이트하는 방법에 대해 알아봅니다.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: 1543c167-ca69-4481-835f-932d93850a53
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 80%
@@ -70,9 +70,9 @@ AEM Headless 번역 여정의 이전 문서인 [콘텐츠 번역](configure-conn
 1. 여기에서 언어 루트 폴더 및 모든 기타 언어 폴더를 볼 수 있습니다. 게시하고자 하는 현지화된 언어를 선택합니다.
    ![언어 폴더 선택](assets/select-language-folder.png)
 1. **게시 관리**&#x200B;를 클릭합니다.
-1. **게시 관리** 창에서 **작업**&#x200B;에서는 **게시**&#x200B;가 자동으로 선택되어 있고 **예약**&#x200B;에서는 **지금**&#x200B;이 선택되어 있는지 확인하십시오. **다음**&#x200B;을 클릭합니다.
+1. **게시 관리** 창에서 **작업**&#x200B;에서는 **게시**&#x200B;가 자동으로 선택되어 있고 **예약**&#x200B;에서는 **지금**&#x200B;이 선택되어 있는지 확인하십시오. **다음**을 클릭합니다.
    ![게시 관리 옵션](assets/manage-publication-options.png)
-1. 다음 **게시 관리** 창에서는 올바른 경로가 선택되었는지 확인합니다. **게시**&#x200B;를 클릭합니다.
+1. 다음 **게시 관리** 창에서는 올바른 경로가 선택되었는지 확인합니다. **게시**를 클릭합니다.
    ![게시 범위 관리](assets/manage-publication-scope.png)
 1. AEM은 화면 상단의 팝업 메시지를 사용하여 게시 작업을 확인합니다.
    ![리소스 게시 배너](assets/resources-published-message.png)

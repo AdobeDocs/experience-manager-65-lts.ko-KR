@@ -3,9 +3,9 @@ title: 검사 목록
 description: 프로젝트 체크리스트는 프로젝트를 제공할 때 활용할 수 있는 모범 사례 집합입니다. 프로젝트 수명 주기의 모든 단계를 안내하고 현재 상태에 대한 높은 수준의 모니터링을 제공합니다.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: 4a7d8228-101a-47bd-9bcf-d521a69d87a0
-source-git-commit: 343fe14be5c85eecdd34f7428460ee016e97734b
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%

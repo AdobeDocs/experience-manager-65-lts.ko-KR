@@ -3,9 +3,9 @@ title: AEM에서 콘텐츠를 만들 때 작성자를 위한 첫 번째 단계
 description: AEM 6.5 LTS에서 콘텐츠를 만들고 작성하는 데 필요한 핵심 개념을 살펴보십시오. 태그, 템플릿 및 기타 페이지 기능을 사용하는 방법에 대한 정보도 찾을 수 있습니다.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 8fc30cfe-cb10-47ba-911c-e4fdfaa970b5
-source-git-commit: 31370571843508acfb5d1e5cc491fdb043153a8f
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 13%

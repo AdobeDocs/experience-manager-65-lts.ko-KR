@@ -1,26 +1,26 @@
 ---
 title: AEM 설명서 여정
-description: 설명서 여정은 모범 사례 방식으로 비즈니스 목표를 해결하기 위해 복잡하고 다양한 기능을 결합하여 AEM 설명서 내에 서술적 구조를 제공합니다. AEM 초보자용으로 설계된 여정은 A에서 Z까지 목표를 달성하기 위한 개념과 기능을 소개합니다.
+description: 설명서 여정은 모범 사례 방식으로 비즈니스 목표를 해결할 수 있도록 복잡하고 다양한 기능을 결합하여 AEM 설명서 내에 서술적 구조를 제공합니다. AEM 초보자용으로 설계된 여정은 A에서 Z까지 목표를 달성하기 위한 개념과 기능을 소개합니다.
 solution: Experience Manager, Experience Manager Sites
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 feature: Administering
 exl-id: 5de9469f-b92f-42f6-a187-0c6835ad972c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1222'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # AEM 설명서 여정 {#aem-documentation-journeys}
 
-설명서 여정은 모범 사례 방식으로 비즈니스 목표를 해결하기 위해 복잡하고 다양한 기능을 결합하여 AEM 설명서 내에 서술적 구조를 제공합니다. AEM 초보자용으로 설계된 여정은 A에서 Z까지 목표를 달성하기 위한 개념과 기능을 소개합니다.
+설명서 여정은 모범 사례 방식으로 비즈니스 목표를 해결할 수 있도록 복잡하고 다양한 기능을 결합하여 AEM 설명서 내에 서술적 구조를 제공합니다. AEM 초보자용으로 설계된 여정은 A에서 Z까지 목표를 달성하기 위한 개념과 기능을 소개합니다.
 
-## 설명서 여정이란? {#what-is}
+## 설명서 여정이란 무엇입니까? {#what-is}
 
 설명서 여정은 AEM을 처음 접할 수 있는 독자가 최소한의 사전 주제 또는 AEM 지식을 전제로 비즈니스 문제를 처음부터 끝까지 이해하고 해결하는 데 도움이 되는 묘사를 제공하여 다양하고 복잡한 주제와 기능을 결합합니다.
 
-설명서 여정은 AEM에 익숙하다고 가정하고 단일 기능 및 작업 설명서에 주로 중점을 두는 AEM의 기존 기술 문서와는 대조적입니다. 설명서 여정은 개념에 초점을 맞추고 기존 기술 설명서에 대한 세부 정보를 심층적으로 살펴봄으로써 AEM을 처음 사용하는 독자가 일반적인 비즈니스 요구 사항과 워크플로를 해결하기 위해 모범 사례를 사용하여 플랫폼을 사용하는 방법을 이해할 수 있는 공간을 제공합니다. 따라서 설명서 여정은 [AEM의 기존 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko)를 대체하는 것이 아닌 보완하는 역할을 합니다.
+설명서 여정은 AEM에 익숙하다고 가정하고 단일 기능 및 작업 설명서에 주로 중점을 두는 AEM의 기존 기술 문서와는 대조적입니다. 설명서 여정은 개념에 초점을 맞추고 기존 기술 설명서에 대한 세부 정보를 심층적으로 살펴봄으로써 AEM을 처음 사용하는 독자가 일반적인 비즈니스 요구 사항과 워크플로를 해결하기 위해 모범 사례를 사용하여 플랫폼을 사용하는 방법을 이해할 수 있는 공간을 제공합니다. 따라서 설명서 여정은 [AEM의 기존 기술 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html)를 대체하는 것이 아닌 보완하는 역할을 합니다.
 
 ### 이야기를 통한 학습 {#narrative}
 
@@ -69,7 +69,7 @@ AEM 설명서 여정의 주요 목표는 AEM을 처음 사용하는 독자들이
 * 번역 전문가
 * 콘텐츠 설계자
 
-각 여정은 의도한 여정 대상자를 명확히 설명하며 시작합니다. 독립적으로 일할 수 있는 사람은 없으므로, 의도한 대상은 시스템 사용자 또는 담당자의 입력 지원이 필요할 때를 대비하여 여정 내에 명확하게 설명되어 있습니다.
+각 여정은 의도한 여정 대상자를 명확히 설명하며 시작합니다. 독립적으로 일할 수 있는 사람은 없으므로, 의도한 대상은 시스템 사용자 또는 페르소나의 입력이나 지원이 필요할 때는 여정 안에 명확히 설명되어 있습니다.
 
 ## 설명서 여정이 AEM 설명서에 주는 이점 {#compare}
 
@@ -84,12 +84,12 @@ AEM 설명서 여정의 주요 목표는 AEM을 처음 사용하는 독자들이
 
 ## 포함된 여정 {#journeys}
 
-이미 사용 가능한 설명서 여정에는 여러 가지가 있습니다. 각 여정은 내러티브로 설계되었으므로, 소개부터 시작하여 끝까지 읽어 AEM의 맥락에서 주제를 완전히 이해하십시오.
+이미 사용 가능한 설명서 여정에는 여러 가지가 있습니다. 각 여정은 이야기 형식으로 설계되었으므로 AEM의 컨텍스트에서 주제를 완전히 이해하려면 소개부터 끝까지 읽어 보십시오.
 
 | 여정 | 설명 |
 |---|---|
 | [Headless 개발자 여정](/help/journey-headless/developer/overview.md) | 여기에서 AEM이 Headless 개발 모델을 지원하는 방법 및 계획 수립에서 구현, 라이브 실행까지 프로젝트를 시작하는 방법을 살펴보십시오. |
-| [Headless 제작 여정](/help/journey-headless/author/overview.md) | AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 귀하의 첫 Headless 프로젝트에서 콘텐츠를 모델링하는 방법에 대한 가이드 여정을 시작해 보십시오. |
+| [Headless 제작 여정](/help/journey-headless/author/overview.md) | AEM의 강력하고 유연한 Headless 기능과 각각의 능력, 그리고 첫 Headless 프로젝트에서 콘텐츠를 모델링하는 방법에 대한 가이드 여정을 시작해 보십시오. |
 | [Headless 설계 여정](/help/journey-headless/architect/overview.md) | 여기에서 Adobe Experience Manager의 강력하고 유연한 Headless 기능을 접해 보고 프로젝트 콘텐츠를 모델링하는 방법을 알아보십시오. |
 | [Headless 번역 여정](/help/journey-headless/translation/overview.md) | 여기에서 AEM에서 Headless 번역 프로젝트를 설정하고 관리하는 방법을 살펴보십시오. |
 

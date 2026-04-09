@@ -3,9 +3,9 @@ title: 컨텐츠 페이지에 대한 응답형 레이아웃
 description: Adobe Experience Manager을 사용하면 레이아웃 컨테이너 구성 요소를 사용하여 페이지에 대한 응답형 레이아웃을 구현할 수 있습니다.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 06c1c7bc-aecb-4c35-bf30-dcc852540d6c
-source-git-commit: e4d365adbfc08ddd51af692237779ed4e11c532d
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 71%

@@ -2,13 +2,13 @@
 title: ' [!DNL Assets] 배포 모니터링 모범 사례'
 description: 배포 후  [!DNL Adobe Experience Manager] 배포의 환경 및 성능을 모니터링하는 우수 사례입니다.
 contentOwner: AG
-role: Admin, Architect
+role: Admin,Developer
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: d2cb447c-69d6-4659-a29e-02af22b543fd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Threads
 
 **모니터[!DNL Experience Manager]**
 
-[!DNL Experience Manager]은(는) JMX를 통해 통계 및 작업 집합을 노출하기도 합니다. 이는 시스템 상태를 평가하고 사용자에게 영향을 미치기 전에 잠재적인 문제를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 [!DNL Experience Manager] JMX MBean의 [설명서](/help/sites-administering/jmx-console.md)를 참조하십시오.
+[!DNL Experience Manager]은(는) JMX를 통해 통계 및 작업 집합을 노출하기도 합니다. 이는 시스템 상태를 평가하고 사용자에게 영향을 미치기 전에 잠재적인 문제를 식별하는 데 도움이 될 수 있습니다. 자세한 내용은 [ JMX MBean의 ](/help/sites-administering/jmx-console.md)설명서[!DNL Experience Manager]를 참조하십시오.
 
 다음은 [!DNL Experience Manager]에 대해 모니터링할 수 있는 몇 가지 기준 매개 변수입니다.
 
@@ -194,7 +194,7 @@ Threads
 모니터링 과정에서 문제가 발생하는 경우 [!DNL Experience Manager] 배포와 관련된 일반적인 문제를 해결하기 위해 수행할 수 있는 몇 가지 문제 해결 작업이 있습니다.
 
 * TarMK를 사용하는 경우 종종 Tar 압축을 실행합니다. 자세한 내용은 [저장소 유지](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)를 참조하세요.
-* `OutOfMemoryError`개의 로그를 확인하십시오. 자세한 내용은 [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko)을 참조하십시오.
+* `OutOfMemoryError`개의 로그를 확인하십시오. 자세한 내용은 [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)을 참조하십시오.
 
 * 인덱싱되지 않은 쿼리, 트리 트래버스 또는 인덱스 트래버스에 대한 참조를 로그에 확인합니다. 인덱싱되지 않은 쿼리 또는 인덱싱되지 않은 쿼리를 나타냅니다. 쿼리 및 색인화 성능을 최적화하는 방법에 대한 모범 사례는 [쿼리 및 색인화 모범 사례](/help/sites-deploying/best-practices-for-queries-and-indexing.md)를 참조하세요.
 * 워크플로우 콘솔을 사용하여 워크플로우가 예상대로 수행되는지 확인합니다. 가능한 경우 여러 워크플로우를 단일 워크플로우로 압축합니다.

@@ -1,12 +1,12 @@
 ---
 title: 일괄 에셋 마이그레이션
-description: 자산을  [!DNL Adobe Experience Manager] (으)로 가져오고, 메타데이터를 적용하고, 렌디션을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
+description: 자산을  [!DNL Adobe Experience Manager](으)로 가져오고, 메타데이터를 적용하고, 렌디션을 생성하고, 인스턴스를 게시하도록 활성화하는 방법에 대해 설명합니다.
 contentOwner: AG
-role: Architect, Admin
+role: Developer,Admin
 feature: Migration,Renditions,Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: b8328197-6d2a-493d-8098-db4f68f1fcb0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 6%
@@ -92,7 +92,7 @@ https를 통해 푸시하는 접근 방식을 사용하는 데에는 두 가지 
 
 이 문제를 해결하려면 [빠른 작업 관리자](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html)를 사용하여 자산 복제를 관리할 수 있습니다. 이 기능은 Sling 대기열을 사용하지 않고 작동하여 오버헤드를 줄이는 동시에 워크로드를 조정하여 서버가 오버로드되지 않도록 합니다. FAM을 사용하여 복제를 관리하는 예는 기능의 설명서 페이지에 나와 있습니다.
 
-Other options for getting assets to the publish farm include using [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) or [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), which are provided as tools as part of Jackrabbit. 또 다른 옵션은 vlt보다 성능이 빠르다고 주장하는 [Grabbit](https://github.com/TWCable/grabbit)이라는 [!DNL Experience Manager] 인프라에 대해 오픈 소스 도구를 사용하는 것입니다.
+Other options for getting assets to the publish farm include using [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) or [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), which are provided as tools as part of Jackrabbit. 또 다른 옵션은 vlt보다 성능이 빠르다고 주장하는 [!DNL Experience Manager]Grabbit[이라는 ](https://github.com/TWCable/grabbit) 인프라에 대해 오픈 소스 도구를 사용하는 것입니다.
 
 이러한 접근 방식의 경우, 작성자 인스턴스의 자산이 활성화된 것으로 표시되지 않는다는 점에 주의해야 합니다. 이러한 에셋에 올바른 활성화 상태로 플래그를 지정하려면 에셋을 활성화됨으로 표시하는 스크립트도 실행해야 합니다.
 
@@ -106,7 +106,7 @@ Other options for getting assets to the publish farm include using [vlt-rcp](htt
 
 1. 소스 인스턴스 및 데이터 저장소를 백업합니다.
 1. 인스턴스 및 데이터 저장소의 백업을 대상 위치로 복원합니다. 다음 단계는 모두 이 새 인스턴스를 참조합니다.
-1. `sling.id`에 대해 `crx-quickstart/launchpad/felix` 아래의 파일 시스템 검색을 수행합니다. Delete this file.
+1. `crx-quickstart/launchpad/felix`에 대해 `sling.id` 아래의 파일 시스템 검색을 수행합니다. Delete this file.
 1. 데이터 저장소의 루트 경로에서 `repository-XXX`개 파일을 찾아 삭제합니다.
 1. 새 환경에서 데이터 저장소의 위치를 가리키도록 `crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` 및 `crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config`을(를) 편집합니다.
 1. 환경을 시작합니다.
@@ -131,7 +131,7 @@ Other options for getting assets to the publish farm include using [vlt-rcp](htt
    * **자격 증명 모음 원격 복사본** 또는 vlt rcp를 사용하면 네트워크에서 vlt를 사용할 수 있습니다. 소스 및 대상 디렉토리를 지정할 수 있으며 vlt는 한 인스턴스에서 모든 저장소 데이터를 다운로드하고 다른 인스턴스로 로드합니다. Vlt rcp는 [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)에 설명되어 있습니다.
    * **Grabbit**&#x200B;은(는) Time Warner Cable에서 [!DNL Experience Manager] 구현을 위해 개발한 오픈 소스 콘텐츠 동기화 도구입니다. 지속적인 데이터 스트림을 사용하므로 vlt rcp에 비해 지연 시간이 짧고 vlt rcp보다 2~10배 빠른 속도 개선을 주장합니다. Grabbit은 또한 델타 컨텐츠 동기화만 지원하므로 초기 마이그레이션 과정이 완료된 후 변경 사항을 동기화할 수 있습니다.
 
-1. 에셋 활성화: [!DNL Experience Manager]&#x200B;(으)로의 초기 마이그레이션에 대해 문서화된 [에셋 활성화](#activating-assets)에 대한 지침을 따르십시오.
+1. 에셋 활성화: [(으)로의 초기 마이그레이션에 대해 문서화된 ](#activating-assets)에셋 활성화[!DNL Experience Manager]에 대한 지침을 따르십시오.
 
 1. 복제 게시: 새로운 마이그레이션과 마찬가지로 단일 게시 인스턴스를 로드하고 복제하는 것이 두 노드에서 콘텐츠를 활성화하는 것보다 효율적입니다. [게시 복제](#cloning-publish)를 참조하십시오.
 

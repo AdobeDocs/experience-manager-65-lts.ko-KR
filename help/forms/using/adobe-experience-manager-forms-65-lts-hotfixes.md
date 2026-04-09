@@ -3,14 +3,14 @@ title: Adobe Experience Manager Forms 6.5 LTS SP1 핫픽스
 description: AEM Forms 6.5 LTS용 핫픽스를 다운로드하여 설치하는 방법에 대한 정보를 제공합니다.
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: ff5992fb29c9413cc60e1f0f14c52b1eeff3c3de
+role: User,Admin,Developer
+exl-id: e485100f-3e16-4fd4-a8ce-af771d765dd1
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 1%
 
 ---
-
 
 # Adobe Experience Manager Forms 6.5 LTS 핫픽스{#aem-form-hotfix}
 

@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 6a0c7dbf-02ae-4211-a5c7-941eb353a403
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '10800'
-ht-degree: 0%
+source-wordcount: '10799'
+ht-degree: 2%
 
 ---
 
@@ -129,7 +129,7 @@ Java API를 사용하여 EJB 엔드포인트 추가:
 1. EndpointRegistry 클라이언트 개체를 만듭니다.
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `EndpointRegistryClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `EndpointRegistryClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. EJB 끝점 속성을 설정합니다.
 
@@ -146,7 +146,7 @@ Java API를 사용하여 EJB 엔드포인트 추가:
 
 1. 끝점을 활성화합니다.
 
-   `EndpointRegistryClient` 개체의 Enable 메서드를 호출하고 `createEndpoint` 메서드에서 반환된 `Endpoint` 개체를 전달하여 끝점을 사용하도록 설정합니다.
+   `EndpointRegistryClient` 개체의 Enable 메서드를 호출하고 `Endpoint` 메서드에서 반환된 `createEndpoint` 개체를 전달하여 끝점을 사용하도록 설정합니다.
 
 **추가 참조**
 
@@ -234,7 +234,7 @@ Java API를 사용하여 SOAP 종단점을 서비스에 추가합니다.
 1. EndpointRegistry 클라이언트 개체를 만듭니다.
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `EndpointRegistryClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `EndpointRegistryClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. SOAP 엔드포인트 속성을 설정합니다.
 
@@ -251,7 +251,7 @@ Java API를 사용하여 SOAP 종단점을 서비스에 추가합니다.
 
 1. 끝점을 활성화합니다.
 
-   `EndpointRegistryClient` 개체의 Enable 메서드를 호출하여 끝점을 사용하도록 설정하고 `createEndpoint` 메서드에서 반환된 `Endpoint` 개체를 전달합니다.
+   `EndpointRegistryClient` 개체의 Enable 메서드를 호출하여 끝점을 사용하도록 설정하고 `Endpoint` 메서드에서 반환된 `createEndpoint` 개체를 전달합니다.
 
 **추가 참조**
 
@@ -324,19 +324,19 @@ AEM Forms Java API를 사용하여 감시 폴더 엔드포인트를 서비스에
 다음 목록은 감시 폴더 끝점을 서비스에 프로그래밍 방식으로 추가할 때 설정되는 구성 값을 지정합니다.
 
 * **url**: 감시 폴더 위치를 지정합니다. 클러스터된 환경에서 이 값은 클러스터의 모든 컴퓨터에서 액세스할 수 있는 공유 네트워크 폴더를 가리켜야 합니다.
-* **비동기**: 호출 형식을 비동기 또는 동기화로 식별합니다. 임시 및 동기 프로세스는 동기적으로만 호출할 수 있습니다. 기본값은 true입니다. 비동기식이 권장됩니다.
+* **비동기**: 호출 형식을 비동기 또는 동기화로 식별합니다. 일시적 프로세스와 동기적 프로세스는 동기적으로만 호출될 수 있습니다. 기본값은 true입니다. 비동기식이 권장됩니다.
 * **cronExpression**: 석영에서 입력 디렉터리의 폴링을 예약하는 데 사용됩니다.
 * **purgeDuration**: 필수 특성입니다. 결과 폴더의 파일과 폴더가 이 값보다 오래되면 삭제됩니다. 이 값은 일 단위로 측정됩니다. 이 속성은 결과 폴더가 꽉 차지 않도록 하는 데 유용합니다. -1일 값은 결과 폴더를 삭제하지 않음을 나타냅니다. 기본값은 -1입니다.
 * **repeatInterval**: 감시 폴더에서 입력을 검색하는 간격(초)입니다. 제한이 설정되지 않은 경우 이 값은 평균 작업을 처리하는 시간보다 길어야 합니다. 그렇지 않으면 시스템이 오버로드될 수 있습니다. 기본값은 5입니다.
 * **repeatCount**: 감시 폴더가 폴더 또는 디렉터리를 스캔한 횟수입니다. -1 값은 무한 스캔을 나타냅니다. 기본값은 -1입니다.
 * **throttleOn**: 지정된 시간에 처리할 수 있는 감시 폴더 작업 수를 제한합니다. 최대 작업 수는 batchSize 값에 의해 결정됩니다.
-* **userName**: 감시 폴더에서 대상 서비스를 호출할 때 사용되는 사용자 이름입니다. 이 값은 필수입니다. 기본값은 Superadmin입니다.
+* **userName**: 감시 폴더에서 대상 서비스를 호출할 때 사용되는 사용자 이름입니다. 이 값은 필수입니다. 기본값은 SuperAdmin입니다.
 * **도메인 이름**: 사용자의 도메인입니다. 이 값은 필수입니다. 기본값은 DefaultDom입니다.
 * **batchSize**: 검사당 선택할 파일 또는 폴더의 수입니다. 이 값을 사용하여 시스템의 오버로드를 방지하십시오. 한 번에 너무 많은 파일을 검색하면 충돌이 발생할 수 있습니다. 기본값은 2입니다.
-* **waitTime**: 만든 후 폴더 또는 파일을 검색하기 전에 대기하는 시간(밀리초)입니다. 예를 들어, 대기 시간이 36,000,000밀리초(1시간)이고, 파일이 1분 전에 생성된 경우, 이 파일은 59분 이상 경과한 후 선택됩니다. 이 속성은 파일 또는 폴더가 입력 폴더에 완전히 복사되도록 하는 데 유용합니다. 예를 들어 처리할 대형 파일이 있고 파일을 다운로드하는 데 10분이 걸리는 경우 대기 시간을 10&ast;60 &ast;1000밀리초로 설정합니다. 이 설정은 감시 폴더가 10분 동안 기다리지 않은 경우 파일을 검색하지 못하게 합니다. 기본값은 0입니다.
+* **waitTime**: 만든 후 폴더 또는 파일을 검색하기 전에 대기하는 시간(밀리초)입니다. 예를 들어, 대기 시간이 36,000,000밀리초(1시간)이고, 파일이 1분 전에 생성된 경우, 이 파일은 59분 이상 경과한 후 선택됩니다. 이 속성은 파일 또는 폴더가 입력 폴더에 완전히 복사되도록 하는 데 유용합니다. 예를 들어 처리할 파일이 크고 파일을 다운로드하는 데 10분이 걸리는 경우 대기 시간을 10&amp;ast;60 &amp;ast;1000밀리초로 설정합니다. 이 설정은 감시 폴더가 10분 동안 기다리지 않은 경우 파일을 검색하지 못하게 합니다. 기본값은 0입니다.
 * **excludeFilePattern**: 감시 폴더가 검사하고 가져올 파일 및 폴더를 결정하는 데 사용하는 패턴입니다. 이 패턴을 가진 모든 파일 또는 폴더는 처리를 위해 검사되지 않습니다. 이 설정은 입력이 여러 파일이 포함된 폴더인 경우 유용합니다. 폴더의 내용은 감시 폴더에서 선택할 이름이 있는 폴더로 복사할 수 있습니다. 이 단계에서는 폴더가 입력 폴더로 완전히 복사되기 전에 감시 폴더가 처리할 폴더를 선택하지 못하도록 합니다. 예를 들어 excludeFilePattern 값이 `data*`인 경우 `data*`과(와) 일치하는 모든 파일과 폴더는 선택되지 않습니다. 여기에는 `data1`, `data2` 등의 파일 및 폴더가 포함됩니다. 또한 패턴을 와일드카드 패턴으로 보완하여 파일 패턴을 지정할 수 있습니다. 감시 폴더는 `*.*` 및 `*.pdf`과(와) 같은 와일드카드 패턴을 지원하도록 정규 표현식을 수정합니다. 이러한 와일드카드 패턴은 정규 표현식에서 지원되지 않습니다.
 * **includeFilePattern**: 감시 폴더가 검사하고 가져올 폴더 및 파일을 결정하는 데 사용하는 패턴입니다. 예를 들어 이 값이 `*`이면 `input*`과(와) 일치하는 모든 파일과 폴더가 선택됩니다. 여기에는 `input1`, `input2` 등의 파일 및 폴더가 포함됩니다. 기본값은 `*`입니다. 이 값은 모든 파일과 폴더를 나타냅니다. 또한 패턴을 와일드카드 패턴으로 보완하여 파일 패턴을 지정할 수 있습니다. 감시 폴더는 `*.*` 및 `*.pdf`과(와) 같은 와일드카드 패턴을 지원하도록 정규 표현식을 수정합니다. 이러한 와일드카드 패턴은 정규 표현식에서 지원되지 않습니다. 이 값은 필수입니다.
-* **resultFolderName**: 저장된 결과가 저장되는 폴더입니다. 이 위치는 절대 또는 상대 디렉토리 경로일 수 있습니다. 결과가 이 폴더에 표시되지 않으면 실패 폴더를 확인하십시오. 읽기 전용 파일은 처리되지 않으며 실패 폴더에 저장됩니다. 기본값은 `result/%Y/%M/%D/`입니다. 감시 폴더 내의 결과 폴더입니다.
+* **resultFolderName**: 저장된 결과가 저장되는 폴더입니다. 이 위치는 절대 또는 상대 디렉토리 경로일 수 있습니다. 결과가 이 폴더에 나타나지 않으면 실패 폴더를 확인하십시오. 읽기 전용 파일은 처리되지 않으며 실패 폴더에 저장됩니다. 기본값은 `result/%Y/%M/%D/`입니다. 감시 폴더 내의 결과 폴더입니다.
 * **preserveFolderName**: 스캔 및 픽업 후 파일이 저장되는 위치입니다. 이 위치는 절대, 상대 또는 null 디렉터리 경로일 수 있습니다. 기본값은 `preserve/%Y/%M/%D/`입니다.
 * **failureFolderName**: 오류 파일이 저장된 폴더입니다. 이 위치는 항상 감시 폴더를 기준으로 합니다. 읽기 전용 파일은 처리되지 않으며 실패 폴더에 저장됩니다. 기본값은 `failure/%Y/%M/%D/`입니다.
 * **preserveOnFailure**: 서비스에서 작업을 실행하지 못한 경우 입력 파일을 보존합니다. 기본값은 true입니다.
@@ -402,7 +402,7 @@ AEM Forms Java API를 사용하여 감시 폴더 엔드포인트 추가:
 1. EndpointRegistry 클라이언트 개체를 만듭니다.
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `EndpointRegistryClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `EndpointRegistryClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 감시 폴더 끝점 특성을 설정합니다.
 
@@ -431,7 +431,7 @@ AEM Forms Java API를 사용하여 감시 폴더 엔드포인트 추가:
    * 입력 매개 변수의 이름을 지정하는 문자열 값입니다. 예를 들어 EncryptDocument 서비스의 입력 매개 변수 이름은 `InDoc`입니다.
    * 입력 매개 변수의 데이터 형식을 지정하는 문자열 값입니다. 예를 들어 `InDoc` 입력 매개 변수의 데이터 형식은 `com.adobe.idp.Document`입니다.
    * 매핑 유형을 지정하는 문자열 값입니다. 예를 들어 `variable`을(를) 지정할 수 있습니다.
-   * 매핑 유형 값을 지정하는 문자열 값입니다. 예를 들어 &ast;.pdf를 파일 패턴으로 지정할 수 있습니다.
+   * 매핑 유형 값을 지정하는 문자열 값입니다. 예를 들어 &amp;ast;.pdf를 파일 패턴으로 지정할 수 있습니다.
 
    >[!NOTE]
    >
@@ -451,7 +451,7 @@ AEM Forms Java API를 사용하여 감시 폴더 엔드포인트 추가:
 
 1. 끝점을 활성화합니다.
 
-   `EndpointRegistryClient` 개체의 `enable` 메서드를 호출하고 `createEndpoint` 메서드에서 반환된 `Endpoint` 개체를 전달하여 끝점을 사용하도록 설정합니다.
+   `EndpointRegistryClient` 개체의 `enable` 메서드를 호출하고 `Endpoint` 메서드에서 반환된 `createEndpoint` 개체를 전달하여 끝점을 사용하도록 설정합니다.
 
 **추가 참조**
 
@@ -568,7 +568,7 @@ AEM Forms Java API를 사용하여 이메일 엔드포인트를 서비스에 프
 * **userName**: 전자 메일에서 대상 서비스를 호출할 때 사용되는 사용자 이름입니다. 기본값은 `SuperAdmin`입니다.
 * **domainName**: 필수 구성 값입니다. 기본값은 `DefaultDom`입니다.
 * **domainPattern**: 공급자가 허용하는 수신 전자 메일의 도메인 패턴을 지정합니다. 예를 들어 `adobe.com`을(를) 사용하면 adobe.com의 이메일만 처리되고 다른 도메인의 이메일은 무시됩니다.
-* **filePattern**: 공급자가 허용하는 들어오는 첨부 파일 패턴을 지정합니다. 특정 파일 확장명(&ast;.dat, &ast;.xml)이 있는 파일, 특정 이름(데이터)이 있는 파일 및 이름과 확장명이 복합 표현식(&ast;)인 파일이 여기에 포함됩니다.[d][aA]&#39;port&#39;). 기본값은 `*`입니다.
+* **filePattern**: 공급자가 허용하는 들어오는 첨부 파일 패턴을 지정합니다. 특정 파일 확장명(&amp;ast;.dat, &amp;ast;.xml)이 있는 파일, 특정 이름(데이터)이 있는 파일 및 이름과 확장명이 복합 표현식(&amp;ast;)인 파일이 여기에 포함됩니다.`[dD][aA]`&#39;포트&#39;). 기본값은 `*`입니다.
 * **recipientSuccessfulJob**: 성공한 작업을 나타내는 메시지를 보내는 전자 메일 주소입니다. 기본적으로 성공적인 작업 메시지는 항상 보낸 사람에게 전송됩니다. `sender`을(를) 입력하면 전자 메일 결과가 보낸 사람에게 전송됩니다. 최대 100명의 수신자가 지원됩니다. 전자 메일 주소를 사용하여 각 주소를 쉼표로 구분하여 추가 수신자를 지정하십시오. 이 옵션을 끄려면 이 값을 비워 둡니다. 경우에 따라 프로세스를 트리거하고 결과에 대한 이메일 알림을 원하지 않을 수 있습니다. 기본값은 `sender`입니다.
 * **recipientFailedJob**: 실패한 작업을 나타내는 메시지를 보내는 전자 메일 주소입니다. 기본적으로 실패한 작업 메시지는 항상 보낸 사람에게 전송됩니다. `sender`을(를) 입력하면 전자 메일 결과가 보낸 사람에게 전송됩니다. 최대 100명의 수신자가 지원됩니다. 전자 메일 주소를 사용하여 각 주소를 쉼표로 구분하여 추가 수신자를 지정하십시오. 이 옵션을 끄려면 이 값을 비워 둡니다. 기본값은 `sender`입니다.
 * **inboxHost**: 전자 메일 공급자가 검색할 받은 편지함 호스트 이름 또는 IP 주소입니다.
@@ -597,7 +597,7 @@ AEM Forms Java API를 사용하여 이메일 엔드포인트를 서비스에 프
 
 **매핑 유형**: 서비스 작업을 호출하는 데 필요한 입력 값을 구성하는 데 사용됩니다. 두 가지 유형의 매핑 유형은 다음과 같습니다.
 
-* `Literal`: 전자 메일 끝점은 필드에 입력한 값을 표시되는 대로 사용합니다. 모든 기본 Java 유형이 지원됩니다. 예를 들어 API에서 String, long, int 및 Boolean과 같은 입력을 사용하는 경우 문자열이 적절한 유형으로 변환되고 서비스가 호출됩니다.
+* `Literal`: 전자 메일 끝점은 필드에 입력한 값을 표시되는 대로 사용합니다. 모든 기본 Java 유형이 지원됩니다. 예를 들어 API가 String, long, int, Boolean과 같은 입력을 사용하는 경우 해당 문자열은 적절한 유형으로 변환되고 서비스가 호출됩니다.
 * `Variable`: 입력한 값은 전자 메일 끝점이 입력을 선택하는 데 사용하는 파일 패턴입니다. 예를 들어 매핑 유형으로 변수를 선택하고 입력 문서가 PDF 파일이어야 하는 경우 `*.pdf`을(를) 매핑 값으로 지정할 수 있습니다.
 
 **매핑 값**: 매핑 유형의 값을 지정합니다. 예를 들어 변수 매핑 유형을 선택하는 경우 `*.pdf`을(를) 파일 패턴으로 지정할 수 있습니다.
@@ -647,7 +647,7 @@ Java API를 사용하여 이메일 엔드포인트 추가:
 1. EndpointRegistry 클라이언트 개체를 만듭니다.
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `EndpointRegistryClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `EndpointRegistryClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 이메일 엔드포인트 속성을 설정합니다.
 
@@ -676,7 +676,7 @@ Java API를 사용하여 이메일 엔드포인트 추가:
    * 입력 매개 변수의 이름을 지정하는 문자열 값입니다. 예를 들어 EncryptDocument 서비스의 입력 매개 변수 이름은 `InDoc`입니다.
    * 입력 매개 변수의 데이터 형식을 지정하는 문자열 값입니다. 예를 들어 `InDoc` 입력 매개 변수의 데이터 형식은 `com.adobe.idp.Document`입니다.
    * 매핑 유형을 지정하는 문자열 값입니다. 예를 들어 `variable`을(를) 지정할 수 있습니다.
-   * 매핑 유형 값을 지정하는 문자열 값입니다. 예를 들어 &ast;.pdf를 파일 패턴으로 지정할 수 있습니다.
+   * 매핑 유형 값을 지정하는 문자열 값입니다. 예를 들어 &amp;ast;.pdf를 파일 패턴으로 지정할 수 있습니다.
 
    >[!NOTE]
    >
@@ -696,7 +696,7 @@ Java API를 사용하여 이메일 엔드포인트 추가:
 
 1. 끝점을 활성화합니다.
 
-   `EndpointRegistryClient` 개체의 `enable` 메서드를 호출하고 `createEndpoint` 메서드에서 반환된 `Endpoint` 개체를 전달하여 끝점을 사용하도록 설정합니다.
+   `EndpointRegistryClient` 개체의 `enable` 메서드를 호출하고 `Endpoint` 메서드에서 반환된 `createEndpoint` 개체를 전달하여 끝점을 사용하도록 설정합니다.
 
 **추가 참조**
 
@@ -803,7 +803,7 @@ AEM Forms Java API를 사용하여 원격 끝점을 서비스에 프로그래밍
 * **설명**: 끝점에 대한 설명을 지정합니다.
 * **이름**: 끝점의 이름을 지정합니다.
 * **서비스 식별자 값**: 끝점이 속한 서비스를 지정합니다. 예를 들어, 이 섹션에 도입된 프로세스에 원격 끝점을 추가하려면(Workbench 내에서 활성화되면 프로세스가 서비스 됨) `EncryptDocument`을(를) 지정하십시오.
-* **작업 이름**: 끝점을 사용하여 호출되는 작업의 이름을 지정합니다. 원격 끝점을 만들 때 와일드카드 문자(&ast;)를 지정합니다.
+* **작업 이름**: 끝점을 사용하여 호출되는 작업의 이름을 지정합니다. 원격 끝점을 만들 때 와일드카드 문자(&amp;ast;)를 지정합니다.
 
 **원격 끝점 만들기**
 
@@ -832,7 +832,7 @@ Java API를 사용하여 원격 엔드포인트 추가:
 1. EndpointRegistry 클라이언트 개체를 만듭니다.
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `EndpointRegistryClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `EndpointRegistryClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 원격 끝점 특성을 설정합니다.
 
@@ -841,7 +841,7 @@ Java API를 사용하여 원격 엔드포인트 추가:
    * `CreateEndpointInfo` 개체의 `setDescription` 메서드를 호출하고 끝점을 설명하는 문자열 값을 전달하여 끝점에 대한 설명을 지정하십시오.
    * `CreateEndpointInfo` 개체의 `setName` 메서드를 호출하고 이름을 지정하는 문자열 값을 전달하여 끝점의 이름을 지정하십시오.
    * `CreateEndpointInfo` 개체의 `setServiceId` 메서드를 호출하고 서비스 이름을 지정하는 문자열 값을 전달하여 끝점이 속한 서비스를 지정하십시오.
-   * `CreateEndpointInfo` 개체의 `setOperationName` 메서드에서 호출되는 작업을 지정하고 작업 이름을 지정하는 문자열 값을 전달하십시오. 원격 끝점의 경우 와일드카드 문자(&ast;)를 지정합니다.
+   * `CreateEndpointInfo` 개체의 `setOperationName` 메서드에서 호출되는 작업을 지정하고 작업 이름을 지정하는 문자열 값을 전달하십시오. 원격 끝점의 경우 와일드카드 문자(&amp;ast;)를 지정합니다.
 
 1. 원격 끝점을 만듭니다.
 
@@ -849,7 +849,7 @@ Java API를 사용하여 원격 엔드포인트 추가:
 
 1. 끝점을 활성화합니다.
 
-   `EndpointRegistryClient` 개체의 `enable` 메서드를 호출하고 `createEndpoint` 메서드에서 반환된 `Endpoint` 개체를 전달하여 끝점을 사용하도록 설정합니다.
+   `EndpointRegistryClient` 개체의 `enable` 메서드를 호출하고 `Endpoint` 메서드에서 반환된 `createEndpoint` 개체를 전달하여 끝점을 사용하도록 설정합니다.
 
 **추가 참조**
 
@@ -943,7 +943,7 @@ Java API를 사용하여 TaskManager 끝점 추가:
 1. EndpointRegistry 클라이언트 개체를 만듭니다.
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `EndpointRegistryClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `EndpointRegistryClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 끝점에 대한 범주를 만듭니다.
 
@@ -970,7 +970,7 @@ Java API를 사용하여 TaskManager 끝점 추가:
 
 1. 끝점을 활성화합니다.
 
-   `EndpointRegistryClient` 개체의 `enable` 메서드를 호출하고 `createEndpoint` 메서드에서 반환된 `Endpoint` 개체를 전달하여 끝점을 사용하도록 설정합니다.
+   `EndpointRegistryClient` 개체의 `enable` 메서드를 호출하고 `Endpoint` 메서드에서 반환된 `createEndpoint` 개체를 전달하여 끝점을 사용하도록 설정합니다.
 
 **추가 참조**
 
@@ -1055,11 +1055,11 @@ Java API를 사용하여 끝점을 수정합니다.
 1. EndpointRegistry 클라이언트 개체를 만듭니다.
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `EndpointRegistryClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `EndpointRegistryClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 수정할 끝점을 검색합니다.
 
-   * `EndpointRegistryClient` 개체의 `getEndpoints` 메서드를 호출하고 필터 역할을 하는 `PagingFilter` 개체를 전달하여 현재 사용자(연결 속성에 지정됨)가 액세스할 수 있는 모든 끝점 목록을 검색합니다. `(PagingFilter)null` 값을 전달하여 모든 끝점을 반환할 수 있습니다. 이 메서드는 각 요소가 `Endpoint` 개체인 `java.util.List` 개체를 반환합니다. `PagingFilter` 개체에 대한 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)를 참조하십시오.
+   * `EndpointRegistryClient` 개체의 `getEndpoints` 메서드를 호출하고 필터 역할을 하는 `PagingFilter` 개체를 전달하여 현재 사용자(연결 속성에 지정됨)가 액세스할 수 있는 모든 끝점 목록을 검색합니다. `(PagingFilter)null` 값을 전달하여 모든 끝점을 반환할 수 있습니다. 이 메서드는 각 요소가 `java.util.List` 개체인 `Endpoint` 개체를 반환합니다. `PagingFilter` 개체에 대한 자세한 내용은 [AEM Forms API 참조](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)를 참조하십시오.
    * `java.util.List` 개체를 반복하여 끝점이 있는지 확인합니다. 끝점이 있는 경우 각 요소는 `EndPoint` 인스턴스입니다.
    * `EndPoint` 개체의 `getServiceId` 메서드를 호출하여 끝점에 해당하는 서비스를 확인합니다. 이 메서드는 서비스 이름을 지정하는 문자열 값을 반환합니다.
    * `EndPoint` 개체의 `getConnectorId` 메서드를 호출하여 끝점의 유형을 확인합니다. 이 메서드는 끝점의 유형을 지정하는 문자열 값을 반환합니다. 예를 들어 끝점이 감시 폴더 끝점인 경우 이 메서드는 `WatchedFolder`을(를) 반환합니다.
@@ -1149,11 +1149,11 @@ Java API를 사용하여 엔드포인트 제거:
 1. EndpointRegistry 클라이언트 개체를 만듭니다.
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `EndpointRegistryClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `EndpointRegistryClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 제거할 끝점을 검색합니다.
 
-   * `EndpointRegistryClient` 개체의 `getEndpoints` 메서드를 호출하고 필터 역할을 하는 `PagingFilter` 개체를 전달하여 현재 사용자(연결 속성에 지정됨)가 액세스할 수 있는 모든 끝점 목록을 검색합니다. `(PagingFilter)null`을(를) 전달하여 모든 끝점을 반환할 수 있습니다. 이 메서드는 각 요소가 `Endpoint` 개체인 `java.util.List` 개체를 반환합니다.
+   * `EndpointRegistryClient` 개체의 `getEndpoints` 메서드를 호출하고 필터 역할을 하는 `PagingFilter` 개체를 전달하여 현재 사용자(연결 속성에 지정됨)가 액세스할 수 있는 모든 끝점 목록을 검색합니다. `(PagingFilter)null`을(를) 전달하여 모든 끝점을 반환할 수 있습니다. 이 메서드는 각 요소가 `java.util.List` 개체인 `Endpoint` 개체를 반환합니다.
    * `java.util.List` 개체를 반복하여 끝점이 있는지 확인합니다. 끝점이 있는 경우 각 요소는 `EndPoint` 인스턴스입니다.
    * `EndPoint` 개체의 `getServiceId` 메서드를 호출하여 끝점에 해당하는 서비스를 확인합니다. 이 메서드는 서비스 이름을 지정하는 문자열 값을 반환합니다.
    * `EndPoint` 개체의 `getConnectorId` 메서드를 호출하여 끝점의 유형을 확인합니다. 이 메서드는 끝점의 유형을 지정하는 문자열 값을 반환합니다. 예를 들어 끝점이 EJB 끝점인 경우 이 메서드는 `EJB`을(를) 반환합니다.
@@ -1246,7 +1246,7 @@ Java API를 사용하여 끝점 커넥터 정보 검색:
 1. ConnectorRegistry 클라이언트 개체를 만듭니다.
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `ConnectorRegistryClient` 개체를 만듭니다.
+   * 생성자를 사용하고 `ConnectorRegistryClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
 
 1. 커넥터 유형을 지정합니다.
 

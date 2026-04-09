@@ -2,14 +2,14 @@
 title: Apache Tika를 사용하여 MIME 유형의 자산 탐지
 description: Apache Tika를 활성화하여 [!DNL Experience Manager Assets] 파일 확장명 대신 업로드 작업 중에 콘텐츠 스트림에서 MIME 유형의 자산을 감지합니다.
 contentOwner: AG
-role: Admin, Architect
+role: Admin,Developer
 feature: Metadata,Developer Tools,Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 4c953b8b-ae50-4c02-889a-78b02b4ba975
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 [!DNL Apache Tika]을(를) 사용하여 자산을 업로드하는 경우 [!DNL Assets]이(가) 파일 확장명 대신 업로드 작업 중에 콘텐츠 스트림에서 해당 MIME 형식을 감지합니다.
 
-이 기능은 기본적으로 비활성화되어 있습니다. 이 기능을 사용하려면 [!UICONTROL 구성 관리자]에서 **[!UICONTROL 일 CQ DAM Mime 유형]** 서비스를 구성하십시오.
+이 기능은 기본적으로 비활성화되어 있습니다. 이 기능을 사용하려면 **[!UICONTROL 구성 관리자]**&#x200B;에서 [!UICONTROL 일 CQ DAM Mime 유형] 서비스를 구성하십시오.
 
 >[!NOTE]
 >

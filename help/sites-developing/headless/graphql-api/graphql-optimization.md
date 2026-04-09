@@ -3,9 +3,9 @@ title: GraphQL 쿼리 최적화
 description: Headless 콘텐츠 전달을 위해 Adobe Experience Manager as a Cloud Service에서 콘텐츠 조각을 필터링, 페이징 및 정렬할 때 GraphQL 쿼리를 최적화하는 방법에 대해 알아봅니다.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: c2beb0fa-ff6c-4e42-842d-6a73311f4740
-source-git-commit: d680ecf942886a61579cf72f82809e3dbbcfd394
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 88%
@@ -66,7 +66,7 @@ GraphQL *을(를) 사용하는 고객은 GraphQL 색인 패키지와 함께 Expe
 
 **권장 사항**
 
-[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)는 CDN 캐시 이전의 AEM 서비스 내 첫 번째 레벨 캐시입니다.
+[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)는 CDN 캐시 이전의 AEM 서비스 내 첫 번째 레벨 캐시입니다.
 
 **추가 참조**
 
@@ -84,7 +84,7 @@ GraphQL 쿼리와 해당 JSON 응답은 CDN을 사용할 때 `GET` 요청으로 
 
 다음을 참조하십시오.
 
-* [AEM에서 CDN 사용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#using-dispatcher-with-a-cdn)
+* [AEM에서 CDN 사용](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### HTTP 캐시 제어 헤더 설정 {#set-http-cache-control-headers}
 

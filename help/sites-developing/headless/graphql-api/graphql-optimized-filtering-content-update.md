@@ -3,12 +3,12 @@ title: 최적화된 GraphQL 필터링을 위해 콘텐츠 조각 업데이트
 description: Headless 콘텐츠 게재를 위해 Adobe Experience Manager에서 최적화된 GraphQL 필터링을 위해 콘텐츠 조각을 업데이트하는 방법을 알아봅니다.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 40211033-7084-4117-a3e2-73e504283266
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 49%
+source-wordcount: '250'
+ht-degree: 50%
 
 ---
 
@@ -28,14 +28,14 @@ AEM의 릴리스가 6.5.17.0개 이상인지 확인하십시오.
 
 이 절차를 실행하려면 다음 단계를 사용합니다.
 
-1. **콘텐츠 조각 마이그레이션 작업 구성**&#x200B;에 대한 [OSGi 설정을 구성](/help/sites-deploying/configuring-osgi.md)합니다.
+1. [콘텐츠 조각 마이그레이션 작업 구성](/help/sites-deploying/configuring-osgi.md)에 대한 **OSGi 설정을 구성**&#x200B;합니다.
 
    ![OSGi 콘텐츠 조각 마이그레이션 작업 구성](assets/cfm-graphql-update-01.png "OSGi 콘텐츠 조각 마이그레이션 작업 구성")
 
 1. 대화 상자에서 다음 두 매개 변수를 다음과 같이 설정합니다.
 
    * **ContentFragmentMigration:Enabled**: `1`
-   * **ContentFragmentMigration:Enforce** : `1`
+   * **ContentFragmentMigration:Enforce**: `1`
 
 1. 세부 항목을 **저장** - 업데이트 절차가 시작됩니다.
 
@@ -46,7 +46,7 @@ AEM의 릴리스가 6.5.17.0개 이상인지 확인하십시오.
    **콘텐츠 조각 마이그레이션 작업 구성**&#x200B;에 대한 대화 상자에서 다음 두 매개 변수를 다음과 같이 설정합니다.
 
    * **ContentFragmentMigration:Enabled**: `0`
-   * **ContentFragmentMigration:Enforce** : `0`
+   * **ContentFragmentMigration:Enforce**: `0`
 
 ## 제한 사항 {#limitations}
 

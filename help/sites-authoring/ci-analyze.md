@@ -1,6 +1,6 @@
 ---
 title: 페이지 성능 분석
-description: 콘텐츠 인사이트 페이지를 사용하여 작성 중인 페이지의 성능을 분석합니다
+description: 콘텐츠 Insight 페이지를 사용하여 작성 중인 페이지의 성능을 분석합니다
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,18 +8,18 @@ topic-tags: site-features
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 075c4150-e7e2-4374-afe0-31855bffe438
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # 페이지 성능 분석{#analyzing-page-performance}
 
-[콘텐츠 인사이트](/help/sites-authoring/content-insights.md) 페이지를 열어 작성 중인 페이지의 성능을 분석합니다. 분석에 초점을 맞추도록 보고 기간을 구성합니다.
+[컨텐츠 Insight](/help/sites-authoring/content-insights.md) 페이지를 열어 작성 중인 페이지의 성능을 분석합니다. 분석에 초점을 맞추도록 보고 기간을 구성합니다.
 
 ## 페이지에 대한 분석 및 권장 사항 열기 {#opening-analytics-and-recommendations-for-a-page}
 
@@ -41,15 +41,15 @@ ht-degree: 1%
 * 보고할 기간.
 * 데이터의 세부 기간입니다.
 
-보고서의 시간 관련 측면을 변경하는 도구는 Content Insight 페이지의 맨 위에 표시됩니다. ![chlimage_1-126](assets/chlimage_1-126.png)
+보고서의 시간 관련 측면을 변경하는 도구는 컨텐츠 Insight 페이지 맨 위에 표시됩니다. ![chlimage_1-126](assets/chlimage_1-126.png)
 
 #### 보고 기간 변경 {#changing-the-reporting-period-1}
 
-페이지 활동 분석을 특정 기간에 집중하도록 컨텐츠 인사이트 페이지의 보고 기간을 변경합니다. 보고 기간을 변경하면 보고서가 자동으로 새로 고쳐집니다. 시간대의 음영 처리된 영역은 보고 기간을 나타냅니다. 일정의 날짜가 왼쪽에서 오른쪽으로 늘어납니다.
+페이지 활동 분석을 특정 기간에 집중하도록 컨텐츠 Insight 페이지의 보고 기간을 변경합니다. 보고 기간을 변경하면 보고서가 자동으로 새로 고쳐집니다. 시간대의 음영 처리된 영역은 보고 기간을 나타냅니다. 일정의 날짜가 왼쪽에서 오른쪽으로 늘어납니다.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Content Insight 페이지의 보고 기간을 변경하려면:
+컨텐츠 Insight 페이지의 보고 기간을 변경하려면 다음 작업을 수행하십시오.
 
 1. 일정이 페이지 상단에 표시되지 않으면 일정 전환 아이콘을 클릭합니다.
 

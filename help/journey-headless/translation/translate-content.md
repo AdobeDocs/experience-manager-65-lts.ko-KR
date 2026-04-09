@@ -3,9 +3,9 @@ title: 콘텐츠 번역
 description: 번역 커넥터 및 규칙을 사용하여 Headless 콘텐츠를 번역합니다.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: 13d11e2b-5a3f-4987-a653-14e0790fbbd0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 71%
@@ -202,7 +202,7 @@ AEM Headless 번역 여정의 이전 문서인 [번역 규칙 구성](translatio
 
 ## 번역된 콘텐츠 검토 {#reviewing}
 
-[앞에서 보았던 대로 &#x200B;](#using-translation-project) 기계 번역 콘텐츠는 **승인됨** 상태로 AEM으로 다시 흐릅니다. 기계 번역을 사용 중이므로 사람의 개입이 필요 없다고 간주되기 때문입니다. 그러나 번역된 콘텐츠를 계속 검토할 수 있습니다.
+[앞에서 보았던 대로 ](#using-translation-project) 기계 번역 콘텐츠는 **승인됨** 상태로 AEM으로 다시 흐릅니다. 기계 번역을 사용 중이므로 사람의 개입이 필요 없다고 간주되기 때문입니다. 그러나 번역된 콘텐츠를 계속 검토할 수 있습니다.
 
 완료된 번역 작업으로 이동하여 확인란을 탭하거나 클릭하여 라인 항목을 선택하십시오. 도구 모음에 **콘텐츠 조각에 표시** 아이콘이 표시됩니다.
 

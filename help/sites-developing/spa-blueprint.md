@@ -10,7 +10,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 798b9ad8-47fa-432d-8887-9de63c20cfca
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '2023'
 ht-degree: 1%
@@ -76,7 +76,7 @@ AEM용 JavaScript SPA SDK에서 동적 모델과 구성 요소 간 매핑이 발
 
 SPA 구성 요소는 페이지 모델과 동기화되어야 하며 그에 따라 콘텐츠에 대한 변경 사항을 업데이트해야 합니다. 동적 구성 요소를 사용하는 패턴은 제공된 페이지 모델 구조에 따라 구성 요소를 즉시 인스턴스화하는 데 사용해야 합니다.
 
-### 메타 필드 {#meta-fields}
+### Meta 필드 {#meta-fields}
 
 페이지 모델은 [Sling 모델](https://sling.apache.org/documentation/bundles/models.html) API를 기반으로 하는 JSON 모델 내보내기를 사용합니다. 내보내기 가능한 슬링 모델은 기본 라이브러리가 데이터 모델을 해석할 수 있도록 다음 필드 목록을 표시합니다.
 

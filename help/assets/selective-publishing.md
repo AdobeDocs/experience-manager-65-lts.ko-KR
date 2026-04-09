@@ -10,7 +10,7 @@ role: User, Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: 64468f78-2dc1-4e42-a8c6-3cb81bca0e05
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 3%
@@ -29,7 +29,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->폴더에 자산을 *복사*&#x200B;하면 해당 자산의 게시 상태가 지워집니다. 그러나 폴더 속성이 **[!UICONTROL 선택적 게시]**(으)로 설정된 폴더에서 자산을 *이동*&#x200B;하면 해당 자산의 게시 상태가 유지됩니다.
+>폴더에 자산을 *복사*&#x200B;하면 해당 자산의 게시 상태가 지워집니다. 그러나 폴더 속성이 *선택적 게시*(으)로 설정된 폴더에서 자산을 **[!UICONTROL 이동]**&#x200B;하면 해당 자산의 게시 상태가 유지됩니다.
 
 나중에 폴더의 **[!UICONTROL 선택적 게시]** 설정을 변경하기로 결정하는 경우 이러한 변경 사항은 해당 시점부터 해당 폴더에 업로드하는 새 자산에만 영향을 줍니다. 폴더에 있는 기존 자산의 게시 상태는 **[!UICONTROL 빠른 게시]** 또는 **[!UICONTROL 게시 관리]** 대화 상자에서 수동으로 변경할 때까지 그대로 유지됩니다.
 
@@ -76,8 +76,8 @@ ht-degree: 3%
 
    | Dynamic Media 게시 모드 옵션 | 설명 |
    | --- | --- |
-   | **[!UICONTROL 즉시]** | 에셋이 이 폴더에 업로드되면 시스템은 에셋을 Experience Manager에 수집하고 URL/임베드를 즉시 제공합니다. 이 옵션은 Experience Manager 게시에만 연결되며 에셋을 게시하는 데 필요한 사용자 개입이 없습니다.<br>이전 단계에서 **[!UICONTROL 동기화 모드]**&#x200B;에서 **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 Dynamic Media 동기화에서 제외]**&#x200B;를 선택한 경우 이 옵션을 *사용할 수 없음*&#x200B;입니다. |
-   | **[!UICONTROL 활성화 시]** | 에셋이 이 폴더에 업로드되는 경우 URL/포함 링크를 제공하기 전에 먼저 에셋을 명시적으로 게시해야 합니다. 이 옵션은 Experience Manager 게시에만 연결됩니다.<br>이전 단계에서 **[!UICONTROL 동기화 모드]**&#x200B;에서 **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 Dynamic Media 동기화에서 제외]**&#x200B;를 선택한 경우 이 옵션을 *사용할 수 없음*&#x200B;입니다. |
+   | **[!UICONTROL 즉시]** | 에셋이 이 폴더에 업로드되면 시스템은 에셋을 Experience Manager에 수집하고 URL/임베드를 즉시 제공합니다. 이 옵션은 Experience Manager 게시에만 연결되며 에셋을 게시하는 데 필요한 사용자 개입이 없습니다.<br>이전 단계에서 *동기화 모드*&#x200B;에서 **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 Dynamic Media 동기화에서 제외]**&#x200B;를 선택한 경우 이 옵션을 **[!UICONTROL 사용할 수 없음]**&#x200B;입니다. |
+   | **[!UICONTROL 활성화 시]** | 에셋이 이 폴더에 업로드되는 경우 URL/포함 링크를 제공하기 전에 먼저 에셋을 명시적으로 게시해야 합니다. 이 옵션은 Experience Manager 게시에만 연결됩니다.<br>이전 단계에서 *동기화 모드*&#x200B;에서 **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 Dynamic Media 동기화에서 제외]**&#x200B;를 선택한 경우 이 옵션을 **[!UICONTROL 사용할 수 없음]**&#x200B;입니다. |
    | **[!UICONTROL 선택적 게시]** | Assets은 공개 도메인에서 제공하기 위해 Experience Manager 또는 Dynamic Media 중 선택한 항목에 게시됩니다. 두 게시 방법은 상호 배타적입니다. 즉, 스마트 자르기 또는 동적 변환과 같은 기능을 사용할 수 있도록 자산을 DMS7에 게시할 수 있습니다. 또는 보안 미리 보기를 위해 Experience Manager에만 자산을 게시할 수 있습니다. 이러한 동일한 자산은 공개 도메인에서 제공하기 위해 DMS7에 게시된 *아님*&#x200B;입니다. 이전 단계에서 **[!UICONTROL 동기화 모드]**&#x200B;에서 **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 Dynamic Media 동기화에서 제외]**&#x200B;를 선택한 경우에는 이 옵션을 사용할 수 없습니다. |
 
 1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택한 다음 **[!UICONTROL 확인]**&#x200B;을 선택하여 Experience Manager Assets으로 돌아갑니다.
@@ -97,7 +97,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->폴더에 자산을 *복사*&#x200B;하면 해당 자산의 게시 상태가 지워집니다. 그러나 폴더 속성이 **[!UICONTROL 선택적 게시]**(으)로 설정된 폴더에서 자산을 *이동*&#x200B;하면 해당 자산의 게시 상태가 유지됩니다.
+>폴더에 자산을 *복사*&#x200B;하면 해당 자산의 게시 상태가 지워집니다. 그러나 폴더 속성이 *선택적 게시*(으)로 설정된 폴더에서 자산을 **[!UICONTROL 이동]**&#x200B;하면 해당 자산의 게시 상태가 유지됩니다.
 
 **게시 관리를 사용하여 Dynamic Media 또는 Experience Manager에 자산을 선택적으로 게시하려면:**
 
@@ -186,7 +186,7 @@ ht-degree: 3%
 1. **[!UICONTROL 빠른 게시]** 메뉴 목록에서 다음 옵션 중 하나를 선택하십시오.
 
    | 빠른 게시 옵션 | 설명 |
-   | --- | --- | 
+   | --- | --- |
    | Experience Manager에 게시 | 선택한 자산을 Experience Manager에 즉시 게시합니다. |
    | Brand Portal에 게시 | 선택한 자산을 **[!UICONTROL Brand Portal]**&#x200B;에 즉시 게시합니다.<br>이 옵션은 Experience Manager Assets 인스턴스에 이미 **[!UICONTROL Brand Portal]**&#x200B;이(가) 구성되어 있는 경우에만 사용할 수 있습니다. |
    | Dynamic Media에 게시 | 선택한 자산을 Dynamic Media에 즉시 게시합니다.<br>자산을 Dynamic Media에 동기화해야 합니다. 필요한 경우 폴더의 속성에서 **[!UICONTROL 동기화 모드]**&#x200B;가 **[!UICONTROL 이 폴더 하위 트리의 모든 항목을 Dynamic Media에 동기화]**&#x200B;하도록 이미 설정되어 있는지 확인하십시오. |
@@ -268,7 +268,6 @@ Experience Manager에서 **[!UICONTROL 타임라인]**&#x200B;을(를) **[!UICON
 **[!UICONTROL 목록 보기]**&#x200B;를 사용하는 경우 **[!UICONTROL Dynamic Media]** 게시 상태에 대한 추가 열이 나타납니다.
    * Dynamic Media에 동기화하도록 구성된 폴더는 기본적으로 **[!UICONTROL Dynamic Media]** 열을 표시합니다.
    * Dynamic Media에 동기화하도록 구성된 *not* 폴더에는 Dynamic Media 열이 표시되지 않습니다.
-
      ![목록 보기 및 타임라인](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## 선택적 게시 문제 해결 {#selective-publish-troubleshoot}

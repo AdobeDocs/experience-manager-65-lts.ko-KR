@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager Assets]의 액세스 가능한 기능 및 인터페이스'
 description: ' [!DNL Adobe Experience Manager] 6.5 LTS의 접근성 기능 [!DNL Assets] 장애가 있는 사용자에게 어떻게 도움이 되는지 알아보세요.'
 feature: Asset Management
-role: User, Architect, Leader
+role: User,Developer,Leader
 solution: Experience Manager, Experience Manager Assets
 exl-id: f9540bfb-1c4f-41f0-9caa-ef9265225648
-source-git-commit: 55a82f12f0ddd952e720bed374e5bd3515648419
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1882'
 ht-degree: 0%
@@ -146,7 +146,7 @@ Review CQ-4282133 before adding - Close option in a coral-dialog was not accessi
 * `Esc` 키를 사용하여 썸네일 보기에서 빠른 작업 아이콘을 제거해도 마지막 포커스 항목에서 키보드 포커스가 제거되지 않습니다.
 * 자산을 선택한 상태에서 `Alt + 4` 바로 가기 키를 선택하면 왼쪽 레일에서 [!UICONTROL 참조] 목록이 열립니다. `Tab` 키를 사용하면 0이 아닌 참조 항목을 탐색할 수 있습니다. 0이 아닌 참조 항목만 탐색하면 작업량과 키 입력도 절약됩니다.
 * 에셋에 대한 댓글은 에셋 타임라인에서 사용할 수 있습니다. 키보드 또는 키보드 단축키를 사용하여 왼쪽 레일에 액세스하는 경우 액세스할 수 있습니다.
-* 키보드를 사용하여 [!UICONTROL 의 &#x200B;]보기 설정[!DNL Experience Manager]에 액세스할 수 있습니다. 사용자는 화살표 키를 사용하여 사용 가능한 카드 크기를 탐색하고 탭 스루를 선택하여 기존 보기 설정 보기에서 다른 요소를 탐색하고 설정할 수 있습니다.
+* 키보드를 사용하여 [!UICONTROL 의 ]보기 설정[!DNL Experience Manager]에 액세스할 수 있습니다. 사용자는 화살표 키를 사용하여 사용 가능한 카드 크기를 탐색하고 탭 스루를 선택하여 기존 보기 설정 보기에서 다른 요소를 탐색하고 설정할 수 있습니다.
 
 <!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
 

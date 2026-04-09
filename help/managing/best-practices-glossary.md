@@ -3,9 +3,9 @@ title: 용어 설명
 description: 이 용어집에는 프로젝트 체크리스트의 모든 결과물 문서에 대한 세부 정보가 알파벳순으로 나열되어 있습니다.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: e6542ba9-1182-4b81-b251-537747b89e4c
-source-git-commit: fb979ab973476212aeed9ce86d3251eb1aedcb8c
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 100%
@@ -684,7 +684,7 @@ Adobe 지원 포털에 액세스해야 하는 모든 사용자 및 역할 목록
 솔루션을 모니터링하기 위해 기록해야 하는 항목을 정의하는 분석과 그에 따른 권장 사항입니다.
 
 * 기록할 활동
-* 세분성 수준
+* 세부성 수준
 * 각 활동에 대해 기록된 정보
 
 ### 유지 관리 작업(AEM 전용)이 테스트되고 활성화됨 {#maintenance-tasks-aem-specific-tested-and-enabled}

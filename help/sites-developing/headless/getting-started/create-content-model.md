@@ -3,9 +3,9 @@ title: 콘텐츠 조각 모델 만들기 Headless 빠른 시작 안내서
 description: 콘텐츠 조각 모델을 사용하여 Adobe Experience Manager(AEM)의 Headless 기능으로 만들고 제공하는 콘텐츠의 구조를 정의합니다.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 768a5d73-521f-47a5-b4a3-d1b0b77798f7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 51%

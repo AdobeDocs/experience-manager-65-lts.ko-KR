@@ -3,9 +3,9 @@ title: 페이지 콘텐츠의 효과를 측정하기 위한 페이지 분석 데
 description: 페이지 분석 데이터를 사용하여 페이지 콘텐츠의 효과를 측정합니다
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: b47591ac-10ff-4b87-b75d-68ed635ceca8
-source-git-commit: 87f0e0530b14c8cb7d25ee139ec89d75551fb16e
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 5%
@@ -84,4 +84,4 @@ Analytics-Administrators 사용자 그룹의 구성원은 작성자가 추가 An
 >
 >Adobe Analytics API 내의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
 >
->이제 Adobe Analytics[에서 제공한 &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics[에서 제공한 ](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)ActivityMap 플러그인을 사용해야 합니다.

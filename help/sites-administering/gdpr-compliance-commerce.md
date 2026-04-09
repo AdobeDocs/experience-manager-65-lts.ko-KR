@@ -1,25 +1,25 @@
 ---
-title: AEM Commerce - GDPR 준비 완료
+title: AEM Commerce - GDPR 준비 상태
 description: AEM Commerce에서 GDPR 요청을 처리하는 절차 및 사용 방법에 대해 알아봅니다.
 contentOwner: carlino
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+role: Admin,Developer,Leader,User
 exl-id: 2d7ae2ad-a7ad-4b7d-bfa4-167caa49a087
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '304'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# AEM Commerce - GDPR 준비 완료{#aem-commerce-gdpr-readiness}
+# AEM Commerce - GDPR 준비 상태{#aem-commerce-gdpr-readiness}
 
 >[!IMPORTANT]
 >
 >아래 섹션에서는 GDPR이 예로 사용되지만, 포함된 세부 사항은 GDPR 및 CCPA와 같은 모든 데이터 보호 및 개인 정보 보호 규정에 적용됩니다.
 
-데이터 개인정보 보호권에 관한 유럽 연합의 일반 데이터 보호 규정은 2018년 5월부터 시행됩니다. Adobe 개인 정보 보호 센터의 [GDPR 페이지](https://business.adobe.com/kr/privacy/general-data-protection-regulation.html)를 참조하세요.
+데이터 개인정보 보호권에 관한 유럽 연합의 일반 데이터 보호 규정은 2018년 5월부터 시행됩니다. Adobe 개인 정보 보호 센터의 [GDPR 페이지](https://business.adobe.com/privacy/general-data-protection-regulation.html)를 참조하세요.
 
 >[!NOTE]
 >

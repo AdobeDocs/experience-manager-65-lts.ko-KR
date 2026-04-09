@@ -3,9 +3,9 @@ title: 구성 Headless 빠른 시작 안내서 만들기
 description: AEM 6.5에서 Headless를 시작하기 위한 첫 번째 단계로 구성을 만듭니다.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 6792f5c0-074e-4465-9b84-8be78abd6b8f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 68%

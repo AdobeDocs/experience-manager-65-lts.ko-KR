@@ -10,10 +10,10 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 051be106-bb15-46b2-8158-53817f68f57c
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 AEM용 JavaScript SPA SDK을 사용하는 단일 페이지 애플리케이션은 모델 기반으로 합니다.
 
 1. 프론트엔드 구성 요소가 [구성 요소 매핑 저장소](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module)에 등록됩니다.
-1. [모델 공급자](/help/sites-developing/spa-blueprint.md#the-model-provider)에서 모델을 제공하면 [컨테이너](/help/sites-developing/spa-blueprint.md#container)이(가) 해당 모델 콘텐츠(`:items`)를 반복합니다.
+1. [모델 공급자](/help/sites-developing/spa-blueprint.md#container)에서 모델을 제공하면 [컨테이너](/help/sites-developing/spa-blueprint.md#the-model-provider)이(가) 해당 모델 콘텐츠(`:items`)를 반복합니다.
 
 1. 페이지가 있으면 자식(`:children`)이 먼저 [구성 요소 매핑](/help/sites-developing/spa-blueprint.md#componentmapping)에서 구성 요소 클래스를 가져온 다음 인스턴스화합니다.
 

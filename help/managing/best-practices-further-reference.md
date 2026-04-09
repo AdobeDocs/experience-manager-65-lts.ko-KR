@@ -3,9 +3,9 @@ title: 검사 목록 - 추가 참조
 description: 프로젝트 관리 - 모범 사례 체크리스트에서 다루는 문서와 원칙을 더욱 자세히 설명하고 보완하는 추가 세부 정보를 알아봅니다.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: 15d9c2ac-0b13-4839-a873-bc884ee69132
-source-git-commit: 2efe81437790352d674bdb0e9cc9ff524fd00487
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 100%
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ### AEM에서 제공되는 기능 {#features-within-aem}
 
-AEM을 구현할 때(특히 처음 구현하는 경우) [AEM의 기능과 워크플로](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)를 검토하여 원하거나 필요한 영역이 무엇인지 확인합니다.
+AEM을 구현할 때(특히 처음 구현하는 경우) [AEM의 기능과 워크플로](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)를 검토하여 원하거나 필요한 영역이 무엇인지 확인합니다.
 
 사용 중인 다음과 같은 AEM 기능과 디자인에 미치는 영향을 고려하십시오.
 

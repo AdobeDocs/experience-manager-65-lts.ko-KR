@@ -11,7 +11,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 470636ce-3934-4aac-80ff-1fe6bd84455e
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 6%
@@ -84,7 +84,7 @@ SPA 콘텐츠를 설명하는 메타 리소스 속성:
 * `cq:wcmmode`: 편집기의 WCM 모드(예: 페이지, 템플릿)
 * `cq:pagemodel_root_url`: 앱의 루트 모델의 URL. 하위 페이지 모델은 앱 루트 모델의 조각이므로 하위 페이지에 직접 액세스할 때 중요합니다. 그런 다음 ` [PageModelManager](/help/sites-developing/spa-page-component.md)`은(는) 루트 시작 지점에서 응용 프로그램을 입력하는 응용 프로그램 초기 모델을 체계적으로 추천합니다.
 
-* `cq:pagemodel_router`: `PageModelManager` 라이브러리의 ` [ModelRouter](/help/sites-developing/spa-routing.md)`을(를) 활성화하거나 비활성화합니다.
+* `cq:pagemodel_router`: ` [ModelRouter](/help/sites-developing/spa-routing.md)` 라이브러리의 `PageModelManager`을(를) 활성화하거나 비활성화합니다.
 
 * `cq:pagemodel_route_filters`: ` [ModelRouter](/help/sites-developing/spa-routing.md)`이(가) 무시해야 하는 경로를 제공하기 위해 쉼표로 구분된 목록 또는 정규 표현식입니다.
 
@@ -92,7 +92,7 @@ SPA 콘텐츠를 설명하는 메타 리소스 속성:
 >
 >이 문서에서는 데모용으로만 We.Retail 저널 앱을 사용합니다. 를 프로젝트 작업에 사용하지 마십시오.
 >
->모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK을 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)을(를) 사용해야 합니다.AEM의 모든 SPA 프로젝트는 SPA 스타터 키트용 Maven Archetype을 기반으로 해야 합니다.
+>모든 AEM 프로젝트는 React 또는 Angular을 사용하여 SPA 프로젝트를 지원하고 SPA SDK을 사용하는 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)을(를) 사용해야 합니다.AEM의 모든 SPA 프로젝트는 SPA 스타터 키트용 Maven Archetype을 기반으로 해야 합니다.
 
 ## 페이지 편집기 오버레이 동기화 {#page-editor-overlay-synchronization}
 

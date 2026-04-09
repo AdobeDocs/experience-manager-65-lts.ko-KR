@@ -7,12 +7,12 @@ topic-tags: introduction
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 72ecde6c-0597-4743-aa5e-446a365953a5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 5%
 
 * [자산](#assets)
 * [Sites](#sites)
-* [Forms](#forms)
+* [양식](#forms)
 
 관리, 배포, 유지 관리 또는 개발에 대한 우수 사례는 다음 중 하나를 참조하십시오.
 
@@ -72,7 +72,7 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함하여 Assets에 
 | 작성 도구 | [환경 및 도구 작성](/help/sites-authoring/author-environment-tools.md) | 페이지를 작성하는 데 사용되는 도구에 대한 개요를 제공합니다. |
 | 페이지 구성 | [페이지 생성 및 구성](/help/sites-authoring/managing-pages.md) | 이름 지정 규칙을 포함하여 페이지를 가장 잘 구성하는 방법에 대한 개요를 제공합니다. |
 
-## Forms {#forms}
+## 양식 {#forms}
 
 |  |  |  |
 |---|---|---|

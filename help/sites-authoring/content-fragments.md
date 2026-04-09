@@ -8,18 +8,18 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Content Fragments
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 5bde6c78-84bc-48f5-b06f-1c4282eaf5c1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 67%
 
 ---
 
-# 컨텐츠 조각으로 페이지 작성{#page-authoring-with-content-fragments}
+# 콘텐츠 조각으로 페이지 작성{#page-authoring-with-content-fragments}
 
-Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md).
+Adobe Experience Manager (AEM) 콘텐츠 조각은 [페이지와 독립적인 에셋으로 생성 및 관리됩니다.](/help/assets/content-fragments/content-fragments.md)
 
 변형(채널별로 가능)과 함께 이 조각을 사용하여 채널 중립적인 콘텐츠를 만들 수 있습니다. 그런 다음 콘텐츠 페이지를 작성할 때 이러한 조각과 해당 변형을 사용할 수 있습니다.
 
@@ -72,7 +72,7 @@ Adobe Experience Manager (AEM) content fragments are [created and managed as pag
 
 1. 다음과 같은 작업을 수행할 수 있습니다.
 
-   * **자산** 브라우저를 열고 **콘텐츠 조각**&#x200B;을 필터링합니다(기본값은 이미지). 그런 다음 필수 조각을 구성 요소 인스턴스에 드래그합니다.
+   * **에셋** 브라우저를 열고 **콘텐츠 조각**&#x200B;을 필터링합니다(기본값은 이미지). 그런 다음 필수 조각을 구성 요소 인스턴스에 드래그합니다.
 
    * 콘텐츠 조각 구성 요소를 선택한 다음 도구 모음에서 **구성**&#x200B;을 선택하십시오. 대화 상자에서 선택 대화 상자를 열어 필요한 **콘텐츠 조각**&#x200B;을 찾아 선택할 수 있습니다.
 
@@ -180,7 +180,7 @@ Adobe Experience Manager (AEM) content fragments are [created and managed as pag
 
 ### 관련 콘텐츠 사용 {#using-associated-content}
 
-[콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)과(와) 함께 [관련 콘텐츠](/help/assets/content-fragments/content-fragments-assoc-content.md)가 있는 경우 이러한 에셋은 사이드 패널에서 사용할 수 있습니다(조각을 콘텐츠 페이지에 배치한 후에). Associated content is effectively a special source of content for of [in-between content](#adding-in-between-content).
+[콘텐츠 조각](/help/assets/content-fragments/content-fragments-assoc-content.md)과(와) 함께 [관련 콘텐츠](/help/assets/content-fragments/content-fragments.md)가 있는 경우 이러한 에셋은 사이드 패널에서 사용할 수 있습니다(조각을 콘텐츠 페이지에 배치한 후에). Associated content is effectively a special source of content for of [in-between content](#adding-in-between-content).
 
 >[!NOTE]
 >

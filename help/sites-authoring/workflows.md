@@ -3,9 +3,9 @@ title: 워크플로우 작업
 description: Adobe Experience Manager의 워크플로에서는 페이지나 에셋에서 수행되는 일련의 단계들을 자동화할 수 있습니다.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 55382f3d-7aa4-433f-ac0c-c4764c01a8c3
-source-git-commit: d3ecfb99332ce5e5016f60b329ce5c10bc4593d4
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 74%

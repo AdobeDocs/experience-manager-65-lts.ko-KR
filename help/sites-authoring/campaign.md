@@ -7,11 +7,11 @@ content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 1d621e12-6da5-4b49-98c9-3fb9b8189ff7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2769'
 ht-degree: 2%
 
 ---
@@ -260,7 +260,7 @@ Adobe Campaign Standard을 사용하면 AEM에서 만든 컨텐츠를 다음과 
 
 AEM에서 만든 페이지를 Adobe Campaign의 이메일과 연결하려면 다음을 수행하십시오.
 
-1. AEM 관련 이메일 템플릿을 기반으로 이메일을 만듭니다. 자세한 내용은 [Adobe Campaign Standard에서 전자 메일 만들기](https://helpx.adobe.com/kr/campaign/standard/channels/using/creating-an-email.html)를 참조하세요.
+1. AEM 관련 이메일 템플릿을 기반으로 이메일을 만듭니다. 자세한 내용은 [Adobe Campaign Standard에서 전자 메일 만들기](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html)를 참조하세요.
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 

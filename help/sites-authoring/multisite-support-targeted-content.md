@@ -1,15 +1,15 @@
 ---
 title: 다중 사이트에서 타겟팅된 콘텐츠를 사용하여 작업
-description: 사이트 간 활동, 경험 및 오퍼와 같은 타겟팅된 콘텐츠를 관리해야 하는 경우 타겟팅된 콘텐츠에 대한 AEM의 내장 다중 사이트 지원을 이용할 수 있습니다.
+description: 사이트 간 활동, 경험 및 오퍼와 같은 타기팅된 콘텐츠를 관리해야 하는 경우 타기팅된 콘텐츠에 대한 AEM의 기본 제공 다중 사이트 지원을 이용할 수 있습니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 058f0019-68c2-4769-b49d-c1e251196ff1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2838'
 ht-degree: 84%
@@ -18,7 +18,7 @@ ht-degree: 84%
 
 # 다중 사이트에서 타겟팅된 콘텐츠를 사용하여 작업{#working-with-targeted-content-in-multisites}
 
-사이트 간 활동, 경험 및 오퍼와 같은 타겟팅된 콘텐츠를 관리해야 하는 경우 타겟팅된 콘텐츠에 대한 AEM의 내장 다중 사이트 지원을 이용할 수 있습니다.
+사이트 간 활동, 경험 및 오퍼와 같은 타기팅된 콘텐츠를 관리해야 하는 경우 타기팅된 콘텐츠에 대한 AEM의 기본 제공 다중 사이트 지원을 이용할 수 있습니다.
 
 >[!NOTE]
 >
