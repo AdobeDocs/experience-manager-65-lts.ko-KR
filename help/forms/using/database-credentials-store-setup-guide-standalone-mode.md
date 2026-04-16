@@ -69,7 +69,7 @@ ht-degree: 0%
 
 **스크립트:** `create-elytron-cred-standalone.bat`
 
-`create-elytron-cred-standalone.bat`소프트웨어 배포 포털[에서 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip) 스크립트를 다운로드합니다.
+`create-elytron-cred-standalone.bat`소프트웨어 배포 포털[에서 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip) 스크립트를 다운로드합니다.
 
 **스크립트에 다음을 묻는 메시지가 표시됩니다.**
 1. **JBOSS_HOME 경로**(예: `C:\Adobe\Adobe_Experience_Manager_Forms\jboss`)
@@ -93,7 +93,7 @@ ht-degree: 0%
 
 **스크립트** `create-elytron-cred-standalone.sh`
 
-`create-elytron-cred-standalone.sh`소프트웨어 배포 포털[에서 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip) 스크립트를 다운로드합니다.
+`create-elytron-cred-standalone.sh`소프트웨어 배포 포털[에서 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip) 스크립트를 다운로드합니다.
 
 **스크립트에 다음을 묻는 메시지가 표시됩니다.**
 
