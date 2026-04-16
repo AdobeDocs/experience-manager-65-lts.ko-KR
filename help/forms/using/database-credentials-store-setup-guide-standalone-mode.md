@@ -4,13 +4,13 @@ description: 독립형 모드에서 JBoss/Red Hat EAP의 AEM Forms JEE에 대한
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: f6e29287-a558-43ad-8465-ebf167c79c63
+source-git-commit: b4abf61e0d30396e78ecebf228114ad2bde30633
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
-
 
 # 데이터베이스 자격 증명 저장소 설정 안내서(독립 실행형 모드)
 
@@ -67,11 +67,11 @@ ht-degree: 0%
 
 #### Windows:
 
-**스크립트 위치:** `create-elytron-cred-standalone.bat`
+**스크립트:** `create-elytron-cred-standalone.bat`
 
-`batch cd path\to\script\location create-elytron-cred-standalone.bat`
+`create-elytron-cred-standalone.bat`소프트웨어 배포 포털[에서 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip) 스크립트를 다운로드합니다.
 
-**스크립트에서 다음을 묻는 메시지를 표시합니다.**
+**스크립트에 다음을 묻는 메시지가 표시됩니다.**
 1. **JBOSS_HOME 경로**(예: `C:\Adobe\Adobe_Experience_Manager_Forms\jboss`)
 2. **구성 파일 이름**(예: `lc_oracle.xml`, `lc_mysql.xml` 또는 `lc_mssql.xml`)
 3. **자격 증명 저장소 암호**(키 저장소 파일을 보호함 - 이 암호 기억)
@@ -91,11 +91,11 @@ ht-degree: 0%
 
 #### Linux의 경우:
 
-**스크립트 위치:** `create-elytron-cred-standalone.sh`
+**스크립트** `create-elytron-cred-standalone.sh`
 
-`bash cd /path/to/script/location chmod +x create-elytron-cred-standalone.sh./create-elytron-cred-standalone.sh`
+`create-elytron-cred-standalone.sh`소프트웨어 배포 포털[에서 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip) 스크립트를 다운로드합니다.
 
-**스크립트에서 다음을 묻는 메시지를 표시합니다.**
+**스크립트에 다음을 묻는 메시지가 표시됩니다.**
 
 1. **JBOSS_HOME 경로**(예: `/opt/Adobe/Adobe_Experience_Manager_Forms/jboss`)
 2. **구성 파일 이름**(예: `lc_oracle.xml`, `lc_mysql.xml` 또는 `lc_mssql.xml`)
@@ -296,4 +296,3 @@ ERROR: Configuration file not found
 
 - 변수: `-DCS_PASS=password`
 - 파일: `standalone.conf.bat`(Windows) 또는 `standalone.conf`(Linux)
-
