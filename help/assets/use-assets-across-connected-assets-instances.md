@@ -47,7 +47,7 @@ ht-degree: 15%
   | | [!DNL Sites] as a [!DNL Cloud Service] | AMS의 [!DNL Experience Manager] 6.5 LTS [!DNL Sites] | [!DNL Experience Manager] 6.5 LTS [!DNL Sites] 온-프레미스 |
   |---|---|---|---|
   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 지원됨 | 지원됨 | 지원됨 |
-  | AMS **의**[!DNL Experience Manager] 6.5 LTS [!DNL Assets] | 지원됨 | 지원됨 | 지원됨 |
+  | AMS **의**&#x200B;[!DNL Experience Manager] 6.5 LTS [!DNL Assets] | 지원됨 | 지원됨 | 지원됨 |
   | **[!DNL Experience Manager]6.5 LTS [!DNL Assets] 온-프레미스** | 지원되지 않음 | 지원되지 않음 | 지원되지 않음 |
 
 ### 지원되는 파일 형식 {#mimetypes}
