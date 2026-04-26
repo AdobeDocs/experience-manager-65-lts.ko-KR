@@ -6,9 +6,9 @@ role: Admin,Developer
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
 exl-id: 8de16e9d-40b6-49d2-9e6b-1aba13137d78
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
@@ -107,13 +107,14 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 ### Cloud Service 구성 {#cloud-service-configurations}
 
-<!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
+<!--
+TBD: Cannot find com.day.cq.dam.api.proxy at https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
 >[!NOTE]
 >
 >Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 -->
 
-프록시 및 프록시 작업자 구성은 모두 클라우드 서비스 구성을 통해 [!DNL Assets] **도구** 콘솔 또는 `/etc/cloudservices/proxy`에서 액세스할 수 있습니다. 각 프록시 작업자는 작업자별 구성 세부 정보(예: `/etc/cloudservices/proxy`)에 대해 `/etc/cloudservices/proxy/workername` 아래에 노드를 추가해야 합니다.
+프록시 및 프록시 작업자 구성은 모두 클라우드 서비스 구성을 통해 [!DNL Assets] **도구** 콘솔 또는 `/etc/cloudservices/proxy`에서 액세스할 수 있습니다. 각 프록시 작업자는 작업자별 구성 세부 정보(예: `/etc/cloudservices/proxy/workername`)에 대해 `/etc/cloudservices/proxy` 아래에 노드를 추가해야 합니다.
 
 >[!NOTE]
 >
@@ -182,7 +183,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 >
 >[!DNL Assets] 프록시 프레임워크에서 기본적으로 제공하지 않는 것은 풀 메커니즘입니다.
 >
->[!DNL InDesign] 통합을 통해 [!DNL InDesign] 서버 풀(IDSPool)에 액세스할 수 있습니다. 이 풀링은 [!DNL InDesign] 프록시 프레임워크의 일부가 아니라 [!DNL Assets] 통합에만 적용됩니다.
+>[!DNL InDesign] 통합을 통해 [!DNL InDesign] 서버 풀(IDSPool)에 액세스할 수 있습니다. 이 풀링은 [!DNL Assets] 프록시 프레임워크의 일부가 아니라 [!DNL InDesign] 통합에만 적용됩니다.
 
 >[!NOTE]
 >

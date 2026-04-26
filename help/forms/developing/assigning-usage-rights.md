@@ -11,10 +11,10 @@ feature: Adaptive Forms,Document Services, Reader Extensions
 hide: true
 hidefromtoc: true
 exl-id: d8027b43-10c7-435c-8fb5-059508966d42
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3897'
-ht-degree: 0%
+source-wordcount: '3973'
+ht-degree: 1%
 
 ---
 
@@ -148,7 +148,7 @@ Acrobat Reader DC 확장 API(Java)를 사용하여 PDF 문서에 사용 권한�
 
 [PDF 문서에 사용 권한 적용](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[빠른 시작(SOAP 모드):Java API를 사용하여 사용 권한 적용](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Java API를 사용한 빠른 시작(SOAP 모드):Applying 사용 권한](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [AEM Forms Java 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

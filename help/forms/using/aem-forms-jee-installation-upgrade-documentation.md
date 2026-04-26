@@ -9,14 +9,13 @@ docset: aem65
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: AEM Forms on JEE,AEM Forms Upgrade
-exl-id: 6d8c0e24-7f08-4e66-bb12-2cf1cfe1d5d3
-source-git-commit: fb9f6ef794da7f3b242e9e81a6c2505692c16cd8
+exl-id: 67a96376-412e-4065-b7af-fbb720a4720a
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '564'
 ht-degree: 2%
 
 ---
-
 
 # JEE의 AEM Forms에 대한 설치 및 업그레이드 워크플로 {#aem-forms-jee-installation-upgrade-documentation}
 
@@ -53,7 +52,7 @@ ht-degree: 2%
 | 안내서 | 설명 |
 | --- | --- |
 | [AEM Forms(단일 서버)(PDF) 설치 준비 중](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf) | **이전**&#x200B;에 **새 단일 서버(턴키가 아닌 서버) 설치**&#x200B;를 사용합니다. 이 문서에서는 단일 서버 토폴로지에 AEM Forms on JEE를 설치하기 위한 사전 요구 사항 및 환경 준비 단계를 나열합니다. |
-| [JBoss(PDF)용 JEE에 AEM Forms 설치 및 배포](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-jboss.pdf) | JBoss에서 JEE의 AEM Forms **단계별 설치 및 배포**(**턴키가 아님**)에 사용합니다. 단일 서버 설치의 경우 **AEM Forms(단일 서버) 설치 준비**&#x200B;를 완료한 후&#x200B;*이 안내서를 따르십시오.* |
+| [JBoss(PDF)용 JEE에 AEM Forms 설치 및 배포](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-jboss.pdf) | JBoss에서 JEE의 AEM Forms **단계별 설치 및 배포**(**턴키가 아님**)에 사용합니다. 단일 서버 설치의 경우 *AEM Forms(단일 서버) 설치 준비*&#x200B;를 완료한 후&#x200B;**이 안내서를 따르십시오.** |
 
 <!--
 | Preparing to Install AEM Forms (Server Cluster) (PDF) (**TBD**) | Use **before** a **fresh cluster installation**. Describes prerequisites and environment preparation steps for installing AEM Forms on JEE in a server cluster topology. *(Link will be added once the PDF is available.)* |
@@ -73,9 +72,9 @@ ht-degree: 2%
 | 안내서 | 설명 |
 | --- | --- |
 | [AEM Forms(PDF) 업그레이드 준비 중](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-upgrade.pdf) | **이전**&#x200B;에 **단일 서버 업그레이드**&#x200B;를 사용합니다. AEM 6.5 LTS Forms으로 업그레이드하기 전에 환경을 준비하는 방법에 대해 설명합니다. 단일 서버 설치 모드에서 JEE의 AEM Forms을 실행하는 환경에 적용됩니다. |
-| [JBoss(PDF)용 JEE의 AEM Forms으로 업그레이드](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-jboss.pdf) | **단일 서버** 설치 모드에서 JBoss의 **단계별 업그레이드 프로시저**&#x200B;에 사용합니다. **AEM Forms 업그레이드 준비**&#x200B;를 완료하는 *후*&#x200B;에 이 안내서를 따르십시오. |
+| [JBoss(PDF)용 JEE의 AEM Forms으로 업그레이드](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-jboss.pdf) | **단일 서버** 설치 모드에서 JBoss의 **단계별 업그레이드 프로시저**&#x200B;에 사용합니다. *AEM Forms 업그레이드 준비*&#x200B;를 완료하는 **후**&#x200B;에 이 안내서를 따르십시오. |
 
 <!--
 | Preparing to Install AEM Forms (Server Cluster) (PDF) (**TBD**) | Use **before** a **cluster upgrade**. Describes how to prepare the environment for a server cluster before upgrading to AEM 6.5 LTS Forms. It applies to environments running AEM Forms on JEE in a server cluster installation mode. *(Link will be added once the PDF is available.)* |
-| Upgrading to AEM Forms on JEE for JBoss (Cluster) (PDF) (**TBD**) | Use for the **step-by-step upgrade procedure** on JBoss in a **clustered** installation mode. Follow this guide **after** completing *Preparing to Install AEM Forms (Server Cluster)*. *(Link will be added once the PDF is available.)* | -->
-
+| Upgrading to AEM Forms on JEE for JBoss (Cluster) (PDF) (**TBD**) | Use for the **step-by-step upgrade procedure** on JBoss in a **clustered** installation mode. Follow this guide **after** completing *Preparing to Install AEM Forms (Server Cluster)*. *(Link will be added once the PDF is available.)* |
+-->

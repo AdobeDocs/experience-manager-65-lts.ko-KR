@@ -1,5 +1,5 @@
 ---
-title: 바코드 형식을 사용한 작업
+title: 바코드 양식 작업
 description: Java API 및 웹 서비스 API를 사용하여 PDF 양식 또는 바코드가 포함된 이미지의 데이터를 디코딩합니다.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ feature: Adaptive Forms, APIs & Integrations, Barcoded Forms
 hide: true
 hidefromtoc: true
 exl-id: 71dc8036-f9a3-4e00-bce1-3f162428053d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 0%
+source-wordcount: '1934'
+ht-degree: 1%
 
 ---
 
-# 바코드 형식을 사용한 작업 {#working-with-barcoded-forms}
+# 바코드 양식 작업 {#working-with-barcoded-forms}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 

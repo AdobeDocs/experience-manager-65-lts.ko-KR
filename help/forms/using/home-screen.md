@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: b8e413e0-1387-46c7-891a-85d5fc61288b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 1%
 
 ---
 
@@ -28,9 +28,11 @@ AEM Forms 앱에 로그인하면 홈 화면으로 리디렉션됩니다.
 
 ![Forms 앱 홈 화면](assets/home-screen-1.png)
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-![home-screen-1-1](assets/home-screen-1-1.png)-->
+![home-screen-1-1](assets/home-screen-1-1.png)
+-->
 
 1. **메뉴 단추**: **메뉴** 단추를 선택하여 작업, Forms, 보낼 편지함 및 설정으로 이동합니다. AEM Forms 앱이 AEM Forms JEE 서버에 연결되어 있으면 작업 옵션이 표시됩니다. 또한 작업 옵션에는 프로세스의 작업에서 생성된 초안이 저장됩니다. AEM Forms OSGi 서버의 경우 작업 옵션이 숨겨집니다. 보낼 편지함은 저장된 양식 및 초안을 서버와 동기화하기 전에 저장합니다. 앱이 [서버와 동기화됨](../../forms/using/sync-app.md)되면 보낼 편지함에 저장된 모든 양식 및 초안이 AEM Forms 서버로 업로드됩니다. 설정에 대한 자세한 내용은 [일반 설정 업데이트](../../forms/using/update-general-settings.md)를 참조하십시오.
 1. **작업 또는 양식**: 작업할 작업 또는 양식을 선택하십시오.

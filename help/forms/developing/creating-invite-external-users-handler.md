@@ -7,9 +7,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 5e1f1f3c-a2f3-4bf1-ba96-a02f8b16c180
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1165'
 ht-degree: 4%
 
 ---
@@ -44,9 +44,9 @@ Rights Management SPI를 사용하려면 프로젝트의 클래스 경로에 `ed
 
 ## 외부 사용자 초대 핸들러 구현 정의 {#define-invite-external-users-handler}
 
-외부 사용자 초대 핸들러를 개발하려면 `com.adobe.edc.server.spi.ersp.InvitedUserProvider` 인터페이스를 구현하는 Java 클래스를 만들어야 합니다. 이 클래스에는 관리 콘솔을 통해 액세스할 수 있는 `invitedUser`초대된 사용자 추가&#x200B;**페이지를 사용하여 전자 메일 주소를 제출하면 Rights Management 서비스가 호출하는** 메서드가 포함되어 있습니다.
+외부 사용자 초대 핸들러를 개발하려면 `com.adobe.edc.server.spi.ersp.InvitedUserProvider` 인터페이스를 구현하는 Java 클래스를 만들어야 합니다. 이 클래스에는 관리 콘솔을 통해 액세스할 수 있는 **초대된 사용자 추가** 페이지를 사용하여 전자 메일 주소를 제출하면 Rights Management 서비스가 호출하는 `invitedUser` 메서드가 포함되어 있습니다.
 
-`invitedUser` 메서드가 `java.util.List`초대된 사용자 추가&#x200B;**페이지에서 제출된 문자열 형식의 전자 메일 주소를 포함하는** 인스턴스를 수락합니다. `invitedUser` 메서드는 `InvitedUserProviderResult` 개체의 배열을 반환합니다. 이 개체는 일반적으로 사용자 개체에 대한 전자 메일 주소의 매핑입니다(null을 반환하지 않음).
+`invitedUser` 메서드가 **초대된 사용자 추가** 페이지에서 제출된 문자열 형식의 전자 메일 주소를 포함하는 `java.util.List` 인스턴스를 수락합니다. `invitedUser` 메서드는 `InvitedUserProviderResult` 개체의 배열을 반환합니다. 이 개체는 일반적으로 사용자 개체에 대한 전자 메일 주소의 매핑입니다(null을 반환하지 않음).
 
 >[!NOTE]
 >
@@ -217,7 +217,7 @@ AEM Forms에 외부 사용자 초대 핸들러를 배포하려면 Java 프로젝
 
 ![사용자 초대](assets/ci_ci_InviteUsers.png)
 
-A. 구성 요소 B. JAVA 파일에 필요한 외부 JAR 파일
+A. 구성 요소 B에 필요한 외부 JAR 파일. JAVA 파일
 
 외부 사용자 초대 핸들러를 JAR 파일로 패키징합니다. 이전 다이어그램에서는 .JAVA 파일이 나열되어 있습니다. JAR 파일에 패키지된 후에는 해당 .CLASS 파일도 지정해야 합니다. .CLASS 파일이 없으면 권한 부여 처리기가 작동하지 않습니다.
 

@@ -11,10 +11,10 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 4a911fe6-2939-4c8c-b486-7575c759857d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '9036'
-ht-degree: 0%
+source-wordcount: '9089'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 **저장소 서비스 정보**
 
-저장소 서비스는 AEM Forms에 리소스 저장 및 관리 서비스를 제공합니다. 개발자가 *AEM Forms* 응용 프로그램을 만들 때 파일 시스템 대신 저장소에 자산을 배포할 수 있습니다. 자산에는 XML 양식, PDF forms(Acrobat 양식 포함), 양식 단편, 이미지, 프로필, 정책, SWF 파일, DDX 파일, XML 스키마, WSDL 파일 및 테스트 데이터를 비롯한 모든 유형의 자료가 포함될 수 있습니다.
+저장소 서비스는 AEM Forms에 리소스 저장 및 관리 서비스를 제공합니다. 개발자가 *AEM Forms* 응용 프로그램을 만들 때 파일 시스템 대신 저장소에 자산을 배포할 수 있습니다. 이 자산에는 XML 양식, PDF 양식(Acrobat 양식 포함), 양식 조각, 이미지, 프로필, 정책, SWF 파일, DDX 파일, XML 스키마, WSDL 파일, 테스트 데이터 등 모든 유형의 참고 자료가 포함될 수 있습니다.
 
 예를 들어, 이름이 *Applications/FormsApplication*&#x200B;인 다음 Forms 응용 프로그램을 생각해 보십시오.
 

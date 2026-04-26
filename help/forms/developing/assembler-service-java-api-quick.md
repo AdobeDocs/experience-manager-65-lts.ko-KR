@@ -1,5 +1,5 @@
 ---
-title: 어셈블러 서비스 Java&trade; API QuickStart(SOAP)
+title: 어셈블러 서비스 Java&trade, API QuickStart(SOAP)
 description: 어셈블러 서비스 Java&trade; API 빠른 시작(SOAP)을 사용하여 PDF 문서를 어셈블, 디스어셈블 및 동적으로 만드는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: e56b22b9-3f4f-46d1-9885-a7e58b47f42d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 PDF 문서 분해 {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-다음 Java 코드 예제에서는 이름이 *AssemblerResultPDF.pdf*&#x200B;인 PDF 문서를 디스어셈블합니다. DDX 문서의 이름은 *shell_disassemble.xml*&#x200B;입니다. 분해된 각 PDF 문서의 이름은 `ResultPDF[Number].pdf`입니다. 즉, 분해된 첫 번째 PDF 문서의 이름은 *ResultPDF1.pdf입니다.* 이 코드 예제에 사용된 *shell_disassemble.xml* DDX 문서에 대한 자세한 내용은 [프로그래밍 방식으로 PDF 문서 디스어셈블](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents)을 참조하십시오.
+다음 Java 코드 예제에서는 이름이 *AssemblerResultPDF.pdf*&#x200B;인 PDF 문서를 디스어셈블합니다. DDX 문서의 이름은 *shell_disassemble.xml*&#x200B;입니다. 분해된 각 PDF 문서의 이름은 `ResultPDF[Number].pdf`입니다. 즉, 분해된 첫 번째 PDF 문서의 이름은 *ResultPDF1.pdf.*&#x200B;입니다. 이 코드 예제에 사용된 *shell_disassemble.xml* DDX 문서에 대한 자세한 내용은 [프로그래밍 방식으로 PDF 문서 디스어셈블](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents)을 참조하십시오.
 
 ```java
  /*

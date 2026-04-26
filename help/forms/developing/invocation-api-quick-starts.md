@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 7e1b29b3-aaab-4e99-bf6e-1f085a71d293
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 3%
+source-wordcount: '1272'
+ht-degree: 4%
 
 ---
 
@@ -42,9 +42,9 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api">호출 API를 사용하여 단기 프로세스 호출</a></p></td>
-   <td><p>해당 사항 없음</p></td>
+   <td><p>N/A</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">빠른 시작: 호출 API를 사용하여 단기 프로세스 호출</a></p></td>
-   <td><p>해당 사항 없음</p></td>
+   <td><p>N/A</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">Base64 인코딩을 사용하여 AEM Forms 호출</a>(Java 웹 서비스 프록시)</p></td>

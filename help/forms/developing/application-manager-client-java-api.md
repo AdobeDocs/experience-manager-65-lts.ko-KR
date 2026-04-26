@@ -1,6 +1,6 @@
 ---
-title: Application Manager 클라이언트 JavaAPI 빠른 시작(SOAP)
-description: Application Manager 클라이언트 JavaAPI 빠른 시작(SOAP)
+title: 애플리케이션 관리자 클라이언트 Java API 빠른 시작(SOAP)
+description: 애플리케이션 관리자 클라이언트 Java API 빠른 시작(SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 1ac45713-4eca-4def-a030-c7bc3fcdf4c7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 0%
+source-wordcount: '434'
+ht-degree: 3%
 
 ---
 
@@ -22,21 +22,21 @@ ht-degree: 0%
 
 Application Manager Client에 다음 Java™ API 빠른 시작(SOAP)을 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드): Java를 사용하여 애플리케이션 버전 만들기](#quick-start-soap-mode-creating-application-version-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 애플리케이션 버전 만들기](#quick-start-soap-mode-creating-application-version-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 애플리케이션 내보내기](#quick-start-soap-mode-exporting-applications-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 애플리케이션 내보내기](#quick-start-soap-mode-exporting-applications-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 애플리케이션 가져오기](#quick-start-soap-mode-importing-applications-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 애플리케이션 가져오기](#quick-start-soap-mode-importing-applications-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 AEM Forms 애플리케이션 가져오기](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 AEM Forms 애플리케이션 가져오기](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 애플리케이션 가져오기](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 애플리케이션 가져오기](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 애플리케이션 상태 가져오기](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 애플리케이션 상태 가져오기](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[빠른 시작(SOAP 모드):Java를 사용하여 AEM Forms 및 이후 애플리케이션 아카이브 미리 보기](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[빠른 시작(SOAP 모드):Previewing Java™ API를 사용하는 AEM Forms 이상 애플리케이션 아카이브](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[빠른 시작(SOAP 모드):Java를 사용하여 AEM Forms 애플리케이션 아카이브 삭제](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[빠른 시작(SOAP 모드):Deleting Java™ API를 사용하는 AEM Forms 애플리케이션 아카이브](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
@@ -644,7 +644,7 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## 빠른 시작(SOAP 모드):Java™ API를 사용하여 LiveCycle ES2 이상 애플리케이션 아카이브 미리 보기 {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## 빠른 시작(SOAP 모드):Previewing Java™ API를 사용하는 LiveCycle ES2 이상 애플리케이션 아카이브 {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
 다음 Java™ 코드 예제는 Java™ API를 사용하여 AEM Forms 및 이후 애플리케이션 아카이브를 미리 보는 것입니다.
 
@@ -723,7 +723,7 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## 빠른 시작(SOAP 모드):Java™ API를 사용하여 애플리케이션 아카이브 삭제 {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
+## 빠른 시작(SOAP 모드):Deleting Java™ API를 사용하는 응용 프로그램 보관 {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
 
 다음 Java™ 코드 예제는 애플리케이션 아카이브를 삭제하는 것입니다.
 

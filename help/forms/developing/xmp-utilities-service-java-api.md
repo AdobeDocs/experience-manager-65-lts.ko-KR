@@ -1,5 +1,5 @@
 ---
-title: XMP 유틸리티 서비스 Java APIQuick 시작(SOAP)
+title: XMP 유틸리티 서비스 Java API 빠른 시작(SOAP)
 description: XMP 유틸리티 서비스를 사용하여 XMP 메타데이터를 내보내고 가져옵니다.
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 6c2bdfc3-0f7b-4d53-b17e-f4cd11ab40ea
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 0%
+source-wordcount: '233'
+ht-degree: 3%
 
 ---
 

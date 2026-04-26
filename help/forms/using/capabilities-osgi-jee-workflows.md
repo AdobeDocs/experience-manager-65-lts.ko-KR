@@ -1,6 +1,6 @@
 ---
-title: OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심의 AEM 워크플로우 작업 및 기능
-description: OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심의 AEM 워크플로우 작업 및 기능
+title: OSGi의 Forms 중심 AEM 워크플로 및 AEM Forms JEE 워크플로의 작업 및 기능
+description: OSGi의 Forms 중심 AEM 워크플로 및 AEM Forms JEE 워크플로의 작업 및 기능
 contentOwner: khsingh
 solution: Experience Manager, Experience Manager Forms
 hide: true
@@ -8,14 +8,14 @@ hidefromtoc: true
 feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
 exl-id: d0f54236-5dc2-4c64-87c5-85e5e85e8cf7
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 20%
+source-wordcount: '959'
+ht-degree: 24%
 
 ---
 
-# OSGi 및 AEM Forms JEE 워크플로우에서 양식 중심의 AEM 워크플로우 작업 및 기능 {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+# OSGi의 Forms 중심 AEM 워크플로 및 AEM Forms JEE 워크플로의 작업 및 기능 {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
 ## AEM 받은 편지함 및 HTML Workspace {#aem-inbox-and-html-workspace}
 
@@ -123,7 +123,7 @@ OSGi의 양식 중심의 AEM 워크플로와 JEE의 AEM Forms JEE 워크플로(J
    <td>지원됨</td>
   </tr>
   <tr>
-   <td>낙서 서명</td>
+   <td>스크리블 서명</td>
    <td>지원됨</td>
    <td>지원됨<br /> </td>
   </tr>
@@ -263,7 +263,7 @@ OSGi의 양식 중심의 AEM 워크플로와 JEE의 AEM Forms JEE 워크플로(J
    <td>지원됨</td>
   </tr>
   <tr>
-   <td>Forms 서비스</td>
+   <td>양식 서비스</td>
    <td>지원됨</td>
    <td>지원됨</td>
   </tr>

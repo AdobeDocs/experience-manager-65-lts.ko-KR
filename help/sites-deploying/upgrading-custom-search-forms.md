@@ -1,5 +1,5 @@
 ---
-title: 사용자 정의 검색 Forms 업그레이드
+title: 사용자 정의 검색 양식 업그레이드
 description: 이 문서에서는 사용자 정의 검색 양식이 작동하기 위해 업그레이드 후 필요한 조정 사항에 대해 자세히 설명합니다.
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
@@ -7,14 +7,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
-source-git-commit: 547d7866346fb148cb66f546d8a2e1141f69f563
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 2%
+source-wordcount: '1796'
+ht-degree: 3%
 
 ---
 
-# 사용자 정의 검색 Forms 업그레이드{#upgrading-custom-search-forms}
+# 사용자 정의 검색 양식 업그레이드{#upgrading-custom-search-forms}
 
 AEM 6.2에서 저장소에 저장된 사용자 지정 검색 Forms의 위치가 변경되었습니다. 업그레이드 시 6.1의 다음 위치에서 이동됩니다.
 
@@ -38,7 +38,7 @@ AEM 6.2에서 저장소에 저장된 사용자 지정 검색 Forms의 위치가 
 
 1. `https://server:port/crx/de/index.jsp`(으)로 이동하여 CRXDE Lite 열기
 1. 아래 [사용자 지정 검색 Forms](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) 목록에 지정된 대로 조정할 노드의 위치를 찾습니다.
-1. 노드를 클릭합니다. 오른쪽 속성 창에서 **sling:resourceType** 속성을 클릭하여 수정합니다.
+1. 노드를 클릭합니다. 오른쪽 속성 창에서 을(를) 클릭하고 **sling:resourceType** 속성을 수정합니다.
 1. 마지막으로 **모두 저장** 단추를 눌러 변경 사항을 저장합니다.
 
 ## 사용자 지정 검색 Forms 목록 {#list-of-custom-search-forms}
@@ -236,7 +236,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1<br /> <br />의 기본 검색 양식에 있는 노드 </td>
-   <td>해당 사항 없음</td>
+   <td>해당 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -261,7 +261,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1<br /> <br />의 기본 검색 양식에 있는 노드 </td>
-   <td>해당 사항 없음</td>
+   <td>해당 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -282,7 +282,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1<br /> <br />의 기본 검색 양식에 있는 노드 </td>
-   <td>해당 사항 없음</td>
+   <td>해당 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -303,7 +303,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1<br /> <br />의 기본 검색 양식에 있는 노드 </td>
-   <td>해당 사항 없음</td>
+   <td>해당 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -324,7 +324,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1<br /> <br />의 기본 검색 양식에 있는 노드 </td>
-   <td>해당 사항 없음</td>
+   <td>해당 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -345,7 +345,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1<br /> <br />의 기본 검색 양식에 있는 노드 </td>
-   <td>해당 사항 없음</td>
+   <td>해당 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>

@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 96e44da3-da89-4671-a4fb-19ce1b9a38c4
-source-git-commit: 10f0949f6317f060c38791cfe43156a56f8ebe47
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 1%
+source-wordcount: '503'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Experience Manager(AEM) 6.5에서는 모든 기능이 이전 버전과의 
 
 >[!NOTE]
 >
->호환성 패키지는 AEM 6.5 호환에 필요한 개발을 지연하기 위한 임시 솔루션일 뿐입니다. Adobe은 업그레이드 직후 개발을 통해 호환성 문제를 해결할 수 없는 경우에만 마지막 옵션으로 이 옵션을 권장합니다. Adobe 또한 6.5 기반 사용자 지정 개발을 진행하고 전체 6.5 기능을 사용하려면 기본 모드로 전환하고 호환성 패키지를 제거하는 것이 좋습니다.
+>호환성 패키지는 AEM 6.5 호환에 필요한 개발을 지연하기 위한 임시 솔루션일 뿐입니다. Adobe은 업그레이드 직후 개발을 통해 호환성 문제를 해결할 수 없는 경우에만 마지막 옵션으로 이 옵션을 권장합니다. 또한 6.5 기반 사용자 지정 개발을 진행하고 전체 6.5 기능을 사용하려면 기본 모드로 전환하고 호환성 패키지를 제거하는 것이 좋습니다.
 
 ![사례](assets/sase.png)
 
@@ -54,7 +54,7 @@ Adobe Experience Manager(AEM) 6.5에서는 모든 기능이 이전 버전과의 
 
 ## 설정 방법 {#how-to-set-up}
 
-패키지 관리자를 사용하여 **6.5**&#x200B;용 AEM 6.4 호환성 팩을 패키지로 설치할 수 있습니다. 소프트웨어 배포[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) 사이트에서 6.5용 AEM 6.4 호환성 팩을 다운로드할 수 있습니다.
+패키지 관리자를 사용하여 **6.5**&#x200B;용 AEM 6.4 호환성 팩을 패키지로 설치할 수 있습니다. 소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) 사이트에서 [6.5용 AEM 6.4 호환성 팩을 다운로드할 수 있습니다.
 
 호환성 패키지가 설치되면 아래와 같이 OSGI 구성에서 스위치를 사용하여 라우팅을 활성화하거나 비활성화할 수 있습니다.
 

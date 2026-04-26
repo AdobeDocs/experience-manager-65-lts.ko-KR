@@ -7,9 +7,9 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
-source-git-commit: 194937f0678ea27a04319197f391dd7cc358ec51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '2007'
 ht-degree: 4%
 
 ---
@@ -18,10 +18,11 @@ ht-degree: 4%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
 | AEM 6.5 LTS | 이 문서 |
 
-<!-- Scope of metadata articles:
+<!--
+Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
@@ -117,8 +118,9 @@ DOS(서비스 거부) 같은 상황을 방지하기 위해 [!DNL Enterprise Mana
 1. 도구 모음에서 **[!UICONTROL 메타데이터 프로필 삭제]**&#x200B;를 클릭합니다.
 1. 대화 상자에서 **[!UICONTROL 삭제]**&#x200B;를 클릭하여 삭제 작업을 확인합니다. 메타데이터 프로필이 목록에서 삭제됩니다.
 
-<!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/kr/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+<!--
+TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -200,7 +202,7 @@ To apply a metadata profile globally, follow these steps:
 
 **[!UICONTROL 필드 레이블]**: 폴더의 속성 페이지에 표시되는 메타데이터 속성의 이름입니다.
 
-**[!UICONTROL 속성에 매핑]**: 이 속성은 저장되는 CRX 저장소의 폴더 노드의 상대 경로를 지정합니다. &quot;**&quot;(으)로 시작합니다./**&quot;은(는) 경로가 폴더의 노드 아래에 있음을 나타냅니다.
+**[!UICONTROL 속성에 매핑]**: 이 속성은 저장되는 CRX 저장소의 폴더 노드의 상대 경로를 지정합니다. &quot;**./**&quot;(으)로 시작하며, 이는 경로가 폴더의 노드 아래에 있음을 나타냅니다.
 
 다음은 이 속성에 유효한 값입니다.
 
@@ -230,7 +232,7 @@ To apply a metadata profile globally, follow these steps:
 
 폴더 메타데이터 스키마 Forms 페이지에서 또는 폴더를 만들 때 폴더에 폴더 메타데이터 스키마를 할당할 수 있습니다.
 
-폴더에 대한 메타데이터 스키마를 구성하는 경우 스키마 양식의 경로가 `folderMetadataSchema` 아래 폴더 노드의 `./jcr:content` 속성에 저장됩니다.
+폴더에 대한 메타데이터 스키마를 구성하는 경우 스키마 양식의 경로가 `./jcr:content` 아래 폴더 노드의 `folderMetadataSchema` 속성에 저장됩니다.
 
 #### 폴더 메타데이터 스키마 페이지에서 스키마에 할당 {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
@@ -278,7 +280,7 @@ Open the properties for a folder configured with a folder metadata schema. **[!U
 >
 >* [메타데이터 개념 및 이해](metadata-concepts.md).
 >* [여러 컬렉션의 메타데이터 속성을 편집합니다](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Experience Manager Assets에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=ko).
+>* [Experience Manager Assets에서 메타데이터 가져오기 및 내보내기](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [메타데이터, 이미지 및 비디오를 처리할 프로필](processing-profiles.md).
 >* [처리 프로필을 사용하도록 디지털 자산을 구성하는 모범 사례](/help/assets/organize-assets.md).
 >* [XMP 원본에 쓰기](/help/assets/xmp-writeback.md).

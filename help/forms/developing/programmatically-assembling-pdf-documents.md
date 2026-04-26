@@ -12,10 +12,10 @@ feature: Adaptive Forms,Document Services
 hide: true
 hidefromtoc: true
 exl-id: a64f0bd4-8d5c-485d-b620-608bfe33a72f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2105'
-ht-degree: 0%
+source-wordcount: '2139'
+ht-degree: 1%
 
 ---
 
@@ -154,7 +154,7 @@ map.pdf 파일과 directions.pdf 파일은 모두 컬렉션 개체에 배치해�
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[PDF 문서 프로그래밍 방식으로 분리](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents)
+[프로그래밍 방식으로 PDF 문서 디스어셈블](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents)
 
 ## Java API를 사용하여 PDF 문서 어셈블 {#assemble-pdf-documents-using-the-java-api}
 

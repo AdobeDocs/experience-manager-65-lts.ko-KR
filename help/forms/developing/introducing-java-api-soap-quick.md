@@ -1,6 +1,6 @@
 ---
-title: Java 소개&trade; API QuickStart
-description: SOAP 연결에 활성화된 AEM Forms Java&trade; 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행하는 방법을 알아봅니다.
+title: Java&trade 소개, API QuickStart
+description: SOAP 연결에 활성화된 AEM Forms Java&trade; 강력한 형식의 API를 사용하여 AEM Forms 작업을 수행하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: a5ae164d-d0c0-40d0-baeb-0e646fc71f55
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---

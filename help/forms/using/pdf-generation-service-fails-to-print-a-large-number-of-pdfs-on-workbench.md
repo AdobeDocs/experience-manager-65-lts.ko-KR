@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 80a4e5c0-d68f-4591-a43d-ab75b5f0764c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,10 @@ ht-degree: 0%
 
 `ALC-OUT-002-013: XMLFormFactory, PAexecute failure: "0: Out of Memory"`
 
-<!-- Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
-Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.-->
+<!--
+Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
+Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.
+-->
 
 인쇄 요청의 최대 페이지 수가 Windows에서 약 1000페이지로 제한되기 때문입니다. 인쇄 출력이 생성될 때 템플릿과 데이터를 메모리에 로드해야 하고 결과 레이아웃이 메모리에 빌드됩니다. 이는 최종 산출물의 크기에 한계가 있다는 것을 의미한다. 인쇄 출력을 생성하는 프로세스는 32비트 작업입니다. 즉, Windows <!--and 4 GB on UNIX-->에서 2GB의 RAM으로 제한됩니다.
 

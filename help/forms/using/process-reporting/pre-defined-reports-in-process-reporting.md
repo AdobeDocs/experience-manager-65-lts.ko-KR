@@ -1,5 +1,5 @@
 ---
-title: 프로세스 보고에서 사전 정의된 보고서
+title: 프로세스 보고의 미리 정의된 보고서
 description: 장기 실행 프로세스, 프로세스 기간 및 워크플로우 볼륨에 대한 보고서를 만들기 위해 JEE의 AEM Forms 프로세스 데이터를 쿼리합니다.
 content-type: reference
 topic-tags: process-reporting
@@ -11,14 +11,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3bf65798-a8ce-4864-9d77-952bb8d8da43
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 0%
+source-wordcount: '703'
+ht-degree: 1%
 
 ---
 
-# 프로세스 보고에서 사전 정의된 보고서 {#pre-defined-reports-in-process-reporting}
+# 프로세스 보고의 미리 정의된 보고서 {#pre-defined-reports-in-process-reporting}
 
 ## 프로세스 보고에서 사전 정의된 보고서 {#pre-defined-reports-in-process-reporting-1}
 

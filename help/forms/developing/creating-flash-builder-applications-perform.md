@@ -11,14 +11,14 @@ feature: Adaptive Forms,Document Security
 hide: true
 hidefromtoc: true
 exl-id: 6c384e25-f53f-44aa-9043-b9f9f659f987
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 0%
+source-wordcount: '1794'
+ht-degree: 1%
 
 ---
 
-# HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램 만들기 {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+# HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 애플리케이션 만들기 {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
@@ -71,7 +71,7 @@ Flash Builder를 사용하여 빌드된 클라이언트 응용 프로그램은 `
 
 **로그인 프로세스**
 
-클라이언트 응용 프로그램이 시작되면 `/um/login` 보안 서블릿에 대한 POST 요청을 수행할 수 있습니다. 예, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. 요청이 User Manager 보안 서블릿에 도달하면 다음 단계를 수행합니다.
+클라이언트 응용 프로그램이 시작되면 `/um/login` 보안 서블릿에 대한 POST 요청을 수행할 수 있습니다. 예를 들어, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`과 같이 입력합니다. 요청이 User Manager 보안 서블릿에 도달하면 다음 단계를 수행합니다.
 
 1. 이름이 `lcAuthToken`인 쿠키를 찾습니다. 사용자가 이미 다른 Forms 애플리케이션에 로그인되어 있는 경우 이 쿠키가 존재합니다. 쿠키가 발견되면 해당 콘텐츠의 유효성이 검사됩니다.
 1. 헤더 기반 SSO가 활성화되면 서블릿은 구성된 헤더를 찾아 사용자의 ID를 결정합니다.

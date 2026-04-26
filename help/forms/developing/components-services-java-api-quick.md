@@ -1,6 +1,6 @@
 ---
-title: 구성 요소 및 서비스 Java&trade; APIQuick 시작(SOAP)
-description: Java&trade; API 빠른 시작(SOAP)을 사용하여 AEM Forms 구성 요소 및 서비스를 프로그래밍 방식으로 조작하는 방법을 알아봅니다.
+title: 구성 요소 및 서비스 Java&trade, APIQuick Start(SOAP)
+description: Java&trade; API 빠른 시작(SOAP)을 사용하여 AEM Forms 구성 요소 및 서비스를 프로그래밍 방식으로 조작하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 5a69b9e7-10f1-4637-9a29-228e12863333
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ ht-degree: 0%
 구성 요소 및 서비스에 Java™ API 빠른 시작(SOAP)을 사용할 수 있습니다.
 
 
-[빠른 시작(SOAP 모드): Java를 사용하여 구성 요소 배포](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 구성 요소 배포](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 서비스 실행 컨텍스트 설정](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 서비스 실행 컨텍스트 설정](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 서비스 보안 비활성화](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 서비스 보안 비활성화](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 서비스 시작](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 서비스 시작](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 서비스 구성 값 수정](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 서비스 구성 값 수정](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 구성 요소 제거](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 구성 요소 제거](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.

@@ -1,6 +1,6 @@
 ---
-title: Document Security Service JavaAPI 빠른 시작(SOAP)
-description: Document Security Service JavaAPI 빠른 시작(SOAP)
+title: 문서 보안 서비스 Java API 빠른 시작(SOAP)
+description: 문서 보안 서비스 Java API 빠른 시작(SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 exl-id: 7c92e9bb-aa68-4d4b-bf62-060a213e50f3
 hide: true
 hidefromtoc: true
-source-git-commit: 1336ccddcc73459f933e5e4b00a3a22605cdb9a1
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 0%
+source-wordcount: '1076'
+ht-degree: 1%
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: DDX 문서 검증
+title: DDX 문서의 유효성 검사
 description: Java API 및 웹 서비스 API를 사용하여 프로그래밍 방식으로 DDX 문서의 유효성을 검사합니다.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 4efc6e82-f577-4881-9c9d-30e1fe2cdb9d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 0%
+source-wordcount: '1542'
+ht-degree: 2%
 
 ---
 
-# DDX 문서 검증 {#validating-ddx-documents}
+# DDX 문서의 유효성 검사 {#validating-ddx-documents}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
@@ -138,7 +138,7 @@ DDX 문서의 유효성을 검사할 때 어셈블러 서비스에서 DDX 문서
 
 **추가 참조**
 
-[DDX 문서 검증](#validating-ddx-documents)
+[DDX 문서의 유효성 검사](#validating-ddx-documents)
 
 [빠른 시작(SOAP 모드): Java API를 사용하여 DDX 문서 유효성 검사](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)(SOAP 모드)
 
@@ -209,6 +209,6 @@ DDX 문서의 유효성을 검사할 때 어셈블러 서비스에서 DDX 문서
 
 **추가 참조**
 
-[DDX 문서 검증](#validating-ddx-documents)
+[DDX 문서의 유효성 검사](#validating-ddx-documents)
 
 [MTOM을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

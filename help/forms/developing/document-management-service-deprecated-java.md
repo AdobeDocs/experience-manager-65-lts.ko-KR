@@ -1,6 +1,6 @@
 ---
-title: 문서 관리 서비스(사용하지 않음)Java API 빠른 시작(SOAP)
-description: 문서 관리 서비스(사용하지 않음)Java API 빠른 시작(SOAP)
+title: 문서 관리 서비스(더 이상 사용되지 않음) Java API 빠른 시작(SOAP)
+description: 문서 관리 서비스(더 이상 사용되지 않음) Java API 빠른 시작(SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 3d67ebee-de15-4164-a474-670edd682563
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 0%
+source-wordcount: '642'
+ht-degree: 2%
 
 ---
 

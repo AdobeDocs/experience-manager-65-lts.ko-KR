@@ -1,5 +1,5 @@
 ---
-title: Forms을 렌더링하는 웹 응용 프로그램 만들기
+title: 양식을 렌더링하는 웹 애플리케이션 만들기
 description: Java 서블릿을 사용하여 Forms 서비스를 호출하고 양식을 렌더링하는 웹 기반 애플리케이션을 만듭니다. Java 서블릿은 양식을 반환하는 Forms 서비스와 클라이언트 웹 브라우저 간에 링크 역할을 합니다.
 contentOwner: admin
 content-type: reference
@@ -12,9 +12,9 @@ feature: Adaptive Forms, Workbench, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 071781e8-990d-4d01-b46e-be1c57bdbe3a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Java 서블릿을 사용하여 고객이 데이터를 보고 양식에 입력할
 
 &lt;*Forms Designer 설치 디렉터리*>/Samples/Forms/Purchase Order/Form Fragments
 
-여기서 &lt;*install directory*>은(는) 설치 경로입니다. 클라이언트 응용 프로그램을 위해 이 설치 위치에서 구매 주문 Dynamic.xdp 파일을 복사하고 *Applications/FormsApplication*&#x200B;이라는 Forms 응용 프로그램에 배포했습니다. 구매 주문 Dynamic.xdp 파일은 FormsFolder라는 폴더에 배치됩니다. 마찬가지로 조각은 다음 그림과 같이 Fragments라는 폴더에 배치됩니다.
+여기서 &lt;*설치 디렉터리*>는 설치 경로입니다. 클라이언트 응용 프로그램을 위해 이 설치 위치에서 구매 주문 Dynamic.xdp 파일을 복사하고 *Applications/FormsApplication*&#x200B;이라는 Forms 응용 프로그램에 배포했습니다. 구매 주문 Dynamic.xdp 파일은 FormsFolder라는 폴더에 배치됩니다. 마찬가지로 조각은 다음 그림과 같이 Fragments라는 폴더에 배치됩니다.
 
 ![cw_cw_fragmentsrepository](assets/cw_cw_fragmentsrepository.png)
 

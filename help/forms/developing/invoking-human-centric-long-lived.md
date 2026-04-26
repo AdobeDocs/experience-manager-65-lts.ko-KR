@@ -11,9 +11,9 @@ feature: Adaptive Forms, APIs & Integrations, AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 1cc7b91e-c2f1-4831-b8cd-1399e7dd821e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3762'
 ht-degree: 0%
 
 ---
@@ -850,7 +850,7 @@ FirstAppSolution/PreLoanProcess 프로세스를 호출할 수 있는 Flex으로 
 
 1. 새 Flex 프로젝트를 시작합니다.
 1. 프로젝트의 클래스 경로에 adobe-remoting-provider.swc 파일을 포함합니다. ([AEM Forms Flex 라이브러리 파일 포함](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)을 참조하십시오.)
-1. ActionScript 또는 MXML을 통해 `mx:RemoteObject` 인스턴스를 만듭니다. ([mx:RemoteObject 인스턴스 만들기](/help/forms/developing/invoking-aem-forms-using-remoting.md) 참조)
+1. ActionScript 또는 MXML을 통해 `mx:RemoteObject` 인스턴스를 만듭니다. ([mx 만들기:RemoteObject 인스턴스 만들기](/help/forms/developing/invoking-aem-forms-using-remoting.md) 참조)
 1. AEM Forms과 통신할 `ChannelSet` 인스턴스를 설정하고 `mx:RemoteObject` 인스턴스와 연결하십시오. ([AEM Forms에 채널 만들기](/help/forms/developing/invoking-aem-forms-using-remoting.md)를 참조하세요.)
 1. 사용자 식별자 값 및 암호를 지정하려면 ChannelSet의 `login` 메서드 또는 서비스의 `setCredentials` 메서드를 호출하십시오. [SSO(Single Sign-On) 사용](/help/forms/developing/invoking-aem-forms-using-remoting.md#using-single-sign-on)을 참조하세요.
 1. XML 인스턴스를 만들어 `FirstAppSolution/PreLoanProcess` 프로세스에 전달할 XML 데이터 원본을 만드십시오. (이 응용 프로그램 논리는 다음 코드 예제에 나와 있습니다.)

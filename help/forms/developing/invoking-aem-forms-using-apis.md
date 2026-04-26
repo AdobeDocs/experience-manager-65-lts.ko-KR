@@ -1,6 +1,6 @@
 ---
 title: API를 사용하여 AEM Forms을 호출하는 방법
-description: Java&trade; API, 웹 서비스, 원격 및 REST를 사용하여 AEM Forms 서비스를 호출하는 방법을 알아봅니다.
+description: Java&trade, API, 웹 서비스, 원격 및 REST를 사용하여 AEM Forms 서비스를 호출하는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +11,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 8cf0c8ca-12ea-4094-97a6-1cf34042bc8a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 0%
+source-wordcount: '298'
+ht-degree: 1%
 
 ---
 

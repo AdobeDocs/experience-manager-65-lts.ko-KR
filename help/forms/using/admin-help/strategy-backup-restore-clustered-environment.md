@@ -1,5 +1,5 @@
 ---
-title: 클러스터 환경에서의 백업 및 리스토어 전략
+title: 클러스터링된 환경에서의 백업 및 복원 전략
 description: AEM Forms 구현에서 추가 사용자 정의 데이터를 다른 데이터베이스에 저장하는 경우, AEM Forms 데이터와 계속 동기화되도록 이 데이터를 백업하는 전략을 구현해야 합니다.
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
@@ -7,18 +7,18 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 0%
+source-wordcount: '1398'
+ht-degree: 5%
 
 ---
 
-# 클러스터 환경에서의 백업 및 리스토어 전략 {#strategy-for-backup-and-restore-in-a-clustered-environment}
+# 클러스터링된 환경에서의 백업 및 복원 전략 {#strategy-for-backup-and-restore-in-a-clustered-environment}
 
 >[!NOTE]
 >
->AEM Forms 구현에서 추가 사용자 정의 데이터를 다른 데이터베이스에 저장하는 경우, AEM Forms 데이터와 계속 동기화되도록 이 데이터를 백업하는 전략을 구현해야 합니다. 또한 추가 데이터베이스가 동기화되지 않는 시나리오를 처리할 수 있을 만큼 강력하도록 애플리케이션을 설계해야 합니다. 수행되는 모든 데이터베이스 작업은 일관된 상태를 유지하는 데 도움이 되도록 트랜잭션 컨텍스트에서 수행하는 것이 좋습니다.
+>AEM Forms 구현에서 추가 사용자 정의 데이터를 다른 데이터베이스에 저장하는 경우, AEM Forms 데이터와 계속 동기화되도록 이 데이터를 백업하는 전략을 구현해야 합니다. 또한 애플리케이션은 추가 데이터베이스가 동기화되지 않는 시나리오를 처리할 수 있을 만큼 강력하게 설계되어야 합니다. 일관된 상태를 유지하기 위해 모든 데이터베이스 작업은 트랜잭션 컨텍스트에서 수행하는 것이 좋습니다.
 
 오류를 복구하려면 AEM 양식 시스템의 다음 부분을 백업해야 합니다.
 
@@ -117,7 +117,7 @@ AEM 보조 노드의 재해 복구 시나리오에 사용할 파일을 백업하
    >손상된 노드가 AEM 기본 노드인 경우 전체 클러스터 노드를 종료합니다.
 
 1. 시스템 이미지에서 물리적 시스템을 다시 만듭니다.
-1. 이미지가 생성된 이후 적용된 AEM 양식에 패치 또는 업데이트를 적용합니다. 이 정보는 백업 절차 중에 기록되었습니다. AEM forms는 시스템을 백업할 때와 동일한 패치 수준으로 복구해야 합니다.
+1. 이미지가 만들어진 이후 적용된 AEM Forms에 패치나 업데이트를 적용합니다. 이 정보는 백업 절차 중에 기록되었습니다. AEM forms는 시스템을 백업할 때와 동일한 패치 수준으로 복구해야 합니다.
 1. (*선택 사항*) 다른 모든 노드가 제대로 작동하는 경우 AEM 저장소도 손상되었을 수 있습니다. 이 경우 AEM 저장소의 error.log 파일에 저장소 동기화 해제 메시지가 표시됩니다.
 
    저장소를 복원하려면 다음 단계를 수행하십시오.
@@ -131,7 +131,7 @@ AEM 보조 노드의 재해 복구 시나리오에 사용할 파일을 백업하
    1. 노드에서 파일 clusterNode/revision.log 을 삭제합니다.
    1. 존재하는 경우 노드에서 .lock을 삭제합니다.
    1. 존재하는 경우 노드에서 repository/system.id을 삭제합니다.
-   1. 노드에서 파일 &ast;&ast;/listener.properties(있는 경우)를 삭제합니다.
+   1. 존재하는 경우 노드에서 파일 &amp;ast;&amp;ast;/listener.properties을 삭제합니다.
    1. 개별 클러스터 노드의 경우 repository/cluster_node.id을 복원합니다.
 
 >[!NOTE]
@@ -161,7 +161,7 @@ AEM 보조 노드의 재해 복구 시나리오에 사용할 파일을 백업하
    1. 모든 클러스터 노드에서 파일 clusterNode/revision.log 을 삭제합니다.
    1. 존재하는 경우 모든 클러스터 노드에서 .lock을 삭제합니다.
    1. 존재하는 경우 repository/system.id 모든 클러스터 노드를 삭제합니다.
-   1. 모든 클러스터 노드에서 파일 &ast;&ast;/listener.properties(있는 경우)를 삭제합니다.
+   1. 모든 클러스터 노드에서 파일 &amp;ast;&amp;ast;/listener.properties(있는 경우)를 삭제합니다.
    1. 개별 클러스터 노드의 경우 repository/cluster_node.id을 복원합니다.
 
 >[!NOTE]

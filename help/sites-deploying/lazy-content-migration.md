@@ -1,5 +1,5 @@
 ---
-title: 소극적 컨텐츠 마이그레이션
+title: 소극적 콘텐츠 마이그레이션
 description: Adobe Experience Manager 6.4의 레이지 콘텐츠 마이그레이션에 대해 알아봅니다.
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
@@ -7,14 +7,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 78c5486c-ed84-4ec8-b0b0-42d4e8611098
-source-git-commit: 09d2e75729060135f9eff1fc9f0126b0f940310b
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 2%
+source-wordcount: '692'
+ht-degree: 7%
 
 ---
 
-# 소극적 컨텐츠 마이그레이션 {#lazy-content-migration}
+# 소극적 콘텐츠 마이그레이션 {#lazy-content-migration}
 
 이전 버전과의 호환성을 위해 Adobe Experience Manager(AEM) 6.3으로 시작하는 **/etc** 및 **/content**&#x200B;의 콘텐츠 및 구성은 업그레이드 즉시 터치하거나 변형되지 않습니다. 이는 이러한 구조에 대한 고객 애플리케이션의 종속성이 그대로 유지되도록 하기 위한 것입니다. 기본 제공 AEM 6.5의 컨텐츠가 다른 위치에서 호스팅되더라도 이러한 컨텐츠 구조와 관련된 기능은 여전히 동일합니다.
 

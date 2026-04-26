@@ -1,5 +1,5 @@
 ---
-title: 자격 증명을 사용한 작업
+title: 자격 증명 작업
 description: Trust Manager API 및 Java API를 사용하여 AEM Forms으로 자격 증명을 가져옵니다. 또한 Trust Manager API 및 Java API를 사용하여 자격 증명을 삭제하는 방법도 알아봅니다.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: b3a0eb20-5b85-45a3-a416-a16a9f44acc5
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 0%
+source-wordcount: '1100'
+ht-degree: 2%
 
 ---
 
-# 자격 증명을 사용한 작업 {#working-with-credentials}
+# 자격 증명 작업 {#working-with-credentials}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 자격 증명에는 문서에 서명하거나 문서를 식별하는 데 필요한 개인 키 정보가 포함되어 있습니다. 인증서는 신뢰를 위해 구성하는 공개 키 정보입니다. AEM Forms은 여러 가지 용도로 인증서 및 자격 증명을 사용합니다.
 
-* Acrobat Reader DC 확장은 자격 증명을 사용하여 PDF 문서에서 Adobe Reader 사용 권한을 활성화합니다. ([PDF 문서에 사용 권한 적용](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)을 참조하십시오.)
+* Acrobat Reader DC 확장 프로그램은 자격 증명을 사용하여 PDF 문서에서 Adobe Reader 사용 권한을 활성화합니다. ([PDF 문서에 사용 권한 적용](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)을 참조하십시오.)
 * 서명 서비스는 PDF 문서에 디지털 서명하는 등의 작업을 수행하는 동안 인증서 및 자격 증명에 액세스합니다. ([PDF 문서에 디지털 서명하기](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)를 참조하십시오.)
 
 Trust Manager Java API를 사용하여 자격 증명 서비스와 프로그래밍 방식으로 상호 작용할 수 있습니다. 다음 작업을 수행할 수 있습니다.

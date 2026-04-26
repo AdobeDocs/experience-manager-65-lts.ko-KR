@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
-source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 1%
+source-wordcount: '532'
+ht-degree: 4%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 1%
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **반응형 텍스트 기반 또는 일반 JSON 인터페이스를 통해**
-* **각 행에 별도의 JSON 문서를 생성하는 &#x200B;** 반응성 JSON 라인 인터페이스를 통해).
+* **각 행에 별도의 JSON 문서를 생성하는 **반응성 JSON 라인 인터페이스를 통해).
 
 이 두 방법은 아래에 자세히 설명되어 있습니다.
 
@@ -111,7 +111,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_kr"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",
@@ -215,7 +215,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 * Sling 리소스 유형 및 슈퍼 유형(검색 경로 컨텐츠 오버레이 포함) 오버레이
 * Oak 인덱스 정의(호환성)
 * VLT 패키지(초과 사용)
-* rep:사용자 노드 호환성(OAuth 구성 컨텍스트)
+* rep:User 노드 호환성(OAuth 구성 컨텍스트)
 
 >[!NOTE]
 >

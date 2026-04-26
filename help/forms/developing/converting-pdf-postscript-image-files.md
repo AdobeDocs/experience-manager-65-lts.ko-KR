@@ -1,5 +1,5 @@
 ---
-title: PDF을 Postscript 및 Image 파일로 변환
+title: PDF를 PostScript 및 이미지 파일로 변환
 description: PDF 변환 서비스를 사용하여 Java API 및 웹 서비스 API를 사용하여 PDF 문서를 PostScript 및 여러 이미지 형식(JPEG, JPEG 2000, PNG 및 TIFF)으로 변환합니다.
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 509b9e53-9af4-4916-afba-2db358ec0764
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2774'
-ht-degree: 0%
+source-wordcount: '2820'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 **PDF 변환 서비스 정보**
 
-PDF 변환 서비스는 PDF 문서를 PostScript 및 여러 이미지 형식(JPEG, JPEG 2000, PNG 및 TIFF)으로 변환합니다. PDF 문서를 PostScript으로 변환하면 PostScript 프린터에서 무인 서버 기반 인쇄에 유용합니다. PDF 문서를 다중 페이지 TIFF 파일로 변환하는 것은 PDF 문서를 지원하지 않는 컨텐츠 관리 시스템에 문서를 보관할 때 실용적입니다.
+PDF 변환 서비스는 PDF 문서를 PostScript 및 여러 이미지 형식(JPEG, JPEG 2000, PNG 및 TIFF)으로 변환합니다. PDF 문서를 PostScript로 변환하면 모든 PostScript 프린터에서 무인 서버 기반 인쇄를 하는 데 유용합니다. PDF 문서를 다중 페이지 TIFF 파일로 변환하는 것은 PDF 문서를 지원하지 않는 컨텐츠 관리 시스템에 문서를 보관할 때 실용적입니다.
 
 PDF 변환 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 

@@ -7,9 +7,9 @@ feature: Asset Reports,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 434a081a-f9e4-4a0d-8468-55b4ab5a6287
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1171'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 자산 보고를 통해 [!DNL Adobe Experience Manager Assets] 배포의 유틸리티를 평가할 수 있습니다. [!DNL Assets]을(를) 사용하면 디지털 자산에 대한 다양한 보고서를 생성할 수 있습니다. 보고서는 시스템의 사용, 사용자가 에셋과 상호 작용하는 방법, 다운로드 및 공유되는 에셋에 대한 유용한 정보를 제공합니다.
@@ -114,7 +114,7 @@ ht-degree: 8%
    ![보고서 열 선택 또는 취소](assets/custom_columns.png)
 
 1. 도구 모음에서 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 보고서 생성이 시작되었음을 알리는 메시지가 표시됩니다.
-1. [!UICONTROL 자산 보고서] 페이지에서 보고서 생성 상태는 보고서 작업의 현재 상태(예: [!UICONTROL 성공], [!UICONTROL 실패], [!UICONTROL 큐에 있음] 또는 [!UICONTROL 예약됨])를 기반으로 합니다. 받은 편지함에도 동일한 상태가 나타납니다.보고서 페이지를 보려면 보고서 링크를 클릭하십시오. 또는 보고서를 선택하고 도구 모음에서 **[!UICONTROL 보기]**&#x200B;를 클릭합니다.
+1. [!UICONTROL 자산 보고서] 페이지에서 보고서 생성 상태는 보고서 작업의 현재 상태(예: [!UICONTROL 성공], [!UICONTROL 실패], [!UICONTROL 큐에 있음] 또는 [!UICONTROL 예약됨])를 기반으로 합니다. 알림 받은 편지함에도 동일한 상태가 표시됩니다.보고서 페이지를 보려면 보고서 링크를 클릭합니다. 또는 보고서를 선택하고 도구 모음에서 **[!UICONTROL 보기]**&#x200B;를 클릭합니다.
 
    <!--![A generated report](assets/report_page.png)-->
    [보고서 상태](assets/report-status.JPG)
@@ -147,7 +147,7 @@ ht-degree: 8%
 
 1. 속성 경로 선택기를 사용하여 CRXDE의 `jcr:content` 노드 아래에 속성 경로를 추가합니다. 또는 속성 경로 필드에 경로를 입력합니다.
 
-   ![jcr:content의 경로에서 속성 경로 매핑](assets/property_picker.png)
+   ![jcr의 경로에서 속성 경로 매핑:content](assets/property_picker.png)
 
    사용자 지정 열을 더 추가하려면 **[!UICONTROL 추가]**&#x200B;를 클릭하고 5단계와 6단계를 반복합니다.
 

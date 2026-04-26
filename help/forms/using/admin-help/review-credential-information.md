@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5cc5c9fe-50ce-4863-bfa4-a009a6c3b06f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 0%
+source-wordcount: '196'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 1. 웹 브라우저를 열고 다음 URL을 입력합니다.
 
-   http://localhost:port/ReaderExtensions (*port*&#x200B;은(는) 응용 프로그램 서버의 포트 번호입니다.)
+   http://localhost:port/ReaderExtensions (여기서 *port*&#x200B;은(는) 응용 프로그램 서버의 포트 번호입니다.)
 
 1. 기본 사용자 이름 및 암호를 사용하여 로그인합니다.
 

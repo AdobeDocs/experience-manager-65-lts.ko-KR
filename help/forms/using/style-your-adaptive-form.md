@@ -6,10 +6,10 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 8%
+source-wordcount: '2189'
+ht-degree: 10%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 8%
 
 이 자습서는 [첫 번째 적응형 양식을 만들기](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) 시리즈의 단계입니다. Adobe에서는 전체 자습서 사용 사례를 이해하고, 수행하고, 시연하려면 연대순으로 시리즈를 따르는 것이 좋습니다.
 
-## 튜토리얼 기본 정보  {#about-the-tutorial}
+## 튜토리얼 정보  {#about-the-tutorial}
 
-테마를 사용하여 적응형 양식에 고유한 모양과 스타일을 제공할 수 있습니다. 적응형 양식 편집기에서 제공하는 기본 테마를 적용하거나 사용자 고유의 사용자 지정 테마를 만들 수 있습니다. AEM [!DNL Forms]은(는) 사용자 지정 테마를 만들 수 있는 [테마 편집기](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/themes.html)를 제공합니다. 단일 테마는 모바일, 태블릿 또는 데스크탑에서 열린 동일한 적응형 양식에 다른 모양을 제공할 수 있습니다. 테마 편집기를 사용하려면 CSS 이하에 대한 사전 지식이 필요하지 않지만, 필요합니다.
+테마를 사용하여 적응형 양식에 고유한 모양과 스타일을 제공할 수 있습니다. 적응형 양식 편집기에서 제공하는 기본 테마를 적용하거나 사용자 고유의 사용자 지정 테마를 만들 수 있습니다. AEM [!DNL Forms]은(는) 사용자 지정 테마를 만들 수 있는 [테마 편집기](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)를 제공합니다. 단일 테마는 모바일, 태블릿 또는 데스크탑에서 열린 동일한 적응형 양식에 다른 모양을 제공할 수 있습니다. 테마 편집기를 사용하려면 CSS 이하에 대한 사전 지식이 필요하지 않지만, 필요합니다.
 
 자습서가 끝날 때까지 다음 작업을 수행할 수 있습니다.
 
@@ -105,8 +105,8 @@ ht-degree: 8%
 1. AEM 작성자 인스턴스에 로그인하고 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL 테마]**(으)로 이동합니다. 기본 URL은 [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes)입니다.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택하고 **[!UICONTROL 테마]**&#x200B;를 선택합니다. 테마를 만드는 데 필요한 필드가 있는 [!UICONTROL 테마 만들기] 페이지가 나타납니다. **[!UICONTROL 제목]** 및 **[!UICONTROL 이름]** 필드는 필수입니다.
 
-   * **제목:** 테마의 제목을 지정합니다. 예: **전역 테마.** 제목을 사용하면 테마 목록에서 테마를 식별할 수 있습니다.
-   * **이름:** 테마의 이름을 지정합니다. 예: **전역 테마.** 지정한 이름의 노드가 저장소에 만들어졌습니다. 제목 입력을 시작하면 이름 필드에 대한 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자 문자, 하이픈 및 밑줄만 포함될 수 있습니다. 잘못된 모든 입력은 하이픈으로 대체됩니다.
+   * **제목:** 테마의 제목을 지정합니다. 예: **전역 테마** 제목을 사용하면 테마 목록에서 테마를 식별할 수 있습니다.
+   * **이름:** 테마의 이름을 지정합니다. 예: **전역 테마** 이름이 지정된 노드가 저장소에서 만들어집니다. 제목 입력을 시작하면 이름 필드에 대한 값이 자동으로 생성됩니다. 제안 값을 변경할 수 있습니다. 이름 필드에는 영숫자 문자, 하이픈 및 밑줄만 포함될 수 있습니다. 잘못된 모든 입력은 하이픈으로 대체됩니다.
 
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 테마가 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다. 새 탭에서 새로 만든 테마를 열려면 **[!UICONTROL 열기]**&#x200B;를 선택합니다. 테마가 테마 편집기에서 열립니다. 스타일링을 위해 테마 편집기는 AEM [!DNL Forms]과(와) 함께 제공되는 기본 적응형 양식을 사용합니다.
 
@@ -134,7 +134,7 @@ ht-degree: 8%
    |---|---|
    | 글꼴 모음 | Arial® |
    | 글꼴 색상 | FFFFFF |
-   | 글꼴 크기 | 54픽셀 |
+   | 글꼴 크기 | 54 px |
 
 1. [!UICONTROL 헤더] 위젯을 선택하고 **[!UICONTROL 헤더]**&#x200B;을(를) 선택합니다. 헤더 위젯의 스타일을 지정하는 옵션이 왼쪽에 나타납니다. **[!UICONTROL 차원 및 위치]** 아코디언을 확장하고 **[!UICONTROL 높이]**&#x200B;을(를) `120px`(으)로 설정한 다음 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)을(를) 선택합니다.
 1. 헤더 위젯의 **[!UICONTROL 배경]** 아코디언을 확장하고 **[!UICONTROL 배경색]**&#x200B;을 `F6921E.`(으)로 설정합니다.
@@ -215,7 +215,7 @@ ht-degree: 8%
      <tr> 
       <td>텍스트</td> 
       <td>글꼴 크기</td> 
-      <td>18픽셀</td> 
+      <td>18 px</td> 
      </tr> 
      <tr> 
       <td>차원 및 위치</td> 
@@ -284,7 +284,7 @@ ht-degree: 8%
      <tr> 
       <td>텍스트</td> 
       <td>글꼴 크기</td> 
-      <td>18픽셀</td> 
+      <td>18 px</td> 
      </tr> 
     </tbody> 
    </table>
@@ -339,7 +339,7 @@ ht-degree: 8%
      <tr> 
       <td>치수 및 위치</td> 
       <td>높이</td> 
-      <td>40픽셀</td> 
+      <td>40 px</td> 
      </tr> 
      <tr> 
       <td>차원 및 위치<br /> </td> 
@@ -358,7 +358,7 @@ ht-degree: 8%
      <tr> 
       <td>경계</td> 
       <td>테두리 너비</td> 
-      <td>1픽셀</td> 
+      <td>1 px</td> 
      </tr> 
      <tr> 
       <td>경계</td> 
@@ -373,7 +373,7 @@ ht-degree: 8%
      <tr> 
       <td>경계</td> 
       <td>테두리 반지름</td> 
-      <td>7픽셀</td> 
+      <td>7 px</td> 
      </tr> 
      <tr> 
       <td>텍스트</td> 
@@ -388,7 +388,7 @@ ht-degree: 8%
      <tr> 
       <td>텍스트</td> 
       <td>글꼴 크기</td> 
-      <td>18픽셀</td> 
+      <td>18 px</td> 
      </tr> 
      <tr> 
       <td>텍스트</td> 
@@ -448,7 +448,8 @@ ht-degree: 8%
 <!--
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).-->
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
+-->
 
 >[!NOTE]
 >
@@ -479,7 +480,7 @@ ht-degree: 8%
 9. 새로 만든 `clientlibs` 폴더로 이동하여 `allowProxy` 및 `categories` 속성을 추가하십시오.
 10. `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`(으)로 이동하여 css 폴더를 만듭니다.
 11. 생성된 CSS 폴더로 이동하여 파일을 만듭니다. 예를 들어 파일을 `fonts.css`(으)로 만들고 포함 코드를 URL과 함께 붙여 넣습니다.
-    ![폴더 구조](/help/forms/using/assets/fonts-add-in-crxde.png)
+   ![폴더 구조](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. 변경 사항을 저장합니다.
 
 >[!NOTE]
@@ -515,4 +516,5 @@ The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection 
 1. Create an [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web Fonts) in an adaptive form. 
 1. In the AEM [!DNL Forms] Server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create an instance.
 
-   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**. -->
+   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**.
+-->

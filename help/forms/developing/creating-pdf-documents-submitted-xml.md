@@ -1,5 +1,5 @@
 ---
-title: SubmittedXML 데이터를 사용하여 PDF 문서 생성
+title: SubmittedXML 데이터로 PDF 문서 만들기
 description: Forms 서비스를 사용하여 사용자가 대화형 양식에 입력한 양식 데이터를 검색합니다. 양식 데이터를 다른 AEM Forms 서비스 작업에 전달하고 데이터를 사용하여 PDF 문서를 만듭니다.
 contentOwner: admin
 content-type: reference
@@ -12,10 +12,10 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 66736a58-b2ef-404e-b94c-9bc407828359
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 0%
+source-wordcount: '1334'
+ht-degree: 1%
 
 ---
 
@@ -82,7 +82,7 @@ Document Management 서비스 API를 사용하여 컨텐츠 서비스에 PDF 문
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[양식 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 ### Java API를 사용하여 제출된 XML 데이터로 PDF 문서 생성 {#create-a-pdf-document-with-submitted-xml-data-using-the-java-api}
 

@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: bdd884c4-ae12-4827-8251-01033cbc0185
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 > 
-> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인하십시오.
 
 다음은 관리 콘솔을 실행할 때 고려해야 할 몇 가지 사항입니다.
 

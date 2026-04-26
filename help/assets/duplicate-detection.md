@@ -7,9 +7,9 @@ feature: Asset Management,Asset Reports
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: ba54ecc2-a158-462a-8724-f6103b692edc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
@@ -31,4 +31,4 @@ ht-degree: 0%
 >[!MORELIKETHIS]
 >
 >* [기존 저장소의 자산을 복제합니다(커뮤니티 멤버의 자습서)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
->* [AEM as a Cloud Service에서 중복 에셋 감지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html?lang=ko)
+>* [AEM as a Cloud Service에서 중복 에셋 감지](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html)

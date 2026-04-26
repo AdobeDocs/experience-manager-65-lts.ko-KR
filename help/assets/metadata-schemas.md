@@ -7,10 +7,10 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf5c2dff-db68-4e82-8217-ff35069dcb81
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 7%
+source-wordcount: '3651'
+ht-degree: 8%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 조직은 자산 검색, 사용, 상호 운용성 등을 향상시키는 메타데이터 모델을 고안합니다. 올바른 메타데이터 애플리케이션은 메타데이터 기반 워크플로우 및 프로세스를 유지 관리하는 데 불가항력적입니다. 조직 전체의 메타데이터 전략 및 표준을 준수하기 위해 DAM 사용자가 조정할 수 있도록 도와주는 메타데이터 스키마를 사용할 수 있습니다. [!DNL Adobe Experience Manager]을(를) 사용하면 쉽고 유연한 방법으로 메타데이터 스키마를 만들고 유지 관리하고 적용할 수 있습니다.
@@ -50,7 +50,7 @@ ht-degree: 7%
 | [!UICONTROL 기본값] | | 에셋의 기본 메타데이터 스키마 양식. |
 | | 다음 자식 양식은 [!UICONTROL default] 양식의 속성을 상속합니다. | |
 | | <ul><li>[!UICONTROL dm_video]</li></ul> | Dynamic Media 비디오에 대한 스키마 양식. |
-| | <ul><li>[!UICONTROL 이미지]</li></ul> | `image/jpeg` 및 `image/png` 등 MIME 형식의 이미지에 대한 스키마 양식입니다. <br> [!UICONTROL 이미지] 양식에 다음 하위 양식 서식 파일이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형 [!UICONTROL jpeg]의 에셋에 대한 스키마 양식입니다.</li> <li>[!UICONTROL tiff]: 하위 유형 TIFF의 자산에 대한 스키마 양식입니다.</li></ul> |
+| | <ul><li>[!UICONTROL 이미지]</li></ul> | `image/jpeg` 및 `image/png`과(와) 같은 MIME 형식의 이미지에 대한 스키마 양식입니다. <br> [!UICONTROL 이미지] 양식에 다음과 같은 하위 양식 서식 파일이 있습니다. <ul><li> [!UICONTROL jpeg]: 하위 유형 [!UICONTROL jpeg]의 에셋에 대한 스키마 양식입니다.</li> <li>[!UICONTROL tiff]: 하위 유형 TIFF의 자산에 대한 스키마 양식입니다.</li></ul> |
 | | <ul><li>[!UICONTROL 응용 프로그램]</li></ul> | `application/pdf` 및 `application/zip`과(와) 같은 MIME 유형의 자산에 대한 스키마 양식입니다. <br>[!UICONTROL pdf]: PDF 하위 유형의 자산에 대한 스키마 양식입니다. |
 | | <ul><li>[!UICONTROL 비디오]</li></ul> | `video/avi` 및 `video/mp4`과(와) 같은 MIME 유형의 비디오 자산에 대한 스키마 양식입니다. |
 | [!UICONTROL 컬렉션] | | 컬렉션에 대한 스키마 양식입니다. |
@@ -290,7 +290,7 @@ The schema editor lets you add or delete a tab. 기본 스키마 양식에는 **
 
 #### 다양한 MIME 유형에 기존 스키마 템플릿 사용 {#use-an-existing-schema-template-for-various-mime-types}
 
-다른 MIME 유형에 기존 템플릿을 사용할 수 있습니다. 예를 들어 MIME 유형 `image/jpeg`의 자산에 대해 `image/png` 양식을 사용하십시오.
+다른 MIME 유형에 기존 템플릿을 사용할 수 있습니다. 예를 들어 MIME 유형 `image/png`의 자산에 대해 `image/jpeg` 양식을 사용하십시오.
 
 이 경우 CRX 저장소의 `/etc/dam/metadataeditor/mimetypemappings`에 노드를 만듭니다. 노드 이름을 지정하고 다음 속성을 정의합니다.
 
@@ -374,11 +374,12 @@ The schema editor lets you add or delete a tab. 기본 스키마 양식에는 **
 
    ![폴더에 에셋을 업로드할 때 에셋 카드 보기에 필수 메타데이터가 누락되었다는 메시지](assets/metadata-missing-info-card-view.png)
 
-1. (선택 사항) `https://[aem_server]:[port]/system/console/components/`에 액세스합니다. 기본적으로 사용하지 않도록 설정된 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 구성 요소를 구성하고 사용하도록 설정합니다. [!DNL Experience Manager]이(가) 에셋에 대한 메타데이터의 유효성을 확인하는 빈도를 설정하십시오. 이 구성은 자산 `hasValidMetadata`에 속성 `jcr:content`을(를) 추가합니다. [!DNL Experience Manager]은(는) 이 속성을 사용하여 검색 결과에서 잘못된 자산을 필터링합니다. 확인 후 자산을 추가하면 예약된 다음 확인까지 자산에 `hasValidMetadata` 플래그가 지정되지 않습니다. 따라서 자산은 예약된 다음 검사 이후까지 잘못된 메타데이터에 대한 검색 필터에 표시되지 않습니다.
+1. (선택 사항) `https://[aem_server]:[port]/system/console/components/`에 액세스합니다. 기본적으로 사용하지 않도록 설정된 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 구성 요소를 구성하고 사용하도록 설정합니다. [!DNL Experience Manager]이(가) 에셋에 대한 메타데이터의 유효성을 확인하는 빈도를 설정하십시오. 이 구성은 자산 `jcr:content`에 속성 `hasValidMetadata`을(를) 추가합니다. [!DNL Experience Manager]은(는) 이 속성을 사용하여 검색 결과에서 잘못된 자산을 필터링합니다. 확인 후 자산을 추가하면 예약된 다음 확인까지 자산에 `hasValidMetadata` 플래그가 지정되지 않습니다. 따라서 자산은 예약된 다음 검사 이후까지 잘못된 메타데이터에 대한 검색 필터에 표시되지 않습니다.
 
    >[!CAUTION]
    >
    >메타데이터 유효성 검사는 리소스를 많이 사용하며 시스템 성능에 영향을 줄 수 있습니다. 그에 따라 검사를 예약합니다. 서버가 부하를 처리할 수 없는 경우 이 작업을 비활성화하십시오.
 
-<!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
+<!--
+TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->

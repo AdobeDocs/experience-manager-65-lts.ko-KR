@@ -1,5 +1,5 @@
 ---
-title: 원격을 사용하여 AEM Forms 호출
+title: Remoting을 사용하여 AEM Forms 호출
 description: 원격을 사용하여 AEM Forms 프로세스를 호출하여 Workbench에서 생성된 프로세스를 호출합니다. Flex으로 빌드된 클라이언트 애플리케이션에서 AEM Forms 프로세스를 호출할 수 있습니다.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ feature: Adaptive Forms,APIs & Integrations,Workbench
 hide: true
 hidefromtoc: true
 exl-id: 37f5efaa-db0b-4035-987d-4140fc5a97be
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4604'
-ht-degree: 0%
+source-wordcount: '4651'
+ht-degree: 1%
 
 ---
 
-# 원격을 사용하여 AEM Forms 호출 {#invoking-aem-forms-using-remoting}
+# Remoting을 사용하여 AEM Forms 호출 {#invoking-aem-forms-using-remoting}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
@@ -70,7 +70,7 @@ Remoting을 사용하여 이름이 `MyApplication/EncryptDocument`인 다음 AEM
 
 [인간 중심의 장기 프로세스를 호출하는 Flex으로 구축된 클라이언트 애플리케이션 만들기](/help/forms/developing/invoking-human-centric-long-lived.md#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process)
 
-[HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 응용 프로그램 만들기](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
+[HTTP 토큰을 사용하여 SSO 인증을 수행하는 Flash Builder 애플리케이션 만들기](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
 
 <!-- For information on how to display process data in a Flex graph control, see [Displaying AEM Forms process data in Flex graphs](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
@@ -84,7 +84,7 @@ Remoting을 사용하여 AEM Forms 프로세스를 프로그래밍 방식으로 
 
 * *&lt;install_directory>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
-  여기서 &lt;*install_directory*>은(는) AEM Forms이 설치된 디렉토리입니다.
+  여기서 &lt;*install_directory*>는 AEM Forms이 설치된 디렉토리입니다.
 
 **추가 참조**
 
@@ -624,7 +624,7 @@ AEM Forms은 업로드 서블릿에 전달된 토큰을 반환하는 `getFileUpl
 >[!NOTE]
 >
 >* 비보안 문서를 허용하도록 AEM Forms을 구성하려면 Flex 애플리케이션에서 비보안 문서 업로드 허용 옵션을 선택합니다. 그런 다음 응용 프로그램 또는 서비스를 다시 시작하여 설정이 적용되도록 합니다.
->* SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+> * SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
 
 ### 빠른 시작: 원격을 사용하여 보안 문서를 전달하여 단기 프로세스 호출 {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}

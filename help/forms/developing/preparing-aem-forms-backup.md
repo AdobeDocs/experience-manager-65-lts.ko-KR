@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 백업 준비
+title: 백업을 위한 AEM Forms 준비
 description: 백업 및 복원 서비스를 사용하여 Java API 및 웹 서비스 API를 사용하여 AEM Forms 서버에 대한 백업 모드를 시작 및 종료하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 0fe1aef7-f607-4c40-bfa9-9ec9ebd8abeb
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2536'
 ht-degree: 0%
 
 ---
 
-# AEM Forms 백업 준비 {#preparing-aem-forms-for-backup}
+# 백업을 위한 AEM Forms 준비 {#preparing-aem-forms-for-backup}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 

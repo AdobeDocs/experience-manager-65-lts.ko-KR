@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: de3cd0ad-0b18-4d9a-8c6b-72cc16149cfc
-source-git-commit: eb6f6b994fdd3b2b01e77700d2deb7bd2830ac8f
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 13%
+source-wordcount: '247'
+ht-degree: 10%
 
 ---
 
@@ -32,7 +32,7 @@ AEM Forms 서비스 팩 6.5.21.0(으)로 업그레이드한 후 `PaperCapture` �
 1. 소프트웨어 배포 포털에서 [핫픽스](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0)를 다운로드합니다.
 1. 다운로드한 폴더의 컨텐츠를 추출하고 복사합니다.
 1. 해당 애플리케이션 서버의 아래 경로로 이동합니다.
-   * **JBoss&lbrace;1®:**
+   * **JBoss{1®:**
      `..\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\PaperCaptureSvc`
    * **웹 논리**:
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`

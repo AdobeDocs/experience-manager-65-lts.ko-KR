@@ -1,5 +1,5 @@
 ---
-title: 문서가 PDF/A를 준수하는지 여부 확인
+title: PDF/A 호환 문서인지 확인
 description: 어셈블러 서비스를 사용하여 PDF 문서가 Java API 및 웹 서비스 API를 사용하여 PDF/A를 준수하는지 확인합니다.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms,Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: bda74b30-28c4-490f-86c3-9c6fce14d79d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2065'
-ht-degree: 2%
+source-wordcount: '2118'
+ht-degree: 3%
 
 ---
 
-# 문서가 PDF/A를 준수하는지 여부 확인 {#determining-whether-documents-are-pdf-a-compliant}
+# PDF/A 호환 문서인지 확인 {#determining-whether-documents-are-pdf-a-compliant}
 
 어셈블러 서비스를 사용하여 PDF 문서가 PDF/A를 준수하는지 여부를 결정할 수 있습니다. PDF/A 문서는 문서 내용을 장기간 보존하기 위한 보관 형식으로 존재합니다. 글꼴이 문서 내에 임베드되어 있고 파일이 압축 해제되어 있습니다. 따라서 PDF/A 문서는 일반적으로 표준 PDF 문서보다 큽니다. 또한 PDF/A 문서에는 오디오 및 비디오 콘텐츠가 포함되지 않습니다.
 

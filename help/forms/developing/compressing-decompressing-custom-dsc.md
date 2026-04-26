@@ -7,14 +7,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: c97a8651-aca7-42e3-bcd0-71d089c3e753
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 0%
+source-wordcount: '486'
+ht-degree: 2%
 
 ---
 
-# JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제 {#compressing-decompressing-files}
+# JEE Custom DSC에서 AEM Forms를 사용하여 파일 압축 및 압축 풀기 {#compressing-decompressing-files}
 
 ## 전제 조건 지식 {#prerequisites}
 

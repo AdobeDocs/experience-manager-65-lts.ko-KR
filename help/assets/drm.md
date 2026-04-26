@@ -7,9 +7,9 @@ feature: DRM,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5870209f-9e0c-4e60-a083-e46edb707ae7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1440'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 디지털 에셋은 종종 사용 약관 및 기간을 지정하는 라이선스와 연결됩니다. [!DNL Adobe Experience Manager Assets]은(는) [!DNL Experience Manager] 플랫폼과 완전히 통합되므로 자산 만료 정보 및 자산 상태를 효율적으로 관리할 수 있습니다. 라이선스 정보를 자산과 연결할 수도 있습니다.
@@ -152,7 +152,7 @@ ht-degree: 8%
 >
 >[!DNL Experience Manager]의 이전 릴리스에서 라이선스를 저장하는 데 사용된 위치 `/etc/dam/drm/licenses`은(는) 더 이상 사용되지 않습니다.
 >
->Adobe 라이선스 페이지를 만들거나 수정하거나 이전 [!DNL Experience Manager] 릴리스에서 포팅한 경우 `/apps/settings/dam/drm/licenses` 또는 `/conf/&ast;/settings/dam/drm/licenses` 아래에 저장하는 것이 좋습니다.
+>라이선스 페이지를 만들거나 수정하거나 이전 [!DNL Experience Manager] 릴리스에서 포팅한 경우 `/apps/settings/dam/drm/licenses` 또는 `/conf/&ast;/settings/dam/drm/licenses` 아래에 저장하는 것이 좋습니다.
 
 ### DRM 보호 에셋 다운로드 {#downloading-drm-assets}
 

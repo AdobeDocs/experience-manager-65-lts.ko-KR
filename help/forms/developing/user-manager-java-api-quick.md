@@ -1,5 +1,5 @@
 ---
-title: User Manager Java API 빠른 시작(SOAP)
+title: 사용자 관리자 Java API 빠른 시작(SOAP)
 description: 사용자 관리자 API를 사용하여 사용자 추가, 사용자 삭제, 그룹 생성, 사용자 및 그룹 관리, 역할 및 권한 관리, 프로그래밍 방식으로 사용자 동기화 및 환경 설정 노드 프로그래밍 방식으로 관리합니다.
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: b960ca0b-5e0f-4009-b923-e93889c3c1f7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 0%
+source-wordcount: '494'
+ht-degree: 1%
 
 ---
 
@@ -382,7 +382,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 역할 및 권한 관리 {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
-다음 코드 예제에서는 서비스 사용자 역할을 주도자에게 할당하고 주도자에게 있는 역할을 인쇄한 다음 주도자로부터 역할을 제거합니다. 이 빠른 시작에 대해 DirectoryManager 서비스와 AuthorizationManager 서비스의 두 가지 서비스가 호출됩니다.[역할 및 권한 관리](/help/forms/developing/users.md#managing-roles-and-permissions)를 참조하세요.
+다음 코드 예제에서는 서비스 사용자 역할을 주도자에게 할당하고 주도자에게 있는 역할을 인쇄한 다음 주도자로부터 역할을 제거합니다. 이 빠른 시작에 대해 DirectoryManager 서비스와 AuthorizationManager 서비스 두 가지 서비스가 호출됩니다. [역할 및 권한 관리](/help/forms/developing/users.md#managing-roles-and-permissions)를 참조하십시오.
 
 ```java
  /*

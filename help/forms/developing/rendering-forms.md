@@ -1,5 +1,5 @@
 ---
-title: Forms 렌더링
+title: 양식 렌더링
 description: Forms 서비스를 사용하여 일반적으로 Designer에서 만든 양식을 확인, 처리, 변환 및 제공하는 대화형 데이터 캡처 클라이언트 애플리케이션을 만듭니다. 양식 작성자는 다양한 브라우저 환경에서 Forms 서비스가 PDF, SWF 또는 HTML에서 렌더링하는 단일 양식 디자인을 개발할 수 있습니다.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 3f1f9ecb-be62-4428-8db8-23c57081b0f7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
 
-# Forms 렌더링 {#rendering-forms}
+# 양식 렌더링 {#rendering-forms}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 

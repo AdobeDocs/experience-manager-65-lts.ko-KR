@@ -1,5 +1,5 @@
 ---
-title: Forms 서비스의 성능 최적화
+title: Forms 서비스 성능 최적화
 description: 양식을 렌더링할 때 런타임 옵션을 설정하고 저장소에 XDP 파일을 저장하여 Forms 서비스의 성능을 최적화합니다.
 contentOwner: admin
 content-type: reference
@@ -12,10 +12,10 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 63ddfd09-17b5-48b4-b7ee-961f2bdd2ae2
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 0%
+source-wordcount: '1442'
+ht-degree: 2%
 
 ---
 
@@ -75,11 +75,11 @@ Forms 서비스는 양식을 렌더링한 후 클라이언트 웹 브라우저�
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[양식 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[대화형 PDF forms 렌더링](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[대화형 PDF 양식 렌더링](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Forms as HTML 렌더링](/help/forms/developing/rendering-forms-html.md)
+[HTML로 양식 렌더링](/help/forms/developing/rendering-forms-html.md)
 
 [Forms을 렌더링하는 웹 애플리케이션 만들기](/help/forms/developing/creating-web-applications-renders-forms.md)
 

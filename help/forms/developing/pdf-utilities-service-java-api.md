@@ -1,5 +1,5 @@
 ---
-title: PDF 유틸리티 서비스 Java APIQuick 시작(SOAP)
+title: PDF 유틸리티 서비스 Java API 빠른 시작(SOAP)
 description: PDF 유틸리티 서비스를 사용하여 PDF 문서를 XDP 문서로 변환하고, XDP 문서를 PDF 문서로 변환하고, PDF 문서 속성을 검색하고, PDF 문서에 대한 저장 스타일을 설정하고, PDF 문서를 정리합니다.
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 546f42dd-a1bc-42cb-bbee-50a541f71d55
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 0%
+source-wordcount: '458'
+ht-degree: 1%
 
 ---
 

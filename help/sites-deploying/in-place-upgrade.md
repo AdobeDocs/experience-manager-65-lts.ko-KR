@@ -6,9 +6,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '619'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,8 @@ ht-degree: 1%
 
 1. 사용자 정의 sling.properties를 적용해야 하는 경우 새 로컬 AEM 인스턴스를 생성하고 crx-quickstart/conf 디렉토리에서 sling.properties 파일을 검색합니다. 필요한 사용자 지정 변경 사항을 이 파일에 적용한 다음, 업그레이드 중인 AEM 인스턴스의 crx-quickstart/conf 디렉토리에 복사합니다. 사용자 지정 속성이 없는 경우 이 단계를 건너뛸 수 있습니다.
 
-<!-- Alexandru: drafting temporarily
+<!--
+Alexandru: drafting temporarily
 
 ## Content Repository Migration {#content-repository-migration}
 
@@ -169,8 +170,8 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 
 1. S3 커넥터(버전 1.60.2)를 추출하고 `crx-quickstart/install` 아래에 있는 다음 폴더의 내용을 다음과 같이 복사합니다.
 
-   1. `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1` 아래의 `crx-quickstart/install/1` 복사
-   1. `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15` 아래의 `crx-quickstart/install/15` 복사
+   1. `crx-quickstart/install/1` 아래의 `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/1` 복사
+   1. `crx-quickstart/install/15` 아래의 `com.adobe.granite.oak.s3connector-1.60.2/jcr_root/libs/system/install/15` 복사
 
 이제 [올바른 업그레이드 시작 명령 결정](#determining-the-correct-upgrade-start-command) 섹션의 정보를 사용하여 결정된 새 명령을 사용하여 AEM 인스턴스를 시작합니다.
 

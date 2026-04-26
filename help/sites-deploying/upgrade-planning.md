@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3fe5421e-e97e-43c4-b34b-b84bf189a779
-source-git-commit: 425b3fae2658d78b0885f5034ff4c61da625d9d4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,8 @@ AEM 업그레이드 프로세스는 각 단계에 대해 정의된 주요 결과
 
 지원되는 운영 체제, Java™ 런타임, httpd 및 Dispatcher 버전을 실행 중인지 확인하는 것이 중요합니다. 자세한 내용은 [AEM 6.5 LTS에 대한 기술 요구 사항](/help/sites-deploying/technical-requirements.md)을 참조하세요. 이러한 구성 요소 업그레이드는 업그레이드 계획에서 고려해야 하며 AEM을 업그레이드하기 전에 수행해야 합니다.
 
-<!-- Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
 ## Upgrade Scope and Requirements {#upgrade-scope-requirements}
 
@@ -89,13 +90,15 @@ Below you will find a list of areas that are impacted in a typical AEM Upgrade p
  </tbody>
 </table>
 
-It is important to ensure that you are running a supported operating system, Java&trade; runtime, httpd, and Dispatcher version. For more information, see the [AEM 6.5 Technical Requirements page](/help/sites-deploying/technical-requirements.md). Upgrading these components must be accounted for in your project plan and should take place before upgrading AEM. -->
+It is important to ensure that you are running a supported operating system, Java&trade; runtime, httpd, and Dispatcher version. For more information, see the [AEM 6.5 Technical Requirements page](/help/sites-deploying/technical-requirements.md). Upgrading these components must be accounted for in your project plan and should take place before upgrading AEM.
+-->
 
 ## 업그레이드 단계 {#upgrade-phases}
 
 AEM 업그레이드 계획 및 실행에 많은 작업이 필요합니다. Adobe은 이 프로세스에 들어가는 다양한 노력을 명확히 하기 위해 계획 및 실행 연습을 별도의 단계로 분류했습니다. 아래 섹션에서 각 단계는 업그레이드의 향후 단계에서 자주 사용되는 결과물을 생성합니다.
 
-<!-- Alexandru:drafting for now
+<!--
+Alexandru:drafting for now
 
 ### Planning for Author Training {#planning-for-author-training}
 
@@ -103,7 +106,8 @@ With any new release, there are potential changes to the UI and user workflows t
 
 ![unu_cropped](assets/unu_cropped.png)
 
-New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/release-notes/release-notes.md). Make sure to note any changes to UIs or product features that are commonly used in your organization. As you look through the new features, also take note of any that can be of value to your organization. After looking through what has changed in AEM 6.5, develop a training plan for your authors. This could involve using freely available resources like the help feature videos or formal training offered through [Adobe Digital Learning Services](https://learning.adobe.com/). -->
+New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/release-notes/release-notes.md). Make sure to note any changes to UIs or product features that are commonly used in your organization. As you look through the new features, also take note of any that can be of value to your organization. After looking through what has changed in AEM 6.5, develop a training plan for your authors. This could involve using freely available resources like the help feature videos or formal training offered through [Adobe Digital Learning Services](https://learning.adobe.com/).
+-->
 
 ### 테스트 계획 만들기 {#creating-a-test-plan}
 
@@ -121,9 +125,11 @@ Adobe 고객이 AEM 환경에 적용하는 맞춤화의 양과 특성이 매우 
 
 Adobe은 AEM 인스턴스 업그레이드 프로세스를 문서화했지만 각 고객의 네트워크 레이아웃, 배포 아키텍처 및 맞춤화는 이 접근 방식을 미세 조정하고 맞춤화해야 합니다. 따라서 Adobe에서는 제공된 모든 설명서를 검토하고 이를 사용하여 사용자 환경에서 수행할 특정 업그레이드 및 롤백 절차를 요약한 업그레이드별 Runbook을 알릴 것을 권장합니다.
 
-<!--Alexandru:drafting for now
+<!--
+Alexandru:drafting for now
 
-![runbook-diagram](assets/runbook-diagram.png) -->
+![runbook-diagram](assets/runbook-diagram.png)
+-->
 
 Adobe은 [업그레이드 프로시저](/help/sites-deploying/upgrade-procedure.md)의 업그레이드 및 롤백 절차와 [바로 업그레이드 수행](/help/sites-deploying/in-place-upgrade.md)에서 업그레이드를 적용하기 위한 단계별 지침을 제공했습니다. 업그레이드 중에 실행할 적절한 전환 및 롤백 절차를 결정하려면 시스템 아키텍처, 사용자 정의 및 가동 중지 시간 허용 범위와 함께 이러한 지침을 검토하고 고려해야 합니다. 사용자 지정된 Runbook을 작성할 때 아키텍처 또는 서버 크기에 대한 모든 변경 사항을 포함해야 합니다.
 
@@ -131,9 +137,11 @@ Adobe은 [업그레이드 프로시저](/help/sites-deploying/upgrade-procedure.
 
 이전 연습의 결과를 사용하여 테스트 또는 개발 노력의 예상 타임라인 및 실제 업그레이드 실행을 다루는 업그레이드 계획을 작성할 수 있습니다.
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![develop-project-plan](assets/develop-project-plan.png) -->
+![develop-project-plan](assets/develop-project-plan.png)
+-->
 
 포괄적인 프로젝트 계획에는 다음이 포함되어야 합니다.
 
@@ -150,9 +158,11 @@ Adobe은 [업그레이드 프로시저](/help/sites-deploying/upgrade-procedure.
 
 Adobe은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upgrading-code-and-customizations.md)를 위한 절차를 AEM 6.5 LTS와 호환되도록 제공했습니다. 이 반복 프로세스가 실행되면 필요에 따라 Runbook을 변경해야 합니다.
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![patru_cropped](assets/patru_cropped.png) -->
+![patru_cropped](assets/patru_cropped.png)
+-->
 
 개발 및 테스트 프로세스는 일반적으로 반복적인 프로세스입니다. 업그레이드 프로세스를 조정해야 하는 문제가 발견되면 사용자 지정 업그레이드 Runbook에 추가해야 합니다. 테스트 및 수정을 여러 번 반복한 후 코드 베이스의 유효성을 완전히 검사하고 스테이징 환경에 배포할 준비가 되어야 합니다.
 
@@ -160,9 +170,11 @@ Adobe은 [코드 및 사용자 지정 업그레이드](/help/sites-deploying/upg
 
 Adobe은 코드베이스가 조직의 QA 팀에서 인증한 후 최종 테스트를 수행할 것을 권장합니다. 이 테스트에는 스테이징 환경에서 Runbook의 유효성을 검사한 다음 사용자 승인, 성능 및 보안 테스트를 수행하는 작업이 포함됩니다.
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![cinci_cropped](assets/cinci_cropped.png) -->
+![cinci_cropped](assets/cinci_cropped.png)
+-->
 
 이 단계는 프로덕션 유사 환경에 대해 Runbook의 단계를 확인할 수 있는 유일한 시간이므로 중요합니다. 환경이 업그레이드되면 최종 사용자가 일상적인 활동에서 시스템을 사용할 때 로그인하고 수행하는 활동을 수행할 수 있는 시간을 갖도록 하는 것이 중요합니다. 가동 전에 이러한 영역에서 문제를 찾아 수정하면 많은 비용이 드는 생산 중단을 방지하는 데 도움이 될 수 있습니다.
 

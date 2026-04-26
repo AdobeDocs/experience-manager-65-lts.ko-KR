@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: f1dbf625f1cb42feaede7acb0dee073ac78ebab3
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2999'
+source-wordcount: '3174'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,7 @@ AEM Forms on JEE 서버는 지원되는 운영 체제, 애플리케이션 서버
 
 - **패치 설치 관리자 지침**: 패치 설치 관리자를 사용하여 업데이트하는 동안 기본 전체 설치 관리자 버전이 두 개 이하의 이전 릴리스인지 확인하는 것이 중요합니다. 예를 들어 서비스 팩 6.5.19.0을(를) 설치하는 동안 기본 전체 설치 관리자 버전이 6.5.18.0 또는 6.5.12.0인지 확인하십시오.
 
-- **패치 업그레이드 지원**: 지원되는 최신 플랫폼으로 업그레이드하기 전까지 최신 서비스 팩으로 계속 업그레이드할 수 있습니다. 예를 들어 6.5.12.0에 대해 지원되는 플랫폼 조합으로 전환하는 경우 서비스 팩 6.5.19.0에서 6.5.19.0(으)로 업그레이드할 수 있습니다.
+- **패치 업그레이드 지원**: 지원되는 최신 플랫폼으로 업그레이드하기 전까지 최신 서비스 팩으로 계속 업그레이드할 수 있습니다. 예를 들어 6.5.19.0에 대해 지원되는 플랫폼 조합으로 전환하는 경우 서비스 팩 6.5.12.0에서 6.5.19.0(으)로 업그레이드할 수 있습니다.
 
 ### 권장 구성 {#recommendedconfigurations}
 
@@ -92,7 +92,7 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Platform</strong></p> </th>
+   <th><p><strong>플랫폼</strong></p> </th>
    <th><p><strong>지원 수준</strong></p> </th>
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
   </tr>
@@ -119,7 +119,7 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Platform</strong></p> </td>
+   <td><p><strong>플랫폼</strong></p> </td>
    <td><p><strong> 설명</strong></p> </td>
    <td><p><strong>지원 수준</strong></p> </td>
   </tr>
@@ -180,7 +180,7 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
  <tbody>
   <tr>
    <th>데이터베이스 </th>
-   <th><p><strong>Platform</strong></p> </th>
+   <th><p><strong>플랫폼</strong></p> </th>
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
   </tr>
   <tr>
@@ -206,7 +206,7 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
 <table>
  <tbody>
   <tr>
-   <td><p><strong> Platform</strong></p> </td>
+   <td><p><strong> 플랫폼</strong></p> </td>
    <td><p><strong>지원 수준</strong></p> </td>
    <td><p><strong>지원되는 패치 정의</strong></p> </td>
   </tr>
@@ -225,7 +225,7 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
 <table>
  <tbody>
   <tr>
-   <th><p><strong> Platform</strong></p> </th>
+   <th><p><strong> 플랫폼</strong></p> </th>
    <th><p><strong>지원 수준</strong></p> </th>
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
   </tr>
@@ -377,7 +377,7 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 지원되는 Cordova�
    <th><p><strong>PDF으로 전환하기 위해 지원되는 형식</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> 최신 버전</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> 최신 버전</td>
    <td>XPS, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML 및 HTM</td>
   </tr>
 
@@ -407,8 +407,10 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 지원되는 Cordova�
 >- OCR PDF, PDF 최적화 및 Export PDF 기능은 Windows에서만 지원됩니다.
 >- PDF Generator 서비스는 Microsoft® Windows 11을 지원하지 않습니다
 
-<!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
->- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
+<!--
+Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
+>- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
+-->
 
 ### 접근성 지원에 대한 예외 {#exceptions-to-accessibility-support}
 
@@ -439,7 +441,7 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/)과(�
   </tr>
   <tr>
    <td>Red Hat® Enterprise Linux®</td>
-   <td>Intel Xeon® E5-2670v2, vCPU 1개, 2.5GHz 프로세서<br /> AWS m3.medium(ECU 3개)<br /> RAM: 6GB(64비트 JVM이 있는 64비트 OS)<br /> 사용 가능한 디스크 공간: 6GB의 임시 공간과 JEE의 AEM Forms용 <br /><br /> </td>
+   <td>Intel Xeon® E5-2670v2, vCPU 1개, 2.5GHz 프로세서<br /> AWS m3.medium(ECU 3개)<br /> RAM: 6GB(64비트 JVM이 있는 64비트 OS)<br /> 사용 가능한 디스크 공간: 6GB의 임시 공간과 JEE의 AEM Forms용 <br /> <br /></td>
   </tr>
   <tr>
    <td>소규모 운영 환경에 필요한 하드웨어 요구 사항</td>
@@ -454,8 +456,8 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/)과(�
 
 추가 요구 사항은 다음을 참조하십시오.
 
-- [JEE 배포의 단일 서버 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_kr)
-- [JEE 배포의 클러스터된 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_kr)
+- [JEE의 단일 서버 AEM Forms 배포에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- [JEE 배포의 클러스터된 AEM Forms에 대한 시스템 요구 사항](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ### Adobe Acrobat 및 Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -484,7 +486,7 @@ AEM Forms의 다음 하위 시스템은 [508](https://www.section508.gov/)과(�
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Platform</strong></p> </th>
+   <th><p><strong>플랫폼</strong></p> </th>
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
   </tr>
   <tr>
@@ -614,7 +616,7 @@ AEM Forms 앱은 다음 플랫폼에서 사용할 수 있습니다.
 
 ### ® Office용 Adobe 문서 보안 확장 {#adobe-rights-management-extension-for-microsoft-office}
 
-® Office용 Adobe Document Security Extension에 대한 시스템 요구 사항을 보려면 [여기](https://www.adobe.com/kr/products/livecycle/rightsmanagement/extension/downloads.html)를 클릭하십시오.
+® Office용 Adobe Document Security Extension에 대한 시스템 요구 사항을 보려면 [여기](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html)를 클릭하십시오.
 
 ### 클라이언트 지원에 대한 예외 {#exceptions-to-client-support}
 
@@ -622,7 +624,7 @@ AEM Forms on JEE는 지원되는 소프트웨어의 지정된 주 버전 및 부
 
 ## 타사 패치 지원 정책 {#third-party-patch-support-policy}
 
-AEM Forms on JEE에 대한 타사 소프트웨어 요구 사항은 해당 제품 문서의 &quot;시스템 요구 사항&quot; 섹션에 설명되어 있습니다. [https://adobe.com/go/learn_aemforms_documentation_65_kr](https://adobe.com/go/learn_aemforms_documentation_65_kr)에서 모든 설명서에 액세스합니다.
+AEM Forms on JEE에 대한 타사 소프트웨어 요구 사항은 해당 제품 문서의 &quot;시스템 요구 사항&quot; 섹션에 설명되어 있습니다. [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65)에서 모든 설명서에 액세스합니다.
 
 JEE의 서드파티 참조 플랫폼인 AEM Forms은 JEE의 AEM Forms을 개발 및 릴리스하는 동안 현재 존재하는 서드파티 인프라의 특정 패치 수준과 JEE의 해당 버전의 AEM Forms에서 지원하는 인프라의 최소 패치/서비스 팩 수준을 설명합니다.
 
@@ -652,7 +654,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -735,7 +737,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/kr/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -804,7 +806,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/kr/support/programs/eol-matrix.html)|
+| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
 |  | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)| |
 |  | | Microsoft&reg; Windows Server 2016 (64-bit)|
 |  | | Microsoft&reg; Office 2016 |

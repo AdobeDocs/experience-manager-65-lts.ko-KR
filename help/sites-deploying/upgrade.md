@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ebc34847-dc3d-41ed-b0d6-f004c3debcd9
-source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,8 @@ ht-degree: 0%
 
 이 섹션에서는 AEM 설치를 AEM 6.5 LTS로 업그레이드하는 방법에 대해 설명합니다.
 
-<!-- Alexandru: drafting for now 
+<!--
+Alexandru: drafting for now 
 
 * [Planning Your Upgrade](/help/sites-deploying/upgrade-planning.md)
 * [Assessing the Upgrade Complexity with Pattern Detector](/help/sites-deploying/pattern-detector.md)
@@ -57,4 +58,4 @@ ht-degree: 0%
 
 Foundation 계층은 이제 Apache Sling, Felix 및 Jackrabbit Oak의 최신 오픈 소스 번들을 통합하여 Java 17 및 Java 21을 지원합니다. 또한 AEM 6.5 LTS uber-jar의 패키징이 변경되었습니다. 또한 몇 가지 레거시 기능이 AEM 6.5 LTS에서 제거되었습니다. 자세한 내용은 [릴리스 정보](/help/release-notes/release-notes.md#whats-new-what-s-new) 및 [업그레이드 후 제거된 오래된 번들 목록](/help/sites-deploying/obsolete-bundles.md)을 참조하세요.
 
-AEM 6.5 LTS는 기능의 이전 버전과의 호환성에 중점을 두고 있으며 분석기 도구와 함께 제공됩니다. [업그레이드 계획](/help/sites-deploying/aem-analyzer.md)을 시작할 때 복잡성을 평가하려면 [AEM 분석기를 사용하여 업그레이드 복잡성 평가](/help/sites-deploying/upgrade-planning.md)를 참조하십시오.
+AEM 6.5 LTS는 기능의 이전 버전과의 호환성에 중점을 두고 있으며 분석기 도구와 함께 제공됩니다. [업그레이드 계획](/help/sites-deploying/upgrade-planning.md)을 시작할 때 복잡성을 평가하려면 [AEM 분석기를 사용하여 업그레이드 복잡성 평가](/help/sites-deploying/aem-analyzer.md)를 참조하십시오.

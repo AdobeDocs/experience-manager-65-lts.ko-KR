@@ -11,10 +11,10 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: f934b721-1ca3-4626-9039-a38f0dfecea2
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 0%
+source-wordcount: '642'
+ht-degree: 2%
 
 ---
 
@@ -83,6 +83,6 @@ ht-degree: 0%
 
 **추가 참조**
 
-[DDX 문서 검증](/help/forms/developing/validating-ddx-documents.md#validating-ddx-documents)
+[DDX 문서의 유효성 검사](/help/forms/developing/validating-ddx-documents.md#validating-ddx-documents)
 
 [MTOM을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

@@ -1,6 +1,6 @@
 ---
-title: Forms 서비스 API 빠른 시작
-description: Java&trade; API를 사용하여 대화형 PDF, HTML Forms, 조각을 렌더링하는 방법을 알아봅니다.
+title: 양식 서비스 API 빠른 시작
+description: Java&trade; API를 사용하여 대화형 PDF, HTML Forms, 조각을 렌더링하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,48 +11,48 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: f66d001b-d782-49d8-9a4a-aaeb663039dc
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1529'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
 
-# Forms 서비스 API 빠른 시작 {#forms-service-api-quick-starts}
+# 양식 서비스 API 빠른 시작 {#forms-service-api-quick-starts}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 
 Forms 서비스에서는 다음 빠른 시작을 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드): Java를 사용하여 대화형 PDF 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 대화형 PDF 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 클라이언트에서 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 클라이언트에서 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 조각을 기반으로 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 조각을 기반으로 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 권한이 활성화된 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 권한이 활성화된 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 HTML 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 HTML 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 사용자 지정 도구 모음으로 HTML 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 사용자 지정 도구 모음으로 HTML 양식 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 XML로 제출된 PDF forms 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 XML로 제출된 PDF forms 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 PDF으로 제출된 PDF forms 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 PDF으로 제출된 PDF forms 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 XML로 제출된 HTML 양식 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 XML로 제출된 HTML 양식 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 제출된 XML 데이터로 PDF 문서 생성](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 제출된 XML 데이터로 PDF 문서 생성](forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 흐름 가능한 레이아웃으로 Forms 미리 채우기](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 흐름 가능한 레이아웃으로 Forms 미리 채우기](forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 계산 스크립트가 포함된 양식 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 계산 스크립트가 포함된 양식 처리](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-a-form-containing-a-calculation-script-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 성능 최적화](forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 성능 최적화](forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 값별 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 값별 렌더링](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
-[빠른 시작(SOAP 모드): Java를 사용하여 Forms 서비스에 문서 전달](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 Forms 서비스에 문서 전달](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
 Forms 서비스 API를 사용하는 애플리케이션 논리는 Java™ 서블릿으로 구현됩니다. AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 

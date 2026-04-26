@@ -1,5 +1,5 @@
 ---
-title: 책갈피로 PDF 문서 어셈블
+title: 책갈피를 사용하여 PDF 문서 어셈블
 description: 어셈블러 서비스를 사용하여 Java API 및 웹 서비스 API를 사용하여 책갈피가 포함된 PDF 문서를 수정합니다.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms, Document Services
 hide: true
 hidefromtoc: true
 exl-id: 40fbbef6-3a2e-455d-81a3-23c7e322c0fb
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2561'
 ht-degree: 0%
 
 ---
 
-# 책갈피로 PDF 문서 어셈블 {#assembling-pdf-documents-with-bookmarks}
+# 책갈피를 사용하여 PDF 문서 어셈블 {#assembling-pdf-documents-with-bookmarks}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
 

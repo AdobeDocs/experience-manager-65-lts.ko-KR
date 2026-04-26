@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1172f1f2-b297-4021-a9ee-507b0a4e628a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 1%
 
 >[!NOTE]
 > 
-> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인하십시오.
 
 HTML으로 렌더링되는 양식의 경우 발생하는 양식 유효성 검사 오류가 사용자에게 표시됩니다. 유효성 검사 메시지가 표시되는 방식을 사용자 지정할 수 있습니다. 유효성 검사 메시지가 표시되는 위치에 따라 폼에서 메시지 위치와 프레임 테두리 크기를 제어할 수도 있습니다.
 
 ## 유효성 검사 메시지가 표시되는 방식 지정 {#specify-how-validation-messages-are-displayed}
 
-1. 관리 콘솔에서 서비스 > 양식을 클릭합니다.
+1. 관리 콘솔에서 서비스 > Forms를 클릭합니다.
 1. [검증 출력]의 [보고] 목록에서 다음 옵션 중 하나를 선택합니다.
 
    **메시지 상자:** 유효성 검사 메시지를 별도의 대화 상자에 표시합니다.

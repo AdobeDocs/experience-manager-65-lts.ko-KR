@@ -1,5 +1,5 @@
 ---
-title: 바코드 Forms 서비스 Java&trade; API 빠른 시작(SOAP)
+title: 바코드 Forms 서비스 Java&trade, API 빠른 시작(SOAP)
 description: AEM Forms의 Barcoded Forms Service Java&trade; API 빠른 시작(SOAP)을 통해 바코드를 매끄럽게 처리하는 방법을 알아봅니다.
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: d1350be7-2204-4dc2-814b-4d9e3438a854
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Java™ API 빠른 시작(SOAP)은 Barcoded Forms 서비스에 사용할 수 있습니다.
 
-[빠른 시작(SOAP 모드): Java를 사용하여 바코드 형식 데이터 디코딩](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[빠른 시작(SOAP 모드): Java™ API를 사용하여 바코드 형식 데이터 디코딩](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 

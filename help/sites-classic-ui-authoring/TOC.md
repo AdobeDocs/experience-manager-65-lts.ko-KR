@@ -8,10 +8,10 @@ breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
 role: user
 hide: true
-source-git-commit: 96d94c843d1912abd91577b3373e38bd9fd9ed6c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 37%
+source-wordcount: '262'
+ht-degree: 89%
 
 ---
 
@@ -33,16 +33,16 @@ ht-degree: 37%
    + [작성 - 환경 및 도구](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md)
    + [페이지 생성 및 구성](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md)
    + [페이지 콘텐츠 편집](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)
-   + [리치 텍스트 편집기](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)
+   + [서식 있는 텍스트 편집기](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)
    + [페이지 게시](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md)
    + [페이지 속성 편집](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
    + [페이지 편집 시 주석](/help/sites-classic-ui-authoring/classic-page-author-annotations.md)
    + [작성 시의 AEM 문제 해결](/help/sites-classic-ui-authoring/classic-page-author-troubleshooting.md)
-   + [액세스 가능한 컨텐츠 만들기(WCAG 2.0 적합성)](/help/sites-classic-ui-authoring/classic-page-author-accessible-content.md)
-   + [페이지 작성을 위한 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
+   + [액세스 가능한 콘텐츠 만들기(WCAG 2.0 적합성)](/help/sites-classic-ui-authoring/classic-page-author-accessible-content.md)
+   + [페이지 작성 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
    + [페이지 편집 시 키보드 단축키](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)
 + 사이트 및 페이지 기능 {#siteandpage}
-   + [컨텐츠 조각으로 페이지 작성](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md)
+   + [콘텐츠 조각으로 페이지 작성](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md)
    + [반응형 레이아웃](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md)
    + [페이지 버전을 사용하여 작업](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md)
    + [태그 사용](/help/sites-classic-ui-authoring/classic-feature-tags.md)
@@ -65,23 +65,23 @@ ht-degree: 37%
    + [Target 오퍼](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
    + [이메일 마케팅](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
    + [반송된 이메일 추적](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
-   + [티저 및 전략](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
+   + [티저와 전략](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
    + [캠페인 설정](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
-   + [이메일 서비스 공급자에 이메일 게시](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
-   + [마케팅 캠페인 관리자 작업](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
+   + [이메일 서비스 제공자에게 이메일 게시](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
+   + [Marketing Campaign Manager 작업](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
    + [효과적인 뉴스레터 랜딩 페이지 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
    + [구독 관리](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
    + [Adobe Campaign 6.1 및 Adobe Campaign Standard 작업](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md)
-   + [Adobe Campaign 작업](/help/sites-classic-ui-authoring/classic-personalization-ac.md)
+   + [Adobe Campaign을 사용한 작업](/help/sites-classic-ui-authoring/classic-personalization-ac.md)
    + [Adobe Campaign 구성 요소](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
    + [Adobe Campaign 타기팅](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
-   + [AEM에서 Adobe Campaign Forms 만들기](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
-+ 클래식 UI에서 Assets 작성 {#assets}
+   + [AEM에서 Adobe Campaign 양식 작성](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
++ 클래식 UI에서 자산 작성 {#assets}
    + [자산 작업](/help/sites-classic-ui-authoring/classicui-assets.md)
-   + [Dynamic Media Assets 제공](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
-   + [페이지에 Dynamic Media Assets 추가](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
+   + [Dynamic Media 자산 제공](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
+   + [페이지에 Dynamic Media 자산 추가](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
    + [Scene7 기능을 페이지에 추가](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
    + [비디오](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
    + [Dynamic Media를 사용하여 작업](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
-   + [에셋 테스트를 위한 이름 지정 규칙](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
+   + [자산 테스트를 위한 명명 규칙](/help/sites-classic-ui-authoring/asset-naming-conventions.md)

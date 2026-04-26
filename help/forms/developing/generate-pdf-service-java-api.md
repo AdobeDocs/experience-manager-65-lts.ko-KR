@@ -1,5 +1,5 @@
 ---
-title: PDF 서비스 Java API 빠른 시작 생성(SOAP)
+title: PDF 생성 서비스 Java API 빠른 시작(SOAP)
 description: PDF 생성 서비스를 사용하여 Microsoft Word 문서를 PDF 문서로 변환하고, HTML 컨텐츠를 PDF 문서로 변환하고, Java API를 사용하여 PDF 문서를 RTF 파일로 변환할 수 있습니다.
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 87b9f386-5a60-48fa-a25f-2aeb166c9d1b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 0%
+source-wordcount: '325'
+ht-degree: 2%
 
 ---
 

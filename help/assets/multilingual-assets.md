@@ -7,10 +7,10 @@ role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 512bd351-2e6b-47a2-85c6-a23ea2c7102f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 7%
+source-wordcount: '192'
+ht-degree: 15%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager Assets]을(를) 사용하면 이진, 메타데이터 및 태그를 포함하여 에셋의 번역 워크플로를 자동화하여 다국어 프로젝트에서 사용할 다른 언어의 에셋을 생성할 수 있습니다.
@@ -33,7 +33,7 @@ ht-degree: 7%
 
 1. [Experience Manager과 번역 서비스 공급업체 연결](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [번역 통합 프레임워크 구성 만들기](/help/sites-administering/tc-tic.md)
-1. [번역을 위한 자산 준비](preparing-assets-for-translation.md)
+1. [자산 번역 준비](preparing-assets-for-translation.md)
 1. [폴더에 번역 클라우드 서비스 적용](transition-cloud-services.md)
 1. [번역 프로젝트 만들기](translation-projects.md)
 

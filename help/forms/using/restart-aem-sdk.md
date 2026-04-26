@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Forms
 hide: true
 hidefromtoc: true
 exl-id: 68935045-89b1-4219-b111-88a4600200df
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 1%
+source-wordcount: '95'
+ht-degree: 14%
 
 ---
 
@@ -26,4 +26,4 @@ Java™ 프로세스를 중지한 후 AEM SDK을 다시 시작하면 가 AEM 개
 
 AEM SDK을 다시 시작하려면 활성 명령 창으로 이동하여 `Ctrl + C` 명령을 눌러 SDK을 다시 시작합니다.
 
-SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. 대체 방법(예: Java™ 프로세스 중지)을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 대체 방법(예: Java™ 프로세스 중지)을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.

@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: ac33db6b-9896-4593-9365-62dd924b6bcb
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -22,23 +22,23 @@ ht-degree: 0%
 
 Java™ API 빠른 시작(SOAP)은 Endpoint Registry에서 사용할 수 있습니다.
 
-[QuickStart: Java를 사용하여 EJB 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[QuickStart: Java™ API를 사용하여 EJB 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[QuickStart: Java를 사용하여 SOAP 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[QuickStart: Java™ API를 사용하여 SOAP 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
-[QuickStart: Java를 사용하여 감시 폴더 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[QuickStart: Java™ API를 사용하여 감시 폴더 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[QuickStart: Java를 사용하여 이메일 끝점 추가](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
+[빠른 시작: Java™ API를 사용하여 이메일 엔드포인트 추가](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
 
-[QuickStart: Java를 사용하여 원격 끝점 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
+[QuickStart: Java™ API를 사용하여 원격 끝점 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
-[QuickStart: Java를 사용하여 TaskManager 끝점 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
+[QuickStart: Java™ API를 사용하여 TaskManager 끝점 추가](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
-[QuickStart: Java를 사용하여 엔드포인트 수정](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
+[QuickStart: Java™ API를 사용하여 엔드포인트 수정](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
-[QuickStart: Java를 사용하여 엔드포인트 제거](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
+[QuickStart: Java™ API를 사용하여 엔드포인트 제거](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
-[QuickStart: Java를 사용하여 엔드포인트 커넥터 정보 검색](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
+[QuickStart: Java™ API를 사용하여 엔드포인트 커넥터 정보 검색](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
 AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 수 있으며 연결 모드를 SOAP으로 설정해야 합니다.
 
@@ -386,7 +386,7 @@ AEM Forms 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행할 
 
 ## 빠른 시작: Java™ API를 사용하여 이메일 엔드포인트 추가 {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-다음 Java™ 코드 예제에서는 Email 끝점을 *MyApplication/EncryptDocumen* t이라는 서비스에 추가합니다. ([전자 메일 끝점 추가](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints)를 참조하십시오.)
+다음 Java™ 코드 예제에서는 Email 끝점을 *MyApplication/EncryptDocumen* t이라는 서비스에 추가합니다. ([전자 메일 끝점 추가](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints)를 참조하세요.)
 
 >[!NOTE]
 >

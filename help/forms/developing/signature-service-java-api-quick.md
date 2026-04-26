@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 4d35b174-40e5-4d2a-89ad-c3891f206e7e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -272,7 +272,7 @@ AEM Forms JEE 작업은 AEM Forms 강력한 형식의 API를 사용하여 수행
 
 ## 빠른 시작(SOAP 모드): Java API를 사용하여 서명 필드 수정 {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
-다음 Java 코드 예제에서는 서명이 서명 필드에 적용될 때 양식의 모든 필드를 잠그고 변경이 허용되지 않도록 하여 SignatureField1이라는 서명 필드를 수정합니다. 서명 서비스에서 수정된 서명 필드가 포함된 PDF 문서를 반환하면 PDF 문서가 LoanSig.pdf라는 PDF 파일로 저장됩니다. (이 예제는 서명 서비스로 전달되는 PDF 파일을 덮어씁니다.)([서명 필드 수정](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields)을 참조하십시오.)
+다음 Java 코드 예제에서는 서명이 서명 필드에 적용될 때 양식의 모든 필드를 잠그고 변경이 허용되지 않도록 하여 SignatureField1이라는 서명 필드를 수정합니다. 서명 서비스에서 수정된 서명 필드가 포함된 PDF 문서를 반환하면 PDF 문서가 LoanSig.pdf라는 PDF 파일로 저장됩니다. (이 예제는 서명 서비스에 전달되는 PDF 파일을 덮어씁니다.) ([서명 필드 수정](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields)을 참조하십시오.)
 
 ```java
  /*

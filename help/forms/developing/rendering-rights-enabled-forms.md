@@ -1,5 +1,5 @@
 ---
-title: 렌더링 권한이 활성화된 Forms
+title: 렌더링 권한이 활성화된 양식
 description: Forms 서비스를 사용하여 사용 권한이 적용된 양식을 렌더링합니다. Java API 및 웹 서비스 API를 사용하여 권한이 활성화된 양식을 렌더링할 수 있습니다.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 70b2d1aa-6fcd-461d-b628-e82ddf266f48
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 0%
+source-wordcount: '1488'
+ht-degree: 2%
 
 ---
 
-# 렌더링 권한이 활성화된 Forms {#rendering-rights-enabled-forms}
+# 렌더링 권한이 활성화된 양식 {#rendering-rights-enabled-forms}
 
 Forms 서비스는 사용 권한이 적용된 양식을 렌더링할 수 있습니다. 사용 권한은 양식에 주석을 추가하거나 양식 필드를 채우고 양식을 저장하는 기능과 같이 Acrobat에서 기본적으로 사용할 수 있지만 Adobe Reader에서는 사용할 수 없는 기능에 관련되어 있습니다. 사용 권한이 적용된 Forms을 권한 사용 양식이라고 합니다. Adobe Reader에서 권한이 활성화된 양식을 여는 사용자는 해당 양식에 대해 활성화된 작업을 수행할 수 있습니다.
 
@@ -81,9 +81,9 @@ Forms 서비스에서 권한이 활성화된 양식을 렌더링하면 클라이
 
 [연결 속성 설정](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[양식 서비스 API 빠른 시작](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[대화형 PDF forms 렌더링](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[대화형 PDF 양식 렌더링](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Forms을 렌더링하는 웹 애플리케이션 만들기](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -182,6 +182,6 @@ Forms API(웹 서비스)를 사용하여 권한이 활성화된 양식을 렌더
 
 **추가 참조**
 
-[렌더링 권한이 활성화된 Forms](#rendering-rights-enabled-forms)
+[렌더링 권한이 활성화된 양식](#rendering-rights-enabled-forms)
 
 [Base64 인코딩을 사용하여 AEM Forms 호출](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

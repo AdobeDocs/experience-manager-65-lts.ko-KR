@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 997637d5-1627-4102-8b7c-a0cfd871a7b2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 0%
+source-wordcount: '1064'
+ht-degree: 1%
 
 ---
 
@@ -110,7 +110,8 @@ Adobe Experience Manager(AEM)를 사용하면 이미지, `.js` 및 `.css` 파일
 
 [콘텐츠 동기화 프레임워크](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html)를 사용하므로 템플릿은 노드 구조로 구성됩니다. 각 노드에는 zip 파일 생성 프로세스의 특정 작업을 정의하는 `type` 속성이 있습니다.
 
-<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
+<!--
+For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 다음 노드를 사용하여 내보내기 템플릿을 작성할 수 있습니다.
@@ -180,7 +181,8 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 일부 특정 요구 사항을 충족하려면 [사용자 지정 업데이트 처리기](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/handler/package-summary.html)를 구현하십시오.
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
+<!--
+To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## 프로그래밍 방식으로 페이지 내보내기 {#programmatically-exporting-a-page}

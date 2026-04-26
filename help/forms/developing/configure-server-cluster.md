@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f7279bba-b889-4431-9cfd-79e140d46e05
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3943'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -228,7 +228,7 @@ JEE 클러스터에서 성공적인 AEM Forms을 만들려면 애플리케이션
 
 * [JBoss® 클러스터를 통한 고가용성 엔터프라이즈 서비스](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [Oracle WebLogic 서버 사용 클러스터](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [Oracle WebLogic Server-Using 클러스터](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
 ### JBoss®가 올바르게 클러스터링되는지 어떻게 확인할 수 있습니까? {#check-jboss-clustering}
 

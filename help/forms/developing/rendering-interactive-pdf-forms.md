@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: de61c579-50ed-423b-adca-60329f3f0b89
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2471'
 ht-degree: 0%
 
 ---
@@ -191,7 +191,7 @@ Forms API(Java)를 사용하여 대화형 PDF 양식 렌더링:
 1. Forms 클라이언트 API 개체 만들기
 
    * 연결 속성을 포함하는 `ServiceClientFactory` 개체를 만듭니다.
-   * 생성자를 사용하고 `FormsServiceClient` 개체를 전달하여 `ServiceClientFactory` 개체를 만듭니다.
+   * 생성자를 사용하고 `ServiceClientFactory` 개체를 전달하여 `FormsServiceClient` 개체를 만듭니다.
 
 1. URI 값 지정
 
@@ -227,11 +227,11 @@ Forms API(Java)를 사용하여 대화형 PDF 양식 렌더링:
 
 1. 클라이언트 웹 브라우저에 양식 데이터 스트림 작성
 
-   * `com.adobe.idp.Document` 개체의 `FormsResult` 메서드를 호출하여 `getOutputContent` 개체를 만듭니다.
-   * 해당 `com.adobe.idp.Document` 메서드를 호출하여 `getContentType` 개체의 콘텐츠 형식을 가져옵니다.
-   * `javax.servlet.http.HttpServletResponse` 메서드를 호출하고 `setContentType` 개체의 콘텐츠 형식을 전달하여 `com.adobe.idp.Document` 개체의 콘텐츠 형식을 설정합니다.
-   * `javax.servlet.ServletOutputStream` 개체의 `javax.servlet.http.HttpServletResponse` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저에 쓰는 데 사용되는 `getOutputStream` 개체를 만듭니다.
-   * `java.io.InputStream` 개체의 `com.adobe.idp.Document` 메서드를 호출하여 `getInputStream` 개체를 만듭니다.
+   * `FormsResult` 개체의 `getOutputContent` 메서드를 호출하여 `com.adobe.idp.Document` 개체를 만듭니다.
+   * 해당 `getContentType` 메서드를 호출하여 `com.adobe.idp.Document` 개체의 콘텐츠 형식을 가져옵니다.
+   * `setContentType` 메서드를 호출하고 `com.adobe.idp.Document` 개체의 콘텐츠 형식을 전달하여 `javax.servlet.http.HttpServletResponse` 개체의 콘텐츠 형식을 설정합니다.
+   * `javax.servlet.http.HttpServletResponse` 개체의 `getOutputStream` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저에 쓰는 데 사용되는 `javax.servlet.ServletOutputStream` 개체를 만듭니다.
+   * `com.adobe.idp.Document` 개체의 `getInputStream` 메서드를 호출하여 `java.io.InputStream` 개체를 만듭니다.
    * `InputStream` 개체의 `read` 메서드를 호출하고 바이트 배열을 인수로 전달하여 바이트 배열을 만들어 양식 데이터 스트림으로 채웁니다.
    * `javax.servlet.ServletOutputStream` 개체의 `write` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저로 보냅니다. 바이트 배열을 `write` 메서드에 전달합니다.
 
@@ -286,11 +286,11 @@ Forms API(웹 서비스)를 사용하여 대화형 PDF 양식 렌더링:
 
 1. 클라이언트 웹 브라우저에 양식 데이터 스트림 작성
 
-   * `FormResult` 개체의 `com.adobe.idp.services.holders.FormsResultHolder` 데이터 멤버의 값을 가져와서 `value` 개체를 만듭니다.
-   * `BLOB` 개체의 `FormsResult` 메서드를 호출하여 양식 데이터를 포함하는 `getOutputContent` 개체를 만듭니다.
-   * 해당 `BLOB` 메서드를 호출하여 `getContentType` 개체의 콘텐츠 형식을 가져옵니다.
-   * `javax.servlet.http.HttpServletResponse` 메서드를 호출하고 `setContentType` 개체의 콘텐츠 형식을 전달하여 `BLOB` 개체의 콘텐츠 형식을 설정합니다.
-   * `javax.servlet.ServletOutputStream` 개체의 `javax.servlet.http.HttpServletResponse` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저에 쓰는 데 사용되는 `getOutputStream` 개체를 만듭니다.
+   * `com.adobe.idp.services.holders.FormsResultHolder` 개체의 `value` 데이터 멤버의 값을 가져와서 `FormResult` 개체를 만듭니다.
+   * `FormsResult` 개체의 `getOutputContent` 메서드를 호출하여 양식 데이터를 포함하는 `BLOB` 개체를 만듭니다.
+   * 해당 `getContentType` 메서드를 호출하여 `BLOB` 개체의 콘텐츠 형식을 가져옵니다.
+   * `setContentType` 메서드를 호출하고 `BLOB` 개체의 콘텐츠 형식을 전달하여 `javax.servlet.http.HttpServletResponse` 개체의 콘텐츠 형식을 설정합니다.
+   * `javax.servlet.http.HttpServletResponse` 개체의 `getOutputStream` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저에 쓰는 데 사용되는 `javax.servlet.ServletOutputStream` 개체를 만듭니다.
    * 바이트 배열을 만들고 `BLOB` 개체의 `getBinaryData` 메서드를 호출하여 바이트 배열을 채웁니다. 이 작업은 `FormsResult` 개체의 콘텐츠를 바이트 배열에 할당합니다.
    * `javax.servlet.http.HttpServletResponse` 개체의 `write` 메서드를 호출하여 양식 데이터 스트림을 클라이언트 웹 브라우저로 보냅니다. 바이트 배열을 `write` 메서드에 전달합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: PDF 문서에서 유효하고 만료된 인증서 인식
+title: PDF 문서에서 유효한 인증서와 만료된 인증서 인식
 description: PDF 문서에서 유효하고 만료된 인증서를 인식하는 방법에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f7402f0d-7c19-4a56-8630-208faa197f94
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 0%
+source-wordcount: '198'
+ht-degree: 8%
 
 ---
 
-# PDF 문서에서 유효하고 만료된 인증서 인식 {#recognizing-valid-and-expired-certificates-in-pdf-documents}
+# PDF 문서에서 유효한 인증서와 만료된 인증서 인식 {#recognizing-valid-and-expired-certificates-in-pdf-documents}
 
 Reader 확장에서 적용한 사용 권한이 있는 PDF 문서를 Adobe Reader에서 열면 PDF 문서에 활성화된 특정 사용 권한을 설명하는 상태 표시줄이 나타납니다.
 

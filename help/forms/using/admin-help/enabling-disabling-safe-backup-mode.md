@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 34381caa-154e-479c-b475-7b3549909e9a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 > 
-> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인합니다.
+> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인하십시오.
 
 [백업 설정] 페이지에서는 데이터베이스 및 GDS(Global Document Storage) 디렉토리를 안정적으로 백업할 수 있도록 AEM 양식을 안전한 백업 모드로 운영할 수 있습니다.
 
