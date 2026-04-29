@@ -6,7 +6,7 @@ feature: Authoring, AI Assistant, AI Tools
 role: Admin,Developer,User
 exl-id: 391d46e3-05c9-4af1-8882-ffd39b04a701
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1380'
 ht-degree: 100%
 
