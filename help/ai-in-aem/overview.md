@@ -5,19 +5,19 @@ feature: Generative AI, AI Assistant, AI Tools
 role: Admin,Developer,User
 exl-id: 312e1d66-ba2e-4b9a-a679-4e44112f3222
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 45%
+workflow-type: ht
+source-wordcount: '105'
+ht-degree: 100%
 
 ---
 
 # AEM의 AI {#ai-in-aem}
 
-AI는 Adobe Experience Manager의 필수적인 부분이며, 사용자가 정보를 찾거나 경험을 생성하는 것을 지원하는 데 사용됩니다.
+AI는 사용자가 정보를 찾거나 경험을 생성할 수 있도록 지원하는 데 사용되는 Adobe Experience Manager의 필수적인 부분입니다.
 
 ## AI 어시스턴트 {#ai-assistant}
 
-[Adobe Experience Manager의 AI Assistant](/help/ai-assistant-in-aem.md)는 AEM 관련 쿼리에 대한 답변 찾기를 간소화하기 위해 고안된 대화형 인터페이스를 제공합니다.
+[Adobe Experience Manager의 AI 어시스턴트](/help/ai-assistant-in-aem.md)는 AEM 관련 쿼리에 대한 답변을 간소화하도록 설계된 대화형 인터페이스를 제공합니다.
 
 ## 추가 정보 {#further-information}
 
