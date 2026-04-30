@@ -1,18 +1,18 @@
 ---
-title: 자주 묻는 질문 (FAQ)
+title: 자주 묻는 질문(FAQ)
 description: AEM 6.5 LTS에 대해 자주 묻는 질문입니다.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: tm+mt
-source-wordcount: '513'
+workflow-type: ht
+source-wordcount: '517'
 ht-degree: 100%
 
 ---
 
-# AEM 6.5 LTS 자주 묻는 질문 (FAQ) {#faq}
+# AEM 6.5 LTS 자주 묻는 질문(FAQ) {#faq}
 
 이 페이지에서는 AEM 6.5 LTS에 대해 자주 묻는 몇 가지 질문에 답변합니다.
 
