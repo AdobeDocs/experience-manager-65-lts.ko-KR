@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
-workflow-type: ht
-source-wordcount: '7427'
-ht-degree: 100%
+source-git-commit: 6aca9496869f6673661a650438a7fc1beb212097
+workflow-type: tm+mt
+source-wordcount: '7603'
+ht-degree: 97%
 
 ---
 
@@ -573,7 +573,6 @@ Adobe는 투명성을 보장하고 적절한 계획을 수립할 수 있도록 A
 | 공개 소스 | `org.apache.jackrabbit.api` 패키지는 이제 `org.apache.jackrabbit.oak-jackrabbit-api` 번들에서 내보내집니다. | 변경 작업을 수행할 필요가 없습니다. | 6.5 LTS GA |
 | 공개 소스 | `com.github.jknack.handlebars`는 지원되지 않음 | 관련 [버전](https://mvnrepository.com/artifact/com.github.jknack/handlebars)을 선택합니다. | 6.5 LTS GA |
 
-
 ## 알려진 문제 {#known-issues}
 
 ### AEM Forms
@@ -596,6 +595,18 @@ Adobe는 투명성을 보장하고 적절한 계획을 수립할 수 있도록 A
 > * `oak-run` 작업의 경우 [`oak-run` 1.88.1-B006 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar)를 사용합니다.
 >
 > * 시스템 속성 `oak.compaction.legacy=true`를 설정하여 AEM을 시작합니다.
+
+### JSON 댓글은 Sling-Initial-Content(SP2)에서 더 이상 지원되지 않습니다 {#json-comments-no-longer-supported-in-sling-initial-content}
+
+이 문제는 JSON 파일이 있는 `Sling-Initial-Content`을(를) 사용하는 번들을 배포하는 OSGi 번들 개발자 및 관리자에게 영향을 줍니다.
+
+AEM 6.5 LTS SP2부터 `Sling-Initial-Content` 번들에 사용된 JSON 파일에 더 이상 댓글이 허용되지 않습니다(`//` 또는 `/* */`). `javax.json` 공급자가 이에 대해 관대하므로 이전 AEM 릴리스에서 주석을 수락했습니다. AEM 6.5 LTS SP2가 `org.apache.sling.jcr.contentloader`을(를) 버전 2.6.0으로 업그레이드했습니다. 이 버전에서는 JSON 파서가 `jakarta.json`(으)로 전환되었습니다. [JSON 사양(RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259)에서 댓글에 대한 구문을 정의하지 않지만 `javax.json` 공급자의 리니언스로 인해 이전 AEM 릴리스에서 수락했습니다. `jakarta.json` 공급자가 이 확장을 제공하지 않습니다.
+
+오류가 자동 발생합니다. 설치 프로그램에 오류가 표시되지 않고 번들 활성화 시 콘텐츠 노드가 로드되지 않습니다. SP2로 업그레이드한 후 컨텐츠가 예기치 않게 누락된 경우 OSGi 설치 관리자 로그에서 JSON 구문 분석 오류를 확인하십시오. 영향을 받는 번들을 식별하려면 `Sling-Initial-Content` 매니페스트 헤더 아래에 나열된 JSON 파일 내에서 `//` 또는 `/* */`을(를) 검색합니다.
+
+>[!CAUTION]
+>
+> AEM 6.5 LTS SP2로 업그레이드한 후 콘텐츠 로드 실패를 방지하려면 `Sling-Initial-Content` 번들의 JSON 파일에서 모든 주석을 제거하십시오.
 
 ### Sites Headless API에 필요한 Oak 인덱스 설치{#site-headless-api}
 
