@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
-source-wordcount: '271'
-ht-degree: 100%
+source-git-commit: 89016492c069d61c18f9bf83bfb896cd78fb20fd
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 75%
 
 ---
 
@@ -26,9 +26,17 @@ ht-degree: 100%
 
 Felix Health Check 프레임워크에 대한 자세한 내용은 [felix 설명서](https://github.com/apache/felix-dev/blob/master/healthcheck/README.md)를 참조하십시오.
 
-### AEM Groovy Console 지원
+### AEM Groovy 콘솔 지원
 
-AEM 6.5에서 사용되던 AEM Groovy Console 버전은 Guava 종속성이 없기 때문에 AEM 6.5 LTS에서는 작동하지 않을 수 있습니다. AEM Groovy Console의 새로 지원되는 버전은 [19.0.8](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip)입니다.
+AEM 6.5에서 사용 중이던 AEM Groovy Console 버전은 Guava 종속성 누락으로 인해 AEM 6.5 LTS에서 작동하지 않을 수 있습니다. 새로 지원되는 AEM Groovy Console 버전은 [19.0.8](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip)입니다.
+
+#### AEM Groovy Console에 필요한 추가 구성
+
+AEM Groovy Console을 사용하는 경우 `com.adobe.granite.apicontroller.FilterResolverHookFactory`에 대해 다음 OSGi 구성을 명시적으로 추가해야 합니다. `org.apache.sling.distribution.api` 키의 허용된 번들 목록에 `aem-groovy-console-bundle`을(를) 추가하여 플랫폼 기본값을 확장합니다.
+
+```
+"org.apache.sling.distribution.api": "com.adobe.*,com.day.*,org.apache.sling.*,aem-groovy-console-bundle"
+```
 
 ### AEM 6.5 LTS가 사용자 동기화를 지원합니까?
 
