@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: c04e0716-2aa2-420b-bbf5-74ffd1c28794
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 12%
@@ -43,7 +42,7 @@ ht-degree: 12%
 
 1. 3단계에서 가져온 `java.mail-1.5.jar` 설치. 이 단계에서는 JEE 배포의 Sling 속성을 다시 시작합니다. `http://<server name>:<port>/lc/system/console/bundles`에 설치된 번들이 **Active**(으)로 상태를 표시할 때까지 기다립니다.
 
-   >상태가 여전히 **InActive**&#x200B;인 경우 다시 시작하십시오.   **서비스 콘솔**&#x200B;에서 **JBoss®**.
+   >상태가 여전히 **InActive**&#x200B;인 경우 **서비스 콘솔**&#x200B;에서 **JBoss®**&#x200B;을(를) 다시 시작하십시오.
 
 
 1. 5단계를 사용하여 다운로드한 `javax.mail-1.5.6.redhat-1.jar`파일을 설치합니다.

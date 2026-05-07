@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 8de9682f-8332-4f6e-ac4b-295fca82a424
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '3513'
 ht-degree: 1%
@@ -104,7 +103,7 @@ ht-degree: 1%
 
 ### 양식 디자인 고려 사항 {#form-design-considerations}
 
-유동성 레이아웃이 포함된 Forms은 Designer에서 만든 양식 디자인을 기반으로 합니다. 양식 디자인은 사용자 입력에 따른 값 계산을 포함하여 레이아웃, 프레젠테이션 및 데이터 캡처 규칙 집합을 지정합니다. 규칙은 데이터를 양식에 입력할 때 적용됩니다. 양식에 추가된 필드는 양식 디자인 내에 있는 하위 양식입니다. 예를 들어 이전 다이어그램에 표시된 구매 주문 양식에서 각 라인은 하위 양식입니다. 하위 양식을 포함하는 양식 디자인을 만드는 방법에 대한 자세한 내용은 [유동성 레이아웃이 있는 구매 주문 양식 만들기](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9_kr)를 참조하십시오.
+유동성 레이아웃이 포함된 Forms은 Designer에서 만든 양식 디자인을 기반으로 합니다. 양식 디자인은 사용자 입력에 따른 값 계산을 포함하여 레이아웃, 프레젠테이션 및 데이터 캡처 규칙 집합을 지정합니다. 규칙은 데이터를 양식에 입력할 때 적용됩니다. 양식에 추가된 필드는 양식 디자인 내에 있는 하위 양식입니다. 예를 들어 이전 다이어그램에 표시된 구매 주문 양식에서 각 라인은 하위 양식입니다. 하위 양식을 포함하는 양식 디자인을 만드는 방법에 대한 자세한 내용은 [유동성 레이아웃이 있는 구매 주문 양식 만들기](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)를 참조하십시오.
 
 ### 데이터 하위 그룹 이해 {#understanding-data-subgroups}
 

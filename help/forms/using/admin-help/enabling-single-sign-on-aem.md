@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 3%
@@ -191,7 +190,7 @@ https://lcserver:8080과(와) 같은 컴퓨터 이름을 사용하여 서버에 
 1. LDAP와 같은 도메인 구성을 선택하고 클릭합니다. 디렉토리에서 생성된 모든 사용자와 그룹을 찾습니다. 필요한 경우 새 사용자 또는 그룹을 만들 수 있습니다.
    ![도메인 관리 페이지](/help/forms/using/assets/domain-mgmt-page.png)
 1. 인증을 누릅니다. 새 페이지에서 LDAP와 같은 인증 공급자를 선택합니다.
-1. 도메인 관리 페이지로 이동하여 LDAP를 선택하고 **지금 동기화**&#x200B;를 클릭하여 AEM 액세스를 위해 구성한 인증 체계와 디렉터리를 동기화합니다.
+1. 도메인 관리 페이지로 이동하여 LDAP를 선택하고 **지금 동기화**를 클릭하여 AEM 액세스를 위해 구성한 인증 체계와 디렉터리를 동기화합니다.
    ![ldap 동기화](/help/forms/using/assets/sync-ldap.png)
 1. 사용자 관리로 이동하고 사용자 및 그룹을 클릭합니다.
 1. 아래 그림과 같이 사용자 또는 그룹을 이름으로 검색합니다.

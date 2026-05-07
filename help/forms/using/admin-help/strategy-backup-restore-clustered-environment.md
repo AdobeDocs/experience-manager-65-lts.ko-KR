@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 5%
@@ -131,7 +130,7 @@ AEM 보조 노드의 재해 복구 시나리오에 사용할 파일을 백업하
    1. 노드에서 파일 clusterNode/revision.log 을 삭제합니다.
    1. 존재하는 경우 노드에서 .lock을 삭제합니다.
    1. 존재하는 경우 노드에서 repository/system.id을 삭제합니다.
-   1. 존재하는 경우 노드에서 파일 &ast;&ast;/listener.properties을 삭제합니다.
+   1. 존재하는 경우 노드에서 파일 &amp;ast;&amp;ast;/listener.properties을 삭제합니다.
    1. 개별 클러스터 노드의 경우 repository/cluster_node.id을 복원합니다.
 
 >[!NOTE]
@@ -161,7 +160,7 @@ AEM 보조 노드의 재해 복구 시나리오에 사용할 파일을 백업하
    1. 모든 클러스터 노드에서 파일 clusterNode/revision.log 을 삭제합니다.
    1. 존재하는 경우 모든 클러스터 노드에서 .lock을 삭제합니다.
    1. 존재하는 경우 repository/system.id 모든 클러스터 노드를 삭제합니다.
-   1. 모든 클러스터 노드에서 파일 &ast;&ast;/listener.properties(있는 경우)를 삭제합니다.
+   1. 모든 클러스터 노드에서 파일 &amp;ast;&amp;ast;/listener.properties(있는 경우)를 삭제합니다.
    1. 개별 클러스터 노드의 경우 repository/cluster_node.id을 복원합니다.
 
 >[!NOTE]

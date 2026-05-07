@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 8bb1dd68-51ec-4458-9ff8-bfe6fb0b67fd
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 98%
@@ -77,7 +76,7 @@ ht-degree: 98%
 1. 관리 콘솔에서 설정 > 사용자 관리 > 구성 > 고급 시스템 속성 구성을 클릭합니다.
 1. 동기화 완료 Cron 표현식에서 사용자 관리에서 실패한 동기화를 재시도하는 간격을 나타내는 Cron 표현식을 입력합니다. Cron 표현식 사용법은 Quartz 오픈 소스 작업 예약 시스템 버전 1.4.0을 기반으로 합니다.
 
-   기본값은 0 0/13 &ast; 입니다. &ast; - 13분마다 검사가 수행됨을 의미합니다.
+   기본값은 0 0/13 &amp;ast; 입니다. &amp;ast; - 13분마다 검사가 수행됨을 의미합니다.
 
 ## 디렉터리 수동 동기화 {#manually-synchronize-directories}
 

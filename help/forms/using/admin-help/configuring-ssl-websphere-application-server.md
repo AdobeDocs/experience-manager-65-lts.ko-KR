@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 0caac293-98b4-4e73-9440-f1db68c94054
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 99%
@@ -69,7 +68,7 @@ SSL을 활성화하려면 WebSphere가 로컬 OS 사용자 레지스트리에서
 1. 관리 보안에서 **관리 사용자 역할**&#x200B;을 선택합니다.
 1. 추가를 클릭하고 다음 작업을 수행합니다.
 
-   1. 검색 상자에 **&ast;**&#x200B;을(를) 입력하고 검색을 클릭합니다.
+   1. 검색 상자에 **&amp;ast;**&#x200B;을(를) 입력하고 검색을 클릭합니다.
    1. 역할에서 **관리자**&#x200B;를 클릭합니다.
    1. 새로 만든 사용자를 역할에 매핑됨에 추가하고 해당 사용자를 관리자에 매핑합니다.
 

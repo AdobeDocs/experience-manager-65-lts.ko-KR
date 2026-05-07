@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: a2586a1e-0e7f-4ea4-87ec-fbd82df3ec4c
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '10923'
 ht-degree: 97%
@@ -76,11 +75,11 @@ Barcoded Forms Service에서는 다음 설정을 사용할 수 있습니다.
 
 Central Migration Bridge 서비스(`CentralMigrationBridge`)는 JFMERGE, JFTRANS, XMLIMPORT 명령을 포함하는 Adobe Central Pro Output Server(Central) 기능의 하위 집합을 호출합니다. Central Migration Bridge 서비스 작업을 통해 AEM Forms에서 다음과 같은 Central 자산을 재사용할 수 있습니다.
 
-* 템플릿 디자인(&ast;.ifd)
-* 출력 템플릿(&ast;.mdf)
-* 데이터 파일(&ast;.dat 파일)
-* 프리앰블 파일(&ast;.pre 파일)
-* 데이터 정의 파일(&ast;.tdf)
+* 템플릿 디자인(&amp;ast;.ifd)
+* 출력 템플릿(&amp;ast;.mdf)
+* 데이터 파일(&amp;ast;.dat 파일)
+* 프리앰블 파일(&amp;ast;.pre 파일)
+* 데이터 정의 파일(&amp;ast;.tdf)
 
 Central Migration Bridge 서비스에서는 다음 설정을 사용할 수 있습니다.
 
