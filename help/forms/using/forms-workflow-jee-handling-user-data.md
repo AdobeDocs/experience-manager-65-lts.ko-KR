@@ -1,5 +1,5 @@
 ---
-title: Forms JEE 워크플로우 | 사용자 데이터 처리
+title: Forms JEE 워크플로 | 사용자 데이터 처리
 description: AEM Forms JEE 워크플로우를 사용하여 비즈니스 프로세스를 디자인, 생성 및 관리하는 방법을 알아봅니다.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -7,16 +7,15 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 exl-id: 622c4899-f75f-4b47-a6c0-f94c8427e977
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 0%
 
 ---
 
-# Forms JEE 워크플로우 | 사용자 데이터 처리 {#forms-jee-workflows-handling-user-data}
+# Forms JEE 워크플로 | 사용자 데이터 처리 {#forms-jee-workflows-handling-user-data}
 
 AEM Forms JEE 워크플로우는 비즈니스 프로세스를 디자인, 생성 및 관리하는 도구를 제공합니다. 워크플로 프로세스는 지정된 순서로 실행되는 일련의 단계로 구성됩니다. 각 단계는 사용자에게 작업을 할당하거나 이메일 메시지를 보내는 등의 특정 작업을 수행합니다. 프로세스는 자산, 사용자 계정 및 서비스와 상호 작용할 수 있으며, 다음 방법 중 하나를 사용하여 트리거할 수 있습니다.
 

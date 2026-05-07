@@ -3,12 +3,11 @@ title: 얼리어답터 및 프리릴리스 기능 통합을 위한 기능 전환
 description: 기능 토글 은 관리자가 런타임 환경에서 새로운 기능을 활성화할 수 있는 AEM의 기능입니다.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-hidefromtoc: true
 exl-id: 8b6dea41-540b-498a-b52b-e584a9255f25
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 2%
+source-wordcount: '298'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +15,7 @@ ht-degree: 2%
 
 기능 토글 은 관리자가 특정 기능을 동적으로 활성화 또는 비활성화할 수 있는 AEM의 기능입니다. 이 기능은 코드 베이스에 대한 주요 배포 또는 변경 없이 **얼리어답터 기능** 및 **프리릴리스 기능**&#x200B;을 관리하는 데 특히 유용합니다. AEM 환경에서 액세스할 수 있는 기능을 유연하게 제어할 수 있습니다.
 
-## 기능 활성화 전환 {#enable-feature-toggle-65}
+## 기능 토글 활성화 {#enable-feature-toggle-65}
 
 조기 채택자 또는 새 기능에 대한 기능 전환은 아래 단계에 따라 **AEM 웹 콘솔**&#x200B;을 통해 구성할 수 있습니다.
 

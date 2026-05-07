@@ -1,22 +1,21 @@
 ---
-title: OSGi의 Forms 중심 워크플로우 | 사용자 데이터 처리
-description: OSGi의 Forms 중심 워크플로우 | 사용자 데이터 처리
+title: OSGi의 Forms 중심 워크플로 | 사용자 데이터 처리
+description: OSGi의 Forms 중심 워크플로 | 사용자 데이터 처리
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 hide: true
-hidefromtoc: true
 exl-id: a817fa19-ae22-4c77-8a8e-6c4deed10d67
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 1%
 
 ---
 
-# OSGi의 Forms 중심 워크플로우 | 사용자 데이터 처리 {#forms-centric-workflows-on-osgi-handling-user-data}
+# OSGi의 Forms 중심 워크플로 | 사용자 데이터 처리 {#forms-centric-workflows-on-osgi-handling-user-data}
 
 Forms 중심의 AEM 워크플로우를 통해 실제 Forms 중심의 비즈니스 프로세스를 자동화할 수 있습니다. 워크플로우는 연결된 워크플로 모델에 지정된 순서로 실행되는 일련의 단계로 구성됩니다. 각 단계는 사용자에게 작업을 할당하거나 이메일 메시지를 보내는 등의 특정 작업을 수행합니다. 워크플로우는 저장소, 사용자 계정 및 서비스의 에셋과 상호 작용할 수 있습니다. 따라서 워크플로우는 Experience Manager의 모든 측면과 관련된 복잡한 활동을 조정할 수 있습니다.
 

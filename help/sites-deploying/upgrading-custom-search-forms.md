@@ -5,9 +5,8 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
-hidefromtoc: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 3%
@@ -74,7 +73,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1에서 기본 검색의 노드</td>
-   <td>해당 사항 없음</td>
+   <td>해당 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
