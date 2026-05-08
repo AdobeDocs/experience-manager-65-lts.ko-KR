@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 551f915c2fa91a3b099ce5636ae5b7f4439c8236
+source-git-commit: f5a36877c0d051de5c96a8ab89b2886b28865249
 workflow-type: tm+mt
-source-wordcount: '3086'
+source-wordcount: '3090'
 ht-degree: 5%
 
 ---
@@ -392,12 +392,12 @@ Windows x86의 경우:
   </tr>
 
 <tr>
-   <td>® Office 2021 Professional Plus, 소매 및 볼륨 라이선스</td>
+   <td>® Office 2024 Professional Plus, 소매 및 볼륨 라이선스</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF 및 TXT</td>
   </tr>
   <tr>
    <td>
-    <strong>OpenOffice 4.1.15</strong>   </td>
+   오픈오피스 4.1.15 </td>
    <td>
     ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, 이미지 형식(BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, TXT<br>
 
@@ -408,15 +408,15 @@ Windows x86의 경우:
 
 >[!NOTE]
 >
->* PDF Generator은 Microsoft® Office 2024를 지원합니다.
 >* PDF Generator은 지원되는 운영 체제 및 애플리케이션의 영어, 프랑스어, 독일어 및 일본어 버전만 지원합니다.
->* PDF Generator에서 변환을 수행하려면 Adobe Acrobat Pro DC(32비트)가 필요합니다.
->* PDF Generator은 변환에 필요한 Microsoft® Office Professional Plus 및 기타 소프트웨어의 32비트 버전만 지원합니다.
->* 볼륨 라이선스가 있는 설치가 지정된 기간 내에 KMS 호스트를 찾을 수 없는 것과 같은 이유로 ® Office 설치가 비활성화되거나 사용이 허가되지 않는 경우, 설치 라이선스를 다시 취득하고 다시 활성화하기 전까지 전환이 실패할 수 있습니다.
+>* PDF Generator을 전환하려면 32비트 Adobe Acrobat Pro DC 및 Microsoft® Office Professional Plus가 필요합니다.
+>* ® Office Professional Plus 설치에서는 소매 또는 MAK/KMS/AD 기반 볼륨 라이선스를 사용할 수 있습니다.
+>* 볼륨 라이선스가 있는 설치에서 지정된 기간 내에 KMS 호스트를 찾을 수 없는 것과 같은 이유로 ® Office 설치가 비활성화되거나 사용이 허가되지 않는 경우, 설치 라이선스를 다시 부여하고 다시 활성화할 때까지 전환이 실패할 수 있습니다.
 >* PDF Generator은 Microsoft® Office 365를 지원하지 않습니다.
 >* OpenOffice용 PDF Generator 전환은 Windows와 Linux® 모두에서 지원됩니다.
 >* OCR PDF, PDF 최적화 및 Export PDF 기능은 Windows에서만 지원됩니다.
->* PDF Generator 서비스는 Microsoft® Windows 11을 지원하지 않습니다
+>* PDF Generator은 Microsoft® Windows 11을 지원하지 않습니다.
+>* ® Office 2021 Professional Plus 지원은 더 이상 사용되지 않습니다.
 
 ### AEM Forms Designer 요구 사항 {#requirements-for-aem-forms-designer}
 
