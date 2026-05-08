@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6aca9496869f6673661a650438a7fc1beb212097
+source-git-commit: eab6902e5bdb58f626e7b79f91d27447b31d6830
 workflow-type: tm+mt
-source-wordcount: '7603'
+source-wordcount: '7581'
 ht-degree: 97%
 
 ---
@@ -281,6 +281,8 @@ AEM Headless가 메인라인 빌드와의 종속성 및 번들 버전 충돌을 
 * JBoss® EAP 8에 대한 AEM Forms 6.5 LTS 클러스터 배포에서 `domain/configuration/domain_oracle.xml`, `domain_mysql.xml` 및 `domain_mssql.xml` 파일에 잘못된 XML을 야기하고 도메인 컨트롤러를 시작하지 못하게 하는 중복 `<security>` 태그가 더 이상 포함되지 않습니다. (FORMS-24687)
 * 이제 턴키 모드에서 새로 설치 및 업그레이드하는 동안 데이터베이스 포트 업데이트가 올바르게 적용됩니다. 사용자가 새로 설치 모드에서 사용 가능한 모든 포트 중 선택할 수 있으며, 업그레이드 모드에서 lc_turnkey.xml의 업데이트된 데이터베이스 포트가 업그레이드 프로세스 중에서 올바르게 참조됩니다. (FORMS-24689)
 * Linux®에서 JBoss® EAP 8.0을 설정할 때 Windows에서 수정된 셸 스크립트가 더 이상 CRLF 줄 끝으로 인해 `/bin/sh^M: bad interpreter or $'\r': command not found` 오류가 발생하지 않습니다. (FORMS-24688)
+* JBoss® EAP 8에서 실행 중인 Forms JEE LTS 배포에서 Reader 확장 UI가 내부 서버 오류로 실패할 수 있습니다. (FORMS-24894)
+* Linux®에서 Forms JEE LTS 구성 관리자가 `configurationManager/config/solcomp/LFS_Foundation.properties`에서 설정이 해제되었거나 잘못된 `OSFileSetIntendedFor` 값으로 실행될 때 런타임 또는 배포 문제가 발생하여 Linux®에 맞게 구성이 올바르게 조정되지 않았습니다. 설치 후 구성 관리자를 실행하기 전에 해당 파일에서 `OSFileSetIntendedFor=Linux`을(를) 설정합니다. (FORMS-24741)
 
 <!--
 #### Forms JEE 
@@ -578,9 +580,7 @@ Adobe는 투명성을 보장하고 적절한 계획을 수립할 수 있도록 A
 ### AEM Forms
 
 * 구성 관리자에서 모듈을 선택하지 않았거나 제한된 구성 요소만 선택한 경우 AEM Forms 6.5 LTS JEE 턴키 사용자 정의 모드의 Bootstrap 중에 데이터베이스 초기화가 실패합니다. 이 실패는 종속성(xalan-2.7.2.jar)이 누락되어 오류가 발생했기 때문입니다. adobe-livecycle-jboss.ear\lib에 JAR 파일을 추가하면 문제가 해결됩니다. (FORMS-24690)
-* JBoss® EAP 8에서 실행 중인 Forms JEE LTS 배포에서 Reader 확장 UI가 내부 서버 오류로 실패할 수 있습니다. (FORMS-24894)
 * JBoss®에서 실행 중인 Forms JEE LTS에서 이메일 관련 기능이 실패할 수 있습니다. 이메일 기능을 사용하려고 할 때 서버에서 `Error IMAPProvider not a subtype`과 유사한 오류를 기록할 수 있습니다. (FORMS-24892)
-* Linux® 플랫폼에서 Forms JEE LTS를 사용하려면 구성 관리자를 실행하기 전에 `LFS_Foundation.properties`의 `OSFileSetIntendedFor` 속성을 올바르게 설정해야 합니다. 업데이트되지 않은 경우 구성이 Linux®에 맞게 제대로 조정되지 않아 런타임 또는 배포 문제가 발생할 수 있습니다. 이 문제를 해결하려면 설치 관리자를 실행한 후 구성 관리자를 실행하기 전에 `configurationManager/config/solcomp/`로 이동하여 `LFS_Foundation.properties`를 열고 `OSFileSetIntendedFor=Linux`를 설정하고 파일을 저장한 다음 구성 관리자를 실행합니다. (FORMS-24741)
 
 ### 오프라인 압축 후 온라인 압축 중 저장소 손상(GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
