@@ -6,9 +6,9 @@ feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: eab6902e5bdb58f626e7b79f91d27447b31d6830
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7581'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -282,7 +282,7 @@ AEM Headless가 메인라인 빌드와의 종속성 및 번들 버전 충돌을 
 * 이제 턴키 모드에서 새로 설치 및 업그레이드하는 동안 데이터베이스 포트 업데이트가 올바르게 적용됩니다. 사용자가 새로 설치 모드에서 사용 가능한 모든 포트 중 선택할 수 있으며, 업그레이드 모드에서 lc_turnkey.xml의 업데이트된 데이터베이스 포트가 업그레이드 프로세스 중에서 올바르게 참조됩니다. (FORMS-24689)
 * Linux®에서 JBoss® EAP 8.0을 설정할 때 Windows에서 수정된 셸 스크립트가 더 이상 CRLF 줄 끝으로 인해 `/bin/sh^M: bad interpreter or $'\r': command not found` 오류가 발생하지 않습니다. (FORMS-24688)
 * JBoss® EAP 8에서 실행 중인 Forms JEE LTS 배포에서 Reader 확장 UI가 내부 서버 오류로 실패할 수 있습니다. (FORMS-24894)
-* Linux®에서 Forms JEE LTS 구성 관리자가 `configurationManager/config/solcomp/LFS_Foundation.properties`에서 설정이 해제되었거나 잘못된 `OSFileSetIntendedFor` 값으로 실행될 때 런타임 또는 배포 문제가 발생하여 Linux®에 맞게 구성이 올바르게 조정되지 않았습니다. 설치 후 구성 관리자를 실행하기 전에 해당 파일에서 `OSFileSetIntendedFor=Linux`을(를) 설정합니다. (FORMS-24741)
+* Linux®에서 Forms JEE LTS 구성 관리자가 `configurationManager/config/solcomp/LFS_Foundation.properties`에서 설정이 해제되었거나 잘못된 `OSFileSetIntendedFor` 값으로 실행될 때 사용자들이 런타임 또는 배포 문제를 겪었으며, 이로 인해 Linux®에 맞게 구성을 올바르게 조정할 수 없었습니다. 설치 후 구성 관리자를 실행하기 전에 해당 파일에서 `OSFileSetIntendedFor=Linux`를 설정합니다. (FORMS-24741)
 
 <!--
 #### Forms JEE 
