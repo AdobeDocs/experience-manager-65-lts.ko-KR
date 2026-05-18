@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: eab6902e5bdb58f626e7b79f91d27447b31d6830
-workflow-type: ht
-source-wordcount: '7581'
-ht-degree: 100%
+source-git-commit: 02b7915e1e5554d29577e46960c072d46bcc8b0c
+workflow-type: tm+mt
+source-wordcount: '7695'
+ht-degree: 98%
 
 ---
 
@@ -595,6 +595,16 @@ Adobe는 투명성을 보장하고 적절한 계획을 수립할 수 있도록 A
 > * `oak-run` 작업의 경우 [`oak-run` 1.88.1-B006 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar)를 사용합니다.
 >
 > * 시스템 속성 `oak.compaction.legacy=true`를 설정하여 AEM을 시작합니다.
+
+### AEM 6.5 LTS SP2에 `com.adobe.granite.apicontroller` 번들이 없습니다(GRANITE-67640). {#missing-apicontroller-bundle-granite-67640}
+
+AEM 6.5 LTS SP2에 `com.adobe.granite.apicontroller` 번들이 없습니다. 이 번들은 OSGi 번들이 확인되는 방법을 제어하며 번들이 다른 번들로 확인되지 않도록 할 수 있습니다. 이는 노출된 API를 제한하는 데 유용합니다.
+
+이 기능을 사용하려면 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip)에서 핫픽스를 설치하십시오.
+
+>[!NOTE]
+>
+> 핫픽스를 설치한 후 설치된 모든 번들의 번들 상태를 확인하여 `com.adobe.granite.apicontroller`의 기본 구성에 기존 사용자 지정 구현에 영향을 줄 수 있는 의도하지 않은 해결 제한 사항이 적용되지 않았는지 확인하십시오.
 
 ### JSON 댓글은 최초 콘텐츠 슬링(SP2)에서 더 이상 지원되지 않음 {#json-comments-no-longer-supported-in-sling-initial-content}
 
