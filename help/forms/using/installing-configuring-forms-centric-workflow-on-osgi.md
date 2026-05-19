@@ -7,7 +7,7 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
 exl-id: 4b316ade-4431-41fc-bb8a-7262a17fb456
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 3757f625b08650514ecaf07d4e2d13e1be6d5f0d
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 8%
@@ -29,7 +29,11 @@ AEM Forms은 강력한 엔터프라이즈급 플랫폼입니다. OSGi에서의 F
 >[!NOTE]
 >
 >OSGi의 Forms 중심 워크플로우를 사용하면 OSGi 스택<!--, without having to install the full-fledged Process Management capability on JEE stack-->에서 다양한 작업을 위한 워크플로우를 빠르게 빌드하고 배포할 수 있습니다.
-><!-- See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.-->><!--After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.-->
+
+<!--
+>See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.
+>After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.
+-->
 
 ## 배포 토폴로지 {#deployment-topology}
 
