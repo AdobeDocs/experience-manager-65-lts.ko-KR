@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: 89016492c069d61c18f9bf83bfb896cd78fb20fd
-workflow-type: ht
-source-wordcount: '308'
-ht-degree: 100%
+source-git-commit: f994a8712a403083de1edc62579846ba99bd3afd
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 78%
 
 ---
 
@@ -45,6 +45,12 @@ AEM Groovy Console을 사용하는 경우 `com.adobe.granite.apicontroller.Filte
 ### Maven Central의 Uber JAR가 손상된 것 같습니다. 문제가 무엇입니까?
 
 `apis` 분류자를 사용하여 Uber JAR를 사용하고 있는지 확인합니다. AEM 6.5 LTS에서 Uber JAR의 패키징 구조가 변경되었습니다. 자세한 내용은 [AEM Uber Jar 버전 업데이트](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)를 참조하십시오.
+
+### AEM 6.5 LTS가 `jakarta.*` 패키지 네임스페이스(예: `jakarta.annotation`)를 지원합니까?
+
+아니요. AEM 6.5 LTS는 `jakarta.*` 패키지 네임스페이스로 마이그레이션된 Sling 아티팩트를 지원하지 않습니다. 코드 및 종속성에 `javax.*`을(를) 사용합니다(예: Sling 모델의 `jakarta.annotation.PostConstruct`이(가) 아닌 `javax.annotation.PostConstruct`). AEM 6.5 LTS의 슬링 모델 구현은 `javax.*`개의 주석만 인식하므로 초기화 중에 `jakarta.*`개의 주석이 자동으로 무시됩니다.
+
+자세한 내용은 기술 자료 문서 [AEM 6.5 LTS에서 `jakarta.annotation.PostConstruct`이(가) 있는 Sling 모델 실패](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-30339)를 참조하십시오.
 
 ## 추가 도움말 보기
 
