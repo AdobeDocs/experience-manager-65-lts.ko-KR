@@ -50,7 +50,7 @@ AEM Groovy Console을 사용하는 경우 `com.adobe.granite.apicontroller.Filte
 
 아니요. AEM 6.5 LTS는 `jakarta.*` 패키지 네임스페이스로 마이그레이션된 Sling 아티팩트를 지원하지 않습니다. 코드 및 종속성에 `javax.*`을(를) 사용합니다(예: Sling 모델의 `jakarta.annotation.PostConstruct`이(가) 아닌 `javax.annotation.PostConstruct`). AEM 6.5 LTS의 슬링 모델 구현은 `javax.*`개의 주석만 인식하므로 초기화 중에 `jakarta.*`개의 주석이 자동으로 무시됩니다.
 
-자세한 내용은 기술 자료 문서 [AEM 6.5 LTS에서 `jakarta.annotation.PostConstruct`이(가) 있는 Sling 모델 실패](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-30339)를 참조하십시오.
+자세한 내용은 기술 자료 문서 [AEM 6.5 LTS에서 `jakarta.annotation.PostConstruct`이(가) 있는 Sling 모델 실패](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-30339)를 참조하십시오.
 
 ## 추가 도움말 보기
 
