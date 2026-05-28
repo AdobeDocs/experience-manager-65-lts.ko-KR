@@ -4,7 +4,7 @@ description: 사용자 지정 네임스페이스를 정의하고 AEM 6.5 LTS에 
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,JCR
 role: Developer
-source-git-commit: 31d67c5b9bff651077df5a497e5c318b86a48158
+source-git-commit: 475a77e8e4ff0ecd19a939fd3b3c9294adf24997
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 8%
@@ -29,11 +29,11 @@ ht-degree: 8%
 
 사용자 지정 네임스페이스는 [Sling 저장소 초기화(repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) 스크립트에서 관리되고 프로젝트의 구성 패키지(예: `ui.config`)에서 OSGi 구성으로 배포됩니다.
 
-## 리소스
+## 리소스 {#resources}
 
 + [Sling Repository Initialization (repoinit) 설명서](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)
 
-## 코드
+## 코드 {#code}
 
 다음 코드는 `wknd` 네임스페이스를 구성하는 데 사용됩니다.
 
