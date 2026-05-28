@@ -6,10 +6,10 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: b7aa877f9e782b0568adc7baa440dc630c690454
+source-git-commit: b5db6129e83dd7a54516707bbdb8864dc709d54b
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 6%
+source-wordcount: '1615'
+ht-degree: 8%
 
 ---
 
@@ -133,7 +133,7 @@ AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms 또는
 2. 이 안내서 전체에서 사용할 디렉터리 경로는 `<JBOSS_HOME>`입니다.
 
    **예:**\
-   ```C:\jboss-eap-8.0```
+   `C:\jboss-eap-8.0`
 
 ### 2단계: AEM WAR 파일 준비
 
@@ -287,7 +287,7 @@ JBoss에 배포하기 **전에**&#x200B;모든 구성 수정을 완료해야 합
    ```
 
    **예:**
-   ```C:\jboss-eap-8.0\standalone\deployments```
+   `C:\jboss-eap-8.0\standalone\deployments`
 
 #### JVM 설정 구성(선택 사항이지만 권장됨)
 
@@ -318,7 +318,7 @@ JBoss를 시작하기 전에 JVM 메모리 설정을 구성합니다.
    ```
 
    **예:**
-   ```cmd cd C:\jboss-eap-8.0\bin```
+   `cmd cd C:\jboss-eap-8.0\bin`
 
 1. JBoss 서버를 시작합니다.
 
@@ -343,7 +343,7 @@ Deployed "cq-quickstart.war" (runtime-name : "cq-quickstart.war")
 배포가 완료되고 AEM이 완전히 시작되면 다음 작업을 수행하십시오.
 
 **AEM 작성자 URL:**
-```http://<server-ip>:8080/cq-quickstart```
+`http://<server-ip>:8080/cq-quickstart`
 
 **기본 자격 증명:**
 
@@ -373,7 +373,7 @@ Deployed "cq-quickstart.war" (runtime-name : "cq-quickstart.war")
 
 #### 실행 모드 구성
 
-AEM 실행 모드(작성자/게시)를 변경하려면 WAR을 다시 패키징하기 전에 `sling.run.modes`에서 `WEB-INF\web.xml` 매개 변수를 수정하십시오.
+AEM 실행 모드(작성자/게시)를 변경하려면 WAR을 다시 패키징하기 전에 `WEB-INF\web.xml`에서 `sling.run.modes` 매개 변수를 수정하십시오.
 
 ```xml
 <init-param>
