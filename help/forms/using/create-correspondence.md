@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
 source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3848'
 ht-degree: 0%
 
 ---
@@ -225,7 +225,7 @@ ht-degree: 0%
 
 1. 콘텐츠 탭에서 필요에 따라 콘텐츠 모듈을 편집합니다. 컨텐츠 계층의 관련 컨텐츠 모듈에 초점을 맞추려면 편지 미리 보기에서 관련 행이나 단락을 선택하거나 컨텐츠 계층에서 컨텐츠 모듈을 직접 선택할 수 있습니다.
 
-   예를 들어 아래 그래픽에서 &quot;To allow us to access...&quot; 줄을 선택하고 컨텐츠 탭에서 해당 컨텐츠 모듈을 선택합니다.
+   예를 들어 &quot;To allow us to access...&quot;라는 줄은 을(를) 아래 그래픽에서 선택하고 을(를) 컨텐츠 탭에서 해당 컨텐츠 모듈을 선택합니다.
 
    콘텐츠의 선택한 모듈 강조 표시(![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png))를 탭하여 편지 미리 보기에서 관련 텍스트, 단락 또는 데이터 필드를 탭할 때 콘텐츠 탭에서 콘텐츠 모듈을 강조 표시하는 기능을 비활성화하거나 활성화할 수 있습니다.
 

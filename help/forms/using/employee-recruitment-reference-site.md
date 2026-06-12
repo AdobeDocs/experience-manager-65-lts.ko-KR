@@ -1,5 +1,5 @@
 ---
-title: 직원 채용 참조 사이트 안내
+title: 직원 채용 참조 사이트 둘러보기
 description: AEM Forms 참조 사이트에서는 조직이 AEM Forms 기능을 사용하여 직원 채용 워크플로우를 구현하는 방법을 보여 줍니다.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,12 +9,12 @@ role: Admin, User, Developer
 exl-id: 238cf38b-31f3-4a0b-ad26-b93df2844195
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
 
-# 직원 채용 참조 사이트 안내 {#employee-recruitment-reference-site-walkthrough}
+# 직원 채용 참조 사이트 둘러보기 {#employee-recruitment-reference-site-walkthrough}
 
 ## 개요 {#overview}
 

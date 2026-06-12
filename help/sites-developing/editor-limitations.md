@@ -11,14 +11,14 @@ role: Developer
 exl-id: 9f66c1c5-0fe7-47be-ad78-ef4548e4e26b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 6%
+source-wordcount: '312'
+ht-degree: 10%
 
 ---
 
 # 편집기 제한 사항{#editor-limitations}
 
-터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 콘텐츠와 상호 작용합니다. 이러한 상호 작용은 편집기와 개발자의 사용에 모두 제한을 만듭니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 해결 방법 또는 해결 방법을 제공합니다.
+터치 지원 UI의 편집기는 오버레이를 사용하여 iframe에 한정된 콘텐츠와 상호 작용합니다. 이러한 상호 작용은 편집자와 개발자의 사용에 모두 제한을 만듭니다. 이 페이지에서는 이러한 제한 사항을 요약하고 가능한 경우 해결 방법 또는 해결 방법을 제공합니다.
 
 ## 기능 제한 사항 {#functional-limitations}
 

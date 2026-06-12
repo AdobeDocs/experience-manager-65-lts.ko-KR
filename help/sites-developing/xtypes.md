@@ -11,7 +11,7 @@ role: Developer
 exl-id: 4a78de53-33bf-4999-ba3c-7d0bc33196a4
 source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
-source-wordcount: '3668'
+source-wordcount: '6205'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 >
 >이 페이지에서는 클래식 UI 내에서 ExtJS xtype 사용에 대해 설명합니다.
 >
->Adobe에서는 [Coral UI](/help/sites-developing/touch-ui-concepts.md) 및 [Granite UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)를 기반으로 하는 최신 [터치 사용 UI](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components)를 사용할 것을 권장합니다.
+>Adobe에서는 [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) 및 [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components)를 기반으로 하는 최신 [터치 사용 UI](/help/sites-developing/touch-ui-concepts.md)를 사용할 것을 권장합니다.
 
 ## xtypes {#xtypes}
 
@@ -98,7 +98,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
 * `bulkeditor`
 
-  [CQ.wcm.BulkEditor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [CQ.wcm.Bulk편집기](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   `BulkEditor`은(는) 검색 엔진 및 검색 결과를 편집할 수 있는 표를 제공합니다.
 
@@ -182,7 +182,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.Ext.Component](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  모든 `Ext` 구성 요소에 대한 기본 클래스입니다. Component의 모든 하위 클래스는 `Ext`Container[&#x200B; 클래스에서 제공하는 생성, 렌더링 및 삭제의 자동화된 &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 구성 요소 수명 주기에 참여할 수 있습니다. 컨테이너를 만들 때 [항목](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 구성 옵션을 통해 구성 요소를 컨테이너에 추가할 수 있습니다.
+  모든 `Ext` 구성 요소에 대한 기본 클래스입니다. Component의 모든 하위 클래스는 [Container](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 클래스에서 제공하는 생성, 렌더링 및 삭제의 자동화된 `Ext` 구성 요소 수명 주기에 참여할 수 있습니다. 컨테이너를 만들 때 [항목](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 구성 옵션을 통해 구성 요소를 컨테이너에 추가할 수 있습니다.
 
 * `componentextractor`
 
@@ -332,7 +332,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
 * `editorgrid`
 
-  [CQ.Ext.Grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   이 클래스는 [GridPanel 클래스](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)을(를) 확장하여 선택한 [열](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)에서 셀 편집을 제공합니다. 편집 가능한 열은 [열 구성](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)에서 [editor](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)을(를) 제공하여 지정합니다.
 
@@ -344,7 +344,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
 * `feedimporter`
 
-  [CQ.wcm.FeedImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [CQ.wcm.Feedimporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   FeedImporter를 사용하면 사용자가 RSS 또는 Atom 피드를 가져오고 각 피드 항목에 대한 페이지를 만들 수 있습니다.
 
@@ -580,7 +580,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   [CQ.wcm.OfflineImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  `OfflineImporter`은(는) Microsoft® Word 문서를 가져와서 AEM 페이지로 변환하는 도구입니다. 이 기능을 사용하면 워드 프로세서를 사용하여 콘텐츠를 오프라인으로 편집할 수 있습니다.
+  `OfflineImporter`은(는) ® Word 문서를 가져와서 AEM 페이지로 변환하는 도구입니다. 이 기능을 사용하면 워드 프로세서를 사용하여 콘텐츠를 오프라인으로 편집할 수 있습니다.
 
 * `ownerdraw`
 
@@ -636,7 +636,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
 * `propertygrid`
 
-  [CQ.Ext.Grid.PropertyGrid](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [CQ.Ext.grid.PropertyGrid](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   개발 IDE에서 일반적으로 표시되는 기존 속성 격자를 모방하도록 설계된 특수 격자 구현입니다. 그리드의 각 행은 일부 개체의 속성을 나타내며, 데이터는 [CQ.Ext.grid.PropertyRecord](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)의 이름/값 쌍 집합으로 저장됩니다.
 
@@ -699,7 +699,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
 * `rolloutwizard`
 
-  [CQ.wcm.msm.RolloutWizard](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [CQ.wcm.msm.롤아웃 마법사](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   `RolloutWizard`에서 페이지를 롤아웃하는 마법사를 제공합니다. RolloutWizard가 [CQ.wcm.msm.RolloutPlan](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)을(를) 시작합니다.
 
@@ -909,7 +909,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 자세한 내용은 [위젯 A
 
   `TreePanel`은(는) 트리 구조 데이터의 트리 구조 UI 표현을 제공합니다.
 
-  [에 추가된 &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)TreeNode`TreePanel`에는 응용 프로그램에서 사용하는 메타데이터가 각각 [특성](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 속성에 포함될 수 있습니다.
+  `TreePanel`에 추가된 [TreeNode](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)에는 응용 프로그램에서 사용하는 메타데이터가 각각 [특성](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 속성에 포함될 수 있습니다.
 
 * `trigger`
 

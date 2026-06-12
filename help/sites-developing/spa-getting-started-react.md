@@ -13,8 +13,8 @@ exl-id: 9889b0fe-f39c-42dc-bc7b-8743d68e7503
 index: false
 source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 4%
+source-wordcount: '1169'
+ht-degree: 6%
 
 ---
 
@@ -258,7 +258,7 @@ class PageClass extends Component {...};
 export default MapTo('my-react-app/react/components/structure/page')(PageClass, EditConfig);
 ```
 
-`MapTo` 함수는 작성을 사용하도록 설정된 클래스 이름 및 특성을 사용하여 제공된 `Component`을(를) 확장하는 컴포지션의 결과인 `PageClass`을(를) 반환합니다. 이 구성 요소를 내보내어 나중에 응용 프로그램의 마크업에서 인스턴스화할 수 있습니다.
+`MapTo` 함수는 작성을 사용하도록 설정된 클래스 이름 및 특성을 사용하여 제공된 `PageClass`을(를) 확장하는 컴포지션의 결과인 `Component`을(를) 반환합니다. 이 구성 요소를 내보내어 나중에 응용 프로그램의 마크업에서 인스턴스화할 수 있습니다.
 
 `MapTo` 또는 `withModel` 함수를 사용하여 내보낼 때 `Page` 구성 요소는 표준 구성 요소에 페이지 모델의 최신 버전 또는 해당 페이지 모델의 정확한 위치에 대한 액세스를 제공하는 `ModelProvider` 구성 요소로 래핑됩니다.
 

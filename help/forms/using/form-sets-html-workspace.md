@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 작업 영역에서 양식 세트 작업
+title: AEM Forms Workspace에서 양식 집합 작업
 description: formset은 그룹화되어 최종 사용자에게 단일 양식 세트로 제공되는 HTML5 양식의 컬렉션입니다. AEM Forms 작업 영역에서 양식 세트를 사용하여 작업하는 방법을 알아봅니다.
 contentOwner: vishgupt
 content-type: reference
@@ -12,12 +12,12 @@ role: User, Developer
 exl-id: 4b2c994e-8ca6-42fc-a8b2-96c53e9f9453
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 1%
+source-wordcount: '347'
+ht-degree: 8%
 
 ---
 
-# AEM Forms 작업 영역에서 양식 세트 작업{#working-with-formsets-in-aem-forms-workspace}
+# AEM Forms Workspace에서 양식 집합 작업{#working-with-formsets-in-aem-forms-workspace}
 
 formset은 그룹화되어 최종 사용자에게 단일 양식 세트로 제공되는 HTML5 양식의 컬렉션입니다. 최종 사용자가 양식 세트를 채우기 시작하면 한 양식에서 다른 양식으로 원활하게 전환됩니다. 그런 다음 한 번의 클릭으로 양식 세트를 제출할 수 있습니다. 양식 집합 및 설정 방법에 대한 자세한 내용은 [AEM Forms의 양식 집합](../../forms/using/formset-in-aem-forms.md)을 참조하세요.
 

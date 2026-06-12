@@ -7,8 +7,8 @@ role: Developer
 exl-id: 81d47a8f-569a-4a7c-ba07-6f6c9258547c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 94%
+source-wordcount: '792'
+ht-degree: 91%
 
 ---
 
@@ -139,7 +139,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 >[!NOTE]
 >
->지속 쿼리의 캐시 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} 기본값은 2시간(7,200초)입니다.
+>지속 쿼리의 캐시 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value}에 대한 기본값은 2시간(7,200초)입니다.
 
 ## URL을 복사하여 쿼리에 직접 액세스합니다. {#copy-url}
 

@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 15%
+source-wordcount: '984'
+ht-degree: 17%
 
 ---
 
@@ -22,7 +22,7 @@ AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experie
 
 ## AEM Forms 정보 {#about-aem-forms}
 
-Adobe Experience Manager(AEM)는 백엔드 프로세스, 비즈니스 규칙 및 데이터와 통합하면서도 복잡한 디지털 양식을 쉽게 생성, 관리, 게시 및 업데이트할 수 있는 솔루션을 제공합니다.
+Adobe Experience Manager(AEM)는 복잡한 디지털 양식을 만들고, 관리하고, 게시하고, 업데이트함과 동시에 백엔드 프로세스, 비즈니스 규칙 및 데이터와 통합할 수 있는 사용하기 쉬운 솔루션을 제공합니다.
 
 AEM Forms은 양식 작성, 관리 및 게시와 서신 관리 기능, 문서 보안 및 통합 분석을 결합하여 매력적인 종단 간 경험을 만듭니다. 웹 및 모바일 채널에서 작동하도록 설계된 AEM Forms은 비즈니스 프로세스에 효율적으로 통합되어 종이 프로세스와 오류를 줄이고 효율성을 향상시킬 수 있습니다.
 

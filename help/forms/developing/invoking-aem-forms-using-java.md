@@ -180,7 +180,7 @@ Java API를 사용하여 AEM Forms 서비스를 프로그래밍 방식으로 호
   <tr>
    <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td>
    <td><p>저장소 서비스를 호출하는 데 필요합니다.</p></td>
-   <td><p>&lt;<i>설치 디렉터리</i>&gt;/sdk/client-libs/common</p><p>&lt;<i>설치 디렉터리</i>&gt;/sdk/client-libs\thirdparty</p></td>
+   <td><p>&lt;<i>설치 디렉터리</i>&gt;/sdk/client-libs/common</p><p>&lt;<i>install directory</i>&gt;/sdk/client-libs\thirdparty</p></td>
   </tr>
   <tr>
    <td>

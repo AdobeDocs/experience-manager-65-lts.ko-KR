@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: e8f2a771-b2e3-4f3e-85a0-480f783fc313
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 1%
+source-wordcount: '2662'
+ht-degree: 5%
 
 ---
 
@@ -395,7 +395,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. 새 브라우저 창을 열고 AEM 및 **OSGi 콘솔** > **상태** > **슬링 모델**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)&#x200B;(으)로 이동합니다.
+1. 새 브라우저 창을 열고 AEM 및 **OSGi 콘솔** > **상태** > **Sling 모델**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)로 이동합니다.
 
 1. `MyProductTeaserImpl`을(를) 검색하면 다음과 같은 줄이 표시됩니다.
 
@@ -405,7 +405,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
    이는 슬링 모델이 제대로 배포되고 올바른 구성 요소에 매핑되었음을 나타냅니다.
 
-1. 제품 티저가 추가된 [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)의 **Venia 홈 페이지**(으)로 새로 고칩니다.
+1. 제품 티저가 추가된 [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)의 **Venia 홈 페이지**&#x200B;로 새로 고침하십시오.
 
    ![환경 친화적인 메시지가 표시됨](../assets/customize-cif-components/eco-friendly-text-displayed.png)
 
@@ -474,11 +474,11 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. 제품 티저가 추가된 [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)의 **Venia 홈 페이지**(으)로 새로 고칩니다.
+1. 제품 티저가 추가된 [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)의 **Venia 홈 페이지**&#x200B;로 새로 고침하십시오.
 
    ![친환경 배지 최종 구현](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## 축하합니다. {#congratulations}
+## 축하합니다 {#congratulations}
 
 첫 번째 AEM CIF 구성 요소를 사용자 지정했습니다! [완료된 솔루션 파일을 여기에서 다운로드하십시오](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
@@ -492,7 +492,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
 - [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)
 - [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)
-- [AEM CIF 핵심 구성 요소 사용자 지정](https://github.com/adobe/aem-core-cif-components)
-- [핵심 구성 요소 사용자 정의](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ko)
-- [AEM Sites 시작](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)
+- [AEM CIF 핵심 구성 요소 맞춤화](https://github.com/adobe/aem-core-cif-components)
+- [핵심 구성 요소 맞춤화](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ko)
+- [AEM Sites 시작하기](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)
 - [CIF 제품 및 카테고리 선택기 사용](use-cif-pickers.md)
