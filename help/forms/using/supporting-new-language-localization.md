@@ -22,7 +22,7 @@ ht-degree: 7%
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=ko)를 참조하십시오.
 
 ## 로케일 사전 정보 {#about-locale-dictionaries}
 
