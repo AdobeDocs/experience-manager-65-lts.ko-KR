@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 1456a32e-c98f-4106-8546-799614c51a59
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '323'
 ht-degree: 30%
 
 ---
@@ -25,7 +25,7 @@ AEM Assets에서 원래 컬렉션을 차후에 수정하는 경우 컬렉션을 
 
 >[!NOTE]
 >
->컨텐츠 조각은 Brand Portal에 게시할 수 없습니다. 따라서 AEM 작성자에서 컨텐츠 조각을 선택하면 **Brand Portal에 게시** 작업을 사용할 수 없습니다.
+>콘텐츠 조각은 Brand Portal에 게시할 수 없습니다. 따라서 AEM 작성자에서 컨텐츠 조각을 선택하면 **Brand Portal에 게시** 작업을 사용할 수 없습니다.
 >
 >컨텐츠 조각이 포함된 컬렉션이 AEM 작성자에서 Brand Portal으로 게시되면 컨텐츠 조각을 제외한 폴더의 모든 컨텐츠가 Brand Portal 인터페이스에 복제됩니다.
 

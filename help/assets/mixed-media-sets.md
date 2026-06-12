@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 52325c53-324f-4dd0-93c0-cb8a78a38d6b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1506'
 ht-degree: 15%
 
 ---
@@ -35,7 +35,7 @@ Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMed
 
 1. [에셋을 업로드](#uploading-assets)합니다.
 
-   Start by uploading the images and videos for your Mixed Media Sets. If necessary, create your [Image Sets](/help/assets/image-sets.md) and [Spin Sets](/help/assets/spin-sets.md). 사용자는 혼합 미디어 집합 뷰어에서 이미지를 확대할 수 있으므로 이미지를 신중하게 선택하십시오. Make sure that the images are least 2000 pixels in the largest dimension.
+   AEM 혼합 미디어 집합을 위해 사용할 이미지와 비디오를 먼저 업로드하세요. 필요하다면 [이미지 세트](/help/assets/image-sets.md)와 [스핀 세트](/help/assets/spin-sets.md)를 생성하세요. 사용자는 혼합 미디어 집합 뷰어에서 이미지를 확대할 수 있으므로 이미지를 신중하게 선택하십시오. 이미지는 가장 큰 변 기준으로 최소 2000픽셀이어야 합니다.
 
    혼합 미디어 집합에서 지원하는 형식 목록은 [Dynamic Media - 지원되는 래스터 이미지 형식](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media)을 참조하십시오.
 
@@ -77,7 +77,7 @@ Mixed Media Sets are designated by a banner with the word **[!UICONTROL MixedMed
 
 ## 자산 업로드 {#uploading-assets}
 
-Start by uploading the images and videos for your Mixed Media Sets. 사용자는 혼합 미디어 집합 뷰어에서 이미지를 확대할 수 있으므로 이미지를 신중하게 선택하십시오. Make sure that the images are least 2000 pixels in the largest dimension.
+AEM 혼합 미디어 집합을 위해 사용할 이미지와 비디오를 먼저 업로드하세요. 사용자는 혼합 미디어 집합 뷰어에서 이미지를 확대할 수 있으므로 이미지를 신중하게 선택하십시오. 이미지는 가장 큰 변 기준으로 최소 2000픽셀이어야 합니다.
 
 또한 혼합 미디어 세트에 스핀 세트 또는 이미지 세트를 추가하려면 그러한 세트도 만듭니다.
 
@@ -127,7 +127,7 @@ Start by uploading the images and videos for your Mixed Media Sets. 사용자는
 
 ## 혼합 미디어 집합 편집 {#editing-mixed-media-sets}
 
-Assets의 모든 에셋과 마찬가지로 [&#x200B; 사용자 인터페이스에서 &#x200B;](/help/assets/manage-assets.md) 혼합 미디어 세트의 에셋에 대한 다양한 편집 작업을 직접 수행할 수 있습니다. 혼합 미디어 집합에서 다음 작업을 수행할 수도 있습니다.
+Assets의 모든 에셋과 마찬가지로 [ 사용자 인터페이스에서 ](/help/assets/manage-assets.md) 혼합 미디어 세트의 에셋에 대한 다양한 편집 작업을 직접 수행할 수 있습니다. 혼합 미디어 집합에서 다음 작업을 수행할 수도 있습니다.
 
 * 혼합 미디어 집합에 자산을 추가합니다.
 * 혼합 미디어 집합에서 에셋 순서를 변경합니다.
