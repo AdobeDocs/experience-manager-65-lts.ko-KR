@@ -1,5 +1,5 @@
 ---
-title: 적응형 양식에 대한 스타일 구성
+title: 적응형 양식에 대한 구성 스타일 지정
 description: 적응형 양식의 모양을 사용자 지정하려면 LESS 프레임워크를 사용하십시오.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -10,12 +10,12 @@ role: User, Developer
 exl-id: 0ecfd918-2c68-4085-8c6e-440499b84fc1
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2352'
-ht-degree: 5%
+source-wordcount: '2378'
+ht-degree: 6%
 
 ---
 
-# 적응형 양식에 대한 스타일 구성{#styling-constructs-for-adaptive-forms}
+# 적응형 양식에 대한 구성 스타일 지정{#styling-constructs-for-adaptive-forms}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 

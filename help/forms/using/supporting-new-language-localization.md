@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '848'
 ht-degree: 7%
 
 ---
@@ -83,9 +83,9 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 
 ### 로케일에 대한 XFA 클라이언트 라이브러리 추가 {#add-xfa-client-library-for-a-locale-br}
 
-`cq:ClientLibraryFolder` 아래에 `etc/<folderHierarchy>` 형식의 노드를 만들고 `xfaforms.I18N.<locale>` 범주를 사용하여 다음 파일을 클라이언트 라이브러리에 추가하십시오.
+`etc/<folderHierarchy>` 아래에 `cq:ClientLibraryFolder` 형식의 노드를 만들고 `xfaforms.I18N.<locale>` 범주를 사용하여 다음 파일을 클라이언트 라이브러리에 추가하십시오.
 
-* **에 정의된 대로**&#x200B;에 대해 `xfalib.locale.Strings`을(를) 정의하는 `<locale>`I18N.js`/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+* `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`에 정의된 대로 `<locale>`에 대해 `xfalib.locale.Strings`을(를) 정의하는 **I18N.js**.
 
 * 다음을 포함하는 **js.txt**:
 
@@ -97,12 +97,12 @@ I18N.js
 
 ### 로케일에 대한 적응형 양식 클라이언트 라이브러리 추가 {#add-adaptive-form-client-library-for-a-locale-br}
 
-`cq:ClientLibraryFolder` 아래에 `etc/<folderHierarchy>` 유형의 노드를 만드십시오. 이 노드는 범주가 `guides.I18N.<locale>`(으)로, 종속성이 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 및 `guide.common`(으)로 설정되어 있습니다. &quot;
+`etc/<folderHierarchy>` 아래에 `cq:ClientLibraryFolder` 유형의 노드를 만드십시오. 이 노드는 범주가 `guides.I18N.<locale>`이고 종속성이 `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` 및 `guide.common`입니다. &quot;
 
 클라이언트 라이브러리에 다음 파일을 추가합니다.
 
-* **로케일 집합 지정**&#x200B;에 설명된 XFA 사양에 따라 `guidelib.i18n`에 대해 &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` 패턴을 가진 `<locale>`을(를) 정의하는 [i18n.js](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf). `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`에서 지원되는 다른 로케일에 대해 정의된 방법도 확인할 수 있습니다.
-* **에 정의된 대로**&#x200B;에 대해 `guidelib.i18n.strings` 및 `guidelib.i18n.LogMessages`을(를) 정의하는 `<locale>`LogMessages.js`/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
+* [로케일 집합 지정](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)에 설명된 XFA 사양에 따라 `<locale>`에 대해 &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` 패턴을 가진 `guidelib.i18n`을(를) 정의하는 **i18n.js**. `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`에서 지원되는 다른 로케일에 대해 정의된 방법도 확인할 수 있습니다.
+* `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`에 정의된 대로 `<locale>`에 대해 `guidelib.i18n.strings` 및 `guidelib.i18n.LogMessages`을(를) 정의하는 **LogMessages.js**.
 * 다음을 포함하는 **js.txt**:
 
 ```text
@@ -114,12 +114,12 @@ LogMessages.js
 
 추가하려는 `<locale>`이(가) `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`에 없는 경우에만 이 단계를 수행하십시오.
 
-1. 아직 없는 경우 `nt:unstructured`에 `languages` 노드 `etc`을(를) 만듭니다.
+1. 아직 없는 경우 `etc`에 `nt:unstructured` 노드 `languages`을(를) 만듭니다.
 
 1. 다중 값 문자열 속성 `languages`이(가) 아직 없는 경우 노드에 추가하십시오.
 1. `<locale>` 기본 로케일 값 `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`을(를) 추가합니다(아직 없는 경우).
 
-1. `<locale>`의 `languages` 속성 값에 `/etc/languages`을(를) 추가합니다.
+1. `/etc/languages`의 `languages` 속성 값에 `<locale>`을(를) 추가합니다.
 
 `<locale>`이(가) `https://'[server]:[port]'/libs/cq/i18n/translator.html`에 나타납니다.
 

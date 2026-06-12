@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 6e909f87-4233-4158-a4e1-f0ee2ada366a
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2039'
-ht-degree: 3%
+source-wordcount: '1965'
+ht-degree: 4%
 
 ---
 
@@ -173,7 +173,7 @@ Touch UI 편집기를 이해하려면 [적응형 양식 작성 소개](../../for
 
 ## 템플릿 가져오기 또는 내보내기 {#importing-or-exporting-a-template}
 
-양식은 템플릿으로 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드할 때 템플릿이 다운로드되지 않습니다. 다른 AEM Forms 인스턴스에서 양식을 가져올 때 해당 템플릿 없이 가져옵니다. 양식을 가져왔지만 해당 템플릿을 사용할 수 없는 경우 양식이 렌더링되지 않습니다. `/conf`의 `https://<server>:<port>/crx/packmgr` 노드에서 사용자 지정 템플릿을 패키징하고 양식을 업로드할 AEM Forms 인스턴스에 포팅할 수 있습니다.
+양식은 템플릿으로 작동합니다. 사용자 지정된 템플릿을 사용하여 만든 적응형 양식을 다운로드할 때 템플릿이 다운로드되지 않습니다. 다른 AEM Forms 인스턴스에서 양식을 가져올 때 해당 템플릿 없이 가져옵니다. 양식을 가져왔지만 해당 템플릿을 사용할 수 없는 경우 양식이 렌더링되지 않습니다. `https://<server>:<port>/crx/packmgr`의 `/conf` 노드에서 사용자 지정 템플릿을 패키징하고 양식을 업로드할 AEM Forms 인스턴스에 포팅할 수 있습니다.
 
 ## 템플릿을 사용하여 적응형 양식 만들기 {#creating-an-adaptive-form-using-the-template}
 

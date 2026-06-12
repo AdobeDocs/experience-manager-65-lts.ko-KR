@@ -1,5 +1,5 @@
 ---
-title: 참조 편지 템플릿
+title: 추천서 템플릿
 description: AEM Forms에서는 편지를 빠르게 작성하는 데 사용할 수 있는 서신 관리 편지 레이아웃 템플릿을 제공합니다.
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
@@ -10,12 +10,12 @@ role: Admin, User, Developer
 exl-id: 17e1310f-f82d-42ee-a7cb-9bc141f23aee
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 0%
+source-wordcount: '476'
+ht-degree: 1%
 
 ---
 
-# 참조 편지 템플릿 {#reference-letter-templates}
+# 추천서 템플릿 {#reference-letter-templates}
 
 서신 관리에서 편지 템플릿에는 일반적인 양식 필드, 머리글 및 바닥글과 같은 레이아웃 기능 및 컨텐츠 배치에 대한 빈 &quot;대상 영역&quot;이 포함되어 있습니다.
 
