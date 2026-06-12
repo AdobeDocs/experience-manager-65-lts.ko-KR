@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 5ca53958-dfcd-4058-a04c-c750ab4d9a6e
 source-git-commit: a8ff456d323e848cc0c6296670b39834682a36b9
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 86%
+source-wordcount: '523'
+ht-degree: 82%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 86%
 
 구문은
 
-* 느낌표(!)를 포함합니다.;
+* 느낌표: !;
 * 뒤에 이미지의 대체 속성 텍스트를 포함하는 대괄호 세트가 옵니다.
 * 뒤에 이미지의 URL 또는 경로를 포함하는 괄호 세트와, 큰따옴표나 작은따옴표로 묶인 선택적 제목 속성이 있습니다.
 
@@ -130,7 +130,7 @@ ht-degree: 86%
 
 순차 목록과 비순차 목록을 만들 수 있습니다.
 
-순서가 없는 무순차 목록을 만들려면 목록에 있는 항목 앞에 &ast; 기호를 사용하십시오. 예:
+순서가 없는 목록을 만들려면 목록에 있는 항목 앞에 &amp;ast; 기호를 사용하십시오. 예:
 
     `* item in list`
 

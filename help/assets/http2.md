@@ -1,5 +1,5 @@
 ---
-title: 컨텐츠의 HTTP2 전달
+title: 콘텐츠의 HTTP2 전송
 description: HTTP/2가 브라우저와 서버의 통신 방식을 개선하여 필요한 처리 능력을 줄이면서 정보를 더 빠르게 전송하는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 7576e0e3-b05a-483b-9d38-316ddf0d5816
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '788'
 ht-degree: 3%
 
 ---
@@ -61,7 +61,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 요청을 시작하여 HTTP/2로 전환합니다. 이 작업은 자동으로 수행되지 않습니다.
 
-1. HTTP/2로 전환하려면 Adobe 고객 지원 요청을 시작합니다. [지원 티켓 열기](https://experienceleague.adobe.com/ko?support-solution=General&lang=en&support-tab=home#support)를 참조하세요.
+1. HTTP/2로 전환하려면 Adobe 고객 지원 요청을 시작합니다. [지원 티켓 열기](https://experienceleague.adobe.com/?support-solution=General&lang=en&support-tab=home#support)를 참조하세요.
 
    1. 지원 요청에 다음 정보를 제공합니다.
 
