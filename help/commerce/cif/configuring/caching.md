@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: 7da2c607-b407-4e4b-bfba-bfaa78aff475
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 1%
+source-wordcount: '882'
+ht-degree: 4%
 
 ---
 
@@ -50,7 +50,7 @@ venia/components/structure/navigation:true:10:600
 
 ## Dispatcher 캐싱 {#dispatcher}
 
-[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)에서 AEM 페이지 또는 조각을 캐시하는 것은 모든 AEM 프로젝트에 가장 좋은 방법입니다. 일반적으로 AEM에서 변경된 모든 컨텐츠가 Dispatcher에서 제대로 업데이트되도록 하는 무효화 기술에 의존합니다. 이는 AEM Dispatcher 캐싱 전략의 핵심 기능입니다.
+[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)에서 AEM 페이지 또는 조각을 캐시하는 것은 모든 AEM 프로젝트에 가장 좋은 방법입니다. 일반적으로 AEM에서 변경된 모든 컨텐츠가 Dispatcher에서 제대로 업데이트되도록 하는 무효화 기술에 의존합니다. 이는 AEM Dispatcher 캐싱 전략의 핵심 기능입니다.
 
 순수 AEM 관리 콘텐츠 CIF 외에도 페이지는 일반적으로 GraphQL을 통해 Adobe Commerce에서 동적으로 가져오는 상거래 데이터를 표시할 수 있습니다. 페이지 구조 자체는 변경되지 않지만, 일부 제품 데이터(예: 이름 또는 가격)가 Adobe Commerce에서 변경되는 경우 상거래 콘텐츠가 변경될 수 있습니다.
 
@@ -66,4 +66,4 @@ TTL 기반 캐싱을 사용하여 개발자는 일반적으로 선택한 AEM 페
 
 - [Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)
 - [GraphQL 캐싱 구성](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)
+- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)

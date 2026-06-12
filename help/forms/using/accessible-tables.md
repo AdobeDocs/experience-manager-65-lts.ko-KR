@@ -1,5 +1,5 @@
 ---
-title: HTML5 Forms에서 액세스 가능한 복잡한 표 만들기
+title: HTML5 양식에서 접근성 높은 복잡한 테이블 만들기
 description: HTML5 Forms에서 액세스 가능한 테이블을 만드는 방법을 알아봅니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: e6e6c08a-3bed-4713-a0e0-2a02607c7fc7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 0%
+source-wordcount: '280'
+ht-degree: 5%
 
 ---
 
-# HTML5 Forms에서 액세스 가능한 복잡한 표 만들기 {#create-accessible-complex-tables-in-html-forms}
+# HTML5 양식에서 접근성 높은 복잡한 테이블 만들기 {#create-accessible-complex-tables-in-html-forms}
 
 HTML5 Forms의 기본 테이블 구현에서는 HTML DIV 요소를 사용하여 테이블을 렌더링합니다. 렌더링에는 접근성 요구 사항을 충족하기 위해 ARIA 역할을 사용하는 작업이 포함됩니다.
 

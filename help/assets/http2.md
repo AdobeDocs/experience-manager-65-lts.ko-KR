@@ -1,5 +1,5 @@
 ---
-title: 컨텐츠의 HTTP2 전달
+title: 콘텐츠의 HTTP2 전송
 description: HTTP/2가 브라우저와 서버의 통신 방식을 개선하여 필요한 처리 능력을 줄이면서 정보를 더 빠르게 전송하는 방법에 대해 알아봅니다.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 7576e0e3-b05a-483b-9d38-316ddf0d5816
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '788'
 ht-degree: 3%
 
 ---
