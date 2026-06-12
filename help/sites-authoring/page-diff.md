@@ -7,7 +7,7 @@ role: User,Admin,Developer
 exl-id: 228c1ffb-91af-4f2e-82f8-1e570034f7ec
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '582'
 ht-degree: 81%
 
 ---
@@ -29,9 +29,9 @@ ht-degree: 81%
 이러한 병렬 비교에서 비교할 수 있는 내용은 다음과 같습니다.
 
 * [버전](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - 페이지의 이전 버전과 현재 상태
-* [&#128279;](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copy - Live Copy와 블루프린트
+* [](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copy - Live Copy와 블루프린트
 * [론치](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - 론치와 소스
-* [&#128279;](/help/sites-administering/tc-manage.md#comparing-language-copies)언어 사본 - (재)번역 전후 페이지
+* [](/help/sites-administering/tc-manage.md#comparing-language-copies)언어 사본 - (재)번역 전후 페이지
 
 해당 컨텍스트 내에서 비교를 시작하는 방법에 대한 각 주제를 참조하십시오.
 

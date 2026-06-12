@@ -1,5 +1,5 @@
 ---
-title: 단일 사인온
+title: Single Sign On
 description: Adobe Experience Manager(AEM) 인스턴스에 대한 SSO(Single Sign-On)를 구성하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Admin
 exl-id: 1c437771-cec5-48b8-8d77-a66c269420ec
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 0%
+source-wordcount: '738'
+ht-degree: 2%
 
 ---
 
-# 단일 사인온 {#single-sign-on}
+# Single Sign On {#single-sign-on}
 
 SSO(Single Sign-On)를 사용하면 인증 자격 증명(사용자 이름 및 암호 등)을 한 번 제공한 후 여러 시스템에 액세스할 수 있습니다. 별도의 시스템(신뢰할 수 있는 인증자라고도 함)이 인증을 수행하고 Experience Manager에 사용자 자격 증명을 제공합니다. Experience Manager은 사용자에 대한 액세스 권한을 확인하고 적용합니다(즉, 사용자가 액세스할 수 있는 리소스를 결정합니다).
 
@@ -80,13 +80,12 @@ AEM 인스턴스에 대한 SSO를 구성하려면 [SSO 인증 처리기](/help/s
 
 >[!NOTE]
 >
->Microsoft® IIS(인터넷 정보 서버)에서 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR)도 사용하는 경우 다음에서 추가 구성이 필요합니다.
+>® IIS(인터넷 정보 서버)에서 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)도 사용하는 경우 다음에서 추가 구성이 필요합니다.
 >
 >* `disp_iis.ini`
 >* IIS
 >
->`disp_iis.ini` 집합:
->자세한 내용은 [Microsoft® Internet Information Server에 Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=ko#microsoft-internet-information-server)를 참조하십시오.
+>`disp_iis.ini`에서 다음을 설정합니다.>(자세한 내용은 [® Internet Information Server에 Dispatcher 설치](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) 참조)
 >
 >* `servervariables=1`(IIS 서버 변수를 요청 헤더로 원격 인스턴스에 전달함)
 >* `replaceauthorization=1`(&quot;Basic&quot; 이외의 &quot;Authorization&quot;이라는 헤더를 &quot;Basic&quot;에 해당하는 헤더로 바꾸기)

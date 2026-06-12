@@ -12,7 +12,7 @@ role: User,Admin,Developer
 exl-id: a0ddb246-64eb-493c-9950-9b7ecb32e555
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '4650'
+source-wordcount: '4704'
 ht-degree: 81%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 81%
 
 시작하기 전에 고려해야 할 사항은 다음과 같습니다.
 
-* 템플릿을 만들려면 공동 작업이 필요합니다. 따라서 각 작업에 대해 [역할](#roles)이(가) 표시됩니다.
+* 템플릿을 만들려면 공동 작업이 필요합니다. 이러한 이유로 각 작업에 대해 [역할](#roles)이 지정됩니다.
 
 ### 역할 {#roles}
 
@@ -94,7 +94,7 @@ ht-degree: 81%
 
 * [편집 가능한 템플릿](/help/sites-authoring/templates.md#creatingandmanagingnewtemplates)
 
-   * 템플릿 작성자가 [템플릿](#creatinganewtemplate) 콘솔 및 편집기를 사용하여 [생성](#editingatemplate) 및 **편집**&#x200B;할 수 있습니다. **도구** 콘솔의 **일반** 섹션에서 **템플릿** 콘솔에 액세스할 수 있습니다.
+   * 템플릿 작성자가 **템플릿** 콘솔 및 편집기를 사용하여 [생성](#creatinganewtemplate) 및 [편집](#editingatemplate)할 수 있습니다. **도구** 콘솔의 **일반** 섹션에서 **템플릿** 콘솔에 액세스할 수 있습니다.
 
    * 새 페이지가 만들어지면 페이지와 템플릿 간에 동적 연결이 유지됩니다. 즉, 템플릿 구조 및/또는 잠긴 콘텐츠에 대한 변경 사항이 해당 템플릿으로 만든 페이지에 반영됩니다. 잠금 해제된(즉, 초기) 콘텐츠에 대한 변경 사항은 반영되지 않습니다.
    * 템플릿 편집기에서 콘텐츠 정책을 정의하여 디자인 속성을 유지할 수 있습니다. 페이지 편집기 내의 디자인 모드는 더 이상 편집 가능한 템플릿에 사용되지 않습니다.
@@ -130,7 +130,7 @@ ht-degree: 81%
 
 >[!CAUTION]
 >
->템플릿에 [국제화](/help/sites-developing/i18n.md)해야 하는 정보를 입력하지 마십시오. 내재화를 위해 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ko)을 사용하는 것이 좋습니다.
+>템플릿에 [국제화](/help/sites-developing/i18n.md)해야 하는 정보를 입력하지 마십시오. 내재화를 위해 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 사용하는 것이 좋습니다.
 
 ### 템플릿 폴더 만들기 - 관리자 {#creating-a-template-folder-admin}
 
@@ -234,7 +234,7 @@ ht-degree: 81%
 
 1. **템플릿 콘솔**&#x200B;에서 템플릿을 선택합니다.
 1. 도구 모음에서 **활성화** 또는 **비활성화**&#x200B;를 선택하고 다시 확인 대화 상자에서 선택한 옵션을 다시 선택합니다.
-1. 이제 필요에 따라 [템플릿을 편집](/help/sites-authoring/managing-pages.md#creating-a-new-page)할 수 있지만 [페이지를 만들](#editingatemplate)때 템플릿을 사용할 수 있습니다.
+1. 이제 필요에 따라 [템플릿을 편집](#editingatemplate)할 수 있지만 [페이지를 만들](/help/sites-authoring/managing-pages.md#creating-a-new-page)때 템플릿을 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -400,7 +400,7 @@ ht-degree: 81%
 
   콘텐츠(또는 디자인) 정책은 구성 요소의 디자인 속성을 정의합니다. 예: 사용 가능한 구성 요소 또는 최소/최대 크기. 이러한 속성은 템플릿(및 템플릿으로 만든 페이지)에 적용될 수 있습니다.
 
-  구성 요소에 대해 컨텐츠 정책을 만들거나 기존 컨텐츠 정책을 선택합니다. 이를 통해 디자인 세부 사항을 정의할 수 있습니다.
+  구성 요소에 대해 콘텐츠 정책을 만들거나 기존 콘텐츠 정책을 선택합니다. 이를 통해 디자인 세부 사항을 정의할 수 있습니다.
 
   ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 
@@ -441,7 +441,7 @@ ht-degree: 81%
 
   **속성** 제목에서 구성 요소의 설정을 정의할 수 있습니다. 제목에는 다음과 같은 두 개의 탭이 있습니다.
 
-   * 메인
+   * 기본
    * 기능
 
   *기본*
@@ -456,7 +456,7 @@ ht-degree: 81%
 
   구성을 제거하려면 구성 오른쪽에 있는 **삭제** 단추를 클릭합니다.
 
-  구성을 제거하려면 삭제 **&#x200B; 단추** 클릭합니다.
+  구성을 제거하려면 삭제** 단추** 클릭합니다.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -474,7 +474,7 @@ ht-degree: 81%
 
   >[!NOTE]
   >
-  >[리치 텍스트 편집기를 구현하는 구성 요소에 대한 콘텐츠 정책](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)은(는) RTE가 해당 UI 설정을 통해 사용 가능한 옵션에 대해서만 정의할 수 있습니다. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[리치 텍스트 편집기를 구현하는 구성 요소에 대한 콘텐츠 정책](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)은(는) RTE가 해당 UI 설정을 통해 사용 가능한 옵션에 대해서만 정의할 수 있습니다. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **정책 및 속성(레이아웃 컨테이너)**
 
@@ -588,7 +588,7 @@ ht-degree: 81%
 >
 >초기 콘텐츠는 콘텐츠를 작성하기 위한 시작점으로 사용되는 구성 요소 및 페이지 레이아웃을 준비하기 위한 것입니다. 이는 그대로 남아 있어야 하는 실제 콘텐츠용이 아닙니다. 따라서 초기 콘텐츠를 변환할 수 없습니다.
 >
->머리글이나 바닥글에서와 같이 번역 가능한 텍스트를 템플릿에 포함해야 하는 경우 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ko)을 사용할 수 있습니다.
+>머리글이나 바닥글에서와 같이 번역 가능한 텍스트를 템플릿에 포함해야 하는 경우 [핵심 구성 요소의 현지화 기능](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)을 사용할 수 있습니다.
 
 ### 템플릿 편집 - 레이아웃 - 템플릿 작성자 {#editing-a-template-layout-template-author}
 

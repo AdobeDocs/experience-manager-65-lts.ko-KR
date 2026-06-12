@@ -1,5 +1,5 @@
 ---
-title: 정적 개체의 만료
+title: 정적 오브젝트 만료
 description: 정적 개체가 적절한 기간 동안 만료되지 않도록 Adobe Experience Manager을 구성하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Admin
 exl-id: a279ebed-a116-4719-989e-1b2f79f6caa4
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 0%
+source-wordcount: '422'
+ht-degree: 1%
 
 ---
 
-# 정적 개체의 만료{#expiration-of-static-objects}
+# 정적 오브젝트 만료{#expiration-of-static-objects}
 
 정적 객체(예: 아이콘)는 변경되지 않습니다. 따라서 시스템이 (적절한 기간 동안) 만료되지 않고 불필요한 트래픽을 줄이도록 구성되어야 합니다.
 
