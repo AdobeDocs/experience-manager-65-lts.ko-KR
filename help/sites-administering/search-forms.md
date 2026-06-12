@@ -11,7 +11,7 @@ role: Admin
 exl-id: 68a4d4b2-91a3-4545-a491-2a1ec08ceec5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2078'
 ht-degree: 7%
 
 ---
@@ -108,7 +108,7 @@ ht-degree: 7%
  <tbody>
   <tr>
    <th>조건자</th>
-   <th>용도</th>
+   <th>목적</th>
    <th>설정</th>
   </tr>
   <tr>
@@ -390,7 +390,7 @@ ht-degree: 7%
 * **단일 선택**
 선택하면 옵션이 단일 선택 항목만 허용하는 확인란으로 렌더링됩니다. 잘못 선택한 경우 확인란을 선택 취소할 수 있습니다.
 
-* **게시 및 Live Copy 속성 이름**
+* **Publish 및 Live Copy 속성 이름**
 Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블입니다.
 
 * **설정** 탭의 필드 레이블에 있는 &ast;는 필드가 필수이며 비워 두면 오류 메시지가 표시됨을 의미합니다.
@@ -552,7 +552,7 @@ Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블
   </tr>
   <tr>
    <td>미리보기</td>
-   <td><code>/var/dam/content</code> 노드에 대한 읽기, 쓰기, 삭제 권한입니다.<br /> <code>/apps</code> 노드에 대한 읽기, 쓰기 권한입니다.</td>
+   <td><code>/var/dam/content</code> 노드에 대한 읽기, 쓰기, 삭제 권한을 사용합니다.<br /> <code>/apps</code> 노드에 대한 읽기, 쓰기 권한입니다.</td>
   </tr>
  </tbody>
 </table>

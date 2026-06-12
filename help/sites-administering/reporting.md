@@ -12,8 +12,8 @@ role: Admin
 exl-id: 6dd29f1c-3769-469c-8b8a-464f9ac00b15
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2782'
-ht-degree: 3%
+source-wordcount: '2806'
+ht-degree: 4%
 
 ---
 
@@ -304,7 +304,7 @@ Adobe Experience Manager(AEM)에서는 인스턴스 상태를 모니터링하고
 * 작성자
 * 구성 요소 경로
 * 구성 요소 유형
-* 마지막 수정일
+* 마지막으로 수정됨
 * 페이지
 
 즉, 다음을 볼 수 있습니다.
@@ -534,7 +534,7 @@ Adobe Experience Manager(AEM)에서는 인스턴스 상태를 모니터링하고
 
 >[!CAUTION]
 >
->이러한 보고서에 대한 액세스는 보안 문제일 수 있습니다. 따라서 Adobe에서는 외부 방문자가 `/etc/reports`을(를) 사용할 수 없도록 Dispatcher을 구성할 것을 권장합니다. 자세한 내용은 [보안 검사 목록](security-checklist.md)을 참조하세요.
+>이러한 보고서에 대한 액세스는 보안 문제일 수 있습니다. 따라서 Adobe에서는 외부 방문자가 `/etc/reports`을(를) 사용할 수 없도록 Dispatcher을 구성할 것을 권장합니다. 자세한 내용은 [보안 체크리스트](security-checklist.md)를 참조하십시오.
 
 ## 보고서 실행에 필요한 권한 {#permissions-needed-for-running-reports}
 

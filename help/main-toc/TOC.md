@@ -220,7 +220,7 @@ ht-degree: 67%
          + [Adobe Campaign과 통합](/help/sites-administering/campaign.md)
          + [ExactTarget과 통합](/help/sites-administering/exacttarget.md)
          + [Analytics를 외부 제공자와 통합](/help/sites-administering/external-providers.md)
-         + [Adobe Experience Cloud과 통합](/help/sites-administering/marketing-cloud.md)
+         + [Adobe Experience Cloud와 통합 사용](/help/sites-administering/marketing-cloud.md)
          + [Adobe Target과의 통합 수동 구성](/help/sites-administering/target-configuring.md)
          + [Adobe Target과 통합하기 위한 사전 요구 사항](/help/sites-administering/target-requirements.md)
          + [Adobe 분류](/help/sites-administering/adobeanalytics-classifications.md)
