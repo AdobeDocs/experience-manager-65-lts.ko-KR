@@ -9,7 +9,7 @@ role: Developer
 exl-id: ca929fe7-8393-42df-983d-e2005d8434ac
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1671'
 ht-degree: 0%
 
 ---
@@ -431,7 +431,7 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 * Apache Felix Maven 번들 플러그인: 번들 및 매니페스트를 만듭니다.
 * Apache Felix Maven SCR 플러그인: 구성 요소 설명자 파일을 만들고 서비스 구성 요소 매니페스트 헤더를 구성합니다.
 
-**참고:** 작성 시 maven scr 플러그인은 Eclipse용 m2e 플러그인과 호환되지 않습니다. ([Felix 버그 3170](https://issues.apache.org/jira/browse/FELIX-3170) 참조) Eclipse IDE를 사용하려면 Maven을 설치하고 명령줄 인터페이스를 사용하여 빌드를 수행하십시오.
+**참고:** 작성 시 maven scr 플러그인은 Eclipse용 m2e 플러그인과 호환되지 않습니다. ([Felix 버그 3170](https://issues.apache.org/jira/browse/FELIX-3170) 참조) Eclipse IDE를 사용하려면 Maven을 설치하고 명령줄 인터페이스를 사용하여 빌드를 수행합니다.
 
 #### 예제 POM 파일 {#example-pom-file}
 
