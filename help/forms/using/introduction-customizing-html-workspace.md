@@ -1,5 +1,5 @@
 ---
-title: AEM 양식 작업 영역 사용자 정의 소개
+title: AEM Forms Workspace 사용자 정의 소개
 description: 프로세스 관리를 위해 LiveCycle AEM Forms 작업 영역을 사용자 정의하는 개념 및 기술 정보를 간략히 소개합니다.
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ role: Admin, User, Developer
 exl-id: 39be83b0-c003-4e6c-baca-95166f654bc7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1752'
-ht-degree: 0%
+source-wordcount: '1790'
+ht-degree: 1%
 
 ---
 
-# AEM 양식 작업 영역 사용자 정의 소개{#introduction-to-customizing-aem-form-workspace}
+# AEM Forms Workspace 사용자 정의 소개{#introduction-to-customizing-aem-form-workspace}
 
 AEM form workspace는 인터페이스의 표시 의미 및 기능을 수정하는 기능을 제공합니다. 스타일, 레이아웃, 서식, 브랜딩 및 핵심 기능을 변경하는 사용자 지정 유형은 아래에 설명되어 있습니다.
 
@@ -239,7 +239,7 @@ CRX 패키지는 CRX™ 저장소에 배포할 수 있습니다. `[LC root]\crx-
 
 | **프로필** | **설명** | **사용량** |
 |---|---|---|
-| 출하 프로파일 | 이 프로필은 축소를 사용하여 가능한 가장 작은 크기의 CRX 패키지를 만듭니다. 이 패키지가 가장 효율적입니다. 모든 JavaScript™ 파일이 결합되어 단일 JS 파일로 축소됩니다. | JS 파일에서 추가적인 의미 있는 변경이 필요하지 않은 경우 이 프로필을 사용합니다. |
+| 출하 프로파일 | 이 프로필은 축소를 사용하여 가능한 가장 작은 크기의 CRX 패키지를 만듭니다. 이 패키지가 가장 효율적입니다. 모든 ™ 파일이 결합되어 단일 JS 파일로 축소됩니다. | JS 파일에서 추가적인 의미 있는 변경이 필요하지 않은 경우 이 프로필을 사용합니다. |
 | 프로필 디버그 | 이 프로필은 중간 수준의 효율적인 CRX 패키지를 만듭니다. 패키지의 크기는 Ship profile을 사용하여 만든 패키지보다 약간 큽니다. 이 패키지에는 대부분의 JavaScript 파일이 단일 JS 파일로 결합됩니다. | 디버깅에 이 프로필을 사용합니다. |
 | 개발 프로필 | 이 프로필은 가능한 가장 큰 크기의 CRX 패키지를 만듭니다. 모든 JavaScript 파일은 SDK 패키지에 있으므로 별도로 사용할 수 있습니다. | 의미 체계 변경 사항을 통합할 때 이 프로필을 사용합니다. |
 
