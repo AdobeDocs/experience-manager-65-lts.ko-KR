@@ -1,5 +1,5 @@
 ---
-title: 추적 테이블 사용자 지정
+title: 추적 테이블 사용자 정의
 description: AEM Forms 작업 영역의 추적 탭에 표시되는 작업 테이블에서 사용자 프로세스 세부 정보 표시를 사용자 지정하는 방법
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ role: User, Developer
 exl-id: 27589617-4020-490c-b01e-1b169ae0801a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 0%
+source-wordcount: '332'
+ht-degree: 2%
 
 ---
 
-# 추적 테이블 사용자 지정{#customize-tracking-tables}
+# 추적 테이블 사용자 정의{#customize-tracking-tables}
 
 AEM Forms 작업 공간의 추적 탭은 로그인한 사용자가 포함된 프로세스 인스턴스의 세부 정보를 표시하는 데 사용됩니다. 추적 테이블을 보려면 먼저 왼쪽 창에서 프로세스 이름을 선택하여 중간 창에 인스턴스 목록을 표시합니다. 프로세스 인스턴스를 선택하여 오른쪽 창에서 이 인스턴스에서 생성한 작업 표를 확인합니다. 기본적으로 테이블 열에는 다음 작업 속성이 표시됩니다(작업 모델의 해당 속성은 괄호 안에 표시됨).
 

@@ -196,7 +196,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
 1. [Maven 저장소에서 1.60.x 기능 팩의 최신 버전을 다운로드합니다.](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
 1. 콘텐츠를 별도의 폴더로 압축 해제한 다음 `jcr_root/libs/system/install/`(으)로 이동합니다.
-1. 모든 하위 폴더를 AEM 설치 폴더의 **&lt;aem-install>**/crx-quickstart/install/에 복사합니다.
+1. 모든 하위 폴더를 AEM 설치 폴더의 **&lt;aem-install>**/crx-quickstart/install/ 로 복사합니다.
 1. AEM을 시작하고 커넥터 기능을 확인합니다.
 
 아래 설명된 옵션과 함께 구성 파일을 사용할 수 있습니다.

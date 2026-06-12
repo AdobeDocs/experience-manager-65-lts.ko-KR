@@ -7,7 +7,7 @@ role: Admin,Developer,Leader
 exl-id: 15d9c2ac-0b13-4839-a873-bc884ee69132
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '3695'
+source-wordcount: '3736'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ### AEM에서 제공되는 기능 {#features-within-aem}
 
-AEM을 구현할 때(특히 처음 구현하는 경우) [AEM의 기능과 워크플로](https://business.adobe.com/kr/products/experience-manager/adobe-experience-manager.html)를 검토하여 원하거나 필요한 영역이 무엇인지 확인합니다.
+AEM을 구현할 때(특히 처음 구현하는 경우) [AEM의 기능과 워크플로](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)를 검토하여 원하거나 필요한 영역이 무엇인지 확인합니다.
 
 사용 중인 다음과 같은 AEM 기능과 디자인에 미치는 영향을 고려하십시오.
 

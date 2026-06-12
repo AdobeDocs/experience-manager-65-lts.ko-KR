@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 28%
+source-wordcount: '1366'
+ht-degree: 32%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 28%
 
 프로젝트는 함께 관리하려는 다양한 유형의 정보로 구성됩니다. 이 정보는 다른 **타일**&#x200B;로 표시됩니다.
 
-다음과 같은 타일을 프로젝트와 연결할 수 있습니다.
+다음 타일을 프로젝트와 연결할 수 있습니다.
 
 * [자산](#assets)
 * [자산 컬렉션](#asset-collections)
@@ -104,7 +104,7 @@ ht-degree: 28%
 
 ![자산 타일](assets/project-tile-assets.png)
 
-타일에서 바로 에셋을 업로드할 수 있습니다.
+타일에서 바로 자산을 업로드할 수 있습니다.
 
 ### 자산 컬렉션 {#asset-collections}
 
@@ -223,11 +223,11 @@ ht-degree: 28%
 
 ### 자동 그룹 만들기 {#auto-group-creation}
 
-프로젝트를 만들고 사용자를 다양한 역할에 추가하면 연결된 권한을 관리하기 위해 프로젝트와 연결된 그룹이 자동으로 만들어집니다.
+프로젝트를 생성하고 다양한 역할에 사용자를 추가하면 프로젝트와 연결된 그룹이 자동으로 생성되어 관련 권한을 관리합니다.
 
-예를 들어 Myproject라는 프로젝트에는 세 개의 그룹이 있습니다. **Myproject 소유자**, **Myproject 편집기**, **Myproject 관찰자**.
+예를 들어 Myproject라는 프로젝트에는 세 개의 그룹(**Myproject 소유자**, **Myproject 편집자**, **Myproject 관찰자**)이 있습니다.
 
-프로젝트를 삭제할 때 적절한 옵션 [을(를) 선택한 경우에만 해당 그룹이 삭제됩니다.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) 관리자는 **도구** > **보안** > **그룹**&#x200B;에서 그룹을 수동으로 삭제할 수도 있습니다.
+프로젝트가 삭제되면 해당 그룹은 프로젝트를 삭제할 때 [적절한 옵션을 선택하는 경우에만 삭제됩니다.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) 관리자는 **도구** > **보안** > **그룹**&#x200B;에서 그룹을 수동으로 삭제할 수도 있습니다.
 
 ## 추가 리소스 {#additional-resources}
 
