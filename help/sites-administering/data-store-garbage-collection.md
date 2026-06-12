@@ -1,5 +1,5 @@
 ---
-title: 데이터 저장소 가비지 컬렉션
+title: 데이터 저장소 가비지 수집
 description: 디스크 공간을 확보하기 위해 데이터 저장소 가비지 수집을 구성하는 방법에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ role: Admin
 exl-id: 2b4214b0-1a38-4e36-b740-16fcaf9ceb54
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1905'
 ht-degree: 0%
 
 ---
 
-# 데이터 저장소 가비지 컬렉션 {#data-store-garbage-collection}
+# 데이터 저장소 가비지 수집 {#data-store-garbage-collection}
 
 기존 WCM 에셋이 제거되면 기본 데이터 저장소 레코드에 대한 참조가 노드 계층 구조에서 제거될 수 있지만 데이터 저장소 레코드 자체는 유지됩니다. 참조되지 않은 이 데이터 저장소 레코드는 보존할 필요가 없는 &quot;가비지&quot;가 됩니다. 가비지 에셋이 여러 개 있는 경우, 이를 제거하여 공간을 보존하고 백업 및 파일 시스템 유지 관리 성능을 최적화하는 것이 좋습니다.
 

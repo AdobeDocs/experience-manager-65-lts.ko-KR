@@ -12,8 +12,8 @@ role: Admin
 exl-id: a39ed93e-4276-48ff-ba49-d0f630409222
 source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 2%
+source-wordcount: '1491'
+ht-degree: 7%
 
 ---
 
@@ -84,17 +84,17 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 >[!CAUTION]
 >
->Adobe Analytics API 내의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
+>Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
 >
->이제 Adobe Analytics[에서 제공한 &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
 
 ## Activity Map에 대한 구성 {#configuring-for-the-activity-map}
 
 >[!CAUTION]
 >
->Adobe Analytics API 내의 보안 변경 사항으로 인해 AEM 내에 포함된 Activity Map 버전을 더 이상 사용할 수 없습니다.
+>Adobe Analytics API의 보안 변경 사항으로 인해, AEM 내에 포함된 Activity Map 버전을 더는 사용할 수 없습니다.
 >
->이제 Adobe Analytics[에서 제공한 &#x200B;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)ActivityMap 플러그인을 사용해야 합니다.
+>이제 Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=ko)에서 제공한 ActivityMap 플러그인을 사용해야 합니다.
 
 ## Adobe Analytics 프레임워크 만들기 {#creating-a-adobe-analytics-framework}
 
@@ -206,7 +206,7 @@ Adobe Analytics [데이터 센터](https://experienceleague.adobe.com/docs/analy
 
 * **가져오기 빈도**:
 Analytics 보고서를 가져오는 빈도를 결정하는 `cron` 식입니다.
-기본값은 `0 0 0/12 * * ?`입니다. 이는 매시간 12회 가져오기에 해당합니다.
+기본값은 `0 0 0/12 * * ?`입니다. 이는 매시간 12회 페치에 해당합니다.
 
 이 OSGi 서비스를 구성하려면 [웹 콘솔](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 또는 저장소의 [osgiConfig 노드](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)를 사용할 수 있습니다(서비스 PID는 `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 

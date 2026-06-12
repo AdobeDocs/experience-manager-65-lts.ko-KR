@@ -1,5 +1,5 @@
 ---
-title: 대화형 커뮤니케이션의 텍스트
+title: 인터랙티브 커뮤니케이션 텍스트
 description: 대화형 통신에 사용할 텍스트 문서 단편 만들기 및 편집 - 텍스트는 대화형 통신을 만드는 데 사용되는 4가지 유형의 문서 단편 중 하나입니다. 나머지 세 가지는 조건, 목록 및 레이아웃 단편입니다.
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
@@ -7,12 +7,12 @@ role: User, Developer
 exl-id: ca18b9f4-9d06-4b15-81dd-68a6821e2e3e
 source-git-commit: 6db207b08535c063e41b333054561036481e8db9
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2482'
 ht-degree: 1%
 
 ---
 
-# 대화형 커뮤니케이션의 텍스트{#texts-in-interactive-communications}
+# 인터랙티브 커뮤니케이션 텍스트{#texts-in-interactive-communications}
 
 ## 개요 {#overview}
 
@@ -218,7 +218,7 @@ ht-degree: 1%
 
 ![textbackgroundcolorapplied-1](assets/textbackgroundcolorapplied-1.png)
 
-기본 색상 팔레트에 있는 기본 색상 `**[A]**`을(를) 직접 선택하거나 슬라이더 **을(를) 사용하여 색상의 적절한 음영을 선택한 후**&#x200B;선택`**[B]**`을(를) 선택할 수 있습니다.
+기본 색상 팔레트에 있는 기본 색상 `**[A]**`을(를) 직접 선택하거나 슬라이더 `**[B]**`을(를) 사용하여 색상의 적절한 음영을 선택한 후 **선택**&#x200B;을(를) 선택할 수 있습니다.
 
 필요한 경우 [고급] 탭으로 이동하여 적절한 색조, 밝기 및 채도 `**[C]**`을(를) 선택하여 정확한 색상을 만든 다음 `**[D]**` 선택을 선택하여 텍스트를 강조 표시할 색상을 적용합니다.
 
@@ -226,13 +226,13 @@ ht-degree: 1%
 
 ### 서식 있는 텍스트 붙여넣기 {#paste}
 
-Microsoft® Word 또는 HTML 페이지와 같은 다른 애플리케이션에 있는 하나 이상의 텍스트 단락 중 하나를 재사용하려면 텍스트를 복사하여 텍스트 편집기에 붙여넣습니다. 복사한 텍스트의 서식은 텍스트 편집기에서 유지됩니다.
+® Word 또는 HTML 페이지와 같은 다른 애플리케이션에 있는 하나 이상의 텍스트 단락 중 하나를 재사용하려면 텍스트를 복사하여 텍스트 편집기에 붙여넣습니다. 복사한 텍스트의 서식은 텍스트 편집기에서 유지됩니다.
 
-편집 가능한 텍스트 문서 조각에 하나 이상의 텍스트 단락을 복사하여 붙여넣을 수 있습니다. 예를 들어 다음과 같이 거주 증명에 대한 글머리 기호 목록이 있는 Microsoft® Word 문서가 있을 수 있습니다.
+편집 가능한 텍스트 문서 조각에 하나 이상의 텍스트 단락을 복사하여 붙여넣을 수 있습니다. 예를 들어 다음과 같이 거주 증명에 대한 글머리 기호 목록이 있는 ® Word 문서가 있을 수 있습니다.
 
 ![pastetextmsword-2](assets/pastetextmsword-2.png)
 
-Microsoft® Word 문서의 텍스트를 직접 복사하여 편집 가능한 텍스트 문서 조각에 붙여넣을 수 있습니다. 글머리 기호 목록, 글꼴 및 텍스트 색상과 같은 서식은 텍스트 문서 조각에 유지됩니다.
+® Word 문서의 텍스트를 직접 복사하여 편집 가능한 텍스트 문서 조각에 붙여넣을 수 있습니다. 글머리 기호 목록, 글꼴 및 텍스트 색상과 같은 서식은 텍스트 문서 조각에 유지됩니다.
 
 ![pastetexteditablemodule-1](assets/pastetexteditablemodule-1.png)
 

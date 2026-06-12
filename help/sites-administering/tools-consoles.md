@@ -12,7 +12,7 @@ role: Admin
 exl-id: b81d2f39-1517-49f0-9d16-bcde514cc199
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '597'
 ht-degree: 25%
 
 ---
@@ -182,7 +182,7 @@ ht-degree: 25%
   </tr>
   <tr>
    <td> </td>
-   <td>통찰력 구성</td>
+   <td>인사이트 구성</td>
   </tr>
   <tr>
    <td> </td>
@@ -365,7 +365,7 @@ ht-degree: 25%
  <tbody>
   <tr>
    <th>페이지 또는 폴더</th>
-   <th>용도</th>
+   <th>목적</th>
   </tr>
   <tr>
    <td>MSM 제어 센터</td>
@@ -377,7 +377,7 @@ ht-degree: 25%
   </tr>
   <tr>
    <td>클라우드 서비스 구성<br /> </td>
-   <td>Adobe Experience Cloud과의 통합과 관련된 구성을 보유하고 있습니다.</td>
+   <td>Adobe Experience Cloud와의 통합과 관련된 구성을 보유하고 있습니다.</td>
   </tr>
   <tr>
    <td>클라우드 설정<br /> </td>

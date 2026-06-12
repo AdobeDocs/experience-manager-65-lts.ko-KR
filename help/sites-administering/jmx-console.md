@@ -12,7 +12,7 @@ role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '4829'
+source-wordcount: '4969'
 ht-degree: 1%
 
 ---
@@ -426,7 +426,7 @@ CRX 저장소에 대한 정보
    <td>true는 저장소가 XML 코드를 컨텐트로 가져오기를 지원함을 나타냅니다.</td>
   </tr>
   <tr>
-   <td>node.type.management.same.name.siblings.supported</td>
+   <td>node.type.management.same.name.siblines.supported</td>
    <td>true는 저장소가 동일한 이름의 동위 노드(동일한 상위를 가진 노드)를 지원함을 나타냅니다.</td>
   </tr>
   <tr>
@@ -446,7 +446,7 @@ CRX 저장소에 대한 정보
    <td>true는 option.xml.export.support가 true이고 query.languages의 길이가 0이 아님을 나타냅니다.</td>
   </tr>
   <tr>
-   <td>option.unfiled.content.supported</td>
+   <td>option.unfile.content.supported</td>
    <td>true는 저장소가 분류되지 않은 콘텐츠를 지원함을 나타냅니다. 분류되지 않은 노드는 저장소 계층의 일부가 아닙니다.</td>
   </tr>
   <tr>

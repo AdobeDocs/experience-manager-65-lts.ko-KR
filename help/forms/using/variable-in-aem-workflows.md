@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 1a0d00f9-45f7-45af-ab34-d1c164980abb
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2064'
-ht-degree: 0%
+source-wordcount: '2127'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=ko)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html)를 참조하십시오.
 
 워크플로우 모델의 변수는 해당 데이터 유형을 기반으로 값을 저장하는 방법입니다. 그런 다음 모든 워크플로우 단계에서 변수의 이름을 사용하여 변수에 저장된 값을 검색할 수 있습니다. 변수 이름을 사용하여 라우팅 의사 결정을 위한 표현식을 정의할 수도 있습니다.
 

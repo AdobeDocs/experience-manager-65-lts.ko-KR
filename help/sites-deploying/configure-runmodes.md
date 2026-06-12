@@ -7,7 +7,7 @@ role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 * `publish` + `intranet`
 
-* 필요에 따라 . .
+* 필요에 따라 . . .
 
 각 시작 시 사용자 정의된 실행 모드를 선택할 수도 있습니다.
 
@@ -102,9 +102,9 @@ ht-degree: 1%
 
 여러 실행 모드에 대한 구성을 정의한 경우 시작 시 사용할 구성을 정의해야 합니다. 사용할 실행 모드를 지정하는 방법에는 몇 가지가 있습니다. 해결 순서는 다음과 같습니다.
 
-1. [시스템 속성(](#using-a-system-property-in-the-start-script)
-1. [&#128279;](#using-the-sling-properties-file)
-1. [&#128279;](#using-the-r-option)
+1. [시스템 속성(`-D`)](#using-a-system-property-in-the-start-script)
+1. [`sling.properties`개 파일](#using-the-sling-properties-file)
+1. [`-r` 옵션](#using-the-r-option)
 1. [파일 이름 감지](#filename-detection-renaming-the-jar-file)
 
 응용 프로그램 서버를 사용하는 경우 [web.xml에서 실행 모드를 정의](#defining-the-run-mode-in-web-xml-with-application-server)할 수도 있습니다.
