@@ -12,7 +12,7 @@ exl-id: be4397d1-0680-4b44-bdd2-825b521a44d6
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 34%
+ht-degree: 32%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 34%
    * 여기에는 다양한 가능성이 있습니다.
    * 페이지가 올바르게 복제되었는지 확인합니다. 페이지 상태를 확인하고 필요한 경우 복제 큐의 상태를 확인합니다.
    * 로컬 브라우저의 캐시를 지우고 다시 페이지에 액세스합니다.
-   * 페이지 URL의 끝에 `?`를 추가합니다. 예:
+   * 페이지 URL 끝에 `?`을(를) 추가합니다. 예:
 
      `http://localhost:4502/sites.html/content?`
 

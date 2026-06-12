@@ -12,7 +12,7 @@ role: Developer
 exl-id: d918ddf2-aa70-4742-97d5-24a2c51f578a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 java -jar proxy.jar <host> <remoteport> <localport> [options]
 ```
 
-### 옵션 {#options}
+### 선택 사항 {#options}
 
 * **q(자동 모드)** 콘솔 창에 요청을 쓰지 않습니다. 연결 속도를 늦추지 않으려는 경우 또는 출력을 파일에 기록하는 경우 사용합니다(-logfile 옵션 참조).
 * **b(이진 모드)** 트래픽에서 특정 바이트 조합을 찾고 있는 경우 이진 모드를 활성화하십시오. 출력에는 16진수 및 문자 출력이 포함됩니다.
@@ -116,7 +116,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C는 이 항목이 클라이언트에서 왔음을 의미합니다(웹 페이지에 대한 요청임)
 * 0은 연결 번호입니다(연결 카운터는 0에서 시작).
 * #00000 스트림에 오프셋을 추가합니다. 첫 번째 항목이므로 오프셋은 0입니다.
-* [GET &lt;?>]은(는) HTTP 헤더(url) 중 하나의 예에서 요청 콘텐츠입니다.
+* [GET &lt;??>]은(는) HTTP 헤더(url) 중 하나의 예제에서 요청 콘텐츠입니다.
 
 연결이 닫히면 다음 정보가 기록됩니다.
 
@@ -143,7 +143,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 </html>
 ```
 
-AEM이 localhost:4303에서 실행 중인 경우 프록시 서버를 다음과 같이 시작합니다.
+AEM이 localhost:4303에서 실행 중인 경우 다음과 같이 프록시 서버를 시작합니다.
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log

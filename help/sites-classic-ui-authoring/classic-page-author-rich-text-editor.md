@@ -1,5 +1,5 @@
 ---
-title: 리치 텍스트 편집기
+title: 서식 있는 텍스트 편집기
 description: 리치 텍스트 편집기는 텍스트 컨텐츠를 AEM에 입력하는 기본 빌딩 블록입니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,12 @@ role: User
 exl-id: f5114938-1279-4f00-9c2b-bd9ecd8eef6f
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1788'
 ht-degree: 2%
 
 ---
 
-# 리치 텍스트 편집기 {#rich-text-editor}
+# 서식 있는 텍스트 편집기 {#rich-text-editor}
 
 리치 텍스트 편집기는 텍스트 컨텐츠를 AEM에 입력하는 기본 빌딩 블록입니다. 이는 다음을 포함한 다양한 구성 요소의 기초를 형성합니다.
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 * 텍스트 이미지
 * 테이블
 
-## 리치 텍스트 편집기 {#rich-text-editor-1}
+## 서식 있는 텍스트 편집기 {#rich-text-editor-1}
 
 WYSIWYG 편집 대화 상자는 다음과 같은 다양한 기능을 제공합니다.
 

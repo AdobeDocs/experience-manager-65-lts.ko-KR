@@ -11,8 +11,8 @@ role: Admin
 exl-id: c83fcf96-cc45-40a0-9a50-c60406096de1
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 2%
+source-wordcount: '1298'
+ht-degree: 4%
 
 ---
 
@@ -176,7 +176,7 @@ ht-degree: 2%
   <tr>
    <td><strong>23단계</strong></td>
    <td>느린 쿼리</td>
-   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">쿼리 및 색인 생성에 대한 우수 사례</a></td>
+   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">쿼리 및 색인화 모범 사례</a></td>
   </tr>
   <tr>
    <td><strong>24단계</strong></td>
@@ -239,7 +239,7 @@ ht-degree: 2%
    <td>요청을 캐시할 수 있도록 만들기</td>
    <td>
     <ol>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR">일반 Dispatcher 구성</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko">일반 Dispatcher 구성</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#configuring-the-dispatcher-cache-cache">Dispatcher 캐시 구성</a></li>
     </ol> <p>캐시 비율을 개선하는 방법, 캐시 가능한 요청을 하는 방법(Dispatcher 모범 사례)</p> <p>또한 캐싱 구성을 최적화하려면 아래 설정을 고려하십시오<br /> </p>
     <ol>
