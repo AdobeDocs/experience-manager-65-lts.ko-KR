@@ -12,7 +12,7 @@ role: Admin
 exl-id: d9ffc796-1c2b-4fa6-b434-fb3ee03d40b5
 source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1459'
 ht-degree: 1%
 
 ---
@@ -180,27 +180,26 @@ Analytics 변수를 다른 추적 구성 요소에 있는 CQ 변수에 매핑하
 
    * **트래픽**:
 
-      * CQ 변수( `prop1`)에 매핑된 트래픽 변수( `eventdata.downloadLink`)
+      * CQ 변수( `eventdata.downloadLink`)에 매핑된 트래픽 변수( `prop1`)
 
       * 구성 요소 옆에 자물쇠가 있으면 상위 프레임워크에서 상속되었으므로 구성 요소를 편집할 수 없습니다
 
    * **전환**:
 
-      * CQ 변수( `eVar1`)에 매핑된 전환 변수( `pagedata.title`)
+      * CQ 변수( `pagedata.title`)에 매핑된 전환 변수( `eVar1`)
 
       * CQ 변수 필드를 두 번 클릭하고 코드를 수동으로 입력하여 JavaScript 식에 매핑된 전환 변수(`eVar3`)가 인라인으로 추가되었습니다
 
    * **이벤트**:
 
-      * CQ 이벤트( `event1`)에 매핑된 이벤트 변수( `eventdata.events.pageView`)
+      * CQ 이벤트( `eventdata.events.pageView`)에 매핑된 이벤트 변수( `event1`)
 
 >[!NOTE]
 >
 >필드를 두 번 클릭하고 텍스트를 추가하여 테이블의 CQ 변수 열도 인라인으로 채울 수 있습니다. 이러한 필드는 JavaScript을 입력으로 받아들입니다.
 >
->예를 들어 `prop3` 옆에 다음을 추가할 수 있습니다.
->     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
->*:*(콜론)을 사용하여 *sitesection*&#x200B;과(와) 연결된 페이지의 *title*&#x200B;을(를) 보내고 *(으)로* Adobe`prop3` 접두사가 추가됨
+>예를 들어 `prop3` 옆에 > `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`을(를) 추가할 수 있습니다.\
+>*:*(콜론)을 사용하여 *sitesection*&#x200B;과(와) 연결된 페이지의 *title*&#x200B;을(를) 보내고 `prop3`(으)로 *Adobe* 접두사가 추가됨
 >
 
 >[!CAUTION]

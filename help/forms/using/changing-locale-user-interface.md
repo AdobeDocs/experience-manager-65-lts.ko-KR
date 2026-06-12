@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 작업 공간 사용자 인터페이스의 로케일 변경
+title: AEM Forms Workspace 사용자 인터페이스 로케일 변경
 description: 텍스트, 축소된 카테고리, 큐 및 프로세스, 인터페이스의 날짜 선택기를 현지화하기 위해 AEM Forms 작업 영역을 수정하는 방법입니다.
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ role: User, Developer
 exl-id: 3f919e4d-0535-4816-8762-9c0088e47a2c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 0%
+source-wordcount: '559'
+ht-degree: 3%
 
 ---
 
-# AEM Forms 작업 공간 사용자 인터페이스의 로케일 변경{#changing-the-locale-of-aem-forms-workspace-user-interface}
+# AEM Forms Workspace 사용자 인터페이스 로케일 변경{#changing-the-locale-of-aem-forms-workspace-user-interface}
 
 AEM Forms workspace는 영어, 프랑스어, 독일어 및 일본어 언어를 즉시 지원합니다. 또한 AEM Forms 작업 공간 사용자 인터페이스를 다른 언어로 현지화하는 기능도 제공합니다.
 
@@ -55,7 +55,7 @@ AEM Forms workspace는 이미지를 사용하여 카테고리, 큐 및 프로세
 
 >[!NOTE]
 >
->브라우저의 브라우저 언어 로케일 코드를 찾으려면 다음을 수행하십시오. `https://'[server]:[port]'/lc/libs/ws/Locale.html` 열기
+>브라우저의 브라우저 언어 로케일 코드를 찾으려면 다음을 수행하십시오. `https://'[server]:[port]'/lc/libs/ws/Locale.html`를 엽니다.
 
 ![collapsing_panels_image](assets/collapsing_panels_image.png)
 
@@ -80,7 +80,7 @@ AEM Forms workspace는 이미지를 사용하여 카테고리, 큐 및 프로세
 
 1. [Workspace 사용자 지정](../../forms/using/introduction-customizing-html-workspace.md) 문서에 나열된 모든 의미 체계 변경을 수행합니다.
 1. *js/runtime/utility* 폴더로 이동하고 편집할 *usersession.js* 파일을 엽니다.
-1. 원래 코드 블록에 나열된 코드를 찾아 *lang! 조건을 추가합니다.if 문에 &#39;nw&#39;*&#x200B;을(를) ==.
+1. 원래 코드 블록에 나열된 코드를 찾아 *lang !== &#39;nw&#39;* 조건을 if 문에 추가합니다.
 
    ```javascript
    // Orignal code

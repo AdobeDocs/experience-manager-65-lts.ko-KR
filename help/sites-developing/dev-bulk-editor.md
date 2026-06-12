@@ -1,5 +1,5 @@
 ---
-title: 벌크 편집기 개발
+title: 대량 편집기 개발
 description: 태깅을 통해 컨텐츠를 분류하고 구성할 수 있습니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Developer
 exl-id: 3ce50030-86c7-4291-98fa-0cc9cb63f45c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 1%
+source-wordcount: '1830'
+ht-degree: 2%
 
 ---
 
-# 벌크 편집기 개발{#developing-the-bulk-editor}
+# 대량 편집기 개발{#developing-the-bulk-editor}
 
 이 섹션에서는 벌크 편집기 도구를 개발하는 방법과 벌크 편집기를 기반으로 하는 제품 목록 구성 요소를 확장하는 방법을 설명합니다.
 
@@ -517,7 +517,7 @@ checkbox 구성 속성이 true로 설정되면 열의 모든 셀이 확인란으
 
 **강제 위치**
 
-강제 위치 메타데이터 forcedPosition을 사용하면 그리드 내에서 열이 배치되는 위치를 지정할 수 있습니다. 0이 첫 번째 위치이고 &lt;열 개수>-1이 마지막 위치입니다. 다른 값은 무시됩니다.
+강제 위치 메타데이터 forcedPosition을 사용하면 그리드 내에서 열이 배치되는 위치를 지정할 수 있습니다. 0이 첫 번째 위치이고 &lt;열 개수>-1이 마지막 위치입니다. 다른 모든 값은 무시됩니다.
 
 앞의 예에서 선택 열은 forcedPosition=&quot;0&quot;인 첫 번째 열입니다.
 

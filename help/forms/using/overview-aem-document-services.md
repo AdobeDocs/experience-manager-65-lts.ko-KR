@@ -1,5 +1,5 @@
 ---
-title: AEM Document Services 개요
+title: AEM 문서 서비스 개요
 description: AEM Document Services는 PDF 문서 생성, 어셈블 및 보안을 위한 일련의 OSGi 서비스입니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,18 +11,18 @@ role: Admin, User, Developer
 exl-id: 03e87c5a-c106-4b4c-9b42-8ce7a04d9c0c
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 2%
+source-wordcount: '1456'
+ht-degree: 4%
 
 ---
 
-# AEM Document Services 개요{#overview-of-aem-document-services}
+# AEM 문서 서비스 개요{#overview-of-aem-document-services}
 
 ## 적용 대상 {#applies-to}
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=ko)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html)를 참조하십시오.
 
 
 AEM Document Services는 PDF 문서 생성, 어셈블 및 보안을 위한 일련의 OSGi 서비스입니다. 문서 서비스에는 다음 서비스가 포함됩니다.
@@ -119,7 +119,7 @@ Doc Assurance 서비스에는 서명, 암호화 및 Reader 확장의 세 가지 
 
 ### Reader 확장 서비스 {#reader-extension-service}
 
-Reader 확장 서비스를 사용하면 추가 사용 권한으로 Adobe Reader의 기능을 확장하여 조직에서 대화형 PDF 문서를 쉽게 공유할 수 있습니다. Reader 확장 서비스는 Adobe Reader 7.0 이상에서 작동합니다. 이 서비스는 PDF 문서에 사용 권한을 추가합니다. 이 작업은 문서에 주석 추가, 양식 채우기, 문서 저장 등과 같이 Adobe Reader를 사용하여 PDF 문서를 열 때 일반적으로 사용할 수 없는 기능을 활성화합니다. 서드파티 사용자는 권한이 활성화된 문서에서 작동하는 데 추가 소프트웨어나 플러그인이 필요하지 않습니다.
+Reader 확장 서비스를 사용하면 추가 사용 권한으로 Adobe Reader의 기능을 확장하여 조직에서 대화형 PDF 문서를 쉽게 공유할 수 있습니다. Reader 확장 서비스는 Adobe Reader 7.0 이상에서 작동합니다. 이 서비스는 PDF 문서에 사용 권한을 추가합니다. 이 작업은 문서에 주석 추가, 양식 채우기, 문서 저장 등과 같이 Adobe Reader를 사용하여 PDF 문서를 열 때 일반적으로 사용할 수 없는 기능을 활성화합니다. 서드파티 사용자는 권한이 활성화된 문서를 사용하는 데 추가 소프트웨어나 플러그인이 필요하지 않습니다.
 
 PDF 문서에 적절한 사용 권한이 추가되면 수신자는 Adobe Reader에서 다음 활동을 수행할 수 있습니다.
 

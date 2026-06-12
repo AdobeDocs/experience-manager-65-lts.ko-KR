@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
 source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3848'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >편지 미리 보기의 HTML 또는 PDF 렌디션 모드 간 전환에 대한 자세한 내용은 [편지 렌디션 모드 변경](#changerenditionmode)을 참조하십시오. 서신 관리 및 AEM의 PDF 지원에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/kr/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
+   >편지 미리 보기의 HTML 또는 PDF 렌디션 모드 간 전환에 대한 자세한 내용은 [편지 렌디션 모드 변경](#changerenditionmode)을 참조하십시오. 서신 관리 및 AEM의 PDF 지원에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
 
 ### 데이터 입력 {#enterdata}
 
@@ -225,7 +225,7 @@ ht-degree: 0%
 
 1. 콘텐츠 탭에서 필요에 따라 콘텐츠 모듈을 편집합니다. 컨텐츠 계층의 관련 컨텐츠 모듈에 초점을 맞추려면 편지 미리 보기에서 관련 행이나 단락을 선택하거나 컨텐츠 계층에서 컨텐츠 모듈을 직접 선택할 수 있습니다.
 
-   예를 들어 아래 그래픽에서 &quot;To allow us to access...&quot; 줄을 선택하고 컨텐츠 탭에서 해당 컨텐츠 모듈을 선택합니다.
+   예를 들어 &quot;To allow us to access...&quot;라는 줄은 을(를) 아래 그래픽에서 선택하고 을(를) 컨텐츠 탭에서 해당 컨텐츠 모듈을 선택합니다.
 
    콘텐츠의 선택한 모듈 강조 표시(![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png))를 탭하여 편지 미리 보기에서 관련 텍스트, 단락 또는 데이터 필드를 탭할 때 콘텐츠 탭에서 콘텐츠 모듈을 강조 표시하는 기능을 비활성화하거나 활성화할 수 있습니다.
 
@@ -363,7 +363,7 @@ AEM Forms 서신 관리에서는 서신 만들기 UI에서 문자를 HTML으로 
 * **페이지 나누기**: PDF 미리 보기에서 편지의 페이지 나누기가 출력에 미치는 영향을 정확히 볼 수 있습니다.
 * **최종 미리 보기**: PDF 미리 보기에서 편지가 출력에 표시될 때 편지의 정확한 서식과 모양을 볼 수 있습니다.
 
-PDF forms의 스크립팅 지원에 대한 자세한 내용은 [스크립팅 지원](https://help.adobe.com/ko_KR/livecycle/11.0/ScriptingSupport/index.html)을 참조하십시오.
+PDF forms의 스크립팅 지원에 대한 자세한 내용은 [스크립팅 지원](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)을 참조하십시오.
 
 HTML5 Forms의 스크립팅 지원에 대한 자세한 내용은 [HTML5 Forms에 대한 스크립팅 지원](/help/forms/using/scripting-support.md)을 참조하십시오.
 
@@ -371,7 +371,7 @@ HTML5 Forms의 스크립팅 지원에 대한 자세한 내용은 [HTML5 Forms에
 
 기본적으로 서신 만들기 UI는 HTML 또는 모바일 양식을 사용하여 편지 미리 보기를 렌더링합니다. 모바일 양식 미리 보기는 브라우저의 기본 플러그인을 사용하며 추가 플러그인이 필요하지 않으므로 어떤 브라우저에서도 렌더링하는 데 문제가 없습니다. 편지 미리 보기 모드를 PDF으로 변경할 수 있습니다. 그러나 브라우저 제한으로 인해 편지의 대화형 PDF 미리보기의 다양한 기능에 대한 문제가 발생할 수 있습니다.
 
-편지 미리 보기와의 브라우저 호환성에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/kr/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
+편지 미리 보기와의 브라우저 호환성에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
 
 편지의 미리보기 모드를 변경하려면 다음 단계를 완료하십시오.
 

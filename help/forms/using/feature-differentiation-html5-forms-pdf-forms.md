@@ -1,5 +1,5 @@
 ---
-title: HTML5 forms와 PDF forms의 차별화된 기능
+title: HTML5 양식과 PDF 양식 간의 기능 차별화
 description: HTML5 Forms와 PDF forms 간의 기능 차이점에 대해 알아봅니다.
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ role: Admin, User, Developer
 exl-id: adf65e7f-9984-40e8-99e3-fadce08bb44e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 2%
+source-wordcount: '450'
+ht-degree: 6%
 
 ---
 
-# HTML5 forms와 PDF forms의 차별화된 기능 {#feature-differentiation-between-html-forms-and-pdf-forms}
+# HTML5 양식과 PDF 양식 간의 기능 차별화 {#feature-differentiation-between-html-forms-and-pdf-forms}
 
 다음 표는 HTML5 forms 및 PDF forms에 대해 제공되는 기능 지원을 지정합니다.
 
@@ -55,7 +55,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>머리글/바닥글 </td>
-   <td>지원됨. <br /> <br /> HTML5 Mobile Forms는 페이지 나누기를 지원하지 않으므로 머리글과 바닥글은 한 번만 표시됩니다. 그러나 모바일 양식 미리 보기의 여러 위치에 나타나도록 레이아웃에서 설정할 수 있습니다.<br /> </td>
+   <td>지원됨. <br /> <br /> HTML5 모바일 양식은 페이지 나누기를 지원하지 않으므로 머리글과 바닥글은 한 번만 표시됩니다. 그러나 모바일 양식 미리 보기의 여러 위치에 나타나도록 레이아웃에서 설정할 수 있습니다.<br /> </td>
    <td>지원됨</td>
   </tr>
   <tr>

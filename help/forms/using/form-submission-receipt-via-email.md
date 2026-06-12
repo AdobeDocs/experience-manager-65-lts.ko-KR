@@ -1,5 +1,5 @@
 ---
-title: 이메일을 통해 양식 제출 승인 보내기
+title: 이메일을 통해 양식 제출 확인서 보내기
 description: AEM Forms을 사용하면 양식 제출 시 사용자에게 승인을 보내는 이메일 제출 액션을 구성할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: 3b453793-0308-49a9-9d5b-b323780d6903
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 0%
+source-wordcount: '550'
+ht-degree: 2%
 
 ---
 
-# 이메일을 통해 양식 제출 승인 보내기 {#sending-a-form-submission-acknowledgement-via-email}
+# 이메일을 통해 양식 제출 확인서 보내기 {#sending-a-form-submission-acknowledgement-via-email}
 
 ## 적응형 양식 데이터 제출 {#adaptive-form-data-submission}
 
