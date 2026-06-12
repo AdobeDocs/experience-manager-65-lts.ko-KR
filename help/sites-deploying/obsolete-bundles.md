@@ -101,5 +101,5 @@ AEM 6.5 LTS로 업그레이드할 때 업그레이드가 수행된 AEM 6.5 servi
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core([AEM 6.5 LTS 호환 버전](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/versions)&#x200B;(으)로 바꿀 수 있음)
+* com.adobe.cq.core.wcm.components.core([AEM 6.5 LTS 호환 버전](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/versions)&#x200B;(으)로 바꿀 수 있음)
 * com.adobe.cq.core.wcm.components.extension.contentfragment.bundle(AEM 6.5 LTS 호환 버전으로 교체 가능)
