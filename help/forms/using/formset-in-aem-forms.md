@@ -1,5 +1,5 @@
 ---
-title: AEM Forms에 설정된 양식
+title: AEM Forms의 양식 설정
 description: 이 문서에서는 양식 세트를 소개하고 HTML5 양식을 함께 결합하여 양식 세트를 만드는 방법을 설명합니다. 이 문서에서는 양식 세트에 xml 데이터를 미리 채우는 방법과 프로세스 관리에서 양식 세트를 사용하는 방법도 설명합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: 29339930-2c0c-46d8-84ad-92b1e8384422
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2816'
 ht-degree: 0%
 
 ---
 
-# AEM Forms에 설정된 양식{#form-set-in-aem-forms}
+# AEM Forms의 양식 설정{#form-set-in-aem-forms}
 
 ## 개요 {#overview}
 
@@ -303,7 +303,7 @@ prefillXML: O
 
 이 태그는 HTML5 Form XML의 시작을 나타냅니다. 미리 채우기 XML에 있거나 미리 채우기 XML이 없는 경우 제출 XML에 추가됩니다. 이 태그는 미리 채우기 XML에서 제거할 수 있습니다.
 
-### XFA:데이터 세트 {#xfa-datasets}
+### XFA:DATASETS {#xfa-datasets}
 
 `parent elements: xdp:xdp`
 
