@@ -11,8 +11,8 @@ role: Admin
 exl-id: 29f1d07b-925b-4612-aa1b-34c387a5765f
 source-git-commit: b93a65226587936010c3dd53312c66e15f73cf2a
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 8%
+source-wordcount: '384'
+ht-degree: 4%
 
 ---
 
@@ -78,7 +78,7 @@ AEM 6.5 LTS로 업그레이드할 때 업그레이드가 수행된 AEM 6.5 servi
 * com.adobe.cq.social.cq-social-user-ugc-management
 * com.adobe.cq.sample.we.retail.core
 * com.adobe.cq.screens.dcc
-* com.adobe.cq.screens.mq.activemq
+* com.adobe.cq.screens.mq.activeq
 * com.adobe.cq.screens.mq.core
 * com.adobe.cq.screens
 * com.adobe.cq.screens.sessions
@@ -101,5 +101,5 @@ AEM 6.5 LTS로 업그레이드할 때 업그레이드가 수행된 AEM 6.5 servi
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core([AEM 6.5 LTS 호환 버전](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/versions)&#x200B;(으)로 바꿀 수 있음)
+* com.adobe.cq.core.wcm.components.core([AEM 6.5 LTS 호환 버전](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/versions)&#x200B;(으)로 바꿀 수 있음)
 * com.adobe.cq.core.wcm.components.extension.contentfragment.bundle(AEM 6.5 LTS 호환 버전으로 교체 가능)
