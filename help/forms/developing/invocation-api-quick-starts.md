@@ -41,9 +41,9 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api">호출 API를 사용하여 단기 프로세스 호출</a></p></td>
-   <td><p>N/A</p></td>
+   <td><p>해당 사항 없음</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">빠른 시작: 호출 API를 사용하여 단기 프로세스 호출</a></p></td>
-   <td><p>N/A</p></td>
+   <td><p>해당 사항 없음</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">Base64 인코딩을 사용하여 AEM Forms 호출</a>(Java 웹 서비스 프록시)</p></td>

@@ -11,8 +11,8 @@ role: Developer
 exl-id: 364eebca-b4cf-470b-994e-9e56ec68597b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 45%
+source-wordcount: '620'
+ht-degree: 54%
 
 ---
 
@@ -102,8 +102,8 @@ AEM 인스턴스에서 사용 가능한 모든 구성 요소에 대한 개요를
 * [여러 즉석 편집기 구성](/help/sites-developing/multiple-inplace-editors.md)
 * [개발자 모드](/help/sites-developing/developer-mode.md)
 * [UI 테스트](/help/sites-developing/hobbes.md)
-* [컨텐츠 조각용 구성 요소](/help/sites-developing/components-content-fragments.md)
-* [JSON 형식으로 페이지 정보 가져오기](/help/sites-developing/pageinfo.md)
+* [콘텐츠 조각용 구성 요소](/help/sites-developing/components-content-fragments.md)
+* [JSON 형식으로 페이지 정보 얻기](/help/sites-developing/pageinfo.md)
 * [구성 요소 국제화](/help/sites-developing/i18n.md)
 * [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
 * [조건 숨기기 사용](/help/sites-developing/hide-conditions.md)
@@ -112,4 +112,4 @@ AEM 인스턴스에서 사용 가능한 모든 구성 요소에 대한 개요를
    * [AEM 구성 요소(클래식 UI)](/help/sites-developing/developing-components-classic.md)
    * [위젯 사용 및 확장(클래식 UI)](/help/sites-developing/widgets.md)
    * [xtype 사용(클래식 UI)](/help/sites-developing/xtypes.md)
-   * [Forms 개발(클래식 UI)](/help/sites-developing/developing-forms.md)
+   * [양식 개발(클래식 UI)](/help/sites-developing/developing-forms.md)

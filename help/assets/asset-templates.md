@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
 source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 1%
+source-wordcount: '1570'
+ht-degree: 2%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >[!DNL Experience Manager]이(가) [!DNL InDesign Server] 템플릿에서 데이터를 추출하고 편집할 수 있도록 하려면 [!DNL Experience Manager Assets] 배포가 [!DNL InDesign]과(와) 통합되어야 합니다. 자세한 내용은 [Experience Manager Assets과 InDesign Server 통합](/help/assets/indesign.md)을 참조하십시오.
+   >[!DNL Experience Manager Assets]이(가) [!DNL InDesign] 템플릿에서 데이터를 추출하고 편집할 수 있도록 하려면 [!DNL Experience Manager] 배포가 [!DNL InDesign Server]과(와) 통합되어야 합니다. 자세한 내용은 [Experience Manager Assets과 InDesign Server 통합](/help/assets/indesign.md)을 참조하십시오.
 
 1. 편집 가능한 필드의 텍스트를 수정하려면 편집 가능한 필드 목록에서 텍스트 필드를 클릭하고 필드의 텍스트를 편집합니다.
 
@@ -174,4 +174,4 @@ ht-degree: 1%
 
 ## 우수 사례 및 제한 사항 {#best-practices-limitations-tips}
 
-* [!DNL InDesign]의 [!DNL Experience Manager] 편집기는 태그 수준에서 작동하며 단일 태그의 모든 텍스트는 단일 엔터티로 간주됩니다. 편집할 때 텍스트 서식과 스타일을 유지하려면 각 단락(또는 스타일이 다른 텍스트)에 개별적으로 태그를 지정합니다.
+* [!DNL Experience Manager]의 [!DNL InDesign] 편집기는 태그 수준에서 작동하며 단일 태그의 모든 텍스트는 단일 엔터티로 간주됩니다. 편집할 때 텍스트 서식과 스타일을 유지하려면 각 단락(또는 스타일이 다른 텍스트)에 개별적으로 태그를 지정합니다.

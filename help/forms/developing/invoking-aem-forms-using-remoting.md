@@ -83,7 +83,7 @@ Remoting을 사용하여 AEM Forms 프로세스를 프로그래밍 방식으로 
 
 * *&lt;install_directory>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
-  여기서 &lt;*install_directory*>는 AEM Forms이 설치된 디렉토리입니다.
+  여기서 &lt;*install_directory*>은(는) AEM Forms이 설치된 디렉토리입니다.
 
 **추가 참조**
 

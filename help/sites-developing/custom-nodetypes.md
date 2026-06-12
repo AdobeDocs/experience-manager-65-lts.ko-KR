@@ -11,8 +11,8 @@ role: Developer
 exl-id: 255f52f3-aff4-432c-a541-3ce03e626742
 source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 5%
+source-wordcount: '1735'
+ht-degree: 6%
 
 ---
 
@@ -247,7 +247,7 @@ CQ 구성 요소를 정의합니다.
 * `@prop allowedChildren` - 하위 구성 요소로 허용되는 구성 요소의 경로를 결정하는 정규 표현식 패턴입니다.
 * `@node virtual` - 구성 요소 끌어서 놓기에 사용된 가상 구성 요소를 반영하는 하위 노드를 포함합니다.
 * `@prop componentGroup` - 구성 요소 끌어다 놓기에 사용되는 구성 요소 그룹의 이름입니다.
-* `@node cq:infoProviders` - 하위 노드를 포함합니다. 각 하위 노드에는 `className`을(를) 참조하는 `PageInfoProvider` 속성이 있습니다.
+* `@node cq:infoProviders` - 하위 노드를 포함합니다. 각 하위 노드에는 `PageInfoProvider`을(를) 참조하는 `className` 속성이 있습니다.
 
 **정의**
 
@@ -492,7 +492,7 @@ DAM 자산을 나타내는 축소판입니다.
 * `@prop source (String) mandatory` - 데이터 원본 URI입니다. 필수이며 비워둘 수 없습니다.
 * `@prop target (String)` - 데이터 원본에서 검색된 데이터가 저장되는 대상 위치입니다. 선택 사항이며 기본값은 cq:PollConfig 노드입니다.
 * `@prop interval (Long)` - 데이터 원본에서 새 데이터나 업데이트된 데이터를 폴링할 간격(초)입니다. 선택 사항이며 기본값은 30분(1,800초)입니다.
-* [Adobe Experience Manager에 대한 사용자 지정 데이터 가져오기 서비스를 만드는 중](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
+* [Adobe Experience Manager용 사용자 지정 데이터 가져오기 서비스 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 **정의**
 
@@ -818,7 +818,7 @@ AEM 5.4의 경우 목록의 끝에 을 추가합니다.
 
 **설명**
 
-사용자가 편집할 수 있는 `cq:userContent` 하위 노드를 추가합니다. 각 사용자에는 일반적으로 mixin `cq:userContent/<userid>`을(를) 가진 자체 `cq:UserTaggable` 하위 노드가 있습니다.
+사용자가 편집할 수 있는 `cq:userContent` 하위 노드를 추가합니다. 각 사용자에는 일반적으로 mixin `cq:UserTaggable`을(를) 가진 자체 `cq:userContent/<userid>` 하위 노드가 있습니다.
 
 **정의**
 

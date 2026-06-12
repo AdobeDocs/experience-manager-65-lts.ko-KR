@@ -10,8 +10,8 @@ role: Developer
 exl-id: 705bffea-ef70-40b5-81d8-b130d3908073
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '2687'
-ht-degree: 1%
+source-wordcount: '2826'
+ht-degree: 2%
 
 ---
 
@@ -82,7 +82,6 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 * 모든 콘텐츠는 자산의 `jcr:content/data` 노드 아래에 저장됩니다.
 
    * 요소 데이터는 마스터 하위 노드 아래에 저장됩니다.
-
      `jcr:content/data/master`
 
    * 변형은 변형의 이름을 전달하는 하위 노드 아래에 저장됩니다.
@@ -91,7 +90,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
    * 각 요소의 데이터는 각 하위 노드에 요소 이름의 속성으로 저장됩니다.
 예를 들어 요소 `text`의 내용은 `jcr:content/data/master`의 속성 `text`(으)로 저장됩니다
 
-* 메타데이터 및 관련 콘텐츠는 `jcr:content/metadata` 아래에 저장됩니다.
+* 메타데이터 및 관련 콘텐츠는 아래에 저장됩니다. `jcr:content/metadata`
 제목 및 설명을 제외하고, 기존 메타데이터로 간주되지 않고 `jcr:content`에 저장됩니다.
 
 #### Assets에 단순 콘텐츠 조각 매핑 {#mapping-simple-content-fragments-to-assets}
@@ -382,7 +381,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 ### 주의 사항 {#caveats}
 
-주의해야 할 사항은 다음과 같습니다.
+다음 사항에 유의해야 합니다.
 
 * API는 UI에서 지원하는 기능을 제공하도록 구현됩니다.
 * 전체 API는 API JavaDoc에 별도로 명시되지 않는 한 변경 내용을 자동으로 **유지하지**&#x200B;하도록 설계되었습니다. 따라서 항상 각 요청의 리소스 해결자(또는 실제로 사용 중인 해결자)를 커밋해야 합니다.
@@ -527,7 +526,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 * 값: `300`(5분은 300초와 같음)
 
-## 페이지 작성을 위한 구성 요소 {#components-for-page-authoring}
+## 페이지 작성 구성 요소 {#components-for-page-authoring}
 
 자세한 내용은
 
