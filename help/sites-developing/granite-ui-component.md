@@ -1,5 +1,5 @@
 ---
-title: 새 Granite UI 필드 구성 요소 만들기
+title: 새로운 Granite UI 필드 구성 요소 만들기
 description: Granite UI는 필드라고 하는 양식에서 사용하도록 설계된 다양한 구성 요소를 제공합니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Developer
 exl-id: e49d1d3d-984c-4b08-b0e5-2016fbff0b80
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 0%
+source-wordcount: '548'
+ht-degree: 2%
 
 ---
 
-# 새 Granite UI 필드 구성 요소 만들기{#creating-a-new-granite-ui-field-component}
+# 새로운 Granite UI 필드 구성 요소 만들기{#creating-a-new-granite-ui-field-component}
 
 Granite UI는 양식에서 사용할 수 있도록 디자인된 다양한 구성 요소를 제공합니다. 이러한 구성 요소는 Granite UI 어휘에서 *필드*&#x200B;라고 합니다. 표준 Granite 양식 구성 요소는 다음에서 사용할 수 있습니다.
 
