@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
 source-git-commit: 51342861dd01e659999c19fbe0274e8d3cbcf8c4
 workflow-type: tm+mt
-source-wordcount: '4485'
-ht-degree: 2%
+source-wordcount: '4746'
+ht-degree: 3%
 
 ---
 
@@ -227,7 +227,7 @@ ht-degree: 2%
 
 **참조:**
 
-1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
+1. [® Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md)
 1. [AEM Forms용 Microsoft® Dynamics 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### MS® Dynamics OData 클라우드 서비스 {#ms-dynamics-odata-cloud-service}
@@ -238,7 +238,7 @@ ht-degree: 2%
 
    1. MS® Dynamics 응용 프로그램 등록에 구성된 것과 동일한 리디렉션 URL을 사용하여 서버에 액세스하는지 확인하십시오.
 
-1. &quot;Microsoft® Dynamics OData Cloud Service&quot; 구성을 선택합니다.
+1. &quot;® Dynamics OData Cloud Service&quot; 구성을 선택합니다.
 1. **속성**&#x200B;을 클릭합니다.
 
    ![Microsoft OData Cloud Service에 대한 속성](assets/properties_odata_cloud_service.jpg)
@@ -278,7 +278,7 @@ ht-degree: 2%
 
 1. 설정 보기에서 **키**&#x200B;를 클릭하여 새 키( AEM에서 클라이언트 암호로 사용됨)를 봅니다.
 
-   1. 키의 복사본을 유지해야 합니다. 나중에 Azure 또는 AEM에서 볼 수 없습니다.
+   1. 키의 사본은 보존해야 합니다. 나중에 Azure 또는 AEM에서 볼 수 없습니다.
 
 1. 리소스 URL/서비스 루트 URL을 찾으려면 MS® Dynamics 인스턴스 대시보드로 이동합니다.
 1. 위쪽 탐색 모음에서 **판매** 또는 고유한 인스턴스 유형을 클릭한 다음 **설정 선택**&#x200B;을 클릭합니다.
@@ -788,7 +788,7 @@ Adobe에서 유지 관리하는 공개적으로 사용 가능한 Ultramarine 테
 
 사용자는 다음과 같은 다양한 워크플로 서비스 옵션을 구성할 수 있습니다.
 
-1. Microsoft® Dynamics 시작
+1. ® Dynamics 시작
 1. Adobe Sign
 1. AEM 사용자 지정 통신 관리
 1. Adobe Analytics

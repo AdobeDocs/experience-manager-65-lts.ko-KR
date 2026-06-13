@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 3aea14f7-052d-4f23-b65d-e648623146e7
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '6929'
+source-wordcount: '6920'
 ht-degree: 7%
 
 ---
@@ -437,7 +437,7 @@ Adobe Analytics을 구성하면 통합에 대해 다음과 같이 설정됩니�
 
 **통합을 위해 Adobe Analytics을 구성하려면:**
 
-1. Experience Cloud [홈 페이지](https://experience.adobe.com/#/home)에서 Adobe Analytics에 액세스해 보세요. 메뉴 표시줄에서 페이지의 오른쪽 상단 근처에 있는 **[!UICONTROL 솔루션]** 아이콘(세 개의 점 테이블)을 선택한 다음 **[!UICONTROL Analytics]**&#x200B;을 선택합니다.
+1. Experience Cloud [홈 페이지](https://experience.adobe.com/#/home)에서 Adobe Analytics에 액세스하여 시작합니다. 메뉴 표시줄에서 페이지의 오른쪽 상단 근처에 있는 **[!UICONTROL 솔루션]** 아이콘(세 개의 점 테이블)을 선택한 다음 **[!UICONTROL Analytics]**&#x200B;을 선택합니다.
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 

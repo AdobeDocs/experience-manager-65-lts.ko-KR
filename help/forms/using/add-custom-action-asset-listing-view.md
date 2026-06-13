@@ -1,5 +1,5 @@
 ---
-title: 자산 목록 보기에 사용자 지정 작업 추가
+title: 자산 목록 보기에 사용자 정의 작업 추가
 description: 이 문서에서는 자산 목록 보기에 사용자 지정 작업을 추가하는 방법에 대해 설명합니다
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: a27c4469-6430-4a68-ba2c-7fb0ddebb263
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 3%
+source-wordcount: '1381'
+ht-degree: 6%
 
 ---
 
-# 자산 목록 보기에 사용자 지정 작업 추가{#add-custom-action-to-the-asset-listing-view}
+# 자산 목록 보기에 사용자 정의 작업 추가{#add-custom-action-to-the-asset-listing-view}
 
 ## 개요 {#overview}
 

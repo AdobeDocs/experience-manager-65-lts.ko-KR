@@ -10,7 +10,7 @@ role: User, Developer
 exl-id: 7192ee1d-dc3f-4d90-919f-6329b434e18b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2781'
+source-wordcount: '2779'
 ht-degree: 2%
 
 ---
@@ -71,7 +71,7 @@ JavaScript은 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 ### 표현식 계산 {#calculate-expression}
 
-계산 표현식은 표현식을 사용하여 필드의 값을 자동 계산하는 데 사용됩니다. 일반적으로 이러한 표현식은 다른 필드의 값 속성을 사용합니다. 예, `field2.value + field3.value`. `field2` 또는 `field3`의 값이 변경될 때마다 식이 다시 시도되고 값이 다시 계산됩니다.
+계산 표현식은 표현식을 사용하여 필드의 값을 자동 계산하는 데 사용됩니다. 일반적으로 이러한 표현식은 다른 필드의 값 속성을 사용합니다. 예를 들어, `field2.value + field3.value`과 같이 입력합니다. `field2` 또는 `field3`의 값이 변경될 때마다 식이 다시 시도되고 값이 다시 계산됩니다.
 
 **적용 대상**: 필드
 
