@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: d9dc7630-a157-4202-8caf-7c55e348c06e
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 7%
+source-wordcount: '2359'
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis)를 참조하십시오.
 
 AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여러 API를 제공합니다. 일부 API는 트랜잭션으로 계산되며 다른 API는 무료로 사용할 수 있습니다. 이 문서에서는 거래 보고서에서 거래로 간주되는 모든 API 목록을 제공합니다. 다음은 청구 가능한 API가 사용되는 몇 가지 일반적인 시나리오입니다.
 
@@ -57,55 +57,55 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
    <td>추가 정보</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a></td>
    <td>지원되는 파일 형식에서 Adobe PDF을 만듭니다.</td>
    <td>처리된 문서</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td>
    <td>지원되는 파일 형식에서 Adobe PDF을 만듭니다.</td>
    <td>처리된 문서</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td>
    <td>Adobe PDF을 지원되는 파일 유형으로 변환합니다. </td>
    <td>처리된 문서<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF2</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF2</a></td>
    <td>Adobe PDF을 지원되는 파일 유형으로 변환합니다. </td>
    <td>처리된 문서<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
    <td>Adobe PDF을 지원되는 파일 유형으로 변환합니다. </td>
    <td>처리된 문서<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td>
    <td><p>HTML 페이지에서 PDF을 만듭니다.</p> </td>
    <td>처리된 문서<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf</a></td>
    <td>HTML 페이지를 가리키는 URL에서 PDF을 만듭니다.</td>
    <td>처리된 문서<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf2-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf2</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf2-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf2</a></td>
    <td>HTML 페이지를 가리키는 URL에서 PDF을 만듭니다.</td>
    <td>처리된 문서<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">optimizePDF</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">optimizePDF</a></td>
    <td>PDF을 최적화하여 품질에 영향을 주지 않고 불필요한 메타데이터를 제거하여 파일 크기를 줄입니다.</td>
    <td>처리된 문서<br /> </td>
    <td> </td>
@@ -144,13 +144,13 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
    <td>추가 정보</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a><br /> </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF</a><br /> </td>
    <td>지원되는 파일 형식에서 Adobe PDF을 만듭니다.</td>
    <td>처리된 문서</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/DistillerService.html#createPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">createPDF2</a></td>
    <td>지원되는 파일 형식에서 Adobe PDF을 만듭니다.</td>
    <td>처리된 문서</td>
    <td> </td>
@@ -169,7 +169,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
    <td>추가 정보</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">렌더링</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">렌더링</a></td>
    <td>지정된 렌더링 메서드를 호출하여 제공된 매개 변수를 사용하여 기록 문서를 생성합니다.</td>
    <td>처리된 문서</td>
    <td> </td>
@@ -188,45 +188,45 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
    <td>추가 정보</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-" target="_blank">generatePDFOutput</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-" target="_blank">generatePDFOutput</a></td>
    <td>데이터와 템플릿을 병합하여 PDF 문서를 만듭니다.</td>
    <td>처리된 문서</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-" target="_blank">generatePDFOutput</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-" target="_blank">generatePDFOutput</a></td>
    <td>데이터와 템플릿을 병합하여 PDF 문서를 만듭니다.</td>
    <td>처리된 문서</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
    <td>데이터와 템플릿을 병합하여 PDF 문서 세트를 만듭니다.</td>
    <td>처리된 문서</td>
-   <td> generatePDFOutputBatch API는 양식 템플릿을 레코드와 결합하고 PDF을 생성합니다. 레코드 일괄 처리를 처리할 때 Transaction Reporting Service에서는 각 레코드를 별도의 PDF 렌디션으로 계산합니다. <br> <a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> 플래그를 사용하여 여러 변환을 하나의 PDF 파일로 결합할 수 있습니다. 플래그의 상태에 관계없이 이 서비스는 각 레코드를 별도의 PDF 렌디션으로 계산합니다. </td>
+   <td> generatePDFOutputBatch API는 양식 템플릿을 레코드와 결합하고 PDF을 생성합니다. 레코드 일괄 처리를 처리할 때 Transaction Reporting Service에서는 각 레코드를 별도의 PDF 렌디션으로 계산합니다. <br> <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> 플래그를 사용하여 여러 표현물을 하나의 PDF 파일로 결합할 수 있습니다. 플래그의 상태에 관계없이 이 서비스는 각 레코드를 별도의 PDF 렌디션으로 계산합니다. </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
    <td>XDP 및 PDF 문서를 PostScript(PS), 프린터 명령 언어(PCL) 및 ZPL 파일 형식으로 변환합니다. </td>
    <td>처리된 문서</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
    <td>XDP 및 PDF 문서를 PostScript(PS), 프린터 명령 언어(PCL) 및 ZPL 파일 형식으로 변환합니다. </td>
    <td>처리된 문서</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
    <td>XDP 및 PDF 문서 집합을 PS(PostScript), PCL(프린터 명령 언어) 및 ZPL 파일 형식 집합으로 변환합니다. </td>
    <td>처리된 문서</td>
-   <td> generatePDFOutputBatch API는 양식 템플릿을 레코드와 결합하고 PDF을 생성합니다. 레코드 일괄 처리를 처리할 때 Transaction Reporting Service에서는 각 레코드를 별도의 PDF 렌디션으로 계산합니다. <br> <a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> 플래그를 사용하여 여러 변환을 하나의 PDF 파일로 결합할 수 있습니다. 플래그의 상태에 관계없이 이 서비스는 각 레코드를 별도의 PDF 렌디션으로 계산합니다. </td>
+   <td> generatePDFOutputBatch API는 양식 템플릿을 레코드와 결합하고 PDF을 생성합니다. 레코드 일괄 처리를 처리할 때 Transaction Reporting Service에서는 각 레코드를 별도의 PDF 렌디션으로 계산합니다. <br> <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> 플래그를 사용하여 여러 표현물을 하나의 PDF 파일로 결합할 수 있습니다. 플래그의 상태에 관계없이 이 서비스는 각 레코드를 별도의 PDF 렌디션으로 계산합니다. </td>
   </tr>
  </tbody>
 </table>
 
-### Forms 서비스 {#forms-service}
+### 양식 서비스 {#forms-service}
 
 <table>
  <tbody>
@@ -237,13 +237,13 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
    <td>추가 정보</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
    <td>XDP 템플릿에서 PDF Form을 렌더링합니다. XP 템플릿은 Forms Designer에서 만듭니다.</td>
    <td>처리된 문서</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
    <td>PDF 양식 또는 XDP 템플릿에서 데이터 추출</td>
    <td>처리된 문서</td>
    <td> </td>
@@ -262,13 +262,13 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
    <td>추가 정보</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toImage</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toImage</a></td>
    <td>PDF 문서를 이미지 문서 목록으로 변환합니다. 지원되는 이미지 형식은 JPEG, JPEG2K, PNG 및 TIFF입니다.</td>
    <td>처리된 문서</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td>
    <td>옵션 사양에 지정된 옵션을 사용하여 플랫 PDF 파일을 PostScript 형식으로 변환합니다.</td>
    <td>처리된 문서</td>
    <td> </td>
@@ -276,7 +276,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
  </tbody>
 </table>
 
-### Barcoded Forms Service {#barcoded-forms-service}
+### 바코드 양식 서비스 {#barcoded-forms-service}
 
 <table>
  <tbody>
@@ -287,7 +287,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
    <td>추가 정보</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode-com.adobe.aemfd.docmanager.Document-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-com.adobe.fd.bcf.api.CharSet-" target="_blank">decode</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode-com.adobe.aemfd.docmanager.Document-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-java.lang.Boolean-com.adobe.fd.bcf.api.CharSet-" target="_blank">decode</a></td>
    <td>Document 객체의 모든 바코드를 디코딩하고 바코드에서 검색된 데이터가 포함된 org.w3c.dom.Document 객체를 반환합니다.</td>
    <td>처리된 문서</td>
    <td> </td>
@@ -306,8 +306,8 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
    <td>추가 정보</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">호출</a></td>
-   <td>지정된 DDX 문서를 실행하고 결과 문서가 포함된 <a href="https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> 개체를 반환합니다. </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">호출</a></td>
+   <td>지정된 DDX 문서를 실행하고 결과 문서가 포함된 <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> 개체를 반환합니다. </td>
    <td>처리된 문서</td>
    <td>다음 작업은 트랜잭션으로 계상되지 않습니다.
     <ul>
@@ -316,13 +316,13 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
     </ul> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">호출</a></td>
-   <td>지정된 DDX 문서를 실행하고 결과 문서가 포함된 <a href="https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> 개체를 반환합니다. </td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">호출</a></td>
+   <td>지정된 DDX 문서를 실행하고 결과 문서가 포함된 <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> 개체를 반환합니다. </td>
    <td>처리된 문서</td>
    <td>PDF Generator, Forms 및 출력 서비스에서 지원하는 모든 입력 파일 형식이며 어셈블러 서비스에서는 이러한 모든 형식을 출력 파일 형식으로 지원합니다. </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-">toPDFA</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-">toPDFA</a></td>
    <td>지정된 옵션을 사용하여 지정된 문서를 PDF/A로 변환합니다.</td>
    <td>처리된 문서</td>
    <td> </td>
@@ -351,7 +351,7 @@ AEM Forms은 양식 제출, 문서 처리 및 문서 렌더링에 필요한 여�
    <td>추가 정보</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td>
    <td>PDF 문서를 XDP 파일로 변환합니다. PDF 문서를 XDP 파일로 성공적으로 변환하려면 PDF 문서에 AcroForm 사전에 XFA 스트림이 있어야 합니다.</td>
    <td>처리된 문서</td>
    <td> </td>
@@ -464,7 +464,7 @@ OSGi의 양식 중심의 AEM 워크플로 및 대화형 통신의 모든 렌디�
    <td>추가 정보</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a>(PDF으로 변환)</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a>(PDF으로 변환)</td>
    <td>대화형 통신의 PDF 버전을 생성합니다.</td>
    <td>렌더링된 문서</td>
    <td>
