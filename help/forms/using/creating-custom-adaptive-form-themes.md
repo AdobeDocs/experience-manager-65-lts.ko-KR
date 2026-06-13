@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 적응형 양식 테마 만들기
+title: 사용자 정의 적응형 양식 테마 만들기
 description: 적응형 양식 테마는 적응형 양식의 스타일(모양 및 느낌)을 정의하는 데 사용하는 Adobe Experience Manager 클라이언트 라이브러리입니다. 사용자 지정 적응형 양식 테마를 만드는 방법을 알아봅니다.
 content-type: reference
 topic-tags: customization
@@ -10,12 +10,12 @@ feature: Adaptive Forms,Foundation Components
 exl-id: e9853779-e22c-484e-8480-8e724d584ab7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 0%
+source-wordcount: '800'
+ht-degree: 1%
 
 ---
 
-# 사용자 지정 적응형 양식 테마 만들기 {#creating-custom-adaptive-form-themes}
+# 사용자 정의 적응형 양식 테마 만들기 {#creating-custom-adaptive-form-themes}
 
 >[!CAUTION]
 >
@@ -228,7 +228,7 @@ ht-degree: 0%
 
    1. **선택 사항**: 사용자 지정 페이지에서 필요에 따라 header.jsp, footer.jsp 및 body.jsp를 재정의합니다.
 
-1. jcr:content가 이전 단계에서 만든 사용자 지정 페이지(예: `myAfCustomizations/myAfPages/forestPage)`)를 가리키는 사용자 지정 템플릿(예: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`)을 만듭니다.
+1. jcr:content이(가) 이전 단계에서 만든 사용자 지정 페이지(예: `myAfCustomizations/myAfPages/forestPage)`)를 가리키는 사용자 지정 템플릿(예: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`)을 만듭니다.
 
    ![CRX 저장소 스냅숏](assets/2-1.png)
 

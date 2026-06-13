@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: ecc90ca2-27a1-4b56-8641-55719240e146
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 52%
+source-wordcount: '1091'
+ht-degree: 53%
 
 ---
 
@@ -105,7 +105,7 @@ AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experie
 
 1. 임베드된 코드에서
 
-   * *options.path* 변수의 값을 적응형 양식의 게시 URL 경로로 변경합니다. AEM 서버가 컨텍스트 경로에서 실행 중인 경우, URL에 컨텍스트 경로가 포함되어 있는지 확인합니다. 확장을 포함한 적응형 양식의 전체 이름을 항상 언급하십시오. 예를 들어 위의 코드와 적응형 양식은 동일한 AEM Forms 서버에 있으므로 이 예제에서는 적응형 양식 `/content/forms/af/locbasic.html`의 컨텍스트 경로를 사용합니다.
+   * *options.path* 변수의 값을 적응형 양식의 게시 URL 경로로 변경합니다. AEM 서버가 컨텍스트 경로에서 실행 중인 경우, URL에 컨텍스트 경로가 포함되어 있는지 확인합니다. 확장명을 포함하여 항상 적응형 양식의 전체 이름을 표시합니다. 예를 들어 위의 코드와 적응형 양식은 동일한 AEM Forms 서버에 있으므로 이 예제에서는 적응형 양식 `/content/forms/af/locbasic.html`의 컨텍스트 경로를 사용합니다.
    * *options.dataRef*&#x200B;을(를) URL로 전달할 특성으로 바꾸십시오. dataref 변수를 사용하여 [적응형 양식을 미리 채우기](/help/forms/using/prepopulate-adaptive-form-fields.md)할 수 있습니다.
    * *options.themePath*&#x200B;을(를) 적응형 양식에서 구성한 테마가 아닌 다른 테마에 대한 경로로 바꾸십시오. 또는 요청 속성을 사용하여 테마 경로를 지정할 수 있습니다.
    * CSS 선택기는 적응형 양식이 임베드된 양식 컨테이너의 CSS 선택기입니다. 예: 위 예에서 .customafsection css 클래스는 CSS 선택기입니다.

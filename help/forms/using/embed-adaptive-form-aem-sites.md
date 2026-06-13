@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: 9d7f3c62-1b49-437c-9f61-1f0fc0156bdf
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 7%
+source-wordcount: '1188'
+ht-degree: 8%
 
 ---
 
@@ -42,7 +42,7 @@ AEM Forms은 사이트 페이지에 추가할 수 있는 구성 요소를 제공
 
 ## 사전 요구 사항 {#prerequisites}
 
-편집 가능한 템플릿을 사용하는 AEM 사이트 페이지에 적응형 양식 또는 대화형 통신을 포함하려면 AEM 양식 구성 요소가 관련 템플릿에 허용된 구성 요소로 구성되어 있는지 확인하십시오. 자세한 내용은 **페이지 템플릿 만들기**&#x200B;의 [정책 및 속성(레이아웃 컨테이너)](/help/sites-authoring/templates.md) 섹션을 참조하십시오.
+편집 가능한 템플릿을 사용하는 AEM 사이트 페이지에 적응형 양식 또는 대화형 통신을 포함하려면 AEM 양식 구성 요소가 관련 템플릿에 허용된 구성 요소로 구성되어 있는지 확인하십시오. 자세한 내용은 [페이지 템플릿 만들기](/help/sites-authoring/templates.md)의 **정책 및 속성(레이아웃 컨테이너)** 섹션을 참조하십시오.
 
 정적 템플릿을 사용하는 사이트 페이지가 있는 경우 사이트 페이지의 단락 시스템에서 구성해야 합니다. 자세한 내용은 [디자인 모드에서 구성 요소 구성](/help/sites-authoring/default-components-designmode.md)을 참조하십시오.
 

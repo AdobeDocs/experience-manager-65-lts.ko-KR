@@ -9,7 +9,7 @@ role: Admin, User, Developer
 exl-id: b866ff4a-251c-4402-b426-9c4d97fd181d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3982'
+source-wordcount: '4013'
 ht-degree: 2%
 
 ---
@@ -159,7 +159,7 @@ ht-degree: 2%
 
 * 청구 조정자 또는 사례 근로자와 같은 비즈니스 사용자가 편지의 내용 또는 부분을 수정하는 조건입니다.
 * 시나리오는 Letters 솔루션을 사용하여 경험한 사용자 경험, 요구 사항 및 이점을 설명하는 설명입니다.
-* 시나리오에는 프로젝트에 필요한 필수 스킬 세트 및 도구도 제공됩니다.
+* 시나리오에서는 프로젝트에 필요한 :The개의 필수 기술 집합 및 도구도 제공합니다.
 * 구현 계획에 대한 모범 사례입니다. &quot;높은 수준의 구현 개요.
 
 ## 분석 수행의 이점 {#benefits-of-performing-the-analysis}
@@ -460,7 +460,7 @@ ht-degree: 2%
    <td><br /> 없음 </td> 
    <td>예</td> 
    <td>아니요</td> 
-   <td>해당 사항 없음</td> 
+   <td>N/A</td> 
    <td>해당 없음<br /> </td> 
   </tr> 
  </tbody> 

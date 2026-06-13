@@ -1,5 +1,5 @@
 ---
-title: 오류 대화 상자 사용자 지정
+title: 오류 대화 상자 사용자 정의
 description: LiveCycle AEM Forms 작업 영역의 오류 대화 상자를 사용자 정의하여 다른 오류 설명을 추가하는 방법.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ role: User, Developer
 exl-id: 26ae8e19-e998-4c81-a2ec-b25ce94496a4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 4%
+source-wordcount: '155'
+ht-degree: 8%
 
 ---
 
-# 오류 대화 상자 사용자 지정 {#customizing-error-dialogs}
+# 오류 대화 상자 사용자 정의 {#customizing-error-dialogs}
 
 AEM Forms 작업 영역을 사용하면 오류 대화 상자를 사용자 지정할 수 있습니다. [AEM Forms 작업 영역 사용자 지정에 대한 일반 단계](/help/forms/using/generic-steps-html-workspace-customization.md)를 수행한 다음 아래 단계를 수행하여 오류 대화 상자를 사용자 지정합니다.
 

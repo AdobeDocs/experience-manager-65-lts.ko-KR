@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 도구 모음 작업 만들기
+title: 사용자 정의 도구 모음 작업 만들기
 description: 양식 개발자는 AEM Forms에서 적응형 양식에 대한 사용자 지정 도구 모음 작업을 만들 수 있습니다. 양식 작성자가 사용자 지정 작업을 사용하면 최종 사용자에게 더 많은 워크플로와 옵션을 제공할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 1af9a6a6-b2ac-4178-a36b-f1250239d57d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 0%
+source-wordcount: '498'
+ht-degree: 2%
 
 ---
 
-# 사용자 지정 도구 모음 작업 만들기{#creating-a-custom-toolbar-action}
+# 사용자 정의 도구 모음 작업 만들기{#creating-a-custom-toolbar-action}
 
 ## 사전 요구 사항 {#prerequisite}
 

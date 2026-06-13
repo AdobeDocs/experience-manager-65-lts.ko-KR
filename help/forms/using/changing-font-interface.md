@@ -1,5 +1,5 @@
 ---
-title: 인터페이스의 글꼴 변경
+title: 인터페이스 글꼴 변경
 description: 사용자 인터페이스의 글꼴을 선택적으로 변경하는 방법
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ role: User, Developer
 exl-id: e27ff9df-41d0-4eef-b04e-a3eefea3c9ab
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '278'
+ht-degree: 6%
 
 ---
 
-# 인터페이스의 글꼴 변경{#changing-the-font-on-the-interface}
+# 인터페이스 글꼴 변경{#changing-the-font-on-the-interface}
 
 AEM Forms 작업 영역에 표시되는 글꼴을 변경할 수 있습니다. 사용자 인터페이스의 특정 섹션에서 사용되는 글꼴은 스타일시트의 해당 섹션에서 정의됩니다. 사용자 인터페이스의 글꼴을 선택적으로 변경할 수 있습니다.
 

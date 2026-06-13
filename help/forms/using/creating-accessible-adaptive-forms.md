@@ -1,5 +1,5 @@
 ---
-title: 액세스 가능한 적응형 양식 만들기
+title: 접근성 높은 적응형 양식 만들기
 description: AEM Forms은 액세스 가능한 적응형 양식을 만들 수 있는 도구 및 기능을 제공하며 접근성 표준을 준수하도록 도와줍니다.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -10,12 +10,12 @@ role: User, Developer
 exl-id: 8a0b276a-6020-4f48-95ab-4e7270e42e44
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2099'
+source-wordcount: '2139'
 ht-degree: 2%
 
 ---
 
-# 액세스 가능한 적응형 양식 만들기{#creating-accessible-adaptive-forms}
+# 접근성 높은 적응형 양식 만들기{#creating-accessible-adaptive-forms}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
 
@@ -58,7 +58,7 @@ Ultramarine-Accessible 테마는 참조 테마입니다. 적응형 양식에서 
 
 적응형 양식에 액세스하려면 키보드 탐색, 색상 대비, 이미지에 의미 있는 대체 텍스트 및 양식 컨트롤에 대한 적절한 레이블의 네 가지 주요 측면에 중점을 두어야 합니다. 다음 단계를 수행하여 기존 적응형 양식에 액세스할 수 있도록 합니다.
 
-### 1. 액세스 가능한 테마를 적용하고 추가 수정을 수행합니다
+### &#x200B;1. 액세스 가능한 테마 적용 및 추가 수정 수행
 
 Ultramarine-Accessible 테마를 기존 적응형 양식에 적용합니다. 테마를 적용하려면:
 
@@ -97,7 +97,7 @@ Ultramarine-Accessible 테마를 기존 적응형 양식에 적용합니다. 테
 
 1. 적응형 양식에 스크리블 서명 필드가 있는 경우 제거합니다. 매끄러운 디지털 서명 환경을 위해 Adobe Sign을 사용하도록 적응형 양식을 구성하십시오.
 
-### 2. 양식 컨트롤에 적절한 레이블 제공 {#provide-proper-labels-for-form-controls}
+### &#x200B;2. 양식 컨트롤에 적절한 레이블 제공 {#provide-proper-labels-for-form-controls}
 
 구성 요소의 레이블이나 제목은 양식 구성 요소가 나타내는 것을 식별합니다. 예를 들어 &quot;이름&quot;이라는 텍스트는 텍스트 필드에 이름을 입력해야 한다고 사용자에게 알려 줍니다. 화면 판독기에서 액세스할 수 있도록 레이블은 양식 구성 요소와 프로그래밍 방식으로 연결됩니다. 또는 추가 접근성 정보를 사용하여 양식 컨트롤을 구성할 수도 있습니다.
 
@@ -127,7 +127,7 @@ Ultramarine-Accessible 테마를 기존 적응형 양식에 적용합니다. 테
 >* 라디오 단추와 확인란에는 사용자 지정 텍스트와 제목, 즉 두 가지 접근성 옵션만 사용할 수 있습니다.
 >* XFA 기반 적응형 양식의 경우 액세스 가능성 옵션은 XDP에 설정된 액세스 가능성 옵션에서 상속됩니다. XDP의 도구 팁은 간단한 설명에 매핑되고 캡션은 제목에 매핑됩니다. 다른 옵션은 그대로 작동합니다.
 
-### 3. 이미지에 해당하는 텍스트 입력 {#provide-text-equivalents-for-images}
+### &#x200B;3. 이미지에 해당하는 텍스트 제공 {#provide-text-equivalents-for-images}
 
 이미지는 일부 사용자의 이해력을 개선하는 데 도움이 될 수 있습니다. 그러나 화면 판독기를 사용하는 사용자의 경우 이미지는 양식의 접근성을 낮춥니다. 이미지를 사용하도록 선택하는 경우 모든 이미지에 대한 텍스트 설명을 입력합니다.
 
@@ -137,7 +137,7 @@ Ultramarine-Accessible 테마를 기존 적응형 양식에 적용합니다. 테
 
 ![이미지의 대체 텍스트](assets/image-properties.png)
 
-### 4. 충분한 색상 대비 제공 {#provide-sufficient-color-contrast}
+### &#x200B;4. 충분한 색상 대비 제공 {#provide-sufficient-color-contrast}
 
 접근성 디자인에는 색상 사용에 대한 추가 지침이 고려되어야 합니다. 양식 작성자는 다양한 양식 구성 요소를 강조 표시하여 색상을 사용하여 양식의 모양을 향상시킬 수 있습니다. 그러나 색상을 부적절하게 사용하면 다른 능력을 가진 사람이 읽기 어렵거나 불가능한 형태가 될 수 있습니다.
 
@@ -147,7 +147,7 @@ Ultramarine-Accessible 테마를 기존 적응형 양식에 적용합니다. 테
 
 적응형 양식의 색상 대비 및 테마 변경에 대한 자세한 내용은 [적응형 양식의 사용자 지정 테마 만들기](/help/forms/using/creating-custom-adaptive-form-themes.md)를 참조하십시오.
 
-### 5. 양식 컨트롤을 키보드에 액세스할 수 있는지 확인합니다 {#ensure-that-form-controls-are-keyboard-accessible}
+### &#x200B;5. 양식 컨트롤을 키보드에 액세스할 수 있는지 확인합니다. {#ensure-that-form-controls-are-keyboard-accessible}
 
 키보드나 이와 동등한 입력 장치만 사용하여 액세스 가능한 양식을 완전히 채울 수 있습니다. 거동이 불편하거나 시력이 저하된 사용자는 키보드를 사용할 수 밖에 없으며 마우스를 사용할 수 있는 많은 사용자는 키보드 입력을 선호합니다. 다양한 입력 방법을 허용하면 액세스 가능한 양식을 만들 수 있을 뿐만 아니라 모든 사용자의 기본 설정에 더 적합한 양식을 만들 수 있습니다.
 

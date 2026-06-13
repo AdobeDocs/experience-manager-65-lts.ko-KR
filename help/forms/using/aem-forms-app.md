@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 1%
+source-wordcount: '2386'
+ht-degree: 2%
 
 ---
 
@@ -28,9 +28,9 @@ AEM Forms 앱은 iOS, Android, Windows 디바이스에서 지원됩니다. Googl
 
     &lbrack; ![google_play](assets/google_play.png)(https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    &lbrack; ![app_store](assets/app_store.png)(https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
+    [&#x200B; ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
     
-    &lbrack; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)(https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [&#x200B; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 iOS, Android 또는 Windows 장치에서 앱을 설치, 사용자 지정 및 배포하려면 [AEM Forms 앱 사용자 지정, 빌드 및 배포](#customize-build-distribute)를 참조하십시오.
 
@@ -175,7 +175,7 @@ AEM Forms 앱은 조직별 요구 사항에 맞게 손쉽게 맞춤화할 수 �
 
 맞춤화를 위한 AEM Forms 앱 프로젝트 설정에 대한 자세한 내용은 다음을 참조하십시오.
 
-* [AEM Forms 앱을 위한 환경 설정](/help/forms/using/setup-environment-mobile-workspace.md)
+* [AEM Forms 앱 환경 설정](/help/forms/using/setup-environment-mobile-workspace.md)
 * [Visual Studio 프로젝트 설정 및 Windows 앱 빌드](/help/forms/using/setup-visual-studio-project-build-installer.md)
 * [Xcode 프로젝트 설정 및 iOS 앱 빌드](/help/forms/using/setup-xcode-project-build-installer.md)
 * [Eclipse 프로젝트 설정 및 Android 앱 빌드](/help/forms/using/setup-eclipse-project-build-installer.md)

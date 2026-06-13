@@ -11,8 +11,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: a6793fdf-7ee8-4a54-91d8-635eb79ca702
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 0%
+source-wordcount: '928'
+ht-degree: 3%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 추가적인 성능 향상을 위해 Dispatcher에서 적응형 양식 캐싱을 구성할 수도 있습니다.
 
-### 전제 조건 {#pre-requisites}
+### 사전 요구 사항 {#pre-requisites}
 
 * [클라이언트에서 데이터 병합 또는 미리 채우기](prepopulate-adaptive-form-fields.md#prefill-at-client) 옵션을 사용하도록 설정합니다. 이렇게 하면 미리 채워진 양식의 각 인스턴스에 대해 고유한 데이터를 병합하는 데 도움이 됩니다.
 
