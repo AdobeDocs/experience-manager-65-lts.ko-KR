@@ -1,5 +1,5 @@
 ---
-title: '자습서: 템플릿 만들기'
+title: '튜토리얼: 템플릿 만들기'
 description: 대화형 통신을 위한 인쇄 및 웹 템플릿 만들기
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ role: Admin, User, Developer
 exl-id: 0d9ca4ab-51ac-44cb-aac9-79c0d31e6df7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1820'
 ht-degree: 1%
 
 ---
 
-# 자습서: 템플릿 만들기{#tutorial-create-templates}
+# 튜토리얼: 템플릿 만들기{#tutorial-create-templates}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 

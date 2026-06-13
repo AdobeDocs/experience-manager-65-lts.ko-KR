@@ -1,5 +1,5 @@
 ---
-title: HTML5 양식에 대한 FAQ
+title: HTML5 양식에 대해 자주 묻는 질문 (FAQ)
 description: 레이아웃, 스크립팅 지원 및 HTML5 양식 범위에 대한 FAQ.
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ role: Admin, User, Developer
 exl-id: fc98390c-8517-46fc-9f15-bac5d4327c60
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 0%
+source-wordcount: '1982'
+ht-degree: 1%
 
 ---
 
-# HTML5 양식에 대한 FAQ{#frequently-asked-questions-faq-for-html-forms}
+# HTML5 양식에 대해 자주 묻는 질문 (FAQ){#frequently-asked-questions-faq-for-html-forms}
 
 레이아웃, 스크립팅 지원 및 HTML5 양식의 범위에 대한 몇 가지 FAQ(자주 묻는 질문)가 있습니다.
 
@@ -212,7 +212,7 @@ ht-degree: 0%
 
 1. HTML5 Forms는 초기화 스크립트 및 양식 준비 이벤트를 여러 번 실행합니까?
 
-   답변: 예. 초기화 스크립트 및 양식 준비 이벤트는 서버에서 한 번 이상, 클라이언트측에서 한 번 이상 여러 번 실행됩니다. 데이터 및 idempotent(데이터가 동일한 경우)의 상태에 따라 작업이 수행되도록 일부 비즈니스 논리(양식 또는 필드 데이터)를 기반으로 초기화 또는 양식:준비 이벤트와 같은 스크립트를 작성하는 것이 좋습니다.
+   답변: 예. 초기화 스크립트 및 양식 준비 이벤트는 서버에서 한 번 이상, 클라이언트측에서 한 번 이상 여러 번 실행됩니다. 데이터의 상태와 idempotent(데이터가 동일한 경우)를 기반으로 작업을 수행하도록 일부 비즈니스 논리(양식 또는 필드 데이터)를 기반으로 초기화 또는 양식:ready 이벤트와 같은 스크립트를 작성하는 것이 좋습니다.
 
 ### XDP 디자인 {#designing-xdp}
 

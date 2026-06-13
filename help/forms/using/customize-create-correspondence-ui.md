@@ -1,5 +1,5 @@
 ---
-title: 서신 만들기 UI 맞춤화
+title: 서신 UI 만들기 사용자 정의
 description: AEM Forms 환경에서 로고와 같은 서신 사용자 인터페이스(UI)를 사용자 지정하는 방법을 알아봅니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: 31fad2a6-f6e8-4d9c-a2b2-6749635fcf9b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 1%
+source-wordcount: '1098'
+ht-degree: 2%
 
 ---
 
-# 서신 만들기 UI 맞춤화{#customize-create-correspondence-ui}
+# 서신 UI 만들기 사용자 정의{#customize-create-correspondence-ui}
 
 ## 개요 {#overview}
 
@@ -114,7 +114,7 @@ ht-degree: 1%
 
 다음 단계를 사용하여 사용자 지정 로고 파일을 CRX에 업로드합니다.
 
-1. `https://'[server]:[port]'/[contextpath]/crx/de`(으)로 이동합니다. 필요한 경우 관리자로 로그인합니다.
+1. `https://'[server]:[port]'/[contextpath]/crx/de`로 이동합니다. 필요한 경우 관리자로 로그인합니다.
 1. CRXDE에서 다음 경로의 **imgs** 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 파일 만들기**&#x200B;를 선택합니다.
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -129,7 +129,7 @@ ht-degree: 1%
 
    만든 새 파일(여기서는 CustomLogo.png) 아래에 jcr:content 속성이 나타납니다.
 
-1. 폴더 구조에서 jcr:content 를 클릭합니다.
+1. 폴더 구조에서 jcr:content을(를) 클릭합니다.
 
    jcr:content의 속성이 나타납니다.
 
@@ -139,9 +139,9 @@ ht-degree: 1%
 
    jcr:data 편집 대화 상자가 나타납니다.
 
-   이제 newlogo.png 폴더를 클릭한 다음 jcr:content(dim 옵션)를 두 번 클릭하고 nt:resource 유형을 설정합니다. 속성이 없으면 jcr:content라는 이름의 속성을 만듭니다.
+   이제 newlogo.png 폴더를 클릭한 다음 jcr:content(dim 옵션)을 두 번 클릭하고 nt:resource 유형을 설정합니다. 속성이 없으면 jcr:content(이)라는 이름의 속성을 만듭니다.
 
-1. jcr:data 편집 대화 상자에서 **찾아보기**&#x200B;를 클릭하고 로고로 사용할 이미지 파일(여기서는 CustomLogo.png)을 선택합니다.
+1. jcr:data 편집 대화 상자에서 **찾아보기**&#x200B;를 클릭하고 로고로 사용할 이미지 파일(여기서 CustomLogo.png)을 선택합니다.
 
    지원되는 이미지 파일 형식은 AEM Forms에 액세스하는 데 사용하는 브라우저에 따라 다릅니다. 모든 브라우저는 JPEG, GIF 및 PNG를 지원합니다. 자세한 내용은 지원되는 이미지 형식에 대한 브라우저별 설명서를 참조하십시오.
 
@@ -157,7 +157,7 @@ ht-degree: 1%
 
 다음 단계를 사용하여 UI로 로고를 렌더링하기 위한 스타일 시트를 만듭니다.
 
-1. `https://'[server]:[port]'/[contextpath]/crx/de`(으)로 이동합니다. 필요한 경우 관리자로 로그인합니다.
+1. `https://'[server]:[port]'/[contextpath]/crx/de`로 이동합니다. 필요한 경우 관리자로 로그인합니다.
 1. 다음 위치에 customcss.css라는 파일(다른 파일 이름을 사용할 수 없음)을 만듭니다.
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`
@@ -166,7 +166,7 @@ ht-degree: 1%
 
    1. **css** 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 파일 만들기**&#x200B;를 선택합니다.
    1. [새 파일] 대화 상자에서 CSS 이름을 `customcss.css`(다른 파일 이름을 사용할 수 없음)으로 지정하고 **확인**&#x200B;을 클릭합니다.
-   1. 새로 만든 css 파일에 다음 코드를 추가합니다. 코드의 content:url에서 CRXDE의 imgs 폴더에 업로드한 이미지 이름을 지정합니다.
+   1. 새로 만든 css 파일에 다음 코드를 추가합니다. 코드의 :url 콘텐츠에서 CRXDE의 imgs 폴더에 업로드한 이미지 이름을 지정합니다.
 
       ```css
       .logo, .logo:after {

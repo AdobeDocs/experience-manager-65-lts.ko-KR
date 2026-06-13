@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: a537fc63-b894-4e47-a71f-98ea07747baa
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 9%
+source-wordcount: '363'
+ht-degree: 14%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=ko)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html)를 참조하십시오.
 
 기본적으로 Forms 포털 구성 요소는 사용할 수 없습니다. AEM 사이드 킥에서 사용 가능한 구성 요소 목록에 구성 요소가 표시되도록 하려면 다음 단계를 수행하십시오.
 
@@ -54,4 +54,4 @@ AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experie
 * [초안 및 제출된 양식의 스토리지 사용자 지정](/help/forms/using/draft-submission-component.md)
 * [초안 및 제출 구성 요소를 데이터베이스와 통합하기 위한 샘플](/help/forms/using/integrate-draft-submission-database.md)
 * [Forms 포털 구성 요소에 대한 템플릿 사용자 정의](/help/forms/using/customizing-templates-forms-portal-components.md)
-* [포털에 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)
+* [포털에서 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)
