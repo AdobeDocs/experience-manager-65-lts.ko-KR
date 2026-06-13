@@ -1,5 +1,5 @@
 ---
-title: 자산 목록 보기에 사용자 지정 작업 추가
+title: 자산 목록 보기에 사용자 정의 작업 추가
 description: 이 문서에서는 자산 목록 보기에 사용자 지정 작업을 추가하는 방법에 대해 설명합니다
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: a27c4469-6430-4a68-ba2c-7fb0ddebb263
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 3%
+source-wordcount: '1381'
+ht-degree: 6%
 
 ---
 
-# 자산 목록 보기에 사용자 지정 작업 추가{#add-custom-action-to-the-asset-listing-view}
+# 자산 목록 보기에 사용자 정의 작업 추가{#add-custom-action-to-the-asset-listing-view}
 
 ## 개요 {#overview}
 
@@ -108,7 +108,7 @@ ht-degree: 3%
         <tr>
         <td>아이콘</td>
         <td>문자열</td>
-        <td>icon-download<br /> <br /> 서신 관리가 명령/메뉴의 왼쪽에 표시하는 아이콘입니다. 사용할 수 있는 다양한 아이콘과 설정에 대해서는 <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko" target="_blank">CoralUI 아이콘 설명서</a>.<br />를 참조하십시오. </td>
+        <td>icon-download<br /> <br /> 서신 관리가 명령/메뉴의 왼쪽에 표시하는 아이콘입니다. 사용할 수 있는 다양한 아이콘과 설정에 대해서는 <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html" target="_blank">CoralUI 아이콘 설명서</a>.<br />를 참조하십시오. </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -277,7 +277,7 @@ ht-degree: 3%
    1. **POST.jsp** 파일을 두 번 클릭하여 CRX에서 엽니다.
    1. POST.jsp 파일에 다음 코드를 추가하고 **모두 저장**&#x200B;을 클릭합니다.
 
-      이 코드는 편지 렌더링 서비스에만 적용됩니다. 다른 에셋의 경우 해당 에셋의 Java™ 라이브러리를 이 코드에 추가합니다. AEM Forms API에 대한 자세한 내용은 [AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko)를 참조하십시오.
+      이 코드는 편지 렌더링 서비스에만 적용됩니다. 다른 에셋의 경우 해당 에셋의 Java™ 라이브러리를 이 코드에 추가합니다. AEM Forms API에 대한 자세한 내용은 [AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)를 참조하십시오.
 
       AEM 라이브러리에 대한 자세한 내용은 AEM [구성 요소](/help/sites-developing/components.md)를 참조하십시오.
 

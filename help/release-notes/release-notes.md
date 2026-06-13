@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: c87fd907f2e9b91cc7013be5c12c867fb71dbbe1
 workflow-type: tm+mt
-source-wordcount: '7679'
-ht-degree: 98%
+source-wordcount: '7660'
+ht-degree: 97%
 
 ---
 
@@ -155,7 +155,7 @@ Sites 콘솔 목록 보기 설정이 목록 보기에 표시된 열을 반영하
 
 * 콘텐츠 조각 RTE가 최근 UI 스타일 변경 후 레이아웃 및 시각적 문제를 표시했습니다. 서비스 팩 2는 도구 모음 및 편집 가능한 영역이 올바르게 렌더링되고 읽을 수 있도록 RTE 스타일을 구체화합니다. 이제 콘텐츠 조각 편집기가 페이지 편집기 모양과 비헤이비어에 맞게 조정됩니다. (SITES-38684)
 * Polaris Asset Selector에서 IMS 범위를 제거하면 게재 엔드포인트와의 콘텐츠 조각 통합이 끊어졌습니다. 작성자가 원격 에셋 선택기를 열고 에셋을 선택할 때 오류가 발생합니다. 이 업데이트로 필요한 IMS 범위를 다시 추가하고 안정적인 게재 계층 액세스를 복원합니다. (SITES-35837)
-* 관련 콘텐츠 패널에서 더 이상 하드코딩된 “정의되지 않음” 플레이스홀더가 렌더링되지 않습니다. 콘텐츠 조각 편집기가 이제 현지화 리소스를 통해 해당 텍스트를 확인하므로 편집자는 번역된 UI 텍스트를 확인합니다. (SITES-33675)
+* 연결된 컨텐츠 패널에서 더 이상 하드코딩된 &quot;정의되지 않은&quot; 자리 표시자가 렌더링되지 않습니다. 콘텐츠 조각 편집기는 이제 현지화 리소스를 통해 해당 텍스트를 확인하므로 편집자는 번역된 UI 텍스트를 확인합니다. (SITES-33675)
   <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * 이제 콘텐츠 조각 편집기에 로케일 간에 번역된 일반 탭 레이블이 표시됩니다. 편집기가 현지화되지 않은 탭 텍스트를 바꾸고 탭 제목에서 내부 ID를 제거합니다. (SITES-30715)
 * 이제 콘텐츠 조각 편집기에 허용된 에셋 유형에 대해 번역된 이름이 표시됩니다. 작성자가 콘텐츠 참조 제한 사항을 구성할 때 선택기 목록이 더 이상 내부 문자열과 영어 전용 레이블을 혼합하지 않습니다. (SITES-29699)

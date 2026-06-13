@@ -11,7 +11,7 @@ role: Developer
 exl-id: 45d49917-d20f-470c-bf95-6e701de67a11
 source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '865'
 ht-degree: 4%
 
 ---
@@ -75,7 +75,7 @@ cURL의 소스 리포지토리는 GitHub에서도 찾을 수 있습니다.
 
 >[!NOTE]
 >
->다음 예제에서는 AEM이 포트 `localhost`의 `4502`에서 실행 중이며 암호가 `admin`인 사용자 `admin`을(를) 사용한다고 가정합니다. 추가 명령 자리 표시자는 꺾쇠 괄호로 설정됩니다.
+>다음 예제에서는 AEM이 포트 `4502`의 `localhost`에서 실행 중이며 암호가 `admin`인 사용자 `admin`을(를) 사용한다고 가정합니다. 추가 명령 자리 표시자는 꺾쇠 괄호로 설정됩니다.
 
 ### 패키지 관리 {#package-management}
 
@@ -310,7 +310,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 >[!NOTE]
 >
->다음 예제에서는 AEM이 포트 `localhost`의 `4502`에서 실행 중이며 암호가 `admin`인 사용자 `admin`을(를) 사용한다고 가정합니다. 추가 명령 자리 표시자는 꺾쇠 괄호로 설정됩니다.
+>다음 예제에서는 AEM이 포트 `4502`의 `localhost`에서 실행 중이며 암호가 `admin`인 사용자 `admin`을(를) 사용한다고 가정합니다. 추가 명령 자리 표시자는 꺾쇠 괄호로 설정됩니다.
 
 ### 페이지 관리 {#page-management}
 

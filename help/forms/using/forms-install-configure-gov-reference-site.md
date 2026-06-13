@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
 source-git-commit: 51342861dd01e659999c19fbe0274e8d3cbcf8c4
 workflow-type: tm+mt
-source-wordcount: '4485'
-ht-degree: 2%
+source-wordcount: '4746'
+ht-degree: 3%
 
 ---
 
@@ -227,18 +227,18 @@ ht-degree: 2%
 
 **참조:**
 
-1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [AEM Forms용 Microsoft® Dynamics 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
+1. [® Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md)
+1. [AEM Forms용 Microsoft® Dynamics 구성](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### MS® Dynamics OData 클라우드 서비스 {#ms-dynamics-odata-cloud-service}
 
 1. 다음으로 이동합니다.
 
-   https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://<aemserver>:<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. MS® Dynamics 응용 프로그램 등록에 구성된 것과 동일한 리디렉션 URL을 사용하여 서버에 액세스하는지 확인하십시오.
 
-1. &quot;Microsoft® Dynamics OData Cloud Service&quot; 구성을 선택합니다.
+1. &quot;® Dynamics OData Cloud Service&quot; 구성을 선택합니다.
 1. **속성**&#x200B;을 클릭합니다.
 
    ![Microsoft OData Cloud Service에 대한 속성](assets/properties_odata_cloud_service.jpg)
@@ -278,7 +278,7 @@ ht-degree: 2%
 
 1. 설정 보기에서 **키**&#x200B;를 클릭하여 새 키( AEM에서 클라이언트 암호로 사용됨)를 봅니다.
 
-   1. 키의 복사본을 유지해야 합니다. 나중에 Azure 또는 AEM에서 볼 수 없습니다.
+   1. 키의 사본은 보존해야 합니다. 나중에 Azure 또는 AEM에서 볼 수 없습니다.
 
 1. 리소스 URL/서비스 루트 URL을 찾으려면 MS® Dynamics 인스턴스 대시보드로 이동합니다.
 1. 위쪽 탐색 모음에서 **판매** 또는 고유한 인스턴스 유형을 클릭한 다음 **설정 선택**&#x200B;을 클릭합니다.
@@ -483,13 +483,13 @@ Adobe Forms을 사용하여 AEM Forms을 설치하고 구성하려면 변환 도
 
 추가 지침을 읽기 전에 다음 사항을 검토하십시오.
 
-* [자동 양식 전환 서비스 구성](https://experienceleague.adobe.com/ko/docs/aem-forms-automated-conversion-service/using/configure-service#)
+* [자동 양식 전환 서비스 구성](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#)
 
 #### IMS 구성 만들기 - 1부 {#creating-ims-config}
 
 양식 전환 도구와 올바로 통신하도록 서비스를 구성하십시오. 사용자는 Identity Management에 등록할 수 있도록 IMS(Adobe I/O 시스템) 서비스를 구성해야 합니다.
 
-1. https://&lt;aemserver>:&lt;port> > Adobe Experience로 이동합니다.
+1. https://<aemserver>:<port> > Adobe Experience로 이동합니다.
 왼쪽 상단의 관리자 > 도구 > 보안 > Adobe IMS 구성.
 
 1. 만들기를 클릭합니다.
@@ -582,7 +582,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 검토할 수 있습
 
 1. 이 구성의 경우 두 확인란 값은 비워두었습니다.
 
-   이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://experienceleague.adobe.com/ko/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)을 참조하세요.
+   이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)을 참조하세요.
 
 #### 클라우드 구성(`We.Finance` AFC 프로덕션) 구성 {#configure-cloud-configuration-wefinance}
 
@@ -612,7 +612,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 만들 수 있습니
 
 1. 이 구성의 경우 두 확인란 값은 비워두었습니다.
 
-   * 이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://experienceleague.adobe.com/ko/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)을 참조하십시오.
+   * 이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)을 참조하십시오.
 
 #### 양식 전환 테스트(We.Gov 등록 애플리케이션) {#test-forms-conversion}
 
@@ -652,7 +652,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 만들 수 있습니
 
 #### 알려진 문제 및 참고 사항 {#known-issues-notes}
 
-자동 양식 전환 서비스에는 특정 [모범 사례, 알려진 복잡한 패턴](https://experienceleague.adobe.com/ko/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) 및 [알려진 문제](https://experienceleague.adobe.com/ko/docs/aem-forms-automated-conversion-service/using/known-issues#)가 포함됩니다. AEM Forms 자동 양식 전환 서비스 사용을 시작하기 전에 이 정보를 검토하십시오.
+자동 양식 전환 서비스에는 특정 [모범 사례, 알려진 복잡한 패턴](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) 및 [알려진 문제](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/known-issues#)가 포함됩니다. AEM Forms 자동 양식 전환 서비스 사용을 시작하기 전에 이 정보를 검토하십시오.
 
 1. 전환 후 양식을 FDM에 바인딩하려면 데이터 바인딩 없이 적응형 양식 생성을 활성화하여 양식을 생성합니다.
 
@@ -788,7 +788,7 @@ Adobe에서 유지 관리하는 공개적으로 사용 가능한 Ultramarine 테
 
 사용자는 다음과 같은 다양한 워크플로 서비스 옵션을 구성할 수 있습니다.
 
-1. Microsoft® Dynamics 시작
+1. ® Dynamics 시작
 1. Adobe Sign
 1. AEM 사용자 지정 통신 관리
 1. Adobe Analytics
