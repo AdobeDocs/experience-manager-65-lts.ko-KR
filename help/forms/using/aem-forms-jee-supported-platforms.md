@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: 7cc40eba821828dfce4188b10c117739dd74dd61
+source-git-commit: 6795f085b5a4d1ac2836b6c6f2f4d09a5739e639
 workflow-type: tm+mt
-source-wordcount: '2860'
+source-wordcount: '2893'
 ht-degree: 3%
 
 ---
@@ -223,6 +223,10 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
  </tbody>
 </table>
 
+>[!NOTE]
+>
+>WebSphere® Liberty Profile(WLP)은 Oracle 데이터베이스 및 IBM® Sumeru JDK 21에서만 지원됩니다.
+
 ### 서버 운영 체제 {#server-operating-systems}
 
 #### 프로덕션 환경 {#production-environments}
@@ -294,8 +298,9 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택할 때 다음 예외
 
 1. CRX 리포지토리는 TarMK 및 MongoDB 유형의 지속성을 지원합니다.
 1. JEE의 AEM Forms은 JBoss® RBAC(역할 기반 액세스 제어)를 지원하지 않습니다.
+1. AEM Forms on JEE는 Oracle 데이터베이스 및 IBM® Sumeru JDK 21에서만 WebSphere® Liberty Profile(WLP)을 지원합니다.
 
-<!-- 
+<!--
 1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
 -->
 
@@ -303,7 +308,7 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택할 때 다음 예외
 
 - AEM Forms on JEE는 지원되는 소프트웨어의 지정된 주 버전 및 부 버전 위에 업데이트 및 수정 팩을 지원합니다. 그러나 지정하지 않는 한 다음 주 버전 또는 부 버전으로의 업데이트는 지원되지 않습니다.
 - 클러스터 기반 설치는 TarMK 지속성을 지원하지 않습니다. 지원되는 지속성에 대한 자세한 내용은 [AEM Forms 설치를 위한 지속성 유형 선택](/help/forms/using/choosing-persistence-type-for-aem-forms.md)을 참조하십시오.
-- AEM Forms on JEE는 Adobe의 [타사 소프트웨어 지원 정책](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p)에 따라 다양한 타사 소프트웨어를 지원합니다.
+- AEM Forms on JEE는 Adobe의 [타사 소프트웨어 지원 정책](#third-party-patch-support-policy-third-party-patch-support-policy)에 따라 다양한 타사 소프트웨어를 지원합니다.
 - 타사 공급업체에서 제공한 지원에 따라 JEE의 AEM Forms 지원 플랫폼입니다. 일부 조합은 서드파티 공급업체에서 허용하지 않을 수 있습니다. 예를 들어 많은 공급업체가 Oracle을 통해 애플리케이션 서버를 인증하지 않았습니다. 따라서 JEE의 AEM Forms 또한 이러한 조합을 지원하지 않습니다. 지원되는 소프트웨어 버전을 선택하려면 서드파티 공급업체의 지원 매트릭스도 확인하십시오.
 - JEE의 AEM Forms은 TarMK 콜드 대기를 지원하지 않습니다.
 - JEE의 AEM Forms은 수직 클러스터링을 지원하지 않습니다.

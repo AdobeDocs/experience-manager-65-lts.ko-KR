@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: a24394ffd8d54faf9f16245e359d91c0cfbb04e4
+source-git-commit: 6795f085b5a4d1ac2836b6c6f2f4d09a5739e639
 workflow-type: tm+mt
-source-wordcount: '7696'
+source-wordcount: '7708'
 ht-degree: 97%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 97%
 
 * JBoss® EAP 8.0을 사용하는 RDBMK 지원이 추가되었습니다.
 
-* WebSphere® Liberty Profile(WLP)에 대한 지원이 추가되었습니다.
+* WebSphere® Liberty Profile(WLP)에 대한 지원이 추가되었습니다. WLP는 Oracle 데이터베이스 및 IBM® Sumeru JDK 21에서만 지원됩니다.
 
 * 시각적 규칙 편집기의 사용자 경험이 개선되었습니다. 이번 업데이트에는 다음 사항이 포함됩니다.
 
