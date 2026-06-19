@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6795f085b5a4d1ac2836b6c6f2f4d09a5739e639
+source-git-commit: bb021c0f03e7bb3884ecada32d1888e12d5238c5
 workflow-type: tm+mt
-source-wordcount: '7708'
+source-wordcount: '7683'
 ht-degree: 97%
 
 ---
@@ -582,7 +582,6 @@ Adobe는 투명성을 보장하고 적절한 계획을 수립할 수 있도록 A
 ### AEM Forms
 
 * 구성 관리자에서 모듈을 선택하지 않았거나 제한된 구성 요소만 선택한 경우 AEM Forms 6.5 LTS JEE 턴키 사용자 정의 모드의 Bootstrap 중에 데이터베이스 초기화가 실패합니다. 이 실패는 종속성(xalan-2.7.2.jar)이 누락되어 오류가 발생했기 때문입니다. adobe-livecycle-jboss.ear\lib에 JAR 파일을 추가하면 문제가 해결됩니다. (FORMS-24690)
-* JBoss®에서 실행 중인 Forms JEE LTS에서 이메일 관련 기능이 실패할 수 있습니다. 전자 메일 기능을 사용하려고 할 때 서버에서 오류 `Error IMAPProvider not a subtype`을(를) 기록합니다. (FORMS-24892)
 * WebSphere® Liberty Profile에서 실행 중인 Forms JEE LTS 서비스 팩 2 배포에서 이메일 기능이 실패할 수 있습니다. 전자 메일 기능을 사용하려고 할 때 서버에서 오류 `Could not convert socket to TLS`을(를) 기록합니다. (FORMS-24692)
 
 ### 오프라인 압축 후 온라인 압축 중 저장소 손상(GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
