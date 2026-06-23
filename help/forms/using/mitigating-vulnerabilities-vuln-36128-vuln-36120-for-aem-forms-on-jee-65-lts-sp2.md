@@ -1,0 +1,65 @@
+---
+title: JEE 6.5 LTS SP2에서 AEM Forms의 VULN-36128 및 VULN-36120 취약성 완화
+description: JBoss에서 실행 중인 JEE 6.5 LTS 서비스 팩 2 배포의 AEM Forms에서 VULN-36128 및 VULN-36120 완화 단계.
+content-type: reference
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+topic-tags: Security
+solution: Experience Manager, Experience Manager Forms
+feature: Security
+role: Admin
+exl-id: 7c4a9e12-3b8f-4d6a-9f1e-2a5c8d7e6b04
+source-git-commit: 1b876f20cbc3a00a02a4449f0d353fb858695235
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 2%
+
+---
+
+# JEE 6.5 LTS SP2에서 AEM Forms의 VULN-36128 및 VULN-36120 취약성 완화
+
+## 빠른 참조 {#quick-reference}
+
+| 영향 수준 | 영향을 받는 버전 | 권장 작업 |
+| --- | --- | --- |
+| 심각 | JEE 6.5 LTS 서비스 팩 2의 AEM Forms(6.5 LTS SP2) | [핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-edcserver-jboss.ear) 수동 설치 |
+| 영향을 받지 않음 | AEM Forms on OSGi, Workbench, Cloud Service | 필요한 액션 없음 |
+
+**해결된 취약점:**
+
+* **VULN-36128**: 권한이 없는 원격 공격자가 임의의 코드를 실행할 수 있는 원격 코드 실행 취약성입니다.
+* **VULN-36120**: 중요한 정보에 대한 무단 액세스를 허용하는 잘못된 입력 유효성 검사 취약성입니다.
+
+## 완화 단계 {#mitigation-steps}
+
+### 시작하기에 앞서 {#before-you-start}
+
+변경하기 전에 교체하려는 EAR 파일을 백업합니다.
+
+* 배포 디렉터리에서 `adobe-edcserver-jboss.ear`을(를) 찾습니다.
+
+  ```text
+  [AEM installation directory]/deploy/adobe-edcserver-jboss.ear
+  ```
+
+* 파일을 배포 디렉터리 외부의 보안 백업 위치에 복사합니다.
+* 업데이트를 진행하기 전에 백업이 완료되고 액세스할 수 있는지 확인하십시오.
+
+이 주의 사항을 사용하면 업데이트 프로세스 중에 문제가 발생하는 경우 원래 상태를 복원할 수 있습니다.
+
+### JEE 6.5 LTS SP2(JBoss)의 AEM Forms용 수동 핫픽스 설치 {#manual-hotfix-installation-aem-forms-jee-65-lts-sp2-jboss}
+
+1. [Adobe 소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-edcserver-jboss.ear)에서 `adobe-edcserver-jboss.ear`을(를) 다운로드합니다.
+
+1. 배포 디렉터리에서 `adobe-edcserver-jboss.ear`을(를) 찾아 다운로드한 파일로 바꿉니다.
+
+   ```text
+   [AEM installation directory]/deploy/adobe-edcserver-jboss.ear
+   ```
+
+1. AEM Forms 구성 관리자를 실행하여 업데이트된 EAR을 다시 배포하고 패치를 완전히 적용합니다.
+
+1. 응용 프로그램 서버를 다시 시작하고 서버 로그에서 배포가 성공했는지 확인합니다.
+
+## 참조 {#references}
+
+* [Adobe Experience Manager Forms 보안 우수 사례](/help/forms/using/hardening-securing-aem-forms-environment.md)

@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: bb021c0f03e7bb3884ecada32d1888e12d5238c5
+source-git-commit: d2484f59e701a30a9b8f62ab308b7e5993c53694
 workflow-type: tm+mt
-source-wordcount: '7683'
-ht-degree: 97%
+source-wordcount: '7743'
+ht-degree: 96%
 
 ---
 
@@ -262,10 +262,6 @@ AEM Headless가 메인라인 빌드와의 종속성 및 번들 버전 충돌을 
 * Dynamic Media 비디오에서 자막 및 오디오 트랙 언어 드롭다운 목록에서 아랍어를 선택할 수 있는 지원이 추가되어 작성자가 AEM에서 직접 아랍어 자막을 관리할 수 있습니다. (Assets‑61771)
 
 <!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
-
-<!--
-#### Forms Designer
--->
 
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
@@ -583,6 +579,7 @@ Adobe는 투명성을 보장하고 적절한 계획을 수립할 수 있도록 A
 
 * 구성 관리자에서 모듈을 선택하지 않았거나 제한된 구성 요소만 선택한 경우 AEM Forms 6.5 LTS JEE 턴키 사용자 정의 모드의 Bootstrap 중에 데이터베이스 초기화가 실패합니다. 이 실패는 종속성(xalan-2.7.2.jar)이 누락되어 오류가 발생했기 때문입니다. adobe-livecycle-jboss.ear\lib에 JAR 파일을 추가하면 문제가 해결됩니다. (FORMS-24690)
 * WebSphere® Liberty Profile에서 실행 중인 Forms JEE LTS 서비스 팩 2 배포에서 이메일 기능이 실패할 수 있습니다. 전자 메일 기능을 사용하려고 할 때 서버에서 오류 `Could not convert socket to TLS`을(를) 기록합니다. (FORMS-24692)
+* JBoss®에서 실행 중인 Forms JEE LTS에서 이메일 관련 기능이 실패할 수 있습니다. 전자 메일 기능을 사용하려고 할 때 서버에서 오류 `Error IMAPProvider not a subtype`을(를) 기록합니다. 이 문제를 해결하려면 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear)에서 핫픽스를 설치하십시오. (FORMS-24892)
 
 ### 오프라인 압축 후 온라인 압축 중 저장소 손상(GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
