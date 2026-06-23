@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: 6795f085b5a4d1ac2836b6c6f2f4d09a5739e639
+source-git-commit: 2fa67ea63307e4e8da9bcef9e89b9c032e917bf1
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2860'
 ht-degree: 3%
 
 ---
@@ -244,17 +244,12 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
    <td>서비스 팩 및 주요 업데이트</td>
   </tr>
   <tr>
-   <td>Ubuntu 20.04</td>
+   <td>Ubuntu 22.04</td>
    <td>A: 지원됨</td>
    <td>서비스 팩 및 주요 업데이트</td>
   </tr>
   <tr>
    <td><p>Red Hat® Enterprise Linux® 9(커널 5.x)(64비트)</p> </td>
-   <td><p>A: 지원됨</p> </td>
-   <td><p>마이너 릴리스, 누적 업데이트 및 중요 업데이트</p> </td>
-  </tr>
-  <tr>
-   <td><p>Red Hat® Enterprise Linux® 8(커널 4.x)(64비트)</td>
    <td><p>A: 지원됨</p> </td>
    <td><p>마이너 릴리스, 누적 업데이트 및 중요 업데이트</p> </td>
   </tr>
@@ -278,11 +273,6 @@ Adobe Experience Manager Forms을 실행하려면 Java™ Virtual Machine이 필
    <th><p><strong>플랫폼(기본 버전)</strong></p> </th>
    <th>지원 수준</th>
    <th><p><strong>지원되는 패치 정의</strong></p> </th>
-  </tr>
-  <tr>
-   <td><p>® Windows® 10 64비트</p> </td>
-   <td>E: 작동 예정</td>
-   <td><p>서비스 팩 및 주요 업데이트</p> </td>
   </tr>
   <tr>
    <td><p>® Windows® 11 64비트</p> </td>

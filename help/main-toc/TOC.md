@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
-source-git-commit: c77ad85cf736ee660bfaa662d428a7f7e83a12ff
+source-git-commit: 176e5aabb810f9eee0aa2f8583422f149f016a2e
 workflow-type: tm+mt
-source-wordcount: '7695'
+source-wordcount: '7709'
 ht-degree: 67%
 
 ---
@@ -1096,6 +1096,7 @@ ht-degree: 67%
       + {hide-from-toc}[PaperCapture 서비스가 PDF에서 OCR을 수행하지 못했습니다](/help/forms/using/papercapture-service-resolution.md)
       + [JBoss EAP 8(Linux)을 사용하는 AEM Forms 6.5 LTS에서 스크립트 실행이 실패합니다](/help/forms/using/script-execution-issues-on-aem-forms-65-lts-with-jboss-eap-8-linux.md)
       + [JBoss 도메인 컨트롤러를 시작할 수 없음](/help/forms/using/unable-to-start-jboss-domain-controller-due-to-duplicate-security-tag.md)
+      + [JEE 6.5 LTS SP2에서 AEM Forms의 VULN-36128 및 VULN-36120 완화](/help/forms/using/mitigating-vulnerabilities-vuln-36128-vuln-36120-for-aem-forms-on-jee-65-lts-sp2.md)
    + 이전 설명서 {#legacy-documentation}
       + {hide-from-toc}[JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터를 빌드합니다](/help/forms/developing/building-xml.md)
       + {hide-from-toc}[JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1260,7 +1261,7 @@ ht-degree: 67%
                + [헤드리스 애플리케이션 실행 방법](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html?lang=ko)
                + [옵션 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html?lang=ko)
             + Headless 콘텐츠 설계 여정 {#architect}
-               + [AEM 헤드리스 콘텐츠 설계 여정 개요](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html?lang=ko)
+               + [AEM 헤드리스 콘텐츠 설계 여정 개요](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html)
                + [AEM을 통한 헤드리스용 콘텐츠 모델링 - 소개](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html?lang=ko)
                + [AEM을 통한 Headless용 콘텐츠 모델링 기본 사항 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html?lang=ko)
                + [AEM에서 콘텐츠 조각 모델 만들기에 대해 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/model-structure.html?lang=ko)
@@ -1284,7 +1285,7 @@ ht-degree: 67%
             + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-structure-tree.html?lang=ko)
             + [미리보기 - JSON 표현식](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html?lang=ko)
          + 배달 API{#delivery-api}
-            + [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html?lang=ko)
+            + [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html)
             + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/assets-api-content-fragments.html?lang=ko)
             + [컨텐츠 조각 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-api-content-fragments.html?lang=ko)
             + [GraphQL 엔드포인트 관리](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
