@@ -1261,7 +1261,7 @@ ht-degree: 67%
                + [헤드리스 애플리케이션 실행 방법](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html?lang=ko)
                + [옵션 - AEM을 통해 단일 페이지 애플리케이션을 제작하는 방법](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html?lang=ko)
             + Headless 콘텐츠 설계 여정 {#architect}
-               + [AEM 헤드리스 콘텐츠 설계 여정 개요](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html)
+               + [AEM 헤드리스 콘텐츠 설계 여정 개요](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html?lang=ko)
                + [AEM을 통한 헤드리스용 콘텐츠 모델링 - 소개](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html?lang=ko)
                + [AEM을 통한 Headless용 콘텐츠 모델링 기본 사항 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html?lang=ko)
                + [AEM에서 콘텐츠 조각 모델 만들기에 대해 알아보기](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/model-structure.html?lang=ko)
@@ -1285,7 +1285,7 @@ ht-degree: 67%
             + [구조 트리](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-structure-tree.html?lang=ko)
             + [미리보기 - JSON 표현식](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html?lang=ko)
          + 배달 API{#delivery-api}
-            + [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html)
+            + [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html?lang=ko)
             + [콘텐츠 조각 REST API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/assets-api-content-fragments.html?lang=ko)
             + [컨텐츠 조각 GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-api-content-fragments.html?lang=ko)
             + [GraphQL 엔드포인트 관리](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
