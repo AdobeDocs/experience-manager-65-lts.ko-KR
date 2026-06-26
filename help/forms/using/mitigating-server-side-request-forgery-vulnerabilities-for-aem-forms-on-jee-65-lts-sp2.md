@@ -1,6 +1,6 @@
 ---
-title: JEE 6.5 LTS SP2에서 AEM Forms의 VULN-36128 및 VULN-36120 취약성 완화
-description: JBoss에서 실행 중인 JEE 6.5 LTS 서비스 팩 2 배포의 AEM Forms에서 VULN-36128 및 VULN-36120 완화 단계.
+title: JEE 6.5 LTS SP2에서 AEM Forms의 SSRF(서버측 요청 위조) 취약성 완화
+description: JBoss에서 실행되는 JEE 6.5 LTS 서비스 팩 2 배포의 AEM Forms에 대한 SSRF(서버측 요청 위조) 취약성 완화 단계.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
@@ -8,14 +8,14 @@ solution: Experience Manager, Experience Manager Forms
 feature: Security
 role: Admin
 exl-id: 7c4a9e12-3b8f-4d6a-9f1e-2a5c8d7e6b04
-source-git-commit: 1b876f20cbc3a00a02a4449f0d353fb858695235
+source-git-commit: 314aafaec6b45d7ea929f32d47e73da293800d4b
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 2%
+source-wordcount: '335'
+ht-degree: 3%
 
 ---
 
-# JEE 6.5 LTS SP2에서 AEM Forms의 VULN-36128 및 VULN-36120 취약성 완화
+# SSRF(서버측 요청 위조) 취약성 완화
 
 ## 빠른 참조 {#quick-reference}
 
@@ -26,14 +26,27 @@ ht-degree: 2%
 
 **해결된 취약점:**
 
-* **VULN-36128**: 권한이 없는 원격 공격자가 임의의 코드를 실행할 수 있는 원격 코드 실행 취약성입니다.
-* **VULN-36120**: 중요한 정보에 대한 무단 액세스를 허용하는 잘못된 입력 유효성 검사 취약성입니다.
+* SSRF(서버측 요청 위조) (CWE-918)
 
-## 완화 단계 {#mitigation-steps}
+## 개요 {#overview}
+
+### 영향을 받는 사항 {#whats-affected}
+
+| 취약성 | 영향 | 영향을 받는 구성 요소 |
+| --- | --- | --- |
+| SSRF(서버측 요청 위조) (CWE-918) | 공격자는 서버가 내부 또는 외부 리소스에 대해 의도하지 않은 요청을 하도록 유도할 수 있다 | JEE 6.5 LTS SP2의 AEM Forms |
+
+### 영향을 받지 않는 사항 {#whats-not-affected}
+
+* Experience Manager Forms Workbench (모든 버전)
+* OSGi의 Experience Manager Forms(모든 버전)
+* Experience Manager Forms as a Cloud Service
+
+## 해결 옵션 {#resolution-options}
 
 ### 시작하기에 앞서 {#before-you-start}
 
-변경하기 전에 교체하려는 EAR 파일을 백업합니다.
+변경하기 전에 교체하려는 EAR 파일을 백업하십시오.
 
 * 배포 디렉터리에서 `adobe-edcserver-jboss.ear`을(를) 찾습니다.
 
@@ -46,7 +59,7 @@ ht-degree: 2%
 
 이 주의 사항을 사용하면 업데이트 프로세스 중에 문제가 발생하는 경우 원래 상태를 복원할 수 있습니다.
 
-### JEE 6.5 LTS SP2(JBoss)의 AEM Forms용 수동 핫픽스 설치 {#manual-hotfix-installation-aem-forms-jee-65-lts-sp2-jboss}
+### JEE 6.5 LTS SP2(JBoss)의 AEM Forms용 수동 핫픽스 설치
 
 1. [Adobe 소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-edcserver-jboss.ear)에서 `adobe-edcserver-jboss.ear`을(를) 다운로드합니다.
 
@@ -56,7 +69,7 @@ ht-degree: 2%
    [AEM installation directory]/deploy/adobe-edcserver-jboss.ear
    ```
 
-1. AEM Forms 구성 관리자를 실행하여 업데이트된 EAR을 다시 배포하고 패치를 완전히 적용합니다.
+1. AEM Forms 구성 관리자를 시작하여 업데이트된 EAR을 다시 배포하고 핫픽스를 적용합니다.
 
 1. 응용 프로그램 서버를 다시 시작하고 서버 로그에서 배포가 성공했는지 확인합니다.
 
