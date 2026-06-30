@@ -1,21 +1,18 @@
 ---
 title: JEE 6.5 LTS SP2에서 AEM Forms의 SSRF(서버측 요청 위조) 취약성 완화
 description: JBoss에서 실행되는 JEE 6.5 LTS 서비스 팩 2 배포의 AEM Forms에 대한 SSRF(서버측 요청 위조) 취약성 완화 단계.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: Security
-solution: Experience Manager, Experience Manager Forms
-feature: Security
-role: Admin
+solution: Experience Manager
+feature: Deploying
+role: User,Admin,Developer
 exl-id: 7c4a9e12-3b8f-4d6a-9f1e-2a5c8d7e6b04
-source-git-commit: 314aafaec6b45d7ea929f32d47e73da293800d4b
+source-git-commit: 1d825cd821609504c5e2cff7f7002bf3afe30434
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '343'
 ht-degree: 3%
 
 ---
 
-# SSRF(서버측 요청 위조) 취약성 완화
+# JEE 6.5 LTS SP2에서 AEM Forms의 SSRF(서버측 요청 위조) 취약성 완화
 
 ## 빠른 참조 {#quick-reference}
 
@@ -75,4 +72,4 @@ ht-degree: 3%
 
 ## 참조 {#references}
 
-* [Adobe Experience Manager Forms 보안 우수 사례](/help/forms/using/hardening-securing-aem-forms-environment.md)
+* [Adobe Experience Manager Forms 보안 모범 사례](/help/forms/using/hardening-securing-aem-forms-environment.md)

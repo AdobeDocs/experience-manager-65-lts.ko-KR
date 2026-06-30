@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 314aafaec6b45d7ea929f32d47e73da293800d4b
+source-git-commit: 1d825cd821609504c5e2cff7f7002bf3afe30434
 workflow-type: tm+mt
 source-wordcount: '7710'
 ht-degree: 67%
@@ -1096,7 +1096,7 @@ ht-degree: 67%
       + {hide-from-toc}[PaperCapture 서비스가 PDF에서 OCR을 수행하지 못했습니다](/help/forms/using/papercapture-service-resolution.md)
       + [JBoss EAP 8(Linux)을 사용하는 AEM Forms 6.5 LTS에서 스크립트 실행이 실패합니다](/help/forms/using/script-execution-issues-on-aem-forms-65-lts-with-jboss-eap-8-linux.md)
       + [JBoss 도메인 컨트롤러를 시작할 수 없음](/help/forms/using/unable-to-start-jboss-domain-controller-due-to-duplicate-security-tag.md)
-      + [JEE 6.5 LTS SP2에서 AEM Forms의 SSRF(서버측 요청 위조) 취약성 완화](/help/forms/using/mitigating-server-side-request-forgery-vulnerabilities-for-aem-forms-on-jee-65-lts-sp2.md)
+      + [JEE 6.5 LTS SP2에서 AEM Forms의 SSRF(서버측 요청 위조) 취약성 완화](/help/forms/troubleshooting/mitigating-server-side-request-forgery-vulnerabilities-for-aem-forms-on-jee-65-lts-sp2.md)
    + 이전 설명서 {#legacy-documentation}
       + {hide-from-toc}[JEE Workbench의 AEM Forms에서 스크립트 실행 서비스를 사용하여 XML 데이터를 빌드합니다](/help/forms/developing/building-xml.md)
       + {hide-from-toc}[JEE 사용자 지정 DSC에서 AEM Forms을 사용하여 파일 압축 및 압축 해제](/help/forms/developing/compressing-decompressing-custom-dsc.md)
