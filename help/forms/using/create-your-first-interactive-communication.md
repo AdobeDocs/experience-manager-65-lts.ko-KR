@@ -10,12 +10,12 @@ role: Admin, User, Developer
 exl-id: 247ea068-6564-4b62-8449-a8800548106f
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 0%
+source-wordcount: '1046'
+ht-degree: 1%
 
 ---
 
-# 자습서: 첫 번째 대화형 통신 만들기 {#tutorial-create-your-first-interactive-communication}
+# 튜토리얼: 첫 번째 인터랙티브 커뮤니케이션 만들기 {#tutorial-create-your-first-interactive-communication}
 
 첫 번째 대화형 커뮤니케이션을 만드는 방법을 알아봅니다.
 
@@ -32,7 +32,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 이 자습서를 마치면 다음을 수행할 수 있습니다.
 
 * 빌딩 블록 작성(양식 데이터 모델, 문서 단편 및 템플릿)
-* 대화형 통신 만들기
+* 인터랙티브 커뮤니케이션 만들기
 * 대화형 통신 테스트 및 게시
 
 ## 사용 사례 {#use-case}
@@ -68,7 +68,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 * 조건부 데이터
 * 이미지
 
-[&#128279;](/help/forms/using/planning-interactive-communications.md)
+  [![안내서 보기-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
 ## 2단계: 양식 데이터 모델 만들기 {#step-create-form-data-model}
 
@@ -87,7 +87,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 * 샘플 데이터 편집
 * 테스트 데이터를 사용하여 양식 데이터 모델 및 구성된 서비스 테스트
 
-[&#128279;](/help/forms/using/create-form-data-model0.md)
+  [![안내서 보기-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
 
 ## 3단계: 문서 단편 만들기 {#step-create-document-fragments}
 
@@ -101,7 +101,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 * 변수 만들기
 * 규칙 만들기 및 적용
 
-[&#128279;](/help/forms/using/create-document-fragments.md)
+  [![안내서 보기-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
 ## 4단계: 템플릿 만들기 {#step-create-templates}
 
@@ -119,7 +119,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 * AEM Forms 서버에 XDP 템플릿 업로드
 * 웹 채널에 대한 템플릿 만들기 및 활성화
 
-[&#128279;](/help/forms/using/create-templates-print-web.md)
+  [![안내서 보기-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
 
 ## 5단계: 대화형 통신 만들기 {#step-create-an-interactive-communication}
 
@@ -138,7 +138,7 @@ Interactive Communications는 비즈니스 서신, 문서, 명세서, 마케팅 
 * 대화형 통신의 웹 버전에서 차트 만들기
 * 대화형 통신의 웹 버전에서 하이퍼링크 만들기
 
-[&#128279;](/help/forms/using/create-interactive-communication0.md)
+  [![안내서 보기-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
 ## 6단계: 대화형 통신 게시 {#step-publish-your-interactive-communication}
 

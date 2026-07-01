@@ -1,5 +1,5 @@
 ---
-title: '자습서: 문서 조각 만들기'
+title: '튜토리얼: 문서 조각 만들기'
 description: 대화형 커뮤니케이션용 문서 조각 만들기
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ role: Admin, User, Developer
 exl-id: 6c23092f-49ac-4133-baf0-87e4deaabeb0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1689'
 ht-degree: 3%
 
 ---
 
-# 자습서: 문서 조각 만들기{#tutorial-create-document-fragments}
+# 튜토리얼: 문서 조각 만들기{#tutorial-create-document-fragments}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
@@ -164,7 +164,7 @@ BOM 상세내역 문서 조각에는 다음 필드가 포함됩니다.
    ![고객 세부 정보 정적 텍스트](assets/customer_details_static_text_new.png)
 
 1. **모바일 번호** 필드 옆에 커서를 놓고 **고객** > **mobileenum** 속성을 두 번 클릭합니다.
-1. **대체 연락처 번호** 필드 옆에 커서를 놓고 **&#x200B; 고객** > **대체 모바일 번호** 속성을 두 번 클릭합니다.
+1. **대체 연락처 번호** 필드 옆에 커서를 놓고 **고객** > **대체 모바일 번호** 속성을 두 번 클릭합니다.
 1. **관계 번호** 필드 옆에 커서를 놓고 **customer** > **relationshipnumber** 속성을 두 번 클릭합니다.
 1. **변수** 탭을 선택하고 **공급 위치** 필드 옆에 커서를 놓고 **Placesupply** 변수를 두 번 클릭합니다.
 1. **상태 코드** 필드 옆에 커서를 놓고 **상태 코드** 변수를 두 번 클릭합니다.
