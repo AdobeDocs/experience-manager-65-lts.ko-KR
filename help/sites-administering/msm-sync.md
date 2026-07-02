@@ -12,8 +12,8 @@ role: Admin
 exl-id: d50dedf3-1973-471d-b16d-f56d60325bb3
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 26%
+source-wordcount: '2681'
+ht-degree: 27%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 26%
 
 ### 설치된 롤아웃 구성 {#installed-rollout-configurations}
 
-다음 표에는 AEM과 함께 설치된 롤아웃 구성이 나열되어 있습니다. 이 표에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다. 설치된 롤아웃 구성 작업이 요구 사항에 맞지 않으면 [롤아웃 구성을 만들 수 있습니다](#creating-a-rollout-configuration).
+다음 표에는 AEM과 함께 설치된 롤아웃 구성이 나열되어 있습니다. 테이블에는 각 롤아웃 구성의 트리거 및 동기화 작업이 포함되어 있습니다. 설치된 롤아웃 구성 작업이 요구 사항에 맞지 않으면 [롤아웃 구성을 만들 수 있습니다](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -170,7 +170,7 @@ ht-degree: 26%
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>라이브 카피에서 이 동기화 작업은 링크 등의 참조를 업데이트합니다.<br /> Live Copy 페이지에서 블루프린트 내의 리소스를 가리키는 경로를 검색합니다. 경로를 찾으면 라이브 카피(블루프린트 대신) 내의 관련 리소스를 나타내는 경로를 업데이트합니다. 대상이 블루프린트 외부에 있는 참조는 변경되지 않습니다.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">CQ MSM 참조 업데이트 작업 서비스를 구성</a>하여 제외할 노드 형식, 단락 항목 및 페이지 속성을 지정합니다. </p> </td>
+   <td><p>이 동기화 작업은 라이브 카피에서 링크 등의 참조를 업데이트합니다.<br /> 라이브 카피에서 블루프린트 내 리소스를 나타내는 경로를 검색합니다. 경로를 찾으면 라이브 카피(블루프린트 대신) 내의 관련 리소스를 나타내는 경로를 업데이트합니다. 대상이 블루프린트 외부에 있는 참조는 변경되지 않습니다.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">CQ MSM 참조 업데이트 작업 서비스를 구성</a>하여 제외할 노드 형식, 단락 항목 및 페이지 속성을 지정합니다. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -229,8 +229,7 @@ ht-degree: 26%
   </tr>
   <tr>
    <td>productCreateUpdate</td>
-   <td>카탈로그 내에서 제품 리소스를 만들거나 업데이트합니다. 이 작업은 다음 상황 중 하나에 사용하기 위한 것입니다.
-    <ul>
+   <td>카탈로그 내에서 제품 리소스를 만들거나 업데이트합니다. 이 작업은 다음 상황 중 하나에 사용하기 위한 것입니다.<ul>
      <li>카탈로그(또는 카탈로그 섹션) 생성 또는 롤아웃</li>
      <li>사용자가 제품 구성 요소에 대한 동기화 상속을 복원합니다.</li>
     </ul> </td>
