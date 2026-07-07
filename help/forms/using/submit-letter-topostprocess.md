@@ -1,5 +1,5 @@
 ---
-title: 편지 및 대화형 커뮤니케이션의 사후 처리
+title: 편지 및 인터랙티브 커뮤니케이션의 사후 처리
 description: 서신 관리에서 편지 후처리를 사용하면 인쇄 및 이메일과 같은 AEM 및 Forms 후처리를 만들고 편지와 통합할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: b48ceb2a-9e5b-4df7-9a3e-2ed7e3849041
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 0%
+source-wordcount: '837'
+ht-degree: 2%
 
 ---
 
-# 편지 및 대화형 커뮤니케이션의 사후 처리{#post-processing-of-letters-and-interactive-communications}
+# 편지 및 인터랙티브 커뮤니케이션의 사후 처리{#post-processing-of-letters-and-interactive-communications}
 
 ## 사후 처리 {#post-processing}
 
