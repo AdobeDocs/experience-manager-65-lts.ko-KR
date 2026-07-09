@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하여 작동 방식과 소프트웨어가 제공하는 기능을 알아보십시오.
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 1d825cd821609504c5e2cff7f7002bf3afe30434
+source-git-commit: 860d8acb94370142bf47d0e03c554b69c0902222
 workflow-type: tm+mt
-source-wordcount: '7710'
-ht-degree: 67%
+source-wordcount: '7797'
+ht-degree: 66%
 
 ---
 
@@ -441,9 +441,13 @@ ht-degree: 67%
       + [JEE의 AEM Forms에 대한 설치 및 업그레이드 워크플로](/help/forms/using/aem-forms-jee-installation-upgrade-documentation.md)
       + JEE에 AEM Forms 설치 {#jee-installation}
          + [JEE에서 AEM Forms에 대해 지원되는 플랫폼](/help/forms/using/aem-forms-jee-supported-platforms.md)
+         + [AEM Forms 설치 준비(단일 서버)](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
          + [JBoss 턴키를 사용하여 JEE에 AEM Forms 6.5 LTS 설치 및 배포](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-turnkey.pdf)
          + [JBoss용 JEE에 AEM Forms 설치 및 배포](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-jboss.pdf)
-         + [AEM Forms 설치 준비(단일 서버)](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-single-server.pdf)
+         + [WebSphere Liberty Profile용 JEE에 AEM Forms 설치 및 배포](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/install-websphere.pdf)
+         + [AEM Forms(클러스터 서버) 설치 준비](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-install-cluster.pdf)
+         + [JBoss 클러스터의 JEE에서 AEM Forms 구성](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/cluster-jboss.pdf)
+         + [WebSphere Liberty 프로필 클러스터에서 JEE의 AEM Forms 구성](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/cluster-websphere.pdf)
          + [데이터베이스 자격 증명 저장소 설정 안내서(독립 실행형 모드)](/help/forms/using/database-credentials-store-setup-guide-standalone-mode.md)
          + [데이터베이스 자격 증명 저장소 설정(Elytron 기반)](/help/forms/using/database-credential-store-setup-elytron-based.md)
          + [보조 노드 인증 설정(Elytron 기반)](/help/forms/using/secondary-node-authentication-setup-elytron-based.md)
@@ -464,7 +468,6 @@ ht-degree: 67%
          + [AEM Forms를 Adobe LiveCycle에 연결](/help/forms/using/aem-livecycle-connector.md)
          + {hide-from-toc}[JEE의 AEM Forms 프로세스에 양식 데이터를 제출하도록 AEM Forms 구성](/help/forms/using/submit-form-data-livecycle-process.md)
          + [AEM Forms용 AEM 데스크탑 앱](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-         + [JBoss 클러스터의 JEE에서 AEM Forms 구성](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/cluster-jboss.pdf)
    + AEM Forms 업그레이드 {#upgrade-aem-forms}
       + [사용 가능한 업그레이드 경로](/help/forms/using/upgrade.md)
       + OSGi에서 AEM Forms 업그레이드 {#aem-forms-osgi-upgrade}
@@ -473,9 +476,10 @@ ht-degree: 67%
          + [AEM Forms 에셋 및 문서 마이그레이션](/help/forms/using/migration-utility.md)
          + [JBoss EAP 8(Windows)에서 AEM 6.5 LTS 업그레이드](/help/forms/using/upgrading-aem-65-lts-on-jboss-eap-8.md)
       + JEE에서 AEM Forms 업그레이드 {#aem-forms-jee-upgrade}
+         + [AEM Forms 업그레이드 준비 중](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-upgrade.pdf)
          + [JBoss 턴키용 JEE의 AEM Forms 6.5 LTS로 업그레이드](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-turnkey.pdf)
          + [JBoss용 JEE의 AEM Forms으로 업그레이드](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-jboss.pdf)
-         + [AEM Forms 업그레이드 준비 중](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/prepare-upgrade.pdf)
+         + [WebSphere Liberty Profile용 JEE의 AEM Forms으로 업그레이드](https://helpx.adobe.com/content/dam/help/en/experience-manager/65LTS/forms/upgrade-websphere.pdf)
    + AEM Forms 관리 {#manage-administer-aem-forms}
       + [OSGi 그룹 및 권한에 대한 AEM Forms](/help/forms/using/forms-groups-privileges-tasks.md)
       + [양식을 분류하기 위한 새 폴더 만들기](/help/forms/using/creating-new-folders-categorize-forms.md)
