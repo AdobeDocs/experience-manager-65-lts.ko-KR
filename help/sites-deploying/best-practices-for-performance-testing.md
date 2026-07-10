@@ -1,5 +1,5 @@
 ---
-title: 성능 테스트 우수 사례
+title: 성능 테스트 모범 사례
 description: 성능 테스트에 사용되는 전반적인 전략 및 방법론과 프로세스에 도움이 되는 몇 가지 도구에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
 source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
 workflow-type: tm+mt
-source-wordcount: '1765'
-ht-degree: 0%
+source-wordcount: '1800'
+ht-degree: 1%
 
 ---
 
-# 성능 테스트 우수 사례{#best-practices-for-performance-testing}
+# 성능 테스트 모범 사례{#best-practices-for-performance-testing}
 
 ## 소개 {#introduction}
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 Touch UI의 **개발자 모드**
 
-AEM 6의 터치 UI에 있는 새로운 기능 중 하나는 개발자 모드입니다. 작성자가 편집 모드와 미리보기 모드 간을 전환할 수 있는 것처럼 개발자는 작성자 UI에서 개발자 모드로 전환할 수 있습니다. 이렇게 하면 페이지의 각 구성 요소에 대한 렌더링 시간을 확인하고 오류에 대한 스택 추적을 볼 수 있습니다. 개발자 모드에 대한 자세한 내용은 이 [CQ Gems 프레젠테이션](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=ko)을 참조하세요.
+AEM 6의 터치 UI에 있는 새로운 기능 중 하나는 개발자 모드입니다. 작성자가 편집 모드와 미리보기 모드 간을 전환할 수 있는 것처럼 개발자는 작성자 UI에서 개발자 모드로 전환할 수 있습니다. 이렇게 하면 페이지의 각 구성 요소에 대한 렌더링 시간을 확인하고 오류에 대한 스택 추적을 볼 수 있습니다. 개발자 모드에 대한 자세한 내용은 이 [CQ Gems 프레젠테이션](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html)을 참조하세요.
 
 **rlog.jar을 사용하여 요청 로그를 읽습니다**
 
@@ -86,8 +86,7 @@ ACS AEM 도구의 [쿼리 설명 도구](/help/sites-administering/operations-da
 
 **PageSpeed 도구**
 
-Google의 PageSpeed 도구는 페이지 성능에 대한 모범 사례를 준수하기 위한 사이트 분석과 추가적인 최적화를 위해 Apache 인스턴스에 Dispatcher과 함께 설치할 수 있는 플러그인을 제공합니다.
-[PageSpeed 도구 웹 사이트](https://developers.google.com/speed)를 참조하세요.
+Google의 PageSpeed 도구는 페이지 성능에 대한 모범 사례를 준수하기 위한 사이트 분석과 추가적인 최적화를 위해 Apache 인스턴스에 Dispatcher과 함께 설치할 수 있는 플러그인을 제공합니다.[PageSpeed 도구 웹 사이트](https://developers.google.com/speed)를 참조하세요.
 
 ## 작성 환경 {#author-environment}
 
