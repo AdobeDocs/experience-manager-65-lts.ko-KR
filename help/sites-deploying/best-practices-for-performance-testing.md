@@ -1,5 +1,5 @@
 ---
-title: 성능 테스트 우수 사례
+title: 성능 테스트 모범 사례
 description: 성능 테스트에 사용되는 전반적인 전략 및 방법론과 프로세스에 도움이 되는 몇 가지 도구에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
 source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
 workflow-type: tm+mt
-source-wordcount: '1765'
-ht-degree: 0%
+source-wordcount: '1800'
+ht-degree: 1%
 
 ---
 
-# 성능 테스트 우수 사례{#best-practices-for-performance-testing}
+# 성능 테스트 모범 사례{#best-practices-for-performance-testing}
 
 ## 소개 {#introduction}
 
@@ -86,8 +86,7 @@ ACS AEM 도구의 [쿼리 설명 도구](/help/sites-administering/operations-da
 
 **PageSpeed 도구**
 
-Google의 PageSpeed 도구는 페이지 성능에 대한 모범 사례를 준수하기 위한 사이트 분석과 추가적인 최적화를 위해 Apache 인스턴스에 Dispatcher과 함께 설치할 수 있는 플러그인을 제공합니다.
-[PageSpeed 도구 웹 사이트](https://developers.google.com/speed)를 참조하세요.
+Google의 PageSpeed 도구는 페이지 성능에 대한 모범 사례를 준수하기 위한 사이트 분석과 추가적인 최적화를 위해 Apache 인스턴스에 Dispatcher과 함께 설치할 수 있는 플러그인을 제공합니다.[PageSpeed 도구 웹 사이트](https://developers.google.com/speed)를 참조하세요.
 
 ## 작성 환경 {#author-environment}
 
