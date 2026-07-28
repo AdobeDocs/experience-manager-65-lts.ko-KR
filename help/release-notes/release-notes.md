@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: ee3cfd977ab2e7f7cadabb2719fb38ef255b6a2a
+source-git-commit: 992c178c97245aa3fef43137498dc45e5ab79c39
 workflow-type: tm+mt
-source-wordcount: '7770'
+source-wordcount: '7761'
 ht-degree: 96%
 
 ---
@@ -53,11 +53,11 @@ ht-degree: 96%
 
 * 시각적 규칙 편집기의 사용자 경험이 개선되었습니다. 이번 업데이트에는 다음 사항이 포함됩니다.
 
-   * 저장 후 요약 보기를 자동으로 다시 로드하여 업데이트된 규칙 상태 표시
+  * 저장 후 요약 보기를 자동으로 다시 로드하여 업데이트된 규칙 상태 표시
 
-   * “추가”/“삭제” 버튼을 표시하고 숨기는 대신 토글 허용
+  * “추가”/“삭제” 버튼을 표시하고 숨기는 대신 토글 허용
 
-   * 규칙 저장 작업이 실패할 때 명확한 피드백 제공(FORMS-21261)
+  * 규칙 저장 작업이 실패할 때 명확한 피드백 제공(FORMS-21261)
 
 * `Dcom.adobe.fd.forms.export.legacy` 매개변수를 대체하여 AEM Forms에서 이전 확장 가능한 마크업 언어(XML) 내보내기 모드를 전환하기 위한 런타임 애플리케이션 프로그래밍 인터페이스(API)를 추가했습니다. 이 향상된 기능을 통해 사용자는 더 효율적으로 내보내기 모드를 전환하여 워크플로의 유연성이 향상됩니다. (FORMS-23115)
 
@@ -157,7 +157,8 @@ Sites 콘솔 목록 보기 설정이 목록 보기에 표시된 열을 반영하
 
 * 콘텐츠 조각 RTE가 최근 UI 스타일 변경 후 레이아웃 및 시각적 문제를 표시했습니다. 서비스 팩 2는 도구 모음 및 편집 가능한 영역이 올바르게 렌더링되고 읽을 수 있도록 RTE 스타일을 구체화합니다. 이제 콘텐츠 조각 편집기가 페이지 편집기 모양과 비헤이비어에 맞게 조정됩니다. (SITES-38684)
 * Polaris Asset Selector에서 IMS 범위를 제거하면 게재 엔드포인트와의 콘텐츠 조각 통합이 끊어졌습니다. 작성자가 원격 에셋 선택기를 열고 에셋을 선택할 때 오류가 발생합니다. 이 업데이트로 필요한 IMS 범위를 다시 추가하고 안정적인 게재 계층 액세스를 복원합니다. (SITES-35837)
-* 관련 콘텐츠 패널에서 더 이상 하드코딩된 “정의되지 않음” 플레이스홀더가 렌더링되지 않습니다. 콘텐츠 조각 편집기가 이제 현지화 리소스를 통해 해당 텍스트를 확인하므로 편집자는 번역된 UI 텍스트를 확인합니다. (SITES-33675)  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
+* 연결된 컨텐츠 패널에서 더 이상 하드코딩된 &quot;정의되지 않은&quot; 자리 표시자가 렌더링되지 않습니다. 콘텐츠 조각 편집기는 이제 현지화 리소스를 통해 해당 텍스트를 확인하므로 편집자는 번역된 UI 텍스트를 확인합니다. (SITES-33675)
+  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * 이제 콘텐츠 조각 편집기에 로케일 간에 번역된 일반 탭 레이블이 표시됩니다. 편집기가 현지화되지 않은 탭 텍스트를 바꾸고 탭 제목에서 내부 ID를 제거합니다. (SITES-30715)
 * 이제 콘텐츠 조각 편집기에 허용된 에셋 유형에 대해 번역된 이름이 표시됩니다. 작성자가 콘텐츠 참조 제한 사항을 구성할 때 선택기 목록이 더 이상 내부 문자열과 영어 전용 레이블을 혼합하지 않습니다. (SITES-29699)
 
@@ -359,23 +360,23 @@ AEM 6.5 LTS 서비스 팩 2에는 S3 Connector 1.60.10 이상이 필요합니다
 
   **영향**
 
-   * Sling이 이러한 PID를 더 이상 사용하지 않으므로 구성에서 제거해야 합니다.
-      * 팩토리 PID: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment`
-      * 글로벌 PID: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist`
-이러한 이전 구성은 `whitelist.name` 및 `whitelist.bundles`와 같은 속성을 사용합니다.
+  * Sling이 이러한 PID를 더 이상 사용하지 않으므로 구성에서 제거해야 합니다.
+    * 팩토리 PID: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment`
+    * 글로벌 PID: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist`
+      이러한 이전 구성은 `whitelist.name` 및 `whitelist.bundles`와 같은 속성을 사용합니다.
 
-   * Sling이 더 이상 사용되지 않는 PID에 대해 부분 이전 버전과의 호환성을 제공하지만 새 구성에 대해서는 사용하지 않습니다. 대신 최신 `LoginAdminAllowList.*` PID를 사용하십시오.
-   * 더 이상 사용되지 않는 구성과 새로운 허용 목록을 동시에 실행하지 마십시오. 혼합 구성이 모호성을 만들고 의도하지 않은 비헤이비어를 생성할 수 있습니다. AEM 6.5 LTS SP2로 마이그레이션하는 경우 더 이상 사용되지 않는 PID를 완전히 제거하십시오.
+  * Sling이 더 이상 사용되지 않는 PID에 대해 부분 이전 버전과의 호환성을 제공하지만 새 구성에 대해서는 사용하지 않습니다. 대신 최신 `LoginAdminAllowList.*` PID를 사용하십시오.
+  * 더 이상 사용되지 않는 구성과 새로운 허용 목록을 동시에 실행하지 마십시오. 혼합 구성이 모호성을 만들고 의도하지 않은 비헤이비어를 생성할 수 있습니다. AEM 6.5 LTS SP2로 마이그레이션하는 경우 더 이상 사용되지 않는 PID를 완전히 제거하십시오.
 
   **해야 할 일**
 
-   1. `LoginAdminWhitelist*` PID를 사용하는 허용 목록 구성을 찾습니다.
-   1. 적절한 새 PID로 바꿉니다.
+  1. `LoginAdminWhitelist*` PID를 사용하는 허용 목록 구성을 찾습니다.
+  1. 적절한 새 PID로 바꿉니다.
 
-      * 팩토리 PID: `org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
-      * 글로벌 PID: `org.apache.sling.jcr.base.LoginAdminAllowList`
+     * 팩토리 PID: `org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
+     * 글로벌 PID: `org.apache.sling.jcr.base.LoginAdminAllowList`
 
-      자세한 내용은 [관리자 로그인을 위해 더 이상 사용되지 않는 허용 목록 번들 접근](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login)을 참조하십시오.
+     자세한 내용은 [관리자 로그인을 위해 더 이상 사용되지 않는 허용 목록 번들 접근](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login)을 참조하십시오.
 
 * AEM 6.5 LTS SP2가 Sling, Oak 및 Felix용 기초 레이어 번들 세트를 업데이트합니다. 이러한 업그레이드로 핵심 런타임 안정성을 강화하고 플랫폼 간에 종속성 버전을 조정합니다. (GRANITE-61874)
 
@@ -499,7 +500,7 @@ AEM 6.5 LTS용 SP2가 패키지 관리자를 통해 설치하기 위해 ZIP이 �
 > 이전 6.5 SP에서 LTS SP1로 직접 업그레이드하는 경우 6.5에서 6.5 LTS GA [업그레이드](/help/sites-deploying/upgrade.md)하는 데 제공된 지침을 따르십시오.
 
 
-세부 지침은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하십시오.
+자세한 지침은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하세요. 동일한 설명서는 LTS 서비스 팩 업데이트에 적용됩니다.
 
 >[!NOTE]
 >
