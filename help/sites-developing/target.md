@@ -1,5 +1,5 @@
 ---
-title: 타깃팅된 컨텐츠를 위한 개발
+title: 타기팅된 콘텐츠를 위한 개발
 description: 콘텐츠 타겟팅에 사용할 구성 요소 개발에 대한 항목
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ role: Developer
 exl-id: 722c8052-6b1e-4b52-a332-b549f4a6bc05
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1296'
 ht-degree: 4%
 
 ---
 
-# 타깃팅된 컨텐츠를 위한 개발{#developing-for-targeted-content}
+# 타기팅된 콘텐츠를 위한 개발{#developing-for-targeted-content}
 
 이 섹션에서는 콘텐츠 타겟팅에 사용할 구성 요소를 개발하는 방법에 대해 설명합니다.
 
@@ -218,7 +218,7 @@ Target 구성에 사용자 지정 mbox.js 파일이 포함되어 있습니다. �
 
 ![chlimage_1-21](assets/chlimage_1-21.png)
 
-컨텍스트 메뉴에서 Target 명령을 제거하려면 다음 속성을 구성 요소의 cq:editConfig 노드에 추가합니다.
+컨텍스트 메뉴에서 Target 명령을 제거하려면 구성 요소의 cq:editConfig 노드에 다음 속성을 추가하십시오.
 
 * 이름: cq:disableTargeting
 * 유형: 부울
@@ -234,7 +234,7 @@ Target 구성에 사용자 지정 mbox.js 파일이 포함되어 있습니다. �
 >
 >DTM을 사용하지 않는 경우 주문 확인을 Adobe Target으로 보냅니다.
 
-웹 사이트의 성능을 추적하려면 주문 확인 페이지에서 구매 정보를 Adobe Target으로 보내십시오. [orderConfirmPage Mbox 만들기](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) 및 [주문 확인 Mbox - 사용자 지정 매개 변수 추가를 참조하십시오.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779?profile.language=ko)) Adobe Target은 MBox 이름이 `orderConfirmPage`인 경우 mbox 데이터를 주문 확인 데이터로 인식하고 다음과 같은 특정 매개 변수 이름을 사용합니다.
+웹 사이트의 성능을 추적하려면 주문 확인 페이지에서 구매 정보를 Adobe Target으로 보내십시오. ([orderConfirmPage Mbox 만들기](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) 및 [주문 확인 Mbox - 사용자 지정 매개 변수 추가](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)를 참조하십시오.) Adobe Target은 MBox 이름이 `orderConfirmPage`일 때 mbox 데이터를 주문 확인 데이터로 인식하고 다음과 같은 특정 매개 변수 이름을 사용합니다.
 
 * productPurchasedId: 구매한 제품을 식별하는 ID 목록입니다.
 * orderId: 주문 ID입니다.
@@ -318,7 +318,7 @@ String orderID = session.getOrderId();
 
 ## Target 구성 요소 이해 {#understanding-the-target-component}
 
-작성자는 타겟 구성 요소를 통해 CQ 콘텐츠 구성 요소에서 동적 mbox를 만들 수 있습니다. ([콘텐츠 타깃팅](/help/sites-authoring/content-targeting-touch.md) 참조) Target 구성 요소는 /libs/cq/personalization/components/target에 있습니다.
+작성자는 타겟 구성 요소를 통해 CQ 콘텐츠 구성 요소에서 동적 mbox를 만들 수 있습니다. ([콘텐츠 타겟팅](/help/sites-authoring/content-targeting-touch.md)을(를) 참조하십시오.) Target 구성 요소는 /libs/cq/personalization/components/target에 있습니다.
 
 target.jsp 스크립트는 페이지 속성에 액세스하여 구성 요소에 사용할 타겟팅 엔진을 결정한 다음 적절한 스크립트를 실행합니다.
 
@@ -353,4 +353,4 @@ Adobe Target이 콘텐츠 타겟팅을 구동하면 engine_tnt.jsp 스크립트�
 * testandtarget.init
 * testandtarget.util
 * testandtarget.atjs
-* testandtarget.atjs-integration
+* testandtarget.atjs-통합
