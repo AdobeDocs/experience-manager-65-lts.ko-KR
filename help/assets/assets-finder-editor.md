@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 39e1b20b-27d5-4869-b7e1-0dd2d087df7b
 source-git-commit: 7b62f47a0ce75ad5676ea41c86b299160e8b505c
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 1%
+source-wordcount: '2121'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->자산 공유는 오픈 소스 참조 구현으로 사용할 수 있습니다. [자산 공유 공용 &#x200B;](https://adobe-marketing-cloud.github.io/asset-share-commons/)을(를) 참조하십시오. 공식적으로 지원되지 않습니다.
+>자산 공유는 오픈 소스 참조 구현으로 사용할 수 있습니다. [자산 공유 공용 ](https://adobe-marketing-cloud.github.io/asset-share-commons/)을(를) 참조하십시오. 공식적으로 지원되지 않습니다.
 
 ## 자산 편집기 페이지를 만들고 구성하는 이유는 무엇입니까? {#why-create-and-configure-asset-editor-pages}
 
