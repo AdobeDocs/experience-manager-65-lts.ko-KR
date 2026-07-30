@@ -10,7 +10,7 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: 755df7e2-3603-4c0d-ad07-ec6f27de8c64
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: 9559b626ab9c0a3910fddefd04b9b2744c62db72
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 3%
@@ -47,7 +47,7 @@ ht-degree: 3%
 
 ### 임시 보고서 {#adhoc-reports}
 
-![인쇄 및 색상](assets/print-&-colour.png)
+![인쇄 및 색상](assets/print-and-colour.png)
 
 필터를 사용하여 특정 데이터 보기를 얻을 수 있습니다.
 
