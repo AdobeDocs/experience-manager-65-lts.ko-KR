@@ -12,16 +12,16 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: d3699ddf-2a6e-4837-a98b-61b565de3d76
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3232'
-ht-degree: 13%
+source-wordcount: '3404'
+ht-degree: 12%
 
 ---
 
 # 페이지에 Dynamic Media 자산 추가{#adding-dynamic-media-assets-to-pages}
 
-웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어** 또는 **Video 360 미디어** 구성 요소를 페이지에 바로 추가할 수 있습니다. 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화하여 구성 요소를 추가합니다. Then you can add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.
+웹 사이트에서 사용하는 자산에 Dynamic Media 기능을 추가하기 위해 **Dynamic Media**, **대화형 미디어**, **파노라마 미디어** 또는 **Video 360 미디어** 구성 요소를 페이지에 바로 추가할 수 있습니다. 레이아웃 모드로 전환하고 Dynamic Media 구성 요소를 활성화하여 구성 요소를 추가합니다. Then you can add these components to the page and add assets to the component. Dynamic Media 구성 요소는 스마트하게 동작하여, 이미지를 추가하는지 비디오를 추가하는지 자동으로 감지하고 그에 따라 설정 옵션을 조정합니다.
 
-Adobe Experience Manager을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접 추가할 수 있습니다. If you are using a third-party for your WCM, either [link](/help/assets/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/embed-code.md) your assets. For a responsive third-party web site, see [delivering optimized images to a responsive site](/help/assets/responsive-site.md).
+Adobe Experience Manager을 WCM으로 사용하는 경우 Dynamic Media 자산을 페이지에 직접 추가할 수 있습니다. If you are using a third-party for your WCM, either [link](/help/assets/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/embed-code.md) your assets. 반응형 타사 웹사이트의 경우, [반응형 사이트에 최적화된 이미지 게재](/help/assets/responsive-site.md) 항목을 참고하세요.
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Adobe Experience Manager을 WCM으로 사용하는 경우 Dynamic Media 자산�
 
 사용 가능한 Dynamic Media 구성 요소에는 다음이 포함됩니다.
 
-* **[!UICONTROL Dynamic Media]** - Use for such assets as images, video, eCatalogs, and spin sets.
+* **[!UICONTROL Dynamic Media]**&#x200B;는 이미지, 비디오, e카탈로그, 스핀 세트 등의 에셋에 사용됩니다.
 * **[!UICONTROL 대화형 미디어]** - 대화형 비디오, 대화형 이미지 또는 회전 메뉴 세트와 같은 대화형 자산에 사용합니다.
 * **[!UICONTROL 파노라마 미디어]** - 파노라마 이미지 또는 파노라마 VR 이미지 에셋에 사용합니다.
 * **[!UICONTROL Video 360 Media]** - 360 비디오 및 360 VR 비디오 자산에 사용합니다.
@@ -175,7 +175,7 @@ Dynamic Media 구성 요소를 사용하여 이미지 세트, 스핀 세트 및 
 
   **[!UICONTROL 고해상도 장치에 최적화]** 옵션은 다음이 true인 경우에만 표시됩니다.
 
-   * 사전 설정 유형에서 **[!UICONTROL 이미지 사전 설정]**&#x200B;이(가) 선택되고 **[!UICONTROL 이미지 사전 설정]** 드롭다운 목록에서 **[!UICONTROL RESS_IP]**&#x200B;이(가) 선택됩니다.
+  * 사전 설정 유형에서 **[!UICONTROL 이미지 사전 설정]**&#x200B;이(가) 선택되고 **[!UICONTROL 이미지 사전 설정]** 드롭다운 목록에서 **[!UICONTROL RESS_IP]**&#x200B;이(가) 선택됩니다.
 
   이미지 사전 설정에 대한 ![장치 픽셀 비율 설정](/help/assets/assets-dm/dpr-ress-ip.png)
 
@@ -213,10 +213,10 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 다이내믹 비디
 
   예를 들어 뷰어 수정자를 사용하여 다음을 수행할 수 있습니다.
 
-   * 캡션 파일을 비디오와 연결: [캡션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=ko)
-   * 탐색 파일을 비디오와 연결: [탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=ko)
+  * 캡션 파일을 비디오와 연결: [캡션](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=ko)
+  * 탐색 파일을 비디오와 연결: [탐색](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=ko)
 
-     구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 선택하여 다음 고급 설정을 편집할 수 있습니다.
+    구성 요소에서 **[!UICONTROL 편집]**&#x200B;을 선택하여 다음 고급 설정을 편집할 수 있습니다.
 
 * **[!UICONTROL 제목]** - 비디오의 제목을 변경합니다.
 
@@ -250,7 +250,7 @@ Dynamic Media 구성 요소를 사용하여 웹 페이지에 스마트 자르기
 
   **[!UICONTROL 고해상도 장치에 최적화]** 옵션은 다음이 true인 경우에만 표시됩니다.
 
-   * 사전 설정 유형에서 **[!UICONTROL 스마트 자르기]** 옵션이 선택됩니다.
+  * 사전 설정 유형에서 **[!UICONTROL 스마트 자르기]** 옵션이 선택됩니다.
 
   스마트 자르기에 대한 ![장치 픽셀 비율 설정](/help/assets/assets-dm/dpr-smartcrop.png)
 

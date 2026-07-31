@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 37e0d7de-0f7b-475f-b508-3dd150008fee
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 2%
+source-wordcount: '1279'
+ht-degree: 1%
 
 ---
 
@@ -82,8 +82,8 @@ ht-degree: 2%
 
    뷰어에서 `QuickViewActive`(이)라는 처리기를 사용합니다.
 
-   **예**
-대화형 이미지에 대해 웹 페이지에서 다음 샘플 포함 코드를 사용한다고 가정해 보십시오.
+   **예제**
+   대화형 이미지에 대해 웹 페이지에서 다음 샘플 포함 코드를 사용한다고 가정해 보십시오.
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -114,7 +114,7 @@ ht-degree: 2%
    `quickViewActivate` 처리기는 뷰어에서 빠른 보기를 제어합니다. 처리기에는 빠른 보기와 함께 사용할 변수 목록과 함수 호출이 포함되어 있습니다. 포함 코드는 빠른 보기에 설정된 SKU 변수 및 샘플 `loadQuickView` 함수 호출에 대한 매핑을 제공합니다.
 
    **변수 매핑**
-웹 페이지에서 사용할 변수를 빠른 보기에 포함된 SKU 값 및 일반 변수에 매핑합니다.
+   웹 페이지에서 사용할 변수를 빠른 보기에 포함된 SKU 값 및 일반 변수에 매핑합니다.
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -130,7 +130,7 @@ ht-degree: 2%
    ```
 
    **함수 호출**
-처리기가 작동하려면 Quickview에 대한 함수 호출도 필요합니다. 함수는 호스트 페이지에서 액세스할 수 있는 것으로 간주됩니다. 포함 코드는 샘플 함수 호출을 제공합니다.
+   처리기가 작동하려면 Quickview에 대한 함수 호출도 필요합니다. 함수는 호스트 페이지에서 액세스할 수 있는 것으로 간주됩니다. 포함 코드는 샘플 함수 호출을 제공합니다.
 
    `loadQuickView(sku)`
 
@@ -147,7 +147,7 @@ ht-degree: 2%
    * 포함 코드의 setHandlers 섹션의 주석 처리를 제거합니다.
    * 빠른 보기에 포함된 모든 추가 변수를 매핑합니다.
 
-      * 변수를 더 추가하는 경우 `loadQuickView(sku,*var1*,*var2*)` 호출을 업데이트하십시오.
+     * 변수를 더 추가하는 경우 `loadQuickView(sku,*var1*,*var2*)` 호출을 업데이트하십시오.
 
    * 뷰어 외부의 페이지에 간단한 `loadQuickView`() 함수를 만듭니다.
 
@@ -260,8 +260,8 @@ ht-degree: 2%
 
    `*viewerInstance.*init()`
 
-   **예**
-이 예제에서는 대화형 이미지 뷰어를 사용합니다.
+   **예제**
+   이 예제에서는 대화형 이미지 뷰어를 사용합니다.
 
    `s7interactiveimageviewer.init()`
 
