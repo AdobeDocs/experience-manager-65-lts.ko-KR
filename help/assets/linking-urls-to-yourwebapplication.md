@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 16798533-855d-4f14-8edb-edba79818dbf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 5%
+source-wordcount: '1290'
+ht-degree: 6%
 
 ---
 
@@ -56,7 +56,7 @@ URL 문자열을 가져오는 방법에는 여러 가지가 있습니다. 그러
 
 1. 복사할 이미지 사전 설정 URL 또는 뷰어 사전 설정 URL이 있는 *게시됨* 자산으로 이동한 다음 열 자산을 선택합니다.
 
-   Remember that URLs are only available to copy *after* you have first *published* the assets. In addition, the viewer preset or image preset must also be published.
+   Remember that URLs are only available to copy *after* you have first *published* the assets. 또한 뷰어 사전 설정 또는 이미지 사전 설정 게시되어 있어야 합니다.
 
    [자산 게시](publishing-dynamicmedia-assets.md)를 참조하십시오.
 
@@ -112,9 +112,9 @@ Dynamic Media는 이미지 및 비디오 이상의 추가 에셋인 정적 에�
 
    * `The URL of the published static is the following:`
 
-      * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
+     * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-        예: `https://aem.com/is/content/adobe/image.gif`
+       예: `https://aem.com/is/content/adobe/image.gif`
 
    * **[!UICONTROL 자산]** > **[!UICONTROL 동적 렌디션]**&#x200B;을 선택한 다음 정적 자산의 동적 렌디션을 선택하고 URL을 복사합니다.
 
@@ -170,7 +170,7 @@ Dynamic Media는 이미지 및 비디오 이상의 추가 에셋인 정적 에�
 
    (위의 경로는 예제일 뿐이며 복사하는 실제 경로가 아닙니다.)
 
-   * **[!UICONTROL 등록 ID]**&#x200B;에서 ID의 마지막 부분에 있는 고객 이름을 복사합니다. 이 단계의 후반부에 복사한 고객 이름이 필요합니다.
+   * Under **[!UICONTROL Registration ID]**, copy the customer name found in the last part of the ID. 이 단계의 후반부에 복사한 고객 이름이 필요합니다.
 
      예를 들어 등록 ID가 `87654321|demoCo`인 경우 복사한 고객 이름은 `demoCo`입니다.
 
