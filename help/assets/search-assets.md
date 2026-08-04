@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '5754'
+source-wordcount: '5811'
 ht-degree: 6%
 
 ---
@@ -87,7 +87,7 @@ OmniSearch 필드에서 키워드 검색을 실행할 수 있습니다. 키워�
 * `woman-running`
 
 그러나 쿼리 `woman -running`은(는) 메타데이터에 `running`이(가) 없는 에셋을 반환합니다.
-스마트 태그를 사용하면 추가 `OR` 절이 추가되어 적용된 스마트 태그로 검색어를 찾을 수 있습니다. 스마트 태그를 사용하는 `woman` 또는 `running` 중 하나로 태그가 지정된 자산도 이러한 검색 쿼리에 나타납니다. 그래서 검색 결과는
+스마트 태그를 사용하면 추가 `OR` 절이 추가되어 적용된 스마트 태그로 검색어를 찾을 수 있습니다. 스마트 태그를 사용하여 `woman` 또는 `running`(으)로 태그가 지정된 자산도 이러한 검색 쿼리에 나타납니다. 그래서 검색 결과는
 
 * 메타데이터에 `woman` 및 `running` 키워드가 있는 Assets(기본 동작).
 
