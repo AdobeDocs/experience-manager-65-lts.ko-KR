@@ -9,10 +9,10 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
 exl-id: 93126750-4645-4084-a21b-5362e3cc08a9
-source-git-commit: 19c58198faab2bbacd4b02e0fd38c21c0222ee72
+source-git-commit: b93457f543c22c893edd01259af19399e2548b72
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 1%
+source-wordcount: '316'
+ht-degree: 4%
 
 ---
 
@@ -49,7 +49,7 @@ AEM 6.5 LTS Forms에는 양식 및 서신을 통해 생성, 관리 및 사용자
 
 다음 다이어그램은 JEE의 AEM Forms LTS에 사용 가능한 업그레이드 경로를 표시합니다.
 
-![JEE 업그레이드 6.5](do-not-localize/jee-upgrade-6-5.png)
+![JEE 업그레이드 6.5](do-not-localize/jee-upgrade-6-5.svg)
 
 다음 위치에서 직접 업그레이드를 수행할 수 있습니다.
 
