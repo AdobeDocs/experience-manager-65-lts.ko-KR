@@ -52,7 +52,7 @@ AEM Forms 6.5.17.0 이상으로 업그레이드한 후 다음 단계에 따라 A
 
      마이그레이션 유틸리티를 사용하면 이전 버전의 적응형 양식 및 서신 관리 에셋이 AEM 6.5 양식과 호환될 수 있습니다. 이 유틸리티는 AEM 소프트웨어 배포에서 다운로드할 수 있습니다. 마이그레이션 유틸리티를 구성하고 사용하는 방법에 대한 단계별 정보는 [마이그레이션 유틸리티](../../forms/using/migration-utility.md)를 참조하십시오.
 
-     [초안 및 제출 구성 요소 통합](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)에 샘플 을 사용하고 있으며 이전 버전에서 업그레이드하는 경우 업그레이드를 수행한 후 다음 SQL 쿼리를 실행하십시오.
+     [초안 및 제출 구성 요소 통합](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)에 샘플 을 사용하고 있으며 이전 버전에서 업그레이드하는 경우 업그레이드를 수행한 후 다음 SQL 쿼리를 실행하십시오.
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am
@@ -93,7 +93,7 @@ AEM Forms 6.5.17.0 이상으로 업그레이드한 후 다음 단계에 따라 A
 
    >[!NOTE]
    >
-   >AEM 6.4 Forms에서 crx-repository 구조가 변경되었습니다. 6.3 Forms에서 AEM 6.5 Forms으로 업그레이드하는 경우 새로 만드는 사용자 지정에 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 [AEM의 Forms 저장소 재구성](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)을 참조하십시오.
+   >AEM 6.4 Forms에서 crx-repository 구조가 변경되었습니다. 6.3 Forms에서 AEM 6.5 Forms으로 업그레이드하는 경우 새로 만드는 사용자 지정에 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 [AEM의 Forms 저장소 재구성](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)을 참조하십시오.
 
 
 ## JBoss EAP 8(Windows)에서 AEM 배포
@@ -395,8 +395,8 @@ AEM 실행 모드(작성자/게시)를 변경하려면 WAR을 다시 패키징�
 ### 관련 설명서
 
 * [JBoss EAP 8 설명서](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0)
-* [Adobe Experience Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html)
-* [AEM 설치 및 배포 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)
+* [Adobe Experience Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko)
+* [AEM 설치 및 배포 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=ko)
 
 ### 문서 정보
 
