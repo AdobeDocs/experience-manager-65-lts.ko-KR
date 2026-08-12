@@ -1,25 +1,25 @@
 ---
 title: OSGi에서 AEM 6.5 Forms LTS로 업그레이드
-description: AEM 6.5.22.0 Forms에서 AEM 6.5 Forms LTS로 직접 업그레이드할 수 있습니다.
+description: AEM 6.5.17.0 Forms 이상에서 AEM 6.5 Forms LTS로 직접 업그레이드할 수 있습니다.
 content-type: reference
 role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: b5db6129e83dd7a54516707bbdb8864dc709d54b
+source-git-commit: 818673651f736311d400c71bfeb635b73b25a034
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 8%
+source-wordcount: '1619'
+ht-degree: 7%
 
 ---
 
 # OSGi에서 AEM 6.5 Forms LTS로 업그레이드 {#upgrade-to-aem-forms-osgi}
 
-[AEM 6.5에서 AEM 6.5 LTS로 업그레이드](/help/sites-deploying/upgrade.md)하려면 AEM 6.5.22.0 Forms 이상으로 업그레이드하십시오. AEM 6.5.22.0에서 AEM 6.5 Forms LTS로 직접 업그레이드할 수 있습니다.
+[AEM 6.5에서 AEM 6.5 LTS로 업그레이드](/help/sites-deploying/upgrade.md)하려면 AEM 6.5.17.0 Forms 이상으로 업그레이드하십시오. AEM 6.5.17.0 이상에서 AEM 6.5 Forms LTS로 직접 업그레이드할 수 있습니다.
 
 AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms 또는 AEM 6.5 Forms을 사용하는 경우 AEM 6.5 Forms LTS로 직접 업그레이드할 수 없습니다. 자세한 업그레이드 경로는 [업그레이드 경로](/help/forms/using/upgrade.md) 설명서를 참조하십시오.
 
-서비스 팩 AEM Forms 6.5.22.0(으)로 업그레이드한 후 다음 단계에 따라 AEM 6.5 LTS Forms으로 업그레이드하십시오.
+AEM Forms 6.5.17.0 이상으로 업그레이드한 후 다음 단계에 따라 AEM 6.5 LTS Forms으로 업그레이드하십시오.
 
 1. AEM Forms 추가 기능 패키지를 설치합니다. 다음 단계가 나와 있습니다.
 
@@ -52,7 +52,7 @@ AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms 또는
 
      마이그레이션 유틸리티를 사용하면 이전 버전의 적응형 양식 및 서신 관리 에셋이 AEM 6.5 양식과 호환될 수 있습니다. 이 유틸리티는 AEM 소프트웨어 배포에서 다운로드할 수 있습니다. 마이그레이션 유틸리티를 구성하고 사용하는 방법에 대한 단계별 정보는 [마이그레이션 유틸리티](../../forms/using/migration-utility.md)를 참조하십시오.
 
-     [초안 및 제출 구성 요소 통합](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)에 샘플 을 사용하고 있으며 이전 버전에서 업그레이드하는 경우 업그레이드를 수행한 후 다음 SQL 쿼리를 실행하십시오.
+     [초안 및 제출 구성 요소 통합](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)에 샘플 을 사용하고 있으며 이전 버전에서 업그레이드하는 경우 업그레이드를 수행한 후 다음 SQL 쿼리를 실행하십시오.
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am
@@ -74,8 +74,8 @@ AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms 또는
 
      AEM 6.5 Forms에서 jQuery의 버전은 3.2.1로 업데이트되고 jQuery UI 버전은 1.12.1로 업데이트됩니다. AEM Form은 **noConflict** 모드에서 JQuery를 사용합니다. 따라서 다른 jQuery 버전을 사용하는 경우 업그레이드를 수행하는 동안 문제가 표시되지 않습니다. 하지만 AEM 6.5 Forms으로 업그레이드할 때는:
 
-      * 사용자 지정 구성 요소(있는 경우)가 지원되는 jQuery 버전과 호환되는지 확인합니다.
-      * 사용자 지정 구성 요소에서 지원되지 않는 API를 제거합니다. 제거된 API 목록은 [업그레이드 안내서](https://jquery.com/upgrade-guide/3.0/)를 참조하십시오. 예를 들어 load(), .unload() 및 .error() API에 대한 지원이 제거됩니다. 앞서 설명한 API 대신 .on() 메서드를 사용합니다. 예를 들어 $(&quot;img&quot;).load(fn)를 $(&quot;img&quot;).on(&quot;load&quot;, fn)으로 변경합니다.
+     * 사용자 지정 구성 요소(있는 경우)가 지원되는 jQuery 버전과 호환되는지 확인합니다.
+     * 사용자 지정 구성 요소에서 지원되지 않는 API를 제거합니다. 제거된 API 목록은 [업그레이드 안내서](https://jquery.com/upgrade-guide/3.0/)를 참조하십시오. 예를 들어 load(), .unload() 및 .error() API에 대한 지원이 제거됩니다. 앞서 설명한 API 대신 .on() 메서드를 사용합니다. 예를 들어 $(&quot;img&quot;).load(fn)를 $(&quot;img&quot;).on(&quot;load&quot;, fn)으로 변경합니다.
 
    * **(AEM 6.2 Forms 또는 이전 버전에서만 업그레이드하는 경우) 분석 및 보고서를 다시 구성하십시오**
 
@@ -87,13 +87,13 @@ AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms 또는
    * **복제 및 역방향 복제 확인:** 마이그레이션된 양식을 게시하고 채우고 제출합니다. 제출된 데이터도 확인합니다.
    * **관리자 및 개발자 사용자 인터페이스에 대한 액세스 권한을 확인합니다.** 관리자 계정에서 AEM 인스턴스에 로그인하고 다음 URL에 대한 액세스 권한이 있는지 확인합니다.
 
-      * `https://'[server]:[port]'/crx/packmgr`
-      * `https://'[server]:[port]'/crx/de`
-      * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
+     * `https://'[server]:[port]'/crx/packmgr`
+     * `https://'[server]:[port]'/crx/de`
+     * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
    >
-   >AEM 6.4 Forms에서 crx-repository 구조가 변경되었습니다. 6.3 Forms에서 AEM 6.5 Forms으로 업그레이드하는 경우 새로 만드는 사용자 지정에 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 [AEM의 Forms 저장소 재구성](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)을 참조하십시오.
+   >AEM 6.4 Forms에서 crx-repository 구조가 변경되었습니다. 6.3 Forms에서 AEM 6.5 Forms으로 업그레이드하는 경우 새로 만드는 사용자 지정에 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 [AEM의 Forms 저장소 재구성](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)을 참조하십시오.
 
 
 ## JBoss EAP 8(Windows)에서 AEM 배포
@@ -395,8 +395,8 @@ AEM 실행 모드(작성자/게시)를 변경하려면 WAR을 다시 패키징�
 ### 관련 설명서
 
 * [JBoss EAP 8 설명서](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0)
-* [Adobe Experience Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko)
-* [AEM 설치 및 배포 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=ko)
+* [Adobe Experience Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html)
+* [AEM 설치 및 배포 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)
 
 ### 문서 정보
 
