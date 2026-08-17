@@ -7,7 +7,7 @@ role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1091'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ Forms 중심 워크플로우를 시작하거나 트리거하는 여러 방법 �
 
 ## 응용 프로그램 만들기 {#create-application}
 
-1. https://&#39;[server]:[port]&#39;/aem/inbox의 AEM 받은 편지함으로 이동합니다.
+1. https://'[server]:[port]'/aem/inbox의 AEM 받은 편지함으로 이동합니다.
 1. 받은 편지함 UI에서 **[!UICONTROL 만들기 > 응용 프로그램]**&#x200B;을 선택합니다. [응용 프로그램 선택] 페이지가 나타납니다.
 1. 응용 프로그램을 선택하고 **[!UICONTROL 만들기]**&#x200B;를 클릭합니다. 애플리케이션과 연결된 적응형 양식이 열립니다. 적응형 양식에 정보를 입력하고 **[!UICONTROL 제출]**&#x200B;을 선택하세요. 연결된 워크플로우를 시작하고 피할당자의 받은 편지함에서 작업을 만듭니다.
 

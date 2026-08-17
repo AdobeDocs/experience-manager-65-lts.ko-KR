@@ -1,5 +1,5 @@
 ---
-title: iOS용 보안 AEM Forms 앱 구축
+title: iOS를 위한 안전한 AEM Forms 앱 빌드
 description: Xcode 프로젝트를 보관하여 iOS용 보안 AEM Forms 앱을 빌드하는 방법에 대해 알아봅니다. 이렇게 하면 설치 관리자(.ipa 파일) 및 속성 목록(.plist 파일) 파일이 만들어집니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,14 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 5cfb956a-454c-4bed-a410-003c716c46ed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 0%
+source-wordcount: '390'
+ht-degree: 4%
 
 ---
 
-# iOS용 보안 AEM Forms 앱 구축 {#building-a-secure-aem-forms-app-for-ios}
+# iOS를 위한 안전한 AEM Forms 앱 빌드 {#building-a-secure-aem-forms-app-for-ios}
 
 설치 관리자(.ipa 파일) 및 속성 목록(.plist 파일) 파일을 빌드하려면 AEM Forms 앱용 Xcode 프로젝트를 보관해야 합니다. 속성 목록 파일에는 호스팅된 사내 앱의 구성 정보(예: 앱 이름 및 호스팅 위치)가 포함되어 있습니다. 속성 목록 파일에 대한 자세한 내용은 [정보 속성 목록 파일 정보](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html)를 참조하십시오.
 

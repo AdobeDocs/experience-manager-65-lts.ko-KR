@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: fb24c331-55c3-4166-bd4f-c26cece902fc
 source-git-commit: 1dd093acdfa571dad9659270ddc6912ab3d5dba5
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '1016'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 이를 실행할 워크
 
 1. `com.day.cq.dam.cq-dam-switchengine`의 번들 ID를 확인하려면 웹 콘솔에 로그인하고 **[!UICONTROL OSGi]** > **[!UICONTROL 번들]**&#x200B;을(를) 클릭합니다. 또는 번들 콘솔을 열려면 `https://[aem_server:[port]/system/console/bundles/` URL에 액세스합니다. `com.day.cq.dam.cq-dam-switchengine` 번들 및 해당 ID를 찾습니다.
 
-1. `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` 명령을 사용하여 폴더를 확인하여 필요한 모든 라이브러리가 추출되었는지 확인하십시오. 여기서 폴더 이름은 번들 ID를 사용하여 생성됩니다. 예를 들어 번들 ID가 `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/`인 경우 명령은 `588`입니다.
+1. `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` 명령을 사용하여 폴더를 확인하여 필요한 모든 라이브러리가 추출되었는지 확인하십시오. 여기서 폴더 이름은 번들 ID를 사용하여 생성됩니다. 예를 들어 번들 ID가 `588`인 경우 명령은 `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/`입니다.
 
 1. 라이브러리에 연결할 `SWitchEngineLibs.conf` 파일을 만듭니다.
 
@@ -89,7 +89,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 이를 실행할 워크
    vi SWitchEngineLibs.conf
    ```
 
-1. `/aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` 명령을 사용하여 conf 파일에 `cat SWitchEngineLibs.conf` 경로를 추가하십시오.
+1. `cat SWitchEngineLibs.conf` 명령을 사용하여 conf 파일에 `/aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` 경로를 추가하십시오.
 
 1. `ldconfig` 명령을 실행하여 필요한 링크와 캐시를 만듭니다.
 
@@ -111,11 +111,11 @@ ITL 처리를 구성하려면 구성 파일을 만들고 이를 실행할 워크
 1. **[!UICONTROL 워크플로 모델]** 페이지에서 편집 모드로 **[!UICONTROL DAM 자산 업데이트]** 워크플로 모델을 엽니다.
 
 1. **[!UICONTROL 프로세스 썸네일]** 워크플로우 프로세스 단계를 엽니다. **[!UICONTROL 썸네일]** 탭의 **[!UICONTROL MIME 유형 건너뛰기]** 목록에서 기본 썸네일 생성 프로세스를 건너뛸 MIME 유형을 추가합니다.
-예를 들어 이미징 코드 변환 라이브러리를 사용하여 TIFF 이미지에 대한 썸네일을 만들려면 `image/tiff`MIME 유형 건너뛰기&#x200B;**[!UICONTROL 필드에]**&#x200B;을(를) 지정하십시오.
+예를 들어 이미징 코드 변환 라이브러리를 사용하여 TIFF 이미지에 대한 썸네일을 만들려면 **[!UICONTROL MIME 유형 건너뛰기]** 필드에 `image/tiff`을(를) 지정하십시오.
 
 1. **[!UICONTROL 웹 사용 이미지]** 탭에서 **[!UICONTROL 목록 건너뛰기]**&#x200B;에서 기본 웹 렌디션 생성 프로세스를 건너뛸 MIME 형식을 추가합니다. 예를 들어 위 단계에서 MIME 유형 `image/tiff`을(를) 건너뛰었다면 `image/tiff`을(를) 건너뛰기 목록에 추가하십시오.
 
-1. **[!UICONTROL EPS 썸네일(ImageMagick 제공)]** 단계를 열고 **[!UICONTROL 인수]** 탭으로 이동합니다. **[!UICONTROL MIME 형식]** 목록에서 이미징 코드 변환 라이브러리에서 처리할 MIME 형식을 추가합니다. 예를 들어 위 단계에서 MIME 유형 `image/tiff`을(를) 건너뛰었다면 `image/jpeg`MIME 유형&#x200B;**[!UICONTROL 목록에]**&#x200B;을(를) 추가하십시오.
+1. **[!UICONTROL EPS 썸네일(ImageMagick 제공)]** 단계를 열고 **[!UICONTROL 인수]** 탭으로 이동합니다. **[!UICONTROL MIME 형식]** 목록에서 이미징 코드 변환 라이브러리에서 처리할 MIME 형식을 추가합니다. 예를 들어 위 단계에서 MIME 유형 `image/tiff`을(를) 건너뛰었다면 **[!UICONTROL MIME 유형]** 목록에 `image/jpeg`을(를) 추가하십시오.
 
 1. 기본 명령이 있는 경우 제거합니다.
 
@@ -138,7 +138,7 @@ ITL 처리를 구성하려면 구성 파일을 만들고 이를 실행할 워크
 
 1. 업데이트된 [!UICONTROL DAM 자산 업데이트] 워크플로우 모델을 동기화합니다. 워크플로우를 저장합니다.
 
-구성을 확인하려면 TIFF 이미지를 업로드하고 error.log 파일을 모니터링합니다. `INFO`을(를) 언급한 `SwitchEngineHandlingProcess execute: executing command line`개의 메시지가 표시됩니다. 로그에는 생성된 렌디션이 언급됩니다. 워크플로가 완료되면 [!DNL Experience Manager]에서 새 변환을 볼 수 있습니다.
+구성을 확인하려면 TIFF 이미지를 업로드하고 error.log 파일을 모니터링합니다. `SwitchEngineHandlingProcess execute: executing command line`을(를) 언급한 `INFO`개의 메시지가 표시됩니다. 로그에는 생성된 렌디션이 언급됩니다. 워크플로가 완료되면 [!DNL Experience Manager]에서 새 변환을 볼 수 있습니다.
 
 >[!MORELIKETHIS]
 >

@@ -1,5 +1,5 @@
 ---
-title: AEM에서 Adobe Campaign Forms 만들기
+title: AEM에서 Adobe Campaign 양식 작성
 description: AEM을 사용하면 웹 사이트에서 Adobe Campaign과 상호 작용하는 양식을 만들고 사용할 수 있습니다. 특정 필드를 양식에 삽입하여 Adobe Campaign 데이터베이스에 매핑할 수 있습니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 3a39c4ba-353a-41ee-bfe6-e7eb4323f170
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 0%
+source-wordcount: '1224'
+ht-degree: 1%
 
 ---
 
-# AEM에서 Adobe Campaign Forms 만들기{#creating-adobe-campaign-forms-in-aem}
+# AEM에서 Adobe Campaign 양식 작성{#creating-adobe-campaign-forms-in-aem}
 
 AEM을 사용하면 웹 사이트에서 Adobe Campaign과 상호 작용하는 양식을 만들고 사용할 수 있습니다. 특정 필드를 양식에 삽입하여 Adobe Campaign 데이터베이스에 매핑할 수 있습니다.
 

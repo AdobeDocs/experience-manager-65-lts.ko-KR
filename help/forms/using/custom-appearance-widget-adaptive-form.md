@@ -1,5 +1,5 @@
 ---
-title: 적응형 양식 필드에 대한 사용자 정의 표시 만들기
+title: 적응형 양식 필드에 대한 사용자 정의 모양 만들기
 description: 적응형 Forms에서 즉시 사용 가능한 구성 요소의 모양을 사용자 지정합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ feature: Adaptive Forms,Foundation Components
 exl-id: c8745d19-139a-4cea-982a-537bc1dd207d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 0%
+source-wordcount: '1744'
+ht-degree: 1%
 
 ---
 
-# 적응형 양식 필드에 대한 사용자 정의 표시 만들기{#create-custom-appearances-for-adaptive-form-fields}
+# 적응형 양식 필드에 대한 사용자 정의 모양 만들기{#create-custom-appearances-for-adaptive-form-fields}
 
 ## 소개 {#introduction}
 
@@ -132,7 +132,7 @@ Maven Archetype은 사용자 정의 모양을 만드는 시작점입니다. 사�
    <td><code>getEventMap</code></td>
    <td>HTML 이벤트를 XFA 이벤트로 변환하는 맵을 반환합니다. <br /> <code class="code">&lbrace;
       blur: XFA_EXIT_EVENT,
-      &rbrace;</code><br /> 이 예제는 <code>blur</code>이(가) HTML 이벤트이고 <code>XFA_EXIT_EVENT</code>이(가) 해당 XFA 이벤트임을 보여 줍니다. </td>
+      &rbrace;</code><br /> 이 예제에서는 <code>blur</code>이(가) HTML 이벤트이고 <code>XFA_EXIT_EVENT</code>이(가) 해당 XFA 이벤트임을 보여 줍니다. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>

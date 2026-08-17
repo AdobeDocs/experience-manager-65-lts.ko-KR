@@ -8,10 +8,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: dd750ffc-5e3c-42b0-a080-3edf34db8684
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 26%
+source-wordcount: '266'
+ht-degree: 30%
 
 ---
 
@@ -26,12 +26,12 @@ ht-degree: 26%
   <tr>
    <td><p>초기화</p> </td>
    <td><p>getOnOffValues</p> </td>
-   <td><p>minOccurs</p> </td>
+   <td><p>minOccur</p> </td>
   </tr>
   <tr>
    <td><p>유효성 검사</p> </td>
    <td><p>setGuideState</p> </td>
-   <td><p>maxOccurs</p> </td>
+   <td><p>maxOccur</p> </td>
   </tr>
   <tr>
    <td><p>forceElementFocusChange</p> </td>
