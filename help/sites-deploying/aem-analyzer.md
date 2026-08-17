@@ -102,7 +102,7 @@ AEM 인스턴스에서 6.5 LTS 분석기 도구를 실행하면 보고서가 도
 
 >[!NOTE]
 >
->각 검색 범주에 대한 자세한 내용은 [패턴 탐지기 범주](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso)를 참조하세요.
+>각 검색 범주에 대한 자세한 내용은 [패턴 탐지기 범주](https://experienceleague.adobe.com/ko/docs/experience-manager-pattern-detection/table-of-contents/aso)를 참조하세요.
 
 중요도 수준을 이해하려면 아래 표를 따르십시오.
 
