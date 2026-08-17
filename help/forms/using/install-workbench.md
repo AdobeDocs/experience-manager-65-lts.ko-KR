@@ -7,7 +7,7 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
 exl-id: 3a7b80b1-4b3e-400c-8753-c4453c0d79b3
-source-git-commit: 'null'
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2301'
 ht-degree: 0%
@@ -100,7 +100,7 @@ Workbench는 개발자와 양식 작성자가 자동화된 비즈니스 프로�
 
 ### 지원되는 플랫폼 {#supported-platforms}
 
-[AEM Forms 지원 플랫폼](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_kr)에서 Workbench에 대해 지원되는 플랫폼 전체 목록을 참조하십시오.
+[AEM Forms 지원 플랫폼](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65)에서 Workbench에 대해 지원되는 플랫폼 전체 목록을 참조하십시오.
 
 ## Designer 설치 고려 사항 {#designer-installation-considerations}
 

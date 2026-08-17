@@ -6,7 +6,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
-source-git-commit: 'null'
+source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
 workflow-type: tm+mt
 source-wordcount: '2098'
 ht-degree: 15%
@@ -102,7 +102,7 @@ AEM 인스턴스에서 6.5 LTS 분석기 도구를 실행하면 보고서가 도
 
 >[!NOTE]
 >
->각 검색 범주에 대한 자세한 내용은 [패턴 탐지기 범주](https://experienceleague.adobe.com/ko/docs/experience-manager-pattern-detection/table-of-contents/aso)를 참조하세요.
+>각 검색 범주에 대한 자세한 내용은 [패턴 탐지기 범주](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso)를 참조하세요.
 
 중요도 수준을 이해하려면 아래 표를 따르십시오.
 
