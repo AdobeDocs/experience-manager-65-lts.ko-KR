@@ -1,5 +1,5 @@
 ---
-title: 초안 및 제출 구성 요소에 대한 사용자 지정 저장소
+title: 초안 및 제출 구성 요소를 위한 사용자 정의 스토리지
 description: 초안 및 제출용 사용자 데이터 저장소를 사용자 지정하는 방법을 참조하십시오.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,14 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2f7caa43-213e-4cd2-bb02-6b18c3efb81c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 0%
+source-wordcount: '337'
+ht-degree: 4%
 
 ---
 
-# 초안 및 제출 구성 요소에 대한 사용자 지정 저장소 {#custom-storage-for-drafts-and-submissions-component}
+# 초안 및 제출 구성 요소를 위한 사용자 정의 스토리지 {#custom-storage-for-drafts-and-submissions-component}
 
 ## 개요 {#overview}
 

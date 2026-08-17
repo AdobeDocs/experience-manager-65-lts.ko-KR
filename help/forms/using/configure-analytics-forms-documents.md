@@ -9,16 +9,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
 exl-id: befc6b96-517b-4ca3-8007-2aa0fd6ed2cb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 1%
+source-wordcount: '1546'
+ht-degree: 3%
 
 ---
 
 # Cloud Service 프레임워크를 사용한 Analytics {#analyticsusingcloudframework}
 
-AEM Forms은 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있도록 해주는 Analytics와 통합됩니다. 이러한 지표를 분석하는 목표는 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
+AEM Forms은 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있도록 해주는 Analytics와 통합됩니다. 이러한 지표를 분석하는 목적은 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
 
 >[!NOTE]
 >

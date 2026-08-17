@@ -1,5 +1,5 @@
 ---
-title: 적응형 및 HTML5 양식용 외관 프레임워크
+title: 적응형 및 HTML5 양식을 위한 모양 프레임워크
 description: Mobile Forms은 양식 템플릿을 HTML5 양식으로 렌더링합니다. 이러한 양식에서는 외형에 jQuery, Backbone.js 및 Underscore.js 파일을 사용하여 스크립팅을 활성화합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,18 +8,18 @@ solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Mobile Forms
 role: User, Developer
 exl-id: 9d80bc0a-f2b0-4b27-9417-639531cb8415
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 2%
+source-wordcount: '1165'
+ht-degree: 3%
 
 ---
 
-# 적응형 및 HTML5 양식용 외관 프레임워크 {#appearance-framework-for-adaptive-and-html-forms}
+# 적응형 및 HTML5 양식을 위한 모양 프레임워크 {#appearance-framework-for-adaptive-and-html-forms}
 
 Forms(적응형 양식 및 HTML5 양식)에서는 모양 및 스크립팅을 위해 [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) 및 [Underscore.js](https://underscorejs.org/) 라이브러리를 사용합니다. 양식에서는 양식의 모든 대화형 요소(예: 필드 및 버튼)에 대해 [jQuery UI](https://jqueryui.com/) **위젯** 아키텍처도 사용합니다. 이 아키텍처를 통해 양식 개발자는 Forms에서 사용 가능한 다양한 jQuery 위젯 및 플러그인을 사용할 수 있습니다. 또한 leadDigits/trailDigits 제한 사항이나 그림 절 구현과 같은 사용자의 데이터를 캡처하는 동안 양식별 논리를 구현할 수도 있습니다. 양식 개발자는 사용자 정의 응용 프로그램을 만들고 사용하여 데이터 캡처 환경을 개선하고 보다 사용자 친화적으로 만들 수 있습니다.
 
-이 문서는 jQuery 및 jQuery 위젯에 대한 지식이 풍부한 개발자를 위한 것입니다. 모양 프레임워크에 대한 통찰력을 제공하고 개발자가 양식 필드에 대한 대체 모양을 만들 수 있도록 합니다.
+이 문서는 jQuery 및 jQuery 위젯에 대한 지식이 풍부한 개발자를 위한 것입니다. 이 디자이너는 insight을 모양 프레임워크에 제공하고 개발자가 양식 필드에 대한 대체 모양을 만들 수 있도록 합니다.
 
 모양 프레임워크는 다양한 옵션, 이벤트(트리거) 및 함수를 사용하여 양식과의 사용자 상호 작용을 캡처하고 모델 변경 사항에 대응하여 최종 사용자에게 알립니다. 또한
 
@@ -100,19 +100,19 @@ Forms 프레임워크와 상호 작용하기 위해 위젯은 일부 이벤트�
   </tr>
   <tr>
    <td>XFA_ENTER_EVENT</td>
-   <td>이 이벤트는 필드가 포커스에 있을 때마다 트리거됩니다. 필드에서 "enter" 스크립트를 실행할 수 있습니다. 이벤트를 트리거하는 구문은 <br />(위젯)입니다._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
+   <td>이 이벤트는 필드가 포커스에 있을 때마다 트리거됩니다. 필드에서 "enter" 스크립트를 실행할 수 있습니다. 이벤트를 트리거하는 구문은 <br />(위젯)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br />입니다. </td>
   </tr>
   <tr>
    <td>XFA_EXIT_EVENT</td>
-   <td>이 이벤트는 사용자가 필드를 떠날 때마다 트리거됩니다. 이 옵션을 통해 엔진은 필드의 값을 설정하고 "종료" 스크립트를 실행할 수 있습니다. 이벤트를 트리거하는 구문은 <br />(위젯)입니다._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
+   <td>이 이벤트는 사용자가 필드를 떠날 때마다 트리거됩니다. 이 옵션을 통해 엔진은 필드의 값을 설정하고 "종료" 스크립트를 실행할 수 있습니다. 이벤트를 트리거하는 구문은 <br />(위젯)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br />입니다. </td>
   </tr>
   <tr>
    <td>XFA_CHANGE_EVENT</td>
-   <td>이 이벤트는 엔진이 필드에 작성된 "변경" 스크립트를 실행할 수 있도록 트리거됩니다. 이벤트를 트리거하는 구문은 <br />(위젯)입니다._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
+   <td>이 이벤트는 엔진이 필드에 작성된 "변경" 스크립트를 실행할 수 있도록 트리거됩니다. 이벤트를 트리거하는 구문은 <br />(위젯)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br />입니다. </td>
   </tr>
   <tr>
    <td>XFA_CLICK_EVENT</td>
-   <td>이 이벤트는 필드를 클릭할 때마다 트리거됩니다. 이 옵션을 통해 엔진은 필드에 쓰여진 "click" 스크립트를 실행할 수 있습니다. 이벤트를 트리거하는 구문은 <br />(위젯)입니다._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
+   <td>이 이벤트는 필드를 클릭할 때마다 트리거됩니다. 이 옵션을 통해 엔진은 필드에 쓰여진 "click" 스크립트를 실행할 수 있습니다. 이벤트를 트리거하는 구문은 <br />(위젯)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br />입니다. </td>
   </tr>
  </tbody>
 </table>
@@ -229,7 +229,7 @@ Forms 프레임워크와 상호 작용하기 위해 위젯은 일부 이벤트�
 
 ### NumericEdit: NumericField, DecimalField {#numericedit-numericfield-decimalfield}
 
-| 옵션 | 설명 |
+| 선택 사항 | 설명 |
 |---|---|
 | dataType | 필드의 데이터 형식을 나타내는 문자열입니다(정수/십진수). |
 | leadDigits | 소수점 이하 최대 선행 자릿수입니다. |
@@ -242,7 +242,7 @@ Forms 프레임워크와 상호 작용하기 위해 위젯은 일부 이벤트�
 <table>
  <tbody>
   <tr>
-   <th>옵션</th>
+   <th>선택 사항</th>
    <th>설명</th>
   </tr>
   <tr>

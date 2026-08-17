@@ -1,5 +1,5 @@
 ---
-title: 작업 오프로드
+title: 오프로딩 작업
 description: 토폴로지에서 AEM 인스턴스를 구성 및 사용하여 특정 유형의 처리를 수행하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,14 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2393'
 ht-degree: 1%
 
 ---
 
-# 작업 오프로드{#offloading-jobs}
+# 오프로딩 작업{#offloading-jobs}
 
 ## 소개 {#introduction}
 
@@ -111,7 +111,7 @@ Apache Sling 리소스 기반 검색 서비스는 각 인스턴스에서 실행�
 * 인스턴스를 토폴로지에 연결하려면 루트 멤버의 토폴로지 커넥터 서비스 URL을 지정하십시오.
 * 인스턴스가 토폴로지에 연결할 수 있도록 하려면 루트 멤버의 토폴로지 커넥터 서비스 허용 목록에 인스턴스를 추가하십시오.
 
-웹 콘솔 또는 sling:OsgiConfig 노드를 사용하여 org.apache.sling.discovery.impt.Config 서비스의 다음 속성을 구성합니다.
+웹 콘솔 또는 sling:OsgiConfig 노드를 사용하여 org.apache.sling.discovery.impt.Config 서비스의 다음 속성을 구성하십시오.
 
 <table>
  <tbody>
@@ -208,7 +208,7 @@ Experience Manager에는 여러 JobConsumer 구현이 설치됩니다. 이러한
 | 작업 항목 | 서비스 PID | 설명 |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Apache Sling과 함께 설치됩니다. 이전 버전과의 호환성을 위해 OSGi 이벤트 관리자가 생성하는 작업을 처리합니다. |
-| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | 작업 페이로드를 복제하는 복제 에이전트입니다. |
+| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | 작업 페이로드를 복제하는 복제 에이전트입니다. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Apache Sling 작업 소비자 관리자 서비스는 주제 허용 목록 및 �
 
 | 웹 콘솔의 속성 이름 | OSGi ID | 설명 |
 |---|---|---|
-| 주제 허용 목록 | job.consumermanager.whitelist | 로컬 JobManager 서비스가 처리하는 항목 목록입니다. &ast;의 기본값은 모든 주제를 등록된 TopicConsumer 서비스로 보냅니다. |
+| 주제 허용 목록 | job.consumermanager.whitelist | 로컬 JobManager 서비스가 처리하는 항목 목록입니다. 기본값인 &amp;ast;를 사용하면 모든 항목이 등록된 TopicConsumer 서비스로 전송됩니다. |
 | 주제 차단 목록 | job.consumermanager.blacklist | 로컬 JobManager 서비스가 처리하지 않는 항목 목록입니다. |
 
 ## 오프로드용 복제 에이전트 생성 {#creating-replication-agents-for-offloading}
@@ -289,7 +289,7 @@ Apache Sling 작업 소비자 관리자 서비스는 주제 허용 목록 및 �
 
 ### 역방향 에이전트 만들기 {#creating-the-reverse-agent}
 
-1. 작성자에 대해 **역방향 복제 에이전트**&#x200B;을(를) 만듭니다. [복제 에이전트 설명서](/help/sites-deploying/replication.md)를 참조하세요. **제목**&#x200B;을 지정합니다. **이름**&#x200B;은(는) 명명 규칙을 따라야 합니다.
+1. 작성자에 대해 **역방향 복제 에이전트**&#x200B;을(를) 만듭니다. (복제 에이전트에 대한 [설명서](/help/sites-deploying/replication.md)를 참조하세요.) **Title**&#x200B;을(를) 지정하십시오. **이름**&#x200B;은(는) 명명 규칙을 따라야 합니다.
 1. 다음 속성을 사용하여 에이전트를 만듭니다.
 
    | 속성 | 값 |
@@ -302,7 +302,7 @@ Apache Sling 작업 소비자 관리자 서비스는 주제 허용 목록 및 �
 
 ### 보낼 편지함 에이전트 만들기 {#creating-the-outbox-agent}
 
-1. 작업자 인스턴스에 **복제 에이전트**&#x200B;을(를) 만듭니다. [복제 에이전트 설명서](/help/sites-deploying/replication.md)를 참조하세요. **제목**&#x200B;을 지정합니다. **이름**&#x200B;은(는) `offloading_outbox`이어야 합니다.
+1. 작업자 인스턴스에 **복제 에이전트**&#x200B;을(를) 만듭니다. (복제 에이전트에 대한 [설명서](/help/sites-deploying/replication.md)를 참조하세요.) **Title**&#x200B;을(를) 지정하십시오. **이름**&#x200B;은(는) `offloading_outbox`이어야 합니다.
 1. 다음 속성을 사용하여 에이전트를 만듭니다.
 
    | 속성 | 값 |
