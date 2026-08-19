@@ -11,8 +11,8 @@ role: Admin
 exl-id: 72293e17-bf29-4b3c-81b4-cd8372694a0d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 1%
+source-wordcount: '1102'
+ht-degree: 2%
 
 ---
 
@@ -61,14 +61,14 @@ AEM에서 사용자 지정 데이터 가져오기 서비스를 만드는 방법�
 
 ### PollingImporter로 인해 종료가 오래 걸립니다. {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analytics는 상속 메커니즘을 고려하여 설계되었습니다. 일반적으로 페이지 속성 [클라우드 서비스](/help/sites-developing/extending-cloud-config.md) 탭 내에서 Analytics 구성에 대한 참조를 추가하여 사이트에 대한 Analytics를 사용하도록 설정합니다. 그런 다음 페이지에 다른 구성이 필요하지 않으면 다시 참조할 필요 없이 구성이 모든 하위 페이지에 자동으로 상속됩니다. 사이트에 참조를 추가하면 여러 개의 노드(AEM 6.3 및 이전 버전의 경우 12, AEM 6.4의 경우 6)가 자동으로 만들어집니다   Analytics 데이터를 AEM으로 가져오는 데 사용되는 PollingImporters를 인스턴스화하는 `cq;PollConfig` 형식의 버전)입니다. 그 결과는 다음과 같습니다.
+Analytics는 상속 메커니즘을 고려하여 설계되었습니다. 일반적으로 페이지 속성 [클라우드 서비스](/help/sites-developing/extending-cloud-config.md) 탭 내에서 Analytics 구성에 대한 참조를 추가하여 사이트에 대한 Analytics를 사용하도록 설정합니다. 그런 다음 페이지에 다른 구성이 필요하지 않으면 다시 참조할 필요 없이 구성이 모든 하위 페이지에 자동으로 상속됩니다. 사이트에 참조를 추가하면 Analytics 데이터를 AEM으로 가져오는 데 사용되는 PollingImporters를 인스턴스화하는 `cq;PollConfig` 형식의 여러 노드(AEM 6.3 이하 버전에서는 12개, AEM 6.4 이상에서는 6개)도 자동으로 만들어집니다. 그 결과는 다음과 같습니다.
 
 * Analytics를 참조하는 페이지가 많으면 PollingImporter가 많습니다.
 * 또한 Analytics 구성을 참조하여 페이지를 복사하고 붙여넣으면 해당 PollingImporter가 중복됩니다.
 
 #### 솔루션 {#solution-1}
 
-먼저 [error.log](/help/sites-deploying/configure-logging.md)을(를) 분석하면 활성 또는 등록된 PollingImporter 양에 대한 통찰력을 얻을 수 있습니다. 예:
+먼저 [error.log](/help/sites-deploying/configure-logging.md)을(를) 분석하면 활성 또는 등록된 PollingImporter의 양에 대한 일부 insight을 얻을 수 있습니다. 예:
 
 ```
 # Count PollingImporter entries
@@ -100,11 +100,11 @@ AEM에서 사용자 지정 데이터 가져오기 서비스를 만드는 방법�
 * `/etc/cloudservices/dynamictagmanagement`에 있는 구성 다시 게시
 * `/etc/cloudservices`에서 ACL을 확인합니다. ACL은 다음과 같아야 합니다.
 
-   * allow; jcr:read; webservice-support-servicelibfinder
-   * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults/`&ast;
-   * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults`
-   * allow; jcr:read; everyone; `rep:glob:`&ast;`/public/`&ast;
-   * allow; jcr:read; everyone; `rep:glob:`&ast;`/public`
+  * allow; jcr:read; webservice-support-servicelibfinder
+  * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults/`&ast;
+  * allow; jcr:read; everyone; `rep:glob:`&ast;`/defaults`
+  * allow; jcr:read; everyone; `rep:glob:`&ast;`/public/`&ast;
+  * allow; jcr:read; everyone; `rep:glob:`&ast;`/public`
 
 ACL 관리에 대한 자세한 내용은 [사용자 관리 및 보안](/help/sites-administering/security.md#permissions-in-aem) 페이지를 참조하십시오.
 

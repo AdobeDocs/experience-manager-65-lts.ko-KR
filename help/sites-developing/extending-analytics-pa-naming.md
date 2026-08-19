@@ -1,5 +1,5 @@
 ---
-title: Analytics에 대한 서버측 페이지 이름 지정 구현
+title: Analytics에 대한 서버측 페이지 명명 구현
 description: Adobe Analytics은 s.pageName 속성을 사용하여 페이지를 고유하게 식별하고 페이지에 대해 수집된 데이터를 연결합니다
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Developer
 exl-id: d7c33a37-a675-490d-b28d-1a367ffa33e9
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 0%
+source-wordcount: '866'
+ht-degree: 1%
 
 ---
 
-# Analytics에 대한 서버측 페이지 이름 지정 구현{#implementing-server-side-page-naming-for-analytics}
+# Analytics에 대한 서버측 페이지 명명 구현{#implementing-server-side-page-naming-for-analytics}
 
 Adobe Analytics은 `s.pageName` 속성을 사용하여 페이지를 고유하게 식별하고 페이지에 대해 수집된 데이터를 연결합니다. 일반적으로 AEM에서 다음 작업을 수행하여 AEM이 Analytics에 전송하는 이 속성에 값을 할당합니다.
 
@@ -75,7 +75,7 @@ CQ 변수를 프레임워크의 `s.pageName` 속성에 매핑하지 않으면 `s
 
 ### Analytics 페이지 이름 공급자 서비스 구현 {#implementing-an-analytics-page-name-provider-service}
 
-`com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider` 인터페이스를 OSGi 서비스로 구현하여 `s.pageName` 속성 값을 검색하는 논리를 사용자 지정합니다. 사이트 페이지 분석 및 컨텐츠 인사이트는 이 서비스를 사용하여 Analytics에서 보고서 데이터를 검색합니다.
+`com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider` 인터페이스를 OSGi 서비스로 구현하여 `s.pageName` 속성 값을 검색하는 논리를 사용자 지정합니다. 사이트 페이지 분석 및 컨텐츠 Insight은 이 서비스를 사용하여 Analytics에서 보고서 데이터를 검색합니다.
 
 AnalyticsPageNameProvider 인터페이스는 구현해야 하는 두 가지 메서드를 정의합니다.
 

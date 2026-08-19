@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Cloud과 통합
-description: Adobe Experience Manager을 Adobe Experience Cloud과 통합하는 방법을 알아봅니다.
+title: Adobe Experience Cloud와 통합 사용
+description: Adobe Experience Manager을 Adobe Experience Cloud와 통합하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -11,14 +11,14 @@ role: Admin
 exl-id: 456bcdf5-3d43-43d8-b243-70095e0cf58c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 1%
+source-wordcount: '868'
+ht-degree: 2%
 
 ---
 
-# Adobe Experience Cloud과 통합{#integrating-with-the-adobe-marketing-cloud}
+# Adobe Experience Cloud와 통합 사용{#integrating-with-the-adobe-marketing-cloud}
 
-[Adobe Experience Cloud](https://business.adobe.com/kr/products/marketing-cloud/main.html)에는 성공적인 온라인 이니셔티브를 추진하기 위해 실행 가능한 실시간 데이터와 통찰력을 제공하는 강력한 웹 분석 및 웹 사이트 최적화 제품이 포함되어 있습니다. 온라인 비즈니스 최적화를 위한 통합 및 개방형 플랫폼을 제공합니다. 클라우드는 고객 확보, 전환 및 유지 노력과 콘텐츠 생성 및 배포를 최적화하는 고객 통찰력의 기능을 수집하고 활용하는 통합 애플리케이션으로 구성됩니다.
+[Adobe Experience Cloud](https://business.adobe.com/kr/products/marketing-cloud/main.html)에는 성공적인 온라인 이니셔티브를 추진하기 위해 실행 가능한 실시간 데이터와 통찰력을 제공하는 강력한 웹 분석 및 웹 사이트 최적화 제품이 포함되어 있습니다. 온라인 비즈니스 최적화를 위한 통합 및 개방형 플랫폼을 제공합니다. Cloud는 고객 insight의 기능을 수집 및 활용하여 고객 확보, 전환 및 유지 노력과 컨텐츠 생성 및 배포를 최적화하는 통합 애플리케이션으로 구성됩니다.
 
 Adobe Experience Manager(AEM)를 사용하면 Adobe Experience Cloud의 다음 제품과 원활하게 통합할 수 있습니다.
 
@@ -80,11 +80,11 @@ Adobe Experience Manager에서는 디지털 에셋을 Adobe Experience Manager�
 
 Adobe Experience Manager을 Dynamic Media Classic과 통합하는 방법에 대한 자세한 내용은 [Dynamic Media Classic과 통합](/help/sites-administering/scene7.md) 설명서를 참조하십시오.
 
-## Adobe Dynamic Tag Management과 통합 {#integrating-with-adobe-dynamic-tag-management}
+## Adobe Dynamic Tag Management와 통합 {#integrating-with-adobe-dynamic-tag-management}
 
 [Adobe Dynamic Tag Management](https://business.adobe.com/kr/products/experience-platform/adobe-experience-platform.html)은(는) 마케터에게 직관적인 도구를 제공하여 Adobe 및 타사 태그를 무제한으로 빠르고 쉽게 관리할 수 있도록 합니다. IT 리소스에 대한 의존도를 줄이면서 거의 모든 것을 온라인으로 최적화할 수 있는 더 많은 제어력과 유연성을 제공합니다.
 
-Dynamic Adobe 웹 속성을 사용하여 AEM 사이트를 추적할 수 있도록 [AEMTag Management 와 Dynamic Tag Management을 통합](/help/sites-administering/dtm.md)합니다.
+Dynamic Adobe 웹 속성을 사용하여 AEM 사이트를 추적할 수 있도록 [AEM과 Dynamic Tag Management을 통합](/help/sites-administering/dtm.md)합니다.
 
 ## Adobe Audience Manager과 통합 {#integrating-with-adobe-audience-manager}
 

@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 5c0bb817-28d5-47d4-bc4c-47aaa76a8421
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 2%
+source-wordcount: '668'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Dynamic Tag Management은 디지털 마케팅 도구를 활성화하는 �
 
    * **[!UICONTROL 웹 속성]** 탭을 선택한 다음 **[!UICONTROL 속성 추가]**&#x200B;를 클릭합니다.
 
-   * 필드를 적절하게 업데이트하고 **[!UICONTROL 속성 만들기]**&#x200B;를 클릭합니다. [설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko-KR)를 참조하십시오.
+   * 필드를 적절하게 업데이트하고 **[!UICONTROL 속성 만들기]**&#x200B;를 클릭합니다. [설명서](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko)를 참조하십시오.
 
    ![편집 웹 속성을 만듭니다](assets/Create-edit-web-property.png)
 
