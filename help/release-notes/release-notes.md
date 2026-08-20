@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0ce890503d43af340b6ee3c85b1b563613627c78
+source-git-commit: d4d05cf9f295e6c3740ebf1e3559b5d117898342
 workflow-type: tm+mt
-source-wordcount: '6749'
+source-wordcount: '6752'
 ht-degree: 26%
 
 ---
@@ -530,7 +530,6 @@ Adobe는 투명성을 보장하고 적절한 계획을 수립할 수 있도록 A
 
 | 영역 | 기능 | 대체 | 버전(SP) |
 | --- | --- | --- | --- |
-| Sites | 콘텐츠 조각 텍스트 요약 | 사용 가능한 대체 기능이 없습니다. | |
 | Quickstart | Mongo API | Mongo API는 이제 더 이상 사용되지 않으며 향후 릴리스에서 제거될 예정입니다. | 6.5 TS SP2 |
 | Sites | AEM Assets REST API의 콘텐츠 조각 지원 | AEM 6.5 LTS SP2가 콘텐츠 조각 및 모델 관리를 위한 최신 OpenAPI를 제공하므로 AEM Assets REST API의 이전 콘텐츠 조각 지원 엔드포인트는 이제 더 이상 사용되지 않습니다.<br>Adobe는 서비스 종료 공지가 있을 때까지 이러한 이전 엔드포인트를 사용할 수 있도록 유지합니다. Adobe에서는 더 이상 사용되지 않는 엔드포인트에 대한 추가 개선 사항을 계획하지 않습니다. | 6.5 LTS SP2 |
 | Sites | [SPA 편집기](/help/sites-developing/spa-overview.md) | AEM에서 헤드리스 콘텐츠 관리에 권장되는 편집기는 <br>- [범용 편집기](/help/sites-developing/universal-editor/introduction.md)(시각적 편집용) <br>- [콘텐츠 조각 편집기](/help/assets/content-fragments/content-fragments-managing.md)(양식 기반 편집용)입니다. | 6.5 LTS GA |
@@ -545,6 +544,7 @@ Adobe는 투명성을 보장하고 적절한 계획을 수립할 수 있도록 A
 
 | 영역 | 기능 | 대체 | 버전(SP) |
 | --- | --- | --- | --- |
+| Sites | 콘텐츠 조각 텍스트 요약 | 사용 가능한 대체 기능이 없습니다. | 6.5 LTS SP3 |
 | Commerce | AEM CIF Classic은 지원되지 않습니다. | [AEM CIF](/help/commerce/cif/migration.md)로 마이그레이션합니다. | 6.5 LTS GA |
 | 솔루션 | 소셜/커뮤니티는 지원되지 않습니다. | 사용 가능한 대체 기능이 없습니다. | 6.5 LTS GA |
 | Screens | Screens는 지원되지 않습니다. | 사용 가능한 대체 기능이 없습니다. | 6.5 LTS GA |
