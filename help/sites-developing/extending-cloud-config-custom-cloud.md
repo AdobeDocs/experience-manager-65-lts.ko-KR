@@ -1,5 +1,5 @@
 ---
-title: 사용자 지정 Cloud Service 만들기
+title: 사용자 지정 클라우드 서비스 만들기
 description: 기본 클라우드 서비스 세트는 사용자 지정 Cloud Service 유형으로 확장할 수 있습니다
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Developer
 exl-id: 7ae41982-8438-41a6-91f9-3b3b6755a39b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 11%
+source-wordcount: '404'
+ht-degree: 13%
 
 ---
 
-# 사용자 지정 Cloud Service 만들기{#creating-a-custom-cloud-service}
+# 사용자 지정 클라우드 서비스 만들기{#creating-a-custom-cloud-service}
 
 기본 클라우드 서비스 세트는 사용자 지정 Cloud Service 유형으로 확장할 수 있습니다. 이렇게 하면 사용자 지정 마크업을 구조화된 방식으로 페이지에 삽입할 수 있습니다. 주로 Google Analytics, Chartbeat 등과 같은 서드파티 분석 공급자에게 사용됩니다. 클라우드 서비스는 상위 페이지에서 하위 페이지로 상속되며, 모든 수준에서 상속을 중단할 수 있습니다.
 
@@ -83,12 +83,12 @@ ht-degree: 11%
    * **유형**: `cq:Dialog`
    * **속성**:
 
-      * **이름**: `title`
-      * **유형**: `String`
-      * **값**: `Google Analytics Config`
-      * **이름**: `xtype`
-      * **유형**: `String`
-      * **값**: `dialog`
+     * **이름**: `title`
+     * **유형**: `String`
+     * **값**: `Google Analytics Config`
+     * **이름**: `xtype`
+     * **유형**: `String`
+     * **값**: `dialog`
 
 1. `/apps/acs/analytics/components/googleanalyticspage/dialog` 아래에 노드 만들기:
 
@@ -96,9 +96,9 @@ ht-degree: 11%
    * **유형**: `cq:Widget`
    * **속성**:
 
-      * **이름**: `xtype`
-      * **유형**: `String`
-      * **값**: `tabpanel`
+     * **이름**: `xtype`
+     * **유형**: `String`
+     * **값**: `tabpanel`
 
 1. `/apps/acs/analytics/components/googleanalyticspage/dialog/items` 아래에 노드 만들기:
 
@@ -111,9 +111,9 @@ ht-degree: 11%
    * **유형**: `cq:Panel`
    * **속성**:
 
-      * **이름**: `title`
-      * **유형**: `String`
-      * **값**: `Config`
+     * **이름**: `title`
+     * **유형**: `String`
+     * **값**: `Config`
 
 1. `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1` 아래에 노드 만들기:
 
@@ -121,23 +121,23 @@ ht-degree: 11%
    * **유형**: `nt:unstructured`
    * **속성**:
 
-      * **이름**: `fieldLabel`
-      * **유형**: 문자열
-      * **값**: 계정 ID
+     * **이름**: `fieldLabel`
+     * **유형**: 문자열
+     * **값**: 계정 ID
 
-      * **이름**: `fieldDescription`
-      * **유형**: `String`
-      * **값**: `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
+     * **이름**: `fieldDescription`
+     * **유형**: `String`
+     * **값**: `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
 
-      * **이름**: `name`
-      * **유형**: `String`
-      * **값**: `./accountID`
-      * **이름**: `validateOnBlur`
-      * **유형**: `String`
-      * **값**: `true`
-      * **이름**: `xtype`
-      * **유형**: `String`
-      * **값**: `textfield`
+     * **이름**: `name`
+     * **유형**: `String`
+     * **값**: `./accountID`
+     * **이름**: `validateOnBlur`
+     * **유형**: `String`
+     * **값**: `true`
+     * **이름**: `xtype`
+     * **유형**: `String`
+     * **값**: `textfield`
 
 1. `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp`을(를) `/apps/acs/analytics/components/googleanalyticspage/body.jsp`(으)로 복사하고 `libs`을(를) 34행의 `apps`(으)로 변경하고 79행의 스크립트 참조를 정규화된 경로로 만듭니다.
 1. `/apps/acs/analytics/templates/` 아래에 템플릿 만들기:
@@ -147,8 +147,8 @@ ht-degree: 11%
    * **제목**= `Google Analytics Configuration` 사용
    * (**allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`)
    * (**allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`)
-   * **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` 포함(jcr:content 노드가 아닌 템플릿 노드에서)
-   * (포함: **cq:designPath** = `/etc/designs/cloudservices/googleanalytics`(jcr:content))
+   * (**sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage`)(jcr:content 노드가 아닌 템플릿 노드에서) 사용
+   * (**cq:designPath** = `/etc/designs/cloudservices/googleanalytics` 포함(jcr:content에서)
 
 1. 구성 요소 만들기: `/apps/acs/analytics/components/googleanalytics`.
 

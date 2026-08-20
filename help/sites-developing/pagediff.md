@@ -12,8 +12,8 @@ role: Developer
 exl-id: 74ac70c9-a774-4b35-b285-3feb425dac3a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 10%
+source-wordcount: '385'
+ht-degree: 12%
 
 ---
 
@@ -45,19 +45,19 @@ ht-degree: 10%
 
 * 이 기능은 AEM 제품에 대해 네임스페이스가 지정되지 않은 CSS 클래스를 사용합니다. 동일한 이름을 가진 다른 사용자 지정 CSS 클래스 또는 서드파티 CSS 클래스가 페이지에 포함된 경우 차이점 표시에 영향을 줄 수 있습니다.
 
-   * `html-added`
-   * `html-removed`
-   * `cq-component-added`
-   * `cq-component-removed`
-   * `cq-component-moved`
-   * `cq-component-changed`
+  * `html-added`
+  * `html-removed`
+  * `cq-component-added`
+  * `cq-component-removed`
+  * `cq-component-moved`
+  * `cq-component-changed`
 
 * diff는 클라이언트측이며 페이지 로드 시 실행되므로, 클라이언트측 diff 서비스가 실행된 후 DOM에 대한 모든 조정은 계산되지 않습니다. 이는 다음 항목에 영향을 줄 수 있습니다.
 
-   * AJAX을 사용하여 콘텐츠를 포함하는 구성 요소
-   * SPA (Single Page Applications)
-   * 사용자 상호 작용 시 DOM을 조작하는 JavaScript 기반 구성 요소입니다.
+  * AJAX을 사용하여 콘텐츠를 포함하는 구성 요소
+  * SPA (Single Page Applications)
+  * 사용자 상호 작용 시 DOM을 조작하는 JavaScript 기반 구성 요소입니다.
 
 >[!NOTE]
 >
->페이지 비교 비교는 유효한 cq:editConfig 노드가 있는 구성 요소에만 작동합니다.
+>페이지 비교 비교는 올바른 cq:editConfig 노드가 있는 구성 요소에서만 작동합니다.

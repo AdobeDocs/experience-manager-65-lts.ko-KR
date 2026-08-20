@@ -1,5 +1,5 @@
 ---
-title: Salesforce과 통합
+title: Salesforce와 통합
 description: Adobe Experience Manager(AEM)와 Salesforce 통합에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ role: Admin
 exl-id: 68003650-76d7-40b3-860b-70454c13211e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 3%
+source-wordcount: '1596'
+ht-degree: 4%
 
 ---
 
-# Salesforce과 통합 {#integrating-with-salesforce}
+# Salesforce와 통합 {#integrating-with-salesforce}
 
 Salesforce과 Adobe Experience Manager(AEM)를 통합하면 리드 관리 기능이 제공되고 Salesforce에서 즉시 제공하는 기존 기능을 사용합니다. Salesforce으로 가는 잠재 고객을 게시하고 Salesforce에서 직접 데이터에 액세스하는 구성 요소를 만들도록 AEM을 구성할 수 있습니다.
 
@@ -46,7 +46,7 @@ Salesforce과 통합하도록 AEM을 구성하려면 다음을 수행합니다.
 
 >[!CAUTION]
 >
->절차를 계속하기 전에 [Salesforce Force API](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip) 통합 패키지를 설치하십시오. 패키지를 사용하여 작업하는 방법에 대한 자세한 내용은 [패키지를 사용하여 작업하는 방법](/help/sites-administering/package-manager.md#package-share) 페이지를 참조하십시오.
+>절차를 계속하기 전에 [Salesforce Force API](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=2&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip) 통합 패키지를 설치하십시오. 패키지를 사용하여 작업하는 방법에 대한 자세한 내용은 [패키지를 사용하여 작업하는 방법](/help/sites-administering/package-manager.md#package-share) 페이지를 참조하십시오.
 
 1. AEM에서 **클라우드 서비스**(으)로 이동합니다. 타사 서비스에서 **Salesforce**&#x200B;의 **지금 구성**&#x200B;을 클릭합니다.
 
@@ -129,7 +129,7 @@ AEM 사용자를 Salesforce 리드로 내보내려면 다음을 수행하십시�
 
 Salesforce.com 내보내기 워크플로우를 구성하려면 다음 작업을 수행하십시오.
 
-1. `http://localhost:4502/cf#/etc/workflow/models/salesforce-com-export.html.`(으)로 이동
+1. 다음으로 이동 `http://localhost:4502/cf#/etc/workflow/models/salesforce-com-export.html.`
 
    ![chlimage_1-16](assets/chlimage_1-16.jpeg)
 
@@ -227,7 +227,7 @@ AEM은 주어진 기준에 따라 Salesforce에서 잠재 고객을 검색하는
 
 이 구성 요소를 사용하려면:
 
-1. 이 구성을 사용할 페이지로 이동합니다. 페이지 속성을 열고 **클라우드 서비스를 선택합니다.** **서비스 추가**&#x200B;를 클릭하고 **Salesforce** 및 적절한 구성을 선택한 다음 **확인**&#x200B;을 클릭합니다.
+1. 이 구성을 사용할 페이지로 이동합니다. 페이지 속성을 열고 **클라우드 서비스**&#x200B;를 선택합니다. **서비스 추가**&#x200B;를 클릭하고 **Salesforce** 및 적절한 구성을 선택한 다음 **확인**&#x200B;을 클릭합니다.
 
    ![chlimage_1-20](assets/chlimage_1-20.jpeg)
 

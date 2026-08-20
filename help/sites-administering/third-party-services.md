@@ -1,5 +1,5 @@
 ---
-title: 타사 서비스와 통합
+title: 서드파티 서비스와 통합
 description: AEM을 서드파티 서비스와 통합하는 방법에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Admin
 exl-id: a27cd5c7-c0ea-4b94-9d54-95b47671fb44
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 6%
+source-wordcount: '251'
+ht-degree: 12%
 
 ---
 
-# 타사 서비스와 통합{#integrating-with-third-party-services}
+# 서드파티 서비스와 통합{#integrating-with-third-party-services}
 
 AEM을 사용하면 다음과 같은 Adobe 이외 제품과 즉시 통합할 수 있습니다.
 
@@ -25,7 +25,7 @@ AEM을 사용하면 다음과 같은 Adobe 이외 제품과 즉시 통합할 수
 * ExactTarget - 이메일 마케팅
 * Facebook 연동 - 소셜 네트워킹
 * 범용 Analytics 코드 조각 - analytics
-* Microsoft® Translator 또는 기타 기계 번역 공급업체
+* ® Translator 또는 기타 기계 번역 공급업체
 * Pushwoosh 연결 - 앱 - 푸시 알림
 * Salesforce - 영업 및 CRM 소프트웨어
 * Twitter - 소셜 네트워킹
@@ -33,7 +33,7 @@ AEM을 사용하면 다음과 같은 Adobe 이외 제품과 즉시 통합할 수
 
 또한 AEM을 [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)과(와) 통합할 수도 있습니다.
 
-## Salesforce과 통합 {#integrating-with-salesforce}
+## Salesforce와 통합 {#integrating-with-salesforce}
 
 Salesforce.com은 소셜 기업으로의 전환을 선도하는 기업 클라우드 컴퓨팅 회사입니다.
 

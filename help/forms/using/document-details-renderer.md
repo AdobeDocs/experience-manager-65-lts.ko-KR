@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: e1612298-721d-499c-96c9-fd4418725106
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 0%
+source-wordcount: '675'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ AEM Forms 작업 영역에서는 여러 양식 유형이 원활하게 지원됩�
 
 PDF forms은 `PdfTaskForm View`에 의해 렌더링됩니다.
 
-XDP 양식이 PDF으로 렌더링되면 FormsAugmenter 서비스에 의해 `FormBridge` JavaScript™이 추가됩니다. 이 JavaScript™(PDF 양식 내)는 양식 제출, 양식 저장, 양식 오프라인 수행과 같은 작업을 수행하는 데 도움이 됩니다.
+XDP 양식이 PDF으로 렌더링되면 FormsAugmenter 서비스에 의해 `FormBridge` JavaScript™이 추가됩니다. 이 ™(PDF 양식 내)는 양식 제출, 양식 저장, 양식 오프라인 수행과 같은 작업을 수행하는 데 도움이 됩니다.
 
 AEM Forms 작업 영역에서 PDFTaskForm 보기는 `/lc/libs/ws/libs/ws/pdf.html`에 있는 중간 HTML을 통해 `FormBridge`JavaScript과 통신합니다. 흐름은 다음과 같습니다.
 
@@ -86,7 +86,7 @@ AEM Forms 작업 영역에서 이러한 보기는 `/lc/libs/ws/libs/ws/WSNextAda
 
 AEM Forms 작업 영역은 `window.global.postMessage([Message],[Payload])`에서 수신 대기합니다.
 
-[메시지]은(는) `SubmitMessage`(으)로 지정된 문자열일 수 있습니다.| `CancelMessage`| `ErrorMessage`| `runtimeMap`의 `actionEnabledMessage`입니다. 서드파티 애플리케이션은 필요에 따라 이 인터페이스를 사용하여 AEM Forms 작업 영역에 알려야 합니다. AEM Forms 작업 영역은 작업이 제출될 때 작업 창을 정리할 수 있음을 알아야 하므로 이 인터페이스를 사용해야 합니다.
+[메시지]은(는) `runtimeMap`에서 `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`(으)로 지정된 문자열일 수 있습니다. 서드파티 애플리케이션은 필요에 따라 이 인터페이스를 사용하여 AEM Forms 작업 영역에 알려야 합니다. AEM Forms 작업 영역은 작업이 제출될 때 작업 창을 정리할 수 있음을 알아야 하므로 이 인터페이스를 사용해야 합니다.
 
 **AEM Forms 작업 영역과 타사 응용 프로그램 통신**
 

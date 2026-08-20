@@ -9,8 +9,8 @@ feature: Adaptive Forms
 exl-id: 3f673798-7557-4cba-96b5-2f326e7e73a9
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 0%
+source-wordcount: '913'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **하이브리드 도메인**: 이 유형의 도메인은 타사 스토리지 시스템에 연결되어 있지 않습니다. 대신 사용자 및 그룹이 로컬로 생성되고 사용자 관리 데이터베이스에 상주합니다. 로컬 도메인과 달리 하이브리드 도메인은 LDAP, Kerberos, SAML 또는 사용자 지정 인증 공급자인 외부 인증 공급자를 사용합니다.
 
-**엔터프라이즈 도메인**: LDAP 디렉터리와 같은 타사 스토리지 시스템에 있는 사용자 및 그룹으로 구성됩니다. User Management에서 타사 스토리지 시스템에 쓰지 않습니다. 대신 사용자 관리는 사용자 및 그룹 정보를 사용자 관리 데이터베이스와 동기화합니다. 또한 엔터프라이즈 도메인은 LDAP, Kerberos, SAML 또는 사용자 지정 인증 공급자인 외부 인증 공급자를 사용합니다.
+**엔터프라이즈 도메인**: LDAP 디렉터리와 같은 타사 스토리지 시스템에 있는 사용자 및 그룹으로 구성됩니다. 사용자 관리는 서드파티 스토리지 시스템에 기록하지 않습니다. 대신 사용자 관리는 사용자 및 그룹 정보를 사용자 관리 데이터베이스와 동기화합니다. 또한 엔터프라이즈 도메인은 LDAP, Kerberos, SAML 또는 사용자 지정 인증 공급자인 외부 인증 공급자를 사용합니다.
 
 <!-- Fix broken links For more information about how user management works and configured, see AEM Forms JEE administration help. -->
 
@@ -111,7 +111,7 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 >[!NOTE]
 >
->다음 명령은 My SQL 및 IBM® DB2® 데이터베이스에서 데이터베이스 테이블 이름을 사용합니다. Oracle 및 MS® SQL 데이터베이스에서 이러한 명령을 실행할 때 명령에서 다음 테이블 이름을 바꿉니다.
+>다음 명령은 My SQL 및 ® DB2® 데이터베이스에서 데이터베이스 테이블 이름을 사용합니다. Oracle 및 MS® SQL 데이터베이스에서 이러한 명령을 실행할 때 명령에서 다음 테이블 이름을 바꿉니다.
 >
 >* `EdcPrincipalLocalAccountEntity`을(를) `EdcPrincipalLocalAccount`(으)로 바꾸기
 >
