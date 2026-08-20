@@ -68,7 +68,7 @@ DocAssurance 서비스를 사용하여 다음 작업을 수행할 수 있습니�
 
 >[!NOTE]
 >
->이 모든 서비스는 Javadoc을 URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)에서 찾을 수 있는 입력 매개 변수로 Document 개체를 사용합니다.
+>이 모든 서비스는 Javadoc을 URL [https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/index.html)에서 찾을 수 있는 입력 매개 변수로 Document 개체를 사용합니다.
 
 ### 보이지 않는 서명 필드 추가 {#adding-an-invisible-signature-field}
 
