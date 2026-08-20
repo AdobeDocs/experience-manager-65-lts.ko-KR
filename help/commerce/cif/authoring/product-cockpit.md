@@ -7,7 +7,7 @@ role: Admin, Developer
 exl-id: c3a8c33d-2ae7-4a90-862f-3f7faf7b4eb0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ AEM에서 제품 카탈로그를 구성해야 합니다. 자세한 내용은 [�
 
 ### Commerce 탭 {#tabs}
 
-일반 및 변형 탭에는 상거래 백엔드에서 가져오는 사전 정의된 상거래 속성이 표시됩니다. 이 데이터(포함) 레코드 시스템이 상거래 백엔드이므로 variants)는 AEM에서 읽기 전용 데이터입니다. 변형 탭은 변형이 있는 제품에만 표시되며 모든 변형 목록을 표시합니다.
+일반 및 변형 탭에는 상거래 백엔드에서 가져오는 사전 정의된 상거래 속성이 표시됩니다. 레코드 시스템이 상거래 백엔드이므로 이 데이터(변형 포함)는 AEM에서 읽기 전용 데이터입니다. 변형 탭은 변형이 있는 제품에만 표시되며 모든 변형 목록을 표시합니다.
 
 ![카탈로그 속성](/help/commerce/cif/assets/catalog-properties.png)
 

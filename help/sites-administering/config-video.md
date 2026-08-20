@@ -11,8 +11,8 @@ role: Admin
 exl-id: 0eac1568-cddb-4d26-b04c-78a2681cf44a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 1%
+source-wordcount: '534'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe에서는 대신 [핵심 구성 요소 포함 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=ko)를 사용하는 것이 좋습니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe에서는 대신 [핵심 구성 요소 포함 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html)를 사용하는 것이 좋습니다.
 
 >[!CAUTION]
 >

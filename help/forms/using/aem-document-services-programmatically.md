@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: 5c6fa5ae-ac28-4d92-9123-f4f1404bdc4f
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6439'
-ht-degree: 1%
+source-wordcount: '6510'
+ht-degree: 2%
 
 ---
 
@@ -68,7 +68,7 @@ DocAssurance 서비스를 사용하여 다음 작업을 수행할 수 있습니�
 
 >[!NOTE]
 >
->이 모든 서비스는 Javadoc을 URL [https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/index.html)에서 찾을 수 있는 입력 매개 변수로 Document 개체를 사용합니다.
+>이 모든 서비스는 Javadoc을 URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)에서 찾을 수 있는 입력 매개 변수로 Document 개체를 사용합니다.
 
 ### 보이지 않는 서명 필드 추가 {#adding-an-invisible-signature-field}
 
@@ -1373,7 +1373,7 @@ secureDocument를 사용하면 PDF 문서를 개별적으로 또는 특정 순�
 
 Reader 확장 Java 클라이언트 API 및 웹 서비스를 사용하여 PDF 문서에 사용 권한을 적용할 수 있습니다. 사용 권한은 양식에 주석을 추가하거나 양식 필드를 채우고 양식을 저장하는 기능과 같이 Acrobat에서 기본적으로 사용할 수 있지만 Adobe Reader에서는 사용할 수 없는 기능에 관련되어 있습니다. 사용 권한이 적용된 PDF 문서를 권한 사용 문서라고 합니다. Adobe Reader에서 권한이 활성화된 문서를 여는 사용자는 특정 문서에 대해 활성화된 작업을 수행할 수 있습니다.
 
-인증서를 사용하여 Reader 문서를 확장하려면 먼저 PDF AEM 키 저장소에 인증서를 추가해야 합니다.
+인증서를 사용하여 Reader 문서를 확장하려면 먼저 PDF 키 저장소에 인증서를 추가해야 합니다.
 
 **PDF 문서에 디지털 서명**
 
@@ -1458,7 +1458,7 @@ secureDocument(Document inDoc,
  </tbody>
 </table>
 
-Reader **샘플 1**: 이 샘플은 암호 암호화, 서명 필드 인증 및 PDF 문서 확장 수행에 사용됩니다.
+**샘플 1**: 이 샘플은 암호 암호화, 서명 필드 인증 및 PDF 문서 확장 수행에 사용됩니다.
 
 ```java
 /*************************************************************************
@@ -1760,7 +1760,7 @@ public class PassEncryptCertifyExtend {
 }
 ```
 
-Reader **샘플 2**: 이 샘플은 PKI 암호화, 서명 필드 서명 및 PDF 문서 확장 수행에 사용됩니다.
+**샘플 2**: 이 샘플은 PKI 암호화, 서명 필드 서명 및 PDF 문서 확장 수행에 사용됩니다.
 
 ```java
 /*************************************************************************
@@ -4288,7 +4288,7 @@ String outputFolder="C:/Output";
   }
 ```
 
-## Forms 서비스 {#forms-service}
+## 양식 서비스 {#forms-service}
 
 Forms 서비스는 대화형 PDF 양식에서 데이터를 가져오고 내보내는 API를 제공합니다. 대화형 PDF 양식은 사용자로부터 정보를 표시하고 수집하는 데 사용되는 하나 이상의 필드가 포함된 PDF 문서입니다. 이 서비스는 다음 API를 지원합니다.
 
@@ -4456,14 +4456,14 @@ private File importData(File inDoc, File inXML)
 
 ## PDF Generator 서비스 {#pdfgeneratorservice}
 
-PDF Generator 서비스는 기본 파일 형식을 PDF으로 변환하는 API를 제공합니다. 또한 PDF을 다른 파일 형식으로 변환하고 PDF 문서의 크기를 최적화합니다.
+PDF Generator 서비스는 기본 파일 형식을 PDF으로 변환하는 API를 제공합니다. 또한 PDF를 다른 파일 형식으로 변환하고 PDF 문서 크기를 최적화합니다.
 
 ### GeneratePDF서비스 {#generatepdfservice}
 
 GeneratePDFService는 .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf(더 이상 사용되지 않음), .jpg, .bmp, .tif, .png, .html 및 기타 여러 파일 형식 등의 다양한 파일 형식을 PDF으로 변환할 수 있는 API를 제공합니다. 또한 PDF을 다양한 파일 형식으로 내보내고 PDF를 최적화할 수 있는 API를 제공합니다. 이 서비스는 다음 API를 지원합니다.
 
 * **createPDF**: 지원되는 파일 형식을 PDF 문서로 변환합니다. Microsoft Word, Microsoft PowerPoint, Microsoft Excel 및 Microsoft 프로젝트와 같은 파일 형식을 지원합니다. 이러한 애플리케이션 외에도 모든 서드파티 일반 PDF 생성 애플리케이션 유형을 API에 연결할 수도 있습니다.
-* **exportPDF**: PDF 문서를 지원되는 파일 형식으로 변환합니다. 이 메서드는 PDF을 입력으로 수락하고 PDF의 콘텐츠를 지정된 파일 형식 형식으로 내보냅니다. PDF 문서를 Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01(CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word 문서( doc, docx) Microsoft Excel 통합 문서( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript ps(), Rich Text Format( rtf), Text(Accessible)( txt(Plain)( txt TIFF tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB)로 내보낼 수 있습니다 a-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF PDF/A-3b(sRGB) 형식 PDF 출력에 대해 [사용자 지정 Preflight 프로필](https://helpx.adobe.com/kr/acrobat/using/preflight-profiles-acrobat-pro.html)을 지정할 수도 있습니다.
+* **exportPDF**: PDF 문서를 지원되는 파일 형식으로 변환합니다. 이 메서드는 PDF을 입력으로 수락하고 PDF의 콘텐츠를 지정된 파일 형식 형식으로 내보냅니다. PDF 문서를 Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01(CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word 문서( doc, docx) Microsoft Excel 통합 문서( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript ps(), Rich Text Format( rtf), Text(Accessible)( txt(Plain)( txt TIFF tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB)로 내보낼 수 있습니다 a-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB) 형식 PDF 출력에 대해 [사용자 지정 Preflight 프로필](https://helpx.adobe.com/kr/acrobat/using/preflight-profiles-acrobat-pro.html)을 지정할 수도 있습니다.
 
 * **optimizePDF**: PDF 문서를 최적화하고 PDF 문서를 한 유형에서 다른 유형으로 변환합니다. 메서드는 PDF 문서를 입력으로 수락합니다.
 * **htmlToPdf2**: HTML 페이지를 PDF 문서로 변환합니다. HTML 페이지의 URL을 입력으로 허용합니다.

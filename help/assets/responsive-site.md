@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 053efcc4-35dd-49c8-9645-ae29aa492352
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '343'
 ht-degree: 13%
 
 ---
@@ -32,13 +32,13 @@ ht-degree: 13%
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
-1. Select a responsive image preset. The **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons appear.
+1. 반응형 이미지 사전 설정을 선택하세요. The **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons appear.
 
    ![chlimage_1-409](assets/chlimage_1-208.png)
 
    >[!NOTE]
    >
-   >The selected asset *and* the selected image preset or viewer preset must be published to make the **[!UICONTROL URL]** or **[!UICONTROL RESS]** buttons available.
+   >선택한 에셋 *그리고* 선택한 이미지 사전 설정 또는 뷰어 프리셋이 게시되어야 **[!UICONTROL URL]** 또는 **[!UICONTROL RESS]** 버튼을 사용할 수 있습니다.
    >
    >Dynamic Media - 하이브리드 모드에서는 이미지 사전 설정을 게시해야 합니다. Dynamic Media - Scene7 모드에서는 이미지 사전 설정을 자동으로 게시합니다.
 

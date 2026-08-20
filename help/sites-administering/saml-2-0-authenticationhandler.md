@@ -11,8 +11,8 @@ role: Admin
 exl-id: ee438c55-88cd-4f55-873e-16376b36fa7b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 2%
+source-wordcount: '864'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ AEM은 [SAML](https://saml.xml.org/saml-specifications) 인증 처리기와 함�
 
 >[!NOTE]
 >
->[AEM 및 SAML 통합 데모](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=ko)를 참조하십시오.
+>[AEM 및 SAML 통합 데모](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html)를 참조하십시오.
 
 ## SAML 2.0 인증 핸들러 구성 {#configuring-the-saml-authentication-handler}
 

@@ -11,7 +11,7 @@ role: Developer
 exl-id: 7252a473-160a-412d-a9cb-393493426d68
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 업그레이드 디자인 {#design-for-upgrades}
 
-기본 동작을 확장할 때는 업그레이드를 염두에 두는 것이 중요합니다. 항상 /apps 디렉토리에 사용자 정의를 적용하고 /libs 디렉토리에 있는 해당 노드의 맨 위에 오버레이하거나 sling:resourceSuperType을 사용하여 기본 동작을 확장합니다. 새 AEM 버전을 지원하려면 일부 수정이 필요할 수 있지만, 이 방법을 따를 경우 새 버전이 사용자 지정 사항을 덮어쓰면 안 됩니다.
+기본 동작을 확장할 때는 업그레이드를 염두에 두는 것이 중요합니다. 항상 /apps 디렉터리에 사용자 지정을 적용하고 /libs 디렉터리의 해당 노드 위에 오버레이하거나 sling:resourceSuperType을 사용하여 기본 제공 동작을 확장하십시오. 새 AEM 버전을 지원하려면 일부 수정이 필요할 수 있지만, 이 방법을 따를 경우 새 버전이 사용자 지정 사항을 덮어쓰면 안 됩니다.
 
 ### 가능한 경우 템플릿 및 구성 요소 재사용 {#reuse-template-and-components-when-possible}
 

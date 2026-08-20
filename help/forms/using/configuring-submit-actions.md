@@ -10,20 +10,20 @@ role: Admin, User, Developer
 exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2602'
-ht-degree: 48%
+source-wordcount: '2700'
+ht-degree: 49%
 
 ---
 
 # 제출 작업 구성 {#configuring-the-submit-action}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 적용 대상 {#applies-to}
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=ko)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html)를 참조하십시오.
 
 
 ## 제출 액션 소개 {#introduction-to-submit-actions}
@@ -43,7 +43,7 @@ AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experie
 * 이메일을 통해 PDF 보내기
 * Forms Workflow 호출
 * 양식 데이터 모델을 사용하여 제출
-* Forms 포털 제출 액션
+* Forms 포털 제출 작업
 * AEM 워크플로우 호출
 * Power Automate에 제출
 
@@ -54,7 +54,7 @@ AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experie
 >[!NOTE]
 >
 >[AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM 폴더인지 확인합니다.
->&#x200B;>존재함. 첨부 파일을 임시로 저장하려면 디렉토리가 필요합니다. 디렉토리가 없으면 생성합니다.
+>존재함. 첨부 파일을 임시로 저장하려면 디렉토리가 필요합니다. 디렉토리가 없으면 생성합니다.
 
 >[!CAUTION]
 >
@@ -133,7 +133,7 @@ Forms Workflow에 제출 액션을 구성하는 방법에 대한 자세한 내�
 
 양식 데이터 모델에 대한 자세한 내용은 [AEM Forms 데이터 통합](../../forms/using/data-integration.md)을 참조하십시오.
 
-## Forms 포털 제출 액션 {#forms-portal-submit-action}
+## Forms 포털 제출 작업 {#forms-portal-submit-action}
 
 **Forms 포털 제출 액션** 옵션을 사용하면 AEM Forms 포털에서 양식 데이터를 사용할 수 있습니다.
 
@@ -166,36 +166,36 @@ Forms 포털 및 제출 액션에 대한 자세한 내용은 [초안 및 제출 
 * 캡처된 데이터에 대해 복잡한 계산 수행
 * 미리 정의된 일정에 따라 적응형 양식 데이터를 스토리지 시스템에 저장
 
-적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 작업을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 Microsoft® Power Automate로 보내려면 [AEM Forms 인스턴스와 Microsoft® Power Automate를 연결](/help/forms/using/forms-microsoft-power-automate-integration.md)하십시오
+적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 작업을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 ® Power Automate로 보내려면 [AEM Forms 인스턴스와 Microsoft® Power Automate를 연결](/help/forms/using/forms-microsoft-power-automate-integration.md)하십시오
 
 성공적으로 구성한 후 [Microsoft® Power Automate 흐름 호출](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 제출 액션을 사용하여 데이터를 Power Automate 흐름으로 전송합니다.
 
-## Microsoft® SharePoint 목록에 제출{#submit-to-sharedrive}
+## ® SharePoint 목록에 제출{#submit-to-sharedrive}
 
 >[!NOTE]
 >
-> Microsoft® SharePoint 목록에 제출 기능은 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
+> ® SharePoint 목록에 제출 기능은 AEM 6.5 Forms 서비스 팩 19(6.5.19.0)와 함께 도입되었습니다.
 
-**[!UICONTROL SharePoint에 제출]** 제출 액션은 적응형 양식을 Microsoft® SharePoint 저장소와 연결합니다. 양식 데이터 파일, 첨부 파일 또는 기록 문서를 연결된 Microsoft® Sharepoint Storage에 제출할 수 있습니다.
+**[!UICONTROL SharePoint에 제출]** 제출 액션은 적응형 양식을 Microsoft® SharePoint 저장소와 연결합니다. 양식 데이터 파일, 첨부 파일 또는 기록 문서를 연결된 ® Sharepoint Storage에 제출할 수 있습니다.
 
-### Microsoft® SharePoint 목록에 적응형 양식 연결 {#connect-af-sharepoint-list}
+### ® SharePoint 목록에 적응형 양식 연결 {#connect-af-sharepoint-list}
 
-적응형 양식을 Microsoft® SharePoint 목록에 연결하려면:
+적응형 양식을 ® SharePoint 목록에 연결하려면:
 
 1. [SharePoint 목록 구성 만들기](#create-sharepoint-list-configuration): AEM Forms을 Microsoft® Sharepoint 목록 저장소에 연결합니다.
-1. [적응형 양식에서 **양식 데이터 모델을 사용하여 제출** 제출 액션을 사용](#use-submit-using-fdm): 적응형 양식 데이터를 구성된 Microsoft® SharePoint으로 보냅니다.
+1. [적응형 양식에서 **양식 데이터 모델을 사용하여 제출** 제출 액션을 사용](#use-submit-using-fdm): 적응형 양식 데이터를 구성된 ® SharePoint으로 보냅니다.
 
 #### SharePoint 목록 구성 만들기 {#create-sharepoint-list-configuration}
 
 AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 
-1. **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL Microsoft® SharePoint]**&#x200B;로 이동합니다.
+1. **[!UICONTROL 도구]** > **[!UICONTROL 클라우드 서비스]** > **[!UICONTROL ® SharePoint]**&#x200B;로 이동합니다.
 1. **구성 컨테이너**&#x200B;를 선택합니다. 선택한 구성 컨테이너에 구성을 저장합니다.
 1. 드롭다운 목록에서 **[!UICONTROL 만들기]** > **[!UICONTROL SharePoint 목록]**&#x200B;을 클릭합니다. SharePoint 구성 마법사가 나타납니다.
 1. **[!UICONTROL 제목]**, **[!UICONTROL 클라이언트 ID]**, **[!UICONTROL 클라이언트 보안]** 및 **[!UICONTROL OAuth URL]**&#x200B;을 지정합니다. OAuth URL의 클라이언트 ID, 클라이언트 보안, 테넌트 ID를 검색하는 방법에 대한 자세한 내용은 [Microsoft® Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)을 참조하십시오.
    * Microsoft® Azure 포털에서 앱의 `Client ID` 및 `Client Secret`를 검색할 수 있습니다.
    * Microsoft® Azure 포털에서 리디렉션 URI를 `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`로 추가합니다. `[author-instance]`를 작성자 인스턴스의 URL로 대체합니다.
-   * 읽기/쓰기 권한을 제공하려면 `offline_access`Microsoft® 그래프`Sites.Manage.All` 탭에서 API 권한 **및**&#x200B;을(를) 추가하십시오. SharePoint 데이터와 원격으로 상호 작용하려면 `AllSites.Manage`Sharepoint **탭에** 권한을 추가하십시오.
+   * 읽기/쓰기 권한을 제공하려면 **® 그래프** 탭에서 API 권한 `offline_access` 및 `Sites.Manage.All`을(를) 추가하십시오. SharePoint 데이터와 원격으로 상호 작용하려면 **Sharepoint** 탭에 `AllSites.Manage` 권한을 추가하십시오.
    * OAuth URL 사용: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Microsoft® Azure 포털에서 `<tenant-id>`를 앱의 `tenant-id`로 대체합니다.
 
      >[!NOTE]
@@ -204,22 +204,22 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 
 1. **[!UICONTROL 연결]**&#x200B;을 클릭합니다. 연결이 완료되면 `Connection Successful` 메시지가 나타납니다.
 1. 드롭다운 목록에서 **[!UICONTROL SharePoint 사이트]** 및 **[!UICONTROL SharePoint 목록]**&#x200B;을 선택합니다.
-1. Microsoft® SharePointList에 대한 클라우드 구성을 만들려면 **[!UICONTROL 만들기]**&#x200B;를 탭하세요.
+1. ® SharePointList에 대한 클라우드 구성을 만들려면 **[!UICONTROL 만들기]**&#x200B;를 탭하세요.
 
 #### 적응형 양식에서 양식 데이터 모델을 사용하여 제출 {#use-submit-using-fdm}
 
 적응형 양식에서 생성된 SharePoint 목록 구성을 사용하여 데이터나 생성된 기록 문서를 SharePoint 목록에 저장할 수 있습니다. 적응형 양식에서 SharePoint 목록 스토리지 구성을 다음으로 사용하려면 다음 단계를 수행하십시오.
 
-1. [Microsoft을 사용하여 양식 데이터 모델 만들기](/help/forms/using/create-form-data-model.md)
+1. [® SharePoint 목록 구성을 사용하여 양식 데이터 모델 만들기](/help/forms/using/create-form-data-model.md)
 1. [데이터를 검색하고 전송하도록 양식 데이터 모델 구성](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [적응형 양식 만들기](/help/forms/using/create-adaptive-form.md).
 1. [양식 데이터 모델을 사용하여 제출 작업 구성](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
 
-양식을 제출하면 데이터가 지정된 Microsoft® Sharepoint 목록 저장소에 저장됩니다.
+양식을 제출하면 데이터가 지정된 ® Sharepoint 목록 저장소에 저장됩니다.
 
 >[!NOTE]
 >
-> Microsoft® SharePoint 목록에서는 다음 열 유형이 지원되지 않습니다.
+> ® SharePoint 목록에서는 다음 열 유형이 지원되지 않습니다.
 > * 이미지 열
 > * 메타데이터 열
 > * 개인 열
@@ -270,6 +270,6 @@ AEM Forms을 Microsoft® Sharepoint 목록에 연결하려면:
 
 ## 제출 액션 시 오류 처리 {#error-handling-on-submit-action}
 
-Experience Manager 보안 및 강화 지침의 일부로 404.jsp 및 500.jsp와 같은 사용자 지정 오류 페이지를 구성합니다. 이러한 처리기는 양식 404 또는 500 오류를 제출할 때 호출됩니다. 이러한 오류 코드가 Publish 노드에서 트리거되면 핸들러도 호출됩니다.
+Experience Manager 보안 및 강화 지침의 일부로 404.jsp 및 500.jsp와 같은 사용자 지정 오류 페이지를 구성합니다. 이러한 처리기는 양식 404 또는 500 오류를 제출할 때 호출됩니다. 게시 노드에서 이러한 오류 코드가 트리거되면 핸들러가 호출되기도 합니다.
 
 자세한 내용은 [오류 처리기에 표시된 페이지 사용자 지정](/help/sites-developing/customizing-errorhandler-pages.md)을 참조하십시오.

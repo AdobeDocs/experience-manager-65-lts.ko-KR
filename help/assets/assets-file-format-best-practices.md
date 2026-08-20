@@ -8,12 +8,12 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 28765aeb-1303-40da-bde0-df1b4c625d37
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 0%
+source-wordcount: '481'
+ht-degree: 1%
 
 ---
 
-# Assets 파일 형식 우수 사례 {#assets-file-format-best-practices}
+# 자산 파일 형식 모범 사례 {#assets-file-format-best-practices}
 
 [!DNL Adobe Experience Manager Assets]은(는) 사용자의 다양한 파일 지원 요구 사항을 충족하기 위해 많은 독점 및 타사 파일 형식 라이브러리를 지원합니다. 지원되는 Adobe 라이브러리에는 [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer 및 [!DNL Adobe InDesign Server]이(가) 있습니다. 또한 [!DNL Experience Manager Assets]은(는) [!DNL ImageMagick], [!DNL TwelveMonkeys] 등을 비롯한 서드파티 라이브러리를 지원합니다.
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## Adobe PDF 래스터라이저 라이브러리 {#adobe-pdf-rasterizer-library}
 
-Adobe 최상의 결과를 얻으려면 다음 파일에 Adobe PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
+최상의 결과를 얻으려면 다음 파일에 Adobe PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
 
 * 무겁고 콘텐츠 집약적인 PDF 파일
 * 썸네일이 포함된 AI 파일이 즉시 생성되지 않음

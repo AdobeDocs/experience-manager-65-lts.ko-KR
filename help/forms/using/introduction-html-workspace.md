@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 작업 영역 소개
+title: AEM Forms Workspace 소개
 description: LiveCycle AEM Forms workspace를 사용하여 비즈니스 프로세스 자동화를 통해 조직 효율성을 높이고 페이퍼리스 사무실을 구축할 수 있습니다.
 contentOwner: robhagat
 content-type: reference
@@ -12,14 +12,14 @@ role: Admin, User, Developer
 exl-id: 36579aef-43b5-4fd4-a033-043ec6341b32
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 0%
+source-wordcount: '213'
+ht-degree: 4%
 
 ---
 
-# AEM Forms 작업 영역 소개{#introduction-to-aem-forms-workspace}
+# AEM Forms Workspace 소개{#introduction-to-aem-forms-workspace}
 
-Forms 워크플로우는 중요한 문서 및 양식 관련 비즈니스 프로세스를 자동화하고 가시화하여 조직의 효율성을 높입니다. 프로세스 관리 모듈을 사용하면 사람, 시스템, 컨텐츠 및 비즈니스 규칙 등 온라인 또는 오프라인에서 액세스할 수 있는 간소화된 통합 워크플로우를 구축할 수 있습니다.Forms 워크플로에는 AEM Forms 작업 영역이 포함됩니다. AEM Forms workspace는 작업 영역을 확장 및 통합하여 보다 사용자 친화적인 방식으로 만들 수 있는 새로운 기능을 추가합니다.
+Forms 워크플로우는 중요한 문서 및 양식 관련 비즈니스 프로세스를 자동화하고 가시화하여 조직의 효율성을 높입니다. 프로세스 관리 모듈을 사용하면 사람, 시스템, 컨텐츠, 비즈니스 규칙 등 온라인 또는 오프라인으로 액세스할 수 있는 간소화된 통합 워크플로우를 구축할 수 있습니다.Forms 워크플로에는 AEM Forms 작업 공간이 포함됩니다. AEM Forms workspace는 작업 영역을 확장 및 통합하여 보다 사용자 친화적인 방식으로 만들 수 있는 새로운 기능을 추가합니다.
 
 AEM Forms workspace는 더 많은 장치 및 양식 요인과 호환됩니다. Flash® Player 및 Adobe® Reader®가 없는 클라이언트에서 작업을 관리할 수 있습니다. PDF forms 외에도 HTML Forms의 렌디션을 용이하게 합니다.
 
