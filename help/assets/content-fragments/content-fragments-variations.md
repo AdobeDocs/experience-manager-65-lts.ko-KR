@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: fd7199ca5efa15df0fd014b7a0cfc52cbd7173fe
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 59%
+source-wordcount: '2078'
+ht-degree: 58%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 59%
 
 **변형** 탭에서 다음을 수행할 수 있습니다.
 
-* 조각에 대한 [콘텐츠 입력](#authoring-your-content),
-* [마스터](#managing-variations) 콘텐츠의 **변형 만들기 및 관리**
+* 조각에 대한 [콘텐츠 입력](#authoring-your-content)
+* **기본** 컨텐츠의 [변형 만들기 및 관리](#managing-variations)
 
 편집 중인 데이터 유형에 따라 다양한 다른 작업을 수행하십시오. 예를 들면 다음과 같습니다.
 
@@ -30,8 +30,6 @@ ht-degree: 59%
 * [콘텐츠 업로드](#uploading-content)
 
 * [주요 통계 보기](#viewing-key-statistics)(여러 줄 텍스트에 대한 정보)
-
-* [텍스트 요약](#summarizing-text)
 
 * [변형을 마스터 콘텐츠와 동기화](#synchronizing-with-master)
 
@@ -51,22 +49,22 @@ ht-degree: 59%
 
 * **변형** 탭에서 직접 콘텐츠를 편집합니다. 각 데이터 유형은 다음 예와 같이 다양한 편집 옵션을 제공합니다.
 
-   * **여러 줄 텍스트** 필드의 경우 [전체 화면 편집기](#full-screen-editor)를 열어 다음을 수행할 수도 있습니다.
+  * **여러 줄 텍스트** 필드의 경우 [전체 화면 편집기](#full-screen-editor)를 열어 다음을 수행할 수도 있습니다.
 
-      * [형식](#formats) 선택
-      * 더 많은 편집 옵션 보기([리치 텍스트](#rich-text) 형식)
-      * 다양한 [작업](#actions) 액세스
+    * [형식](#formats) 선택
+    * 더 많은 편집 옵션 보기([리치 텍스트](#rich-text) 형식)
+    * 다양한 [작업](#actions) 액세스
 
-   * **조각 참조** 필드의 경우 모델 정의에 따라 [콘텐츠 조각 편집](#fragment-references-edit-content-fragment) 옵션을 사용할 수 있습니다.
+  * **조각 참조** 필드의 경우 모델 정의에 따라 [콘텐츠 조각 편집](#fragment-references-edit-content-fragment) 옵션을 사용할 수 있습니다.
 
 * 현재 변형에 **태그**&#x200B;을(를) 할당합니다. 태그를 추가, 업데이트 및 제거할 수 있습니다.
 
-   * [태그](/help/sites-authoring/tags.md)은(는) 콘텐츠 분류 및 분류법에 사용될 수 있으므로 조각을 구성할 때 강력합니다. 태그는 태그별로 콘텐츠를 찾고 일괄 작업을 적용하는 데 사용할 수 있습니다.
+  * [태그](/help/sites-authoring/tags.md)은(는) 콘텐츠 분류 및 분류법에 사용될 수 있으므로 조각을 구성할 때 강력합니다. 태그는 태그별로 콘텐츠를 찾고 일괄 작업을 적용하는 데 사용할 수 있습니다.
 
-      * 태그 변형이 강조 표시된 조각을 반환하는 태그를 검색합니다.
-      * 변형 이름을 사용하는 대신 변형 태그를 사용하여 특정 CDN(Content Delivery Network) 프로필(CDN 캐싱용)의 변형을 그룹화할 수도 있습니다.
+    * 태그 변형이 강조 표시된 조각을 반환하는 태그를 검색합니다.
+    * 변형 이름을 사용하는 대신 변형 태그를 사용하여 특정 CDN(Content Delivery Network) 프로필(CDN 캐싱용)의 변형을 그룹화할 수도 있습니다.
 
-     예를 들어 관련 조각에 “크리스마스 론치“로 태그를 지정하여 하위 집합으로만 검색할 수 있도록 하거나, 새 폴더에서 향후 실행 시 사용할 수 있도록 복사할 수 있습니다.
+    예를 들어 관련 조각에 “크리스마스 론치“로 태그를 지정하여 하위 집합으로만 검색할 수 있도록 하거나, 새 폴더에서 향후 실행 시 사용할 수 있도록 복사할 수 있습니다.
 
   >[!NOTE]
   >
@@ -101,8 +99,6 @@ ht-degree: 59%
 
 * [마스터와 동기화](#synchronizing-with-master)(변형 편집 시)
 
-* [텍스트 요약](#summarizing-text)
-
 ### 형식 {#formats}
 
 여러 줄 텍스트를 편집하는 옵션은 선택한 형식에 따라 다릅니다.
@@ -130,10 +126,10 @@ ht-degree: 59%
 * 단락 스타일: 단락, 제목 1/2/3
 * [자산 삽입](#inserting-assets-into-your-fragment)
 * 전체 화면 편집기를 엽니다. 여기에서 다음 형식 옵션을 사용할 수 있습니다.
-   * 검색
-   * 찾기/바꾸기
-   * 맞춤법 검사기
-   * [주석](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+  * 검색
+  * 찾기/바꾸기
+  * 맞춤법 검사기
+  * [주석](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [콘텐츠 조각 삽입](#inserting-content-fragment-into-your-fragment): **여러 줄 텍스트** 필드가 **조각 참조 허용**&#x200B;으로 구성된 경우 사용할 수 있습니다.
 
 [작업](#actions)은 전체 화면 편집기에서 액세스할 수도 있습니다.
@@ -216,60 +212,6 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 ### 콘텐츠 업로드 {#uploading-content}
 
 컨텐츠 조각 작성 프로세스를 간소화하기 위해 외부 편집기에서 준비한 텍스트를 업로드하고 조각에 바로 추가할 수 있습니다.
-
-### 텍스트 요약 {#summarizing-text}
-
-텍스트 요약 기능은 사용자가 주요 포인트와 전반적인 의미를 유지하면서도 텍스트의 길이를 사전 정의된 단어 수로 줄이는 데 도움이 되도록 설계되었습니다.
-
->[!NOTE]
->
->기술적인 수준에서, 시스템은 특정 알고리즘에 따라 *정보 밀도와 고유성의 최상의 비율*&#x200B;을 제공하는 것으로 평가되는 문장을 유지합니다.
-
->[!CAUTION]
->
->콘텐츠 조각에는 상위 언어 폴더로 유효한 언어 폴더(ISO 코드)가 있어야 합니다. 이 폴더는 사용할 언어 모델을 결정하는 데 사용됩니다.
->
->예를 들어 다음 경로에서 `en/`과 같습니다.
->
->  `/content/dam/my-brand/en/path-down/my-content-fragment`
-
->[!CAUTION]
->
->영어는 즉시 이용 가능합니다.
->
->다른 언어는 패키지 공유에서 언어 모델 패키지로 사용할 수 있습니다.
->
->* [프랑스어(fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [독일어(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [이탈리아어(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [스페인어(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
->
-
-1. **마스터** 또는 필요한 변형을 선택합니다.
-1. 전체 화면 편집기를 엽니다.
-
-1. 도구 모음에서 **Summarize text**&#x200B;를 선택합니다.
-
-   ![요약](assets/cfm-variations-05.png)
-
-1. 타겟 단어 수를 지정하고 **시작**&#x200B;을 선택합니다.
-1. 원래 텍스트는 제안된 요약과 나란히 표시됩니다.
-
-   * 제거할 문장은 빨간색으로 강조 표시되며 취소선이 그어져 있습니다.
-   * 요약된 컨텐츠로 유지하려면 강조 표시된 문장을 클릭하십시오.
-   * 제거하려면 강조 표시되지 않은 문장을 클릭합니다.
-
-1. **요약**&#x200B;을 선택하여 변경 내용을 확인합니다.
-
-1. 원래 텍스트는 제안된 요약과 나란히 표시됩니다.
-
-   * 제거할 문장은 빨간색으로 강조 표시되며 취소선이 그어져 있습니다.
-   * 요약된 컨텐츠로 유지하려면 강조 표시된 문장을 클릭하십시오.
-   * 제거하려면 강조 표시되지 않은 문장을 클릭합니다.
-   * **실제** 및 **대상** 요약 통계가 표시됩니다.
-   * 변경 내용을 **미리보기**&#x200B;할 수 있습니다.
-
-   ![요약 비교](assets/cfm-variations-06.png)
 
 ### 콘텐츠 조각에 주석 달기 {#annotating-a-content-fragment}
 
