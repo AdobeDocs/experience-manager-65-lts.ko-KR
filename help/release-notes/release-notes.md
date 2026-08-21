@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d4d05cf9f295e6c3740ebf1e3559b5d117898342
+source-git-commit: 79f3d3211a79ce62242273df0cdecd24cd8900cf
 workflow-type: tm+mt
-source-wordcount: '6752'
+source-wordcount: '6705'
 ht-degree: 26%
 
 ---
@@ -415,27 +415,27 @@ AEM 6.5 LTS SP3용 UberJar는 AEM 6.5 LTS UberJar 버전 6.6.3을 사용합니�
 
 공개 API에 대해 컴파일하려면 다음을 사용하십시오.
 
-    &quot;xml
-    &lt;dependency>
-    &lt;groupId>com.adobe.aem&lt;/groupId>
-    &lt;artifactId>uber-jar&lt;/artifactId>
-    &lt;version>6.6.3&lt;/version>
-    &lt;classifier>api&lt;/classifier>
-    &lt;scope>제공&lt;/scope>
-    &lt;/dependency>
-    &quot;
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.3</version>
+    <classifier>apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
 
 코드도 더 이상 사용되지 않는 API에 따라 달라지는 경우 다음을 추가하십시오.
 
-    &quot;xml
-    &lt;dependency>
-    &lt;groupId>com.adobe.aem&lt;/groupId>
-    &lt;artifactId>uber-jar&lt;/artifactId>
-    &lt;version>6.6.3&lt;/version>
-    &lt;classifier>deprecated-api&lt;/classifier>
-    &lt;scope>제공&lt;/scope>
-    &lt;/dependency>
-    &quot;
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.3</version>
+    <classifier>deprecated-apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
 
 또한 [AEM Uber Jar 버전 업데이트](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version)를 참조하십시오.
 
@@ -462,10 +462,10 @@ AEM 6.5 LTS용 SP2가 패키지 관리자를 통해 설치하기 위해 ZIP이 �
 1. `crx-quickstart/` 외부 AEM 설치 디렉터리에서 이전 Quickstart JAR를 SP3 JAR로 바꿉니다.
 1. JAR 압축을 풉니다.
 
-       &quot;java
-     java -jar cq-quickstart-6.6.x.jar -unpack
-     &quot;
-   
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
    (필요에 따라 힙 플래그를 조정합니다.)
 
 1. 역할 및 포트와 일치하도록 압축 해제된 JAR의 이름을 변경합니다(예: `cq-author-4502.jar` 또는 `cq-publish-4503.jar`).
