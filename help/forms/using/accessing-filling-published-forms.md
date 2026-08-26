@@ -1,5 +1,5 @@
 ---
-title: 게시된 양식에 액세스 및 채우기
+title: 게시된 양식 액세스 및 채우기
 description: Forms 포털은 웹 개발자에게 Adobe Experience Manager(AEM)을 사용하여 작성된 웹 사이트에서 Forms 포털을 만들고 사용자 지정할 수 있는 구성 요소를 제공합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: 10764131-21e9-4c1c-b9d1-e878cc927fb6
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 0%
+source-wordcount: '942'
+ht-degree: 1%
 
 ---
 
-# 게시된 양식에 액세스 및 채우기{#accessing-and-filling-published-forms}
+# 게시된 양식 액세스 및 채우기{#accessing-and-filling-published-forms}
 
 양식 중심 포털 배포 설정에서 양식 개발 및 포털 개발은 두 개의 고유한 활동입니다. 양식 디자이너는 리포지토리에서 양식을 디자인하고 저장하는 동안 웹 개발자는 해당 목록 양식에 대한 웹 응용 프로그램을 만들고 제출을 처리합니다. 그런 다음 양식 저장소와 웹 애플리케이션 간에 통신이 없으므로 Forms이 웹 계층에 복사됩니다.
 
@@ -32,7 +32,7 @@ Forms 포털 및 해당 기능에 대한 자세한 내용은 [포털에서 양�
 
 Forms 포털의 검색 및 목록 구성 요소에는 AEM 서버의 게시 인스턴스에서 사용할 수 있는 양식이 표시됩니다. 이 목록에는 Forms 포털 페이지 작성 시 필터에 정의된 모든 양식 또는 양식이 포함됩니다. Forms 포털 페이지는 다음 이미지와 유사합니다.
 
-![샘플 양식 포털 페이지 &#x200B;](assets/forms-portal-page.png)
+![샘플 양식 포털 페이지 ](assets/forms-portal-page.png)
 
 샘플 Forms 포털 페이지
 

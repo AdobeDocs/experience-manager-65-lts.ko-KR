@@ -1,5 +1,5 @@
 ---
-title: 편지 인스턴스에 액세스하기 위한 API
+title: 문자 인스턴스에 액세스하기 위한 API
 description: API를 검색하고 이를 사용하여 AEM Forms 환경의 문자 인스턴스에 프로그래밍 방식으로 액세스합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ role: Admin, User, Developer
 exl-id: f698980d-d6f9-435d-853f-4d2827640aaf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 1%
+source-wordcount: '604'
+ht-degree: 2%
 
 ---
 
-# 편지 인스턴스에 액세스하기 위한 API {#apis-to-access-letter-instances}
+# 문자 인스턴스에 액세스하기 위한 API {#apis-to-access-letter-instances}
 
 ## 개요 {#overview}
 
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ### getAllLetterInstances 사용 {#using-nbsp-getallletterinstances}
 
-다음 API는 쿼리 개체(제출됨 및 초안 모두)를 기반으로 편지 인스턴스를 검색합니다. 쿼리 개체가 null이면 모든 문자 인스턴스를 반환합니다. 이 API는 편지 인스턴스의 추가 정보를 추출하는 데 사용할 수 있는 [LetterInstanceVO](https://helpx.adobe.com/kr/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) 개체 목록을 반환합니다.
+다음 API는 쿼리 개체(제출됨 및 초안 모두)를 기반으로 편지 인스턴스를 검색합니다. 쿼리 개체가 null이면 모든 문자 인스턴스를 반환합니다. 이 API는 편지 인스턴스의 추가 정보를 추출하는 데 사용할 수 있는 [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) 개체 목록을 반환합니다.
 
 **구문**: `List getAllLetterInstances(Query query) throws ICCException;`
 
