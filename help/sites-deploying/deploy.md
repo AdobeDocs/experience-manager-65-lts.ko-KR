@@ -1,18 +1,13 @@
 ---
 title: 배포 및 유지 관리
 description: AEM 설치를 시작하는 방법에 대해 알아봅니다.
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: deploying
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: add91325feaa96338526edcdde977d1f619e09d4
+source-git-commit: fc736c74bc5bd584059038ad5a54ffc814d095a2
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1437'
 ht-degree: 8%
 
 ---
@@ -23,20 +18,20 @@ ht-degree: 8%
 
 * [기본 개념](#basic-concepts)
 
-   * [AEM란?](#what-is-aem)
-   * [일반 배포](#typical-deployment-scenarios)
+  * [AEM란?](#what-is-aem)
+  * [일반 배포](#typical-deployment-scenarios)
 
-      * [온프레미스](#on-premise)
-      * [Cloud Manager을 사용한 Managed Services](#managed-services-using-cloud-manager)
+    * [온프레미스](#on-premise)
+    * [Cloud Manager을 사용한 Managed Services](#managed-services-using-cloud-manager)
 
 * [시작하기](#getting-started)
 
-   * [사전 요구 사항](#prerequisites)
-   * [소프트웨어 가져오기](#getting-the-software)
-   * [기본 로컬 설치](#default-local-install)
-   * [작성자 및 게시 설치](#author-and-publish-installs)
-   * [압축을 푼 설치 디렉토리](#unpacked-install-directory)
-   * [시작 및 중지](#starting-and-stopping)
+  * [사전 요구 사항](#prerequisites)
+  * [소프트웨어 가져오기](#getting-the-software)
+  * [기본 로컬 설치](#default-local-install)
+  * [작성자 및 게시 설치](#author-and-publish-installs)
+  * [압축을 푼 설치 디렉토리](#unpacked-install-directory)
+  * [시작 및 중지](#starting-and-stopping)
 
 이러한 기본 사항을 숙지하면 다음 하위 페이지에서 보다 고급 세부 정보를 찾을 수 있습니다.
 
@@ -107,7 +102,7 @@ AEM 용어에서 &quot;인스턴스&quot;는 서버에서 실행되는 AEM의 �
 
 ### Cloud Manager을 사용한 Managed Services {#managed-services-using-cloud-manager}
 
-<i>곧 발표될 예정입니다.</i>
+Adobe Managed Services 배포의 경우 AEM 환경은 [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)을 통해 배포되고 관리됩니다. 프로덕션 및 비프로덕션 환경에서 응용 프로그램 성능과 인프라 상태를 모니터링하려면 [Observability Insights](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview)를 참조하십시오.
 
 ## 시작하기 {#getting-started}
 
@@ -173,11 +168,11 @@ AEM에서 jar 파일의 압축을 풀고 직접 설치하고 시작하는 데 �
 
 **`https://localhost:4502`**
 
-작성자 인스턴스의 결과는 **의**&#x200B;게시 인스턴스&#x200B;**`localhost:4503`**&#x200B;에 연결하도록 자동으로 구성됩니다.
+작성자 인스턴스의 결과는 **`localhost:4503`**&#x200B;의 **게시 인스턴스**&#x200B;에 연결하도록 자동으로 구성됩니다.
 
 ### 작성자 및 게시 설치 {#author-and-publish-installs}
 
-기본 설치(**의**&#x200B;작성자&#x200B;**`localhost:4502`** 인스턴스)를 처음 시작하기 전에 `jar` 파일의 이름을 바꾸는 것만으로 변경할 수 있습니다. 이름 지정 패턴은 다음과 같습니다.
+기본 설치(**`localhost:4502`**&#x200B;의 **작성자** 인스턴스)를 처음 시작하기 전에 `jar` 파일의 이름을 바꾸는 것만으로 변경할 수 있습니다. 이름 지정 패턴은 다음과 같습니다.
 
 **`cq-<instance-type>-p<port-number>.jar`**
 
