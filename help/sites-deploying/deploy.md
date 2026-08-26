@@ -102,7 +102,7 @@ AEM 용어에서 &quot;인스턴스&quot;는 서버에서 실행되는 AEM의 �
 
 ### Cloud Manager을 사용한 Managed Services {#managed-services-using-cloud-manager}
 
-Adobe Managed Services 배포의 경우 AEM 환경은 [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)을 통해 배포되고 관리됩니다. 프로덕션 및 비프로덕션 환경에서 응용 프로그램 성능과 인프라 상태를 모니터링하려면 [Observability Insights](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview)를 참조하십시오.
+Adobe Managed Services 배포의 경우 AEM 환경은 [Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/introduction)을 통해 배포되고 관리됩니다. 프로덕션 및 비프로덕션 환경에서 응용 프로그램 성능과 인프라 상태를 모니터링하려면 [Observability Insights](https://experienceleague.adobe.com/ko/docs/ams-observability-insights/content/overview)를 참조하십시오.
 
 ## 시작하기 {#getting-started}
 
