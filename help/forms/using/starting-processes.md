@@ -1,5 +1,5 @@
 ---
-title: 시작 프로세스
+title: 프로세스 시작
 description: LiveCycle AEM Forms 작업 영역을 사용하는 방법 - 프로세스 선택, 메모 및 첨부 파일 추가, 초안 복사본 저장, 즐겨찾기에 추가
 contentOwner: robhagat
 content-type: reference
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: 074b0cb2-b060-4180-ab16-ff8f7a4ee625
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
 
-# 시작 프로세스 {#starting-processes}
+# 프로세스 시작 {#starting-processes}
 
 AEM Forms workspace는 관리자 또는 프로세스 디자이너가 설정한 카테고리별로 프로세스를 구성합니다. 자주 사용하는 프로세스를 즐겨찾기 카테고리에 배치하여 빠르게 찾을 수도 있습니다.
 
@@ -58,7 +58,7 @@ Adobe PDF, HTML 및 SWF 파일을 포함하여 다양한 파일 형식 Forms이 
 
    프로세스 관리는 프로세스를 시작하고 프로세스에서 다음 작업을 완료해야 하는 해당 직원의 할 일 목록으로 양식을 보냅니다.
 
-   양식을 제출하기 전에 닫아야 하고 입력한 데이터를 손실하지 않으려면 초안을 저장하고 나중에 프로세스에서 허용하는 경우 완료합니다. 양식 및 프로세스에서 허용하면 **오프라인**&#x200B;을 클릭하고 나중에 Adobe® Reader® 또는 Adobe® Acrobat® Professional 또는 Acrobat Standard에서 제출할 수도 있습니다.
+   양식을 제출하기 전에 닫아야 하고 입력한 데이터를 손실하지 않으려면 초안을 저장하고 나중에 프로세스에서 허용하는 경우 완료합니다. 양식 및 프로세스에서 허용하면 **오프라인**&#x200B;을 클릭하고 나중에 ® Reader® 또는 Adobe® Acrobat® Professional 또는 Acrobat Standard에서 제출할 수도 있습니다.
 
    >[!NOTE]
    >

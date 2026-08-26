@@ -1,5 +1,5 @@
 ---
-title: 편지 인스턴스에 액세스하기 위한 API
+title: 문자 인스턴스에 액세스하기 위한 API
 description: API를 검색하고 이를 사용하여 AEM Forms 환경의 문자 인스턴스에 프로그래밍 방식으로 액세스합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ role: Admin, User, Developer
 exl-id: f698980d-d6f9-435d-853f-4d2827640aaf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 1%
+source-wordcount: '604'
+ht-degree: 2%
 
 ---
 
-# 편지 인스턴스에 액세스하기 위한 API {#apis-to-access-letter-instances}
+# 문자 인스턴스에 액세스하기 위한 API {#apis-to-access-letter-instances}
 
 ## 개요 {#overview}
 

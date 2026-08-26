@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 03430815-6459-469c-b3dd-4cd83b9eec5f
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1675'
-ht-degree: 3%
+source-wordcount: '1711'
+ht-degree: 6%
 
 ---
 
@@ -78,7 +78,7 @@ Forms 포털 구성 요소 범주
    <td>AEM Forms UI를 사용하여 에셋을 업로드하는 폴더를 구성합니다. 기본적으로 업로드된 모든 에셋이 나열됩니다. AEM Forms UI에 대한 자세한 내용은 <a href="../../forms/using/introduction-managing-forms.md" target="_blank">양식 관리 소개</a>를 참조하십시오.</td>
   </tr>
   <tr>
-   <td><p><span class="uicontrol"><strong>표시</strong></code></p> </td>
+   <td><p><span class="uicontrol"><strong>디스플레이</strong></code></p> </td>
    <td>제목 텍스트</td>
    <td>검색 및 목록 작성자 구성 요소의 제목입니다. 기본 제목은 <strong>Forms 포털</strong>입니다.</td>
   </tr>
@@ -115,7 +115,7 @@ Forms 포털 구성 요소 범주
   <tr>
    <td> </td>
    <td>/ 텍스트</td>
-   <td><p><strong>of</strong>이라는 단어를 지정된 텍스트로 바꿉니다(<strong>51의 </strong>페이지). 기본값은 <strong>of</strong>입니다.</p> <p>예를 들어 이 필드에 <strong>개 중 </strong>개를 지정하면 텍스트가 <strong>51개 중 </strong>번째 페이지로 변경됩니다.</p> </td>
+   <td><p><strong>of</strong>이라는 단어를 지정된 텍스트로 바꿉니다(</strong>51의 <strong>페이지). 기본값은 <strong>of</strong>입니다.</p> <p>예를 들어 이 필드에 </strong>개 중 <strong>개를 지정하면 텍스트가 </strong>51개 중 <strong>번째 페이지로 변경됩니다.</p> </td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>양식 링크</strong></code></td>
@@ -199,7 +199,7 @@ Forms 포털 구성 요소 범주
 1. **주 제목** 필드에 제목을 지정합니다.
 1. **확인** 선택
 
-#### 속성 조건자 {#properties-predicate}
+#### 속성 설명 {#properties-predicate}
 
 속성 설명 구성 요소는 제목, 작성자 및 설명과 같은 양식 속성을 기반으로 양식 검색을 구현합니다.
 
@@ -263,4 +263,4 @@ AEM Forms UI를 사용하면 사용자 지정 메타데이터를 양식에 추�
 * [초안 및 제출된 양식의 스토리지 사용자 지정](/help/forms/using/draft-submission-component.md)
 * [초안 및 제출 구성 요소를 데이터베이스와 통합하기 위한 샘플](/help/forms/using/integrate-draft-submission-database.md)
 * [Forms 포털 구성 요소에 대한 템플릿 사용자 정의](/help/forms/using/customizing-templates-forms-portal-components.md)
-* [포털에 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)
+* [포털에서 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)

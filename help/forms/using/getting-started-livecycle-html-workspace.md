@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 작업 영역 시작하기
+title: AEM Forms Workspace 시작
 description: LiveCycle AEM Forms 작업 영역을 사용하여 비즈니스 자동화 프로세스를 관리하는 방법
 contentOwner: robhagat
 content-type: reference
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: b38cd444-80f2-4747-9a99-68f69bd87e34
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 0%
+source-wordcount: '1010'
+ht-degree: 1%
 
 ---
 
-# AEM Forms 작업 영역 시작하기 {#getting-started-with-aem-forms-workspace}
+# AEM Forms Workspace 시작 {#getting-started-with-aem-forms-workspace}
 
 AEM Forms 작업 영역을 사용하여 다음 작업을 수행할 수 있습니다.
 

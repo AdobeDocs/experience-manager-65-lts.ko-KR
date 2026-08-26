@@ -1,5 +1,5 @@
 ---
-title: OSGi 환경에서 AEM 양식 강화 및 보안
+title: OSGi 환경에서 AEM Forms 강화 및 보호
 description: OSGi 서버에서 AEM Forms을 보호하기 위한 권장 사항과 모범 사례를 알아봅니다.
 topic-tags: Security
 role: Admin,User
@@ -8,12 +8,12 @@ feature: Document Security,Adaptive Forms
 exl-id: 0225063b-9a57-4b3f-8216-295b1f2d4db5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 0%
+source-wordcount: '1470'
+ht-degree: 1%
 
 ---
 
-# OSGi 환경에서 AEM 양식 강화 및 보안 {#hardening-and-securing-aem-forms-on-osgi-environment}
+# OSGi 환경에서 AEM Forms 강화 및 보호 {#hardening-and-securing-aem-forms-on-osgi-environment}
 
 OSGi 서버에서 AEM Forms을 보호하기 위한 권장 사항과 모범 사례를 알아봅니다.
 
@@ -168,18 +168,18 @@ AEM DS 설정 서비스에 대한 처리 서버의 자격 증명을 사용하여
 
 * 모든 담당자에 대해 특정 권한을 가진 사전 정의된 다른 그룹 세트가 있습니다. 그룹에 사용자를 할당합니다.
 
-   * forms-user 그룹의 사용자:
+  * forms-user 그룹의 사용자:
 
-      * 양식을 작성, 작성, 게시 및 제출할 수 있습니다.
-      * xdp 기반 적응형 양식을 만들 수 없습니다.
-      * 적응형 양식용 스크립트를 작성할 수 있는 권한이 없습니다.
-      * xdp 또는 XDP가 포함된 패키지를 가져올 수 없음
+    * 양식을 작성, 작성, 게시 및 제출할 수 있습니다.
+    * xdp 기반 적응형 양식을 만들 수 없습니다.
+    * 적응형 양식용 스크립트를 작성할 수 있는 권한이 없습니다.
+    * xdp 또는 XDP가 포함된 패키지를 가져올 수 없음
 
-   * forms-power-user 그룹의 사용자는 모든 유형의 양식을 작성, 작성, 게시 및 제출하고, 적응형 양식에 대한 스크립트를 작성하고, XDP가 포함된 패키지를 가져옵니다.
-   * 템플릿 작성자 및 템플릿 고급 사용자는 템플릿을 미리 보고 만들 수 있습니다.
-   * fdm-authors 사용자는 양식 데이터 모델을 만들고 수정할 수 있습니다.
-   * cm-user-agent 그룹의 사용자는 서신 관리 문자를 만들고, 미리 보고, 게시할 수 있습니다.
-   * 워크플로우 편집기 그룹의 사용자는 받은 편지함 애플리케이션 및 워크플로우 모델을 만들 수 있습니다.
+  * forms-power-user 그룹의 사용자는 모든 유형의 양식을 작성, 작성, 게시 및 제출하고, 적응형 양식에 대한 스크립트를 작성하고, XDP가 포함된 패키지를 가져옵니다.
+  * 템플릿 작성자 및 템플릿 고급 사용자는 템플릿을 미리 보고 만들 수 있습니다.
+  * fdm-authors 사용자는 양식 데이터 모델을 만들고 수정할 수 있습니다.
+  * cm-user-agent 그룹의 사용자는 서신 관리 문자를 만들고, 미리 보고, 게시할 수 있습니다.
+  * 워크플로우 편집기 그룹의 사용자는 받은 편지함 애플리케이션 및 워크플로우 모델을 만들 수 있습니다.
 
 **작성자 처리 중:**
 
