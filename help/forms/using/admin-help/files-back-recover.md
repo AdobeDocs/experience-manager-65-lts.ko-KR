@@ -10,7 +10,7 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: 2938a1c6-c8fc-420a-8fad-bb39e5a7936b
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '2131'
 ht-degree: 98%
@@ -82,7 +82,7 @@ AEM Forms Workspace는 Flex Workspace(JEE의 AEM Forms에서는 더 이상 사�
 
 >[!NOTE]
 >
->Flex Worksapce는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
+>Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
 
 AEM Forms Workspace를 사용하면 Flash Player와 Adobe Reader가 없는 클라이언트에서도 작업을 관리할 수 있습니다. PDF 양식과 Flex 양식뿐 아니라 HTML 양식의 렌디션도 쉽게 처리할 수 있습니다.
 

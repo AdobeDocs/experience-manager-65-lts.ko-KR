@@ -10,10 +10,10 @@ role: User, Developer
 feature: Adaptive Forms
 hide: true
 exl-id: c68c602f-fa93-4e3d-9a8c-b61c3ab53000
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '2503'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 
 **AEM Forms Workspace 관리자:** 관리 콘솔의 Workspace 페이지에서 설정을 보고 수정할 수 있습니다.
 
-***참고&#x200B;**: Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.*
+***참고&#x200B;**: Flex Workspace은 AEM forms 릴리스에서 더 이상 사용되지 않습니다.*
 
 **Workspace 사용자:** Workspace 최종 사용자 애플리케이션에 로그인할 수 있습니다.
 
@@ -97,7 +97,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Flex Worksapce는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
+>Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
 
 ## 역할 만들기 {#create-a-role}
 

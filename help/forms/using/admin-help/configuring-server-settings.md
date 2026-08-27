@@ -10,7 +10,7 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: da8031f2-26ab-41e2-bf54-7032727ca192
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '2665'
 ht-degree: 99%
@@ -87,7 +87,7 @@ AEM Forms가 사용자로부터 수신되는 이메일 메시지를 받고 처�
 
 >[!NOTE]
 >
->Flex Worksapce는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
+>Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
 
 ### 사용자 또는 그룹에 대한 알림 구성 {#configure-reminders-for-users-or-groups}
 
@@ -199,7 +199,7 @@ Forms Workflow가 관리자에게 전송되는 이메일 알림을 생성하는 
 
 >[!NOTE]
 >
->Flex Worksapce는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
+>Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
 
 솔루션이 클러스터링된 환경에 배포된 경우 `@@notification-host@@`를 클러스터 주소로 바꾸십시오.
 
