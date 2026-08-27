@@ -10,7 +10,7 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: f5b45667-87df-4069-8f08-2b6daf4bad1e
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 94%
@@ -27,7 +27,7 @@ Workspace에 대한 검색 템플릿 정의와 전역 설정을 가져오고 내
 
 >[!NOTE]
 >
->Flex Worksapce는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
+>Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
 
 예를 들어 특정 환경에서 검색 템플릿 정의와 전역 설정을 내보내고 다른 환경으로 가져와서 개발 환경에서 프로덕션 환경으로 이동할 수 있습니다.
 
@@ -71,7 +71,7 @@ Workspace에 대한 검색 템플릿 정의와 전역 설정을 가져오고 내
 
 >[!NOTE]
 >
->Flex Worksapce는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
+>Flex Workspace는 AEM Forms 릴리스에서 더 이상 사용되지 않습니다.
 
 Workspace 전역 설정 파일에는 다음 설정이 포함되어 있습니다.
 
