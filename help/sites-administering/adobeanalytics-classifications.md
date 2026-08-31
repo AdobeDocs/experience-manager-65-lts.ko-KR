@@ -9,14 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: f564bda3-4141-40b3-8c08-140d4da92e2c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9c1795a90f0cd80dcf886477620a5330c5e3fbbf
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 6%
+source-wordcount: '673'
+ht-degree: 5%
 
 ---
 
 # Adobe 분류{#adobe-classifications}
+
+[!BADGE 중단됨]{type=negative tooltip="이 기능은 현재 사용 중단되었습니다."}
+
+<div class="preview"> Adobe 분류에는 사용자 자격 증명(사용자 이름 및 암호)을 사용하는 Adobe Analytics 구성이 필요합니다. 이 구성은 <a href="https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/">Adobe Analytics 1.4 API가 서비스 종료</a>에 도달하여 더 이상 지원되지 않습니다. 따라서 Adobe 분류는 더 이상 사용되지 않습니다. </div>
 
 Adobe 분류는 예약된 방식으로 분류 데이터를 [Adobe Analytics](/help/sites-administering/adobeanalytics.md)(으)로 내보냅니다. 내보내기가 **com.adobe.cq.scheduled.exporter.Exporter**&#x200B;의 구현입니다.
 
@@ -85,13 +89,13 @@ Adobe 분류는 예약된 방식으로 분류 데이터를 [Adobe Analytics](/he
 
 * id-classification `nt:unstructured`
 
-   * 1 `nt:unstructured`
+  * 1 `nt:unstructured`
 
-      * Product = 내 제품 이름(문자열)
-      * 가격 = 120.90 (문자열)
-      * 크기 = M (문자열)
-      * Color = black (문자열)
-      * Color^Code = 101 (String)
+    * Product = 내 제품 이름(문자열)
+    * 가격 = 120.90 (문자열)
+    * 크기 = M (문자열)
+    * Color = black (문자열)
+    * Color^Code = 101 (String)
 
 **SAINT 헤더 및 레코드:**
 

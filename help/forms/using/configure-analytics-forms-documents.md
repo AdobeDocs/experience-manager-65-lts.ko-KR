@@ -9,14 +9,20 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
 exl-id: befc6b96-517b-4ca3-8007-2aa0fd6ed2cb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9c1795a90f0cd80dcf886477620a5330c5e3fbbf
 workflow-type: tm+mt
-source-wordcount: '1546'
-ht-degree: 3%
+source-wordcount: '1611'
+ht-degree: 2%
 
 ---
 
 # Cloud Service 프레임워크를 사용한 Analytics {#analyticsusingcloudframework}
+
+>[!CAUTION]
+>
+>AEM Forms용 Analytics 대시보드는 더 이상 사용되지 않습니다. AEM Forms 내에서는 더 이상 분석 보고서를 볼 수 없습니다. Forms Analytics 데이터를 보려면 Adobe Analytics UI를 사용하십시오.
+>
+>또한 [Adobe Analytics 1.4 API의 수명이 종료되었습니다](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). 따라서 사용자 자격 증명(사용자 이름 및 암호)을 사용하는 Adobe Analytics 구성은 더 이상 지원되지 않습니다.
 
 AEM Forms은 게시된 양식 및 문서에 대한 성능 지표를 캡처하고 추적할 수 있도록 해주는 Analytics와 통합됩니다. 이러한 지표를 분석하는 목적은 양식이나 문서를 보다 유용하게 만드는 데 필요한 변경 사항에 대한 데이터를 기반으로 정보에 입각한 결정을 내리는 것입니다.
 
