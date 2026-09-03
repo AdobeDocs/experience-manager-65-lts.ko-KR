@@ -5,18 +5,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 23fa46e24f25f6aa889bc209b6742773d4535cc6
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 73%
+source-wordcount: '570'
+ht-degree: 59%
 
 ---
+
 
 # 개인화 및 콘텐츠 타겟팅 {#personalization}
 
 ## 개인화 및 콘텐츠 타겟팅 {#personalization-and-content-targeting}
 
 AEM은 타겟팅된 콘텐츠를 작성하고 개인화된 환경을 제공하기 위한 도구 프레임워크를 제공합니다.
+
+>[!NOTE]
+>
+>타깃팅 모드 및 클래식 AEM 타깃팅 구성 요소는 ContextHub 기반의 AEM Target 통합을 사용합니다. 따라서 AEP Web SDK에만 의존하는 페이지는 클래식 AEM 타깃팅 구성 요소를 렌더링하지 않습니다. [자세한 내용은 개발자 설명서를 참조하십시오.](/help/sites-developing/target.md)
 
 ## 타겟팅 모드 {#targeting-mode}
 
@@ -48,7 +53,7 @@ AEM의 타겟팅 모드를 사용하여 [타겟팅된 콘텐츠를 작성](/help
 
 예를 들어 We.Retail 샘플 웹 사이트의 여성용 페이지에서 페이지 맨 위에 표시되는 티저 이미지로서 오퍼를 사용할 수 있습니다. 30세 이상 여성 경험과 30세 미만 여성 경험의 티저로는 다른 오퍼가 사용됩니다.
 
-여러 경험에서 사용할 수 있는 오퍼를 만들려면 [오퍼 콘솔](/help/sites-authoring/offerlib.md)을 사용하십시오. [타겟팅된 콘텐츠를 작성](/help/sites-authoring/content-targeting-touch.md)할 때 단일 사용 오퍼를 만들거나 오퍼 라이브러리의 오퍼를 추가하십시오.
+여러 경험에서 사용할 수 있는 오퍼를 만들려면 [오퍼 콘솔](/help/sites-authoring/offerlib.md)을 사용하십시오. [타깃팅된 콘텐츠를 작성할 때 단일 사용 오퍼를 만들거나 오퍼 라이브러리의 오퍼를 추가하십시오.](/help/sites-authoring/content-targeting-touch.md)
 
 ## 타겟팅 엔진 {#targeting-engine}
 
@@ -63,6 +68,6 @@ AEM에서는 페이지 요청을 처리하고 표시할 콘텐츠를 결정하�
 Adobe Target 타겟팅 엔진을 사용하면 페이지 방문에서 수집된 정보가 Adobe Target에서 추적됩니다.
 
 * 이 타기팅 엔진을 사용하는 경우, Adobe Target에서 가져오는 세그먼트를 사용하여 경험의 대상자를 정의합니다.
-* Adobe Target 엔진을 사용하는 활동은 [Target에 동기화](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target)됩니다.
+* Adobe Target 엔진을 사용하는 활동은 [Target에 동기화됩니다.](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target)
 
-[Adobe Target과 통합](/help/sites-administering/opt-in.md)한 경우 이 엔진을 사용할 수 있습니다.
+[Adobe Target과 통합한 경우](/help/sites-administering/opt-in.md)에 이 엔진을 사용할 수 있습니다.

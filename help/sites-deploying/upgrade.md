@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ebc34847-dc3d-41ed-b0d6-f004c3debcd9
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 76bd0f170b06a3f930d504b680342c954daae460
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ ht-degree: 0%
 >[!NOTE]
 >
 >기술적인 측면에서 AEM 6.5 LTS에서 AEM 6.5 LTS 서비스 팩으로의 업그레이드 프로세스는 매끄러운 [내부 업그레이드](/help/sites-deploying/in-place-upgrade.md)가 되도록 설계되었습니다. 릴리스 노트에 구체적으로 명시되어 있지 않는 한, 이 프로세스는 일반적으로 고객의 코드 변경을 필요로 하지 않습니다.
+
+>[!IMPORTANT]
+>
+>서비스 팩을 설치하면 다른 내부 업그레이드와 동일한 업그레이드 전 정리 작업이 실행되므로 `/libs` 아래에 자체 콘텐츠를 설치하는 추가 기능은 나중에 다시 설치해야 할 수 있습니다. [추가 기능 다시 설치 또는 확인](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#reinstall-or-verify-add-ons)을 참조하세요.
 
 이 섹션에서는 AEM 설치를 AEM 6.5 LTS로 업그레이드하는 방법에 대해 설명합니다.
 

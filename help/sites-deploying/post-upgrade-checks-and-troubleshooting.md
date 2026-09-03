@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
-source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
+source-git-commit: 76bd0f170b06a3f930d504b680342c954daae460
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1382'
 ht-degree: 1%
 
 ---
@@ -36,6 +36,8 @@ ht-degree: 1%
 * [복제 에이전트 활성화](#enable-replication-agents)
 
 * [사용자 지정 예약된 작업 활성화](#enable-custom-scheduled-jobs)
+
+* [추가 기능 다시 설치 또는 확인](#reinstall-or-verify-add-ons)
 
 * [테스트 계획 실행](#execute-test-plan)
 
@@ -92,6 +94,19 @@ MongoMK 또는 새 TarMK 세그먼트 형식을 사용하는 경우, 개정 정�
 ### 사용자 지정 예약된 작업 활성화 {#enable-custom-scheduled-jobs}
 
 이때 코드 베이스의 일부로 예약된 모든 작업을 활성화할 수 있습니다.
+
+### 추가 기능 다시 설치 또는 확인 {#reinstall-or-verify-add-ons}
+
+>[!IMPORTANT]
+>
+>AEM 6.5 LTS 서비스 팩 설치는 기술적으로 전체 [바로 업그레이드](/help/sites-deploying/in-place-upgrade.md)입니다(업데이트가 적용되기 전에 AEM quickstart jar가 완전히 교체됨). 따라서 이제 모든 내부 업그레이드 중에 실행되는 표준 업그레이드 전 정리 작업도 서비스 팩을 적용할 때 실행됩니다.
+
+이 작업 중 하나는 오래된 번들 및 구성이 다시 설치되지 않도록 `/libs` 아래 어디에나 있는 오래된 `install`개 폴더(`install` 및 실행 모드 변형(예: `install.author` 또는 `install.publish`)를 제거합니다. 솔루션이 `/libs`의 이러한 `install` 폴더에서 자체 OSGi 번들 또는 구성을 유지하는 추가 기능에 의존하는 경우 이전에 서비스 팩 업그레이드 시 관찰되지 않았더라도 서비스 팩을 적용하는 과정에서 해당 폴더를 제거할 수 있습니다.
+
+서비스 팩을 적용한 후:
+
+* 이전에 설치된 모든 추가 기능이 여전히 있고 해당 OSGi 번들 및 구성이 활성 상태인지 확인합니다. 시작되지 않은 번들에 대해서는 `/system/console/bundles`을(를) 확인하십시오.
+* 추가 기능의 콘텐츠가 누락된 경우 해당 추가 기능의 콘텐츠 패키지를 다시 설치하여 복원합니다.
 
 ### 테스트 계획 실행 {#execute-test-plan}
 

@@ -10,14 +10,15 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: 650ba9be-6546-46dc-b4ab-ea0b97abff40
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: d49de63985f537da3e6b92dac5233c104b1ccdfe
 workflow-type: tm+mt
-source-wordcount: '5284'
-ht-degree: 82%
+source-wordcount: '5374'
+ht-degree: 77%
 
 ---
 
-# 타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성{#authoring-targeted-content-using-targeting-mode}
+
+# 타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성 {#authoring-targeted-content-using-targeting-mode}
 
 AEM의 타겟팅 모드를 사용하여 타겟팅된 콘텐츠를 작성하십시오. 타겟팅 모드 및 타겟 구성 요소는 경험을 위한 콘텐츠를 만드는 도구를 제공합니다.
 
@@ -30,11 +31,11 @@ AEM의 타겟팅 모드를 사용하여 타겟팅된 콘텐츠를 작성하십�
 * 사용자 경험을 시뮬레이션합니다.
 * 사용자 정의가 더 필요하면 타겟 구성 요소를 구성합니다.
 
-타겟팅 엔진으로 AEM 또는 Adobe Target을 사용할 수 있습니다(Adobe Target을 사용하려면 올바른 Adobe Target 계정이 있어야 합니다). Adobe Target을 사용하는 경우, 먼저 통합을 구성해야 합니다. [Adobe Target과 통합하기 위한 지침](/help/sites-administering/target.md)을 참조하십시오.
+타겟팅 엔진으로 AEM 또는 Adobe Target을 사용할 수 있습니다(Adobe Target을 사용하려면 올바른 Adobe Target 계정이 있어야 합니다). Adobe Target을 사용하는 경우, 먼저 통합을 구성해야 합니다. [Adobe Target과 통합하기 위한 지침](/help/sites-administering/target.md)을 참조하세요.
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
-Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/sites-authoring/activitylib.md)에 반영됩니다.
+타겟팅 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/sites-authoring/activitylib.md)에 반영됩니다.
 
 * 타겟팅 모드를 사용하여 활동 및 경험에 수행하는 변경 내용은 활동 콘솔에 반영됩니다.
 * 활동 콘솔에서 수행된 변경 내용은 타겟팅 모드에서 반영됩니다.
@@ -50,6 +51,10 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 >[!NOTE]
 >
 >타겟팅할 때 브랜딩 및 활동 조합은 채널 레벨이 아닌 사용자 레벨에서 지속됩니다.
+
+>[!NOTE]
+>
+>타깃팅 모드 및 클래식 AEM 타깃팅 구성 요소는 ContextHub 기반의 AEM Target 통합을 사용합니다. 따라서 AEP Web SDK에만 의존하는 페이지는 클래식 AEM 타깃팅 구성 요소를 렌더링하지 않습니다. [자세한 내용은 개발자 설명서를 참조하십시오.](/help/sites-developing/target.md)
 
 ## 타겟팅 모드로 전환 {#switching-to-targeting-mode}
 
@@ -74,7 +79,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
 또한 모든 Adobe Target 활동에 대한 목표와 지표를 관리하고 Adobe Target 대상자를 관리할 수도 있습니다. A/B 테스트에 대한 우승자 변환을 포함하여 Adobe Target 활동을 보고할 수도 있습니다.
 
-활동을 추가하면 [활동 콘솔](/help/sites-authoring/activitylib.md)에도 나타납니다.
+활동을 추가하면 [활동 콘솔에도 표시됩니다.](/help/sites-authoring/activitylib.md)
 
 활동을 추가하려면 다음 작업을 수행하십시오.
 
@@ -82,7 +87,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
    >[!NOTE]
    >
-   >Adobe에서는 [활동 콘솔을 통해 브랜드를 만들](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console)것을 권장합니다.
+   >Adobe에서는 [활동 콘솔을 통해 브랜드를 만들 것을 권장합니다.](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console)
    >
    >
    >다른 방식으로 브랜드를 생성하는 경우, `/campaigns/<brand>/master` 노드가 존재하는지 또는 활동을 작성하려고 할 때 오류가 발생하는지 확인해야 합니다.
@@ -139,7 +144,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
 ### 타겟팅 모드에서 경험 오퍼 보기 {#seeing-experience-offers-in-targeting-mode}
 
-[타겟팅 프로세스를 시작](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)했으면 경험을 선택하여 해당 경험을 위해 제공된 오퍼를 확인하십시오. 경험을 선택하면 페이지에 있는 타겟팅된 구성 요소가 해당 경험에 대한 오퍼를 표시하도록 변경됩니다.
+[타깃팅 프로세스를 시작한 후](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)경험을 선택하여 해당 경험에 대해 제공된 오퍼를 확인합니다. 경험을 선택하면 페이지에 있는 타겟팅된 구성 요소가 해당 경험에 대한 오퍼를 표시하도록 변경됩니다.
 
 >[!CAUTION]
 >
@@ -177,7 +182,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
 ### 타겟팅 모드를 사용하여 경험 추가 및 제거 {#adding-and-removing-experiences-using-targeting-mode}
 
-[타겟팅 프로세스](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)의 만들기 단계를 사용하면 경험을 추가하거나 제거할 수 있습니다. 경험을 복제하고 이름을 변경할 수도 있습니다.
+[타깃팅 프로세스](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)의 만들기 단계를 사용하여 경험을 추가하거나 제거할 수 있습니다. 경험을 복제하고 이름을 변경할 수도 있습니다.
 
 #### 타겟팅 모드를 사용한 경험 추가 {#adding-experiences-using-targeting-mode}
 
@@ -224,19 +229,19 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
 경험을 위한 오퍼를 생성할 구성 요소를 타겟팅하십시오. 타겟팅된 구성 요소는 경험을 위한 오퍼로 사용되는 콘텐츠를 제공합니다.
 
-* [기존 구성 요소를 타겟팅하십시오](/help/sites-authoring/content-targeting-touch.md#creating-a-default-offer-by-targeting-an-existing-component). 콘텐츠는 기본 경험의 오퍼가 됩니다.
+* [기존 구성 요소를 타깃팅합니다.](/help/sites-authoring/content-targeting-touch.md#creating-a-default-offer-by-targeting-an-existing-component) 콘텐츠는 기본 경험의 오퍼가 됩니다.
 * [Target 구성 요소를 추가](/help/sites-authoring/content-targeting-touch.md#creating-an-offer-by-adding-a-target-component)한 다음, 콘텐츠를 구성 요소에 추가하십시오.
 
 구성 요소가 타겟팅되면 각 경험에 대한 오퍼를 추가할 수 있습니다.
 
-* [사용자 정의 오퍼를 추가합니다](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer).
-* [라이브러리에서 오퍼를 추가합니다](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+* [사용자 정의 오퍼를 추가합니다.](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer)
+* [라이브러리에서 오퍼를 추가합니다.](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)
 
 오퍼를 사용한 작업에 다음 도구를 사용할 수 있습니다.
 
-* [사용자 정의 오퍼를 오퍼 라이브러리에 추가합니다](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library).
-* [라이브러리 오퍼를 사용자 정의 오퍼로 변환합니다](/help/sites-authoring/content-targeting-touch.md#converting-a-library-offer-to-a-custom-library).
-* [라이브러리 오퍼를 열고 콘텐츠를 편집합니다](/help/sites-authoring/content-targeting-touch.md#editing-a-library-offer).
+* [사용자 정의 오퍼를 오퍼 라이브러리에 추가합니다.](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library)
+* [라이브러리 오퍼를 사용자 정의 오퍼로 변환합니다.](/help/sites-authoring/content-targeting-touch.md#converting-a-library-offer-to-a-custom-library)
+* [라이브러리 오퍼를 열고 콘텐츠를 편집합니다.](/help/sites-authoring/content-targeting-touch.md#editing-a-library-offer)
 
 #### 기존 구성 요소를 타겟팅하여 기본 오퍼 생성 {#creating-a-default-offer-by-targeting-an-existing-component}
 
@@ -244,7 +249,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
 구성 요소를 타겟팅하면 해당 구성 요소만 오퍼에서 사용할 수 있습니다. 오퍼에서 구성 요소를 제거하거나 다른 구성 요소를 오퍼에 추가할 수는 없습니다.
 
-[타겟팅 프로세스를 시작](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)한 후 다음 절차를 수행하십시오.
+[타깃팅 프로세스를 시작한 후 다음 절차를 수행하십시오.](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)
 
 1. 타겟팅할 구성 요소를 클릭합니다. 다음 예와 유사한 구성 요소용 도구 모음이 나타납니다.
 
@@ -254,7 +259,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
    ![대상](do-not-localize/chlimage_1.png)
 
-   구성 요소 콘텐츠는 기본값 경험을 위한 오퍼입니다. 구성 요소를 타겟팅하면 이 구성 요소의 기본 노드가 각 경험에 대해 복제됩니다. 이러한 복제는 경험별 작성 중에 올바른 콘텐츠 노드를 편집하는 데 필요합니다. 기본값이 아닌 이러한 경험에 대해 [사용자 정의 오퍼를 추가](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer)하거나 [라이브러리 오퍼를 추가](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)하십시오.
+   구성 요소 콘텐츠는 기본값 경험을 위한 오퍼입니다. 구성 요소를 타겟팅하면 이 구성 요소의 기본 노드가 각 경험에 대해 복제됩니다. 이러한 복제는 경험별 작성 중에 올바른 콘텐츠 노드를 편집하는 데 필요합니다. 기본값이 아닌 이러한 경험에 대해 [사용자 지정 오퍼를 추가](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer)하거나 [라이브러리 오퍼를 추가](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)하십시오.
 
 #### 타겟 구성 요소를 추가하여 오퍼 생성 {#creating-an-offer-by-adding-a-target-component}
 
@@ -294,22 +299,21 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
    >관리자가 설정하는 경우 위치를 명시적으로 설정해야 할 수 있습니다.
    >
    >
-   >관리자는 **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**&#x200B;에서 이 구성을 설정해야 하는지 결정할 수 있습니다.
+   >관리자는 `https://<host>:<port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet`에서 이 구성을 설정해야 하는지 여부를 결정할 수 있습니다.
    >
-   >
-   >사용자가 위치를 입력하도록 하려면 **위치 강제 적용** 확인란을 선택하십시오.
+   >사용자가 위치를 입력하도록 하려면 **위치 강제** 확인란을 선택합니다.
 
 1. 오퍼를 생성할 경험을 선택합니다.
 1. 다음과 같이 오퍼를 생성합니다.
 
    * 기본값 경험의 경우 구성 요소를 타겟팅된 드롭 영역으로 드래그하고 구성 요소 속성을 평소대로 편집하여 오퍼를 위한 콘텐츠를 작성합니다.
-   * 기본값이 아닌 경험의 경우 [사용자 정의 오퍼를 추가](#adding-a-custom-offer)하거나 [라이브러리 오퍼를 추가](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)합니다.
+   * 기본값이 아닌 경험의 경우 [사용자 지정 오퍼를 추가](#adding-a-custom-offer)하거나 [라이브러리 오퍼를 추가](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)하십시오.
 
 #### 사용자 정의 오퍼 추가 {#adding-a-custom-offer}
 
 타겟팅 모드에서 타겟팅된 구성 요소의 콘텐츠를 작성하여 오퍼를 생성할 수 있습니다. 사용자 정의 오퍼를 생성하는 경우 이 오퍼는 단일 경험에 대한 오퍼로 사용됩니다.
 
-오퍼를 다른 경험에서 사용할 수 있다고 결정하는 경우, 사용자 정의 오퍼를 생성하고 [이 오퍼를 라이브러리에 추가](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library)할 수 있습니다. 오퍼 콘솔을 사용하여 재사용 가능한 오퍼를 생성하는 방법에 대해서는 [오퍼 라이브러리에 오퍼 추가](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)를 참조하십시오.
+오퍼를 다른 경험에서 사용할 수 있다고 결정하는 경우 사용자 지정 오퍼를 만들고 [라이브러리에 추가할 수 있습니다.](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library) 오퍼 콘솔을 사용하여 재사용 가능한 오퍼를 만드는 방법에 대해서는 [오퍼 라이브러리에 오퍼 추가](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)를 참조하십시오.
 
 1. 오퍼를 추가할 경험을 선택합니다.
 1. 구성 요소 메뉴를 표시하려면 오퍼를 추가할 타겟팅된 구성 요소를 클릭합니다.
@@ -367,7 +371,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
 사용자 정의 오퍼를 여러 경험을 위한 오퍼로 재사용하려면 [오퍼 라이브러리](/help/sites-authoring/offerlib.md)에 사용자 정의 오퍼를 추가하십시오. 타겟팅 중인 현재 브랜드의 라이브러리에 오퍼를 추가할 수 있습니다.
 
-오퍼 콘솔을 사용하여 재사용 가능한 오퍼를 생성하는 방법에 대해서는 [오퍼 라이브러리에 오퍼 추가](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)를 참조하십시오.
+오퍼 콘솔을 사용하여 재사용 가능한 오퍼를 만드는 방법에 대해서는 [오퍼 라이브러리에 오퍼 추가](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)를 참조하십시오.
 
 1. 사용자 정의 오퍼를 표시할 경험을 선택합니다.
 1. 사용자 지정 오퍼를 클릭하여 오퍼 메뉴를 표시한 다음 **오퍼 라이브러리에 오퍼 저장** 아이콘을 클릭합니다.
@@ -381,7 +385,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 다른 경험에 있는 오퍼는 변경하지 않고 라이브러리 오퍼를 사용자 정의 오퍼로 변환하여 현재 경험을 위한 오퍼를 변경할 수 있습니다.
 
 1. 사용자 정의 라이브러리를 표시할 경험을 선택합니다.
-1. 라이브러리 오퍼를 클릭하여 오퍼 메뉴를 표시한 다음, 인라인 오퍼로 전환 아이콘을 클릭합니다.
+1. 라이브러리 오퍼를 클릭하여 오퍼 메뉴를 표시한 다음 **인라인 오퍼로 전환** 아이콘을 클릭합니다.
 
    ![인라인 오퍼로 전환](do-not-localize/chlimage_1-5.png)
 
@@ -390,7 +394,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 오퍼를 편집하려면 타겟팅됨 모드의 경험에서 라이브러리 오퍼를 여십시오. 변경한 내용이 오퍼를 사용하는 모든 경험에 표시됩니다.
 
 1. 사용자 정의 라이브러리를 표시할 경험을 선택합니다.
-1. 라이브러리 오퍼를 로컬/사용자 정의 오퍼로 변환합니다. [라이브러리 오퍼를 사용자 정의 라이브러리로 변환](#converting-a-library-offer-to-a-custom-library)을 참조하십시오.
+1. 라이브러리 오퍼를 로컬/사용자 정의 오퍼로 변환합니다. [라이브러리 오퍼를 사용자 지정 라이브러리로 변환](#converting-a-library-offer-to-a-custom-library)을 참조하십시오.
 1. 오퍼의 콘텐츠를 편집합니다.
 
 1. 다시 라이브러리에 저장합니다. [라이브러리에 사용자 정의 오퍼 추가](#adding-a-custom-offer-to-a-library)를 참조하십시오.
@@ -399,7 +403,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
 [타겟팅 프로세스](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)의 타겟 단계에는 만들기 단계에서 작업에 사용한 경험과 대상자를 매핑하는 작업이 포함됩니다. 타겟 페이지에는 각 경험이 타겟팅하는 대상자가 표시됩니다. 각 경험의 대상자를 지정하거나 변경할 수 있습니다. Adobe Target을 사용하는 경우 대상에 대한 트래픽 비율을 특정 경험으로 타겟팅할 수 있도록 해 주는 A/B 테스트를 생성할 수도 있습니다.
 
-### AEM 타겟팅 또는 Adobe Target(경험 타겟팅) 을 사용하는 경우... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### AEM 타겟팅 또는 Adobe Target(경험 타겟팅)을 사용하는 경우 {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 대상자가 매핑 다이어그램의 왼쪽에 표시되고 경험이 오른쪽에 표시됩니다.
 
@@ -407,7 +411,7 @@ Target 모드에서 볼 수 있는 활동 및 경험은 [활동 콘솔](/help/si
 
 세그먼트를 사용하여 대상자를 정의합니다. 페이지에 대한 클라우드 구성은 사용할 수 있는 세그먼트를 결정합니다. 페이지가 Adobe Target 클라우드 구성과 연결되어 있지 않으면 대상자를 정의하는 데 AEM 세그먼트를 사용할 수 있습니다. 페이지가 Adobe Target 클라우드 구성과 연결되어 있으면 타겟 세그먼트를 사용합니다.
 
-타겟팅 엔진에 대한 자세한 내용은 [타겟팅 엔진](/help/sites-authoring/personalization.md#targeting-engine)을 참조하십시오.
+타깃팅 엔진에 대한 자세한 내용은 [타깃팅 엔진](/help/sites-authoring/personalization.md#targeting-engine)을 참조하세요.
 
 대상을 두 개 이상의 경험을 사용하지 마십시오. 경험이 다른 경험에 매핑된 대상자에 매핑되면 경험 옆에 경고 기호가 나타납니다.
 
@@ -421,7 +425,7 @@ AEM 타겟팅(또는 Adobe Target 경험 타겟팅)을 사용할 때 경험을 �
 1. (선택 사항) **편집**&#x200B;을 클릭한 다음, 키워드를 입력하여 원하는 세그먼트를 검색합니다.
 1. 대상자 목록에서 대상자를 선택하고 **확인**&#x200B;을 클릭합니다.
 
-### A/B 테스트(Adobe Target)를 사용 중인 경우... {#if-you-are-using-a-b-testing-adobe-target}
+### A/B 테스트(Adobe Target)를 사용하는 경우 {#if-you-are-using-a-b-testing-adobe-target}
 
 A/B 테스트 활동이 있는 경우, 대상자는 왼쪽에 있고 각 경험이 표시되는 비율은 가운데에 있으며 경험은 오른쪽에 있습니다.
 
@@ -563,7 +567,7 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
    * **지정한 날짜 및 시간**: 구체적인 시점입니다. 이 옵션을 선택하는 경우 달력 아이콘을 클릭하고 날짜를 선택한 다음 활동을 종료할 시간을 지정합니다.
 
 1. 활동의 우선 순위를 지정하려면 슬라이더를 사용하여 **낮음**, **일반** 또는 **높음**&#x200B;을 선택합니다.
-1. Adobe Target 계정으로 Adobe Analytics를 구성한 경우 **Source 보고** 드롭다운 메뉴가 표시됩니다. **Adobe Target** 또는 **Adobe Analytics**&#x200B;를 소스로 선택합니다.
+1. Adobe Target 계정으로 Adobe Analytics를 구성한 경우, **보고 소스** 드롭다운 메뉴가 표시됩니다. **Adobe Target** 또는 **Adobe Analytics**&#x200B;를 소스로 선택합니다.
 
    **Adobe Analytics**&#x200B;를 선택하는 경우, 회사와 보고서 세트를 선택하십시오. **Adobe Target**&#x200B;을 선택하는 경우에는 아무 작업도 필요하지 않습니다.
 
@@ -575,7 +579,7 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
 
    모든 필드를 지워야 하는 경우 오른쪽 상단에 있는 세 개의 점을 클릭하고 **모든 필드 지우기**&#x200B;를 선택하십시오.
 
-   모든 지표에는 사용자가 정의할 수 있는 고급 설정도 있습니다. 이 고급 설정에 액세스하려면 **고급 설정**&#x200B;을 선택하십시오. 이전 테이블에서 성공 지표를 카운트하는 방법에 대한 정의를 참조하고 [Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ko)를 참조하십시오.
+   모든 지표에는 사용자가 정의할 수 있는 고급 설정도 있습니다. 이 고급 설정에 액세스하려면 **고급 설정**&#x200B;을 선택하십시오. 이전 표에서 성공 지표를 카운트하는 방법에 대한 정의를 참조하고 [Adobe Target 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ko)
 
    >[!NOTE]
    >
@@ -607,10 +611,10 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
 다음 기준은 방문자의 경험을 시뮬레이션할 때 나타나는 콘텐츠를 결정합니다.
 
 * 사용자의 세션 저장소에 있는 데이터(Context Hub를 통해)
-* [설정 상태의 활동](/help/sites-authoring/activitylib.md)
-* [세그먼트를 정의하는 규칙](/help/sites-administering/campaign-segmentation.md)
+* 진행 중인 [활동.](/help/sites-authoring/activitylib.md)
+* 세그먼트를 정의하는 [규칙입니다.](/help/sites-administering/campaign-segmentation.md)
 * 타겟 구성 요소에 있는 경험의 콘텐츠
-* [타겟팅 엔진의 구성](/help/sites-authoring/activitylib.md)
+* 타깃팅 엔진의 [구성](/help/sites-authoring/activitylib.md)
 
 프로필을 로드할 때 페이지에 예기치 않은 콘텐츠가 나타나면 이 목록에 있는 각 항목의 구성을 확인하십시오.
 
@@ -691,7 +695,7 @@ Adobe Target을 엔진으로 선택하는 경우:
   </tr>
   <tr>
    <td><strong>해결된 세그먼트 포함</strong></td>
-   <td><p>이 확인란을 선택하면 mbox 호출에 있는 모든 해결된 세그먼트와 페이지 및 프레임워크에 구성된 모든 매개 변수가 포함됩니다.</p> <p>이 기능은 AEM 세그먼트를 동기화하는 XML API가 있는 상황에서만 작동합니다. Adobe Target으로 처리되지 않는 AEM의 세그먼트(예: 스크립트 세그먼트)가 있다면 이 옵션을 사용할 경우 AEM에서 세그먼트를 해결하고 세그먼트가 활성 상태인 Adobe Target에 정보를 전송할 수 있습니다.</p> </td>
+   <td><p>이 확인란을 선택하면 mbox 호출에 있는 모든 해결된 세그먼트와 페이지 및 프레임워크에 구성된 모든 매개변수가 포함됩니다.</p> <p>이 기능은 AEM 세그먼트를 동기화하는 XML API가 있는 상황에서만 작동합니다. Adobe Target으로 처리되지 않는 AEM의 세그먼트(예: 스크립트 세그먼트)가 있다면 이 옵션을 사용할 경우 AEM에서 세그먼트를 해결하고 세그먼트가 활성 상태인 Adobe Target에 정보를 전송할 수 있습니다.</p> </td>
   </tr>
   <tr>
    <td><strong>상속된 컨텍스트 매개변수</strong></td>
@@ -710,7 +714,7 @@ Adobe Target을 엔진으로 선택하는 경우:
 
 >[!NOTE]
 >
->구성 요소를 선택하여 이를 타겟팅이 가능하도록 만들면 AEM도 이 구성 요소를 교체하고 Adobe Target 구성 요소를 주입합니다. (Adobe Target 구성 요소는 수동으로 페이지에 추가할 때에만 사용되는 것이 아니라, 기존 구성 요소를 타겟팅할 때에도 사용됩니다.)
+>구성 요소를 선택하여 이를 타겟팅이 가능하도록 만들면 AEM도 이 구성 요소를 교체하고 Adobe Target 구성 요소를 주입합니다. Adobe Target 구성 요소는 수동으로 페이지에 추가할 때만 사용되는 것이 아니라, 기존 구성 요소를 타겟팅할 때도 사용됩니다.
 
 Client Context(클라이언트측)를 엔진으로 선택하는 경우:
 
