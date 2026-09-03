@@ -205,7 +205,7 @@ JSP는 필수 분석 javascript 개체 및 참조를 클라이언트측 javascri
 
 mbox를 만드는 데 사용되는 기본 `mbox.js` 파일이 `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`에 있습니다. 사용자 지정 `mbox.js` 파일을 사용하려면 파일을 Target 클라우드 구성에 추가하십시오. 파일을 추가하려면 `mbox.js` 파일을 파일 시스템에서 사용할 수 있어야 합니다.
 
-예를 들어, [Marketing Cloud ID 서비스 ](https://experienceleague.adobe.com/docs/id-service/using/home.html)을(를) 사용하려면 테넌트를 기반으로 하는 `imsOrgID` 변수에 대한 올바른 값을 포함하도록 `mbox.js`을(를) 다운로드해야 합니다. 이 변수는 Marketing Cloud ID 서비스와 통합하는 데 필요합니다. 자세한 내용은 [Adobe Target용 보고 Source으로 Adobe Analytics](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) 및 [구현하기 전에 ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)을(를) 참조하십시오.
+예를 들어, [Marketing Cloud ID 서비스 &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/home.html)을(를) 사용하려면 테넌트를 기반으로 하는 `imsOrgID` 변수에 대한 올바른 값을 포함하도록 `mbox.js`을(를) 다운로드해야 합니다. 이 변수는 Marketing Cloud ID 서비스와 통합하는 데 필요합니다. 자세한 내용은 [Adobe Target용 보고 Source으로 Adobe Analytics](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) 및 [구현하기 전에 &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)을(를) 참조하십시오.
 
 >[!NOTE]
 >
