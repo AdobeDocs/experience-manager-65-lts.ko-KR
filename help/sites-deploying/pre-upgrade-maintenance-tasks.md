@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
+source-git-commit: c93d78653e192d041830a84ea24fe5d3edde29e0
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1332'
 ht-degree: 2%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 2%
 * [색인 정의](#index-definitions)
 * [충분한 디스크 공간 확인](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#ensure-sufficient-disk-space)
 * [AEM 전체 백업](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#fully-back-up-aem)
+* [오래된 업그레이드 전 백업 확인](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#check-stale-pre-upgrade-backups)
 * [quickstart.properties 파일 생성](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [워크플로우 및 감사 로그 삭제 구성](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [업그레이드 전 작업 설치, 구성 및 실행](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
@@ -46,6 +47,18 @@ ht-degree: 2%
 ## AEM 전체 백업 {#fully-back-up-aem}
 
 업그레이드를 시작하기 전에 AEM을 완전히 백업해야 합니다. 해당되는 경우 저장소, 애플리케이션 설치, 데이터 저장소 및 Mongo 인스턴스를 백업해야 합니다. AEM 인스턴스 백업 및 복원에 대한 자세한 내용은 [백업 및 복원](/help/sites-administering/backup-and-restore.md)을 참조하십시오.
+
+## 오래된 업그레이드 전 백업 확인 {#check-stale-pre-upgrade-backups}
+
+업그레이드 전에 AEM은 `/var/upgrade/PreUpgradeBackup/<timestamp>`에서 특정 경로(예: `/etc/tags`)를 백업한 다음 업그레이드가 완료되면 복원합니다. 각 백업 노드에 병합 상태 속성이 있습니다. `INIT`은(는) 백업이 만들어졌지만 다시 병합되지 않았음을 의미하며, `COMPLETED`은(는) 병합이 성공적으로 완료되었음을 의미합니다.
+
+이전 업그레이드(예: 6.4에서 6.5로)의 백업이 `INIT` 상태로 남아 있는 경우 최신 업그레이드(6.5에서 6.5 LTS로)는 병합되지 않은 이전 백업을 복원합니다. 이렇게 하면 현재 저장소 상태와 더 이상 일치하지 않는 오래되거나 오래된 콘텐츠가 자동으로 다시 도입되어 업그레이드가 완료된 후 예기치 않은 문제가 발생할 수 있습니다.
+
+이 문제를 방지하려면 업그레이드를 시작하기 전에 다음을 수행하십시오.
+
+1. CRXDE Lite(`/crx/de/index.jsp`)를 사용하여 `/var/upgrade/PreUpgradeBackup/` 아래에 있는 기존 노드에 대한 소스 인스턴스를 확인하십시오.
+2. 검색된 각 백업 노드의 병합 상태 속성을 검사합니다.
+3. 노드가 이전 업그레이드의 `INIT` 상태에 있는 경우 계속하기 전에 해당 콘텐츠를 검토하고 정리하십시오. 삭제하거나 명시적으로 병합하십시오. 이렇게 하면 오래된 데이터를 자동으로 복원하는 대신 새롭고 정확한 백업을 만들 수 있습니다.
 
 ## quickstart.properties 파일 생성 {#generate-quickstart-properties}
 

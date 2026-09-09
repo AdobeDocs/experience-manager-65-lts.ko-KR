@@ -11,7 +11,7 @@ role: Admin, Developer
 exl-id: 3a5d10d2-4ef8-4f85-942e-47ece6538acb
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '416'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ AEM CIF 핵심 구성 요소는 여러 AEM 사이트 구조에서 사용할 수 
 
 여러 Adobe Commerce 스토어 보기를 Adobe Experience Manager Sites과 통합하기 위한 옵션을 자세히 설명하는 비디오 연습입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32829/?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/32829/?captions=kor&quality=12)
 
 Live Copy 및 언어 사본의 AEM 다중 사이트 관리 기능은 Commerce integration framework과 함께 사용되어 지역 및 로케일에서 사이트를 전역적으로 관리합니다.
 

@@ -7,7 +7,7 @@ role: Developer,Leader
 exl-id: 3f3437fb-1fff-4703-a50d-28da89b0a856
 source-git-commit: fd3404f62beb377362db73ab937b58391b15e195
 workflow-type: tm+mt
-source-wordcount: '3746'
+source-wordcount: '3753'
 ht-degree: 98%
 
 ---
@@ -251,7 +251,7 @@ AEM에서 모든 웹 페이지는 `/content/my-brand/my-content` 아래에 저�
 
    웹 콘솔(예: localhost:4502/system/console/configMgr)을 사용하여 Sling Resource Resolver를 구성할 수 있습니다.
 
-   * **Apache Sling Resource Resolver Factory**
+   * **Apache Sling Resource Resolver 팩토리**
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    URL을 정규 표현식으로 단축하는 데 필요한 매핑을 빌드한 후 빌드에 포함된 OsgiConfignode인 `config.publish`에서 이러한 구성을 정의하는 것이 좋습니다.
