@@ -11,8 +11,8 @@ role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
 source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 7%
+source-wordcount: '880'
+ht-degree: 15%
 
 ---
 
@@ -31,9 +31,9 @@ CIF 프로젝트에서 작업하려면 로컬 개발 환경을 사용하는 것�
 
 >[!NOTE]
 >
->다음 지침은 AEM 6.5 LTS에 중점을 둔 CIF을 사용하여 AEM Commerce에 대한 로컬 AEM 개발 환경을 설정하는 데 도움이 됩니다. AEM as a Cloud Service을 사용하는 경우 [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#) 설명서를 참조하십시오.
+>다음 지침은 AEM 6.5 LTS에 중점을 둔 CIF을 사용하여 AEM Commerce용 로컬 AEM 개발 환경을 설정하는 데 도움이 됩니다. AEM as a Cloud Service을 사용하는 경우 [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#) 설명서를 참조하십시오.
 
-AEM용 AEM Commerce 추가 기능(CIF 추가 기능)은 로컬 개발에도 사용할 수 있으며 AEM 패키지로 제공됩니다. 기능 팩으로 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 다운로드할 수 있습니다.
+CIF 추가 기능이라고 하는 AEM용 AEM Commerce 추가 기능은 로컬 개발에도 사용할 수 있으며 AEM 패키지로 제공됩니다. 기능 팩으로 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 다운로드할 수 있습니다.
 
 ### 필수 소프트웨어
 
@@ -41,9 +41,9 @@ AEM용 AEM Commerce 추가 기능(CIF 추가 기능)은 로컬 개발에도 사�
 
 - 로컬 AEM 6.5 LTS
 - [Java 17/Java 21](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-- [Apache Maven](https://maven.apache.org/) (3.3.9 이상)
+- [Apache Maven](https://maven.apache.org/)&#x200B;(3.3.9 이상)
 - [노드 LTS](https://nodejs.org/en/)
-- [npm 6 이상](https://www.npmjs.com/)
+- [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
 ### CIF 추가 기능 액세스
@@ -153,7 +153,7 @@ CIF 프로젝트를 시작하는 두 번째 옵션은 [AEM Venia 참조 저장�
 
 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) 또는 [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)에서 생성된 프로젝트에는 모두 조정해야 하는 기본 구성이 이미 포함되어 있습니다.
 
-`url`의 `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` 값을 프로젝트에서 사용하는 상거래 시스템의 GraphQL 끝점으로 바꾸십시오.
+`com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json`의 `url` 값을 프로젝트에서 사용하는 상거래 시스템의 GraphQL 끝점으로 바꾸십시오.
 
 AEM Commerce 추가 기능 및 CIF 핵심 구성 요소는 AEM 서버를 통해 Commerce GraphQL 종단점에 연결합니다. 또는 브라우저에서 직접 액세스할 수도 있습니다. 클라이언트측 CIF 핵심 구성 요소 및 CIF 추가 기능 제작 도구는 기본적으로 `/api/graphql`에 연결됩니다. 필요한 경우 CIF Cloud Service 구성(아래 참조)을 통해 조정할 수 있습니다.
 
@@ -164,4 +164,4 @@ http://localhost:4502/system/console/configMgr으로 이동하여 `Adobe CIF Gra
 ## 추가 리소스
 
 - [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
-- [AEM Venia 참조 저장소](https://github.com/adobe/aem-cif-guides-venia)
+- [AEM Venia 참조 스토어](https://github.com/adobe/aem-cif-guides-venia)
