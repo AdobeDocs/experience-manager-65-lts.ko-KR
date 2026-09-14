@@ -14,9 +14,7 @@ source-git-commit: d49de63985f537da3e6b92dac5233c104b1ccdfe
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 77%
-
 ---
-
 
 # 타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성 {#authoring-targeted-content-using-targeting-mode}
 
@@ -525,7 +523,7 @@ A/B 테스트 활동이 있는 경우, 대상자는 왼쪽에 있고 각 경험�
   </tr>
   <tr>
    <td><strong>증분 카운트, 사용자 해제 및 재입력 금지</strong></td>
-   <td>활동 컨텐츠 대신 사용자에게 표시되는 컨텐츠를 결정합니다.
+   <td>활동 콘텐츠 대신 사용자에게 표시되는 콘텐츠를 결정합니다.
     <ul>
      <li>동일 경험, 추적 없음</li>
      <li>기본 컨텐츠 또는 기타 활동 컨텐츠</li>
