@@ -14,9 +14,7 @@ source-git-commit: d49de63985f537da3e6b92dac5233c104b1ccdfe
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 77%
-
 ---
-
 
 # 타겟팅 모드를 사용하여 타겟팅된 콘텐츠 작성 {#authoring-targeted-content-using-targeting-mode}
 
@@ -320,7 +318,7 @@ AEM의 타겟팅 모드를 사용하여 타겟팅된 콘텐츠를 작성하십�
 
    ![chlimage_1-21](assets/chlimage_1-21.png)
 
-1. &#x200B;+ 아이콘을 클릭합니다.
+1. + 아이콘을 클릭합니다.
 
    기본값 오퍼의 콘텐츠는 현재 경험을 위한 오퍼로 사용됩니다.
 
@@ -525,7 +523,7 @@ A/B 테스트 활동이 있는 경우, 대상자는 왼쪽에 있고 각 경험�
   </tr>
   <tr>
    <td><strong>증분 카운트, 사용자 해제 및 재입력 금지</strong></td>
-   <td>활동 컨텐츠 대신 사용자에게 표시되는 컨텐츠를 결정합니다.
+   <td>활동 콘텐츠 대신 사용자에게 표시되는 콘텐츠를 결정합니다.
     <ul>
      <li>동일 경험, 추적 없음</li>
      <li>기본 컨텐츠 또는 기타 활동 컨텐츠</li>
@@ -534,7 +532,7 @@ A/B 테스트 활동이 있는 경우, 대상자는 왼쪽에 있고 각 경험�
  </tbody>
 </table>
 
-성공 지표에 대한 자세한 내용은 [Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ko)를 참조하십시오.
+성공 지표에 대한 자세한 내용은 [Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
 
 ### 설정 구성(AEM 타겟팅) {#configuring-settings-aem-targeting}
 
@@ -573,13 +571,13 @@ Adobe Target을 사용할 경우 목표 및 설정을 구성하려면 다음 작
 
    ![chlimage_1-33](assets/chlimage_1-33.png)
 
-1. **목표 지표** 영역의 **기본 목표** 아래에서 추적하려는 성공 지표(전환, 수입, 참여)를 선택하고 지표를 측정하는 방법(또는 목표에 도달했음을 나타내기 위해 대상자가 취하는 조치)을 입력합니다. 이전 테이블의 목표 지표 정의를 참조하고 성공 지표에 대한 [Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ko)를 참조하십시오.
+1. **목표 지표** 영역의 **기본 목표** 아래에서 추적하려는 성공 지표(전환, 수입, 참여)를 선택하고 지표를 측정하는 방법(또는 목표에 도달했음을 나타내기 위해 대상자가 취하는 조치)을 입력합니다. 이전 테이블의 목표 지표 정의를 참조하고 성공 지표에 대한 [Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)를 참조하십시오.
 
    오른쪽 상단에 있는 세 개의 점을 클릭하고 **이름 변경**&#x200B;을 선택하여 목표의 이름을 변경할 수 있습니다.
 
    모든 필드를 지워야 하는 경우 오른쪽 상단에 있는 세 개의 점을 클릭하고 **모든 필드 지우기**&#x200B;를 선택하십시오.
 
-   모든 지표에는 사용자가 정의할 수 있는 고급 설정도 있습니다. 이 고급 설정에 액세스하려면 **고급 설정**&#x200B;을 선택하십시오. 이전 표에서 성공 지표를 카운트하는 방법에 대한 정의를 참조하고 [Adobe Target 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ko)
+   모든 지표에는 사용자가 정의할 수 있는 고급 설정도 있습니다. 이 고급 설정에 액세스하려면 **고급 설정**&#x200B;을 선택하십시오. 이전 표에서 성공 지표를 카운트하는 방법에 대한 정의를 참조하고 [Adobe Target 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)
 
    >[!NOTE]
    >
