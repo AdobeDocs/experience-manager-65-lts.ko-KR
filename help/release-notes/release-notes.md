@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e123b8357097747e1fbb598075c05180487dabdc
+source-git-commit: 63d8bb0652c6749164d51898119418c8b649e261
 workflow-type: tm+mt
 source-wordcount: '7277'
-ht-degree: 22%
+ht-degree: 21%
 ---
 
 # Adobe Experience Manager 6.5 LTS, SP3의 최신 릴리스 노트 {#release-notes}
@@ -532,7 +532,7 @@ AEM 6.5 LTS용 SP2가 패키지 관리자를 통해 설치하기 위해 ZIP이 �
 
 >[!NOTE]
 >
-> 이전 6.5 SP에서 LTS SP1로 직접 업그레이드하는 경우 6.5에서 6.5 LTS GA [업그레이드](/help/sites-deploying/upgrade.md)하는 데 제공된 지침을 따르십시오.
+> 이전 6.5 SP에서 LTS SP3으로 직접 업그레이드하는 경우 6.5 ~ 6.5 LTS GA에 대해 제공된 지침 [업그레이드](/help/sites-deploying/upgrade.md)을(를) 따르십시오.
 
 
 자세한 지침은 [업그레이드 설명서](/help/sites-deploying/upgrade.md)를 참조하세요. 동일한 설명서는 LTS 서비스 팩 업데이트에 적용됩니다.
