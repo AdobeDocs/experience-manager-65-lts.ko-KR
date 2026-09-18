@@ -4,13 +4,12 @@ description: 오프라인 리인덱싱 방법론을 사용하여 AEM 저장소�
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 076db19026a0992725062ec9965ff6c1cb84333e
+exl-id: 156f245f-b185-4da4-b9c6-6d0a98405119
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 0%
-
+source-wordcount: '1230'
+ht-degree: 1%
 ---
-
 # AEM에 대한 오프라인 리인덱싱 {#offline-reindexing-for-aem}
 
 ## 소개 {#introduction}
@@ -56,7 +55,7 @@ java java -jar oak-run.jar tika <nodestore path> --fds-path <datastore path> --d
 
 여기서 `nodestore path`은(는) `mongo_uri` 또는 `crx-quickstart/repository/segmentstore/`입니다.
 
-`--fake-ds-path=temp` 대신 `–fds-path` 매개 변수를 사용하여 프로세스 속도를 높입니다.
+`–fds-path` 대신 `--fake-ds-path=temp` 매개 변수를 사용하여 프로세스 속도를 높입니다.
 
 **2. 기존 인덱스**&#x200B;에서 사용할 수 있는 이진 텍스트 저장소를 다시 사용합니다.
 
@@ -134,7 +133,7 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 긴 라이프타임으로 프로덕션 AEM 인스턴스에 체크포인트를 만듭니다. 이 작업은 저장소를 복제하기 전에 수행해야 합니다.
 
-`http://serveraddress:serverport/system/console/jmx`에 있는 JMX 콘솔을 통해 `CheckpointMBean`(으)로 이동하여 충분한 수명(예: 200일)으로 검사점을 만드십시오. 이 경우 수명 기간(밀리초)에 대한 인수로 `CheckpointMBean#createCheckpoint`을(를) 사용하여 `17280000000`을(를) 호출하십시오.
+`http://serveraddress:serverport/system/console/jmx`에 있는 JMX 콘솔을 통해 `CheckpointMBean`(으)로 이동하여 충분한 수명(예: 200일)으로 검사점을 만드십시오. 이 경우 수명 기간(밀리초)에 대한 인수로 `17280000000`을(를) 사용하여 `CheckpointMBean#createCheckpoint`을(를) 호출하십시오.
 
 이 작업이 완료되면 새로 만든 검사점 ID를 복사하고 JMX `CheckpointMBean#listCheckpoints`을(를) 사용하여 수명의 유효성을 검사합니다.
 

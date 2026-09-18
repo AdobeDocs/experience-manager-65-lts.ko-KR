@@ -4,14 +4,12 @@ description: JBoss EAP 8은 Elytron을 사용하여 주 도메인 컨트롤러�
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: 212aa75c-7f2a-4140-8051-77643065e429
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '474'
 ht-degree: 3%
-
 ---
-
-
 # 보조 노드 인증 설정(Elytron 기반)
 
 ## Elytron을 사용하여 보조 노드 인증 구성
@@ -23,7 +21,7 @@ JBoss EAP 8은 **Elytron**&#x200B;을(를) 사용하여 클러스터된 배포�
 
 ## 사전 요구 사항
 
-* **기본 노드`secondary`**&#x200B;에 이름이 **인**&#x200B;관리 사용자를 만들어야 합니다.
+* **기본 노드**&#x200B;에 이름이 `secondary`**인**&#x200B;관리 사용자를 만들어야 합니다.
 * 보조 노드&#x200B;**에서만 이 구성**&#x200B;을(를) 수행합니다.
 * 클러스터의 **각 보조 노드**&#x200B;에 대해 구성을 반복합니다.
 * 기본 및 보조 노드 모두에서 **JBoss를 완전히 중지해야 합니다**.
@@ -229,4 +227,3 @@ JBoss EAP 8은 **Elytron**&#x200B;을(를) 사용하여 클러스터된 배포�
 * **옵션 2**&#x200B;은(는) 사용자 지정 자격 증명 저장소 암호를 사용하여 더 강력한 보안을 사용합니다.
 * **보조 노드에서만 구성을 완료해야 합니다**.
 * 주 노드 구성은 도메인 전체에서 자동으로 재사용됩니다.
-

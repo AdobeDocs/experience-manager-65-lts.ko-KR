@@ -4,13 +4,12 @@ description: Tomcat을 통해 배포된 AEM 인스턴스를 업그레이드하�
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: b3c4e946a3f235fa0e3a0945f1ad692ee195e3ef
+exl-id: a9f7494e-4a09-4999-9164-c369e0989886
+source-git-commit: 60809c26ba9591bf9e30a19e25d71ceb449a162e
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '419'
 ht-degree: 0%
-
 ---
-
 # Application Server 설치 업그레이드 단계(Tomcat - 즉석 업그레이드) {#upgrade-steps-for-application-server-installations-tomcat-inplace}
 
 >[!NOTE]
@@ -24,7 +23,7 @@ ht-degree: 0%
 
 ### 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
-* **필요한 최소 Java 버전**: Tomcat 서버에 Oracle® JRE 17/21을 설치했는지 확인하십시오.
+* **필요한 최소 Java 버전**: Tomcat 서버에 ® JRE 17/21을 설치했는지 확인하십시오.
 * **Tomcat 서버**: AEM 6.5 LTS 및 해당 ServicePack용 Tomcat 서버의 지원 버전은 **10.0.x** 및 **10.1.x**&#x200B;입니다.
 
 ### 업그레이드 수행 {#performing-the-upgrade}
@@ -42,7 +41,7 @@ ht-degree: 0%
 
 1. 더 이상 필요하지 않은 파일 및 폴더를 제거합니다. 특별히 제거해야 하는 항목은 다음과 같습니다.
 
-   * **cq-quickstart-65.war** 파일 및 `cq-quickstart-65` 폴더의 `webapps` 폴더는 일반적으로 `<path-to-aem-server>/webapps`에 있습니다.
+   * **cq-quickstart-65.war** 파일 및 `webapps` 폴더의 `cq-quickstart-65` 폴더는 일반적으로 `<path-to-aem-server>/webapps`에 있습니다.
    * `launchpad/startup` 폴더입니다. 서버 폴더에 있다고 가정하고 터미널에서 다음 명령을 실행하여 삭제할 수 있습니다.
 
      ```shell
