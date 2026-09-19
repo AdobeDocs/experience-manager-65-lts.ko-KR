@@ -1,13 +1,12 @@
 ---
 title: JBoss EAP 8(Windows)에서 AEM 6.5 LTS 업그레이드
 description: 이 안내서에서는 JDK 21을 사용하여 기존 Adobe Experience Manager(AEM) 6.5 LTS 설치를 JBoss EAP 7.4에서 Windows의 JBoss EAP 8로 업그레이드하는 단계별 지침을 제공합니다.
-source-git-commit: 835530039678bc16a6de87b8d580be91a2026f94
+exl-id: 23389613-0d9f-4e0b-b133-c8e598dd9cc9
+source-git-commit: d713aac72e764849d53e8feb98ed85b89f27a44d
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 3%
-
+source-wordcount: '1430'
+ht-degree: 2%
 ---
-
 # JBoss EAP 8(Windows)에서 AEM 6.5 LTS 업그레이드
 
 ## 개요
@@ -59,8 +58,8 @@ ht-degree: 3%
 ### 백업 검사 목록
 
 - [ ] 기존 JBoss EAP 7.4 설치 디렉터리의 전체 백업
-- [ ] 폴더의 `crx-repository` 백업
-- [ ] 폴더의 `crx-quickstart` 백업
+- [ `crx-repository` 폴더의 ] 백업
+- [ `crx-quickstart` 폴더의 ] 백업
 - [ 모든 사용자 지정 구성의 ] 내보내기
 - [ ] 데이터베이스 백업(외부 데이터베이스를 사용하는 경우)
 - [ ] 문서 현재 시스템 상태 및 구성
@@ -503,7 +502,7 @@ JBoss 콘솔에서 최종 시작 메시지를 모니터링합니다.
 |-------|---------------|----------|
 | AEM 시작 실패 | 잘못된 Java 버전 | JDK 21에 대한 `JAVA_HOME`점 확인 |
 | 저장소 손상 오류 | 불완전한 저장소 사본 | 백업에서 복원 및 저장소 다시 복사 |
-| OutOfMemoryError | 힙 메모리 부족 | `-Xmx`에서 `standalone.conf.bat` 늘리기 |
+| OutOfMemoryError | 힙 메모리 부족 | `standalone.conf.bat`에서 `-Xmx` 늘리기 |
 | &quot;설치됨&quot; 상태의 번들 | 종속성 누락 | 웹 콘솔에서 번들 종속성 확인 |
 | 포트 8080이 이미 사용 중입니다. | 포트를 사용하는 다른 서비스 | 충돌하는 서비스 중지 또는 JBoss 포트 변경 |
 
@@ -551,7 +550,7 @@ JBoss 콘솔에서 최종 시작 메시지를 모니터링합니다.
 
 - [JBoss EAP 8 마이그레이션 안내서](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0/html/migration_guide/)
 - [Adobe Experience Manager 6.5 업그레이드 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=ko)
-- [AEM 서비스 팩 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=ko-KR)
+- [AEM 서비스 팩 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=ko)
 
 ## 문서 정보
 

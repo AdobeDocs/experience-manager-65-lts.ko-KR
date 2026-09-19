@@ -4,14 +4,12 @@ description: JBoss EAP 8을 사용한 AEM Forms 6.5.1 LTS 클러스터 배포에
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+exl-id: f24e7245-7b43-4b1c-ba7a-162344ef545c
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '152'
 ht-degree: 1%
-
 ---
-
-
 # JBoss 도메인 컨트롤러를 시작할 수 없음
 
 ## 문제
@@ -28,9 +26,9 @@ ht-degree: 1%
 * **응용 프로그램 서버:** JBoss EAP 8.x
 * **구성 파일:**
 
-   * `<JBOSS_HOME>/domain/configuration/domain_oracle.xml`
-   * `<JBOSS_HOME>/domain/configuration/domain_mysql.xml`
-   * `<JBOSS_HOME>/domain/configuration/domain_mssql.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_oracle.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_mysql.xml`
+  * `<JBOSS_HOME>/domain/configuration/domain_mssql.xml`
 
 ## 문제 해결 단계
 
