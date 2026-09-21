@@ -5,13 +5,11 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: e485100f-3e16-4fd4-a8ce-af771d765dd1
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 0ce01150bd74eeea7edb6c6127003e1aefda97a9
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 1%
-
+source-wordcount: '1089'
+ht-degree: 0%
 ---
-
 # Adobe Experience Manager Forms 6.5 LTS 핫픽스{#aem-form-hotfix}
 
 이 문서에서는 알려진 문제를 해결하고, 시스템 안정성을 개선하며, AEM Forms 6.5 LTS의 전반적인 성능을 개선하기 위해 구현된 주요 수정 사항을 나열합니다.
@@ -29,6 +27,59 @@ ht-degree: 1%
     <td><strong>날짜</strong></td>
     <td><strong>핫픽스 다운로드 링크(AEM 소프트웨어 배포 링크)</strong></td>
     <td><strong>해결된 문제</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <strong>2026년 9월 21일</strong><br>
+      <em>적용 대상:</em> AEM Forms 6.5 LTS 서비스 팩 2 JEE 배포(JBoss, WebLogic, WebSphere)<br>
+    </td>
+    <td>
+    <p><strong>이 핫픽스를 설치하려면 다음 단계를 순서대로 완료하십시오.</strong></p>
+    <p><strong>1단계: 패치 설치</strong></p>
+    <ul>
+    <strong>JBos:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.LTS.2-win-jboss.zip">JBoss JEE 서버용 Windows에서 AEM Forms 6.5 LTS SP2용 핫픽스</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.LTS.2-linux-jboss.tar.gz">JBoss JEE 서버용 Linux에서 AEM Forms 6.5 LTS SP2용 핫픽스</a></li>
+    <strong>WebLogic:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.LTS.2-win-weblogic.zip">Weblogic JEE 서버용 Windows에서 AEM Forms 6.5 LTS SP2용 핫픽스</a></li>
+    <li>Linux- Weblogic JEE 서버용 Linux에서 AEM Forms 6.5 LTS SP2용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.LTS.2-linux-weblogic.tar.gz">핫픽스</a></li>
+    <strong>WebSphere:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/websphere/adobe-aem-forms-jee-hotfix-6.5.LTS.2-win-websphere.zip">Websphere JEE 서버용 Windows에서 AEM Forms 6.5 LTS SP2용 핫픽스</a></li>
+    <li>Linux- Websphere JEE 서버용 Linux에서 AEM Forms 6.5 LTS SP2용 <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/websphere/adobe-aem-forms-jee-hotfix-6.5.LTS.2-linux-websphere.tar.gz">핫픽스</a></li>
+    </ul>
+    <p>표준 AEM Forms on JEE 패치 설치 절차를 사용하여 패치를 설치합니다. <!-- TODO: link to the 6.5 LTS JEE patch installation instructions once available --></p>
+    <p><strong>2단계: 취약성 수정 번들 설치</strong></p>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/SP2LTSBundles_VULN-36670.zip">AEM Forms 6.5 LTS SP2용 취약점 수정 번들</a></li>
+    </ul>
+    <ol>
+    <li><code>http://&lt;host&gt;:&lt;port&gt;/lc/system/console/bundles</code>에서 OSGi 콘솔을 엽니다.</li>
+    <li><strong>설치/업데이트</strong>를 클릭합니다.</li>
+    <li><strong>번들 시작</strong> 및 <strong>패키지 새로 고침</strong> 확인란을 선택하십시오.</li>
+    <li><strong>파일 선택</strong>을 클릭한 다음 다운로드한 번들을 업로드하십시오.</li>
+    <li>로그가 설정되고 번들이 <strong>활성</strong>(으)로 표시될 때까지 기다리십시오.</li>
+    </ol>
+    <p><strong>3단계: AEM Forms Workbench 설치 관리자 업데이트</strong></p>
+    <p>최신 AEM Forms Workbench 설치 관리자로 업데이트해야 합니다. <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/fd/workbench/6-5-0-20260902-1-45/Workbench_DVD.zip">AEM Forms Workbench 설치 관리자</a>에서 다운로드합니다.</p>
+    <p><strong>4단계: 클라이언트 라이브러리 파일 업데이트(개발자)</strong></p>
+    <p>이 패치에는 SDK 클라이언트 라이브러리 <code>adobe-livecycle-client.jar</code>에 대한 주요 업데이트가 포함되어 있습니다(<a href="/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files">AEM Forms Java 라이브러리 파일 포함</a> 참조). 프로젝트에서 이 JAR 파일을 사용하는 경우 핫픽스를 설치한 후 프로젝트의 클래스 경로에서 <code>adobe-livecycle-client.jar</code>을(를) 업데이트합니다. <code>&lt;AEM_Forms_Installation_dir&gt;\sdk\client-libs\common\adobe-livecycle-client.jar</code>에서 최신 버전을 사용할 수 있습니다.</p>
+    <p>이 핫픽스는 누적되므로 서비스 팩 2를 먼저 설치하지 않고 AEM Forms 6.5 LTS 서비스 팩 2 또는 이전 서비스 팩에 적용할 수 있습니다.</p>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-26818</b> Apache Shiro가 버전 2.1.0으로 업데이트된 후 JEE의 AEM Forms에서 Shiro 보안 관리자용 <code>NoClassDefFoundError</code>을(를) 사용하여 부트스트랩하지 못합니다. 이 핫픽스는 성공적으로 부트스트래핑을 복원합니다.</li>
+    <li>JEE의 <b>FORMS-26819</b> AEM Forms이 <code>org.owasp.esapi.reference.JavaLogFactory</code>에 대해 "클래스를 찾을 수 없음" 오류와 함께 실패합니다. 이 핫픽스는 누락된 클래스를 해결합니다.</li>
+    <li><b>FORMS-26584, FORMS-26589</b> AEM Forms 6.5 LTS로 업그레이드하면 TaskManager 끝점이 제거됩니다. 이 핫픽스는 TaskManager 끝점을 복원합니다.</li>
+    <li><b>FORMS-26569</b> 보안 XML 빌더로 인해 JEE에서 Configuration Manager MergeEars 단계가 실패하고 DOCTYPE 선언 오류(<code>ALC-LCM-010-200</code>)가 발생합니다. 이 핫픽스를 사용하면 MergeEar 단계를 완료할 수 있습니다.</li>
+    <li><b>FORMS-25063</b> 응용 프로그램 수준 로그가 IBM WebSphere Liberty 배포에 없습니다. 이 핫픽스는 애플리케이션 수준 로깅을 복원합니다.</li>
+    <li><b>FORMS-24892</b> JBoss에서 "IMAPProvider가 하위 유형이 아님"으로 전자 메일이 실패합니다. 이 핫픽스는 JBoss에서 이메일 기능을 복원합니다.</li>
+    <li>WLP(WebSphere Liberty Profile)의 <b>FORMS-24692</b> 전자 메일이 "소켓을 TLS로 변환할 수 없습니다"로 실패합니다. 이 핫픽스는 WLP에서 TLS를 통해 이메일을 복원합니다.</li>
+    <li><b>FORMS-26688</b> 깁슨 라이브러리를 버전 6.0.29665850으로 업데이트합니다.</li>
+    <li><b>FORMS-25222</b> 백포트 SAML 어설션 유효성 검사 개선 사항.</li>
+    <li><b>FORMS-26733, FORMS-26734</b> Apache Log4j가 버전 2.25.5으로 업데이트되었습니다.</li>
+    <li>이 핫픽스에는 보안 수정 사항도 포함되어 있습니다.</li>
+    </ul>
+    </td>
   </tr>
   <tr>
     <td>
