@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 63d8bb0652c6749164d51898119418c8b649e261
+source-git-commit: a4f151470c6042bfaaa3d8f4a3260074f007a4d9
 workflow-type: tm+mt
-source-wordcount: '7277'
+source-wordcount: '7674'
 ht-degree: 21%
 ---
 
@@ -303,14 +303,16 @@ Headless 콘텐츠 조각 REST API 번들은 사용되지 않는 기능 전환 �
 
 >[!NOTE]
 >
-> 이제 OSGi 배포용 AEM Forms 6.5 LTS 서비스 팩 3(SP3)을 사용할 수 있습니다. 여기에는 버그 수정, 보안 개선 및 개선 사항이 포함되어 있습니다. **JEE 배포용 AEM Forms 6.5 LTS 서비스 팩 3(SP3)은 나중에 릴리스됩니다.**
+> 이제 AEM Forms 6.5 LTS 서비스 팩 3(SP3)을 OSGi 및 JEE 배포 모두에서 사용할 수 있습니다. 여기에는 버그 수정, 보안 개선 및 개선 사항이 포함되어 있습니다.
 
 #### 개선 사항 {#forms-enhancements-65-lts-sp3}
 
-* FORMS-24360: Microsoft Office 2024에 대한 PDF Generator(PDFG) 지원을 추가했습니다.
+* FORMS-24360: Microsoft Office 2024에 대한 PDF Generator(PDFG) 지원을 추가했습니다. 이는 OSGi 및 JEE 배포에 모두 적용됩니다.
 * FORMS-24949: AEM Forms 6.5 LTS에 Forms 빌더 에이전트 지원을 추가했습니다. 이렇게 하면 에이전트가 필요로 하는 Forms Manager HTTP API 및 GenAI(양식 생성 AI) HTTP API를 지원합니다.
 * FORMS-25180: 작성자가 Adobe Sign 서명 기한 전까지 남은 일수를 수신자에게 표시할 수 있도록 AEM Forms 사용자 인터페이스에 `daysUntilSigningDeadline` 값을 추가했습니다.
-* FORMS-25182: 이제 PDF Generator(PDFG)가 단일 사용자 계정으로 구성된 경우 다중 스레드 문서 변환을 지원합니다.
+* FORMS-25182, FORMS-25181: 이제 PDF Generator(PDFG)가 단일 사용자 계정으로 구성된 경우 다중 스레드 문서 변환을 지원합니다. 이는 OSGi 및 JEE 배포에 모두 적용됩니다.
+* FORMS-27595: AEM Forms Document Security에서 동적 워터마크에 대한 **사용자 프로필 설명** 특성이 추가되어 워터마크에 사용자의 프로필 설명이 포함될 수 있습니다.
+* WebSphere® Liberty Profile(WLP)은 이제 Oracle 데이터베이스 외에 Microsoft® SQL Server를 지원합니다.
 
 #### 해결된 문제 {#forms-fixed-issues-65-lts-sp3}
 
@@ -339,6 +341,25 @@ Headless 콘텐츠 조각 REST API 번들은 사용되지 않는 기능 전환 �
 * FORMS-26763: Designer에서 정적 텍스트 개체 내의 하이퍼링크에 대한 굵은 서식은 텍스트를 편집한 후 손실되었습니다. 이제 편집한 후에도 굵게 서식이 적용됩니다.
 * FORMS-26817: 적응형 양식에서 재설정 을 클릭하면 이미지 구성 요소에서 작성자가 구성한 이미지가 지워지고 끊어진 이미지가 남으며, 다른 필드는 올바르게 재설정됩니다. 이제 재설정하면 구성된 이미지가 유지됩니다.
 * FORMS-26852: Agent 사용자 인터페이스에서 날짜/시간 필드는 저장된 값보다 1일 빠른 날짜를 표시합니다. 이제 필드에 올바른 날짜가 표시됩니다.
+* FORMS-26733, FORMS-26734: Apache Log4j가 버전 2.25.5으로 업데이트되었습니다.
+
+6.5 LTS 서비스 팩 3의 JEE에서 AEM Forms에 대해 다음 문제가 해결되었습니다.
+
+* FORMS-27585: JEE의 AEM Forms에서 `submitForm()`을(를) 호출하는 XFA 기반 PDF forms이 Adobe Reader(및 스크립트가 `closeDoc()`(을)로 호출되는 경우 Acrobat에 제출 결과를 표시하지 않았습니다. 이제 제출 결과가 올바르게 표시됩니다.
+* FORMS-25998: JEE의 AEM Forms에서 관리 콘솔에서 HSM 연결을 테스트할 때 Java 21에서 `IllegalAccessError`(으)로 HSM(Hardware Security Module) 개인 키 인증서를 등록하지 못했습니다. 이제 HSM 개인 키 인증서 등록이 작동합니다.
+* FORMS-24993: JEE의 AEM Forms에서 `SAXException`(으)로 인해 웹 서비스 호출 단계의 WSDL 로드가 실패했습니다(&quot;파일의 조기 끝&quot;). 이제 WSDL이 올바르게 로드됩니다.
+* FORMS-24518: JEE의 AEM Forms(JBoss)에서 레거시 JSTL taglib URI로 인해 Reader 확장 웹 애플리케이션이 새로 설치한 후 &quot;오류 처리 요청&quot;을 반환했습니다. 이제 Reader 확장 웹 애플리케이션이 로드됩니다.
+* FORMS-27495: JEE의 AEM Forms에서 단일 사용자 모드가 활성화된 경우 PDF Generator이 Excel(`.xlsx`) 파일을 전환하지 않았으며 전환이 무기한 중단되었습니다. 이제 Excel 전환이 단일 사용자 모드에서 완료됩니다.
+* FORMS-27098: JEE의 AEM Forms에서 SOAP SDK(`/sdk`) 인증 게이트로 인해 `/lc`에 관리자로 로그인하지 못했습니다. 이제 관리자 로그인이 성공했습니다.
+* FORMS-25869: JEE의 AEM Forms에서 PDF Generator은 변환 안정성을 개선하기 위해 업데이트된 변환 엔진 수정 사항을 통합합니다.
+
+**JEE에 AEM Forms 6.5 LTS SP3 설치**
+
+JEE에 AEM Forms 6.5 LTS SP3을 설치하려면 다음 단계를 순서대로 완료하십시오.
+
+1. 표준 AEM Forms on JEE 설치 절차에 따라 애플리케이션 서버([AEM Forms 릴리스](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)에서 다운로드)용 AEM Forms 6.5 LTS SP3 JEE 설치 관리자를 사용하여 서비스 팩을 설치합니다.
+1. 최신 AEM Forms Workbench 설치 관리자 업데이트(동일한 [AEM Forms 릴리스](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 페이지에서 사용 가능).
+1. 프로젝트에서 `adobe-livecycle-client.jar` SDK 클라이언트 라이브러리를 사용하는 경우 프로젝트의 클래스 경로에서 업데이트합니다. `<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`에서 최신 버전을 사용할 수 있습니다.
 
 #### 알려진 문제 {#forms-known-issues-65-lts-sp3}
 
@@ -347,8 +368,6 @@ Headless 콘텐츠 조각 REST API 번들은 사용되지 않는 기능 전환 �
 #### 보안 수정 사항 {#forms-security-fixes-65-lts-sp3}
 
 이 릴리스는 여러 XSS(크로스 사이트 스크립팅) 수정, 서버측 요청 위조(SSRF) 수정, XML 외부 엔티티(XXE) 수정 및 타사 라이브러리 업데이트를 포함하여 AEM Forms의 보안 취약점을 해결합니다.
-
-<!-- TODO: Add security bulletin link. Open question, pending information from Sunny Marwaha. -->
 
 
 
