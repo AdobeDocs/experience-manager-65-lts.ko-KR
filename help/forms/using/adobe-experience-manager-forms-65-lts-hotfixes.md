@@ -1,19 +1,21 @@
 ---
-title: Adobe Experience Manager Forms 6.5 LTS SP1 핫픽스
-description: AEM Forms 6.5 LTS용 핫픽스를 다운로드하여 설치하는 방법에 대한 정보를 제공합니다.
+title: Adobe Experience Manager Forms 6.5 LTS 핫픽스
+description: AEM Forms 6.5 LTS용 핫픽스를 다운로드하여 설치하는 방법에 대한 정보를 제공합니다. LTS가 아닌 AEM 6.5의 경우 AEM 6.5 Forms 핫픽스 문서를 참조하십시오.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: e485100f-3e16-4fd4-a8ce-af771d765dd1
-source-git-commit: 0ce01150bd74eeea7edb6c6127003e1aefda97a9
+source-git-commit: 989d83cfc56f7a7d4e2aea5a7ac1ca444d505859
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1137'
 ht-degree: 0%
 ---
 # Adobe Experience Manager Forms 6.5 LTS 핫픽스{#aem-form-hotfix}
 
 이 문서에서는 알려진 문제를 해결하고, 시스템 안정성을 개선하며, AEM Forms 6.5 LTS의 전반적인 성능을 개선하기 위해 구현된 주요 수정 사항을 나열합니다.
 
+
+이 문서는 AEM Forms 6.5 LTS에 적용됩니다. LTS가 아닌 AEM 6.5 배포의 경우 [Adobe Experience Manager Forms 핫픽스](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -79,6 +81,7 @@ ht-degree: 0%
     <li><b>FORMS-26733, FORMS-26734</b> Apache Log4j가 버전 2.25.5으로 업데이트되었습니다.</li>
     <li>이 핫픽스에는 보안 수정 사항도 포함되어 있습니다.</li>
     </ul>
+    <p><strong>빌드:</strong> AEMForms-6.6.0-0008</p>
     </td>
   </tr>
   <tr>

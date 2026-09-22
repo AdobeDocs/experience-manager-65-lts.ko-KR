@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: a4f151470c6042bfaaa3d8f4a3260074f007a4d9
+source-git-commit: 2a5cba7da93b1915126223a7de2f9fc8198e5f08
 workflow-type: tm+mt
-source-wordcount: '7674'
+source-wordcount: '7586'
 ht-degree: 21%
 ---
 
@@ -633,8 +633,6 @@ Adobe는 투명성을 보장하고 적절한 계획을 수립할 수 있도록 A
 ### AEM Forms
 
 * 구성 관리자에서 모듈을 선택하지 않았거나 제한된 구성 요소만 선택한 경우 AEM Forms 6.5 LTS JEE 턴키 사용자 정의 모드의 Bootstrap 중에 데이터베이스 초기화가 실패합니다. 이 실패는 종속성(xalan-2.7.2.jar)이 누락되어 오류가 발생했기 때문입니다. Adobe-livecycle-jboss.ear\lib에 JAR 파일을 추가하면 문제가 해결됩니다. (FORMS-24690)
-* WebSphere® Liberty Profile에서 실행되는 Forms JEE LTS 서비스 팩 2 배포에서 이메일 기능이 작동하지 않습니다. 전자 메일 기능을 사용하려고 할 때 서버에서 오류 `Could not convert socket to TLS`을(를) 기록합니다. (FORMS-24692)
-* JBoss®에서 실행 중인 Forms JEE LTS에서 이메일 관련 기능이 실패합니다. 전자 메일 기능을 사용하려고 할 때 서버에서 오류 `Error IMAPProvider not a subtype`을(를) 기록합니다. 이 문제를 해결하려면 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-core-jboss.ear)에서 핫픽스를 설치하십시오. (FORMS-24892)
 
 ### JSON 댓글은 최초 콘텐츠 슬링(SP2)에서 더 이상 지원되지 않음 {#json-comments-no-longer-supported-in-sling-initial-content}
 
