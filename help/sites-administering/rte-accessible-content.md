@@ -8,11 +8,9 @@ role: Admin
 exl-id: deba01bd-7a8d-48cd-956d-fbe8eb8671ba
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 0%
-
+source-wordcount: '970'
+ht-degree: 2%
 ---
-
 # 액세스 가능한 웹 페이지 및 사이트를 생성하도록 RTE 구성 {#configure-rte-for-accessibility}
 
 Adobe Experience Manager은 다양한 접근성 표준에 따라 많은 표준 접근성 기능을 지원합니다. 또한 개발자는 RTE(리치 텍스트 편집기)를 사용하는 Experience Manager 구성 요소를 사용하여 액세스 가능한 콘텐츠를 만드는 데 도움이 되는 기능을 제공하도록 사용자 정의하거나 확장할 수 있습니다.
