@@ -23,7 +23,7 @@ ht-degree: 2%
 ---
 # 적응형 양식 작업을 위한 모범 사례 {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 개요 {#overview}
 
@@ -106,7 +106,7 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
 
 ### 양식 템플릿 만들기
 
-**구성 브라우저**&#x200B;에서 활성화된 양식 서식 파일을 사용하여 적응형 양식을 만들 수 있습니다. 양식 서식 파일을 사용하려면 [적응형 양식 서식 파일 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)를 참조하십시오.
+**구성 브라우저**&#x200B;에서 활성화된 양식 서식 파일을 사용하여 적응형 양식을 만들 수 있습니다. 양식 서식 파일을 사용하려면 [적응형 양식 서식 파일 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)를 참조하십시오.
 
 다른 작성자 컴퓨터에서 만든 적응형 양식 패키지에서 양식 템플릿을 업로드할 수도 있습니다. 양식 서식 파일은 [aemforms-references-* packages](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)을(를) 설치하여 사용할 수 있습니다. 권장되는 몇 가지 모범 사례는 다음과 같습니다.
 
@@ -330,7 +330,7 @@ AEM은 적응형 양식을 현지화하는 데 사용할 수 있는 번역 워�
 전반적인 성능을 개선하도록 AEM을 구성하는 몇 가지 모범 사례는 다음과 같습니다.
 
 * Felix 콘솔에서 JavaScript 및 CSS용 HTML 클라이언트 라이브러리 압축을 활성화합니다.
-* `/etc.clientlibs/fd`의 모든 클라이언트 라이브러리와 AEM Dispatcher의 추가 사용자 지정 클라이언트 라이브러리를 캐시하여 게시된 양식의 응답성과 보안을 향상시킵니다. 자세한 내용은 [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)을 참조하세요.
+* `/etc.clientlibs/fd`의 모든 클라이언트 라이브러리와 AEM Dispatcher의 추가 사용자 지정 클라이언트 라이브러리를 캐시하여 게시된 양식의 응답성과 보안을 향상시킵니다. 자세한 내용은 [Dispatcher](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher.html)을 참조하세요.
 
 * `/content/forms/af/` 및 `/content/dam/formsanddocuments/*` 경로를 캐시하지 마십시오. 적응형 양식 캐싱 구성에 대한 자세한 내용은 [적응형 양식 캐싱](/help/forms/using/configure-adaptive-forms-cache.md)을 참조하십시오.
 

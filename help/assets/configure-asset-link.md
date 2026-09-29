@@ -42,7 +42,7 @@ Asset Link에 사용할 Experience Manager Assets을 구성하려면 다음 작�
 
 | Assets 기능 | Experience Manager 버전 및 지원 요구 사항 |
 |--- |--- |
-| Asset Link 는 기본적으로 작동합니다 | Experience Manager 6.5 및 6.5.2 이상 </br> Experience Manager 6.4.4 및 6.4.6 이상 </br> Adobe에서는 AAL을 사용하기 전에 최신 [Experience Manager 서비스 팩(SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)을 설치하는 것이 좋습니다. |
+| Asset Link 는 기본적으로 작동합니다 | Experience Manager 6.5 및 6.5.2 이상 </br> Experience Manager 6.4.4 및 6.4.6 이상 </br> Adobe에서는 AAL을 사용하기 전에 최신 [Experience Manager 서비스 팩(SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)을 설치하는 것이 좋습니다. |
 | 패키지 설치 후 자산 링크가 작동합니다 | Experience Manager 6.4.0 - 6.4.3의 경우 [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 패키지를 설치하십시오. |
 | Adobe Stock 통합 | Experience Manager 6.4.2 이상 |
 | 시각적 또는 유사성 검색 | Experience Manager 6.5.0 이상 |
@@ -63,7 +63,7 @@ Adobe은 대부분의 구성 작업을 자동화하고 몇 가지 수동 작업�
    다음 속성을 설정하고 변경 사항을 저장합니다.
 
    * [!UICONTROL 그룹 매핑]: 필요한 경우가 아니면 비워 둡니다. 자세한 내용은 [그룹 매핑](#group-mapping)을 참조하세요.
-   * [!UICONTROL 조직]: Adobe Admin Console에서 사용 중인 조직 ID를 입력하십시오. 조직 ID에 대한 자세한 내용은 [사용자 그룹 만들기](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html)를 참조하십시오.
+   * [!UICONTROL 조직]: Adobe Admin Console에서 사용 중인 조직 ID를 입력하십시오. 조직 ID에 대한 자세한 내용은 [사용자 그룹 만들기](https://helpx.adobe.com/kr/enterprise/using/create-aal-user-group.html)를 참조하십시오.
 
 1. **[!UICONTROL Adobe Granite Bearer 인증 처리기]** 구성을 찾은 다음 클릭하여 편집합니다.
 
@@ -291,7 +291,7 @@ Adobe Asset Link를 구성하거나 사용할 때 문제가 발생하는 경우 
 * 배포가 사전 요구 사항을 충족하는지 확인합니다. 특히 적절한 기능 팩이나 패키지가 설치되어 있는지 확인하십시오.
 * 조직의 파트너 또는 시스템 통합자에게 문의하십시오.
 * Creative Cloud 사용자가 체크아웃된 자산에서 을 확인할 수 없는 경우 이메일 ID에서 도메인 이름의 대/소문자를 확인합니다. 수정하려면 [수동 구성](#manual-configuration)을 참조하세요.
-* 자세한 내용은 [자산 링크 문제 해결](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html)을 참조하세요.
+* 자세한 내용은 [자산 링크 문제 해결](https://helpx.adobe.com/kr/enterprise/kb/asset-link-troubleshooting.html)을 참조하세요.
 
 
 >[!MORELIKETHIS]

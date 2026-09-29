@@ -118,7 +118,7 @@ Workbench는 개발자와 양식 작성자가 자동화된 비즈니스 프로�
 
 ### 지원되는 플랫폼 {#supported-platforms}
 
-[AEM Forms 지원 플랫폼](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65)에서 Workbench에 대해 지원되는 플랫폼 전체 목록을 참조하십시오.
+[AEM Forms 지원 플랫폼](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_kr)에서 Workbench에 대해 지원되는 플랫폼 전체 목록을 참조하십시오.
 
 ## Designer 설치 고려 사항 {#designer-installation-considerations}
 
