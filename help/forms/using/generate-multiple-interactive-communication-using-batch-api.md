@@ -9,16 +9,30 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 92bb4045-ed22-4cc3-9365-65cb39b3c82d
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2267'
 ht-degree: 4%
-
 ---
-
 # 일괄 처리 API를 사용하여 여러 대화형 통신 생성 {#use-batch-api-to-generate-multiple-ic}
 
-배치 API를 사용하여 템플릿에서 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 템플릿은 데이터가 없는 대화형 커뮤니케이션입니다. 배치 API는 데이터를 템플릿과 결합하여 대화형 커뮤니케이션을 생성합니다. API는 대량의 대화형 커뮤니케이션 제작 시 유용합니다. 예를 들어 여러 고객을 위한 전화 요금 청구서, 신용 카드 명세서 등이 있습니다.
+배치 API를 사용하여 템플릿에서 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 템플릿은 데이터가 없는 인터랙티브 커뮤니케이션입니다. 배치 API는 데이터를 템플릿과 결합하여 인터랙티브 커뮤니케이션을 생성합니다. API는 대량의 대화형 커뮤니케이션 제작 시 유용합니다. 예를 들어 여러 고객을 위한 전화 요금 청구서, 신용 카드 명세서 등이 있습니다.
 
 배치 API는 JSON 형식 및 양식 데이터 모델의 레코드(데이터)를 허용합니다. 생성된 대화형 통신의 수는 구성된 양식 데이터 모델의 입력 JSON 파일에 지정된 레코드와 같습니다. API를 사용하여 인쇄 및 웹 출력을 모두 생성할 수 있습니다. PRINT 옵션은 PDF 문서를 생성하고 WEB 옵션은 각 개별 레코드에 대한 JSON 형식의 데이터를 생성합니다.
 
@@ -176,8 +190,8 @@ REST(표현 상태 전송) 요청을 통해 [일괄 처리 API](https://develope
 Java™ 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파일이 준비되었는지 확인하십시오. Java™ 서블릿을 만들고 배포할 수 있도록 다음 단계를 수행합니다.
 
 1. AEM 인스턴스에 로그인하고 대화형 통신을 만듭니다. 아래 제공된 샘플 코드에 언급된 대화형 통신을 사용하려면 [여기를 클릭](assets/SimpleMediumIC.zip)하십시오.
-1. AEM 인스턴스에서 [Apache Maven을 사용하여 AEM 프로젝트를 빌드하고 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=ko).
-1. AEM 프로젝트의 POM 파일의 종속성 목록에 [AEM Forms 클라이언트 SDK 버전 6.0.12 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)을(를) 추가합니다. 예:
+1. AEM 인스턴스에서 [Apache Maven을 사용하여 AEM 프로젝트를 빌드하고 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
+1. AEM 프로젝트의 POM 파일의 종속성 목록에 [AEM Forms 클라이언트 SDK 버전 6.0.12 이상](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)을(를) 추가합니다. 예:
 
    ```xml
        <dependency>
@@ -327,7 +341,7 @@ Java™ 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 �
    * WEB 옵션을 지정하면 레코드당 JSON 파일이 생성됩니다. JSON 파일을 사용하여 [웹 템플릿을 미리 채우기](#web-template)할 수 있습니다.
    * PRINT와 WEB 옵션을 모두 지정하면 레코드당 PDF 문서와 JSON 파일이 모두 생성됩니다.
 
-1. [Maven을 사용하여 업데이트된 코드를 AEM 인스턴스에 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=ko).
+1. [Maven을 사용하여 업데이트된 코드를 AEM 인스턴스에 배포합니다](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html).
 1. 대화형 통신을 생성하려면 배치 API를 호출하십시오. 배치 API 인쇄는 레코드 수에 따라 PDF 및 .json 파일 스트림을 반환합니다. JSON 파일을 사용하여 [웹 템플릿을 미리 채우기](#web-template)할 수 있습니다. 위의 코드를 사용하는 경우 API가 `http://localhost:4502/bin/batchServlet`에 배포됩니다. 이 코드는 PDF 및 JSON 파일의 스트림을 인쇄하고 반환합니다.
 
 ### 웹 템플릿 미리 채우기 {#web-template}
@@ -337,7 +351,7 @@ Java™ 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 �
 **구문**
 `http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
-**예**
+**예제**
 JSON 파일이 `C:\batch\mergedJsonPath.json`에 있고 아래 대화형 통신 템플릿을 사용하는 경우: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
 그러면 게시 노드의 다음 URL에 대화형 통신의 웹 채널이 표시됩니다
@@ -363,4 +377,4 @@ JSON 파일이 `C:\batch\mergedJsonPath.json`에 있고 아래 대화형 통신 
 
 >[!NOTE]
 >
->CRX 프로토콜만 기본적으로 활성화됩니다. 지원되는 다른 프로토콜을 사용하려면 [구성 관리자를 사용하여 미리 채우기 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=ko)을 참조하세요.
+>CRX 프로토콜만 기본적으로 활성화됩니다. 지원되는 다른 프로토콜을 사용하려면 [구성 관리자를 사용하여 미리 채우기 서비스 구성](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en)을 참조하세요.

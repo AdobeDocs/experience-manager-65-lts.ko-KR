@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 5a93918b-3b5f-49e0-9283-86776f9d8fb4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
-
 ---
-
 # 지속 가능한 업그레이드{#sustainable-upgrades}
 
 ## 사용자 지정 프레임워크 {#customization-framework}
@@ -85,7 +94,7 @@ CRXDE Lite에 적용된 Mixin에는 `INTERNAL`(으)로 표시된 콘텐츠 노�
 
 AEM 6.5는 오버레이되거나 참조된 콘텐츠가 콘텐츠 분류와 일치하지 않는 방식으로 사용되는 경우 고객에게 경고하기 위해 상태 확인과 함께 제공됩니다.
 
-**&#x200B; Sling/Granite 컨텐츠 액세스 검사**&#x200B;는 고객 코드가 AEM의 보호된 노드에 잘못 액세스하는지 저장소를 모니터링하는 새로운 상태 검사입니다.
+** Sling/Granite 컨텐츠 액세스 검사**는 고객 코드가 AEM의 보호된 노드에 잘못 액세스하는지 저장소를 모니터링하는 새로운 상태 검사입니다.
 
 **/apps**&#x200B;을(를) 검사하며 일반적으로 완료하는 데 몇 초 정도 소요됩니다.
 

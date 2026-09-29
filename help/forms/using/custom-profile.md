@@ -1,5 +1,5 @@
 ---
-title: HTML5 양식에 대한 사용자 지정 프로필 만들기
+title: HTML5 양식용 사용자 정의 프로필 만들기
 description: HTML5 forms 프로필은 Apache Sling의 리소스 노드입니다. 이는 HTML5 forms 렌더링 서비스의 사용자 지정 버전을 나타냅니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,29 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 1f7c1213-4100-45d2-8083-531ff8d413e0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 0%
-
+source-wordcount: '657'
+ht-degree: 2%
 ---
-
-# HTML5 양식에 대한 사용자 지정 프로필 만들기 {#creating-a-custom-profile-for-html-forms}
+# HTML5 양식용 사용자 정의 프로필 만들기 {#creating-a-custom-profile-for-html-forms}
 
 프로필이 [Apache Sling](https://sling.apache.org/)의 리소스 노드입니다. 이는 HTML5 양식 렌디션 서비스의 사용자 정의 버전을 나타냅니다. HTML5 양식 렌디션 서비스를 사용하여 HTML5 양식의 모양, 동작 및 상호 작용을 사용자 지정할 수 있습니다. 프로필 노드가 JCR 저장소의 `/content` 폴더에 있습니다. 노드를 `/content` 폴더 또는 `/content` 폴더의 하위 폴더 바로 아래에 배치할 수 있습니다.
 
@@ -64,7 +79,7 @@ footer.jsp 모듈이 비어 있습니다. 사용자 상호 작용에만 사용�
 
 1. 노드 기본값을 복사하고 다른 폴더(*/content/profiles*)에 *hraform* 이름을 사용하여 노드를 붙여넣습니다.
 
-1. 새 노드 *hrform*&#x200B;을(를) 선택하고 문자열 속성 *sling:resourceType*(값: *hrform/demo*)을(를) 추가합니다.
+1. 새 노드 *hrform*&#x200B;을(를) 선택하고 *hrform/demo* 값을 가진 문자열 속성 *sling:resourceType*&#x200B;을(를) 추가합니다.
 
 1. 도구 모음 메뉴에서 모두 저장 을 클릭하여 변경 사항을 저장합니다.
 

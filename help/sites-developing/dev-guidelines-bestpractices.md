@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7fd478a6-ddc6-4c7f-b09b-e4de6ec0e897
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1091'
 ht-degree: 1%
-
 ---
-
 # AEM 개발 - 가이드라인 및 모범 사례{#aem-development-guidelines-and-best-practices}
 
 ## 템플릿 및 구성 요소 사용 지침 {#guidelines-for-using-templates-and-components}
@@ -63,21 +72,21 @@ Adobe Experience Manager(AEM) 구성 요소와 템플릿은 강력한 툴킷으�
 
   여기에는 구성 요소 정의 오버레이가 포함됩니다.
 
-   * 기존 구성 요소를 복사하여 `/apps/<website-name>/components/<MyComponent>`에 구성 요소 폴더를 만듭니다.
+  * 기존 구성 요소를 복사하여 `/apps/<website-name>/components/<MyComponent>`에 구성 요소 폴더를 만듭니다.
 
-      * 예를 들어 텍스트 구성 요소 사본을 사용자 정의하려면 다음을 수행합니다.
+    * 예를 들어 텍스트 구성 요소 사본을 사용자 정의하려면 다음을 수행합니다.
 
-         * 변환 전: `/libs/foundation/components/text`
-         * `/apps/myProject/components/text`에
+      * 변환 전: `/libs/foundation/components/text`
+      * `/apps/myProject/components/text`에
 
 * [오류 핸들러로 표시된 페이지 사용자 지정](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
   이 경우 서블릿 오버레이가 포함됩니다.
 
-   * 저장소에서 하나 이상의 기본 스크립트를 복사합니다.
+  * 저장소에서 하나 이상의 기본 스크립트를 복사합니다.
 
-      * 변환 전: `/libs/sling/servlet/errorhandler/`
-      * `/apps/sling/servlet/errorhandler/`에
+    * 변환 전: `/libs/sling/servlet/errorhandler/`
+    * `/apps/sling/servlet/errorhandler/`에
 
 >[!CAUTION]
 >

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: ff94f750-c193-438b-8be0-fcd7a40cead4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
-
+source-wordcount: '358'
+ht-degree: 3%
 ---
-
 # 명령줄 시작 및 중지{#command-line-start-and-stop}
 
 ## 명령줄에서 Adobe Experience Manager 시작 {#starting-adobe-experience-manager-from-the-command-line}
@@ -91,8 +100,8 @@ AEM을 중지하려면 다음 중 하나를 수행하십시오.
 
 * 사용하는 플랫폼에 따라 다음 작업을 수행하십시오.
 
-   * 스크립트나 명령줄에서 AEM을 시작한 경우 **Ctrl+C**&#x200B;를 눌러 서버를 종료합니다.
-   * UNIX®에서 시작 스크립트를 사용한 경우에는 중지 스크립트를 사용하여 AEM을 중지해야 합니다.
+  * 스크립트나 명령줄에서 AEM을 시작한 경우 **Ctrl+C**&#x200B;를 눌러 서버를 종료합니다.
+  * UNIX®에서 시작 스크립트를 사용한 경우에는 중지 스크립트를 사용하여 AEM을 중지해야 합니다.
 
 * jar 파일을 두 번 클릭하여 AEM을 시작한 경우 시작 창에서 **켜기** 단추를 클릭하여 서버를 종료합니다(그런 다음 단추가 **끄기**).
 

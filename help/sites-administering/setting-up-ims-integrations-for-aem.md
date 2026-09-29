@@ -1,17 +1,29 @@
 ---
-title: AEM용 IMS 통합 설정
+title: AEM에 대한 IMS 통합 설정
 description: AEM용 IMS 통합을 설정하는 방법 알아보기
 feature: Security
 role: Admin
 exl-id: 05ba39fc-4b53-43c0-9a9f-7da3293b1ca2
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 68%
-
+source-wordcount: '441'
+ht-degree: 66%
 ---
-
-# AEM용 IMS 통합 설정 {#setting-up-ims-integrations-for-aem}
+# AEM에 대한 IMS 통합 설정 {#setting-up-ims-integrations-for-aem}
 
 
 >[!NOTE]
@@ -24,13 +36,13 @@ Adobe Experience Manager(AEM)는 다른 많은 Adobe 솔루션과 통합할 수 
 
 * 을(를) 만든 후:
 
-   * [Developer Console의 자격 증명](#credentials-in-the-developer-console)
+  * [Developer Console의 자격 증명](#credentials-in-the-developer-console)
 
 * 이후에 다음과 같은 작업을 수행할 수 있습니다.
 
-   * (신규) [OAuth 구성](#creating-oauth-configuration) 만들기
+  * (신규) [OAuth 구성](#creating-oauth-configuration) 만들기
 
-   * [기존 JWT 구성을 OAuth 구성으로 마이그레이션](#migrating-existing-JWT-configuration-to-oauth)
+  * [기존 JWT 구성을 OAuth 구성으로 마이그레이션](#migrating-existing-JWT-configuration-to-oauth)
 
 >[!CAUTION]
 >
@@ -46,15 +58,15 @@ Adobe Experience Manager(AEM)는 다른 많은 Adobe 솔루션과 통합할 수 
 
 * 개요:
 
-   * [서버 간 인증](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
+  * [서버 간 인증](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
 * 새 OAuth 자격 증명 만들기:
 
-   * [OAuth 서버 간 자격 증명 구현 안내서](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+  * [OAuth 서버 간 자격 증명 구현 안내서](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * 기존 JWT 자격 증명을 OAuth 자격 증명으로 마이그레이션:
 
-   * [서비스 계정(JWT) 자격 증명에서 OAuth 서버 간 자격 증명으로 마이그레이션](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
+  * [JWT(서비스 계정) 자격 증명에서 OAuth 서버 간 자격 증명으로 마이그레이션](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 예:
 
@@ -102,5 +114,5 @@ JWT 자격 증명을 기반으로 기존 Adobe IMS 통합을 마이그레이션�
 
    ![OAuth 세부 정보 작성](assets/ims-migrate-jwt-complete-oauth-details.png)
 
-1. **저장 믿 닫기**&#x200B;를 사용하여 업데이트 내용을 유지합니다.
+1. **저장 믿 닫기**를 사용하여 업데이트 내용을 유지합니다.
 콘솔로 돌아오면 **JWT 자격 증명(더 이상 사용되지 않음)** 경고가 사라집니다.

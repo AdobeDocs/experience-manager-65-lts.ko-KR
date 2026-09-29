@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: d2f5fc90-7047-4a45-9c82-996f0da60782
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 65%
-
+source-wordcount: '620'
+ht-degree: 58%
 ---
-
 # Adobe Target과 통합{#integrating-with-adobe-target}
 
 Adobe Marketing Cloud의 일부인 [Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html)을 사용하여 모든 채널에 걸친 타겟팅 및 측정을 통해 콘텐츠 관련성을 높일 수 있습니다. 마케터는 Adobe Target을 사용하여 온라인 테스트를 디자인 및 실행하고, 즉석으로 대상자 세그먼트를 만들고(행동 기반), 콘텐츠 및 온라인 경험의 타겟팅을 자동화합니다. AEM은 Adobe Target Standard에서 사용되는 타겟팅 워크플로우를 채택했습니다. Target을 사용하면 AEM의 타깃팅 편집 환경에 익숙해질 수 있습니다.
@@ -29,7 +40,7 @@ AEM 사이트와 Adobe Target을 통합함으로써 페이지의 콘텐츠를 �
 
 Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 
-1. [사전 요구 사항 작업 수행](/help/sites-administering/target-requirements.md): Adobe Target으로 등록하여 AEM 작성자 인스턴스의 특정 측면을 구성합니다. Adobe Target 계정에는 최소한 **승인자 &#x200B;** 수준 권한이 있어야 합니다. 또한 사용자가 액세스할 수 없도록 게시 노드의 활동 설정을 보호해야 합니다.
+1. [사전 요구 사항 작업 수행](/help/sites-administering/target-requirements.md): Adobe Target으로 등록하여 AEM 작성자 인스턴스의 특정 측면을 구성합니다. Adobe Target 계정에는 최소한 **승인자 **수준 권한이 있어야 합니다. 또한 사용자가 액세스할 수 없도록 게시 노드의 활동 설정을 보호해야 합니다.
 
 1. 다음 중 하나를 선택합니다.
 
@@ -46,13 +57,13 @@ Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 >
 >사용자 정의 프록시 구성을 통해 Target을 사용 중인 경우, AEM의 일부 기능은 3.x API를 사용하고 다른 일부 기능은 4.x API를 사용하므로 HTTP 클라이언트 프록시 구성을 모두 구성해야 합니다.
 >
->* 3.x은(는) [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)로 구성됩니다.
->* 4.x은(는) [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)로 구성됩니다.
+>* 3.x은(는) [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)&#x200B;(으)로 구성되어 있습니다.
+>* 4.x은(는) [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)&#x200B;(으)로 구성되어 있습니다.
 >
 
 >[!CAUTION]
 >
->일반 사용자가 액세스할 수 없도록 게시 인스턴스에서 활동 설정 노드 **cq:ActivitySettings**&#x200B;를 보호합니다. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스에만 액세스할 수 있어야 합니다.
+>일반 사용자가 액세스할 수 없도록 게시 인스턴스에서 활동 설정 노드 **cq:ActivitySettings**&#x200B;을(를) 보호합니다. 활동 설정 노드는 Adobe Target에 대한 활동 동기화를 처리하는 서비스에만 액세스할 수 있어야 합니다.
 >
 >자세한 내용은 [Adobe Target과 통합하기 위한 전제 조건](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node)을 참조하십시오.
 
@@ -66,7 +77,7 @@ Target과 통합하려면 다음과 같은 작업을 수행해야 합니다.
 
 AEM과 Adobe Target을 통합하려면 Adobe Target, AEM 활동 관리 및 AEM 대상 관리에 대한 지식이 필요합니다. 다음과 같은 정보를 숙지해야 합니다.
 
-* Adobe Target ([Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ko) 참조)
+* Adobe Target ([Adobe Target 설명서](https://experienceleague.adobe.com/docs/target/using/target-home.html) 참조)
 * AEM 활동 콘솔([활동 관리](/help/sites-authoring/activitylib.md) 참조)
 * AEM 대상자([대상자 관리](/help/sites-authoring/managing-audiences.md) 참조)
 

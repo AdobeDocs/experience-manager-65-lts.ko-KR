@@ -9,22 +9,34 @@ feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ddd50c64-0f17-4638-a57e-17ededaca27b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 31%
-
 ---
-
 # Live Copy 개요 콘솔{#live-copy-overview-console}
 
 **Live Copy 개요**&#x200B;를 통해 다음을 수행할 수 있습니다.
 
 * 사이트 간 상속 보기/관리:
 
-   * 블루프린트 트리 및 해당 라이브 카피 구조를 상속 상태와 함께 조회합니다.
-   * 상속 상태를 변경합니다(예: 일시 중단, 다시 시작).
-   * 블루프린트 및 라이브 카피 속성 보기
+  * 블루프린트 트리 및 해당 라이브 카피 구조를 상속 상태와 함께 조회합니다.
+  * 상속 상태를 변경합니다(예: 일시 중단, 다시 시작).
+  * 블루프린트 및 라이브 카피 속성 보기
 
 * 롤아웃 작업 수행
 
@@ -79,11 +91,11 @@ ht-degree: 31%
 
 * 편집
 
-   * 편집할 블루프린트 페이지를 엽니다.
+  * 편집할 블루프린트 페이지를 엽니다.
 
 * [롤아웃](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * 롤아웃을 수행하여 소스에서 라이브 카피로 변경 내용을 푸시합니다.
+  * 롤아웃을 수행하여 소스에서 라이브 카피로 변경 내용을 푸시합니다.
 
 ### Live Copy 페이지에 대한 작업 {#actions-for-a-live-copy-page}
 
@@ -93,31 +105,31 @@ ht-degree: 31%
 
 * 편집
 
-   * 편집할 라이브 카피 페이지를 엽니다.
+  * 편집할 라이브 카피 페이지를 엽니다.
 
 * [관계 상태](#relationship-status)
 
-   * 상태 및 상속에 대한 정보를 봅니다.
+  * 상태 및 상속에 대한 정보를 봅니다.
 
 * [동기화](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * 라이브 카피를 동기화하여 소스에서 라이브 카피로 변경 내용을 가져올 수 있습니다.
+  * 라이브 카피를 동기화하여 소스에서 라이브 카피로 변경 내용을 가져올 수 있습니다.
 
 * [재설정](/help/sites-administering/msm-livecopy.md#resetting-a-live-copy-page)
 
-   * 라이브 카피 페이지를 재설정하여 모든 상속 취소를 제거하고 페이지를 소스 페이지와 동일한 상태로 되돌립니다.
+  * 라이브 카피 페이지를 재설정하여 모든 상속 취소를 제거하고 페이지를 소스 페이지와 동일한 상태로 되돌립니다.
 
 * [일시 중단](/help/sites-administering/msm.md#suspending-and-cancelling-inheritance-and-synchronization)
 
-   * 라이브 카피와 블루프린트 페이지 간의 라이브 관계를 일시적으로 비활성화합니다.
+  * 라이브 카피와 블루프린트 페이지 간의 라이브 관계를 일시적으로 비활성화합니다.
 
 * [다시 시작](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
-   * 다시 시작을 사용하면 일시 중단된 관계를 복원할 수 있습니다.
+  * 다시 시작을 사용하면 일시 중단된 관계를 복원할 수 있습니다.
 
 * [분리](/help/sites-administering/msm.md#detaching-a-live-copy)
 
-   * 라이브 카피와 블루프린트 페이지 간의 라이브 관계를 영구적으로 제거합니다.
+  * 라이브 카피와 블루프린트 페이지 간의 라이브 관계를 영구적으로 제거합니다.
 
 ## 관계 상태 {#relationship-status}
 

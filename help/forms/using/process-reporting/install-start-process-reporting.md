@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 2%
-
+source-wordcount: '1774'
+ht-degree: 4%
 ---
-
 # 프로세스 보고 시작{#getting-started-with-process-reporting}
 
 프로세스 보고를 사용하면 AEM Forms 사용자는 AEM Forms 구현에 현재 정의된 AEM Forms 프로세스에 대한 정보를 쿼리할 수 있습니다. 하지만 프로세스 보고는 AEM Forms 저장소에서 직접 데이터에 액세스하지 않습니다. 데이터는 먼저 예약된 대로 Process Reporting 저장소에 게시됩니다(*ProcessDataPublisher 및 ProcessDataStorage 서비스*&#x200B;에 의해). 그런 다음 저장소에 게시된 프로세스 보고 데이터에서 프로세스 보고의 보고서 및 쿼리가 생성됩니다. 프로세스 보고는 Forms Workflow 모듈의 일부로 설치됩니다.
@@ -45,7 +60,7 @@ Process Reporting Services는 AEM Forms 데이터베이스의 데이터를 일�
 
 이 작업은 리소스를 많이 사용할 수 있으며 AEM Forms 서버의 성능에 영향을 줄 수 있습니다. AEM Forms 서버 사용 시간 슬롯 외부에서 이 일정을 예약하는 것이 좋습니다.
 
-기본적으로 데이터 게시는 매일 오전 2:00에 실행되도록 예약되어 있습니다.
+기본적으로 데이터 게시는 매일 오전 2시에 실행되도록 예약되어 있습니다.
 
 게시 일정을 변경하려면 다음 단계를 수행하십시오.
 

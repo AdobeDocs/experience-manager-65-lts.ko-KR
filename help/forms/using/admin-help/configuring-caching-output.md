@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: d6390e32-d348-42f2-84d0-9c83aff9ee3a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 100%
-
 ---
-
 # Output에 대한 캐싱 구성  {#configuring-caching-for-output}
 
 >[!NOTE]
@@ -114,7 +129,7 @@ Output 서비스는 항상 디스크에 양식 디자인을 캐시합니다. 양
 
 ### 조각 및 이미지 캐싱 {#caching-fragments-and-images}
 
-Output 서비스는 디스크에 있는 양식 디자인에 사용된 조각과 이미지를 캐시합니다. 이렇게 하면 첫 번째 요청 시에만 조각과 이미지를 저장소에서 읽을 수 있으므로 성능이 향상됩니다. 그 이후의 요청 시에는 Output 서비스가 디스크 캐시에서 조각과 이미지를 읽습니다. 조각과 이미지는 디스크에만 캐시되고 메모리에는 캐시되지 않습니다.
+Output 서비스는 양식 디자인에 사용되는 조각과 이미지를 디스크에 캐시합니다. 이렇게 하면 첫 번째 요청 시에만 조각과 이미지를 저장소에서 읽을 수 있으므로 성능이 향상됩니다. 그 이후의 요청 시에는 Output 서비스가 디스크 캐시에서 조각과 이미지를 읽습니다. 조각과 이미지는 디스크에만 캐시되고 메모리에는 캐시되지 않습니다.
 
 다음 설정을 사용하여 조각과 이미지의 디스크 캐싱을 제어할 수 있습니다. 해당 설정은 **템플릿 리소스 캐시 설정** 영역에 있습니다.
 

@@ -10,13 +10,27 @@ mini-toc-levels: 3
 feature: Video
 solution: Experience Manager, Experience Manager Assets
 exl-id: a54d39c3-e3eb-4d09-b79e-b5284e6e3f0b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: cb04d42d-1b70-43b0-9951-45998eb6e842
+    internal-label: Video
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1606'
 ht-degree: 16%
-
 ---
-
 # 비디오 {#video}
 
 Adobe Experience Manager Assets에서는 Dynamic Media Classic으로의 자동 인코딩을 위해 Assets으로 직접 비디오를 업로드하고, 페이지 작성을 위해 Assets에서 직접 Dynamic Media Classic 비디오에 액세스할 수 있는 중앙 집중식 비디오 자산 관리를 제공합니다.
@@ -25,7 +39,7 @@ Dynamic Media Classic 비디오 통합은 모든 화면으로 최적화된 비�
 
 * **[!UICONTROL Scene7 비디오]** 구성 요소는 자동으로 장치 및 대역폭 검색을 수행하여 데스크톱, 태블릿 및 모바일에서 올바른 형식 및 올바른 품질의 비디오를 재생합니다.
 * 자산 - 단일 비디오 자산만이 아닌 응용 비디오 세트를 포함할 수 있습니다. 응용 비디오 세트에는 여러 화면에서 비디오를 원활하게 재생하는 데 필요한 모든 비디오 렌디션이 포함되어 있습니다. 응용 비디오 세트는 다른 비트율 및 형식(예: 400kbps, 800kbps 및 1000kbps)으로 인코딩된 동일한 비디오 버전을 그룹화합니다. 데스크탑, iOS, Android™, BlackBerry® 및 Windows 모바일 장치를 포함한 여러 화면에서 응용 비디오 스트리밍을 수행하려면 S7 비디오 구성 요소와 함께 응용 비디오 세트를 사용합니다.
-<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/ko_KR/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
+<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## FFMPEG 및 Dynamic Media Classic 정보 {#about-ffmpeg-and-scene}
 
@@ -36,7 +50,7 @@ Dynamic Media Classic 비디오 통합은 모든 화면으로 최적화된 비�
 
 Dynamic Media Classic 통합을 활성화하고 구성해도 바로 사용 가능한 DAM 수집 워크플로우에서 이러한 두 워크플로우 단계가 자동으로 제거되거나 비활성화되지는 않습니다. Adobe Experience Manager에서 이미 FFMPEG 기반 비디오 인코딩을 사용하고 있다면 작성 환경에 FFMPEG가 설치되어 있을 수 있습니다. 이 경우 DAM을 사용하여 수집된 새 비디오는 FFMPEG 인코더에서 한 번, Dynamic Media Classic 통합에서 한 번, 총 두 번 인코딩됩니다.
 
-Experience ManagerAdobe 의 FFMPEG 기반 비디오 인코딩이 구성되고 FFMPEG가 설치된 경우 DAM 수집 워크플로우에서 두 개의 FFMPEG 워크플로우를 제거하는 것이 좋습니다.
+Experience Manager의 FFMPEG 기반 비디오 인코딩이 구성되고 FFMPEG가 설치된 경우 DAM 수집 워크플로우에서 두 개의 FFMPEG 워크플로우를 제거하는 것이 좋습니다.
 
 ## 지원되는 형식 {#supported-formats}
 
@@ -66,7 +80,7 @@ Scene7 비디오 구성 요소에 대해 지원되는 형식은 다음과 같습
 
 자산에 대해 워크플로우나 버전 관리가 필요하지 않은 경우 자산을 Scene7에 업로드합니다. 다음은 권장되는 워크플로입니다.
 
-1. Dynamic Media Classic에서 [Scene7(시스템 자동화)에 예약된 FTP 업로드 및 인코딩을 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=ko#upload-files-using-via-ftp)합니다.
+1. Dynamic Media Classic에서 [Scene7(시스템 자동화)에 예약된 FTP 업로드 및 인코딩을 설정](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp)합니다.
 1. Experience Manager에서 컨텐츠 파인더의 **[!UICONTROL Scene7]** 탭에서 WCM의 비디오 자산에 액세스합니다.
 1. **[!UICONTROL Scene7 비디오]** 구성 요소로 작성합니다.
 
@@ -79,13 +93,13 @@ Scene7 비디오 구성 요소에 대해 지원되는 형식은 다음과 같습
 
    >[!NOTE]
    >
-   >페이지에 클라우드 구성이 없으면 **[!UICONTROL 비디오]** 탭이 표시되지 않습니다.
+   >페이지에 클라우드 구성이 없는 경우 **[!UICONTROL 비디오]** 탭이 표시되지 않습니다.
 
 1. 응용 비디오 인코딩 프로필, 곧바로 사용 가능한 단일 비디오 인코딩 프로필 또는 사용자 지정 비디오 인코딩 프로필을 선택합니다.
 
    >[!NOTE]
    >
-   >비디오 사전 설정의 의미에 대한 자세한 내용은 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=ko#video-presets-for-encoding-video-files)를 참조하십시오.
+   >비디오 사전 설정의 의미에 대한 자세한 내용은 [Dynamic Media Classic 설명서](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files)를 참조하십시오.
    >
    >범용 사전 설정을 구성할 때 응용 비디오 설정을 선택하거나 **[!UICONTROL 응용 비디오 인코딩]** 옵션을 선택하는 것이 좋습니다.
 
@@ -133,7 +147,7 @@ Scene7 비디오 구성 요소를 사용하는 것이 Scene7 비디오를 보는
 |   | Experience Manager Foundation 비디오 | Scene7 비디오 |
 |---|---|---|
 | 접근법 | HTML5 첫 번째 접근 방식. Flash는 HTML5 이외 대체 요소에만 사용됩니다. | 대부분의 데스크톱에서 플래시를 사용합니다. HTML5는 모바일 및 태블릿에 사용됩니다. |
-| 제공 | 점진적 | 적응형 스트리밍 |
+| 게재 | 점진적 | 적응형 스트리밍 |
 | 추적 | 예 | 예 |
 | 확장성 | 예 | 아니요 |
 | 모바일 비디오 | 예 | 예 |

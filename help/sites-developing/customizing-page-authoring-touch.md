@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1468'
 ht-degree: 39%
-
 ---
-
 # 페이지 작성 사용자 정의{#customizing-page-authoring}
 
 >[!CAUTION]
@@ -28,12 +37,12 @@ Adobe Experience Manager(AEM)에서는 작성 인스턴스의 페이지 작성 �
 
   Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구현하는 동시에 표준 함수, 개체 및 메서드를 재사용할 수 있습니다. 사용자 정의할 때 `/apps.` 아래에서 자체적인 clientlib을 만들 수 있습니다. 새 clientlib은 다음을 충족해야 합니다.
 
-   * 제작 clientlib `cq.authoring.editor.sites.page`에 따라 다릅니다.
-   * 해당 `cq.authoring.editor.sites.page.hook` 범주에 속해야 합니다.
+  * 제작 clientlib `cq.authoring.editor.sites.page`에 따라 다릅니다.
+  * 해당 `cq.authoring.editor.sites.page.hook` 범주에 속해야 합니다.
 
 * 오버레이
 
-  오버레이는 노드 정의를 기반으로 하며, 이를 통해 표준 기능(`/libs`의)을 사용자 지정된 기능(`/apps`의)과 오버레이할 수 있습니다. 오버레이를 만들 때 [sling 리소스 병합](/help/sites-developing/sling-resource-merger.md)에서 상속을 허용하므로 원본의 1:1 복사본은 필요하지 않습니다.
+  오버레이는 노드 정의를 기반으로 하며, 이를 통해 표준 기능(`/libs`의)을 사용자 지정된 기능(`/apps`의)과 오버레이할 수 있습니다. 오버레이를 만들 때 [sling 리소스 병합](/help/sites-developing/sling-resource-merger.md)에서 상속을 허용하므로 원본의 1:1 복사본이 필요하지 않습니다.
 
 >[!NOTE]
 >
@@ -151,12 +160,12 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
      예:
 
-      * `/libs/foundation/components/text/cq:editConfig`
-      * `/libs/foundation/components/image/cq:editConfig`
+     * `/libs/foundation/components/text/cq:editConfig`
+     * `/libs/foundation/components/image/cq:editConfig`
 
-         * 속성: `editorType`
+       * 속성: `editorType`
 
-           해당 구성 요소에 대해 바로 편집이 트리거될 때 사용되는 인라인 편집기 유형을 정의합니다. 예를 들면 `text`, `textimage`, `image`, `title`과 같습니다.
+         해당 구성 요소에 대해 바로 편집이 트리거될 때 사용되는 인라인 편집기 유형을 정의합니다. 예를 들면 `text`, `textimage`, `image`, `title`과 같습니다.
 
 1. 구성을 포함하는 `config` 노드와 필요한 플러그인 구성 세부 정보를 포함하는 `plugin` 노드를 사용하여 편집기의 추가 구성 세부 정보를 구성할 수 있습니다.
 

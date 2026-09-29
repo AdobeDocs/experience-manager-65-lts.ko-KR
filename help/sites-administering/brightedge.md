@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: fbc55cbd-c754-44f8-8159-72cedc60e137
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 2%
-
+source-wordcount: '500'
+ht-degree: 4%
 ---
-
 # BrightEdge Content Optimizer와 통합{#integrating-with-brightedge-content-optimizer}
 
 AEM이 BrightEdge 계정의 자격 증명을 사용하여 연결할 수 있도록 BrightEdge 클라우드 구성을 만듭니다. 여러 계정을 사용하는 경우 여러 구성을 만들 수 있습니다.
@@ -31,7 +40,7 @@ AEM이 BrightEdge 계정의 자격 증명을 사용하여 연결할 수 있도�
    ![chlimage_1-4](assets/chlimage_1-4a.png)
 
 1. 구성 표시 를 클릭한 경우 사용 가능한 구성 옆의 + 링크를 클릭합니다.
-1. 구성의 제목을 입력합니다. 필요한 경우 저장소에 구성을 저장하는 데 사용되는 노드의 이름을 입력합니다. 만들기 를 클릭합니다.
+1. 구성의 제목을 입력합니다. 필요한 경우 저장소에 구성을 저장하는 데 사용되는 노드의 이름을 입력합니다. 만들기를 클릭합니다.
 1. BrightEdge Content Optimizer 구성 대화 상자에서 BrightEdge 계정의 사용자 이름과 암호를 입력한 다음 확인을 클릭합니다.
 
 ## BrightEdge 구성 편집 {#editing-a-brightedge-configuration}

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3373'
 ht-degree: 1%
-
 ---
-
 # AEM 핵심 개념 {#aem-core-concepts}
 
 >[!NOTE]
@@ -28,10 +37,10 @@ AEM을 기반으로 개발하려면 다음 기술이 필요합니다.
 
 * 다음을 포함한 웹 애플리케이션 기술에 대한 기본 지식:
 
-   * 요청 -응답(XMLHttpRequest / XMLHttpResponse) 주기
-   * HTML
-   * CSS
-   * JavaScript
+  * 요청 -응답(XMLHttpRequest / XMLHttpResponse) 주기
+  * HTML
+  * CSS
+  * JavaScript
 
 * Content Explorer를 포함한 Experience Server(CRX)의 작업 지식
 * 클래식 UI에서 개발하려면 간단한 JSP 예를 이해하고 수정하는 기능을 비롯한 JSP(JavaServer Pages)에 대한 기본 지식도 필요합니다.
@@ -44,7 +53,7 @@ Java™ JCR(Content Repository) 표준 [JSR 283](https://developer.adobe.com/exp
 
 사양 리드는 Adobe Research (스위스) AG가 담당합니다.
 
-[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지 javax.jcr.&ast;는 저장소 콘텐츠에 직접 액세스하고 조작하는 데 사용됩니다.
+[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지 javax.jcr.&amp;ast;는 저장소 콘텐츠에 직접 액세스하고 조작하는 데 사용됩니다.
 
 ## Experience Server(CRX) 및 Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -86,8 +95,8 @@ Sling은 *콘텐츠 중심*&#x200B;입니다. 즉, 각 (HTTP) 요청이 JCR 리�
 * 표면뿐만 아니라 RESTful입니다. 리소스와 표현은 서버 내부에서 올바르게 모델링됩니다.
 * 하나 이상의 데이터 모델 제거
 
-   * 이전에는 URL 구조, 비즈니스 개체, DB 스키마,
-   * 이제 다음으로 줄임: URL = resource = JCR 구조
+  * 이전에는 URL 구조, 비즈니스 개체, DB 스키마,
+  * 이제 다음으로 줄임: URL = resource = JCR 구조
 
 ### URL 분해 {#url-decomposition}
 
@@ -160,11 +169,11 @@ Sling을 사용하면 JCR 노드에서 `sling:resourceType` 속성을 설정하�
 * 메서드(GET, POST)가 필요한 경우 HTTP 사양(예: jobs.POST.esp)에 따라 대문자로 지정됩니다(아래 참조)
 * 다양한 스크립트 엔진이 지원됩니다.
 
-   * HTL(HTML Template Language - Adobe Experience Manager의 HTML 기본 및 권장 서버측 템플릿 시스템): `.html`
-   * ECMAScript(JavaScript) 페이지(서버측 실행): `.esp, .ecma`
-   * Java™ 서버 페이지(서버측 실행): `.jsp`
-   * Java™ 서블릿 컴파일러(서버측 실행): `.java`
-   * JavaScript 템플릿(클라이언트측 실행): `.jst`
+  * HTL(HTML Template Language - Adobe Experience Manager의 HTML 기본 및 권장 서버측 템플릿 시스템): `.html`
+  * ECMAScript(JavaScript) 페이지(서버측 실행): `.esp, .ecma`
+  * Java™ 서버 페이지(서버측 실행): `.jsp`
+  * Java™ 서블릿 컴파일러(서버측 실행): `.java`
+  * JavaScript 템플릿(클라이언트측 실행): `.jst`
 
 지정된 AEM 인스턴스에서 지원하는 스크립트 엔진 목록이 Felix 관리 콘솔(`http://<host>:<port>/system/console/slingscripting`)에 나열됩니다.
 
@@ -198,19 +207,19 @@ Sling을 사용하면 JCR 노드에서 `sling:resourceType` 속성을 설정하�
 
 * sling:resourceType이(가) 정의되지 않은 경우 다음을 수행합니다.
 
-   * 콘텐츠 경로는 적절한 스크립트를 검색하는 데 사용됩니다(경로 기반 ResourceTypeProvider가 활성화된 경우).
+  * 콘텐츠 경로는 적절한 스크립트를 검색하는 데 사용됩니다(경로 기반 ResourceTypeProvider가 활성화된 경우).
 
-     예를 들어 `../content/corporate/jobs/developer.html`에 대한 스크립트는 `/apps/content/corporate/jobs/`에서 검색을 생성합니다.
+    예를 들어 `../content/corporate/jobs/developer.html`에 대한 스크립트는 `/apps/content/corporate/jobs/`에서 검색을 생성합니다.
 
-   * 기본 노드 유형이 사용됩니다.
+  * 기본 노드 유형이 사용됩니다.
 
 * 스크립트가 없으면 기본 스크립트가 사용됩니다.
 
   기본 렌디션은 일반 텍스트(.txt), HTML(.html) 및 JSON(.json)으로 지원되며, 이 모든 렌디션은 노드의 속성(적절한 형식)을 나열합니다. 확장 .res의 기본 렌디션 또는 요청 확장명이 없는 요청은 리소스를 스풀 처리하는 것입니다(가능한 경우).
 * HTTP 오류 처리(코드 403 또는 404)의 경우 Sling은 다음 중 하나에서 스크립트를 찾습니다.
 
-   * [사용자 지정된 스크립트](/help/sites-developing/customizing-errorhandler-pages.md)에 대한 위치 /apps/sling/servlet/errorhandler
-   * 또는 각각 표준 스크립트 /libs/sling/servlet/errorhandler/403.esp 또는 404.esp의 위치입니다.
+  * [사용자 지정된 스크립트](/help/sites-developing/customizing-errorhandler-pages.md)에 대한 위치 /apps/sling/servlet/errorhandler
+  * 또는 각각 표준 스크립트 /libs/sling/servlet/errorhandler/403.esp 또는 404.esp의 위치입니다.
 
 주어진 요청에 여러 스크립트가 적용되는 경우 가장 일치하는 스크립트를 선택합니다. 일치가 구체적일수록 더 좋습니다. 즉, 요청 확장이나 메서드 이름 일치에 관계없이 더 많은 선택기가 더 잘 일치합니다.
 
@@ -243,30 +252,30 @@ Sling을 사용하면 JCR 노드에서 `sling:resourceType` 속성을 설정하�
 
 * /
 
-   * a
-   * b
+  * a
+  * b
 
-      * sling:resourceSuperType = a
+    * sling:resourceSuperType = a
 
-   * c
+  * c
 
-      * sling:resourceSuperType = b
+    * sling:resourceSuperType = b
 
-   * x
+  * x
 
-      * sling:resourceType = c
+    * sling:resourceType = c
 
-   * y
+  * y
 
-      * sling:resourceType = c
-      * sling:resourceSuperType = a
+    * sling:resourceType = c
+    * sling:resourceSuperType = a
 
 유형 계층:
 
 * `/x`
-   * 은(는) `[ c, b, a, <default>]`임
+  * 은(는) `[ c, b, a, <default>]`임
 * 동안 `/y`
-   * 계층 구조는 `[ c, a, <default>]`입니다.
+  * 계층 구조는 `[ c, a, <default>]`입니다.
 
 이는 `/y`에는 `sling:resourceSuperType` 속성이 있지만 `/x`에는 없으므로 해당 슈퍼타입을 리소스 형식에서 가져오기 때문입니다.
 
@@ -278,16 +287,16 @@ Sling에서 스크립트는 REST 서버의 엄격한 개념을 손상시킬 수 
 
 * 다음을 포함한 GET 이외의 http 메서드에 대한 자동 처리:
 
-   * POST, PUT, DELETE - 슬링 기본 구현으로 처리됨
-   * sling:resourceType 위치의 `POST.jsp` 스크립트
+  * POST, PUT, DELETE - 슬링 기본 구현으로 처리됨
+  * sling:resourceType 위치의 `POST.jsp` 스크립트
 
 * 코드 아키텍처가 더 이상 깔끔하거나 구조화되지 않으므로 대규모 개발의 경우 매우 중요합니다
 
 ### Sling API {#sling-api}
 
-Sling API 패키지, org.apache.sling.&ast; 및 태그 라이브러리를 사용합니다.
+Sling API 패키지, org.apache.sling.&amp;ast; 및 태그 라이브러리를 사용합니다.
 
-### sling:include을(를) 사용하여 기존 요소 참조 {#referencing-existing-elements-using-sling-include}
+### sling:include {#referencing-existing-elements-using-sling-include}을(를) 사용하여 기존 요소 참조
 
 마지막으로 스크립트 내의 기존 요소를 참조해야 한다는 점을 고려해야 합니다.
 
@@ -447,7 +456,7 @@ AEM을 사용하면 프로덕션 환경은 종종 [작성자 및 게시 인스�
 
 ## 더 Dispatcher {#the-dispatcher}
 
-Dispatcher은 캐싱 및/또는 로드 밸런싱을 위한 Adobe의 도구입니다. 자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)에서 확인할 수 있습니다.
+Dispatcher은 캐싱 및/또는 로드 밸런싱을 위한 Adobe의 도구입니다. 자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)에서 확인할 수 있습니다.
 
 ## FileVault(소스 버전 시스템) {#filevault-source-revision-system}
 
@@ -470,9 +479,9 @@ MSM(다중 사이트 관리자)을 사용하면 공통 콘텐츠를 공유하는
 * 웹 사이트의 다양한 언어 버전을 효율적으로 관리합니다.
 * 소스 사이트를 기반으로 하나 이상의 사이트를 자동으로 업데이트:
 
-   * 공통 기본 구조를 적용하고 여러 사이트에서 공통 콘텐츠를 사용합니다.
-   * 사용 가능한 리소스의 사용을 극대화합니다.
-   * 일반적인 모양과 느낌을 유지하십시오.
-   * 사이트 간에 차이가 있는 콘텐츠를 관리하는 데 노력을 집중하십시오.
+  * 공통 기본 구조를 적용하고 여러 사이트에서 공통 콘텐츠를 사용합니다.
+  * 사용 가능한 리소스의 사용을 극대화합니다.
+  * 일반적인 모양과 느낌을 유지하십시오.
+  * 사이트 간에 차이가 있는 콘텐츠를 관리하는 데 노력을 집중하십시오.
 
 자세한 내용은 [다중 사이트 관리자](/help/sites-administering/msm.md)를 참조하십시오.

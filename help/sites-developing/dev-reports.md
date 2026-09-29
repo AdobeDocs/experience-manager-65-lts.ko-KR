@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5298'
 ht-degree: 1%
-
 ---
-
 # 보고서 개발 {#developing-reports}
 
 Adobe Experience Manager(AEM)는 대부분의 보고서 프레임워크를 기반으로 하는 [표준 보고서](/help/sites-administering/reporting.md)를 제공합니다.
@@ -361,7 +370,7 @@ N:charting
 
       * `totals` ( `Boolean`)
 
-        **합계**&#x200B;를 표시하는 추가 줄이 표시되어야 하는 경우 True입니다.
+        **합계**를 표시하는 추가 줄이 표시되어야 하는 경우 True입니다.
         기본값: `false`
 
       * `series` ( `Long`)
@@ -668,11 +677,11 @@ N:definitions
 
   * `apply`
 
-    초기 전처리 단계([&#128279;](#processing-queue) 처리 큐 표시의 단계 3).
+    초기 전처리 단계(](#processing-queue) 처리 큐 표시의 [단계 3).
 
   * `applyAfter`
 
-    전처리 후 적용합니다([&#128279;](#processing-queue) 처리 큐 표시의 9단계).
+    전처리 후 적용합니다(](#processing-queue) 처리 큐 표시의 [9단계).
 
 #### 해결자 {#resolvers}
 

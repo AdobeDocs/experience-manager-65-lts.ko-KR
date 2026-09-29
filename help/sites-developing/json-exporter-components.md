@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: aeb8e954-dd6c-4e18-bb78-6eaac86fa4b9
-source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 4%
-
+source-wordcount: '557'
+ht-degree: 10%
 ---
-
 # 구성 요소에 대해 JSON 내보내기 활성화{#enabling-json-export-for-a-component}
 
 구성 요소는 모델러 프레임워크를 기반으로 콘텐츠의 JSON 내보내기를 생성하도록 조정할 수 있습니다.
@@ -35,7 +44,7 @@ JSON 내보내기는 [Sling 모델](https://sling.apache.org/documentation/bundl
 
 >[!NOTE]
 >
->Sling 모델을 사용하는 예는 [AEM에서 Sling 모델 내보내기 개발](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter)을 참조하십시오.
+>Sling 모델을 사용하는 예는 [AEM에서 Sling 모델 내보내기 개발](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter)을 참조하십시오.
 
 Sling 모델 구현 클래스에는 다음 주석이 포함되어야 합니다.
 
@@ -77,7 +86,7 @@ serialize되는 메서드를 정의하려면 모델 인터페이스에 적절한
 
 ## 예 {#example}
 
-핵심 구성 요소는 핵심 구성 요소[의 릴리스 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction)1.1.0 이후 JSON 내보내기를 지원했으며 참조로 사용할 수 있습니다.
+핵심 구성 요소는 핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction)의 릴리스 [1.1.0 이후 JSON 내보내기를 지원했으며 참조로 사용할 수 있습니다.
 
 예를 들어 이미지 핵심 구성 요소의 슬링 모델 구현 및 주석이 달린 인터페이스를 참조하십시오.
 
@@ -91,8 +100,8 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 ## 관련 설명서 {#related-documentation}
 
-* Assets 사용 안내서의 [콘텐츠 조각 항목](https://experienceleague.adobe.com/ko/docs/experience-manager-64/assets/home#)
+* Assets 사용 안내서의 [콘텐츠 조각 항목](https://experienceleague.adobe.com/en/docs/experience-manager-64/assets/home#)
 * [콘텐츠 조각 모델](/help/assets/content-fragments/content-fragments-models.md)
 * [컨텐츠 조각으로 작성](/help/sites-authoring/content-fragments.md)
 * [콘텐츠 서비스를 위한 JSON 내보내기 도구](/help/sites-developing/json-exporter.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)
+* [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction) 및 [콘텐츠 조각 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)

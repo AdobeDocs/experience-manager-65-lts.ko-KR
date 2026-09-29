@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 667ab9f1-4cff-4aef-94d5-adf478190bb4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 1%
-
+source-wordcount: '73'
+ht-degree: 17%
 ---
-
 # 클래식 UI에 대한 액세스 활성화{#enabling-access-to-classic-ui}
 
 터치 활성화 기능이 AEM의 많은 영역에서 클래식 UI와 동등해지고 사실상 를 초과하므로 터치 활성화 인터페이스를 통한 클래식 인터페이스에 대한 액세스는 이제 기본적으로 비활성화됩니다. 다음 페이지에서는 필요한 경우 이 액세스를 다시 활성화하는 방법에 대해 설명합니다.

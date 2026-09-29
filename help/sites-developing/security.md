@@ -5,13 +5,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Security
 role: Developer
 exl-id: abc2747f-cfd8-4ee1-bbc0-5ad89beb383a
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '419'
 ht-degree: 0%
-
 ---
-
 # 보안{#security}
 
 애플리케이션 보안은 개발 단계에서 시작됩니다. Adobe에서는 다음 보안 모범 사례를 적용할 것을 권장합니다.
@@ -44,7 +58,7 @@ AEM에서 제공하는 XSS 보호 메커니즘은 [OWASP(Open Web Application Se
 >
 >인스턴스 보안에 필요한 Cloud Service 정보 및 OSGi 설정에 대한 ACL은 [프로덕션 준비 모드](/help/sites-administering/production-ready.md)의 일부로 자동화됩니다. 이는 구성을 수동으로 변경할 필요가 없음을 의미하지만 배포를 시작하기 전에 구성을 검토하는 것이 좋습니다.
 
-[AEM 인스턴스를 Adobe Experience Cloud과 통합](/help/sites-administering/marketing-cloud.md)할 때 [Cloud Service 구성](/help/sites-developing/extending-cloud-config.md)을 사용합니다. 이러한 구성에 대한 정보는 수집된 모든 통계와 함께 저장소에 저장됩니다. Adobe은 이 기능을 사용하는 경우 이 정보에 대한 기본 보안이 요구 사항과 일치하는지 검토할 것을 권장합니다.
+[AEM 인스턴스를 Adobe Experience Cloud와 통합](/help/sites-administering/marketing-cloud.md)할 때 [Cloud Service 구성](/help/sites-developing/extending-cloud-config.md)을 사용합니다. 이러한 구성에 대한 정보는 수집된 모든 통계와 함께 저장소에 저장됩니다. Adobe은 이 기능을 사용하는 경우 이 정보에 대한 기본 보안이 요구 사항과 일치하는지 검토할 것을 권장합니다.
 
 webservicesupport 모듈은 아래에 통계 및 구성 정보를 기록합니다.
 

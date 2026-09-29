@@ -1,5 +1,5 @@
 ---
-title: Client Context JavaScript API
+title: ClientContext JavaScript API
 description: Adobe Experience Manager의 Client Context용 JavaScript API에 대해 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,30 @@ feature: Context Hub,Developing,Personalization
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: db4a4a1a-e014-4865-ab8c-d8a5aaefd93a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: db974db1-cf49-4452-872e-5a56c5f1d391
+    internal-label: Context Hub
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3106'
+source-wordcount: '3125'
 ht-degree: 2%
-
 ---
-
-# Client Context JavaScript API{#client-context-javascript-api}
+# ClientContext JavaScript API{#client-context-javascript-api}
 
 ## CQ_Analytics.ClientContextMgr {#cq-analytics-clientcontextmgr}
 
@@ -131,7 +147,7 @@ CQ_Analytics.JSONPtore 개체를 만듭니다.
 
 **매개변수**
 
-없음
+없음.
 
 **반환**
 
@@ -208,7 +224,7 @@ CQ_Analytics.SessionStore를 확장합니다.
 
 **매개변수**
 
-없음
+없음.
 
 **반환**
 
@@ -233,7 +249,7 @@ CQ_Analytics.JSONStore 개체.
 
 **매개변수**
 
-없음
+없음.
 
 **반환**
 
@@ -245,7 +261,7 @@ CQ_Analytics.JSONStore 개체.
 
 **매개변수**
 
-없음
+없음.
 
 **반환**
 
@@ -360,7 +376,7 @@ CQ_Analytics.PersistedJSONPtore 개체를 만듭니다.
 
 **매개변수**
 
-없음
+없음.
 
 **반환**
 
@@ -446,7 +462,7 @@ CQ_Analytics.PersistedJSONStore 개체.
 
 **매개변수**
 
-없음
+없음.
 
 **반환**
 
@@ -617,7 +633,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 **매개변수**
 
-없음
+없음.
 
 **반환**
 
@@ -653,7 +669,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 **매개변수**
 
-없음
+없음.
 
 **반환**
 
@@ -690,7 +706,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 **매개변수**
 
-없음
+없음.
 
 **반환**
 
@@ -702,7 +718,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 **매개변수**
 
-없음
+없음.
 
 **반환**
 
@@ -714,7 +730,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 **매개변수**
 
-없음
+없음.
 
 **반환**
 
@@ -751,7 +767,7 @@ loadInitProperties를 사용하여 세션 저장소 데이터를 초기화 값�
 
 **매개변수**
 
-없음
+없음.
 
 **반환**
 

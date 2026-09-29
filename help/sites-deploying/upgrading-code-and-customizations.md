@@ -11,13 +11,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: c1935b95d4e9e8e3773f2ff9825c759f97738304
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1104'
 ht-degree: 1%
-
 ---
-
 # 코드 및 사용자 정의 업그레이드{#upgrading-code-and-customizations}
 
 업그레이드를 계획할 때 다음과 같은 구현 영역을 조사하고 해결해야 합니다.
@@ -73,7 +82,7 @@ AEM 6.5 LTS의 경우 두 가지 유형의 Uber Jar가 있습니다.
 
 **주요 차이점: AEM 6.5와 AEM 6.5 LTS Uber Jars**
 
-* AEM 6.5에서 공개 API와 더 이상 사용되지 않는 API가 모두 필요한 경우 `uber-jar-6.5.x-apis-with-deprecations.jar` 파일에 include single jar, `pom.xml`을(를) 사용할 수 있습니다.
+* AEM 6.5에서 공개 API와 더 이상 사용되지 않는 API가 모두 필요한 경우 `pom.xml` 파일에 include single jar, `uber-jar-6.5.x-apis-with-deprecations.jar`을(를) 사용할 수 있습니다.
 * AEM 6.5 LTS에서 공개 API와 더 이상 사용되지 않는 API가 모두 필요한 경우 공개 API의 경우 `uber-jar-6.6.x-apis.jar`, 더 이상 사용되지 않는 API의 경우 `uber-jar-6.6.x-deprecated-apis.jar`인 두 개의 개별 jar를 포함해야 합니다.
 
 더 이상 사용되지 않는 API Jar에 대한 **Maven 좌표**
@@ -130,7 +139,7 @@ AEM 6.5 LTS의 경우 두 가지 유형의 Uber Jar가 있습니다.
   </tr>
   <tr>
    <td>인증, 보안 및 권한</td>
-   <td>LDAP/SAML과 같은 모든 인증 메커니즘은 유효성을 검사해야 합니다.<br /> 권한 및 그룹은 작성자 및 게시<br /> 계층 모두에서 테스트해야 합니다.</td>
+   <td>LDAP/SAML과 같은 모든 인증 메커니즘을 확인해야 합니다.<br /> 권한 및 그룹은 작성자 및 게시 <br /> 계층 모두에서 테스트되어야 합니다.</td>
   </tr>
   <tr>
    <td>쿼리</td>

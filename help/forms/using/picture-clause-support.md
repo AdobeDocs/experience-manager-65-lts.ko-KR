@@ -1,5 +1,5 @@
 ---
-title: HTML5 양식에 대한 그림 절 지원
+title: HTML5 양식에 대한 그림 구절 지원
 description: HTML5 forms에서는 날짜, 텍스트 및 숫자 기호에 대한 표시 값 및 서식 있는 값에 대한 XFA Picture 절을 지원합니다.
 contentOwner: robhagat
 content-type: reference
@@ -10,18 +10,33 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 21afdc66-0b27-4c73-9cb4-1efd5c0aefae
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 0%
-
+source-wordcount: '652'
+ht-degree: 3%
 ---
-
-# HTML5 양식에 대한 그림 절 지원 {#picture-clause-support-for-html-forms}
+# HTML5 양식에 대한 그림 구절 지원 {#picture-clause-support-for-html-forms}
 
 HTML5 forms에서는 날짜, 텍스트 및 숫자 기호에 대한 표시 값 및 서식 있는 값에 대한 XFA Picture 절을 지원합니다. 지원되는 Picture 절 식은 다음과 같습니다.
 
-* category(locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
+* category(locale){picture-clause} | category(locale){picture-clause} | 범주(로케일){picture-clause}
 * category.subcategory{}
 
 >[!NOTE]
@@ -37,7 +52,7 @@ Date Picture 절에 지원되는 표현식:
 * date.medium{}
 * date.full{}
 * date.short{}
-* date{date Picture Clause symbols}
+* 날짜{date Picture Clause symbols}
 
 >[!NOTE]
 >
@@ -108,15 +123,15 @@ HTML5 forms는 숫자 그림 기호를 지원합니다. 다만 PDF forms과 HTML
 
 HTML과 PDF forms 모두에서 숫자 **10000**&#x200B;의 형식이 **10,000**(으)로 지정되었습니다.
 
-PDF forms1000000 숫자 형식은 1,000,000입니다. 그러나 HTML Forms에서는 숫자의 서식이 지정되지 않은 상태로 1000000.
+1000000 숫자 형식은 1,000,000입니다. 그러나 HTML Forms에서는 숫자의 서식이 지정되지 않은 상태로 1000000.
 
 **HTML Forms**&#x200B;에서 Numeric Picture 절에 지원되는 식은 다음과 같습니다.
 
 * num.integer{}
 * num.decimal{}
 * num.currency{}
-* num.percent{}
-* num{Numeric Picture 절 기호}
+* num.%{}
+* num{Numeric Picture Clause Symbols}
 
 <table>
  <tbody>
@@ -207,7 +222,7 @@ PDF forms1000000 숫자 형식은 1,000,000입니다. 그러나 HTML Forms에서
 
 HTML5 forms는 다음 Text Picture 절 표현식을 지원합니다.
 
-* text{text Picture 절 기호}
+* text{text Picture clause symbols}
 
 | **기호** | **해석** |
 |---|---|

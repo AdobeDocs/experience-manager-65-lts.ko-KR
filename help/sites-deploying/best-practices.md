@@ -1,5 +1,5 @@
 ---
-title: 모범 사례 배포
+title: 배포 모범 사례
 description: 가능한 가장 효율적이고 효과적인 방법으로 Adobe Experience Manager(AEM)를 배포하고 유지 관리하는 방법을 알아봅니다.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 5%
-
+source-wordcount: '387'
+ht-degree: 24%
 ---
-
-# 모범 사례 배포{#deploying-best-practices}
+# 배포 모범 사례{#deploying-best-practices}
 
 배포 모범 사례에서는 가능한 가장 효율적이고 효과적인 방법으로 Adobe Experience Manager(AEM)를 배포하거나 유지 관리하는 방법을 설명합니다. 이렇게 점점 커지는 주제의 목록은 AEM의 다양한 영역을 포함합니다.
 
@@ -30,7 +39,7 @@ ht-degree: 5%
 
 * [모범 사례 관리](/help/sites-administering/administer-best-practices.md)
 * [모범 사례 개발](/help/sites-developing/best-practices.md)
-* [작성 모범 사례](/help/sites-authoring/best-practices.md)
+* [모범 사례 작성](/help/sites-authoring/best-practices.md)
 
 특정 문서는 다음에 나오는 표에 설명되어 있고 연결됩니다.
 
@@ -85,17 +94,17 @@ AEM에는 현재 동일한 릴리스에 클래식 및 터치에 적합한 UI의 
   </tr>
   <tr>
    <td>콘텐츠 전송 네트워크에 Dispatcher 사용</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko#using-dispatcher-with-a-cdn">콘텐츠 전송 네트워크에 Dispatcher 사용</a></td>
-   <td>Akamai Edge Delivery 또는 Amazon Cloud Front와 같은 CDN(컨텐츠 전달 네트워크)은 최종 사용자에게 가까운 위치에서 컨텐츠를 전달합니다.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">콘텐츠 전송 네트워크에 Dispatcher 사용</a></td>
+   <td>Akamai Edge Delivery 또는 Amazon Cloud Front와 같은 콘텐츠 전송 네트워크(CDN)는 최종 사용자에게 가까운 위치에서 콘텐츠를 제공합니다.</td>
   </tr>
   <tr>
    <td>성능 최적화</td>
    <td><a href="/help/sites-deploying/configuring-performance.md">성능 최적화</a></td>
-   <td>핵심 문제는 웹 사이트가 방문자 요청에 응답하는 데 걸리는 시간입니다.</td>
+   <td>중요한 문제 중 하나는 웹 사이트가 방문자 요청에 응답하는 데 걸리는 시간입니다.</td>
   </tr>
   <tr>
    <td>성능 테스트</td>
-   <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">성능 테스트 우수 사례</a></td>
+   <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">성능 테스트 모범 사례</a></td>
    <td>AEM 배포에서 성능 테스트를 실행하기 위한 모범 사례를 설명합니다.<br /> </td>
   </tr>
  </tbody>

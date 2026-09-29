@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 109ab777-c7be-4725-8b91-c4e5d6a735ab
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 0%
-
+ht-degree: 6%
 ---
-
 # AEM에서 CRXDE Lite 활성화{#enabling-crxde-lite-in-aem}
 
 AEM 설치가 최대한 안전한지 확인하기 위해 보안 체크리스트에서는 프로덕션 환경에서 [WebDAV를 비활성화](/help/sites-administering/security-checklist.md#disable-webdav)할 것을 권장합니다.

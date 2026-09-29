@@ -9,13 +9,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: e2d31db9-bb47-4260-8ebb-000a7b776f53
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 1%
-
+source-wordcount: '896'
+ht-degree: 2%
 ---
-
 # 브랜딩 사용자 지정 {#branding-customization}
 
 애플리케이션 아이콘, 애플리케이션 이름, 론치 이미지 및 로그인 페이지를 사용자 정의하여 AEM Forms 앱에 고유한 조직별 모양을 제공할 수 있습니다. 예를 들어 조직의 로고를 사용하도록 이미지를 변경할 수 있습니다. AEM Forms 앱은 다음과 같은 사용자 지정을 지원합니다.
@@ -127,7 +141,7 @@ ht-degree: 1%
 
 AEM Forms 앱의 로그인 페이지에는 로고와 배경 이미지가 있습니다. 로고는 로그인 대화 상자 위에 있고 배경 이미지는 로그인 대화 상자 아래에 있습니다. 로그인 페이지에서 기본 이미지를 사용자 정의하려면 다음 단계를 수행하십시오.
 
-**시작하기 전에**
+**시작하기 전**
 
 다음 이미지가 있는지 확인합니다.
 
@@ -182,7 +196,7 @@ AEM Forms 앱의 로그인 페이지에는 로고와 배경 이미지가 있습�
 
 AEM Forms 앱에 로그인하고 메뉴 버튼을 선택하면 메뉴 위에 로고가 표시됩니다. 기본 로고를 사용자 지정하려면 다음 단계를 수행하십시오.
 
-**시작하기 전에**
+**시작하기 전**
 
 다음 이미지가 있는지 확인합니다.
 

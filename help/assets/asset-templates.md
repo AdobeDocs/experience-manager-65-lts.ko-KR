@@ -1,17 +1,28 @@
 ---
 title: 자산 템플릿
-description: ' [!DNL Adobe Experience Manager Assets] 의 자산 템플릿과 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아봅니다.'
+description: '[!DNL Adobe Experience Manager Assets]의 자산 템플릿 및 자산 템플릿을 사용하여 마케팅 자료를 만드는 방법에 대해 알아봅니다.'
 role: User
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
-source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1571'
 ht-degree: 2%
-
 ---
-
 # 자산 템플릿 {#asset-templates}
 
 에셋 템플릿은 디지털 및 인쇄 미디어용 시각적으로 풍부한 콘텐츠를 신속하게 재활용할 수 있는 특별한 에셋 클래스입니다. 에셋 템플릿에는 고정 메시징 섹션과 편집 가능 섹션의 두 부분이 포함되어 있습니다. 고정 메시징 섹션에는 편집할 수 없는 브랜드 로고 및 저작권 정보와 같은 독점 콘텐츠가 포함될 수 있습니다. 편집 가능 섹션에는 메시징을 사용자 지정하기 위해 편집할 수 있는 필드에 시각적 및 텍스트 콘텐츠가 포함될 수 있습니다.
@@ -123,7 +134,7 @@ ht-degree: 2%
    >
    >[!DNL Experience Manager]이(가) 이미지를 확인하도록 하려면 다음을 수행하십시오.
    >
-   >* [!DNL InDesign]개의 템플릿을 만드는 동안 이미지를 포함합니다([링크 및 포함된 그래픽 정보](https://helpx.adobe.com/kr/indesign/using/graphics-links.html) 참조).
+   >* [!DNL InDesign]개의 템플릿을 만드는 동안 이미지를 포함합니다([링크 및 포함된 그래픽 정보](https://helpx.adobe.com/indesign/using/graphics-links.html) 참조).
    >* 로컬 파일 시스템에 [!DNL Experience Manager]을(를) 탑재한 다음 누락된 아이콘을 [!DNL Experience Manager]의 기존 자산에 매핑합니다.
 
 1. 브로셔에 대한 PDF 렌디션을 생성하려면 대화 상자에서 Acrobat 옵션을 선택한 다음 **[!UICONTROL 계속]**&#x200B;을 클릭합니다.

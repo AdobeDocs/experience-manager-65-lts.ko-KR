@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 7380be9a-7f5c-46df-97f8-6309daa2a566
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 0%
-
 ---
-
 # 프로세스 보고의 애드 혹 쿼리{#ad-hoc-queries-in-process-reporting}
 
 ## 프로세스 보고의 임시 쿼리 {#ad-hoc-queries-in-process-reporting-1}
@@ -150,7 +165,7 @@ ht-degree: 0%
    ![task_search_result](assets/task_search_result.png)
 
 1. 왼쪽 상단의 레일 단추 ![lc_pr_rail_button](assets/lc_pr_rail_button.png)을 클릭하여 **내 필터** 창을 축소하고 **보고서** 패널에 사용할 수 있는 공간을 확장합니다.
-1. 쿼리 결과에 대한 작업을 수행하려면 **보고서**&#x200B;패널의 오른쪽 위 모서리에 있는 옵션을 사용합니다.
+1. 쿼리 결과에 대한 작업을 수행하려면 **보고서**패널의 오른쪽 위 모서리에 있는 옵션을 사용합니다.
 
    * **새로 고침**: 저장소에 있는 최신 데이터로 보고서를 새로 고칩니다.
 

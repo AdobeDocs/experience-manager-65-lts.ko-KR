@@ -1,17 +1,31 @@
 ---
-title: ' [!DNL Adobe Experience Manager] 6.5 LTS 릴리스 정보'
+title: '[!DNL Adobe Experience Manager] 6.5 LTS의 릴리스 정보'
 description: Adobe Experience Manager 6.5 LTS에 대한 최신 릴리스 정보를 찾아보십시오.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 100%
-
+source-wordcount: '1161'
+ht-degree: 99%
 ---
-
 # Adobe Experience Manager 6.5 LTS의 최신 릴리스 정보 {#release-notes}
 
 ## 릴리스 정보 {#release-information}
@@ -72,8 +86,8 @@ Adobe는 기존 기능을 현대화하거나 대체하여 고객 가치를 개�
 
 Adobe Experience Manager(AEM) 기능의 제거 또는 대체 예정 사실을 알리기 위해 다음 규칙이 적용됩니다.
 
-1. 사용 중지 공지가 먼저 표시됩니다. 사용 중지 중에도 기능이 계속 지원되지만 더 이상 개선되지는 않습니다.
-1. 더 이상 사용되지 않는 기능은 이른 시일 내에 후속 주 릴리스에서 제거됩니다. 제거할 실제 목표 날짜는 추후 발표됩니다.
+1. 사용 중지 공지가 먼저 표시됩니다. 더 이상 사용되지 않지만 기능은 계속 사용할 수 있으며 더 이상 개선되지는 않습니다.
+1. 더 이상 사용되지 않는 기능은 빨라도 다음 주요 릴리스에서 제거됩니다. 제거할 실제 목표 날짜는 추후 발표됩니다.
 
 이 프로세스에서 고객에게 하나 이상의 릴리스 주기를 제공하여, 실제 제거 전에 더 이상 사용되지 않는 기능의 새 버전이나 후속 버전에 대한 구현을 채택할 수 있도록 합니다.
 
@@ -135,7 +149,7 @@ AEM 배포에서 SSL 전용 기능을 활성화하면 Dispatcher와 AEM 인스�
 **영향:**
 
 * HTTP 400 응답 코드로 인한 상태 검사 실패
-* Dispatcher와 AEM 인스턴스 간의 손상된 트래픽
+* Dispatcher와 AEM 인스턴스 간의 트래픽 중단
 * Dispatcher를 통해 콘텐츠를 제대로 제공할 수 없음
 * Dispatcher 구성에서 IP 주소로 HTTPS를 사용할 때 연결 실패
 * HTTPS + IP를 통해 연결할 때 HTTP 400 “잘못된 SNI” 오류

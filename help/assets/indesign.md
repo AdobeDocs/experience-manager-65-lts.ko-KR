@@ -1,17 +1,29 @@
 ---
-title: ' [!DNL InDesign Server]과(와)  [!DNL Assets]  통합'
-description: ' [!DNL Adobe Experience Manager Assets] 을(를)  [!DNL Adobe InDesign Server]과(와) 통합하는 방법을 알아봅니다.'
+title: '[!DNL Assets]과(와) [!DNL InDesign Server] 통합'
+description: '[!DNL Adobe Experience Manager Assets]을(를) [!DNL Adobe InDesign Server]과(와) 통합하는 방법을 알아봅니다.'
 role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1587'
 ht-degree: 2%
-
 ---
-
 # [!DNL Adobe Experience Manager Assets]과(와) [!DNL Adobe InDesign Server] 통합 {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] 사용:
@@ -20,11 +32,11 @@ ht-degree: 2%
 * 특정 작업을 정의하고 관리하는 프록시 작업자입니다.
 예를 들어 [!DNL InDesign Server]을(를) 사용하여 파일을 처리하는 등 다양한 작업을 처리할 수 있습니다.
 
-[!DNL Adobe InDesign]&#x200B;(으)로 만든 파일을 [!DNL Experience Manager Assets]에 완전히 업로드하려면 프록시가 사용됩니다. 프록시 작업자를 사용하여 [!DNL Adobe InDesign Server]과(와) 통신합니다. [스크립트](https://helpx.adobe.com/kr/indesign/using/scripting.html)을(를) 실행하여 메타데이터를 추출하고 [!DNL Experience Manager Assets]에 대한 다양한 변환을 생성합니다. 프록시 작업자를 사용하면 클라우드 구성에서 [!DNL InDesign Server]과(와) [!DNL Experience Manager] 인스턴스 간의 양방향 통신을 사용할 수 있습니다.
+[!DNL Adobe InDesign]&#x200B;(으)로 만든 파일을 [!DNL Experience Manager Assets]에 완전히 업로드하려면 프록시가 사용됩니다. 프록시 작업자를 사용하여 [!DNL Adobe InDesign Server]과(와) 통신합니다. [스크립트](https://helpx.adobe.com/indesign/using/scripting.html)을(를) 실행하여 메타데이터를 추출하고 [!DNL Experience Manager Assets]에 대한 다양한 변환을 생성합니다. 프록시 작업자를 사용하면 클라우드 구성에서 [!DNL InDesign Server]과(와) [!DNL Experience Manager] 인스턴스 간의 양방향 통신을 사용할 수 있습니다.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign]은(는) 두 개의 개별 오퍼로 제공됩니다. 인쇄 및 디지털 배포를 위해 페이지 레이아웃을 디자인하는 데 사용되는 [Adobe InDesign](https://www.adobe.com/kr/products/indesign.html) 데스크톱 앱입니다. [Adobe InDesign Server](https://www.adobe.com/kr/products/indesignserver.html)을(를) 사용하면 [!DNL InDesign]&#x200B;(으)로 만든 내용을 기반으로 자동화된 문서를 프로그래밍 방식으로 만들 수 있습니다. 해당 [ExtendScript](https://helpx.adobe.com/kr/indesign/using/scripting.html) 엔진에 인터페이스를 제공하는 서비스로 작동합니다.스크립트는 [!DNL JavaScript]과(와) 유사한 [!DNL ExtendScript]에 작성되었습니다.
+>[!DNL Adobe InDesign]은(는) 두 개의 개별 오퍼로 제공됩니다. 인쇄 및 디지털 배포를 위해 페이지 레이아웃을 디자인하는 데 사용되는 [Adobe InDesign](https://www.adobe.com/products/indesign.html) 데스크톱 앱입니다. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html)을(를) 사용하면 [!DNL InDesign]&#x200B;(으)로 만든 내용을 기반으로 자동화된 문서를 프로그래밍 방식으로 만들 수 있습니다. 해당 [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html) 엔진에 인터페이스를 제공하는 서비스로 작동합니다.스크립트는 [!DNL JavaScript]과(와) 유사한 [!DNL ExtendScript]에 작성되었습니다.
 
 ## 추출 작동 방식 {#how-the-extraction-works}
 
@@ -41,9 +53,9 @@ ht-degree: 2%
    * INDD 파일을 검색합니다.
    * [!DNL InDesign Server]개 명령 실행:
 
-      * 구조, 텍스트 및 모든 미디어 파일이 추출됩니다.
-      * PDF 및 JPG 렌디션이 생성됩니다.
-      * HTML 및 IDML 렌디션이 생성됩니다.
+     * 구조, 텍스트 및 모든 미디어 파일이 추출됩니다.
+     * PDF 및 JPG 렌디션이 생성됩니다.
+     * HTML 및 IDML 렌디션이 생성됩니다.
 
    * 결과 파일을 [!DNL Experience Manager Assets]에 다시 게시합니다.
 
@@ -136,7 +148,7 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
 * **페이지 추출 처리기**: 팝업 목록에서 사용할 처리기를 선택하십시오. 추출 처리기는 관련 `RenditionPicker`에 의해 선택된 특정 렌디션에 대해 작동합니다(`ExtractionHandler` API 참조). 표준 [!DNL Experience Manager] 설치에서는 다음 항목을 사용할 수 있습니다.
-   * IDML 내보내기 추출 핸들: MediaExtract 단계에서 생성된 `IDML` 렌디션에서 작동합니다.
+  * IDML 내보내기 추출 핸들: MediaExtract 단계에서 생성된 `IDML` 렌디션에서 작동합니다.
 
 * **페이지 이름**: 결과 페이지에 지정할 이름을 지정합니다. 비워 두면 이름은 &quot;page&quot;(또는 &quot;page&quot;가 이미 있으면 파생)입니다.
 
@@ -163,7 +175,7 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
    * **IDS 풀**
-[!DNL InDesign Server]과(와) 통신하는 데 사용할 SOAP 끝점입니다. 항목을 추가, 제거 및 주문해야 합니다.
+     [!DNL InDesign Server]과(와) 통신하는 데 사용할 SOAP 끝점입니다. 항목을 추가, 제거 및 주문해야 합니다.
 
 1. 확인 을 클릭하여 저장합니다.
 
@@ -239,4 +251,4 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!MORELIKETHIS]
 >
->* [Adobe InDesign Server 정보](https://www.adobe.com/kr/products/indesignserver/faq.html)
+>* [Adobe InDesign Server 정보](https://www.adobe.com/products/indesignserver/faq.html)

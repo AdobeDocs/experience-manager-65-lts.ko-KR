@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: bdd884c4-ae12-4827-8251-01033cbc0185
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 8%
-
 ---
-
 # Administration Console 실행 시 고려 사항 {#considerations-when-running-administrationconsole}
 
 >[!NOTE]
@@ -28,8 +43,8 @@ ht-degree: 8%
 * URL `https://[hostname]:'port'/adminui`을(를) 사용하여 관리 콘솔에 액세스하는 경우 지정된 호스트 이름에는 밑줄 문자를 사용할 수 없습니다. 그렇지 않으면 관리 콘솔의 일부 영역에 대한 링크가 제대로 작동하지 않을 수 있습니다.
 * 일본어 OS의 Windows 탐색기에서 관리 콘솔을 실행하는 경우 다음과 같은 문제가 발생할 수 있습니다.
 
-   * 링크를 클릭하면 예상 링크가 아닌 로그인 페이지로 돌아갑니다.
-   * 링크를 클릭하면 권한 오류가 표시됩니다.
+  * 링크를 클릭하면 예상 링크가 아닌 로그인 페이지로 돌아갑니다.
+  * 링크를 클릭하면 권한 오류가 표시됩니다.
 
   가장 좋은 방법은 링크가 실패하지 않도록 Mozilla Firefox와 같은 다른 브라우저에서 관리 콘솔을 실행하는 것입니다.
 

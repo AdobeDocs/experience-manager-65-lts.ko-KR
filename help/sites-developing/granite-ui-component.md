@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e49d1d3d-984c-4b08-b0e5-2016fbff0b80
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 2%
-
 ---
-
 # 새로운 Granite UI 필드 구성 요소 만들기{#creating-a-new-granite-ui-field-component}
 
 Granite UI는 양식에서 사용할 수 있도록 디자인된 다양한 구성 요소를 제공합니다. 이러한 구성 요소는 Granite UI 어휘에서 *필드*&#x200B;라고 합니다. 표준 Granite 양식 구성 요소는 다음에서 사용할 수 있습니다.
@@ -34,16 +43,16 @@ Granite UI Foundation 프레임워크를 사용하여 Granite 구성 요소를 �
 
 * 서버측:
 
-   * 기초 구성 요소 컬렉션
+  * 기초 구성 요소 컬렉션
 
-      * 기초 - 모듈식, 구성 가능, 레이어 가능, 재사용 가능
-      * 구성 요소 - Sling 구성 요소
+    * 기초 - 모듈식, 구성 가능, 레이어 가능, 재사용 가능
+    * 구성 요소 - Sling 구성 요소
 
-   * 애플리케이션 개발 지원 도우미
+  * 애플리케이션 개발 지원 도우미
 
 * 클라이언트측:
 
-   * 하이퍼미디어 기반 사용자 인터페이스를 통해 일반적인 상호 작용 패턴을 달성하기 위해 일부 어휘(즉, HTML 언어의 확장)를 제공하는 clientlibs의 컬렉션입니다.
+  * 하이퍼미디어 기반 사용자 인터페이스를 통해 일반적인 상호 작용 패턴을 달성하기 위해 일부 어휘(즉, HTML 언어의 확장)를 제공하는 clientlibs의 컬렉션입니다.
 
 일반 Granite UI 구성 요소 `field`은(는) 두 개의 관심 파일로 구성됩니다.
 
@@ -56,7 +65,7 @@ Granite UI Foundation 프레임워크를 사용하여 Granite 구성 요소를 �
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * [코드 샘플](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)에서 제공
+  * [코드 샘플](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)에서 제공
 
 * `granite/ui/components/foundation/form`
 

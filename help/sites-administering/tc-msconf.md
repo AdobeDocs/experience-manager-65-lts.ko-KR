@@ -5,13 +5,25 @@ feature: Language Copy
 role: Admin
 solution: Experience Manager, Experience Manager Sites
 exl-id: e4beda86-2d74-44b9-a5f4-e3671ba9a2da
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 63%
-
+source-wordcount: '270'
+ht-degree: 64%
 ---
-
 # Microsoft Translator에 연결 {#connecting-to-microsoft-translator}
 
 AEM은 페이지 콘텐츠 또는 에셋을 번역할 수 있도록 [Microsoft Translator](https://www.microsoft.com/en-us/translator/business/)에 내장된 커넥터를 제공합니다. Microsoft에서 Microsoft Translator 사용 라이선스를 받은 후 이 페이지의 지침에 따라 커넥터를 구성하십시오.
@@ -25,7 +37,7 @@ AEM은 페이지 콘텐츠 또는 에셋을 번역할 수 있도록 [Microsoft T
 
 다음 절차를 통해 Microsoft Translator 구성이 생성됩니다.
 
-1. [탐색 패널에서 &#x200B;](/help/sites-authoring/basic-handling.md#first-steps)을(를) 클릭합니다. **도구** > **클라우드 서비스** > **번역 클라우드 서비스**.
+1. [탐색 패널에서 ](/help/sites-authoring/basic-handling.md#first-steps)을(를) 클릭합니다. **도구** > **클라우드 서비스** > **번역 클라우드 서비스**.
 1. 구성을 만들고자 하는 위치로 이동합니다. 일반적으로 이는 사이트 루트에 있거나 전역 기본 구성일 수 있습니다.
 1. **만들기** 단추를 클릭합니다.
 1. 구성을 정의합니다.

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 68a4d4b2-91a3-4545-a491-2a1ec08ceec5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2082'
 ht-degree: 7%
-
 ---
-
 # 검색 양식 구성{#configuring-search-forms}
 
 **Forms 검색**&#x200B;을(를) 사용하여 다양한 AEM 콘솔 및/또는 작성 환경의 패널에서 사용할 수 있는 검색 패널에 사용되는 검색 조건자 선택을 사용자 지정합니다. 이러한 패널을 맞춤화하면 특정 요구 사항에 따라 검색 기능을 다양하게 사용할 수 있습니다.
@@ -26,9 +35,9 @@ ht-degree: 7%
 
 * **도구**
 
-   * **일반**
+  * **일반**
 
-      * **Forms 검색**
+    * **Forms 검색**
 
 이 콘솔에 처음 액세스하면 모든 구성에 자물쇠 기호가 있음을 알 수 있습니다. 이는 해당 구성이 기본(기본) 구성이며 삭제할 수 없음을 나타냅니다. 구성을 사용자 지정한 후에는 [사용자 지정된 구성을 삭제](#deleting-a-configuration-to-reinstate-the-default)하지 않으면 잠금이 사라집니다. 이 경우 기본값(및 자물쇠 표시기)이 복원됩니다.
 
@@ -393,7 +402,7 @@ ht-degree: 7%
 * **Publish 및 Live Copy 속성 이름**
 Sites 특정 술어에 대한 게시 및 라이브 카피 확인란의 레이블입니다.
 
-* **설정** 탭의 필드 레이블에 있는 &ast;는 필드가 필수이며 비워 두면 오류 메시지가 표시됨을 의미합니다.
+* **설정** 탭의 필드 레이블에 있는 &amp;ast;는 필드가 필수이며 비워 두면 오류 메시지가 표시됨을 의미합니다.
 
 ## 검색 Forms 구성 {#configuring-your-search-forms}
 

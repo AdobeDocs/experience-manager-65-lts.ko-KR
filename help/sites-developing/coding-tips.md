@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e431a240-45a2-4222-b854-32b90e5cd100
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '861'
 ht-degree: 0%
-
 ---
-
 # 코딩 팁{#coding-tips}
 
 ## 가능한 한 taglibs 또는 HTL 사용 {#use-taglibs-or-htl-as-much-as-possible}
@@ -55,7 +64,7 @@ AEM 코드 베이스에서는 다음 규칙이 사용됩니다.
    <td><p>int elapsedTimeInDays;</p> </td>
   </tr>
   <tr>
-   <td><p>//태그 지정된 이미지 가져오기<br /> 공용 목록 getItems() {}</p> </td>
+   <td><p>//get tagged images<br /> public List getItems() {}</p> </td>
    <td><p>공용 목록 getTaggedImages() {}</p> </td>
   </tr>
  </tbody>

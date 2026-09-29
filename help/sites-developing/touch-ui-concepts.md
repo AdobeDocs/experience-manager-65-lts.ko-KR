@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b60b198e-1683-4970-b9b4-f1d0178e00e1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2207'
 ht-degree: 1%
-
 ---
-
 # Adobe Experience Manager 터치 지원 UI의 개념{#concepts-of-the-aem-touch-enabled-ui}
 
 Adobe Experience Manager(AEM)는 터치 및 데스크톱 장치 모두에서 작동하도록 디자인된 작성 환경용 [반응형 디자인](/help/sites-authoring/responsive-layout.md)이 포함된 터치 지원 UI를 제공합니다.
@@ -28,24 +37,24 @@ Adobe Experience Manager(AEM)는 터치 및 데스크톱 장치 모두에서 작
 터치 지원 UI에는 다음이 포함됩니다.
 
 * 다음과 같은 세트 헤더입니다.
-   * 로고 표시
-   * 전역 탐색에 대한 링크를 제공합니다.
-   * 검색, 도움말, Experience Cloud 솔루션, 알림 및 사용자 설정과 같은 다른 일반 작업에 대한 링크를 제공합니다.
+  * 로고 표시
+  * 전역 탐색에 대한 링크를 제공합니다.
+  * 검색, 도움말, Experience Cloud 솔루션, 알림 및 사용자 설정과 같은 다른 일반 작업에 대한 링크를 제공합니다.
 * 왼쪽 레일(필요할 때 표시되며 숨길 수 있음)은 다음과 같이 표시할 수 있습니다.
-   * 타임라인
-   * 참조
-   * 필터
+  * 타임라인
+  * 참조
+  * 필터
 * 탐색 헤더입니다. 이 헤더는 다시 문맥을 구분하며 다음을 표시할 수 있습니다.
-   * 현재 사용 중인 콘솔, 해당 콘솔 내 위치 또는 둘 다를 나타냅니다.
-   * 왼쪽 레일 선택
-   * 이동 경로
-   * 적절한 **만들기** 작업에 액세스
-   * 선택 항목 보기
+  * 현재 사용 중인 콘솔, 해당 콘솔 내 위치 또는 둘 다를 나타냅니다.
+  * 왼쪽 레일 선택
+  * 이동 경로
+  * 적절한 **만들기** 작업에 액세스
+  * 선택 항목 보기
 * 다음과 같은 콘텐츠 영역:
-   * 콘텐츠 항목(페이지, 에셋, 포럼 게시물 등)을 나열합니다.
-   * 열, 카드 또는 목록과 같이 요청한 대로 형식을 지정할 수 있습니다.
-   * 반응형 디자인 사용(디스플레이는 장치 및/또는 창 크기에 따라 자동으로 크기 조정)
-   * 무한 스크롤링 사용(더 이상 페이지 매김을 하지 않음, 모든 항목이 하나의 창에 나열됨)
+  * 콘텐츠 항목(페이지, 에셋, 포럼 게시물 등)을 나열합니다.
+  * 열, 카드 또는 목록과 같이 요청한 대로 형식을 지정할 수 있습니다.
+  * 반응형 디자인 사용(디스플레이는 장치 및/또는 창 크기에 따라 자동으로 크기 조정)
+  * 무한 스크롤링 사용(더 이상 페이지 매김을 하지 않음, 모든 항목이 하나의 창에 나열됨)
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -241,14 +250,14 @@ Granite UI를 사용하도록 ExtJS 코드를 업그레이드할 때 다음 목�
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete`&#x200B;`cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete``cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **노드 유형** | **Granite UI 리소스 유형** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container`&#x200B;`granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Granite UI 관리 구성 요소 {#granite-ui-administration-components}

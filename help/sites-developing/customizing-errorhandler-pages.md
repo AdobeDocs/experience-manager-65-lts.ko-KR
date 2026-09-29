@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 4f98853d-306f-4d11-a3d8-83122b372b2d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 0%
-
+source-wordcount: '545'
+ht-degree: 3%
 ---
-
 # 오류 핸들러로 표시된 페이지 사용자 지정{#customizing-pages-shown-by-the-error-handler}
 
 Adobe Experience Manager(AEM)에는 HTTP 오류를 처리하기 위한 표준 오류 처리기가 함께 제공됩니다. 예를 들면 다음과 같습니다.
@@ -77,8 +86,8 @@ HTTP 500 오류는 서버측 예외로 인해 발생합니다.
 * 예외를 기록합니다.
 * 반환:
 
-   * http 응답 코드 500
-   * 예외 스택 추적
+  * http 응답 코드 500
+  * 예외 스택 추적
 
   를 입력합니다.
 

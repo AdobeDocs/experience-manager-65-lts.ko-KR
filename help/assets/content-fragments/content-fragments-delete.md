@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 1460872b-415f-4392-a480-c442790fd0d9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '518'
 ht-degree: 100%
-
 ---
-
 # 콘텐츠 조각 - 삭제 고려 사항 {#content-fragments-delete-considerations}
 
 AEM에서 콘텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요한 고려 사항을 검토하십시오. 콘텐츠 조각은 Headless 콘텐츠를 제공하기 위한 강력한 도구이며 콘텐츠 조각 삭제가 가져오는 영향을 신중하게 고려해야 합니다.
@@ -24,10 +36,10 @@ AEM에서 콘텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요
 
 1. **단일 엔티티로서의 콘텐츠 조각.**
 
-   * **사용 사례**: 컨텐츠 조각을 편집/업데이트하며 **전체 조각을 삭제**&#x200B;해야 하는 사용자.
+   * **사용 사례**: 콘텐츠 조각을 편집/업데이트하며 **전체 조각을 삭제**&#x200B;해야 하는 사용자.
    * **권한**: [삭제](/help/sites-administering/security.md#actions) 권한은 [사용자 및/또는 그룹 관리를 통해 삭제 권한을 지정](/help/sites-administering/security.md#managing-permissions)할 수 있습니다.
 
-2. **변형이나 하위 노드와 같이 컨텐츠 조각을 구성하는 여러 하위 엔티티.**
+2. **변형이나 하위 노드와 같이 콘텐츠 조각을 구성하는 여러 하위 엔티티.**
 
    콘텐츠 조각 편집기의 기본 작업을 수행하려면 이러한 임시 하위 요소를 삭제할 수 있어야 합니다. 예를 들어 변형을 조작할 때 또는 메타데이터를 편집하거나 관련 콘텐츠를 관리할 때도 마찬가지입니다.
 
@@ -36,7 +48,7 @@ AEM에서 콘텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요
 
 >[!NOTE]
 >
->사용자에게 [삭제](/help/sites-administering/security.md#actions) 권한이 없는 경우 컨텐츠 조각 편집기는 *읽기 전용* 모드로 작동합니다.
+>사용자에게 [삭제](/help/sites-administering/security.md#actions) 권한이 없는 경우 콘텐츠 조각 편집기는 *읽기 전용* 모드로 작동합니다.
 
 >[!NOTE]
 >
@@ -50,9 +62,9 @@ AEM에서 콘텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요
 
 >[!NOTE]
 >
->컨텐츠 조각을 편집/업데이트하는 데 필요한 삭제 권한은 [사용자 및/또는 그룹 관리를 통해 지정된](/help/sites-administering/security.md#managing-permissions) 삭제 권한에 포함되어 있습니다.
+>콘텐츠 조각을 편집/업데이트하는 데 필요한 삭제 권한은 [사용자 및/또는 그룹 관리를 통해 지정된](/help/sites-administering/security.md#managing-permissions) 삭제 권한에 포함되어 있습니다.
 
-조각을 편집/업데이트하는 데 필요한 권한은 컨텐츠 조각을 포함하는 노드나 적절한 상위 노드(`/content/dam` 하의 어떤 하위 수준이든)에 적용되어야 합니다. 권한은 이러한 상위 노드에 지정되면 해당 분기 내의 모든 노드에 적용됩니다.
+조각을 편집/업데이트하는 데 필요한 권한은 콘텐츠 조각을 포함하는 노드나 적절한 상위 노드(`/content/dam` 하의 어떤 하위 수준이든)에 적용되어야 합니다. 권한은 이러한 상위 노드에 지정되면 해당 분기 내의 모든 노드에 적용됩니다.
 
 예를 들어 다음과 같은 모든 콘텐츠 조각을 포함하는 폴더:
 
@@ -72,15 +84,15 @@ AEM에서 콘텐츠 조각 삭제 정책을 정의하기 전에 이러한 중요
 
 * 콘텐츠 조각 노드 또는 폴더의 경우:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties`
+  * `jcr:addChildNodes`, `jcr:modifyProperties`
 
 * 모든 콘텐츠 조각의 `jcr:content`노드의 경우:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` 및 `jcr:removeChildNodes`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` 및 `jcr:removeChildNodes`
 
 * 모든 콘텐츠 조각의 `jcr:content` 아래에 있는 모든 노드의 경우:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` 및 `jcr:removeChildNodes`, `jcr:removeNode`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` 및 `jcr:removeChildNodes`, `jcr:removeNode`
 
 이러한 `remove` 권한은 [CRXDE Lite 내에서 액세스 제어 목록을 사용하여 관리](/help/sites-administering/user-group-ac-admin.md#access-right-management)해야 합니다.
 

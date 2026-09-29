@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a97cb5a6-4097-4f2e-b932-cb858bd5681a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 94%
-
 ---
-
 # SSL이 활성화된 LDAP 서버에 대한 사용자 관리 구성 {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
 LDAPS를 통해 동기화가 제대로 작동하려면 인증 기관(CA)에서 발급한 LDAP 인증서가 애플리케이션 서버의 Java 런타임 환경(JRE)에 있어야 합니다. 인증서를 애플리케이션 서버의 JRE cacerts 파일로 가져옵니다. 해당 파일은 일반적으로 *[JAVA_HOME]*/jre/lib/security/cacerts 디렉터리에 있습니다.

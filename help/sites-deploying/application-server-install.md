@@ -9,13 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 1%
-
 ---
-
 # 애플리케이션 서버 설치{#application-server-install}
 
 >[!NOTE]
@@ -104,7 +116,7 @@ AEM은 단일 war 파일로 제공됩니다.
 
 * 기본 인증 헤더가 통과하도록 허용:
 
-   * AEM에서 사용자를 인증하는 한 가지 방법은 WebSphere® 서버의 전역 관리 보안을 비활성화하는 것입니다. 이렇게 하려면 **보안 > 전역 보안**(으)로 이동하여 **관리 보안 활성화** 확인란의 선택을 취소하고 서버를 저장한 후 다시 시작하십시오.
+  * AEM에서 사용자를 인증하는 한 가지 방법은 WebSphere® 서버의 전역 관리 보안을 비활성화하는 것입니다. 이렇게 하려면 **보안 > 전역 보안**(으)로 이동하여 **관리 보안 활성화** 확인란의 선택을 취소하고 서버를 저장한 후 다시 시작하십시오.
 
 * `"JAVA_OPTS= -Xmx2048m"` 설정
 * 컨텍스트 루트 = /를 사용하여 AEM을 설치하려면 기존 기본 웹 애플리케이션의 컨텍스트 루트를 변경합니다.
@@ -114,14 +126,14 @@ AEM은 단일 war 파일로 제공됩니다.
 * AEM war 파일 다운로드
 * 필요한 경우 `web.xml` 파일에서 구성을 만드십시오. 자세한 내용은 위의 [일반 설명](#general-description)을 참조하세요.
 
-   * `WEB-INF/web.xml` 파일 압축 풀기
-   * `sling.run.modes` 매개 변수를 `publish`(으)로 변경
-   * 초기 `sling.home` 매개 변수의 주석 처리를 제거하고 필요에 따라 이 경로를 설정하십시오.
-   * `web.xml` 파일을 다시 압축합니다.
+  * `WEB-INF/web.xml` 파일 압축 풀기
+  * `sling.run.modes` 매개 변수를 `publish`(으)로 변경
+  * 초기 `sling.home` 매개 변수의 주석 처리를 제거하고 필요에 따라 이 경로를 설정하십시오.
+  * `web.xml` 파일을 다시 압축합니다.
 
 * AEM war 파일 배포
 
-   * 컨텍스트 루트를 선택합니다. 슬링 실행 모드를 설정하려면 배포 마법사의 자세한 단계를 선택한 다음 마법사의 6단계에서 이를 지정해야 합니다.
+  * 컨텍스트 루트를 선택합니다. 슬링 실행 모드를 설정하려면 배포 마법사의 자세한 단계를 선택한 다음 마법사의 6단계에서 이를 지정해야 합니다.
 
 * AEM 웹 애플리케이션 시작
 
@@ -131,64 +143,64 @@ AEM은 단일 war 파일로 제공됩니다.
 
 * **Tomcat 서버 준비**
 
-   * VM 메모리 설정 늘리기:
+  * VM 메모리 설정 늘리기:
 
-      * `bin/catalina.bat`(UNIX의 경우 `catalina.sh` 다시 ®)에서 다음 설정을 추가합니다.
+    * `bin/catalina.bat`(UNIX의 경우 `catalina.sh` 다시 ®)에서 다음 설정을 추가합니다.
 
-        ```
-        set "JAVA_OPTS= -Xmx2048m`
-        ```
+      ```
+      set "JAVA_OPTS= -Xmx2048m`
+      ```
 
-   * Tomcat은 설치 시 관리자 또는 관리자 액세스를 활성화하지 않습니다. 따라서 다음 계정에 대한 액세스를 허용하려면 `tomcat-users.xml`을(를) 수동으로 편집해야 합니다.
+  * Tomcat은 설치 시 관리자 또는 관리자 액세스를 활성화하지 않습니다. 따라서 다음 계정에 대한 액세스를 허용하려면 `tomcat-users.xml`을(를) 수동으로 편집해야 합니다.
 
-      * 관리자 및 관리자에 대한 액세스 권한을 포함하도록 `tomcat-users.xml`을(를) 편집합니다. 구성은 다음 예제와 유사해야 합니다.
+    * 관리자 및 관리자에 대한 액세스 권한을 포함하도록 `tomcat-users.xml`을(를) 편집합니다. 구성은 다음 예제와 유사해야 합니다.
 
-        ```xml
-        <?xml version='1.0' encoding='utf-8'?>
-        <tomcat-users>
-          <role rolename="manager"/>
-          <role rolename="tomcat"/>
-          <role rolename="admin"/>
-          <role rolename="role1"/>
-          <role rolename="manager-gui"/>
-          <user username="both" password="tomcat" roles="tomcat,role1"/>
-          <user username="tomcat" password="tomcat" roles="tomcat"/>
-          <user username="admin" password="admin" roles="admin,manager-gui"/>
-          <user username="role1" password="tomcat" roles="role1"/>
-        </tomcat-users>
-        ```
+      ```xml
+      <?xml version='1.0' encoding='utf-8'?>
+      <tomcat-users>
+        <role rolename="manager"/>
+        <role rolename="tomcat"/>
+        <role rolename="admin"/>
+        <role rolename="role1"/>
+        <role rolename="manager-gui"/>
+        <user username="both" password="tomcat" roles="tomcat,role1"/>
+        <user username="tomcat" password="tomcat" roles="tomcat"/>
+        <user username="admin" password="admin" roles="admin,manager-gui"/>
+        <user username="role1" password="tomcat" roles="role1"/>
+      </tomcat-users>
+      ```
 
-   * 컨텍스트 루트 &quot;/&quot;와 함께 AEM을 배포하려면 기존 ROOT 웹 앱의 컨텍스트 루트를 변경해야 합니다.
+  * 컨텍스트 루트 &quot;/&quot;와 함께 AEM을 배포하려면 기존 ROOT 웹 앱의 컨텍스트 루트를 변경해야 합니다.
 
-      * ROOT 웹 앱 중지 및 배포 취소
-      * Tomcat의 웹 앱 폴더에서 `ROOT.war` 폴더 이름 바꾸기
-      * 웹 앱 다시 시작
+    * ROOT 웹 앱 중지 및 배포 취소
+    * Tomcat의 웹 앱 폴더에서 `ROOT.war` 폴더 이름 바꾸기
+    * 웹 앱 다시 시작
 
-   * Manager-gui를 사용하여 AEM 웹 애플리케이션을 설치하는 경우 기본적으로 50MB의 업로드 크기만 허용하므로 업로드된 파일의 최대 크기를 늘려야 합니다. 관리자 웹 응용 프로그램의 `web.xml`을(를) 열려면 다음을 수행하십시오.
+  * Manager-gui를 사용하여 AEM 웹 애플리케이션을 설치하는 경우 기본적으로 50MB의 업로드 크기만 허용하므로 업로드된 파일의 최대 크기를 늘려야 합니다. 관리자 웹 응용 프로그램의 `web.xml`을(를) 열려면 다음을 수행하십시오.
 
-     `webapps/manager/WEB-INF/web.xml`
+    `webapps/manager/WEB-INF/web.xml`
 
-     `max-file-size` 및 `max-request-size`을(를) 최소 500MB로 늘립니다. 아래 예제 `web.xml` 파일에서 다음 `multipart-config`을(를) 참조하십시오.
+    `max-file-size` 및 `max-request-size`을(를) 최소 500MB로 늘립니다. 아래 예제 `web.xml` 파일에서 다음 `multipart-config`을(를) 참조하십시오.
 
-     ```xml
-     <multipart-config>
-     <!-- 500MB max -->
-     <max-file-size>524288000</max-file-size>
-     <max-request-size>524288000</max-request-size>
-     <file-size-threshold>0</file-size-threshold>
-     </multipart-config>
-     ```
+    ```xml
+    <multipart-config>
+    <!-- 500MB max -->
+    <max-file-size>524288000</max-file-size>
+    <max-request-size>524288000</max-request-size>
+    <file-size-threshold>0</file-size-threshold>
+    </multipart-config>
+    ```
 
 * **AEM 웹 응용 프로그램 배포**
 
-   * AEM war 파일을 다운로드합니다.
-   * 필요한 경우 `web.xml` 파일에서 구성을 만드십시오.
+  * AEM war 파일을 다운로드합니다.
+  * 필요한 경우 `web.xml` 파일에서 구성을 만드십시오.
 
-      * `WEB-INF/web.xml` 파일 압축 풀기
-      * `sling.run.modes` 매개 변수를 `publish`(으)로 변경
-      * 초기 `sling.home` 매개 변수의 주석 처리를 제거하고 필요에 따라 이 경로를 설정하십시오.
-      * `web.xml` 파일을 다시 압축합니다.
+    * `WEB-INF/web.xml` 파일 압축 풀기
+    * `sling.run.modes` 매개 변수를 `publish`(으)로 변경
+    * 초기 `sling.home` 매개 변수의 주석 처리를 제거하고 필요에 따라 이 경로를 설정하십시오.
+    * `web.xml` 파일을 다시 압축합니다.
 
-   * AEM war 파일을 루트 웹 앱으로 배포하려면 이름을 `ROOT.war`(으)로 바꾸십시오. `aemauthor`을(를) 컨텍스트 루트로 사용하려면 이름을 `aemauthor.war`(으)로 바꾸십시오.
-   * Tomcat의 webapps 폴더에 복사
-   * AEM이 설치될 때까지 기다립니다.
+  * AEM war 파일을 루트 웹 앱으로 배포하려면 이름을 `ROOT.war`(으)로 바꾸십시오. `aemauthor`을(를) 컨텍스트 루트로 사용하려면 이름을 `aemauthor.war`(으)로 바꾸십시오.
+  * Tomcat의 webapps 폴더에 복사
+  * AEM이 설치될 때까지 기다립니다.

@@ -9,22 +9,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6fb6e522-fb81-4ba2-90b2-aad68f8bfa9e
-source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1261'
 ht-degree: 1%
-
 ---
-
 # AEM에서 Sling 리소스 병합 사용{#using-the-sling-resource-merger-in-aem}
 
 ## 목적 {#purpose}
 
 Sling 리소스 병합은 리소스에 액세스하고 리소스를 병합하는 서비스를 제공합니다. 두 가지 모두에 대해 비교(차이점 보관) 메커니즘을 제공합니다.
 
-* **[구성된 검색 경로](/help/sites-developing/overlays.md)**&#x200B;을(를) 사용하여 리소스의 [오버레이](/help/sites-developing/overlays.md#configuring-the-search-paths)합니다.
+* [구성된 검색 경로](/help/sites-developing/overlays.md#configuring-the-search-paths)을(를) 사용하여 리소스의 **[오버레이](/help/sites-developing/overlays.md)**&#x200B;합니다.
 
-* 리소스 유형 계층 구조(**속성 사용)를 사용하여 터치 사용 UI(**)에 대한 구성 요소 대화 상자의 `cq:dialog`재정의`sling:resourceSuperType`.
+* 리소스 유형 계층 구조(`sling:resourceSuperType` 속성 사용)를 사용하여 터치 사용 UI(`cq:dialog`)에 대한 구성 요소 대화 상자의 **재정의**.
 
 Sling 리소스 병합은 오버레이 및 재정의 리소스(및 해당 속성)를 원래 리소스 및 속성과 결합합니다.
 
@@ -55,13 +64,13 @@ AEM에서 Sling 리소스 병합을 사용하는 목표는 다음과 같습니�
 
 >[!CAUTION]
 >
->** 경로에서 아무 것도 변경하지 마십시오`/libs`.
+>*`/libs` 경로에서 아무 것도 변경하지 마십시오*.
 >
 >다음에 인스턴스를 업그레이드할 때 `/libs`의 콘텐츠가 덮어쓰기되기 때문입니다. 또한 핫픽스 또는 기능 팩을 적용할 때 덮어쓸 수도 있습니다.
 >
 >구성 및 기타 변경에 권장되는 방법은 다음과 같습니다.
 >
->1. `/libs` 아래에 필요한 항목(즉, `/apps`에 존재하는 항목)을 다시 만듭니다.
+>1. `/apps` 아래에 필요한 항목(즉, `/libs`에 존재하는 항목)을 다시 만듭니다.
 >
 >1. `/apps` 내에서 변경
 >
@@ -76,7 +85,7 @@ AEM에서 Sling 리소스 병합을 사용하는 목표는 다음과 같습니�
 
   와일드카드 `*`이(가) 모든 항목을 숨깁니다.
 
-* `sling:hideResource`( `Boolean`)
+* `sling:hideResource` ( `Boolean`)
 
   하위 리소스를 포함하여 리소스가 완전히 숨겨졌는지 여부를 나타냅니다.
 
@@ -86,7 +95,7 @@ AEM에서 Sling 리소스 병합을 사용하는 목표는 다음과 같습니�
 
   와일드카드 `*`이(가) 모든 항목을 숨깁니다.
 
-* `sling:orderBefore`( `String`)
+* `sling:orderBefore` ( `String`)
 
   여기에는 현재 노드가 앞에 위치한 형제 노드의 이름이 포함됩니다.
 
@@ -98,25 +107,25 @@ AEM에서 Sling 리소스 병합을 사용하는 목표는 다음과 같습니�
 
 * 오버레이
 
-   * 레일에 표시된 Sites 콘솔의 탐색 항목 정의는 다음과 같이 정의됩니다.
+  * 레일에 표시된 Sites 콘솔의 탐색 항목 정의는 다음과 같이 정의됩니다.
 
-     `/libs/cq/core/content/nav/sites/jcr:title`
+    `/libs/cq/core/content/nav/sites/jcr:title`
 
-   * 오버레이하려면 다음 노드를 만듭니다.
+  * 오버레이하려면 다음 노드를 만듭니다.
 
-     `/apps/cq/core/content/nav/sites`
+    `/apps/cq/core/content/nav/sites`
 
-     필요에 따라 속성 `jcr:title`을(를) 업데이트합니다.
+    필요에 따라 속성 `jcr:title`을(를) 업데이트합니다.
 
 * 오버라이드
 
-   * 텍스트 콘솔에 대한 터치 사용 대화상자의 정의는 다음과 같이 정의됩니다.
+  * 텍스트 콘솔에 대한 터치 사용 대화상자의 정의는 다음과 같이 정의됩니다.
 
-     `/libs/foundation/components/text/cq:dialog`
+    `/libs/foundation/components/text/cq:dialog`
 
-   * 재정의하려면 다음 노드를 만듭니다. 예:
+  * 재정의하려면 다음 노드를 만듭니다. 예:
 
-     `/apps/the-project/components/text/cq:dialog`
+    `/apps/the-project/components/text/cq:dialog`
 
 둘 중 하나를 생성하려면 뼈대 구조를 재생성하기만 하면 됩니다. 구조의 재생성을 단순화하기 위해 모든 중간 노드는 `nt:unstructured` 유형일 수 있습니다(원래 노드 유형을 반영하지 않아도 됨). 예: `/libs`.
 
@@ -143,20 +152,20 @@ AEM에서 Sling 리소스 병합을 사용하는 목표는 다음과 같습니�
 
   속성이 `/libs` 정의에 없지만 `/apps` 오버레이/재정의에 필요합니다.
 
-   1. `/apps` 내에 해당 노드 만들기
-   1. 이 노드에 새 속성을 만듭니다.&quot;
+  1. `/apps` 내에 해당 노드 만들기
+  1. 이 노드에 새 속성을 만듭니다.&quot;
 
 * **속성 재정의(자동 생성 속성이 아님)**
 
   속성이 `/libs`에 정의되어 있지만 `/apps` 오버레이/재정의에는 새 값이 필요합니다.
 
-   1. `/apps` 내에 해당 노드 만들기
-   1. 이 노드(`apps` 아래)에서 일치하는 속성을 만듭니다.
+  1. `/apps` 내에 해당 노드 만들기
+  1. 이 노드(`apps` 아래)에서 일치하는 속성을 만듭니다.
 
-      * 속성은 Sling Resource Resolver 구성에 따라 우선 순위를 갖습니다.
-      * 속성 유형 변경은 지원됩니다.
+     * 속성은 Sling Resource Resolver 구성에 따라 우선 순위를 갖습니다.
+     * 속성 유형 변경은 지원됩니다.
 
-        `/libs`에 사용된 것과 다른 속성 형식을 사용하는 경우 정의한 속성 형식이 사용됩니다.
+       `/libs`에 사용된 것과 다른 속성 형식을 사용하는 경우 정의한 속성 형식이 사용됩니다.
 
   >[!NOTE]
   >
@@ -166,68 +175,68 @@ AEM에서 Sling 리소스 병합을 사용하는 목표는 다음과 같습니�
 
   기본적으로 자동 생성된 속성(예: `jcr:primaryType`)은 현재 `/libs` 아래에 있는 노드 유형이 준수되는지 확인하기 위한 오버레이/재정의 대상이 아닙니다. 오버레이/재정의를 적용하려면 `/apps`에서 노드를 다시 만들어야 합니다. 속성을 명시적으로 숨기고 다시 정의하십시오.
 
-   1. 원하는 `/apps`을(를) 사용하여 `jcr:primaryType`에 해당 노드를 만드십시오.
-   1. 값이 자동으로 만들어진 속성의 값으로 설정된 해당 노드에 `sling:hideProperties` 속성을 만듭니다(예: `jcr:primaryType`).
+  1. 원하는 `jcr:primaryType`을(를) 사용하여 `/apps`에 해당 노드를 만드십시오.
+  1. 값이 자동으로 만들어진 속성의 값으로 설정된 해당 노드에 `sling:hideProperties` 속성을 만듭니다(예: `jcr:primaryType`).
 
-      `/apps`에 정의된 이 속성은 이제 `/libs`에 정의된 속성보다 우선합니다.
+     `/apps`에 정의된 이 속성은 이제 `/libs`에 정의된 속성보다 우선합니다.
 
 * **노드 및 자식 항목 다시 정의**
 
   노드 및 자식 노드가 `/libs`에 정의되어 있지만 `/apps` 오버레이/재정의에는 새 구성이 필요합니다.
 
-   1. 다음 작업을 결합합니다.
+  1. 다음 작업을 결합합니다.
 
-      1. 노드의 하위 항목 숨기기(노드의 속성 유지)
-      1. 속성/속성 재정의
+     1. 노드의 하위 항목 숨기기(노드의 속성 유지)
+     1. 속성/속성 재정의
 
 * **속성 숨기기**
 
   속성이 `/libs`에 정의되어 있지만 `/apps` 오버레이/재정의에는 필요하지 않습니다.
 
-   1. `/apps` 내에 해당 노드 만들기
-   1. `sling:hideProperties` 또는 `String` 형식의 `String[]` 속성을 만듭니다. 숨거나 무시할 속성을 지정하는 데 사용합니다. 와일드카드를 사용할 수도 있습니다. 예:
+  1. `/apps` 내에 해당 노드 만들기
+  1. `String` 또는 `String[]` 형식의 `sling:hideProperties` 속성을 만듭니다. 숨거나 무시할 속성을 지정하는 데 사용합니다. 와일드카드를 사용할 수도 있습니다. 예:
 
-      * `*`
-      * `["*"]`
-      * `jcr:title`
-      * `["jcr:title", "jcr:description"]`
+     * `*`
+     * `["*"]`
+     * `jcr:title`
+     * `["jcr:title", "jcr:description"]`
 
 * **노드 및 자식 숨기기**
 
   노드 및 자식 노드가 `/libs`에 정의되어 있지만 `/apps` 오버레이/재정의에는 필요하지 않습니다.
 
-   1. `/apps` 아래에 해당 노드 만들기
-   1. 속성 `sling:hideResource` 만들기
+  1. `/apps` 아래에 해당 노드 만들기
+  1. 속성 `sling:hideResource` 만들기
 
-      * 유형: `Boolean`
-      * 값: `true`
+     * 유형: `Boolean`
+     * 값: `true`
 
 * **노드의 속성을 유지하면서 노드의 하위 항목 숨기기**
 
   `/libs`에 노드, 노드 속성 및 자식 노드가 정의되어 있습니다. `/apps` 오버레이/재정의에는 노드 및 해당 속성이 필요하지만, `/apps` 오버레이/재정의에는 일부 또는 모든 하위 노드가 필요하지 않습니다.
 
-   1. `/apps` 아래에 해당 노드 만들기
-   1. `sling:hideChildren` 속성을 만듭니다.
+  1. `/apps` 아래에 해당 노드 만들기
+  1. `sling:hideChildren` 속성을 만듭니다.
 
-      * 유형: `String[]`
-      * 값: 숨기거나 무시할 하위 노드 목록(`/libs`에서 정의됨)
+     * 유형: `String[]`
+     * 값: 숨기거나 무시할 하위 노드 목록(`/libs`에서 정의됨)
 
-      와일드카드 &ast;를 사용하여 모든 하위 노드를 숨기거나 무시할 수 있습니다.
+     와일드카드 &amp;ast;를 사용하여 모든 하위 노드를 숨기거나 무시할 수 있습니다.
 
 * **노드 순서 바꾸기**
 
   `/libs`에 노드 및 해당 형제 노드가 정의되어 있습니다. 순서를 변경하려면 `/apps` 오버레이에 노드를 다시 만들거나 재정의합니다. `/libs`에서 적절한 형제 노드를 참조하여 새 위치를 정의합니다.
 
 
-   * `sling:orderBefore` 속성 사용:
+  * `sling:orderBefore` 속성 사용:
 
-      1. `/apps` 아래에 해당 노드 만들기
-      1. `sling:orderBefore` 속성을 만듭니다.
+    1. `/apps` 아래에 해당 노드 만들기
+    1. `sling:orderBefore` 속성을 만듭니다.
 
-         현재 노드가 앞에 위치한 노드(`/libs`에서와 같이)를 지정합니다.
+       현재 노드가 앞에 위치한 노드(`/libs`에서와 같이)를 지정합니다.
 
-         * 유형: `String`
-         * 값: `<before-SiblingName>`
+       * 유형: `String`
+       * 값: `<before-SiblingName>`
 
 ### 코드에서 Sling 리소스 병합 호출 {#invoking-the-sling-resource-merger-from-your-code}
 
@@ -241,21 +250,21 @@ Sling 리소스 병합에는 두 개의 사용자 지정 리소스 공급자가 
 
 * 오버레이:
 
-   * 목적: 검색 경로를 기반으로 리소스 병합
-   * 탑재 지점: `/mnt/overlay`
-   * 사용: `mount point + relative path`
-   * 예:
+  * 목적: 검색 경로를 기반으로 리소스 병합
+  * 탑재 지점: `/mnt/overlay`
+  * 사용: `mount point + relative path`
+  * 예:
 
-      * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
+    * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
 * 재정의:
 
-   * 목적: super type을 기반으로 리소스 병합
-   * 탑재 지점: `/mnt/overide`
-   * 사용: `mount point + absolute path`
-   * 예:
+  * 목적: super type을 기반으로 리소스 병합
+  * 탑재 지점: `/mnt/overide`
+  * 사용: `mount point + absolute path`
+  * 예:
 
-      * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
+    * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
 ### 사용 예 {#example-of-usage}
 
@@ -263,9 +272,9 @@ Sling 리소스 병합에는 두 개의 사용자 지정 리소스 공급자가 
 
 * 오버레이:
 
-   * [콘솔 사용자 지정](/help/sites-developing/customizing-consoles-touch.md)
-   * [페이지 작성 사용자 정의](/help/sites-developing/customizing-page-authoring-touch.md)
+  * [콘솔 사용자 지정](/help/sites-developing/customizing-consoles-touch.md)
+  * [페이지 작성 사용자 정의](/help/sites-developing/customizing-page-authoring-touch.md)
 
 * 재정의:
 
-   * [페이지 속성 구성](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
+  * [페이지 속성 구성](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 71a49353-5273-46ee-a1ff-5bbfe5b6b0b4
-source-git-commit: c0bf6864bb344e582c4f88371c892d401ce2827c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 9%
-
+source-wordcount: '786'
+ht-degree: 10%
 ---
-
 # `We.Retail` 참조 구현{#we-retail-reference-implementation}
 
 ## 소개 {#introduction}
@@ -58,7 +67,7 @@ AEM의 표준 참조 구현으로 `We.Retail`은(는) AEM의 가장 강력한 �
 
 ### 첫 단계 {#first-steps}
 
-1. AEM이 시작되거나 `We.Retail`이(가) 설치되면 **`We.Retail`**&#x200B;사이트 콘솔[에서 &#x200B;](/help/sites-authoring/basic-handling.md#global-navigation) 사이트를 사용할 수 있습니다.
+1. AEM이 시작되거나 `We.Retail`이(가) 설치되면 [사이트 콘솔](/help/sites-authoring/basic-handling.md#global-navigation)에서 **`We.Retail`** 사이트를 사용할 수 있습니다.
 1. 예를 들어 다음 페이지를 열 수 있으며 아래 [부록](#appendix)에 표시된 것과 같이 표시되어야 합니다.
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`

@@ -9,21 +9,38 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 56603735-959e-4460-b642-bba63fa20c02
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 89%
-
 ---
-
 # 인증서 기반 인증 구성 {#configuring-certificate-based-authentication}
 
 >[!NOTE]
 > 
 > 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인하십시오.
 
-사용자 관리에서는 일반적으로 사용자 이름 및 암호를 사용하여 인증을 수행합니다. 인증서 기반 인증도 지원하며 이를 통해 Acrobat을 통해 사용자를 인증하거나 프로그래밍 방식으로 사용자를 인증할 수 있습니다. 프로그래밍 방식으로 사용자를 인증하는 방법에 대한 자세한 내용은 [AEM Forms를 사용한 프로그래밍](https://www.adobe.com/go/learn_aemforms_programming_63)을 참조하십시오.
+사용자 관리에서는 일반적으로 사용자 이름 및 암호를 사용하여 인증을 수행합니다. 사용자 관리에서도 인증서 기반 인증을 지원하며 이를 통해 Acrobat을 통해 사용자를 인증하거나 프로그래밍 방식으로 사용자를 인증할 수 있습니다. 프로그래밍 방식으로 사용자를 인증하는 방법에 대한 자세한 내용은 [AEM Forms를 사용한 프로그래밍](https://www.adobe.com/go/learn_aemforms_programming_63)을 참조하십시오.
 
 인증서 기반 인증을 사용하려면 신뢰하는 CA(인증 기관) 인증서를 Trust Store로 가져온 후 인증서 매핑을 만듭니다.
 
@@ -61,8 +78,8 @@ ht-degree: 89%
    정규 표현식에서 다음 문자를 사용할 수 있습니다.
 
    * . (모든 문자)
-   * &ast;(0회 이상)
-   * () (괄호 안에 그룹 지정)
+   * &amp;ast;(0회 이상)
+   * () (괄호 안에 그룹을 지정)
    * \ (정규 표현식 문자를 일반 문자로 이스케이프 처리하는 데 사용됨)
    * $n (n번째 그룹을 나타내는 데 사용됨)
 
@@ -70,21 +87,21 @@ ht-degree: 89%
 
    * &#39;Alex Pink(Authentication)&#39;에서 &#39;Alex Pink&#39;를 추출하는 방법
 
-     **정규 표현식:**(.&ast;) \(Authentication\)
+     **정규 표현식:**(.&amp;ast;) \(Authentication\)
 
    * &#39;Alex (Authentication) Pink&#39;에서 &#39;Alex Pink&#39;를 추출하는 방법
 
-     **정규 표현식:**(.&ast;)\(Authentication\)(.&ast;)
+     **정규 표현식:**(.&amp;ast;)\(Authentication\)(.&amp;ast;)
 
    * &#39;Alex (Authentication) Pink&#39;에서 &#39;Pink Alex&#39;를 추출하는 방법
 
-     **정규 표현식:**(.&ast;)\(Authentication\)(.&ast;)
+     **정규 표현식:**(.&amp;ast;)\(Authentication\)(.&amp;ast;)
 
      사용자 정의 순서: $2 $1(두 번째 그룹을 반환하고 첫 번째 그룹에 연결하며 공백 문자로 캡처됨)
 
    * &#39;smtp:apink@sampleorg.com&#39;에서 &#39;apink@sampleorg.com&#39;을 추출하는 방법
 
-     **정규 표현식:** smtp:(.&ast;)
+     **정규 표현식:** smtp:(.&amp;ast;)
 
    정규 표현식 사용에 대한 자세한 내용은 [Java 정규 표현식 튜토리얼](https://java.sun.com/docs/books/tutorial/essential/regex/)을 참조하십시오.
 

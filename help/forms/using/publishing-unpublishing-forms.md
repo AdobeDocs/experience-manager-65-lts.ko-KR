@@ -10,13 +10,26 @@ solution: Experience Manager, Experience Manager Forms
 feature: Correspondence Management
 role: Admin, User, Developer
 exl-id: 475e3c95-913d-49ee-8245-b88b967f9b7e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1409'
 ht-degree: 1%
-
 ---
-
 # 양식 및 문서 게시 및 게시 취소{#publishing-and-unpublishing-forms-and-documents}
 
 AEM Forms을 사용하면 양식을 쉽게 만들고, 게시하고, 게시를 취소할 수 있습니다. AEM Forms에 대한 자세한 내용은 [양식 관리 소개](../../forms/using/introduction-managing-forms.md)를 참조하십시오.
@@ -29,7 +42,7 @@ AEM Forms은 다음 유형의 자산을 지원합니다.
 
 * 적응형 양식
 * 적응형 문서
-* 적응형 양식 단편
+* 적응형 양식 조각
 * 테마
 * 양식 템플릿(XFA 양식)
 * PDF forms
@@ -48,12 +61,12 @@ AEM Forms은 다음 유형의 자산을 지원합니다.
 * 다른 Cloud Services 구성은 사용자에게 관리자 권한이 있는 경우에만 활성화됩니다.
 * 사용자 지정. 여기에는 다음이 포함되지만 이에 국한되지 않습니다.
 
-   * 사용자 정의 레이아웃
-   * 사용자 지정 모양
-   * CSS 파일 - 적응형 양식 컨테이너 속성 대화 상자에서 입력으로 취함
-   * 클라이언트 라이브러리 카테고리 - 적응형 양식 컨테이너 속성 대화 상자에서 입력으로 취함
-   * 적응형 양식 템플릿의 일부로 포함될 수 있는 다른 모든 클라이언트 라이브러리.
-   * 디자인 경로
+  * 사용자 정의 레이아웃
+  * 사용자 지정 모양
+  * CSS 파일 - 적응형 양식 컨테이너 속성 대화 상자에서 입력으로 취함
+  * 클라이언트 라이브러리 카테고리 - 적응형 양식 컨테이너 속성 대화 상자에서 입력으로 취함
+  * 적응형 양식 템플릿의 일부로 포함될 수 있는 다른 모든 클라이언트 라이브러리.
+  * 디자인 경로
 
 ## 자산 상태 {#asset-states}
 

@@ -10,14 +10,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: de61c579-50ed-423b-adca-60329f3f0b89
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2471'
 ht-degree: 0%
-
 ---
-
 # 대화형 PDF 양식 렌더링 {#rendering-interactive-pdf-forms}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -204,7 +221,7 @@ Forms API(Java)를 사용하여 대화형 PDF 양식 렌더링:
    * 해당 생성자를 사용하여 첨부 파일을 저장할 `java.util.HashMap` 개체를 만듭니다.
    * 렌더링된 양식에 첨부할 각 파일에 대해 `java.util.HashMap` 개체의 `put` 메서드를 호출합니다. 다음 값을 이 메서드에 전달합니다.
 
-      * 파일 이름 확장자를 포함하여 첨부 파일의 이름을 지정하는 문자열 값입니다.
+     * 파일 이름 확장자를 포함하여 첨부 파일의 이름을 지정하는 문자열 값입니다.
 
    * 첨부 파일이 포함된 `com.adobe.idp.Document` 개체입니다.
 
@@ -259,7 +276,7 @@ Forms API(웹 서비스)를 사용하여 대화형 PDF 양식 렌더링:
    * 해당 생성자를 사용하여 첨부 파일을 저장할 `java.util.HashMap` 개체를 만듭니다.
    * 렌더링된 양식에 첨부할 각 파일에 대해 `java.util.HashMap` 개체의 `put` 메서드를 호출합니다. 다음 값을 이 메서드에 전달합니다.
 
-      * 파일 이름 확장자를 포함하여 첨부 파일의 이름을 지정하는 문자열 값
+     * 파일 이름 확장자를 포함하여 첨부 파일의 이름을 지정하는 문자열 값
 
    * 첨부 파일이 포함된 `BLOB` 개체
 

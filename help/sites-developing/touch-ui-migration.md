@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 11%
-
 ---
-
 # 터치 UI로 마이그레이션{#migration-to-the-touch-ui}
 
 버전 6.0부터 Adobe Experience Manager(AEM)에서는 *터치 사용 UI*(간단히 *터치 UI*&#x200B;이라고도 함)라는 새 사용자 인터페이스를 도입했습니다. Adobe Experience Cloud 및 전체 Adobe 사용자 인터페이스 지침에 맞게 조정됩니다. 이 UI는 AEM에서 *클래식 UI*&#x200B;라고 하는 레거시 데스크탑 지향 인터페이스를 사용하는 표준 UI가 되었습니다.
@@ -114,9 +123,9 @@ Touch UI 개발의 기본 사항은 견고한 기반을 제공합니다.
 * [클래식 구성 요소에서 마이그레이션](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
 * [AEM 현대화 도구](/help/sites-developing/modernization-tools.md) - 클래식 UI 구성 요소의 대화 상자를 touch UI로 변환하는 데 도움이 됩니다.
 
-   * Touch UI에는 &quot;Touch UI 래퍼&quot; 내에서 클래식 UI 대화 상자를 여는 호환성 레이어가 있지만, 이 기능은 제한적이며 장기적으로는 권장되지 않습니다.
+  * Touch UI에는 &quot;Touch UI 래퍼&quot; 내에서 클래식 UI 대화 상자를 여는 호환성 레이어가 있지만, 이 기능은 제한적이며 장기적으로는 권장되지 않습니다.
 
-* [Touch UI에서 대화 상자 필드 맞춤화](https://helpx.adobe.com/kr/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Touch UI에서 대화 상자 필드 맞춤화](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [새로운 Granite UI 필드 구성 요소 만들기](/help/sites-developing/granite-ui-component.md)
 * [페이지 작성 사용자 지정](/help/sites-developing/customizing-page-authoring-touch.md)(터치 사용 UI 사용)
 
@@ -131,8 +140,8 @@ Touch UI 개발의 기본 사항은 견고한 기반을 제공합니다.
 Touch UI로의 마이그레이션과 직접 관련이 없지만, 권장되는 연습 방법이므로 동시에 고려할 만한 관련 문제가 있습니다.
 
 * [템플릿](/help/sites-developing/templates.md) - [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 >[!NOTE]
 >
@@ -144,9 +153,9 @@ AEM 개발에 대한 전체 정보는 아래의 리소스 컬렉션을 참조하
 
 * [개발 사용 안내서](/help/sites-developing/getting-started.md)
 * [Granite UI 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [AEM 6.5 Sites 튜토리얼 및 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=ko)
+* [AEM 6.5 Sites 튜토리얼 및 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [AEM Sites 개발 시작하기 - WKND 튜토리얼](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=ko)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
 * [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

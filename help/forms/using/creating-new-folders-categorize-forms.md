@@ -1,5 +1,5 @@
 ---
-title: 양식을 분류할 새 폴더 만들기
+title: 양식을 분류하기 위한 새 폴더 만들기
 description: 폴더를 사용하여 양식 템플릿, PDF, 리소스 및 적응형 양식을 구성하십시오.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,28 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: cc84c92b-d1a3-4314-a079-7dcbf013712a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 0%
-
+source-wordcount: '387'
+ht-degree: 3%
 ---
-
-# 양식을 분류할 새 폴더 만들기 {#create-new-folders-to-categorize-forms}
+# 양식을 분류하기 위한 새 폴더 만들기 {#create-new-folders-to-categorize-forms}
 
 폴더를 사용하여 에셋을 보다 효율적으로 구성할 수 있습니다. AEM Forms은 양식 템플릿, PDF, 문서, 리소스 및 적응형 양식과 다양한 메타데이터를 지원하는 여러 유형의 자산을 지원하므로 폴더를 사용하여 원하는 기준에 따라 양식을 분류할 수 있습니다.
 

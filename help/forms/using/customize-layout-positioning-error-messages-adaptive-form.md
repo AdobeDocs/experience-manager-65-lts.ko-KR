@@ -1,5 +1,5 @@
 ---
-title: 적응형 양식의 오류 메시지 레이아웃 및 위치 맞춤화
+title: 적응형 양식의 오류 메시지 레이아웃 및 위치 지정 사용자 정의
 description: 적응형 양식의 오류 메시지 레이아웃 및 위치를 사용자 지정할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,30 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
 exl-id: 9347f22a-166f-4403-9ca9-c29139384b2b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 0%
-
+source-wordcount: '530'
+ht-degree: 5%
 ---
-
-# 적응형 양식의 오류 메시지 레이아웃 및 위치 맞춤화{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
+# 적응형 양식의 오류 메시지 레이아웃 및 위치 지정 사용자 정의{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
 적응형 양식의 오류 메시지 레이아웃 및 위치를 사용자 지정할 수 있습니다. 다음과 같은 사용자 정의를 수행할 수 있습니다.
 
@@ -51,7 +67,7 @@ ht-degree: 0%
 
 ## 사용자 정의 필드 레이아웃 만들기 {#create-a-custom-field-layout}
 
-1. CRXDE Lite을 엽니다. 기본 URL은 https://&#39;[server]:[port]&#39;/crx/de입니다.
+1. CRXDE Lite를 엽니다. 기본 URL은 https://&#39;[server]:[port]&#39;/crx/de입니다.
 1. /libs/fd/af/layouts/field 노드(예: defaultFieldLayout)에서 /apps 노드(예: /apps/af-field-layout)로 필드 레이아웃을 복사합니다.
 1. 복사된 노드 및 defaultFieldLayout.jsp 파일의 이름을 변경합니다. 예: errorOnRight.jsp.
 

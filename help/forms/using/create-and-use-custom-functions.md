@@ -4,13 +4,23 @@ description: AEM Forms은 사용자가 규칙 편집기 내에서 자체 함수�
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
 exl-id: 40329e80-d794-4e43-8ed4-d88ce3c48751
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1071'
 ht-degree: 4%
-
 ---
-
 # 적응형 Forms의 사용자 정의 기능
 
 ## 소개
@@ -75,10 +85,10 @@ function ValidateEmail(inputText)
 함수에서 사용하는 매개 변수를 표시합니다. 함수는 여러 매개 변수 태그를 가질 수 있으며, 발생 순서로 각 매개 변수에 대해 하나의 태그가 있습니다.
   `{type}`은(는) 매개 변수 형식을 나타냅니다. 허용되는 매개 변수 유형은 다음과 같습니다.
 
-   1. 문자열
-   2. 숫자
-   3. 부울
-   4. 범위
+  1. 문자열
+  2. 숫자
+  3. 부울
+  4. 범위
 
   범위는 적응형 양식의 참조 필드에 사용됩니다. 폼에서 소극적 로드를 사용하는 경우 `scope`을(를) 사용하여 해당 필드에 액세스할 수 있습니다. 필드가 로드될 때 또는 필드가 전역으로 표시될 때 필드에 액세스할 수 있습니다.
 
@@ -88,11 +98,11 @@ function ValidateEmail(inputText)
 구문: `@return {type}`
 또는 `@returns {type}`을(를) 사용할 수 있습니다.
 함수 목적 등 함수에 대한 정보를 추가합니다.
-{type}은(는) 함수의 반환 형식을 나타냅니다. 허용되는 반환 유형은 다음과 같습니다.
+  {type}은(는) 함수의 반환 형식을 나타냅니다. 허용되는 반환 유형은 다음과 같습니다.
 
-   1. 문자열
-   1. 숫자
-   1. 부울
+  1. 문자열
+  1. 숫자
+  1. 부울
 
   다른 모든 반환 유형은 위의 한 가지 유형에 따라 분류됩니다. 지원되지 않습니다. 위의 유형 중 하나를 선택해야 합니다. 반환 유형은 대/소문자를 구분하지 않습니다.
 
@@ -203,7 +213,7 @@ var c = {
 1. `js` 폴더 아래에 `functions.js`(이)라는 JavaScript 파일을 만듭니다.
 1. `clientlibs` 폴더 아래에 `js.txt` 파일을 만듭니다.
 1. 변경 사항을 저장합니다.
-생성된 폴더 구조 형태는 다음과 같습니다.
+생성된 폴더 구조는 다음과 같습니다.
 
    ![클라이언트 라이브러리 폴더 구조가 생성됨](/help/forms/using/assets/clientlibrary_folderstructure.png)
 1. `functions.js` 파일을 두 번 클릭하여 편집기를 엽니다. 이 파일은 사용자 지정 함수에 대한 코드로 구성됩니다.

@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 90558227-c2c2-4130-9031-03efda5b1d94
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 2%
-
+source-wordcount: '542'
+ht-degree: 4%
 ---
-
 # 리소스 매핑{#resource-mapping}
 
 리소스 매핑은 Adobe Experience Manager(AEM)에 대한 리디렉션, vanity URL 및 가상 호스트를 정의하는 데 사용됩니다.
@@ -105,7 +114,7 @@ HTTP 프로토콜에 대한 매핑을 정의할 때 사용되는 구조입니다
 1. 노드 만들기:
 
    * **유형** `sling:Mapping`
-이 노드 유형은 그러한 매핑에 사용되지만 반드시 사용해야 하는 것은 아닙니다.
+     이 노드 유형은 그러한 매핑에 사용되지만 반드시 사용해야 하는 것은 아닙니다.
 
    * **이름** `localhost_any`
 
@@ -114,15 +123,15 @@ HTTP 프로토콜에 대한 매핑을 정의할 때 사용되는 구조입니다
 
    * **이름** `sling:match`
 
-      * **유형** `String`
+     * **유형** `String`
 
-      * **값** `localhost.4503/`
+     * **값** `localhost.4503/`
 
    * **이름** `sling:internalRedirect`
 
-      * **유형** `String[]`
+     * **유형** `String[]`
 
-      * **값** `/content/`
+     * **값** `/content/`
 
 1. **모두 저장**&#x200B;을 클릭합니다.
 

@@ -1,18 +1,29 @@
 ---
 title: 지원되는 파일 형식을 처리하는 우수 사례
-description: ' [!DNL Experience Manager Assets]을(를) 사용하여 지원되는 다양한 파일 형식을 처리하는 우수 사례입니다.'
+description: '[!DNL Experience Manager Assets]을(를) 사용하여 지원되는 다양한 파일 형식을 처리하는 우수 사례입니다.'
 contentOwner: AG
 role: Admin
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 28765aeb-1303-40da-bde0-df1b4c625d37
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 1%
-
 ---
-
 # 자산 파일 형식 모범 사례 {#assets-file-format-best-practices}
 
 [!DNL Adobe Experience Manager Assets]은(는) 사용자의 다양한 파일 지원 요구 사항을 충족하기 위해 많은 독점 및 타사 파일 형식 라이브러리를 지원합니다. 지원되는 Adobe 라이브러리에는 [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer 및 [!DNL Adobe InDesign Server]이(가) 있습니다. 또한 [!DNL Experience Manager Assets]은(는) [!DNL ImageMagick], [!DNL TwelveMonkeys] 등을 비롯한 서드파티 라이브러리를 지원합니다.

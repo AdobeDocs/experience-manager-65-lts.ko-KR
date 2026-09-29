@@ -9,13 +9,28 @@ feature: Document Security,Reader Extensions
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b1430a30-313f-4efc-85c5-ccb914923031
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 1%
-
+source-wordcount: '828'
+ht-degree: 3%
 ---
-
 # Portable Protection Library를 사용하여 정책으로 보호된 PDF 문서를 확장하는 Reader {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
 문서 보안, 리더 확장 및 Java 프로그래밍 언어의 개념을 숙지하여 문서 보안 정책으로 보호된 PDF 문서를 리더 확장하십시오.
@@ -68,7 +83,7 @@ Reader 확장 서비스를 사용하여 다음 작업을 수행할 수 있습니
   </tr>
   <tr>
    <td><p>usageRights</p> </td>
-   <td><p><a href="https://help.adobe.com/ko_KR/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a> 유형의 개체를 지정합니다. usageRights 개체는 정책으로 보호된 PDF 문서에 적용할 수 있는 개별 권한을 나타냅니다.</p> </td>
+   <td><p><a href="https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a> 유형의 개체를 지정합니다. usageRights 개체는 정책으로 보호된 PDF 문서에 적용할 수 있는 개별 권한을 나타냅니다.</p> </td>
   </tr>
  </tbody>
 </table>

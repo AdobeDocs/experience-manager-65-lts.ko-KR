@@ -1,18 +1,27 @@
 ---
-title: ' [!DNL Assets] 사용자 지정 및 확장'
+title: '[!DNL Assets] 사용자 지정 및 확장'
 description: 사용자에게 특별히 맞춤화된 인터페이스와 기능 세트를 제공하는 에셋 공유 및 에셋 편집기를 사용자 지정하고 확장할 수 있는 방법을 알아봅니다.
 contentOwner: AG
 role: Developer
 feature: Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: d4826314-a714-47b2-bf4d-029dc47982ce
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 0%
-
+source-wordcount: '252'
+ht-degree: 1%
 ---
-
 # [!DNL Assets] 사용자 지정 및 확장 {#customizing-and-extending-assets}
 
 에셋 편집기는 Adobe Enterprise Manager 웹 사이트 사용자가 저장소에서 디지털 에셋을 찾고, 보고, 조작하는 데 사용하는 기본 액세스 지점입니다.

@@ -9,13 +9,19 @@ docset: aem65
 feature: Integration
 role: Admin
 exl-id: 3f8ec723-2705-4ce5-8cb2-e7e6bfe94512
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 1%
-
+source-wordcount: '1625'
+ht-degree: 2%
 ---
-
 # SharePoint 커넥터{#sharepoint-connector}
 
 이 문서에는 Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 버전 4.0용 Adobe JCR Connector에 대한 세부 사항이 포함되어 있습니다.
@@ -72,12 +78,12 @@ SharePoint 커넥터를 [소프트웨어 배포](https://experience.adobe.com/#/
 
 * AEM 버전:
 
-   * AEM 6.4, 6.3
+  * AEM 6.4, 6.3
 
 * Microsoft SharePoint 버전:
 
-   * Microsoft Office SharePoint 서버(MOSS) 2010
-   * Microsoft Office SharePoint 서버(MOSS) 2013
+  * Microsoft Office SharePoint 서버(MOSS) 2010
+  * Microsoft Office SharePoint 서버(MOSS) 2013
 
 * 커넥터의 사용자 지정 배포(OEM, 특수 요구 사항, 사용자 지정된 인증 방법)에 대한 지원이 필요한 경우 해당 지역의 Adobe 사무실에 문의하십시오.
 
@@ -87,7 +93,7 @@ SharePoint 커넥터를 [소프트웨어 배포](https://experience.adobe.com/#/
 
 ### 표준 설치 {#standard-installation}
 
-소프트웨어 배포 는 제품 기능, 예제 및 핫픽스를 배포하는 데 사용됩니다. 자세한 내용은 [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=ko#software-distribution)를 참조하세요.
+소프트웨어 배포 는 제품 기능, 예제 및 핫픽스를 배포하는 데 사용됩니다. 자세한 내용은 [소프트웨어 배포 설명서](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution)를 참조하세요.
 
 
 #### AEM과 통합 {#integrating-with-aem}
@@ -194,7 +200,7 @@ Sharepoint에는 다음 인증 유형을 지원하는 Classic 및 Claims 기반 
 * Claims-Basic
 * Claims-Forms 기반
 
-Microsoft SharePoint 2010 및 Microsoft SharePoint 2013 버전 4.0용 AEM JCR 커넥터. 는 다음 모드에서 작동하는 클레임 기반 인증(Microsoft에서 제안)을 지원합니다.
+Microsoft SharePoint 2010 및 Microsoft SharePoint 2013용 AEM JCR 커넥터, 버전 4.0. 는 다음 모드에서 작동하는 클레임 기반 인증(Microsoft에서 제안)을 지원합니다.
 
 * **기본/NTLM 인증**: 커넥터가 먼저 기본 인증을 사용하여 연결을 시도합니다. 사용할 수 없는 경우 NTLM 기반 인증으로 전환됩니다.
 * **Forms 기반 인증**: Sharepoint는 사용자가 로그인 양식(일반적으로 웹 페이지)에 입력하는 자격 증명을 기반으로 사용자를 확인합니다. 시스템은 후속 요청에 대해 ID를 다시 설정하는 키가 포함된 인증된 요청에 대한 토큰을 발행합니다.

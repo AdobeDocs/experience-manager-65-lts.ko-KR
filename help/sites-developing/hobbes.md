@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 8f00a86f-0fd0-480d-84a9-89a948840a0b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 3%
-
+source-wordcount: '788'
+ht-degree: 4%
 ---
-
 # UI 테스트{#testing-your-ui}
 
 >[!NOTE]
@@ -39,7 +48,7 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 | 작업 | **작업**&#x200B;은(는) 링크 또는 단추를 클릭하는 것과 같은 웹 페이지의 특정 활동입니다. |
 |---|---|
 | 테스트 사례 | **테스트 사례**&#x200B;은(는) 하나 이상의 **작업**(으)로 구성할 수 있는 특정 상황입니다. |
-| 테스트 세트 | **테스트 도구 모음**&#x200B;은(는) 특정 사용 사례를 함께 테스트하는 관련 **테스트 사례** 그룹입니다. |
+| 테스트 모음 | **테스트 도구 모음**&#x200B;은(는) 특정 사용 사례를 함께 테스트하는 관련 **테스트 사례** 그룹입니다. |
 
 ## 테스트 실행 {#executing-tests}
 
@@ -105,7 +114,7 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
 고유한 테스트 세트 만들기에 대한 자세한 내용은 [Hobbes.js API 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)를 참조하십시오.
 
-1. CRXDE Lite을 엽니다. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
+1. CRXDE Lite를 엽니다. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. `/etc/clientlibs` 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 폴더 만들기**&#x200B;를 클릭합니다. `myTests` 이름을 입력하고 **확인**&#x200B;을 클릭합니다.
 1. `/etc/clientlibs/myTests` 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 노드 만들기**&#x200B;를 클릭합니다. 다음 속성 값을 사용한 다음 **확인**&#x200B;을 클릭합니다.
 

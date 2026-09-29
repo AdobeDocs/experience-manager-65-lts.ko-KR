@@ -8,13 +8,24 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a24d0218-d534-49c9-81c1-12b38d794caa
-source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '513'
 ht-degree: 6%
-
 ---
-
 # Forms 포털에서 제출된 양식으로 작동하는 API {#apis-to-work-with-submitted-forms-on-forms-portal}
 
 AEM Forms은 Forms 포털을 통해 제출된 양식 데이터를 쿼리하는 데 사용할 수 있는 API를 제공합니다. 또한 이 문서에 설명된 API를 사용하여 주석을 게시하거나 제출된 양식의 속성을 업데이트할 수 있습니다.
@@ -23,7 +34,7 @@ AEM Forms은 Forms 포털을 통해 제출된 양식 데이터를 쿼리하는 �
 >
 >API를 호출하는 사용자를 검토자 그룹에 추가해야 합니다. [제출 검토자를 양식에 연결](/help/forms/using/adding-reviewers-form.md)을 참조하십시오.
 
-## GET `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
+## `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` 가져오기 {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 모든 적격 양식 목록을 반환합니다.
 
@@ -57,7 +68,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET `/content/forms/portal/submission.review.json?func=getAllSubmissions` {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## `/content/forms/portal/submission.review.json?func=getAllSubmissions` 가져오기 {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 제출된 모든 양식의 세부 정보를 반환합니다. 그러나 URL 매개 변수를 사용하여 결과를 제한할 수 있습니다.
 
@@ -158,7 +169,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET `/content/forms/portal/submission.review.json?func=getComments`   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## `/content/forms/portal/submission.review.json?func=getComments` 가져오기   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 지정된 제출 인스턴스에 게시된 모든 주석을 반환합니다.
 

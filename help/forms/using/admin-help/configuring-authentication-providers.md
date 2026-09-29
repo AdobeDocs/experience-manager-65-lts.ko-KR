@@ -1,6 +1,6 @@
 ---
 title: 인증 공급자 구성
-description: 인증 공급자를 추가, 편집 또는 삭제하고, 인증 설정을 변경하고, 사용자 적시 프로비저닝을 알아봅니다.
+description: 인증 공급자를 추가, 편집 또는 삭제하고, 인증 설정을 변경하고, 사용자의 적시 프로비저닝에 대해 알아봅니다.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 14f006f8-8751-4713-ba5a-590ce479fbb4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 98%
-
 ---
-
 # 인증 공급자 구성 {#configuring-authentication-providers}
 
 >[!NOTE]
@@ -62,7 +77,7 @@ SPNEGO를 사용하여 SSO를 활성화하는 경우 SPNEGO가 활성화된 Kerb
 
 다른 LDAP 서버를 사용하여 인증을 수행하려면 인증 공급자로 LDAP를 선택하고 사용자 정의 LDAP 인증 확인란을 선택합니다. 다음과 같은 구성 설정이 표시됩니다.
 
-**서버:** (필수) 디렉터리 서버의 정규화된 도메인 이름(FQDN)입니다. 예를 들어 example. com 네트워크에 있는 x라는 컴퓨터의 경우 FQDN은 x. example. com입니다. FQDN 서버 이름 대신 IP 주소를 사용할 수 있습니다.
+**서버:** (필수) 디렉터리 서버의 정규화된 도메인 이름(FQDN)입니다. 예를 들어 example.com 네트워크에 있는 x라는 컴퓨터의 경우 FQDN은 x.example.com입니다. FQDN 서버 이름 대신 IP 주소를 사용할 수 있습니다.
 
 **포트:** (필수) 디렉터리 서버에서 사용하는 포트입니다. 일반적으로 389이거나 네트워크를 통해 인증 정보를 전송하는 데 SSL(Secure Sockets Layer) 프로토콜을 사용하는 경우에는 636입니다.
 
@@ -107,7 +122,7 @@ SPNEGO를 사용하여 SSO를 활성화하는 경우 SPNEGO가 활성화된 Kerb
 
 **제목:** EntityID로 표시되는 URL 별칭입니다. 이 제목은 엔터프라이즈 및 로컬 사용자의 로그인 페이지에도 표시됩니다.
 
-**ID 공급자가 클라이언트 기본 인증을 지원함:** IDP가 SAML 아티팩트 확인 프로필을 사용하는 경우 클라이언트 기본 인증이 사용됩니다. 이 프로필에서 사용자 관리는 IDP에서 실행되는 웹 서비스에 다시 연결하여 실제 SAML 어설션을 가져옵니다. IDP에는 인증이 필요할 수 있습니다. IDP에 인증이 필요한 경우 이 옵션을 선택하고 제공된 상자에 사용자 이름 및 암호를 지정합니다.
+**ID 공급자가 클라이언트 기본 인증을 지원함:** IDP가 SAML 아티팩트 확인 프로필을 사용하는 경우 클라이언트 기본 인증이 사용됩니다. 이 프로필에서 사용자 관리는 IDP에서 실행되는 웹 서비스에 다시 연결하여 실제 SAML 어설션을 가져옵니다. IDP에서 인증을 요구할 수 있습니다. IDP에 인증이 필요한 경우 이 옵션을 선택하고 제공된 상자에 사용자 이름 및 암호를 지정합니다.
 
 **사용자 정의 속성:** 추가 속성을 지정할 수 있습니다. 추가 속성은 새 줄로 구분된 이름=값 쌍입니다.
 
@@ -136,13 +151,13 @@ SPNEGO를 사용하여 SSO를 활성화하는 경우 SPNEGO가 활성화된 Kerb
 1. 인증 공급자가 자격 증명의 유효성을 검사합니다.
 1. 그런 다음, 인증 공급자는 사용자가 사용자 관리 데이터베이스에 있는지 확인합니다. 가능한 상태는 다음과 같습니다.
 
-   **존재함** 사용자가 현재 상태이고 잠금 해제된 경우 사용자 관리에서 인증 성공을 반환합니다. 그러나 사용자가 현재 상태가 아니거나 잠겨 있는 경우 사용자 관리에서 인증 실패를 반환합니다.
+   **존재함** 사용자가 현재 상태이고 잠금 해제된 경우 사용자 관리에서 인증 성공을 반환합니다. 그러나 사용자가 유효하지 않거나 잠겨 있는 경우 사용자 관리에서 인증 실패를 반환합니다.
 
    **존재하지 않음** 사용자 관리에서 인증 실패를 반환합니다.
 
    **잘못됨** 사용자 관리에서 인증 실패를 반환합니다.
 
-1. 인증 공급자가 반환한 결과를 평가합니다. 인증 공급자가 인증 성공을 반환하면 사용자는 로그인할 수 있습니다. 그렇지 않은 경우 사용자 관리에서는 다음 인증 공급자에게 확인합니다(2~3단계).
+1. 인증 공급자가 반환한 결과를 평가합니다. 인증 공급자가 인증 성공을 반환하면 사용자는 로그인할 수 있습니다. 그렇지 않은 경우 사용자 관리에서는 다음 인증 공급자를 확인합니다(2~3단계).
 1. 사용 가능한 인증 공급자가 사용자 자격 증명의 유효성을 검사하지 못하면 인증 실패가 반환됩니다.
 
 적시 프로비저닝이 활성화된 경우 인증 공급자 중 하나가 자격 증명의 유효성을 검사하면 사용자 관리에서 새 사용자가 동적으로 생성됩니다. (위 절차의 3단계 이후)

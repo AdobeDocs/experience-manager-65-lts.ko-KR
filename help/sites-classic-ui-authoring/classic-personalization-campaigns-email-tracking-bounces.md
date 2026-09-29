@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: b8d9df45-8b71-4f93-b94a-ecaf3da9b67b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 0%
-
+source-wordcount: '714'
+ht-degree: 1%
 ---
-
 # 반송된 이메일 추적{#tracking-bounced-emails}
 
 >[!NOTE]
@@ -64,7 +75,7 @@ ht-degree: 0%
 
    검색할 플래그를 설정할 수 있습니다.
 
-   `imap.flag.SEEN`:새/확인되지 않은 메시지에 대해 false를 설정하고, 이미 읽은 메시지에 대해 true를 설정합니다.
+   새/확인되지 않은 메시지의 경우 `imap.flag.SEEN`:Set false, 이미 읽은 메시지의 경우 true
 
    전체 플래그 목록은 [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html)을(를) 참조하십시오.
 

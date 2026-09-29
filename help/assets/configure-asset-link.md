@@ -6,13 +6,22 @@ role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 110b7175-d398-40ff-886e-5817a1df0ec9
-source-git-commit: ce0da5056e0821c94eb06a05c663a3939b37f940
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3056'
-ht-degree: 0%
-
+source-wordcount: '3217'
+ht-degree: 2%
 ---
-
 # Adobe Asset Link용 Experience Manager Assets 구성 {#adobe-asset-link}
 
 [AAL(Adobe Asset Link)](https://www.adobe.com/kr/creativecloud/business/enterprise/adobe-asset-link.html)은(는) 콘텐츠 작성 프로세스에서 크리에이티브와 마케터 간의 공동 작업을 간소화합니다. Adobe Experience Manager Assets을 Creative Cloud 데스크탑 앱 Adobe InDesign, Adobe Photoshop 및 Adobe Illustrator과 연결합니다. Adobe Asset Link 패널을 사용하면 크리에이티브가 가장 익숙한 크리에이티브 앱을 종료하지 않고도 AEM Assets에 저장된 컨텐츠에 액세스하고 이를 수정할 수 있습니다.
@@ -33,7 +42,7 @@ Asset Link에 사용할 Experience Manager Assets을 구성하려면 다음 작�
 
 | Assets 기능 | Experience Manager 버전 및 지원 요구 사항 |
 |--- |--- |
-| Asset Link 는 기본적으로 작동합니다 | Experience Manager 6.5 및 6.5.2 이상 </br> Experience Manager 6.4.4 및 6.4.6 이상 </br> Adobe에서는 AAL을 사용하기 전에 최신 [Experience Manager 서비스 팩(SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=ko)을 설치할 것을 권장합니다. |
+| Asset Link 는 기본적으로 작동합니다 | Experience Manager 6.5 및 6.5.2 이상 </br> Experience Manager 6.4.4 및 6.4.6 이상 </br> Adobe에서는 AAL을 사용하기 전에 최신 [Experience Manager 서비스 팩(SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)을 설치하는 것이 좋습니다. |
 | 패키지 설치 후 자산 링크가 작동합니다 | Experience Manager 6.4.0 - 6.4.3의 경우 [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 패키지를 설치하십시오. |
 | Adobe Stock 통합 | Experience Manager 6.4.2 이상 |
 | 시각적 또는 유사성 검색 | Experience Manager 6.5.0 이상 |
@@ -54,7 +63,7 @@ Adobe은 대부분의 구성 작업을 자동화하고 몇 가지 수동 작업�
    다음 속성을 설정하고 변경 사항을 저장합니다.
 
    * [!UICONTROL 그룹 매핑]: 필요한 경우가 아니면 비워 둡니다. 자세한 내용은 [그룹 매핑](#group-mapping)을 참조하세요.
-   * [!UICONTROL 조직]: Adobe Admin Console에서 사용 중인 조직 ID를 입력하십시오. 조직 ID에 대한 자세한 내용은 [사용자 그룹 만들기](https://helpx.adobe.com/kr/enterprise/using/create-aal-user-group.html)를 참조하십시오.
+   * [!UICONTROL 조직]: Adobe Admin Console에서 사용 중인 조직 ID를 입력하십시오. 조직 ID에 대한 자세한 내용은 [사용자 그룹 만들기](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html)를 참조하십시오.
 
 1. **[!UICONTROL Adobe Granite Bearer 인증 처리기]** 구성을 찾은 다음 클릭하여 편집합니다.
 
@@ -131,7 +140,7 @@ Experience Manager용 Adobe IMS 조직과 Enterprise용 Creative Cloud(CCE)를 �
 1. AAL에 대해 베어러 인증이 구성된 실행 중인 Experience Manager 인스턴스.
 1. Experience Manager 6.5 인스턴스에 다음 패키지(서비스 팩 11)를 설치합니다.
 
-   [Experience Manager 다운로드 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
+   [Experience Manager 6.5.11.0 다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
 
 1. IMS 조직의 전달자 인증을 위한 클라이언트 ID와 비밀 키를 받으려면 [!UICONTROL 고객 지원 센터]에 문의하십시오.
 
@@ -282,7 +291,7 @@ Adobe Asset Link를 구성하거나 사용할 때 문제가 발생하는 경우 
 * 배포가 사전 요구 사항을 충족하는지 확인합니다. 특히 적절한 기능 팩이나 패키지가 설치되어 있는지 확인하십시오.
 * 조직의 파트너 또는 시스템 통합자에게 문의하십시오.
 * Creative Cloud 사용자가 체크아웃된 자산에서 을 확인할 수 없는 경우 이메일 ID에서 도메인 이름의 대/소문자를 확인합니다. 수정하려면 [수동 구성](#manual-configuration)을 참조하세요.
-* 자세한 내용은 [자산 링크 문제 해결](https://helpx.adobe.com/kr/enterprise/kb/asset-link-troubleshooting.html)을 참조하세요.
+* 자세한 내용은 [자산 링크 문제 해결](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html)을 참조하세요.
 
 
 >[!MORELIKETHIS]

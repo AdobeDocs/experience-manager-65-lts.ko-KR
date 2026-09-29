@@ -5,13 +5,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 827e5440-6451-41be-b565-c2fb7668b3da
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3376'
 ht-degree: 4%
-
 ---
-
 # 랜딩 페이지{#landing-pages}
 
 랜딩 페이지 기능을 사용하면 디자인과 콘텐츠를 AEM 페이지로 빠르고 쉽게 가져올 수 있습니다. 웹 개발자는 HTML 및 전체 페이지 또는 페이지의 일부로만 가져올 수 있는 추가 에셋을 준비할 수 있습니다. 이 기능은 제한된 시간 동안만 활성화되고 빠르게 생성해야 하는 마케팅 랜딩 페이지를 만드는 데 유용합니다.

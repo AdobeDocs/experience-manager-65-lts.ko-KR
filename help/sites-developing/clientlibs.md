@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: cafc7120-114e-487a-8b81-9c695318731e
-source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2898'
 ht-degree: 2%
-
 ---
-
 # 클라이언트측 라이브러리 사용{#using-client-side-libraries}
 
 최신 웹 사이트는 복잡한 JavaScript 및 CSS 코드로 구동되는 클라이언트측 처리에 크게 의존합니다. 이 코드의 제공을 구성하고 최적화하는 것은 복잡한 문제가 될 수 있습니다.
@@ -66,7 +77,7 @@ HTL은 AEM 사이트 개발을 위한 기본 기술이므로 AEM에 클라이언
 
 ### HTL 사용 {#using-htl}
 
-HTL에서 클라이언트 라이브러리는 [`data-sly-use`](https://helpx.adobe.com/kr/experience-manager/htl/using/block-statements.html#use)을(를) 통해 액세스할 수 있는 AEM에서 제공하는 도우미 템플릿을 통해 로드됩니다. 이 파일에는 [`data-sly-call`](https://helpx.adobe.com/kr/experience-manager/htl/using/block-statements.html#template-call)을(를) 통해 호출할 수 있는 세 가지 템플릿이 있습니다.
+HTL에서 클라이언트 라이브러리는 [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use)을(를) 통해 액세스할 수 있는 AEM에서 제공하는 도우미 템플릿을 통해 로드됩니다. 이 파일에는 [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call)을(를) 통해 호출할 수 있는 세 가지 템플릿이 있습니다.
 
 * **css** - 참조된 클라이언트 라이브러리의 CSS 파일만 로드합니다.
 * **js** - 참조된 클라이언트 라이브러리의 JavaScript 파일만 로드합니다.
@@ -74,7 +85,7 @@ HTL에서 클라이언트 라이브러리는 [`data-sly-use`](https://helpx.adob
 
 각 도우미 템플릿에는 원하는 클라이언트 라이브러리를 참조하기 위한 `categories` 옵션이 필요합니다. 해당 옵션은 문자열 값의 배열이거나 쉼표로 구분된 값 목록을 포함하는 문자열일 수 있습니다.
 
-자세한 내용과 사용 예는 [HTML 템플릿 언어 시작하기](https://helpx.adobe.com/kr/experience-manager/htl/using/getting-started.html#loading-client-libraries) 문서를 참조하십시오.
+자세한 내용과 사용 예는 [HTML 템플릿 언어 시작하기](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries) 문서를 참조하십시오.
 
 ### JSP 사용 {#using-jsp}
 

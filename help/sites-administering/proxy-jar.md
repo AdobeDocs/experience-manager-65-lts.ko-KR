@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d918ddf2-aa70-4742-97d5-24a2c51f578a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1190'
 ht-degree: 0%
-
 ---
-
 # 프록시 서버 도구(proxy.jar){#proxy-server-tool-proxy-jar}
 
 프록시 서버는 클라이언트와 서버 간 요청을 중계하는 중간 서버 역할을 합니다. 프록시 서버는 모든 클라이언트-서버 상호 작용을 추적하고 전체 TCP 통신의 로그를 출력합니다. 이렇게 하면 주 서버에 액세스하지 않고도 진행 중인 상황을 정확하게 모니터링할 수 있습니다.
@@ -143,7 +152,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 </html>
 ```
 
-AEM이 localhost:4303에서 실행 중인 경우 다음과 같이 프록시 서버를 시작합니다.
+AEM이 localhost:4303에서 실행 중인 경우 프록시 서버를 다음과 같이 시작합니다.
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log

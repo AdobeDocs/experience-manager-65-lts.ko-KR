@@ -1,5 +1,5 @@
 ---
-title: HTML5 forms용 화면 판독기
+title: HTML5 양식용 스크린 리더
 description: HTML5 양식에서 지원되는 화면 판독기를 나열합니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,29 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: cf652b91-ee92-4d54-8a29-2653d882d5f2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 0%
-
+source-wordcount: '333'
+ht-degree: 3%
 ---
-
-# HTML5 forms용 화면 판독기 {#screen-readers-for-html-forms}
+# HTML5 양식용 스크린 리더 {#screen-readers-for-html-forms}
 
 HTML5 forms 구성 요소는 XFA 양식 템플릿을 HTML5 형식으로 렌더링합니다. HTML5를 지원하는 모든 표준 브라우저는 이러한 양식을 렌더링할 수 있습니다. PDF 및 HTML5 양식에서 유사한 데이터 캡처 환경을 지원하기 위해 PDF forms의 레이아웃은 HTML5 양식으로 유지됩니다.
 
@@ -28,7 +43,7 @@ HTML5 forms는 알려진 예외를 제외하고 접근성을 위한 섹션 508�
 
 ## HTML5 forms용 인증된 화면 판독기 {#certified-screen-readers-for-html-forms}
 
-* Microsoft® Windows의 JAWS 14.0
+* ® Windows의 JAWS 14.0
 * macOS X 및 iPad의 VoiceOver
 
 ### JAWS {#jaws}

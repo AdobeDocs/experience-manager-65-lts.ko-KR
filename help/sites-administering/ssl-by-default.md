@@ -10,13 +10,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: 3fd6a54b-9220-4bb2-9625-4f459c4d3aa8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '871'
 ht-degree: 0%
-
 ---
-
 # 기본적으로 SSL/TLS{#ssl-tls-by-default}
 
 AEM의 보안을 지속적으로 개선하기 위해 Adobe에는 기본적으로 SSL이라는 기능이 도입되었습니다. 목적은 AEM 인스턴스에 연결하기 위해 HTTPS를 사용하도록 권장하는 것입니다.
@@ -195,7 +207,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 >[!NOTE]
 >
->AEM의 유용한 cURL 명령의 중앙 집중식 목록은 [AEM과 함께 cURL 사용](https://helpx.adobe.com/kr/experience-manager/6-4/sites/administering/using/curl.html)을 참조하십시오.
+>AEM의 유용한 cURL 명령의 중앙 집중식 목록은 [AEM과 함께 cURL 사용](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html)을 참조하십시오.
 
 cURL 도구를 사용하여 SSL/TLS 구성을 자동화할 수도 있습니다. 이 URL에 구성 매개 변수를 게시하여 이 작업을 수행할 수 있습니다.
 

@@ -2,7 +2,12 @@
 title: JBoss EAP 8(Windows)에서 AEM 6.5 LTS 업그레이드
 description: 이 안내서에서는 JDK 21을 사용하여 기존 Adobe Experience Manager(AEM) 6.5 LTS 설치를 JBoss EAP 7.4에서 Windows의 JBoss EAP 8로 업그레이드하는 단계별 지침을 제공합니다.
 exl-id: 23389613-0d9f-4e0b-b133-c8e598dd9cc9
-source-git-commit: d713aac72e764849d53e8feb98ed85b89f27a44d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 2%
@@ -21,7 +26,7 @@ ht-degree: 2%
 >
 >이는 중요한 업그레이드 절차입니다. 항상 비프로덕션 환경에서 이 업그레이드를 먼저 수행하고 전체 백업을 유지합니다.
 >
-> **&#x200B; 전제 조건:** 계속하기 전에 시스템 백업을 완료하고 문서화된 롤백 계획을 작성해야 합니다.
+> ** 전제 조건:** 계속하기 전에 시스템 백업을 완료하고 문서화된 롤백 계획을 작성해야 합니다.
 
 ## 업그레이드 전 요구 사항
 
@@ -549,8 +554,8 @@ JBoss 콘솔에서 최종 시작 메시지를 모니터링합니다.
 ## 관련 설명서
 
 - [JBoss EAP 8 마이그레이션 안내서](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0/html/migration_guide/)
-- [Adobe Experience Manager 6.5 업그레이드 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=ko)
-- [AEM 서비스 팩 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=ko)
+- [Adobe Experience Manager 6.5 업그레이드 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html)
+- [AEM 서비스 팩 설치](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
 
 ## 문서 정보
 

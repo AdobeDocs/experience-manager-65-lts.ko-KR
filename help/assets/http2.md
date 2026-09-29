@@ -9,13 +9,29 @@ role: User, Admin
 feature: Publishing,Configuration
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7576e0e3-b05a-483b-9d38-316ddf0d5816
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 3%
-
 ---
-
 # 콘텐츠의 HTTP/2 전달 {#http-delivery-of-content}
 
 Adobe에서는 전반적인 성능이 개선된 HTTP/2 콘텐츠 제공을 발표하게 되었습니다.
@@ -61,7 +77,7 @@ HTTP/2를 사용하려면 다음 요구 사항을 충족해야 합니다.
 
 요청을 시작하여 HTTP/2로 전환합니다. 이 작업은 자동으로 수행되지 않습니다.
 
-1. HTTP/2로 전환하려면 Adobe 고객 지원 요청을 시작합니다. [지원 티켓 열기](https://experienceleague.adobe.com/ko?support-solution=General&lang=en&support-tab=home#support)를 참조하세요.
+1. HTTP/2로 전환하려면 Adobe 고객 지원 요청을 시작합니다. [지원 티켓 열기](https://experienceleague.adobe.com/?support-solution=General&lang=en&support-tab=home#support)를 참조하세요.
 
    1. 지원 요청에 다음 정보를 제공합니다.
 

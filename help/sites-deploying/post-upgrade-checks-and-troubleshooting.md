@@ -10,13 +10,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
-source-git-commit: 76bd0f170b06a3f930d504b680342c954daae460
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 1%
-
 ---
-
 # 업그레이드 후 점검 및 문제 해결{#post-upgrade-checks-and-troubleshooting}
 
 ## 업그레이드 후 확인 {#post-upgrade-checks}
@@ -110,7 +119,7 @@ MongoMK 또는 새 TarMK 세그먼트 형식을 사용하는 경우, 개정 정�
 
 ### 테스트 계획 실행 {#execute-test-plan}
 
-**테스트 프로시저** 섹션[&#128279;](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure)에서 코드 및 사용자 지정 업그레이드에 정의된 대로 자세한 테스트 계획을 실행하십시오.
+**테스트 프로시저** 섹션](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure)에서 [코드 및 사용자 지정 업그레이드에 정의된 대로 자세한 테스트 계획을 실행하십시오.
 
 ## 업그레이드 관련 문제 분석 {#analyzing-issues-with-the-upgrade}
 

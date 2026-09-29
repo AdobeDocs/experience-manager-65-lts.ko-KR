@@ -5,13 +5,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 0%
-
+source-wordcount: '580'
+ht-degree: 1%
 ---
-
 # Oak 업그레이드를 사용하여 AEM 6.5에서 AEM 6.5로 LTS 컨텐츠 마이그레이션 {#aem-65-to-aem-65lts-content-migration-using-oak-upgrade}
 
 이 문서에서는 컨텐츠 리포지토리 마이그레이션에 중점을 두고 Adobe Experience Manager을 **6.5**&#x200B;에서 **6.5 LTS**(으)로 업그레이드하는 방법에 대해 설명합니다. Oak 업그레이드 도구를 사용하여 저장소 간에 정밀하고 정확하게 컨텐츠를 전송하는 방법에 대해 설명합니다.
@@ -22,7 +31,7 @@ ht-degree: 0%
 
 1. Java 호환성: AEM 6.5 LTS가 Java™ 17에서 실행되도록 설치 및 구성되어야 합니다. 설정되면 AEM 인스턴스를 시작하고 모든 번들이 활성 상태이며 문제 없이 실행되는지 확인합니다
 1. 시스템 리소스: 마이그레이션 프로세스 중에 두 저장소를 모두 처리할 수 있는 적절한 디스크 공간 및 메모리를 확보하십시오
-1. Oak 업그레이드 도구: `oak-upgrade`공식 Maven 저장소[에서 &#x200B;](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) jar를 다운로드합니다. 버전이 AEM 6.5 LTS에서 사용되는 Oak-core 버전과 일치하는지 확인합니다. Oak 업그레이드 도구는 Oracle® Java™ 11 이상에서 실행됩니다
+1. Oak 업그레이드 도구: [공식 Maven 저장소](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade)에서 `oak-upgrade` jar를 다운로드합니다. 버전이 AEM 6.5 LTS에서 사용되는 Oak-core 버전과 일치하는지 확인합니다. Oak 업그레이드 도구는 Oracle® Java™ 11 이상에서 실행됩니다
 
 ## 마이그레이션 프로세스 {#step-by-step-migration-process}
 

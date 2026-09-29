@@ -1,18 +1,36 @@
 ---
-title: AEM Forms 작업 영역 작업
+title: AEM Forms Workspace 작업
 description: 프로세스 워크플로에 대한 이 빠른 개요를 통해 AEM Forms 작업 영역을 시작하십시오.
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 exl-id: 7374797f-4154-402b-bb59-075134763c58
-source-git-commit: 823923ab074bae1705cc1991e4079897e4c5cac8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 0%
-
+source-wordcount: '996'
+ht-degree: 1%
 ---
-
-# AEM Forms 작업 영역 작업{#working-with-aem-forms-workspace}
+# AEM Forms Workspace 작업{#working-with-aem-forms-workspace}
 
 ## 소개 {#introduction}
 
@@ -24,7 +42,7 @@ AEM Forms workspace 는 AEM Forms의 일부입니다. Workspace은 PDF forms 외
 
 ## 친숙해지기 {#getting-familiar}
 
-비즈니스 프로세스를 자동화하는 Forms 응용 프로그램을 만드는 전체 프로세스에 익숙해지려면 연습에 따르십시오. 이 연습에 따라 Workbench, Designer 및 AEM Forms 작업 영역을 사용하여 애플리케이션을 만들고 관리하고 테스트할 수 있습니다. 구현에 대한 자세한 내용은 [첫 번째 AEM Forms 응용 프로그램 만들기](https://help.adobe.com/ko_KR/livecycle/11.0/CreateFirstApp/index.html)를 참조하십시오.
+비즈니스 프로세스를 자동화하는 Forms 응용 프로그램을 만드는 전체 프로세스에 익숙해지려면 연습에 따르십시오. 이 연습에 따라 Workbench, Designer 및 AEM Forms 작업 영역을 사용하여 애플리케이션을 만들고 관리하고 테스트할 수 있습니다. 구현에 대한 자세한 내용은 [첫 번째 AEM Forms 응용 프로그램 만들기](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html)를 참조하십시오.
 
 ## 기능 개요 {#functional-overview}
 

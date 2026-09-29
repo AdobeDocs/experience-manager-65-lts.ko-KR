@@ -10,13 +10,28 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f7b8a37a-df4c-4db2-a0fc-dabcdbd74e48
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 3%
-
+source-wordcount: '825'
+ht-degree: 4%
 ---
-
 # HTML5 양식용 CSS 스타일 만들기 {#creating-css-styles-for-html-forms}
 
 XFA 기반 양식 템플릿의 HTML5 렌디션은 여러 HTML 요소로 구성됩니다. 이러한 요소는 순서대로 배열됩니다. 모든 요소에는 잘 정의된 CSS 클래스가 있습니다. 이러한 CSS 클래스를 사용하여 요소의 모양을 선택하고 변경할 수 있습니다.
@@ -25,7 +40,7 @@ XFA 기반 양식 템플릿의 HTML5 렌디션은 여러 HTML 요소로 구성�
 >
 >CSS 클래스에서 너비, 높이, 테두리 두께, 위쪽, 왼쪽, 오른쪽, 아래쪽, 패딩, 여백 및 기타 위치 및 크기 특성의 값을 변경하지 마십시오. 위치 및 크기 특성을 변경하면 양식의 레이아웃이 변경됩니다.
 
-## CSS 클래스  요소  {#css-classes-nbsp-for-elements-nbsp}
+## 요소에 대한 CSS 클래스  {#css-classes-nbsp-for-elements-nbsp}
 
 모든 요소에는 잘 정의된 CSS 클래스가 포함되어 있습니다. 이러한 클래스를 수정하여 요소의 모양을 변경할 수 있습니다. 필드 및 그리기 요소를 제외한 모든 요소에는 두 개의 CSS 클래스(Type 클래스와 Name 클래스)가 있습니다.
 

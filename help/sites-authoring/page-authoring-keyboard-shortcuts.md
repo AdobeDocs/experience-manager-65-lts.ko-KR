@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 33b531c0-8fda-4649-bad1-d28c58a160e0
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 55%
-
 ---
-
 # 페이지 편집 시 키보드 단축키{#keyboard-shortcuts-when-editing-pages}
 
 AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. 일부는 페이지를 편집할 때 적용되고 일부는 [콘솔 사용](/help/sites-authoring/keyboard-shortcuts.md)에 적용됩니다.
@@ -37,12 +50,12 @@ AEM 전체에서 다양한 키보드 단축키를 사용할 수 있습니다. �
 |  | `Ctrl-v` | 이전에 잘라내거나 복사한 단락 붙여넣기 |
 |  | `Ctrl-Backspace` | 선택한 단락 삭제 |
 | **편집** 모드 - 리치 텍스트 편집기 | `Ctrl-b` | 굵게 |
-|  | `Ctrl-I` | 이탤릭체 |
+|  | `Ctrl-I` | 기울임체 |
 |  | `Ctrl-u` | 밑줄 |
 
 >[!NOTE]
 >
->&ast; 사용자가 미리 보기 모드에서 페이지를 조작하면 `Ctrl-Shift-m` 단축키를 더 이상 사용할 수 없습니다. 바로 가기를 다시 사용하려면 상단 편집기 모음을 클릭하거나 편집 모드로 돌아가야 합니다.
+>&amp;ast; 사용자가 미리 보기 모드에서 페이지를 조작하면 `Ctrl-Shift-m` 바로 가기를 더 이상 사용할 수 없습니다. 바로 가기를 다시 사용하려면 상단 편집기 모음을 클릭하거나 편집 모드로 돌아가야 합니다.
 
 데스크탑 사용자는 [콘솔](/help/sites-authoring/keyboard-shortcuts.md)을 사용하여 다양한 키보드 단축키를 사용할 수 있습니다.
 

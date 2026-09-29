@@ -6,13 +6,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5e9d3f3c-8fc4-4d01-9f1e-62d3c29ab9e5
-source-git-commit: cd6caaf9de907488db14df2a6396fa60efa2d42c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 1%
-
+source-wordcount: '672'
+ht-degree: 9%
 ---
-
 # AEM에서 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검색할 수 있도록 설정{#enable-aem-to-search-document-security-protected-pdf-and-microsoft-office-documents}
 
 Adobe Experience Manager은 AEM에 저장된 다양한 에셋을 검색하고 찾을 수 있는 사용자 인터페이스를 제공합니다. 기본 검색은 AEM 에셋을 검색하고 찾고 일반 텍스트 파일, Microsoft Office 문서 및 PDF 문서와 같이 일반적으로 사용되는 다양한 문서 형식에 대해 텍스트 검색을 수행할 수 있습니다. DRM으로 보호된 PDF 및 Microsoft Office 문서에서 전체 텍스트 검색을 수행하도록 기본 검색을 확장 및 활성화할 수도 있습니다.
@@ -22,7 +35,7 @@ AEM에서 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검�
 ## 시작하기 전 {#before-you-start}
 
 * AEM Forms 문서 보안을 설치하고 구성합니다.
-* 허용 목록에 추가하다 패키지 sun.til.calendar를 **Serialization Firewall Configuration의 deserialization에 추가합니다.** 구성이 `https://'[server]:[port]'/system/console/configMgr`에 나열됩니다.
+* 패키지 sun.util.calendar를 **직렬화 방화벽 구성**&#x200B;의 deserialization에 추가합니다. 구성이 `https://'[server]:[port]'/system/console/configMgr`에 나열됩니다.
 * 모든 AEM 번들이 실행 중인지 확인합니다. 번들은 `https://'[server]:[port]'/system/console/bundles`에 나열됩니다. 모든 번들이 활성화되지 않은 경우 잠시 기다렸다가 몇 분 동안 번들 상태를 확인합니다.
 
 ## AEM Forms 워크플로 내에서 보안 연결 설정(JEE의 AEM Forms) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
@@ -62,7 +75,7 @@ AEM에서 문서 보안으로 보호된 PDF 및 Microsoft Office 문서를 검�
 
    >[!NOTE]
    >
-   > SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+   > SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
 ## 정책으로 보호된 샘플 PDF 또는 Microsoft Office 문서 색인화 {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 

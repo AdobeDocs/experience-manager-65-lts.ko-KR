@@ -5,13 +5,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: fc736c74bc5bd584059038ad5a54ffc814d095a2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1437'
 ht-degree: 8%
-
 ---
-
 # 배포 및 유지 관리{#deploying-and-maintaining}
 
 이 페이지에서는 다음 정보를 찾을 수 있습니다.
@@ -102,7 +114,7 @@ AEM 용어에서 &quot;인스턴스&quot;는 서버에서 실행되는 AEM의 �
 
 ### Cloud Manager을 사용한 Managed Services {#managed-services-using-cloud-manager}
 
-Adobe Managed Services 배포의 경우 AEM 환경은 [Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/introduction)을 통해 배포되고 관리됩니다. 프로덕션 및 비프로덕션 환경에서 응용 프로그램 성능과 인프라 상태를 모니터링하려면 [Observability Insights](https://experienceleague.adobe.com/ko/docs/ams-observability-insights/content/overview)를 참조하십시오.
+Adobe Managed Services 배포의 경우 AEM 환경은 [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)을 통해 배포되고 관리됩니다. 프로덕션 및 비프로덕션 환경에서 응용 프로그램 성능과 인프라 상태를 모니터링하려면 [Observability Insights](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview)를 참조하십시오.
 
 ## 시작하기 {#getting-started}
 

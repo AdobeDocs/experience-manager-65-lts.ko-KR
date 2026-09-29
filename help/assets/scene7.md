@@ -10,16 +10,30 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: 80ffa496-880a-4638-bf78-1aab0c052983
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: c12bda38-aa1a-4647-b62e-42cd4537dac6
+    internal-label: Dynamic Media Classic
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2844'
+source-wordcount: '2902'
 ht-degree: 9%
-
 ---
-
 # 페이지에 Dynamic Media Classic 기능 추가 {#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=ko)은(는) 리치 미디어 자산을 웹, 모바일, 전자 메일 및 인터넷에 연결된 디스플레이와 인쇄로 관리, 개선, 게시 및 전달하기 위한 호스팅 솔루션입니다.
+[Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)은(는) 리치 미디어 자산을 웹, 모바일, 전자 메일 및 인터넷에 연결된 디스플레이와 인쇄로 관리, 개선, 게시 및 전달하기 위한 호스팅 솔루션입니다.
 
 Dynamic Media Classic에 게시된 Experience Manager 에셋을 다양한 뷰어에서 볼 수 있습니다.
 
@@ -177,13 +191,13 @@ Dynamic Media Classic **[!UICONTROL 이미지]** 구성 요소를 사용하면 D
 
 **[!UICONTROL 선명하게 하기]** - 이미지를 선명하게 할 방법을 선택합니다. 선명하게 하기는 [이미지 사전 설정 모범 사례](/help/assets/managing-image-presets.md#image-preset-options) 및 [선명하게 하기 모범 사례](/help/assets/assets/sharpening_images.pdf)에 자세히 설명되어 있습니다.
 
-**[!UICONTROL URL 수정자]** - 추가적인 Dynamic Media Classic 이미지 명령을 제공하여 이미지 효과를 변경할 수 있습니다. 이러한 명령은 [이미지 사전 설정](/help/assets/managing-image-presets.md) 및 [명령 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ko)에 설명되어 있습니다.
+**[!UICONTROL URL 수정자]** - 추가적인 Dynamic Media Classic 이미지 명령을 제공하여 이미지 효과를 변경할 수 있습니다. 이러한 명령은 [이미지 사전 설정](/help/assets/managing-image-presets.md) 및 [명령 참조](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)에 설명되어 있습니다.
 
 **[!UICONTROL 중단점]** - 웹 사이트가 응답형인 경우 중단점을 조정할 수 있습니다. 중단점은 쉼표( , )로 구분해야 합니다.
 
 ### 이미지 템플릿 {#image-template}
 
-[Dynamic Media Classic 이미지 템플릿](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=ko)은(는) Dynamic Media Classic으로 가져온 계층화된 Photoshop 컨텐츠입니다. 여기서 컨텐츠 및 속성은 가변성을 위해 매개 변수화됩니다. **[!UICONTROL 이미지 템플릿]** 구성 요소를 사용하여 이미지를 가져오고 Experience Manager에서 텍스트를 동적으로 변경할 수 있습니다. 또한 클라이언트 컨텍스트의 값을 사용하도록 **[!UICONTROL 이미지 템플릿]** 구성 요소를 구성할 수 있으므로 각 사용자는 개인화된 방식으로 이미지를 경험하게 됩니다.
+[Dynamic Media Classic 이미지 템플릿](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html)은(는) Dynamic Media Classic으로 가져온 계층화된 Photoshop 컨텐츠입니다. 여기서 컨텐츠 및 속성은 가변성을 위해 매개 변수화됩니다. **[!UICONTROL 이미지 템플릿]** 구성 요소를 사용하여 이미지를 가져오고 Experience Manager에서 텍스트를 동적으로 변경할 수 있습니다. 또한 클라이언트 컨텍스트의 값을 사용하도록 **[!UICONTROL 이미지 템플릿]** 구성 요소를 구성할 수 있으므로 각 사용자는 개인화된 방식으로 이미지를 경험하게 됩니다.
 
 구성 요소를 구성하려면 **[!UICONTROL 편집]**&#x200B;을 선택합니다. 모든 Dynamic Media Classic 구성 요소에 공통되는 [설정](#settings-common-to-all-scene-components) 및 이 섹션에 설명된 기타 설정을 구성할 수 있습니다.
 
@@ -329,7 +343,7 @@ UI에서 검색할 때 다음 기준(터치에 적합한 UI에서 여기에 표�
 >
 >* 클래식 UI에서는 **Flash** 및 **FXG**&#x200B;도 검색할 수 있습니다. 터치에 적합한 UI에서 이러한 유형의 필터링은 지원되지 않습니다.
 >
->* 비디오를 검색할 때 단일 렌디션을 검색합니다. 원본 렌디션( &ast;.mp4만) 및 인코딩된 렌디션이 반환됩니다.
+>* 비디오를 검색할 때 단일 렌디션을 검색합니다. 원본 렌디션( &amp;ast;.mp4만) 및 인코딩된 렌디션이 반환됩니다.
 >* 응용 비디오 세트를 검색할 때 폴더 및 모든 하위 폴더를 검색하게 되지만, 검색에 키워드를 추가한 경우에만 해당됩니다. 키워드를 추가하지 않은 경우 Experience Manager이 하위 폴더를 검색하지 않습니다.
 >
 

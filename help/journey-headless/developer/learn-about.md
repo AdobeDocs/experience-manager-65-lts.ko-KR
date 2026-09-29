@@ -5,13 +5,39 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 exl-id: 39e05b80-a11b-41ff-8157-dc74f071c514
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1639'
 ht-degree: 90%
-
 ---
-
 # CMS Headless 개발에 대해 알아보기 {#learn-about}
 
 이 [AEM Headless 개발자 여정](overview.md)의 부분에서는 Headless 기술과 이를 사용하는 이유에 대해 알아봅니다.
@@ -53,7 +79,7 @@ ht-degree: 90%
 
 스택의 모든 구성 요소에 변경 사항을 조정하는 데 추가 역량을 사용하면 이 자연 사일로의 제한 사항이 표시됩니다.
 
-사용자는 플랫폼이나 접점에 관계없이 참여를 기대하므로 경험을 제공하는 방법에 민첩성을 제공합니다. 이 멀티채널 방식은 디지털 경험의 표준이고 전체 스택 접근 방식은 특정 상황에서 유연하지 않을 수 있습니다.
+사용자는 플랫폼이나 접점에 관계없이 참여를 기대하므로 경험을 제공하는 방법에 민첩성을 제공합니다.  이 멀티채널 방식은 디지털 경험의 표준이고 전체 스택 접근 방식은 특정 상황에서 유연하지 않을 수 있습니다.
 
 ## Headless의 헤드 {#the-head}
 
@@ -130,5 +156,5 @@ AEM Headless 여정을 시작해 주셔서 감사합니다! 지금까지 이 문
 다음 문서인 [AEM Headless 시작하기](getting-started.md)를 검토하여 Headless 개발 여정의 다음 부분으로 넘어가는 것이 좋습니다. 다음은 이 문서에 나열된 몇 가지 개념을 자세히 알아보는 추가적인 옵션 리소스이며, 이들 리소스를 Headless 여정에서 계속 사용할 필요는 없습니다.
 
 * [AEM as a Headless CMS 소개](/help/sites-developing/headless/introduction.md)
-* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=ko)
-* [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko) - 이 실습 튜토리얼을 사용하여 AEM을 통해 콘텐츠를 Headless 엔드포인트를 게재하는 옵션을 사용하는 방법을 살펴보고 자신에게 적합한 옵션을 선택합니다.
+* [AEM 개발자 포털](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM Headless 튜토리얼](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 이 실습 튜토리얼을 사용하여 AEM을 통해 콘텐츠를 Headless 엔드포인트를 게재하는 옵션을 사용하는 방법을 살펴보고 자신에게 적합한 옵션을 선택합니다.

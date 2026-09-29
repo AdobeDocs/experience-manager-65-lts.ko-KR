@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: 0fc8e7c27cbb9e24edea6d6a9f1f6e7051742b91
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5865'
 ht-degree: 1%
-
 ---
-
 # Adobe Experience Manager 인스턴스 모니터링 및 유지 관리{#monitoring-and-maintaining-your-aem-instance}
 
 AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링하고 유지해야 합니다.
@@ -25,7 +34,7 @@ AEM 인스턴스가 배포된 후 작업, 성능 및 무결성을 모니터링�
 
 >[!NOTE]
 >
->이 페이지의 지침은 자체 관리(온-프레미스) 배포에 적용됩니다. Adobe Managed Services에서 AEM을 실행하는 경우 애플리케이션 및 인프라 원격 분석이 수집되며 프로덕션 및 비프로덕션 환경에 대한 호스팅 보기를 제공하는 Observability Insights를 통해 사용할 수 있습니다. 자세한 내용은 [Observability Insights](https://experienceleague.adobe.com/ko/docs/ams-observability-insights/content/overview)를 참조하십시오.
+>이 페이지의 지침은 자체 관리(온-프레미스) 배포에 적용됩니다. Adobe Managed Services에서 AEM을 실행하는 경우 애플리케이션 및 인프라 원격 분석이 수집되며 프로덕션 및 비프로덕션 환경에 대한 호스팅 보기를 제공하는 Observability Insights를 통해 사용할 수 있습니다. 자세한 내용은 [Observability Insights](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview)를 참조하십시오.
 
 | 확인 | 고려 사항 | 댓글 / 작업 |
 |---|---|---|
@@ -228,13 +237,13 @@ AEM을 설치한 파일 서버에는 다양한 로그 파일이 보관되어 있
   * `error.log`
     여기에는 (다양한 심각도 수준의) 오류 메시지가 등록됩니다.
 
-  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=ko)
+  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
     이 로그는 [!DNL Dynamic Media]이(가) 활성화된 경우에만 사용됩니다. 내부 ImageServer 프로세스의 동작을 분석하는 데 사용되는 통계 및 분석 정보를 제공합니다.
 
   * `request.log`
     각 액세스 요청은 응답과 함께 여기에 등록됩니다.
 
-  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=ko)
+  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
     이 로그는 [!DNL Dynamic Media]이(가) 활성화된 경우에만 사용됩니다. s7access 로그는 `/is/image` 및 `/is/content`을(를) 통해 [!DNL Dynamic Media]에 대한 각 요청을 기록합니다.
 
   * `stderr.log`
@@ -253,7 +262,7 @@ AEM을 설치한 파일 서버에는 다양한 로그 파일이 보관되어 있
 
 >[!NOTE]
 >
->ImageServer 및 s7액세스 로그는 **시스템/콘솔/상태**&#x200B;번들리스트&#x200B;**페이지에서 생성된 전체 다운로드**&#x200B;패키지에 포함되지 않습니다. 지원을 위해 [!DNL Dynamic Media] 문제가 있는 경우 고객 지원 센터에 문의할 때 ImageServer 및 s7액세스 로그를 추가하십시오.
+>ImageServer 및 s7액세스 로그는 **시스템/콘솔/상태**번들리스트**페이지에서 생성된 전체 다운로드**패키지에 포함되지 않습니다. 지원을 위해 [!DNL Dynamic Media] 문제가 있는 경우 고객 지원 센터에 문의할 때 ImageServer 및 s7액세스 로그를 추가하십시오.
 
 ### DEBUG 로그 수준 활성화 {#activating-the-debug-log-level}
 
@@ -1068,9 +1077,9 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 >
 >자세한 내용은 다음 문서를 참조하십시오.
 >
->* [스레드 덤프](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=ko)
->* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko)
->* [기본 제공 프로파일러를 사용하여 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=ko)
+>* [스레드 덤프](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [기본 제공 프로파일러를 사용하여 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 >
 
 ### CPU 100% {#cpu-at}
@@ -1090,7 +1099,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * [AEM을 시작](/help/sites-deploying/deploy.md#getting-started)하는 데 사용되는 JVM 설정
 * 기술 자료:
 
-  * [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=ko)
+  * [메모리 문제 분석](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### 디스크 I/O {#disk-i-o}
 
@@ -1108,7 +1117,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * [버전 제거](/help/sites-deploying/version-purging.md)를 구성했는지 여부 및 방법
 * 기술 자료:
 
-  * [열려 있는 파일이 너무 많음](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=ko)
+  * [열려 있는 파일이 너무 많음](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
 
 ### 정기적인 성능 저하 {#regular-performance-degradation}
 

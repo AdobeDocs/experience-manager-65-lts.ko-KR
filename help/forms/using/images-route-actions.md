@@ -1,5 +1,5 @@
 ---
-title: 경로 작업에 사용된 이미지 사용자 지정
+title: 경로 작업에 사용되는 이미지 사용자 정의
 description: LiveCycle AEM Forms 작업 영역에서 경로 작업에 사용되는 이미지를 사용자 정의하는 방법.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,28 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 782043c0-79f8-42a4-ae1b-4743b480e523
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 0%
-
+source-wordcount: '288'
+ht-degree: 4%
 ---
-
-# 경로 작업에 사용된 이미지 사용자 지정 {#customize-images-used-in-route-actions}
+# 경로 작업에 사용되는 이미지 사용자 정의 {#customize-images-used-in-route-actions}
 
 경로 작업에 사용되는 이미지를 사용자 지정하려면 [일반 사용자 지정 단계](/help/forms/using/generic-steps-html-workspace-customization.md)에 설명된 단계를 수행한 다음 이 문서에 설명된 단계를 수행합니다.
 

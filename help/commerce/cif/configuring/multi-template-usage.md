@@ -9,18 +9,26 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 56e7849a-02fe-483d-951d-350caee3423c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 1%
-
+source-wordcount: '110'
+ht-degree: 6%
 ---
-
 # 여러 범주 및 제품 페이지 만들기
 
 [AEM CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)를 통해 콘텐츠 작성자는 추가 범주 및 제품 페이지를 만들 수 있습니다. 이러한 페이지는 추가 마케팅 콘텐츠로 보강하고 특정 카테고리 및 제품을 타겟팅하도록 구성할 수 있습니다. 다음 비디오는 이 기능의 설정을 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32788/?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
 다음 리소스에서 이 주제에 대한 자세한 내용을 찾을 수 있습니다.
 

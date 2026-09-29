@@ -6,17 +6,34 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 docset: aem65
 hide: true
+removedfrom6.5.2025: 'yes'
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 5d0ba475-06be-47fd-8ea2-9160c2d86b07
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 6%
-
 ---
-
 # JEE의 AEM Forms에 대한 일반 보안 고려 사항{#general-security-considerations-for-aem-forms-on-jee}
 
 이 문서에서는 AEM Forms 환경을 강화하기 위해 준비하는 데 도움이 되는 소개 정보를 제공합니다. 여기에는 JEE의 AEM Forms, 운영 체제, 애플리케이션 서버 및 데이터베이스 보안에 대한 사전 요구 사항 정보가 포함되어 있습니다. 환경 잠금을 계속하기 전에 이 정보를 검토하십시오.

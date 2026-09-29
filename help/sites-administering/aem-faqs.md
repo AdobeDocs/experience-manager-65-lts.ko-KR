@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: b2e73e28-fa34-436d-8a20-848d353e3b8c
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1082'
 ht-degree: 2%
-
 ---
-
 # AEM FAQ {#aem-faqs}
 
 일부 AEM 문제 해결 및 구성 문제에 대한 답변을 이해할 수 있습니다.
@@ -88,7 +97,7 @@ Touch UI 또는 웹 콘솔을 사용하여 사용 통계 수집을 선택할 수
 
 Touch UI를 통해 언어 사본을 만들 때(**참조** > **언어 사본 업데이트**), 새 DAM 폴더가 새 언어에 만들어지고 여기에서 자산이 참조됩니다.
 
-기본 설정은 기본 구성에 대한 기본 설정입니다. 번역 구성에서 **페이지 Assets 번역** = **번역 안 함**&#x200B;을 설정할 수 있습니다.
+기본 설정은 기본 구성에 대한 기본 설정입니다. 번역 구성에서 **페이지 Assets 번역** = **번역 안 함**을 설정할 수 있습니다.
 AEM 6.4의 경우 **도구** > **클라우드 서비스** > **번역 클라우드 서비스**&#x200B;입니다.
 
 #### AEM SegmentStore(AEM 6.3.1.1)의 기하급수적 증가를 유발하는 AEM 구성 요소를 비활성화하는 방법 {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}

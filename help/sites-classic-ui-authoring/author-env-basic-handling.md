@@ -1,6 +1,6 @@
 ---
 title: 기본 처리
-description: Adobe Experience Manager 작성 환경을 사용할 때의 기본 처리에 대한 개요입니다. 사이트 콘솔을 기본으로 사용합니다.
+description: Adobe Experience Manager 작성 환경을 사용할 때의 기본 처리에 대한 개요입니다. Sites 콘솔을 기본으로 사용합니다.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: bc424dcd-f3a7-48f5-848d-1b14b8e26862
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1188'
 ht-degree: 6%
-
 ---
-
 # 기본 처리{#basic-handling}
 
 >[!NOTE]
@@ -50,11 +59,11 @@ ht-degree: 6%
   </tr>
   <tr>
    <td><strong>디지털 Assets</strong><br /> </td>
-   <td>이러한 콘솔에서는 이미지, 비디오, 문서 및 오디오 파일과 같은 디지털 자산을 가져와서 <a href="/help/sites-classic-ui-authoring/classicui-assets.md">관리</a>할 수 있습니다. 그런 다음 동일한 AEM 인스턴스에서 실행되는 웹 사이트에서 이러한 자산을 사용할 수 있습니다.   </td>
+   <td>이러한 콘솔에서는 이미지, 비디오, 문서 및 오디오 파일과 같은 디지털 자산을 가져와서 <a href="/help/sites-classic-ui-authoring/classicui-assets.md">관리</a>할 수 있습니다. 그런 다음 동일한 AEM 인스턴스에서 실행되는 웹 사이트에서 이러한 자산을 사용할 수 있습니다. </td>
   </tr>
   <tr>
    <td><strong>론치</strong></td>
-   <td>이렇게 하면 <a href="/help/sites-classic-ui-authoring/classic-launches.md">시작</a>을 관리하는 데 도움이 됩니다. 이를 통해 하나 이상의 활성화된 웹 페이지에 대한 향후 릴리스를 위한 콘텐츠를 개발할 수 있습니다.<br /> <i>참고: 터치 사용 UI에서 참조 레일과 함께 사이트 콘솔에서 동일한 기능을 대부분 사용할 수 있습니다.</i> <i>필요한 경우 도구 콘솔에서 이 콘솔을 사용할 수 있습니다. 작업, 시작 순으로 선택합니다.</i></td>
+   <td>이렇게 하면 <a href="/help/sites-classic-ui-authoring/classic-launches.md">시작</a>을 관리하는 데 도움이 됩니다. 이를 통해 하나 이상의 활성화된 웹 페이지에 대한 향후 릴리스를 위한 콘텐츠를 개발할 수 있습니다.<br /> <i>참고: 터치 사용 UI에서는 참조 레일과 함께 사이트 콘솔에서 동일한 기능을 사용할 수 있습니다.</i> <i>필요한 경우 이 콘솔을 도구 콘솔에서 사용할 수 있습니다. 작업, 시작 순으로 선택합니다.</i></td>
   </tr>
   <tr>
    <td><strong>받은 편지함 </strong></td>
@@ -117,10 +126,10 @@ ht-degree: 6%
 
 * 왼쪽 창에서 페이지 이름을 클릭하면 다음 작업이 수행됩니다.
 
-   * 오른쪽 창에 하위 페이지를 나열합니다.
-   * 왼쪽 창에서 구조를 확장합니다.
+  * 오른쪽 창에 하위 페이지를 나열합니다.
+  * 왼쪽 창에서 구조를 확장합니다.
 
-     성능상의 이유로 이 작업은 하위 노드의 수에 따라 다릅니다. 표준 설치 시 이 확장 방법은 하위 노드가 `30`개 이하일 때 작동합니다.
+    성능상의 이유로 이 작업은 하위 노드의 수에 따라 다릅니다. 표준 설치 시 이 확장 방법은 하위 노드가 `30`개 이하일 때 작동합니다.
 
 * 페이지 이름(왼쪽 창)을 두 번 클릭하면 트리가 확장되지만, 페이지가 열릴 때 이 효과는 명확하지 않습니다.
 

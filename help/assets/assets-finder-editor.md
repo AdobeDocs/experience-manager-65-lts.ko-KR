@@ -5,13 +5,26 @@ role: User, Admin
 feature: Developer Tools,Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 39e1b20b-27d5-4869-b7e1-0dd2d087df7b
-source-git-commit: 7b62f47a0ce75ad5676ea41c86b299160e8b505c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 2%
-
 ---
-
 # 자산 편집기 페이지 만들기 및 구성 {#creating-and-configuring-asset-editor-pages}
 
 이 문서에서는 다음 사항에 대해 설명합니다.
@@ -24,7 +37,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->자산 공유는 오픈 소스 참조 구현으로 사용할 수 있습니다. [자산 공유 공용 &#x200B;](https://adobe-marketing-cloud.github.io/asset-share-commons/)을(를) 참조하십시오. 공식적으로 지원되지 않습니다.
+>자산 공유는 오픈 소스 참조 구현으로 사용할 수 있습니다. [자산 공유 공용 ](https://adobe-marketing-cloud.github.io/asset-share-commons/)을(를) 참조하십시오. 공식적으로 지원되지 않습니다.
 
 ## 자산 편집기 페이지를 만들고 구성하는 이유는 무엇입니까? {#why-create-and-configure-asset-editor-pages}
 

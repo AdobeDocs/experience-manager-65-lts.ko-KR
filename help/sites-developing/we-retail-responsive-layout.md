@@ -1,5 +1,5 @@
 ---
-title: We.Retail에서 응답형 레이아웃 시험 사용
+title: We.Retail에서 응답형 레이아웃 체험
 description: We.Retail을 사용하여 Adobe Experience Manager에서 응답형 레이아웃 을 테스트하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 25e035ce-0445-43a3-bd75-513a2e601b6a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 9%
-
+source-wordcount: '261'
+ht-degree: 13%
 ---
-
-# We.Retail에서 응답형 레이아웃 시험 사용{#trying-out-responsive-layout-in-we-retail}
+# We.Retail에서 응답형 레이아웃 체험{#trying-out-responsive-layout-in-we-retail}
 
 모든 We.Retail 페이지는 레이아웃 컨테이너 구성 요소를 사용하여 응답형 디자인을 구현합니다. 레이아웃 컨테이너는 응답형 그리드 내에 구성 요소를 배치할 수 있도록 해 주는 단락 시스템을 제공합니다. 이 격자를 사용하면 디바이스/창 크기 및 포맷에 따라 레이아웃을 다시 정렬할 수 있습니다. 구성 요소는 페이지 편집기의 **레이아웃** 모드와 함께 사용됩니다. 이 모드에서는 장치에 종속적인 응답형 레이아웃을 만들고 편집할 수 있습니다.
 

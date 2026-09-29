@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 0eac1568-cddb-4d26-b04c-78a2681cf44a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 2%
-
 ---
-
 # 비디오 구성 요소 구성 {#configure-the-video-component}
 
 [비디오 구성 요소](/help/sites-authoring/default-components-foundation.md#video)를 사용하면 미리 정의된 기본 비디오 자산을 페이지에 배치할 수 있습니다.
@@ -24,7 +33,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe에서는 대신 [핵심 구성 요소 포함 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=ko)를 사용하는 것이 좋습니다.
+>이 기초 구성 요소는 더 이상 사용되지 않습니다. Adobe에서는 대신 [핵심 구성 요소 포함 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html)를 사용하는 것이 좋습니다.
 
 >[!CAUTION]
 >

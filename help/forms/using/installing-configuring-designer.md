@@ -5,13 +5,28 @@ role: Admin, User, Developer
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 526bbc59-62c3-4e6d-a938-e368d07fe6b0
-source-git-commit: eb6f6b994fdd3b2b01e77700d2deb7bd2830ac8f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 1af3c3d4-88d7-5e0f-813c-eb70824bfcdd
+    internal-label: Forms Designer
+  - id: 794033c1-20ea-55a4-a8a6-b1107e12deb0
+    internal-label: Designer
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 1%
-
+source-wordcount: '946'
+ht-degree: 5%
 ---
-
 # Designer 설치 및 구성{#installing-and-configuring-designer}
 
 ## 사전 요구 사항 {#pre-requisites}
@@ -89,8 +104,8 @@ msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-***
 AEM Forms Designer용 독립형 설치 관리자를 사용하는 경우 다음 단계를 수행하십시오.
 
 1. **AEM Forms Designer6.5.16.0**&#x200B;을(를) 설치하기 전에 사용자가 이전 버전을 모두 제거해야 합니다.
-1. AEM 양식 릴리스 페이지에서 [AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#)을(를) 다운로드하여 설치하십시오.
-1. **AEM Forms Designer6.5.15.0**&#x200B;을(를) 설치한 후 다운로드한 설치 관리자 파일 을 두 번 클릭하여 [AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#)을(를) 다운로드하여 설치하십시오.
+1. AEM 양식 릴리스 페이지에서 [AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#)을(를) 다운로드하여 설치하십시오.
+1. **AEM Forms Designer6.5.15.0**&#x200B;을(를) 설치한 후 다운로드한 설치 관리자 파일 을 두 번 클릭하여 [AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#)을(를) 다운로드하여 설치하십시오.
 
 +++
 
@@ -98,7 +113,7 @@ AEM Forms Designer용 독립형 설치 관리자를 사용하는 경우 다음 �
 
 AEM Forms Designer용 독립형 설치 관리자를 사용하는 경우 다음 단계를 수행하십시오.
 
-1. [소프트웨어 배포 포털](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#)에서 최신 버전의 AEM Forms Designer을 다운로드합니다.
+1. [소프트웨어 배포 포털](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#)에서 최신 버전의 AEM Forms Designer을 다운로드합니다.
 1. 다운로드한 설치 관리자 파일을 두 번 클릭하여 최신 버전의 AEM Forms Designer을 설치합니다.
 
 +++
@@ -106,19 +121,19 @@ AEM Forms Designer용 독립형 설치 관리자를 사용하는 경우 다음 �
 ## 자주 묻는 질문 {#fandq}
 
 * **사용자가 64비트 Designer을 직접 업그레이드하거나 설치할 수 있습니까?**
-   * 예. 사용자는 64비트 Designer을 직접 업그레이드하거나 설치할 수 있습니다. 업그레이드하려면 [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) Designer 전체 설치 관리자를 설치하고 그 위에 후속 Designer 패치 릴리스를 적용하십시오.
+  * 예. 사용자는 64비트 Designer을 직접 업그레이드하거나 설치할 수 있습니다. 업그레이드하려면 [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) Designer 전체 설치 관리자를 설치하고 그 위에 후속 Designer 패치 릴리스를 적용하십시오.
 
-     >[!NOTE]
-     > 64비트 Designer으로 업그레이드하기 전에 먼저 32비트 Designer(있는 경우)를 제거합니다.
+    >[!NOTE]
+    > 64비트 Designer으로 업그레이드하기 전에 먼저 32비트 Designer(있는 경우)를 제거합니다.
 
 * **사용자가 시스템에 32비트와 64비트를 모두 설치할 수 있습니까?**
-   * 아니요. 32비트 및 64비트 설치는 동일한 컴퓨터에서 작동하지 않습니다. 사용자는 32비트 Designer 또는 64비트 Designer을 가질 수 있습니다.
+  * 아니요. 32비트 및 64비트 설치는 동일한 컴퓨터에서 작동하지 않습니다. 사용자는 32비트 Designer 또는 64비트 Designer을 가질 수 있습니다.
 
 * **사용자가 64비트 Designer 또는 32비트 Designer에 있는지 어떻게 확인합니까?**
-   * Forms Designer 버전을 확인하는 방법에는 두 가지가 있습니다.
+  * Forms Designer 버전을 확인하는 방법에는 두 가지가 있습니다.
 
-      1. Designer을 엽니다.
-      1. Designer 버전 및 비트 수 정보를 보려면 **도움말** > **Designer 정보**&#x200B;를 클릭하십시오.
-예를 들어, 다음 예제와 같이 버전 문자열은 **64비트**&#x200B;로 끝납니다.
-         `6.5.21.20240522.1.161 | 64 bit`
-      1. Designer을 열면 왼쪽 상단에 제품 이름이 있는 64비트 정보가 포함된 브랜딩 아이콘이 표시됩니다.
+    1. Designer을 엽니다.
+    1. Designer 버전 및 비트 수 정보를 보려면 **도움말** > **Designer 정보**를 클릭하십시오.
+예를 들어, 다음 예제와 같이 버전 문자열은 **64비트**로 끝납니다.
+       `6.5.21.20240522.1.161 | 64 bit`
+    1. Designer을 열면 왼쪽 상단에 제품 이름이 있는 64비트 정보가 포함된 브랜딩 아이콘이 표시됩니다.

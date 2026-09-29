@@ -10,13 +10,24 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: af2673d9-780c-44bf-9c75-4b908cca4e98
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 1%
-
 ---
-
 # 소프트웨어 인터페이스를 사용하여 에셋 미리보기 {#previewing-assets}
 
 미리보기 를 사용하여 고객이 자신의 웹 브라우저에서 업로드한 디지털 에셋을 볼 때 해당 에셋이 어떻게 보이는지 확인할 수 있습니다. 자산에 할당된 기본 임베드된 교차 장치 뷰어가 미리보기에 사용됩니다.

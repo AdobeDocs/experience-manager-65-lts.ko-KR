@@ -10,13 +10,30 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: c888da5d-6a98-4139-9656-a187177efcb0
 hide: true
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+removedfrom6.5.2025: 'yes'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
-
 ---
-
 # JEE 프로세스에서 AEM 양식에 양식 데이터를 제출하도록 AEM Forms 구성{#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
 
 적응형 양식은 추가 처리를 위해 JEE의 AEM Forms 프로세스에 데이터 제출을 지원합니다. 제출된 양식에서 사용할 수 있는 데이터로 JEE의 AEM Forms 프로세스를 트리거할 수 있습니다. AEM Forms 인스턴스를 활성화하여 적응형 양식을 JEE의 AEM Forms 프로세스에 제출할 수 있도록 다음 단계를 수행하십시오.

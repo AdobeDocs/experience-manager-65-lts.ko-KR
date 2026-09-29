@@ -1,18 +1,27 @@
 ---
-title: 활동 스트림과  [!DNL Assets]  통합
-description: ' [!DNL Experience Manager] 의 기록 기능과 특정 이벤트를 기록하도록 구성하는 방법에 대해 설명합니다.'
+title: '[!DNL Assets]을(를) 활동 스트림과 통합'
+description: '[!DNL Experience Manager]의 기록 기능 및 특정 이벤트를 기록하도록 구성하는 방법에 대해 설명합니다.'
 contentOwner: AG
 role: Developer
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 44604607-e49d-469c-a6f1-dedbcd657d65
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '258'
 ht-degree: 0%
-
 ---
-
 # [!DNL Assets]을(를) 활동 스트림과 통합 {#integrating-assets-with-activity-stream}
 
 [!DNL Adobe Experience Manager Assets]명의 사용자가 Assets 만들기, 업로드 및 삭제와 같은 다양한 작업을 수행합니다. 이러한 작업을 기록하여 사용자가 수행한 작업의 내역을 제공할 수 있습니다. 이 단원에서는 [!DNL Experience Manager]의 기록 기능 및 특정 이벤트를 기록하도록 [!DNL Experience Manager]을(를) 구성하는 방법에 대해 설명합니다.

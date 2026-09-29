@@ -6,20 +6,34 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1947'
-ht-degree: 6%
-
+source-wordcount: '2092'
+ht-degree: 7%
 ---
-
 # 적응형 양식 테마 만들기 또는 사용자 지정 {#introduction-to-theme}
 
 ## 적용 대상 {#applies-to}
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=ko)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html)를 참조하십시오.
 
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
@@ -34,7 +48,7 @@ AEM 6.5 환경은 적응형 Forms 기반의 핵심 구성 요소에 대해 아�
 * [WKND 테마](https://github.com/adobe/aem-forms-theme-wknd)
 * [이젤 테마](https://github.com/adobe/aem-forms-theme-easel)
 * [FSI 테마](https://github.com/adobe/aem-forms-theme-fsi)
-* [의료 테마](https://github.com/adobe/aem-forms-theme-healthcare)
+* [헬스케어 테마](https://github.com/adobe/aem-forms-theme-healthcare)
 * [공개 테마](https://github.com/adobe/aem-forms-theme-public)
 * [제조 테마](https://github.com/adobe/aem-forms-theme-manufacturing)
 
@@ -77,11 +91,11 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 
 * 환경에 대해 [적응형 Forms 핵심 구성 요소 사용](/help/forms/using/enable-adaptive-forms-core-components.md).
 
-* [Apache Maven의 최신 릴리스를 설치하십시오.](https://maven.apache.org/download.cgi) Apache Maven은 일반적으로 Java™ 프로젝트에 사용되는 빌드 자동화 도구입니다. 최신 릴리스를 설치하면 테마 맞춤화에 필요한 종속성이 확보됩니다.
+* [Apache Maven.](https://maven.apache.org/download.cgi)의 최신 릴리스를 설치하십시오. Apache Maven은 Java™ 프로젝트에 일반적으로 사용되는 빌드 자동화 도구입니다. 최신 릴리스를 설치하면 테마 맞춤화에 필요한 종속성이 확보됩니다.
 
-* Adobe Experience Manager[에서 &#x200B;](/help/sites-developing/clientlibs.md)클라이언트 라이브러리를 만드는 방법을 알아봅니다. AEM은 클라이언트측 코드를 저장소에 저장하고, 범주로 구성하고, 각 코드 범주가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 클라이언트 라이브러리를 제공합니다.
+* Adobe Experience Manager](/help/sites-developing/clientlibs.md)에서 [클라이언트 라이브러리를 만드는 방법을 알아봅니다. AEM은 클라이언트측 코드를 저장소에 저장하고, 범주로 구성하고, 각 코드 범주가 클라이언트에 제공되는 시기와 방법을 정의할 수 있는 클라이언트 라이브러리를 제공합니다.
 
-* 일반 텍스트 편집기를 설치합니다. 예를 들어 Microsoft® Visual Studio Code입니다. Microsoft® 같은 일반 텍스트 편집기를 사용하면 Visual Studio Code에서 테마 파일을 편집하고 수정할 수 있는 사용자 친화적인 환경을 제공합니다.
+* 일반 텍스트 편집기를 설치합니다. 예를 들어 ® Visual Studio Code입니다. ® 같은 일반 텍스트 편집기를 사용하면 Visual Studio Code에서 테마 파일을 편집하고 수정할 수 있는 사용자 친화적인 환경을 제공합니다.
 
 * AEM Forms 환경이 실행 중인지 확인합니다.
 
@@ -166,7 +180,7 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 또한 글꼴, 색상, 크기 및 단추, 확인란, 컨테이너, 바닥글 등과 같은 특정 적응형 양식 핵심 구성 요소의 기타 CSS 속성을 사용자 지정하는 옵션이 있습니다. 특정 구성 요소와 연결된 CSS 파일을 편집하여 해당 스타일을 조직의 브랜딩에 맞출 수 있습니다. 구성 요소의 스타일을 사용자 지정하려면 다음 단계를 따르십시오.
 
 1. 편집할 `<your-theme-sources>/src/components/<component>/<component.scss>` 파일을 엽니다. 예를 들어 단추 구성 요소의 글꼴 색을 변경하려면 `<your-theme-sources>/src/components/button/button.scss`, 파일 을 엽니다.
-1. 요구 사항에 따라 의 값을 변경합니다. 예를 들어 마우스 가리키기 시 단추 구성 요소의 색상을 녹색으로 변경하려면 `color: $white` 클래스의 `cmp-adaptiveform-button__widget:hover` 속성 값을 16진수 코드 #12b453 또는 다른 녹색 음영으로 변경합니다. 최종 코드는 다음과 같습니다.
+1. 요구 사항에 따라 의 값을 변경합니다. 예를 들어 마우스 가리키기 시 단추 구성 요소의 색상을 녹색으로 변경하려면 `cmp-adaptiveform-button__widget:hover` 클래스의 `color: $white` 속성 값을 16진수 코드 #12b453 또는 다른 녹색 음영으로 변경합니다. 최종 코드는 다음과 같습니다.
 
    ```
     .cmp-adaptiveform-button__widget:hover {
@@ -342,4 +356,4 @@ The selected theme is applied to the Adaptive Form.
 * [적응형 Forms 기반의 핵심 구성 요소에 대한 테마 만들기 또는 사용자 지정](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [적응형 Forms 기반의 핵심 구성 요소용 템플릿 만들기](template-editor.md)
 * [AEM Sites 페이지 또는 경험 조각에 적응형 양식 만들기 또는 추가](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=ko)
+* [샘플 테마 템플릿 및 양식 데이터 모델](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

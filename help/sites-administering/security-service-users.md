@@ -9,13 +9,22 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 893d04cb-3a71-4400-9ca4-62ad46aacfdd
-source-git-commit: 4c6423d295aa93f6f7048a5ac919b551f3f305d7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 0%
-
+source-wordcount: '1942'
+ht-degree: 1%
 ---
-
 # Adobe Experience Manager(AEM)의 서비스 사용자 {#service-users-in-aem}
 
 ## 개요 {#overview}
@@ -40,44 +49,44 @@ AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법
 
 * **액세스 제어 변경**
 
-   * 실제로 액세스할 필요가 있는 사용자 또는 그룹이 실제로 액세스할 수 있는지 확인하십시오.
+  * 실제로 액세스할 필요가 있는 사용자 또는 그룹이 실제로 액세스할 수 있는지 확인하십시오.
 
 * **콘텐츠 구조 세분화**
 
-   * 예를 들어 액세스 제어가 사용 가능한 요청 세션과 일치하는 다른 위치로 이동합니다.
-   * 컨텐츠 세부기간을 변경합니다.
+  * 예를 들어 액세스 제어가 사용 가능한 요청 세션과 일치하는 다른 위치로 이동합니다.
+  * 컨텐츠 세부기간을 변경합니다.
 
 * **올바른 서비스로 코드를 리팩터링**
 
-   * 비즈니스 논리를 JSP 코드에서 서비스로 이동합니다. 이를 통해 다양한 콘텐츠 모델링을 수행할 수 있습니다.
+  * 비즈니스 논리를 JSP 코드에서 서비스로 이동합니다. 이를 통해 다양한 콘텐츠 모델링을 수행할 수 있습니다.
 
 또한 개발하는 새로운 기능이 다음 원칙을 준수하는지 확인하십시오.
 
 * **보안 요구 사항이 콘텐츠 구조를 구동해야 함**
 
-   * 액세스 제어 관리는 자연스럽게 느껴져야 합니다.
-   * 액세스 제어는 애플리케이션이 아닌 저장소에서 적용해야 합니다.
+  * 액세스 제어 관리는 자연스럽게 느껴져야 합니다.
+  * 액세스 제어는 애플리케이션이 아닌 저장소에서 적용해야 합니다.
 
 * **노드 형식 사용**
 
-   * 설정할 수 있는 속성 집합 제한
+  * 설정할 수 있는 속성 집합 제한
 
 * **개인 정보 설정 준수**
 
-   * 개인 프로필이 있는 경우 개인 `/profile` 노드에 있는 프로필 사진, 이메일 또는 전체 이름을 노출하지 않는 것이 한 예입니다.
+  * 개인 프로필이 있는 경우 개인 `/profile` 노드에 있는 프로필 사진, 이메일 또는 전체 이름을 노출하지 않는 것이 한 예입니다.
 
 ## 엄격한 액세스 제어 {#strict-access-control}
 
 컨텐츠를 재구성하는 동안 액세스 제어를 적용하든 새 서비스 사용자에 대해 적용하든 가능한 가장 엄격한 ACL을 적용해야 합니다. 액세스 제어의 가능한 모든 시설 사용:
 
-* 예를 들어 `jcr:read`에 `/apps`을(를) 적용하는 대신 `/apps/*/components/*/analytics`에만 적용하십시오.
+* 예를 들어 `/apps`에 `jcr:read`을(를) 적용하는 대신 `/apps/*/components/*/analytics`에만 적용하십시오.
 
 * [제한](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) 사용
 
 * 노드 유형에 ACL 적용
 * 권한을 제한합니다.
 
-   * 예를 들어, 속성을 작성해야 하는 경우 `jcr:write` 권한을 부여하지 말고 `jcr:modifyProperties`을(를) 대신 사용하십시오.
+  * 예를 들어, 속성을 작성해야 하는 경우 `jcr:write` 권한을 부여하지 말고 `jcr:modifyProperties`을(를) 대신 사용하십시오.
 
 ## 서비스 사용자 및 매핑 {#service-users-and-mappings}
 
@@ -109,7 +118,7 @@ AEM에서 관리 세션 또는 리소스 확인자를 가져오는 기본 방법
 1. 최소 권한의 원칙을 고려하여 서비스에 필요한 권한을 식별합니다.
 1. 필요한 권한 설정을 정확히 가진 사용자가 이미 있는지 확인합니다. 기존 사용자가 요구 사항과 일치하지 않는 경우 시스템 서비스 사용자를 만듭니다. 서비스 사용자를 만들려면 RTC가 필요합니다. 경우에 따라 액세스를 더 구분하기 위해 여러 하위 서비스 사용자(예: 쓰기용 사용자 및 읽기용 사용자)를 만드는 것이 적절합니다.
 1. 사용자에 대한 ACE를 설정하고 테스트합니다.
-1. 서비스 및 `service-user`에 대한 `user/sub-users` 매핑 추가
+1. 서비스 및 `user/sub-users`에 대한 `service-user` 매핑 추가
 
 1. 번들에서 서비스 사용자 슬링 기능을 사용할 수 있도록 설정: `org.apache.sling.api`의 최신 버전으로 업데이트하십시오.
 
@@ -131,7 +140,7 @@ AEM 서비스 사용자 목록에 사용 사례에 적용할 수 있는 사용�
 
 권장되는 방법은 [Sling Repository Initialization(RepoInit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)을 사용하여 서비스 사용자를 만드는 것입니다. RepoInit를 사용하면 간단한 스크립팅 언어를 사용하여 선언적으로 서비스 사용자와 해당 ACL을 정의할 수 있습니다.
 
-RepoInit로 서비스 사용자를 만들려면 `scripts`에 대한 OSGi 구성에 `org.apache.sling.jcr.repoinit.RepositoryInitializer` 속성을 추가하십시오.
+RepoInit로 서비스 사용자를 만들려면 `org.apache.sling.jcr.repoinit.RepositoryInitializer`에 대한 OSGi 구성에 `scripts` 속성을 추가하십시오.
 
 ```
 create service user my-service-user with path system/cq
@@ -169,7 +178,7 @@ end
 1. 번들의 src/main/resources 폴더 아래에 하위 폴더 SLING-INF/컨텐츠를 만듭니다
 1. 이 폴더에서 팩토리 구성(모든 하위 서비스 사용자 매핑 포함)의 내용으로 org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.revised-&lt;팩토리 구성에 대한 일부 고유 이름>.xml이라는 파일을 만듭니다. 예:
 
-1. 번들의 `SLING-INF/content` 폴더 아래에 `src/main/resources` 폴더를 만듭니다.
+1. 번들의 `src/main/resources` 폴더 아래에 `SLING-INF/content` 폴더를 만듭니다.
 1. 이 폴더에서는 모든 하위 서비스 사용자 매핑을 포함하여 팩터리 구성 내용이 포함된 파일 `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml`을(를) 만듭니다.
 
    설명을 위해 이름이 `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml`인 파일을 가져옵니다.
@@ -191,7 +200,7 @@ end
    </node>
    ```
 
-1. 번들의 `maven-bundle-plugin`에 있는 `pom.xml`의 구성에서 Sling 초기 콘텐츠를 참조합니다. 예:
+1. 번들의 `pom.xml`에 있는 `maven-bundle-plugin`의 구성에서 Sling 초기 콘텐츠를 참조합니다. 예:
 
    ```xml
    <Sling-Initial-Content>
@@ -243,7 +252,7 @@ end
 
    **단점:** 권한을 쉽게 증가시킬 수 있도록 강력한 서비스 사용자가 유연해야 합니다. 보안 모델을 우회합니다.
 
-1. 이벤트 페이로드에서 `Subject`의 serialization을 전달하고 해당 제목을 기반으로 `ResourceResolver`을(를) 만듭니다. 예를 들어 `doAsPrivileged`에서 JAS `ResourceResolverFactory`을(를) 사용하는 경우가 있습니다.
+1. 이벤트 페이로드에서 `Subject`의 serialization을 전달하고 해당 제목을 기반으로 `ResourceResolver`을(를) 만듭니다. 예를 들어 `ResourceResolverFactory`에서 JAS `doAsPrivileged`을(를) 사용하는 경우가 있습니다.
 
    **장점:** 보안 관점에서 구현을 정리합니다. 재인증을 피하고 원래 권한으로 작동합니다. 보안 관련 코드는 이벤트 소비자에게 투명합니다.
 

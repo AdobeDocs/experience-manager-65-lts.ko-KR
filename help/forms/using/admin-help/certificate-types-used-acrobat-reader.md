@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: ca919915-c37b-4793-b5e2-21a464c5dcdf
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 65%
-
 ---
-
 # Acrobat Reader DC 확장 프로그램에서 사용하는 인증서 유형 {#certificate-types-used-by-acrobat-reader-dc-extensions}
 
 인증서 뷰어에서는 인증서에 대한 다음과 같은 정보를 제공합니다.
@@ -193,7 +208,7 @@ Adobe 내부 사용 인증서는 Adobe 내에서 소프트웨어 개발, 통합,
   </tr>
   <tr>
    <td><p>Signing</p></td>
-   <td><p>PDF 문서를 디지털 서명하고 저장하며 디지털 서명을 지웁니다.</p></td>
+   <td><p>PDF 문서를 디지털 서명하고 저장하며 디지털 서명을 제거합니다.</p></td>
   </tr>
   <tr>
    <td><p>AnnotModify</p></td>

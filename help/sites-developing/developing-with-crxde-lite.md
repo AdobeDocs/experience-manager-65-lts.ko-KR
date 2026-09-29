@@ -1,5 +1,5 @@
 ---
-title: CRXDE Lite을 사용하여 개발
+title: CRXDE Lite를 사용한 개발
 description: CRXDE Lite은 Adobe Experience Manager(AEM)에 포함되어 있으며 브라우저에서 표준 개발 작업을 수행할 수 있도록 해줍니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: a022067a-3bbe-4bce-9d49-b813fcbf0c6f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 1%
-
+source-wordcount: '2116'
+ht-degree: 2%
 ---
-
-# CRXDE Lite을 사용하여 개발{#developing-with-crxde-lite}
+# CRXDE Lite를 사용한 개발{#developing-with-crxde-lite}
 
 이 섹션에서는 CRXDE Lite을 사용하여 Adobe Experience Manager(AEM) 애플리케이션을 개발하는 방법을 설명합니다.
 
@@ -72,7 +83,7 @@ CRXDE Lite은 다음 기능을 제공합니다.
   </tr>
   <tr>
    <td>편집 창</td>
-   <td><p><strong>홈</strong> 탭: 콘텐츠 및/또는 설명서를 검색하고 개발자 리소스(설명서, 개발자 블로그, 기술 자료) 및 지원(Adobe 홈페이지 및 지원 센터)에 액세스할 수 있습니다.<br /> </p> <p>내용을 표시할 수 있도록 <strong>탐색기</strong> 창에서 파일을 두 번 클릭합니다. 예: .jsp 또는 .java 파일. 그런 다음 수정 하고 변경 사항을 저장할 수 있습니다.</p> <p><strong>편집</strong> 창에서 파일을 편집하면 도구 모음에서 다음 도구를 사용할 수 있습니다.<br /> </p> - <strong>트리에 표시: </strong>저장소 트리에 파일을 표시합니다.<br /> - <strong>검색/바꾸기 ...</strong>: 검색 또는 바꾸기를 수행합니다.<br /> <br /> <strong>편집</strong> 창의 상태 줄을 두 번 클릭하면 <strong>줄로 이동</strong> 대화 상자가 열려 이동할 특정 줄 번호를 입력할 수 있습니다.<br /> </td>
+   <td><p><strong>홈</strong> 탭: 콘텐츠 및/또는 설명서를 검색하고 개발자 리소스(설명서, 개발자 블로그, 기술 자료) 및 지원(Adobe 홈페이지 및 지원 센터)에 액세스할 수 있습니다.<br /> </p> <p>내용을 표시할 수 있도록 <strong>탐색기</strong> 창에서 파일을 두 번 클릭합니다. 예: .jsp 또는 .java 파일. 그런 다음 수정 하고 변경 사항을 저장할 수 있습니다.</p> <p><strong>편집</strong> 창에서 파일을 편집하면 도구 모음에서 다음 도구를 사용할 수 있습니다.<br /> </p> - <strong>트리에 표시: </strong>저장소 트리에 파일을 표시합니다.<br /> - <strong>검색/바꾸기...</strong>: 검색 또는 바꾸기를 수행합니다.<br /> <br /> <strong>편집</strong> 창의 상태 줄을 두 번 클릭하면 <strong>줄로 이동</strong> 대화 상자가 열려 특정 줄 번호를 입력할 수 있습니다.<br /> </td>
   </tr>
   <tr>
    <td>속성 탭<br /> </td>

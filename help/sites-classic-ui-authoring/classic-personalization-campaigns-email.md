@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 19ff5414-5798-4a89-afab-e0bad0f58b51
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
-
+source-wordcount: '1802'
+ht-degree: 2%
 ---
-
 # 이메일 마케팅{#e-mail-marketing}
 
 >[!NOTE]
@@ -38,7 +49,7 @@ ht-degree: 0%
 
 * [효과적인 뉴스레터 랜딩 페이지 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
 * [구독 관리](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
-* [이메일 서비스 공급자에 이메일 게시](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
+* [이메일 서비스 제공자에게 이메일 게시](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
 * [반송된 이메일 추적](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
 
 >[!NOTE]
@@ -71,26 +82,26 @@ ht-degree: 0%
 
    ![페이지 속성 대화 상자](assets/mcm_newnewsletterdialog.png)
 
-   * **이름에서**
-뉴스레터 발송자로 표시되는 이름입니다.
+   * **보낸 사람 이름**
+     뉴스레터 발송자로 표시되는 이름입니다.
 
-   * **주소에서**
-뉴스레터 발송자로 표시되는 메일 주소입니다.
+   * **보낸 사람 주소**
+     뉴스레터 발송자로 표시되는 메일 주소입니다.
 
    * **제목**
-뉴스레터의 제목입니다.
+     뉴스레터의 제목입니다.
 
-   * **회신**
-발송된 뉴스레터에 대해 회신 가능한 메일 주소입니다.
+   * **회신 대상**
+     발송된 뉴스레터에 대해 회신 가능한 메일 주소입니다.
 
    * **설명**
-뉴스레터에 대한 설명.
+     뉴스레터에 대한 설명.
 
-   * **정시**
-뉴스레터 전송 정시.
+   * **시간**
+     뉴스레터 전송 정시.
 
    * **기본 수신자 목록**
-뉴스레터를 수신할 기본 목록입니다.
+     뉴스레터를 수신할 기본 목록입니다.
 
    나중에 **속성...** 대화 상자에서 업데이트할 수 있습니다.
 
@@ -143,7 +154,7 @@ Geometrixx에 있는 뉴스레터의 텍스트 구성 요소에 사전 정의된
 >
 >기본적으로 매개 변수의 값은 `localhost:4502`이며 실행 중인 인스턴스의 포트가 변경되면 작업을 완료할 수 없습니다.
 
-일반 이메일 클라이언트 간에 전환하여 뉴스레터가 리드에게 어떻게 표시되는지 확인합니다. 기본적으로 뉴스레터는 선택된 이메일 클라이언트가 없는 상태로 열립니다.
+널리 사용되는 여러 이메일 클라이언트에서 뉴스레터가 리드에게 어떻게 표시되는지 시험해 봅니다. 기본적으로 뉴스레터는 선택된 이메일 클라이언트가 없는 상태로 열립니다.
 
 현재 다음 이메일 클라이언트에서 뉴스레터를 볼 수 있습니다.
 

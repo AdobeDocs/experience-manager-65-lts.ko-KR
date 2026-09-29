@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: a3108797-8085-4683-971f-509e7bfa06b0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1594'
 ht-degree: 52%
-
 ---
-
 # AEM 6.5와 Adobe Campaign Classic 통합 {#integrating-campaign-classic}
 
 AEM을 ACC(Adobe Campaign Classic)와 통합하여 AEM에서 이메일 게재, 콘텐츠 및 양식을 직접 관리할 수 있습니다. 솔루션 간 양방향 통신이 가능하려면 Adobe Campaign Classic과 AEM 모두에서 구성 단계를 수행해야 합니다.
@@ -42,8 +51,8 @@ AEM과 Campaign 간의 통합에는 두 솔루션에서 몇 가지 단계가 필
 ## 사전 요구 사항 {#prerequisites}
 
 * Adobe Campaign Classic에 대한 관리자 액세스
-   * 통합을 수행하려면 구성된 데이터베이스를 포함하는 작동 중인 Adobe Campaign Classic 인스턴스가 필요합니다.
-   * Adobe Campaign Classic 설정 및 구성 방법에 대한 자세한 내용은 [Adobe Campaign Classic 설명서,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=ko)를 참조하십시오. 특히 설치 및 구성 안내서를 참조하십시오.
+  * 통합을 수행하려면 구성된 데이터베이스를 포함하는 작동 중인 Adobe Campaign Classic 인스턴스가 필요합니다.
+  * Adobe Campaign Classic 설정 및 구성 방법에 대한 자세한 내용은 [Adobe Campaign Classic 설명서,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html)를 참조하십시오. 특히 설치 및 구성 안내서를 참조하십시오.
 * AEM에 대한 관리자 액세스
 
 ## Campaign에서 AEM 통합 패키지 설치 {#install-package}
@@ -118,7 +127,7 @@ Adobe Campaign의 **AEM 통합** 패키지에는 AEM에 연결하는 데 필요�
    >
    >기본적으로, 연산자에 대해 보안 영역이 구성되어 있지 않습니다. AEM이 Adobe Campaign에 연결되려면 앞의 단계들에서 자세히 설명한 대로 영역을 반드시 선택해야 합니다.
    >
-   >Adobe는 잠재적인 보안 문제를 예방할 수 있도록 AEM 전용 보안 영역을 생성할 것을 적극 권장합니다. 이 항목에 대한 자세한 내용은 [Adobe Campaign Classic 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=ko)
+   >Adobe는 잠재적인 보안 문제를 예방할 수 있도록 AEM 전용 보안 영역을 생성할 것을 적극 권장합니다. 이 항목에 대한 자세한 내용은 [Adobe Campaign Classic 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
 
 1. Campaign 클라이언트에서 `aemserver` 연산자로 돌아간 뒤 **일반** 탭을 선택합니다.
 
@@ -144,7 +153,7 @@ AEM은 [Campaign에서 이미 설정한 연산자](#create-operator)를 사용�
 
 1. 구성 편집을 위한 새 창과 대화 상자가 열립니다. 필요한 정보를 입력합니다.
 
-   * **사용자 이름** - 이전 단계에서 생성한 [Adobe Campaign AEM 통합 패키지 연산자입니다.](#create-operator) 이는 기본적으로 `aemserver`입니다.
+   * **사용자 이름** - 이전 단계에서 만든 [Adobe Campaign AEM 통합 패키지 연산자입니다.](#create-operator) 기본적으로 `aemserver`입니다.
    * **암호** - [이전 단계에서 생성한 Adobe Campaign AEM 통합 패키지 연산자의 암호입니다.](#create-operator)
    * **API 끝점** - Adobe Campaign 인스턴스 URL입니다.
 
@@ -241,8 +250,8 @@ Campaign에서 AEM과 통신하려면 AEM에서 `campaign-remote` 사용자에 �
 1. [캠페인 원격 사용자 비밀번호 설정](#set-campaign-remote-password) 단계 수행 시 정의한 사용자 정보를 이 계정의 **일반** 탭에 입력합니다.
 
    * **서버** - AEM 제작자 서버 주소
-      * AEM 제작자 서버는 Adobe Campaign Classic 서버 인스턴스에서 접근 가능해야 합니다.
-      * 서버 주소가 뒤쪽 슬래시로 끝나지 **않아야** 합니다.
+     * AEM 제작자 서버는 Adobe Campaign Classic 서버 인스턴스에서 접근 가능해야 합니다.
+     * 서버 주소가 뒤쪽 슬래시로 끝나지 **않아야** 합니다.
    * **계정** - 기본적으로, [캠페인 원격 사용자 암호 설정](#set-campaign-remote-password) 단계 수행 시 AEM에서 설정한 `campaign-remote` 사용자입니다.
    * **암호** - 이 암호는 [캠페인 원격 사용자 암호 설정](#set-campaign-remote-password) 단계 수행 시 AEM에서 설정한 `campaign-remote` 사용자와 동일합니다.
 

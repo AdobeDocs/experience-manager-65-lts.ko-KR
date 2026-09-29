@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 74ac70c9-a774-4b35-b285-3feb425dac3a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 12%
-
 ---
-
 # 개발 및 페이지 비교{#developing-and-page-diff}
 
 ## 기능 개요 {#feature-overview}
@@ -27,7 +36,7 @@ ht-degree: 12%
 
 ## 작업 세부 정보 {#operation-details}
 
-페이지의 버전을 비교할 때 쉽게 비교할 수 있도록 사용자가 비교하려는 이전 버전이 AEM에 의해 백그라운드에 다시 생성됩니다. 병렬 비교[&#128279;](/help/sites-developing/pagediff.md#operation-details)를 위해 콘텐츠를 렌더링할 수 있어야 합니다.
+페이지의 버전을 비교할 때 쉽게 비교할 수 있도록 사용자가 비교하려는 이전 버전이 AEM에 의해 백그라운드에 다시 생성됩니다. 병렬 비교](/help/sites-developing/pagediff.md#operation-details)를 위해 [콘텐츠를 렌더링할 수 있어야 합니다.
 
 이 레크리에이션 작업은 AEM에서 내부적으로 수행되며 사용자에게 투명하며 개입이 필요하지 않습니다. 그러나 예를 들어 CRXDE Lite에서 저장소를 보는 관리자는 콘텐츠 구조 내에서 이러한 다시 생성된 버전을 보게 됩니다.
 

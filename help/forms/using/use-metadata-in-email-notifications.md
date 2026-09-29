@@ -1,5 +1,5 @@
 ---
-title: 이메일 알림에서 메타데이터 사용
+title: 이메일 알림에 메타데이터 사용
 description: 메타데이터를 사용하여 양식 워크플로우 이메일 알림의 정보 채우기
 topic-tags: publish
 docset: aem65
@@ -7,14 +7,30 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 64d4ef01-ee33-4c8b-977f-0c9b31755820
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 1%
-
+source-wordcount: '899'
+ht-degree: 2%
 ---
-
-# 이메일 알림에서 메타데이터 사용 {#use-metadata-in-an-email-notification}
+# 이메일 알림에 메타데이터 사용 {#use-metadata-in-an-email-notification}
 
 작업 할당 단계를 사용하여 작업을 만들고 사용자 또는 그룹에 할당할 수 있습니다. 작업이 사용자 또는 그룹에 할당되면 정의된 사용자 또는 정의된 그룹의 각 구성원에게 이메일 알림이 전송됩니다. 일반적인 [전자 메일 알림](../../forms/using/use-custom-email-template-assign-task-step.md)에는 할당된 작업의 링크와 작업과 관련된 정보가 포함되어 있습니다.
 
@@ -185,7 +201,7 @@ AEM Forms 애플리케이션은 즉시 사용할 수 있는 여러 메타데이�
    제목을 지정하지 않으면 사용자 지정 메타데이터 필드에 ECMAScript 파일의 전체 경로가 표시됩니다. 다음 단계를 수행하여 스크립트에 의미 있는 제목을 지정합니다.
 
    1. 스크립트 노드를 확장하고 **[!UICONTROL jcr:content]** 노드를 마우스 오른쪽 단추로 클릭한 다음 **[!UICONTROL Mixins]**&#x200B;을 클릭합니다.
-   1. 믹스인 편집 대화 상자에서 mix:title을 입력하고 **+**&#x200B;을(를) 클릭합니다.
+   1. 믹스인 편집 대화 상자에서 mix:title을(를) 입력하고 **+**&#x200B;을(를) 클릭합니다.
    1. 다음 값이 있는 속성을 추가합니다.
 
       | 이름 | jcr:title |

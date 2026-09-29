@@ -10,17 +10,26 @@ feature: Developing
 role: Developer
 exl-id: 59a79455-c108-4f4b-93c1-d8c6f23aec88
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '307'
 ht-degree: 9%
-
 ---
-
 
 # Adobe Campaign 양식 구성 요소를 사용하여 사용자 지정 AEM 페이지 템플릿 만들기{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-이 페이지에서는 Geometrixx-outdoors 템플릿([)이 구현되는 방식을 검사하여 &#x200B;](/help/sites-authoring/adobe-campaign-components.md)Adobe Campaign 양식`/apps/geometrixx-outdoors/components/page_campaign_profile` 구성 요소를 사용하는 사용자 지정 페이지 템플릿을 만드는 방법에 대해 설명하고 사용자 지정 템플릿을 만들 때 필요한 중요한 정보를 안내합니다.
+이 페이지에서는 Geometrixx-outdoors 템플릿(`/apps/geometrixx-outdoors/components/page_campaign_profile`)이 구현되는 방식을 검사하여 [Adobe Campaign 양식](/help/sites-authoring/adobe-campaign-components.md) 구성 요소를 사용하는 사용자 지정 페이지 템플릿을 만드는 방법에 대해 설명하고 사용자 지정 템플릿을 만들 때 필요한 중요한 정보를 안내합니다.
 
 >[!CAUTION]
 >

@@ -7,13 +7,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 45178816afbda13ee9117a0b13dcb8a9218992da
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1586'
 ht-degree: 2%
-
 ---
-
 # 사용자 정의 독립 실행형 설치{#custom-standalone-install}
 
 이 섹션에서는 독립형 AEM 인스턴스를 설치할 때 사용할 수 있는 옵션에 대해 설명합니다. AEM 6을 새로 설치한 후 백엔드 저장소 유형을 선택하는 방법에 대한 자세한 내용은 [저장소 요소](/help/sites-deploying/storage-elements-in-aem-6.md)를 읽을 수도 있습니다.
@@ -26,7 +38,7 @@ Quickstart jar 파일의 이름을 바꾸어 포트 번호를 설정할 수도 �
 
 quickstart jar 파일의 이름을 바꿀 때 따라야 할 다양한 규칙이 있습니다.
 
-* 파일 이름을 바꿀 때는 `cq;`과(와) 같이 `cq5-publish-p4503.jar`(으)로 시작해야 합니다.
+* 파일 이름을 바꿀 때는 `cq5-publish-p4503.jar`과(와) 같이 `cq;`(으)로 시작해야 합니다.
 
 * cq5-publish-p4503.jar 또는 cq5-author-p6754.jar에서와 같이 *always*&#x200B;이(가) 포트 번호 접두사로 -p를 사용하는 것이 좋습니다.
 
@@ -126,7 +138,7 @@ AEM as a Windows 서비스를 설치하고 시작하려면 다음을 수행하�
 >
 >AEM as service를 설치할 때 Configuration Manager에서 `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm`의 로그 디렉터리에 대한 절대 경로를 제공해야 합니다.
 
-서비스를 제거하려면 **서비스** 제어판 또는 명령줄에서 **중지**&#x200B;를 클릭하고 폴더로 이동한 다음 `instsrv.bat -uninstall cq5`을(를) 입력하십시오. **을(를) 입력하면**&#x200B;서비스`net start` 제어판의 목록 또는 명령줄의 목록에서 서비스가 제거됩니다.
+서비스를 제거하려면 **서비스** 제어판 또는 명령줄에서 **중지**&#x200B;를 클릭하고 폴더로 이동한 다음 `instsrv.bat -uninstall cq5`을(를) 입력하십시오. `net start`을(를) 입력하면 **서비스** 제어판의 목록 또는 명령줄의 목록에서 서비스가 제거됩니다.
 
 ## 임시 작업 디렉터리 위치 재정의 {#redefining-the-location-of-the-temporary-work-directory}
 
@@ -334,7 +346,7 @@ AEM WCM이 시작되면 다음에 액세스할 수도 있습니다.
 
 ### CRXDE Lite 액세스 {#accessing-crxde-lite}
 
-CRXDE Lite 시작 화면에서 **CRXDE Lite**&#x200B;을(를) 선택하거나 브라우저를 사용하여 다음 위치로 이동할 수 있습니다.
+시작 화면에서 **CRXDE Lite**&#x200B;을(를) 선택하거나 브라우저를 사용하여 다음 위치로 이동할 수 있습니다.
 
 ```
  https://<host>:<port>/crx/de/index.jsp

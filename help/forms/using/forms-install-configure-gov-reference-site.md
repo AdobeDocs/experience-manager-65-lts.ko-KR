@@ -7,13 +7,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
-source-git-commit: 51342861dd01e659999c19fbe0274e8d3cbcf8c4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4746'
+source-wordcount: '4751'
 ht-degree: 3%
-
 ---
-
 # We.Gov 및 We-Finance 참조 사이트 설정 및 구성 {#set-up-and-configure-we-gov-reference-site}
 
 ## 데모 패키지 세부 정보 {#demo-package-details}
@@ -47,21 +65,21 @@ ht-degree: 3%
 
 * **we-gov-forms.pkg.all-&lt;version>.zip** - *데모 패키지 완료*
 
-   * **we-gov-forms.ui.apps-&lt;version>.zip** *- 모든 구성 요소, 클라이언트 라이브러리, 샘플 사용자, 워크플로 모델 등을 포함합니다.*
+  * **we-gov-forms.ui.apps-&lt;version>.zip** *- 모든 구성 요소, 클라이언트 라이브러리, 샘플 사용자, 워크플로 모델 등을 포함합니다.*
 
-      * **we-gov-forms.core-&lt;version>.jar** - *모든 OSGI 서비스, 사용자 지정 워크플로 단계 구현 등을 포함합니다.*
+    * **we-gov-forms.core-&lt;version>.jar** - *모든 OSGI 서비스, 사용자 지정 워크플로 단계 구현 등을 포함합니다.*
 
-      * **we-gov-forms.derby&lt;version>.jar** - *모든 OSGI 서비스, 데이터베이스 스키마 등을 포함합니다.*
+    * **we-gov-forms.derby&lt;version>.jar** - *모든 OSGI 서비스, 데이터베이스 스키마 등을 포함합니다.*
 
-      * **core.wcm.components.all-2.0.4.zip** - *샘플 WCM 구성 요소 컬렉션*
+    * **core.wcm.components.all-2.0.4.zip** - *샘플 WCM 구성 요소 컬렉션*
 
-      * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *사이트 페이지 열 컨트롤에 대한 AEM Sites 그리드 레이아웃 패키지*
+    * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *사이트 페이지 열 컨트롤에 대한 AEM Sites 그리드 레이아웃 패키지*
 
-   * **we-gov-forms.ui.content-&lt;version>.zip** - *모든 콘텐츠, 페이지, 이미지, 양식, 대화형 통신 자산 등을 포함합니다.*
+  * **we-gov-forms.ui.content-&lt;version>.zip** - *모든 콘텐츠, 페이지, 이미지, 양식, 대화형 통신 자산 등을 포함합니다.*
 
-   * **we-gov-forms.ui.analytics-&lt;version>.zip** - *리포지토리 내에 저장할 모든 We.Gov Forms Analytics 데이터를 포함합니다.*
+  * **we-gov-forms.ui.analytics-&lt;version>.zip** - *리포지토리 내에 저장할 모든 We.Gov Forms Analytics 데이터를 포함합니다.*
 
-   * **we-gov-forms.config.public-&lt;version>.zip** - *양식 데이터 모델 및 서비스 바인딩 문제를 방지하는 데 도움이 되는 자리 표시자 클라우드 구성을 포함한 모든 기본 구성 노드를 포함합니다.*
+  * **we-gov-forms.config.public-&lt;version>.zip** - *양식 데이터 모델 및 서비스 바인딩 문제를 방지하는 데 도움이 되는 자리 표시자 클라우드 구성을 포함한 모든 기본 구성 노드를 포함합니다.*
 
 이 패키지에 포함된 자산은 다음과 같습니다.
 
@@ -228,13 +246,13 @@ ht-degree: 3%
 **참조:**
 
 1. [® Dynamics OData 구성](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [AEM Forms용 Microsoft® Dynamics 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
+1. [AEM Forms용 Microsoft® Dynamics 구성](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### MS® Dynamics OData 클라우드 서비스 {#ms-dynamics-odata-cloud-service}
 
 1. 다음으로 이동합니다.
 
-   https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://<aemserver>:<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. MS® Dynamics 응용 프로그램 등록에 구성된 것과 동일한 리디렉션 URL을 사용하여 서버에 액세스하는지 확인하십시오.
 
@@ -483,13 +501,13 @@ Adobe Forms을 사용하여 AEM Forms을 설치하고 구성하려면 변환 도
 
 추가 지침을 읽기 전에 다음 사항을 검토하십시오.
 
-* [자동 양식 전환 서비스 구성](https://experienceleague.adobe.com/ko/docs/aem-forms-automated-conversion-service/using/configure-service#)
+* [자동 양식 전환 서비스 구성](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#)
 
 #### IMS 구성 만들기 - 1부 {#creating-ims-config}
 
 양식 전환 도구와 올바로 통신하도록 서비스를 구성하십시오. 사용자는 Identity Management에 등록할 수 있도록 IMS(Adobe I/O 시스템) 서비스를 구성해야 합니다.
 
-1. https://&lt;aemserver>:&lt;port> > Adobe Experience로 이동합니다.
+1. https://<aemserver>:<port> > Adobe Experience로 이동합니다.
 왼쪽 상단의 관리자 > 도구 > 보안 > Adobe IMS 구성.
 
 1. 만들기를 클릭합니다.
@@ -582,7 +600,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 검토할 수 있습
 
 1. 이 구성의 경우 두 확인란 값은 비워두었습니다.
 
-   이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://experienceleague.adobe.com/ko/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)을 참조하세요.
+   이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)을 참조하세요.
 
 #### 클라우드 구성(`We.Finance` AFC 프로덕션) 구성 {#configure-cloud-configuration-wefinance}
 
@@ -612,7 +630,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 만들 수 있습니
 
 1. 이 구성의 경우 두 확인란 값은 비워두었습니다.
 
-   * 이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://experienceleague.adobe.com/ko/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)을 참조하십시오.
+   * 이러한 옵션에 대한 자세한 내용은 [클라우드 서비스 구성](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service)을 참조하십시오.
 
 #### 양식 전환 테스트(We.Gov 등록 애플리케이션) {#test-forms-conversion}
 
@@ -652,7 +670,7 @@ IMS 구성이 완료되면 AEM에서 클라우드 구성을 만들 수 있습니
 
 #### 알려진 문제 및 참고 사항 {#known-issues-notes}
 
-자동 양식 전환 서비스에는 특정 [모범 사례, 알려진 복잡한 패턴](https://experienceleague.adobe.com/ko/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) 및 [알려진 문제](https://experienceleague.adobe.com/ko/docs/aem-forms-automated-conversion-service/using/known-issues#)가 포함됩니다. AEM Forms 자동 양식 전환 서비스 사용을 시작하기 전에 이 정보를 검토하십시오.
+자동 양식 전환 서비스에는 특정 [모범 사례, 알려진 복잡한 패턴](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) 및 [알려진 문제](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/known-issues#)가 포함됩니다. AEM Forms 자동 양식 전환 서비스 사용을 시작하기 전에 이 정보를 검토하십시오.
 
 1. 전환 후 양식을 FDM에 바인딩하려면 데이터 바인딩 없이 적응형 양식 생성을 활성화하여 양식을 생성합니다.
 

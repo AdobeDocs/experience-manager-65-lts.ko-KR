@@ -1,5 +1,5 @@
 ---
-title: JSON 형식으로 페이지 정보 가져오기
+title: JSON 형식으로 페이지 정보 얻기
 description: 페이지 정보를 얻으려면 PageInfo 서블릿에 요청을 전송하여 JSON 형식으로 페이지 메타데이터를 얻습니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6c54197f-86da-41bd-93e6-ee78ece91013
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 1%
-
+source-wordcount: '951'
+ht-degree: 3%
 ---
-
-# JSON 형식으로 페이지 정보 가져오기{#obtaining-page-information-in-json-format}
+# JSON 형식으로 페이지 정보 얻기{#obtaining-page-information-in-json-format}
 
 페이지 정보를 얻으려면 PageInfo 서블릿에 요청을 전송하여 JSON 형식으로 페이지 메타데이터를 얻습니다.
 

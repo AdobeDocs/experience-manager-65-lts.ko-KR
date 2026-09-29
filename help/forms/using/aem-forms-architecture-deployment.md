@@ -9,20 +9,34 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 1%
-
 ---
-
 # AEM Forms의 아키텍처 및 배포 토폴로지 {#architecture-and-deployment-topologies-for-aem-forms}
 
 ## 적용 대상 {#applies-to}
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html?lang=ko)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html)를 참조하십시오.
 
 ## 아키텍처 {#architecture}
 
@@ -36,9 +50,9 @@ AEM Forms용 아키텍처에는 다음 구성 요소가 포함되어 있습니�
 * **Forms 서비스:** PDF 문서 만들기, 조합, 배포, 보관, 디지털 서명을 추가하여 문서에 대한 액세스를 제한하고 바코드 형식을 디코딩하는 등 양식 관련 기능을 제공합니다. 이러한 서비스는 AEM에 공동 배포된 사용자 지정 코드에서 공개적으로 사용할 수 있습니다.
 * **웹 계층:** 다음 기능을 제공하는 일반 및 양식 서비스를 통해 빌드된 JSP 또는 서블릿입니다.
 
-   * **작성 프론트엔드**: 양식을 작성 및 관리하기 위한 양식 작성 및 양식 관리 사용자 인터페이스입니다.
-   * **양식 렌디션 및 제출 프론트엔드**: AEM Forms의 최종 사용자(예: 정부 웹 사이트에 액세스하는 사용자)가 사용할 최종 사용자 대면 인터페이스입니다. 이렇게 하면 양식 렌디션(웹 브라우저에 양식 표시) 및 제출 기능이 제공됩니다.
-   * **REST API**: JSP 및 서블릿은 forms mobile SDK과 같은 HTTP 기반 클라이언트의 원격 사용을 위해 양식 서비스의 하위 집합을 내보냅니다.
+  * **작성 프론트엔드**: 양식을 작성 및 관리하기 위한 양식 작성 및 양식 관리 사용자 인터페이스입니다.
+  * **양식 렌디션 및 제출 프론트엔드**: AEM Forms의 최종 사용자(예: 정부 웹 사이트에 액세스하는 사용자)가 사용할 최종 사용자 대면 인터페이스입니다. 이렇게 하면 양식 렌디션(웹 브라우저에 양식 표시) 및 제출 기능이 제공됩니다.
+  * **REST API**: JSP 및 서블릿은 forms mobile SDK과 같은 HTTP 기반 클라이언트의 원격 사용을 위해 양식 서비스의 하위 집합을 내보냅니다.
 
 **OSGi의 AEM Forms:** OSGi 환경의 AEM Forms은 AEM Forms 패키지가 배포된 표준 AEM 작성자 또는 AEM 게시입니다. [단일 서버 환경, 팜 및 클러스터된 설정](/help/sites-deploying/recommended-deploys.md)에서 OSGi에서 AEM Forms을 실행할 수 있습니다. 클러스터 설정은 AEM 작성자 인스턴스에만 사용할 수 있습니다.
 

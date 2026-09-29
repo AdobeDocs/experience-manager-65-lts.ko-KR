@@ -10,13 +10,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 8f504453-1009-46d9-83a5-d4a8531d7e2c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 0%
-
+source-wordcount: '295'
+ht-degree: 4%
 ---
-
 # AEM Forms 앱에서 자동 저장 사용{#using-autosave-in-aem-forms-app}
 
 사용자가 Adobe Experience Manager Forms 앱에 데이터를 입력하면 자동 저장 기능이 정기적으로 데이터를 저장합니다. AEM Forms 앱의 자동 저장 기능을 사용하면 앱이 실수로 닫힌 경우 데이터 손실을 방지할 수 있습니다.
@@ -41,5 +55,5 @@ AEM Forms 앱의 자동 저장 기능을 사용하려면 다음 단계를 수행
 
 1. 앱을 다시 시작하고 동일한 사용자로 로그인하면 [저장하지 않은 작업 복구] 대화 상자에서 작업을 복원하라는 메시지가 표시됩니다. 저장하지 않은 작업 복구 대화 상자에서 **확인**&#x200B;을 클릭하여 저장된 작업 작업을 다시 시작합니다. **취소**&#x200B;를 클릭하여 마지막으로 트리거된 자동 저장에 해당하는 저장된 데이터를 삭제하고 새 작업 작업을 시작할 수 있습니다.
 
-   **확인**&#x200B;을 클릭하면 앱이 충돌하기 전에 트리거된 최신 자동 저장에 해당하는 데이터로 작업이 복원됩니다. 여기에는 양식 데이터 및 작업과 연결된 모든 첨부 파일이 포함됩니다.
-   [![작업을 복구하고 있습니다&#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** 진행 중인 양식 **B.** 앱이 강제로 닫혔습니다. **C.** 앱이 [저장되지 않은 작업 복구] 대화 상자 **D.** 양식이 원본 데이터로 복구됨
+   **확인**을 클릭하면 앱이 충돌하기 전에 트리거된 최신 자동 저장에 해당하는 데이터로 작업이 복원됩니다. 여기에는 양식 데이터 및 작업과 연결된 모든 첨부 파일이 포함됩니다.
+   [![복구된 작업을 가져오는 중&#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** 진행 중인 작업 양식 **B.** 앱이 강제로 **C.** 앱을 닫았습니다. 저장하지 않은 작업 복구 대화 상자 **D.** 양식이 원본 데이터로 복원되었습니다.

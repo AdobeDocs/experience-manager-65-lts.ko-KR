@@ -9,13 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: eef69d02-2e88-4f44-98bb-d98fa297e3a2
-source-git-commit: ffb467630ee061bce5a9cab4e8a311e70b2aeb38
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 1%
-
 ---
-
 # AEM에서 직렬화 문제 완화{#mitigating-serialization-issues-in-aem}
 
 ## 개요 {#overview}
@@ -28,7 +40,7 @@ NotSoSerial은 Java™ 수준 문제에 대한 Java™ 수준 솔루션이며 AE
 
 기본적으로 에이전트는 현재 알려진 취약성 클래스에 대해 차단 목록에 추가하다 검사를 수행합니다. 이 차단 목록에 추가하다는 이러한 유형의 취약성 목록에서 여러분을 보호하기 위한 것입니다.
 
-이 문서의 [&#x200B; 에이전트 구성](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) 섹션에 따라 차단 목록에 추가하다 및 허용 목록에 추가하다를 구성할 수 있습니다.
+이 문서의 [ 에이전트 구성](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) 섹션에 따라 차단 목록에 추가하다 및 허용 목록에 추가하다를 구성할 수 있습니다.
 
 이 에이전트는 알려진 최신 취약한 계층을 완화하는 데 도움을 주기 위한 것입니다. 프로젝트가 신뢰할 수 없는 데이터를 역직렬화하는 경우에도 서비스 거부 공격, 메모리 부족 공격 및 알 수 없는 향후 역직렬화 공격에 취약할 수 있습니다.
 

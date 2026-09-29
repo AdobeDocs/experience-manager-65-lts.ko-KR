@@ -1,5 +1,5 @@
 ---
-title: 일반 설정 업데이트 중
+title: 일반 설정 업데이트
 description: 홈 화면과 같은 AEM Forms 앱 설정을 업데이트하고 시작 지점 및 첨부 파일 옵션 가져오기
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,28 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 735e4c4a-6580-4698-a1bf-75c4b1e47b5b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 1%
-
+source-wordcount: '392'
+ht-degree: 2%
 ---
-
-# 일반 설정 업데이트 중{#updating-general-settings}
+# 일반 설정 업데이트{#updating-general-settings}
 
 AEM Forms 앱의 일반 설정을 사용하면 첨부 파일 가져오기, 오프라인 모드, 랜딩 화면, 기본 범주 및 자동 저장 빈도 등의 설정을 지정할 수 있습니다.
 
@@ -50,9 +64,9 @@ AEM Forms 앱의 일반 설정을 사용하면 첨부 파일 가져오기, 오�
 * **랜딩 화면**: 앱의 시작 위치([홈 화면](../../forms/using/home-screen.md))를 설정합니다.
 사용 가능한 옵션:
 
-   * Forms
-   * 작업
-   * 즐겨찾기
+  * 양식
+  * 작업
+  * 즐겨찾기
 
 * **기본 범주**: 홈 화면에 표시할 양식의 범주를 선택할 수 있습니다. 모두 를 선택하면 홈 화면에 모든 양식을 볼 수 있습니다. 카테고리는 앱에 로드된 양식을 기반으로 채워집니다. Forms은 AEM Forms 서버에 지정된 양식 설정에 따라 앱에서 사용할 수 있습니다.
 

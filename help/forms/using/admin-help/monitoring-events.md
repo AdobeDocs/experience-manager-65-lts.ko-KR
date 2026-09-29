@@ -9,14 +9,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: cee9cce0-becd-4822-ac37-094d564f2289
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 94%
-
 ---
-
 # 이벤트 모니터링 {#monitoring-events}
 
 감사 기능이 활성화되면 문서 보안을 통해 특정 유형의 이벤트를 모니터링할 수 있습니다. 볼 수 있는 이벤트는 다음과 같은 역할에 따라 달라집니다.
@@ -62,7 +74,7 @@ ht-degree: 94%
 **이벤트 관련
 나에게 보내기:** 사용자는 자신이 만들거나 받은 정책으로 보호된 문서에 대한 이벤트를 찾을 수 있습니다. 예를 들어 사용자가 다른 사람이 보호한 문서를 열거나, 보거나, 인쇄하는 경우 사용자는 해당 문서에 대한 이벤트만 볼 수 있습니다.
 
-**내 문서와 관련된 이벤트:** 사용자가 자체 정책으로 보호된 문서와 관련된 모든 이벤트를 찾을 수 있습니다. 사용자는 해당 문서를 처리한 모든 사람에 의해 생성된 이벤트를 볼 수 있습니다.
+**내 문서와 관련된 이벤트:** 사용자가 자체 정책으로 보호된 문서와 관련된 모든 이벤트를 찾을 수 있습니다. 사용자는 자신의 문서를 처리한 모든 사람이 생성한 이벤트를 볼 수 있습니다.
 
 **정책 세트 코디네이터:** 정책 세트에서 정책으로 보호된 문서에 대한 감사 이벤트(문서 및 정책 이벤트 포함)를 볼 수 있습니다. 다음과 같은 옵션을 사용할 수 있습니다.
 
@@ -89,7 +101,7 @@ ht-degree: 94%
    * 알려진 사용자를 선택하면 두 번째 검색 상자가 표시되고 여기에 사용자의 사용자 이름 또는 이메일 주소를 입력해야 합니다.
    * 해당 값을 모르는 경우 주소록 검색 아이콘을 클릭하여 사용자 이름 또는 이메일 주소로 사용자를 검색하십시오.
 
-1. 일자 목록에서 일자 범위 옵션을 선택합니다. 사용자 정의 일자를 선택하면 상자가 나타나고 여기에 yyyy/mm/dd 형식으로 일자를 입력하거나 날짜 선택기를 사용하여 일자 범위를 지정할 수 있습니다.
+1. 일자 목록에서 날짜 범위 옵션을 선택합니다. 사용자 정의 일자를 선택하면 상자가 나타나고 여기에 yyyy/mm/dd 형식으로 일자를 입력하거나 날짜 선택기를 사용하여 일자 범위를 지정할 수 있습니다.
 
    * 캘린더를 클릭하여 날짜 선택기를 엽니다.
    * 화살표를 사용하여 연도와 월을 찾습니다.

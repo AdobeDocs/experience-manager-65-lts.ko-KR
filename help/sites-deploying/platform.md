@@ -5,13 +5,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Developer
 exl-id: c9ea613d-f1d1-49be-bd52-95d489442f46
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '786'
 ht-degree: 7%
-
 ---
-
 # AEM 플랫폼 소개{#introduction-to-the-aem-platform}
 
 AEM 6의 AEM 플랫폼은 Apache Jackrabbit Oak을 기반으로 합니다.
@@ -47,7 +59,7 @@ Oak 코어는 스토리지 레이어에 다음과 같은 여러 계층을 추가
 
 * 액세스 수준 제어
 * 검색 및 색인화
-* 관찰
+* 분석 결과
 
 ### OAK JS {#oak-jcr}
 

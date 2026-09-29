@@ -9,20 +9,35 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 45c6a654-c726-4a45-86a9-57f4ed24b4ca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 1%
-
+source-wordcount: '543'
+ht-degree: 3%
 ---
-
 # HTML5 양식용 양식 템플릿 렌더링 {#rendering-form-template-for-html-forms}
 
 ## 렌더링 끝점 {#render-endpoint}
 
 HTML5 forms에는 양식 서식 파일의 모바일 렌더링을 활성화하기 위해 REST 끝점으로 노출되는 **프로필** 개념이 있습니다. 이러한 프로필은 **프로필 렌더러**&#x200B;와(과) 연결되어 있습니다. Forms OSGi 서비스를 호출하여 양식의 HTML 표시를 생성하는 JSP 페이지입니다. 프로필 노드의 JCR 경로는 렌더링 끝점의 URL을 결정합니다. &#39;default&#39; 프로필을 가리키는 폼의 기본 렌더링 끝점은 다음과 같습니다.
 
-https://&lt;*host*>:&lt;*port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*양식 xdp*>&amp;template=&lt;*xdp*>이 포함된 폴더의 경로
+https://<*host*>:<*port*>/content/xfaforms/profiles/default.html?contentRoot=<*양식 xdp*>&template=<*xdp*>이 포함된 폴더의 경로
 
 예, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 

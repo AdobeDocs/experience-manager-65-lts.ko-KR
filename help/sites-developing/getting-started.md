@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: eac6c640-1c00-4fd9-9858-50fa2a0ea1ef
-source-git-commit: fa066f9b822f1d5883e79610b239b13224a62fe0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 80%
-
+source-wordcount: '253'
+ht-degree: 83%
 ---
-
 # AEM Sites 개발 시작하기 - WKND 튜토리얼{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## 개요 {#overview}
@@ -24,16 +33,16 @@ AEM 개발이 처음이십니까? 모범 사례에 리프레셔가 필요하십�
 
 ![WKND](assets/screen_shot_2018-11-23at152453.png)
 
-[WKND 개발자 튜토리얼은 여기에서 확인할 수 있고](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ko), 최신 기술 및 모범 사례를 통해 AEM 프로젝트를 만드는 과정을 안내합니다.
+[WKND 개발자 튜토리얼은 여기에서 확인할 수 있고](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), 최신 기술 및 모범 사례를 통해 AEM 프로젝트를 만드는 과정을 안내합니다.
 
 ## 핵심 개념 {#core-concepts}
 
 튜토리얼 구현은 여러 개의 강력한 AEM 기능을 사용합니다. 다음을 사용하여 사이트를 구현합니다.
 
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Sling 모델](https://sling.apache.org/documentation/bundles/models.html)
 * [Touch UI](/help/sites-developing/touch-ui-concepts.md)
-* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
+* [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [편집 가능한 템플릿](/help/sites-developing/page-templates-editable.md)
 
 위의 개념으로 자세히 들어가기 전에 자습서를 진행합니다.

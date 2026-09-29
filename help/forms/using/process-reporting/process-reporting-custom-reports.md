@@ -5,14 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5670fede-4567-445e-8eeb-84349405db0e
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 16%
-
 ---
-
 # 프로세스 보고의 사용자 정의 보고서{#custom-reports-in-process-reporting}
 
 QueryBuilder의 REST 인터페이스를 사용하거나 QueryBuilder API를 사용하여 OSGi 서비스를 만들어 사용자 지정 보고서를 만들 수 있습니다.
@@ -28,7 +43,7 @@ QueryBuilder의 REST 인터페이스를 사용하거나 QueryBuilder API를 사�
 
 ## QueryBuilder의 REST 인터페이스 사용 {#using-the-rest-interface-of-the-querybuilder}
 
-CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 공유 쿼리 빌더의 기능을 노출합니다. 다음 단계를 수행하기 전에 [CRX QueryBuilder REST 인터페이스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=ko)를 사용하는 방법을 알아보십시오.
+CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 공유 쿼리 빌더의 기능을 노출합니다. 다음 단계를 수행하기 전에 [CRX QueryBuilder REST 인터페이스](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)를 사용하는 방법을 알아보십시오.
 
 1. URL `https://'[server]:[port]'/lc/bin/querybuilder.json`(으)로 이동
 1. 프로세스 보고 저장 영역 노드 구조 및 노드 속성을 기반으로 쿼리를 만듭니다.
@@ -45,7 +60,7 @@ CRX QueryBuilder REST 인터페이스는 Java API 및 REST API를 통해 자산 
 
 ## Query Builder API를 사용하여 서비스 만들기  {#creating-a-service-using-query-builder-api-nbsp}
 
-Query Builder API를 사용하여 서비스를 만들기 위한 필수 조건은 [CQ OSGI 번들 만들기 및 배포](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 및 [Query Builder API 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=ko)입니다.
+Query Builder API를 사용하여 서비스를 만들기 위한 필수 조건은 [CQ OSGI 번들 만들기 및 배포](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR) 및 [Query Builder API 사용](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)입니다.
 
 1. 적절한 주석을 사용하여 OSGi 서비스를 만듭니다. QueryBuilder에 액세스하려면 다음을 사용합니다.
 
@@ -61,7 +76,7 @@ Query Builder API를 사용하여 서비스를 만들기 위한 필수 조건은
     predicateGroup.setAllRequired(true);
    ```
 
-1. 새로 생성된 predicateGroup에 술어를 추가합니다. 몇 가지 유용한 조건자 구문은 [5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 JcrBoolPropertyPredicateEvaluator, 5.3[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [JcrPropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [RangePropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [DateRangePredicateEvaluator 및 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 TypePredicateEvaluator입니다.
+1. 새로 생성된 predicateGroup에 술어를 추가합니다. 몇 가지 유용한 조건자 구문은 [5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 JcrBoolPropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [JcrPropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [RangePropertyPredicateEvaluator, 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [DateRangePredicateEvaluator 및 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ko-KR)의 [TypePredicateEvaluator입니다.
 
    정적 보고서의 경우 술어를 하드코딩하지만 동적 보고서의 경우 요청에서 술어를 가져옵니다.
 
@@ -639,7 +654,7 @@ response.setCharacterEncoding("utf-8");
    * **설명**- 보고서에 대한 한 줄 설명을 지정합니다. 설명 필드를 비워 둘 수 있습니다.
    * **icon**- 보고서를 그림으로 나타낼 이미지를 지정합니다. 아이콘 필드를 비워 둘 수 있습니다.
 
-   ![&#128279;](assets/node_properties_new.png) 노드의 속성
+   ](assets/node_properties_new.png) 노드의 ![속성
 
    노드 속성
 

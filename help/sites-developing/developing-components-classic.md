@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d44e6ea8-b4e5-4ed7-a6d0-de1da2709e18
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 1%
-
+source-wordcount: '2446'
+ht-degree: 2%
 ---
-
 # Adobe Experience Manager(AEM) 구성 요소 개발(클래식 UI){#developing-aem-components-classic-ui}
 
 클래식 UI는 ExtJS를 사용하여 구성 요소의 디자인을 제공하는 위젯을 만듭니다. 이러한 위젯의 특성으로 인해 구성 요소가 클래식 UI와 [터치 사용 UI](/help/sites-developing/developing-components.md)와 상호 작용하는 방법에는 몇 가지 차이점이 있습니다.
@@ -29,7 +38,7 @@ ht-degree: 1%
 >
 >HTML 템플릿 언어(HTL)와 JSP를 모두 클래식 UI에 대한 구성 요소 개발에 사용할 수 있지만, 이 페이지에서는 JSP를 사용한 개발을 보여 줍니다. 이는 전적으로 클래식 UI 내에서 JSP를 사용한 내역이 원인입니다.
 >
->이제 HTL이 AEM에 권장되는 스크립팅 언어입니다. 메서드를 비교하려면 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko) 및 [AEM 구성 요소 개발](/help/sites-developing/developing-components.md)을 참조하십시오.
+>이제 HTL이 AEM에 권장되는 스크립팅 언어입니다. 메서드를 비교하려면 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 및 [AEM 구성 요소 개발](/help/sites-developing/developing-components.md)을 참조하십시오.
 
 ## 구조 {#structure}
 
@@ -63,20 +72,20 @@ JSP 스크립트 파일 `global.jsp`은(는) 구성 요소를 렌더링하는 �
 
 * `<cq:defineObjects />`
 
-   * `slingRequest` - 래핑된 요청 개체( `SlingHttpServletRequest`).
-   * `slingResponse` - 래핑된 응답 개체( `SlingHttpServletResponse`).
-   * `resource` - Sling 리소스 개체( `slingRequest.getResource();`)입니다.
-   * `resourceResolver` - Sling Resource Resolver 개체( `slingRequest.getResoucreResolver();`)입니다.
-   * `currentNode` - 요청에 대해 확인된 JCR 노드입니다.
-   * `log` - 기본 로거().
-   * `sling` - Sling 스크립트 도우미입니다.
-   * `properties` - 주소가 지정된 리소스(`resource.adaptTo(ValueMap.class);`)의 속성입니다.
-   * `pageProperties` - 주소가 지정된 리소스의 페이지 속성입니다.
-   * `pageManager` - AEM 콘텐츠 페이지에 액세스하기 위한 페이지 관리자(`resourceResolver.adaptTo(PageManager.class);`)입니다.
-   * `component` - 현재 AEM 구성 요소의 구성 요소 개체입니다.
-   * `designer` - 디자인 정보를 검색하기 위한 Designer 개체(`resourceResolver.adaptTo(Designer.class);`)입니다.
-   * `currentDesign` - 주소가 지정된 리소스의 디자인입니다.
-   * `currentStyle` - 주소가 지정된 리소스의 스타일입니다.
+  * `slingRequest` - 래핑된 요청 개체( `SlingHttpServletRequest`).
+  * `slingResponse` - 래핑된 응답 개체( `SlingHttpServletResponse`).
+  * `resource` - Sling 리소스 개체( `slingRequest.getResource();`)입니다.
+  * `resourceResolver` - Sling Resource Resolver 개체( `slingRequest.getResoucreResolver();`)입니다.
+  * `currentNode` - 요청에 대해 확인된 JCR 노드입니다.
+  * `log` - 기본 로거().
+  * `sling` - Sling 스크립트 도우미입니다.
+  * `properties` - 주소가 지정된 리소스(`resource.adaptTo(ValueMap.class);`)의 속성입니다.
+  * `pageProperties` - 주소가 지정된 리소스의 페이지 속성입니다.
+  * `pageManager` - AEM 콘텐츠 페이지에 액세스하기 위한 페이지 관리자(`resourceResolver.adaptTo(PageManager.class);`)입니다.
+  * `component` - 현재 AEM 구성 요소의 구성 요소 개체입니다.
+  * `designer` - 디자인 정보를 검색하기 위한 Designer 개체(`resourceResolver.adaptTo(Designer.class);`)입니다.
+  * `currentDesign` - 주소가 지정된 리소스의 디자인입니다.
+  * `currentStyle` - 주소가 지정된 리소스의 스타일입니다.
 
 ### 컨텐츠 액세스 {#accessing-content}
 
@@ -164,8 +173,8 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
    * 대화 상자에 필드 추가
 
-      * `cq:dialog` - 터치 사용 UI에 대한 대화 상자
-      * `dialog` - 클래식 UI 대화 상자
+     * `cq:dialog` - 터치 사용 UI에 대한 대화 상자
+     * `dialog` - 클래식 UI 대화 상자
 
    * `.jsp` 파일 바꾸기(새 구성 요소 뒤에 이름 지정)
    * 또는 원하는 경우 전체 구성 요소를 완전히 다시 작업
@@ -278,16 +287,16 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
    * 구성 요소 이름
 
-      * `jcr:description`을(를) `Text Image Component (Extended)`(으)로 설정
-      * `jcr:title`을(를) `Text Image (Extended)`(으)로 설정
+     * `jcr:description`을(를) `Text Image Component (Extended)`(으)로 설정
+     * `jcr:title`을(를) `Text Image (Extended)`(으)로 설정
 
    * 구성 요소가 사이드 킥에 나열되는 그룹(그대로 유지)
 
-      * `componentGroup`을(를) `General`(으)로 설정
+     * `componentGroup`을(를) `General`(으)로 설정
 
    * 새 구성 요소의 상위 구성 요소(표준 Textimage 구성 요소)
 
-      * `sling:resourceSuperType`을(를) `foundation/components/textimage`(으)로 설정
+     * `sling:resourceSuperType`을(를) `foundation/components/textimage`(으)로 설정
 
    이 단계 후에 구성 요소 노드는 다음과 같이 표시됩니다.
 
@@ -305,24 +314,24 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
 
    * 처음 두 탭(tab1 및 tab2)의 경우:
 
-      * xtype을 cqinclude(표준 구성 요소에서 상속)로 변경합니다.
-      * 각각 값이 `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` 및 `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`인 경로 속성을 추가하십시오.
-      * 다른 모든 속성 또는 하위 노드를 제거합니다.
+     * xtype을 cqinclude(표준 구성 요소에서 상속)로 변경합니다.
+     * 각각 값이 `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` 및 `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`인 경로 속성을 추가하십시오.
+     * 다른 모든 속성 또는 하위 노드를 제거합니다.
 
    * Tab3의 경우:
 
-      * 속성 및 하위 노드를 변경하지 않고 그대로 둡니다.
-      * `tab3/items`, `cq:Widget` 유형의 노드 위치에 필드 정의 추가
-      * 새 `tab3/items/position`노드에 대해 다음 속성(문자열 유형)을 설정합니다.
+     * 속성 및 하위 노드를 변경하지 않고 그대로 둡니다.
+     * `tab3/items`, `cq:Widget` 유형의 노드 위치에 필드 정의 추가
+     * 새 `tab3/items/position`노드에 대해 다음 속성(문자열 유형)을 설정합니다.
 
-         * `name`: `./imagePosition`
-         * `xtype`: `selection`
-         * `fieldLabel`: `Image Position`
-         * `type`: `select`
+       * `name`: `./imagePosition`
+       * `xtype`: `selection`
+       * `fieldLabel`: `Image Position`
+       * `type`: `select`
 
-      * 이미지 배치에 대한 두 가지 선택 사항을 나타내려면 `cq:WidgetCollection` 유형의 하위 노드 `position/options`을(를) 추가하고 그 아래에 `nt:unstructured` 유형의 o1 및 o2인 두 개의 노드를 만듭니다.
-      * `position/options/o1` 노드의 경우 `text`을(를) `Left`(으)로, `value`을(를) `left.`(으)로 설정합니다.
-      * `position/options/o2` 노드의 경우 `text`을(를) `Right`(으)로, `value`을(를) `right`(으)로 설정합니다.
+     * 이미지 배치에 대한 두 가지 선택 사항을 나타내려면 `cq:WidgetCollection` 유형의 하위 노드 `position/options`을(를) 추가하고 그 아래에 `nt:unstructured` 유형의 o1 및 o2인 두 개의 노드를 만듭니다.
+     * `position/options/o1` 노드의 경우 `text`을(를) `Left`(으)로, `value`을(를) `left.`(으)로 설정합니다.
+     * `position/options/o2` 노드의 경우 `text`을(를) `Right`(으)로, `value`을(를) `right`(으)로 설정합니다.
 
    * Tab4를 삭제합니다.
 

@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: fd7199ca5efa15df0fd014b7a0cfc52cbd7173fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2078'
 ht-degree: 58%
-
 ---
-
 # 변형 - 조각 콘텐츠 작성{#variations-authoring-fragment-content}
 
 [변형](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)은(는) AEM 콘텐츠 조각의 중요한 기능으로, 특정 채널 및/또는 시나리오에서 사용할 마스터 콘텐츠의 사본을 만들고 편집할 수 있기 때문에 headless 콘텐츠 전달을 보다 유연하게 해 줍니다.

@@ -1,23 +1,32 @@
 ---
-title: ' [!DNL Workfront for Experience Manager enhanced connector] 구성'
-description: ' [!DNL Workfront for Experience Manager enhanced connector] 구성'
+title: 구성 [!DNL Workfront for Experience Manager enhanced connector]
+description: 구성 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 810be820-b577-4035-9fda-3d919361c58c
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 1%
-
 ---
-
 # 구성 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Experience Manager]에서 관리자 액세스 권한이 있는 사용자가 향상된 커넥터를 설치한 후 구성합니다. 설치 지침은 [커넥터 설치](/help/assets/workfront-integrations.md)를 참조하십시오.
@@ -123,23 +132,23 @@ Adobe Workfront 문서와 Assets 간의 메타데이터 매핑은 AEM 메타데�
 
 * `workfront-field`은(는) 다음과 같을 수 있습니다
 
-   * 접두사 `DE:`(으)로 식별된 사용자 정의 양식 필드.
-   * 이름으로 식별되는 편집 가능한 필드. 필드 이름이 [[!DNL Workfront] API 탐색기](https://experience.workfront.com/s/api-explorer)에 있습니다.
+  * 접두사 `DE:`(으)로 식별된 사용자 정의 양식 필드.
+  * 이름으로 식별되는 편집 가능한 필드. 필드 이름이 [[!DNL Workfront] API 탐색기](https://experience.workfront.com/s/api-explorer)에 있습니다.
 
 * `aem-mapped-property`는 다음과 같습니다.
 
-   * 리터럴 값. 따옴표로 묶어야 합니다.
-   * AEM 속성. 이 참조는 워크플로우 페이로드에 상대적이어야 합니다.
-   * 명명된 값입니다. 이러한 요소는 괄호로 묶어야 합니다.
-   * 위의 3개 항목의 연결입니다. `{+}`을(를) 사용하여 지정하십시오.
-   * 값을 `{replace(<value>,"old-char","new-char")}`(으)로 둘러싸서 위의 3개 항목을 변경하는 것입니다.
+  * 리터럴 값. 따옴표로 묶어야 합니다.
+  * AEM 속성. 이 참조는 워크플로우 페이로드에 상대적이어야 합니다.
+  * 명명된 값입니다. 이러한 요소는 괄호로 묶어야 합니다.
+  * 위의 3개 항목의 연결입니다. `{+}`을(를) 사용하여 지정하십시오.
+  * 값을 `{replace(<value>,"old-char","new-char")}`(으)로 둘러싸서 위의 3개 항목을 변경하는 것입니다.
 
 * 예를 들면 다음과 같습니다.
 
-   * `status="INP"`
-   * `DE:Asset Type=jcr:content/metadata/assetType`
-   * `DE:Path={path}`
-   * `URL="https://my-aem-author/assets.html"{+}{path}`
+  * `status="INP"`
+  * `DE:Asset Type=jcr:content/metadata/assetType`
+  * `DE:Path={path}`
+  * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![속성을 매핑하는 구성](/help/assets/assets/wf-map-property-config.png)
 
@@ -205,4 +214,4 @@ Experience Manager의 워크플로 편집기에서 [!UICONTROL Workfront - 사�
 
 [!DNL Workfront] 문서 사용자 정의 양식의 변경 내용을 구독하려면 **[!UICONTROL 고급]** 탭에서 관련 옵션을 선택하십시오. 이 업데이트를 구독하면 [!DNL Workfront] 문서 사용자 지정 양식의 해당 필드가 변경될 때 매핑된 [!DNL Experience Manager] 메타데이터 필드가 업데이트됩니다.
 
-[!DNL Experience Manager]![&#128279;](/help/assets/assets/wf-custom-form-update.png)의 Workfront 문서 사용자 지정 양식 업데이트 구성
+[!DNL Experience Manager]](/help/assets/assets/wf-custom-form-update.png)의 ![Workfront 문서 사용자 지정 양식 업데이트 구성

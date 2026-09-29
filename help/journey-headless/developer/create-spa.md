@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
 exl-id: 47e73efa-997d-44d9-bb41-6f550eac137a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 76%
-
+source-wordcount: '1281'
+ht-degree: 75%
 ---
-
 # AEM을 통해 단일 페이지 애플리케이션(SPA)을 제작하는 방법 {#create-spa}
 
 [AEM Headless 개발자 여정의 선택적 연속](overview.md)에서 Adobe Experience Manager(AEM)가 Headless 전달을 기존의 전체 스택 CMS 기능과 결합하는 방법과 AEM의 SPA 편집기 프레임워크를 사용하여 편집 가능한 SPA를 만들고 외부 SPA를 통합하여 필요에 따라 편집 기능을 활성화하는 방법에 대해 알아봅니다.
@@ -61,7 +77,7 @@ AEM에서 SPA로 작업을 시작하기 전에 알아 두어야 할 여러 요�
 
 ## SPA란 무엇입니까? {#what-is-a-spa}
 
-단일 페이지 애플리케이션(SPA)은 데이터를 로드하여 페이지를 동적으로 업데이트하는 Ajax 호출을 통해 클라이언트측에서 렌더링되고 주로 JavaScript를 기반으로 하는 기존 페이지와 다릅니다. 페이지와의 사용자 상호 작용을 기반으로 필요에 따라 대부분의 콘텐츠나 모든 콘텐츠를 추가 리소스가 비동기적으로 로드된 단일 페이지 로드에서 한 번 검색합니다.
+단일 페이지 애플리케이션(SPA)은 데이터를 로드하여 페이지를 동적으로 업데이트하는 Ajax 호출을 통해 클라이언트측에서 렌더링되고 주로 JavaScript를 기반으로 하는 기존 페이지와 다릅니다. 대부분 또는 모든 콘텐츠는 단일 페이지 로드에서 한 번 검색되며, 추가 리소스는 페이지와의 사용자 상호 작용에 따라 필요에 따라 비동기적으로 로드됩니다.
 
 이렇게 하면 페이지 새로 고침의 필요성이 줄어들고 사용자에게 원활하고 빠르며 기본 앱 환경과 같은 경험을 제공할 수 있습니다.
 
@@ -124,9 +140,9 @@ AEM에서 SPA 주제에 대해 자세히 살펴볼 수 있는 [추가 리소스]
 다음은 이 문서에서 언급한 몇 가지 개념에 대해 자세히 설명하는 몇 가지 추가 리소스입니다.
 
 * [AEM Headful 및 Headless](/help/sites-developing/headful-headless.md) - AEM에 제공되는 다른 게재 모델에 대한 설명
-* [SPA 소개 및 워크스루.](/help/sites-developing/spa-walkthrough.md) - AEM의 SPA에 대한 소개
+* [SPA 소개 및 연습.](/help/sites-developing/spa-walkthrough.md) - AEM의 SPA에 대한 좋은 소개
 * [AEM용 SPA 개발](/help/sites-developing/spa-architecture.md) - AEM용 SPA를 개발하는 방법에 대한 지침
 * [SPA 편집기 개요](/help/sites-developing/spa-overview.md) - SPA 편집기의 작동 방식에 대한 세부 정보
 * [SPA 참조 문서](/help/sites-developing/spa-reference-materials.md) - 오픈 소스 AEM SPA GitHub 프로젝트에 대한 JavaScript API 참조 및 링크
 * [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md) - 콘텐츠 조각을 만드는 방법
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko) - Adobe Experience Manager(AEM) 프로젝트를 웹 사이트 시작 지점으로 만드는 최소한의 모범 사례 기반 Maven 템플릿
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Adobe Experience Manager(AEM) 프로젝트를 웹 사이트 시작 지점으로 만드는 최소한의 모범 사례 기반 Maven 템플릿

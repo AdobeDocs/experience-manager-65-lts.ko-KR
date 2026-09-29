@@ -9,13 +9,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 55d4f34c-6766-48b7-86a1-689901e8871f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '718'
 ht-degree: 1%
-
 ---
-
 # 웹 콘솔{#web-console}
 
 Adobe Experience Manager(AEM)의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)을 기반으로 합니다. Apache Felix는 OSGi 프레임워크 및 표준 서비스를 포함하는 OSGi R4 서비스 플랫폼을 구현하기 위한 커뮤니티 작업입니다.
@@ -65,8 +74,8 @@ Adobe Experience Manager(AEM)의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](
 * **구성**
 기존 구성을 업데이트할 수 있습니다. 영구 ID(PID)가 있으며 다음 중 하나일 수 있습니다.
 
-   * standard 및 AEM에 대한 정수. 값을 삭제하면 기본 설정으로 돌아갑니다.
-   * 출하 시 구성에서 생성된 인스턴스: 이 인스턴스는 사용자가 생성하고, 삭제하면 인스턴스가 제거됩니다.
+  * standard 및 AEM에 대한 정수. 값을 삭제하면 기본 설정으로 돌아갑니다.
+  * 출하 시 구성에서 생성된 인스턴스: 이 인스턴스는 사용자가 생성하고, 삭제하면 인스턴스가 제거됩니다.
 
 * **팩터리 구성**
 필요한 기능 개체의 인스턴스를 만들 수 있습니다.
@@ -151,7 +160,7 @@ Adobe Experience Manager(AEM)의 웹 콘솔은 [Apache Felix 웹 관리 콘솔](
 
 >[!NOTE]
 >
->Adobe **업데이트** 후에는 **패키지 새로 고침**&#x200B;을 수행하는 것이 좋습니다.
+>**업데이트** 후에는 **패키지 새로 고침**&#x200B;을 수행하는 것이 좋습니다.
 
 ## 구성 요소 {#components}
 

@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 워크플로우에서 로그인
+title: AEM Forms 워크플로 로그인
 description: AEM Forms 워크플로우 문제를 디버깅하고 AEM Forms 워크플로우에 대한 디버그 로깅을 활성화하여 로그를 보는 방법에 대해 알아봅니다.
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,28 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 90a44cab-3ecf-4a71-95d4-e8ce2d996980
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 5%
-
+source-wordcount: '293'
+ht-degree: 8%
 ---
-
-# AEM Forms 워크플로우에서 로그인{#logging-in-aem-forms-workflows}
+# AEM Forms 워크플로 로그인{#logging-in-aem-forms-workflows}
 
 Forms Workflow 단계는 워크플로우 관련 문제를 편리하게 디버깅하기 위한 자세한 로그를 제공합니다. AEM Forms 워크플로우에 대한 디버그 로깅을 활성화하여 로그를 봅니다.
 
@@ -81,7 +95,7 @@ AEM Forms 워크플로우에 대한 디버그 로깅을 활성화할 수 있도�
 
 1. 다음 위치에서 AEM 웹 콘솔 구성 관리자로 이동합니다.
 
-   https://&#39;[서버]:[포트]&#39;/system/console/configMgr
+   https://'[서버]:[포트]'/system/console/configMgr
 
 1. **[!UICONTROL Sling]** > **[!UICONTROL 지원 로그]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 새 로거 추가]**&#x200B;를 선택합니다.

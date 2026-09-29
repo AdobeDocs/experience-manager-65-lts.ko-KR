@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 78c5486c-ed84-4ec8-b0b0-42d4e8611098
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 7%
-
 ---
-
 # 소극적 콘텐츠 마이그레이션 {#lazy-content-migration}
 
 이전 버전과의 호환성을 위해 Adobe Experience Manager(AEM) 6.3으로 시작하는 **/etc** 및 **/content**&#x200B;의 콘텐츠 및 구성은 업그레이드 즉시 터치하거나 변형되지 않습니다. 이는 이러한 구조에 대한 고객 애플리케이션의 종속성이 그대로 유지되도록 하기 위한 것입니다. 기본 제공 AEM 6.5의 컨텐츠가 다른 위치에서 호스팅되더라도 이러한 컨텐츠 구조와 관련된 기능은 여전히 동일합니다.

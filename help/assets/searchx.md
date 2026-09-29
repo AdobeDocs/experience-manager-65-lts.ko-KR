@@ -1,18 +1,27 @@
 ---
 title: 검색 기능 확장
-description: ' [!DNL Adobe Experience Manager Assets] 의 검색 기능을 기본값 이상으로 확장합니다.'
+description: '[!DNL Adobe Experience Manager Assets]의 검색 기능을 기본값 이상으로 확장합니다.'
 contentOwner: AG
 role: Developer
 feature: Search
 solution: Experience Manager, Experience Manager Assets
 exl-id: 92efe52b-8fa5-4006-bd68-2472b4ba04f6
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 16%
-
+source-wordcount: '827'
+ht-degree: 7%
 ---
-
 # 에셋 검색 확장 {#extending-assets-search}
 
 [!DNL Adobe Experience Manager Assets] 검색 기능을 확장할 수 있습니다. 기본적으로 [!DNL Experience Manager Assets]은(는) 문자열로 에셋을 검색합니다.
@@ -140,7 +149,7 @@ ht-degree: 16%
    </script>
    ```
 
-1. To make the component available, you need to be able to edit it. To make a component editable, in CRXDE, add a node **cq:editConfig** of primary type **cq:EditConfig**. So that you can remove paragraphs, add a multi-value property **cq:actions** with a single value of **DELETE**.
+1. To make the component available, you need to be able to edit it. 구성 요소를 편집할 수 있도록 하려면 CRXDE에서 기본 유형 **cq:EditConfig**&#x200B;의 **cq:editConfig** 노드를 추가하십시오. 단락을 제거하려면 단일 값이 **DELETE**&#x200B;인 다중 값 속성 **cq:actions**&#x200B;을(를) 추가하십시오.
 1. 브라우저로 이동한 다음 샘플 페이지(예: **press.html**)에서 디자인 모드로 전환하고 술어 단락 시스템(예: **left**)에 대한 새 구성 요소를 활성화합니다.
 
 1. **편집** 모드에서 새 구성 요소를 사이드 킥(**검색** 그룹에 있음)에서 사용할 수 있습니다. **술어** 열에 구성 요소를 삽입하고 검색 단어(예: **다이아몬드**)를 입력한 다음 돋보기를 클릭하여 검색을 시작합니다.
@@ -244,7 +253,7 @@ ht-degree: 16%
        });
    ```
 
-1. To make the component available, you need to be able to edit it. To make a component editable, in CRXDE, add a node **cq:editConfig** of primary type **cq:EditConfig**. So that you can remove paragraphs, add a multi-value property **cq:actions** with a single value of **DELETE**.
+1. To make the component available, you need to be able to edit it. 구성 요소를 편집할 수 있도록 하려면 CRXDE에서 기본 유형 **cq:EditConfig**&#x200B;의 **cq:editConfig** 노드를 추가하십시오. 단락을 제거하려면 단일 값이 **DELETE**&#x200B;인 다중 값 속성 **cq:actions**&#x200B;을(를) 추가하십시오.
 1. 브라우저로 이동한 다음 샘플 페이지(예: **press.html**)에서 디자인 모드로 전환하고 술어 단락 시스템(예: **left**)에 대한 새 구성 요소를 활성화합니다.
 1. **편집** 모드에서 새 구성 요소를 사이드 킥(**검색** 그룹에 있음)에서 사용할 수 있습니다. **조건자** 열에 구성 요소를 삽입합니다.
 

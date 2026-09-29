@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 3%
-
 ---
-
 # AEM 받은 편지함에서 Forms 애플리케이션 및 작업 관리{#manage-forms-applications-and-tasks-in-aem-inbox}
 
 Forms 중심 워크플로우를 시작하거나 트리거하는 여러 방법 중 하나는 AEM 받은 편지함의 애플리케이션을 통해서입니다. Forms 워크플로우를 받은 편지함에서 애플리케이션으로 사용할 수 있도록 하려면 워크플로우 애플리케이션을 만듭니다. 워크플로우 응용 프로그램 및 Forms 워크플로우를 시작하는 다른 방법에 대한 자세한 내용은 [OSGi에서 Forms 중심 워크플로우 시작](../../forms/using/aem-forms-workflow.md#launch)을 참조하십시오.
@@ -136,7 +152,7 @@ AEM 받은 편지함은 활성 작업만 표시합니다. 완료된 작업이 �
      | allowExplicitSharing | allowExplicitSharing | 부울 |
 
 
-   * AEM 패키지를 통해 인덱스를 배포합니다. [AEM 원형](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/using) 프로젝트를 사용하여 배포 가능한 AEM 패키지를 만들 수 있습니다. 다음 샘플 코드를 사용하여 AEM Archetype 프로젝트에 인덱스를 추가합니다.
+   * AEM 패키지를 통해 인덱스를 배포합니다. [AEM 원형](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) 프로젝트를 사용하여 배포 가능한 AEM 패키지를 만들 수 있습니다. 다음 샘플 코드를 사용하여 AEM Archetype 프로젝트에 인덱스를 추가합니다.
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

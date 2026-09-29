@@ -1,23 +1,36 @@
 ---
-title: ' [!DNL Adobe Workfront]과(와) [!DNL Experience Manager Assets] 통합'
-description: ' [!DNL Assets] 과(와) [!DNL Workfront] 간의 통합 소개'
+title: '[!DNL Adobe Workfront]과(와) [!DNL Experience Manager Assets] 통합'
+description: '[!DNL Assets]과(와) [!DNL Workfront] 간의 통합 소개'
 role: Admin,Leader,Developer
 feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 5181d278-2e6e-41f7-891e-1067a03de016
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1179'
 ht-degree: 7%
-
 ---
-
 # [!DNL Adobe Workfront]과(와) [!DNL Adobe Experience Manager Assets] 통합 {#assets-integration-overview}
 
 | 버전 | 문서 링크 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=ko) |
+| AEM as a Cloud Service | [여기 클릭](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | 이 문서 |
 
 [!DNL Adobe Workfront]은(는) 업무의 전체 라이프사이클을 한 곳에서 관리할 수 있도록 도와주는 작업 관리 애플리케이션입니다. [!DNL Workfront]와 [!DNL Adobe Experience Manager Assets] 간의 통합을 통해 조직은 작업과 디지털 자산 관리를 본질적으로 연결하여 콘텐츠 제작과 시장 출시 기간을 개선할 수 있습니다. Workfront 작업 관리의 맥락에서 사용자는 필수 문서와 이미지에 액세스할 수 있습니다.
@@ -59,7 +72,7 @@ ht-degree: 7%
 | Workfront 내에서 연결된 AEM Assets 다운로드 | 에셋이 Workfront에 연결되면 에셋의 바이트를 다운로드할 수 있습니다. | ✓ | ✓ | ✓ |
 | Workfront 내에서 AEM Assets 검색 | Workfront의 AEM Assets 선택기를 사용하여 에셋을 전체 텍스트 검색할 수 있습니다. | ✓ | ✓ | ✓ |
 | Workfront 내에서 AEM 폴더 검색 | Workfront의 AEM Assets 선택기를 사용하여 폴더를 전체 텍스트 검색할 수 있습니다. | ✓ | ✓ | ✓ |
-| Workfront 내에서 AEM 폴더 계층 구조 보기 및 탐색 | Workfront의 AEM Assets 선택기를 사용하면 로 제한된 AEM Assets 계층 구조를 검색할 수 있습니다.   AEM에 설정된 사용자와 관련된 액세스 제어 및 권한. | ✓ | ✓ | ✓ |
+| Workfront 내에서 AEM 폴더 계층 구조 보기 및 탐색 | Workfront의 AEM Assets 선택기를 사용하면 AEM에서 설정된 사용자와 관련된 액세스 제어 및 권한에 의해 제한된 AEM Assets 계층 구조를 검색할 수 있습니다. | ✓ | ✓ | ✓ |
 | AEM 타임라인에서 자산 버전 추적 | Workfront과 AEM 간 문서 버전 내역 유지 | ✓ | ✓ | ✓ |
 | Workfront의 AEM Assets에서 Assets 연결 해제 | AEM에서 연결된 기존 에셋은 연결된 Workfront 문서에서 연결 해제할 수 있습니다. AEM 내의 원래 자산은 삭제되지 않습니다. | ✓ | ✓ | ✓ |
 | Workfront에서 AEM Assets에 새 버전 에셋 추가 | Workfront의 문서에 새로 추가된 버전이 있으면 사용자는 새 버전을 AEM으로 보내 기존 버전을 바꿀 수 있습니다. | ✓ | ✓ | ✓ |

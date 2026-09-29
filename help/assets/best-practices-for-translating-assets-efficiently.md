@@ -1,19 +1,28 @@
 ---
-title: 자산 번역 우수 사례
+title: 자산 번역 모범 사례
 description: 다양한 번역된 버전을 동기화하고 번역 워크플로를 간소화하기 위한 에셋의 효율적인 관리를 위한 모범 사례입니다.
 contentOwner: AG
 role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 21771c11-ecce-4eff-be5b-f55835a5644e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 1%
-
+source-wordcount: '423'
+ht-degree: 3%
 ---
-
-# 자산 번역 우수 사례 {#best-practices-for-translating-assets-efficiently}
+# 자산 번역 모범 사례 {#best-practices-for-translating-assets-efficiently}
 
 [!DNL Adobe Experience Manager Assets]은(는) 디지털 에셋의 바이너리, 메타데이터 및 태그를 여러 로케일로 번역하고 번역된 에셋을 관리하기 위한 다국어 워크플로우를 지원합니다. 자세한 내용은 [다국어 Assets](multilingual-assets.md)을 참조하세요.
 

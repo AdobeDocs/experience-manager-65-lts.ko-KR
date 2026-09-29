@@ -5,14 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 83dbd00e-28ad-4a2e-ac22-3658fb6f639b
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
-
 ---
-
 # Reader 확장 프로그램 인증서 만료 및 영향 {#expiration-of-reader-extensions-certificates-and-its-impact}
 
 Adobe Managed Services 또는 On-premise Enterprise Base 라이선스를 보유한 AEM Forms(Adobe Experience Manager Forms) 고객은 Acrobat Reader DC 확장 프로그램 서비스를 사용할 수 있습니다. 이 서비스를 이용하면 조직에서 Acrobat Reader의 기능을 추가 사용 권한으로 확장하여 대화형 PDF 문서를 쉽게 공유할 수 있습니다. 이 서비스는 PDF 문서에 사용 권한을 추가하고 Adobe Acrobat Reader를 사용하여 PDF 문서를 열 때 사용할 수 없는 기능(예: 문서에 주석 추가, 양식 작성, 문서 저장)을 활성화합니다. 서드파티 사용자는 권한이 활성화된 문서를 사용하는 데 추가 소프트웨어나 플러그인이 필요하지 않습니다. 사용 권한이 추가된 PDF 문서를 권한이 활성화된 문서라고 합니다. Acrobat Reader에서 권한이 활성화된 PDF 문서를 여는 사용자는 해당 문서에 대해 활성화된 작업을 수행할 수 있습니다.
@@ -23,9 +38,9 @@ Adobe는 PKI(공개 키 인프라)를 활용하여 라이선스 및 기능 활�
 
 ## 자주 묻는 질문
 
-**질문: Adobe Root 인증서와 Acrobat Reader 확장 프로그램 인증서의 차이점은 무엇입니까? Adobe Root 인증서는 Acrobat Reader 확장 프로그램 인증서에 종속됩니까? 두 인증서 모두 2023년 1월에 만료됩니까?**
+**질문: Adobe Root 인증서와 Acrobat Reader 확장 프로그램 인증서의 차이점은 무엇입니까? Adobe Root 인증서는 Acrobat Reader Extensions 인증서에 종속됩니까? 두 인증서 모두 2023년 1월에 만료됩니까?**
 
-답변: Adobe Root CA는 Acrobat Reader 확장 프로그램 인증서를 발급하는 인증 기관입니다. 2023년 1월 7일이 되면 &#39;Adobe Root CA&#39;와 해당 기관에서 발급된 모든 인증서가 만료됩니다.
+답변: Adobe Root CA는 Acrobat Reader Extensions 인증서를 발급하는 인증 기관입니다. 2023년 1월 7일이 되면 &#39;Adobe Root CA&#39;와 해당 기관에서 발급된 모든 인증서가 만료됩니다.
 
 **질문: 이전에 Adobe에서 인증서 만료 및 PDF 문서 사용/열기에 대한 영향과 관련해 공지한 적이 있습니다. 해당 공지를 무시해도 됩니까?**
 
@@ -33,11 +48,11 @@ Adobe는 PKI(공개 키 인프라)를 활용하여 라이선스 및 기능 활�
 
 **질문: 추가로 궁금한 점이 있으면 어디로 문의해야 합니까?**
 
-답변: [Adobe 지원](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager#support)에 문의하거나 지원 티켓을 제출해 주십시오.
+답변: [Adobe 지원](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support)에 문의하거나 지원 티켓을 제출해 주십시오.
 
 **질문: 2023년 1월 7일 이전에 인증서를 업데이트하지 않으면 어떻게 됩니까?**
 
-답변: 2023년 1월 7일 이전에 구 &#39;Adobe Root CA&#39;에서 발급된 프로덕션 인증서를 사용하는 모든 확장 PDF 문서는 2023년 1월 7일 이후에도 별도의 변경 사항 없이 계속 작동합니다. 평가판 인증서를 사용하는 확장 PDF는 만료 일자가 지나면 작동하지 않습니다.
+답변: 2023년 1월 7일 이전에 구 &#39;Adobe Root CA&#39;에서 발급된 프로덕션 인증서를 사용하여 확장된 모든 PDF 문서는 2023년 1월 7일 이후에도 별도의 변경 사항 없이 계속 작동합니다. 평가판 인증서를 사용하는 확장 PDF는 만료 일자가 지나면 작동하지 않습니다.
 
 **질문: 새 인증서에 대한 설명이 기존 인증서에 대한 설명과 다릅니까?**
 
@@ -45,11 +60,11 @@ Adobe는 PKI(공개 키 인프라)를 활용하여 라이선스 및 기능 활�
 
 **질문: 최신 인증서를 받으려면 어떻게 해야 합니까?**
 
-답변: 권한이 있는 모든 Forms 고객(활성 라이선스 보유)은 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com/)에서 새 인증서(&#39;Adobe Root CA G2&#39; 기반 인증서)를 다운로드할 수 있습니다. Adobe 라이선스 웹 사이트에서 해당 인증서를 찾을 수 없는 경우 [Adobe 지원](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager&lang=en#support)에 문의하거나 지원 티켓을 제출해 주십시오.
+답변: 권한이 있는 모든 Forms 고객(활성 라이선스 보유)은 [Adobe 라이선스 웹 사이트](https://licensing.adobe.com/)에서 새 인증서(&#39;Adobe Root CA G2&#39; 기반 인증서)를 다운로드할 수 있습니다. Adobe 라이선스 웹 사이트에서 해당 인증서를 찾을 수 없는 경우 [Adobe 지원](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=en#support)에 문의하거나 지원 티켓을 제출해 주십시오.
 
 **질문: &#39;Adobe Root CA&#39;(구 인증 기관)에서 발급된 인증서를 사용하는 확장 PDF 문서는 2023년 1월 7일 이후에도 계속 작동합니까?**
 
-답변: 예, 2023년 1월 7일 이전에 &#39;Adobe Root CA&#39;(구 인증 기관)에서 발급된 프로덕션 인증서를 사용하는 모든 확장 PDF 문서는 2023년 1월 7일 이후에도 별도의 변경 사항 없이 계속 작동합니다. 평가판 인증서를 사용하는 확장 PDF 문서는 만료 일자가 지나면 더 이상 작동하지 않습니다.
+답변: 예, 2023년 1월 7일 이전에 &#39;Adobe Root CA&#39;(구 인증 기관)에서 발급된 프로덕션 인증서로 확장된 모든 PDF 문서는 2023년 1월 7일 이후에도 별도의 변경 사항 없이 계속 작동합니다. 평가판 인증서를 사용하는 확장 PDF 문서는 만료 일자가 지나면 더 이상 작동하지 않습니다.
 
 **질문: &#39;Adobe Root CA&#39;(기존 인증 기관)에서 발급된 인증서를 사용하는 확장 PDF 문서를 계속 사용하려면 어떤 버전의 Adobe Acrobat Reader가 필요합니까?**
 
@@ -65,7 +80,7 @@ Adobe는 PKI(공개 키 인프라)를 활용하여 라이선스 및 기능 활�
 
 **질문: Adobe Experience Manager Forms 서버에서 새로운 Acrobat Reader 확장 프로그램 인증서와 기존 Acrobat Reader 확장 프로그램 인증서를 모두 보관할 수 있습니까?**
 
-답변: 예, 두 인증서를 모두 Adobe Experience Manager Forms 서버에 보관할 수 있지만, 다른 별칭을 사용해야 합니다. 2023년 1월 7일 이후에는 새 인증서만 사용하여 Reader에서 PDF 문서를 확장할 수 있습니다.
+답변: 예, 두 인증서를 모두 Adobe Experience Manager Forms 서버에 보관할 수 있지만, 다른 별칭을 사용해야 합니다. 2023년 1월 7일 이후에는 PDF 문서를 Reader 확장하는 데 새 인증서만 사용할 수 있습니다.
 
 **질문: 동일한 Acrobat Reader 확장 프로그램 인증서를 모든 Adobe Experience Manager Forms 환경으로 가져올 수 있습니까?**
 
@@ -189,5 +204,5 @@ Remove usage rights from existing rights-enabled PDF documents before applying u
 
 #### Apply the usage rights to PDF documents 
 
-To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html?lang=ko).
+To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).
 -->

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f8376cde-cfda-461e-8b1c-f958c7ad5cb0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '304'
 ht-degree: 0%
-
 ---
-
 # 페이지 작성{#authoring-pages}
 
 다음은 AEM을 사용하여 작성하는 방법에 대한 개요입니다.
@@ -30,10 +39,10 @@ ht-degree: 0%
 
 페이지를 작성할 때 도움이 되도록 작성 환경에서는 다음과 같은 기능을 제공합니다.
 
-* **드래그 앤 드롭**
+* **끌어서 놓기**
 구성 요소(예: 텍스트, 이미지)와 디지털 자산(예: 이미지)을 원하는 위치에 드래그 앤 드롭하여 페이지에 배치할 수 있습니다.
 
-* **편집**
+* **편집 중**
 페이지에 배치되면 구성 요소별 대화 상자를 열어 콘텐츠를 입력하거나 해당 구성 요소의 특성(예: 이미지 크기)을 구성할 수 있습니다.
 
 * **바로 편집**

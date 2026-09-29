@@ -5,20 +5,36 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Authoring, AI Assistant, AI Tools
 role: Admin,Developer,User
 exl-id: 391d46e3-05c9-4af1-8882-ffd39b04a701
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 100%
-
 ---
-
 # AEM 6.5 LTS의 AI 어시스턴트 {#about-ai-assistant-in-aem}
 
 >[!IMPORTANT]
 >
 >Cloud Manager/Experience Hub를 사용하지 않는 AEM 6.5 및 AEM 6.5 LTS 고객은 Adobe 고객 성공 엔지니어에게 문의하여 AI 어시스턴트 액세스 권한을 요청해야 합니다.
 
-AEM(Adobe Experience Manager) AI 어시스턴트는 Adobe Experience Manager 관련 쿼리에 대한 답변을 간소화하도록 설계된 대화형 인터페이스를 제공합니다. AEM 제품 관련 질문에 대한 즉각적인 답변(*모든 사용자 사용 가능*)을 얻고 지원 티켓 생성을 자동화하는 데 도움이 됩니다(*지원 관리자 사용 가능*).
+AEM(Adobe Experience Manager) AI 어시스턴트는 Adobe Experience Manager 관련 쿼리에 대한 답변을 더 쉽게 찾을 수 있도록 설계된 대화형 인터페이스를 제공합니다. AEM 제품 관련 질문에 대한 즉각적인 답변(*모든 사용자 사용 가능*)을 얻고 지원 티켓 생성을 자동화하는 데 도움이 됩니다(*지원 관리자 사용 가능*).
 
 AI 어시스턴트는 다음 솔루션을 포함하여 AEM as a Cloud Service를 지원합니다.
 
@@ -35,18 +51,18 @@ AEM에 직접 내장되어 있으며 AEM Experience Hub, Cloud Manager 및 Autho
 
 다음 3분 25초 분량의 비디오는 AEM 내 AI 어시스턴트의 단계별 워크스루를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475365/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## AEM 내 AI 어시스턴트 액세스{#get-access}
 
-AEM 내 AI 어시스턴트에 액세스하려면 고객이 다음과 같은 정보를 보유하고 있어야 합니다.
+AEM 내 AI 어시스턴트에 액세스하려면 고객이 다음 사항을 갖추고 있어야 합니다.
 
 * 제품 지식을 위한 AEM 내 AI 어시스턴트 사용 권한. 이 권한을 통해 AI 어시스턴트 채팅에서 제품 관련 질문을 할 수 있습니다. 이 권한을 활성화해야 합니다.
 * **지원 관리자** 역할이 필요한 지원 티켓을 열 수 있는 권한.
 
 >[!NOTE]
 >
->AEM 내 AI 어시스턴트 요청은 Adobe IMS(Identity Management Services)를 통해 인증됩니다. 자세한 내용은 [Adobe Identity Management Services 개요](https://www.adobe.com/kr/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf)를 참조하십시오.
+>AEM 내 AI 어시스턴트 요청은 Adobe Identity Management Services(IMS)를 통해 인증됩니다. 자세한 내용은 [Adobe Identity Management Services 개요](https://www.adobe.com/kr/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf)를 참조하십시오.
 
 **AEM 내 AI 어시스턴트를 액세스하려면:**
 
@@ -59,7 +75,7 @@ AEM 내 AI 어시스턴트에 액세스하려면 고객이 다음과 같은 정�
 
 ## 범위 {#scope}
 
-현재 AEM 내 AI 어시스턴트 범위는 AEM as a Cloud Service에 대한 제품 지식 질문을 해결하는 데 중점을 두고 있습니다. 이 범위에는 주요 영역에 대한 포괄적인 지원이 포함됩니다. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
+현재 AEM의 AI 어시스턴트 범위는 AEM as a Cloud Service에 대한 제품 지식 질문을 해결하는 데 중점을 두고 있습니다. 이 범위에는 주요 영역에 대한 포괄적인 지원이 포함됩니다. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
 * **표면**: AEM Experience Hub, 작성자 UI, Cloud Manager에서 사용할 수 있습니다.
 * **기능**: 문제 해결 및 지침, 지원 티켓 자동 생성 및 조회를 위한 제품 지식 및 첫 번째 중지.
@@ -90,7 +106,7 @@ AEM 내 AI 어시스턴트는 개인 정보, 보안, 거버넌스에 중점을 �
 | 문제 해결 | <ul><li>범용 편집기에 액세스할 수 없는 이유는 무엇입니까?</li><li>내 파이프라인이 실패한 이유는 무엇입니까?</li></ul> |
 | **티켓 만들기 지원** | **지원 관리자만 사용 가능&#x200B;**<br>**예** |
 | AI 어시스턴트 채팅 기록 및 컨텍스트를 캡처하는 자동화된 지원 티켓 생성 | <ul><li>나를 위한 지원 티켓을 만드세요.</li></ul> |
-| 지원 티켓 상태 가져오기 | <ul><li>내가 열어본 모든 지원 티켓을 보여 주세요.</li><li>티켓 “E-----------”의 상태를 보여 주세요</li></ul> |
+| 지원 티켓 상태 가져오기 | <ul><li>내가 개설한 모든 지원 티켓을 보여 주세요.</li><li>티켓 “E-----------”의 상태를 보여 주세요</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -129,7 +145,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
 -->
@@ -159,7 +175,7 @@ See also [Custom Permissions](/help/implementing/cloud-manager/custom-permission
 
 ### 카테고리별 프롬프트 검색
 
-AEM 내 AI 어시스턴트에는 지원되는 주제와 카테고리를 탐색하는 데 도움이 되는 검색 기능이 포함되어 있습니다.
+AEM 내 AI 어시스턴트에는 지원되는 주제와 카테고리를 탐색하는 데 도움이 되는 탐색 기능이 포함되어 있습니다.
 
 **카테고리별 프롬프트를 검색하려면:**
 
@@ -169,7 +185,7 @@ AEM 내 AI 어시스턴트에는 지원되는 주제와 카테고리를 탐색�
    *AI 어시스턴트에서 프롬프트 카테고리를 표시하는 패널.*
 
 1. 관련 프롬프트 목록을 보려면 카테고리를 선택합니다.
-1. AI 어시스턴트 답할 수 있는 질문 유형의 예를 보려면 프롬프트를 선택합니다.
+1. AI 어시스턴트가 답할 수 있는 질문 유형의 예를 보려면 프롬프트를 선택합니다.
 
 1. 프롬프트 검색 패널을 숨기려면 ![학습 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg)을 다시 클릭합니다.
 
@@ -177,14 +193,14 @@ AEM 내 AI 어시스턴트에는 지원되는 주제와 카테고리를 탐색�
 
 사용자의 입력을 통해 Adobe는 AI 어시스턴트를 개선하여 성능과 정확성을 높일 수 있습니다.
 
-다음 옵션을 통해 AEM 내 AI 어시스턴트와 사용자 경험에 대한 피드백을 공유할 수 있습니다.
+다음 옵션을 통해 AEM의 AI 어시스턴트 사용 경험에 대한 피드백을 공유할 수 있습니다.
 
 ![좋아요, 싫어요, 그리고 플래그 아이콘](/help/assets/assets-ai/ai-assistant-feedback-icons.png)
 
 | 클릭 | 설명 |
 | --- | --- |
 | ![좋아요 아웃라인 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | 무엇이 잘 진행되었는지 표시하고 긍정적인 피드백을 공유합니다. |
-| ![싫어요 아웃라인 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | 개선을 위한 제안을 입력합니다. 매일 검토되는 경험에 대한 구체적인 댓글을 추가합니다. |
+| ![싫어요 아웃라인 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | 개선을 위한 제안을 입력합니다. 경험에 대한 구체적인 댓글을 추가합니다. 이러한 댓글은 매일 검토됩니다. |
 | ![플래그 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | AEM 내 AI 어시스턴트와의 상호작용에 대한 문제를 보고하거나 자세한 피드백을 제공합니다. |
 
 ## AEM 내 AI 어시스턴트에 대해 자주 묻는 질문 {#ai-faq}
@@ -192,7 +208,7 @@ AEM 내 AI 어시스턴트에는 지원되는 주제와 카테고리를 탐색�
 다음은 AI 어시스턴트에 대한 몇 가지 일반적인 질문에 대한 답변입니다.
 
 * **AEM 내 AI 어시스턴트가 제공하는 정보는 실시간으로 제공됩니까?**\
-  아니요. AI 어시스턴트는 Adobe Experience League 설명서에서 해당 콘텐츠를 제공합니다. 콘텐츠 업데이트가 응답에 반영하는 데 시간이 걸릴 수 있습니다.
+  아니요. AI 어시스턴트는 Adobe Experience League 설명서에서 콘텐츠를 가져옵니다. 콘텐츠 업데이트가 응답에 반영되는 데 시간이 걸릴 수 있습니다.
 * **AEM 내 AI 어시스턴트가 지원하는 Adobe 애플리케이션은 무엇입니까?**\
   현재 AI 어시스턴트는 Sites, Assets, Dynamic Media, Cloud Manager, Forms 등 AEM as a Cloud Service에서 제품 지식 조회를 지원합니다.
 * **AEM 내 AI 어시스턴트의 기능은 무엇입니까?**\

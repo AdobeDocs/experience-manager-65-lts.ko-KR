@@ -1,18 +1,29 @@
 ---
 title: '[!DNL Assets] 크기 조정 가이드'
-description: ' [!DNL Adobe Experience Manager Assets]을(를) 배포하는 데 필요한 인프라 및 리소스를 예상하는 효율적인 지표를 결정하는 모범 사례입니다.'
+description: '[!DNL Adobe Experience Manager Assets]을(를) 배포하는 데 필요한 인프라 및 리소스를 예상하는 효율적인 지표를 결정하는 모범 사례입니다.'
 contentOwner: AG
 role: Developer,Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: d88e3ca9-f80d-48f5-857a-eaf71dcb9226
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 0%
-
 ---
-
 # [!DNL Assets] 크기 조정 가이드 {#assets-sizing-guide}
 
 [!DNL Adobe Experience Manager Assets] 구현에 대한 환경 크기를 조정할 때 디스크, CPU, 메모리, IO 및 네트워크 처리량 측면에서 사용 가능한 리소스가 충분한지 확인하는 것이 중요합니다. 이러한 리소스의 크기를 조정하려면 시스템에 로드되는 에셋의 수를 이해해야 합니다. 더 나은 지표를 사용할 수 없는 경우 기존 라이브러리의 크기를 라이브러리 사용 기간으로 나누어 자산이 생성되는 비율을 찾을 수 있습니다.

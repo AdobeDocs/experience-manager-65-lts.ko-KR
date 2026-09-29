@@ -9,13 +9,28 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 48cb61d1-4f2f-43c4-bf19-0a6987916ea2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 0%
-
+source-wordcount: '236'
+ht-degree: 4%
 ---
-
 # HTML5 양식 시작하기 {#getting-started-with-html-forms}
 
 HTML5 forms는 모바일에서 사용할 수 있는 다양한 기능을 제공합니다. HTML5 브라우저를 사용하여 현재 솔루션 및 워크플로를 태블릿 또는 스마트폰 장치로 확장하는 데 도움이 됩니다. 일부 기능은 다음과 같습니다.

@@ -8,13 +8,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: f9eb6e61-5669-4cb7-a528-f1c09e455a60
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
-
 ---
-
 # Forms 포털 | 사용자 데이터 처리 {#forms-portal-handling-user-data}
 
 [!DNL AEM Forms] 포털은 [!DNL AEM Sites] 페이지에 적응형 양식, HTML5 양식 및 기타 Forms 자산을 나열하는 데 사용할 수 있는 구성 요소를 제공합니다. 또한 로그인한 사용자의 초안 및 제출된 적응형 양식과 HTML5 양식을 표시하도록 구성할 수 있습니다. Forms 포털에 대한 자세한 내용은 [포털에 양식 게시 소개](/help/forms/using/introduction-publishing-forms.md)를 참조하십시오.

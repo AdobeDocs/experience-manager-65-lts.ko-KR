@@ -9,13 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2386'
 ht-degree: 2%
-
 ---
-
 # AEM Forms 앱 소개 {#aem-forms-app}
 
 ## 개요 {#overview}
@@ -26,11 +42,11 @@ AEM Forms 앱의 소스 코드는 소프트웨어 배포를 통해 고객이 사
 
 AEM Forms 앱은 iOS, Android, Windows 디바이스에서 지원됩니다. Google Play에서 Android용 AEM Forms 앱, App Store에서 iOS, Windows 스토어에서 Windows를 설치할 수 있습니다.
 
-    &lbrack; ![google_play](assets/google_play.png)(https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+    [ ![google_play](assets/google_play.png)(https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    [&#x200B; ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
+    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
-    [&#x200B; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 iOS, Android 또는 Windows 장치에서 앱을 설치, 사용자 지정 및 배포하려면 [AEM Forms 앱 사용자 지정, 빌드 및 배포](#customize-build-distribute)를 참조하십시오.
 
@@ -195,13 +211,13 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 1. [패키지 관리자](/help/sites-administering/package-manager.md)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-iOS의 **1&rbrace;:**
+iOS의 **1}:**
 
 iOS 앱(.ipa)을 만드는 방법에 대한 자세한 내용은 [Xcode 프로젝트 설정 및 iOS 앱 빌드](/help/forms/using/setup-xcode-project-build-installer.md)를 참조하십시오.
 
 프로비저닝 프로필로 AEM Forms 앱에 서명하는 방법에 대한 자세한 내용은 [iOS 코드 서명 설정, 프로세스 및 문제 해결](https://developer.apple.com/support/code-signing/)을 참조하십시오.
 
-Android의 **1&rbrace;:**
+Android의 **1}:**
 
 Android 앱(.apk)을 만드는 방법에 대한 자세한 내용은 [Eclipse 프로젝트 설정 및 Android 앱 빌드](/help/forms/using/setup-eclipse-project-build-installer.md)를 참조하십시오.
 

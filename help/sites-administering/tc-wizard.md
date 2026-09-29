@@ -5,13 +5,25 @@ feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 218b4778-86be-4752-8cdf-37705563be13
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 27%
-
+source-wordcount: '220'
+ht-degree: 35%
 ---
-
 # 언어 복사 마법사{#language-copy-wizard}
 
 언어 복사 마법사는 다국어 콘텐츠 구조 생성 및 측정을 위한 안내형 경험입니다. 이제 언어 사본을 만드는 것이 훨씬 간단하고 빠릅니다.
@@ -50,6 +62,6 @@ ht-degree: 27%
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
-1. **만들기** 단추를 사용하면 마법사가 종료됩니다.
+1. **만들기** 버튼을 클릭하면 마법사가 종료됩니다.
 
    ![chlimage_1-14](assets/chlimage_1-14.jpeg)

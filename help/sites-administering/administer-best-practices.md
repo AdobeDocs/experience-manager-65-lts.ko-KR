@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 933ef22f-d023-44d2-8ec0-4bb47a46bba3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 9%
-
+source-wordcount: '533'
+ht-degree: 13%
 ---
-
 # 모범 사례{#best-practices}
 
 모범 사례에서는 가능한 가장 효율적이고 효과적인 방법으로 AEM을 개발, 관리 또는 사용하는 방법을 설명합니다. 이렇게 늘어나는 주제 목록에는 AEM의 다양한 영역이 포함되어 있습니다.
@@ -27,7 +36,7 @@ ht-degree: 9%
 
 작성, 배포, 유지 관리 또는 개발에 대한 우수 사례는 다음 중 하나를 참조하십시오.
 
-* [작성 모범 사례](/help/sites-authoring/best-practices.md)
+* [모범 사례 작성](/help/sites-authoring/best-practices.md)
 * [모범 사례 개발](/help/sites-developing/best-practices.md)
 * [모범 사례 배포](/help/sites-deploying/best-practices.md)
 
@@ -76,7 +85,7 @@ Dynamic Media 기능 및 Dynamic Media Classic 통합을 포함하여 Assets에 
   <tr>
    <td>GDPR 준수</td>
    <td><a href="/help/sites-administering/gdpr-compliance-sites.md">AEM Sites GDPR 규정 준수</a></td>
-   <td>데이터 개인정보 보호권에 관한 유럽 연합의 일반 데이터 보호 규정은 2018년 5월부터 시행됩니다. AEM Sites은 GDPR을 준수합니다. 이 페이지에서는 고객에게 AEM Sites에서 GDPR 요청을 처리하는 절차를 안내합니다. 저장된 개인 데이터의 위치와 수동으로 또는 코드로 해당 데이터를 제거하는 방법에 대해서도 설명합니다.</td>
+   <td>데이터 사생활 보호권에 관한 유럽 연합의 GDPR(일반 데이터 보호 규정)은 2018년 5월에 발효됩니다. AEM Sites은 GDPR을 준수합니다. 이 페이지에서는 고객에게 AEM Sites에서 GDPR 요청을 처리하는 절차를 안내합니다. 저장된 개인 데이터의 위치와 수동으로 또는 코드로 해당 데이터를 제거하는 방법에 대해서도 설명합니다.</td>
   </tr>
   <tr>
    <td>인스턴스에 대한 기본 UI를 정의합니다.</td>

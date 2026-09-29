@@ -1,5 +1,5 @@
 ---
-title: HTML 5 양식 디버깅
+title: HTML5 양식 디버깅
 description: 이 문서에는 알려진 다양한 문제를 해결하는 단계가 나열되어 있습니다.
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,29 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 1b38cc53-027c-4b3b-bda1-24c0049113aa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 0%
-
+source-wordcount: '844'
+ht-degree: 1%
 ---
-
-# HTML 5 양식 디버깅 {#debugging-html-forms}
+# HTML5 양식 디버깅 {#debugging-html-forms}
 
 이 문서에는 몇 가지 문제 해결 시나리오가 포함되어 있습니다. 각 시나리오에 대해 문제를 해결하기 위한 몇 가지 단계가 제공됩니다. 다음 단계를 수행하고 문제가 지속되면 로그를 가져오고 오류/경고를 검토하도록 로거를 구성합니다. HTML5 양식 로깅에 대한 자세한 내용은 [HTML5 양식에 대한 로그 생성](/help/forms/using/enable-logs.md)을 참조하십시오.
 
@@ -62,7 +77,7 @@ ht-degree: 0%
    * adobe-lc-forms-content-pkg-&lt;version>.zip
    * adobe-lc-forms-runtime-pkg-&lt;version>.zip
 
-1. https://&lt;server>:&lt;port>/system/console/bundles의 CQ 웹 콘솔(Felix 콘솔)에 로그인합니다.
+1. https://<server>:<port>/system/console/bundles의 CQ 웹 콘솔(Felix 콘솔)에 로그인합니다.
 
    다음 번들의 상태가 &quot;활성&quot;인지 확인하십시오.
 
@@ -154,7 +169,7 @@ ht-degree: 0%
    가능한 이유는 URL에 있는 하나 이상의 매개 변수가 올바르지 않기 때문입니다.
 
    다음 매개 변수를 확인하십시오.
-단계 텍스트
+   단계 텍스트
 
 <table>
  <tbody>

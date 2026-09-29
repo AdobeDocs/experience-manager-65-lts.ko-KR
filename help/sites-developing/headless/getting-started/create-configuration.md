@@ -5,13 +5,39 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
 exl-id: 6792f5c0-074e-4465-9b84-8be78abd6b8f
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '296'
 ht-degree: 68%
-
 ---
-
 # 구성 Headless 빠른 시작 안내서 만들기 {#creating-configuration}
 
 AEM 6.5에서 Headless를 시작하기 위한 첫 번째 단계로 구성을 만들어야 합니다.
@@ -32,7 +58,7 @@ AEM에서 Headless 콘텐츠 관리의 맥락에서 구성을 미래 콘텐츠 �
 
 1. AEM에 로그인하고 메인 메뉴에서 **도구 > 일반 > 구성 브라우저**&#x200B;를 선택합니다.
 1. 구성에 대한 **제목**&#x200B;을 입력하십시오.
-   * 제목을 기반으로 이름이 자동으로 생성되고 [AEM 명명 규칙에 따라 조정됩니다.](/help/sites-developing/naming-conventions.md). 저장소의 노드 이름이 됩니다.
+   * 제목을 기반으로 이름이 자동으로 생성되고 [AEM 명명 규칙](/help/sites-developing/naming-conventions.md)에 따라 조정됩니다. 저장소의 노드 이름이 됩니다.
 1. 다음 옵션을 확인하십시오.
    * **콘텐츠 조각 모델**
    * **GraphQL 지속 쿼리**

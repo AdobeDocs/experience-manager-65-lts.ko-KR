@@ -5,13 +5,21 @@ solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 exl-id: f6e29287-a558-43ad-8465-ebf167c79c63
-source-git-commit: b4abf61e0d30396e78ecebf228114ad2bde30633
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 0%
-
+source-wordcount: '844'
+ht-degree: 1%
 ---
-
 # 데이터베이스 자격 증명 저장소 설정 안내서(독립 실행형 모드)
 
 ## 개요
@@ -44,11 +52,11 @@ ht-degree: 0%
    - 스크립트는 서버를 중지해야 하는 `embed-server`을(를) 사용합니다.
    - JBoss가 실행 중인 경우 스크립트가 실패합니다
    - JBoss가 실행 중인지 확인합니다.
-      - Windows: `java.exe` 프로세스에 대한 작업 관리자 확인
-      - Linux: `ps aux | grep jboss` 또는 `ps aux | grep java`
+     - Windows: `java.exe` 프로세스에 대한 작업 관리자 확인
+     - Linux: `ps aux | grep jboss` 또는 `ps aux | grep java`
    - 실행 중인 경우 JBoss 중지:
-      - JBoss가 실행 중인 터미널에서 `Ctrl+C`을(를) 누릅니다.
-      - 또는 수동으로 프로세스를 중단합니다.
+     - JBoss가 실행 중인 터미널에서 `Ctrl+C`을(를) 누릅니다.
+     - 또는 수동으로 프로세스를 중단합니다.
 
 2. **데이터베이스 암호를 준비했습니다**
 
@@ -69,7 +77,7 @@ ht-degree: 0%
 
 **스크립트:** `create-elytron-cred-standalone.bat`
 
-`create-elytron-cred-standalone.bat`소프트웨어 배포 포털[에서 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip) 스크립트를 다운로드합니다.
+[소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip)에서 `create-elytron-cred-standalone.bat` 스크립트를 다운로드합니다.
 
 **스크립트에 다음을 묻는 메시지가 표시됩니다.**
 1. **JBOSS_HOME 경로**(예: `C:\Adobe\Adobe_Experience_Manager_Forms\jboss`)
@@ -82,10 +90,10 @@ ht-degree: 0%
 - `JBOSS_HOME\standalone\configuration\cred-store.p12`에 자격 증명 저장소를 만듭니다.
 - 자격 증명 저장소 생성을 사용하도록 구성 파일을 임시로 수정합니다.
 - 데이터베이스 암호로 다음 별칭을 추가합니다.
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - 구성 파일을 원래 상태로 복원합니다.
 - 모든 별칭이 추가되었는지 확인합니다.
 
@@ -93,7 +101,7 @@ ht-degree: 0%
 
 **스크립트** `create-elytron-cred-standalone.sh`
 
-`create-elytron-cred-standalone.sh`소프트웨어 배포 포털[에서 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip) 스크립트를 다운로드합니다.
+[소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip)에서 `create-elytron-cred-standalone.sh` 스크립트를 다운로드합니다.
 
 **스크립트에 다음을 묻는 메시지가 표시됩니다.**
 
@@ -107,10 +115,10 @@ ht-degree: 0%
 - `JBOSS_HOME/standalone/configuration/cred-store.p12`에 자격 증명 저장소를 만듭니다.
 - 자격 증명 저장소 생성을 사용하도록 구성 파일을 임시로 수정합니다.
 - 데이터베이스 암호로 다음 별칭을 추가합니다.
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - 구성 파일을 원래 상태로 복원합니다.
 - 모든 별칭이 추가되었는지 확인합니다.
 
@@ -225,7 +233,7 @@ ERROR Unable to load credential store - Invalid password
 `standalone.conf.bat` / `standalone.conf`(2단계)의 암호가 자격 증명 저장소를 만들 때 사용된 암호(1단계)와 일치하는지 확인하십시오.
 
 **수정하려면:**
-`standalone.conf.bat`/`standalone.conf`을(를) 편집하고 암호를 업데이트하십시오.
+`standalone.conf.bat` / `standalone.conf`을(를) 편집하고 암호를 업데이트하십시오.
 
 ```
 set "JAVA_OPTS=%JAVA_OPTS% -DCS_PASS=CorrectPassword"

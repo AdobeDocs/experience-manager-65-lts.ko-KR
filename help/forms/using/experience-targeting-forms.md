@@ -1,5 +1,5 @@
 ---
-title: AEM Forms에서 타깃팅된 경험 만들기
+title: AEM Forms에서 타기팅된 경험 만들기
 description: AEM Forms의 Target을 사용하여 타깃팅된 고객을 위한 사용자 지정된 경험을 만듭니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,30 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: be7493a9-1e3b-4918-8b3e-fb1a2000b453
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 0%
-
+source-wordcount: '846'
+ht-degree: 2%
 ---
-
-# AEM Forms에서 타깃팅된 경험 만들기 {#create-targeted-experiences-in-aem-forms}
+# AEM Forms에서 타기팅된 경험 만들기 {#create-targeted-experiences-in-aem-forms}
 
 ## Adobe Target과 AEM Forms 통합 {#integrate-adobe-target-with-aem-forms}
 
@@ -36,8 +52,8 @@ AEM과 통합된 Adobe Target을 통해 타겟 대상에 맞게 사용자 지정
 1. 활동 페이지에서 **만들기 > 브랜드 만들기**&#x200B;를 선택합니다.
 1. 템플릿을 선택하고 속성을 입력하라는 메시지가 표시됩니다.
 
-   템플릿을 선택하고 **다음 을 선택합니다.** [속성] 섹션에 브랜드 제목을 입력하고 **만들기 를 선택합니다.**
-이제 브랜드가 활동 페이지에 나열됩니다.
+   템플릿을 선택하고 **다음**&#x200B;을(를) 선택합니다. [속성] 섹션에 브랜드 제목을 입력하고 **만들기 를 선택합니다.**
+   이제 브랜드가 활동 페이지에 나열됩니다.
 
 1. 활동 페이지에서 브랜드를 선택합니다.
 1. 브랜드의 기본 영역에서 **만들기** > **활동 만들기**&#x200B;를 선택합니다.

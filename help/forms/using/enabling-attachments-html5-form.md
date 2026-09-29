@@ -9,13 +9,28 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: dcc82582-0637-44ce-a2b4-68077cbc2200
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 5%
-
 ---
-
 # HTML5 양식에 대한 첨부 파일 활성화 {#enabling-attachments-for-an-html-form}
 
 HTML5 양식을 사용하여 첨부 파일을 업로드하고 미리 보고 제출할 수 있습니다. 첨부 파일 지원은 기본적으로 비활성화되어 있습니다. 첨부 파일 지원을 활성화하려면
@@ -27,7 +42,7 @@ HTML5 양식을 사용하여 첨부 파일을 업로드하고 미리 보고 제�
    | 다중 선택 | true 또는 false(기본적으로 true) |
    | fileSizeLimit | MB 단위(기본적으로 2MB). 예를 들어, 5입니다. |
    | buttonText | 팝업 창의 단추 텍스트(기본적으로 &quot;첨부&quot;) |
-   | 동의 | 수락할 파일 형식을 쉼표로 구분한 목록(&quot;audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf&quot;) |
+   | 동의 | 수락할 파일 형식을 쉼표로 구분한 목록(&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot;) |
 
    예:
 

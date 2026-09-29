@@ -6,13 +6,27 @@ role: User, Admin
 feature: Metadata
 solution: Experience Manager, Experience Manager Assets
 exl-id: 16ab2e64-9c12-43ae-a8d2-f71e63899c68
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2751'
-ht-degree: 8%
-
+source-wordcount: '2757'
+ht-degree: 9%
 ---
-
 # 메타데이터 개념 이해 {#why-we-need-metadata}
 
 메타데이터는 데이터에 대한 데이터를 의미합니다. 이와 관련하여 데이터는 디지털 자산, 즉 이미지를 나타냅니다. 메타데이터는 효율적인 에셋 관리에 있어 매우 중요합니다.
@@ -71,7 +85,7 @@ ht-degree: 8%
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform]&#x200B;(XMP)은 [!DNL Experience Manager Assets]에서 모든 메타데이터 관리에 사용하는 개방형 표준입니다. 이 표준은 모든 파일 형식에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe을 비롯한 여러 회사는 풍부한 콘텐츠 모델을 제공하기 때문에 XMP standard를 지원합니다. XMP standard 및 [!DNL Experience Manager Assets]의 사용자는 빌드할 강력한 플랫폼이 있습니다. 자세한 내용은 [XMP](https://www.adobe.com/kr/products/xmp.html)을 참조하세요.
+[!DNL Extensible Metadata Platform]&#x200B;(XMP)은 [!DNL Experience Manager Assets]에서 모든 메타데이터 관리에 사용하는 개방형 표준입니다. 이 표준은 모든 파일 형식에 임베드할 수 있는 범용 메타데이터 인코딩을 제공합니다. Adobe을 비롯한 여러 회사는 풍부한 콘텐츠 모델을 제공하기 때문에 XMP standard를 지원합니다. XMP standard 및 [!DNL Experience Manager Assets]의 사용자는 빌드할 강력한 플랫폼이 있습니다. 자세한 내용은 [XMP](https://www.adobe.com/products/xmp.html)을 참조하세요.
 
 ### ID3 {#id}
 
@@ -123,7 +137,7 @@ Exif에서 정의한 메타데이터 필드는 일반적으로 기술적 성격�
 * CQ - [!DNL Experience Manager Assets]이(가) 사용합니다.
 * DAM - [!DNL Experience Manager Assets]이(가) 사용합니다.
 * DEX - [!DNL Optima SC Description explorer]은(는) Windows 운영 체제용 메타데이터 및 파일 관리를 위한 도구 모음입니다.
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/kr/camera-raw/using/introduction-camera-raw.html).
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto 및 MP - Microsoft 사진.

@@ -9,22 +9,43 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade,AEM Forms on JEE
 hide: true
-hidefromtoc: true
+hidefromtoc: 'yes'
+removedfrom6.5.2025: 'yes'
 exl-id: 643bc966-b2d8-4626-8c25-b63c8909287e
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: b9cdd520-e7a7-4af9-a95f-296f28882b69
+    internal-label: AEM Forms upgrade
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 7%
-
 ---
-
 # JEE의 AEM 6.5 Forms으로 업그레이드 {#upgrade-to-aem-forms-jee}
 
 JEE의 AEM 6.5.18.0 Forms에서는 전체 설치 관리자 및 패치 설치 관리자의 두 가지 설치 관리자를 제공합니다.
 
-**전체 설치 관리자**: JEE의 [AEM 6.5.18.0 전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)를 사용하여 새로운 AEM Forms 인스턴스를 설정하거나 JEE의 AEM 6.5.x.x Forms에서 JEE의 AEM 6.5.18.0 Forms으로 업그레이드할 수 있습니다.
+**전체 설치 관리자**: JEE의 [AEM 6.5.18.0 전체 설치 관리자](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)를 사용하여 새로운 AEM Forms 인스턴스를 설정하거나 JEE의 AEM 6.5.x.x Forms에서 JEE의 AEM 6.5.18.0 Forms으로 업그레이드할 수 있습니다.
 
-**패치 설치 관리자**: [JEE 패치 설치 관리자의 AEM 6.5.18.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)은(는) 이미 AEM 6.5.x.x 버전을 사용 중인 고객을 위한 것입니다. 패치 설치 관리자를 사용하여 최신 버전의 AEM Forms으로 업그레이드할 수 있습니다.
+**패치 설치 관리자**: [JEE 패치 설치 관리자의 AEM 6.5.18.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)은(는) 이미 AEM 6.5.x.x 버전을 사용 중인 고객을 위한 것입니다. 패치 설치 관리자를 사용하여 최신 버전의 AEM Forms으로 업그레이드할 수 있습니다.
 
 다음 표에서는 전체 및 패치 설치 관리자를 사용하기 위한 시나리오를 보여 줍니다.
 
@@ -33,12 +54,12 @@ JEE의 AEM 6.5.18.0 Forms에서는 전체 설치 관리자 및 패치 설치 관
 전체 설치 관리자를 사용하여 기존 JEE의 AEM Forms 6.5.x.x를 JEE의 AEM 6.5.18.0 Forms으로 업그레이드하려면 다음 절차를 수행하십시오.
 
 1. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 JEE의 AEM 6.5 Forms 설치 관리자를 다운로드합니다. 설치 관리자를 사용하려면 유효한 유지 관리 및 지원 계약이 필요합니다.
-1. 성공적인 업그레이드를 위해 수행할 검사에 대해 알아보려면 [업그레이드 검사 목록 및 계획](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65_kr)을 참조하세요.
-1. 서버 가동 중지 시간을 최소화하면서 업그레이드가 올바르게 실행되도록 하는 작업을 알아보고 수행하려면 [AEM Forms으로 업그레이드 준비](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65_kr)를 참조하십시오.
+1. 성공적인 업그레이드를 위해 수행할 검사에 대해 알아보려면 [업그레이드 검사 목록 및 계획](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)을 참조하세요.
+1. 서버 가동 중지 시간을 최소화하면서 업그레이드가 올바르게 실행되도록 하는 작업을 알아보고 수행하려면 [AEM Forms으로 업그레이드 준비](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65)를 참조하십시오.
 1. 기존 환경 및 애플리케이션 서버에 따라 다음 문서 중 하나를 선택하고 지침을 따릅니다.
 
-   * [AEM 6.3 또는 AEM 6.4 Forms에서 JBoss용 AEM 6.5 Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_kr)
-   * [AEM 6.3 또는 AEM 6.4 Forms에서 WebSphere용 AEM 6.5 Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_kr)
-   * [AEM 6.3 또는 AEM 6.4 Forms에서 JBoss용 AEM 6.5 Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_kr)
+   * [AEM 6.3 또는 AEM 6.4 Forms에서 JBoss용 AEM 6.5 Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
+   * [AEM 6.3 또는 AEM 6.4 Forms에서 WebSphere용 AEM 6.5 Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
+   * [AEM 6.3 또는 AEM 6.4 Forms에서 JBoss용 AEM 6.5 Forms으로 업그레이드](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
 
 LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms에서 AEM 6.5 Forms으로 직접 업그레이드할 수 없습니다. 하나 이상의 LiveCycle 또는 AEM Forms 버전으로 중간 업그레이드를 수행한 다음 AEM 6.5 Forms으로 업그레이드할 수 있습니다. 중간 버전 목록 및 해당 업그레이드 지침은 [업그레이드 경로 선택](upgrade.md)을 참조하세요.

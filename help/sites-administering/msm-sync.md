@@ -10,13 +10,25 @@ feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: d50dedf3-1973-471d-b16d-f56d60325bb3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2681'
 ht-degree: 27%
-
 ---
-
 # Live Copy 동기화 구성{#configuring-live-copy-synchronization}
 
 라이브 카피를 소스 콘텐츠와 동기화하는 방법과 시기를 제어하려면 다음 작업을 수행하십시오.
@@ -229,7 +241,8 @@ ht-degree: 27%
   </tr>
   <tr>
    <td>productCreateUpdate</td>
-   <td>카탈로그 내에서 제품 리소스를 만들거나 업데이트합니다. 이 작업은 다음 상황 중 하나에 사용하기 위한 것입니다.<ul>
+   <td>카탈로그 내에서 제품 리소스를 만들거나 업데이트합니다. 이 작업은 다음 상황 중 하나에 사용하기 위한 것입니다.
+    <ul>
      <li>카탈로그(또는 카탈로그 섹션) 생성 또는 롤아웃</li>
      <li>사용자가 제품 구성 요소에 대한 동기화 상속을 복원합니다.</li>
     </ul> </td>

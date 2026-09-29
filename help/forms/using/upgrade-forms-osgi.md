@@ -6,13 +6,33 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: 818673651f736311d400c71bfeb635b73b25a034
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: b9cdd520-e7a7-4af9-a95f-296f28882b69
+    internal-label: AEM Forms upgrade
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1620'
 ht-degree: 7%
-
 ---
-
 # OSGi에서 AEM 6.5 Forms LTS로 업그레이드 {#upgrade-to-aem-forms-osgi}
 
 [AEM 6.5에서 AEM 6.5 LTS로 업그레이드](/help/sites-deploying/upgrade.md)하려면 AEM 6.5.17.0 Forms 이상으로 업그레이드하십시오. AEM 6.5.17.0 이상에서 AEM 6.5 Forms LTS로 직접 업그레이드할 수 있습니다.
@@ -52,7 +72,7 @@ AEM Forms 6.5.17.0 이상으로 업그레이드한 후 다음 단계에 따라 A
 
      마이그레이션 유틸리티를 사용하면 이전 버전의 적응형 양식 및 서신 관리 에셋이 AEM 6.5 양식과 호환될 수 있습니다. 이 유틸리티는 AEM 소프트웨어 배포에서 다운로드할 수 있습니다. 마이그레이션 유틸리티를 구성하고 사용하는 방법에 대한 단계별 정보는 [마이그레이션 유틸리티](../../forms/using/migration-utility.md)를 참조하십시오.
 
-     [초안 및 제출 구성 요소 통합](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)에 샘플 을 사용하고 있으며 이전 버전에서 업그레이드하는 경우 업그레이드를 수행한 후 다음 SQL 쿼리를 실행하십시오.
+     [초안 및 제출 구성 요소 통합](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)에 샘플 을 사용하고 있으며 이전 버전에서 업그레이드하는 경우 업그레이드를 수행한 후 다음 SQL 쿼리를 실행하십시오.
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am
@@ -93,7 +113,7 @@ AEM Forms 6.5.17.0 이상으로 업그레이드한 후 다음 단계에 따라 A
 
    >[!NOTE]
    >
-   >AEM 6.4 Forms에서 crx-repository 구조가 변경되었습니다. 6.3 Forms에서 AEM 6.5 Forms으로 업그레이드하는 경우 새로 만드는 사용자 지정에 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 [AEM의 Forms 저장소 재구성](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)을 참조하십시오.
+   >AEM 6.4 Forms에서 crx-repository 구조가 변경되었습니다. 6.3 Forms에서 AEM 6.5 Forms으로 업그레이드하는 경우 새로 만드는 사용자 지정에 변경된 경로를 사용합니다. 변경된 경로의 전체 목록은 [AEM의 Forms 저장소 재구성](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5)을 참조하십시오.
 
 
 ## JBoss EAP 8(Windows)에서 AEM 배포
@@ -395,8 +415,8 @@ AEM 실행 모드(작성자/게시)를 변경하려면 WAR을 다시 패키징�
 ### 관련 설명서
 
 * [JBoss EAP 8 설명서](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0)
-* [Adobe Experience Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ko)
-* [AEM 설치 및 배포 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=ko)
+* [Adobe Experience Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-65.html)
+* [AEM 설치 및 배포 안내서](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)
 
 ### 문서 정보
 

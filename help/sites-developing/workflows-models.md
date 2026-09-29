@@ -10,18 +10,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7822a108-f128-4ccf-bd9f-348f0c2688da
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2503'
 ht-degree: 2%
-
 ---
-
 # 워크플로 모델 만들기{#creating-workflow-models}
 
 >[!CAUTION]
 >
->클래식 UI를 사용하려면 [AEM 6.3 설명서](https://helpx.adobe.com/kr/experience-manager/6-3/help/sites-developing/workflows-models.html)를 참조하십시오.
+>클래식 UI를 사용하려면 [AEM 6.3 설명서](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html)를 참조하십시오.
 
 [워크플로 모델](/help/sites-developing/workflows.md#model)을(를) 만들어 사용자가 워크플로를 시작할 때 실행되는 일련의 단계를 정의합니다. 워크플로가 일시적인지 또는 여러 리소스를 사용하는지 여부와 같은 모델 속성을 정의할 수도 있습니다.
 
@@ -190,7 +199,7 @@ ht-degree: 2%
 
 1. **[!UICONTROL 도구 > 일반 > 태그 지정]**&#x200B;을 통해 이동합니다. **[!UICONTROL 워크플로]**&#x200B;를 선택하십시오.
 
-1. **[!UICONTROL 만들기 > 태그 만들기]**&#x200B;를 선택합니다. **[!UICONTROL Title]**&#x200B;을(를) `DAM`(으)로 설정하고 **[!UICONTROL Name]**&#x200B;을(를) `dam`(으)로 설정합니다. **[!UICONTROL 제출]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 만들기 > 태그 만들기]**&#x200B;를 선택합니다. **[!UICONTROL Title]**&#x200B;을(를) `DAM`(으)로 설정하고 **[!UICONTROL Name]**&#x200B;을(를) `dam`(으)로 설정합니다. **[!UICONTROL 제출]**을 선택합니다.
    ![워크플로 모델에서 태그를 만듭니다](assets/workflow_create_tag.png)
 
 1. **[!UICONTROL 도구 > 워크플로 > 모델]**(으)로 이동합니다. **[!UICONTROL 활성화 요청]**&#x200B;을 선택한 다음 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
@@ -199,7 +208,7 @@ ht-degree: 2%
 
 1. **[!UICONTROL 태그]** 필드에 `Workflow : DAM`을(를) 추가합니다. 확인(확인 표시)을 사용하여 선택 내용을 확인합니다.
 
-1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 사용하여 태그의 추가를 확인합니다.
+1. **[!UICONTROL 저장 및 닫기]**를 사용하여 태그의 추가를 확인합니다.
    ![모델의 페이지 속성 편집](assets/workflow_model_edit_activation1.png)
 
 1. **[!UICONTROL 동기화]**&#x200B;를 사용하여 프로세스를 완료합니다. 이제 터치 지원 UI에서 워크플로를 사용할 수 있습니다.

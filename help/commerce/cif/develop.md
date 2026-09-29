@@ -9,13 +9,21 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 15%
-
 ---
-
 # AEM Commerce 개발 {#develop}
 
 AEM용 Commerce integration framework(CIF)를 기반으로 AEM Commerce 프로젝트를 개발하는 것은 다른 AEM 프로젝트와 동일한 규칙과 모범 사례를 따릅니다. 먼저 다음을 검토하십시오.
@@ -31,7 +39,7 @@ CIF 프로젝트에서 작업하려면 로컬 개발 환경을 사용하는 것�
 
 >[!NOTE]
 >
->다음 지침은 AEM 6.5 LTS에 중점을 둔 CIF을 사용하여 AEM Commerce용 로컬 AEM 개발 환경을 설정하는 데 도움이 됩니다. AEM as a Cloud Service을 사용하는 경우 [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#) 설명서를 참조하십시오.
+>다음 지침은 AEM 6.5 LTS에 중점을 둔 CIF을 사용하여 AEM Commerce용 로컬 AEM 개발 환경을 설정하는 데 도움이 됩니다. AEM as a Cloud Service을 사용하는 경우 [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#) 설명서를 참조하십시오.
 
 CIF 추가 기능이라고 하는 AEM용 AEM Commerce 추가 기능은 로컬 개발에도 사용할 수 있으며 AEM 패키지로 제공됩니다. 기능 팩으로 [소프트웨어 배포 포털](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)에서 다운로드할 수 있습니다.
 

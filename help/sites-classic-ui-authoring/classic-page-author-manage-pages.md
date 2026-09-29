@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: bff63900-0007-472d-a910-bf20b8013668
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 20%
-
+source-wordcount: '1916'
+ht-degree: 19%
 ---
-
 # 페이지 생성 및 구성{#creating-and-organizing-pages}
 
 이 섹션에서는 해당 페이지에서 [콘텐츠를 만들기](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)할 수 있도록 Adobe Experience Manager(AEM)로 페이지를 만들고 관리하는 방법을 설명합니다.
@@ -79,13 +88,13 @@ ht-degree: 20%
 
 * **[제목](#title)**:
 
-   * 콘솔에서 사용자에게 표시되고, 편집할 때 페이지 콘텐츠 상단에 표시됩니다.
-   * 이 필드는 옵션입니다.
+  * 콘솔에서 사용자에게 표시되고, 편집할 때 페이지 콘텐츠 상단에 표시됩니다.
+  * 이 필드는 옵션입니다.
 
 * **[이름](#name)**:
 
-   * URI를 생성하는 데 사용됩니다.
-   * 이 필드에 대한 사용자 입력은 옵션입니다. 지정하지 않을 경우 이름이 제목에서 파생됩니다.
+  * URI를 생성하는 데 사용됩니다.
+  * 이 필드에 대한 사용자 입력은 옵션입니다. 지정하지 않을 경우 이름이 제목에서 파생됩니다.
 
 페이지를 만들 때 AEM [AEM 및 JCR에서 지정한 규칙에 따라 페이지 이름을 확인](/help/sites-developing/naming-conventions.md)합니다.
 
@@ -106,7 +115,7 @@ ht-degree: 20%
 | 제목 | 파생되는 이름 |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&ast;ç+ | sc---c-.html |
+| SC%&amp;&amp;ast;ç+ | sc—c-.html |
 
 #### 이름 {#name}
 
@@ -173,8 +182,8 @@ AEM에는 특별히 제공되는 몇 개의 템플릿이 있습니다. 제공된
    * **제목**&#x200B;을 입력하십시오. 이 제목은 사용자에게 표시됩니다.
    * **이름**&#x200B;을(를) 제공하십시오. URI를 생성하는 데 사용됩니다. 지정하지 않으면 제목에서 이름이 파생됩니다.
 
-      * 페이지를 만들 때 **이름** 페이지를 제공하면 AEM [AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인](/help/sites-developing/naming-conventions.md)합니다.
-      * 클래식 UI에서 **은(는)**&#x200B;이름&#x200B;**필드에 잘못된 문자를 입력할 수 없습니다**.
+     * 페이지를 만들 때 **이름** 페이지를 제공하면 AEM [AEM 및 JCR에서 지정한 규칙에 따라 이름을 확인](/help/sites-developing/naming-conventions.md)합니다.
+     * 클래식 UI에서 **은(는)**&#x200B;이름&#x200B;**필드에 잘못된 문자를 입력할 수 없습니다**.
 
    * 새 페이지를 만드는 데 사용할 템플릿을 클릭합니다.
 

@@ -9,13 +9,29 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
 exl-id: b41e5e15-eb7f-4404-82a0-2ba034694577
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 0%
-
+ht-degree: 2%
 ---
-
 # 동기화 스케줄러 구성 {#configuring-the-synchronization-scheduler}
 
 기본적으로 동기화 스케줄러는 3분마다 실행되어 LiveCycle Workbench 11을 통해 저장소에서 수정 및 업데이트된 모든 에셋을 동기화합니다. 양식 및 리소스가 포함된 애플리케이션은 동기화 프로세스가 완료되면 AEM Forms 사용자 인터페이스에 표시됩니다.
@@ -52,7 +68,7 @@ ht-degree: 0%
 
 워크플로우 디자이너(LiveCycle Workbench)에서 새 응용 프로그램을 만들 수 있습니다.
 
-새로 만든 응용 프로그램과 /content/dam/formsanddocuments에 있는 폴더의 이름이 같은 경우 &quot;*이 응용 프로그램과 이름이 같은 자산이 루트 수준에 이미 있습니다.*&quot;이(가) 기록되었습니다.
+새로 만든 응용 프로그램과 /content/dam/formsanddocuments에 있는 폴더의 이름이 같은 경우 &quot;*이 응용 프로그램과 이름이 같은 자산이 루트 수준에 이미 있습니다.*&quot; 이(가) 기록됩니다.
 
 충돌을 해결하려면 애플리케이션 이름을 바꾸고 자산을 수동으로 동기화합니다.
 

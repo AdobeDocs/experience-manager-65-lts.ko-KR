@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: d872078f-3aa0-4abe-ac2a-74a1cd47b219
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 10%
-
+source-wordcount: '1329'
+ht-degree: 9%
 ---
-
 # Adobe Analytics 및 Adobe Target 선택{#opting-into-adobe-analytics-and-adobe-target}
 
 AEM에는 Adobe Analytics 및 Adobe Target과 통합하는 데 도움이 되는 옵트인 절차가 있습니다. 관리자 사용자 그룹에 할당된 미리 로드된 작업으로 즉시 사용할 수 있습니다.
@@ -180,9 +189,9 @@ Analytics 및 Target과의 통합을 구성하면 AEM이 필요한 클라우드 
 
 * 필요한 모든 자격 증명으로 채워진 **marketingcloud.properties** 파일을 사용하려면 다음 매개 변수를 전송해야 합니다.
 
-   * `automaticProvisioning`= `true`
-   * `servicename`= `analytics|target`
-   * `path`=생성된 클라우드 서비스 구성을 첨부할 AEM 페이지 경로
+  * `automaticProvisioning`= `true`
+  * `servicename`= `analytics|target`
+  * `path`=생성된 클라우드 서비스 구성을 첨부할 AEM 페이지 경로
 
   예를 들어 Analytics와 Target 구성을 모두 만들고 we.retail 페이지에 첨부하는 curl 요청은 다음과 같습니다.
 
@@ -191,17 +200,17 @@ Analytics 및 Target과의 통합을 구성하면 AEM이 필요한 클라우드 
   ```
 
 * **marketingcloud.properties** 파일을 사용하지 않으려면 자격 증명과 매개 변수를 보내야 합니다. 예:
-   * automaticProvisioning= `true`
-   * servicename= `analytics|target`
-   * path=생성된 클라우드 서비스 구성을 첨부할 AEM 페이지 경로. 여러 경로를 정의할 수 있습니다.
-   * analytics.server= `https://servername`
-   * analytics.company= `Name of company`
-   * analytics.username= `me`
-   * analytics.secret= `secret`
-   * analytics.reportsuite= `we-retail`
-   * target.clientcode= `mycompany`
-   * target.email= `me@adobe.com`
-   * target.password= `password`
+  * automaticProvisioning= `true`
+  * servicename= `analytics|target`
+  * path=생성된 클라우드 서비스 구성을 첨부할 AEM 페이지 경로. 여러 경로를 정의할 수 있습니다.
+  * analytics.server= `https://servername`
+  * analytics.company= `Name of company`
+  * analytics.username= `me`
+  * analytics.secret= `secret`
+  * analytics.reportsuite= `we-retail`
+  * target.clientcode= `mycompany`
+  * target.email= `me@adobe.com`
+  * target.password= `password`
 
   이 경우 Analytics와 Target 구성을 모두 만들고 we-retail 페이지에 첨부하는 curl 요청은 다음과 같습니다.
 

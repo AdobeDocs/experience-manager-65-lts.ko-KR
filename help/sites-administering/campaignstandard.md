@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: fbc73503-efa3-480b-bdc6-9f997c3f3474
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1824'
 ht-degree: 13%
-
 ---
-
 # AEM 6.5와 Adobe Campaign Standard 통합 {#integrating-with-adobe-campaign-standard}
 
 AEM 6.5를 ACS(Adobe Campaign Standard)와 통합하여 AEM에서 이메일 게재, 콘텐츠 및 양식을 직접 관리할 수 있습니다. 솔루션 간 양방향 통신이 가능하려면 Adobe Campaign Standard과 AEM 모두에서 구성 단계를 수행해야 합니다.
@@ -30,13 +39,13 @@ AEM 6.5를 ACS(Adobe Campaign Standard)와 통합하여 AEM에서 이메일 게�
 
 AEM과 Adobe Campaign Standard 간의 통합을 구성하려면 두 솔루션에서 몇 가지 단계가 필요합니다.
 
-1. [구성 &#x200B;](#aemserver-user)
-1. [확인 &#x200B;](#resource-type-filter)
+1. [Campaign에서 `aemserver` 사용자 구성](#aemserver-user)
+1. [Campaign에서 `AEMResourceTypeFilter` 확인](#resource-type-filter)
 1. [Campaign에서 AEM 관련 이메일 게재 템플릿 만들기](#aem-email-delivery-template)
 1. [AEM에서 Campaign 통합 구성](#campaign-integration)
 1. [AEM 게시 인스턴스에 대한 복제 구성](#replication)
 1. [AEM 외부화 구성](#externalizer)
-1. [구성 &#x200B;](#campaign-remote-user)
+1. [AEM에서 `campaign-remote` 사용자 구성](#campaign-remote-user)
 1. [Campaign에서 AEM 외부 계정 구성](#acc-external-user)
 
 이 문서는 이러한 각 단계를 자세히 안내합니다.
@@ -44,7 +53,7 @@ AEM과 Adobe Campaign Standard 간의 통합을 구성하려면 두 솔루션에
 ## 사전 요구 사항 {#prerequisites}
 
 * Adobe Campaign Standard에 대한 관리자 액세스
-   * Adobe Campaign Standard 설정 및 구성 방법에 대한 자세한 내용은 [Adobe Campaign Standard 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=ko)
+  * Adobe Campaign Standard 설정 및 구성 방법에 대한 자세한 내용은 [Adobe Campaign Standard 설명서를 참조하십시오.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)
 * AEM에 대한 관리자 액세스
 
 ## Campaign에서 aemserver 사용자 구성 {#aemserver-user}
@@ -65,7 +74,7 @@ AEM과 Adobe Campaign Standard 간의 통합을 구성하려면 두 솔루션에
 
 이제 AEM이 이 권한을 사용하여 Adobe Campaign과 통신할 수 있도록 `aemserver` 사용자에게 필요한 권한이 있습니다.
 
-그러나 AEM에서 `aemserver` 사용자를 사용하려면 먼저 해당 암호를 설정해야 합니다. Adobe Campaign을 통해서는 이 작업을 수행할 수 없습니다. Adobe 지원 엔지니어가 수행해야 합니다. [Adobe 고객 지원 센터에 티켓을 제출](https://experienceleague.adobe.com/ko?support-tab=home#support)하여 `aemserver` 암호 재설정을 요청하세요. Adobe 고객 지원 센터에서 제공한 암호를 확보하면 안전한 위치에 보관하십시오.
+그러나 AEM에서 `aemserver` 사용자를 사용하려면 먼저 해당 암호를 설정해야 합니다. Adobe Campaign을 통해서는 이 작업을 수행할 수 없습니다. Adobe 지원 엔지니어가 수행해야 합니다. [Adobe 고객 지원 센터에 티켓을 제출](https://experienceleague.adobe.com/?support-tab=home#support)하여 `aemserver` 암호 재설정을 요청하세요. Adobe 고객 지원 센터에서 제공한 암호를 확보하면 안전한 위치에 보관하십시오.
 
 ## Campaign에서 AEMResourceTypeFilter 확인 {#resource-type-filter}
 
@@ -141,7 +150,7 @@ AEM은 기본 제공 통합 및 Adobe Campaign에서 구성한 `aemserver` 사�
 
 1. 구성 편집을 위한 새 창과 대화 상자가 열립니다. 필요한 정보를 입력합니다.
 
-   * **사용자 이름** - 이전 단계에서 구성한 Adobe Campaign의 [사용자 `aemserver`입니다.](#aemserver-user) 이는 기본적으로 `aemserver`입니다.
+   * **사용자 이름** - 이전 단계에서 구성한 Adobe Campaign의 [사용자 `aemserver`입니다.](#aemserver-user) 기본적으로 `aemserver`입니다.
    * **암호** - 이전 단계에서 Adobe 고객 지원 센터에 요청한 Adobe Campaign의 [사용자 `aemserver`에 대한 암호입니다.](#aemserver-user)
    * **API 끝점** - Adobe Campaign 인스턴스 URL입니다.
 

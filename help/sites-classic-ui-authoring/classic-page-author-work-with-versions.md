@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7ea1b7d4-6e07-4ad4-9bac-ff2214b8f47e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1342'
 ht-degree: 19%
-
 ---
-
 # 페이지 버전을 사용하여 작업{#working-with-page-versions}
 
 버전 관리를 통해 특정 시점의 페이지 “스냅샷”을 만들 수 있습니다. 버전 관리로 다음과 같은 작업을 수행할 수 있습니다.
@@ -36,7 +45,7 @@ ht-degree: 19%
 
 1. **댓글**&#x200B;을 입력하세요(선택 사항).
 1. 레이블을 버전으로 설정하려면(선택 사항) **자세히 >>** 단추를 클릭하고 **레이블**&#x200B;을(를) 설정하여 버전 이름을 지정하십시오. 레이블이 설정되지 않은 경우 버전은 자동으로 증가하는 번호입니다.
-1. **버전 만들기**&#x200B;를 클릭합니다. 페이지에 회색으로 표시된 메시지가 표시됩니다. 예:
+1. **버전 만들기**를 클릭합니다. 페이지에 회색으로 표시된 메시지가 표시됩니다. 예:
 버전 1.2 생성 대상: 셔츠
 
 >[!NOTE]
@@ -170,8 +179,8 @@ ht-degree: 19%
 1. 문서의 타임라인을 따라 이동하려면 타임라인을 선택하고 이동(누른 채 드래그)합니다.
 
    * 모든 줄은 게시된 버전을 나타냅니다.
-페이지가 활성화되면 새 줄이 시작됩니다. 문서를 편집할 때마다 새 색상이 나타납니다.
-아래 예에서 빨간색 선은 페이지가 초기 녹색 버전의 기간 동안 편집되었음을 나타냅니다. 노란색 선은 페이지가 빨간색 버전 중에 편집된 경우 등을 나타냅니다.
+     페이지가 활성화되면 새 줄이 시작됩니다. 문서를 편집할 때마다 새 색상이 나타납니다.
+     아래 예에서 빨간색 선은 페이지가 초기 녹색 버전의 기간 동안 편집되었음을 나타냅니다. 노란색 선은 페이지가 빨간색 버전 중에 편집된 경우 등을 나타냅니다.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 

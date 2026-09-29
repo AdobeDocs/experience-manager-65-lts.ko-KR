@@ -6,13 +6,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 95cc8c29-7494-4326-934d-6def59875d71
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '786'
 ht-degree: 1%
-
 ---
-
 
 # SPA의 복합 구성 요소 {#composite-components-in-spas}
 
@@ -51,7 +65,7 @@ AEM 내의 SPA 구현에 따라 복합 구성 요소를 구현하기 위한 세 
 먼저 합성 구성 요소를 구성할 구성 요소, 즉 이미지와 해당 텍스트에 대한 구성 요소를 만듭니다.
 
 1. AEM 프로젝트에서 텍스트 구성 요소를 만듭니다.
-1. 구성 요소의 `resourceType` 노드에 있는 프로젝트에서 해당 `editConfig`을(를) 추가합니다.
+1. 구성 요소의 `editConfig` 노드에 있는 프로젝트에서 해당 `resourceType`을(를) 추가합니다.
 
    ```text
     resourceType: 'wknd-spa/components/text' 
@@ -125,7 +139,7 @@ function Home() {
 }
 ```
 
-편집기에 텍스트 및 이미지에 대한 빈 자리 표시자가 표시됩니다. 편집기를 사용하여 이러한 요소에 대한 값을 입력할 때 지정된 페이지 경로, 즉 `/content/wknd-spa/home`에 지정된 이름과 함께 루트 수준의 `itemPath`에 저장됩니다.
+편집기에 텍스트 및 이미지에 대한 빈 자리 표시자가 표시됩니다. 편집기를 사용하여 이러한 요소에 대한 값을 입력할 때 지정된 페이지 경로, 즉 `itemPath`에 지정된 이름과 함께 루트 수준의 `/content/wknd-spa/home`에 저장됩니다.
 
 ![편집기의 복합 카드 구성 요소](assets/composite-card.png)
 
@@ -137,7 +151,7 @@ function Home() {
 
 그런 다음 SPA에 추가하고 콘텐츠를 검색할 수 있습니다.
 
-1. SPA에서 이에 대한 해당 구성 요소를 만듭니다. 하위 구성 요소가 SPA 프로젝트 내의 해당 AEM 리소스 유형에 매핑되어 있는지 확인합니다. 이 예제에서는 앞의 `AEMText`과(와) 동일한 `AEMImage` 및 [&#x200B; 구성 요소를 사용합니다.](#component-does-not-exist)
+1. SPA에서 이에 대한 해당 구성 요소를 만듭니다. 하위 구성 요소가 SPA 프로젝트 내의 해당 AEM 리소스 유형에 매핑되어 있는지 확인합니다. 이 예제에서는 앞의 [과(와) 동일한 `AEMText` 및 `AEMImage` 구성 요소를 사용합니다.](#component-does-not-exist)
 
    ```javascript
    import React from 'react';
@@ -181,4 +195,4 @@ function Home() {
 
 ![노드 구조의 복합 경로](assets/composite-path.png)
 
-`AEMCard` 구성 요소는 이전 사용 사례에서 정의된 [과(와) 동일합니다.](#content-does-not-exist) AEM 프로젝트의 위 위치에 정의된 콘텐츠가 SPA에 포함됩니다.
+`AEMCard` 구성 요소는 이전 사용 사례에서 정의된 [과(와) 동일합니다.](#content-does-not-exist) 여기서 AEM 프로젝트의 위 위치에 정의된 콘텐츠는 SPA에 포함됩니다.

@@ -5,13 +5,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 3a529a82-e2fd-423c-96c1-a5accc87775e
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 3%
-
+source-wordcount: '410'
+ht-degree: 19%
 ---
-
 # 호환성 패키지{#compatibility-package}
 
 ## 개요 {#overview}
@@ -20,7 +34,7 @@ ht-degree: 3%
 
 AEMFD 호환성 패키지를 통해 [AEM Forms에서 다음 자산을 사용할 수 있습니다. 6.5.22.0, 6.4, 6.3 및 6.2(AEM Forms 6.5 LTS](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms))
 
-* 문서 단편
+* 문서 조각
 * 편지
 * 데이터 사전
 * 적응형 양식 더 이상 사용되지 않는 템플릿 및 페이지
@@ -42,7 +56,7 @@ AEMFD 호환성 패키지를 통해 [AEM Forms에서 다음 자산을 사용할 
 
    >[!NOTE]
    >
-   > `Ctrl + C` 명령을 사용하여 SDK을 다시 시작하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+   > `Ctrl + C` 명령을 사용하여 SDK을 다시 시작하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
    자세한 내용은 [마이그레이션 유틸리티](../../forms/using/migration-utility.md)를 참조하십시오.
 
@@ -52,24 +66,24 @@ AEMFD 호환성 패키지를 통해 [AEM Forms에서 다음 자산을 사용할 
 
 * AEM 6.4 및 이전 버전의 서신 관리 Assets:
 
-   * [편지](../../forms/using/create-letter.md)
-   * [데이터 사전](/help/forms/using/data-dictionary.md)
-   * 문서 단편
+  * [편지](../../forms/using/create-letter.md)
+  * [데이터 사전](/help/forms/using/data-dictionary.md)
+  * 문서 조각
 
 * 적응형 양식 사용 중단된 템플릿:
 
-   * /libs/fd/af/templates/blankTemplate2
-   * /libs/fd/af/templates/simpleEnrollmentTemplate
-   * /libs/fd/af/templates/simpleEnrollmentTemplate2
-   * /libs/fd/af/templates/surveyTemplate
-   * /libs/fd/af/templates/surveyTemplate2
-   * /libs/fd/af/templates/tabEnrollmentTemplate
-   * /libs/fd/af/templates/tabEnrollmentTemplate2
-   * /libs/fd/afaddon/templates/advancedEnrollmentTemplate
-   * /libs/fd/afaddon/templates/advancedEnrollmentTemplate2
+  * /libs/fd/af/templates/blankTemplate2
+  * /libs/fd/af/templates/simpleEnrollmentTemplate
+  * /libs/fd/af/templates/simpleEnrollmentTemplate2
+  * /libs/fd/af/templates/surveyTemplate
+  * /libs/fd/af/templates/surveyTemplate2
+  * /libs/fd/af/templates/tabEnrollmentTemplate
+  * /libs/fd/af/templates/tabEnrollmentTemplate2
+  * /libs/fd/afaddon/templates/advancedEnrollmentTemplate
+  * /libs/fd/afaddon/templates/advancedEnrollmentTemplate2
 
 * 적응형 양식 더 이상 사용되지 않는 페이지:
 
-   * /libs/fd/af/components/page/survey
-   * /libs/fd/af/components/page/tabbedenrollment
-   * /libs/fd/afaddon/components/page/advancedenrollment
+  * /libs/fd/af/components/page/survey
+  * /libs/fd/af/components/page/tabbedenrollment
+  * /libs/fd/afaddon/components/page/advancedenrollment

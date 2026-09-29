@@ -9,16 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7eae83bd-7982-4051-821f-b43f65c5af2b
-source-git-commit: cf22b13e0f7c8e66b598f85aab81b022480e60bc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 2%
-
+source-wordcount: '2529'
+ht-degree: 1%
 ---
-
 # Sling 어댑터 사용{#using-sling-adapters}
 
-[Sling](https://sling.apache.org)은(는) [적응성](https://sling.apache.org/documentation/the-sling-engine/adapters.html) 인터페이스를 구현하는 개체를 편리하게 번역할 수 있는 [어댑터 패턴](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29)을 제공합니다. 이 인터페이스는 개체를 인수로 전달되는 클래스 형식으로 변환하는 일반 [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 메서드를 제공합니다.
+[Sling](https://sling.apache.org)은(는) [적응성](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 인터페이스를 구현하는 개체를 편리하게 번역할 수 있는 [어댑터 패턴](https://sling.apache.org/documentation/the-sling-engine/adapters.html)을 제공합니다. 이 인터페이스는 개체를 인수로 전달되는 클래스 형식으로 변환하는 일반 [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 메서드를 제공합니다.
 
 예를 들어 리소스 객체를 해당 노드 객체로 변환하려면 다음과 같이 하면 됩니다.
 
@@ -72,11 +81,11 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
 
   개체는 여전히 `Adaptable` 인터페이스를 구현해야 하며 [`SlingAdaptable`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/adapter/SlingAdaptable.html)을(를) 확장해야 합니다(`adaptTo` 호출을 중앙 어댑터 관리자에 전달).
 
-  `adaptTo`과(와) 같은 기존 클래스의 `Resource` 메커니즘에 후크를 연결합니다.
+  `Resource`과(와) 같은 기존 클래스의 `adaptTo` 메커니즘에 후크를 연결합니다.
 
 * 둘의 조합.
 
-첫 번째 경우 Java™ 문서에는 `adaptTo-targets`이(가) 가능한 내용이 표시될 수 있습니다. 그러나 JCR 기반 리소스와 같은 특정 하위 클래스의 경우에는 가능하지 않은 경우가 많습니다. 후자의 경우 `AdapterFactory`의 구현은 일반적으로 번들의 전용 클래스에 속하므로 클라이언트 API에 노출되거나 Java™ 문서에 나열되지 않습니다. 이론적으로는 `AdapterFactory`OSGi[&#x200B; 서비스 런타임에서 모든 &#x200B;](/help/sites-deploying/configuring-osgi.md) 구현에 액세스하여 &quot;적응성&quot;(소스 및 타겟) 구성을 볼 수 있지만 서로 매핑하지는 않을 수 있습니다. 결국 내부 논리에 따라 달라지는데, 이를 반드시 문서화해야 한다. 따라서 참조입니다.
+첫 번째 경우 Java™ 문서에는 `adaptTo-targets`이(가) 가능한 내용이 표시될 수 있습니다. 그러나 JCR 기반 리소스와 같은 특정 하위 클래스의 경우에는 가능하지 않은 경우가 많습니다. 후자의 경우 `AdapterFactory`의 구현은 일반적으로 번들의 전용 클래스에 속하므로 클라이언트 API에 노출되거나 Java™ 문서에 나열되지 않습니다. 이론적으로는 [OSGi](/help/sites-deploying/configuring-osgi.md) 서비스 런타임에서 모든 `AdapterFactory` 구현에 액세스하여 &quot;적응성&quot;(소스 및 타겟) 구성을 볼 수 있지만 서로 매핑하지는 않을 수 있습니다. 결국 내부 논리에 따라 달라지는데, 이를 반드시 문서화해야 한다. 따라서 참조입니다.
 
 ## 참조 {#reference}
 
@@ -168,7 +177,7 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/dam/api/Rendition.html">렌디션</a></td>
-   <td><code>dam:Asset</code> 렌디션인 경우(<code>nt:file</code>의 렌디션 폴더 아래 <code>dam:Asset</code>)</td>
+   <td><code>dam:Asset</code> 렌디션인 경우(<code>dam:Asset</code>의 렌디션 폴더 아래 <code>nt:file</code>)</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/tagging/Tag.html">태그</a></td>
@@ -338,7 +347,7 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
 
 #### 보안 {#security}
 
-**승인 가능**, **사용자 및 &#x200B;** 그룹**&#x200B;이(가) 다음에 적용됩니다.
+**승인 가능**, **사용자 및**&#x200B;그룹**이(가) 다음에 적용됩니다.
 
 | [노드](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | 사용자/그룹 홈 노드를 반환합니다. |
 | --- | --- |
@@ -364,4 +373,4 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
 
 #### 기타 {#other}
 
-또한 Sling/JCR/OCM은 사용자 지정 OCM(` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)`개체 콘텐츠 매핑[) 개체에 대한 &#x200B;](https://jackrabbit.apache.org/jcr/object-content-mapping.html)도 제공합니다.
+또한 Sling/JCR/OCM은 사용자 지정 OCM([개체 콘텐츠 매핑](https://jackrabbit.apache.org/jcr/object-content-mapping.html)) 개체에 대한 ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)`도 제공합니다.

@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: 46db0690-03e9-4b31-aa44-200f224f3707
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 3%
-
+source-wordcount: '394'
+ht-degree: 17%
 ---
-
 # 개발 도구{#development-tools}
 
 JCR, Apache Sling 또는 Adobe Experience Manager(AEM) 애플리케이션을 개발하기 위해 다음 도구 세트를 사용할 수 있습니다.
@@ -25,12 +36,12 @@ JCR, Apache Sling 또는 Adobe Experience Manager(AEM) 애플리케이션을 개
   CRXDE Lite/AEM 서버에 직접 액세스할 수 없는 경우, 기본 제공 구성 요소 및 Java™ 번들을 확장 또는 수정하여 애플리케이션을 개발하는 경우 또는 전용 디버거, 코드 완성 및 구문 강조 표시가 필요하지 않은 경우 CRX을 사용하는 것이 좋습니다.
 
 * 한 세트는 다음과 같이 구성됩니다.
-   * 통합 개발 환경. 예: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) 또는 [IntelliJ](/help/sites-developing/ht-intellij.md).
-   * 빌드 도구입니다. 예: [Apache Maven](/help/sites-developing/ht-projects-maven.md).
-   * Adobe에서 개발하여 저장소를 파일 시스템(버전 제어 시스템)에 매핑하는 FileVault 예: Subversion.
-   * 버그 추적기 시스템. 예를 들어, Jira입니다.
-   * 중앙 종속성 관리 시스템입니다. 예: Apache Archiva.
-   * 빌드 자동화 시스템. 예를 들어 Apache Continuum입니다.
+  * 통합 개발 환경. 예: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) 또는 [IntelliJ](/help/sites-developing/ht-intellij.md).
+  * 빌드 도구입니다. 예: [Apache Maven](/help/sites-developing/ht-projects-maven.md).
+  * Adobe에서 개발하여 저장소를 파일 시스템(버전 제어 시스템)에 매핑하는 FileVault 예: Subversion.
+  * 버그 추적기 시스템. 예를 들어, Jira입니다.
+  * 중앙 종속성 관리 시스템입니다. 예: Apache Archiva.
+  * 빌드 자동화 시스템. 예를 들어 Apache Continuum입니다.
 
   이 설정을 사용하면 애플리케이션(콘텐츠, 코드, 구성)을 모든 개발 환경 및 프로세스에 완전히 통합할 수 있습니다. 이전에 언급된 모든 개발 도구가 파일에서 작동할 수 있으므로 서로 다른 요소 간의 링크는 FileVault를 통한 저장소의 파일 시스템 표현입니다.
 
@@ -59,7 +70,7 @@ AEM은 개발을 용이하게 하는 기타 도구와 함께 제공됩니다.
 새 프로젝트를 쉽게 만들 수 있는 도구:
 
 * [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
-* [AEM Lazybones 템플릿](https://github.com/Adobe-Consulting-Services/lazybones-aem-templates)
+* [AEM 레이저본스 틀](https://github.com/Adobe-Consulting-Services/lazybones-aem-templates)
 
 >[!NOTE]
 >

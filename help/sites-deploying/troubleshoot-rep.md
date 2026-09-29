@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 0%
-
+source-wordcount: '928'
+ht-degree: 1%
 ---
-
 # 복제 문제 해결{#troubleshooting-replication}
 
 이 페이지에서는 복제 문제를 해결하는 방법에 대해 설명합니다.
@@ -50,11 +59,11 @@ ht-degree: 0%
 
 1. 저장소 손상 또는 기타 문제로 인해 특정 콘텐츠를 /var/replication/data로 serialize할 수 없습니다. logs/error.log에서 관련 오류를 확인합니다. 잘못된 복제 항목을 지우려면 다음을 수행합니다.
 
-   1. https://&lt;host>:&lt;port>/crx/de로 이동하여 관리자로 로그인합니다.
+   1. https://<host>:<port>/crx/de로 이동하여 관리자로 로그인합니다.
    1. 상단 메뉴에서 &quot;도구&quot;를 클릭합니다.
    1. 돋보기 단추를 클릭합니다.
    1. 유형으로 &quot;XPath&quot;를 선택합니다.
-   1. &quot;쿼리&quot; 상자에 이 쿼리 /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) 순서를 @slingevent:created로 입력합니다
+   1. &quot;쿼리&quot; 상자에 이 쿼리 /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) 순서를 @slingevent:created(으)로 입력합니다.
    1. &quot;검색&quot;을 클릭합니다.
    1. 결과에서 상위 항목은 최신 슬링 이벤트 작업입니다. 각 복제본을 클릭하고 대기열 맨 위에 표시되는 복제본과 일치하는 중단된 복제본을 찾습니다.
 
@@ -70,7 +79,7 @@ ht-degree: 0%
    * 로그 파일: logs/replication.log
    * 로거: com.day.cq.replication
 
-1. 어떤 식으로든 이 문제가 슬링 이벤트/작업과 관련이 있다고 의심되는 경우 이 Java™ 패키지를 다음 범주에 추가할 수도 있습니다.org.apache.sling.event
+1. 어떤 식으로든 이 문제가 슬링 이벤트/작업과 관련이 있다고 의심되는 경우 이 Java™ 패키지를 범주:org.apache.sling.event 아래에 추가할 수도 있습니다.
 
 ## 복제 에이전트 큐 일시 중지  {#pausing-replication-agent-queue}
 
