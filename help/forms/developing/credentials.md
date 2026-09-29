@@ -9,14 +9,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: b3a0eb20-5b85-45a3-a416-a16a9f44acc5
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 2%
-
 ---
-
 # 자격 증명 작업 {#working-with-credentials}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -119,10 +136,10 @@ Trust Manager API(Java)를 사용하여 AEM Forms에 자격 증명을 가져옵�
    * 요소 하나를 보유하는 문자열 배열을 만듭니다. `truststore.usage.type.sign` 값을 요소에 할당합니다.
    * `CredentialServiceClient` 개체의 `importCredential` 메서드를 호출하고 다음 값을 전달하십시오.
 
-      * 자격 증명의 별칭 값을 지정하는 문자열 값입니다.
-      * 자격 증명을 저장하는 `com.adobe.idp.Document` 인스턴스입니다.
-      * 자격 증명과 연결된 암호를 지정하는 문자열 값입니다.
-      * 사용 값을 포함하는 문자열 배열입니다. 예를 들어 이 값 `truststore.usage.type.sign`을(를) 지정할 수 있습니다. Reader 확장 자격 증명을 가져오려면 `truststore.usage.type.lcre`을(를) 지정하십시오.
+     * 자격 증명의 별칭 값을 지정하는 문자열 값입니다.
+     * 자격 증명을 저장하는 `com.adobe.idp.Document` 인스턴스입니다.
+     * 자격 증명과 연결된 암호를 지정하는 문자열 값입니다.
+     * 사용 값을 포함하는 문자열 배열입니다. 예를 들어 이 값 `truststore.usage.type.sign`을(를) 지정할 수 있습니다. Reader 확장 자격 증명을 가져오려면 `truststore.usage.type.lcre`을(를) 지정하십시오.
 
 **추가 참조**
 

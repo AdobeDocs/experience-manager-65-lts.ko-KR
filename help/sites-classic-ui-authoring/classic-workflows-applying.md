@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: d2c16908-18c2-4ab9-a1da-6fc072c94bf9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 15%
-
+source-wordcount: '255'
+ht-degree: 14%
 ---
-
 # 페이지에 워크플로 적용{#applying-workflows-to-pages}
 
 워크플로를 적용할 때에는 다음 정보를 지정합니다.
@@ -25,8 +34,8 @@ ht-degree: 15%
   AEM 관리자가 할당한 대로 액세스할 수 있는 워크플로를 적용할 수 있습니다.
 * 선택적으로:
 
-   * 워크플로우를 시작한 이유에 대한 정보를 제공하는 주석입니다.
-   * 사용자의 받은 편지함에서 워크플로 인스턴스를 식별하는 데 도움이 되는 제목입니다.
+  * 워크플로우를 시작한 이유에 대한 정보를 제공하는 주석입니다.
+  * 사용자의 받은 편지함에서 워크플로 인스턴스를 식별하는 데 도움이 되는 제목입니다.
 
 >[!NOTE]
 >

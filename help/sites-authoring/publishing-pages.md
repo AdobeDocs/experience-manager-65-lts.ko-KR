@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1706'
 ht-degree: 67%
-
 ---
-
 
 # 페이지 게시 {#publishing-pages}
 
@@ -62,9 +75,9 @@ ht-degree: 67%
    * 게시할 참조가 없으면 페이지가 직접 게시됩니다.
    * 페이지에 게시해야 하는 참조가 있을 경우 **게시 마법사**&#x200B;에 나열되며 여기서 다음과 같은 작업을 수행할 수 있습니다.
 
-      * 페이지와 함께 게시할 자산 또는 태그를 지정한 다음 **게시**&#x200B;를 사용하여 프로세스를 완료합니다.
+     * 페이지와 함께 게시할 자산 또는 태그를 지정한 다음 **게시**&#x200B;를 사용하여 프로세스를 완료합니다.
 
-      * **취소**&#x200B;를 사용하여 작업을 중단합니다.
+     * **취소**&#x200B;를 사용하여 작업을 중단합니다.
 
    ![chlimage_1](assets/chlimage_1.png)
 

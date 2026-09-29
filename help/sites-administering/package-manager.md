@@ -9,13 +9,22 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 exl-id: 6c0238ca-568e-4a46-a3cc-0b08a10cf324
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3568'
-ht-degree: 1%
-
+source-wordcount: '3576'
+ht-degree: 2%
 ---
-
 # 패키지 관리자 {#working-with-packages}
 
 패키지를 사용하면 저장소 콘텐츠를 가져오고 내보낼 수 있습니다. 패키지를 사용하여 새 콘텐츠를 설치하고 새 기능을 설치하고 인스턴스 간에 콘텐츠를 전송하고 저장소 콘텐츠를 백업할 수 있습니다.
@@ -64,8 +73,8 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 * **왼쪽 탐색 패널** - 이 패널을 사용하면 패키지 목록을 필터링하고 정렬할 수 있습니다.
 * **패키지 목록** - 왼쪽 탐색 패널의 선택 항목별로 필터링되고 정렬된 인스턴스의 패키지 목록입니다.
 * **활동 로그** - 이 패널은 처음에는 최소화되며 패키지 빌드 또는 설치 시기와 같은 패키지 관리자의 활동을 자세히 설명하도록 확장됩니다. [작업 로그] 탭에는 다음과 같은 추가 버튼이 있습니다.
-   * **로그 지우기**
-   * **표시/숨기기**
+  * **로그 지우기**
+  * **표시/숨기기**
 * **도구 모음** - 도구 모음에는 왼쪽 탐색 패널 및 패키지 목록에 대한 새로 고침 단추와 패키지를 검색, 생성 및 업로드하기 위한 단추가 포함되어 있습니다.
 
 ![패키지 관리자 UI](assets/package-manager-ui.png)
@@ -174,7 +183,7 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 | include | 포함 은 정규 표현식과 일치하는 지정된 디렉터리의 모든 파일 및 폴더를 포함합니다. **포함**&#x200B;은(는) 지정한 루트 경로 아래에 있는 다른 파일이나 폴더를 포함하지 않습니다. |
 | 제외 | 제외를 선택하면 정규 표현식과 일치하는 모든 파일 및 폴더가 제외됩니다. |
 
-패키지 필터는 처음 [패키지를 만들 때 가장 자주 정의됩니다.](#creating-a-new-package) 그러나 나중에 편집할 수도 있습니다. 그런 다음 새 필터 정의를 기반으로 콘텐츠를 업데이트하도록 패키지를 다시 빌드해야 합니다.
+패키지 필터는 처음 [패키지를 만들 때 가장 자주 정의됩니다.](#creating-a-new-package) 그러나 나중에 편집할 수도 있으며, 이후 새 필터 정의를 기반으로 콘텐츠를 업데이트하기 위해 패키지를 다시 빌드해야 합니다.
 
 >[!TIP]
 >
@@ -243,7 +252,7 @@ Package Manager 는 네 가지 주요 기능 영역으로 나뉩니다.
 
    ![새 패키지](assets/new-package.png)
 
-1. **편집**&#x200B;을 클릭하여 [패키지 콘텐츠를 정의합니다.](#package-contents) 설정 편집을 마친 후 **저장**&#x200B;을(를) 클릭합니다.
+1. **편집**&#x200B;을 클릭하여 [패키지 내용을 정의합니다.](#package-contents) 설정 편집을 마친 후 **저장**&#x200B;을(를) 클릭합니다.
 
 1. 이제 패키지를 [빌드](#building-a-package)할 수 있습니다.
 

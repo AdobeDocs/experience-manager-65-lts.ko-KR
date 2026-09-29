@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
 exl-id: 6a32bd9d-268d-4d03-b495-47ec6660c138
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1638'
 ht-degree: 0%
-
 ---
-
 # Adobe Analytics 프레임워크 사용자 지정{#customizing-the-adobe-analytics-framework}
 
 Adobe Analytics 프레임워크는 Adobe Analytics에서 추적하는 정보를 결정합니다. 기본 프레임워크를 사용자 지정하려면 JavaScript을 사용하여 사용자 지정 추적을 추가하고, Adobe Analytics 플러그인을 통합하고, 추적에 사용되는 프레임워크 내에서 일반 설정을 변경합니다.

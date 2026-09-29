@@ -7,13 +7,25 @@ feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 59b4d716-37a2-4f67-88eb-68c93359242c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 26%
-
+source-wordcount: '687'
+ht-degree: 29%
 ---
-
 # 번역 개선 사항{#translation-enhancements}
 
 이 페이지에서는 AEM 번역 관리 기능에 대한 증분 개선 사항 및 개선 사항을 제공합니다.
@@ -80,8 +92,8 @@ AEM은 구성된 TMS의 번역 메모리에 기존 문자열의 번역을 업데
 
 * TMS를 AEM과 사용할 수 있도록 구성해야 합니다.
 * 커넥터가 방법 [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html)를 구현해야 합니다.
-   * 이 방법에 포함되는 코드는 번역 메모리 업데이트 요청에 발생하는 일을 결정합니다.
-   * 이 방법의 구현을 통해 AEM 번역 프레임워크는 문자열 값 쌍(원본 번역과 업데이트된 번역)을 TMS로 다시 전달합니다.
+  * 이 방법에 포함되는 코드는 번역 메모리 업데이트 요청에 발생하는 일을 결정합니다.
+  * 이 방법의 구현을 통해 AEM 번역 프레임워크는 문자열 값 쌍(원본 번역과 업데이트된 번역)을 TMS로 다시 전달합니다.
 
 독점 번역 메모리를 사용하는 경우 번역 메모리 업데이트가 이전되어 사용자 정의 대상으로 전달될 수 있습니다.
 
@@ -102,7 +114,7 @@ AEM은 구성된 TMS의 번역 메모리에 기존 문자열의 번역을 업데
 
 >[!NOTE]
 >
->언어 루트는 언어의 ISO 코드가 아닌 모든 페이지 이름을 가질 수 있습니다. AEM은 항상 경로와 이름을 먼저 확인하지만, 페이지 이름이 언어를 식별하지 않을 경우 AEM은 언어 식별을 위해 페이지의 cq:language 속성을 확인합니다.
+>언어 루트는 언어의 ISO 코드가 아닌 모든 페이지 이름을 가질 수 있습니다. AEM은 항상 경로와 이름을 먼저 확인하지만, 페이지 이름이 언어를 식별하지 않을 경우 AEM은 페이지의 cq:language 속성에서 언어 식별을 확인합니다.
 
 ## 번역 상태 보고 {#translation-status-reporting}
 

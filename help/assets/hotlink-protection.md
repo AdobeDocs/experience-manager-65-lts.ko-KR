@@ -9,13 +9,24 @@ role: User, Admin
 feature: Configuration
 solution: Experience Manager, Experience Manager Assets
 exl-id: 56eb956e-c6a8-464b-980a-28e0dab0da7c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 3%
-
 ---
-
 # Dynamic Media에서 핫링크 보호 활성화 {#activating-hotlink-protection-in-dynamic-media}
 
 핫 연결은 서드파티 웹 사이트가 HTML 코드를 사용하여 웹 사이트의 이미지를 표시하는 것입니다. 방문자의 브라우저가 서버에서 바로 액세스하고 있으므로 그림이 요청될 때마다 대역폭을 사용합니다. 핫링크 *보호*&#x200B;는 다른 웹 사이트가 웹 페이지의 사진, CSS 또는 JavaScript에 직접 링크되지 않도록 하는 방법입니다. 이러한 종류의 실드는 Dynamic Media 계정에서 불필요한 대역폭 사용을 줄이는 데 도움이 됩니다.

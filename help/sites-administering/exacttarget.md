@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: cd36d432-ad42-41be-abcf-f74ef2e42544
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 2%
-
+source-wordcount: '471'
+ht-degree: 3%
 ---
-
 # ExactTarget과 통합{#integrating-with-exacttarget}
 
 Adobe Experience Manager(AEM)를 Exact Target과 통합하면 Exact Target을 통해 AEM에서 만든 이메일을 관리하고 보낼 수 있습니다. 또한 AEM 페이지에서 AEM Forms를 통해 Exact Target의 리드 관리 기능을 사용할 수 있습니다.
@@ -46,7 +55,7 @@ Cloud Services에서 ExactTarget 구성을 만들려면 다음을 수행하십�
    ![chlimage_1](assets/chlimage_1.jpeg)
 
 1. 사용자 이름과 암호를 입력하고 API 끝점을 선택합니다(예: **https://webservice.exacttarget.com/Service.asmx**).
-1. **ExactTarget에 연결을 클릭합니다.** 연결되면 성공 대화 상자가 표시됩니다. 상자 창을 종료하려면 **확인**&#x200B;을 클릭합니다.
+1. **ExactTarget에 연결**&#x200B;을 클릭합니다. 성공적으로 연결되면 성공 대화 상자가 표시됩니다. 상자 창을 종료하려면 **확인**&#x200B;을 클릭합니다.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 

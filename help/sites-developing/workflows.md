@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 625affd0-0e1a-4db8-812f-b6ce70cfe035
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1478'
 ht-degree: 3%
-
 ---
-
 # 워크플로 개발 및 확장{#developing-and-extending-workflows}
 
 AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, 워크플로와 프로그래밍 방식으로 상호 작용하기 위한 여러 가지 도구와 리소스를 제공합니다.
@@ -28,10 +37,10 @@ AEM은 워크플로 모델을 만들고, 워크플로 단계를 개발하며, �
 
 * [워크플로 모델 만들기](/help/sites-developing/workflows-models.md)
 * [워크플로 기능 확장](/help/sites-developing/workflows-customizing-extending.md)
-* [프로그래밍 방식으로 워크플로우와 상호 작용](/help/sites-developing/workflows-program-interaction.md)
+* [프로그래밍 방식으로 워크플로와 상호 작용](/help/sites-developing/workflows-program-interaction.md)
 * [워크플로 단계 참조](/help/sites-developing/workflows-step-ref.md)
 * [워크플로 프로세스 참조](/help/sites-developing/workflows-process-ref.md)
-* [워크플로우 모범 사례](/help/sites-developing/workflows-best-practices.md)
+* [워크플로 모범 사례](/help/sites-developing/workflows-best-practices.md)
 
 >[!NOTE]
 >

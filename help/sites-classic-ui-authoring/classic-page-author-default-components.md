@@ -1,6 +1,6 @@
 ---
 title: 구성 요소
-description: AEM에는 웹 사이트 작성자에게 포괄적인 기능을 제공하는 다양하고 특별한 구성 요소가 포함되어 있습니다.
+description: 기본적으로 AEM에는 웹 사이트 작성자에게 광범위한 기능을 제공하는 다양한 구성 요소가 포함되어 있습니다.
 page-status-flag: de-activated
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 1976047c-661a-4398-8dd8-c71cd05d53be
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 23%
-
+source-wordcount: '200'
+ht-degree: 34%
 ---
-
 # 구성 요소{#components}
 
 Adobe Experience Manager(AEM)에는 웹 사이트 작성자에게 포괄적인 기능을 제공하는 다양한 기본 구성 요소가 포함되어 있습니다. 이 기능은 [페이지를 편집](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)하고 기본 기능 영역(구성 요소 그룹)별로 그룹화할 때 사용할 수 있습니다.
@@ -31,7 +40,7 @@ Adobe Experience Manager(AEM)에는 웹 사이트 작성자에게 포괄적인 �
 
 다음 페이지는 컨텐츠 관리의 주요 영역 중 일부에 대한 빠른 링크를 제공합니다(추가 영역에 대한 링크는 위의 개요 페이지에 제공됨).
 
-* [페이지 작성을 위한 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
+* [페이지 작성 구성 요소](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
   표준 페이지 콘텐츠를 만드는 데 사용되는 구성 요소는 주로 **일반**, **열** 및 **Forms** 그룹에 포함되어 있습니다.
 

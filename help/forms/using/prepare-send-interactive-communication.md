@@ -7,13 +7,27 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2ccd8c75-e4d0-40f9-bc8f-352b408b5c62
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2029'
 ht-degree: 3%
-
 ---
-
 # 에이전트 UI를 사용하여 인터랙티브 커뮤니케이션 준비 및 전송 {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 에이전트는 에이전트 UI를 통해 대화형 통신을 준비하고 게시 프로세스로 보낼 수 있습니다. 에이전트는 필요에 따라 수정하고 대화형 커뮤니케이션을 이메일 또는 인쇄와 같은 사후 프로세스에 제출합니다.
@@ -71,8 +85,8 @@ ht-degree: 3%
 
    * [서식 옵션](#formattingtext)
 
-      * [다른 응용 프로그램에서 붙여넣기 형식의 텍스트를 복사합니다.](#pasteformattedtext)
-      * [텍스트 부분 강조 표시](#highlightemphasize)
+     * [다른 응용 프로그램에서 붙여넣기 형식의 텍스트를 복사합니다.](#pasteformattedtext)
+     * [텍스트 부분 강조 표시](#highlightemphasize)
 
    * [특수 문자](#specialcharacters)
    * [키보드 단축키](/help/forms/using/keyboard-shortcuts.md)

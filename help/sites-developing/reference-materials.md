@@ -11,13 +11,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 34dbd86b-7131-405b-a963-7b332232997c
-source-git-commit: a27a4a2aa0a6b4864908fc56ff7de53208cfcf7f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 4%
-
+source-wordcount: '323'
+ht-degree: 8%
 ---
-
 # API 안내서 {#api-guides}
 
 Adobe Experience Manager(AEM)는 애플리케이션 개발 및 AEM 확장을 위한 여러 API를 제공합니다. 다음 목록은 AEM에서 지원하는 API에 대한 설명서를 제공합니다.
@@ -27,7 +36,7 @@ Adobe Experience Manager(AEM)는 애플리케이션 개발 및 AEM 확장을 위
 * [Coral UI 안내서](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 * [위젯 API(클래식 UI) 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 * [UI 테스트 프레임워크 JavaScript API 참조](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)
-* [편집기 핵심 JavaScript API 참조](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
+* [편집기 코어 JavaScript API 참조](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
 
 AEM SPA(단일 페이지 애플리케이션) 편집기 SDK 프레임워크 JavaScript API 참조:
 
@@ -40,9 +49,9 @@ AEM 게재 및 콘텐츠 관리 API:
 
 * 핵심 구성 요소 (JSON)
 
-   * [JSON 내보내기](/help/sites-developing/json-exporter.md)
-   * [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
-   * 자세한 내용은 개발 사용 안내서[&#128279;](/help/sites-developing/getting-started.md)의 구성 요소 섹션을 참조하십시오
+  * [JSON 내보내기](/help/sites-developing/json-exporter.md)
+  * [구성 요소에 대해 JSON 내보내기 활성화](/help/sites-developing/json-exporter-components.md)
+  * 자세한 내용은 개발 사용 안내서[&#128279;](/help/sites-developing/getting-started.md)의 구성 요소 섹션을 참조하십시오
 
 * **Assets**: Assets HTTP API를 사용하면 이진, 메타데이터, 렌디션 및 주석을 포함하여 Assets에서 CRUD(create-read-update-delete) 작업을 수행할 수 있습니다. [AEM Assets HTTP API](/help/assets/mac-api-assets.md) 참조
 
@@ -51,6 +60,6 @@ AEM 게재 및 콘텐츠 관리 API:
 다음 외부 리소스는 참조용입니다.
 
 * [Apache Sling 11 API](https://sling.apache.org/apidocs/sling11/)
-* [Jackrabbit Oak API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
+* [JACKRABBIT OAK API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
 * [Java Content Repository API](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
 * [Apache Jackrabbit API](https://jackrabbit.apache.org/api)

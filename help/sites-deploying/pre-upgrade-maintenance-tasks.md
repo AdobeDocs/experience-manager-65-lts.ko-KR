@@ -10,13 +10,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: c93d78653e192d041830a84ea24fe5d3edde29e0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1332'
 ht-degree: 2%
-
 ---
-
 # 업그레이드 전 유지 관리 작업{#pre-upgrade-maintenance-tasks}
 
 업그레이드를 시작하기 전에 다음 유지 관리 작업을 수행하여 문제가 발생할 경우 시스템이 준비되고 롤백될 수 있는지 확인하는 것이 중요합니다.

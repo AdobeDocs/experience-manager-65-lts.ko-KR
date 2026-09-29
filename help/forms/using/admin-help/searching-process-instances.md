@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e358ee51-c23f-4737-9dcf-3193ed541bbb
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 65%
-
 ---
-
 # 프로세스 인스턴스 검색{#searching-for-process-instances}
 
 >[!NOTE]
@@ -34,7 +49,7 @@ ht-degree: 65%
 일반 검색을 수행할 기본 기준을 입력합니다. 여러 기준을 입력하는 경우 암시적 AND 조건으로 검색이 수행됩니다.
 
 1. 관리 콘솔에서 서비스 > Forms Workflow > 프로세스 검색 을 클릭합니다.
-1. 프로세스 검색 페이지의 일반 검색에서 다음 기준을 제공합니다.
+1. 프로세스 검색 페이지의 일반 검색에서 다음 기준을 입력합니다.
 
    * **프로세스 ID:** 각 고유 프로세스 인스턴스를 식별하는 양의 정수입니다.
    * **프로세스 상태:** 목록에서 상태를 선택합니다.
@@ -45,7 +60,7 @@ ht-degree: 65%
 
 ## 프로세스에 대한 상세 검색 수행 {#perform-a-detailed-search-for-a-process}
 
-특정 속성을 입력하여 상세 검색을 수행할 수 있습니다. 많은 프로세스 인스턴스가 실행 중이고 특정 기준에 따라 가능한 검색 범위를 좁혀야 하는 경우에는 상세 검색이 가장 적합합니다.
+특정 속성을 입력하여 상세 검색을 수행할 수 있습니다. 많은 프로세스 인스턴스가 실행 중이고 특정 기준에 따라 가능한 결과를 좁혀야 하는 경우에는 상세 검색이 가장 적합합니다.
 
 1. 관리 콘솔에서 서비스 > Forms Workflow > 프로세스 검색 을 클릭합니다.
 1. 프로세스 검색 페이지의 상세 검색에서 첫 번째 기준 세트를 지정합니다.
@@ -54,7 +69,7 @@ ht-degree: 65%
    * 필터 목록에서 연산자를 선택합니다.
    * 값 상자에 선택한 속성에 적합한 값을 입력합니다.
 
-1. 다른 행을 추가하려면 필터 더 보기를 선택합니다. 그러면 또 다른 속성, 필터, 값 집합 목록과 조건 목록이 나타납니다.
+1. 다른 행을 추가하려면 필터 더 보기를 선택합니다. 그러면 속성, 필터 및 값 목록의 또 다른 세트와 조건 목록이 나타납니다.
 1. 조건에서 AND 또는 OR를 선택합니다. 검색 범위를 더욱 좁히려면 필요에 따라 1~3단계를 반복합니다.
 1. 행을 추가하거나 제거하려면 필터 더 보기 또는 필터 줄이기를 클릭합니다. 1~4행까지 지정할 수 있습니다.
 1. **검색**&#x200B;을 클릭합니다. 발견된 인스턴스가 나열된 프로세스 인스턴스 페이지가 나타납니다.

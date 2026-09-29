@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 314a6c65-9b90-4f4c-9e4a-d551dbb646e9
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 40%
-
+source-wordcount: '491'
+ht-degree: 41%
 ---
-
 # 작성{#authoring}
 
 ## 작성(및 게시)의 개념 {#concept-of-authoring-and-publishing}
@@ -70,13 +83,13 @@ AEM에서는 두 가지 환경을 제공합니다.
 >안타깝게도 사용되는 용어에는 겹치는 부분이 있습니다. 이 문제는 다음 경우에 발생할 수 있습니다.
 >
 >* **게시/게시 취소**
->  콘텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
+>  이 용어는 콘텐츠를 게시 환경에서 공개적으로 사용할 수 있도록(또는 사용할 수 없도록) 하는 작업을 위한 기본 용어입니다.
 >
 >* **활성화/비활성화**
->  이 용어는 게시/게시 취소와 동의어입니다.
+>  게시/게시 취소와 동의어입니다.
 >
->* **복제/복제**
->  사용자 댓글을 게시하거나 역복제할 때, 즉 한 환경에서 다른 환경으로의 데이터(예: 페이지 컨텐츠, 파일, 코드, 사용자 댓글) 이동을 가리키는 데 사용되는 기술 용어입니다.
+>* **복제**
+>  한 환경에서 다른 환경으로의 데이터(예: 페이지 컨텐츠, 파일, 코드, 사용자 댓글) 이동을 가리키는 데 사용되는 기술 용어입니다(즉, 사용자 댓글을 게시하거나 역복제할 때).
 >
 
 #### Dispatcher {#dispatcher}

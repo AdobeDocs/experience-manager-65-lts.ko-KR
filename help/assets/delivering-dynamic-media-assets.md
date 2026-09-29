@@ -5,13 +5,29 @@ role: User, Admin
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: b91173b4-f1d1-4aad-97d2-782bc8aeaeab
-source-git-commit: 47b82956b41c3f78bed5ae220c7e993ce29e0385
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 19%
-
+source-wordcount: '314'
+ht-degree: 21%
 ---
-
 # Dynamic Media 자산 전송{#delivering-dynamic-media-assets}
 
 Dynamic Media 자산(비디오와 이미지 모두)을 전달하는 방법은 웹 사이트가 구현되는 방식에 따라 다릅니다.
@@ -21,9 +37,9 @@ Dynamic Media에는 다음과 같은 몇 가지 옵션이 있습니다.
 * 웹 사이트가 Adobe Experience Manager에서 호스팅되는 경우 Dynamic Media 에셋을 페이지에 바로 추가할 수 있습니다.
 * 웹 사이트가 Experience Manager에 없는 경우 다음 중 하나를 선택할 수 있습니다.
 
-   * 웹 사이트에 비디오 또는 이미지를 포함합니다.
-   * 웹 애플리케이션에 URL을 연결합니다. 비디오 플레이어를 팝업 또는 모달 창으로 전달하려면 연결을 사용합니다.
-   * 사이트가 응답형인 경우 [최적화된 이미지를 제공](/help/assets/responsive-site.md)할 수 있습니다.
+  * 웹 사이트에 비디오 또는 이미지를 포함합니다.
+  * 웹 애플리케이션에 URL을 연결합니다. 비디오 플레이어를 팝업 또는 모달 창으로 전달하려면 연결을 사용합니다.
+  * 사이트가 응답형인 경우 [최적화된 이미지를 제공](/help/assets/responsive-site.md)할 수 있습니다.
 
 >[!NOTE]
 >
@@ -36,7 +52,7 @@ Dynamic Media에는 다음과 같은 몇 가지 옵션이 있습니다.
 * [Dynamic Media의 핫링크 보호 활성화](/help/assets/hotlink-protection.md)
 * [웹 애플리케이션에 URL 연결](/help/assets/linking-urls-to-yourwebapplication.md)
 * [반응형 사이트에 최적화된 이미지 게재](/help/assets/responsive-site.md)
-* [컨텐츠의 HTTP2 전달](/help/assets/http2.md)
+* [콘텐츠의 HTTP2 전송](/help/assets/http2.md)
 * [규칙 세트를 사용하여 URL 변환](/help/assets/using-rulesets-to-transform-urls.md)
 
 ## Dynamic Media 자산의 HTTP/2 게재 {#http-delivery-of-dynamic-media-assets}

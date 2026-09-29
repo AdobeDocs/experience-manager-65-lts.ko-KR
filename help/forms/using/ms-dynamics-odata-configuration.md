@@ -8,20 +8,33 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 6c3c4d7f-fc4c-44ad-886f-f76d0532d91a
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1280'
 ht-degree: 1%
-
 ---
-
 # Microsoft Dynamics OData 구성{#microsoft-dynamics-odata-configuration}
 
 ## 적용 대상 {#applies-to}
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html?lang=ko)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html)를 참조하십시오.
 
 ![데이터 통합](assets/data-integeration.png)
 
@@ -47,8 +60,8 @@ Microsoft Dynamics 설정 및 구성을 시작하기 전에 다음을 확인하�
 * [AEM Forms 추가 기능 패키지를 설치했습니다](../../forms/using/installing-configuring-aem-forms-osgi.md)
 * Microsoft Dynamics 365를 온라인으로 구성하거나 다음 Microsoft Dynamics 버전 중 하나의 인스턴스를 설치했습니다.
 
-   * Microsoft Dynamics 365 온프레미스
-   * Microsoft Dynamics 2016 온-프레미스
+  * Microsoft Dynamics 365 온프레미스
+  * Microsoft Dynamics 2016 온-프레미스
 
 * [Microsoft Azure Active Directory에 Microsoft Dynamics 온라인 서비스에 대한 응용 프로그램을 등록했습니다](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). 등록된 서비스에 대한 클라이언트 ID(애플리케이션 ID라고도 함) 및 클라이언트 암호의 값을 기록해 두십시오. 이 값은 [Microsoft Dynamics 서비스에 대한 클라우드 서비스를 구성하는 중](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service)에 사용됩니다.
 
@@ -60,7 +73,7 @@ Microsoft Dynamics 설정 및 구성을 시작하기 전에 다음을 확인하�
 >
 >이 절차는 AEM Forms을 온라인 Microsoft Dynamics 서버와 통합하는 경우에만 사용합니다.
 
-1. Microsoft Azure Active Directory 계정으로 이동하여 등록된 응용 프로그램의 **회신 URL** 설정에 다음 클라우드 서비스 구성 URL을 추가하십시오.
+1. Microsoft Azure Active Directory 계정으로 이동하여 등록된 애플리케이션에 대한 **회신 URL** 설정에 다음 클라우드 서비스 구성 URL을 추가하십시오.
 
    `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 

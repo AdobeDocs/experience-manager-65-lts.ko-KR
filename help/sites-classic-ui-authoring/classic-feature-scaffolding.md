@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 281d8bd3-d6f2-42f8-8d77-b138f0ea5aae
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 0%
-
 ---
-
 # 스캐폴딩{#scaffolding}
 
 구조를 공유하지만 콘텐츠가 다른 대규모 페이지 세트를 만들어야 하는 경우가 있습니다. 표준 Adobe Experience Manager(AEM) 인터페이스를 통해 각 페이지를 만들고 적절한 구성 요소를 페이지로 드래그한 다음 각 구성 요소를 개별적으로 채워야 합니다.
@@ -91,7 +100,7 @@ ht-degree: 0%
 
 `./jcr:content/par/text/text`
 
-스캐폴드를 사용하여 페이지를 만들 때 이 필드의 내용이 기록될 속성의 이름입니다. 속성은 만들 페이지를 나타내는 노드로부터의 상대 경로로 표시됩니다. 노드 부분 아래에 있는 노드 텍스트 아래에 속성 텍스트를 지정합니다. 이 노드 자체가 페이지 노드 아래의 jcr:content 노드의 하위 항목입니다.
+스캐폴드를 사용하여 페이지를 만들 때 이 필드의 내용이 기록될 속성의 이름입니다. 속성은 만들 페이지를 나타내는 노드로부터의 상대 경로로 표시됩니다. 노드 부분 아래에 있는 노드 텍스트 아래에 속성 텍스트를 지정합니다. 페이지 노드 아래에 있는 jcr:content 노드의 하위 항목입니다.
 
 이 필드에 입력할 텍스트에 대한 콘텐츠 저장소의 위치를 정의합니다. 그러나 이 컨텐츠에 대해 두 가지 특성도 추가로 지정해야 합니다.
 

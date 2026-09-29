@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 9a29bdbf-0f5d-4656-bd65-a63fd804c9e7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '293'
 ht-degree: 8%
-
 ---
-
 # 론치 편집{#editing-launches}
 
 ## 론치 편집 페이지 {#editing-launch-pages}
@@ -45,9 +54,9 @@ ht-degree: 8%
 
    * **일반** 탭에서 다음을 편집할 수 있습니다.
 
-      * **제목**
-      * **라이브 날짜**: 시작 날짜와 동일합니다
-      * **프로덕션 준비**
+     * **제목**
+     * **라이브 날짜**: 시작 날짜와 동일합니다
+     * **프로덕션 준비**
 
      이러한 필드의 목적 및 상호 작용에 대한 자세한 내용은 [시작 - 이벤트 순서](/help/sites-authoring/launches.md#launches-the-order-of-events)를 참조하십시오.
 

@@ -6,14 +6,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2817'
+source-wordcount: '2975'
 ht-degree: 1%
-
 ---
-
-# 리치 텍스트 편집기 구성 {#configure-the-rich-text-editor}
+# 서식 있는 텍스트 편집기 구성 {#configure-the-rich-text-editor}
 
 리치 텍스트 편집기(RTE)는 작성자가 텍스트 콘텐츠를 편집할 수 있는 다양한 기능을 제공합니다. WYSIWYG 텍스트 편집 환경을 위한 아이콘, 선택 상자, 도구 모음 및 메뉴가 제공됩니다.
 
@@ -88,8 +97,8 @@ Experience Manager 구성 요소는 페이지 콘텐츠를 숨기고 사용 가�
 
 * `features` 속성:
 
-   * 해당 플러그인의 기본 기능을 활성화 또는 비활성화하는 데 사용됩니다.
-   * 표준화된 절차를 사용하여 구성할 수 있습니다
+  * 해당 플러그인의 기본 기능을 활성화 또는 비활성화하는 데 사용됩니다.
+  * 표준화된 절차를 사용하여 구성할 수 있습니다
 
 * 필요한 경우 추가 속성 및 옵션을 사용하여 특수 구성을 수행해야 합니다.
 
@@ -116,7 +125,7 @@ RTE의 기본 기능은 해당 플러그인과 관련된 노드의 `features` �
 | 맞춤법 검사 | checktext | [언어 인식 맞춤법 검사기](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict). |
 | 스타일 | 스타일 | CSS 클래스를 사용한 스타일링을 지원합니다. 텍스트에서 사용할 수 있도록 고유한 스타일 범위를 추가(또는 확장)하려면 [새 텍스트 스타일을 추가](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)하십시오. |
 | 부분 위 첨자 | 아래 첨자 위 첨자 | 기본 형식에 대한 확장, 하위 스크립트 및 슈퍼 스크립트 추가. |
-| 표 | 테이블 제거 가능 삽입행 제거열 제거열 제거셀 병합splitcell selectrow 선택열 | 전체 표 또는 개별 셀에 고유한 스타일을 추가하려면 [표 스타일 구성](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)을 참조하십시오. |
+| 테이블 | 테이블 제거 가능 삽입행 제거열 제거열 제거셀 병합splitcell selectrow 선택열 | 전체 표 또는 개별 셀에 고유한 스타일을 추가하려면 [표 스타일 구성](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)을 참조하십시오. |
 | 실행 취소 | 다시 실행 취소 | [실행 취소 및 다시 실행](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory) 작업의 기록 크기. |
 
 >[!NOTE]
@@ -325,8 +334,8 @@ RTE 구성에 대한 자세한 내용은 [AEM Widget API](https://developer.adob
 * [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) 구성 요소는 스타일이 지정된 텍스트 정보(서식 있는 텍스트)를 편집하기 위한 양식 필드를 제공합니다. 리치 텍스트 양식에 사용할 수 있는 모든 매개 변수를 알아보려면 구성 옵션 을 참조하십시오.
 * RichText 구성 요소는 [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)에 나열된 플러그인을 사용하여 다양한 기능을 제공합니다. 각 플러그인의 경우:
 
-   * 활성화(또는 비활성화)할 수 있는 기능에 대한 자세한 내용은 기능 을 참조하십시오
-   * 적절한 플러그인의 세부 구성에 사용할 수 있는 모든 매개 변수에 대한 구성 옵션 을 참조하십시오
+  * 활성화(또는 비활성화)할 수 있는 기능에 대한 자세한 내용은 기능 을 참조하십시오
+  * 적절한 플러그인의 세부 구성에 사용할 수 있는 모든 매개 변수에 대한 구성 옵션 을 참조하십시오
 
 * 링크에 대한 HTML 규칙에 대한 자세한 정보도 사용할 수 있습니다.
 

@@ -9,13 +9,28 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 52dc3ecd-339b-4389-b875-4a261d2449e4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 0%
-
+source-wordcount: '487'
+ht-degree: 3%
 ---
-
 # HTML5 양식용 양식 템플릿 디자인{#designing-form-templates-for-html-forms}
 
 AEM의 HTML5 양식 구성 요소는 XFA 양식 템플릿을 HTML5 형식으로 렌더링할 수 있습니다. 양식 디자이너는 [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)를 사용하여 양식 템플릿을 디자인하고 HTML5 렌디션 기능을 사용할 수 있습니다. 이러한 양식 템플릿은 자산과 함께 AEM 저장소, 파일 시스템에 있거나 http를 통해 노출될 수 있습니다. 하지만 Forms Manager를 사용하여 양식을 관리하려는 경우 템플릿과 에셋이 AEM 저장소에 있어야 합니다.

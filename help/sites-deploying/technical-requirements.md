@@ -6,13 +6,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: f5a36877c0d051de5c96a8ab89b2886b28865249
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3090'
 ht-degree: 5%
-
 ---
-
 # 기술 요구 사항{#technical-requirements}
 
 Adobe은 이 문서의 다음 정보에 설명된 대로 플랫폼에서 (AEM) Adobe Experience Manager을 지원합니다.
@@ -155,7 +167,7 @@ Adobe Experience Manager은 프로덕션 환경을 위해 다음 서버 플랫�
 | **플랫폼** | **지원 수준** |
 |---|---|
 | **Linux®, Red Hat® 배포 기반** | A: 지원되는 `[1]` `[2]` |
-| Debian 배포 기반 Linux®에는 다음이 포함됩니다. 우분투 | A: 지원되는 `[1]` |
+| Linux®, Ubuntu 포함 데비안 배포 기반 | A: 지원되는 `[1]` |
 | Linux®, SUSE® 배포 기반 | A: 지원되는 `[1]` |
 | ® 윈도우 서버 2022 | R: 지원됨 |
 
@@ -210,7 +222,7 @@ Dispatcher 버전 4.3.2에서 사용할 수 있는 웹 서버는 다음과 같�
 
 ### 사용자 인터페이스 작성에 지원되는 브라우저 {#supported-browsers-for-authoring-user-interface}
 
-Adobe Experience Manager 사용자 인터페이스는 다음 클라이언트 플랫폼에서 작동합니다. 모든 브라우저는 기본 플러그인 및 추가 기능 세트에 대한 테스트를 완료했습니다.
+Adobe Experience Manager 사용자 인터페이스는 다음 클라이언트 플랫폼에서 작동합니다. 모든 브라우저는 기본 플러그인 및 추가 기능 세트를 사용하여 테스트됩니다.
 
 AEM 사용자 인터페이스는 더 큰 화면(일반적으로 노트북 및 데스크탑 컴퓨터)과 태블릿 폼 팩터(예: Apple iPad 또는 Microsoft® 표면)에 최적화되어 있습니다. 휴대폰 폼 팩터는 지원되지 않습니다.
 
@@ -441,9 +453,9 @@ XMP 다시 쓰기는 다음 플랫폼 및 파일 형식에 대해 지원 및 활
 
 * **운영 체제:**
 
-   * Linux®(64비트 시스템에서 32비트 및 32비트 애플리케이션 지원)
-   * Windows Server
-   * macOS X (64비트)
+  * Linux®(64비트 시스템에서 32비트 및 32비트 애플리케이션 지원)
+  * Windows Server
+  * macOS X (64비트)
 
 * **파일 형식**: JPEG, PNG, TIFF, PDF, INDD, AI 및 EPS.
 

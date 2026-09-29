@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 작업 공간 문제 해결 지침
+title: AEM Forms Workspace에 대한 문제 해결 지침
 description: 로그를 활성화하고 브라우저에서 디버거를 사용하여 AEM Forms 작업 공간 문제를 해결합니다.
 contentOwner: robhagat
 content-type: reference
@@ -9,14 +9,30 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: d0494d5b-7b03-47e2-a461-7ef8c865069d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 0%
-
+source-wordcount: '788'
+ht-degree: 7%
 ---
-
-# AEM Forms 작업 공간 문제 해결 지침 {#troubleshooting-guidelines-for-aem-forms-workspace}
+# AEM Forms Workspace에 대한 문제 해결 지침 {#troubleshooting-guidelines-for-aem-forms-workspace}
 
 이 문서에서는 로깅을 활성화하고 브라우저에서 디버거를 사용하여 AEM Forms 작업 영역을 디버깅하는 방법에 대해 설명합니다. 또한 AEM Forms 작업 공간 및 해당 해결 방법을 사용할 때 발생할 수 있는 몇 가지 일반적인 문제에 대해 설명합니다.
 
@@ -33,11 +49,11 @@ ht-degree: 0%
 
 1. 패키지 관리자로 이동합니다. 기본 URL은 `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`입니다
 1. `adobe-lc-workspace-pkg-[version].zip` 패키지를 검색하여 설치합니다.
-1. 응용 프로그램 서버를 다시 시작합니다.
+1. 애플리케이션 서버를 다시 시작합니다.
 
 >[!NOTE]
 >
-> SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+> SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
 ## AEM Forms 작업 영역 로깅 {#aem-forms-workspace-nbsp-logging}
 
@@ -168,7 +184,7 @@ AEM Forms 작업 공간에서:
 
 1. PDF 양식이 Google Chrome에서 렌더링되거나 제출되지 않습니다.
 
-   1. Adobe® Reader® 플러그인을 설치합니다.
+   1. ® Reader® 플러그인을 설치합니다.
    1. Chrome에서 chrome://plugins 을 열어 사용 가능한 플러그인을 확인합니다.
    1. Chrome PDF 뷰어 플러그인을 비활성화하고 Adobe Reader 플러그인을 활성화합니다.
 

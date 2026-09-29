@@ -9,14 +9,26 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 46b3ac33-9c02-4c53-91d5-44ba49ab5c36
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 100%
-
 ---
-
 # 다중 스레드 파일 변환 활성화 {#enabling-multi-threaded-file-conversions}
 
 PDF Generator를 사용하면 특정 유형의 파일에 대해 다중 스레드 파일 변환을 활성화할 수 있습니다. 다중 스레드 파일 변환은 동시에 여러 변환을 수행할 수 있게 하여 PDF Generator의 성능을 향상합니다.
@@ -59,7 +71,7 @@ Windows Server 2008에서 OpenOffice, Microsoft® Word, Microsoft® PowerPoint�
 
 1. 사용자 계정을 추가합니다. ([사용자 계정 추가](enabling-multi-threaded-file-conversions.md#add-a-user-account)를 참조하십시오.)
 1. 다음으로, /etc/sudoers 파일을 변경해야 합니다. 이 파일의 기본 권한은 440입니다. 이 파일의 권한을 쓰기 가능으로 변경합니다.
-1. /etc/sudoers 파일에서 Forms 서버를 실행하는 관리자 외의 추가 사용자에 대한 항목을 추가합니다. 예를 들어 lcadm이라는 사용자와 myhost라는 서버로 AEM Forms를 실행하고 user1과 user2를 가장하려는 경우 /etc/sudoers에 다음 항목을 추가합니다.
+1. /etc/sudoers 파일에서 Forms 서버를 실행하는 관리자 외의 추가 사용자에 대한 항목을 추가합니다. 예를 들어 AEM Forms를 lcadm이라는 사용자와 myhost라는 서버에서 실행하고 user1과 user2를 가장하려는 경우 /etc/sudoers에 다음 항목을 추가합니다.
 
    ```shell
     lcadm myhost=(user1) NOPASSWD: ALL

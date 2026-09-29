@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: fc2aa62a-3fc4-491d-aff5-74896998d7d6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 4%
-
+source-wordcount: '441'
+ht-degree: 10%
 ---
-
 # 모범 사례{#best-practices}
 
 ## 개발자를 위한 우수 사례 - 시작하기 {#best-practices-for-developers-getting-started}
@@ -45,7 +54,7 @@ AEM 개발 프로젝트를 시작하기 전에 먼저 다음 모범 사례를 �
 관리, 배포, 유지 관리 또는 작성에 대한 우수 사례는 다음 중 하나를 참조하십시오.
 
 * [모범 사례 관리](/help/sites-administering/administer-best-practices.md)
-* [작성 모범 사례](/help/sites-authoring/best-practices.md)
+* [모범 사례 작성](/help/sites-authoring/best-practices.md)
 * [모범 사례 배포](/help/sites-deploying/best-practices.md)
 
 ## Sites {#sites}

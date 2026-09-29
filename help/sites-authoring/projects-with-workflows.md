@@ -9,13 +9,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
 exl-id: eb19a269-8b3f-476b-b22b-8116dce70388
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 43%
-
+source-wordcount: '787'
+ht-degree: 40%
 ---
-
 # 프로젝트 워크플로를 사용하여 작업 {#working-with-project-workflows}
 
 즉시 사용 가능한 프로젝트 워크플로는 다음과 같습니다.
@@ -31,7 +46,7 @@ ht-degree: 43%
 
 |   | **간단한 프로젝트** | **미디어 프로젝트** | **제품 사진 촬영 프로젝트** | **번역 프로젝트** |
 |---|:-:|:-:|:-:|:-:|
-| 요청 복사 |  | x |  |  |
+| 요청 사본 |  | x |  |  |
 | 제품 사진 촬영 |  | x | x |  |
 | 제품 사진 촬영(Commerce) |  |  | x |  |
 | 프로젝트 승인 | x |  |  |  |

@@ -10,13 +10,21 @@ thumbnail: 3456-style-cif.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 92689d52-6485-4cd5-a04f-4738096a0dba
-source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2693'
 ht-degree: 6%
-
 ---
-
 # 스타일 AEM CIF 핵심 구성 요소 {#style-aem-cif-core-components}
 
 [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)은(는) [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)를 사용하기 위한 참조 코드 기반입니다. 이 자습서에서는 Venia 참조 프로젝트를 검사하고 AEM CIF 핵심 구성 요소에서 사용되는 CSS 및 JavaScript을 구성하는 방법을 알아봅니다. 또한 CSS를 사용하여 스타일을 만들어 **제품 티저** 구성 요소의 기본 스타일을 업데이트합니다.
@@ -291,7 +299,7 @@ ui.apps 아키텍처에 대한 ![ui.frontend](../assets/style-cif-component/ui-f
 
 Webpack-dev-server는 AEM의 로컬 인스턴스에서 이미지와 CSS/JavaScript의 일부를 프록시하지만 개발자는 `ui.frontend` 모듈에서 스타일과 JavaScript을 수정할 수 있습니다.
 
-1. 브라우저에서 **홈** 페이지로 이동하고 **게시됨으로 보기**: [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled)를 클릭합니다.
+1. 브라우저에서 **홈** 페이지로 이동하고 **게시됨으로 보기**: [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled)합니다.
 
 1. 페이지의 소스 및 페이지의 원시 HTML을 **복사**&#x200B;합니다.
 

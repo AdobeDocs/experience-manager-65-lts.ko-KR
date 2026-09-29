@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 445cb8c3-e0c4-44f8-a140-9e7215e3b73a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '816'
 ht-degree: 1%
-
 ---
-
 # 웹 사이트 콘솔 사용자 지정(클래식 UI){#customizing-the-websites-console-classic-ui}
 
 ## 웹 사이트(siteadmin) 콘솔에 사용자 지정 열 추가 {#adding-a-custom-column-to-the-websites-siteadmin-console}
@@ -139,7 +148,7 @@ public class StarredListInfoProvider implements ListInfoProvider {
    * **pageText** 제거
 
    * **pathRegex** 설정 `/content/geometrixx(/.*)?`
-이렇게 하면 모든 Geometrixx 웹 사이트에 대해 그리드 구성이 활성화됩니다.
+     이렇게 하면 모든 Geometrixx 웹 사이트에 대해 그리드 구성이 활성화됩니다.
 
    * **storeProxySuffix**&#x200B;을(를) `.pages.json`(으)로 설정
 
@@ -147,9 +156,9 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
    * MSM 기능을 활성화하려면 다중 문자열 속성 **storeReaderFields**&#x200B;에 다음 MSM 매개 변수를 추가하십시오.
 
-      * **msm:isSource**
-      * **msm:isInBlueprint**
-      * **msm:isLiveCopy**
+     * **msm:isSource**
+     * **msm:isInBlueprint**
+     * **msm:isLiveCopy**
 
 1. 다음 속성을 사용하여 `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` 아래에 `starred` 노드(**nt:unstructured** 유형)를 추가하십시오.
 

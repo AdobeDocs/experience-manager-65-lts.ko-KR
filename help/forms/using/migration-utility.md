@@ -6,13 +6,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 1%
-
+source-wordcount: '1765'
+ht-degree: 2%
 ---
-
 # AEM Forms 에셋 및 문서 마이그레이션{#migrate-aem-forms-assets-and-documents}
 
 마이그레이션 유틸리티는 [적응형 Forms 에셋](../../forms/using/introduction-forms-authoring.md), [클라우드 구성](/help/sites-developing/extending-cloud-config.md) 및 [서신 관리 에셋](/help/forms/using/cm-overview.md)을 이전 버전에서 사용된 형식에서 Adobe Experience Manager(AEM) 6.5 LTS Forms에서 사용된 형식으로 변환합니다. 마이그레이션 유틸리티를 실행하면 다음 항목이 마이그레이션됩니다.
@@ -90,11 +104,11 @@ AEM Forms 6.5.22.0[&#128279;](/help/forms/using/upgrade-forms-osgi.md)에서 AEM
 
    * **자산**&#x200B;을 마이그레이션하려면 AEM Forms Assets 마이그레이션을 선택하고 다음 화면에서 **마이그레이션 시작**&#x200B;을 선택하십시오. 다음 항목이 마이그레이션됩니다.
 
-      * 적응형 양식
-      * 문서 단편
-      * 테마
-      * 편지
-      * 데이터 사전
+     * 적응형 양식
+     * 문서 단편
+     * 테마
+     * 편지
+     * 데이터 사전
 
    >[!NOTE]
    >
@@ -102,36 +116,36 @@ AEM Forms 6.5.22.0[&#128279;](/help/forms/using/upgrade-forms-osgi.md)에서 AEM
 
    * 적응형 양식 사용자 지정 구성 요소를 마이그레이션하려면 **적응형 Forms 사용자 지정 구성 요소 마이그레이션**&#x200B;을 선택하고 사용자 지정 구성 요소 마이그레이션 페이지에서 **마이그레이션 시작**&#x200B;을 선택합니다. 다음 항목이 마이그레이션됩니다.
 
-      * 적응형 Forms을 위해 작성된 사용자 지정 구성 요소
-      * 구성 요소 오버레이(있는 경우)
+     * 적응형 Forms을 위해 작성된 사용자 지정 구성 요소
+     * 구성 요소 오버레이(있는 경우)
 
    * 적응형 양식 템플릿을 마이그레이션하려면 **적응형 Forms 템플릿 마이그레이션**&#x200B;을 선택하고 사용자 지정 구성 요소 마이그레이션 페이지에서 **마이그레이션 시작**&#x200B;을 선택합니다. 다음 항목이 마이그레이션됩니다.
 
-      * AEM 템플릿 편집기를 사용하여 `/apps` 또는 `/conf`에서 만들어진 적응형 양식 템플릿.
+     * AEM 템플릿 편집기를 사용하여 `/apps` 또는 `/conf`에서 만들어진 적응형 양식 템플릿.
 
-   * 터치 지원 UI(`/conf` 아래)가 포함된 새로운 컨텍스트 인식 클라우드 서비스 패러다임을 사용하도록 AEM Forms 클라우드 구성 서비스를 마이그레이션합니다. AEM Forms 클라우드 구성 서비스를 마이그레이션하면 `/etc`의 클라우드 서비스가 `/conf`(으)로 이동됩니다. Adobe 기존 경로(`/etc`)에 종속된 클라우드 서비스 사용자 지정이 없는 경우 6.5로 업그레이드한 후 마이그레이션 유틸리티를 실행하는 것이 좋습니다. 추가 작업을 수행하려면 클라우드 구성 Touch UI를 사용하십시오. 기존 클라우드 서비스 사용자 지정이 있는 경우 마이그레이션된 경로(`/conf`)에 맞게 사용자 지정이 업데이트될 때까지 업그레이드된 설정에서 클래식 UI를 계속 사용한 다음 마이그레이션 유틸리티를 실행하십시오.
+   * 터치 지원 UI(`/conf` 아래)가 포함된 새로운 컨텍스트 인식 클라우드 서비스 패러다임을 사용하도록 AEM Forms 클라우드 구성 서비스를 마이그레이션합니다. AEM Forms 클라우드 구성 서비스를 마이그레이션하면 `/etc`의 클라우드 서비스가 `/conf`(으)로 이동됩니다. 기존 경로(`/etc`)에 종속된 클라우드 서비스 사용자 지정이 없는 경우 6.5로 업그레이드한 후 마이그레이션 유틸리티를 실행하는 것이 좋습니다. 추가 작업을 수행하려면 클라우드 구성 Touch UI를 사용하십시오. 기존 클라우드 서비스 사용자 지정이 있는 경우 마이그레이션된 경로(`/conf`)에 맞게 사용자 지정이 업데이트될 때까지 업그레이드된 설정에서 클래식 UI를 계속 사용한 다음 마이그레이션 유틸리티를 실행하십시오.
 
    다음을 포함하는 **AEM Forms 클라우드 서비스**&#x200B;를 마이그레이션하려면 AEM Forms 클라우드 구성 마이그레이션을 선택하십시오(클라우드 구성 마이그레이션은 AEMFD 호환성 패키지와 독립적). AEM Forms 클라우드 구성 마이그레이션을 선택한 다음 [구성 마이그레이션] 페이지에서 **마이그레이션 시작**&#x200B;을 선택하십시오.
 
    * 양식 데이터 모델 클라우드 서비스
 
-      * Source 경로: `/etc/cloudservices/fdm`
-      * 대상 경로: `/conf/global/settings/cloudconfigs/fdm`
+     * Source 경로: `/etc/cloudservices/fdm`
+     * 대상 경로: `/conf/global/settings/cloudconfigs/fdm`
 
    * Recaptcha
 
-      * Source 경로: `/etc/cloudservices/recaptcha`
-      * 대상 경로: `/conf/global/settings/cloudconfigs/recaptcha`
+     * Source 경로: `/etc/cloudservices/recaptcha`
+     * 대상 경로: `/conf/global/settings/cloudconfigs/recaptcha`
 
    * Adobe Sign
 
-      * Source 경로: `/etc/cloudservices/echosign`
-      * 대상 경로: `/conf/global/settings/cloudconfigs/echosign`
+     * Source 경로: `/etc/cloudservices/echosign`
+     * 대상 경로: `/conf/global/settings/cloudconfigs/echosign`
 
    * Typekit 클라우드 서비스
 
-      * Source 경로: `/etc/cloudservices/typekit`
-      * 대상 경로: `/conf/global/settings/cloudconfigs/typekit`
+     * Source 경로: `/etc/cloudservices/typekit`
+     * 대상 경로: `/conf/global/settings/cloudconfigs/typekit`
 
    마이그레이션 프로세스가 진행될 때 브라우저 창에 다음 항목이 표시됩니다.
 
@@ -151,15 +165,15 @@ AEM Forms 6.5.22.0[&#128279;](/help/forms/using/upgrade-forms-osgi.md)에서 AEM
 
 * 사용자 지정 구성 요소에서 규칙 및 스크립트(6.3에서 업그레이드하는 경우 필요하지 않음)를 마이그레이션하려면 적응형 Forms 사용자 지정 구성 요소 마이그레이션을 선택하고 다음 화면에서 마이그레이션 시작을 선택합니다. 다음 항목이 마이그레이션됩니다.
 
-   * 규칙 편집기(6.1 FP1 이상)를 사용하여 생성된 규칙 및 스크립트
+  * 규칙 편집기(6.1 FP1 이상)를 사용하여 생성된 규칙 및 스크립트
 
-   * 6.1 및 이전 버전의 UI에서 스크립트 탭을 사용하여 작성된 스크립트
+  * 6.1 및 이전 버전의 UI에서 스크립트 탭을 사용하여 작성된 스크립트
 
 * 템플릿을 마이그레이션하려면(6.3 및 6.4에서 업그레이드하는 경우 필요하지 않음) 적응형 Forms 템플릿 마이그레이션 을 선택하고 다음 화면에서 마이그레이션 시작 을 선택합니다. 다음 항목이 마이그레이션됩니다.
 
-   * 이전 템플릿 - AEM 6.1 Forms 또는 이전 버전을 사용하여 /apps에 작성된 적응형 양식 템플릿. 여기에는 템플릿 구성 요소에서 정의된 스크립트가 포함됩니다.
+  * 이전 템플릿 - AEM 6.1 Forms 또는 이전 버전을 사용하여 /apps에 작성된 적응형 양식 템플릿. 여기에는 템플릿 구성 요소에서 정의된 스크립트가 포함됩니다.
 
-   * 새 템플릿 - `/conf` 아래에 템플릿 편집기를 사용하여 만든 적응형 양식 템플릿. 여기에는 규칙 편집기를 사용하여 만든 규칙과 스크립트의 마이그레이션이 포함됩니다.
+  * 새 템플릿 - `/conf` 아래에 템플릿 편집기를 사용하여 만든 적응형 양식 템플릿. 여기에는 규칙 편집기를 사용하여 만든 규칙과 스크립트의 마이그레이션이 포함됩니다.
 
 ### 마이그레이션 유틸리티 실행 후 하우스키핑 작업 {#housekeepingtasks}
 

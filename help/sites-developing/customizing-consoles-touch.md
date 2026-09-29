@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '685'
 ht-degree: 24%
-
 ---
-
 # 콘솔 사용자 지정 {#customizing-the-consoles}
 
 >[!CAUTION]
@@ -29,7 +38,7 @@ AEM에서는 작성 인스턴스의 콘솔(및 [페이지 작성 기능](/help/s
 Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구현하는 동시에 표준 함수, 개체 및 메서드를 재사용할 수 있습니다. 사용자 지정할 때 `/apps.`에서 고유한 clientlib을 만들 수 있습니다. 예를 들어 사용자 지정 구성 요소에 필요한 코드를 저장할 수 있습니다.
 
 * 오버레이
-오버레이는 노드 정의를 기반으로 하며, 이를 통해 표준 기능(`/libs`의)을 사용자 지정된 기능(`/apps`의)과 오버레이할 수 있습니다. Sling 리소스 병합으로 상속이 허용되므로 오버레이를 만들 때 원본의 1:1 복사본이 필요하지 않습니다.
+오버레이는 노드 정의를 기반으로 하며, 이를 통해 표준 기능(`/libs`의)을 사용자 지정된 기능(`/apps`의)과 오버레이할 수 있습니다. Sling 리소스 병합으로 상속이 허용되므로 오버레이를 만들 때 원본의 1:1 사본이 필요하지 않습니다.
 
 여러 가지 방법으로 AEM 콘솔을 확장할 수 있습니다. 아래에 소량의 선택 항목이 있습니다(높은 수준에서).
 
@@ -60,7 +69,7 @@ Clientlibs를 사용하면 기본 구현을 확장하여 새로운 기능을 구
 
 * 콘솔 (Granite UI 페이지 기반의 모든 콘솔) - 예:
 
-   * `/libs/wcm/core/content`
+  * `/libs/wcm/core/content`
 
 >[!NOTE]
 >

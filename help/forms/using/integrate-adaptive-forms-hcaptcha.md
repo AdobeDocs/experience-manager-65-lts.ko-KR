@@ -4,13 +4,21 @@ description: hCaptcha&reg; 서비스를 통해 손쉽게 양식 보안을 강화
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: da0f8fc5-732e-41de-b73c-0355ec723d26
-source-git-commit: a5cfba70cedd1e0d1f8d5e5b447aa2941a23840f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 20%
-
+source-wordcount: '903'
+ht-degree: 21%
 ---
-
 # AEM Forms 환경을 hCaptcha®와 연결합니다. {#connect-your-forms-environment-with-hcaptcha-service}
 
 
@@ -25,7 +33,7 @@ hCaptcha® 외에도 AEM Forms 6.5는 다음 CAPTCHA 솔루션을 지원합니�
 
 ## AEM Forms 환경을 hCaptcha®와 통합
 
-hCaptcha® 서비스는 봇, 스팸 및 자동화된 남용으로부터 양식을 보호합니다. 확인란 위젯 챌린지를 제기하고 사용자의 답변을 평가하여 양식과 상호 작용하는 것이 인간인지 또는 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 활동으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
+hCaptcha® 서비스는 봇, 스팸 및 자동화된 남용으로부터 양식을 보호합니다. 확인란 위젯 챌린지를 제시하고 사용자의 응답을 평가하여 양식과 상호 작용하는 주체가 사람인지 봇인지 판단합니다. 테스트가 실패할 경우 사용자가 진행하지 못하도록 차단하고 봇이 스팸을 게시하거나 악의적인 활동으로 상호 작용하는 것을 방지하여 온라인 거래를 안전하게 할 수 있도록 도와줍니다.
 
 AEM 6.5 적응형 Forms 지원 hCaptcha&amp;reg. 양식 제출 시 확인란 위젯 문제를 제시하는 데 사용할 수 있습니다.
 

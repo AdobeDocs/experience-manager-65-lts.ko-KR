@@ -7,13 +7,24 @@ role: User, Admin
 feature: Configuration
 solution: Experience Manager, Experience Manager Assets
 exl-id: 2e03224f-b4eb-4bf5-aba9-a6cc292c96c2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 11%
-
+source-wordcount: '264'
+ht-degree: 13%
 ---
-
 # Dynamic Media 설정 {#setting-up-dynamic-media}
 
 [Dynamic Media](https://business.adobe.com/kr/products/experience-manager/assets/dynamic-media.html)는 다양한 시각적 머천다이징 및 마케팅 자산을 웹, 모바일 및 소셜 사이트에 맞게 자동으로 크기를 조정하여 주문형으로 제공함으로써 자산을 관리하는 데 도움이 됩니다. 기본 소스 자산 세트를 사용하면 Dynamic Media는 글로벌, 확장 가능 및 성능 최적화 네트워크를 통해 실시간으로 다양한 유형의 풍부한 컨텐츠를 생성하고 전달합니다.
@@ -30,7 +41,7 @@ Dynamic Media를 관리하는 경우 다음 항목이 중요합니다.
 * [Dynamic Media 구성 - 하이브리드 모드](config-dynamic.md) - Experience Manager을 업그레이드하는 기존 Dynamic Media 고객인 경우 이 구성을 사용하십시오.
 * [이미지 사전 설정 관리](managing-image-presets.md)
 * [뷰어 사전 설정 관리](managing-viewer-presets.md)
-* [Dynamic Media 문제 해결 - Scene7 모드](troubleshoot-dms7.md)
+* [Dynamic Media - Scene7 모드 문제 해결](troubleshoot-dms7.md)
 
 다음 항목도 참조하십시오.
 

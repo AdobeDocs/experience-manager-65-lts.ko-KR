@@ -9,13 +9,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '5215'
 ht-degree: 17%
-
 ---
-
 # 성능 최적화 {#performance-optimization}
 
 >[!NOTE]
@@ -542,9 +551,9 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 #### URL로 사용자 정의 {#customize-by-url}
 
-사용자가 글꼴 크기(또는 기타 레이아웃 사용자 정의)를 변경할 수 있도록 허용하는 경우 다른 사용자 정의가 URL에 반영되었는지 확인합니다.
+사용자가 글꼴 크기(또는 기타 레이아웃 사용자 정의)를 변경할 수 있도록 허용하는 경우 다른 사용자 정의가 URL에 반영되는지 확인합니다.
 
-예를 들어 쿠키는 캐시되지 않으므로 글꼴 크기를 쿠키(또는 유사한 메커니즘)에 저장하면 캐시된 페이지에 대해 글꼴 크기가 유지되지 않습니다. 따라서 Dispatcher는 임의의 글꼴 크기 문서를 무작위로 반환합니다.
+예를 들어 쿠키는 캐시되지 않으므로 글꼴 크기를 쿠키(또는 유사한 메커니즘)에 저장하면 캐시된 페이지에 대해 글꼴 크기가 유지되지 않습니다. 따라서 Dispatcher는 어떤 글꼴 크기의 문서든 무작위로 반환합니다.
 
 URL에 글꼴 크기를 선택기로 포함하면 이 문제를 피할 수 있습니다.
 
@@ -579,7 +588,7 @@ www.myCompany.com/news/main.large.html
 
 #### 탐색에 사용된 이미지 파일 무효화 {#invalidating-image-files-used-for-navigation}
 
-탐색 항목에 사진을 사용하는 경우 메서드는 기본적으로 제목과 동일하지만 약간 더 복잡합니다. 대상 페이지와 함께 모든 탐색 이미지를 저장합니다. 일반 및 활성에 대해 두 개의 사진을 사용하는 경우 다음 스크립트를 사용할 수 있습니다.
+탐색 항목에 사진을 사용하는 경우 메서드는 기본적으로 제목과 동일하지만 약간 더 복잡합니다. 대상 페이지와 함께 모든 탐색 이미지를 저장합니다. 일반 상태와 활성 상태에 사용할 두 개의 사진을 사용하는 경우 다음 스크립트를 사용할 수 있습니다.
 
 * 페이지를 정상적으로 표시하는 스크립트.
 * “.normal” 요청을 처리하고 일반 사진을 반환하는 스크립트.
@@ -597,11 +606,13 @@ www.myCompany.com/news/main.large.html
 * 반대로 10개의 서로 다른 시작 페이지를 선택할 수 있는 경우 각 시작 페이지를 캐시할 수 있으므로 성능이 향상됩니다.
 
 >[!TIP]
+>
 >Dispatcher 캐시 구성에 대한 자세한 내용은 [AEM Dispatcher 캐시 자습서](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=ko) 및 [보호된 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html?lang=ko#dispatcher-tips-and-tricks)의 해당 섹션을 참조하십시오.
 
 사용자 이름을 제목 표시줄에 입력하여 각 페이지를 개인화하는 경우(예: ) 성능에 영향을 줍니다.
 
 >[!TIP]
+>
 >보안 콘텐츠를 캐시하려면 Dispatcher 안내서의 [보안 콘텐츠 캐싱](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ko)을 참조하십시오.
 
 한 페이지에서 제한된 컨텐츠와 공개 컨텐츠를 혼합하는 경우 Dispatcher의 서버측 포함 또는 브라우저의 Ajax를 통해 클라이언트측 포함 을 사용하는 전략을 고려해 보십시오.

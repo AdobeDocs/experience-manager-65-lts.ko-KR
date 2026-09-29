@@ -1,5 +1,5 @@
 ---
-title: We.Retail에서 편집 가능한 템플릿 시험 사용
+title: We.Retail에서 편집 가능한 템플릿 체험
 description: We.Retail을 사용하여 Adobe Experience Manager에서 편집 가능한 템플릿을 테스트하는 방법을 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f1141b8c-12a2-44a0-8c15-b614398b5174
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 2%
-
+source-wordcount: '495'
+ht-degree: 6%
 ---
-
-# We.Retail에서 편집 가능한 템플릿 시험 사용{#trying-out-editable-templates-in-we-retail}
+# We.Retail에서 편집 가능한 템플릿 체험{#trying-out-editable-templates-in-we-retail}
 
 편집 가능한 템플릿을 사용하면 템플릿 작성 및 유지 관리가 더 이상 개발자 전용 작업이 아닙니다. 이제 템플릿 작성자라고 하는 고급 사용자 유형이 템플릿을 만들 수 있습니다. 개발자는 여전히 환경을 설정하고, 클라이언트 라이브러리를 만들고, 사용할 구성 요소를 만들어야 하지만, 이러한 기본 사항이 갖추어지면 템플릿 작성자는 개발 프로젝트 없이 템플릿을 만들고 구성할 수 있는 유연성을 갖게 됩니다.
 
@@ -57,10 +66,10 @@ We.Retail의 모든 페이지는 편집 가능한 템플릿을 기반으로 하�
    * 기존 정책을 선택하거나 컨테이너에 대한 정책을 만듭니다.
    * 다음과 같은 이 구성 요소를 사용할 때 페이지 작성자가 사용할 수 있는 기능을 정의합니다.
 
-      * 허용된 붙여넣기 소스
-      * 서식 옵션
-      * 허용된 단락 스타일
-      * 허용되는 특수 문자
+     * 허용된 붙여넣기 소스
+     * 서식 옵션
+     * 허용된 단락 스타일
+     * 허용되는 특수 문자
 
    핵심 구성 요소를 기반으로 하는 다양한 구성 요소를 통해 편집 가능한 템플릿을 통해 구성 요소 수준에서 옵션을 구성할 수 있으므로 개발자는 맞춤화를 수행할 필요가 없습니다.
 

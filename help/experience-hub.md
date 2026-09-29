@@ -7,13 +7,33 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin,Developer,User
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+  - id: f551224f-631f-46f8-b8fc-67744f995ba0
+    internal-label: Onboarding
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 100%
-
 ---
-
 # Experience Hub 소개 {#aem-experience-hub}
 
 Experience Hub는 Adobe Experience Manager 내에서 콘텐츠, 에셋, 사이트를 관리하기 위한 중앙 집중식의 시작점을 제공합니다. 개인화된 경험을 제공하도록 설계된 Experience Hub를 사용하면 역할과 목표에 따라 AEM 에코시스템을 원활하게 탐색할 수 있습니다. AEM 홈은 안내서 역할을 하여 목표를 효율적으로 달성하는 데 도움이 되는 주요 인사이트와 추천 작업을 제공합니다. Experience Hub는 명확하고 개인화된 레이아웃을 통해 필수 도구에 빠르게 액세스할 수 있도록 보장하며, 모든 AEM 기능에서 간소화되고 효과적인 경험을 지원합니다.
@@ -52,7 +72,7 @@ Adobe Experience Manager 페이지가 향상된 탐색과 대화형 위젯으로
 >
 >표시되는 위젯, 도구 및 아티팩트는 사용자 페르소나, 권한 및 AEM 배포 유형(AEM as a Cloud Service 또는 Managed Services 6.5/6.5 LTS)에 따라 다릅니다.
 
-이러한 솔루션은 이제 **도구** 또는 **서비스**&#x200B;의 기본 탐색으로 이동됩니다. 또한 새로운 내비게이션 요소를 통해 활성화된 솔루션에 특화된 주요 Adobe Experience Manager 기능에 빠르게 액세스할 수 있습니다. 이러한 솔루션에는 Assets, Sites, Forms, 콘텐츠 조각, Launches 등이 포함됩니다.
+이러한 솔루션은 이제 **도구** 또는 **서비스**&#x200B;의 기본 탐색으로 이동됩니다. 또한 새로운 탐색 요소를 통해 활성화된 솔루션에 특화된 주요 Adobe Experience Manager 기능에 빠르게 액세스할 수 있습니다. 이러한 솔루션에는 Assets, Sites, Forms, 콘텐츠 조각, Launches 등이 포함됩니다.
 
 ![Experience Hub 환경](/help/assets/assets-experience-hub/experience-hub-author-environments-ams.png)
 
@@ -68,7 +88,7 @@ Adobe Experience Manager의 중앙 허브 역할을 하는 Experience Hub 페이
 
 ![Experience Hub 위젯](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
 
-**저작 환경** 섹션에는 사용자가 접근할 수 있는 모든 AEM 환경이 표시됩니다. 솔루션과 페이지에 대한 특정 단축키가 있으며, 목록 상단에 표시할 특정 환경을 고정할 수도 있습니다.
+**저작 환경** 섹션에는 사용자가 접근할 수 있는 모든 AEM 환경이 표시됩니다. 해당 환경에서 사용할 수 있는 솔루션과 페이지에 대한 특정 단축키도 있으며, 목록 상단에 표시할 특정 환경을 고정할 수도 있습니다.
 
 아래 이미지에 표시된 **최근 항목** 섹션에는 AEM에서 최근에 방문한 페이지가 나열됩니다. 테넌트의 라이선스에 따라 위젯에는 프로그램, 파이프라인 실행, 에셋, 페이지 편집기, 양식 편집기와 같은 항목이 포함될 수 있습니다.
 
@@ -110,7 +130,7 @@ Experience Hub은 통합 왼쪽 탐색 기능을 사용하여 핵심 AEM 기능,
 
 +++**Experience Hub를 사용하여 빠르게 수행할 수 있는 액션 유형은 무엇입니까?**
 
-Experience Hub는 콘텐츠 만들기, 에셋 업로드, 팀 액세스 관리와 같은 중요한 작업을 사용자의 역할에 맞게 원클릭 단축키를 제공합니다.
+Experience Hub는 콘텐츠 만들기, 에셋 업로드, 팀 액세스 관리와 같은 중요한 작업을 위한 원클릭 단축키를 사용자의 역할에 맞게 제공합니다.
 
 +++
 
@@ -128,7 +148,7 @@ Experience Hub의 위젯은 사용자가 최근 활동을 추적하고 제품 �
 
 +++**사용자가 Experience Hub를 사용하여 여러 AEM 환경을 관리하는 방법은 무엇입니까?**
 
-사용자는 즐겨찾기를 타기팅할 환경을 선택하고 고정하여 맨 위에 유지할 수 있습니다. 단축키는 이러한 환경 내에서 솔루션과 페이지를 엽니다.
+사용자는 대상으로 삼을 환경을 선택하고 즐겨찾기를 고정하여 맨 위에 유지할 수 있습니다. 단축키는 이러한 환경 내에서 솔루션과 페이지를 엽니다.
 
 +++
 

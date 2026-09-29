@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 39473f0a-e4ee-4372-a0ea-ccf5d32501b9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 41%
-
+source-wordcount: '1487'
+ht-degree: 40%
 ---
-
 # Adobe Target으로 경험 조각 내보내기{#exporting-experience-fragments-to-adobe-target}
 
 Adobe Experience Manager(AEM)에서 만든 [경험 조각](/help/sites-authoring/experience-fragments.md)을 Adobe Target(Target)으로 내보낼 수 있습니다. 그런 다음 Target 활동에서 오퍼로 사용하여 경험을 대규모로 테스트하고 개인화할 수 있습니다.
@@ -127,7 +136,7 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
 
 >[!CAUTION]
 >
->이미지와 같은 미디어 자산의 경우 하나의 참조만 Target으로 가져올 수 있습니다. 자산 자체는 AEM Assets 내에 저장되며 AEM 게시 인스턴스에서 전달됩니다.
+>이미지와 같은 미디어 자산의 경우 하나의 참조만 Target으로 내보낼 수 있습니다. 자산 자체는 AEM Assets 내에 저장되며 AEM 게시 인스턴스에서 전달됩니다.
 >
 >따라서 Target으로 내보내기 전에 모든 관련 에셋이 포함된 경험 조각을 게시해야 합니다.
 
@@ -187,12 +196,12 @@ AEM Experience Fragments를 Adobe Target의 기본 작업 영역 또는 Adobe Ta
 
   AEM에 오류 메시지가 표시되어도 사용자는 경험 조각을 삭제할 수 있습니다. 경험 조각을 삭제하면 다음과 같은 결과가 발생합니다.
 
-   * AEM 경험 조각 및 Target 오퍼가 원하지 않은 동작을 수행할 수 있습니다.
+  * AEM 경험 조각 및 Target 오퍼가 원하지 않은 동작을 수행할 수 있습니다.
 
-      * 경험 조각 HTML이 Target으로 푸시되었으므로 해당 오퍼는 여전히 렌더링될 수 있습니다.
-      * AEM에서 참조된 자산을 삭제해도 경험 조각의 참조가 올바르게 작동하지 않을 수 있습니다.
+    * 경험 조각 HTML이 Target으로 푸시되었으므로 해당 오퍼는 여전히 렌더링될 수 있습니다.
+    * AEM에서 참조된 자산을 삭제해도 경험 조각의 참조가 올바르게 작동하지 않을 수 있습니다.
 
-   * 경험 조각이 AEM에 더 이상 존재하지 않으므로 경험 조각을 더 이상 수정할 수 없습니다.
+  * 경험 조각이 AEM에 더 이상 존재하지 않으므로 경험 조각을 더 이상 수정할 수 없습니다.
 
 
 ## Target으로 내보낸 경험 조각에서 ClientLib 제거 {#removing-clientlibs-from-fragments-exported-target}

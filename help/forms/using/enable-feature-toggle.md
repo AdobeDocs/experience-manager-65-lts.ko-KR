@@ -4,13 +4,21 @@ description: 기능 토글 은 관리자가 런타임 환경에서 새로운 기
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 8b6dea41-540b-498a-b52b-e584a9255f25
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '305'
 ht-degree: 3%
-
 ---
-
 # Adobe Experience Manager(AEM) 6.5의 기능 전환{#enable-feature-toggle-aem-forms-65}
 
 기능 토글 은 관리자가 특정 기능을 동적으로 활성화 또는 비활성화할 수 있는 AEM의 기능입니다. 이 기능은 코드 베이스에 대한 주요 배포 또는 변경 없이 **얼리어답터 기능** 및 **프리릴리스 기능**&#x200B;을 관리하는 데 특히 유용합니다. AEM 환경에서 액세스할 수 있는 기능을 유연하게 제어할 수 있습니다.

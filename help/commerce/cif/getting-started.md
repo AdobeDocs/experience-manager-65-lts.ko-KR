@@ -6,13 +6,21 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 15face30-3039-49a0-bfee-56bff21e5c27
-source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 8%
-
 ---
-
 # AEM Content and Commerce 시작하기 {#start}
 
 AEM 컨텐츠 및 Commerce을 시작하려면 AEM 컨텐츠 및 AEM 6.5용 Commerce 추가 기능을 설치해야 합니다.

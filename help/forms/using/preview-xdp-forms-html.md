@@ -8,13 +8,28 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8cab9656-3dda-4fdd-bb1a-df0bc4750e72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 0%
-
+source-wordcount: '807'
+ht-degree: 2%
 ---
-
 # XDP 양식의 HTML5 미리보기 생성{#generate-html-preview-of-an-xdp-form}
 
 AEM Forms Designer에서 양식을 디자인하는 동안 양식의 PDF 렌디션을 미리 보는 것 외에도 해당 양식의 HTML5 렌디션을 미리 볼 수도 있습니다. **HTML 미리 보기** 탭을 사용하여 브라우저에 표시되는 대로 양식을 미리 볼 수 있습니다.
@@ -37,13 +52,13 @@ Designer에서 XDP 양식의 HTML 미리 보기를 생성할 수 있도록 하�
 
    * JEE의 AEM Forms
 
-      * -/content/xfaforms
-      * -/etc/clientlibs
+     * -/content/xfaforms
+     * -/etc/clientlibs
 
    * OSGi의 AEM Forms
 
-      * -/content/xfaforms
-      * -/etc/clientlibs/fd/xfaforms
+     * -/content/xfaforms
+     * -/etc/clientlibs/fd/xfaforms
 
    >[!NOTE]
    >
@@ -74,14 +89,14 @@ Designer에서 XDP 양식의 HTML 미리 보기를 생성할 수 있도록 하�
    * **HTTP 포트 번호**: AEM 서버 포트. 기본값은 4502입니다.
    * **HTML 미리 보기 컨텍스트:** XFA 양식을 렌더링하기 위한 프로필의 경로입니다. 다음 기본 프로필은 Designer에서 양식을 미리 보는 데 사용됩니다. 하지만 사용자 지정 프로필의 경로를 지정할 수도 있습니다.
 
-      * `/content/xfaforms/profiles/default.html`(OSGi의 AEM Forms)
+     * `/content/xfaforms/profiles/default.html`(OSGi의 AEM Forms)
 
-      * `/lc/content/xfaforms/profiles/default.html`(JEE의 AEM Forms)
+     * `/lc/content/xfaforms/profiles/default.html`(JEE의 AEM Forms)
 
    * Forms Manager UI가 배포되는 **Forms Manager 컨텍스트:** 컨텍스트 경로. 기본값은 다음과 같습니다.
 
-      * `/aem/forms`(OSGi의 AEM Forms)
-      * `/lc/forms`(JEE의 AEM Forms)
+     * `/aem/forms`(OSGi의 AEM Forms)
+     * `/lc/forms`(JEE의 AEM Forms)
 
    >[!NOTE]
    >

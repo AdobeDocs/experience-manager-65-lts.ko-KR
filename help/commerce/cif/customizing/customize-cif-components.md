@@ -5,13 +5,21 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: e8f2a771-b2e3-4f3e-85a0-480f783fc313
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '2662'
+source-wordcount: '2667'
 ht-degree: 5%
-
 ---
-
 # Adobe Experience Manager CIF 핵심 구성 요소 맞춤화 {#customize-cif-components}
 
 [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia)은(는) [CIF 핵심 구성 요소](https://github.com/adobe/aem-core-cif-components)를 사용하기 위한 참조 코드 기반입니다. 이 자습서에서는 [제품 티저](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) 구성 요소를 추가로 확장하여 Adobe Commerce의 사용자 지정 특성을 표시합니다. 또한 Adobe Experience Manager(AEM)와 Adobe Commerce 간의 GraphQL 통합 및 CIF 핵심 구성 요소에서 제공하는 확장 후크에 대해서도 자세히 알아봅니다.
@@ -395,7 +403,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. 새 브라우저 창을 열고 AEM 및 **OSGi 콘솔** > **상태** > **Sling 모델**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)로 이동합니다.
+1. 새 브라우저 창을 열고 AEM 및 **OSGi 콘솔** > **상태** > **슬링 모델**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)&#x200B;(으)로 이동합니다.
 
 1. `MyProductTeaserImpl`을(를) 검색하면 다음과 같은 줄이 표시됩니다.
 
@@ -405,7 +413,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
 
    이는 슬링 모델이 제대로 배포되고 올바른 구성 요소에 매핑되었음을 나타냅니다.
 
-1. 제품 티저가 추가된 [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)의 **Venia 홈 페이지**&#x200B;로 새로 고침하십시오.
+1. 제품 티저가 추가된 [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)의 **Venia 홈 페이지**(으)로 새로 고칩니다.
 
    ![환경 친화적인 메시지가 표시됨](../assets/customize-cif-components/eco-friendly-text-displayed.png)
 
@@ -474,7 +482,7 @@ AEM 구성 요소의 일반적인 확장은 구성 요소에서 생성된 마크
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. 제품 티저가 추가된 [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)의 **Venia 홈 페이지**&#x200B;로 새로 고침하십시오.
+1. 제품 티저가 추가된 [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)의 **Venia 홈 페이지**(으)로 새로 고칩니다.
 
    ![친환경 배지 최종 구현](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 

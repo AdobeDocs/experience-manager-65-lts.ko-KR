@@ -9,13 +9,24 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 3eb9c0e3-950e-4dd5-a4c9-2d8f486ea3cf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1257'
 ht-degree: 1%
-
 ---
-
 # Forms 포털 구성 요소에 대한 템플릿 맞춤화{#customizing-templates-for-forms-portal-components}
 
 ## 사전 요구 사항 {#prerequisites}
@@ -41,8 +52,8 @@ Forms 포털을 사용하면 양식 목록에서 사용자 지정 메타데이�
    * 검색 및 목록 구성 요소: &quot;/libs/fd/fp/formTemplate&quot;
    * 초안 및 제출 구성 요소:
 
-      * 초안 섹션: /libs/fd/fp/draftTemplate
-      * 제출 섹션: /libs/fd/fp/submissionsTemplate
+     * 초안 섹션: /libs/fd/fp/draftTemplate
+     * 제출 섹션: /libs/fd/fp/submissionsTemplate
 
    * 링크 구성 요소: /libs/fd/fp/linkTemplate
 

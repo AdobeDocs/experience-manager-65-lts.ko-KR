@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 9cc6e4b6-7170-4c9a-a2c0-6ba4603cfd17
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 0%
-
+source-wordcount: '238'
+ht-degree: 2%
 ---
-
 # Admin Console{#admin-consoles}
 
 기본적으로 관리 콘솔을 통해 클래식 UI로 전환하는 기능은 비활성화됩니다. 따라서 클래식 UI에 액세스할 수 있도록 특정 콘솔 아이콘 위에 마우스를 올려 놓을 때 표시되는 팝업 아이콘이 더 이상 표시되지 않습니다.

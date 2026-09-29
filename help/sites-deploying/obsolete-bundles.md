@@ -9,13 +9,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 29f1d07b-925b-4612-aa1b-34c387a5765f
-source-git-commit: b93a65226587936010c3dd53312c66e15f73cf2a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 4%
-
 ---
-
 # 업그레이드 후 제거된 더 이상 사용되지 않는 번들 목록{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
 AEM 6.5 LTS로 업그레이드할 때 업그레이드가 수행된 AEM 6.5 servicepack 버전에 따라 다음 번들이 자동으로 제거됩니다.

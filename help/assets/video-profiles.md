@@ -11,13 +11,27 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: b7ee16db-fde2-4d06-b06c-945b6d876f8d
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8ea7e82-d45e-442f-bb04-b3788a7abcb0
+    internal-label: Video profiles
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3711'
-ht-degree: 5%
-
+source-wordcount: '3747'
+ht-degree: 6%
 ---
-
 # 비디오 프로필 {#video-profiles}
 
 Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필이 포함되어 있습니다. 이 기본 프로필의 설정은 고객에게 최상의 시청 환경을 제공하도록 최적화되었습니다. 응용 비디오 인코딩 프로필을 사용하여 기본 소스 비디오를 인코딩하면 비디오 플레이어가 재생 품질을 최적화합니다. 고객의 인터넷 연결 속도에 따라 비디오 스트림을 자동으로 조정합니다. 이 기능을 적응형 비트율 스트리밍이라고 합니다.
@@ -109,7 +123,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 * 초당 30프레임(FPS).
 * 300MB의 파일 크기입니다.
 
-Adobe AI는 9000프레임으로 제한됩니다. 즉, 30FPS로 5분. 비디오의 FPS가 더 높으면 지원되는 최대 비디오 지속 시간이 줄어듭니다. 예를 들어 Adobe AI 및 스마트 자르기는 최소 2분 30분인 경우에만 60FPS 비디오를 지원합니다.
+Adobe AI은 9000프레임으로 제한됩니다. 즉, 30FPS로 5분. 비디오의 FPS가 더 높으면 지원되는 최대 비디오 지속 시간이 줄어듭니다. 예를 들어 Adobe AI 및 스마트 자르기는 최소 2분 30분인 경우에만 60FPS 비디오를 지원합니다.
 
 ![비디오용 스마트 자르기](assets/smart-crop-video.png)
 
@@ -221,13 +235,13 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 1. 다음 작업을 수행합니다.
    * **[!UICONTROL 너비]** 필드에 **[!UICONTROL auto]**&#x200B;을(를) 입력합니다.
    * **[!UICONTROL 높이]** 필드에 값을 픽셀 단위로 입력하십시오.
-비디오의 크기를 시각화하려면 [높이] 정보 아이콘을 선택하여 **[!UICONTROL 크기 계산기]** 페이지를 엽니다. **[!UICONTROL 크기 계산기]** 페이지에서 원하는 방식으로 비디오 차원을 추가로 설정합니다(파란색 상자). 완료되면 대화 상자의 오른쪽 상단 모서리에서 **[!UICONTROL X]**&#x200B;을(를) 선택합니다.
+     비디오의 크기를 시각화하려면 [높이] 정보 아이콘을 선택하여 **[!UICONTROL 크기 계산기]** 페이지를 엽니다. **[!UICONTROL 크기 계산기]** 페이지에서 원하는 방식으로 비디오 차원을 추가로 설정합니다(파란색 상자). 완료되면 대화 상자의 오른쪽 상단 모서리에서 **[!UICONTROL X]**&#x200B;을(를) 선택합니다.
 1. (선택 사항) 다음 중 하나를 수행합니다.
 
    * **[!UICONTROL 고급]** 탭을 선택하고 **[!UICONTROL 기본값 사용]** 확인란이 선택되어 있는지 확인하십시오(권장).
 
    * **[!UICONTROL 기본값 사용]** 확인란의 선택을 취소하고 원하는 비디오 설정과 오디오 설정을 지정합니다.
-각 옵션 옆에 있는 정보 아이콘을 선택합니다. 선택한 비디오 형식 코덱을 기반으로 추가 설명 또는 권장 설정에 대해 읽을 수 있습니다.
+     각 옵션 옆에 있는 정보 아이콘을 선택합니다. 선택한 비디오 형식 코덱을 기반으로 추가 설명 또는 권장 설정에 대해 읽을 수 있습니다.
 
 1. 페이지의 오른쪽 상단 모서리에서 **[!UICONTROL 저장]**&#x200B;을 선택하여 사전 설정을 저장합니다.
 1. 다음 중 하나를 수행하십시오.
@@ -281,7 +295,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>키프레임 사이의 대상 프레임 수입니다. 2~10초마다 키프레임을 생성할 수 있도록 이 값을 계산합니다. 예를 들어 초당 30프레임인 경우 키프레임 간격은 60-300이어야 합니다.<br /> <br /> 낮은 키프레임 간격은 응용 비디오 인코딩을 위한 스트림 찾기 및 스트림 전환 동작을 개선하며, 높은 동작이 포함된 비디오의 품질을 향상시킬 수 있습니다. 그러나 키프레임은 파일 크기를 늘리기 때문에 낮은 키프레임 간격은 일반적으로 주어진 비트율로 전반적인 비디오 품질이 저하됩니다.</td>
+   <td>키프레임 사이의 대상 프레임 수입니다. 2~10초마다 키프레임을 생성할 수 있도록 이 값을 계산합니다. 예를 들어 초당 30프레임이면 키프레임 간격은 60-300.<br /> <br />이어야 합니다 낮은 키프레임 간격은 응용 비디오 인코딩에 대한 스트림 찾기 및 스트림 전환 동작을 개선하고, 또한 움직임이 높은 비디오의 품질을 개선할 수 있습니다. 그러나 키프레임은 파일 크기를 늘리기 때문에 낮은 키프레임 간격은 일반적으로 주어진 비트율로 전반적인 비디오 품질이 저하됩니다.</td>
    <td><code>String</code></td>
    <td><p>양수입니다.</p> <p>기본값은 300입니다.</p> <p>DASH 또는 HLS에 대한 권장 값은 60-90입니다.</p> </td>
   </tr>
@@ -346,7 +360,7 @@ Dynamic Media에는 이미 사전 정의된 응용 비디오 인코딩 프로필
 1. 비디오 프로필 페이지에서 비디오 프로필 이름 하나를 확인합니다.
 1. 도구 모음에서 **[!UICONTROL 복사]**&#x200B;를 선택합니다.
 1. 비디오 인코딩 프로필 페이지에서 프로필의 새 이름을 입력합니다.
-1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. 적응형 비트율 스트리밍에 대한 설명을 보려면 정보 아이콘을 선택합니다. (If you are copying a progressive video profile, do not select the check box.)
+1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. 적응형 비트율 스트리밍에 대한 설명을 보려면 정보 아이콘을 선택합니다. (프로그레시브 비디오 프로필을 복사하는 경우 이 확인란을 선택하지 마십시오.)
 
    Dynamic Media - 하이브리드 모드에서 WebM 비디오 사전 설정이 비디오 프로필의 일부인 경우 모든 사전 설정이 MP4여야 하므로 **[!UICONTROL 적응형 스트리밍을 위해 인코딩]**&#x200B;할 수 없습니다.
 1. 비디오 인코딩 사전 설정 제목 아래에서 프로필을 구성하는 비디오 인코딩 사전 설정을 추가, 편집 또는 삭제합니다.
@@ -399,7 +413,7 @@ You can apply a video profile to a folder from within the **[!UICONTROL Tools]**
 1. **[!UICONTROL 비디오 프로필]** 탭을 선택하고 드롭다운 메뉴에서 프로필을 선택한 다음 **[!UICONTROL 저장 및 닫기]**&#x200B;를 선택합니다. 사용자 인터페이스는 카드 이름에 프로필 이름을 표시하여 지정된 프로필이 있는 폴더를 나타냅니다.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
-[비디오 프로필 처리 작업의 진행 상황을 모니터링](#monitoring-the-progress-of-an-encoding-job)할 수 있습니다.
+   [비디오 프로필 처리 작업의 진행 상황을 모니터링](#monitoring-the-progress-of-an-encoding-job)할 수 있습니다.
 
 ### 비디오 프로필을 전체적으로 적용 {#applying-a-video-profile-globally}
 

@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 73230415-078c-4933-8521-bc18e5490103
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 6%
-
 ---
-
 # 구성 및 구성 브라우저 {#configuration-browser}
 
 AEM 구성은 AEM에서 설정을 관리하고 작업 공간으로 사용됩니다.
@@ -79,8 +88,8 @@ AEM 내의 다양한 기능에 대해 구성을 만들 수 있습니다.
 
    * **제목**&#x200B;은 설명적이어야 합니다.
    * **이름**&#x200B;은 저장소의 노드 이름이 됩니다.
-      * 제목을 기반으로 자동 생성되고 [AEM 명명 규칙](/help/sites-developing/naming-conventions.md)에 따라 조정됩니다.
-      * 필요한 경우 조정할 수 있습니다.
+     * 제목을 기반으로 자동 생성되고 [AEM 명명 규칙](/help/sites-developing/naming-conventions.md)에 따라 조정됩니다.
+     * 필요한 경우 조정할 수 있습니다.
 1. 허용하려는 구성 유형을 확인합니다.
    * [클라우드 구성](/help/sites-administering/configurations.md)
    * [Context Hub 세그먼트](/help/sites-administering/segmentation.md)

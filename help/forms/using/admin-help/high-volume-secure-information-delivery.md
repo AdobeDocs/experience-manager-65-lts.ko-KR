@@ -9,14 +9,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5df8c609-8007-4422-9bf8-5bae6d53b9b7
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 100%
-
 ---
-
 # 대용량 보안 정보 전송 {#high-volume-secure-information-delivery}
 
 통신 회사에서 보안이 적용된 월별 청구서를 생성하는 환경과 같은 대량 프로덕션 환경에서는 각 문서에만 적용되는 라이선스를 만드는 작업이 리소스를 많이 사용하는 프로세스가 될 수 있습니다. 이 경우 문서 보안은 문서가 아닌 사용자에게 라이선스를 연결하는 기능을 지원합니다. 사용자를 위해 생성된 라이선스는 해당 사용자를 위해 보호되는 모든 문서에 사용됩니다.

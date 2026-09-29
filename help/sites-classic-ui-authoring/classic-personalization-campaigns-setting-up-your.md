@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: cf510635-6cbf-4f2b-b289-7ad31978c608
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: '2219'
 ht-degree: 1%
-
 ---
-
 # 캠페인 설정{#setting-up-your-campaign}
 
 새 캠페인 설정에는 다음(일반) 단계가 포함됩니다.
@@ -30,22 +41,22 @@ ht-degree: 1%
 
 * 티저를 만드는 경우:
 
-   1. [티저 환경 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
-   1. [티저에 콘텐츠 추가](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
-   1. [티저에 대한 터치포인트를 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser)(콘텐츠 페이지에 티저 추가).
+  1. [티저 환경 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
+  1. [티저에 콘텐츠 추가](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
+  1. [티저에 대한 터치포인트를 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser)(콘텐츠 페이지에 티저 추가).
 
 * 뉴스레터를 만드는 경우:
 
-   1. [뉴스레터 환경 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
-   1. [뉴스레터에 콘텐츠를 추가합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   1. [뉴스레터를 개인화합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   1. [매력적인 뉴스레터 랜딩 페이지 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
-   1. 구독자 또는 잠재 고객에게 [뉴스레터를 전송](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters)합니다.
+  1. [뉴스레터 환경 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
+  1. [뉴스레터에 콘텐츠를 추가합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  1. [뉴스레터를 개인화합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  1. [매력적인 뉴스레터 랜딩 페이지 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  1. 구독자 또는 잠재 고객에게 [뉴스레터를 전송](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters)합니다.
 
 * Adobe Target(이전 Test&amp;Target) 오퍼를 만드는 경우:
 
-   1. [Adobe Target 오퍼 경험을 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
-   1. [Adobe Target과 통합](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
+  1. [Adobe Target 오퍼 경험을 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
+  1. [Adobe Target과 통합](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -122,19 +133,19 @@ ht-degree: 1%
 
 * [티저](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers):
 
-   * [티저 페이지를 방문자 세그먼트에 연결합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
-   * [티저에 대한 터치포인트를 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser)(콘텐츠 페이지에 티저 추가).
+  * [티저 페이지를 방문자 세그먼트에 연결합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
+  * [티저에 대한 터치포인트를 만듭니다](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser)(콘텐츠 페이지에 티저 추가).
 
 * [뉴스레터](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters):
 
-   * [뉴스레터에 콘텐츠를 추가합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   * [뉴스레터를 개인화합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   * 구독자 또는 잠재 고객에게 [뉴스레터를 전송](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters)합니다.
-   * [매력적인 뉴스레터 랜딩 페이지 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  * [뉴스레터에 콘텐츠를 추가합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  * [뉴스레터를 개인화합니다.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  * 구독자 또는 잠재 고객에게 [뉴스레터를 전송](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters)합니다.
+  * [매력적인 뉴스레터 랜딩 페이지 만들기](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
 
 * [Adobe Target 오퍼](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
-   * [Adobe Target과 통합](/help/sites-administering/target.md)
+  * [Adobe Target과 통합](/help/sites-administering/target.md)
 
 ### 새 터치포인트 추가 {#adding-a-new-touchpoint}
 
@@ -254,7 +265,7 @@ AEM MCM에서 리드를 수동으로 입력하거나 메일링 목록과 같이 
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. **도구** 메뉴에서 **목록에 추가를 선택합니다....** **목록에 추가** 창이 열립니다.
+1. **도구** 메뉴에서 **목록에 추가....**&#x200B;를 선택합니다. **목록에 추가** 창이 열립니다.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 

@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 3%
-
 ---
-
 # 사용자 정의 검색 양식 업그레이드{#upgrading-custom-search-forms}
 
 AEM 6.2에서 저장소에 저장된 사용자 지정 검색 Forms의 위치가 변경되었습니다. 업그레이드 시 6.1의 다음 위치에서 이동됩니다.
@@ -73,7 +82,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
  <tbody>
   <tr>
    <td>6.1에서 기본 검색의 노드</td>
-   <td>해당 없음</td>
+   <td>해당 사항 없음</td>
   </tr>
   <tr>
    <td><p>6.1의 리소스 유형</p> </td>
@@ -130,7 +139,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 
 **작업:** **resourceType** 속성을 조정합니다(위에 표시된 6.2 위치와 같이 &quot;**/coral**&quot; 추가).
 
-### 페이지 상태 설명 {#page-status-predicate}
+### 페이지 상태 조건자 {#page-status-predicate}
 
 <table>
  <tbody>
@@ -156,13 +165,13 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 * `pagestatuspredicate` 노드 제거
 * 노드 복사
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
-   * `/conf/global/settings/cq/search/facets/sites/jcr:content/items`에
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
+  * `/conf/global/settings/cq/search/facets/sites/jcr:content/items`에
 
 * 노드 복사
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
-   * `/conf/global/settings/cq/search/facets/sites/jcr:content/items`에
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
+  * `/conf/global/settings/cq/search/facets/sites/jcr:content/items`에
 
 * `analyticspredicate` 노드의 `listOrder` 속성을 &quot;**8**&quot;(으)로 설정해야 합니다. 이것은 충돌을 피하기 위해 필요합니다.
 
@@ -359,7 +368,7 @@ AEM 6.1에서 표준 전체 텍스트 조건자는 검색 양식의 일부였습
 
 **작업:** `resourceType` 속성을 조정합니다(위에 표시된 6.2 위치와 같이 &quot;**/coral**&quot; 추가).
 
-## 자산 관리자 검색 레일 {#assets-admin-search-rail}
+## Assets 관리자 검색 레일 {#assets-admin-search-rail}
 
 아래 노드는 `/conf/global/settings/dam/search/facets/assets/items`의 이름을 참조합니다.
 

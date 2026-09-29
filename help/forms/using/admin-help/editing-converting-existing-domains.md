@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 0dafef83-a516-48df-9175-019984843cfa
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 100%
-
 ---
-
 # 기존 도메인 편집 및 변환{#editing-and-converting-existing-domains}
 
 >[!NOTE]
@@ -39,8 +54,8 @@ ht-degree: 100%
 1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리를 클릭합니다.
 1. 변환할 엔터프라이즈 도메인의 이름을 클릭합니다.
 1. 하이브리드 도메인으로 변환을 클릭합니다.
-1. 사용자 및 그룹 데이터와 사용자 인증에 관해 표시되는 정보를 검토하고 확인을 클릭합니다.
-1. 하이브리드 도메인 설정을 편집하고 확인을 클릭합니다.
+1. 사용자 및 그룹 데이터와 사용자 인증에 관해 표시되는 정보를 검토하고 [확인]을 클릭합니다.
+1. 하이브리드 도메인 설정을 편집하고 [확인]을 클릭합니다.
 
 >[!NOTE]
 >
@@ -50,6 +65,6 @@ ht-degree: 100%
 
 1. 관리 콘솔에서 설정 > 사용자 관리 > 도메인 관리를 클릭합니다.
 1. 변환할 하이브리드 도메인의 이름을 클릭합니다.
-1. 엔터프라이즈 도메인으로 변환을 클릭합니다.
-1. 사용자 및 그룹 데이터와 사용자 인증에 관해 표시되는 정보를 검토하고 확인을 클릭합니다.
+1. [엔터프라이즈 도메인으로 변환]을 클릭합니다.
+1. 사용자 및 그룹 데이터와 사용자 인증에 관해 표시되는 정보를 검토하고 [확인]을 클릭합니다.
 1. 디렉터리 추가를 클릭하고 필수 디렉터리 정보를 구성합니다. ([디렉터리 또는 사용자 정의 SPI 추가](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis)를 참조하십시오.)

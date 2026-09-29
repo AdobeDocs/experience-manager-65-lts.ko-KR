@@ -1,5 +1,5 @@
 ---
-title: AEM Forms으로 에셋 가져오기 및 내보내기
+title: AEM Forms로 자산 가져오기 및 내보내기
 description: 및 의 적응형 양식 및 템플릿을 AEM 인스턴스로 가져오고 내보낼 수 있습니다. 이는 양식을 마이그레이션하거나 시스템 간에 이동하는 데 도움이 됩니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,30 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 98304115-1c27-4261-9c34-70a9d7e7cd53
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2450'
-ht-degree: 0%
-
+source-wordcount: '2481'
+ht-degree: 1%
 ---
-
-# AEM Forms으로 에셋 가져오기 및 내보내기{#importing-and-exporting-assets-to-aem-forms}
+# AEM Forms로 자산 가져오기 및 내보내기{#importing-and-exporting-assets-to-aem-forms}
 
 다양한 AEM Forms 인스턴스 간에 양식 및 관련 에셋, 테마, 데이터 사전, 문서 단편 및 문자를 이동할 수 있습니다. 이러한 이동은 시스템을 마이그레이션하거나 양식을 스테이지 서버에서 프로덕션 서버로 이동할 때 필요합니다. AEM Forms UI를 통한 업로드 및 가져오기가 지원되는 에셋의 경우 내보내기 또는 가져오기에 Forms UI를 사용하는 것이 좋습니다. 이러한 에셋을 내보내거나 가져오기 위해 AEM 패키지 관리자를 사용하는 것은 권장되지 않습니다.
 
@@ -38,10 +54,10 @@ Forms 및 Documents 에셋을 다운로드하려면:
 1. 에셋 다운로드에서 다음 옵션 중 하나를 선택하고 **다운로드**&#x200B;를 선택합니다.
 
    * **CRX 패키지로 다운로드:** 선택한 모든 에셋과 관련 종속성을 AEM Forms 인스턴스에서 다른 인스턴스로 다운로드하고 이동하려면 옵션을 사용합니다. 모든 에셋과 폴더를 crx 패키지로 다운로드합니다. AEM(적응형 양식, 대화형 통신 및 적응형 양식 단편), 양식 세트, 양식 템플릿, PDF 문서 및 리소스(XSD, XFS, 이미지)로 작성된 양식을 포함한 모든 양식 자산은 AEM Forms UI에서 패키지로 다운로드할 수 있습니다.
-자산을 패키지로 다운로드하면 다운로드하도록 선택한 자산이 사용한 자산도 다운로드된다는 이점이 있습니다. 예를 들어 양식 템플릿, XSD 및 이미지를 사용하는 적응형 양식이 있는 경우. 이 적응형 양식을 선택하고 패키지로 다운로드하면 다운로드된 패키지에는 양식 템플릿, XSD 및 이미지도 포함됩니다. 자산과 연결된 모든 메타데이터 속성(사용자 지정 속성 포함)도 다운로드됩니다.
+     자산을 패키지로 다운로드하면 다운로드하도록 선택한 자산이 사용한 자산도 다운로드된다는 이점이 있습니다. 예를 들어 양식 템플릿, XSD 및 이미지를 사용하는 적응형 양식이 있는 경우. 이 적응형 양식을 선택하고 패키지로 다운로드하면 다운로드된 패키지에는 양식 템플릿, XSD 및 이미지도 포함됩니다. 자산과 연결된 모든 메타데이터 속성(사용자 지정 속성 포함)도 다운로드됩니다.
 
    * **에셋을 이진 파일로 다운로드:** 양식 템플릿(XDP), PDF forms(PDF), 문서(PDF) 및 리소스(이미지, 스키마, 스타일시트)만 다운로드하려면 옵션을 사용합니다. 외부 애플리케이션으로 이러한 에셋을 편집할 수 있습니다. XSD, XDP, 이미지, PDF 및 XDP와 같은 바이너리가 있는 양식 에셋을 .zip 파일로 다운로드합니다.
-**에셋을 이진 파일로 다운로드** 옵션이 있는 적응형 양식, 대화형 통신, 적응형 양식 단편, 테마 및 양식 세트를 다운로드할 수 없습니다. 이러한 에셋을 다운로드하려면 **CRX 패키지로 다운로드** 옵션을 사용해야 합니다.
+     **에셋을 이진 파일로 다운로드** 옵션이 있는 적응형 양식, 대화형 통신, 적응형 양식 단편, 테마 및 양식 세트를 다운로드할 수 없습니다. 이러한 에셋을 다운로드하려면 **CRX 패키지로 다운로드** 옵션을 사용해야 합니다.
 
    선택한 자산은 아카이브(.zip 파일)로 다운로드됩니다.
 

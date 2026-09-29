@@ -5,13 +5,27 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: 004a3859c06e7c219e7919ac5920a9bc179ede43
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '546'
 ht-degree: 91%
-
 ---
-
 # AEM 6.5 LTS 자주 묻는 질문(FAQ) {#faq}
 
 이 페이지에서는 AEM 6.5 LTS에 대해 자주 묻는 몇 가지 질문에 답변합니다.
@@ -31,7 +45,7 @@ AEM 6.5 LTS는 이전 버전과의 호환성을 유지하는 것을 목표로 �
 
 ## AEM 6.5 LTS로 원활하게 전환하려면 어떻게 해야 합니까?
 
-원활한 전환을 위해 다음 작업을 수행하는 것이 좋습니다.
+원활한 전환을 위해 다음을 권장합니다.
 
 * [릴리스 정보](/help/release-notes/release-notes.md) 및 설명서를 철저히 검토합니다.
 * [AEM 분석기 도구](/help/sites-deploying/aem-analyzer.md)를 사용하여 업그레이드의 복잡성을 평가합니다.
@@ -44,7 +58,7 @@ AEM 6.5 LTS 서비스 팩은 최초 릴리스 이후 AEM 6.5 LTS에 적용된 �
 
 ## 현재 AEM 6.5를 사용하고 있습니다. AEM 6.5 LTS GA 릴리스로 업그레이드하지 않고 AEM 6.5 LTS 서비스 팩으로 직접 업그레이드할 수 있습니까?
 
-예. AEM 6.5에서 AEM 6.5 LTS 서비스 팩으로 직접 업그레이드할 수 있습니다. [릴리스 정보](/help/release-notes/release-notes.md) 및 [AEM 6.5 LTS로 업그레이드](/help/sites-deploying/upgrade.md) 섹션을 검토하는 것이 좋습니다.
+예. AEM 6.5에서 모든 AEM 6.5 LTS 서비스 팩으로 직접 업그레이드할 수 있습니다. [릴리스 정보](/help/release-notes/release-notes.md) 및 [AEM 6.5 LTS로 업그레이드](/help/sites-deploying/upgrade.md) 섹션을 검토하는 것이 좋습니다.
 
 ## 현재 AEM 6.5 LTS GA를 사용하고 있습니다. AEM 6.5 LTS 서비스 팩으로 업그레이드하려면 코드를 변경해야 합니까?
 

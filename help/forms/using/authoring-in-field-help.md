@@ -8,13 +8,29 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: bc3cf42f-9107-4960-bef5-49d1dde4fbb5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 15%
-
+source-wordcount: '444'
+ht-degree: 18%
 ---
-
 # 양식 필드에 대한 컨텍스트 내 도움말 작성{#authoring-in-context-help-for-form-fields}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
@@ -30,7 +46,7 @@ ht-degree: 15%
 사이드바의 속성 탭에 있는 도움말 콘텐츠 섹션에서 다음 옵션을 사용하여 상황별 도움말을 지정할 수 있습니다.
 
 * [간단한 설명](../../forms/using/authoring-in-field-help.md#p-short-description-p)
-* [긴 설명](../../forms/using/authoring-in-field-help.md#p-long-description-p)
+* [자세한 설명](../../forms/using/authoring-in-field-help.md#p-long-description-p)
 
 ![양식 필드에 대한 상황별 도움말](assets/descriptions.png)
 
@@ -50,13 +66,13 @@ ht-degree: 15%
 
 ![필드 아래의 컨텍스트에 맞는 도움말에 영구적 추가](assets/short1.png)
 
-### 긴 설명 {#long-description}
+### 자세한 설명 {#long-description}
 
 긴 설명 필드를 사용하여 긴 텍스트를 지정하거나 비디오 등 리치 미디어 콘텐츠를 컨텍스트 내 도움말로 포함할 수 있습니다. 예를 들어 다음 이미지는 컨텍스트 내 도움말로서 비디오를 포함할 수 있는 방법을 보여 줍니다.
 
 ![양식 필드에 대한 컨텍스트 내 도움말로 리치 미디어 추가](assets/long-descriptions.png)
 
-긴 설명을 추가하면 **이(가) 표시됩니까?필드 옆의** 아이콘. 아이콘을 클릭하면 긴 설명 섹션에 추가된 콘텐츠가 표시됩니다.
+긴 설명을 추가하면 **?**&#x200B;이(가) 표시됩니다. 필드 옆에 있는 아이콘. 아이콘을 클릭하면 긴 설명 섹션에 추가된 콘텐츠가 표시됩니다.
 
 ![상황에 맞는 리치 미디어 도움말의 예](assets/photoshop.png)
 
@@ -66,6 +82,6 @@ ht-degree: 15%
 
 ![양식 패널에 대한 상황에 맞는 도움말 추가](assets/panel-level-help.png)
 
-패널에 대한 도움말을 추가하면 **이(가) 표시됩니까?패널 설명 옆의** 아이콘. 아이콘을 클릭하면 패널 편집 대화 상자의 도움말 콘텐츠 섹션에 추가된 콘텐츠가 표시됩니다.
+패널에 대한 도움말을 추가하면 **?**&#x200B;이(가) 표시됩니다. 패널 설명 옆에 있는 아이콘 아이콘을 클릭하면 패널 편집 대화 상자의 도움말 콘텐츠 섹션에 추가된 콘텐츠가 표시됩니다.
 
 ![양식 패널 수준의 상황에 맞는 도움말 예제](assets/photoshop-1.png)

@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 앱을 위한 환경 설정
+title: AEM Forms 앱 환경 설정
 description: AEM Forms 앱을 빌드하고 배포하기 위한 하드웨어, 소프트웨어 및 라이센스입니다.
 contentOwner: robhagat
 content-type: reference
@@ -10,22 +10,38 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 41799183-ef5a-4990-bd7b-7b58cafe3960
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 0%
-
+source-wordcount: '220'
+ht-degree: 6%
 ---
-
-# AEM Forms 앱을 위한 환경 설정{#set-up-environment-for-aem-forms-app}
+# AEM Forms 앱 환경 설정{#set-up-environment-for-aem-forms-app}
 
 AEM Forms 앱을 빌드하고 배포하려면 다음 하드웨어, 소프트웨어 및 라이선스가 필요합니다.
 
 ## Windows 디바이스용 {#for-windows-devices}
 
-* Microsoft® 윈도우
-* Microsoft® Visual Studio 2015
-* Microsoft® Visual Studio Tools for Apache Cordova
+* ® 윈도우
+* ® Visual Studio 2015
+* ® Visual Studio Tools for Apache Cordova
 
 ## iOS 디바이스용 {#for-ios-devices}
 
@@ -36,7 +52,7 @@ AEM Forms 앱을 빌드하고 배포하려면 다음 하드웨어, 소프트웨�
 * 사내 iOS 앱 배포를 위한 엔터프라이즈 인증서
 * Apple iPad 및 iOS 8.4 이상
 
-## Android™ 디바이스용 {#for-android-devices}
+## ™ 디바이스용 {#for-android-devices}
 
 * [https://developer.android.com/studio](https://developer.android.com/studio)에서 다운로드할 수 있는 Android™ Development Toolkit(ADT 번들)
 * 환경이 Mac 시스템에 설정된 경우 Applications 폴더에 ADT를 설치해야 합니다.

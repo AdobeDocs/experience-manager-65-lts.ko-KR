@@ -1,6 +1,6 @@
 ---
 title: 워크플로에 참여
-description: 워크플로는 일반적으로 페이지나 자산에 대해 사람이 활동을 수행해야 하는 단계를 포함합니다. 워크플로는 활동을 수행할 사용자 또는 그룹을 선택하고 해당 사용자 또는 그룹에 작업 항목을 지정합니다.
+description: 워크플로는 일반적으로 페이지나 자산에 대해 사람이 활동을 수행해야 하는 단계를 포함합니다. 워크플로는 활동을 수행할 사용자 또는 그룹을 선택하고 해당 개인 또는 그룹에 작업 항목을 지정합니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,16 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: aea2daf6-c1e2-4e17-8c3f-6b25c693a45c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 39%
-
+source-wordcount: '544'
+ht-degree: 47%
 ---
-
 # 워크플로에 참여{#participating-in-workflows}
 
-워크플로는 일반적으로 페이지나 자산에 대해 사람이 활동을 수행해야 하는 단계를 포함합니다. 워크플로는 활동을 수행할 사용자 또는 그룹을 선택하고 해당 사용자 또는 그룹에 작업 항목을 지정합니다.
+워크플로는 일반적으로 페이지나 자산에 대해 사람이 활동을 수행해야 하는 단계를 포함합니다. 워크플로는 활동을 수행할 사용자 또는 그룹을 선택하고 해당 개인 또는 그룹에 작업 항목을 지정합니다.
 
 ## 작업 항목 처리 중 {#processing-your-work-items}
 
@@ -34,9 +43,9 @@ ht-degree: 39%
 
   위임에 사용할 수 있는 사용자는 작업 항목이 지정된 사용자에게 따라 다릅니다.
 
-   * 작업 항목이 그룹에 지정된 경우 그룹 구성원을 사용할 수 있습니다.
-   * 작업 항목이 그룹에 할당된 후 사용자에게 위임된 경우 그룹 멤버와 그룹을 사용할 수 있습니다.
-   * 작업 항목이 단일 사용자에게 지정된 경우에는 작업 항목을 위임할 수 없습니다.
+  * 작업 항목이 그룹에 지정된 경우 그룹 구성원을 사용할 수 있습니다.
+  * 작업 항목이 그룹에 할당된 후 사용자에게 위임된 경우 그룹 멤버와 그룹을 사용할 수 있습니다.
+  * 작업 항목이 단일 사용자에게 지정된 경우에는 작업 항목을 위임할 수 없습니다.
 
 * **뒤로 이동**
 

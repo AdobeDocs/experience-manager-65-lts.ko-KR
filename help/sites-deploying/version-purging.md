@@ -10,14 +10,24 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e3ef1435-d405-482f-9eb5-f9a64ff03322
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '732'
 ht-degree: 1%
-
 ---
-
 # 버전 제거{#version-purging}
 
 표준 설치에서 Adobe Experience Manager(AEM)는 콘텐츠를 업데이트한 후 페이지를 활성화하면 페이지 또는 노드의 버전을 생성합니다.
@@ -39,11 +49,11 @@ AEM에는 저장소를 관리하는 데 도움이 되는 다양한 메커니즘�
 저장소 모니터링 및 유지 관리의 일부로 사용됩니다.
 이를 통해 다음 매개 변수에 따라 노드의 이전 버전 또는 노드 계층을 제거하도록 개입할 수 있습니다.
 
-   * 저장소에 보관할 최대 버전 수.
-이 수를 초과하면 가장 오래된 버전이 제거됩니다.
+  * 저장소에 보관할 최대 버전 수.
+    이 수를 초과하면 가장 오래된 버전이 제거됩니다.
 
-   * 저장소에 보관된 버전의 최대 기간.
-버전 사용 기간이 이 값을 초과하면 저장소에서 제거됩니다.
+  * 저장소에 보관된 버전의 최대 기간.
+    버전 사용 기간이 이 값을 초과하면 저장소에서 제거됩니다.
 
 * [버전 제거 유지 관리 작업](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). 버전 제거 유지 관리 작업을 예약하여 이전 버전을 자동으로 삭제할 수 있습니다. 따라서 버전 제거 도구를 수동으로 사용할 필요가 없습니다.
 
@@ -96,34 +106,34 @@ AEM에는 저장소를 관리하는 데 도움이 되는 다양한 메커니즘�
 
 * 설정:
 
-   * `maxNumberVersions` = 7
+  * `maxNumberVersions` = 7
 
-   * `maxAgeDays` = 30
+  * `maxAgeDays` = 30
 
 * 포함:
 
-   * 지난 60일 내에 10개의 버전이 만들어졌습니다
-   * 이러한 버전 중 3개가 지난 30일 이내에 생성되었습니다
+  * 지난 60일 내에 10개의 버전이 만들어졌습니다
+  * 이러한 버전 중 3개가 지난 30일 이내에 생성되었습니다
 
 * 이는 다음을 의미합니다.
 
-   * 마지막 세 버전은 유지됩니다
+  * 마지막 세 버전은 유지됩니다
 
 예를 들어 유지할 최대 AND 최소 버전 수와 유지할 가장 오래된 버전을 정의하는 경우:
 
 * 설정:
 
-   * `maxNumberVersions` = 3
-   * `maxAgeDays` = 30
-   * `minNumberVersions` = 3
+  * `maxNumberVersions` = 3
+  * `maxAgeDays` = 30
+  * `minNumberVersions` = 3
 
 * 포함:
 
-   * 5 버전은 60 일 전에 만들어졌습니다.
+  * 5 버전은 60 일 전에 만들어졌습니다.
 
 * 이는 다음을 의미합니다.
 
-   * 세 가지 버전이 유지됩니다.
+  * 세 가지 버전이 유지됩니다.
 
 ## 버전 제거 도구 {#purge-versions-tool}
 

@@ -10,13 +10,29 @@ feature: Panoramic Images,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 18458c49-ab84-4d49-95b5-52922fba1365
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: d61a43e0-1563-4df1-9eb3-9ab3d5eab8b2
+    internal-label: Panoramic images
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '597'
 ht-degree: 0%
-
 ---
-
 # 파노라마 이미지{#panoramic-images}
 
 이 섹션에서는 파노라마 이미지 뷰어를 사용하여 공간, 속성, 위치 또는 풍경을 360도로 몰입형 방식으로 볼 수 있도록 구형 파노라마 이미지를 렌더링하는 방법에 대해 설명합니다.

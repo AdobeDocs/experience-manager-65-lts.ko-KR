@@ -9,13 +9,22 @@ feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: dd0f90f7-5e92-49d3-a5b4-17d99ed927b9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '605'
-ht-degree: 1%
-
+ht-degree: 3%
 ---
-
 # AEM 6의 감사 로그 유지 관리{#audit-log-maintenance-in-aem}
 
 감사 로깅에 적합한 AEM 이벤트는 많은 아카이브된 데이터를 생성합니다. 이 데이터는 복제, 에셋 업로드 및 기타 시스템 활동으로 인해 시간이 지남에 따라 빠르게 증가할 수 있습니다.

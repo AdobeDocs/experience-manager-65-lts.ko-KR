@@ -6,13 +6,29 @@ feature: Workflow, Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 06785380-07cc-4c8b-b11c-6005471bd058
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '970'
 ht-degree: 2%
-
 ---
-
 # 디지털 자산 처리 {#process-assets}
 
 [!DNL Adobe Experience Manager Assets]을(를) 사용하면 강력한 자산 처리를 위해 다양한 방식으로 디지털 자산을 처리할 수 있습니다. 기본 또는 사용자 지정된 처리 방법을 사용하여 전체 비즈니스 프로세스 완료, 감사 및 규정 준수, 검색 및 배포, 디지털 에셋의 기본 온전성을 보장할 수 있습니다. 필요한 규모와 사용자 정의를 달성하면서 에셋 관리 작업을 수행할 수 있습니다.

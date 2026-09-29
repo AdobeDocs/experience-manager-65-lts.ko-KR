@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: e1771229-b2ce-406a-95a5-99b11fafbe34
-source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 5%
-
+source-wordcount: '521'
+ht-degree: 4%
 ---
-
 # Adobe Target과 통합하기 위한 사전 요구 사항{#prerequisites-for-integrating-with-adobe-target}
 
 AEM과 Adobe Target의 [통합](/help/sites-administering/target.md)의 일부로 Adobe Target에 등록하고, 복제 에이전트를 구성하고, 게시 노드에서 활동 설정을 보호해야 합니다.
@@ -54,11 +63,11 @@ AEM을 Adobe Target과 통합하려면 유효한 Adobe Target 계정이 있어�
 
 **cq:ActivitySettings** 노드는 CRXDE Lite `/content/campaigns/*nameofbrand*`* *활동 `jcr:content` 노드 아래에서 사용할 수 있습니다. 예를 들어, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`과 같이 입력합니다. 이 노드는 구성 요소를 타겟팅한 후에만 만들어집니다.
 
-활동의 **아래에 있는:ActivitySettings** cq`jcr:content` 노드는 다음 ACL에 의해 보호됩니다.
+활동의 `jcr:content` 아래에 있는 **cq:ActivitySettings** 노드는 다음 ACL에 의해 보호됩니다.
 
 * 모두를 위해 모두 거부.
-* `jcr:read,rep:write`에 대해 `target-activity-authors`을(를) 허용합니다(작성자는 기본 이 그룹의 구성원임).
-* `jcr:read,rep:write`에 대해 `targetservice`을(를) 허용합니다.
+* `target-activity-authors`에 대해 `jcr:read,rep:write`을(를) 허용합니다(작성자는 기본 이 그룹의 구성원임).
+* `targetservice`에 대해 `jcr:read,rep:write`을(를) 허용합니다.
 
 이러한 설정은 일반 사용자가 노드 속성에 액세스할 수 없도록 합니다. 작성자 및 게시에서 동일한 ACL을 사용합니다. 자세한 내용은 [사용자 관리 및 보안](/help/sites-administering/security.md)을 참조하십시오.
 

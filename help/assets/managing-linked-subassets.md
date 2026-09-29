@@ -1,18 +1,29 @@
 ---
 title: 참조 및 여러 페이지를 사용하여 복합 에셋 관리
-description: ' [!DNL Adobe InDesign], [!DNL Adobe Illustrator] 및 [!DNL Adobe Photoshop] 내에서 디지털 자산에 대한 참조를 만드는 방법을 알아봅니다. 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 다중 페이지 파일의 개별 하위 자산 페이지를 볼 수 있습니다.'
+description: '[!DNL Adobe InDesign], [!DNL Adobe Illustrator] 및 [!DNL Adobe Photoshop] 내에서 디지털 에셋에 대한 참조를 만드는 방법을 알아봅니다. 페이지 뷰어 기능을 사용하여 PDF, INDD, PPT, PPTX 및 AI 파일과 같은 다중 페이지 파일의 개별 하위 자산 페이지를 볼 수 있습니다.'
 contentOwner: AG
 role: User, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 077dfd55-0193-41ff-97c0-9f6be978cc9f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1473'
 ht-degree: 0%
-
 ---
-
 # 조합 및 다중 페이지 자산 관리 {#managing-compound-assets}
 
 [!DNL Adobe Experience Manager Assets]은(는) 업로드된 파일에 저장소에 이미 있는 자산에 대한 참조가 포함되어 있는지 식별할 수 있습니다. 이 기능은 지원되는 파일 형식에만 사용할 수 있습니다. 업로드된 에셋에 [!DNL Experience Manager]개의 에셋에 대한 참조가 포함된 경우 업로드된 에셋과 참조된 에셋 사이에 양방향 링크가 만들어집니다.

@@ -9,25 +9,34 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: a8b1fab9-1a63-4f99-87e1-48f6167e9953
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '820'
 ht-degree: 3%
-
 ---
-
 # 워크플로 시작{#starting-workflows}
 
 워크플로를 관리할 때 다양한 방법을 사용하여 시작할 수 있습니다.
 
 * 수동:
 
-   * [워크플로 모델](#workflow-models)에서.
-   * [일괄 처리](#workflow-packages-for-batch-processing)에 워크플로우 패키지를 사용하는 중입니다.
+  * [워크플로 모델](#workflow-models)에서.
+  * [일괄 처리](#workflow-packages-for-batch-processing)에 워크플로우 패키지를 사용하는 중입니다.
 
 * 자동:
 
-   * 노드 변경에 대한 응답으로, [런처를 사용](#workflows-launchers)합니다.
+  * 노드 변경에 대한 응답으로, [런처를 사용](#workflows-launchers)합니다.
 
 >[!NOTE]
 >
@@ -65,7 +74,7 @@ ht-degree: 3%
 * `/var/mobile`
 * `/var/statistics`
 
-   * 예외: `/var/statistics/tracking` *do* 아래의 노드를 변경하면 워크플로우가 실행됩니다.
+  * 예외: `/var/statistics/tracking` *do* 아래의 노드를 변경하면 워크플로우가 실행됩니다.
 
 표준 설치에는 다양한 정의가 포함되어 있습니다. 이는 디지털 자산 관리 및 소셜 공동 작업 작업에 사용됩니다.
 
@@ -122,9 +131,9 @@ ht-degree: 3%
 
      워크플로우를 시작하는 이벤트 유형:
 
-      * 생성됨
-      * 수정됨
-      * 제거됨
+     * 생성일
+     * 수정됨
+     * 제거됨
 
    * **Nodetype**
 
@@ -164,8 +173,8 @@ ht-degree: 3%
 
      워크플로 시작 관리자 활성화 여부를 제어합니다.
 
-      * 구성 속성이 충족되면 워크플로우를 시작하려면 **사용**&#x200B;을 선택하십시오.
-      * 워크플로우를 실행하지 않으려면 **사용 안 함**&#x200B;을 선택하십시오(구성 속성이 지정된 경우에도).
+     * 구성 속성이 충족되면 워크플로우를 시작하려면 **사용**&#x200B;을 선택하십시오.
+     * 워크플로우를 실행하지 않으려면 **사용 안 함**&#x200B;을 선택하십시오(구성 속성이 지정된 경우에도).
 
    * **목록 제외**
 
@@ -173,8 +182,8 @@ ht-degree: 3%
 
      이 런처 속성은 쉼표로 구분된 항목 목록입니다. &quot;
 
-      * `property-name`은(는) 지정한 속성 이름에서 트리거된 모든 `jcr` 이벤트를 무시합니다. &quot;
-      * `event-user-data:<*someValue*>`은(는) [`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String))를 통해 설정된 `*<someValue*`> `user-data`을(를) 포함하는 모든 이벤트를 무시합니다.
+     * `property-name`은(는) 지정한 속성 이름에서 트리거된 모든 `jcr` 이벤트를 무시합니다. &quot;
+     * `event-user-data:<*someValue*>`은(는) [`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String))를 통해 설정된 `*<someValue*`> `user-data`을(를) 포함하는 모든 이벤트를 무시합니다.
 
      예:
 

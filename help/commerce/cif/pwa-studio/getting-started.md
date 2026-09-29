@@ -6,13 +6,21 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 17c6a9b3-9fa0-432a-b6df-e5e0149a3168
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 0%
-
 ---
-
 # PWA Studio용 AEM 확장 시작하기 {#getting-started-pwa}
 
 즉시 사용 가능한 PWA Studio은 GraphQL을 통해 Adobe Commerce과 원활하게 통합되어 혁신적이고 매력적인 상점 및 기타 디지털 경험을 구축할 수 있는 옵션을 무제한으로 제공합니다.

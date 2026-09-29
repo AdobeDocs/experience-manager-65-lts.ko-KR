@@ -1,19 +1,30 @@
 ---
-title: 번역을 위한 자산 준비
+title: 자산 번역 준비
 description: 언어 루트 폴더를 만들어 다국어 자산을 지원하도록 번역을 위한 자산을 준비합니다.
 contentOwner: AG
 role: User, Admin
 feature: Projects
 solution: Experience Manager, Experience Manager Assets
 exl-id: de9f266b-a167-4eba-be2c-8f6a0457265f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 2e0e1a8a-56e7-5bd5-b805-f35a7c0c2ca7
+    internal-label: Projects
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 1%
-
+source-wordcount: '449'
+ht-degree: 4%
 ---
-
-# 번역을 위한 자산 준비 {#preparing-assets-for-translation}
+# 자산 번역 준비 {#preparing-assets-for-translation}
 
 다국어 에셋은 여러 언어로 된 바이너리, 메타데이터 및 태그가 있는 에셋을 의미합니다. 일반적으로 에셋의 바이너리, 메타데이터 및 태그는 한 언어로 된 후 다국어 프로젝트에서 사용할 수 있도록 다른 언어로 번역됩니다.
 

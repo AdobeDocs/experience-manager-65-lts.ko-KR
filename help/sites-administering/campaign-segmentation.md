@@ -1,5 +1,5 @@
 ---
-title: 세그먼테이션 구성
+title: 세분화 구성
 description: AEM Campaign에 대한 세그멘테이션을 구성하는 방법에 대해 알아봅니다.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: bd75453e-8d3f-466e-b573-653eb68429cf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 7%
-
+source-wordcount: '1139'
+ht-degree: 8%
 ---
-
-# 세그먼테이션 구성 {#configuring-segmentation}
+# 세분화 구성 {#configuring-segmentation}
 
 >[!NOTE]
 >
@@ -181,7 +192,7 @@ AEM에서 복잡한 세그먼트를 구성할 수 있습니다. 몇 가지 기�
 
 >[!NOTE]
 >
->대부분의 경우 페이지를 다시 로드할 때만 변경되지만 모든 트레이트는 즉시 해결됩니다. 마우스 위치의 변경 사항은 즉시 표시되므로 테스트 목적으로 유용합니다.
+>모든 트레이트는 즉시 결정되지만 대부분의 경우 페이지를 다시 로드할 때만 변경됩니다. 마우스 위치의 변경 사항은 즉시 표시되므로 테스트 목적으로 유용합니다.
 
 이러한 테스트는 콘텐츠 페이지에서 **티저** 구성 요소와 함께 수행할 수도 있습니다.
 

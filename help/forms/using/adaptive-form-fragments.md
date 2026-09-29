@@ -9,13 +9,29 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7da165ac-2039-4ac8-810d-fbe6f771453a
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 6%
-
+source-wordcount: '2463'
+ht-degree: 7%
 ---
-
 # 적응형 양식 조각{#adaptive-form-fragments}
 
 ## 적용 대상 {#applies-to}
@@ -107,7 +123,7 @@ AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experie
    * **양식 모델**: 적응형 양식의 양식 모델에 따라 이 필드에는 **XML 스키마**, **양식 서식 파일** 또는 **없음**&#x200B;이 표시됩니다. 편집할 수 없는 필드입니다.
 
    * **조각 모델 루트**: XSD 기반 적응형 양식에만 나타납니다. 조각 모델의 루트를 지정합니다. 드롭다운에서 **/** 또는 XSD 복합 형식을 선택할 수 있습니다. 복잡한 유형을 조각 모델 루트로 선택하는 경우에만 다른 적응형 양식에서 조각을 재사용할 수 있습니다.
-**/**&#x200B;을(를) 조각 모델 루트로 선택하면 루트의 전체 XSD 트리가 적응형 양식 데이터 모델 탭에 표시됩니다. 복합 유형 조각 모델 루트의 경우 적응형 양식 데이터 모델 탭에 선택한 복합 유형의 하위 항목만 표시됩니다. 조각을 만들고 **조각 모델 루트**(으)로 복합 형식을 선택하면 해당 복합 형식이 사용되는 모든 형식(동일한 양식 내 또는 여러 양식 간에)으로 사용할 수 있습니다.
+     **/**&#x200B;을(를) 조각 모델 루트로 선택하면 루트의 전체 XSD 트리가 적응형 양식 데이터 모델 탭에 표시됩니다. 복합 유형 조각 모델 루트의 경우 적응형 양식 데이터 모델 탭에 선택한 복합 유형의 하위 항목만 표시됩니다. 조각을 만들고 **조각 모델 루트**(으)로 복합 형식을 선택하면 해당 복합 형식이 사용되는 모든 형식(동일한 양식 내 또는 여러 양식 간에)으로 사용할 수 있습니다.
 
    * **XSD 참조**: XSD 기반 적응형 양식에만 나타납니다. XML 스키마의 위치를 표시합니다.
 

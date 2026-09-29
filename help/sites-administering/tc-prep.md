@@ -6,13 +6,25 @@ feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3db57dbc-757d-44be-8d32-ea5bc1f02fc8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '681'
 ht-degree: 42%
-
 ---
-
 # 번역을 위한 콘텐츠 준비{#preparing-content-for-translation}
 
 일반적으로 다국어 웹 사이트는 여러 언어로 일정량의 콘텐츠를 제공합니다. 사이트는 하나의 언어로 작성된 다음 다른 언어로 번역됩니다. 일반적으로 다국어 사이트는 페이지 분기로 구성되며, 각 분기에는 서로 다른 언어로 된 사이트 페이지가 포함됩니다.
@@ -53,7 +65,7 @@ ht-degree: 42%
 
 * `<language-code>_<country-code>` 또는 `<language-code>-<country-code>`지원되는 국가 코드는 ISO 3166에서 정의된 소문자 또는 대문자 두 자리 코드입니다(예: `en_US`, `en_us`, `en_GB`, `en-gb`).
 
-전역 사이트에 대해 선택한 구조에 따라 두 형식 중 하나를 사용할 수 있습니다. 예를 들어 Geometrixx 사이트의 프랑스어 언어 사본의 루트 페이지에는 이름 속성으로 `fr`이(가) 있습니다. 이름 속성은 저장소의 페이지 노드 이름으로 사용되므로 페이지 경로를 결정합니다. (http://localhost:4502/content/geometrixx/fr.html)
+전역 사이트에 대해 선택한 구조에 따라 두 형식 중 하나를 사용할 수 있습니다.  예를 들어 Geometrixx 사이트의 프랑스어 언어 사본의 루트 페이지에는 이름 속성으로 `fr`이(가) 있습니다. 이름 속성은 저장소의 페이지 노드 이름으로 사용되므로 페이지 경로를 결정합니다. (http://localhost:4502/content/geometrixx/fr.html)
 
 다음 절차에서는 터치에 적합한 UI를 사용하여 웹 사이트의 언어 사본을 만듭니다. 클래식 UI를 사용하는 지침은 [클래식 UI를 사용하여 언어 루트 만들기](/help/sites-administering/tc-lroot-classic.md)를 참조하십시오.
 
@@ -71,7 +83,7 @@ ht-degree: 42%
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. 만들기 를 클릭합니다. 확인 대화 상자에서 사이트 콘솔로 돌아가려면 **완료**&#x200B;를 클릭하고 언어 사본을 열려면 **열기**&#x200B;를 클릭합니다.
+1. 만들기를 클릭합니다. 확인 대화 상자에서 사이트 콘솔로 돌아가려면 **완료**&#x200B;를 클릭하고 언어 사본을 열려면 **열기**&#x200B;를 클릭합니다.
 
 ## 언어 루트 상태 보기 {#seeing-the-status-of-language-roots}
 

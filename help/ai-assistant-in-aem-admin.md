@@ -5,13 +5,27 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin,Developer,User
 exl-id: e653d37f-5802-4b0f-a71b-539b33ad5ca5
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 100%
-
 ---
-
 # AEM 내 AI 어시스턴트 구성 {#aem-ai-asst-admin-setup}
 
 <!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
@@ -22,11 +36,11 @@ AEM(Adobe Experience Manager) 내 AI 어시스턴트를 사용하려면 AI 어�
 
 제품 정보에 액세스할 수 있는 사용자를 제어하려면 Adobe ID과 연결된 이메일 주소에서 [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com)으로 이메일을 보내십시오. Adobe가 사용자 수준 액세스 제어를 활성화할 수 있습니다. 활성화되면 관리자는 아래에 설명된 단계에 따라 사용자 수준 액세스 권한을 부여할 수 있습니다.
 
-사용자 수준 액세스 제어를 요청한 경우 조직은 Adobe Admin Console을 통해 옵트인해야 합니다. 제품 관리자는 사용자 그룹을 생성(또는 선택)하고 새로운 “AI 어시스턴트” 권한을 부여합니다. 해당 그룹에 추가된 모든 사용자는 AEM에서 즉시 AI 어시스턴트를 사용할 수 있습니다. 회사 전체의 가용성을 목표로 하는 경우, 관리자는 해당 그룹에 모든 사용자를 할당하기만 하면 됩니다.
+사용자 수준 액세스 제어를 요청한 경우 조직은 Adobe Admin Console을 통해 옵트인해야 합니다. 제품 관리자는 사용자 그룹을 생성(또는 선택)하고 새로운 “AI 어시스턴트” 권한을 부여합니다. 해당 그룹에 추가된 모든 사용자는 AEM에서 즉시 AI 어시스턴트를 사용할 수 있습니다. 목표가 회사 전체에서 사용할 수 있도록 하는 것이라면, 관리자는 해당 그룹에 모든 사용자를 할당하기만 하면 됩니다.
 
-직원의 입장에서는 조직 내 Adobe Experience Manager의 제품 관리자를 식별하고 AI 지원 사용자 그룹에 추가할 것을 요청하는 등 프로세스가 간단합니다. 해당 그룹에 나타나면 다음에 로그인할 때 어시스턴트 아이콘이 자동으로 나타납니다.
+직원의 입장에서는 조직 내 Adobe Experience Manager의 제품 관리자를 식별하고 AI 지원 사용자 그룹에 추가할 것을 요청하는 등 프로세스가 간단합니다. 해당 그룹에 추가되면 다음에 로그인할 때 어시스턴트 아이콘이 자동으로 나타납니다.
 
-관리자는 일반적인 Cloud Manager 거버넌스를 염두에 두어야 합니다. Admin Console에서 제품 관리자 권한을 보유하여 프로필을 만들거나 사용자 그룹을 관리하거나 권한을 편집합니다. 사용자가 어시스턴트의 기본 제공 **지원 티켓 만들기** 기능도 필요한 경우 동일한 개인 또는 그룹에 표준 **지원 관리자** 역할(표준 Admin Console 역할)을 추가합니다.
+관리자는 일반적인 Cloud Manager 거버넌스를 염두에 두어야 합니다. 프로필을 만들고 사용자 그룹을 관리하거나 권한을 편집하려면 Admin Console에서 제품 관리자 권한을 보유해야 합니다. 사용자가 어시스턴트의 기본 제공 **지원 티켓 만들기** 기능도 필요한 경우 동일한 개인 또는 그룹에 표준 **지원 관리자** 역할(표준 Admin Console 역할)을 추가합니다.
 
 AEM 내 AI 어시스턴트의 구성 프로세스는 다음 단계로 구성됩니다.
 
@@ -62,7 +76,7 @@ AEM 내 AI 어시스턴트의 구성 프로세스는 다음 단계로 구성됩�
    | 제품 프로필 이름 | `AI Assistant in AEM`(또는 선호하는 설명적인 이름) |
    | 표시 이름(선택 사항) | `AI Assistant` |
    | 설명(선택 사항) | `Product profile for managing AI Assistant in AEM access` |
-   | 알림 | 조직의 환경 설정을 기반으로 구성 |
+   | 알림 | 조직의 선호도에 따라 구성 |
 
 
 ## 2 - AI 어시스턴트 제품 지식 권한 활성화{#enable-permission}

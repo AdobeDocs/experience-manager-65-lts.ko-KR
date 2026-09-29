@@ -1,5 +1,5 @@
 ---
-title: 이메일 서비스 공급자에 이메일 게시
+title: 이메일 서비스 제공자에게 이메일 게시
 description: ExactTarget 및 Silverpop Engage와 같은 이메일 서비스에 뉴스레터를 게시할 수 있습니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 03890f75-bfbc-4f73-85ae-07e991728115
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 3%
-
+source-wordcount: '1135'
+ht-degree: 4%
 ---
-
-# 이메일 서비스 공급자에 이메일 게시{#publishing-an-email-to-email-service-providers}
+# 이메일 서비스 제공자에게 이메일 게시{#publishing-an-email-to-email-service-providers}
 
 ExactTarget 및 Silverpop Engage와 같은 이메일 서비스에 뉴스레터를 게시할 수 있습니다. 이 문서에서는 이러한 이메일 서비스에 뉴스레터를 게시하도록 AEM을 구성하는 방법에 대해 설명합니다.
 
@@ -63,42 +74,42 @@ ExactTarget용 **이메일 도구** 구성 요소는 이메일/뉴스레터에 �
 
 1. **옵션** 메뉴에서 옵션을 선택하십시오.
 
-<table>
- <tbody>
-  <tr>
-   <td>실제 우편 주소(필수)</td>
-   <td>이 구성 요소는 이메일에 조직의 실제 우편 주소를 삽입합니다.</td>
-  </tr>
-  <tr>
-   <td>프로필 센터(필수)</td>
-   <td>프로필센터는 구독자가 본인에 대해 보유하고 있는 개인정보를 입력하고 유지할 수 있는 웹페이지다.</td>
-  </tr>
-  <tr>
-   <td>이메일을 웹 페이지로 보기</td>
-   <td>사용자는 이 구성 요소를 통해 이메일을 웹 페이지로 볼 수 있습니다.</td>
-  </tr>
-  <tr>
-   <td>개인정보 처리방침</td>
-   <td>이 구성 요소는 전자 메일에 개인 정보 보호 정책에 대한 링크를 삽입합니다.<br /> </td>
-  </tr>
-  <tr>
-   <td>가입 해제 센터</td>
-   <td>사용자에게 메일링 목록에서 구독을 취소할 수 있는 옵션을 제공합니다.</td>
-  </tr>
-  <tr>
-   <td>가입 센터</td>
-   <td>구독 센터는 구독자가 조직에서 받는 메시지를 제어할 수 있는 웹 페이지입니다.</td>
-  </tr>
-  <tr>
-   <td>이메일 열기 횟수 추적</td>
-   <td>ExactTarget 추적 기능을 사용할 수 있는 숨겨진 구성 요소입니다.<br /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>실제 우편 주소(필수)</td>
+      <td>이 구성 요소는 이메일에 조직의 실제 우편 주소를 삽입합니다.</td>
+   </tr>
+   <tr>
+      <td>프로필 센터(필수)</td>
+      <td>프로필센터는 구독자가 본인에 대해 보유하고 있는 개인정보를 입력하고 유지할 수 있는 웹페이지다.</td>
+   </tr>
+   <tr>
+      <td>이메일을 웹 페이지로 보기</td>
+      <td>사용자는 이 구성 요소를 통해 이메일을 웹 페이지로 볼 수 있습니다.</td>
+   </tr>
+   <tr>
+      <td>개인정보 처리방침</td>
+      <td>이 구성 요소는 전자 메일에 개인 정보 보호 정책에 대한 링크를 삽입합니다.<br /> </td>
+   </tr>
+   <tr>
+      <td>가입 해제 센터</td>
+      <td>사용자에게 메일링 목록에서 구독을 취소할 수 있는 옵션을 제공합니다.</td>
+   </tr>
+   <tr>
+      <td>가입 센터</td>
+      <td>구독 센터는 구독자가 조직에서 받는 메시지를 제어할 수 있는 웹 페이지입니다.</td>
+   </tr>
+   <tr>
+      <td>이메일 열기 횟수 추적</td>
+      <td>ExactTarget 추적 기능을 사용할 수 있는 숨겨진 구성 요소입니다.<br /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->**옵션** 드롭다운 메뉴는 ExactTarget 구성이 전자 메일에 적용된 경우에만 채워집니다. 자세한 내용은 [전자 메일 설정에 전자 메일 서비스 구성 적용](#applying-e-mail-service-configuration-to-e-mail-settings)을 참조하십시오.
+   >[!NOTE]
+   >
+   >**옵션** 드롭다운 메뉴는 ExactTarget 구성이 전자 메일에 적용된 경우에만 채워집니다. 자세한 내용은 [전자 메일 설정에 전자 메일 서비스 구성 적용](#applying-e-mail-service-configuration-to-e-mail-settings)을 참조하십시오.
 
 1. ExactTarget에 이메일을 게시합니다.
 

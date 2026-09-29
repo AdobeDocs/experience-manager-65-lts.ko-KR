@@ -10,13 +10,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 07048aa7-5f38-4810-9ef2-ce6892f9b9b6
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3015'
-ht-degree: 47%
-
+source-wordcount: '3030'
+ht-degree: 46%
 ---
-
 # 페이지 콘텐츠 편집{#editing-page-content}
 
 페이지가 만들어지면(launch 또는 live copy의 일부 또는 신규) 콘텐츠를 편집하여 필요한 업데이트 작업을 수행할 수 있습니다.
@@ -269,9 +282,9 @@ ht-degree: 47%
 
   구성 요소를 클립보드에서 페이지로 붙여넣습니다. 원본이 남아 있는지 여부는 복사 또는 잘라내기 중 어느 것을 사용했는지에 따라 달라집니다.
 
-   * 같은 페이지나 다른 페이지에 붙여넣을 수 있습니다.
-   * 붙여넣은 항목은 붙여넣기 작업을 선택한 항목 위에 붙여넣게 됩니다.
-   * 붙여넣기 작업은 클립보드에 콘텐츠가 있는 경우에만 표시됩니다.
+  * 같은 페이지나 다른 페이지에 붙여넣을 수 있습니다.
+  * 붙여넣은 항목은 붙여넣기 작업을 선택한 항목 위에 붙여넣게 됩니다.
+  * 붙여넣기 작업은 클립보드에 콘텐츠가 있는 경우에만 표시됩니다.
 
   ![붙여넣기](assets/screen_shot_2018-03-22at113553.png)
 
@@ -372,7 +385,7 @@ ht-degree: 47%
 단락 구성 요소 이동
 
 1. 선택-및-유지 또는 클릭-및-유지로 이동할 단락을 선택합니다.
-1. 단락을 새 위치로 드래그합니다. AEM에서 단락을 둘 수 있는 위치를 보여 줍니다. 단락을 원하는 위치에 놓습니다.
+1. 단락을 새 위치로 드래그합니다. AEM은 단락을 보관할 수 있는 위치를 나타냅니다. 원하는 위치에 드롭합니다.
 
    ![단락 구성 요소 이동](assets/screen_shot_2018-03-22at121821.png)
 
@@ -450,9 +463,9 @@ ht-degree: 47%
 
 ## 페이지 템플릿 편집 {#editing-the-page-template}
 
-페이지가 [편집 가능한 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 [페이지 정보 메뉴](/help/sites-authoring/templates.md#editing-templates-template-authors)에서 **템플릿 편집**&#x200B;을(를) 선택하여 [템플릿 편집기](/help/sites-authoring/author-environment-tools.md#page-information)(으)로 쉽게 전환할 수 있습니다.
+페이지가 [편집 가능한 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 [페이지 정보 메뉴](/help/sites-authoring/author-environment-tools.md#page-information)에서 **템플릿 편집**&#x200B;을(를) 선택하여 [템플릿 편집기](/help/sites-authoring/templates.md#editing-templates-template-authors)(으)로 쉽게 전환할 수 있습니다.
 
-페이지가 [정적 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 도구 모음의 [페이지 모드 선택기](/help/sites-authoring/default-components-designmode.md)를 사용하여 [디자인 모드](/help/sites-authoring/author-environment-tools.md#page-modes)(으)로 전환하여 페이지에서 사용할 구성 요소를 활성화/비활성화할 수 있습니다.
+페이지가 [정적 템플릿](/help/sites-authoring/templates.md#editable-and-static-templates)을 기반으로 하는 경우 도구 모음의 [페이지 모드 선택기](/help/sites-authoring/author-environment-tools.md#page-modes)를 사용하여 [디자인 모드](/help/sites-authoring/default-components-designmode.md)(으)로 전환하여 페이지에서 사용할 구성 요소를 활성화/비활성화할 수 있습니다.
 
 [열 보기](/help/sites-authoring/basic-handling.md#column-view) 또는 [목록 보기](/help/sites-authoring/basic-handling.md#list-view)에서 페이지를 선택하면 페이지의 기본 템플릿을 쉽게 볼 수 있습니다.
 
@@ -514,15 +527,15 @@ AEM을 사용하면 다른 사람이 컨텐츠를 수정할 수 없도록 페이
 
 * **Sites** 콘솔
 
-   1. [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다.
-   1. 잠금 아이콘을 선택합니다.
+  1. [선택 모드](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)로 페이지를 선택합니다.
+  1. 잠금 아이콘을 선택합니다.
 
   ![잠금 아이콘](assets/screen_shot_2018-03-22at134928.png)
 
 * **페이지 편집기**
 
-   1. 메뉴를 열려면 **페이지 정보** 아이콘을 선택합니다.
-   1. **페이지 잠금** 옵션을 선택합니다.
+  1. 메뉴를 열려면 **페이지 정보** 아이콘을 선택합니다.
+  1. **페이지 잠금** 옵션을 선택합니다.
 
 페이지가 잠기면 콘솔 보기 정보가 업데이트되며, 편집 시에는 잠금 기호가 도구 모음에 표시됩니다.
 

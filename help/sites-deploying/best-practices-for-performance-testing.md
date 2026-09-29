@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 1%
-
 ---
-
 # 성능 테스트 모범 사례{#best-practices-for-performance-testing}
 
 ## 소개 {#introduction}
@@ -63,8 +72,8 @@ ht-degree: 1%
 
 * 모바일 또는 반응형 웹 사이트를 테스트할 때 별도의 도구 세트를 사용해야 합니다. 네트워크 대역폭을 조절하거나 3G 또는 EDGE과 같은 느린 모바일 연결을 시뮬레이션하여 작동합니다. 보다 널리 사용되는 도구 중 하나는 다음과 같습니다.
 
-   * **[네트워크 링크 컨디셔너](https://nshipster.com/network-link-conditioner/)** - 사용하기 쉬운 UI를 제공하며 네트워킹 스택에서 매우 낮은 수준에서 작동합니다. 여기에는 OS X 및 iOS 버전이 포함됩니다.
-   * [**Charles**](https://www.charlesproxy.com/) - 다른 여러 사용 외에 네트워크 제한을 제공하는 웹 디버깅 프록시 응용 프로그램입니다. Windows, OS X 및 Linux®용 버전이 제공됩니다.
+  * **[네트워크 링크 컨디셔너](https://nshipster.com/network-link-conditioner/)** - 사용하기 쉬운 UI를 제공하며 네트워킹 스택에서 매우 낮은 수준에서 작동합니다. 여기에는 OS X 및 iOS 버전이 포함됩니다.
+  * [**Charles**](https://www.charlesproxy.com/) - 다른 여러 사용 외에 네트워크 제한을 제공하는 웹 디버깅 프록시 응용 프로그램입니다. Windows, OS X 및 Linux®용 버전이 제공됩니다.
 
 #### 최적화 도구 {#optimization-tools}
 
@@ -86,7 +95,8 @@ ACS AEM 도구의 [쿼리 설명 도구](/help/sites-administering/operations-da
 
 **PageSpeed 도구**
 
-Google의 PageSpeed 도구는 페이지 성능에 대한 모범 사례를 준수하기 위한 사이트 분석과 추가적인 최적화를 위해 Apache 인스턴스에 Dispatcher과 함께 설치할 수 있는 플러그인을 제공합니다.[PageSpeed 도구 웹 사이트](https://developers.google.com/speed)를 참조하세요.
+Google의 PageSpeed 도구는 페이지 성능에 대한 모범 사례를 준수하기 위한 사이트 분석과 추가적인 최적화를 위해 Apache 인스턴스에 Dispatcher과 함께 설치할 수 있는 플러그인을 제공합니다.
+[PageSpeed 도구 웹 사이트](https://developers.google.com/speed)를 참조하세요.
 
 ## 작성 환경 {#author-environment}
 

@@ -5,13 +5,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Assets
 feature: Smart Imaging
 exl-id: 3b4f3624-d76d-4835-834b-e8610c2c40bd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: b39a6d56-d787-413f-8024-351803c28d44
+    internal-label: Smart Imaging
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '328'
 ht-degree: 0%
-
 ---
-
 # 클라이언트측 장치 픽셀 비율(DPR)을 사용한 스마트 이미징 정보 {#client-side-dpr}
 
 현재 스마트 이미징 솔루션은 사용자 에이전트 문자열을 사용하여 사용 중인 장치 유형(데스크탑, 태블릿, 모바일 등)을 결정합니다.
@@ -57,7 +71,7 @@ ht-degree: 0%
    여러 네트워크 요청을 방지하기 위해 두 DPR 스크립트를 하나로 결합할 수 있습니다.
 
    Adobe은 이러한 스크립트를 HTML 페이지의 다른 스크립트로 _이전_에 로드할 것을 권장합니다.
-Adobe은 또한 본문 요소보다는 diff HTML 태그 아래에 앱을 Bootstrap 하는 것을 권장합니다. 그 이유는 `dprImageInjection.js`이(가) HTML 페이지의 본문 섹션 맨 위에 이미지 태그를 동적으로 삽입하기 때문입니다.
+   Adobe은 또한 본문 요소보다는 diff HTML 태그 아래에 앱을 Bootstrap 하는 것을 권장합니다. 그 이유는 `dprImageInjection.js`이(가) HTML 페이지의 본문 섹션 맨 위에 이미지 태그를 동적으로 삽입하기 때문입니다.
 
 ## JavaScript 파일 다운로드 {#client-side-dpr-script}
 

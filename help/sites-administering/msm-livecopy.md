@@ -5,13 +5,25 @@ feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 47128d86-ee8d-4a15-ba3e-4cf2e2ec6191
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4174'
+source-wordcount: '4204'
 ht-degree: 40%
-
 ---
-
 # Live Copy 생성 및 동기화{#creating-and-synchronizing-live-copies}
 
 페이지 또는 블루프린트 구성으로 라이브 카피를 만든 다음 상속 및 동기화를 관리할 수 있습니다.
@@ -181,9 +193,9 @@ ht-degree: 40%
 * **상태**: Live Copy의 동기화 상태입니다. 상태에는 라이브 카피가 소스로 업데이트되었는지 여부, 마지막으로 동기화된 시기 및 동기화를 수행한 사용자가 포함됩니다.
 * **구성**:
 
-   * 페이지가 여전히 Live Copy 상속 대상인지 여부.
-   * 구성이 상위 페이지에서 상속되는지 여부입니다.
-   * 라이브 카피가 사용하는 모든 롤아웃 구성.
+  * 페이지가 여전히 Live Copy 상속 대상인지 여부.
+  * 구성이 상위 페이지에서 상속되는지 여부입니다.
+  * 라이브 카피가 사용하는 모든 롤아웃 구성.
 
 속성을 보려면 다음 작업을 수행하십시오.
 
@@ -426,20 +438,20 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 
 * 약식 라이브 카피로 전환하면 다음과 같은 결과가 발생합니다.
 
-   * 변경 내용이 즉시 적용되며 취소가 불가능합니다.
+  * 변경 내용이 즉시 적용되며 취소가 불가능합니다.
 
-      * 하위 페이지는 라이브 카피에서 명시적으로 분리됩니다. 실행 취소 시 하위 항목에 대한 이후의 수정 내용은 유지되지 않습니다.
+    * 하위 페이지는 라이브 카피에서 명시적으로 분리됩니다. 실행 취소 시 하위 항목에 대한 이후의 수정 내용은 유지되지 않습니다.
 
-      * 중첩된 `LiveCopies`가 있는 경우에도 모든 하위 `LiveRelationships`가 제거됩니다.
+    * 중첩된 `LiveCopies`가 있는 경우에도 모든 하위 `LiveRelationships`가 제거됩니다.
 
 * 딥 라이브 카피로 전환하면 다음과 같이 됩니다.
 
-   * 하위 페이지는 그대로 유지됩니다.
-   * 전환 효과를 확인하려면 롤아웃을 수행하면 됩니다. 롤아웃 구성에 따라 모든 콘텐츠 수정 내용이 적용됩니다.
+  * 하위 페이지는 그대로 유지됩니다.
+  * 전환 효과를 확인하려면 롤아웃을 수행하면 됩니다. 롤아웃 구성에 따라 모든 콘텐츠 수정 내용이 적용됩니다.
 
 * 약식 라이브 카피로 전환한 다음 딥으로 다시 전환하면 다음과 같은 결과가 발생합니다.
 
-   * (이전의) 약식 Live Copy의 모든 하위 항목은 수동으로 생성된 것처럼 처리되므로 `[oldname]_msm_moved name`을(를) 사용하여 멀리 이동합니다.
+  * (이전의) 약식 Live Copy의 모든 하위 항목은 수동으로 생성된 것처럼 처리되므로 `[oldname]_msm_moved name`을(를) 사용하여 멀리 이동합니다.
 
 깊이를 지정하거나 변경하려면 다음 작업을 수행하십시오.
 
@@ -454,7 +466,7 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
    >
    >약식 라이브 카피로 전환하면 변경 내용이 즉시 적용되며 취소가 불가능합니다.
    >
-   >자세한 내용은 [Live Copy - 구성](/help/sites-administering/msm.md#live-copies-composition)을 참조하십시오.
+   >자세한 내용은 [Live Copy - 컴포지션](/help/sites-administering/msm.md#live-copies-composition)을 참조하십시오.
 
 1. 업데이트를 유지하려면 **저장**&#x200B;을 클릭하세요.
 
@@ -613,16 +625,16 @@ Live Copy 페이지를 선택하면 [Live Copy 개요에서도 다시 시작 작
 
   이 작업이 라이브 카피 내의 하위 페이지(또는 분기)에서 수행되는 경우:
 
-   * 해당 하위 페이지(또는 분기)에 대한 라이브 관계가 제거됩니다
-   * 및 라이브 카피 분기의 (하위) 페이지는 수동으로 생성된 것처럼 처리됩니다.
+  * 해당 하위 페이지(또는 분기)에 대한 라이브 관계가 제거됩니다
+  * 및 라이브 카피 분기의 (하위) 페이지는 수동으로 생성된 것처럼 처리됩니다.
 
   *그러나* 하위 페이지에는 여전히 상위 분기의 라이브 관계가 적용되어 있으므로 블루프린트 페이지를 추가로 롤아웃하면 다음 결과가 발생합니다.
 
-   1. 분리된 페이지의 이름이 변경됩니다.
+  1. 분리된 페이지의 이름이 변경됩니다.
 
-      * MSM이 해당 페이지가 생성하려는 라이브 카피 페이지와 이름이 동일하여 이를 충돌을 발생시키는 수동으로 생성된 페이지로 간주하기 때문입니다.
+     * MSM이 해당 페이지가 생성하려는 라이브 카피 페이지와 이름이 동일하여 이를 충돌을 발생시키는 수동으로 생성된 페이지로 간주하기 때문입니다.
 
-   1. 롤아웃의 변경 사항이 포함된 원래 이름으로 (라이브 카피) 페이지를 만듭니다.
+  1. 롤아웃의 변경 사항이 포함된 원래 이름으로 (라이브 카피) 페이지를 만듭니다.
 
   >[!NOTE]
   >

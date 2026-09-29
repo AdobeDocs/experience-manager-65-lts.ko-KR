@@ -9,16 +9,30 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 92bb4045-ed22-4cc3-9365-65cb39b3c82d
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2267'
 ht-degree: 4%
-
 ---
-
 # 일괄 처리 API를 사용하여 여러 대화형 통신 생성 {#use-batch-api-to-generate-multiple-ic}
 
-배치 API를 사용하여 템플릿에서 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 템플릿은 데이터가 없는 대화형 커뮤니케이션입니다. 배치 API는 데이터를 템플릿과 결합하여 대화형 커뮤니케이션을 생성합니다. API는 대량의 대화형 커뮤니케이션 제작 시 유용합니다. 예를 들어 여러 고객을 위한 전화 요금 청구서, 신용 카드 명세서 등이 있습니다.
+배치 API를 사용하여 템플릿에서 여러 대화형 커뮤니케이션을 생성할 수 있습니다. 템플릿은 데이터가 없는 인터랙티브 커뮤니케이션입니다. 배치 API는 데이터를 템플릿과 결합하여 인터랙티브 커뮤니케이션을 생성합니다. API는 대량의 대화형 커뮤니케이션 제작 시 유용합니다. 예를 들어 여러 고객을 위한 전화 요금 청구서, 신용 카드 명세서 등이 있습니다.
 
 배치 API는 JSON 형식 및 양식 데이터 모델의 레코드(데이터)를 허용합니다. 생성된 대화형 통신의 수는 구성된 양식 데이터 모델의 입력 JSON 파일에 지정된 레코드와 같습니다. API를 사용하여 인쇄 및 웹 출력을 모두 생성할 수 있습니다. PRINT 옵션은 PDF 문서를 생성하고 WEB 옵션은 각 개별 레코드에 대한 JSON 형식의 데이터를 생성합니다.
 
@@ -337,7 +351,7 @@ Java™ 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 �
 **구문**
 `http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
-**예**
+**예제**
 JSON 파일이 `C:\batch\mergedJsonPath.json`에 있고 아래 대화형 통신 템플릿을 사용하는 경우: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
 그러면 게시 노드의 다음 URL에 대화형 통신의 웹 채널이 표시됩니다

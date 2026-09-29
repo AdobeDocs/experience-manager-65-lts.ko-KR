@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7e14471e-8bb5-4cce-9175-3bbff9d803a9
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 0%
-
+source-wordcount: '2047'
+ht-degree: 1%
 ---
-
 # 프로그래밍 방식으로 워크플로와 상호 작용{#interacting-with-workflows-programmatically}
 
 [워크플로 사용자 지정 및 확장](/help/sites-developing/workflows-customizing-extending.md)할 때 워크플로 개체에 액세스할 수 있습니다.
@@ -409,8 +418,8 @@ curl -u admin:admin http://localhost:4502/etc/workflow/instances.RUNNING.json
 
 * 다음 매개 변수를 사용하여
 
-   * `action`: 해당 값은 `UPDATE`이어야 합니다.
-   * `workflowTitle`: 워크플로 제목
+  * `action`: 해당 값은 `UPDATE`이어야 합니다.
+  * `workflowTitle`: 워크플로 제목
 
 #### 워크플로우 제목을 변경하는 방법 - CURL을 사용하여 REST {#how-to-change-the-workflow-title-rest-using-curl}
 
@@ -491,8 +500,8 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
 * 워크플로 모델 편집기를 사용하려면 모델이 `/var/workflow/models` 아래의 특정 노드 구조를 사용해야 합니다. 모델의 부모 노드는 다음 속성 값을 가진 `jcr:content` 노드가 있는 `cq:Page` 형식이어야 합니다.
 
-   * `sling:resourceType`: `cq/workflow/components/pages/model`
-   * `cq:template`: `/libs/cq/workflow/templates/model`
+  * `sling:resourceType`: `cq/workflow/components/pages/model`
+  * `cq:template`: `/libs/cq/workflow/templates/model`
 
   모델을 만들 때는 먼저 이 `cq:Page` 노드를 만들고 해당 `jcr:content` 노드를 모델 노드의 부모로 사용해야 합니다.
 

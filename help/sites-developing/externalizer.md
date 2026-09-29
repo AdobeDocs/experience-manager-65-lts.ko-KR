@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 5beeae99-7ef4-49a0-aaad-3ab07429ebc2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 0%
-
+source-wordcount: '504'
+ht-degree: 1%
 ---
-
 # URL 표면화{#externalizing-urls}
 
 Adobe Experience Manager(AEM)에서 **외부화**&#x200B;은(는) 미리 구성된 DNS를 사용하여 경로를 접두사로 추가하여 리소스 경로(예: `/path/to/my/page`)를 외부 및 절대 URL(예: `https://www.mycompany.com/path/to/my/page`)로 프로그래밍 방식으로 변환할 수 있는 OSGI 서비스입니다.
@@ -51,8 +60,8 @@ Adobe Experience Manager(AEM)에서 **외부화**&#x200B;은(는) 미리 구성�
 
    * **스키마**&#x200B;은(는) http 또는 https이지만 ftp일 수도 있습니다.
 
-      * 원하는 경우 https를 사용하여 https 링크를 적용합니다
-      * URL의 외부화를 요청할 때 클라이언트 코드가 스키마를 재정의하지 않는 경우에 사용됩니다.
+     * 원하는 경우 https를 사용하여 https 링크를 적용합니다
+     * URL의 외부화를 요청할 때 클라이언트 코드가 스키마를 재정의하지 않는 경우에 사용됩니다.
 
    * **server**&#x200B;은(는) 호스트 이름입니다(도메인 이름 또는 ip 주소일 수 있음).
    * **port**(선택 사항)은 포트 번호입니다.

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 1a533ebb-e60d-466f-a723-c8f5039c95f8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 4%
-
 ---
-
 # 대시보드{#dashboards}
 
 AEM을 사용할 때 다양한 유형의 수많은 콘텐츠(예: 페이지, 에셋)를 관리할 수 있습니다. AEM 대시보드는 통합 데이터를 표시하는 페이지를 정의하는 사용하기 쉽고 사용자 지정할 수 있는 방법을 제공합니다.

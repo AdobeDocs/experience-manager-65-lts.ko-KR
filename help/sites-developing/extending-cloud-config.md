@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6b9b8d8c-8cd5-4c21-9b75-acd74d00354a
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 3%
-
+source-wordcount: '570'
+ht-degree: 4%
 ---
-
 # 클라우드 서비스 구성{#cloud-service-configurations}
 
 실시예들은 서비스 구성들을 저장하기 위한 로직 및 구조를 제공하도록 설계된다.
@@ -49,8 +58,8 @@ ht-degree: 3%
 
 * 이 아래에는 다음 항목이 있습니다.
 
-   * 구성 템플릿
-   * 구성 구성 요소
+  * 구성 템플릿
+  * 구성 구성 요소
 
 템플릿 및 구성 요소는 기본 템플릿에서 `sling:resourceSuperType`을(를) 상속해야 합니다.
 
@@ -175,7 +184,7 @@ API에 대한 참조 설명서는 [com.day.cq.wcm.webservicesupport](https://dev
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>페이지에 자동으로 포함될 구성 요소에 대한 참조 경로.<br /> 추가 기능 및 JS 포함에 사용됩니다.<br /> <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br />이(가) 포함된 페이지의 구성 요소를 포함합니다(일반적으로 <code>body</code> 태그 이전).<br /> Adobe Analytics 및 Adobe Target의 경우 이를 사용하여 방문자 행동을 추적하기 위한 JavaScript 호출과 같은 추가 기능을 포함합니다.</td>
+   <td>페이지에 자동으로 포함될 구성 요소에 대한 참조 경로입니다.<br /> 추가 기능 및 JS 포함에 사용됩니다.<br /> 여기에는 <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br />이(가) 포함된 페이지의 구성 요소가 포함됩니다(일반적으로 <code>body</code> 태그 이전).<br /> Adobe Analytics 및 Adobe Target의 경우 이를 사용하여 방문자 행동을 추적하기 위한 JavaScript 호출과 같은 추가 기능을 포함합니다.</td>
   </tr>
   <tr>
    <td>설명</td>

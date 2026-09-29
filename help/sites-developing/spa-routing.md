@@ -10,13 +10,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 4403f563-e9c7-4693-9142-45e0f587a88a
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '479'
 ht-degree: 1%
-
 ---
-
 
 # SPA 모델 라우팅{#spa-model-routing}
 
@@ -38,7 +52,7 @@ AEM의 단일 페이지 애플리케이션의 경우 앱이 라우팅을 담당�
 
 ## 수동 및 자동 모델 라우팅 {#manual-vs-automatic-model-routing}
 
-`ModelRouter`은(는) 모델 조각의 가져오기를 자동화합니다. 그러나 모든 자동화된 툴은 제한 사항이 있습니다. 필요한 경우 메타 속성을 사용하여 경로를 무시하도록 `ModelRouter`을(를) 비활성화하거나 구성할 수 있습니다([SPA 페이지 구성 요소](/help/sites-developing/spa-page-component.md) 문서의 Meta 속성 섹션 참조). 그러면 프론트엔드 개발자는 `PageModelManager` 함수를 사용하여 지정된 모델의 조각을 로드하도록 `getData()`에 요청하여 자체 모델 라우팅 계층을 구현할 수 있습니다.
+`ModelRouter`은(는) 모델 조각의 가져오기를 자동화합니다. 그러나 모든 자동화된 툴은 제한 사항이 있습니다. 필요한 경우 메타 속성을 사용하여 경로를 무시하도록 `ModelRouter`을(를) 비활성화하거나 구성할 수 있습니다([SPA 페이지 구성 요소](/help/sites-developing/spa-page-component.md) 문서의 Meta 속성 섹션 참조). 그러면 프론트엔드 개발자는 `getData()` 함수를 사용하여 지정된 모델의 조각을 로드하도록 `PageModelManager`에 요청하여 자체 모델 라우팅 계층을 구현할 수 있습니다.
 
 >[!NOTE]
 >
@@ -62,7 +76,7 @@ AEM의 단일 페이지 애플리케이션의 경우 앱이 라우팅을 담당�
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-`/content/mysite/mypage"`이(가) 경로를 선택하면 해당 페이지 모델을 자동으로 로드하기 때문에 SPA의 모든 경로는 AEM에서 액세스 가능한 리소스(예: &quot; `PageModelManager`)에 해당해야 합니다. 그러나 필요한 경우 SPA는 `PageModelManager`에서 무시해야 하는 경로의 &quot;차단 목록&quot;도 정의할 수 있습니다.
+`PageModelManager`이(가) 경로를 선택하면 해당 페이지 모델을 자동으로 로드하기 때문에 SPA의 모든 경로는 AEM에서 액세스 가능한 리소스(예: &quot; `/content/mysite/mypage"`)에 해당해야 합니다. 그러나 필요한 경우 SPA는 `PageModelManager`에서 무시해야 하는 경로의 &quot;차단 목록&quot;도 정의할 수 있습니다.
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

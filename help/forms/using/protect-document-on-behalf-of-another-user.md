@@ -6,13 +6,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 56280931-c88b-46ea-bee6-f5a5494d715a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 0%
-
+ht-degree: 5%
 ---
-
 # 다른 사용자를 대신하여 문서 보호 {#protect-a-document-on-behalf-of-another-user}
 
 AEM Forms Document Security Java™ SDK은 사용자 계정이 문서 편집 권한을 보유하지 않고도 다른 사용자를 대신하여 문서를 보호할 수 있도록 하는 API를 제공합니다. API는 워크플로우 프로세스에서 또는 프로그래밍 방식으로 문서 서비스로 사용할 수 있습니다. 새 API:
@@ -28,7 +41,7 @@ AEM Forms Document Security Java™ SDK은 사용자 계정이 문서 편집 권
 
 문서를 편집할 권한이 없어도 다른 사용자를 대신하여 문서를 보호할 수 있도록 다음 작업을 수행하십시오.
 
-1. 정책 집합을 만듭니다. 예: PolicySet1.
+1. 정책 세트를 만듭니다. 예: PolicySet1.
 1. 새로 만든 정책 집합에 정책을 만듭니다. 예: PolicySet1의 Policy1.
 1. Rights Management 최종 사용자 역할을 가진 사용자를 만듭니다. 예: User1. 새로 만든 사용자에게 Policy1로 보호된 문서를 볼 수 있는 권한을 제공합니다.
 1. 역할을 만듭니다. 예를 들어 Role1입니다. 새로 만든 역할에 서비스 호출 권한을 제공합니다. 새로 생성된 역할을 가진 사용자를 만듭니다. 예: User2. User2 또는 관리자를 사용하여 SDK 연결을 만들고 protectDocument 서비스를 호출할 수 있습니다.

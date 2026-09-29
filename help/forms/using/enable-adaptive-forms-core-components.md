@@ -6,13 +6,27 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: a163598d-0a6e-45a8-b3b2-1f260007952b
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 11%
-
+source-wordcount: '1057'
+ht-degree: 15%
 ---
-
 # AEM 6.5 Forms에서 적응형 Forms 핵심 구성 요소 활성화 {#enable-adaptive-forms-core-components}
 
 ## 적용 대상 {#applies-to}
@@ -102,7 +116,7 @@ AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype)
 1. 최신 버전의 Forms 핵심 구성 요소를 포함하도록 프로젝트 업데이트:
 
    1. 편집할 [AEM Archetype 프로젝트 폴더]/pom.xml을 엽니다.
-   1. `core.forms.components.version` 및 `core.forms.components.af.version`의 버전을 [최신 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=ko#aem-as-form-version-history) 버전으로 설정하고, 두 구성 요소의 버전이 표에 언급된 **Forms 핵심 구성 요소**&#x200B;와(과) 동일한지 확인하고, `core.wcm.components.version`WCM 핵심 구성 요소[에 지정된 대로 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html?lang=ko)의 버전을 설정하십시오.
+   1. `core.forms.components.version` 및 `core.forms.components.af.version`의 버전을 [최신 Forms 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=ko#aem-as-form-version-history) 버전으로 설정하고, 두 구성 요소의 버전이 표에 언급된 **Forms 핵심 구성 요소**&#x200B;와(과) 동일한지 확인하고, [WCM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html?lang=ko)에 지정된 대로 `core.wcm.components.version`의 버전을 설정하십시오.
 
       >[!WARNING]
       >

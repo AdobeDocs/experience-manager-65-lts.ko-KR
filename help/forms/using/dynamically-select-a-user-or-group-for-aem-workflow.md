@@ -7,13 +7,29 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services
 exl-id: b3b3567f-df0a-4a24-849c-dcc0b745de63
-source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '945'
 ht-degree: 3%
-
 ---
-
 # AEM Forms 중심 워크플로 단계에 대해 동적으로 사용자 또는 그룹 선택 {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 런타임 시 AEM Forms 워크플로의 사용자 또는 그룹을 선택하는 방법을 알아봅니다.
@@ -26,7 +42,7 @@ ht-degree: 3%
 
 ECMAScript는 스크립팅 언어입니다. 클라이언트측 스크립팅 및 서버 애플리케이션에 사용됩니다. ECMAScript를 사용하여 동적으로 사용자 또는 그룹을 선택하려면 다음 단계를 수행하십시오.
 
-1. CRXDE Lite을 엽니다. URL은 `https://'[server]:[port]'/crx/de/index.jsp`입니다.
+1. CRXDE Lite를 엽니다. URL은 `https://'[server]:[port]'/crx/de/index.jsp`입니다.
 1. 다음 경로에서 확장명이 .ecma인 파일을 만듭니다. 경로(노드 구조)가 없는 경우 만듭니다.
 
    * (작업 할당 단계 경로) `/apps/fd/dashboard/scripts/participantChooser`

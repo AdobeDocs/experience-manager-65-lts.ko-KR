@@ -1,18 +1,33 @@
 ---
-title: HTML5 양식 우수 사례
+title: HTML5 양식 모범 사례
 description: 최상의 성능을 얻으려면 XFA 기반 HTML5 Forms을 조정하십시오.
 feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 7f66832f-c9d1-43e1-b3a4-a25ea9a8a224
-source-git-commit: 7a52531c6c9c1c81ab563fd85f67ba4b7f81d318
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 0%
-
+source-wordcount: '1440'
+ht-degree: 1%
 ---
-
-# HTML5 양식 우수 사례{#best-practices-for-html-forms}
+# HTML5 양식 모범 사례{#best-practices-for-html-forms}
 
 ## 개요 {#overview}
 
@@ -70,7 +85,7 @@ Adobe Experience Manager(AEM) forms를 사용하면 복잡한 트랜잭션을 �
 * [콘텐츠 작성 모범 사례](/help/sites-authoring/best-practices.md)
 * [AEM 관리 우수 사례](/help/sites-administering/administer-best-practices.md)
 * [솔루션 개발을 위한 모범 사례](/help/sites-developing/best-practices.md)
-* [적응형 양식 작업 모범 사례](/help/forms/using/adaptive-forms-best-practices.md)
+* [적응형 양식 작업을 위한 모범 사례](/help/forms/using/adaptive-forms-best-practices.md)
 
 ## 빠른 참조 카드 {#quick-reference-card}
 

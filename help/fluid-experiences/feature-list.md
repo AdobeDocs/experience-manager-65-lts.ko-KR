@@ -6,16 +6,25 @@ feature: Authoring
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
 exl-id: 9bb1ff8b-5fcb-44df-8c45-2306e127410d
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 67%
-
 ---
-
 # AEM Fluid Experiences 기능 목록{#aem-fluid-experiences-feature-list}
 
-Adobe Experience Manager Fluid Experiences는 헤드리스 컨텐츠 게재를 위한 탄탄한 솔루션을 제공하기 위해 AEM Sites, AEM Dynamic Media 및 AEM Assets의 강력한 기능 세트에서 도출됩니다.
+Adobe Experience Manager Fluid Experiences는 헤드리스 콘텐츠 게재를 위한 강력한 솔루션을 제공하기 위해 AEM Sites, AEM Dynamic Media 및 AEM Assets의 강력한 기능 세트를 활용합니다.
 
 AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점에서 기존의 AEM과 차별화됩니다. 제목이 많은 컨텐츠 제작 및 게재와 AEM의 하이브리드 사용 사례에 대한 강력한 지원은 전체 AEM Sites, Assets 및 Dynamic Media 솔루션에서 사용할 수 있습니다.
 
@@ -28,7 +37,7 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 
 >[!NOTE]
 >
->AEM Fluid Experiences는 AEM 기능의 하위 세트입니다. 다음 테이블에 연결된 기능에는 AEM에는 포함되지만 AEM Fluid Experiences에는 포함되지 않는 기능이 더 포함되어 있을 수 있습니다.
+>AEM Fluid Experiences는 AEM 기능의 하위 집합입니다. 다음 테이블에 연결된 기능에는 AEM에는 포함되지만 AEM Fluid Experiences에는 포함되지 않는 기능이 더 포함되어 있을 수 있습니다.
 
 ## 저장소 기능 {#repository-features}
 
@@ -53,8 +62,8 @@ AEM Fluid Experiences는 헤드리스 게재 사용 사례만 다룬다는 점�
 | [구조화된 컨텐츠 모델](/help/assets/content-fragments/content-fragments.md) |
 | [컨텐츠 서비스](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ko) |
 | [경험 조각](/help/sites-authoring/experience-fragments.md) |
-| 구조화된 컨텐츠를 위한 HTTP API(읽기) |
-| 구조화된 컨텐츠를 위한 HTTP API(CRUD) |
+| 구조화된 콘텐츠를 위한 HTTP API(읽기) |
+| 구조화된 콘텐츠를 위한 HTTP API(CRUD) |
 | [코어 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) |
 | [Dynamic Media](/help/assets/dynamic-media.md) |
 

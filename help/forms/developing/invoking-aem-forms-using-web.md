@@ -9,14 +9,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, APIs & Integrations, AEM Forms on JEE
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: ca620313-8c2c-44e6-9f29-0d91dc9f6e03
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '9975'
 ht-degree: 0%
-
 ---
-
 # 웹 서비스를 사용하여 AEM Forms 호출 {#invoking-aem-forms-using-web-services}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -1486,7 +1503,7 @@ PDF의 `htmlToPDF` 생성 작업과 같은 AEM Forms 서비스 작업을 비동�
 
 JAX-WS를 사용하여 Java 프록시 파일을 생성할 때 이 XML 파일을 사용하십시오. ([JAX-WS를 사용하여 Java 프록시 클래스 만들기](#creating-java-proxy-classes-using-jax-ws)를 참조하십시오.)
 
-&#x200B;- `b` 명령줄 옵션을 사용하여 JAX-WS 도구(wsimport.exe)를 실행할 때 이 XML 파일을 참조합니다. 바인딩 XML 파일의 `wsdlLocation` 요소를 업데이트하여 AEM Forms의 URL을 지정하십시오.
+- `b` 명령줄 옵션을 사용하여 JAX-WS 도구(wsimport.exe)를 실행할 때 이 XML 파일을 참조합니다. 바인딩 XML 파일의 `wsdlLocation` 요소를 업데이트하여 AEM Forms의 URL을 지정하십시오.
 
 비동기 호출이 작동하도록 하려면 끝점 URL 값을 수정하고 `async=true`을(를) 지정하십시오. 예를 들어 JAX-WS로 만든 Java 프록시 파일의 경우 `BindingProvider.ENDPOINT_ADDRESS_PROPERTY`에 대해 다음을 지정하십시오.
 

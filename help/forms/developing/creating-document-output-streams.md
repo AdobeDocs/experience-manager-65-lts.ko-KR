@@ -9,14 +9,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: a90ccd28-00ae-4317-bfda-c39acbdb835b
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '19156'
 ht-degree: 0%
-
 ---
-
 # 문서 출력 스트림 만들기  {#creating-document-output-streams}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -310,10 +327,10 @@ XDP 파일에 이미지(또는 조각과 같은 기타 리소스)가 포함된 �
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. XML 데이터 소스를 참조합니다.
 
@@ -568,10 +585,10 @@ Output API(웹 서비스)를 사용하여 PDF/A 문서를 만듭니다.
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. XML 데이터 소스를 참조합니다.
 
@@ -768,9 +785,9 @@ Java 또는 웹 서비스 API를 사용하여 콘텐츠 서비스에서 XDP 파�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
 
    * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
@@ -1092,9 +1109,9 @@ ResourceRepositoryClient
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 해당 암호 값을 `OutputServiceClient.ClientCredentials.UserName.Password` 필드에 지정하십시오.
-      * `BasicHttpBindingSecurity.Transport.ClientCredentialType` 필드에 상수 값 `HttpClientCredentialType.Basic`을(를) 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 해당 암호 값을 `OutputServiceClient.ClientCredentials.UserName.Password` 필드에 지정하십시오.
+     * `BasicHttpBindingSecurity.Transport.ClientCredentialType` 필드에 상수 값 `HttpClientCredentialType.Basic`을(를) 할당합니다.
 
    * `BasicHttpBindingSecurity.Security.Mode` 필드에 `BasicHttpSecurityMode.TransportCredentialOnly` 상수 값을 할당합니다.
 
@@ -1300,10 +1317,10 @@ Output 서비스는 작업을 수행한 후 작업이 성공했는지 여부를 
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. XML 데이터 소스를 참조합니다.
 
@@ -1542,12 +1559,12 @@ PDF 문서를 프린터로 보내는 또 다른 제한은 프린터에서 설정
 
    * `OutputClient` 개체의 `generatePrintedOutput` 메서드를 호출하고 다음 값을 전달하여 인쇄할 문서를 검색합니다.
 
-      * 인쇄 스트림을 지정하는 `PrintFormat` 열거형 값입니다. 예를 들어 PostScript 인쇄 스트림을 만들려면 `PrintFormat.PostScript`을(를) 전달합니다.
-      * 양식 디자인의 이름을 지정하는 문자열 값입니다.
-      * 이미지 파일과 같은 관련 자료 파일의 위치를 지정하는 문자열 값입니다.
-      * 사용할 XDC 파일의 위치를 지정하는 문자열 값입니다.
-      * 파일로 인쇄하는 데 필요한 런타임 옵션이 포함된 `PrintedOutputOptionsSpec` 개체입니다.
-      * 양식 디자인과 병합할 양식 데이터가 포함된 XML 데이터 원본을 나타내는 `com.adobe.idp.Document` 개체입니다.
+     * 인쇄 스트림을 지정하는 `PrintFormat` 열거형 값입니다. 예를 들어 PostScript 인쇄 스트림을 만들려면 `PrintFormat.PostScript`을(를) 전달합니다.
+     * 양식 디자인의 이름을 지정하는 문자열 값입니다.
+     * 이미지 파일과 같은 관련 자료 파일의 위치를 지정하는 문자열 값입니다.
+     * 사용할 XDC 파일의 위치를 지정하는 문자열 값입니다.
+     * 파일로 인쇄하는 데 필요한 런타임 옵션이 포함된 `PrintedOutputOptionsSpec` 개체입니다.
+     * 양식 디자인과 병합할 양식 데이터가 포함된 XML 데이터 원본을 나타내는 `com.adobe.idp.Document` 개체입니다.
 
      이 메서드는 작업 결과를 포함하는 `OutputResult` 개체를 반환합니다.
 
@@ -1586,10 +1603,10 @@ PDF 문서를 프린터로 보내는 또 다른 제한은 프린터에서 설정
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. XML 데이터 소스를 참조합니다.
 
@@ -1611,15 +1628,15 @@ PDF 문서를 프린터로 보내는 또 다른 제한은 프린터에서 설정
 
    * `OutputServiceService` 개체의 `generatePrintedOutput` 메서드를 호출하고 다음 값을 전달하여 인쇄할 문서를 검색합니다.
 
-      * 인쇄 스트림을 지정하는 `PrintFormat` 열거형 값입니다. 예를 들어 PostScript 인쇄 스트림을 만들려면 `PrintFormat.PostScript`을(를) 전달합니다.
-      * 양식 디자인의 이름을 지정하는 문자열 값입니다.
-      * 이미지 파일과 같은 관련 자료 파일의 위치를 지정하는 문자열 값입니다.
-      * 사용할 XDC 파일의 위치를 지정하는 문자열 값입니다.
-      * 인쇄 스트림을 네트워크 프린터로 보낼 때 사용되는 인쇄 런타임 옵션이 포함된 `PrintedOutputOptionsSpec` 개체입니다.
-      * 양식 데이터가 포함된 XML 데이터 원본이 포함된 `BLOB` 개체입니다.
-      * `generatePrintedOutput` 메서드로 채워진 `BLOB` 개체입니다. `generatePrintedOutput` 메서드는 이 개체를 문서를 설명하는 생성된 메타데이터로 채웁니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
-      * `generatePrintedOutput` 메서드로 채워진 `BLOB` 개체입니다. `generatePrintedOutput` 메서드가 이 개체를 결과 데이터로 채웁니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
-      * 작업 결과가 포함된 `OutputResult` 개체입니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
+     * 인쇄 스트림을 지정하는 `PrintFormat` 열거형 값입니다. 예를 들어 PostScript 인쇄 스트림을 만들려면 `PrintFormat.PostScript`을(를) 전달합니다.
+     * 양식 디자인의 이름을 지정하는 문자열 값입니다.
+     * 이미지 파일과 같은 관련 자료 파일의 위치를 지정하는 문자열 값입니다.
+     * 사용할 XDC 파일의 위치를 지정하는 문자열 값입니다.
+     * 인쇄 스트림을 네트워크 프린터로 보낼 때 사용되는 인쇄 런타임 옵션이 포함된 `PrintedOutputOptionsSpec` 개체입니다.
+     * 양식 데이터가 포함된 XML 데이터 원본이 포함된 `BLOB` 개체입니다.
+     * `generatePrintedOutput` 메서드로 채워진 `BLOB` 개체입니다. `generatePrintedOutput` 메서드는 이 개체를 문서를 설명하는 생성된 메타데이터로 채웁니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
+     * `generatePrintedOutput` 메서드로 채워진 `BLOB` 개체입니다. `generatePrintedOutput` 메서드가 이 개체를 결과 데이터로 채웁니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
+     * 작업 결과가 포함된 `OutputResult` 개체입니다. 이 매개 변수 값은 웹 서비스 호출에만 필요합니다.
 
    * `OutputResult` 개체의 `generatedDoc` 메서드 값을 가져와서 프린터로 보낼 `BLOB` 개체를 만듭니다. 이 메서드는 `generatePrintedOutput` 메서드에서 반환된 PostScript 데이터가 포함된 `BLOB` 개체를 반환합니다.
 
@@ -1881,10 +1898,10 @@ Output 서비스가 XML 데이터 원본을 기반으로 여러 파일을 성공
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. XML 데이터 소스를 참조합니다.
 
@@ -2113,10 +2130,10 @@ PDF 파일을 만드는 동안 렌더링 런타임 옵션을 설정할 수 있�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. XML 데이터 소스를 참조합니다.
 
@@ -2327,10 +2344,10 @@ AEM Forms이 JBoss가 아닌 지원되는 J2EE 애플리케이션 서버에 배�
    * `System.ServiceModel.BasicHttpBinding` 개체의 `MessageEncoding` 필드를 `WSMessageEncoding.Mtom`(으)로 설정합니다. 이 값은 MTOM이 사용되도록 합니다.
    * 다음 작업을 수행하여 기본 HTTP 인증을 활성화합니다.
 
-      * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
-      * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
-      * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
-      * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
+     * `OutputServiceClient.ClientCredentials.UserName.UserName` 필드에 AEM Forms 사용자 이름을 지정하십시오.
+     * 필드 `OutputServiceClient.ClientCredentials.UserName.Password`에 해당 암호 값을 지정하십시오.
+     * 상수 값 `HttpClientCredentialType.Basic`을(를) 필드 `BasicHttpBindingSecurity.Transport.ClientCredentialType`에 할당합니다.
+     * 상수 값 `BasicHttpSecurityMode.TransportCredentialOnly`을(를) 필드 `BasicHttpBindingSecurity.Security.Mode`에 할당합니다.
 
 1. 대화형 PDF 문서를 검색합니다.
 

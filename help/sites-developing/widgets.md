@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 20a8e6d7-dab5-476a-9235-0abca3da5ff3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5042'
 ht-degree: 0%
-
 ---
-
 # 위젯 사용 및 확장(클래식 UI){#using-and-extending-widgets-classic-ui}
 
 >[!NOTE]
@@ -98,7 +107,7 @@ AEM에서 사용 가능한 모든 위젯에 대한 전체 참조는 [위젯 API 
 
 * JavaScript 코드와 스타일 시트를 모두 포함하려면 다음 작업을 수행하십시오.
   `<ui:includeClientLib categories="<category-name1>, <category-name2>, ..."/>`
-여기서 `<category-nameX>`은(는) 클라이언트측 라이브러리의 이름입니다.
+  여기서 `<category-nameX>`은(는) 클라이언트측 라이브러리의 이름입니다.
 
 * JavaScript 코드만 포함하려면 다음 작업을 수행하십시오.
   `<ui:includeClientLib js="<category-name>"/>`
@@ -119,7 +128,8 @@ AEM에서 사용 가능한 모든 위젯에 대한 전체 참조는 [위젯 API 
 
 1. AEM 인스턴스에서 패키지 공유에서 **ExtJS 위젯(v01) 사용** 패키지를 다운로드하고 패키지를 설치합니다. 저장소에서 `/apps` 아래에 `extjstraining` 프로젝트를 만듭니다.
 1. 스크립트(js) 및 스타일 시트(css)가 포함된 클라이언트 라이브러리를 Geometrixx 페이지 jsp의 head 태그에 포함합니다. **Geometrixx** 분기의 새 페이지에 샘플 구성 요소를 포함하려 합니다.
-**CRXDE Lite**&#x200B;에서 `/apps/geometrixx/components/page/headlibs.jsp` 파일을 열고 다음과 같이 기존 `<ui:includeClientLib>` 태그에 `cq.extjstraining` 범주를 추가합니다.   `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
+**CRXDE Lite**&#x200B;에서 `/apps/geometrixx/components/page/headlibs.jsp` 파일을 열고 다음과 같이 기존 `<ui:includeClientLib>` 태그에 `cq.extjstraining` 범주를 추가합니다.
+   `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
 1. `/content/geometrixx/en/products` 아래의 **Geometrixx** 분기에서 페이지를 만들고 **ExtJS 위젯 사용**&#x200B;이라고 합니다.
 1. 디자인 모드로 전환하고 **ExtJS 위젯 사용** 그룹의 모든 구성 요소를 Geometrixx 디자인에 추가합니다.
 1. 편집 모드로 돌아가기: **ExtJS 위젯 사용** 그룹의 구성 요소를 Sidekick에서 사용할 수 있습니다.
@@ -309,7 +319,8 @@ Sidekick에서 **ExtJS 위젯 사용** 그룹의 두 번째 구성 요소를 **2
 
 논리는 다음과 같이 이벤트 리스너와 JavaScript 코드를 통해 구현됩니다.
 
-* `ownerdraw` 위젯에는 구성 요소가 포함된 페이지에 대한 정보를 표시하는 &quot; `loadcontent`&quot; 수신기가 있습니다. 즉, 콘텐츠가 로드될 때 smartfile 위젯에서 참조하는 자산입니다.  `loadcontent="function(field,rec,path){Ejst.x2.showInfo(field,rec,path);}"`
+* `ownerdraw` 위젯에는 구성 요소가 포함된 페이지에 대한 정보를 표시하는 &quot; `loadcontent`&quot; 수신기가 있습니다. 즉, 콘텐츠가 로드될 때 smartfile 위젯에서 참조하는 자산입니다.
+  `loadcontent="function(field,rec,path){Ejst.x2.showInfo(field,rec,path);}"`
   `field`이(가) `ownerdraw` 개체로 설정되어 있습니다.
   `path`이(가) 구성 요소의 콘텐츠 경로로 설정되어 있습니다(예: `/content/geometrixx/en/products/triangle/ui-tutorial/jcr:content/par/dynamicdialogs`).
 * `Ejst.x2` 개체가 `exercises.js` 파일의 다음 위치에 정의되어 있습니다.
@@ -355,7 +366,7 @@ Sidekick에서 **ExtJS 위젯 사용** 그룹의 두 번째 구성 요소를 **2
   `panel`은(는) 선택 항목 및 대화 상자 세트 위젯이 포함된 패널입니다.
   `fieldSet`은(는) 대화 상자 필드 집합 개체입니다.
   `show`은(는) 선택 값(true 또는 false)입니다.
-&#39;`show`&#39;을(를) 기반으로 대화 상자 세트가 표시되거나 표시되지 않습니다.
+  &#39;`show`&#39;을(를) 기반으로 대화 상자 세트가 표시되거나 표시되지 않습니다.
 
 **필드 전환** 대화 상자를 사용하려면 다음을 수행하십시오.
 
@@ -376,7 +387,8 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
 사용자 지정 위젯과 플러그인은 **3이라는 구성 요소에 포함되어 있습니다.** ExtJS 위젯 사용&#x200B;**패키지의 사용자 정의 위젯**. 이 구성 요소를 샘플 페이지에 포함하려면 다음 작업을 수행하십시오.
 
 1. **3을 추가합니다.** Sidekick **의** ExtJS 위젯 사용&#x200B;**탭에서 샘플 페이지에 대한 사용자 정의 위젯** 구성 요소입니다.
-1. 구성 요소에 제목과 일부 텍스트가 표시되고 **속성** 링크를 클릭하면 저장소에 저장된 단락의 속성이 표시됩니다. 다시 클릭하면 속성이 숨겨집니다.구성 요소는 다음과 같이 표시됩니다.
+1. 구성 요소에 제목과 일부 텍스트가 표시되고 **속성** 링크를 클릭하면 저장소에 저장된 단락의 속성이 표시됩니다. 다시 클릭하면 속성이 숨겨집니다.
+구성 요소는 다음과 같이 표시됩니다.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -390,9 +402,10 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
 * 패널(노드 유형 = `cq:Widget`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`)이 포함된 `tabpanel` 위젯(노드 유형 = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`)을 표시합니다.
 * 패널에 `multifield` 위젯이 있습니다(노드 유형 = `cq:Widget`, xtype = ` [multifield](/help/sites-developing/xtypes.md#multifield)`).
 * `multifield` 위젯에 사용자 지정 xtype &#39; `ejstcustom`&#39;을(를) 기반으로 하는 fieldconfig(노드 유형 = `nt:unstructured`, xtype = `ejstcustom`, optionsProvider = `Ejst.x3.provideOptions`)가 있습니다.
-   * &#39; `fieldconfig`&#39;은(는) ` [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)` 개체의 구성 옵션입니다.
-   * &#39; `optionsProvider`&#39;은(는) `ejstcustom` 위젯의 구성입니다. 다음에서 `exercises.js`에 정의된 `Ejst.x3.provideOptions` 메서드로 설정됩니다.     `/apps/extjstraining/clientlib/js/exercises.js`
-두 개의 옵션을 반환합니다.
+  * &#39; `fieldconfig`&#39;은(는) ` [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)` 개체의 구성 옵션입니다.
+  * &#39; `optionsProvider`&#39;은(는) `ejstcustom` 위젯의 구성입니다. 다음에서 `exercises.js`에 정의된 `Ejst.x3.provideOptions` 메서드로 설정됩니다.
+    `/apps/extjstraining/clientlib/js/exercises.js`
+    두 개의 옵션을 반환합니다.
 * `multifield` 노드에 의해 정의된 위치:
   `/apps/extjstraining/components/customwidgets/multifield`
 * 은(는) 다음을 요청하여 json 형식으로 렌더링됩니다.
@@ -406,8 +419,8 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
 * ` [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField)` 위젯을 확장합니다.
 * 에는 `hiddenField`(Textfield), `allowField`(ComboBox) 및 `otherField`(Textfield)의 세 필드가 있습니다.
 * `CQ.Ext.Component#initComponent`을(를) 재정의하여 세 개의 필드를 추가합니다.
-   * `allowField`은(는) &#39;select&#39; 형식의 [CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection) 개체입니다. optionsProvider는 대화 상자에 정의된 CustomWidget의 optionsProvider 구성으로 인스턴스화된 Selection 개체의 구성입니다.
-   * `otherField`은(는) [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) 개체입니다.
+  * `allowField`은(는) &#39;select&#39; 형식의 [CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection) 개체입니다. optionsProvider는 대화 상자에 정의된 CustomWidget의 optionsProvider 구성으로 인스턴스화된 Selection 개체의 구성입니다.
+  * `otherField`은(는) [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) 개체입니다.
 * [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField)의 `setValue`, `getValue` 및 `getRawValue` 메서드를 재정의하여 다음 형식의 CustomWidget 값을 설정하고 검색합니다.
   `<allowField value>/<otherField value>, for example: 'Bla1/hello'`
 * 자신을 &#39;`ejstcustom`&#39; xtype으로 등록:
@@ -440,11 +453,11 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
 * `browseWindow`(이)라는 찾아보기 창을 정의합니다.
 * 화살표를 클릭할 때 찾아보기 창을 표시하도록 ` [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)#onTriggerClick`을(를) 재정의합니다.
 * [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel) 개체를 정의합니다.
-   * `/bin/wcm/siteadmin/tree.json`에 등록된 서블릿을 호출하여 데이터를 가져옵니다.
-   * 루트는 &quot; `apps/extjstraining`&quot;입니다.
+  * `/bin/wcm/siteadmin/tree.json`에 등록된 서블릿을 호출하여 데이터를 가져옵니다.
+  * 루트는 &quot; `apps/extjstraining`&quot;입니다.
 * `window` 개체(` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`)를 정의합니다.
-   * 사전 정의된 패널을 기반으로 합니다.
-   * 선택한 경로의 값을 설정하고 패널을 숨기는 **OK** 단추가 있습니다.
+  * 사전 정의된 패널을 기반으로 합니다.
+  * 선택한 경로의 값을 설정하고 패널을 숨기는 **OK** 단추가 있습니다.
 * 창이 **경로** 필드 아래에 고정되어 있습니다.
 * 선택한 경로가 검색 필드에서 `show` 이벤트의 창으로 전달됩니다.
 * 자신을 &#39;`ejstbrowse`&#39; xtype으로 등록:
@@ -477,10 +490,10 @@ RTE 플러그인:
   `/apps/extjstraining/clientlib/js/InsertTextPlugin.js`
 * ` [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)` 개체를 확장합니다.
 * 다음 메서드는 ` [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)` 개체를 정의하고 구현 플러그인에서 재정의됩니다.
-   * `getFeatures()`은(는) 플러그인이 사용할 수 있도록 하는 모든 기능의 배열을 반환합니다.
-   * `initializeUI()`이(가) 새 단추를 RTE 도구 모음에 추가합니다.
-   * `notifyPluginConfig()`은(는) 단추를 가리킬 때 제목과 텍스트를 표시합니다.
-   * `execute()`은(는) 단추를 클릭하고 플러그 인 작업을 수행할 때 호출됩니다. 포함할 텍스트를 정의하는 데 사용되는 창을 표시합니다.
+  * `getFeatures()`은(는) 플러그인이 사용할 수 있도록 하는 모든 기능의 배열을 반환합니다.
+  * `initializeUI()`이(가) 새 단추를 RTE 도구 모음에 추가합니다.
+  * `notifyPluginConfig()`은(는) 단추를 가리킬 때 제목과 텍스트를 표시합니다.
+  * `execute()`은(는) 단추를 클릭하고 플러그 인 작업을 수행할 때 호출됩니다. 포함할 텍스트를 정의하는 데 사용되는 창을 표시합니다.
 * `insertText()`이(가) 해당 대화 상자 개체 `Ejst.InsertTextPlugin.Dialog`을(를) 사용하여 텍스트를 삽입합니다(이후 참조).
 * **OK** 단추를 클릭하면 트리거되는 대화 상자의 `apply()` 메서드에서 `executeInsertText()`을(를) 호출합니다.
 * 자신을 &#39;`inserttext`&#39; 플러그 인으로 등록합니다.
@@ -539,9 +552,9 @@ RTE 플러그인:
 
 * 페이지에서 트리 창을 검색하여 `tree` 개체를 정의합니다.
 * 트리를 표시하는 창이 없으면 `treePanel`([CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel))이 만들어집니다.
-   * `treePanel`에 창을 만드는 데 사용되는 데이터가 있습니다.
-   * 다음 위치에 등록된 서블릿을 호출하여 데이터를 검색합니다.
-     `/bin/wcm/siteadmin/tree.json`
+  * `treePanel`에 창을 만드는 데 사용되는 데이터가 있습니다.
+  * 다음 위치에 등록된 서블릿을 호출하여 데이터를 검색합니다.
+    `/bin/wcm/siteadmin/tree.json`
 * `beforeload` 수신기에서 선택한 노드가 로드되었는지 확인합니다.
 * `root` 개체는 경로 `apps/extjstraining`을(를) 트리 루트로 설정합니다.
 * `tree`( ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`)은(는) 사전 정의된 `treePanel`을(를) 기반으로 설정되며 다음과 함께 표시됩니다.
@@ -626,10 +639,10 @@ RTE 플러그인:
 * `store`이(가) 메모리에 로드되었습니다.
   `store.load();`
 * `gridPanel`은(는) `store`을(를) 사용하는 ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` 개체입니다.
-   * 열 너비는 항상 재비례합니다.
-     `forceFit: true`
-   * 한 번에 하나의 행만 선택할 수 있습니다.
-     `singleSelect:true`
+  * 열 너비는 항상 재비례합니다.
+    `forceFit: true`
+  * 한 번에 하나의 행만 선택할 수 있습니다.
+    `singleSelect:true`
 
 #### 예제 2: 참조 검색 그리드 {#example-reference-search-grid}
 
@@ -657,17 +670,19 @@ RTE 플러그인:
 구성 요소 jsp(`referencesearch.js`)에서 참조된 JavaScript 코드는 구성 요소 jsp에서 호출된 `getGridPanel()` 메서드를 정의하고 저장소에서 동적으로 검색된 데이터를 기반으로 ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` 개체를 반환합니다. `referencesearch.js`의 논리는 일부 동적 데이터를 GridPanel의 기반으로 정의합니다.
 
 * `reader`은(는) 세 개의 열에 대해 json 형식의 서블릿 응답을 읽는 ` [CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader)` 개체입니다.
-* `cm`은(는) 세 개의 열에 대한 ` [CQ.Ext.grid.ColumnModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)` 개체입니다.&quot;Test&quot; 열 셀은 편집기로 정의된 대로 편집할 수 있습니다.  `editor: new [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
+* `cm`은(는) 세 개의 열에 대한 ` [CQ.Ext.grid.ColumnModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)` 개체입니다.
+&quot;Test&quot; 열 셀은 편집기로 정의된 대로 편집할 수 있습니다.
+  `editor: new [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
 * 열을 정렬할 수 있습니다.
   `cm.defaultSortable = true;`
 * `store`은(는) ` [CQ.Ext.data.GroupingStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)` 개체입니다.
-   * 쿼리를 필터링하는 데 사용되는 몇 가지 매개 변수와 함께 &quot; `/bin/querybuilder.json`&quot;에 등록된 서블릿을 호출하여 해당 데이터를 가져옵니다.
-   * 미리 정의된 `reader`을(를) 기반으로 합니다.
-   * 테이블이 오름차순으로 &#39;**jcr:path**&#39; 열에 따라 정렬됩니다.
+  * 쿼리를 필터링하는 데 사용되는 몇 가지 매개 변수와 함께 &quot; `/bin/querybuilder.json`&quot;에 등록된 서블릿을 호출하여 해당 데이터를 가져옵니다.
+  * 미리 정의된 `reader`을(를) 기반으로 합니다.
+  * 테이블이 오름차순으로 &#39;**jcr:path**&#39; 열에 따라 정렬됩니다.
 * `gridPanel`은(는) 편집할 수 있는 ` [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` 개체입니다.
-   * 미리 정의된 `store` 및 열 모델 `cm`을(를) 기반으로 합니다.
-   * 한 번에 하나의 행만 선택할 수 있습니다.
-     `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
-   * `afteredit` 수신자는 &quot;**Test**&quot; 열의 셀이 편집되었는지 확인합니다.
-      * &quot;**jcr:path**&quot; 열에 정의된 경로에 있는 노드의 &#39;`test`&#39; 속성이 셀 값으로 저장소에 설정되어 있습니다.
-      * POST가 성공하면 값이 `store` 개체에 추가되고 그렇지 않으면 거부됩니다
+  * 미리 정의된 `store` 및 열 모델 `cm`을(를) 기반으로 합니다.
+  * 한 번에 하나의 행만 선택할 수 있습니다.
+    `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
+  * `afteredit` 수신자는 &quot;**Test**&quot; 열의 셀이 편집되었는지 확인합니다.
+    * &quot;**jcr:path**&quot; 열에 정의된 경로에 있는 노드의 &#39;`test`&#39; 속성이 셀 값으로 저장소에 설정되어 있습니다.
+    * POST가 성공하면 값이 `store` 개체에 추가되고 그렇지 않으면 거부됩니다

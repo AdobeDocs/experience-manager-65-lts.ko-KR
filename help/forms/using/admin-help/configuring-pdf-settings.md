@@ -9,14 +9,26 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 41a8a4b0-cb39-40a6-82b6-085f2c635e0c
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '7478'
 ht-degree: 2%
-
 ---
-
 # Adobe PDF 설정 구성{#configuring-adobe-pdf-settings}
 
 Adobe PDF 설정 페이지에는 사용할 소스에 대해 지정할 수 있는 전환 설정이 표시됩니다. 사전 정의된 PDF 설정을 사용하거나 직접 만들 수 있습니다. PDF 설정은 파일의 변환 방법과 그에 따른 PDF 구조 및 기능을 정확하게 결정합니다. Adobe PDF 설정은 이전에 Distiller® 매개 변수 또는 작업 옵션이라고 했습니다.

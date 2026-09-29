@@ -6,22 +6,36 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Document Security
 exl-id: 97b93a5f-cea7-4d79-8ee1-c6a94b7a6983
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 0%
-
+source-wordcount: '599'
+ht-degree: 14%
 ---
-
 # Document Security 서버 설치 및 구성 {#installing-and-configuring-the-document-security-server}
 
 문서 보안을 사용하여 지원되는 형식으로 저장한 정보를 안전하게 배포합니다. 승인된 사용자만 보호된 문서에 액세스할 수 있습니다.
 
-Adobe Experience Manager Forms document security는 인증된 사용자만 문서를 사용할 수 있도록 합니다. 문서 보안을 사용하면 저장한 모든 정보를 지원되는 형식으로 안전하게 배포할 수 있습니다. 지원되는 파일 형식에는 Adobe Portable Document Format(PDF) 및 Microsoft Word, Excel, PowerPoint 파일이 포함됩니다.
+Adobe Experience Manager Forms document security는 인증된 사용자만 문서를 사용할 수 있도록 합니다. 문서 보안을 사용하면 지원되는 형식으로 저장한 모든 정보를 안전하게 배포할 수 있습니다. 지원되는 파일 형식에는 Adobe Portable Document Format(PDF) 및 Microsoft Word, Excel, PowerPoint 파일이 포함됩니다.
 
-정책을 사용하여 문서를 보호할 수 있습니다. 정책에 지정하는 기밀 유지 설정은 정책이 적용되는 문서를 수신자가 사용할 수 있는 방법을 결정합니다. 예를 들어 수신자가 텍스트를 인쇄 또는 복사하거나 텍스트를 편집하거나 보호된 문서에 서명과 주석을 추가할 수 있는지 여부를 지정할 수 있습니다.
+정책을 사용하면 문서를 보호할 수 있습니다. 정책에 지정하는 기밀 유지 설정은 정책이 적용되는 문서를 수신자가 사용할 수 있는 방법을 결정합니다. 예를 들어 수신자가 텍스트를 인쇄 또는 복사하거나, 텍스트를 편집하거나, 보호된 문서에 서명과 주석을 추가할 수 있는지 여부를 지정할 수 있습니다.
 
-정책은 Document Security 서버에 저장됩니다. 사용자는 클라이언트 애플리케이션을 통해 문서에 정책을 적용합니다. 문서에 정책을 적용하면 정책에 지정된 기밀 유지 설정이 문서에 포함된 정보를 보호합니다. 정책으로 보호된 문서를 정책에 의해 승인된 수신자에게 배포할 수 있습니다.
+정책은 Document Security 서버에 저장됩니다. 사용자는 클라이언트 애플리케이션을 통해 문서에 정책을 적용합니다. 문서에 정책을 적용하면 정책에 지정된 기밀 유지 설정에 따라 문서에 포함된 정보가 보호됩니다. 정책으로 보호된 문서는 정책에 따라 권한이 부여된 수신자에게 배포할 수 있습니다.
 
 또한 Document Security는 클라이언트, 뷰어 및 인덱서를 제공하여 문서를 보호하고 보호된 문서를 보고 보호된 문서를 인덱싱합니다. 문서 보안에 대한 자세한 내용은 [문서 보안 정보](/help/forms/using/admin-help/document-security.md)를 참조하십시오.
 

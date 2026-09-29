@@ -1,17 +1,25 @@
 ---
-title: AEM Commerce integration framework(CIF) 추가 기능으로 마이그레이션
-description: 이전 버전에서 AEM Commerce integration framework(CIF) 추가 기능으로 마이그레이션하는 방법.
+title: AEM Commerce 통합 프레임워크(CIF) 추가 기능으로 마이그레이션
+description: 이전 버전에서 AEM Commerce 통합 프레임워크(CIF) 추가 기능으로 마이그레이션하는 방법입니다.
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 847c33c1-17d6-447a-9f2c-91f2a81a3f04
-source-git-commit: 981b175b039fd7ffbddf558a77d2da2fed52ad79
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 4%
-
+source-wordcount: '320'
+ht-degree: 5%
 ---
-
 # Experience Manager 추가 기능에 대한 마이그레이션 안내서 {#cif-migration}
 
 이 안내서는 Experience Manager 추가 기능 마이그레이션을 위해 업데이트해야 하는 영역을 식별하는 데 도움이 됩니다.
@@ -30,7 +38,7 @@ CIF 추가 기능은 제품 카탈로그 데이터 가져오기를 지원하지 
 
 >[!TIP]
 >
->사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예 [Magento 오픈 소스](https://business.adobe.com/kr/products/magento/open-source.html).
+>사용 가능한 실시간 API가 없는 경우 API가 있는 외부 제품 캐시를 사용하여 통합해야 합니다. 예제 [Magento open-source](https://business.adobe.com/kr/products/magento/open-source.html).
 
 ## AEM 렌더링을 사용한 제품 카탈로그 경험
 

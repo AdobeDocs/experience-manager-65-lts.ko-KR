@@ -10,14 +10,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Workbench, APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 071781e8-990d-4d01-b46e-be1c57bdbe3a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1870'
 ht-degree: 0%
-
 ---
-
 # Forms을 렌더링하는 웹 애플리케이션 만들기 {#creating-web-applications-thatrenders-forms}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -54,7 +71,7 @@ Java 서블릿을 사용하여 고객이 데이터를 보고 양식에 입력할
 
 &lt;*Forms Designer 설치 디렉터리*>/Samples/Forms/Purchase Order/Form Fragments
 
-여기서 &lt;*설치 디렉터리*>는 설치 경로입니다. 클라이언트 응용 프로그램을 위해 이 설치 위치에서 구매 주문 Dynamic.xdp 파일을 복사하고 *Applications/FormsApplication*&#x200B;이라는 Forms 응용 프로그램에 배포했습니다. 구매 주문 Dynamic.xdp 파일은 FormsFolder라는 폴더에 배치됩니다. 마찬가지로 조각은 다음 그림과 같이 Fragments라는 폴더에 배치됩니다.
+여기서 &lt;*install directory*>은(는) 설치 경로입니다. 클라이언트 응용 프로그램을 위해 이 설치 위치에서 구매 주문 Dynamic.xdp 파일을 복사하고 *Applications/FormsApplication*&#x200B;이라는 Forms 응용 프로그램에 배포했습니다. 구매 주문 Dynamic.xdp 파일은 FormsFolder라는 폴더에 배치됩니다. 마찬가지로 조각은 다음 그림과 같이 Fragments라는 폴더에 배치됩니다.
 
 ![cw_cw_fragmentsrepository](assets/cw_cw_fragmentsrepository.png)
 

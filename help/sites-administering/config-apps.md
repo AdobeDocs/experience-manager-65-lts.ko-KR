@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 4f36487c-45a2-4c18-b3cc-bb9284d68f49
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 6%
-
 ---
-
 # AEM 앱 구성{#configuring-for-aem-apps}
 
 Adobe Experience Manager 앱을 사용하면 애플리케이션 OTA의 콘텐츠를 (공중으로) 업데이트할 수 있습니다. 업데이트된 콘텐츠는 게시 인스턴스에 저장됩니다. 장치의 앱이 게시 인스턴스에 연결하고 업데이트를 확인하도록 허용하려면 빈 레퍼러 헤더를 허용하도록 게시 인스턴스를 구성해야 합니다.
@@ -25,7 +34,7 @@ Adobe Experience Manager 앱을 사용하면 애플리케이션 OTA의 콘텐츠
 레퍼러 필터 서비스를 구성하려면 다음 작업을 수행하십시오.
 
 * 다음 위치에서 Apache Felix 콘솔(**구성**)을 엽니다.
-* https://&lt;server>:<port_number>/system/console/configMgr
+* https://<server>:<port_number>/system/console/configMgr
 * 관리자로 로그인합니다.
 * **구성** 메뉴에서 다음을 선택합니다. *Apache Sling Referrer 필터*
 * 빈/누락된 레퍼러 헤더를 허용할 수 있도록 빈 허용 필드를 선택합니다.

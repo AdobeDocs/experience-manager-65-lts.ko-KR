@@ -7,13 +7,29 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Form Data Model
 exl-id: 57385e88-9a3d-4d89-986b-9f254aa722ca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 0%
-
 ---
-
 # 서신 관리 | 사용자 데이터 처리 {#correspondence-management-handling-user-data}
 
 AEM Forms 서신 관리를 사용하면 안전하고 개인화된 고객 서신을 만들고, 관리하고, 간소화할 수 있습니다. 비즈니스 사용자가 사전 승인된 콘텐츠 블록 및 미디어 요소를 사용하여 응답을 만들 수 있는 직관적인 사용자 인터페이스를 제공합니다. 서신 만들기에 대한 자세한 내용은 [서신 만들기](/help/forms/using/create-correspondence.md)를 참조하십시오.

@@ -1,5 +1,5 @@
 ---
-title: 페이지에 링크 구성 요소 포함
+title: 페이지에 링크 구성 요소 임베드
 description: 링크 구성 요소를 사용하여 모든 페이지에서 적응형 문서 또는 적응형 양식을 연결할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: a6ae1633-63a8-4364-b298-bc569459a136
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 0%
-
+source-wordcount: '412'
+ht-degree: 4%
 ---
-
-# 페이지에 링크 구성 요소 포함{#embedding-link-component-in-a-page}
+# 페이지에 링크 구성 요소 임베드{#embedding-link-component-in-a-page}
 
 ## 사전 요구 사항 {#prerequisites}
 
@@ -56,6 +69,6 @@ ht-degree: 0%
 * 양식 경로에 지정된 경로가 허용된 렌더링 형식으로 PDF이 있는 문서를 가리키는 경우 PDF을 렌더링 유형으로 선택해야 합니다.
 * 양식의 제출 URL은 여러 위치에서 지정할 수 있으며, 우선 순위는 다음과 같습니다.
 
-   1. 양식(제출 단추)에 포함된 제출 URL의 우선순위가 가장 높습니다.
-   1. Forms Manager에 언급된 제출 URL은 우선 순위가 보통입니다.
-   1. Forms 포털에 언급된 제출 URL의 우선 순위가 가장 낮습니다.
+  1. 양식(제출 단추)에 포함된 제출 URL의 우선순위가 가장 높습니다.
+  1. Forms Manager에 언급된 제출 URL은 우선 순위가 보통입니다.
+  1. Forms 포털에 언급된 제출 URL의 우선 순위가 가장 낮습니다.

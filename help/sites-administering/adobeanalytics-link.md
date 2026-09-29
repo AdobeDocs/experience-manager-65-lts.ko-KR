@@ -1,5 +1,5 @@
 ---
-title: Adobe Analytics에 대한 링크 추적 구성
+title: Adobe Analytics를 위한 링크 추적 구성
 description: SiteCatalyst에 대한 링크 추적을 구성하는 방법에 대해 알아봅니다.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: d9318173-c598-4de0-bbbe-2c094da8afa6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 0%
-
+source-wordcount: '1645'
+ht-degree: 1%
 ---
-
-# Adobe Analytics에 대한 링크 추적 구성{#configuring-link-tracking-for-adobe-analytics}
+# Adobe Analytics를 위한 링크 추적 구성{#configuring-link-tracking-for-adobe-analytics}
 
 사용자가 웹 사이트의 페이지에서 링크를 클릭하면 Adobe Analytics에서 관련 정보를 캡처할 수 있습니다. 예를 들어, 링크 추적을 사용하여 사용자가 사이트와 상호 작용하는 방법을 배우고, 파일 다운로드를 추적하고, 종료 링크를 추적합니다.
 
@@ -119,14 +128,14 @@ s.linkLeaveQueryString= false;
 
 링크 클릭으로 변수 데이터를 전송하기 위한 속성:
 
-* **이벤트 추적 연결**
+* **링크 추적 이벤트**
 링크 클릭 수를 계산하는 데 사용할 Adobe Analytics 이벤트 변수를 입력합니다.
 
   여러 변수 이름은 쉼표로 구분하십시오.
 
   기본값인 `None`은(는) 이벤트 추적을 발생시키지 않습니다.
 
-* **추적 변수 연결**
+* **링크 추적 변수**
 링크를 클릭할 때 Adobe Analytics으로 보낼 Adobe Analytics 변수를 입력합니다. 여러 변수 이름은 쉼표로 구분하십시오.
 
   `None`의 기본값으로 인해 변수 데이터가 전송되지 않습니다.

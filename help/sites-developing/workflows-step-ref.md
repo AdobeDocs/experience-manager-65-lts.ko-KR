@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3258'
+source-wordcount: '3268'
 ht-degree: 2%
-
 ---
-
 # 워크플로 단계 참조 {#workflow-step-reference}
 
 워크플로우 모델은 다양한 유형의 일련의 단계로 구성됩니다. 유형에 따라 이러한 단계를 매개 변수와 스크립트를 사용하여 구성하고 확장하여 필요한 기능과 컨트롤을 제공할 수 있습니다.

@@ -8,13 +8,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 role: User, Developer
 exl-id: 22a7744e-0af6-4aac-a8a1-156b563c627c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 0%
-
+source-wordcount: '1173'
+ht-degree: 1%
 ---
-
 # AEM 워크플로에서 문서 서비스 API 시작  {#initiate-document-services-apis-from-aem-workflow}
 
 ## 어셈블러 {#assembler}
@@ -38,9 +52,9 @@ DDX 호출 워크플로에는 다음 입력 문서가 필요합니다.
 
 * **DDX**: DDX 호출 워크플로 단계의 필수 입력이며 DDX 입력 드롭다운에서 다음 옵션 중 하나를 선택하여 지정할 수 있습니다.
 
-   * *페이로드 관련*: DDX 입력 파일은 워크플로 항목의 페이로드 폴더에 관련됩니다.
-   * *페이로드 사용*: 워크플로 항목에 대한 페이로드가 입력 DDX 문서로 사용됩니다.
-   * *절대 경로*: CRX 저장소의 DDX 문서에 대한 절대 경로입니다.
+  * *페이로드 관련*: DDX 입력 파일은 워크플로 항목의 페이로드 폴더에 관련됩니다.
+  * *페이로드 사용*: 워크플로 항목에 대한 페이로드가 입력 DDX 문서로 사용됩니다.
+  * *절대 경로*: CRX 저장소의 DDX 문서에 대한 절대 경로입니다.
 
 * **PayLoad에서 맵 만들기**: 이 옵션을 선택하면 페이로드 폴더의 모든 문서가 어셈블러의 `invoke` API에 대한 입력 문서 맵에 추가됩니다. 각 문서의 노드 이름은 맵에서 키로 사용됩니다.
 
@@ -101,7 +115,7 @@ PDF/A로 변환 워크플로우 단계는 `toPDFA` 어셈블러 서비스 API를
 * *PDFA 문서*: 변환된 PDF/A 문서를 저장할 위치를 지정합니다. 페이로드 문서를 덮어쓰거나 페이로드 폴더에 저장할 수 있습니다.
 * *전환 로그*: 전환 로그가 저장되는 위치를 지정합니다. 페이로드 문서를 덮어쓰거나 페이로드 폴더에 저장할 수 있습니다.
 
-## Forms {#forms}
+## 양식 {#forms}
 
 PDF 양식 렌더링 워크플로는 XDP 템플릿과 데이터 xml을 사용하여 PDF 양식을 만들기 위한 `renderPDFForm` Forms 서비스 API에 대한 래퍼입니다.
 

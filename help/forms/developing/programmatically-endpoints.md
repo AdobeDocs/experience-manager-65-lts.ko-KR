@@ -9,14 +9,29 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 6a0c7dbf-02ae-4211-a5c7-941eb353a403
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '10888'
 ht-degree: 2%
-
 ---
-
 # 프로그래밍 방식으로 엔드포인트 관리 {#programmatically-managing-endpoints}
 
 **이 문서의 샘플과 예제는 JEE 환경의 AEM Forms에 대해서만 적용됩니다.**
@@ -948,8 +963,8 @@ Java API를 사용하여 TaskManager 끝점 추가:
 
    * 생성자를 사용하고 다음 값을 전달하여 `CreateEndpointCategoryInfo` 개체를 만듭니다.
 
-      * 범주의 식별자 값을 지정하는 문자열 값
-      * 범주에 대한 설명을 지정하는 문자열 값
+     * 범주의 식별자 값을 지정하는 문자열 값
+     * 범주에 대한 설명을 지정하는 문자열 값
 
    * `EndpointRegistryClient` 개체의 `createEndpointCategory` 메서드를 호출하고 `CreateEndpointCategoryInfo` 개체를 전달하여 범주를 만듭니다. 이 메서드는 새 범주를 나타내는 `EndpointCategory` 개체를 반환합니다.
 
@@ -1068,8 +1083,8 @@ Java API를 사용하여 끝점을 수정합니다.
    * 해당 생성자를 호출하여 `ModifyEndpointInfo` 개체를 만듭니다.
    * 설정할 각 구성 값에 대해 `ModifyEndpointInfo` 개체의 `setConfigParameterAsText` 메서드를 호출합니다. 예를 들어 URL 구성 값을 설정하려면 `ModifyEndpointInfo` 개체의 `setConfigParameterAsText` 메서드를 호출하고 다음 값을 전달하십시오.
 
-      * 구성 값의 이름을 지정하는 문자열 값입니다. 예를 들어 `url` 구성 값을 설정하려면 `url`을(를) 지정하십시오.
-      * 구성 값의 값을 지정하는 문자열 값입니다. `url` 구성 값에 대한 값을 정의하려면 감시 폴더 위치를 지정하십시오.
+     * 구성 값의 이름을 지정하는 문자열 값입니다. 예를 들어 `url` 구성 값을 설정하려면 `url`을(를) 지정하십시오.
+     * 구성 값의 값을 지정하는 문자열 값입니다. `url` 구성 값에 대한 값을 정의하려면 감시 폴더 위치를 지정하십시오.
 
    * `EndpointRegistryClient` 개체의 `modifyEndpoint` 메서드를 호출하고 `ModifyEndpointInfo` 개체를 전달하십시오.
 

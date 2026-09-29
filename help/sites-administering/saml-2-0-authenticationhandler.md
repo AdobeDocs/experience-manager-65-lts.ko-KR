@@ -9,13 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: ee438c55-88cd-4f55-873e-16376b36fa7b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 1%
-
 ---
-
 # SAML 2.0 인증 핸들러{#saml-authentication-handler}
 
 AEM은 [SAML](https://saml.xml.org/saml-specifications) 인증 처리기와 함께 제공됩니다. 이 처리기는 `HTTP POST` 바인딩을 사용하여 [SAML](https://saml.xml.org/saml-specifications) 2.0 인증 요청 프로토콜(Web-SSO 프로필)을 지원합니다.

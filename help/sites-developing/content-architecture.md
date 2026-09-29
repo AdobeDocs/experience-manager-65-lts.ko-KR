@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: eb47f730-ac26-47a0-9bd7-3b7e94c79ecd
-source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '417'
 ht-degree: 0%
-
 ---
-
 # 콘텐츠 아키텍처{#content-architecture}
 
 ## David의 모델 팔로우 {#follow-david-s-model}
@@ -46,7 +55,7 @@ David의 모델은 Jackrabbit wiki의 [https://wiki.apache.org/jackrabbit/Davids
 
 ### 새 노드 유형을 정의하지 마십시오 {#avoid-defining-new-node-types}
 
-노드 유형은 인프라 계층에서 낮은 수준에서 작동합니다. 대부분의 요구 사항은 `sling:resourceType`, `nt:unstructured`, `oak:Unstructured` 또는 `sling:Folder` 노드 유형에 할당된 `cq:Page`을(를) 사용하여 충족됩니다. 노드 유형은 저장소의 스키마와 동일하며, 노드 유형을 변경하는 것은 비용이 많이 들 수 있습니다.
+노드 유형은 인프라 계층에서 낮은 수준에서 작동합니다. 대부분의 요구 사항은 `nt:unstructured`, `oak:Unstructured`, `sling:Folder` 또는 `cq:Page` 노드 유형에 할당된 `sling:resourceType`을(를) 사용하여 충족됩니다. 노드 유형은 저장소의 스키마와 동일하며, 노드 유형을 변경하는 것은 비용이 많이 들 수 있습니다.
 
 ### JCR의 명명 규칙 준수 {#adhere-to-naming-conventions-in-the-jcr}
 
@@ -54,14 +63,14 @@ David의 모델은 Jackrabbit wiki의 [https://wiki.apache.org/jackrabbit/Davids
 
 * 노드 이름
 
-   * 모두 소문자군
-   * 하이픈을 사용한 단어 분리.
+  * 모두 소문자군
+  * 하이픈을 사용한 단어 분리.
 
 * 속성 이름
 
-   * 카멜 대/소문자, 소문자로 시작.
+  * 카멜 대/소문자, 소문자로 시작.
 
 * 구성 요소(JSP/HTML)
 
-   * 모두 소문자군
-   * 하이픈을 사용한 단어 분리.
+  * 모두 소문자군
+  * 하이픈을 사용한 단어 분리.

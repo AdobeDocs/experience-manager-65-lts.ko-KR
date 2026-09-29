@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 7aa0e3b3-69de-4991-a1c8-06c9de5404c4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 1%
-
+source-wordcount: '1123'
+ht-degree: 2%
 ---
-
 # WebDAV 액세스{#webdav-access}
 
 KDE에서 WebDAV를 통해 AEM에 연결하려면:
@@ -103,11 +112,11 @@ http://localhost:4502/crx/repository/staging
 
 * [Windows](/help/sites-administering/webdav-access.md#windows)
 * [macOS](/help/sites-administering/webdav-access.md#macos)
-* [Linux](/help/sites-administering/webdav-access.md#linux)
+* [Linux®](/help/sites-administering/webdav-access.md#linux)
 
 ### Windows {#windows}
 
-Microsoft® Windows 7(이상) 시스템을 SSL로 보호되지 않는 AEM 인스턴스에 성공적으로 연결하려면 비보안 네트워크를 통해 기본 인증을 설정하는 옵션을 Windows에서 명시적으로 활성화해야 합니다. 이 기능을 사용하려면 WebClient의 Windows 레지스트리를 변경해야 합니다.
+® Windows 7(이상) 시스템을 SSL로 보호되지 않는 AEM 인스턴스에 성공적으로 연결하려면 비보안 네트워크를 통해 기본 인증을 설정하는 옵션을 Windows에서 명시적으로 활성화해야 합니다. 이 기능을 사용하려면 WebClient의 Windows 레지스트리를 변경해야 합니다.
 
 레지스트리가 업데이트되면 AEM 인스턴스를 드라이브로 매핑할 수 있습니다.
 

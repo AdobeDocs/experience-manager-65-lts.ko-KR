@@ -6,13 +6,27 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 7%
-
 ---
-
 # 표현물로 XMP 원본에 쓰기 {#xmp-writeback-to-renditions}
 
 | 버전 | 문서 링크 |
@@ -61,7 +75,7 @@ XMP 원본에 쓰기 기능이 메타데이터를 렌디션 썸네일 140.100.pn
 1. 변경 사항을 저장합니다.
 1. 새 특성이 있는 [!DNL Dynamic Media] 이미지의 피라미드 TIFF 렌디션을 다시 생성하려면 [!UICONTROL DAM 메타데이터 원본에 쓰기] 워크플로우에 **[!UICONTROL Dynamic Media 프로세스 이미지 Assets]** 단계를 추가하십시오.
 
-   PTIFF renditions are only created and stored locally in a Dynamic Media Hybrid implementation.
+   PTIFF 표현물은 Dynamic Media Hybrid 구현에서만 로컬로 생성되고 저장됩니다.
 
 1. 워크플로우를 저장합니다.
 

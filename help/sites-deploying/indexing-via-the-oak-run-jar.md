@@ -8,13 +8,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: a6344463-7796-4ee3-8b2e-b3bfd2aec99a
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '985'
 ht-degree: 0%
-
 ---
-
 # Oak 실행 Jar를 통한 인덱싱 {#indexing-via-the-oak-run-jar}
 
 Oak-run은 JMX 수준에서 작업할 필요 없이 명령줄에서 모든 인덱싱 사용 사례를 지원합니다. oak-run 접근 방식의 장점은 다음과 같습니다.
@@ -92,11 +101,11 @@ MongoMK(및 RDBMK) AEM 설치를 리인덱싱하는 권장 방법입니다. 다�
 
 * **콜드 대기 고려 사항(TarMK)**
 
-   * 콜드 대기에 대한 특별한 고려 사항은 없으며 콜드 대기 인스턴스 동기화는 평소대로 변경됩니다.
+  * 콜드 대기에 대한 특별한 고려 사항은 없으며 콜드 대기 인스턴스 동기화는 평소대로 변경됩니다.
 
 * **AEM 게시 팜(AE 게시 팜은 항상 TarMK여야 함)**
 
-   * 게시 팜의 경우 모든 OR에 대해 수행해야 합니다. 단일 게시에서 단계를 실행해야 합니다. 그런 다음 다른 사용자에 대한 설정을 복제합니다(AEM 인스턴스를 복제할 때 일반적인 모든 절차를 따릅니다. sling.id - 여기에서 링크해야 함).
+  * 게시 팜의 경우 모든 OR에 대해 수행해야 합니다. 단일 게시에서 단계를 실행해야 합니다. 그런 다음 다른 사용자에 대한 설정을 복제합니다(AEM 인스턴스를 복제할 때 일반적인 모든 절차를 따릅니다. sling.id - 여기에서 링크해야 함).
 
 ### TarMK에 대한 온라인 리인덱싱 {#onlinere-indexingfortarmk}
 

@@ -9,13 +9,27 @@ feature: Content Fragments
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: cad7253d-95fb-47eb-b1c9-2d22a9e34481
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 5%
-
 ---
-
 # 콘텐츠 조각에 대한 번역 프로젝트 만들기 {#creating-translation-projects-for-content-fragments}
 
 에셋 외에도 Adobe Experience Manager(AEM) Assets은 [콘텐츠 조각](/help/assets/content-fragments/content-fragments.md)(변형 포함)에 대한 언어 복사 워크플로우를 지원합니다. 콘텐츠 조각에서 언어 복사 워크플로우를 실행하는 데 추가적인 최적화가 필요하지 않습니다. 각 워크플로우에서는 번역을 위해 전체 콘텐츠 조각이 전송됩니다.

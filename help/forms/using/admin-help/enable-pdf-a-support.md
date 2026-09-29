@@ -9,19 +9,31 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 6eb93270-bea0-4409-8e80-4d040be41eab
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 100%
-
 ---
-
 # PDF/A 지원 활성화 {#enable-pdf-a-support}
 
 >[!NOTE]
 > 
-> 사용자에게 관리자 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인하십시오.
+> 사용자에게 관리 콘솔에 액세스할 수 있는 관리자 권한이 있는지 확인하십시오.
 
 PDF Generator는 Microsoft Excel, Microsoft PowerPoint, Microsoft Word 파일에서 PDF/A 호환 파일을 만드는 기능을 지원합니다.
 

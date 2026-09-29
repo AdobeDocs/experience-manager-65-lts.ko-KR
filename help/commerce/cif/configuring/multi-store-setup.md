@@ -9,13 +9,21 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 3a5d10d2-4ef8-4f85-942e-47ece6538acb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 2%
-
 ---
-
 # Commerce 다중 스토어 설정 {#multi-store}
 
 AEM CIF 핵심 구성 요소는 여러 AEM 사이트 구조에서 사용할 수 있으며 기본 GraphQL 클라이언트 구현은 다양한 Adobe Commerce 스토어/스토어 보기에 연결할 수 있습니다. 이를 통해 프로젝트는 복잡한 다중 스토어/다중 사이트 설정을 구현할 수 있습니다.

@@ -4,13 +4,19 @@ description: 유니버설 편집기의 유연성과 AEM 6.5 LTS를 사용하여 
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: 49922325d3cc993d551683fac1effe9fc9590880
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 46%
-
 ---
-
 # 유니버설 편집기 정보 {#universal-editor}
 
 유니버설 편집기의 유연성과 AEM 6.5 LTS를 사용하여 Headless 경험을 제공하는 데 어떻게 도움이 될 수 있는지에 대해 알아봅니다.
@@ -39,9 +45,9 @@ ht-degree: 46%
 다음은 범용 편집기를 지원합니다.
 
 * AEM 6.5 LTS GA
-   * 온-프레미스 및 Adobe Managed Services(AMS)* 호스팅이 모두 지원됩니다.
+  * 온-프레미스 및 Adobe Managed Services(AMS)* 호스팅이 모두 지원됩니다.
 * [AEM 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
-   * 온-프레미스 및 AMS* 호스팅이 모두 지원됩니다.
+  * 온-프레미스 및 AMS* 호스팅이 모두 지원됩니다.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)&#x200B;(릴리스 `2023.8.13099` 이상)
 
 이 문서는 범용 편집기의 AEM 6.5 LTS 지원에 중점을 둡니다. AEM 6.5 LTS와 함께 범용 편집기를 사용하려면 다음이 필요합니다.
@@ -129,11 +135,11 @@ ht-degree: 46%
 매핑 예:
 
 * AEM 작성자에서 `/content/foo` 아래의 모든 페이지를 엽니다.
-   * `/content/foo:${author}${path}.html?login-token=${token}`
-   * `https://localhost:4502/content/foo/x.html?login-token=<token>`을(를) 여는 중 결과
+  * `/content/foo:${author}${path}.html?login-token=${token}`
+  * `https://localhost:4502/content/foo/x.html?login-token=<token>`을(를) 여는 중 결과
 * 원격 NextJS 서버에서 `/content/bar` 아래의 모든 페이지를 열고 모든 변수를 정보로 제공합니다.
-   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`을(를) 여는 중 결과
+  * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+  * `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`을(를) 여는 중 결과
 
 ### 범용 편집기 서비스 설정 {#set-up-ue}
 

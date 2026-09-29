@@ -1,6 +1,6 @@
 ---
 title: UI 문자열 국제화
-description: Java&trade; 및 JavaScript API를 사용하면 문자열을 국제화할 수 있습니다
+description: Java&trade 및 JavaScript API를 사용하면 문자열을 국제화할 수 있습니다
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: a18b1bc9-72a3-4836-a755-db586e56cf89
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 0%
-
 ---
-
 # UI 문자열 국제화 {#internationalizing-ui-strings}
 
 Java™ 및 JavaScript API를 사용하면 다음 유형의 리소스에서 문자열을 국제화할 수 있습니다.
@@ -169,7 +178,7 @@ Java™ API의 [번역 힌트](#using-translation-hints)와(과) 유사하게, �
 
 `${prop}_commentI18n`
 
-예를 들어 `cq:page` 노드에는 현지화되는 jcr:title 속성이 있습니다. 힌트는 jcr:title_commentI18n이라는 속성의 값으로 제공됩니다.
+예를 들어 `cq:page` 노드에는 현지화되는 jcr:title 속성이 있습니다. 힌트는 jcr:title_commentI18n(이)라는 속성의 값으로 제공됩니다.
 
 ### 다국어화 범위 테스트 {#testing-internationalization-coverage}
 

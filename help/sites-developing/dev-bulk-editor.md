@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3ce50030-86c7-4291-98fa-0cc9cb63f45c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1840'
 ht-degree: 2%
-
 ---
-
 # 대량 편집기 개발{#developing-the-bulk-editor}
 
 이 섹션에서는 벌크 편집기 도구를 개발하는 방법과 벌크 편집기를 기반으로 하는 제품 목록 구성 요소를 확장하는 방법을 설명합니다.
@@ -433,7 +442,7 @@ hrp=true로 필드를 숨기므로 벌크 편집기는 **루트 경로** 필드 
   </tr>
   <tr>
    <td>colsMetadata</td>
-   <td>열 메타데이터 구성 가능한 속성은 (열의 모든 셀에 적용됨): <br />
+   <td>열 메타데이터 구성 가능한 속성은 열의 모든 셀에 적용됩니다. <br />
     <ul>
      <li>cellStyle: html 스타일 </li>
      <li>cellCls: css 클래스 </li>

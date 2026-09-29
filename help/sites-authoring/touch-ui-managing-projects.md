@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 53400e3d-542f-4abc-9909-45eb11b0cfcc
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 18%
-
+source-wordcount: '970'
+ht-degree: 20%
 ---
-
 # 프로젝트 관리 {#managing-projects}
 
 **프로젝트** 콘솔에서 프로젝트에 액세스하고 관리합니다.
@@ -37,7 +50,7 @@ ht-degree: 18%
 다음 단계에 따라 프로젝트를 만듭니다.
 
 1. **프로젝트** 콘솔에서 **만들기**&#x200B;를 클릭하여 **프로젝트 만들기** 마법사를 엽니다.
-1. 템플릿을 선택하고 **다음**&#x200B;을(를) 클릭합니다. 표준 프로젝트 템플릿에 대한 자세한 내용은 [여기](/help/sites-authoring/projects.md#project-templates)를 참조하세요.
+1. 템플릿을 선택하고 **다음**&#x200B;을 클릭합니다. 표준 프로젝트 템플릿에 대한 자세한 내용은 [여기](/help/sites-authoring/projects.md#project-templates)를 참조하세요.
 
    ![프로젝트 만들기 마법사](assets/create-project-wizard.png)
 
@@ -107,7 +120,7 @@ Assets이 레일에 표시됩니다. 완료되면 레일 선택기를 사용하�
 
 ### 비활성 프로젝트 보기 {#viewing-active-inactive-projects}
 
-[프로젝트](#making-projects-inactive-or-active) 콘솔에서 활성 및 **비활성 프로젝트** 사이를 전환하려면 도구 모음의 **활성 프로젝트 전환** 아이콘을 클릭하십시오.
+**프로젝트** 콘솔에서 활성 및 [비활성 프로젝트](#making-projects-inactive-or-active) 사이를 전환하려면 도구 모음의 **활성 프로젝트 전환** 아이콘을 클릭하십시오.
 
 ![활성 프로젝트 전환 아이콘](assets/projects-toggle-active.png)
 
@@ -133,7 +146,7 @@ Assets이 레일에 표시됩니다. 완료되면 레일 선택기를 사용하�
 
 ### 프로젝트 비활성화 {#making-projects-inactive-or-active}
 
-완료된 프로젝트는 비활성 상태로 표시할 수 있지만 프로젝트에 대한 정보는 계속 유지해야 합니다. [비활성 프로젝트는 이제 &#x200B;](#viewing-active-inactive-projects)프로젝트&#x200B;**콘솔에 기본적으로 표시**&#x200B;됩니다.
+완료된 프로젝트는 비활성 상태로 표시할 수 있지만 프로젝트에 대한 정보는 계속 유지해야 합니다. [비활성 프로젝트는 이제 **프로젝트** 콘솔에 기본적으로 표시](#viewing-active-inactive-projects)됩니다.
 
 프로젝트를 비활성화하려면 다음 단계를 따르십시오.
 

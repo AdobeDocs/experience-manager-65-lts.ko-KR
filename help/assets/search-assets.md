@@ -1,19 +1,33 @@
 ---
-title: ' [!DNL Adobe Experience Manager]에서 디지털 자산 및 이미지 검색'
-description: 필터 패널을 사용하여 [!DNL Adobe Experience Manager] 에서 필요한 에셋을 찾는 방법과 검색에 표시되는 에셋을 사용하는 방법을 알아봅니다.
+title: '[!DNL Adobe Experience Manager]에서 디지털 자산 및 이미지 검색'
+description: 필터 패널을 사용하여 [!DNL Adobe Experience Manager]에서 필요한 에셋을 찾는 방법과 검색에 표시되는 에셋을 사용하는 방법을 알아봅니다.
 mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '5811'
+source-wordcount: '5812'
 ht-degree: 6%
-
 ---
-
 # [!DNL Adobe Experience Manager]에서 디지털 자산 검색 {#search-assets-in-aem}
 
 | 버전 | 문서 링크 |
@@ -225,7 +239,7 @@ LOB(Line of Business) 사용자 및 마케터는 Brand Portal을 사용하여 �
 
 ### [!DNL Dynamic Media]개 자산 검색 {#dynamic-media}
 
-**[!UICONTROL 필터]** 패널에서 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 세트]**&#x200B;를 선택하면 Dynamic Media 이미지만 필터링할 수 있습니다. 이 필터는 이미지 세트, 슬라이드, Mixed Media 세트, Spin 세트 등의 에셋만 표시합니다. While authoring web pages, the authors can search for sets from within the Content Finder. A filter for sets is available in a pop-up menu.
+**[!UICONTROL 필터]** 패널에서 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 세트]**&#x200B;를 선택하면 Dynamic Media 이미지만 필터링할 수 있습니다. 이 필터는 이미지 세트, 슬라이드, Mixed Media 세트, Spin 세트 등의 에셋만 표시합니다. 웹 페이지를 작성하는 동안 작성자는 Content Finder 내에서 세트를 검색할 수 있습니다. A filter for sets is available in a pop-up menu.
 
 ### 웹 페이지 작성 시 콘텐츠 파인더에서 디지털 자산 검색 {#content-finder}
 
@@ -427,7 +441,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 ### 검색 결과 정렬 {#sort}
 
-필요한 에셋을 더 빨리 검색하려면 검색 결과를 정렬하십시오. **[!UICONTROL 필터]** 패널에서 **[[!UICONTROL 파일]](#searchui)**&#x200B;을(를) 선택한 경우에만 목록 보기에서 검색 결과를 정렬할 수 있습니다. [!DNL Assets]은(는) 서버측 정렬을 사용하여 폴더 또는 검색 쿼리 결과 내의 모든 에셋을 빠르게 정렬합니다. Server-side sorting provides faster and more accurate results than client-side sorting.
+필요한 에셋을 더 빨리 검색하려면 검색 결과를 정렬하십시오. **[!UICONTROL 필터]** 패널에서 **[[!UICONTROL 파일]](#searchui)**&#x200B;을(를) 선택한 경우에만 목록 보기에서 검색 결과를 정렬할 수 있습니다. [!DNL Assets]은(는) 서버측 정렬을 사용하여 폴더 또는 검색 쿼리 결과 내의 모든 에셋을 빠르게 정렬합니다. 서버측 정렬은 클라이언트측 정렬보다 더 빠르고 정확한 결과를 제공합니다.
 
 목록 보기에서 모든 폴더의 에셋을 정렬할 수 있는 것처럼 검색 결과를 정렬할 수 있습니다. 정렬은 이름, 제목, 상태, 차원, 크기, 등급, 사용량, 생성됨, 수정됨, 게시됨, 워크플로우, 체크아웃됨 열에서 작동합니다.
 
@@ -439,7 +453,7 @@ URL에 다음 요청 매개 변수를 전달하여 특정 컨텍스트에서 자
 
 에셋의 모든 메타데이터를 보려면 에셋을 선택하고 도구 모음에서 **[!UICONTROL 속성]**&#x200B;을 클릭합니다.
 
-To check the comments on an asset or version history of an asset, click the asset to open large-sized preview. Open timeline in the left rail and select **[!UICONTROL Comments]** or **[!UICONTROL Versions]**. You can also sort the timeline activity like comments or versions in a chronological order.
+에셋의 댓글이나 에셋의 버전 기록을 확인하려면 에셋을 클릭하여 큰 미리보기를 여십시오. Open timeline in the left rail and select **[!UICONTROL Comments]** or **[!UICONTROL Versions]**. 댓글이나 버전과 같은 타임라인 활동도 시간순으로 정렬할 수 있습니다.
 
 ![검색 에셋에 대한 타임라인 항목 정렬](assets/sort_timeline_search_results.gif)
 
@@ -462,7 +476,7 @@ To check the comments on an asset or version history of an asset, click the asse
 * 자산, 폴더 및 기타 컬렉션의 정적 참조 목록입니다.
 * 검색 기준에 따라 컬렉션의 에셋을 채우는 동적 목록(스마트 컬렉션)입니다.
 
-You can create smart collections based on the search criteria. From the **[!UICONTROL Filters]** panel, select **[!UICONTROL Files]** and click **[!UICONTROL Save Smart Collection]**. See [manage collections](/help/assets/manage-collections.md).
+검색 기준에 따라 스마트 컬렉션을 만들 수 있습니다. From the **[!UICONTROL Filters]** panel, select **[!UICONTROL Files]** and click **[!UICONTROL Save Smart Collection]**. See [manage collections](/help/assets/manage-collections.md).
 
 ### 버전 만들기 {#create-version}
 

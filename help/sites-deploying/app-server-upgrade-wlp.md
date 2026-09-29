@@ -5,13 +5,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '511'
 ht-degree: 1%
-
 ---
-
 # WLP(Application Server 설치)에 대한 업그레이드 단계 {#upgrade-steps-for-application-server-installations-wlp}
 
 >[!NOTE]
@@ -26,7 +35,7 @@ ht-degree: 1%
 
 ### 마이그레이션 사전 요구 사항 {#migration-prerequisites}
 
-* **필요한 최소 Java 버전**: WLP 서버에 IBM® Sumeru JRE 17/21을 설치했는지 확인하십시오.
+* **필요한 최소 Java 버전**: WLP 서버에 ® Sumeru JRE 17/21을 설치했는지 확인하십시오.
 
 ### 업그레이드 수행 {#performing-the-upgrade}
 

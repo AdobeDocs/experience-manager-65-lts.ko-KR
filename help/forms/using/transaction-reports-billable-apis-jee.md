@@ -6,14 +6,28 @@ feature: Transaction Reports
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 2bcd650f-c729-43b1-b7a7-9463a47ae25e
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 4%
-
 ---
-
 # JEE의 AEM Forms에 대한 거래 보고 청구 가능 API {#transaction-reports-billable-apis}
 
 AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 API를 제공합니다. 일부 API는 트랜잭션으로 계산되며 다른 API는 무료로 사용할 수 있습니다. 이 문서에서는 트랜잭션으로 분류된 모든 API 목록을 제공합니다. 다음은 청구 가능한 API가 사용되는 몇 가지 일반적인 시나리오입니다.
@@ -391,7 +405,7 @@ AEM Forms on JEE는 문서를 제출, 처리 및 렌더링하기 위한 여러 A
 
 -->
 
-### Forms {#form-set}
+### 양식 {#form-set}
 
 <table>
  <tbody>

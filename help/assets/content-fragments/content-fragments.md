@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7b5a9485-8d07-434e-9871-5f97d6781eaf
-source-git-commit: 233657ff246bfdb20d7a4bda77ec24e599aac7d8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2359'
 ht-degree: 60%
-
 ---
-
 # 콘텐츠 조각을 사용한 작업 {#working-with-content-fragments}
 
 Adobe Experience Manager(AEM)를 사용하면 콘텐츠 조각을 사용하여 페이지 독립적인 콘텐츠를 디자인하고 만들고 선별하고 [게시할 수 있습니다](/help/sites-authoring/content-fragments.md). 이를 통해 Headless 게재에 이상적인, 여러 위치/여러 채널에서 사용할 준비가 된 콘텐츠를 준비할 수 있습니다.
@@ -96,11 +108,11 @@ AEM Content Services는 웹 페이지에 초점을 두지 않고 AEM에서 콘�
 
 모든 클라이언트가 사용할 수 있는 표준화된 방법을 사용하여 기존 AEM 웹 페이지가 아닌 채널에 콘텐츠를 게재할 수 있습니다. 이러한 채널에는 다음과 같은 것들이 포함될 수 있습니다.
 
-* SPA (Single Page Applications)
+* 단일 페이지 애플리케이션
 * 기본 모바일 애플리케이션
 * AEM 외부에 있는 기타 채널 및 터치포인트
 
-게재는 JSON 내보내기를 사용하여 JSON 형식으로 이루어집니다.
+게재는 JSON Exporter를 사용하여 JSON 형식으로 이루어집니다.
 
 AEM 콘텐츠 조각을 사용하여 구조화된 콘텐츠를 설명하고 관리할 수 있습니다. 구조화된 컨텐츠는 텍스트, 숫자 데이터, 부울, 날짜 및 시간 등을 포함하여 다양한 컨텐츠 유형을 포함할 수 있는 모델에서 정의됩니다.
 

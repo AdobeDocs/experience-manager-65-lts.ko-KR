@@ -9,13 +9,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 712590c6-2348-4c0d-93b9-686e6478ca03
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '2007'
 ht-degree: 2%
-
 ---
-
 # 양식 메타데이터 관리{#manage-form-metadata}
 
 ## 적용 대상 {#applies-to}
@@ -81,7 +95,7 @@ AEM Forms에서 지원되는 에셋 유형은 다음과 같습니다.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>생성됨</td> 
+   <td>생성일</td> 
    <td>모두</td> 
    <td>에셋 생성 시간을 지정하는 읽기 전용 값입니다.</td> 
   </tr> 
@@ -296,11 +310,11 @@ AEM Forms은 이 도구에서 지원되는 양식 유형의 메타데이터 스�
 1. 방금 드래그한 구성 요소를 클릭합니다. 오른쪽 패널에 열리는 설정 탭에서 다음 필드에 대한 정보를 입력합니다.
 
    1. 스키마에 배치된 필드 위에 표시 이름으로 사용되는 필드 레이블 지정(예: 부서)
-   1. 속성에 매핑 필드에서 미리 채워진 값 **을(를) 볼 수 있습니다./jcr:content/metadata/default&#39;**. crx 리포지토리에 속성을 저장하는 데 사용되는 원하는 속성 이름으로 &#39;**default**&#39;을(를) 변경합니다(예: &#39;)./jcr:content/metadata/department&#39;)
+   1. 속성에 매핑 필드 아래에서 미리 채워진 값 **&#39;./jcr:content/metadata/default&#39;**&#x200B;을(를) 볼 수 있습니다. crx 리포지토리에 속성을 저장하는 데 사용되는 원하는 속성 이름으로 &#39;**default**&#39;을(를) 변경합니다(예: &#39;./jcr:content/metadata/department&#39;).
 
       >[!NOTE]
       >
-      >접두사 &#39; 을 변경하지 마십시오./jcr:content/metadata/&#39; 속성을 저장하는 경로를 정의합니다.
+      >접두사 &#39;./jcr:content/metadata/&#39;는 속성이 저장된 경로를 정의하므로 변경하지 마십시오.
       >
       >또한 저장소의 동일한 위치에 두 개 이상의 속성에 대한 값을 쓰지 않도록 하려면 속성 이름이 고유해야 합니다. 따라서 &#39;default&#39; 값을 변경하는 것이 좋습니다.
 

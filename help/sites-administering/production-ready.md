@@ -9,13 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 99724bd6-41b4-4491-9958-1f5d9e1f5050
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 3%
-
+source-wordcount: '383'
+ht-degree: 7%
 ---
-
 # 프로덕션 준비 모드에서 AEM 실행{#running-aem-in-production-ready-mode}
 
 Adobe에서는 AEM 6.1을 사용하여 프로덕션 환경에서 배포할 AEM 인스턴스를 준비하는 데 필요한 단계를 자동화하는 새로운 `"nosamplecontent"` 실행 모드를 도입했습니다.
@@ -64,13 +76,13 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
    1. **Gzip:** `enabled`
    1. **시간:** `disabled`
 
-1. **Apache Sling GET 서블릿**&#x200B;은(는) 기본적으로 다음과 같이 보안 구성을 지원하도록 설정됩니다.
+1. **Apache Sling GET Servlet**&#x200B;은 다음과 같이 기본적으로 보안 구성을 지원하도록 설정되어 있습니다.
 
-| **구성** | **작성자** | **게시** |
+| **구성** | **작성** | **게시** |
 |---|---|---|
 | TXT 렌디션 | 비활성화됨 | 비활성화됨 |
 | HTML 렌디션 | 비활성화됨 | 비활성화됨 |
 | JSON 렌디션 | 활성화됨 | 활성화됨 |
 | XML 렌디션 | 비활성화됨 | 비활성화됨 |
-| json.maximumresults | 1000년 | 100 |
+| json.maximumresults | 1000 | 100 |
 | 자동 색인 | 비활성화됨 | 비활성화됨 |

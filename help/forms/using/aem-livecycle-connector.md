@@ -1,5 +1,5 @@
 ---
-title: Adobe LiveCycle과 AEM Forms 연결
+title: AEM Forms를 Adobe LiveCycle에 연결
 description: Adobe Experience Manager(AEM) LiveCycle connector를 사용하면 AEM 앱 및 워크플로 내에서 LiveCycle ES4 Acrobat 서비스를 시작할 수 있습니다.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,28 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: f6530bd3-16cd-4d6b-b92b-6c96f01f1939
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 0%
-
+source-wordcount: '1033'
+ht-degree: 1%
 ---
-
-# Adobe LiveCycle과 AEM Forms 연결 {#connecting-aem-forms-with-adobe-livecycle}
+# AEM Forms를 Adobe LiveCycle에 연결 {#connecting-aem-forms-with-adobe-livecycle}
 
 Adobe Experience Manager(AEM) LiveCycle connector를 사용하면 AEM 웹 앱 및 워크플로 내에서 Adobe LiveCycle ES4 Acrobat Services를 원활하게 호출할 수 있습니다. LiveCycle은 클라이언트 애플리케이션이 Java™ API를 사용하여 LiveCycle 서비스를 시작할 수 있도록 해주는 풍부한 클라이언트 SDK을 제공합니다. AEM LiveCycle Connector는 OSGi 환경 내에서 이러한 API를 사용하는 것을 간소화합니다.
 
@@ -44,7 +58,7 @@ AEM LiveCycle Connector는 [AEM Forms 추가 기능 패키지](/help/forms/using
 
 ## 문서 서비스 시작 {#starting-document-services}
 
-클라이언트 애플리케이션은 Java™ API, 웹 서비스, 원격 및 REST를 사용하여 프로그래밍 방식으로 LiveCycle 서비스를 시작할 수 있습니다. Java™ 클라이언트의 경우 애플리케이션에서 LiveCycle SDK을 사용할 수 있습니다. LiveCycle SDK은 이러한 서비스를 원격으로 시작하기 위한 Java™ API를 제공합니다. 예를 들어 Microsoft® Word 문서를 PDF으로 변환하려면 클라이언트가 GeneratePDFService를 시작합니다. 호출 플로우는 다음 단계로 구성됩니다.
+클라이언트 애플리케이션은 Java™ API, 웹 서비스, 원격 및 REST를 사용하여 프로그래밍 방식으로 LiveCycle 서비스를 시작할 수 있습니다. Java™ 클라이언트의 경우 애플리케이션에서 LiveCycle SDK을 사용할 수 있습니다. LiveCycle SDK은 이러한 서비스를 원격으로 시작하기 위한 Java™ API를 제공합니다. 예를 들어 ® Word 문서를 PDF으로 변환하려면 클라이언트가 GeneratePDFService를 시작합니다. 호출 플로우는 다음 단계로 구성됩니다.
 
 1. ServiceClientFactory 인스턴스를 만듭니다.
 1. 각 서비스는 클라이언트 클래스를 제공합니다. 서비스를 시작하려면 서비스의 클라이언트 인스턴스를 만듭니다.
@@ -394,7 +408,7 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 
 다음 서비스를 사용할 수 있습니다.
 
-* com.adobe.livecycle.readerextensions.client.ReaderExtensionsServiceClient
+* com.adobe.livecycle.readerextendations.client.ReaderExtensionsServiceClient
 
 #### Maven 종속성 {#maven-dependencies-10}
 
@@ -468,7 +482,7 @@ InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir)
 다음 서비스를 사용할 수 있습니다.
 
 * com.adobe.repository.bindings.ResourceRepository
-* com.adobe.repository.bindings.ResourceSynchronizer
+* com.adobe.repository.binding.ResourceSynchronizer
 
 #### Maven 종속성 {#maven-dependencies-14}
 

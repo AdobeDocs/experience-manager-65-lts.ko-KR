@@ -10,13 +10,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '6780'
 ht-degree: 1%
-
 ---
-
 # AEM의 폐쇄형 사용자 그룹{#closed-user-groups-in-aem}
 
 ## 소개 {#introduction}
@@ -101,10 +113,10 @@ CUG 정책을 처리하고 평가하기 위해 설계된 권한 모델과 연관
 * 위협 경계를 식별하고 인증된 액세스와 관련된 데이터 및 역할의 민감도에 대한 명확한 그림을 얻기 위해 보호해야 하는 데이터 또는 컨텐츠에 대한 위협 모델을 만듭니다
 * 일반적인 인증 관련 측면 및 모범 사례를 염두에 두고 저장소 콘텐츠 및 CUG를 모델링합니다.
 
-   * 읽기 권한은 주어진 CUG와 설정 권한에 배치된 다른 모듈의 평가를 통해 주어진 주체가 주어진 저장소 항목을 읽을 수 있는 경우에만 부여된다는 점을 기억하십시오
-   * 다른 인증 모듈에 의해 읽기 액세스가 이미 제한된 중복 CUG를 만들지 마십시오.
-   * 중첩된 CUG가 과도하게 필요한 경우 콘텐츠 디자인에서 문제가 잠재적으로 강조될 수 있습니다
-   * CUG에 대한 과도한 요구(예: 모든 페이지)는 애플리케이션 및 콘텐츠의 특정 보안 요구 사항에 부합할 수 있는 사용자 정의 인증 모델의 필요성을 나타낼 수 있습니다.
+  * 읽기 권한은 주어진 CUG와 설정 권한에 배치된 다른 모듈의 평가를 통해 주어진 주체가 주어진 저장소 항목을 읽을 수 있는 경우에만 부여된다는 점을 기억하십시오
+  * 다른 인증 모듈에 의해 읽기 액세스가 이미 제한된 중복 CUG를 만들지 마십시오.
+  * 중첩된 CUG가 과도하게 필요한 경우 콘텐츠 디자인에서 문제가 잠재적으로 강조될 수 있습니다
+  * CUG에 대한 과도한 요구(예: 모든 페이지)는 애플리케이션 및 콘텐츠의 특정 보안 요구 사항에 부합할 수 있는 사용자 정의 인증 모델의 필요성을 나타낼 수 있습니다.
 
 * CUG 정책에 대해 지원되는 경로를 저장소의 몇 개 트리로 제한하여 최적화된 성능을 허용합니다. 예를 들어 AEM 6.3 이후 기본값으로 제공되는 /content 노드 아래의 CUG만 허용합니다.
 * CUG 정책은 작은 주체 집합에 대한 읽기 액세스 권한을 부여하도록 설계되었습니다. 많은 교장이 필요하므로 콘텐츠 또는 애플리케이션 디자인에서 문제가 부각될 수 있으므로 재고해야 합니다.
@@ -146,10 +158,10 @@ Apache Sling 인증 요구 사항은 페이지 또는 노드 계층 구조를 �
 * 리디렉션의 이유로 만료된 암호와 일반 로그인의 필요성을 구별합니다.
 * 일반 로그인의 경우 은 다음 순서로 로그인 경로를 얻을 수 있는지 테스트합니다.
 
-   * 새 `com.adobe.granite.auth.requirement.impl.RequirementService`에 의해 구현된 LoginPathProvider에서
-   * 더 이상 사용되지 않는 이전 CUG 구현에서
-   * `LoginSelectorHandler`(으)로 정의된 로그인 페이지 매핑에서
-   * 마지막으로, `LoginSelectorHandler`(으)로 정의된 대로 기본 로그인 페이지로 돌아갑니다.
+  * 새 `com.adobe.granite.auth.requirement.impl.RequirementService`에 의해 구현된 LoginPathProvider에서
+  * 더 이상 사용되지 않는 이전 CUG 구현에서
+  * `LoginSelectorHandler`(으)로 정의된 로그인 페이지 매핑에서
+  * 마지막으로, `LoginSelectorHandler`(으)로 정의된 대로 기본 로그인 페이지로 돌아갑니다.
 
 * 위에 나열된 호출을 통해 유효한 로그인 경로를 얻으면 사용자의 요청이 해당 페이지로 리디렉션됩니다.
 
@@ -158,10 +170,10 @@ Apache Sling 인증 요구 사항은 페이지 또는 노드 계층 구조를 �
 * 로그인 경로의 등록은 만료된 암호를 구별하는 것에 따라 다르며 리디렉션의 이유로 일반 로그인이 필요합니다
 * 일반 로그인의 경우 은 다음 순서로 로그인 경로를 얻을 수 있는지 테스트합니다.
 
-   * 새 `com.adobe.granite.auth.requirement.impl.RequirementService`에 의해 구현된 `LoginPathProvider`에서
-   * 더 이상 사용되지 않는 이전 CUG 구현에서
-   * `LoginSelectorHandler`(으)로 정의된 로그인 페이지 매핑에서
-   * `LoginSelectorHandler`(으)로 정의된 기본 로그인 페이지로 돌아갑니다.
+  * 새 `com.adobe.granite.auth.requirement.impl.RequirementService`에 의해 구현된 `LoginPathProvider`에서
+  * 더 이상 사용되지 않는 이전 CUG 구현에서
+  * `LoginSelectorHandler`(으)로 정의된 로그인 페이지 매핑에서
+  * `LoginSelectorHandler`(으)로 정의된 기본 로그인 페이지로 돌아갑니다.
 
 * 위에 나열된 호출을 통해 유효한 로그인 경로를 얻으면 사용자의 요청이 해당 페이지로 리디렉션됩니다.
 
@@ -179,9 +191,9 @@ Granite의 새로운 인증 요구 사항 지원에 의해 구현된 `LoginPathP
 * 중첩된 하위 트리를 요구 사항에서 다시 제외하지 않고도 인증 요구 사항이 전체 트리에 적용되도록 저장소 콘텐츠를 모델링합니다.
 * 중복 로그인 경로를 지정하지 않고 등록하려면 다음을 수행하십시오.
 
-   * 상속을 사용하고 중첩된 로그인 경로를 정의하지 마십시오.
-   * 선택적 로그인 경로를 기본값이나 상속된 값에 해당하는 값으로 설정하지 마십시오.
-   * 응용 프로그램 개발자는 `LoginSelectorHandler`과(와) 연결된 전역 로그인 경로 구성(기본 및 매핑 모두)에서 구성할 로그인 경로를 식별해야 합니다.
+  * 상속을 사용하고 중첩된 로그인 경로를 정의하지 마십시오.
+  * 선택적 로그인 경로를 기본값이나 상속된 값에 해당하는 값으로 설정하지 마십시오.
+  * 응용 프로그램 개발자는 `LoginSelectorHandler`과(와) 연결된 전역 로그인 경로 구성(기본 및 매핑 모두)에서 구성할 로그인 경로를 식별해야 합니다.
 
 ## 저장소에서의 표시 {#representation-in-the-repository}
 

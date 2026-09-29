@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 084c59b1-1e72-475e-8ec9-2cbc6e695876
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '581'
 ht-degree: 4%
-
 ---
-
 # 워크플로에 대한 액세스 관리{#managing-access-to-workflows}
 
 워크플로우를 시작(또는 비활성화)하고 참여하도록 사용자 계정에 따라 ACL을 구성합니다.
@@ -27,13 +36,13 @@ ht-degree: 4%
 * `admin` 계정으로 작업 중입니다.
 * 계정이 기본 그룹 `workflow-users`에 할당되었습니다.
 
-   * 이 그룹은 사용자가 워크플로우 작업을 수행하는 데 필요한 모든 권한을 갖습니다.
-   * 계정이 이 그룹에 있으면 시작한 워크플로우에만 액세스할 수 있습니다.
+  * 이 그룹은 사용자가 워크플로우 작업을 수행하는 데 필요한 모든 권한을 갖습니다.
+  * 계정이 이 그룹에 있으면 시작한 워크플로우에만 액세스할 수 있습니다.
 
 * 계정이 기본 그룹 `workflow-administrators`에 할당되었습니다.
 
-   * 이 그룹은 권한이 있는 사용자가 워크플로우를 모니터링하고 관리하는 데 필요한 모든 권한을 갖습니다.
-   * 계정이 이 그룹에 있으면 모든 워크플로우에 액세스할 수 있습니다.
+  * 이 그룹은 권한이 있는 사용자가 워크플로우를 모니터링하고 관리하는 데 필요한 모든 권한을 갖습니다.
+  * 계정이 이 그룹에 있으면 모든 워크플로우에 액세스할 수 있습니다.
 
 >[!NOTE]
 >
@@ -61,12 +70,12 @@ ht-degree: 4%
 
 1. **액세스 제어** 탭을 클릭합니다.
 1. **로컬 액세스 제어 정책**(**액세스 제어 목록**) 테이블에서 더하기 아이콘을 클릭하여 **항목 추가**&#x200B;를 실행하십시오.
-1. **새 항목 추가** 대화 상자에서 다음 속성을 사용하여 ACE를 추가합니다.
+1. **새 항목 추가** 대화 상자에서 다음 속성을 사용하여 ACE을 추가합니다.
 
    * **사용자**: `content-authors`
    * **유형**: `Deny`
    * **권한**: `jcr:read`
-   * **rep:glob**: 특정 워크플로우에 대한 참조
+   * **rep:glob**: 특정 워크플로에 대한 참조
 
    ![wf-108](assets/wf-108.png)
 
@@ -98,7 +107,7 @@ ht-degree: 4%
 1. **액세스 제어** 탭을 클릭합니다.
 1. **적용 가능한 액세스 제어 정책** 테이블에서 더하기 아이콘을 클릭하여 항목을 **추가**&#x200B;합니다.
 1. **로컬 액세스 제어 정책**(**액세스 제어 목록**) 테이블에서 더하기 아이콘을 클릭하여 **항목 추가**&#x200B;를 실행하십시오.
-1. **새 항목 추가** 대화 상자에서 다음 속성을 사용하여 ACE를 추가합니다.
+1. **새 항목 추가** 대화 상자에서 다음 속성을 사용하여 ACE을 추가합니다.
 
    * **사용자**: `content-authors`
    * **유형**: `Deny`
@@ -106,7 +115,7 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >[특정 워크플로 모델에 대한 ACL을 /var/workflow/models에 적용](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models)할 때와 마찬가지로 rep:glob을 포함하여 특정 워크플로에 대한 액세스를 제한할 수 있습니다.
+   >[특정 워크플로 모델에 대한 ACL을 /var/workflow/models에 적용](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models)할 때와 마찬가지로 rep:glob을(를) 포함하여 특정 워크플로에 대한 액세스를 제한할 수 있습니다.
 
    ![wf-110](assets/wf-110.png)
 

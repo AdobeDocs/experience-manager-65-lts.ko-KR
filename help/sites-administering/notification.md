@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
-source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2175'
 ht-degree: 9%
-
 ---
-
 # 이메일 알림 구성{#configuring-email-notification}
 
 AEM은 다음과 같은 사용자에게 이메일 알림을 보냅니다.
@@ -403,11 +412,11 @@ AEM은 조직의 이메일 요구 사항 보호 준수를 위해 통합 Mailer �
    * [이 프로시저의 끝](#microsoft-outlook)에 설명된 대로 인증 URL, 토큰 URL 및 새로 고침 토큰 URL을 구성하여 입력합니다.
    * 클라이언트 ID 및 클라이언트 암호: 위에서 설명한 대로 검색한 값으로 이러한 필드를 구성합니다.
    * 구성에 다음 범위를 추가합니다.
-      * openid
-      * offline_access
-      * `https://outlook.office365.com/Mail.Send`
-      * `https://outlook.office365.com/Mail.Read`
-      * `https://outlook.office365.com/SMTP.Send`
+     * openid
+     * offline_access
+     * `https://outlook.office365.com/Mail.Send`
+     * `https://outlook.office365.com/Mail.Read`
+     * `https://outlook.office365.com/SMTP.Send`
    * AuthCode 리디렉션 Url: `http://localhost:4503/services/mailer/oauth2/token`
    * 새로 고침 토큰 URL: 위의 토큰 URL과 동일한 값을 가져야 합니다.
 1. **저장**&#x200B;을 클릭합니다.

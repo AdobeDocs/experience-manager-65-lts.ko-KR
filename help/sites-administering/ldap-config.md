@@ -9,13 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: d19750c4-9477-4bcb-b225-5f089b43194d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 0%
-
+source-wordcount: '1657'
+ht-degree: 4%
 ---
-
 # AEM 6을 사용하여 LDAP 구성 {#configuring-ldap-with-aem}
 
 LDAP(**L** 8 **D**&#x200B;디렉터리 **A**&#x200B;액세스 **P** rotocol)가 중앙 디렉터리 서비스에 액세스하는 데 사용됩니다. 여러 애플리케이션에서 액세스할 수 있으므로 사용자 계정을 관리하는 데 필요한 노력을 줄일 수 있습니다. 이러한 LDAP 서버 중 하나는 Active Directory입니다. LDAP는 종종 사용자가 한 번에 로그인한 후 여러 애플리케이션에 액세스할 수 있는 단일 사인온을 달성하는 데 사용됩니다.
@@ -43,7 +55,7 @@ LDAP가 AEM에서 작동하도록 하려면 세 개의 OSGi 구성을 만들어�
 >
 >[Oak의 외부 로그인 모듈 - LDAP 및 Beyond로 인증](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=ko)을 시청하여 외부 로그인 모듈에 대해 자세히 알아보십시오.
 >
->Apache DS를 사용하여 Experience Manager을 구성하는 예를 보려면 [Apache 디렉터리 서비스를 사용하도록 Adobe Experience Manager 6.5 구성](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805?profile.language=ko)을 참조하십시오.
+>Apache DS를 사용하여 Experience Manager을 구성하는 예를 보려면 [Apache 디렉터리 서비스를 사용하도록 Adobe Experience Manager 6.5 구성](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)을 참조하십시오.
 
 ## LDAP Id 공급자 구성 {#configuring-the-ldap-identity-provider}
 
@@ -162,7 +174,7 @@ LDAP ID 공급자에 대해 다음 구성 옵션을 사용할 수 있습니다.
   </tr>
   <tr>
    <td><strong>사용자 만료 시간</strong></td>
-   <td>동기화된 사용자가 만료될 때까지의 기간.</td>
+   <td>동기화된 사용자가 만료될 때까지의 기간입니다.</td>
   </tr>
   <tr>
    <td><strong>사용자 자동 멤버십</strong></td>
@@ -182,7 +194,7 @@ LDAP ID 공급자에 대해 다음 구성 옵션을 사용할 수 있습니다.
   </tr>
   <tr>
    <td><strong>사용자 멤버십 중첩 깊이</strong></td>
-   <td>멤버십 관계가 동기화되면 그룹 중첩의 최대 깊이를 반환합니다. 값이 0이면 그룹 멤버십 조회가 효과적으로 비활성화됩니다. 값이 1이면 사용자의 직접 그룹만 추가됩니다. 이 값은 사용자 멤버십 상위 그룹을 동기화할 때만 개별 그룹을 동기화할 때 영향을 주지 않습니다.</td>
+   <td>멤버십 관계가 동기화될 때 그룹 중첩의 최대 깊이를 반환합니다. 값이 0이면 그룹 멤버십 조회가 효과적으로 비활성화됩니다. 값이 1이면 사용자의 직접 그룹만 추가됩니다. 이 값은 사용자의 멤버십 계보를 동기화할 때만 영향을 미치고 개별 그룹을 동기화할 때는 영향을 미치지 않습니다.</td>
   </tr>
   <tr>
    <td><strong>그룹 만료 시간</strong></td>

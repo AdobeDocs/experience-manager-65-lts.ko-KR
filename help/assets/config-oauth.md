@@ -1,17 +1,31 @@
 ---
 title: 스마트 컨텐츠 서비스를 사용하여 자산 태그 지정 구성
-description: 스마트 컨텐츠 서비스를 사용하여  [!DNL Adobe Experience Manager]에서 스마트 태그 지정 및 향상된 스마트 태그 지정을 구성하는 방법에 대해 알아봅니다.
+description: 스마트 콘텐츠 서비스를 사용하여 [!DNL Adobe Experience Manager]에서 스마트 태그 지정 및 향상된 스마트 태그 지정을 구성하는 방법에 대해 알아봅니다.
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 26371d15-b0e1-4892-9c52-bc9829e462ca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 7%
-
+source-wordcount: '1079'
+ht-degree: 9%
 ---
-
 # OAuth 자격 증명에 대한 스마트 태그 문제 해결 {#oauth-config}
 
 스마트 컨텐츠 서비스와 보안 방식으로 상호 작용하려면 [!DNL Adobe Experience Manager] 응용 프로그램에 대한 동의를 채택하려면 공개 권한 부여 구성이 필요합니다.
@@ -39,8 +53,8 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
 * [Developer Console](https://developer.adobe.com/console/user/servicesandapis)에서 새 OAuth 통합을 만듭니다. 아래 단계에서 `ClientID`, `ClientSecret`, `OrgID` 및 기타 속성을 사용하십시오.
 * 이 경로 `/apps/system/config in crx/de`에서 다음 파일을 찾을 수 있습니다.
-   * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
-   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+  * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+  * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### 기존 AMS 및 On prem 사용자에 대한 OAuth 구성 {#steps-config-oauth-onprem}
 
@@ -52,7 +66,6 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
-
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * 새 OAuth 구성의 클라이언트 ID로 `auth.token.provider.client.id`을(를) 업데이트합니다.
    * `auth.access.token.request`을(를) `"https://ims-na1.adobelogin.com/ims/token/v3"`(으)로 업데이트
@@ -110,7 +123,7 @@ OAuth 구성을 사용하려면 다음 사전 요구 사항이 필요합니다.
 
    **[!UICONTROL 서비스 URL]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   예, `https://smartcontent.adobe.io/apac`. `na`, `emea` 또는 `apac`을(를) Experience Manager 작성자 인스턴스가 호스팅되는 지역으로 지정할 수 있습니다.
+   예를 들어, `https://smartcontent.adobe.io/apac`과 같이 입력합니다. `na`, `emea` 또는 `apac`을(를) Experience Manager 작성자 인스턴스가 호스팅되는 지역으로 지정할 수 있습니다.
 
    >[!NOTE]
    >

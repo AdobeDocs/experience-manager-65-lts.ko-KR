@@ -9,13 +9,29 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 5455facf-ed09-4266-a43a-61eef3ecc33e
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '633'
 ht-degree: 30%
-
 ---
-
 # 다단계 양식 시퀀스 소개{#introduction-to-multi-step-form-sequence}
 
 <span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 Forms을 작성하는 이전 방법에 대해 설명합니다. </span>
@@ -47,8 +63,8 @@ AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experie
 
    * **전자 서명**: XFA 기반 적응형 양식에서 사용할 수 있는 **Sign** 구성 요소가 포함되어 있습니다. 다음 서명 서비스를 제공합니다.
 
-      * Adobe Document Cloud eSign 서비스
-      * 스크리블 서명
+     * Adobe Document Cloud eSign 서비스
+     * 스크리블 서명
 
    * **확인**: 사용자가 양식에 서명하고 시퀀스의 확인(요약) 단계에 도달하면 양식 제출 확인 메시지를 표시하는 **요약** 구성 요소가 포함됩니다. 작성자는 요약 구성 요소의 텍스트를 구성하고, 감사 메시지를 표시하고, 생성된 PDF에 대한 링크를 표시하는 등의 작업을 수행할 수 있습니다.
 

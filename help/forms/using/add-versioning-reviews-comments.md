@@ -4,13 +4,23 @@ description: AEM 적응형 양식 핵심 구성 요소를 사용하여 적응형
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 53645880-92e2-4dfd-9c5d-50c849d6e32b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '616'
 ht-degree: 0%
-
 ---
-
 # 적응형 양식에 버전 관리, 검토 및 주석 달기
 
 <span class="preview">이 기능은 기본적으로 사용할 수 없습니다. 공식 주소에서 aem-forms-ea@adobe.com에 작성하여 기능에 대한 액세스를 요청할 수 있습니다.</span>
@@ -59,8 +69,8 @@ ht-degree: 0%
 검토는 한 명 이상의 검토자가 양식에 주석을 달 수 있도록 하는 메커니즘입니다. 모든 양식 사용자는 양식에 댓글을 달거나 댓글을 통해 양식을 검토할 수 있습니다. 양식에 댓글을 달려면 **[!UICONTROL 양식]**&#x200B;을(를) 선택하고 **[!UICONTROL 댓글]**&#x200B;을 양식에 추가하십시오.
 
 >[!NOTE]
-> 위에서 설명한 대로 적응형 양식 핵심 구성 요소에서 주석을 사용하는 경우 양식 기능인 [양식에 검토자 추가](/help/forms/using/create-reviews-forms.md)가 비활성화됩니다.
-
+>
+>위에서 설명한 대로 적응형 양식 핵심 구성 요소에서 주석을 사용하는 경우 양식 기능인 [양식에 검토자 추가](/help/forms/using/create-reviews-forms.md)가 비활성화됩니다.
 
 ![양식에 주석 추가](assets/form-comments.png)
 

@@ -9,14 +9,28 @@ feature: PDF Generator,Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: fee34d9e-6606-40c1-bbbe-e7975ad90a22
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 88%
-
 ---
-
 # 보안 설정 구성{#configuring-security-settings}
 
 암호를 설정하고 인쇄 및 편집과 같은 특정 기능을 제한하여 PDF 문서에 대한 액세스를 제한할 수 있습니다. PDF 문서에 제한된 기능이 있는 경우 해당 기능과 관련된 도구와 메뉴 항목이 흐리게 표시됩니다. 문서를 암호화하거나 인증하는 등 다른 방법을 사용하여 보안 문서를 만들 수도 있습니다. 보안 설정에는 특정 PDF 변환에 사용할 암호와 구체적인 옵션이 포함되어 있습니다.
@@ -52,7 +66,7 @@ ht-degree: 88%
 
 **Acrobat 9. 0 이상:** 높은 암호화(256비트 AES)를 사용합니다. 이 옵션을 사용하면 검색용 메타데이터를 활성화하고 첨부 파일만 암호화할 수 있습니다.
 
-이전 버전의 Acrobat에서는 호환성 설정이 더 높은 PDF 문서를 열 수 없습니다. 예를 들어 Acrobat 7.0 이상 옵션을 선택하면 Acrobat 6.0 이하 옵션에서는 문서를 열 수 없습니다.
+이전 버전의 Acrobat에서는 호환성 설정이 더 높은 PDF 문서를 열 수 없습니다. 예를 들어 Acrobat 7.0 이상 옵션을 선택하면 Acrobat 6.0 이하에서는 문서를 열 수 없습니다.
 
 호환성 수준이 동일한 소스에 대한 PDF 호환성 수준과 일치하는지 확인하십시오. 예를 들어 Acrobat 5.0 이상과 호환되는 표준 PDF 설정을 사용하도록 구성된 감시 폴더가 있는 경우 보안 호환성 수준은 Acrobat 5.0보다 높아서는 안 됩니다.
 
@@ -76,7 +90,7 @@ ht-degree: 88%
 
 **문서를 열 때 암호 필요:** 암호 옵션을 활성화합니다.
 
-**문서 열기 암호:** 사용자가 지정한 암호를 입력하지 않으면 문서를 열지 못하도록 합니다. 암호는 대소문자를 구분합니다. Acrobat은 RSA Security Inc. 의 RC4 보안 방식을 사용하여 PDF 문서를 암호로 보호합니다. 인쇄 및 편집을 제한하는 경우 보안을 강화하기 위해 문서 열기 암호를 추가하는 것이 좋습니다.
+**문서 열기 암호:** 사용자가 지정한 암호를 입력하지 않으면 문서를 열지 못하도록 합니다. 암호는 대소문자를 구분합니다. Acrobat은 RSA Security Inc.의 RC4 보안 방식을 사용하여 PDF 문서를 암호로 보호합니다. 인쇄 및 편집을 제한하는 경우 보안을 강화하기 위해 문서 열기 암호를 추가하는 것이 좋습니다.
 
 **문서 열기 암호 다시 입력:** 문서 열기 암호가 올바른지 확인합니다.
 
@@ -116,7 +130,7 @@ ht-degree: 88%
 서명 필드:** 사용자가 양식을 작성하고 디지털 서명과 주석을 추가할 수 있습니다.
 
 **페이지 레이아웃, 터치 업, 양식 필드 채우기 및 서명
-기존 서명 필드:** 사용자가 페이지를 삽입, 회전 또는 삭제하고 책갈피나 썸네일 이미지를 만들고 양식을 작성하고 디지털 서명을 추가할 수 있습니다. 이 옵션을 사용하면 사용자가 양식 필드를 만들 수 없습니다. 이 옵션은 낮은 암호화 수준(Acrobat 3.0)을 선택한 경우에만 사용할 수 있습니다.
+기존 서명 필드:** 사용자가 페이지를 삽입, 회전 또는 삭제하고 책갈피나 썸네일 이미지를 만들고 양식을 작성하고 디지털 서명을 추가할 수 있습니다. 이 옵션에서는 사용자가 양식 필드를 만들 수 없습니다. 이 옵션은 낮은 암호화 수준(Acrobat 3.0)을 선택한 경우에만 사용할 수 있습니다.
 
 **페이지 추출을 제외한 모든 작업:** 사용자가 페이지 제거를 제외하고 변경 허용됨 목록에 있는 모든 방법을 사용하여 문서를 변경할 수 있습니다.
 

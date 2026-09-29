@@ -1,5 +1,5 @@
 ---
-title: 클래식 UI 태깅 콘솔
+title: 클래식 UI 태그 지정 콘솔
 description: Adobe Experience Manager Classic UI 태깅 콘솔에 대해 알아봅니다.
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 4d4c96ea-b7dd-49b9-86b5-2507e7518ba4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 2%
-
+source-wordcount: '905'
+ht-degree: 3%
 ---
-
-# 클래식 UI 태깅 콘솔{#classic-ui-tagging-console}
+# 클래식 UI 태그 지정 콘솔{#classic-ui-tagging-console}
 
 이 섹션은 클래식 UI 태그 지정 콘솔용입니다.
 
@@ -49,19 +58,19 @@ ht-degree: 2%
 1. 두 경우 모두 다음을 입력합니다.
 
    * **제목**
-(*필수*) 태그의 표시 제목입니다. 모든 문자를 입력할 수 있지만,
-다음과 같은 특수 문자는 사용하지 않는 것이 좋습니다.
+     (*필수*) 태그의 표시 제목입니다. 모든 문자를 입력할 수 있지만,
+     다음과 같은 특수 문자는 사용하지 않는 것이 좋습니다.
 
-      * `colon (:)` - 네임스페이스 구분 기호
-      * `forward slash (/)` - 하위 태그 구분 기호
+     * `colon (:)` - 네임스페이스 구분 기호
+     * `forward slash (/)` - 하위 태그 구분 기호
 
      입력한 경우 이 문자가 표시되지 않습니다.
 
    * **이름**
-(*필수*) 태그의 노드 이름입니다.
+     (*필수*) 태그의 노드 이름입니다.
 
    * **설명**
-(*선택 사항*) 태그에 대한 설명입니다.
+     (*선택 사항*) 태그에 대한 설명입니다.
 
    * **만들기** 선택
 

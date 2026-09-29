@@ -6,13 +6,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: cb5495f9-bc54-4515-ae15-55a5397500aa
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 0%
-
+source-wordcount: '2476'
+ht-degree: 1%
 ---
-
 
 # Adobe Experience Manager 내에서 외부 SPA 편집 {#editing-external-spa-within-aem}
 
@@ -30,16 +44,16 @@ ht-degree: 0%
 
 * AEM 인스턴스가 로컬에서 실행 중인지 확인합니다.
 * [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko&#available-properties)을(를) 사용하여 기본 AEM SPA 프로젝트를 만듭니다.
-   * 이는 외부 SPA를 포함하도록 업데이트되는 AEM 프로젝트의 기초가 됩니다.
-   * 이 문서의 샘플은 [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko#spa-editor)의 시작점을 사용합니다.
+  * 이는 외부 SPA를 포함하도록 업데이트되는 AEM 프로젝트의 기초가 됩니다.
+  * 이 문서의 샘플은 [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko#spa-editor)의 시작점을 사용합니다.
 * 즉시 통합하고자 하는 작동 중인 외부 React SPA가 있습니다.
 
 ## AEM 프로젝트에 SPA 업로드 {#upload-spa-to-aem-project}
 
 먼저 외부 SPA를 AEM 프로젝트에 업로드해야 합니다.
 
-1. `src` 프로젝트 폴더의 `/ui.frontend`을(를) React 응용 프로그램의 `src` 폴더로 바꾸십시오.
-1. `package.json` 파일에 있는 앱의 `/ui.frontend/package.json`에 추가 종속성을 포함하십시오.
+1. `/ui.frontend` 프로젝트 폴더의 `src`을(를) React 응용 프로그램의 `src` 폴더로 바꾸십시오.
+1. `/ui.frontend/package.json` 파일에 있는 앱의 `package.json`에 추가 종속성을 포함하십시오.
    * SPA SDK 종속성이 [권장 버전](spa-getting-started-react.md#dependencies)인지 확인하십시오.
 1. `/public` 폴더에 모든 사용자 지정을 포함합니다.
 1. `/public/index.html` 파일에 추가된 모든 인라인 스크립트나 스타일을 포함합니다.
@@ -68,13 +82,13 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 ### ModelManager 초기화 {#model-manager-initialization}
 
-앱이 렌더링되기 전에 AEM [`ModelManager`](spa-blueprint.md#pagemodelmanager)의 생성을 처리하려면 `ModelStore`을(를) 초기화해야 합니다.
+앱이 렌더링되기 전에 AEM `ModelStore`의 생성을 처리하려면 [`ModelManager`](spa-blueprint.md#pagemodelmanager)을(를) 초기화해야 합니다.
 
 이 작업은 응용 프로그램의 `src/index.js` 파일 내에서 또는 응용 프로그램의 루트가 렌더링되는 모든 위치에서 수행해야 합니다.
 
-이를 위해 `initializationAsync`에서 제공한 `ModelManager` API를 사용하십시오.
+이를 위해 `ModelManager`에서 제공한 `initializationAsync` API를 사용하십시오.
 
-다음 스크린샷은 간단한 React 애플리케이션에서 `ModelManager`의 초기화를 활성화하는 방법을 보여 줍니다. 유일한 제약 조건은 `initializationAsync` 전에 `ReactDOM.render()`을(를) 호출해야 한다는 것입니다.
+다음 스크린샷은 간단한 React 애플리케이션에서 `ModelManager`의 초기화를 활성화하는 방법을 보여 줍니다. 유일한 제약 조건은 `ReactDOM.render()` 전에 `initializationAsync`을(를) 호출해야 한다는 것입니다.
 
 ![ModelManager 초기화](assets/external-spa-initialize-modelmanager.png)
 
@@ -166,7 +180,7 @@ WKND SPA 프로젝트의 텍스트를 추가해야 하는 예제 페이지를 �
 
    * `pagePath`: `/content/wknd-spa-react/us/en/home` 예제에서 노드가 포함된 페이지
    * `itemPath`: 페이지 내의 노드 경로(예: `root/responsivegrid/text`)
-      * 이 이름은 페이지에 있는 포함 항목의 이름으로 구성됩니다.
+     * 이 이름은 페이지에 있는 포함 항목의 이름으로 구성됩니다.
 
    ![노드의 경로](assets/external-spa-path.png)
 
@@ -174,7 +188,7 @@ WKND SPA 프로젝트의 텍스트를 추가해야 하는 예제 페이지를 �
 
    ![페이지에 구성 요소 추가](assets/external-spa-add-component.png)
 
-   `AEMText` 및 `pagePath` 값이 속성으로 설정된 페이지 내에서 필요한 위치에 `itemPath` 구성 요소를 추가할 수 있습니다. `pagePath`은(는) 필수 속성입니다.
+   `pagePath` 및 `itemPath` 값이 속성으로 설정된 페이지 내에서 필요한 위치에 `AEMText` 구성 요소를 추가할 수 있습니다. `pagePath`은(는) 필수 속성입니다.
 
 #### AEM에서 텍스트 컨텐츠 편집 확인 {#verify-text-edit}
 
@@ -248,7 +262,7 @@ mvn clean install -PautoInstallSinglePackage
 
 ![aem의 text_20 노드](assets/external-spa-text20-aem.png)
 
-콘텐츠 작성자가 이 구성 요소를 업데이트하면 `text_20`의 `root/responsivegrid/text_20`에 새 `/content/wknd-spa-react/us/en/home` 노드가 만들어집니다.
+콘텐츠 작성자가 이 구성 요소를 업데이트하면 `/content/wknd-spa-react/us/en/home`의 `root/responsivegrid/text_20`에 새 `text_20` 노드가 만들어집니다.
 
 ![text20 노드](assets/external-spa-text20-node.png)
 
@@ -260,9 +274,9 @@ mvn clean install -PautoInstallSinglePackage
 * `pagePath`의 경로에 제공된 페이지 노드가 AEM 프로젝트에 있어야 합니다.
 * 만들 노드의 이름을 `itemPath`에 입력해야 합니다.
 * 구성 요소는 모든 수준에서 만들 수 있습니다.
-   * 앞의 예제에서 `itemPath='text_20'`을(를) 제공하면 새 노드가 페이지 바로 아래에 만들어집니다. 즉, `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
+  * 앞의 예제에서 `itemPath='text_20'`을(를) 제공하면 새 노드가 페이지 바로 아래에 만들어집니다. 즉, `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
 * 새 노드가 만들어지는 노드의 경로는 `itemPath`을(를) 통해 제공된 경우 유효해야 합니다.
-   * 이 예제에서는 새 노드 `root/responsivegrid`을(를) 만들려면 `text_20`이(가) 있어야 합니다.
+  * 이 예제에서는 새 노드 `text_20`을(를) 만들려면 `root/responsivegrid`이(가) 있어야 합니다.
 * 리프 구성 요소 생성만 지원됩니다. 가상 컨테이너 및 페이지는 이후 버전에서 지원됩니다.
 
 ### 가상 컨테이너 {#virtual-containers}
@@ -297,8 +311,8 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
 * 추가할 수 있는 구성 요소를 결정하는 정책은 상위 컨테이너에서 상속됩니다.
 * 만들 컨테이너의 바로 상위 항목이 AEM에 이미 있어야 합니다.
-   * `root/responsivegrid` 컨테이너가 AEM 컨테이너에 이미 있는 경우 `root/responsivegrid/newContainer` 경로를 제공하여 새 컨테이너를 만들 수 있습니다.
-   * 그러나 `root/responsivegrid/newContainer/secondNewContainer`은(는) 가능하지 않습니다.
+  * `root/responsivegrid` 컨테이너가 AEM 컨테이너에 이미 있는 경우 `root/responsivegrid/newContainer` 경로를 제공하여 새 컨테이너를 만들 수 있습니다.
+  * 그러나 `root/responsivegrid/newContainer/secondNewContainer`은(는) 가능하지 않습니다.
 * 한 번에 하나의 새로운 수준의 구성 요소만 가상으로 만들 수 있습니다.
 
 ## 추가 사용자 정의 {#additional-customizations}
@@ -307,9 +321,9 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
 ### 루트 노드 ID {#root-node-id}
 
-기본적으로 React 응용 프로그램이 요소 ID `div`의 `spa-root` 내에서 렌더링된다고 가정합니다. 필요한 경우 이를 사용자 정의할 수 있습니다.
+기본적으로 React 응용 프로그램이 요소 ID `spa-root`의 `div` 내에서 렌더링된다고 가정합니다. 필요한 경우 이를 사용자 정의할 수 있습니다.
 
-예를 들어 요소 ID `div`의 `root` 내에서 응용 프로그램이 렌더링되는 SPA가 있다고 가정해 보겠습니다. 이는 세 가지 파일에 반영되어야 합니다.
+예를 들어 요소 ID `root`의 `div` 내에서 응용 프로그램이 렌더링되는 SPA가 있다고 가정해 보겠습니다. 이는 세 가지 파일에 반영되어야 합니다.
 
 1. React 응용 프로그램의 `index.js`(또는 `ReactDOM.render()`이(가) 호출된 경우)에서
 
@@ -354,10 +368,10 @@ AEM에서 이 구성 요소가 포함된 페이지를 편집할 때 작성자가
 
    ![라우팅 도우미](assets/external-spa-router-helper.png)
 
-   * 이 작업에는 `toAEMPath`에서 제공한 `@adobe/cq-spa-page-model-manager` 도우미를 사용할 수 있습니다. AEM 인스턴스에서 애플리케이션이 열려 있을 때 AEM 관련 부분을 포함하도록 라우팅에 제공된 경로를 변환합니다. 세 가지 매개 변수를 사용할 수 있습니다.
-      * 라우팅에 필요한 경로
-      * SPA가 편집되는 AEM 인스턴스의 원본 URL
-      * 첫 번째 단계에서 결정된 대로 AEM의 프로젝트 루트
+   * 이 작업에는 `@adobe/cq-spa-page-model-manager`에서 제공한 `toAEMPath` 도우미를 사용할 수 있습니다. AEM 인스턴스에서 애플리케이션이 열려 있을 때 AEM 관련 부분을 포함하도록 라우팅에 제공된 경로를 변환합니다. 세 가지 매개 변수를 사용할 수 있습니다.
+     * 라우팅에 필요한 경로
+     * SPA가 편집되는 AEM 인스턴스의 원본 URL
+     * 첫 번째 단계에서 결정된 대로 AEM의 프로젝트 루트
 
    * 이러한 값은 보다 유연하게 사용할 수 있도록 환경 변수로 설정할 수 있습니다.
 
@@ -373,7 +387,7 @@ RemotePage 구성 요소에서는 구현이 GitHub의 [webpack-manifest-plugin](
 
 다음 참조 자료는 AEM의 컨텍스트에서 SPA를 이해하는 데 도움이 될 수 있습니다.
 
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)
+* [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ko)
 * [WKND SPA 프로젝트](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=ko)
 * [React를 사용하여 AEM에서 SPA 시작하기](spa-getting-started-react.md)
 * [SPA 참조 자료(API 참조)](spa-reference-materials.md)

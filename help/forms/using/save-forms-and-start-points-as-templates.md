@@ -9,13 +9,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 5e5ce783-8d0c-421c-b938-7020215682a0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 2%
-
 ---
-
 # 양식을 템플릿으로 저장 {#save-forms-as-templates}
 
 사용자가 양식을 채울 때 일부 필드에 대한 입력이 동일하게 유지되는 경우가 있습니다. 이러한 경우 모든 인스턴스에서 동일한 값이 필요한 필드를 채우고 양식 또는 초안을 템플릿으로 저장할 수 있습니다. 이제 템플릿의 인스턴스를 만들 때마다 지정된 필드가 템플릿에 지정된 값으로 이미 채워집니다. 양식을 작성하는 데 필요한 시간과 노력을 절약하는 데 도움이 됩니다.

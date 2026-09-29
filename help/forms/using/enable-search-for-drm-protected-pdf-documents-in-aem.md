@@ -5,13 +5,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ad86398d-0dc9-4168-b409-4d231b8d586b
-source-git-commit: 757c26274b39f5fb37a090f320493abd1af44c42
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 0%
-
+source-wordcount: '728'
+ht-degree: 8%
 ---
-
 # AEM에서 문서 보안으로 보호된 PDF 문서를 검색할 수 있도록 설정{#enable-aem-to-search-document-security-protected-pdf-documents}
 
 AEM 검색은 AEM assets를 검색 및 찾고 일반 텍스트 파일, Microsoft Office 문서 및 PDF 문서와 같이 일반적으로 사용되는 다양한 문서 형식에 대해 텍스트 검색을 수행할 수 있습니다. 또한 기본 검색을 확장하여 [AEM Document Security로 보호된 PDF 문서](../../forms/using/admin-help/document-security.md)에서 전체 텍스트 검색을 수행할 수도 있습니다. AEM에서 이러한 문서에 대해 전체 텍스트 검색을 수행할 수 있도록 하려면 다음 단계를 수행하십시오.
@@ -23,22 +36,22 @@ AEM 검색은 AEM assets를 검색 및 찾고 일반 텍스트 파일, Microsoft
 
 * OSGi에서 AEM Forms을 사용하는 경우:
 
-   * AEM Forms 서버에 [AEM Forms Document Security Indexer 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)를 설치하십시오.
+  * AEM Forms 서버에 [AEM Forms Document Security Indexer 패키지](https://helpx.adobe.com/kr/aem-forms/kb/aem-forms-releases.html)를 설치하십시오.
 
-   * JEE 서버의 AEM Forms이 실행 중이고 JEE 서버의 해당 AEM Forms에 문서 보안이 설치되어 있는지 확인합니다. 보호된 문서를 인덱싱하려면 JEE 서버의 AEM Form이 필요합니다.
+  * JEE 서버의 AEM Forms이 실행 중이고 JEE 서버의 해당 AEM Forms에 문서 보안이 설치되어 있는지 확인합니다. 보호된 문서를 인덱싱하려면 JEE 서버의 AEM Form이 필요합니다.
 
 * JEE 서버에서 AEM Forms만 사용하는 경우 인덱서 패키지가 이미 설치되어 있습니다.
 * 모든 번들이 실행 중인지 확인합니다. 모든 번들이 활성화되지 않은 경우 모든 번들이 실행되고 실행될 때까지 기다립니다.
 
-   * OSGi의 AEM Forms에 대한 번들은 https://&#39;[server]:[port]&#39;/system/console/bundles에 나열됩니다.
-   * JEE의 AEM Forms의 경우, 번들은 https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles에 나열됩니다. 예: https://localhost:8080/lc/system/console/bundles.
+  * OSGi의 AEM Forms에 대한 번들은 https://&#39;[server]:[port]&#39;/system/console/bundles에 나열됩니다.
+  * JEE의 AEM Forms의 경우, 번들은 https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles에 나열됩니다. 예: https://localhost:8080/lc/system/console/bundles.
 
-* {sun.util.1} 패키지를 0개 허용 목록에 추가합니다. ** 패키지를 허용 목록에 추가하다에 추가하려면 다음 단계를 수행하십시오.
+* {sun.util.1} 패키지를 0개 허용 목록에 추가합니다. **&#x200B;패키지를 허용 목록에 추가하다에 추가하려면 다음 단계를 수행하십시오.
 
-   1. AEM 웹 콘솔을 엽니다. URL은 https://&#39;[server]:[port]&#39;/system/console/configMgr입니다.
-   1. **Deserialization Firewall Configuration**&#x200B;을 찾아 엽니다.
+  1. AEM 웹 콘솔을 엽니다. URL은 https://&#39;[server]:[port]&#39;/system/console/configMgr입니다.
+  1. **Deserialization Firewall Configuration**&#x200B;을 찾아 엽니다.
 
-   1. 허용 목록에추가된 클래스 또는 패키지 접두사 필드에 sun.util.calendar 패키지를 추가하고 **저장**&#x200B;을 클릭합니다.
+  1. 허용 목록에추가된 클래스 또는 패키지 접두사 필드에 sun.util.calendar 패키지를 추가하고 **저장**&#x200B;을 클릭합니다.
 
 ### AEM Forms JEE와 OSGi 스택 간의 보안 연결을 설정합니다. {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 
@@ -84,4 +97,4 @@ AEM 검색은 AEM assets를 검색 및 찾고 일반 텍스트 파일, Microsoft
 
    >[!NOTE]
    >
-   > SDK을 다시 시작하려면 &#39;Ctrl + C&#39; 명령을 사용하는 것이 좋습니다. Java 프로세스 중지와 같은 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+   > SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.

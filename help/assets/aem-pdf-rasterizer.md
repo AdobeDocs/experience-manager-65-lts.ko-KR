@@ -6,13 +6,29 @@ role: Developer, Admin
 feature: Developer Tools,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: 003ca1f1-5653-4b6c-a63f-ad5196adf3f2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '731'
 ht-degree: 0%
-
 ---
-
 # PDF 래스터라이저 사용 {#using-pdf-rasterizer}
 
 컨텐츠가 많은 대용량 PDF 또는 AI 파일을 [!DNL Adobe Experience Manager Assets]에 업로드할 때 기본 라이브러리가 정확한 출력을 생성하지 않을 수 있습니다. Adobe의 PDF 래스터라이저 라이브러리는 기본 라이브러리의 출력과 비교할 때 보다 안정적이고 정확한 출력을 생성할 수 있습니다. Adobe에서는 다음 시나리오에 PDF 래스터라이저 라이브러리를 사용하는 것이 좋습니다.
