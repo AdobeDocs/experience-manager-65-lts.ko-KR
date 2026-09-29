@@ -19,7 +19,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1587'
 ht-degree: 2%
@@ -32,11 +32,11 @@ ht-degree: 2%
 * 특정 작업을 정의하고 관리하는 프록시 작업자입니다.
 예를 들어 [!DNL InDesign Server]을(를) 사용하여 파일을 처리하는 등 다양한 작업을 처리할 수 있습니다.
 
-[!DNL Adobe InDesign]&#x200B;(으)로 만든 파일을 [!DNL Experience Manager Assets]에 완전히 업로드하려면 프록시가 사용됩니다. 프록시 작업자를 사용하여 [!DNL Adobe InDesign Server]과(와) 통신합니다. [스크립트](https://helpx.adobe.com/kr/indesign/using/scripting.html)을(를) 실행하여 메타데이터를 추출하고 [!DNL Experience Manager Assets]에 대한 다양한 변환을 생성합니다. 프록시 작업자를 사용하면 클라우드 구성에서 [!DNL InDesign Server]과(와) [!DNL Experience Manager] 인스턴스 간의 양방향 통신을 사용할 수 있습니다.
+[!DNL Adobe InDesign]&#x200B;(으)로 만든 파일을 [!DNL Experience Manager Assets]에 완전히 업로드하려면 프록시가 사용됩니다. 프록시 작업자를 사용하여 [!DNL Adobe InDesign Server]과(와) 통신합니다. [스크립트](https://helpx.adobe.com/indesign/using/scripting.html)을(를) 실행하여 메타데이터를 추출하고 [!DNL Experience Manager Assets]에 대한 다양한 변환을 생성합니다. 프록시 작업자를 사용하면 클라우드 구성에서 [!DNL InDesign Server]과(와) [!DNL Experience Manager] 인스턴스 간의 양방향 통신을 사용할 수 있습니다.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign]은(는) 두 개의 개별 오퍼로 제공됩니다. 인쇄 및 디지털 배포를 위해 페이지 레이아웃을 디자인하는 데 사용되는 [Adobe InDesign](https://www.adobe.com/kr/products/indesign.html) 데스크톱 앱입니다. [Adobe InDesign Server](https://www.adobe.com/kr/products/indesignserver.html)을(를) 사용하면 [!DNL InDesign]&#x200B;(으)로 만든 내용을 기반으로 자동화된 문서를 프로그래밍 방식으로 만들 수 있습니다. 해당 [ExtendScript](https://helpx.adobe.com/kr/indesign/using/scripting.html) 엔진에 인터페이스를 제공하는 서비스로 작동합니다.스크립트는 [!DNL JavaScript]과(와) 유사한 [!DNL ExtendScript]에 작성되었습니다.
+>[!DNL Adobe InDesign]은(는) 두 개의 개별 오퍼로 제공됩니다. 인쇄 및 디지털 배포를 위해 페이지 레이아웃을 디자인하는 데 사용되는 [Adobe InDesign](https://www.adobe.com/products/indesign.html) 데스크톱 앱입니다. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html)을(를) 사용하면 [!DNL InDesign]&#x200B;(으)로 만든 내용을 기반으로 자동화된 문서를 프로그래밍 방식으로 만들 수 있습니다. 해당 [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html) 엔진에 인터페이스를 제공하는 서비스로 작동합니다.스크립트는 [!DNL JavaScript]과(와) 유사한 [!DNL ExtendScript]에 작성되었습니다.
 
 ## 추출 작동 방식 {#how-the-extraction-works}
 
@@ -215,19 +215,19 @@ To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTR
 
    [!DNL InDesign Server]을(를) 실행하는 컴퓨터가 여러 개 있는 경우 각 컴퓨터에 대해 SOAP 끝점(컴퓨터당 프로세서 수 -1)을 추가하십시오.
 
+   >[!NOTE]
+   >
+   >작업자 풀로 작업할 때 IDS 작업자 차단 목록을 활성화할 수 있습니다.
+   >
+   >이렇게 하려면 `com.day.cq.dam.ids.impl.IDSJobProcessor.name` 구성 아래에서 IDS 작업 재검색을 활성화하는 **[!UICONTROL enable.retry.name]** 확인란을 활성화하십시오.
+   >
+   >또한 `com.day.cq.dam.ids.impl.IDSPoolImpl.name` 구성 아래에서 작업 처리기 목록에서 ID를 금지하기 전에 작업 재시도 횟수를 결정하는 `max.errors.to.blacklist` 매개 변수에 양의 값을 설정하십시오.
+   >
+   >기본적으로 구성 가능한(`retry.interval.to.whitelist.name`) 시간(분)이 지나면 IDS 작업자의 유효성을 다시 검사합니다. 작업자가 온라인에서 발견되는 경우 해당 작업자는 차단 목록에서 제거됩니다.
+
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.
 -->
-
->[!NOTE]
->
->작업자 풀로 작업할 때 IDS 작업자 차단 목록을 활성화할 수 있습니다.
->
->이렇게 하려면 `com.day.cq.dam.ids.impl.IDSJobProcessor.name` 구성 아래에서 IDS 작업 재검색을 활성화하는 **[!UICONTROL enable.retry.name]** 확인란을 활성화하십시오.
->
->또한 `com.day.cq.dam.ids.impl.IDSPoolImpl.name` 구성 아래에서 작업 처리기 목록에서 ID를 금지하기 전에 작업 재시도 횟수를 결정하는 `max.errors.to.blacklist` 매개 변수에 양의 값을 설정하십시오.
->
->기본적으로 구성 가능한(`retry.interval.to.whitelist.name`) 시간(분)이 지나면 IDS 작업자의 유효성을 다시 검사합니다. 작업자가 온라인에서 발견되는 경우 해당 작업자는 차단 목록에서 제거됩니다.
 
 ## [!DNL InDesign Server] 10.0 이상에 대한 지원 사용 {#enabling-support-for-indesign-server-or-later}
 
@@ -251,4 +251,4 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!MORELIKETHIS]
 >
->* [Adobe InDesign Server 정보](https://www.adobe.com/kr/products/indesignserver/faq.html)
+>* [Adobe InDesign Server 정보](https://www.adobe.com/products/indesignserver/faq.html)

@@ -25,7 +25,7 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 2%
@@ -162,30 +162,30 @@ pom.xml
 
    다음 코드 조각은 [통합 비교 형식](https://en.wikipedia.org/wiki/Diff#Unified_format)의 차이점을 보여 줍니다
 
-```
-@@ -19,8 +19,11 @@
-  */
- package com.adobe.aem.docs.search;
+   ```
+   @@ -19,8 +19,11 @@
+     */
+   package com.adobe.aem.docs.search;
+   
+   +import org.apache.felix.scr.annotations.Component;
+   +
+   import com.day.cq.search.eval.AbstractPredicateEvaluator;
+   
+   +@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/repli")
+   public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
+   
+   }
+   ```
 
-+import org.apache.felix.scr.annotations.Component;
-+
- import com.day.cq.search.eval.AbstractPredicateEvaluator;
+   [aem-search-custom-predicate-evaluator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator) - [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://raw.githubusercontent.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/ec70fac35fbd0d132e00c6066a204804e9cbe70f/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
 
-+@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/repli")
- public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
+   >[!NOTE]
+   >
+   >`factory`은(는) `com.day.cq.search.eval.PredicateEvaluator/`(으)로 시작하고 사용자 지정 `PredicateEvaluator` 이름으로 끝나는 고유한 문자열이어야 합니다.
 
- }
-```
-
-[aem-search-custom-predicate-evaluator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator) - [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://raw.githubusercontent.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/ec70fac35fbd0d132e00c6066a204804e9cbe70f/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
-
->[!NOTE]
->
->`factory`은(는) `com.day.cq.search.eval.PredicateEvaluator/`(으)로 시작하고 사용자 지정 `PredicateEvaluator` 이름으로 끝나는 고유한 문자열이어야 합니다.
-
->[!NOTE]
->
->`PredicateEvaluator`의 이름은 쿼리를 작성할 때 사용되는 조건자 이름입니다.
+   >[!NOTE]
+   >
+   >`PredicateEvaluator`의 이름은 쿼리를 작성할 때 사용되는 조건자 이름입니다.
 
 1. 재정의:
 

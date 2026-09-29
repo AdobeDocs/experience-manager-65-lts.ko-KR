@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '17116'
-ht-degree: 0%
+source-wordcount: '17115'
+ht-degree: 1%
 ---
 # 문서 디지털 서명 및 인증 {#digitally-signing-and-certifying-documents}
 
@@ -611,9 +611,9 @@ nShield nShield HSM 자격 증명을 사용하여 PDF 문서에 서명하거나 
 
 이 구성 값을 cknfastrc 파일에 추가한 후에는 J2EE 애플리케이션 서버를 다시 시작하지 않고도 새 자격 증명을 사용할 수 있습니다.
 
-    >[!NOTE]
-    >
-    > &#39;Ctrl + C&#39; 명령을 사용하여 SDK을 다시 시작하는 것이 좋습니다. Java 프로세스를 중지하는 등의 대체 방법을 사용하여 AEM SDK을 다시 시작하면 AEM 개발 환경이 일치하지 않을 수 있습니다.
+>[!NOTE]
+>
+> SDK를 다시 시작하려면 &#39;Ctrl+C&#39; 명령을 사용하는 것이 좋습니다. 예를 들어 Java 프로세스를 중지하는 것과 같은 대체 방법을 사용하여 AEM SDK를 다시 시작하면 AEM 개발 환경에서 불일치가 발생할 수 있습니다.
 
 **서명을 신뢰할 수 없습니다**
 

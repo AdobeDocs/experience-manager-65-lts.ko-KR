@@ -30,7 +30,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '2168'
 ht-degree: 8%
@@ -43,49 +43,49 @@ AEM Forms 작업 영역에서 사용되는 JSON 개체는 아래에 설명되어
 
    범주는 작업 영역의 시작 프로세스 탭에 있습니다. 이러한 범주는 시작점을 분류하는 데 사용됩니다.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>속성</strong></td>
-   <td><strong>클라이언트만</strong></td>
-   <td><strong>댓글</strong></td>
-  </tr>
-  <tr>
-   <td>이름</td>
-   <td>금</td>
-   <td>카테고리 이름</td>
-  </tr>
-  <tr>
-   <td>id</td>
-   <td>금</td>
-   <td>범주 ID<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>설명<br type="_moz" /> </td>
-   <td>금</td>
-   <td>범주 설명<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>parentOid<br type="_moz" /> </td>
-   <td>금</td>
-   <td>상위 범주 <br type="_moz" />의 oid를 포함합니다. </td>
-  </tr>
-  <tr>
-   <td>startPointsList<br type="_moz" /> </td>
-   <td>화</td>
-   <td>범주에 있는 모든 시작 지점 목록을 포함합니다.</td>
-  </tr>
-  <tr>
-   <td>범주 목록</td>
-   <td>화</td>
-   <td>범주의 직접 자식 범주 목록을 포함합니다.<br type="_moz" /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>속성</strong></td>
+      <td><strong>클라이언트만</strong></td>
+      <td><strong>댓글</strong></td>
+   </tr>
+   <tr>
+      <td>이름</td>
+      <td>금</td>
+      <td>카테고리 이름</td>
+   </tr>
+   <tr>
+      <td>id</td>
+      <td>금</td>
+      <td>범주 ID<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>설명<br type="_moz" /> </td>
+      <td>금</td>
+      <td>범주 설명<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>parentOid<br type="_moz" /> </td>
+      <td>금</td>
+      <td>상위 범주 <br type="_moz" />의 oid를 포함합니다. </td>
+   </tr>
+   <tr>
+      <td>startPointsList<br type="_moz" /> </td>
+      <td>화</td>
+      <td>범주에 있는 모든 시작 지점 목록을 포함합니다.</td>
+   </tr>
+   <tr>
+      <td>범주 목록</td>
+      <td>화</td>
+      <td>범주의 직접 자식 범주 목록을 포함합니다.<br type="_moz" /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->모든 시작 지점 및 즐겨찾기는 클라이언트측에 정의된 카테고리입니다. 즐겨찾기 카테고리에는 사용자가 즐겨찾기로 표시한 모든 시작 지점이 포함되어 있습니다. 모든 시작 지점 카테고리는 모든 시작 지점을 포함합니다.
+   >[!NOTE]
+   >
+   >모든 시작 지점 및 즐겨찾기는 클라이언트측에 정의된 카테고리입니다. 즐겨찾기 카테고리에는 사용자가 즐겨찾기로 표시한 모든 시작 지점이 포함되어 있습니다. 모든 시작 지점 카테고리는 모든 시작 지점을 포함합니다.
 
 1. 시작점
 

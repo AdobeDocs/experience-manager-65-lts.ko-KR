@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 10%
@@ -39,7 +39,7 @@ ht-degree: 10%
 
 ## 튜토리얼 정보  {#about-the-tutorial}
 
-테마를 사용하여 적응형 양식에 고유한 모양과 스타일을 제공할 수 있습니다. 적응형 양식 편집기에서 제공하는 기본 테마를 적용하거나 사용자 고유의 사용자 지정 테마를 만들 수 있습니다. AEM [!DNL Forms]은(는) 사용자 지정 테마를 만들 수 있는 [테마 편집기](https://helpx.adobe.com/kr/experience-manager/6-3/forms/using/themes.html)를 제공합니다. 단일 테마는 모바일, 태블릿 또는 데스크탑에서 열린 동일한 적응형 양식에 다른 모양을 제공할 수 있습니다. 테마 편집기를 사용하려면 CSS 이하에 대한 사전 지식이 필요하지 않지만, 필요합니다.
+테마를 사용하여 적응형 양식에 고유한 모양과 스타일을 제공할 수 있습니다. 적응형 양식 편집기에서 제공하는 기본 테마를 적용하거나 사용자 고유의 사용자 지정 테마를 만들 수 있습니다. AEM [!DNL Forms]은(는) 사용자 지정 테마를 만들 수 있는 [테마 편집기](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)를 제공합니다. 단일 테마는 모바일, 태블릿 또는 데스크탑에서 열린 동일한 적응형 양식에 다른 모양을 제공할 수 있습니다. 테마 편집기를 사용하려면 CSS 이하에 대한 사전 지식이 필요하지 않지만, 필요합니다.
 
 자습서가 끝날 때까지 다음 작업을 수행할 수 있습니다.
 
@@ -460,16 +460,12 @@ ht-degree: 10%
 다양한 글꼴을 사용하여 적응형 양식을 디자인할 수 있습니다. 적응형 양식을 보는 모든 장치에는 적응형 양식을 디자인하는 데 사용되는 글꼴이 없을 수 있습니다. 웹 글꼴 서비스를 사용하여 필요한 글꼴을 대상 장치에 전달할 수 있습니다.
 
 [!DNL Adobe Fonts]은(는) Web Fonts 서비스입니다. 적응형 양식에서 서비스를 구성하고 사용할 수 있습니다. 적응형 양식에서 [!DNL Adobe Fonts]을(를) 사용하려면:
-1. [Adobe 글꼴 라이브러리](https://fonts.adobe.com/)를 탐색하고 양식의 스타일을 지정할 글꼴을 선택하십시오.
-<!--
->[!NOTE]
->
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
--->
 
->[!NOTE]
->
-> 태그나 필터를 추가하여 글꼴 목록을 구체화할 수 있습니다.
+1. [Adobe 글꼴 라이브러리](https://fonts.adobe.com/)를 탐색하고 양식의 스타일을 지정할 글꼴을 선택하십시오.
+
+   >[!NOTE]
+   >
+   > 태그나 필터를 추가하여 글꼴 목록을 구체화할 수 있습니다.
 
 1. 원하는 글꼴이 있는 경우 &lt;/> 단추를 클릭하여 웹 프로젝트에 패밀리를 추가합니다.
 
@@ -479,31 +475,40 @@ ht-degree: 10%
 
    >[!NOTE]
    >
-   > &lt;/> 버튼을 사용할 수 있는 글꼴만 웹 프로젝트에 추가할 수 있습니다.
+   >&lt;/> 버튼을 사용할 수 있는 글꼴만 웹 프로젝트에 추가할 수 있습니다.
 
-2. 웹 프로젝트의 이름을 지정합니다.
-3. 포함할 글꼴 가중치와 스타일을 선택하려면 확인란을 선택합니다.
+1. 웹 프로젝트의 이름을 지정합니다.
+1. 포함할 글꼴 가중치와 스타일을 선택하려면 확인란을 선택합니다.
 
    ![글꼴 라이브러리 추가](assets/add-a-font-window.png)
 
-4. 프로젝트를 만들려면 **클릭**&#x200B;을(를) 선택하십시오.
-5. 화면에서 포함 코드와 URL을 복사합니다.
+1. 프로젝트를 만들려면 **클릭**&#x200B;을(를) 선택하십시오.
+1. 화면에서 포함 코드와 URL을 복사합니다.
+
    ![포함 코드 및 URL](assets/font-add-url.png)
 
-6. 웹 프로젝트 창을 닫으려면 **완료**&#x200B;를 클릭하십시오.
-7. AEM 인스턴스에 로그인하고 URL `http://server:port/crx/de/index.jsp#`(으)로 이동합니다.
-8. CRXDE에 폴더 구조를 만듭니다(예: `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`).
-9. 새로 만든 `clientlibs` 폴더로 이동하여 `allowProxy` 및 `categories` 속성을 추가하십시오.
-10. `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`(으)로 이동하여 css 폴더를 만듭니다.
-11. 생성된 CSS 폴더로 이동하여 파일을 만듭니다. 예를 들어 파일을 `fonts.css`(으)로 만들고 포함 코드를 URL과 함께 붙여 넣습니다.
-    ![폴더 구조](/help/forms/using/assets/fonts-add-in-crxde.png)
-12. 변경 사항을 저장합니다.
+1. 웹 프로젝트 창을 닫으려면 **완료**&#x200B;를 클릭하십시오.
+1. AEM 인스턴스에 로그인하고 URL `http://server:port/crx/de/index.jsp#`(으)로 이동합니다.
+1. CRXDE에 폴더 구조를 만듭니다(예: `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`).
+1. 새로 만든 `clientlibs` 폴더로 이동하여 `allowProxy` 및 `categories` 속성을 추가하십시오.
+1. `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`(으)로 이동하여 css 폴더를 만듭니다.
+1. 생성된 CSS 폴더로 이동하여 파일을 만듭니다. 예를 들어 파일을 `fonts.css`(으)로 만들고 포함 코드를 URL과 함께 붙여 넣습니다.
+
+   ![폴더 구조](/help/forms/using/assets/fonts-add-in-crxde.png)
+
+1. 변경 사항을 저장합니다.
 
 >[!NOTE]
 >
 > 적응형 양식에 추가된 사용자 지정 글꼴을 사용하려면 **[!UICONTROL 클라이언트 라이브러리 카테고리]**&#x200B;의 클라이언트 라이브러리 이름이 clientlib 폴더의 카테고리 옵션에 지정된 이름과 일치하는지 확인하십시오.
 
 이제 다음 사용자 정의 글꼴 클라이언트 라이브러리를 통해 포함된 글꼴에 적응형 양식에 액세스할 수 있습니다.
+
+<!--
+>[!NOTE]
+>
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
+-->
 
 
 <!--

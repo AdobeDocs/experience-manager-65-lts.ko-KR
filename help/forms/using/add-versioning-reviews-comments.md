@@ -16,7 +16,7 @@ role_v2:
     internal-label: Developer
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
 양식의 버전을 만들려면 아래 단계를 수행하십시오.
 
 1. AEM Forms 환경에서 **[!UICONTROL 양식]**>>**[!UICONTROL Forms 및 문서]**(으)로 이동하여 **양식**&#x200B;을(를) 선택합니다.
-1. 왼쪽 패널의 선택 드롭다운에서 **[!UICONTROL 버전]**&#x200B;을 선택합니다.
+1. 왼쪽 패널의 선택 드롭다운에서 **[!UICONTROL 버전]**을 선택합니다.
    ![양식 선택](assets/select-a-form.png)
 1. 왼쪽 하단 패널에 있는 **세 점**&#x200B;을 클릭하고 **[!UICONTROL 다른 버전으로 저장]**&#x200B;을 클릭합니다.
 1. 양식 버전에 레이블을 입력하면 댓글을 통해 양식에 대한 정보를 추가할 수도 있습니다.
@@ -69,8 +69,8 @@ ht-degree: 0%
 검토는 한 명 이상의 검토자가 양식에 주석을 달 수 있도록 하는 메커니즘입니다. 모든 양식 사용자는 양식에 댓글을 달거나 댓글을 통해 양식을 검토할 수 있습니다. 양식에 댓글을 달려면 **[!UICONTROL 양식]**&#x200B;을(를) 선택하고 **[!UICONTROL 댓글]**&#x200B;을 양식에 추가하십시오.
 
 >[!NOTE]
-> 위에서 설명한 대로 적응형 양식 핵심 구성 요소에서 주석을 사용하는 경우 양식 기능인 [양식에 검토자 추가](/help/forms/using/create-reviews-forms.md)가 비활성화됩니다.
-
+>
+>위에서 설명한 대로 적응형 양식 핵심 구성 요소에서 주석을 사용하는 경우 양식 기능인 [양식에 검토자 추가](/help/forms/using/create-reviews-forms.md)가 비활성화됩니다.
 
 ![양식에 주석 추가](assets/form-comments.png)
 
@@ -81,10 +81,10 @@ ht-degree: 0%
 
 1. **[!UICONTROL 편집]** 모드에서 양식을 엽니다.
 
-1. 이미지에 표시된 대로 오른쪽 위 레일에 있는 **추가 아이콘**&#x200B;을 클릭합니다.
+1. 이미지에 표시된 대로 오른쪽 위 레일에 있는 **추가 아이콘**을 클릭합니다.
    ![주석](assets/annotation.png)
 
-1. 이제 이미지에 제공된 대로 왼쪽 위 레일에 있는 **추가 아이콘**&#x200B;을 클릭하여 주석을 추가합니다.
+1. 이제 이미지에 제공된 대로 왼쪽 위 레일에 있는 **추가 아이콘**을 클릭하여 주석을 추가합니다.
    ![주석 추가](assets/add-annotation.png)
 
 1. 이제 주석을 추가하고 여러 색상으로 스케치를 그려 구성 요소를 형성할 수 있습니다.
