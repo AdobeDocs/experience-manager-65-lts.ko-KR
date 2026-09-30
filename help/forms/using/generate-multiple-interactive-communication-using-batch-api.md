@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2268'
 ht-degree: 4%
 ---
 # 일괄 처리 API를 사용하여 여러 대화형 통신 생성 {#use-batch-api-to-generate-multiple-ic}
@@ -185,7 +185,7 @@ JSON 파일에 저장된 레코드에서 대화형 커뮤니케이션을 만들�
 
 ## REST 요청을 사용하여 일괄 처리 API 호출
 
-REST(표현 상태 전송) 요청을 통해 [일괄 처리 API](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html)를 호출할 수 있습니다. 이를 통해 다른 사용자에게 REST 엔드포인트를 제공하여 API에 액세스하고 대화형 통신을 처리, 저장 및 사용자 지정하기 위한 자체 메서드를 구성할 수 있습니다. 사용자 지정 Java™ 서블릿을 개발하여 AEM 인스턴스에 API를 배포할 수 있습니다.
+REST(표현 상태 전송) 요청을 통해 [일괄 처리 API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html)를 호출할 수 있습니다. 이를 통해 다른 사용자에게 REST 엔드포인트를 제공하여 API에 액세스하고 대화형 통신을 처리, 저장 및 사용자 지정하기 위한 자체 메서드를 구성할 수 있습니다. 사용자 지정 Java™ 서블릿을 개발하여 AEM 인스턴스에 API를 배포할 수 있습니다.
 
 Java™ 서블릿을 배포하기 전에 대화형 통신 및 해당 데이터 파일이 준비되었는지 확인하십시오. Java™ 서블릿을 만들고 배포할 수 있도록 다음 단계를 수행합니다.
 

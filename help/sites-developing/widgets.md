@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5042'
+source-wordcount: '5049'
 ht-degree: 0%
 ---
 # 위젯 사용 및 확장(클래식 UI){#using-and-extending-widgets-classic-ui}
@@ -40,7 +40,7 @@ AEM은 가장 중요한 모든 브라우저에서 작동하는 매우 세련되�
 
 이러한 위젯은 AEM 내에 포함되며, AEM 자체에서 사용할 수 있을 뿐만 아니라 AEM을 사용하여 빌드된 모든 웹 사이트에서 사용할 수 있습니다.
 
-AEM에서 사용 가능한 모든 위젯에 대한 전체 참조는 [위젯 API 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) 또는 [기존 xtype 목록](/help/sites-developing/xtypes.md)을 참조하십시오. 또한 프레임워크 소유자인 [Sencha](https://examples.sencha.com/extjs/7.6.0/) 사이트에서 ExtJS 프레임워크를 사용하는 방법을 보여 주는 많은 예제를 사용할 수 있습니다.
+AEM에서 사용 가능한 모든 위젯에 대한 전체 참조는 [위젯 API 설명서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html) 또는 [기존 xtype 목록](/help/sites-developing/xtypes.md)을 참조하십시오. 또한 프레임워크 소유자인 [Sencha](https://examples.sencha.com/extjs/7.6.0/) 사이트에서 ExtJS 프레임워크를 사용하는 방법을 보여 주는 많은 예제를 사용할 수 있습니다.
 
 이 페이지에서는 위젯 사용 및 확장 방법에 대한 통찰력을 제공합니다. 먼저 [페이지에 클라이언트측 코드를 포함](#including-the-client-sided-code-in-a-page)하는 방법을 설명합니다. 그런 다음 몇 가지 기본 사용 및 확장을 설명하기 위해 만들어진 몇 가지 샘플 구성 요소에 대해 설명합니다. 이러한 구성 요소는 **패키지 공유**&#x200B;의 **ExtJS 위젯 사용** 패키지에서 사용할 수 있습니다.
 
@@ -402,7 +402,7 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
 * 패널(노드 유형 = `cq:Widget`, xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`)이 포함된 `tabpanel` 위젯(노드 유형 = `cq:Widget`, xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`)을 표시합니다.
 * 패널에 `multifield` 위젯이 있습니다(노드 유형 = `cq:Widget`, xtype = ` [multifield](/help/sites-developing/xtypes.md#multifield)`).
 * `multifield` 위젯에 사용자 지정 xtype &#39; `ejstcustom`&#39;을(를) 기반으로 하는 fieldconfig(노드 유형 = `nt:unstructured`, xtype = `ejstcustom`, optionsProvider = `Ejst.x3.provideOptions`)가 있습니다.
-  * &#39; `fieldconfig`&#39;은(는) ` [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)` 개체의 구성 옵션입니다.
+  * &#39; `fieldconfig`&#39;은(는) ` [CQ.form.MultiField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.MultiField)` 개체의 구성 옵션입니다.
   * &#39; `optionsProvider`&#39;은(는) `ejstcustom` 위젯의 구성입니다. 다음에서 `exercises.js`에 정의된 `Ejst.x3.provideOptions` 메서드로 설정됩니다.
     `/apps/extjstraining/clientlib/js/exercises.js`
     두 개의 옵션을 반환합니다.
@@ -416,12 +416,12 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
 * 이름이 `Ejst.CustomWidget`인 JavaScript 개체입니다.
 * 다음 위치의 `CustomWidget.js` JavaScript 파일에 정의되어 있습니다.
   `/apps/extjstraining/clientlib/js/CustomWidget.js`
-* ` [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField)` 위젯을 확장합니다.
+* ` [CQ.form.CompositeField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.CompositeField)` 위젯을 확장합니다.
 * 에는 `hiddenField`(Textfield), `allowField`(ComboBox) 및 `otherField`(Textfield)의 세 필드가 있습니다.
 * `CQ.Ext.Component#initComponent`을(를) 재정의하여 세 개의 필드를 추가합니다.
-  * `allowField`은(는) &#39;select&#39; 형식의 [CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection) 개체입니다. optionsProvider는 대화 상자에 정의된 CustomWidget의 optionsProvider 구성으로 인스턴스화된 Selection 개체의 구성입니다.
-  * `otherField`은(는) [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) 개체입니다.
-* [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField)의 `setValue`, `getValue` 및 `getRawValue` 메서드를 재정의하여 다음 형식의 CustomWidget 값을 설정하고 검색합니다.
+  * `allowField`은(는) &#39;select&#39; 형식의 [CQ.form.Selection](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.Selection) 개체입니다. optionsProvider는 대화 상자에 정의된 CustomWidget의 optionsProvider 구성으로 인스턴스화된 Selection 개체의 구성입니다.
+  * `otherField`은(는) [CQ.Ext.form.TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) 개체입니다.
+* [CQ.form.CompositeField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.CompositeField)의 `setValue`, `getValue` 및 `getRawValue` 메서드를 재정의하여 다음 형식의 CustomWidget 값을 설정하고 검색합니다.
   `<allowField value>/<otherField value>, for example: 'Bla1/hello'`
 * 자신을 &#39;`ejstcustom`&#39; xtype으로 등록:
   `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
@@ -449,13 +449,13 @@ AEM과 함께 제공되는 기본 위젯은 대부분의 사용 사례를 다룹
 * 이름이 `Ejst.CustomWidget`인 JavaScript 개체입니다.
 * 다음 위치의 `CustomBrowseField.js` JavaScript 파일에 정의되어 있습니다.
   `/apps/extjstraining/clientlib/js/CustomBrowseField.js`
-* ` [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)`을(를) 확장합니다.
+* ` [CQ.Ext.form.TriggerField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)`을(를) 확장합니다.
 * `browseWindow`(이)라는 찾아보기 창을 정의합니다.
-* 화살표를 클릭할 때 찾아보기 창을 표시하도록 ` [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)#onTriggerClick`을(를) 재정의합니다.
-* [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel) 개체를 정의합니다.
+* 화살표를 클릭할 때 찾아보기 창을 표시하도록 ` [CQ.Ext.form.TriggerField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)#onTriggerClick`을(를) 재정의합니다.
+* [CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel) 개체를 정의합니다.
   * `/bin/wcm/siteadmin/tree.json`에 등록된 서블릿을 호출하여 데이터를 가져옵니다.
   * 루트는 &quot; `apps/extjstraining`&quot;입니다.
-* `window` 개체(` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`)를 정의합니다.
+* `window` 개체(` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)`)를 정의합니다.
   * 사전 정의된 패널을 기반으로 합니다.
   * 선택한 경로의 값을 설정하고 패널을 숨기는 **OK** 단추가 있습니다.
 * 창이 **경로** 필드 아래에 고정되어 있습니다.
@@ -488,8 +488,8 @@ RTE 플러그인:
 * 이름이 `Ejst.InsertTextPlugin`인 JavaScript 개체입니다.
 * 다음 위치의 `InsertTextPlugin.js` JavaScript 파일에 정의되어 있습니다.
   `/apps/extjstraining/clientlib/js/InsertTextPlugin.js`
-* ` [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)` 개체를 확장합니다.
-* 다음 메서드는 ` [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)` 개체를 정의하고 구현 플러그인에서 재정의됩니다.
+* ` [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)` 개체를 확장합니다.
+* 다음 메서드는 ` [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)` 개체를 정의하고 구현 플러그인에서 재정의됩니다.
   * `getFeatures()`은(는) 플러그인이 사용할 수 있도록 하는 모든 기능의 배열을 반환합니다.
   * `initializeUI()`이(가) 새 단추를 RTE 도구 모음에 추가합니다.
   * `notifyPluginConfig()`은(는) 단추를 가리킬 때 제목과 텍스트를 표시합니다.
@@ -519,7 +519,7 @@ RTE 플러그인:
 
 ### 트리 개요 {#tree-overview}
 
-기본 제공 ` [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)` 개체는 트리 구조 데이터의 트리 구조 UI 표현을 제공합니다. **ExtJS 위젯 사용** 패키지에 포함된 트리 개요 구성 요소는 `TreePanel` 개체를 사용하여 지정된 경로 아래에 JCR 트리를 표시하는 방법을 보여 줍니다. 창 자체는 도킹/도킹이 해제될 수 있습니다. 이 예에서 창 논리는 &lt;script>&lt;/script> 태그 사이의 구성 요소 jsp에 포함되어 있습니다.
+기본 제공 ` [CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)` 개체는 트리 구조 데이터의 트리 구조 UI 표현을 제공합니다. **ExtJS 위젯 사용** 패키지에 포함된 트리 개요 구성 요소는 `TreePanel` 개체를 사용하여 지정된 경로 아래에 JCR 트리를 표시하는 방법을 보여 줍니다. 창 자체는 도킹/도킹이 해제될 수 있습니다. 이 예에서 창 논리는 &lt;script>&lt;/script> 태그 사이의 구성 요소 jsp에 포함되어 있습니다.
 
 **트리 개요** 구성 요소를 샘플 페이지에 포함하려면 다음을 수행하십시오.
 
@@ -551,13 +551,13 @@ RTE 플러그인:
 구성 요소에 포함된 JavaScript 코드 jsp:
 
 * 페이지에서 트리 창을 검색하여 `tree` 개체를 정의합니다.
-* 트리를 표시하는 창이 없으면 `treePanel`([CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel))이 만들어집니다.
+* 트리를 표시하는 창이 없으면 `treePanel`([CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel))이 만들어집니다.
   * `treePanel`에 창을 만드는 데 사용되는 데이터가 있습니다.
   * 다음 위치에 등록된 서블릿을 호출하여 데이터를 검색합니다.
     `/bin/wcm/siteadmin/tree.json`
 * `beforeload` 수신기에서 선택한 노드가 로드되었는지 확인합니다.
 * `root` 개체는 경로 `apps/extjstraining`을(를) 트리 루트로 설정합니다.
-* `tree`( ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`)은(는) 사전 정의된 `treePanel`을(를) 기반으로 설정되며 다음과 함께 표시됩니다.
+* `tree`( ` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)`)은(는) 사전 정의된 `treePanel`을(를) 기반으로 설정되며 다음과 함께 표시됩니다.
   `tree.show();`
 * 창이 있으면 저장소에서 검색한 너비, 높이 및 도킹된 속성에 따라 표시됩니다.
 
@@ -628,17 +628,17 @@ RTE 플러그인:
 
 * 페이지에서 창 구성 요소를 검색하여 `grid` 개체를 정의합니다.
   `var grid = CQ.Ext.getCmp("<%= node.getName() %>-grid");`
-* `grid`이(가) 없으면 `getGridPanel()` 메서드를 호출하여 [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) 개체(`gridPanel`)를 정의합니다(아래 참조). 이 메서드는 `defaultgrid.js`에 정의되어 있습니다.
-* `grid`은(는) 사전 정의된 GridPanel을 기반으로 하는 ` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)` 개체이며 `grid.show();`이(가) 표시됩니다.
+* `grid`이(가) 없으면 `getGridPanel()` 메서드를 호출하여 [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) 개체(`gridPanel`)를 정의합니다(아래 참조). 이 메서드는 `defaultgrid.js`에 정의되어 있습니다.
+* `grid`은(는) 사전 정의된 GridPanel을 기반으로 하는 ` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)` 개체이며 `grid.show();`이(가) 표시됩니다.
 * `grid`이(가) 있으면 저장소에서 검색한 너비, 높이 및 도킹된 속성을 기준으로 표시됩니다.
 
-구성 요소 jsp에서 참조된 JavaScript 파일(`defaultgrid.js`)은 JSP에 포함된 스크립트에 의해 호출되는 `getGridPanel()` 메서드를 정의하고 정적 데이터를 기반으로 ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` 개체를 반환합니다. 논리는 다음과 같습니다.
+구성 요소 jsp에서 참조된 JavaScript 파일(`defaultgrid.js`)은 JSP에 포함된 스크립트에 의해 호출되는 `getGridPanel()` 메서드를 정의하고 정적 데이터를 기반으로 ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` 개체를 반환합니다. 논리는 다음과 같습니다.
 
 * `myData`은(는) 다섯 개의 열과 네 개의 행으로 이루어진 테이블 형식의 정적 데이터 배열입니다.
 * `store`은(는) `myData`을(를) 사용하는 `CQ.Ext.data.Store` 개체입니다.
 * `store`이(가) 메모리에 로드되었습니다.
   `store.load();`
-* `gridPanel`은(는) `store`을(를) 사용하는 ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` 개체입니다.
+* `gridPanel`은(는) `store`을(를) 사용하는 ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` 개체입니다.
   * 열 너비는 항상 재비례합니다.
     `forceFit: true`
   * 한 번에 하나의 행만 선택할 수 있습니다.
@@ -652,7 +652,7 @@ RTE 플러그인:
 * 서블릿을 호출하여 저장소에서 검색한 데이터를 기반으로 합니다.
 * 마지막 열의 셀을 편집할 수 있습니다. 값은 첫 번째 열에 표시된 경로에 의해 정의된 노드 아래의 `test` 속성에서 유지됩니다.
 
-앞 절에서 설명한 대로 Window 개체는 `/apps/extjstraining/components/gridoverview/defaultgrid.js`에 `defaultgrid.js` 파일에 정의된 `getGridPanel()` 메서드를 호출하여 해당 ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` 개체를 가져옵니다. **그리드 개요**&#x200B;구성 요소는 `/apps/extjstraining/components/gridoverview/referencesearch.js`의 `referencesearch.js` 파일에 정의된 `getGridPanel()` 메서드에 대해 다른 구현을 제공합니다. 구성 요소 jsp에서 참조되는 .js 파일을 전환함으로써 그리드는 저장소에서 검색된 데이터를 기반으로 합니다.
+앞 절에서 설명한 대로 Window 개체는 `/apps/extjstraining/components/gridoverview/defaultgrid.js`에 `defaultgrid.js` 파일에 정의된 `getGridPanel()` 메서드를 호출하여 해당 ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` 개체를 가져옵니다. **그리드 개요**&#x200B;구성 요소는 `/apps/extjstraining/components/gridoverview/referencesearch.js`의 `referencesearch.js` 파일에 정의된 `getGridPanel()` 메서드에 대해 다른 구현을 제공합니다. 구성 요소 jsp에서 참조되는 .js 파일을 전환함으로써 그리드는 저장소에서 검색된 데이터를 기반으로 합니다.
 
 구성 요소 jsp에서 참조되는 .js 파일 전환:
 
@@ -667,22 +667,22 @@ RTE 플러그인:
 
 ![screen_shot_2012-02-01at121429pm](assets/screen_shot_2012-02-01at121429pm.png)
 
-구성 요소 jsp(`referencesearch.js`)에서 참조된 JavaScript 코드는 구성 요소 jsp에서 호출된 `getGridPanel()` 메서드를 정의하고 저장소에서 동적으로 검색된 데이터를 기반으로 ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` 개체를 반환합니다. `referencesearch.js`의 논리는 일부 동적 데이터를 GridPanel의 기반으로 정의합니다.
+구성 요소 jsp(`referencesearch.js`)에서 참조된 JavaScript 코드는 구성 요소 jsp에서 호출된 `getGridPanel()` 메서드를 정의하고 저장소에서 동적으로 검색된 데이터를 기반으로 ` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` 개체를 반환합니다. `referencesearch.js`의 논리는 일부 동적 데이터를 GridPanel의 기반으로 정의합니다.
 
-* `reader`은(는) 세 개의 열에 대해 json 형식의 서블릿 응답을 읽는 ` [CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader)` 개체입니다.
-* `cm`은(는) 세 개의 열에 대한 ` [CQ.Ext.grid.ColumnModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)` 개체입니다.
+* `reader`은(는) 세 개의 열에 대해 json 형식의 서블릿 응답을 읽는 ` [CQ.Ext.data.JsonReader](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader)` 개체입니다.
+* `cm`은(는) 세 개의 열에 대한 ` [CQ.Ext.grid.ColumnModel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)` 개체입니다.
 &quot;Test&quot; 열 셀은 편집기로 정의된 대로 편집할 수 있습니다.
-  `editor: new [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
+  `editor: new [CQ.Ext.form.TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
 * 열을 정렬할 수 있습니다.
   `cm.defaultSortable = true;`
-* `store`은(는) ` [CQ.Ext.data.GroupingStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)` 개체입니다.
+* `store`은(는) ` [CQ.Ext.data.GroupingStore](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)` 개체입니다.
   * 쿼리를 필터링하는 데 사용되는 몇 가지 매개 변수와 함께 &quot; `/bin/querybuilder.json`&quot;에 등록된 서블릿을 호출하여 해당 데이터를 가져옵니다.
   * 미리 정의된 `reader`을(를) 기반으로 합니다.
   * 테이블이 오름차순으로 &#39;**jcr:path**&#39; 열에 따라 정렬됩니다.
-* `gridPanel`은(는) 편집할 수 있는 ` [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` 개체입니다.
+* `gridPanel`은(는) 편집할 수 있는 ` [CQ.Ext.grid.EditorGridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` 개체입니다.
   * 미리 정의된 `store` 및 열 모델 `cm`을(를) 기반으로 합니다.
   * 한 번에 하나의 행만 선택할 수 있습니다.
-    `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
+    `sm: new [CQ.Ext.grid.RowSelectionModel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
   * `afteredit` 수신자는 &quot;**Test**&quot; 열의 셀이 편집되었는지 확인합니다.
     * &quot;**jcr:path**&quot; 열에 정의된 경로에 있는 노드의 &#39;`test`&#39; 속성이 셀 값으로 저장소에 설정되어 있습니다.
     * POST가 성공하면 값이 `store` 개체에 추가되고 그렇지 않으면 거부됩니다

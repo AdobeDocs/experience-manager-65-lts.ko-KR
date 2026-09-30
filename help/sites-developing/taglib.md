@@ -22,7 +22,7 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
 source-wordcount: '2466'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Granite UI 구성 요소의 jsp 스크립트를 개발할 때 스크립트 상�
 
 ### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-`<ui:includeClientLib>` 태그에는 js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라이브러리가 포함되어 있습니다. 다른 유형의 여러 포함(예: js 및 css)의 경우, 이 태그는 jsp에서 여러 번 사용해야 합니다. 이 태그는 ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` 서비스 인터페이스의 편리한 래퍼입니다.
+`<ui:includeClientLib>` 태그에는 js, css 또는 테마 라이브러리일 수 있는 AEM html 클라이언트 라이브러리가 포함되어 있습니다. 다른 유형의 여러 포함(예: js 및 css)의 경우, 이 태그는 jsp에서 여러 번 사용해야 합니다. 이 태그는 ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` 서비스 인터페이스의 편리한 래퍼입니다.
 
 여기에는 다음과 같은 속성이 있습니다.
 

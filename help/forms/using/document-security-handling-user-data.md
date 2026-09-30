@@ -25,9 +25,9 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '993'
 ht-degree: 0%
 ---
 # 문서 보안 | 사용자 데이터 처리 {#document-security-handling-user-data}
@@ -141,7 +141,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->`EdcAuditEntity` 테이블에서 데이터를 내보내려면 [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)를 매개 변수로 사용하는 [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API를 사용하여 `principalId`, `policyId` 또는 `licenseId`을(를) 기준으로 감사 데이터를 내보냅니다.
+>`EdcAuditEntity` 테이블에서 데이터를 내보내려면 [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)를 매개 변수로 사용하는 [EventManager.exportEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API를 사용하여 `principalId`, `policyId` 또는 `licenseId`을(를) 기준으로 감사 데이터를 내보냅니다.
 
 시스템에서 사용자에 대한 전체 데이터를 가져오려면 사용자 관리 데이터베이스에서 데이터에 액세스하고 데이터를 내보내야 합니다. 자세한 내용은 [Forms 사용자 관리: 사용자 데이터 처리](/help/forms/using/user-management-handling-user-data.md)를 참조하십시오.
 
@@ -166,7 +166,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
    >[!NOTE]
    >
-   >`EdcAuditEntity` 테이블에서 데이터를 삭제하려면 [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)를 매개 변수로 사용하는 [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API를 사용하여 `principalId`, `policyId` 또는 `licenseId`을(를) 기준으로 감사 데이터를 삭제합니다.
+   >`EdcAuditEntity` 테이블에서 데이터를 삭제하려면 [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)를 매개 변수로 사용하는 [EventManager.deleteEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API를 사용하여 `principalId`, `policyId` 또는 `licenseId`을(를) 기준으로 감사 데이터를 삭제합니다.
 
 1. 활성 및 보관된 정책 XML 파일은 각각 `EdcPolicyXmlEntity` 및 `EdcPolicyArchiveEntity` 데이터베이스 테이블에 저장됩니다. 이러한 테이블에서 사용자에 대한 데이터를 삭제하려면 다음을 수행합니다.
 

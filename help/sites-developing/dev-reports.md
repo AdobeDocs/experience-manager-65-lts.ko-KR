@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5298'
+source-wordcount: '5300'
 ht-degree: 1%
 ---
 # 보고서 개발 {#developing-reports}
@@ -116,7 +116,7 @@ AEM과 함께 제공되는 표준 보고서의 경우:
 쿼리:
 
 * [`reportbase`](#report-base) 구성 요소의 일부로 정의됩니다.
-* [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html)을(를) 기반으로 합니다.
+* [CQ QueryBuilder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html)을(를) 기반으로 합니다.
 * 보고서의 기반으로 사용되는 데이터를 검색합니다. 결과 세트(테이블)의 각 행은 쿼리에서 반환된 대로 노드에 연결됩니다. 그런 다음 이 데이터 집합에서 [개별 열](#column-base-component)에 대한 특정 정보를 추출합니다.
 
 * 일반적으로 다음으로 구성됩니다.
@@ -390,7 +390,7 @@ N:charting
 
 모든 보고서에는 보고서에 대한 다양한 매개 변수를 지정할 수 있는 구성 대화 상자가 있습니다. 이 대화 상자는 보고서 페이지가 열려 있을 때 **편집** 단추를 통해 액세스할 수 있습니다.
 
-이 대화 상자는 표준 CQ [대화 상자](/help/sites-developing/components-basics.md#dialogs)이며 이와 같이 구성할 수 있습니다(자세한 내용은 [CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog) 참조).
+이 대화 상자는 표준 CQ [대화 상자](/help/sites-developing/components-basics.md#dialogs)이며 이와 같이 구성할 수 있습니다(자세한 내용은 [CQ.Dialog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Dialog) 참조).
 
 예제 대화 상자는 다음과 같습니다.
 

@@ -33,9 +33,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1110'
 ht-degree: 84%
 ---
 # AEM Assets API를 통해 콘텐츠를 업데이트하는 방법 {#update-your-content}
@@ -283,7 +283,7 @@ API 참조 설명서에 지원되는 요청의 정확한 형식을 정의합니�
 
 >[!NOTE]
 >
->자세한 내용은 API 참조를 참조하십시오. 특히, [Adobe Experience Manager Assets API - 콘텐츠 조각](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
+>자세한 내용은 API 참조를 참조하십시오. 특히, [Adobe Experience Manager Assets API - 콘텐츠 조각](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html).
 
 ### 읽기/게재 {#read-delivery}
 
@@ -353,7 +353,7 @@ AEM Headless 개발자 여정의 한 부분을 완료했으므로,
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [콘텐츠 조각 REST API](/help/assets/assets-api-content-fragments.md)
   * [API 참조](/help/assets/assets-api-content-fragments.md#api-reference)
-* [Adobe Experience Manager Assets API - 콘텐츠 조각](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - 콘텐츠 조각](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html)
 * [콘텐츠 조각을 사용하여 작업](/help/assets/content-fragments/content-fragments.md)
 * [AEM 핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)
 * [CORS/AEM 설명](https://helpx.adobe.com/kr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)

@@ -9,13 +9,11 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2358'
 ht-degree: 1%
-
 ---
-
 # 쿼리 빌더 조건자 참조{#query-builder-predicate-reference}
 
 >[!CAUTION]
@@ -229,7 +227,7 @@ group.2_group.type=dam:Asset
 
 ### hasPermission {#haspermission}
 
-현재 세션에 지정된 [JCR 권한이 있는 항목으로 결과를 제한합니다.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+현재 세션에 지정된 [JCR 권한이 있는 항목으로 결과를 제한합니다.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 필터링 전용 조건자이며 검색 색인을 사용할 수 없습니다. 패싯 추출을 지원하지 않습니다.
 
@@ -269,7 +267,7 @@ Facet 추출을 지원하고 기본 및 하위 에셋에 대해 두 개의 버�
 
 ### memberOf {#memberof}
 
-특정 [sling 리소스 컬렉션](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)에 속하는 항목을 찾습니다.
+특정 [sling 리소스 컬렉션](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)에 속하는 항목을 찾습니다.
 
 필터링 전용 조건자이며 검색 색인을 사용할 수 없습니다. 패싯 추출을 지원하지 않습니다.
 
@@ -475,18 +473,18 @@ JCR 속성 및 해당 값에 대해 일치합니다.
 
   (JSON 서블릿만 해당) 다음 표준 히트(ResultHitWriter 서비스를 통해 확장 가능)를 사용하여 히트가 JSON으로 기록되는 방법을 선택합니다.
 
-   * **단순**:
+  * **단순**:
 
-     `path`, `title`, `lastmodified`, `excerpt`과(와) 같은 최소 항목(설정된 경우).
+    `path`, `title`, `lastmodified`, `excerpt`과(와) 같은 최소 항목(설정된 경우).
 
-   * **전체**:
+  * **전체**:
 
-     결과는 각 노드에 대해 Sling JSON으로 렌더링되며, `jcr:path`에 히트 경로가 표시됩니다. 기본적으로 응답에는 노드의 직접 속성만 포함됩니다. 더 자세한 내용을 포함하려면 `p.nodedepth=N`을(를) 사용하십시오. 여기서 `0`은(는) 전체 하위 트리를 반환합니다. 각 항목(`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)에 대한 현재 세션의 JCR 권한을 포함하도록 `p.acls=true`을(를) 설정합니다.
+    결과는 각 노드에 대해 Sling JSON으로 렌더링되며, `jcr:path`에 히트 경로가 표시됩니다. 기본적으로 응답에는 노드의 직접 속성만 포함됩니다. 더 자세한 내용을 포함하려면 `p.nodedepth=N`을(를) 사용하십시오. 여기서 `0`은(는) 전체 하위 트리를 반환합니다. 각 항목(`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)에 대한 현재 세션의 JCR 권한을 포함하도록 `p.acls=true`을(를) 설정합니다.
 
 
-   * **선택적**:
+  * **선택적**:
 
-     응답에는 상대 경로의 공백으로 구분된 목록인 `p.properties`에 나열된 속성만 포함됩니다(URL에서 `+` 사용). 상대 경로의 깊이가 1보다 크면 출력에서 이 경로를 하위 개체로 중첩합니다. 특수 `jcr:path` 속성은 항상 히트 경로를 포함합니다.
+    응답에는 상대 경로의 공백으로 구분된 목록인 `p.properties`에 나열된 속성만 포함됩니다(URL에서 `+` 사용). 상대 경로의 깊이가 1보다 크면 출력에서 이 경로를 하위 개체로 중첩합니다. 특수 `jcr:path` 속성은 항상 히트 경로를 포함합니다.
 
 
 ### `savedquery` {#savedquery}

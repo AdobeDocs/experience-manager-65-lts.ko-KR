@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '6780'
+source-wordcount: '6781'
 ht-degree: 1%
 ---
 # AEM의 폐쇄형 사용자 그룹{#closed-user-groups-in-aem}
@@ -217,7 +217,7 @@ Oak 설명서는 새로운 CUG 정책이 저장소 콘텐츠에 반영되는 방
 
 ### CUG 정책 관리 {#managing-cug-policies}
 
-CUG에 대한 읽기 액세스를 제한하는 새로운 유형의 액세스 제어 정책은 JCR 액세스 제어 관리 API를 사용하여 관리되며 [JCR 2.0 사양](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)에 설명된 메커니즘을 따릅니다.
+CUG에 대한 읽기 액세스를 제한하는 새로운 유형의 액세스 제어 정책은 JCR 액세스 제어 관리 API를 사용하여 관리되며 [JCR 2.0 사양](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html)에 설명된 메커니즘을 따릅니다.
 
 #### 새 CUG 정책 설정 {#set-a-new-cug-policy}
 

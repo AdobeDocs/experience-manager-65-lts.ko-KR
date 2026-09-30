@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2529'
+source-wordcount: '2596'
 ht-degree: 1%
 ---
 # Sling 어댑터 사용{#using-sling-adapters}
@@ -41,11 +41,11 @@ Node node = resource.adaptTo(Node.class);
 
 * 구현별 개체를 가져옵니다.
 
-  예를 들어 제네릭 [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) 인터페이스의 JCR 기반 구현은 기본 JCR [`Node`](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html)에 대한 액세스를 제공합니다.
+  예를 들어 제네릭 [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) 인터페이스의 JCR 기반 구현은 기본 JCR [`Node`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html)에 대한 액세스를 제공합니다.
 
 * 내부 컨텍스트 객체를 전달해야 하는 객체의 바로 가기 작성.
 
-  예를 들어 JCR 기반 [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html)에는 요청의 [`JCR Session`](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Session.html)에 대한 참조가 있으며, 이는 [`PageManager`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html) 또는 [`UserManager`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/security/UserManager.html)과 같이 해당 요청 세션을 기반으로 작동할 수 있는 많은 개체에 필요합니다.
+  예를 들어 JCR 기반 [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html)에는 요청의 [`JCR Session`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Session.html)에 대한 참조가 있으며, 이는 [`PageManager`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html) 또는 [`UserManager`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/security/UserManager.html)과 같이 해당 요청 세션을 기반으로 작동할 수 있는 많은 개체에 필요합니다.
 
 * 서비스 바로 가기.
 
@@ -79,7 +79,7 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
 * 객체 자체, 메소드 자체를 구현하고 특정 객체에 매핑.
 * 임의의 개체를 매핑할 수 있는 [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)까지
 
-  개체는 여전히 `Adaptable` 인터페이스를 구현해야 하며 [`SlingAdaptable`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/adapter/SlingAdaptable.html)을(를) 확장해야 합니다(`adaptTo` 호출을 중앙 어댑터 관리자에 전달).
+  개체는 여전히 `Adaptable` 인터페이스를 구현해야 하며 [`SlingAdaptable`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/adapter/SlingAdaptable.html)을(를) 확장해야 합니다(`adaptTo` 호출을 중앙 어댑터 관리자에 전달).
 
   `Resource`과(와) 같은 기존 클래스의 `adaptTo` 메커니즘에 후크를 연결합니다.
 
@@ -91,20 +91,20 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
 
 ### Sling {#sling}
 
-[**리소스**](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html)은(는) 다음 항목에 적응합니다.
+[**리소스**](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html)은(는) 다음 항목에 적응합니다.
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html">노드</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html">노드</a></td>
    <td>JCR 노드 기반 리소스 또는 노드를 참조하는 JCR 속성인 경우</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Property.html">속성</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Property.html">속성</a></td>
    <td>JCR 속성 기반 리소스인 경우</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html">항목</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html">항목</a></td>
    <td>JCR 기반 리소스(노드 또는 속성)인 경우</td>
   </tr>
   <tr>
@@ -112,16 +112,16 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
    <td>JCR 노드 기반 리소스(또는 다른 리소스 지원 값 맵)인 경우 속성 맵을 반환합니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
-   <td>JCR 노드 기반 리소스 또는 기타 리소스 지원 값 맵인 경우 사용하기 편리한 속성 맵을 반환합니다. <br /> <code><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code>(null 사례 등을 처리)을(를) 사용하여 (좀 더 간단하게) 달성할 수도 있습니다.</td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
+   <td>JCR 노드 기반 리소스 또는 기타 리소스 지원 값 맵인 경우 사용하기 편리한 속성 맵을 반환합니다. <br /> <code><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code>(null 사례 등을 처리)을(를) 사용하여 (좀 더 간단하게) 달성할 수도 있습니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">상속 값 맵</a></td>
-   <td>속성을 찾을 때 리소스 계층 구조를 고려할 수 있도록 하는 <a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>의 확장입니다.</td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">상속 값 맵</a></td>
+   <td>속성을 찾을 때 리소스 계층 구조를 고려할 수 있도록 하는 <a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>의 확장입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">수정 가능한 값 맵</a></td>
-   <td>해당 노드의 속성을 수정할 수 있는 <a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>의 확장입니다.</td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">수정 가능한 값 맵</a></td>
+   <td>해당 노드의 속성을 수정할 수 있는 <a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>의 확장입니다.</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html">입력 스트림</a></td>
@@ -144,141 +144,141 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
    <td>이 리소스가 스크립트 엔진이 sling에 등록된 스크립트(예: jsp 파일)이거나 서블릿 리소스인 경우.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">문자열</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">부울</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">긴</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Double.html">이중</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">달력</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Value.html">값</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">문자열[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">부울[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">긴[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">달력[]</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Value.html">값[]</a></td>
+   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">문자열</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">부울</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">긴</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Double.html">이중</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">달력</a><br /> <a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Value.html">값</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">문자열[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">부울[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">긴[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">달력[]</a><br /> <a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Value.html">값[]</a></td>
    <td>JCR 속성 기반 리소스인 경우(값이 적절한 경우) 값을 반환합니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>JCR 노드 기반 리소스인 경우</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html">페이지</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html">페이지</a></td>
    <td>JCR 노드 기반 리소스이고 노드가 <code>cq:Page</code>(또는 <code>cq:PseudoPage</code>)인 경우.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/components/Component.html">구성 요소</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/components/Component.html">구성 요소</a></td>
    <td><code>cq:Component</code> 노드 리소스인 경우</td>
   </tr>  
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/designer/Design.html">디자인</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/designer/Design.html">디자인</a></td>
    <td>디자인 노드(<code>cq:Page</code>)인 경우</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Template.html">템플릿</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Template.html">템플릿</a></td>
    <td><code>cq:Template</code> 노드 리소스인 경우</td>
   </tr>  
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/Blueprint.html">블루프린트</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/msm/api/Blueprint.html">블루프린트</a></td>
    <td><code>cq:Template</code> 노드 리소스인 경우</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/dam/api/Asset.html">자산</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/dam/api/Asset.html">자산</a></td>
    <td><code>dam:Asset</code> 노드 리소스인 경우</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/dam/api/Rendition.html">렌디션</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/dam/api/Rendition.html">렌디션</a></td>
    <td><code>dam:Asset</code> 렌디션인 경우(<code>dam:Asset</code>의 렌디션 폴더 아래 <code>nt:file</code>)</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/tagging/Tag.html">태그</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/tagging/Tag.html">태그</a></td>
    <td><code>cq:Tag</code> 노드 리소스인 경우</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
    <td>JCR 기반 리소스인 경우 및 사용자가 UserManager에 액세스할 수 있는 권한이 있는 경우, JCR 세션을 기반으로 합니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">승인 가능 대상</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">승인 가능 대상</a></td>
    <td>승인 가능 대상은 사용자 및 그룹의 공통 기본 인터페이스입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/api/security/user/User.html">사용자</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/jackrabbit/api/security/user/User.html">사용자</a></td>
    <td>사용자는 인증되고 가장될 수 있는 특별 승인 가능 사용자입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
    <td>JCR 기반 리소스인 경우 리소스 아래에서 검색하거나 setSearchIn() 사용</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/status/WorkflowStatus.html">WorkflowStatus</a></td>
    <td>지정된 페이지/워크플로우 페이로드 노드의 워크플로우 상태입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/replication/ReplicationStatus.html">ReplicationStatus</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/replication/ReplicationStatus.html">ReplicationStatus</a></td>
    <td>지정된 리소스 또는 해당 <code>jcr:content</code> 하위 노드의 복제 상태(처음 선택됨)입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/connector/ConnectorResource.html">ConnectorResource</a></td>
    <td>JCR-node 기반 리소스인 경우 특정 유형에 대해 조정된 커넥터 리소스를 반환합니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/config/package-summary.html">구성</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/contentsync/config/package-summary.html">구성</a></td>
    <td><code>cq:ContentSyncConfig</code> 노드 리소스인 경우</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
    <td><code>cq:ContentSyncConfig</code> 노드 리소스 미만인 경우</td>
   </tr>
  </tbody>
 </table>
 
-[**ResourceResolver**](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/ResourceResolver.html)은(는) 다음 항목에 적응합니다.
+[**ResourceResolver**](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/resource/ResourceResolver.html)은(는) 다음 항목에 적응합니다.
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Session.html">세션</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Session.html">세션</a></td>
    <td>요청의 JCR 세션(JCR 기반 리소스 확인자(기본값)인 경우).</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html">PageManager</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/components/ComponentManager.html">구성 요소 관리자</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/components/ComponentManager.html">구성 요소 관리자</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/dam/api/AssetManager.html">AssetManager</a></td>
    <td>JCR 기반 리소스 확인자인 경우 JCR 세션 기반.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/tagging/TagManager.html">TagManager</a></td>
    <td>JCR 기반 리소스 확인자인 경우 JCR 세션 기반.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/jackrabbit/api/security/user/UserManager.html">UserManager</a></td>
    <td>UserManager는 사용자 및 그룹인 승인 가능 객체에 대한 액세스 권한과 유지 관리 수단을 제공합니다. UserManager는 특정 세션에 바인딩됩니다.
    </td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">승인 가능</a> </td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">승인 가능</a> </td>
    <td>현재 사용자입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/api/security/user/User.html">사용자</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/jackrabbit/api/security/user/User.html">사용자</a><br /> </td>
    <td>현재 사용자입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html">QueryBuilder</a></td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html">Externalizer</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/Externalizer.html">Externalizer</a></td>
    <td>절대 URL을 외부화하는 경우 요청 개체가 없어도 가능합니다.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-[**SlingHttpServletRequest**](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)은(는) 다음 항목에 적용됩니다.
+[**SlingHttpServletRequest**](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)은(는) 다음 항목에 적용됩니다.
 
 아직 대상이 없지만 는 적응성을 구현하며 사용자 지정 AdapterFactory에서 소스로 사용할 수 있습니다.
 
-[**SlingHttpServletResponse**](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/SlingHttpServletResponse.html)은(는) 다음 항목에 적응합니다.
+[**SlingHttpServletResponse**](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/SlingHttpServletResponse.html)은(는) 다음 항목에 적응합니다.
 
 <table>
  <tbody>
@@ -291,20 +291,20 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
 
 #### WCM {#wcm}
 
-**[페이지](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)**&#x200B;은(는) 다음 항목에 적용됩니다.
+**[페이지](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)**&#x200B;은(는) 다음 항목에 적용됩니다.
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html">리소스</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html">리소스</a><br /> </td>
    <td>페이지의 리소스입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>레이블이 지정된 리소스가 현재 리소스입니다. 즉, 현재 보고 있는 것과 동일한 객체입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html">노드</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html">노드</a></td>
    <td>페이지의 노드입니다.</td>
   </tr>
   <tr>
@@ -314,28 +314,28 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
  </tbody>
 </table>
 
-**[구성 요소](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/components/Component.html)**&#x200B;은(는) 다음 항목에 적용됩니다.
+**[구성 요소](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/components/Component.html)**&#x200B;은(는) 다음 항목에 적용됩니다.
 
-| [리소스](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html) | 구성 요소의 리소스. |
+| [리소스](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html) | 구성 요소의 리소스. |
 | --- | --- |
-| [LabeledResource](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/LabeledResource.html) | 레이블이 지정된 리소스가 현재 리소스입니다. 즉, 현재 보고 있는 것과 동일한 객체입니다. |
-| [노드](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | 구성 요소의 노드. |
+| [LabeledResource](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/LabeledResource.html) | 레이블이 지정된 리소스가 현재 리소스입니다. 즉, 현재 보고 있는 것과 동일한 객체입니다. |
+| [노드](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | 구성 요소의 노드. |
 | ... | 구성 요소 리소스의 모든 것을 적용할 수 있습니다. |
 
-**[템플릿](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Template.html)**&#x200B;은(는) 다음 항목에 적용됩니다.
+**[템플릿](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Template.html)**&#x200B;은(는) 다음 항목에 적용됩니다.
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html">리소스</a><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html">리소스</a><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
    <td>템플릿의 리소스입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/LabeledResource.html">LabeledResource</a></td>
    <td>레이블이 지정된 리소스가 현재 리소스입니다. 즉, 현재 보고 있는 것과 동일한 객체입니다.</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html">노드</a></td>
+   <td><a href="https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html">노드</a></td>
    <td>이 템플릿의 노드</td>
   </tr>
   <tr>
@@ -349,26 +349,26 @@ null 케이스를 품위 있게 처리하는 것이 중요합니다. JSP 렌더�
 
 **승인 가능**, **사용자 및**&#x200B;그룹**이(가) 다음에 적용됩니다.
 
-| [노드](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | 사용자/그룹 홈 노드를 반환합니다. |
+| [노드](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | 사용자/그룹 홈 노드를 반환합니다. |
 | --- | --- |
-| [복제 상태](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/replication/ReplicationStatus.html) | 사용자/그룹 홈 노드에 대한 복제 상태를 반환합니다. |
+| [복제 상태](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/replication/ReplicationStatus.html) | 사용자/그룹 홈 노드에 대한 복제 상태를 반환합니다. |
 
 #### DAM {#dam}
 
 **자산**&#x200B;이(가) 다음에 적응함:
 
-| [리소스](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html) | 에셋의 리소스입니다. |
+| [리소스](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html) | 에셋의 리소스입니다. |
 | --- | --- |
-| [노드](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | 에셋의 노드. |
+| [노드](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | 에셋의 노드. |
 | ... | 에셋의 리소스를 조정할 수 있는 모든 작업. |
 
 #### 태그 {#tagging}
 
 **태그**&#x200B;은(는) 다음 항목에 적응합니다.
 
-| [리소스](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html) | 태그의 리소스. |
+| [리소스](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html) | 태그의 리소스. |
 | --- | --- |
-| [노드](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | 태그의 노드. |
+| [노드](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | 태그의 노드. |
 | ... | 태그의 리소스에 맞는 모든 항목을 조정할 수 있습니다. |
 
 #### 기타 {#other}

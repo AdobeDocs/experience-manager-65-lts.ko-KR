@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '627'
 ht-degree: 1%
 ---
 # 오버레이{#overlays}
@@ -35,7 +35,7 @@ Adobe Experience Manager(AEM) 및 그 이전 버전인 CQ에서는 [콘솔](/hel
 
 AEM 6.0 이후 오버레이가 구현되고 사용되는 방식이 변경되었습니다.
 
-* AEM 6.0 및 켜짐 - [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) 관련 오버레이(즉, 터치 사용 UI)
+* AEM 6.0 및 켜짐 - [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) 관련 오버레이(즉, 터치 사용 UI)
 
   * 메서드
 
@@ -66,7 +66,7 @@ AEM 6.0 이후 오버레이가 구현되고 사용되는 방식이 변경되었�
 
 >[!CAUTION]
 >
->[Sling 리소스 병합](/help/sites-developing/sling-resource-merger.md) 및 관련 메서드는 [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)에서만 사용할 수 있습니다. 이는 뼈대 구조를 갖는 오버레이를 생성하는 것이 표준 터치 지원 UI에 대해서만 적절하다는 것을 의미한다.
+>[Sling 리소스 병합](/help/sites-developing/sling-resource-merger.md) 및 관련 메서드는 [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)에서만 사용할 수 있습니다. 이는 뼈대 구조를 갖는 오버레이를 생성하는 것이 표준 터치 지원 UI에 대해서만 적절하다는 것을 의미한다.
 >
 >다른 영역(클래식 UI 포함)에 대한 오버레이에는 적절한 노드 및 전체 하위 구조를 복사한 다음 필요한 사항을 변경하는 작업이 포함됩니다.
 

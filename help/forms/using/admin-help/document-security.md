@@ -20,10 +20,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3286'
-ht-degree: 100%
+source-wordcount: '3287'
+ht-degree: 99%
 ---
 # 문서 보안 정보 {#about-document-security}
 
@@ -283,4 +283,4 @@ Adobe Acrobat® Pro 및 Acrobat Standard를 사용하면 PDF 문서에 정책 �
 
   >[!NOTE]
   >
-  >[getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API를 사용하면 최대 1,000개의 정책 세트 이름을 가져올 수 있습니다. 내부적으로 이 API는 API 호출자가 문서 게시자 권한을 보유하고 있는 최대 1,000개의 정책을 가져온 후 가져온 정책과 연결된 고유한 정책 세트 이름 목록을 만들어 사용자에게 반환합니다. 예를 들어 API가 1,000개의 정책을 가져오고 가져온 정책이 총 200개의 정책 세트와 연결되어 있는 경우 API는 200개의 정책 세트 이름만 반환합니다.
+  >[getAllPolicysetnames()](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API를 사용하면 최대 1,000개의 정책 세트 이름을 가져올 수 있습니다. 내부적으로 이 API는 API 호출자가 문서 게시자 권한을 보유하고 있는 최대 1,000개의 정책을 가져온 후 가져온 정책과 연결된 고유한 정책 세트 이름 목록을 만들어 사용자에게 반환합니다. 예를 들어 API가 1,000개의 정책을 가져오고 가져온 정책이 총 200개의 정책 세트와 연결되어 있는 경우 API는 200개의 정책 세트 이름만 반환합니다.

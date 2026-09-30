@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3268'
+source-wordcount: '3270'
 ht-degree: 2%
 ---
 # 워크플로 단계 참조 {#workflow-step-reference}
@@ -349,7 +349,7 @@ function check(){
 
 1. **예제 대화 상자 정의**
 
-   다음 XML 코드 조각은 페이로드 콘텐츠의 `watchEmail` 노드에 `String` 값을 저장하는 대화 상자를 나타냅니다. 제목 노드는 [TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) 구성 요소를 나타냅니다.
+   다음 XML 코드 조각은 페이로드 콘텐츠의 `watchEmail` 노드에 `String` 값을 저장하는 대화 상자를 나타냅니다. 제목 노드는 [TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) 구성 요소를 나타냅니다.
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -437,7 +437,7 @@ function check(){
 
 * **OSGi 서비스**
 
-  서비스는 [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) 인터페이스를 구현해야 합니다. 인터페이스는 다음 멤버를 정의합니다.
+  서비스는 [com.day.cq.workflow.exec.ParticipantStepChooser](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) 인터페이스를 구현해야 합니다. 인터페이스는 다음 멤버를 정의합니다.
 
   * `SERVICE_PROPERTY_LABEL` 필드: 참가자 선택기의 이름을 지정하려면 이 필드를 사용하십시오. **동적 참가자 단계** 속성의 사용 가능한 참가자 선택기 목록에 이름이 나타납니다.
 

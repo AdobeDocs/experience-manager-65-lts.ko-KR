@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 3%
 ---
 # 워크플로 시작{#starting-workflows}
@@ -183,7 +183,7 @@ ht-degree: 3%
      이 런처 속성은 쉼표로 구분된 항목 목록입니다. &quot;
 
      * `property-name`은(는) 지정한 속성 이름에서 트리거된 모든 `jcr` 이벤트를 무시합니다. &quot;
-     * `event-user-data:<*someValue*>`은(는) [`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String))를 통해 설정된 `*<someValue*`> `user-data`을(를) 포함하는 모든 이벤트를 무시합니다.
+     * `event-user-data:<*someValue*>`은(는) [`ObservationManager` API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String))를 통해 설정된 `*<someValue*`> `user-data`을(를) 포함하는 모든 이벤트를 무시합니다.
 
      예:
 

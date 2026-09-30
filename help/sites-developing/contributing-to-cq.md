@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2739'
 ht-degree: 1%
 ---
 # AEM에 기여{#contributing-to-aem}
@@ -53,7 +53,7 @@ AEM의 구성 요소에 기여하는 경우 오픈 소스 프로젝트에 기여
 * 브라우저 쿠키
 * 및 기타 최신 웹 개발 개념
 
-Adobe Experience Manager의 기술 스택은 [Apache Sling](https://sling.apache.org/index.html) 웹 프레임워크와 함께 [Apache Felix](https://felix.apache.org/documentation/index.html) OSGI 컨테이너를 기반으로 하며 [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html)을(를) 기반으로 Java™ 콘텐츠 저장소([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html))를 임베드합니다. 이러한 개별 프로젝트 및 기여하려는 영역에서 사용되는 기타 오픈 소스 구성 요소(예: Apache Lucene)에 대해 숙지하십시오.
+Adobe Experience Manager의 기술 스택은 [Apache Sling](https://sling.apache.org/index.html) 웹 프레임워크와 함께 [Apache Felix](https://felix.apache.org/documentation/index.html) OSGI 컨테이너를 기반으로 하며 [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html)을(를) 기반으로 Java™ 콘텐츠 저장소([JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html))를 임베드합니다. 이러한 개별 프로젝트 및 기여하려는 영역에서 사용되는 기타 오픈 소스 구성 요소(예: Apache Lucene)에 대해 숙지하십시오.
 
 ## 부족의 지식 {#tribal-knowledge}
 

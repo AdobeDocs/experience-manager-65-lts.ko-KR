@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 7%
 ---
 # 조건 숨기기 사용 {#using-hide-conditions}
@@ -43,7 +43,7 @@ ht-degree: 7%
 
 `com.adobe.granite.ui.components.FilteringResourceWrapper`은(는) 필터링할 필드에 있는 `granite:hide` 속성의 존재 및 값을 기반으로 리소스를 필터링합니다. `/libs/cq/gui/components/authoring/dialog/dialog.jsp`의 구현에 `FilteringResourceWrapper.`의 인스턴스가 포함되어 있습니다.
 
-구현에서는 Granite [ELResolver API](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html)를 사용하고 ExpressionCustomizer를 통해 `cqDesign` 사용자 지정 변수를 추가합니다.
+구현에서는 Granite [ELResolver API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html)를 사용하고 ExpressionCustomizer를 통해 `cqDesign` 사용자 지정 변수를 추가합니다.
 
 다음은 `etc/design` 아래 또는 콘텐츠 정책으로 사용되는 디자인 노드의 숨기기 조건에 대한 몇 가지 예입니다.
 

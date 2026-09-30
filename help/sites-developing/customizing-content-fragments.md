@@ -22,9 +22,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2826'
+source-wordcount: '2831'
 ht-degree: 2%
 ---
 # 콘텐츠 조각 맞춤화 및 확장{#customizing-and-extending-content-fragments}
@@ -255,7 +255,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 서버측 API를 사용하여 콘텐츠 조각에 액세스할 수 있습니다. 다음을 참조하십시오.
 
-[com.adobe.cq.dam.cfm](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[com.adobe.cq.dam.cfm](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -265,7 +265,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
 다음 세 가지 인터페이스는 진입점 역할을 할 수 있습니다.
 
-* **조각 템플릿**([조각 템플릿](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **조각 템플릿**([조각 템플릿](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
   조각을 만드는 데 `FragmentTemplate.createFragment()`을(를) 사용합니다.
 
@@ -308,7 +308,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
     * 기본 데이터(이름, 제목, 설명) 가져오기
 
-* **콘텐츠 조각**([콘텐츠 조각](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **콘텐츠 조각**([콘텐츠 조각](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   이 인터페이스를 사용하면 추상적인 방식으로 콘텐츠 조각을 사용하여 작업할 수 있습니다.
 
@@ -340,7 +340,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
   조각의 주요 요소를 나타내는 인터페이스는 다음과 같습니다.
 
-  * **콘텐츠 요소**([콘텐츠 요소](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+  * **콘텐츠 요소**([콘텐츠 요소](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
     * 기본 데이터(이름, 제목, 설명) 가져오기
     * 콘텐츠 가져오기/설정
@@ -354,7 +354,7 @@ CFM(Content Fragment Management)은 다음과 같이 AEM Assets에 포함되어 
 
     * 변형 해결을 위한 바로 가기(지정된 변형을 요소에 사용할 수 없는 경우 구현별 추가 폴백 논리 적용)
 
-  * **콘텐츠 변형**([콘텐츠 변형](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+  * **콘텐츠 변형**([콘텐츠 변형](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
     * 기본 데이터(이름, 제목, 설명) 가져오기
     * 콘텐츠 가져오기/설정

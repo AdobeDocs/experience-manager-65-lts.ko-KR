@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '828'
 ht-degree: 7%
 ---
 # 에셋 검색 확장 {#extending-assets-search}
@@ -61,7 +61,7 @@ ht-degree: 7%
 
 [!DNL Experience Manager] 개발자는 기존 술어를 사용할 수 있을 뿐만 아니라 [Query Builder API](/help/sites-developing/querybuilder-api.md)를 사용하여 자체 술어를 만들 수도 있습니다.
 
-사용자 지정 술어를 만들려면 [위젯 프레임워크](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)에 대한 기본 지식이 필요합니다.
+사용자 지정 술어를 만들려면 [위젯 프레임워크](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)에 대한 기본 지식이 필요합니다.
 
 가장 좋은 방법은 기존 술어를 복사하여 조정하는 것입니다. 샘플 조건자는 **/libs/cq/search/components/predicates**&#x200B;에 있습니다.
 

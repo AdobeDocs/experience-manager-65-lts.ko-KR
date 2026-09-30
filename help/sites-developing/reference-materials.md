@@ -22,21 +22,21 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 8%
+source-wordcount: '331'
+ht-degree: 4%
 ---
 # API 안내서 {#api-guides}
 
 Adobe Experience Manager(AEM)는 애플리케이션 개발 및 AEM 확장을 위한 여러 API를 제공합니다. 다음 목록은 AEM에서 지원하는 API에 대한 설명서를 제공합니다.
 
-* [Adobe AEM 6.5 LTS API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html)
-* [Granite UI(터치 사용) API 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
-* [Coral UI 안내서](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
-* [위젯 API(클래식 UI) 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
-* [UI 테스트 프레임워크 JavaScript API 참조](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)
-* [편집기 코어 JavaScript API 참조](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
+* [Adobe AEM 6.5 LTS API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html)
+* [Granite UI(터치 사용) API 설명서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/index.html)
+* [Coral UI 안내서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/index.html)
+* [위젯 API(클래식 UI) 설명서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)
+* [UI 테스트 프레임워크 JavaScript API 참조](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html)
+* [편집기 코어 JavaScript API 참조](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html)
 
 AEM SPA(단일 페이지 애플리케이션) 편집기 SDK 프레임워크 JavaScript API 참조:
 
@@ -55,11 +55,11 @@ AEM 게재 및 콘텐츠 관리 API:
 
 * **Assets**: Assets HTTP API를 사용하면 이진, 메타데이터, 렌디션 및 주석을 포함하여 Assets에서 CRUD(create-read-update-delete) 작업을 수행할 수 있습니다. [AEM Assets HTTP API](/help/assets/mac-api-assets.md) 참조
 
-* **콘텐츠 조각**(CF): [Assets HTTP API의 CF 지원](/help/assets/assets-api-content-fragments.md) 및 [AEM Assets API - 콘텐츠 조각](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* **콘텐츠 조각**(CF): [Assets HTTP API의 CF 지원](/help/assets/assets-api-content-fragments.md) 및 [AEM Assets API - 콘텐츠 조각](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html)
 
 다음 외부 리소스는 참조용입니다.
 
 * [Apache Sling 11 API](https://sling.apache.org/apidocs/sling11/)
 * [JACKRABBIT OAK API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
-* [Java Content Repository API](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
+* [Java Content Repository API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html)
 * [Apache Jackrabbit API](https://jackrabbit.apache.org/api)

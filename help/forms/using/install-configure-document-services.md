@@ -24,9 +24,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
 workflow-type: tm+mt
-source-wordcount: '10681'
+source-wordcount: '10769'
 ht-degree: 2%
 ---
 # 문서 서비스 설치 및 구성 {#installing-and-configuring-document-services}
@@ -200,6 +200,10 @@ UNIX 기반 운영 체제를 사용하는 경우 해당 운영 체제의 설치 
   * libc.so.6
   * ld-linux.so.2
   * libexpat.so.1
+
+* Red Hat® Enterprise Linux® 9에서 32비트 OpenOffice 빌드를 사용하려면 기본적으로 설치되지 않은 `libcrypt.so.1`이(가) 필요합니다. 누락된 경우 OpenOffice가 오류 `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`(으)로 시작되지 못하고 OpenOffice에서 PDF으로 변환되지 않습니다. 라이브러리를 제공하려면 `libxcrypt-compat` 패키지(32비트)를 설치하십시오.
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 ## 사전 설치 구성 {#preinstallationconfigurations}
 
@@ -1377,6 +1381,10 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 * 환경 변수 `OpenOffice_PATH`을(를) 만들어 [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) 또는 dt(장치 트리) 프로필에 설정된 OpenOffice 설치를 가리키도록 설정합니다.
 * OpenOffice를 설치하는 데 문제가 있는 경우 OpenOffice 설치에 필요한 [32비트 라이브러리](#extrarequirements)를 사용할 수 있는지 확인하십시오.
+
+* Red Hat® Enterprise Linux® 9에서 32비트 OpenOffice 빌드를 사용하려면 기본적으로 설치되지 않은 `libcrypt.so.1`이(가) 필요합니다. 누락된 경우 OpenOffice가 오류 `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`(으)로 시작되지 못하고 OpenOffice에서 PDF으로 변환되지 않습니다. 라이브러리를 제공하려면 `libxcrypt-compat` 패키지(32비트)를 설치하십시오.
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 +++
 

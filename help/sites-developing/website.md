@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5032'
+source-wordcount: '5034'
 ht-degree: 3%
 ---
 # 모든 기능을 갖춘 웹 사이트(JSP) 만들기{#create-a-fully-featured-website-jsp}
@@ -532,9 +532,9 @@ contentpage 구성 요소에 topnav를 포함하려면 다음을 수행합니다
 
 1. 다음 코드를 `navimage.png.java.`에 복사합니다. 이 코드는 AbstractImageServlet 클래스를 확장합니다.
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html)은(는) 현재 리소스의 속성을 저장하는 ImageContext 개체를 만듭니다.
+   * [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html)은(는) 현재 리소스의 속성을 저장하는 ImageContext 개체를 만듭니다.
    * 리소스의 상위 페이지는 ImageContext 개체에서 추출됩니다. 그런 다음 페이지 제목과 자막을 얻습니다.
-   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html)은(는) 사이트 디자인, 페이지 제목 및 페이지 부제의 navimage_bg.jpg 파일에서 이미지를 생성하는 데 사용됩니다.
+   * [ImageHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html)은(는) 사이트 디자인, 페이지 제목 및 페이지 부제의 navimage_bg.jpg 파일에서 이미지를 생성하는 데 사용됩니다.
 
    ```java
    package apps.mywebsite.components.contentpage;

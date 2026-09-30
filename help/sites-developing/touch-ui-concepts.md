@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2207'
+source-wordcount: '2209'
 ht-degree: 1%
 ---
 # Adobe Experience Manager 터치 지원 UI의 개념{#concepts-of-the-aem-touch-enabled-ui}
@@ -205,7 +205,7 @@ Granite UI와 ExtJS(클래식 UI에 사용됨) 간의 차이점도 관심 대상
 
 ### Granite UI Foundation 구성 요소 {#granite-ui-foundation-components}
 
-[Granite UI 기초 구성 요소](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)는 UI 구축에 필요한 기본 구성 요소를 제공합니다. 여기에는 다음과 같은 항목이 포함됩니다.
+[Granite UI 기초 구성 요소](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)는 UI 구축에 필요한 기본 구성 요소를 제공합니다. 여기에는 다음과 같은 항목이 포함됩니다.
 
 * 버튼
 * 하이퍼링크
@@ -262,7 +262,7 @@ Granite UI를 사용하도록 ExtJS 코드를 업그레이드할 때 다음 목�
 
 ### Granite UI 관리 구성 요소 {#granite-ui-administration-components}
 
-[Granite UI 관리 구성 요소](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)는 모든 관리 응용 프로그램에서 구현할 수 있는 일반 구성 요소를 제공하기 위해 기초 구성 요소를 기반으로 합니다. 여기에는 다음과 같은 것들이 포함됩니다.
+[Granite UI 관리 구성 요소](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)는 모든 관리 응용 프로그램에서 구현할 수 있는 일반 구성 요소를 제공하기 위해 기초 구성 요소를 기반으로 합니다. 여기에는 다음과 같은 것들이 포함됩니다.
 
 * 전역 탐색 막대
 * 레일(스켈레톤)

@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 39%
+source-wordcount: '1472'
+ht-degree: 38%
 ---
 # 페이지 작성 사용자 정의{#customizing-page-authoring}
 
@@ -46,7 +46,7 @@ Adobe Experience Manager(AEM)에서는 작성 인스턴스의 페이지 작성 �
 
 >[!NOTE]
 >
->자세한 내용은 [JS 설명서 집합](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)을 참조하세요.
+>자세한 내용은 [JS 설명서 집합](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html)을 참조하세요.
 
 여러 가지 방법으로 AEM 인스턴스의 페이지 작성 기능을 확장할 수 있습니다. 선택 내용은 아래에 설명되어 있습니다(높은 수준).
 
@@ -56,7 +56,7 @@ Adobe Experience Manager(AEM)에서는 작성 인스턴스의 페이지 작성 �
 >
 >* [clientlibs](/help/sites-developing/clientlibs.md)을(를) 사용하고 만드는 중입니다.
 >* [오버레이](/help/sites-developing/overlays.md)를 사용하고 만드는 중입니다.
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* 페이지 작성에 사용되는 구조적 영역에 대한 자세한 내용은 [AEM 터치 사용 UI의 구조](/help/sites-developing/touch-ui-structure.md)를 참조하십시오.
 >
 
@@ -116,9 +116,9 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다
 
 페이지를 작성할 때 사용자는 종종 리소스(예: 페이지, 구성 요소 및 에셋)에서 선택해야 합니다. 예를 들어 작성자가 항목을 선택해야 하는 목록 형식을 취할 수 있습니다.
 
-목록을 적당한 크기로 유지하고 사용 사례와도 관련되게 하려면 필터를 사용자 정의 조건자 형태로 구현할 수 있습니다. 예를 들어 사용자가 특정 리소스에 대한 경로를 선택할 수 있도록 [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) 구성 요소를 사용하는 경우 표시되는 경로는 다음과 같은 방법으로 필터링될 수 있습니다.
+목록을 적당한 크기로 유지하고 사용 사례와도 관련되게 하려면 필터를 사용자 정의 조건자 형태로 구현할 수 있습니다. 예를 들어 사용자가 특정 리소스에 대한 경로를 선택할 수 있도록 [`pathbrowser`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) 구성 요소를 사용하는 경우 표시되는 경로는 다음과 같은 방법으로 필터링될 수 있습니다.
 
-* [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html) 상호 작용을 구현하여 사용자 정의 조건자를 구현합니다.
+* [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html) 상호 작용을 구현하여 사용자 정의 조건자를 구현합니다.
 * 조건자의 이름을 지정하고, `pathbrowser`를 사용할 때 해당 이름을 참조합니다.
 
 사용자 지정 술어 만들기에 대한 자세한 내용은 [Query Builder의 사용자 지정 술어 평가기 구현](/help/sites-developing/implementing-custom-predicate-evaluator.md)을 참조하십시오.

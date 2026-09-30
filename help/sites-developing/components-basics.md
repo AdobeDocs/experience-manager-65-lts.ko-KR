@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '4952'
+source-wordcount: '4955'
 ht-degree: 1%
 ---
 # Adobe Experience Manager(AEM) 구성 요소 - 기본 사항{#aem-components-the-basics}
@@ -210,7 +210,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
 
 구성 요소의 아이콘 또는 약어는 개발자가 구성 요소를 만들 때 구성 요소의 JCR 속성을 통해 정의됩니다. 이러한 속성은 다음 순서로 평가되며 발견된 첫 번째 유효한 속성이 사용됩니다.
 
-1. `cq:icon` - 구성 요소 브라우저에 표시할 [Coral UI 라이브러리](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html)의 표준 아이콘을 가리키는 문자열 속성
+1. `cq:icon` - 구성 요소 브라우저에 표시할 [Coral UI 라이브러리](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/Coral.Icon.html)의 표준 아이콘을 가리키는 문자열 속성
    * Coral 아이콘의 HTML 속성 값을 사용합니다.
 1. `abbreviation` - 구성 요소 브라우저에서 구성 요소 이름의 약어를 사용자 지정하는 문자열 속성
    * 약어는 두 문자로 제한해야 합니다.
@@ -1042,7 +1042,7 @@ Adobe에서는 반복을 방지하기 위해 구성 요소 구현자가 핵심 �
 
 >[!NOTE]
 >
->클래식 UI의 경우, 처리기에서 사용할 수 있는 매개 변수를 보려면 [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) 및 [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) 위젯 설명서의 `before<action>` 및 `after<action>` 이벤트 섹션을 참조하십시오.
+>클래식 UI의 경우, 처리기에서 사용할 수 있는 매개 변수를 보려면 [`CQ.wcm.EditBar`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) 및 [`CQ.wcm.EditRollover`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) 위젯 설명서의 `before<action>` 및 `after<action>` 이벤트 섹션을 참조하십시오.
 
 다음 구성을 사용하면 구성 요소가 삭제, 편집, 삽입 또는 이동된 후 페이지가 새로 고쳐집니다.
 

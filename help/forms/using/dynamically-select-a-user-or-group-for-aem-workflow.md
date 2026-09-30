@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '948'
 ht-degree: 3%
 ---
 # AEM Forms 중심 워크플로 단계에 대해 동적으로 사용자 또는 그룹 선택 {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
@@ -131,7 +131,7 @@ function getAdobeSignRecipients() {
 
 ## Java 인터페이스를 사용하여 동적으로 사용자 또는 그룹을 선택합니다. {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-[RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 Adobe Sign 및 작업 할당 단계에 대해 동적으로 사용자 또는 그룹을 선택할 수 있습니다. [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하는 OSGi 번들을 만들어 AEM Forms 서버에 배포할 수 있습니다. 이 옵션을 AEM Workflow의 `Assign Task` 및 Adobe Sign 구성 요소에서 선택할 수 있습니다.
+[RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 Adobe Sign 및 작업 할당 단계에 대해 동적으로 사용자 또는 그룹을 선택할 수 있습니다. [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하는 OSGi 번들을 만들어 AEM Forms 서버에 배포할 수 있습니다. 이 옵션을 AEM Workflow의 `Assign Task` 및 Adobe Sign 구성 요소에서 선택할 수 있습니다.
 
 아래 나열된 코드 샘플을 컴파일하려면 [AEM Forms 클라이언트 SDK](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) jar 및 [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 파일이 필요합니다. 이러한 jar 파일을 OSGi 번들 프로젝트에 외부 종속성으로 추가합니다. 모든 Java IDE를 사용하여 OSGi 번들을 만들 수 있습니다. 다음 절차에서는 Eclipse를 사용하여 OSGi 번들을 만드는 단계를 제공합니다.
 
@@ -240,7 +240,7 @@ function getAdobeSignRecipients() {
    </project>
    ```
 
-1. [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 작업 할당 단계에 대해 동적으로 사용자 또는 그룹을 선택하는 소스 코드를 추가하십시오. 샘플 코드가 필요하면 [Java 인터페이스를 사용하여 사용자 또는 그룹을 동적으로 선택하는 샘플](#-sample-scripts-for)을 참조하십시오.
+1. [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 작업 할당 단계에 대해 동적으로 사용자 또는 그룹을 선택하는 소스 코드를 추가하십시오. 샘플 코드가 필요하면 [Java 인터페이스를 사용하여 사용자 또는 그룹을 동적으로 선택하는 샘플](#-sample-scripts-for)을 참조하십시오.
 1. 명령 프롬프트를 열고 OSGi 번들 프로젝트가 포함된 디렉터리로 이동합니다. 다음 명령을 사용하여 OSGi 번들을 생성합니다.
 
    `mvn clean install`

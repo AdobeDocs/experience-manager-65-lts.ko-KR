@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '684'
 ht-degree: 11%
 ---
 # 터치 UI로 마이그레이션{#migration-to-the-touch-ui}
@@ -152,7 +152,7 @@ Touch UI로의 마이그레이션과 직접 관련이 없지만, 권장되는 �
 AEM 개발에 대한 전체 정보는 아래의 리소스 컬렉션을 참조하십시오.
 
 * [개발 사용 안내서](/help/sites-developing/getting-started.md)
-* [Granite UI 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Granite UI 설명서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM 6.5 Sites 튜토리얼 및 비디오](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=ko)
 * [AEM Sites 개발 시작하기 - WKND 튜토리얼](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=ko)

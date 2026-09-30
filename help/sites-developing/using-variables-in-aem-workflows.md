@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1999'
+source-wordcount: '2003'
 ht-degree: 0%
 ---
 # AEM 워크플로의 변수{#variables-in-aem-workflows}
@@ -31,7 +31,7 @@ AEM 워크플로 모델에서 다음을 수행할 수 있습니다.
 * 변수 설정 워크플로 단계를 사용하여 [변수에 대한 값을 설정](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)합니다.
 * [라우팅 결정을 내리는 식을 정의할 수 있도록 OR 분할 및 AEM 워크플로 단계에서 변수를 사용](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable)합니다. 모든 AEM Forms 워크플로 단계에서 변수를 사용할 수도 있습니다.
 
-변수는 [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) 인터페이스의 확장입니다. ECMAScript에서 [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)을(를) 사용하여 변수를 사용하여 저장된 메타데이터에 액세스할 수 있습니다.
+변수는 [MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) 인터페이스의 확장입니다. ECMAScript에서 [MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)을(를) 사용하여 변수를 사용하여 저장된 메타데이터에 액세스할 수 있습니다.
 
 ## 변수 만들기 {#create-a-variable}
 
@@ -178,7 +178,7 @@ OR 분할 단계와 마찬가지로 규칙 정의, ECMA 스크립트 또는 외�
 
 ### 변수를 지원하지 않는 워크플로우 단계 {#workflow-steps-without-support-for-variables}
 
-[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) 인터페이스를 사용하여 변수를 지원하지 않는 워크플로 단계의 변수에 액세스할 수 있습니다.
+[MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) 인터페이스를 사용하여 변수를 지원하지 않는 워크플로 단계의 변수에 액세스할 수 있습니다.
 
 #### 변수 값 검색 {#retrieve-the-variable-value}
 
@@ -220,7 +220,7 @@ workItem.getWorkflowData().getMetaDataMap().put(salary, 50000)
 
 API를 사용하여 변수를 설정하고 전달하여 워크플로우 인스턴스를 호출할 수 있습니다.
 
-[workflowSession.startWorkflow](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-)은(는) 모델, wfData 및 metaData를 인수로 사용합니다. MetaDataMap을 사용하여 변수에 대한 값을 설정합니다.
+[workflowSession.startWorkflow](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-)은(는) 모델, wfData 및 metaData를 인수로 사용합니다. MetaDataMap을 사용하여 변수에 대한 값을 설정합니다.
 
 이 API에서는 metaData.put(variableName, value)을 사용하여 **variableName** 변수가 **value**(으)로 설정되어 있습니다.
 

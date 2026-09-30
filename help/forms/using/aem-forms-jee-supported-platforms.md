@@ -27,9 +27,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
 workflow-type: tm+mt
-source-wordcount: '2949'
+source-wordcount: '2993'
 ht-degree: 3%
 ---
 
@@ -425,6 +425,7 @@ AEM Forms 앱은 이제 Apache Cordova를 지원합니다. 지원되는 Cordova�
 >- 볼륨 라이선스가 있는 설치에서 지정된 기간 내에 KMS 호스트를 찾을 수 없는 것과 같은 이유로 ® Office 설치가 비활성화되거나 사용이 허가되지 않는 경우, 설치 라이선스를 다시 부여하고 다시 활성화할 때까지 전환이 실패할 수 있습니다.
 >- PDF Generator은 Microsoft® Office 365를 지원하지 않습니다.
 >- OpenOffice용 PDF Generator 전환은 Windows와 Linux® 모두에서 지원됩니다.
+>- Red Hat® Enterprise Linux® 9에서 32비트 OpenOffice 빌드를 사용하려면 기본적으로 설치되지 않은 `libcrypt.so.1`이(가) 필요합니다. 누락된 경우 OpenOffice가 오류 `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`(으)로 시작되지 못하고 OpenOffice에서 PDF으로 변환되지 않습니다. 라이브러리를 제공하려면 `libxcrypt-compat` 패키지(32비트)를 설치하십시오. `sudo dnf install -y libxcrypt-compat.i686`.
 >- OCR PDF, PDF 최적화 및 Export PDF 기능은 Windows에서만 지원됩니다.
 >- PDF Generator은 Microsoft® Windows 11을 지원하지 않습니다.
 >- ® Office 2021 Professional Plus 지원은 더 이상 사용되지 않습니다.

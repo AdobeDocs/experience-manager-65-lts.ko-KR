@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1698'
 ht-degree: 2%
 ---
 # 적응형 양식에 대한 사용자 정의 제출 작업 작성{#writing-custom-submit-action-for-adaptive-forms}
@@ -157,7 +157,7 @@ CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 
 
    작업에 post.POST.jsp 스크립트를 추가합니다. (/apps/custom_submit_action/store_and_mail/).
 
-   기본 제공 저장소 작업(post.POST.jsp 스크립트)을 실행합니다. CQ가 코드에 제공하는 [FormsHelper.runAction](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String,java.lang.String,org.apache.sling.api.resource.Resource,org.apache.sling.api.SlingHttpServletRequest,org.apache.sling.api.SlingHttpServletResponse))&#x200B;(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API를 사용하여 스토어 작업을 실행하십시오. JSP 파일에 다음 코드를 추가합니다.
+   기본 제공 저장소 작업(post.POST.jsp 스크립트)을 실행합니다. CQ가 코드에 제공하는 [FormsHelper.runAction](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String,java.lang.String,org.apache.sling.api.resource.Resource,org.apache.sling.api.SlingHttpServletRequest,org.apache.sling.api.SlingHttpServletResponse))&#x200B;(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API를 사용하여 스토어 작업을 실행하십시오. JSP 파일에 다음 코드를 추가합니다.
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
@@ -167,7 +167,7 @@ CRX 저장소에 데이터를 저장한 다음 이메일을 보내는 사용자 
 
    `String mailTo = properties.get("mailTo");`
 
-   마지막으로 CQ Mail API를 사용하여 이메일을 보냅니다. [SimpleEmail](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/commons/mail/SimpleEmail.html) 클래스를 사용하여 아래와 같이 전자 메일 개체를 만듭니다.
+   마지막으로 CQ Mail API를 사용하여 이메일을 보냅니다. [SimpleEmail](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/commons/mail/SimpleEmail.html) 클래스를 사용하여 아래와 같이 전자 메일 개체를 만듭니다.
 
    >[!NOTE]
    >

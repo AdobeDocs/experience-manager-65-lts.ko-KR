@@ -27,9 +27,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1005'
 ht-degree: 5%
 ---
 # 콘텐츠 조각용 구성 요소{#components-for-content-fragments}
@@ -145,4 +145,4 @@ Adobe Experience Manager (AEM) 콘텐츠 조각은 [페이지와 독립적인 �
 * `transformer-cfm-parfilter` - 단락 범위가 지정된 경우 원하지 않는 단락을 필터링합니다(콘텐츠 조각 구성 요소로 수행할 수 있음).
 * `transformer-cfm-assetprocessor` - 조각에 포함된 자산 목록을 검색하는 데 내부적으로 사용됩니다.
 
-렌더링 프로세스는 [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)을(를) 통해 노출되며 필요한 경우 사용자 지정 구성 요소에서 사용할 수 있습니다.
+렌더링 프로세스는 [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)을(를) 통해 노출되며 필요한 경우 사용자 지정 구성 요소에서 사용할 수 있습니다.

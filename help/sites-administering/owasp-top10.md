@@ -23,9 +23,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 4%
 ---
 # OWASP 상위 10개{#owasp-top}
@@ -74,7 +74,7 @@ CSRF(크로스 사이트 요청 위조)는 모든 양식 및 AJAX 요청에 암�
 
 ## &#x200B;8. URL 액세스 제한 실패 {#failure-to-restrict-url-access}
 
-저장소를 사용하면 액세스 제어 항목을 통해 지정된 경로에 있는 지정된 사용자 또는 그룹에 대해 [정교하게 부여된 권한(JCR에서 지정)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)을 설정할 수 있습니다. 액세스 제한은 저장소에 의해 적용됩니다.
+저장소를 사용하면 액세스 제어 항목을 통해 지정된 경로에 있는 지정된 사용자 또는 그룹에 대해 [정교하게 부여된 권한(JCR에서 지정)](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html)을 설정할 수 있습니다. 액세스 제한은 저장소에 의해 적용됩니다.
 
 ## &#x200B;9. 전송 계층 보호 부족 {#insufficient-transport-layer-protection}
 
