@@ -24,9 +24,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
 workflow-type: tm+mt
-source-wordcount: '10681'
+source-wordcount: '10769'
 ht-degree: 2%
 ---
 # 문서 서비스 설치 및 구성 {#installing-and-configuring-document-services}
@@ -201,6 +201,10 @@ UNIX 기반 운영 체제를 사용하는 경우 해당 운영 체제의 설치 
   * ld-linux.so.2
   * libexpat.so.1
 
+* Red Hat® Enterprise Linux® 9에서 32비트 OpenOffice 빌드를 사용하려면 기본적으로 설치되지 않은 `libcrypt.so.1`이(가) 필요합니다. 누락된 경우 OpenOffice가 오류 `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`(으)로 시작되지 못하고 OpenOffice에서 PDF으로 변환되지 않습니다. 라이브러리를 제공하려면 `libxcrypt-compat` 패키지(32비트)를 설치하십시오.
+
+  `sudo dnf install -y libxcrypt-compat.i686`
+
 ## 사전 설치 구성 {#preinstallationconfigurations}
 
 사전 설치 구성 섹션에 나열된 구성은 PDF Generator 서비스에만 적용할 수 있습니다. PDF Generator 서비스를 구성하지 않는 경우 사전 설치 구성 섹션을 건너뛸 수 있습니다.
@@ -215,7 +219,7 @@ PDF Generator 서비스를 사용하여 Microsoft® Word, Microsoft® Excel, Mic
 >* Adobe Acrobat, Microsoft® Word, Excel 및 Powerpoint는 Microsoft® Windows에서만 사용할 수 있습니다. UNIX 기반 운영 체제를 사용하는 경우 OpenOffice를 설치하여 리치 텍스트 파일과 지원되는 ® Office 파일을 PDF 문서로 변환합니다.
 >* PDF Generator 서비스를 사용하도록 구성된 모든 사용자에 대해 Adobe Acrobat 및 타사 소프트웨어를 설치한 후 표시되는 모든 대화 상자를 닫습니다.
 >* 설치된 모든 소프트웨어를 한 번 이상 시작합니다. PDF Generator 서비스를 사용하도록 구성된 모든 사용자의 대화 상자를 모두 닫습니다.
->* [Adobe Acrobat 일련 번호의 만료 날짜를 확인](https://helpx.adobe.com/kr/enterprise/kb/volume-license-expiration-check.html)하고 라이선스 업데이트 또는 만료 날짜를 기준으로 [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)하는 날짜를 설정하십시오.
+>* [Adobe Acrobat 일련 번호의 만료 날짜를 확인](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html)하고 라이선스 업데이트 또는 만료 날짜를 기준으로 [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)하는 날짜를 설정하십시오.
 
 Acrobat을 설치한 후 Microsoft® Word를 엽니다. **Acrobat** 탭에서 **PDF 만들기**&#x200B;를 클릭하고 컴퓨터에서 사용할 수 있는 .doc 또는 .docx 파일을 PDF 문서로 변환합니다. 전환이 성공하면 AEM Forms은 PDF Generator 서비스와 함께 Acrobat을 사용할 준비가 되었습니다.
 
@@ -1074,7 +1078,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 1. [패키지 관리자](/help/sites-administering/package-manager.md)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-   [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
+   [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
 
 1. 패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 중지하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log 파일에 나타나지 않고 로그가 안정될 때까지 기다리십시오.
 
@@ -1377,6 +1381,10 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 * 환경 변수 `OpenOffice_PATH`을(를) 만들어 [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) 또는 dt(장치 트리) 프로필에 설정된 OpenOffice 설치를 가리키도록 설정합니다.
 * OpenOffice를 설치하는 데 문제가 있는 경우 OpenOffice 설치에 필요한 [32비트 라이브러리](#extrarequirements)를 사용할 수 있는지 확인하십시오.
+
+* Red Hat® Enterprise Linux® 9에서 32비트 OpenOffice 빌드를 사용하려면 기본적으로 설치되지 않은 `libcrypt.so.1`이(가) 필요합니다. 누락된 경우 OpenOffice가 오류 `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`(으)로 시작되지 못하고 OpenOffice에서 PDF으로 변환되지 않습니다. 라이브러리를 제공하려면 `libxcrypt-compat` 패키지(32비트)를 설치하십시오.
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 +++
 
