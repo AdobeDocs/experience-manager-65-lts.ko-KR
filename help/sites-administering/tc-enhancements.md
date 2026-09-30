@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 29%
+source-wordcount: '688'
+ht-degree: 26%
 ---
 # 번역 개선 사항{#translation-enhancements}
 
@@ -91,7 +91,7 @@ AEM은 구성된 TMS의 번역 메모리에 기존 문자열의 번역을 업데
 이 기능을 사용하려면 다음 작업을 수행하십시오.
 
 * TMS를 AEM과 사용할 수 있도록 구성해야 합니다.
-* 커넥터가 방법 [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html)를 구현해야 합니다.
+* 커넥터가 방법 [`storeTranslation`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html)를 구현해야 합니다.
   * 이 방법에 포함되는 코드는 번역 메모리 업데이트 요청에 발생하는 일을 결정합니다.
   * 이 방법의 구현을 통해 AEM 번역 프레임워크는 문자열 값 쌍(원본 번역과 업데이트된 번역)을 TMS로 다시 전달합니다.
 

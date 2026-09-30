@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '4952'
+source-wordcount: '4955'
 ht-degree: 1%
 ---
 # Adobe Experience Manager(AEM) 구성 요소 - 기본 사항{#aem-components-the-basics}
@@ -68,13 +68,13 @@ AEM 6.4에서 더 이상 사용되지 않는 ExtJS 기술을 기반으로 한 �
 
 Adobe에서는 마크업 및 렌더링을 담당하는 코드를 구성 요소의 콘텐츠를 선택하는 데 사용되는 논리를 제어하는 코드와 별도로 유지하는 것이 좋습니다.
 
-이 철학은 기본 비즈니스 논리를 정의하는 데 실제 프로그래밍 언어를 사용하도록 의도적으로 제한된 템플릿 언어인 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)에서 지원됩니다. 이 (선택 사항) 논리는 특정 명령을 사용하여 HTL에서 호출됩니다. 이 메커니즘은 주어진 뷰에 대해 호출되는 코드를 강조 표시하고, 필요한 경우 동일한 구성 요소의 다른 뷰에 대해 특정 논리를 허용합니다.
+이 철학은 기본 비즈니스 논리를 정의하는 데 실제 프로그래밍 언어를 사용하도록 의도적으로 제한된 템플릿 언어인 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)에서 지원됩니다. 이 (선택 사항) 논리는 특정 명령을 사용하여 HTL에서 호출됩니다. 이 메커니즘은 주어진 뷰에 대해 호출되는 코드를 강조 표시하고, 필요한 경우 동일한 구성 요소의 다른 뷰에 대해 특정 논리를 허용합니다.
 
 ### HTL과 JSP {#htl-vs-jsp}
 
 HTL은 AEM 6.0과 함께 도입된 HTML 템플릿 언어입니다.
 
-이제 AEM에서 HTL이 권장 스크립팅 언어이므로 자체 구성 요소를 개발할 때 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko)을 사용할지 JSP(Java™ Server Pages)를 사용할지 여부는 간단해야 합니다.
+이제 AEM에서 HTL이 권장 스크립팅 언어이므로 자체 구성 요소를 개발할 때 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)을 사용할지 JSP(Java™ Server Pages)를 사용할지 여부는 간단해야 합니다.
 
 HTL과 JSP는 모두 클래식 및 터치 지원 UI 모두에 대한 구성 요소 개발에 사용할 수 있습니다. HTL은 터치 지원 UI용이고 JSP는 클래식 UI용이라고 가정하는 경향이 있을 수 있지만, 이는 잘못된 인식이며 타이밍으로 인한 더 많은 것입니다. 터치 지원 UI 및 HTL은 거의 동일한 기간에 AEM에 통합되었습니다. 이제 HTL이 권장 언어이므로 터치 지원 UI용 경향이 있는 새 구성 요소에 사용되고 있습니다.
 
@@ -210,7 +210,7 @@ AEM 구성 요소의 구조는 강력하고 유연하며 주요 고려 사항은
 
 구성 요소의 아이콘 또는 약어는 개발자가 구성 요소를 만들 때 구성 요소의 JCR 속성을 통해 정의됩니다. 이러한 속성은 다음 순서로 평가되며 발견된 첫 번째 유효한 속성이 사용됩니다.
 
-1. `cq:icon` - 구성 요소 브라우저에 표시할 [Coral UI 라이브러리](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html)의 표준 아이콘을 가리키는 문자열 속성
+1. `cq:icon` - 구성 요소 브라우저에 표시할 [Coral UI 라이브러리](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/coral-ui/coralui3/Coral.Icon.html)의 표준 아이콘을 가리키는 문자열 속성
    * Coral 아이콘의 HTML 속성 값을 사용합니다.
 1. `abbreviation` - 구성 요소 브라우저에서 구성 요소 이름의 약어를 사용자 지정하는 문자열 속성
    * 약어는 두 문자로 제한해야 합니다.
@@ -601,7 +601,7 @@ AEM 내의 구성 요소는 세 가지 계층을 따릅니다.
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* 예를 들어 `cq:editConfig`의 자식 노드를 찾으려면 `cq:DropTargetConfig` 유형의 `cq:dropTargets`을(를) 검색하고 **&#x200B; CRXDE Lite**&#x200B;에서 쿼리 도구를 사용하여 다음 XPath 쿼리 문자열로 검색할 수 있습니다.
+* 예를 들어 `cq:editConfig`의 자식 노드를 찾으려면 `cq:DropTargetConfig` 유형의 `cq:dropTargets`을(를) 검색하고** CRXDE Lite**에서 쿼리 도구를 사용하여 다음 XPath 쿼리 문자열로 검색할 수 있습니다.
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -1042,7 +1042,7 @@ Adobe에서는 반복을 방지하기 위해 구성 요소 구현자가 핵심 �
 
 >[!NOTE]
 >
->클래식 UI의 경우, 처리기에서 사용할 수 있는 매개 변수를 보려면 [`CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) 및 [`CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) 위젯 설명서의 `before<action>` 및 `after<action>` 이벤트 섹션을 참조하십시오.
+>클래식 UI의 경우, 처리기에서 사용할 수 있는 매개 변수를 보려면 [`CQ.wcm.EditBar`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) 및 [`CQ.wcm.EditRollover`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) 위젯 설명서의 `before<action>` 및 `after<action>` 이벤트 섹션을 참조하십시오.
 
 다음 구성을 사용하면 구성 요소가 삭제, 편집, 삽입 또는 이동된 후 페이지가 새로 고쳐집니다.
 

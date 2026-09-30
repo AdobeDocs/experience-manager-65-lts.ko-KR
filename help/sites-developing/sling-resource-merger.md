@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1262'
 ht-degree: 1%
 ---
 # AEM에서 Sling 리소스 병합 사용{#using-the-sling-resource-merger-in-aem}
@@ -43,7 +43,7 @@ Sling 리소스 병합은 오버레이 및 재정의 리소스(및 해당 속성
 
 >[!CAUTION]
 >
->Sling 리소스 병합 및 관련 메서드는 [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)에서만 사용할 수 있습니다. 이 상황은 또한 표준 터치 지원 UI에만 적절함을 의미합니다. 특히 이 방식으로 정의된 무시는 구성 요소의 터치 지원 대화 상자에만 적용할 수 있습니다.
+>Sling 리소스 병합 및 관련 메서드는 [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/index.html)에서만 사용할 수 있습니다. 이 상황은 또한 표준 터치 지원 UI에만 적절함을 의미합니다. 특히 이 방식으로 정의된 무시는 구성 요소의 터치 지원 대화 상자에만 적용할 수 있습니다.
 >
 >다른 영역(터치 지원 구성 요소의 다른 부분 또는 클래식 UI 포함)을 오버레이하거나 무시하려면 원본에서 적절한 노드 및 구조를 복사합니다. 맞춤화를 정의하는 위치에 사본을 배치합니다.
 
@@ -221,7 +221,7 @@ AEM에서 Sling 리소스 병합을 사용하는 목표는 다음과 같습니�
      * 유형: `String[]`
      * 값: 숨기거나 무시할 하위 노드 목록(`/libs`에서 정의됨)
 
-     와일드카드 &ast;를 사용하여 모든 하위 노드를 숨기거나 무시할 수 있습니다.
+     와일드카드 &amp;ast;를 사용하여 모든 하위 노드를 숨기거나 무시할 수 있습니다.
 
 * **노드 순서 바꾸기**
 

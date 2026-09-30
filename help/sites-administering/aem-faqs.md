@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1084'
 ht-degree: 2%
 ---
 # AEM FAQ {#aem-faqs}
@@ -97,7 +97,7 @@ Touch UI 또는 웹 콘솔을 사용하여 사용 통계 수집을 선택할 수
 
 Touch UI를 통해 언어 사본을 만들 때(**참조** > **언어 사본 업데이트**), 새 DAM 폴더가 새 언어에 만들어지고 여기에서 자산이 참조됩니다.
 
-기본 설정은 기본 구성에 대한 기본 설정입니다. 번역 구성에서 **페이지 Assets 번역** = **번역 안 함**&#x200B;을 설정할 수 있습니다.
+기본 설정은 기본 구성에 대한 기본 설정입니다. 번역 구성에서 **페이지 Assets 번역** = **번역 안 함**을 설정할 수 있습니다.
 AEM 6.4의 경우 **도구** > **클라우드 서비스** > **번역 클라우드 서비스**&#x200B;입니다.
 
 #### AEM SegmentStore(AEM 6.3.1.1)의 기하급수적 증가를 유발하는 AEM 구성 요소를 비활성화하는 방법 {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
@@ -114,9 +114,9 @@ AEM은 작성 인스턴스의 콘솔 및 페이지 작성 기능을 사용자 �
 
 #### CoralUI 2와 CoralUI 3 기반 구성 요소의 차이점은 무엇입니까? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-Granite UI Foundation의 새 슬링 구성 요소 집합이 Coral3에 대해 만들어지고 [/libs/granite/ui/components/coral/foundation 아래에 있습니다.](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) CoralUI 2 기반 구성 요소에 대한 세트와 CoralUI 3 기반 구성 요소에 대한 세트가 있습니다. 새 세트는 이전 세트의 복사-붙여넣기가 아니라 정리됩니다(예: 스트리밍, 더 이상 사용되지 않는 기능 제거). 따라서 페이지는 CoralUI 3 기반 또는 CoralUI 2 기반 세트만 사용하는 것이 좋습니다.
+Granite UI Foundation의 새 슬링 구성 요소 집합이 Coral3에 대해 만들어지고 [/libs/granite/ui/components/coral/foundation 아래에 있습니다.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) CoralUI 2 기반 구성 요소에 대한 세트와 CoralUI 3 기반 구성 요소에 대한 세트가 있습니다. 새 세트는 이전 세트의 복사-붙여넣기가 아니라 정리됩니다(예: 스트리밍, 더 이상 사용되지 않는 기능 제거). 따라서 페이지는 CoralUI 3 기반 또는 CoralUI 2 기반 세트만 사용하는 것이 좋습니다.
 
-자세한 내용은 [CoralUI 3 기반 마이그레이션 가이드](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html)를 참조하세요.
+자세한 내용은 [CoralUI 3 기반 마이그레이션 가이드](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html)를 참조하세요.
 
 #### AEM Assets에서 검색 구성 요소를 사용자 지정하는 방법 {#how-to-customize-the-search-component-in-aem-assets}
 

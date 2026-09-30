@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 3%
 ---
 # 워크플로 시작{#starting-workflows}
@@ -44,13 +44,13 @@ ht-degree: 3%
 >
 >* [페이지에 워크플로 적용](/help/sites-authoring/workflows-applying.md)
 >* [워크플로를 DAM 자산에 적용하는 방법](/help/assets/assets-workflow.md)
->* [AEM Forms](https://helpx.adobe.com/kr/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [번역 프로젝트](/help/sites-administering/tc-manage.md)
 >
 
 ## 워크플로 모델 {#workflow-models}
 
-워크플로 모델 콘솔에 나열된 모델 [&#128279;](/help/sites-administering/workflows.md#workflow-models-and-instances) 중 하나를 기반으로 워크플로를 시작할 수 있습니다. 페이로드만 필수 정보이며 제목 및/또는 댓글도 추가할 수 있습니다.
+워크플로 모델 콘솔에 나열된 모델 ](/help/sites-administering/workflows.md#workflow-models-and-instances) 중 하나를 기반으로 [워크플로를 시작할 수 있습니다. 페이로드만 필수 정보이며 제목 및/또는 댓글도 추가할 수 있습니다.
 
 ## 워크플로우 런처 {#workflows-launchers}
 
@@ -183,7 +183,7 @@ ht-degree: 3%
      이 런처 속성은 쉼표로 구분된 항목 목록입니다. &quot;
 
      * `property-name`은(는) 지정한 속성 이름에서 트리거된 모든 `jcr` 이벤트를 무시합니다. &quot;
-     * `event-user-data:<*someValue*>`은(는) [`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String))를 통해 설정된 `*<someValue*`> `user-data`을(를) 포함하는 모든 이벤트를 무시합니다.
+     * `event-user-data:<*someValue*>`은(는) [`ObservationManager` API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String))를 통해 설정된 `*<someValue*`> `user-data`을(를) 포함하는 모든 이벤트를 무시합니다.
 
      예:
 

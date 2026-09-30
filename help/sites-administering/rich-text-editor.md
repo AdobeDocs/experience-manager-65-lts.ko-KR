@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2978'
 ht-degree: 1%
 ---
 # 서식 있는 텍스트 편집기 구성 {#configure-the-rich-text-editor}
@@ -185,9 +185,9 @@ RTE 플러그인에 대한 자세한 구성은 [RTE 플러그인을 활성화하
 
 >[!NOTE]
 >
->[핵심 구성 요소 텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ko#the-text-component-and-the-rich-text-editor)를 통해 템플릿 편집자는 GUI에서 많은 RTE 플러그인을 콘텐츠 정책으로 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 콘텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 작동할 수 있습니다.
+>[핵심 구성 요소 텍스트 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)를 통해 템플릿 편집자는 GUI에서 많은 RTE 플러그인을 콘텐츠 정책으로 구성할 수 있으므로 기술 구성이 필요하지 않습니다. 콘텐츠 정책은 이 문서에 설명된 대로 RTE UI 구성에서 작동할 수 있습니다.
 >
->자세한 내용은 이 문서의 [RTE UI 설정 및 콘텐츠 정책](/help/sites-administering/rich-text-editor.md) 섹션 및 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=ko)를 참조하십시오.
+>자세한 내용은 이 문서의 [RTE UI 설정 및 콘텐츠 정책](/help/sites-administering/rich-text-editor.md) 섹션 및 [페이지 템플릿 만들기](/help/sites-authoring/templates.md) 및 [핵심 구성 요소 개발자 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -263,7 +263,7 @@ RTE에서 사용할 수 있는 옵션은 사용자 인터페이스 구성에서 
 * RTE의 사용자 인터페이스 구성이 제거되었거나 항목을 사용할 수 없는 경우 콘텐츠 정책이 항목을 구성할 수 없습니다.
 * 작성자는 사용자 인터페이스 구성 및 콘텐츠 정책에 의해 제공되는 기능에만 액세스할 수 있습니다.
 
-예를 들어 [텍스트 핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=ko#the-text-component-and-the-rich-text-editor)를 볼 수 있습니다.
+예를 들어 [텍스트 핵심 구성 요소 설명서](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor)를 볼 수 있습니다.
 
 ## 도구 모음 아이콘과 명령 간의 매핑 사용자 정의 {#iconstoolbar}
 
@@ -327,12 +327,12 @@ RTE 도구 모음에 표시되는 Coral 아이콘과 사용 가능한 명령 간
 
 ## 추가 정보 {#further-information}
 
-RTE 구성에 대한 자세한 내용은 [AEM Widget API](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) 참조를 참조하십시오.
+RTE 구성에 대한 자세한 내용은 [AEM Widget API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText) 참조를 참조하십시오.
 
 특히, 사용 가능한 플러그인 및 관련 옵션을 보려면 다음과 같이 하십시오.
 
-* [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) 구성 요소는 스타일이 지정된 텍스트 정보(서식 있는 텍스트)를 편집하기 위한 양식 필드를 제공합니다. 리치 텍스트 양식에 사용할 수 있는 모든 매개 변수를 알아보려면 구성 옵션 을 참조하십시오.
-* RichText 구성 요소는 [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)에 나열된 플러그인을 사용하여 다양한 기능을 제공합니다. 각 플러그인의 경우:
+* [CQ.form.RichText](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText) 구성 요소는 스타일이 지정된 텍스트 정보(서식 있는 텍스트)를 편집하기 위한 양식 필드를 제공합니다. 리치 텍스트 양식에 사용할 수 있는 모든 매개 변수를 알아보려면 구성 옵션 을 참조하십시오.
+* RichText 구성 요소는 [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)에 나열된 플러그인을 사용하여 다양한 기능을 제공합니다. 각 플러그인의 경우:
 
   * 활성화(또는 비활성화)할 수 있는 기능에 대한 자세한 내용은 기능 을 참조하십시오
   * 적절한 플러그인의 세부 구성에 사용할 수 있는 모든 매개 변수에 대한 구성 옵션 을 참조하십시오

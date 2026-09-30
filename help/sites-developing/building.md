@@ -9,18 +9,16 @@ feature: Developing,Tagging
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: c835a110-89cf-4857-9ee0-c0ad781a66ae
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 0%
-
+source-wordcount: '940'
+ht-degree: 1%
 ---
-
 # AEM 애플리케이션에 태깅 작성{#building-tagging-into-an-aem-application}
 
 프로그래밍 방식으로 태그를 사용하거나 사용자 지정 AEM 애플리케이션 내에서 태그를 확장하는 경우 이 페이지에서는 의 사용에 대해 설명합니다.
 
-* [API 태그 지정](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/tagging/package-summary.html)
+* [태그 지정 API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/tagging/package-summary.html)
 
 와 상호 작용합니다.
 
@@ -33,7 +31,7 @@ ht-degree: 0%
 
 ## 태깅 API 개요 {#overview-of-the-tagging-api}
 
-AEM에서 [태그 지정 프레임워크](/help/sites-developing/framework.md)를 구현하면 JCR API 를 사용하여 태그 및 태그 콘텐츠를 관리할 수 있습니다. TagManager는 `cq:tags` 문자열 배열 속성에 값으로 입력된 태그가 중복되지 않도록 하고, 존재하지 않는 태그를 가리키는 TagID를 제거하고, 이동하거나 병합된 태그에 대해 TagID를 업데이트합니다. TagManager는 잘못된 변경 사항을 모두 되돌리는 JCR 관찰 리스너를 사용합니다. 기본 클래스는 [com.day.cq.tagging](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/package-summary.html) 패키지에 있습니다.
+AEM에서 [태그 지정 프레임워크](/help/sites-developing/framework.md)를 구현하면 JCR API 를 사용하여 태그 및 태그 콘텐츠를 관리할 수 있습니다. TagManager는 `cq:tags` 문자열 배열 속성에 값으로 입력된 태그가 중복되지 않도록 하고, 존재하지 않는 태그를 가리키는 TagID를 제거하고, 이동하거나 병합된 태그에 대해 TagID를 업데이트합니다. TagManager는 잘못된 변경 사항을 모두 되돌리는 JCR 관찰 리스너를 사용합니다. 기본 클래스는 [com.day.cq.tagging](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/tagging/package-summary.html) 패키지에 있습니다.
 
 * JcrTagManagerFactory - `TagManager`의 JCR 기반 구현을 반환합니다. 태깅 API의 참조 구현입니다.
 * `TagManager` - 경로 및 이름별로 태그를 확인하고 만들 수 있습니다.
@@ -152,35 +150,35 @@ http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbag
 
 태그 관리 설명서에 설명된 대로 [다른 언어로 태그 관리](/help/sites-administering/tags.md#managing-tags-in-different-languages) 섹션에서 `title` 태그를 다른 언어로 정의할 수 있습니다. 그런 다음 언어 구분 속성이 태그 노드에 추가됩니다. 이 속성은 프랑스어 번역의 경우 `jcr:title.<locale>` 형식(예: `jcr:title.fr`)을 갖습니다. `<locale>`은(는) 소문자 ISO 로케일 문자열이어야 하며 &quot;-&quot; 대신 &quot;_&quot;를 사용해야 합니다(예: `de_ch`).
 
-**Animals** 태그가 **Products** 페이지에 추가되면 값 `stockphotography:animals`이(가) /content/geometrixx/en/products/jcr:content 노드의 속성 `cq:tags`에 추가됩니다. 번역은 태그 노드에서 참조됩니다.
+**Animals** 태그가 **Products** 페이지에 추가되면 `stockphotography:animals` 값이 /content/geometrixx/en/products/jcr:content 노드의 `cq:tags` 속성에 추가됩니다. 번역은 태그 노드에서 참조됩니다.
 
 서버측 API에 지역화된 `title` 관련 메서드가 있습니다.
 
-* [com.day.cq.tagging.Tag](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [com.day.cq.tagging.Tag](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
-   * getLocalizedTitle(로케일)
-   * getLocalizedTitlePaths()
-   * getLocalizedTitles()
-   * getTitle(로케일)
-   * getTitlePath(로케일)
+  * getLocalizedTitle(로케일)
+  * getLocalizedTitlePaths()
+  * getLocalizedTitles()
+  * getTitle(로케일)
+  * getTitlePath(로케일)
 
-* [com.day.cq.tagging.TagManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [com.day.cq.tagging.TagManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
-   * canCreateTagByTitle(String tagTitlePath, Locale)
-   * createTagByTitle(String tagTitlePath, Locale)
-   * resolveByTitle(String tagTitlePath, Locale)
+  * canCreateTagByTitle(String tagTitlePath, Locale)
+  * createTagByTitle(String tagTitlePath, Locale)
+  * resolveByTitle(String tagTitlePath, Locale)
 
 AEM에서 언어는 페이지 언어 또는 사용자 언어에서 가져올 수 있습니다.
 
 * jsp에서 페이지 언어를 검색하려면 다음을 수행하십시오.
 
-   * `currentPage.getLanguage(false)`
+  * `currentPage.getLanguage(false)`
 
 * jsp에서 사용자 언어를 검색하려면 다음을 수행하십시오.
 
-   * `slingRequest.getLocale()`
+  * `slingRequest.getLocale()`
 
-`currentPage` 및 `slingRequest`은(는) [&lt;cq:definedObjects>](/help/sites-developing/taglib.md) 태그를 통해 JSP에서 사용할 수 있습니다.
+`currentPage` 및 `slingRequest`은(는) [&lt;cq:definedObjects](/help/sites-developing/taglib.md) 태그를 통해 JSP에서 사용할 수 있습니다.
 
 태그 지정의 경우 지역화는 컨텍스트에 따라 달라집니다. 태그 `titles`은(는) 페이지 언어, 사용자 언어 또는 다른 언어로 표시될 수 있습니다.
 

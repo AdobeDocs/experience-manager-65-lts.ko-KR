@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2449'
 ht-degree: 2%
 ---
 # Adobe Experience Manager(AEM) 구성 요소 개발(클래식 UI){#developing-aem-components-classic-ui}
@@ -38,7 +38,7 @@ ht-degree: 2%
 >
 >HTML 템플릿 언어(HTL)와 JSP를 모두 클래식 UI에 대한 구성 요소 개발에 사용할 수 있지만, 이 페이지에서는 JSP를 사용한 개발을 보여 줍니다. 이는 전적으로 클래식 UI 내에서 JSP를 사용한 내역이 원인입니다.
 >
->이제 HTL이 AEM에 권장되는 스크립팅 언어입니다. 메서드를 비교하려면 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=ko) 및 [AEM 구성 요소 개발](/help/sites-developing/developing-components.md)을 참조하십시오.
+>이제 HTL이 AEM에 권장되는 스크립팅 언어입니다. 메서드를 비교하려면 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 및 [AEM 구성 요소 개발](/help/sites-developing/developing-components.md)을 참조하십시오.
 
 ## 구조 {#structure}
 
@@ -101,7 +101,7 @@ AEM WCM의 콘텐츠에 액세스하는 방법에는 세 가지가 있습니다.
 
 * `global.jsp`에 도입된 `currentPage` 개체를 통해:
 
-  `currentPage` 개체는 페이지의 인스턴스입니다([AEM API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html) 참조). 페이지 클래스는 콘텐츠에 액세스하는 몇 가지 메서드를 제공합니다.
+  `currentPage` 개체는 페이지의 인스턴스입니다([AEM API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html) 참조). 페이지 클래스는 콘텐츠에 액세스하는 몇 가지 메서드를 제공합니다.
 
   예: `String pageTitle = currentPage.getTitle();`
 
@@ -185,8 +185,8 @@ CQ 및 Sling 태그 라이브러리를 사용하면 템플릿 및 구성 요소�
    >
    >다음에 대한 구성 요소:
    >
-   >* 터치 사용 UI에서 [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) 구성 요소를 사용합니다.
-   >* 클래식 UI는 [ExtJS 위젯](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)을 사용합니다.
+   >* 터치 사용 UI에서 [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) 구성 요소를 사용합니다.
+   >* 클래식 UI는 [ExtJS 위젯](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)을 사용합니다.
 
    >[!NOTE]
    >

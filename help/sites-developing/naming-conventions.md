@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '318'
 ht-degree: 2%
 ---
 # 명명 규칙 {#naming-conventions}
@@ -42,7 +42,7 @@ ht-degree: 2%
 
 ### JCR 유틸리티 {#jcr-utilities}
 
-[JcrUtil](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html)은(는) JCR 유틸리티의 AEM 구현입니다. 이름 확인에 특히 중요한 것은 이 변수가 제어하는 문자 매핑과 다음 유효성 검사입니다.
+[JcrUtil](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html)은(는) JCR 유틸리티의 AEM 구현입니다. 이름 확인에 특히 중요한 것은 이 변수가 제어하는 문자 매핑과 다음 유효성 검사입니다.
 
 * `isValidName`
 
@@ -56,7 +56,7 @@ ht-degree: 2%
 
 ### 페이지 관리자 {#page-manager}
 
-[PageManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html)은(는) [JCRUtil](#jcr-utilities)을(를) 기반으로 페이지 수준 작업에 대한 메서드를 제공합니다.
+[PageManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html)은(는) [JCRUtil](#jcr-utilities)을(를) 기반으로 페이지 수준 작업에 대한 메서드를 제공합니다.
 
 ### 표준 UI {#standard-ui}
 

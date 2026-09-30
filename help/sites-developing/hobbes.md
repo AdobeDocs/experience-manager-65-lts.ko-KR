@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '790'
 ht-degree: 4%
 ---
 # UI 테스트{#testing-your-ui}
@@ -39,7 +39,7 @@ AEM 테스트 프레임워크는 JavaScript에서 작성된 테스트 라이브�
 
 >[!NOTE]
 >
->API에 대한 자세한 내용은 Hobbes.js [설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)를 참조하십시오.
+>API에 대한 자세한 내용은 Hobbes.js [설명서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html)를 참조하십시오.
 
 ## 테스트 구조 {#structure-of-tests}
 
@@ -112,7 +112,7 @@ AEM 내에서 자동화된 테스트를 사용할 때 다음 용어를 이해하
 
 다음 절차에서는 [We.Retail 콘텐츠](/help/sites-developing/we-retail.md)를 사용하여 테스트 도구 모음을 만들고 실행하는 과정을 단계별로 안내하지만, 다른 웹 페이지를 사용하도록 테스트를 쉽게 수정할 수 있습니다.
 
-고유한 테스트 세트 만들기에 대한 자세한 내용은 [Hobbes.js API 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)를 참조하십시오.
+고유한 테스트 세트 만들기에 대한 자세한 내용은 [Hobbes.js API 설명서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html)를 참조하십시오.
 
 1. CRXDE Lite를 엽니다. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. `/etc/clientlibs` 폴더를 마우스 오른쪽 단추로 클릭하고 **만들기 > 폴더 만들기**&#x200B;를 클릭합니다. `myTests` 이름을 입력하고 **확인**&#x200B;을 클릭합니다.

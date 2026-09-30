@@ -20,15 +20,15 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 8%
+source-wordcount: '225'
+ht-degree: 3%
 ---
 
 # 사용자 정의 네임스페이스{#custom-namespaces}
 
-사용자 지정 [네임스페이스](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html)를 정의하고 AEM 6.5 LTS에 배포하는 방법에 대해 알아봅니다.
+사용자 지정 [네임스페이스](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/4.5_Namespaces.html)를 정의하고 AEM 6.5 LTS에 배포하는 방법에 대해 알아봅니다.
 
 사용자 지정 네임스페이스는 `:` 앞에 있는 JCR 속성의 선택적 부분입니다. AEM에서는 다음과 같은 여러 네임스페이스를 사용합니다.
 

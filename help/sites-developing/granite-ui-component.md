@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '550'
 ht-degree: 2%
 ---
 # 새로운 Granite UI 필드 구성 요소 만들기{#creating-a-new-granite-ui-field-component}
@@ -37,7 +37,7 @@ Granite UI는 양식에서 사용할 수 있도록 디자인된 다양한 구성
 
 >[!NOTE]
 >
->필드에 대한 자세한 내용은 [Granite UI 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)를 참조하십시오.
+>필드에 대한 자세한 내용은 [Granite UI 설명서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)를 참조하십시오.
 
 Granite UI Foundation 프레임워크를 사용하여 Granite 구성 요소를 개발 및/또는 확장합니다. 여기에는 두 가지 요소가 있습니다.
 
@@ -59,7 +59,7 @@ Granite UI Foundation 프레임워크를 사용하여 Granite 구성 요소를 �
 * `init.jsp`: 일반 처리, 레이블 지정, 설명을 처리하고 필드를 렌더링할 때 필요한 양식 값을 제공합니다.
 * `render.jsp`: 필드의 실제 렌더링이 수행되며 사용자 지정 필드에 대해 재정의해야 합니다. `init.jsp`에 포함됩니다.
 
-자세한 내용은 [Granite UI 설명서 - 필드](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html)를 참조하십시오.
+자세한 내용은 [Granite UI 설명서 - 필드](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html)를 참조하십시오.
 
 예를 보려면 다음을 참조하십시오.
 

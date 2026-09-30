@@ -25,9 +25,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '820'
 ht-degree: 2%
 ---
 # Query Builder의 사용자 지정 설명 평가기 구현{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
@@ -68,7 +68,7 @@ GitHub에서 이 페이지의 코드를 확인할 수 있습니다.
 
 >[!NOTE]
 >
->`PredicateEvaluator` 및 `com.day.cq.search` 패키지에 대한 자세한 내용은 [Java™ 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/search/package-summary.html)를 참조하십시오.
+>`PredicateEvaluator` 및 `com.day.cq.search` 패키지에 대한 자세한 내용은 [Java™ 설명서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html?com/day/cq/search/package-summary.html)를 참조하십시오.
 
 ### 복제 메타데이터에 대한 사용자 지정 설명 평가기 구현 {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -153,7 +153,7 @@ pom.xml
 
 >[!NOTE]
 >
->다음 절차에서는 데이터를 필터링하기 위해 `Xpath` 식을 만드는 방법을 설명합니다. 행 단위로 데이터를 선택하는 `includes` 메서드를 구현하는 방법도 있습니다. 자세한 내용은 [Java™ 설명서](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29)를 참조하세요.
+>다음 절차에서는 데이터를 필터링하기 위해 `Xpath` 식을 만드는 방법을 설명합니다. 행 단위로 데이터를 선택하는 `includes` 메서드를 구현하는 방법도 있습니다. 자세한 내용은 [Java™ 설명서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29)를 참조하세요.
 
 1. `com.day.cq.search.eval.AbstractPredicateEvaluator`을(를) 확장하는 Java™ 클래스 만들기
 1. 다음과 같이 `@Component`(으)로 클래스에 주석을 답니다.

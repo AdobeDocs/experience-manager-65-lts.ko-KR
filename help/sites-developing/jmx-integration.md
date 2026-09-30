@@ -18,9 +18,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1673'
 ht-degree: 0%
 ---
 # JMX 콘솔과 서비스 통합{#integrating-services-with-the-jmx-console}
@@ -47,11 +47,11 @@ CQ5 또는 CRX 리소스를 관리하기 위해 만드는 MBean은 javax.managem
 
 ### 주석을 사용하여 MBean 정보 제공 {#using-annotations-to-provide-mbean-information}
 
-[com.adobe.granite.jmx.annotation](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) 패키지는 MBean 메타데이터를 JMX 콘솔에 쉽게 제공하기 위한 여러 주석과 클래스를 제공합니다. MBean의 MBeanInfo 개체에 정보를 직접 추가하는 대신 이러한 주석과 클래스를 사용합니다.
+[com.adobe.granite.jmx.annotation](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) 패키지는 MBean 메타데이터를 JMX 콘솔에 쉽게 제공하기 위한 여러 주석과 클래스를 제공합니다. MBean의 MBeanInfo 개체에 정보를 직접 추가하는 대신 이러한 주석과 클래스를 사용합니다.
 
 **주석**
 
-관리 인터페이스에 주석을 추가하여 MBean 메타데이터를 지정합니다. 이 정보는 배포된 각 구현 클래스에 대한 JMX 콘솔에 표시됩니다. 다음 주석을 사용할 수 있습니다(자세한 내용은 [com.adobe.granite.jmx.annotation JavaDocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) 참조).
+관리 인터페이스에 주석을 추가하여 MBean 메타데이터를 지정합니다. 이 정보는 배포된 각 구현 클래스에 대한 JMX 콘솔에 표시됩니다. 다음 주석을 사용할 수 있습니다(자세한 내용은 [com.adobe.granite.jmx.annotation JavaDocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) 참조).
 
 * **설명:** MBean 클래스 또는 메서드에 대한 설명을 제공합니다. 클래스 선언에서 이 설명을 사용하면 MBean의 JMX 콘솔 페이지에 설명이 나타납니다. 메서드에서 사용하는 경우 설명이 해당 속성 또는 작업에 대한 가리키기 텍스트로 표시됩니다.
 * **영향:** 메서드의 영향. 올바른 매개 변수 값은 [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html)에 정의된 필드입니다.

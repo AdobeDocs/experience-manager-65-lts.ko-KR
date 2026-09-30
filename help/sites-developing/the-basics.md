@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3373'
+source-wordcount: '3379'
 ht-degree: 1%
 ---
 # AEM 핵심 개념 {#aem-core-concepts}
@@ -49,11 +49,11 @@ AEM을 기반으로 개발하려면 다음 기술이 필요합니다.
 
 ## Java™ 콘텐츠 저장소 {#java-content-repository}
 
-Java™ JCR(Content Repository) 표준 [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)은(는) 콘텐츠 저장소 내의 세분화된 수준에서 양방향으로 콘텐츠에 액세스하는 공급업체 독립적이고 구현 독립적인 방법을 지정합니다.
+Java™ JCR(Content Repository) 표준 [JSR 283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)은(는) 콘텐츠 저장소 내의 세분화된 수준에서 양방향으로 콘텐츠에 액세스하는 공급업체 독립적이고 구현 독립적인 방법을 지정합니다.
 
 사양 리드는 Adobe Research (스위스) AG가 담당합니다.
 
-[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지 javax.jcr.&ast;는 저장소 콘텐츠에 직접 액세스하고 조작하는 데 사용됩니다.
+[JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html) 패키지 javax.jcr.&amp;ast;는 저장소 콘텐츠에 직접 액세스하고 조작하는 데 사용됩니다.
 
 ## Experience Server(CRX) 및 Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -294,9 +294,9 @@ Sling에서 스크립트는 REST 서버의 엄격한 개념을 손상시킬 수 
 
 ### Sling API {#sling-api}
 
-Sling API 패키지, org.apache.sling.&ast; 및 태그 라이브러리를 사용합니다.
+Sling API 패키지, org.apache.sling.&amp;ast; 및 태그 라이브러리를 사용합니다.
 
-### sling:include을(를) 사용하여 기존 요소 참조 {#referencing-existing-elements-using-sling-include}
+### sling:include {#referencing-existing-elements-using-sling-include}을(를) 사용하여 기존 요소 참조
 
 마지막으로 스크립트 내의 기존 요소를 참조해야 한다는 점을 고려해야 합니다.
 
@@ -345,7 +345,7 @@ OSGi는 모듈식 애플리케이션과 라이브러리(Java™용 동적 모듈
 
 **항목** 항목이 노드 또는 속성입니다.
 
-Item 개체 조작에 대한 자세한 내용은 javax.jcr.Item 인터페이스의 [Java™ 문서](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html)를 참조하십시오
+Item 개체 조작에 대한 자세한 내용은 javax.jcr.Item 인터페이스의 [Java™ 문서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html)를 참조하십시오
 
 **노드(및 해당 속성)** 노드 및 해당 속성은 JCR API 2.0 사양(JSR 283)에 정의되어 있습니다. 컨텐츠, 객체 정의, 렌더링 스크립트 및 기타 데이터를 저장합니다.
 
@@ -361,7 +361,7 @@ JCR 이름인 노드는 Sling 환경에서 리소스라고도 합니다.
 
 현재 노드 개체가 되는 currentNode입니다.
 
-노드 개체 조작에 대한 자세한 내용은 [Java™ 문서](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html)를 참조하십시오.
+노드 개체 조작에 대한 자세한 내용은 [Java™ 문서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html)를 참조하십시오.
 
 **위젯** AEM의 모든 사용자 입력은 위젯에 의해 관리됩니다. 이러한 속성은 종종 콘텐츠 편집을 제어하는 데 사용됩니다.
 
@@ -400,7 +400,7 @@ AEM 내에서 구성 요소는 리소스의 콘텐츠를 렌더링하는 데 종
 
 S`tring pageName = currentPage.getName();`
 
-현재 페이지 개체인 TcurrentPage입니다. 페이지 개체 조작에 대한 자세한 내용은 [Java™ 문서](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)를 참조하십시오.
+현재 페이지 개체인 TcurrentPage입니다. 페이지 개체 조작에 대한 자세한 내용은 [Java™ 문서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)를 참조하십시오.
 
 **페이지 관리자** 페이지 관리자는 페이지 수준 작업을 위한 메서드를 제공하는 인터페이스입니다.
 
@@ -408,7 +408,7 @@ S`tring pageName = currentPage.getName();`
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-pageManager 개체는 pageManager 개체이고 myResource는 리소스 개체입니다. 페이지 관리자에서 제공하는 메서드에 대한 자세한 내용은 [Java™ 문서](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html)를 참조하십시오.
+pageManager 개체는 pageManager 개체이고 myResource는 리소스 개체입니다. 페이지 관리자에서 제공하는 메서드에 대한 자세한 내용은 [Java™ 문서](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html)를 참조하십시오.
 
 ## 저장소 내의 구조 {#structure-within-the-repository}
 
@@ -456,7 +456,7 @@ AEM을 사용하면 프로덕션 환경은 종종 [작성자 및 게시 인스�
 
 ## 더 Dispatcher {#the-dispatcher}
 
-Dispatcher은 캐싱 및/또는 로드 밸런싱을 위한 Adobe의 도구입니다. 자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko)에서 확인할 수 있습니다.
+Dispatcher은 캐싱 및/또는 로드 밸런싱을 위한 Adobe의 도구입니다. 자세한 내용은 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)에서 확인할 수 있습니다.
 
 ## FileVault(소스 버전 시스템) {#filevault-source-revision-system}
 

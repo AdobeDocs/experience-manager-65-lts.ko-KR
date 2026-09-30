@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 6%
+source-wordcount: '890'
+ht-degree: 5%
 ---
 # Adobe Experience Manager 터치 지원 UI의 구조{#structure-of-the-aem-touch-enabled-ui}
 
@@ -176,4 +176,4 @@ AEM에는 편집, 미리보기, 주석 달기 등 페이지 작성을 위해 이
 
 터치 사용 UI와 관련된 개념에 대한 자세한 내용은 [AEM 터치 사용 UI의 개념](/help/sites-developing/touch-ui-concepts.md)을 참조하십시오.
 
-자세한 기술 정보는 터치 사용 페이지 편집기의 [JS 설명서 집합](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)을 참조하십시오.
+자세한 기술 정보는 터치 사용 페이지 편집기의 [JS 설명서 집합](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html)을 참조하십시오.

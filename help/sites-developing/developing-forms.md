@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1952'
 ht-degree: 1%
 ---
 # 양식 개발(클래식 UI){#developing-forms-classic-ui}
@@ -48,7 +48,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 문서는 클래식 UI에서 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)를 사용한 양식 개발에 중점을 둡니다. Adobe에서는 터치 사용 UI에서 양식 개발을 위해 새 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md)를 사용할 것을 권장합니다.
+>이 문서는 클래식 UI에서 [기초 구성 요소](/help/sites-authoring/default-components-foundation.md)를 사용한 양식 개발에 중점을 둡니다. Adobe에서는 터치 사용 UI에서 양식 개발을 위해 새 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 및 [조건 숨기기](/help/sites-developing/hide-conditions.md)를 사용할 것을 권장합니다.
 
 ## 양식 값 미리 로드 {#preloading-form-values}
 
@@ -324,7 +324,7 @@ JavaScript에서 조건은 필드를 참조하기 위해 요소 이름 속성의
 
 ### Forms에 사용할 스크립트 개발 {#developing-scripts-for-use-with-forms}
 
-스크립트를 작성할 때 사용할 수 있는 API 요소에 대한 자세한 내용은 [양식 관련 javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html)을 참조하십시오.
+스크립트를 작성할 때 사용할 수 있는 API 요소에 대한 자세한 내용은 [양식 관련 javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html)을 참조하십시오.
 
 양식을 제출하기 전에 서비스를 호출하고 실패한 경우 서비스를 취소하는 등의 작업에 이 옵션을 사용할 수 있습니다.
 
