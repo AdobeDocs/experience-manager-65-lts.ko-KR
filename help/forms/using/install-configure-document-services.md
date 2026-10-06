@@ -24,9 +24,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
+source-git-commit: 1b62d0d980c9916d03ed6a14d7e42a4923967243
 workflow-type: tm+mt
-source-wordcount: '10769'
+source-wordcount: '10979'
 ht-degree: 2%
 ---
 # 문서 서비스 설치 및 구성 {#installing-and-configuring-document-services}
@@ -1122,6 +1122,27 @@ PDF Generator 서비스를 실행하려면 로컬 사용자 계정이 필요합�
 1. [AEM Forms PDF Generator 구성](http://localhost:4502/libs/fd/pdfg/config/ui.html) 페이지를 엽니다.
 
 1. **[!UICONTROL 사용자 계정]** 탭에서 로컬 사용자 계정의 자격 증명을 제공하고 **[!UICONTROL 제출]**&#x200B;을 클릭합니다. ® Windows에 메시지가 표시되면 사용자에 대한 액세스를 허용합니다. 추가되면 구성된 사용자가 **[!UICONTROL 사용자 계정]** 탭의 **[!UICONTROL 사용자 계정]** 섹션에 표시됩니다.
+
+### (Windows만 해당) 다중 스레드 PDF Generator 전환 활성화
+
+AEM Forms이 Windows 서비스로 실행되는 동안 다중 스레드 문서 변환을 실행하기 위해 PDF Generator은 구성된 단일 사용자 계정에서 변환을 처리합니다.
+
+>[!NOTE]
+>
+> 이 모드에서 **® Word**(doc/docx) 및 **Excel**(xls/xlsx)의 여러 인스턴스는 동일한 사용자에서 실행되며 전환을 동시에 처리합니다. **® PowerPoint**(ppt/pptx)은(는) 이 모드를 지원하지 않습니다. PDF Generator은 한 번에 하나의 PowerPoint 인스턴스만 시작하므로 PowerPoint에서는 다중 스레드 전환이 지원되지 않습니다.
+
+Word 및 Excel에 대해 다중 스레드 변환을 활성화하려면 다음 작업을 수행하십시오.
+
+1. PDF Generator에 대해 [로컬 사용자 계정](#configure-a-local-user-account-to-run-the-pdf-generator-service)을 구성하십시오.
+1. AEM 작성자 인스턴스에 로그인하고 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 도구]** > **[!UICONTROL Forms]** > **[!UICONTROL PDF Generator 구성]**&#x200B;으로 이동합니다. 기본 URL은 <http://localhost:4502/libs/fd/pdfg/config/ui.html>입니다.
+1. **[!UICONTROL 일반 구성]** 탭에서 다음 옵션을 설정합니다(Word용 PDFMaker 및 Excel용 Native2PDF 구성).
+
+   * **PDFMaker에 대해 단일 사용자 모드 사용:** **true**
+   * **PDFMaker 단일 사용자 프로세스 풀 크기:**&#x200B;을(를) 원하는 대로 설정합니다. 이 값은 동시에 전환을 실행할 수 있는 최대 Word 인스턴스 수입니다.
+   * **Native2PDF에 단일 사용자 모드 사용:** **true**
+   * **Native2PDF 단일 사용자 프로세스 풀 크기:**&#x200B;을(를) 원하는 대로 설정합니다. 이 값은 동시에 전환을 실행할 수 있는 최대 Excel 인스턴스 수입니다.
+
+1. AEM Forms 서버를 다시 시작합니다.
 
 ### 시간 초과 설정 구성 {#configure-the-time-out-settings}
 
