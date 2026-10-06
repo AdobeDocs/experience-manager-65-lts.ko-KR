@@ -8,14 +8,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 425c6194-0b87-4b01-a013-f620755072b3
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 4%
-
+source-wordcount: '646'
+ht-degree: 3%
 ---
-
 # ™ studio 프로젝트 설정 및 Android™ 앱 빌드 {#set-up-the-android-studio-project-and-build-the-android-app}
+
+>[!NOTE]
+>
+>AEM Forms 앱의 Android 및 iOS 버전은 단종되었습니다. Android 앱은 2026년 9월에 Google Play에서 게시 취소되었으며 iOS 앱은 Apple App Store에서 제거되었습니다.
+>이러한 앱은 더 이상 설치할 수 없습니다. Android 앱에 대한 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 이 문서는 AEM Forms 앱 6.3.1.1 이상 버전을 빌드하기 위한 것입니다. AEM Forms 앱 6.3의 소스 코드에서 앱을 빌드하려면 [Eclipse 프로젝트 설정 및 Android™ 앱 빌드](/help/forms/using/setup-eclipse-project-build-installer.md)를 참조하십시오.
 
@@ -52,9 +55,9 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
    **Windows® 사용자용**: `%HOMEPATH%\Projects`
 
-   >[!NOTE]
-   >
-   >Windows®의 경우 Android™ 프로젝트를 시스템 드라이브에 보관하는 것이 좋습니다.
+>[!NOTE]
+>
+>Windows®의 경우 Android™ 프로젝트를 시스템 드라이브에 보관하는 것이 좋습니다.
 
 1. 다음 디렉토리에서 아카이브를 추출합니다.
 
@@ -62,9 +65,9 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
 
    **Windows® 사용자용**: `%HOMEPATH%\Projects\[your-project]`
 
-   >[!NOTE]
-   >
-   >프로젝트를 ™ Studio로 가져오기 전에 추출된 Android 프로젝트를 시스템 드라이브에 보관하는 것이 좋습니다.
+>[!NOTE]
+>
+>프로젝트를 ™ Studio로 가져오기 전에 추출된 Android 프로젝트를 시스템 드라이브에 보관하는 것이 좋습니다.
 
 1. ™ Studio를 시작합니다.
 

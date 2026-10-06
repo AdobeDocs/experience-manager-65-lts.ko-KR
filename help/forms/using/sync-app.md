@@ -26,12 +26,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2b710c6ef8d291a42b4a7658bf84f5e764422d5c
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '431'
 ht-degree: 2%
 ---
 # 앱 동기화{#synchronizing-the-app}
+
+>[!NOTE]
+>
+>AEM Forms 앱의 Android 및 iOS 버전은 단종되었습니다. Android 앱은 2026년 9월에 Google Play에서 게시 취소되었으며 iOS 앱은 Apple App Store에서 제거되었습니다.
+>이러한 앱은 더 이상 설치할 수 없습니다. Android 앱에 대한 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 ## 앱 동기화 {#synchronizing-the-app-1}
 

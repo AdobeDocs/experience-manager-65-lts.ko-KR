@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '449'
 ht-degree: 2%
 ---
 # 일반 설정 업데이트{#updating-general-settings}
+
+>[!NOTE]
+>
+>AEM Forms 앱의 Android 및 iOS 버전은 단종되었습니다. Android 앱은 2026년 9월에 Google Play에서 게시 취소되었으며 iOS 앱은 Apple App Store에서 제거되었습니다.
+>이러한 앱은 더 이상 설치할 수 없습니다. Android 앱에 대한 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 AEM Forms 앱의 일반 설정을 사용하면 첨부 파일 가져오기, 오프라인 모드, 랜딩 화면, 기본 범주 및 자동 저장 빈도 등의 설정을 지정할 수 있습니다.
 
@@ -51,9 +56,9 @@ AEM Forms 앱의 일반 설정을 사용하면 첨부 파일 가져오기, 오�
 
    일반 설정 화면
 
-   >[!NOTE]
-   >
-   >옵션은 서로 다른 모바일 장치에서 다르게 표시될 수 있습니다.
+>[!NOTE]
+>
+>옵션은 서로 다른 모바일 장치에서 다르게 표시될 수 있습니다.
 
 ### 일반 설정 {#general-settings}
 

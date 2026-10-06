@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 2%
+source-wordcount: '953'
+ht-degree: 1%
 ---
 # 브랜딩 사용자 지정 {#branding-customization}
+
+>[!NOTE]
+>
+>AEM Forms 앱의 Android 및 iOS 버전은 단종되었습니다. Android 앱은 2026년 9월에 Google Play에서 게시 취소되었으며 iOS 앱은 Apple App Store에서 제거되었습니다.
+>이러한 앱은 더 이상 설치할 수 없습니다. Android 앱에 대한 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 애플리케이션 아이콘, 애플리케이션 이름, 론치 이미지 및 로그인 페이지를 사용자 정의하여 AEM Forms 앱에 고유한 조직별 모양을 제공할 수 있습니다. 예를 들어 조직의 로고를 사용하도록 이미지를 변경할 수 있습니다. AEM Forms 앱은 다음과 같은 사용자 지정을 지원합니다.
 
@@ -60,9 +65,9 @@ ht-degree: 2%
 
    Capture 프로젝트에 업로드하여 프로젝트의 기존 파일을 바꿉니다.
 
-   >[!NOTE]
-   >
-   >이미지의 이름 및 해상도가 프로젝트에서 교체하는 이미지와 일치하는지 확인합니다.
+>[!NOTE]
+>
+>이미지의 이름 및 해상도가 프로젝트에서 교체하는 이미지와 일치하는지 확인합니다.
 
 1. iOS 장치 또는 iOS 시뮬레이터에서 AEM Forms 앱을 빌드하고 실행합니다.
 
@@ -80,9 +85,9 @@ ht-degree: 2%
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxxhdpi`
 
-   >[!NOTE]
-   >
-   >이미지의 이름 및 해상도가 프로젝트에서 교체하는 이미지와 일치하는지 확인합니다.
+>[!NOTE]
+>
+>이미지의 이름 및 해상도가 프로젝트에서 교체하는 이미지와 일치하는지 확인합니다.
 
 1. AEM Forms 앱을 다시 빌드합니다.
 
@@ -96,9 +101,9 @@ ht-degree: 2%
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\res\screens\windows`
 
-   >[!NOTE]
-   >
-   >이미지의 이름 및 해상도가 프로젝트에서 교체하는 이미지와 일치하는지 확인합니다.
+>[!NOTE]
+>
+>이미지의 이름 및 해상도가 프로젝트에서 교체하는 이미지와 일치하는지 확인합니다.
 
 1. AEM Forms 앱을 다시 빌드합니다.
 

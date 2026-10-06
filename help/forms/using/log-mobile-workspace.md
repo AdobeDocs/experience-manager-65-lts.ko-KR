@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '214'
 ht-degree: 0%
 ---
 # Adobe Experience Manager Forms 앱에 로그인{#logging-in-to-aem-forms-app}
+
+>[!NOTE]
+>
+>AEM Forms 앱의 Android 및 iOS 버전은 단종되었습니다. Android 앱은 2026년 9월에 Google Play에서 게시 취소되었으며 iOS 앱은 Apple App Store에서 제거되었습니다.
+>이러한 앱은 더 이상 설치할 수 없습니다. Android 앱에 대한 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 Adobe Experience Manager(AEM) Forms 앱을 시작할 때 먼저 로그인 자격 증명과 AEM Forms 서버 URL을 제공해야 합니다.
 
@@ -39,12 +44,12 @@ Adobe Experience Manager(AEM) Forms 앱을 시작할 때 먼저 로그인 자격
 1. 모바일 장치에서 AEM Forms 앱 아이콘을 선택합니다.
 1. 앱에 로그인하려면 사용자 이름, 암호 및 AEM Forms 서버 URL을 입력합니다.
 
-   >[!NOTE]
-   >
-   >모바일 앱은 사용자가 입력하는 모든 AEM Forms 서버 URL을 캐시합니다.
-   >
-   >    * 서버 URL 목록을 표시하려면 서버 URL 텍스트 상자의 오른쪽 모서리에 있는 목록 화살표를 클릭합니다.
-   >    * 앱을 통해 로그인할 AEM Forms 서버 URL을 선택합니다.
+>[!NOTE]
+>
+>모바일 앱은 사용자가 입력하는 모든 AEM Forms 서버 URL을 캐시합니다.
+>
+>    * 서버 URL 목록을 표시하려면 서버 URL 텍스트 상자의 오른쪽 모서리에 있는 목록 화살표를 클릭합니다.
+>    * 앱을 통해 로그인할 AEM Forms 서버 URL을 선택합니다.
 
 앱에 로그인하면 [**홈** 화면](../../forms/using/home-screen.md)(으)로 이동합니다.
 

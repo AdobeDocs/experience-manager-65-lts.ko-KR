@@ -8,14 +8,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: a804ba9b-c5c6-4d76-96e4-5d729b673ca4
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: d8150dc7cb8ec161b875263ecfaaca6424ff629f
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '785'
 ht-degree: 5%
-
 ---
-
 # AEM Forms Android 앱 빌드 {#build-the-aem-forms-android-app}
+
+>[!NOTE]
+>
+>AEM Forms 앱의 Android 및 iOS 버전은 단종되었습니다. Android 앱은 2026년 9월에 Google Play에서 게시 취소되었으며 iOS 앱은 Apple App Store에서 제거되었습니다.
+>이러한 앱은 더 이상 설치할 수 없습니다. Android 앱에 대한 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 AEM Forms용 Android 앱을 빌드하려면 권장 시퀀스에서 다음 단계를 수행하십시오.
 
