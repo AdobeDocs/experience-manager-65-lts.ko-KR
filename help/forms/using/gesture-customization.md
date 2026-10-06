@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '371'
 ht-degree: 1%
 ---
 # 제스처 사용자 정의 {#gesture-customization}
+
+>[!NOTE]
+>
+>AEM Forms 앱의 Android 및 iOS 버전은 단종되었습니다. Android 앱은 2026년 9월에 Google Play에서 게시 취소되었으며 iOS 앱은 Apple App Store에서 제거되었습니다.
+>이러한 앱은 더 이상 설치할 수 없습니다. Android 앱에 대한 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 AEM Forms 앱의 제스처를 사용자 정의하여 앱과 상호 작용하는 고유한 방법을 제공할 수 있습니다. 예를 들어 작업 또는 시작 지점을 열거나 닫는 새 제스처를 추가할 수 있습니다.
 
@@ -50,9 +55,9 @@ AEM Forms 앱에서 왼쪽 스와이프는 새 작업 또는 시작 지점을 �
    * Eclipse에서 **자산 > www > wsmobile > js > 런타임 > 보기** 폴더로 이동합니다.
    * Visual Studio에서 **MWSWindows > www > wsmobile > js > runtime > views** 폴더로 이동합니다.
 
-   >[!NOTE]
-   >
-   >task.js 파일에는 작업 또는 시작점 목록에 나열된 각 작업 또는 시작점과 연관된 백본 보기가 포함되어 있습니다.
+>[!NOTE]
+>
+>task.js 파일에는 작업 또는 시작점 목록에 나열된 각 작업 또는 시작점과 연관된 백본 보기가 포함되어 있습니다.
 
 1. `task.js` 파일에서 보기의 이벤트 속성을 검색합니다.
 

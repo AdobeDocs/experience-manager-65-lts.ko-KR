@@ -9,14 +9,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: c5092e61-c3f9-4770-91be-247e6a02cdb4
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '838'
 ht-degree: 5%
-
 ---
-
 # Xcode 프로젝트 설정 및 iOS 앱 빌드{#set-up-the-xcode-project-and-build-the-ios-app}
+
+>[!NOTE]
+>
+>iOS용 AEM Forms 앱이 Apple App Store에서 더 이상 사용되지 않고 제거되었습니다.
+>더 이상 설치할 수 없습니다.
 
 AEM Forms은 AEM Forms 앱의 전체 소스 코드를 제공합니다. 소스에는 사용자 지정 AEM Forms 앱을 빌드하기 위한 모든 구성 요소가 포함되어 있습니다. 원본 코드 보관 `adobe-lc-mobileworkspace-src-<version>.zip`은(는) 소프트웨어 배포의 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 패키지에 포함되어 있습니다.
 
@@ -122,9 +125,9 @@ AEM Forms 앱 소스를 가져오려면 다음 단계를 수행하십시오.
    </dict>
    ```
 
-   >[!NOTE]
-   >
-   >이 단계는 AEM Forms 앱이 앱 전송 보안 요구 사항을 따르지 않는 서버에 연결해야 하는 경우에만 필요합니다.
+>[!NOTE]
+>
+>이 단계는 AEM Forms 앱이 앱 전송 보안 요구 사항을 따르지 않는 서버에 연결해야 하는 경우에만 필요합니다.
 
 1. **프로젝트**&#x200B;에서 **AEM Forms**&#x200B;을(를) 선택하고 **코드 서명 ID**, **디버그**, **릴리스** 및 **모든 iOS SDK**&#x200B;에 대해 적절한 서명이 선택되었는지 확인합니다.
 1. 프로비저닝된 iPad을 Mac 시스템에 연결합니다.

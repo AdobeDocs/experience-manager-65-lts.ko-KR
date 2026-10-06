@@ -24,12 +24,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2b710c6ef8d291a42b4a7658bf84f5e764422d5c
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '471'
 ht-degree: 2%
 ---
 # 양식 작업 {#working-with-a-form}
+
+>[!NOTE]
+>
+>AEM Forms 앱의 Android 및 iOS 버전은 단종되었습니다. Android 앱은 2026년 9월에 Google Play에서 게시 취소되었으며 iOS 앱은 Apple App Store에서 제거되었습니다.
+>이러한 앱은 더 이상 설치할 수 없습니다. Android 앱에 대한 도움이 필요하면 [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)에 문의하십시오.
 
 양식 앱에서 양식을 동기화할 수 있는 경우 양식이 다운로드되므로 직접 작업할 수 있습니다.
 
@@ -47,7 +52,7 @@ AFA(AEM Form 애플리케이션) Android 앱이 동기화되지 않는 경우 �
 
 1. **https://[server]:[port]/system/console/configMgr**(으)로 이동합니다.
 1. **[!UICONTROL Adobe Granite 토큰 인증 처리기]**&#x200B;를 검색하고 **[!UICONTROL 편집]**&#x200B;을 클릭합니다.
-1. 로그인 토큰 쿠키&#x200B;**특성에 대한** SameSite 특성에 대한 드롭다운 메뉴에서 **[!UICONTROL 없음]** 옵션을 선택합니다.
+1. 로그인 토큰 쿠키&#x200B;]**특성에 대한**[!UICONTROL  SameSite 특성에 대한 드롭다운 메뉴에서 **[!UICONTROL 없음]** 옵션을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
 ![AFA Android 앱과 이미지 동기화](/help/forms/using/assets/afaandroid.png)
