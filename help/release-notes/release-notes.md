@@ -21,10 +21,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 606310b2214bc33ede4f2d99f7947fe05d668f64
+source-git-commit: 75901153628ecb69c0a30c28b1e0834f5fc27da5
 workflow-type: tm+mt
-source-wordcount: '7622'
-ht-degree: 21%
+source-wordcount: '7505'
+ht-degree: 20%
 ---
 
 # Adobe Experience Manager 6.5 LTS, SP3의 최신 릴리스 노트 {#release-notes}
@@ -342,14 +342,14 @@ Headless 콘텐츠 조각 REST API 번들은 사용되지 않는 기능 전환 �
 * FORMS-25045: 업그레이드 후 중국어(홍콩) 번화가 렌더링을 중지했으므로 양식이 기본 언어로 대체되었습니다. 현지화된 텍스트가 이제 올바르게 렌더링됩니다.
 * FORMS-25170: 시작 인스턴스 수가 0일 때 `addInstance()`을(를) 호출해도 동적으로 추가된 패널이 표시되지 않습니다. 추가된 패널이 이제 즉시 나타납니다.
 * FORMS-25225: 서버측 유효성 재검사에서 적응형 Forms의 조각 외부에 있는 필드 번역을 제거하여 레이블을 기본 언어로 되돌립니다. 이제 해당 번역이 유지됩니다.
-* FORMS-25233: OSGi(Open Services Gateway 이니셔티브) 배포에서 어셈블러 서비스는 마스터 XDP를 직접 조각과 결합했지만 헤더, 바닥글 및 재사용 가능한 하위 양식과 같은 중첩된 조각 참조를 해결하지 않았으므로 어셈블된 출력에서 누락되었습니다. 이제 중첩된 조각이 해결되었습니다.
+* FORMS-25233: OSGi 배포에서 어셈블러 서비스가 XDP 파일의 중첩된 조각 참조를 확인하지 못해 어셈블된 출력에서 누락되었습니다. 이제 중첩된 조각이 해결되었습니다.
 * FORMS-25289: Forms 렌더링 서비스가 서비스 팩에서 동일한 입력에 대해 다른 출력을 반환하여 서신 관리 편지에 영향을 미칩니다. 이제 렌더링 출력이 일관됩니다.
 * FORMS-25290: 저장된 서신 관리 편지가 공간을 잃고 다시 열었을 때 일부 위치에 흩어진 &quot;x&quot;가 표시되었습니다. 이제 저장된 편지 콘텐츠가 그대로 유지됩니다.
 * FORMS-25346: 서비스 팩을 업그레이드한 후 로딩 스피너에서 대화형 통신(IC) 문자가 동결되고 미리 보기에서 유실된 간격이 로드된 문자가 고정되었습니다. 이제 로드 및 간격이 올바르게 작동합니다.
 * FORMS-25431: 양식 조각 만들기 마법사가 제목 필드의 모든 키 입력에 대한 네트워크 요청을 보냈습니다. 중복 호출이 제거되었습니다.
 * FORMS-25645: &quot;ALC-FMG-700-009 잘못된 양식 모델이 지정되었습니다.&quot;(으)로 인라인으로 업로드된 JSON 스키마에서 적응형 양식 조각을 기반으로 핵심 구성 요소를 만들지 못했습니다. 이제 인라인 JSON 스키마가 허용됩니다.
 * FORMS-25646: JSON 스키마에서 작성한 적응형 양식 조각 기반의 핵심 구성 요소는 편집기에 빈 데이터 소스 패널을 표시했습니다. 이제 패널에 스키마 데이터 소스가 나열됩니다.
-* FORMS-25674: IC(대화형 통신) 에이전트 사용자 인터페이스가 빈 페이지로 열려 에이전트가 IC 콘텐츠를 볼 수 없습니다. 이제 에이전트 사용자 인터페이스가 렌더링됩니다.
+* FORMS-25674: 대화형 통신(IC) 에이전트 사용자 인터페이스가 빈 페이지로 열려 에이전트가 IC 콘텐츠를 볼 수 없습니다. 이제 에이전트 사용자 인터페이스가 렌더링됩니다.
 * FORMS-25686: 적응형 양식 단편 만들기 마법사에서 스키마 유형 옵션을 전환해도 이전 옵션의 상태가 지워지지 않아 스키마 불일치가 발생합니다. 이제 마법사가 비활성 옵션을 재설정합니다.
 * FORMS-25757: 테마를 적용해도 기본 클라이언트 라이브러리가 업데이트되지 않으므로 테마 변경 내용이 적용되지 않습니다. 이제 테마가 기본 클라이언트 라이브러리를 업데이트합니다.
 * FORMS-25825: 모바일 햄버거 메뉴가 탭에 응답하지 않아 모바일 장치에서 탐색을 사용할 수 없습니다. 이제 예상대로 메뉴가 열립니다.
@@ -361,7 +361,7 @@ Headless 콘텐츠 조각 REST API 번들은 사용되지 않는 기능 전환 �
 
 6.5 LTS 서비스 팩 3의 JEE에서 AEM Forms에 대해 다음 문제가 해결되었습니다.
 
-* FORMS-27585: JEE의 AEM Forms에서 `submitForm()`을(를) 호출하는 XFA 기반 PDF forms이 Adobe Reader(및 스크립트가 `closeDoc()`(을)로 호출되는 경우 Acrobat에 제출 결과를 표시하지 않았습니다. 이제 제출 결과가 올바르게 표시됩니다.
+* FORMS-27585: JEE의 AEM Forms에서 스크립트가 `closeDoc()`을(를) 호출할 때 XFA 기반 PDF forms 호출 `submitForm()`이(가) Adobe Reader 또는 Acrobat에 제출 결과를 표시하지 못했습니다. 이제 제출 결과가 올바르게 표시됩니다.
 * FORMS-25998: JEE의 AEM Forms에서 관리 콘솔에서 HSM 연결을 테스트할 때 Java 21에서 `IllegalAccessError`(으)로 HSM(Hardware Security Module) 개인 키 인증서를 등록하지 못했습니다. 이제 HSM 개인 키 인증서 등록이 작동합니다.
 * FORMS-24993: JEE의 AEM Forms에서 `SAXException`(으)로 인해 웹 서비스 호출 단계의 WSDL 로드가 실패했습니다(&quot;파일의 조기 끝&quot;). 이제 WSDL이 올바르게 로드됩니다.
 * FORMS-24518: JEE의 AEM Forms(JBoss)에서 레거시 JSTL taglib URI로 인해 Reader 확장 웹 애플리케이션이 새로 설치한 후 &quot;오류 처리 요청&quot;을 반환했습니다. 이제 Reader 확장 웹 애플리케이션이 로드됩니다.
@@ -373,17 +373,17 @@ Headless 콘텐츠 조각 REST API 번들은 사용되지 않는 기능 전환 �
 
 JEE에 AEM Forms 6.5 LTS SP3을 설치하려면 다음 단계를 순서대로 완료하십시오.
 
-1. 표준 AEM Forms on JEE 설치 절차에 따라 애플리케이션 서버([AEM Forms 릴리스](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)에서 다운로드)용 AEM Forms 6.5 LTS SP3 JEE 설치 관리자를 사용하여 서비스 팩을 설치합니다.
+1. 애플리케이션 서버용 AEM Forms 6.5 LTS SP3 JEE 설치 관리자를 사용하여 서비스 팩을 설치하고([AEM Forms 릴리스](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)에서 다운로드) JEE 설치 절차에 대한 표준 AEM Forms을 따르십시오.
 1. 최신 AEM Forms Workbench 설치 관리자 업데이트(동일한 [AEM Forms 릴리스](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 페이지에서 사용 가능).
 1. 프로젝트에서 `adobe-livecycle-client.jar` SDK 클라이언트 라이브러리를 사용하는 경우 프로젝트의 클래스 경로에서 업데이트합니다. `<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`에서 최신 버전을 사용할 수 있습니다.
 
 #### 알려진 문제 {#forms-known-issues-65-lts-sp3}
 
-* **JEE 6.5 LTS SP3**&#x200B;의 AEM Forms에서 **PostScript(PS), EPS 및 PRN 파일을 PDF으로 변환**&#x200B;하지 못할 수 있습니다. `PsToPdfSvc` 네이티브 프로세스가 예기치 않게 종료되어 `ALC-PDG-003-011` 및 `ALC-PDG-001-028`과(와) 같은 오류로 인해 전환 작업이 실패할 수 있습니다. 도움이 필요하면 Adobe 고객 지원 센터에 문의하십시오. (FORMS-28152)
+* **JEE 6.5 LTS SP3**&#x200B;의 AEM Forms에서 **PostScript(PS), EPS 및 PRN 파일을 PDF으로 변환**&#x200B;하지 못했습니다. `PsToPdfSvc` 네이티브 프로세스가 예기치 않게 종료되어 `ALC-PDG-003-011` 및 `ALC-PDG-001-028`과(와) 같은 오류로 인해 전환 작업이 실패할 수 있습니다. 도움이 필요하면 Adobe 고객 지원 센터에 문의하십시오. (FORMS-28152)
 
 #### 보안 수정 사항 {#forms-security-fixes-65-lts-sp3}
 
-이 릴리스는 여러 XSS(크로스 사이트 스크립팅) 수정, 서버측 요청 위조(SSRF) 수정, XML 외부 엔티티(XXE) 수정 및 타사 라이브러리 업데이트를 포함하여 AEM Forms의 보안 취약점을 해결합니다.
+이 릴리스는 XSS, SSRF 및 XXE를 포함하여 AEM Forms의 보안 취약점을 해결하고 라이브러리를 업데이트합니다.
 
 
 
@@ -531,7 +531,7 @@ AEM 6.5 LTS SP3용 UberJar는 AEM 6.5 LTS UberJar 버전 6.6.3을 사용합니�
 적용 대상: AEM 6.5 LTS(온-프레미스) 고객이 서비스 팩 3(SP3)을 설치하는 경우 SP3는 Quickstart JAR로 제공됩니다.
 
 **이러한 업그레이드 사례가 중요한 이유**
-AEM 6.5 LTS용 SP2가 패키지 관리자를 통해 설치하기 위해 ZIP이 아닌 Quickstart JAR로 제공됩니다. On-Premise 고객은 Quickstart JAR를 교체하고 압축을 푼 다음 다시 시작하여 업그레이드합니다. 이 방법은 Adobe의 표준 업그레이드 절차와 일치합니다.
+AEM 6.5 LTS용 SP2가 패키지 관리자를 통해 설치하기 위해 ZIP이 아닌 Quickstart JAR로 제공됩니다. On-Premise 고객은 Quickstart JAR를 교체하고, 압축을 푼 다음 다시 시작하여 업그레이드합니다. 이 방법은 Adobe의 표준 업그레이드 절차와 일치합니다.
 
 
 **권장 업그레이드 흐름(작성자 또는 게시)**
@@ -662,31 +662,46 @@ AEM 6.5 LTS SP2부터 `Sling-Initial-Content` 번들에 사용된 JSON 파일에
 >
 > AEM 6.5 LTS SP2로 업그레이드한 후 콘텐츠 로드 실패를 방지하려면 `Sling-Initial-Content` 번들의 JSON 파일에서 모든 주석을 제거하십시오.
 
+
 ### Jackson 번들 업그레이드는 GlobalLink 커넥터에 영향을 줍니다. {#jackson-upgrade-globallink-connector}
 
-AEM 6.5 LTS SP3에서 `jackson` 번들을 업그레이드합니다. 이 변경 사항은 GlobalLink 번역 커넥터를 사용하는 배포에 영향을 줍니다.
+AEM 6.5 LTS SP3는 jackson 번들을 업그레이드합니다. 이 변경 사항은 GlobalLink 번역 커넥터를 사용하는 배포에 영향을 줍니다.
 
-3.4.0 이전 버전에서 `gs4tr-globallink-adaptors-aem.core` 번들을 사용하는 경우 해당 번들을 호환되는 버전으로 업그레이드하십시오. 버전 3.4.0 이상은 SP3에서 업그레이드된 `jackson` 번들과 함께 작동합니다.
+3.4.4.7 이전 버전에서 `gs4tr-globallink-adaptors-aem.core` 번들을 사용하는 경우 해당 번들을 호환되는 버전으로 업그레이드하십시오. 버전 3.4.4.7 이상은 SP3에서 업그레이드된 jackson 번들과 함께 작동합니다.
 
 >[!NOTE]
 >
-> GlobalLink 커넥터와의 호환성 문제를 방지하려면 SP3 업데이트 전이나 업데이트 중에 `gs4tr-globallink-adaptors-aem.core` 번들을 3.4.0 이상으로 업그레이드하십시오.
+>GlobalLink 커넥터와의 호환성 문제를 방지하려면 SP3 업데이트 전이나 업데이트 중에 `gs4tr-globallink-adaptors-aem.core` 번들을 3.4.4.7 이상으로 업그레이드하십시오.
+
+<!--
+
+AEM 6.5 LTS SP3 upgrades the `jackson` bundle. This change affects deployments that use the GlobalLink translation connector.
+
+If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.0, upgrade the bundle to a compatible version. Version 3.4.0 or later works with the upgraded `jackson` bundle in SP3.
+
+>[!NOTE]
+>
+> Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.0 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
 
 
-### Sites Headless API에 필요한 Oak 인덱스 설치{#site-headless-api}
+### Install required Oak indexes for Sites Headless APIs{#site-headless-api}
 
-Sites Headless로 이동한 일부 API의 경우 전체 기능을 위해 추가 Oak 인덱스가 필요합니다.
+Some APIs that moved to Sites Headless require additional Oak indexes for full functionality. 
 
-다음 기능을 사용하려면 `cq-dam-cfm-indices` 패키지를 설치하십시오.
+To use the following features, install the `cq-dam-cfm-indices` package:
 
-* 콘텐츠 조각 모델 목록
-* 콘텐츠 조각 목록
-* API 검색
-* 워크플로
+* List Content Fragment Models
+* List Content Fragments
+* Search API
+* Workflows
 
-Adobe 소프트웨어 배포 포털에서 인덱스 패키지 [cq-dam-cfm-indexes](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip)를 다운로드합니다.
+Download the index package [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) from the Adobe Software Distribution portal. 
 
-### SSL 전용 기능을 사용한 Dispatcher 연결 실패(AEM 6.5 LTS SP1 이상에서 수정됨){#ssl-only-feature}
+-->
+
+###
+
+### SSL 전용 기능을 사용한 Dispatcher 연결 실패 (AEM 6.5 LTS SP1 이상에서 수정됨){#ssl-only-feature}
 
 >[!NOTE]
 >
