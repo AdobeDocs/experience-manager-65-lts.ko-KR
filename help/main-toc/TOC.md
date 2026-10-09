@@ -7,9 +7,9 @@ user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 4df5a9888532afd86562678a76c35841ac5634b8
+source-git-commit: 8781bd3762ec04424802d899d3517754e0c81fc5
 workflow-type: tm+mt
-source-wordcount: '7804'
+source-wordcount: '7799'
 ht-degree: 66%
 ---
 # Adobe Experience Manager 6.5 LTS 설명서 {#content}
@@ -1111,7 +1111,6 @@ ht-degree: 66%
 + AEM의 AI {#ai-in-aem}
   + [개요](/help/ai-in-aem/overview.md)
   + AI 어시스턴트 {#ai-assistant}
-    + [AEM 내 AI 어시스턴트 구성](/help/ai-assistant-in-aem-admin.md)
     + [AEM 내 AI 어시스턴트 정보](/help/ai-assistant-in-aem.md)
 + Content and Commerce {#commerce}
   + [소개 및 개요](/help/commerce/cif/introduction.md)
