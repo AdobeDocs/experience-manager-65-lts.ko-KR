@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 60fd1764a1b2a6440d306d21a8a84a8f9d879811
+source-git-commit: 7fb04d7017fa8f6183508cf4f880077eb533c057
 workflow-type: tm+mt
-source-wordcount: '7432'
+source-wordcount: '7577'
 ht-degree: 21%
 ---
 
@@ -674,30 +674,27 @@ If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier 
 >Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
 -->
 
+AEM 6.5 LTS SP3에서 `jackson` 번들을 업그레이드합니다. 이 변경 사항은 GlobalLink 번역 커넥터를 사용하는 배포에 영향을 줍니다.
 
-
-<!--
-AEM 6.5 LTS SP3 upgrades the `jackson` bundle. This change affects deployments that use the GlobalLink translation connector.
-
-If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.0, upgrade the bundle to a compatible version. Version 3.4.0 or later works with the upgraded `jackson` bundle in SP3.
+3.4.0 이전 버전에서 `gs4tr-globallink-adaptors-aem.core` 번들을 사용하는 경우 해당 번들을 호환되는 버전으로 업그레이드하십시오. 버전 3.4.0 이상은 SP3에서 업그레이드된 `jackson` 번들과 함께 작동합니다.
 
 >[!NOTE]
 >
-> Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.0 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
+> GlobalLink 커넥터와의 호환성 문제를 방지하려면 SP3 업데이트 전이나 업데이트 중에 `gs4tr-globallink-adaptors-aem.core` 번들을 3.4.0 이상으로 업그레이드하십시오.
 
 
-### Install required Oak indexes for Sites Headless APIs{#site-headless-api}
+### Sites Headless API에 필요한 Oak 인덱스 설치{#site-headless-api}
 
-Some APIs that moved to Sites Headless require additional Oak indexes for full functionality. 
+Sites Headless로 이동한 일부 API의 경우 전체 기능을 위해 추가 Oak 인덱스가 필요합니다.
 
-To use the following features, install the `cq-dam-cfm-indices` package:
+다음 기능을 사용하려면 `cq-dam-cfm-indices` 패키지를 설치하십시오.
 
-* List Content Fragment Models
-* List Content Fragments
-* Search API
-* Workflows
+* 콘텐츠 조각 모델 목록
+* 콘텐츠 조각 목록
+* API 검색
+* 워크플로
 
-Download the index package [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) from the Adobe Software Distribution portal. 
+Adobe 소프트웨어 배포 포털에서 인덱스 패키지 [cq-dam-cfm-indexes](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip)를 다운로드합니다.
 
 -->
 
