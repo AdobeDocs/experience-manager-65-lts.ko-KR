@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7fb04d7017fa8f6183508cf4f880077eb533c057
+source-git-commit: 168e33d380dcef163d43d6d10dc21c840c55e96c
 workflow-type: tm+mt
-source-wordcount: '7577'
+source-wordcount: '7799'
 ht-degree: 21%
 ---
 
@@ -41,7 +41,9 @@ ht-degree: 21%
 
 <!-- UPDATE ABOVE FOR EACH NEW RELEASE -->
 
-<!-- **Mandatory Hotfix** – To avoid SNFE (SegmentNotFoundException) issues with offline compaction when installing SP2, install the hotfix described in [Known issues – Repository corruption during online compaction](#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146). -->
+>[!IMPORTANT]
+>
+> **필수 핫픽스** - 대기 상태에서 온라인 압축 시 SNFE(SegmentNotFoundException) 문제를 방지하려면 [알려진 문제 - 온라인 압축 시 저장소 손상](#repository-corruption-during-online-compaction-granite-73045)에 설명된 핫픽스를 설치하십시오.
 
 ## [!DNL Adobe Experience Manager] 6.5 LTS, SP3에 포함된 항목 {#what-is-new}
 
@@ -645,6 +647,20 @@ Adobe는 투명성을 보장하고 적절한 계획을 수립할 수 있도록 A
 | 공개 소스 | `com.github.jknack.handlebars`는 지원되지 않음 | 관련 [버전](https://mvnrepository.com/artifact/com.github.jknack/handlebars)을 선택합니다. | 6.5 LTS GA |
 
 ## 알려진 문제 {#known-issues}
+
+### 대기 시 온라인 압축 중 저장소 손상(GRANITE-73045) {#repository-corruption-during-online-compaction-granite-73045}
+
+인스턴스가 이전에 TarMK 콜드 대기 상태로 실행되었다가 나중에 기본 인스턴스로 승격된 경우 온라인 압축 중에 저장소 손상이 발생할 수 있습니다. 이 시나리오에서는 `SegmentNotFoundException`(SNFE)이 발생할 수 있으며 이로 인해 저장소가 손상될 수 있습니다.
+
+이 문제를 해결하려면 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip)에서 핫픽스를 설치합니다. 핫픽스에 낮은 수준의 `oak-segment-tar` 번들이 포함되어 있으므로 설치 후 인스턴스가 다시 시작됩니다.
+
+인스턴스 적용 시 다운타임에 대한 계획을 수립합니다. 오프라인 압축을 위해 소프트웨어 배포에서도 사용할 수 있는 해당 [`oak-run` jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar)를 사용합니다.
+
+>[!NOTE]
+>
+> * `oak-run` 작업의 경우 [`oak-run` 2.4.1-B002 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar)을(를) 사용하십시오.
+>
+> * 시스템 속성 `oak.segment.cleanup.skipDanglingFutureReclaim=true`를 설정하여 AEM을 시작합니다.
 
 ### AEM Forms
 

@@ -7,9 +7,9 @@ user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 8781bd3762ec04424802d899d3517754e0c81fc5
+source-git-commit: a895c5e5cb2a4e21d7460d598bd260a5292ed2ad
 workflow-type: tm+mt
-source-wordcount: '7799'
+source-wordcount: '7801'
 ht-degree: 66%
 ---
 # Adobe Experience Manager 6.5 LTS 설명서 {#content}
@@ -332,6 +332,7 @@ ht-degree: 66%
     + [메타데이터 기능 구성](/help/assets/metadata-config.md)
     + [메타데이터 스키마](/help/assets/metadata-schemas.md)
     + [렌디션으로 XMP 원본에 쓰기](/help/assets/xmp-writeback.md)
+    + [C2PA 메타데이터](/help/assets/c2pa-metadata.md)
     + [에셋 링크 공유](/help/assets/link-sharing.md)
     + [자산 보고서](/help/assets/asset-reports.md)
     + [태그 지정을 위한 스마트 콘텐츠 서비스 구성](/help/assets/config-smart-tagging.md)
