@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 168e33d380dcef163d43d6d10dc21c840c55e96c
+source-git-commit: 0eb20f3494bb75de7adf27745ddfb13d024af59c
 workflow-type: tm+mt
-source-wordcount: '7799'
+source-wordcount: '7882'
 ht-degree: 21%
 ---
 
@@ -383,6 +383,23 @@ JEE에 AEM Forms 6.5 LTS SP3을 설치하려면 다음 단계를 순서대로 �
 
 * **JEE 6.5 LTS SP3**&#x200B;의 AEM Forms에서 **PostScript(PS), EPS 및 PRN 파일을 PDF으로 변환**&#x200B;하지 못했습니다. `PsToPdfSvc` 네이티브 프로세스가 예기치 않게 종료되어 `ALC-PDG-003-011` 및 `ALC-PDG-001-028`과(와) 같은 오류로 인해 전환 작업이 실패할 수 있습니다. 도움이 필요하면 Adobe 고객 지원 센터에 문의하십시오. (FORMS-28152)
 
+JEE의 AEM Forms에서는 Reader 확장이 WebSphere® Liberty Profile(WLP) 플랫폼에서 작동하지 않습니다. LTS SP3에 포함된 EAR 파일에 클래스 경로에 필요한 바운시 캐슬 라이브러리가 없습니다.
+
+**해결 방법**
+
+1. `<AEM Forms JEE installation>\Adobe_Experience_Manager_Forms\configurationManager\export`로 이동합니다.
+1. `adobe-livecycle-websphere.ear\adobe-dscf.jar\META-INF\MANIFEST.MF`을(를) 열고 다음 항목을 `Class-Path` 요소에 추가합니다.
+
+   ```
+   bcmail-jdk18on-1.84.jar bcprov-jdk18on-1.84.jar bcpkix-jdk18on-1.84.jar bcutil-jdk18on-1.84.jar
+   ```
+
+1. 수정된 EAR 파일을 WebSphere® Liberty 프로필 `dropins` 폴더에 다시 배포합니다.
+   1. WebSphere® Liberty 프로필 서버를 중지하고 `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`에서 `adobe-livecycle-websphere.ear`을(를) 삭제합니다.
+   1. `<WebSphere Liberty Profile install location>\usr\servers\<server-name>\apps\expanded\`에서 `adobe-livecycle-websphere.ear` 디렉터리를 삭제합니다.
+   1. 2단계에서 `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`(으)로 수정된 EAR 파일을 복사합니다.
+   1. WebSphere® Liberty 프로필 서버를 시작합니다.
+
 #### 보안 수정 사항 {#forms-security-fixes-65-lts-sp3}
 
 이 릴리스는 XSS, SSRF 및 XXE를 포함하여 AEM Forms의 보안 취약점을 해결하고 라이브러리를 업데이트합니다.
@@ -714,7 +731,7 @@ Adobe 소프트웨어 배포 포털에서 인덱스 패키지 [cq-dam-cfm-indexe
 
 -->
 
-&#x200B;###
+###
 
 ### SSL 전용 기능을 사용한 Dispatcher 연결 실패 (AEM 6.5 LTS SP1 이상에서 수정됨){#ssl-only-feature}
 
