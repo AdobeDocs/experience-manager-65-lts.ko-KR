@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 0eb20f3494bb75de7adf27745ddfb13d024af59c
+source-git-commit: fe79cf30a6062d86ac2ecd5cb1b87b83a57e2480
 workflow-type: tm+mt
-source-wordcount: '7882'
+source-wordcount: '7815'
 ht-degree: 21%
 ---
 
@@ -694,27 +694,6 @@ AEM 6.5 LTS SP2부터 `Sling-Initial-Content` 번들에 사용된 JSON 파일에
 >[!CAUTION]
 >
 > AEM 6.5 LTS SP2로 업그레이드한 후 콘텐츠 로드 실패를 방지하려면 `Sling-Initial-Content` 번들의 JSON 파일에서 모든 주석을 제거하십시오.
-
-<!--
-### Jackson bundle upgrade affects the GlobalLink connector {#jackson-upgrade-globallink-connector}
-
-AEM 6.5 LTS SP3 upgrades the jackson bundle. This change affects deployments that use the GlobalLink translation connector.
- 
-If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.4.7, upgrade the bundle to a compatible version. Version 3.4.4.7 or later works with the upgraded jackson bundle in SP3.
- 
->[!NOTE]
->
->Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
--->
-
-AEM 6.5 LTS SP3에서 `jackson` 번들을 업그레이드합니다. 이 변경 사항은 GlobalLink 번역 커넥터를 사용하는 배포에 영향을 줍니다.
-
-3.4.0 이전 버전에서 `gs4tr-globallink-adaptors-aem.core` 번들을 사용하는 경우 해당 번들을 호환되는 버전으로 업그레이드하십시오. 버전 3.4.0 이상은 SP3에서 업그레이드된 `jackson` 번들과 함께 작동합니다.
-
->[!NOTE]
->
-> GlobalLink 커넥터와의 호환성 문제를 방지하려면 SP3 업데이트 전이나 업데이트 중에 `gs4tr-globallink-adaptors-aem.core` 번들을 3.4.0 이상으로 업그레이드하십시오.
-
 
 ### Sites Headless API에 필요한 Oak 인덱스 설치{#site-headless-api}
 
