@@ -25,7 +25,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 1%
@@ -114,8 +114,8 @@ AEM 도구 패널에는 다양한 구성 요소용 도구가 포함되어 있습
   ![AEM Forms 도구](assets/aem_forms_tools_new.png)
 
 * **PDF Generator 구성:** 관리자가 AEM [!DNL Forms] PDF Generator 설정을 구성하고, 사용자 계정을 추가하고, PDF Generator으로 구성을 가져오거나 내보낼 수 있습니다.
-* **서신 관리 Assets 게시:** AEM [!DNL Forms]을(를) 사용하면 작성자 인스턴스의 모든 편지, 문서 단편, 데이터 사전 및 관련 종속성을 한 번에 게시할 수 있습니다. 게시된 에셋에는 모든 서신 관리 에셋과 관련 의존성이 포함됩니다. 자세한 내용은 [양식 및 문서 게시 및 게시 취소](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets)를 참조하십시오.
-* **응답 관리 Assets 내보내기:** AEM [!DNL Forms] 인스턴스에서 모든 응답 관리 에셋과 관련 종속성을 패키지로 다운로드할 수 있습니다. 자세한 단계는 [AEM Forms으로 자산 가져오기 및 내보내기](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)를 참조하십시오.
+* **서신 관리 Assets 게시:** AEM [!DNL Forms]을(를) 사용하면 작성자 인스턴스의 모든 편지, 문서 단편, 데이터 사전 및 관련 종속성을 한 번에 게시할 수 있습니다. 게시된 에셋에는 모든 서신 관리 에셋과 관련 의존성이 포함됩니다. 자세한 내용은 [양식 및 문서 게시 및 게시 취소](../../forms/using/publishing-unpublishing-forms.md#publish-all-the-correspondence-management-assets)를 참조하십시오.
+* **응답 관리 Assets 내보내기:** AEM [!DNL Forms] 인스턴스에서 모든 응답 관리 에셋과 관련 종속성을 패키지로 다운로드할 수 있습니다. 자세한 단계는 [AEM Forms으로 자산 가져오기 및 내보내기](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management)를 참조하십시오.
 
 ## 사용자 인터페이스의 일반적인 요소 {#commonelements}
 

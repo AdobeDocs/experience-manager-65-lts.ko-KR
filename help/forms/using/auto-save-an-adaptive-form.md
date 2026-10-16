@@ -25,14 +25,14 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 9%
 ---
 # 적응형 양식 자동 저장 {#auto-save-an-adaptive-form}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 이벤트 또는 사전 정의된 시간 간격에 따라 콘텐츠 저장을 자동으로 시작하도록 적응형 양식을 구성할 수 있습니다. 기본적으로 적응형 양식의 콘텐츠는 저장 버튼을 누르는 것과 같은 사용자 작업 시 저장됩니다. 자동 저장 옵션은 다음 경우에 유용합니다.
 
@@ -58,7 +58,7 @@ ht-degree: 9%
    * **[!UICONTROL 시간 기반]** 트리거를 선택하는 경우 시간 간격을 지정하십시오.
    * **[!UICONTROL 이벤트 기반]** 트리거를 선택하는 경우 이벤트 이름을 지정하십시오.
 
-   사용자 지정 전략을 만들어 목록에 추가할 수도 있습니다. 자세한 내용은 [양식을 자동으로 저장하는 사용자 지정 전략 구현](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p)을 참조하십시오.
+   사용자 지정 전략을 만들어 목록에 추가할 수도 있습니다. 자세한 내용은 [양식을 자동으로 저장하는 사용자 지정 전략 구현](/help/forms/using/auto-save-an-adaptive-form.md#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms)을 참조하십시오.
 
 1. (시간 기반 자동 저장만 해당) 다음 단계를 수행하여 시간 기반 자동 저장에 대한 옵션을 구성합니다.
 
@@ -66,7 +66,7 @@ ht-degree: 9%
 
 1. (이벤트 기반 자동 저장만 해당) 다음 단계를 수행하여 이벤트 기반 자동 저장에 대한 옵션을 구성합니다.
 
-   1. **이 이벤트 후 자동 저장** 상자에서 [GuideBridge](https://helpx.adobe.com/kr/aem-forms/6/javascript-api/GuideBridge.html) 이벤트를 지정합니다. 표현식이 TRUE로 평가될 때마다 양식이 저장됩니다.
+   1. **이 이벤트 후 자동 저장** 상자에서 [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) 이벤트를 지정합니다. 표현식이 TRUE로 평가될 때마다 양식이 저장됩니다.
 
 1. (선택 사항) 익명 사용자에 대한 콘텐츠를 자동으로 저장하려면 **익명 사용자에 대한 자동 저장 사용** 옵션을 선택하고 **[!UICONTROL 확인]**&#x200B;을 클릭합니다.
 

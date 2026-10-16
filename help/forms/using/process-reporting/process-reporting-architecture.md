@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 2%
@@ -42,11 +42,11 @@ ht-degree: 2%
 
 프로세스 보고는 다음 모듈로 구성됩니다.
 
-* [ProcessDataPublisher 서비스](#processdatapublisher-service-br-p)
-* [ProcessDataStorage 서비스](#processdatastorageprovider-service-br-p)
-* [OSGI 서비스](#osgi-service-br-p)
-* [쿼리 데이터 서블릿](#querydataservlet-service-br-p)
-* [프로세스 보고 사용자 인터페이스](#process-reporting-user-interface-br-p)
+* [ProcessDataPublisher 서비스](#processdatapublisher-service-br)
+* [ProcessDataStorage 서비스](#processdatastorageprovider-service-br)
+* [OSGI 서비스](#osgi-service-br)
+* [쿼리 데이터 서블릿](#querydataservlet-service-br)
+* [프로세스 보고 사용자 인터페이스](#process-reporting-user-interface-br)
 
 ## 프로세스 보고 아키텍처 {#process-reporting-architecture-br}
 
@@ -58,13 +58,13 @@ ht-degree: 2%
 
 ProcessDataPublisher 서버는 AEM Forms 데이터베이스에서 주기적으로 실행되고 마지막 서비스 실행 이후 변경된 데이터를 추출합니다. 그런 다음 데이터를 프로세스 데이터 스토리지 서비스에 게시합니다.
 
-서비스 구성에 대한 자세한 내용은 [ProcessDataPublisher 서비스 구성](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p)을 참조하십시오.
+서비스 구성에 대한 자세한 내용은 [ProcessDataPublisher 서비스 구성](/help/forms/using/process-reporting/install-start-process-reporting.md#reportconfiguration-service)을 참조하십시오.
 
 ### ProcessDataStorageProvider 서비스 {#processdatastorageprovider-service-br}
 
 ProcessDataStorageProvider 서비스는 ProcessDataPublisher 서비스로부터 프로세스 데이터를 수신하여 Process Reporting 저장소에 저장합니다.
 
-서비스 구성에 대한 자세한 내용은 [ProcessDataStorageProvider 서비스 구성](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p)을 참조하십시오.
+서비스 구성에 대한 자세한 내용은 [ProcessDataStorageProvider 서비스 구성](/help/forms/using/process-reporting/install-start-process-reporting.md#to-configure-the-process-reporting-repository-locations)을 참조하십시오.
 
 ### OSGI 서비스 {#osgi-service-br}
 

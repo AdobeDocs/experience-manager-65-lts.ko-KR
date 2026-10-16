@@ -14,7 +14,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 13%
@@ -39,7 +39,7 @@ AEM Forms은 다음 CAPTCHA 솔루션을 지원합니다.
 
 Cloudflare의 Turnstile Captcha는 자동화된 봇, 악의적인 공격, 스팸 및 원치 않는 자동화된 트래픽으로부터 양식 및 사이트를 보호하는 것을 목표로 하는 보안 조치입니다. 양식 제출을 허용하기 전에 양식 제출에 대한 확인란을 표시하여 사람인지 확인합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440947?captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### AEM Forms 환경을 Turnstile Captcha와 통합하기 위한 사전 요구 사항 {#prerequisite}
 
@@ -63,9 +63,9 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
         1. 구성을 저장하려면 **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭하십시오.
 
 1. 클라우드 서비스 구성:
-   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동한 다음 **[!UICONTROL 회전식]**&#x200B;을 클릭합니다.
+   1. AEM 작성자 인스턴스에서 ![도구-1](assets/tools-1.png) > **[!UICONTROL 클라우드 서비스]**(으)로 이동한 다음 **[!UICONTROL 회전식]**을 클릭합니다.
       클라우드 서비스의 ![턴스타일](assets/turnstile-in-ui.png)
-   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**&#x200B;를 클릭합니다.
+   1. 이전 섹션에서 설명한 대로 작성되거나 업데이트된 구성 컨테이너를 선택합니다. **[!UICONTROL 만들기]**를 클릭합니다.
       ![구성 Turnstile](assets/config-hcaptcha.png)
    1. **[!UICONTROL 위젯 유형]**&#x200B;을(를) 관리, 비대화형 또는 보이지 않는 것으로 지정하십시오.
    1. **[!UICONTROL 제목]**, **[!UICONTROL 이름]**&#x200B;과 같은 기타 세부 정보를 제공합니다.
@@ -86,7 +86,7 @@ AEM Forms을 Turnstile 서비스와 통합하려면 다음 단계를 수행하�
 1. 적응형 양식을 선택하고 **[!UICONTROL 속성]**&#x200B;을 클릭하세요. **[!UICONTROL 구성 컨테이너]**&#x200B;에서 AEM Forms과 Turnstile을 연결하는 클라우드 구성이 포함된 구성 컨테이너를 선택합니다.
 1. **[!UICONTROL 저장 및 닫기]**&#x200B;를 클릭합니다.
 
-   CAPTCHA 서비스를 구성할 구성 컨테이너가 없는 경우 구성 컨테이너를 만드는 방법에 대해 알아보려면 섹션 [Configure Turnstile](#configure-turnstile-steps-to-configure-hcaptcha)을 참조하십시오.
+   CAPTCHA 서비스를 구성할 구성 컨테이너가 없는 경우 구성 컨테이너를 만드는 방법에 대해 알아보려면 섹션 [Configure Turnstile](#steps-to-configure-hcaptcha)을 참조하십시오.
 
    ![구성 컨테이너 선택](assets/captcha-properties.png)
 

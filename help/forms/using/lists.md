@@ -20,7 +20,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6927'
 ht-degree: 0%
@@ -65,7 +65,7 @@ ht-degree: 0%
 
    브라우저의 기본 맞춤법 검사기는 텍스트 편집기에서 맞춤법을 검사합니다. 맞춤법 및 문법 검사를 관리하기 위해 브라우저의 맞춤법 검사기 설정을 편집하거나 브라우저 플러그인/추가 기능을 설치하여 맞춤법 및 문법 검사를 수행할 수 있습니다.
 
-   텍스트 편집기의 다양한 키보드 단축키를 사용하여 텍스트를 관리, 편집 및 서식 지정할 수도 있습니다. 통신 관리 바로 가기의 [텍스트 편집기](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) 바로 가기에 대한 자세한 내용을 보려면 [키보드 바로 가기]를 클릭하세요.
+   텍스트 편집기의 다양한 키보드 단축키를 사용하여 텍스트를 관리, 편집 및 서식 지정할 수도 있습니다. 통신 관리 바로 가기의 [텍스트 편집기](/help/forms/using/keyboard-shortcuts.md#formatting) 바로 가기에 대한 자세한 내용을 보려면 [키보드 바로 가기]를 클릭하세요.
 
 1. 텍스트 편집기가 열리고 텍스트를 입력합니다. 페이지 상단에 있는 도구 모음을 사용하여 텍스트 서식 지정, 조건 삽입, 링크 및 페이지 나누기를 수행합니다.
 
@@ -501,7 +501,7 @@ DD에는 Designer_name, Designer_address 및 Designer_gender의 세 가지 기�
 
    그런 다음 DD를 선택하고 샘플 데이터를 내보냅니다. 가져온 XML 파일에는 직원 데이터가 포함되어 있으며 Designer_details에 대한 세 개의 인스턴스(기본적으로 세 개의 인스턴스가 다운로드됩니다. 요구 사항에 따라 추가하거나 삭제할 수 있습니다.) 값을 업데이트한 다음 DD에서 테스트 데이터를 가져옵니다. CMP 파일은 패키지이며 DD가 들어 있습니다. 따라서 DD를 서신 관리로 가져옵니다.
 
-   데이터 사전 작업 및 테스트 데이터에 대한 자세한 내용은 [데이터 사전](/help/forms/using/data-dictionary.md#p-working-with-test-data-p)을 참조하세요.
+   데이터 사전 작업 및 테스트 데이터에 대한 자세한 내용은 [데이터 사전](/help/forms/using/data-dictionary.md#working-with-test-data)을 참조하세요.
 
    ![데이터 사전 구조](assets/dd.jpeg)
 

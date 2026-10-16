@@ -30,7 +30,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -121,7 +121,7 @@ AEM Forms 작업 영역은 양식 및 문서에 대한 작업 할당 및 완료 
    ```
 
    [파일 가져오기](assets/dscsample.zip)
-   DSC 다운로드: 샘플 DSC는 위에 첨부된 DSCSample.zip 파일에서 사용할 수 있습니다. DSCSample.zip 파일을 다운로드하고 압축 해제합니다. DSC 서비스를 사용하기 전에 먼저 구성해야 합니다. [DSC 서비스 구성](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)을 참조하십시오.
+   DSC 다운로드: 샘플 DSC는 위에 첨부된 DSCSample.zip 파일에서 사용할 수 있습니다. DSCSample.zip 파일을 다운로드하고 압축 해제합니다. DSC 서비스를 사용하기 전에 먼저 구성해야 합니다. [DSC 서비스 구성](../../forms/using/add-action-button-in-create-correspondence-ui.md#configure-the-dsc-service)을 참조하십시오.
 
    활동 정의 대화 상자에서 getLetterInstanceInfo와 같은 적절한 활동을 선택하고 **확인**&#x200B;을 클릭합니다.
 

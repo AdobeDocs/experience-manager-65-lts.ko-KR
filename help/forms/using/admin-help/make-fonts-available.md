@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 100%
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 양식 내에서 사용되는 글꼴을 AEM Forms를 호스팅하는 J2EE 애플리케이션 서버에서 사용할 수 있도록 합니다. 예를 들어 다음 시나리오를 생각해 보십시오. 양식 디자이너가 Designer에서 사용하는 글꼴 디렉터리에 글꼴을 추가하고 별도의 컴퓨터에서 해당 글꼴을 사용하는 양식을 만듭니다. Output 서비스에서 해당 글꼴을 사용하려면 이 글꼴을 고객 글꼴 디렉터리에 넣습니다. 고객 글꼴 디렉터리가 없으면 AEM Forms를 호스팅하는 J2EE 애플리케이션 서버에 디렉터리를 만듭니다.
 
-추가 글꼴 설정에 대한 자세한 내용은 [일반 AEM Forms 설정 구성](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)을 참조하십시오.
+추가 글꼴 설정에 대한 자세한 내용은 [일반 AEM Forms 설정 구성](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings)을 참조하십시오.
 
 **고객 글꼴 디렉터리 위치 지정**
 

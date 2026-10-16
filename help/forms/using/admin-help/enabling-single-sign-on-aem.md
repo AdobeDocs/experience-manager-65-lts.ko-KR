@@ -29,7 +29,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 3%
@@ -80,7 +80,7 @@ SPNEGO를 사용하여 SSO를 활성화할 수도 있습니다. ([SPNEGO를 사�
 
 ### 사용자 및 그룹에 역할 할당
 
-[사용자 및 그룹에 역할을 할당](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups)하는 단계를 알아보려면 클릭하세요.
+[사용자 및 그룹에 역할을 할당](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-groups)하는 단계를 알아보려면 클릭하세요.
 
 ## SPNEGO를 사용하여 SSO 활성화 {#enable-sso-using-spnego}
 
@@ -198,7 +198,7 @@ https://lcserver:8080과 같은 컴퓨터 이름을 사용하여 서버에 액�
 
 1. 애플리케이션에 액세스하여 구성을 테스트합니다. 대상 응용 프로그램에 대한 시작 페이지가 표시됩니다.
 
-[사용자 및 그룹에 역할을 할당](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups)하는 단계를 알아보려면 클릭하세요.
+[사용자 및 그룹에 역할을 할당](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-groups)하는 단계를 알아보려면 클릭하세요.
 
 ## 사용자 및 그룹에 역할 할당 {#assign-roles-to-users-groups}
 
@@ -207,7 +207,7 @@ https://lcserver:8080과 같은 컴퓨터 이름을 사용하여 서버에 액�
 1. LDAP와 같은 도메인 구성을 선택하고 클릭합니다. 디렉토리에서 생성된 모든 사용자와 그룹을 찾습니다. 필요한 경우 새 사용자 또는 그룹을 만들 수 있습니다.
    ![도메인 관리 페이지](/help/forms/using/assets/domain-mgmt-page.png)
 1. 인증을 누릅니다. 새 페이지에서 LDAP와 같은 인증 공급자를 선택합니다.
-1. 도메인 관리 페이지로 이동하여 LDAP를 선택하고 **지금 동기화**&#x200B;를 클릭하여 AEM 액세스를 위해 구성한 인증 체계와 디렉터리를 동기화합니다.
+1. 도메인 관리 페이지로 이동하여 LDAP를 선택하고 **지금 동기화**를 클릭하여 AEM 액세스를 위해 구성한 인증 체계와 디렉터리를 동기화합니다.
    ![ldap 동기화](/help/forms/using/assets/sync-ldap.png)
 1. 사용자 관리로 이동하고 사용자 및 그룹을 클릭합니다.
 1. 아래 그림과 같이 사용자 또는 그룹을 이름으로 검색합니다.

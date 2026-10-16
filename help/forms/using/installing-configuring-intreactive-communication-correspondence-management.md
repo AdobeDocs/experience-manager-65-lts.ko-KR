@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 7%
@@ -113,7 +113,7 @@ AEM Forms 추가 기능 패키지는 AEM에 배포된 애플리케이션입니�
 1. [패키지 관리자](/help/sites-administering/package-manager.md)를 열고 **[!UICONTROL 패키지 업로드]**&#x200B;를 클릭하여 패키지를 업로드합니다.
 1. 패키지를 선택하고 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
 
-   [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
+   [AEM Forms 릴리스](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) 문서에 나열된 직접 링크를 통해 패키지를 다운로드할 수도 있습니다.
 
 1. 패키지를 설치한 후 AEM 인스턴스를 다시 시작하라는 메시지가 표시됩니다. **서버를 즉시 다시 시작하지 마십시오.** AEM Forms 서버를 중지하기 전에 ServiceEvent REGISTERED 및 ServiceEvent UNREGISTERED 메시지가 [AEM-Installation-Directory]/crx-quickstart/logs/error.log 파일에 나타나지 않고 로그가 안정될 때까지 기다리십시오.
 
@@ -189,7 +189,7 @@ Dispatcher은 엔터프라이즈급 웹 서버와 함께 사용되는 Adobe Expe
 
 고객은 대화형 커뮤니케이션이 제공하는 경험이 도움이 되지 않을 경우 이를 포기할 가능성이 높습니다. 고객에게는 번거로운 일이지만, 조직의 지원 규모와 비용도 늘어납니다. 전환율을 높이는 올바른 고객 경험을 파악하고 제공하는 것은 중요하고 어려운 일입니다. 이 문제의 핵심은 AEM forms입니다.
 
-AEM forms는 Adobe Experience Cloud 솔루션인 Adobe Target과 통합되어 여러 디지털 채널에서 개인화되고 매력적인 고객 경험을 제공합니다. Adobe Target을 사용하여 대화형 통신을 개인화하려면 [AEM Forms과 Adobe Target 통합](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms)을 하세요.
+AEM forms는 Adobe Experience Cloud 솔루션인 Adobe Target과 통합되어 여러 디지털 채널에서 개인화되고 매력적인 고객 경험을 제공합니다. Adobe Target을 사용하여 대화형 통신을 개인화하려면 [AEM Forms과 Adobe Target 통합](../../forms/using/ab-testing-adaptive-forms.md#set-up-and-integrate-target-in-aem-forms)을 하세요.
 
 #### 양식 데이터 모델에 대한 SSL 통신 구성  {#configure-ssl-communcation-for-form-data-model}
 

@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 1%
@@ -146,9 +146,9 @@ Maven Archetype은 사용자 정의 모양을 만드는 시작점입니다. 사�
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>HTML 이벤트를 XFA 이벤트로 변환하는 맵을 반환합니다. <br /> <code class="code">&lbrace;
+   <td>HTML 이벤트를 XFA 이벤트로 변환하는 맵을 반환합니다. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      &rbrace;</code><br /> 이 예제에서는 <code>blur</code>이(가) HTML 이벤트이고 <code>XFA_EXIT_EVENT</code>이(가) 해당 XFA 이벤트임을 보여 줍니다. </td>
+      }</code><br /> 이 예제에서는 <code>blur</code>이(가) HTML 이벤트이고 <code>XFA_EXIT_EVENT</code>이(가) 해당 XFA 이벤트임을 보여 줍니다. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -179,7 +179,7 @@ Maven Archetype은 사용자 정의 모양을 만드는 시작점입니다. 사�
    * `getEventMap` 메서드는 위젯에 의해 트리거된 이벤트를 적응형 양식 모델에 필요한 이벤트와 매핑합니다. 기본값은 기본 위젯에 대한 표준 HTML 이벤트를 매핑하며 대체 이벤트가 트리거되는 경우 업데이트해야 합니다.
    * `showDisplayValue` 및 `showValue`은(는) 표시 및 편집 그림 절을 적용하고 대체 동작을 갖도록 재정의할 수 있습니다.
 
-   * `commit` 이벤트가 발생할 때 적응형 양식 프레임워크에서 `getCommitValue` 메서드를 호출합니다. 일반적으로 종료 이벤트입니다. 단, 드롭다운, 라디오 단추 및 변경 시 발생하는 확인란 요소는 예외입니다. 자세한 내용은 [적응형 Forms 표현식](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)을 참조하십시오.
+   * `commit` 이벤트가 발생할 때 적응형 양식 프레임워크에서 `getCommitValue` 메서드를 호출합니다. 일반적으로 종료 이벤트입니다. 단, 드롭다운, 라디오 단추 및 변경 시 발생하는 확인란 요소는 예외입니다. 자세한 내용은 [적응형 Forms 표현식](../../forms/using/adaptive-form-expressions.md#value-commit-script)을 참조하십시오.
 
    * 템플릿 파일은 다양한 방법에 대한 샘플 구현을 제공합니다. 확장하지 않을 메서드를 제거합니다.
 

@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 5%
@@ -35,7 +35,7 @@ ht-degree: 5%
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=ko)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html)를 참조하십시오.
 
 
 ## AEM Forms 포털 구성 요소 개요 {#aem-forms-portal-components-overview}
@@ -84,7 +84,7 @@ Forms 포털을 사용하면 양식 저장소의 양식을 포털 페이지에 �
 1. **Forms 포털 구성 요소 사용**: 기본적으로 Forms 포털 구성 요소를 사용할 수 없습니다. AEM Sites 페이지에 대해 [AEM 사이드 킥에서 구성 요소를 활성화](/help/forms/using/enabling-forms-portal-components.md)합니다.
 1. **페이지에 양식 나열(Forms 포털 페이지 만들기):** AEM Sites 페이지와 AEM 이외의 사이트 페이지에 양식을 나열할 수 있습니다. 이 목록에는 게시 인스턴스에서 사용할 수 있는 양식이 포함되어 있습니다. 사용자는 양식을 열고 작성을 시작할 수 있습니다. 사용자가 양식을 열 때마다 양식의 새 인스턴스가 만들어집니다.
 
-   1. **AEM Sites 페이지의 목록 양식**: 페이지에 **[검색 및 목록](../../forms/using/creating-form-portal-page.md)** 구성 요소를 추가하고 해당 페이지에서 **[목록 창](../../forms/using/creating-form-portal-page.md#p-list-pane-p)**&#x200B;을(를) 구성하여 페이지에 양식을 나열합니다. **검색 창** 구성 요소를 **검색 및 목록** 구성 요소에 추가 및 구성하여 페이지에 검색 기능을 추가하십시오. Forms 포털 구성 요소가 있는 페이지를 [Forms 포털 페이지](../../forms/using/creating-form-portal-page.md)라고 합니다.
+   1. **AEM Sites 페이지의 목록 양식**: 페이지에 **[검색 및 목록](../../forms/using/creating-form-portal-page.md)** 구성 요소를 추가하고 해당 페이지에서 **[목록 창](../../forms/using/creating-form-portal-page.md#list-pane)**&#x200B;을(를) 구성하여 페이지에 양식을 나열합니다. **검색 창** 구성 요소를 **검색 및 목록** 구성 요소에 추가 및 구성하여 페이지에 검색 기능을 추가하십시오. Forms 포털 구성 요소가 있는 페이지를 [Forms 포털 페이지](../../forms/using/creating-form-portal-page.md)라고 합니다.
 
    1. **AEM Sites이 아닌 페이지의 목록 양식:** [Forms 포털 검색 API](/help/forms/using/listing-forms-webpage-using-apis.md)를 사용하여 AEM Sites이 아닌 페이지의 양식을 쿼리하고 검색하고 나열합니다.
 

@@ -24,20 +24,20 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 25%
 ---
 # 적응형 양식을 만들거나 AEM Sites 페이지에 추가 {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 적용 대상 {#applies-to}
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=ko)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)를 참조하십시오.
 
 AEM Forms를 사용하여 적응형 양식을 웹 페이지에 원활하게 통합할 수 있습니다. 이를 통해 방문자는 현재 페이지를 떠나지 않고 편리하게 양식을 작성하고 제출할 수 있습니다. 이렇게 하면 방문자는 양식과 상호 작용하면서 웹 사이트의 다른 요소에 지속적으로 관심을 가질 수 있습니다.
 
@@ -57,7 +57,7 @@ AEM 페이지 편집기에서 적응형 양식 컨테이너를 사용하면 동�
 * **다중 사이트 관리 및 Live Copy:** AEM Sites은 강력한 [다중 사이트 관리 및 Live Copy 기능](/help/sites-administering/msm.md)을 제공하므로 단일 환경에서 여러 웹 사이트를 만들고 관리할 수 있습니다. 이제 이 기능을 사용하여 여러 사이트에서 양식을 재사용할 수 있으므로 일관성을 유지하고 복제 작업을 줄일 수 있습니다. 중앙 집중식 제어 및 관리를 통해 여러 웹 사이트에서 양식을 효율적으로 유지 관리하고 업데이트할 수 있습니다.
 * **테마:** AEM Sites 페이지는 여러 웹 페이지에서 일관된 시각적 스타일을 디자인하고 유지 관리하는 프레임워크를 제공합니다. 색상, 글꼴, 스타일 시트 및 웹 사이트의 전체적인 모양과 느낌에 기여하는 기타 시각적 요소를 정의합니다. [AEM Sites 페이지에 맞게 디자인된 테마를 적응형 양식에 사용할 수 있으므로 시간과 노력이 절약됩니다](/help/sites-authoring/style-system.md).
 * **태그 지정:** AEM Sites 페이지를 사용하면 [페이지, 에셋 또는 기타 콘텐츠에 태그나 레이블을 할당할 수 있습니다](/help/sites-authoring/tags.md). 태그는 특정 기준에 따라 콘텐츠를 분류하고 구성하는 방법을 제공하는 키워드 또는 메타데이터 레이블입니다. 페이지, 에셋 또는 AEM 내의 다른 콘텐츠 항목에 하나 이상의 태그를 할당하여 검색을 개선하고 에셋을 분류할 수 있습니다.
-* **컨텐츠 잠금 및 잠금 해제:** AEM Sites을 사용하면 사용자가 AEM Sites 환경에서 [페이지에 대한 액세스 및 수정 사항을 제어](/help/sites-authoring/editing-content.md#locking-a-page-locking-a-page)할 수 있습니다. 페이지가 잠기면 다른 사용자가 승인되지 않은 변경 또는 편집하지 못하도록 보호됩니다. 콘텐츠를 잠근 사용자 또는 지정된 관리자만 수정을 허용하도록 잠금을 해제할 수 있습니다.
+* **컨텐츠 잠금 및 잠금 해제:** AEM Sites을 사용하면 사용자가 AEM Sites 환경에서 [페이지에 대한 액세스 및 수정 사항을 제어](/help/sites-authoring/editing-content.md#locking-a-page)할 수 있습니다. 페이지가 잠기면 다른 사용자가 승인되지 않은 변경 또는 편집하지 못하도록 보호됩니다. 콘텐츠를 잠근 사용자 또는 지정된 관리자만 수정을 허용하도록 잠금을 해제할 수 있습니다.
 
 
 ## AEM 페이지 편집기에서 적응형 양식을 추가하는 다양한 옵션
@@ -87,7 +87,7 @@ AEM 페이지 편집기에서 적응형 양식 컨테이너를 사용하면 동�
 
 +++  내 환경에 맞는 적응형 양식 핵심 구성 요소 활성화
 
-[적응형 Forms 핵심 구성 요소가 환경에 대해 활성화되어 있는지 확인](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=ko).
+[적응형 Forms 핵심 구성 요소가 환경에 대해 활성화되어 있는지 확인](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
 
 +++ 
 

@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4264'
 ht-degree: 1%
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=ko)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html)를 참조하십시오.
 
 ![데이터 통합](do-not-localize/data-integeration.png)
 
@@ -122,7 +122,7 @@ Forms 데이터 통합을 처음 사용하지만 데이터 소스를 구성하�
 
 1. 양식 데이터 모델에서 데이터 모델 개체를 선택하고 **[!UICONTROL 자식 속성 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 자식 속성 만들기]** 대화 상자에서 각각 **[!UICONTROL 이름]** 및 **[!UICONTROL 형식]** 필드에 속성의 이름과 데이터 형식을 지정합니다. 속성에 대한 제목과 설명을 선택적으로 지정할 수 있습니다.
-1. 속성이 계산된 속성인 경우 [계산됨]을 활성화합니다. 계산된 속성의 값은 규칙 또는 표현식을 기반으로 평가됩니다. 자세한 내용은 [속성 편집](#edit-properties)을 참조하세요.
+1. 속성이 계산된 속성인 경우 [계산됨]을 활성화합니다. 계산된 속성의 값은 규칙 또는 표현식을 기반으로 평가됩니다. 자세한 내용은 [속성 편집](#properties)을 참조하세요.
 1. 데이터 모델 개체가 데이터 소스에 바인딩되면 추가된 자식 속성은 동일한 이름 및 데이터 형식의 부모 데이터 모델 개체의 속성에 자동으로 바인딩됩니다.
 
    하위 속성을 데이터 모델 개체 속성으로 수동으로 바인딩하려면 **[!UICONTROL 바인딩 참조]** 필드 옆에 있는 찾아보기 아이콘을 선택합니다. **[!UICONTROL 개체 선택]** 대화 상자에 상위 데이터 모델 개체의 모든 속성이 나열됩니다. 바인딩할 속성을 선택하고 확인 표시 아이콘을 선택합니다. 하위 속성과 동일한 데이터 유형의 속성만 선택할 수 있습니다.

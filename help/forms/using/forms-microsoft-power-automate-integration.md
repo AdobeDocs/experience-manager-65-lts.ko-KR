@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 15%
@@ -38,7 +38,7 @@ ht-degree: 15%
 * 캡처된 데이터에 대해 복잡한 계산 수행
 * 미리 정의된 일정에 따라 적응형 양식 데이터를 스토리지 시스템에 저장
 
-적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 액션을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 ® Power Automate로 보내려면 [AEM Forms 작성자 인스턴스를 Microsoft® Power Automate에 연결] (#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)합니다
+적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 액션을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 ® Power Automate로 보내려면 [AEM Forms 작성자 인스턴스를 Microsoft® Power Automate에 연결](#connect-forms-server-with-power-automate)합니다
 
 ## 사전 요구 사항
 

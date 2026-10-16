@@ -23,20 +23,20 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4354'
 ht-degree: 4%
 ---
 # 적응형 양식 또는 적응형 양식 단편을 위한 기록 문서 생성 {#generate-document-of-record-for-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 적용 대상 {#applies-to}
 
 이 설명서는 **AEM 6.5 LTS Forms**&#x200B;에 적용됩니다.
 
-AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ko)를 참조하십시오.
+AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)를 참조하십시오.
 
 
 ## 개요 {#overview}
@@ -284,7 +284,7 @@ AEM Designer에서 만든 **기본 템플릿(권장)** XFA 템플릿(XDP 파일)
 
 1. AEM 작성자 인스턴스에서 **Forms > Forms 및 문서**&#x200B;를 클릭합니다.
 1. 양식을 선택하고 **속성 보기**&#x200B;를 클릭합니다.
-1. 속성 창에서 **양식 모델**&#x200B;을(를) 선택합니다.
+1. 속성 창에서 **양식 모델**을(를) 선택합니다.
 양식을 만들 때 양식 모델을 선택할 수도 있습니다.
 
    >[!NOTE]
@@ -433,7 +433,7 @@ AEM Designer에서 만든 **기본 템플릿(권장)** XFA 템플릿(XDP 파일)
   * **강조 색:** [!UICONTROL 기록 문서]의 서식 파일 색을 미리 정의할 수 있습니다.
   * **글꼴 모음:** [!UICONTROL 기록 문서] 텍스트에 대한 글꼴 유형을 선택합니다.
   * **DoR에 바인딩되지 않은 필드 포함:** 속성을 설정하면 [!UICONTROL 기록 문서]에서 스키마 기반 적응형 양식의 바인딩되지 않은 필드가 포함됩니다. 기본적으로 true입니다.
-  * **숨겨진 경우 DoR에서 필드 제외:** 양식 제출 시 [!UICONTROL 기록 문서]에서 숨겨진 필드를 제외하도록 속성을 설정합니다. [서버에서 다시 유효성 검사](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)를 사용하도록 설정하면 서버에서 숨겨진 필드를 다시 계산한 다음 [!UICONTROL 기록 문서]에서 해당 필드를 제외합니다.
+  * **숨겨진 경우 DoR에서 필드 제외:** 양식 제출 시 [!UICONTROL 기록 문서]에서 숨겨진 필드를 제외하도록 속성을 설정합니다. [서버에서 다시 유효성 검사](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form)를 사용하도록 설정하면 서버에서 숨겨진 필드를 다시 계산한 다음 [!UICONTROL 기록 문서]에서 해당 필드를 제외합니다.
 * **[!UICONTROL 양식 필드 속성]**
   * **확인란 및 라디오 단추 구성 요소에 대해 옵션**&#x200B;을(를) 선택하면 선택한 값만 표시되는 DoR 출력이 생성됩니다.
   * 선택한 여러 값에 대해 분리자를 선택하거나 다른 분리자 유형을 선택할 수 있습니다.
@@ -473,7 +473,7 @@ AEM Designer에서 만든 **기본 템플릿(권장)** XFA 템플릿(XDP 파일)
 
 1. 두 번째 마스터 페이지를 적용할 패널을 선택하고 ![구성](assets/cmppr.png)을(를) 선택하십시오.
 1. **[!UICONTROL 페이지 매김]** 섹션의 **[!UICONTROL 배치]** 필드에서 ![폴더](/help/forms/using/assets/folder-icon.png)을(를) 선택합니다.
-1. **[!UICONTROL 페이지에서]**&#x200B;를 선택하고 두 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 페이지에서]**&#x200B;를 선택하고 두 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**을 선택합니다.
 AEM Forms은 두 번째 마스터 페이지를 패널과 적응형 양식의 모든 후속 패널에 적용합니다.
 1. **[!UICONTROL 페이지 매김]** 섹션의 **[!UICONTROL 이후]** 필드에서 ![폴더](/help/forms/using/assets/folder-icon.png)을(를) 선택합니다.
 1. **[!UICONTROL 페이지로 이동]**&#x200B;을 선택하고 세 번째 마스터 페이지를 선택한 다음 **[!UICONTROL 선택]**&#x200B;을 선택합니다.
@@ -540,7 +540,7 @@ XCI 파일은 문서의 다양한 속성을 설정하는 데 도움이 됩니다
 ### 로컬 Forms 개발 환경에서 사용자 지정 XCI 파일 사용
 
 1. XCI 파일을 로컬 개발 환경에 업로드합니다.
-1. &#x200B;<!--Cloud Service SDK--> 구성 관리자를 엽니다.
+1. <!--Cloud Service SDK--> 구성 관리자를 엽니다.
 
    <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
 

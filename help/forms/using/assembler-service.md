@@ -23,14 +23,14 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 6%
 ---
 # 어셈블러 서비스 사용{#using-assembler-service}
 
-어셈블러 서비스를 사용하면 PDF 및 XDP 문서를 결합, 재배열 및 강화하고 PDF 문서에 대한 정보를 얻을 수 있습니다. 어셈블러 서비스에 제출된 각 작업에는 DDX(Document Description XML) 문서, 소스 문서 및 외부 리소스(문자열 및 그래픽)가 포함됩니다. 어셈블러 서비스에 대한 자세한 내용은 [어셈블러 서비스 개요](../../forms/using/overview-aem-document-services.md#p-assembler-service-p)를 참조하십시오.
+어셈블러 서비스를 사용하면 PDF 및 XDP 문서를 결합, 재배열 및 강화하고 PDF 문서에 대한 정보를 얻을 수 있습니다. 어셈블러 서비스에 제출된 각 작업에는 DDX(Document Description XML) 문서, 소스 문서 및 외부 리소스(문자열 및 그래픽)가 포함됩니다. 어셈블러 서비스에 대한 자세한 내용은 [어셈블러 서비스 개요](../../forms/using/overview-aem-document-services.md#assembler-service)를 참조하십시오.
 
 다음 작업에 어셈블 서비스를 사용할 수 있습니다.
 

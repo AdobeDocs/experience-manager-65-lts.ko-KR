@@ -26,14 +26,14 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2871'
 ht-degree: 3%
 ---
 # 적응형 양식 표현식{#adaptive-form-expressions}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 적응형 양식은 동적 스크립팅 기능을 갖춘 최종 사용자에게 최적화되고 간소화된 양식 작성 환경을 제공합니다. 동적 표시/숨기기 필드 및 패널과 같은 다양한 동작을 추가하는 표현식을 작성할 수 있습니다. 또한 계산된 필드를 추가하고, 필드를 읽기 전용으로 만들고, 유효성 검사 논리를 추가하는 등 다양한 작업을 수행할 수 있습니다. 동적 동작은 사용자 입력 또는 미리 채워진 데이터를 기반으로 합니다.
 
@@ -93,7 +93,7 @@ JavaScript은 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 **반환 형식**: 식이 식 결과가 표시되는 필드(예: 십진수)와 호환되는 값을 반환합니다.
 
-**예**: **field1**&#x200B;에 있는 두 필드의 합계를 표시하는 계산 식은 다음과 같습니다.
+**예**: **field1**에 있는 두 필드의 합계를 표시하는 계산 식은 다음과 같습니다.
 `field2.value + field3.value`
 
 ### 표현식 클릭 {#click-expression}
@@ -153,7 +153,7 @@ JavaScript은 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 **적용 대상**: 필드
 
-**반환 형식**: 필드의 유효성 검사 상태를 나타내는 부울 값을 반환합니다. 값 **false**&#x200B;은(는) 필드가 잘못되었음을 나타내고 **true**&#x200B;은(는) 필드가 유효함을 나타냅니다.
+**반환 형식**: 필드의 유효성 검사 상태를 나타내는 부울 값을 반환합니다. 값 **false**&#x200B;은(는) 필드가 잘못되었음을 나타내고 **true**은(는) 필드가 유효함을 나타냅니다.
 **예**: 영국의 우편 번호를 나타내는 필드의 경우 유효성 검사 식은 다음과 같습니다.
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -219,7 +219,7 @@ JavaScript은 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 ### 유효성 검사 표현식 {#validation-expressions}
 
-필드 유효성 검사는 다른 필드의 표현식을 사용하여 계산할 수도 있습니다. 이러한 식은 구성 요소의 **편집** 대화 상자 **스크립트** 탭의 **유효성 검사 스크립트** 필드 내에 작성됩니다. 필드의 유효성 검사 상태는 표현식이 반환하는 값에 따라 다릅니다. 이러한 식을 작성하는 방법에 대한 자세한 내용은 [식 유효성 검사](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)를 참조하십시오.
+필드 유효성 검사는 다른 필드의 표현식을 사용하여 계산할 수도 있습니다. 이러한 식은 구성 요소의 **편집** 대화 상자 **스크립트** 탭의 **유효성 검사 스크립트** 필드 내에 작성됩니다. 필드의 유효성 검사 상태는 표현식이 반환하는 값에 따라 다릅니다. 이러한 식을 작성하는 방법에 대한 자세한 내용은 [식 유효성 검사](../../forms/using/adaptive-form-expressions.md#validate-expression)를 참조하십시오.
 
 ## 추가 정보 {#additional-information}
 

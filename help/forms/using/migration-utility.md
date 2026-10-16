@@ -22,7 +22,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 2%
@@ -42,17 +42,17 @@ ht-degree: 2%
 
 ## 마이그레이션 방법 {#approach-to-migration}
 
-AEM Forms 6.5.22.0[&#128279;](/help/forms/using/upgrade-forms-osgi.md)에서 AEM Forms 6.5 LTS로 [업그레이드](../../forms/using/upgrade.md)할 수 있습니다. 이전 설치를 업그레이드했는지 새로 설치했는지 여부에 따라 다음 중 하나를 수행해야 합니다.
+AEM Forms 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md)에서 [AEM Forms 6.5 LTS로 [업그레이드](../../forms/using/upgrade.md)할 수 있습니다. 이전 설치를 업그레이드했는지 새로 설치했는지 여부에 따라 다음 중 하나를 수행해야 합니다.
 
 **업그레이드된 경우**
 
-[바로 업그레이드](/help/sites-deploying/in-place-upgrade.md)를 수행한 경우 업그레이드된 인스턴스에 이미 에셋과 문서가 있습니다. 그러나 에셋 및 문서를 사용하려면 먼저 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)&#x200B;(서신 관리 호환성 패키지 포함)를 설치해야 합니다.
+[바로 업그레이드](/help/sites-deploying/in-place-upgrade.md)를 수행한 경우 업그레이드된 인스턴스에 이미 에셋과 문서가 있습니다. 그러나 에셋 및 문서를 사용하려면 먼저 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)&#x200B;(서신 관리 호환성 패키지 포함)를 설치해야 합니다.
 
 [마이그레이션 유틸리티를 실행](#runningmigrationutility)하여 자산 및 문서를 업데이트해야 합니다.
 
 **잘못된 설치가 있는 경우**
 
-잘못된(새로운) 설치인 경우 에셋 및 문서를 사용하려면 먼저 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=ko)&#x200B;(서신 관리 호환성 패키지 포함)를 설치해야 합니다.
+잘못된(새로운) 설치인 경우 에셋 및 문서를 사용하려면 먼저 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)&#x200B;(서신 관리 호환성 패키지 포함)를 설치해야 합니다.
 
 그런 다음 새 설정에서 자산 패키지(zip 또는 cmp)를 가져온 다음 [마이그레이션 유틸리티를 실행](#runningmigrationutility)하여 자산 및 문서를 업데이트해야 합니다. Adobe에서는 마이그레이션 유틸리티를 실행한 후에만 새 설정에서 자산을 만들 것을 권장합니다.
 
@@ -181,7 +181,7 @@ AEM Forms 6.5.22.0[&#128279;](/help/forms/using/upgrade-forms-osgi.md)에서 AEM
 
 1. 레이아웃 및 조각 레이아웃의 XFA 버전이 3.3 이상인지 확인합니다. 이전 버전의 레이아웃 및 단편 레이아웃을 사용하는 경우 편지 렌더링에 문제가 있을 수 있습니다. 이전 XFA 버전을 최신 버전으로 업데이트하려면 다음 단계를 완료하십시오.
 
-   1. Forms 사용자 인터페이스에서 [XFA를 zip 파일로 다운로드](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p)합니다.
+   1. Forms 사용자 인터페이스에서 [XFA를 zip 파일로 다운로드](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management)합니다.
    1. 파일을 추출합니다.
    1. 최신 Designer에서 XFA 파일을 열고 저장합니다. XFA 버전이 최신 버전으로 업데이트됩니다.
    1. Forms 사용자 인터페이스에서 XFA를 업로드합니다.

@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 5%
@@ -41,7 +41,7 @@ AEM Forms을 사용하면 적응형 양식을 초안으로 저장할 수 있습�
 
 그러나 AEM Forms 포털 구성 요소는 초안 및 제출에 대한 사용자 데이터 저장의 구현을 사용자 정의할 수 있는 데이터 서비스를 제공합니다. 예를 들어 조직에 현재 구현된 데이터 저장소에 데이터를 저장할 수 있습니다.
 
-사용자 데이터의 저장을 사용자 지정하려면 [초안 데이터](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) 및 [제출 데이터](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) 서비스를 구현해야 합니다.
+사용자 데이터의 저장을 사용자 지정하려면 [초안 데이터](/help/forms/using/custom-draft-submission-data-services.md#draft-data-service) 및 [제출 데이터](/help/forms/using/custom-draft-submission-data-services.md#submission-data-service) 서비스를 구현해야 합니다.
 
 ## 사전 요구 사항 {#prerequisites}
 

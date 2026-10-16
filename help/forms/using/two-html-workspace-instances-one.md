@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 5%
@@ -41,7 +41,7 @@ AEM Forms 관리자는 작업 영역을 사용자 정의하여 두 개의 다른
 
 다음 단계에 따라 AEM Forms 작업 영역을 구성합니다.
 
-1. 서버에 AEM Forms 작업 공간 개발 패키지를 설치합니다. 만들기 지침은 [개발 패키지](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)를 참조하세요.
+1. 서버에 AEM Forms 작업 공간 개발 패키지를 설치합니다. 만들기 지침은 [개발 패키지](/help/forms/using/introduction-customizing-html-workspace.md#crx-package)를 참조하세요.
 1. `https://'[server]:[port]'/lc/crx/de/index.jsp`에 액세스하여 CRXDE Lite에 관리자로 로그인합니다.
 1. 노드를 /content에 복사하고 /content에 붙여넣습니다. 노드의 이름을 ws2로 바꿉니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다. 이 노드의 속성에서 `sling:resourceType`의 값을 ws2로 변경합니다. **[!UICONTROL 모두 저장]**&#x200B;을 클릭합니다.
 

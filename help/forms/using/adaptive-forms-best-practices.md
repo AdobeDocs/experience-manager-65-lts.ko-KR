@@ -16,14 +16,14 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5707'
 ht-degree: 2%
 ---
 # 적응형 양식 작업을 위한 모범 사례 {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
+<span class="preview"> [새 적응형 양식 만들기](/help/forms/using/create-an-adaptive-form-core-components.md) 또는 [AEM Sites 페이지에 적응형 양식 추가](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) 작업을 할 때 현대적이고 확장 가능한 데이터 캡처 [핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)를 사용하는 것이 좋습니다. 이러한 구성 요소는 적응형 양식 만들기 작업이 대폭 개선되어 우수한 사용자 경험을 보장할 수 있게 되었음을 나타냅니다. 이 문서에서는 기초 구성 요소를 사용하여 적응형 양식을 작성하는 이전 접근법에 대해 설명합니다. </span>
 
 ## 개요 {#overview}
 
@@ -102,11 +102,11 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
   * /libs에서 즉시 사용 가능한 적응형 양식 구성 요소의 레이아웃을 사용자 지정하려면 [기본 레이아웃](/help/forms/using/layout-capabilities-adaptive-forms.md) 외에 [사용자 지정 레이아웃 구성 요소를 만듭니다](/help/forms/using/custom-layout-components-forms.md).
   * 사용자 정의 위젯 또는 모양을 만들어 사용자 정의 상호 작용을 소개합니다. 기본 구성 요소는 수정하지 않는 것이 좋습니다. 자세한 내용은 [모양 프레임워크](/help/forms/using/introduction-widgets.md)를 참조하십시오.
 
-* PII 데이터 처리에 대한 권장 사항은 [개인 식별 정보 처리](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p)를 참조하십시오.
+* PII 데이터 처리에 대한 권장 사항은 [개인 식별 정보 처리](/help/forms/using/adaptive-forms-best-practices.md#handling-personally-identifiable-information)를 참조하십시오.
 
 ### 양식 템플릿 만들기
 
-**구성 브라우저**&#x200B;에서 활성화된 양식 서식 파일을 사용하여 적응형 양식을 만들 수 있습니다. 양식 서식 파일을 사용하려면 [적응형 양식 서식 파일 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)를 참조하십시오.
+**구성 브라우저**&#x200B;에서 활성화된 양식 서식 파일을 사용하여 적응형 양식을 만들 수 있습니다. 양식 서식 파일을 사용하려면 [적응형 양식 서식 파일 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template)를 참조하십시오.
 
 다른 작성자 컴퓨터에서 만든 적응형 양식 패키지에서 양식 템플릿을 업로드할 수도 있습니다. 양식 서식 파일은 [aemforms-references-* packages](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)을(를) 설치하여 사용할 수 있습니다. 권장되는 몇 가지 모범 사례는 다음과 같습니다.
 
@@ -288,7 +288,7 @@ AEM Forms에서는 적응형 양식 구성 요소에 동적 동작을 추가하�
 
 클라이언트에서의 유효성 검사를 우회하려는 시도와 데이터 제출 및 비즈니스 규칙 위반의 가능한 중단을 방지하기 위해 서버측 유효성 검사가 필요합니다. 서버측 유효성 검사는 필요한 클라이언트 라이브러리를 로드하여 서버에서 실행됩니다.
 
-* 적응형 양식의 표현식을 확인하기 위한 함수를 클라이언트 라이브러리에 포함하고 적응형 양식 컨테이너 대화 상자에서 클라이언트 라이브러리를 지정합니다. 자세한 내용은 [서버측 유효성 재검사](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p)를 참조하십시오.
+* 적응형 양식의 표현식을 확인하기 위한 함수를 클라이언트 라이브러리에 포함하고 적응형 양식 컨테이너 대화 상자에서 클라이언트 라이브러리를 지정합니다. 자세한 내용은 [서버측 유효성 재검사](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form)를 참조하십시오.
 * 서버측 유효성 검사는 양식 모델의 유효성을 검사합니다. 유효성 검사를 위해 별도의 클라이언트 라이브러리를 만들고 동일한 클라이언트 라이브러리에서 HTML 스타일 및 DOM 조작과 같은 다른 항목과 혼합하지 않는 것이 좋습니다.
 
 ### 적응형 양식 현지화 {#localizing-adaptive-forms}
@@ -330,7 +330,7 @@ AEM은 적응형 양식을 현지화하는 데 사용할 수 있는 번역 워�
 전반적인 성능을 개선하도록 AEM을 구성하는 몇 가지 모범 사례는 다음과 같습니다.
 
 * Felix 콘솔에서 JavaScript 및 CSS용 HTML 클라이언트 라이브러리 압축을 활성화합니다.
-* `/etc.clientlibs/fd`의 모든 클라이언트 라이브러리와 AEM Dispatcher의 추가 사용자 지정 클라이언트 라이브러리를 캐시하여 게시된 양식의 응답성과 보안을 향상시킵니다. 자세한 내용은 [Dispatcher](https://helpx.adobe.com/kr/experience-manager/dispatcher/using/dispatcher.html)을 참조하세요.
+* `/etc.clientlibs/fd`의 모든 클라이언트 라이브러리와 AEM Dispatcher의 추가 사용자 지정 클라이언트 라이브러리를 캐시하여 게시된 양식의 응답성과 보안을 향상시킵니다. 자세한 내용은 [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)을 참조하세요.
 
 * `/content/forms/af/` 및 `/content/dam/formsanddocuments/*` 경로를 캐시하지 마십시오. 적응형 양식 캐싱 구성에 대한 자세한 내용은 [적응형 양식 캐싱](/help/forms/using/configure-adaptive-forms-cache.md)을 참조하십시오.
 
@@ -373,11 +373,11 @@ AEM은 적응형 양식을 현지화하는 데 사용할 수 있는 번역 워�
 
 AEM Forms 규칙 편집기는 규칙을 만들고 관리하기 위한 시각적 인터페이스를 제공하여 광범위한 코딩의 필요성을 줄입니다. 고급 프로그래밍 기술은 없지만 양식 내에서 비즈니스 규칙을 정의하고 유지 관리해야 하는 비즈니스 사용자 또는 양식 디자이너에게 특히 유용할 수 있습니다. 여기서는 규칙 편집기를 통해 다음과 같은 작업을 수행할 수 있는 몇 가지 사용 사례에 대해 설명합니다.
 
-* &#x200B;<!-- Allows you --> 포괄적인 프로그래밍을 하지 않고도 양식에 대한 비즈니스 규칙을 정의할 수 있습니다.
-* &#x200B;<!-- Use the Rule Editor when you need --> 양식 내에 조건부 논리를 구현합니다. 여기에는 양식 요소 표시 또는 숨기기, 특정 조건에 따라 필드 값 변경 또는 양식의 동작 동적 변경이 포함됩니다.
-* &#x200B;<!--When you want --> 양식 제출에 데이터 검증 규칙을 적용하려면 규칙 편집기 를 사용하여 검증 조건을 정의할 수 있습니다.
-* &#x200B;<!-- When you need --> 양식을 외부 데이터 소스(FDM) 또는 서비스와 통합하기 위해 규칙 편집기는 양식 상호 작용 중에 데이터를 가져오고, 표시하거나, 조작하기 위한 규칙을 정의하는 데 도움이 될 수 있습니다.
-* &#x200B;<!-- If you want -->사용자 작업에 응답하는 동적 및 대화형 양식을 만들기 위해 규칙 편집기를 사용하여 양식 요소의 동작을 실시간으로 제어하는 규칙을 정의할 수 있습니다.
+* <!-- Allows you --> 포괄적인 프로그래밍을 하지 않고도 양식에 대한 비즈니스 규칙을 정의할 수 있습니다.
+* <!-- Use the Rule Editor when you need --> 양식 내에 조건부 논리를 구현합니다. 여기에는 양식 요소 표시 또는 숨기기, 특정 조건에 따라 필드 값 변경 또는 양식의 동작 동적 변경이 포함됩니다.
+* <!--When you want --> 양식 제출에 데이터 검증 규칙을 적용하려면 규칙 편집기 를 사용하여 검증 조건을 정의할 수 있습니다.
+* <!-- When you need --> 양식을 외부 데이터 소스(FDM) 또는 서비스와 통합하기 위해 규칙 편집기는 양식 상호 작용 중에 데이터를 가져오고, 표시하거나, 조작하기 위한 규칙을 정의하는 데 도움이 될 수 있습니다.
+* <!-- If you want -->사용자 작업에 응답하는 동적 및 대화형 양식을 만들기 위해 규칙 편집기를 사용하여 양식 요소의 동작을 실시간으로 제어하는 규칙을 정의할 수 있습니다.
 
 규칙 편집기는 AEM Forms Foundation 구성 요소와 핵심 구성 요소 모두에서 사용할 수 있습니다.
 

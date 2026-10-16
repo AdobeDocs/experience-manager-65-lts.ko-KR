@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 1%
@@ -47,7 +47,7 @@ ht-degree: 1%
 1. 작성자 [스키마를 업로드하거나 처음부터 데이터 사전을 만듭니다](#createdatadictionary).
 1. 작성자는 데이터 사전을 기반으로 편지 및 대화형 커뮤니케이션을 만들고 필요한 경우 편지 및 대화형 커뮤니케이션의 데이터 사전 요소를 연결합니다.
 1. 작성자는 데이터 사전의 스키마를 기반으로 하는 샘플 데이터 XML 파일을 다운로드할 수 있습니다. 작성자는 샘플 데이터 XML 파일을 수정할 수 있으며, 이 파일은 데이터 사전에 테스트 데이터로 연결될 수 있습니다. 편지 미리보기 중에도 동일한 용어가 사용됩니다.
-1. [편지를 미리 보는 동안](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p) 작성자는 데이터를 사용하여 편지를 미리 보도록 선택합니다(사용자 지정 미리 보기). 편지는 작성자가 제공한 데이터로 미리 채워진 상태로 열립니다. 응답 만들기 인터페이스에서 열립니다. 이 편지를 미리 보고 있는 에이전트는 이 편지의 내용, 데이터 및 첨부 파일을 수정할 수 있으며 최종 편지를 제출할 수 있습니다. 편지 만들기에 대한 자세한 내용은 [서신 만들기](../../forms/using/create-letter.md)를 참조하세요.
+1. [편지를 미리 보는 동안](../../forms/using/create-letter.md#types-of-linkage-available-for-each-of-the-fields) 작성자는 데이터를 사용하여 편지를 미리 보도록 선택합니다(사용자 지정 미리 보기). 편지는 작성자가 제공한 데이터로 미리 채워진 상태로 열립니다. 응답 만들기 인터페이스에서 열립니다. 이 편지를 미리 보고 있는 에이전트는 이 편지의 내용, 데이터 및 첨부 파일을 수정할 수 있으며 최종 편지를 제출할 수 있습니다. 편지 만들기에 대한 자세한 내용은 [서신 만들기](../../forms/using/create-letter.md)를 참조하세요.
 
 ## 전제 조건 {#prerequisite}
 

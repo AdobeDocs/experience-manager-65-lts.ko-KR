@@ -18,7 +18,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3533'
 ht-degree: 2%
@@ -94,7 +94,7 @@ AEM Forms 6.5에는 규칙 편집기를 사용하여 복잡한 비즈니스 규�
   * date[]: 날짜 값의 배열을 나타냅니다.
   * array: 다양한 유형의 값을 포함하는 일반 배열을 나타냅니다.
   * object: 값을 직접 전달하는 대신 사용자 지정 함수에 전달되는 양식 개체를 나타냅니다.
-  * 범위: 사용자 지정 함수 내에서 양식 수정을 수행하는 방법, 양식 인스턴스, 대상 필드 인스턴스와 같은 읽기 전용 변수를 포함하는 globals 개체를 나타냅니다. 이 매개 변수는 JavaScript 주석의 마지막 매개 변수로 선언되며 적응형 양식의 규칙 편집기에 표시되지 않습니다. 범위 매개 변수는 양식 또는 구성 요소의 개체에 액세스하여 양식 처리에 필요한 규칙이나 이벤트를 트리거합니다. Globals 개체 및 사용 방법에 대한 자세한 정보는 [여기를 클릭](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)하십시오.
+  * 범위: 사용자 지정 함수 내에서 양식 수정을 수행하는 방법, 양식 인스턴스, 대상 필드 인스턴스와 같은 읽기 전용 변수를 포함하는 globals 개체를 나타냅니다. 이 매개 변수는 JavaScript 주석의 마지막 매개 변수로 선언되며 적응형 양식의 규칙 편집기에 표시되지 않습니다. 범위 매개 변수는 양식 또는 구성 요소의 개체에 액세스하여 양식 처리에 필요한 규칙이나 이벤트를 트리거합니다. Globals 개체 및 사용 방법에 대한 자세한 정보는 [여기를 클릭](/help/forms/using/create-and-use-custom-functions-core-components.md#support-field-and-global-objects)하십시오.
 
 매개 변수 형식이 **대/소문자를 구분하지 않습니다**. 매개 변수 이름에는 공백을 사용할 수 없습니다.
 
@@ -366,7 +366,7 @@ jsdoc 주석을 사용하거나 사용하지 않고 사용자 지정 함수를 �
 
 ### AEM Project Archetype을 사용하여 클라이언트 라이브러리 만들기{#create-client-library-archetype}
 
-[AEM Project Archetype을 사용하여 만든 프로젝트](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)에 클라이언트 라이브러리를 추가하여 사용자 지정 함수를 추가할 수 있습니다.
+[AEM Project Archetype을 사용하여 만든 프로젝트](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)에 클라이언트 라이브러리를 추가하여 사용자 지정 함수를 추가할 수 있습니다.
 기존 프로젝트 <!--and have already the project structure as shown in the image below,-->이(가) 있는 경우 [사용자 지정 함수](#create-add-custom-function)를 로컬 프로젝트에 직접 추가할 수 있습니다.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -543,7 +543,7 @@ JavaScript 파일에 다음 코드를 추가하여 생년월일(YYYY-MM-DD)을 �
 
 ![사용자 지정 함수 클라이언트 라이브러리를 추가](/help/forms/using//assets/calculateage-customfunction.png)
 
-이제 AEM Forms 6.5[&#128279;](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)에서 규칙 편집기의 호출 서비스를 사용하여 사용자 지정 함수를 구성하고 사용하는 방법에 대해 알아보겠습니다
+이제 AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke)에서 [규칙 편집기의 호출 서비스를 사용하여 사용자 지정 함수를 구성하고 사용하는 방법에 대해 알아보겠습니다
 
 ## 적응형 양식에서 사용자 정의 함수 사용 {#use-custom-functions}
 
@@ -583,7 +583,7 @@ JavaScript 파일(`Function.js` 파일)에 다음 코드를 추가하여 생년�
 
 >[!NOTE]
 >
-> 다음 [사용자 지정 함수](/help/forms/using/assets/customfunctions.zip) 폴더를 참조할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/ko/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)를 사용하여 AEM 인스턴스에 이 폴더를 다운로드하여 설치하십시오.
+> 다음 [사용자 지정 함수](/help/forms/using/assets/customfunctions.zip) 폴더를 참조할 수 있습니다. [패키지 관리자](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager)를 사용하여 AEM 인스턴스에 이 폴더를 다운로드하여 설치하십시오.
 
 ### 사용자 지정 함수에서 비동기 함수 지원 {#support-of-async-functions}
 

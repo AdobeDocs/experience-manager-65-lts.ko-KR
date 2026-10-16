@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
@@ -70,16 +70,16 @@ ht-degree: 3%
   * URL 형식 `http://host:port/content/forms/af/<afName>.<locale>.html`을(를) 사용하여 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>` 대신 지역화된 버전의 적응형 양식을 요청하세요.
   * `http://host:port/content/forms/af/<adaptivefName>.html` 형식의 URL에 대해 [브라우저 로캘을 사용하지 않도록 설정](supporting-new-language-localization.md#how-localization-of-adaptive-form-works).
   * 구성 관리자에서 URL 형식 `http://host:port/content/forms/af/<adaptivefName>.html`을(를) 사용하고 **[!UICONTROL 브라우저 로케일 사용]**&#x200B;을(를) 사용하지 않도록 설정한 경우 지역화되지 않은 버전의 적응형 양식이 제공됩니다. 현지화되지 않은 언어는 적응형 양식을 개발하는 동안 사용되는 언어입니다. 브라우저에 대해 구성된 로케일(브라우저 로케일)은 고려되지 않으며 현지화되지 않은 버전의 적응형 양식이 제공됩니다.
-  * 구성 관리자에서 URL 형식 `http://host:port/content/forms/af/<adaptivefName>.html`을(를) 사용하고 **[!UICONTROL 브라우저 로케일 사용]**&#x200B;을(를) 사용하도록 설정한 경우 지역화된 버전의 적응형 양식이 제공됩니다(사용 가능한 경우). 현지화된 적응형 양식의 언어는 브라우저에 대해 구성된 로케일(브라우저 로케일)을 기반으로 합니다. [적응형 양식의 첫 번째 인스턴스만 캐싱]할 수 있습니다. 인스턴스에서 문제가 발생하지 않도록 하려면 [문제 해결](#only-first-insatnce-of-adptive-forms-is-cached)을 참조하세요.
+  * 구성 관리자에서 URL 형식 `http://host:port/content/forms/af/<adaptivefName>.html`을(를) 사용하고 **[!UICONTROL 브라우저 로케일 사용]**&#x200B;을(를) 사용하도록 설정한 경우 지역화된 버전의 적응형 양식이 제공됩니다(사용 가능한 경우). 현지화된 적응형 양식의 언어는 브라우저에 대해 구성된 로케일(브라우저 로케일)을 기반으로 합니다. [적응형 양식의 첫 번째 인스턴스만 캐싱]할 수 있습니다. 인스턴스에서 문제가 발생하지 않도록 하려면 [문제 해결](#only-first-instance-of-adaptive-forms-is-cached)을 참조하세요.
 
 ### Dispatcher에서 캐싱 활성화
 
 Dispatcher에서 적응형 양식 캐싱을 활성화하고 구성하려면 다음 단계를 수행하십시오.
 
-1. 환경의 모든 게시 인스턴스에 대해 다음 URL을 열고 [환경의 게시 인스턴스에 대해 플러시 에이전트를 사용하도록 설정](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ko#invalidating-dispatcher-cache-from-a-publishing-instance)합니다.
+1. 환경의 모든 게시 인스턴스에 대해 다음 URL을 열고 [환경의 게시 인스턴스에 대해 플러시 에이전트를 사용하도록 설정](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)합니다.
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [dispatcher.any 파일에 다음 내용을 추가하십시오](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#automatically-invalidating-cached-files):
+1. [dispatcher.any 파일에 다음 내용을 추가하십시오](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
 
    ```JSON
       /invalidate
@@ -108,7 +108,7 @@ Dispatcher에서 적응형 양식 캐싱을 활성화하고 구성하려면 다�
    * 적응형 양식은 업데이트된 버전의 양식이 게시되지 않을 때까지 캐시에 남아 있습니다.
 
    * 적응형 양식에서 참조된 리소스의 새 버전이 게시되면 영향을 받은 적응형 양식이 자동으로 무효화됩니다. 참조된 리소스의 자동 무효화에 대한 몇 가지 예외가 있습니다. 예외에 대한 해결 방법은 [문제 해결](#troubleshooting) 섹션을 참조하십시오.
-1. [아래의 규칙 dispatcher.any 또는 사용자 지정 규칙 파일을 추가하십시오](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#specifying-the-documents-to-cache). 캐싱을 지원하지 않는 URL은 제외합니다. 예를 들어 대화형 통신.
+1. [아래의 규칙 dispatcher.any 또는 사용자 지정 규칙 파일을 추가하십시오](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). 캐싱을 지원하지 않는 URL은 제외합니다. 예를 들어 대화형 통신.
 
    ```JSON
       /0000 {
@@ -132,7 +132,7 @@ Dispatcher에서 적응형 양식 캐싱을 활성화하고 구성하려면 다�
       }
    ```
 
-1. [URL 매개 변수 무시 목록에 다음 매개 변수를 추가하십시오](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ko#ignoring-url-parameters):
+1. [URL 매개 변수 무시 목록에 다음 매개 변수를 추가하십시오](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
 
    ```JSON
       /ignoreUrlParams {

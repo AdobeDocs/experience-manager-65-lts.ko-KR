@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6510'
 ht-degree: 2%
@@ -34,11 +34,11 @@ ht-degree: 2%
 
 이 문서의 샘플 및 예제를 통해 OSGi 환경의 AEM Forms에서 AEM 문서 서비스를 이해하고 사용할 수 있습니다. JEE 환경의 AEM Forms에 대한 샘플 및 예는 를 참조하십시오.
 
-* [서명 서비스 Java API 빠른 시작](/help/forms/developing/signature-service-java-api-quick.md#programming-aem-forms-jee)
+* [서명 서비스 Java API 빠른 시작](/help/forms/developing/signature-service-java-api-quick.md#signature-service-java-api-quickstart-soap)
 
-* [암호화 서비스 Java API 빠른 시작](/help/forms/developing/encryption-service-java-api-quick.md#developer-reference)
+* [암호화 서비스 Java API 빠른 시작](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quickstart-soap)
 
-* [Acrobat Reader 확장 서비스 Java API 빠른 시작](/help/forms/developing/acrobat-reader-dc-extensions-service.md#developer-reference)
+* [Acrobat Reader 확장 서비스 Java API 빠른 시작](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap)
 
 ## 전제 조건 {#prerequisite}
 
@@ -58,35 +58,35 @@ DocAssurance 서비스에는 다음 서비스가 포함됩니다.
 
 DocAssurance 서비스를 사용하여 다음 작업을 수행할 수 있습니다.
 
-* [보이지 않는 서명 추가](/help/forms/using/aem-document-services-programmatically.md#p-adding-an-invisible-signature-field-p)
+* [보이지 않는 서명 추가](/help/forms/using/aem-document-services-programmatically.md#adding-an-invisible-signature-field)
 
-* [서명 필드 추가](/help/forms/using/aem-document-services-programmatically.md#p-adding-a-signature-field-nbsp-p)
+* [서명 필드 추가](/help/forms/using/aem-document-services-programmatically.md#adding-a-signature-field-nbsp)
 * [문서 타임스탬프 적용](/help/forms/using/aem-document-services-programmatically.md#apply-document-timestamp)
 
-* [서명 가져오기](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-p)
-* [서명 필드 목록 가져오기](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-field-list-nbsp-p)
-* [서명 필드 수정](/help/forms/using/aem-document-services-programmatically.md#p-modifying-signature-fields-nbsp-p)
+* [서명 가져오기](/help/forms/using/aem-document-services-programmatically.md#getting-signature)
+* [서명 필드 목록 가져오기](/help/forms/using/aem-document-services-programmatically.md#getting-signature-field-list-nbsp)
+* [서명 필드 수정](/help/forms/using/aem-document-services-programmatically.md#modifying-signature-fields-nbsp)
 
-* [보안 문서](/help/forms/using/aem-document-services-programmatically.md#p-securing-documents-p)
+* [보안 문서](/help/forms/using/aem-document-services-programmatically.md#securing-documents)
 
-* [자격 증명 사용 권한 가져오기](/help/forms/using/aem-document-services-programmatically.md#p-getting-credential-usage-rights-p)
+* [자격 증명 사용 권한 가져오기](/help/forms/using/aem-document-services-programmatically.md#getting-credential-usage-rights)
 
-* [문서 사용 권한 가져오기](/help/forms/using/aem-document-services-programmatically.md#p-getting-document-usage-rights-p)
+* [문서 사용 권한 가져오기](/help/forms/using/aem-document-services-programmatically.md#getting-document-usage-rights)
 
-* [사용 권한 제거](/help/forms/using/aem-document-services-programmatically.md#p-removing-usage-rights-p)
-* [디지털 서명 확인](/help/forms/using/aem-document-services-programmatically.md#p-verifying-digital-signatures-p)
-* [여러 디지털 서명 확인](/help/forms/using/aem-document-services-programmatically.md#p-verifying-multiple-digital-signatures-p)
-* [디지털 서명 제거](/help/forms/using/aem-document-services-programmatically.md#p-removing-digital-signatures-p)
+* [사용 권한 제거](/help/forms/using/aem-document-services-programmatically.md#removing-usage-rights)
+* [디지털 서명 확인](/help/forms/using/aem-document-services-programmatically.md#verifying-digital-signatures)
+* [여러 디지털 서명 확인](/help/forms/using/aem-document-services-programmatically.md#verifying-multiple-digital-signatures)
+* [디지털 서명 제거](/help/forms/using/aem-document-services-programmatically.md#removing-digital-signatures)
 
-* [인증 서명 필드 가져오기](/help/forms/using/aem-document-services-programmatically.md#p-getting-certifying-signature-field-p)
-* [PDF 암호화 유형 가져오기](/help/forms/using/aem-document-services-programmatically.md#p-getting-pdf-encryption-type-p)
-* [암호 암호화 제거](/help/forms/using/aem-document-services-programmatically.md#p-removing-password-encryption-from-pdf-p)
+* [인증 서명 필드 가져오기](/help/forms/using/aem-document-services-programmatically.md#getting-certifying-signature-field)
+* [PDF 암호화 유형 가져오기](/help/forms/using/aem-document-services-programmatically.md#getting-pdf-encryption-type)
+* [암호 암호화 제거](/help/forms/using/aem-document-services-programmatically.md#removing-password-encryption-from-pdf)
 
-* [인증서 암호화 제거](/help/forms/using/aem-document-services-programmatically.md#p-removing-certificate-encryption-p)
+* [인증서 암호화 제거](/help/forms/using/aem-document-services-programmatically.md#removing-certificate-encryption)
 
 >[!NOTE]
 >
->이 모든 서비스는 Javadoc을 URL [https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/kr/experience-manager/6-3/forms/javadocs/index.html)에서 찾을 수 있는 입력 매개 변수로 Document 개체를 사용합니다.
+>이 모든 서비스는 Javadoc을 URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)에서 찾을 수 있는 입력 매개 변수로 Document 개체를 사용합니다.
 
 ### 보이지 않는 서명 필드 추가 {#adding-an-invisible-signature-field}
 
@@ -3651,17 +3651,17 @@ public class GetPDFEncryption {
 
 출력 서비스는 XDP 파일을 .pdf, .pcl, .zpl 및 .ps 형식으로 렌더링하기 위한 API를 제공합니다. 이 서비스는 다음 API를 지원합니다.
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** 양식 디자인을 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 데이터와 리터럴 값으로 병합하여 PDF 문서를 생성합니다.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput):** 양식 디자인을 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 데이터와 리터럴 값으로 병합하여 PDF 문서를 생성합니다.
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** 양식 디자인을 응용 프로그램에 저장된 데이터와 병합하여 PDF 문서를 생성합니다.
-* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):** 양식 디자인을 데이터와 병합하여 PDF 문서를 만듭니다. 필요한 경우 는 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다.
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 양식 디자인 및 데이터 파일에서 PCL, PostScript 또는 ZPL 출력을 리터럴 값으로 생성합니다.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput):** 양식 디자인을 응용 프로그램에 저장된 데이터와 병합하여 PDF 문서를 생성합니다.
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutputbatch):** 양식 디자인을 데이터와 병합하여 PDF 문서를 만듭니다. 필요한 경우 는 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#generateprintedoutput):** 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 양식 디자인 및 데이터 파일에서 PCL, PostScript 또는 ZPL 출력을 리터럴 값으로 생성합니다.
 
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** 응용 프로그램에 저장된 양식 디자인 및 데이터 파일에서 PCL, PostScript 및 ZPL 출력을 생성합니다.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#generateprintedoutput):** 응용 프로그램에 저장된 양식 디자인 및 데이터 파일에서 PCL, PostScript 및 ZPL 출력을 생성합니다.
 
 ### generatePDFOutput {#generatepdfoutput}
 
-generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다. 필요한 경우 는 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 양식 디자인 또는 데이터에 대해 generatePDFOutput API를 리터럴 값으로 사용합니다. 양식 디자인과 XML 데이터가 응용 프로그램에 저장되어 있는 경우 [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API를 사용하십시오.
+generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다. 필요한 경우 는 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 네트워크 위치, 로컬 파일 시스템 또는 HTTP 위치에 저장된 양식 디자인 또는 데이터에 대해 generatePDFOutput API를 리터럴 값으로 사용합니다. 양식 디자인과 XML 데이터가 응용 프로그램에 저장되어 있는 경우 [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput) API를 사용하십시오.
 
 **구문:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3768,7 +3768,7 @@ generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문�
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다. 필요한 경우 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 양식 디자인이나 응용 프로그램에 저장된 데이터에 대해 generatePrintedOutput API를 사용합니다. 양식 디자인과 XML 데이터가 네트워크 위치, 로컬 또는 HTTP 위치에 리터럴 값으로 저장되어 있는 경우 [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API를 사용하십시오.
+generatePDFOutput API는 양식 디자인을 데이터와 병합하여 PDF 문서를 생성합니다. 필요한 경우 각 레코드에 대한 메타데이터 파일을 생성하거나 출력을 PDF 파일에 저장합니다. 양식 디자인이나 응용 프로그램에 저장된 데이터에 대해 generatePrintedOutput API를 사용합니다. 양식 디자인과 XML 데이터가 네트워크 위치, 로컬 또는 HTTP 위치에 리터럴 값으로 저장되어 있는 경우 [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput) API를 사용하십시오.
 
 **구문:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -4310,8 +4310,8 @@ String outputFolder="C:/Output";
 
 Forms 서비스는 대화형 PDF 양식에서 데이터를 가져오고 내보내는 API를 제공합니다. 대화형 PDF 양식은 사용자로부터 정보를 표시하고 수집하는 데 사용되는 하나 이상의 필드가 포함된 PDF 문서입니다. 이 서비스는 다음 API를 지원합니다.
 
-* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):** PDF 양식에서 데이터를 내보냅니다.
-* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):** 데이터를 대화형 PDF 양식으로 가져옵니다.
+* **[exportData](/help/forms/using/aem-document-services-programmatically.md#exportdata):** PDF 양식에서 데이터를 내보냅니다.
+* **[importData](/help/forms/using/aem-document-services-programmatically.md#importdata):** 데이터를 대화형 PDF 양식으로 가져옵니다.
 
 ### exportData {#exportdata}
 

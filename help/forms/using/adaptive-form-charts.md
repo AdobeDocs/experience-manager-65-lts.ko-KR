@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -148,7 +148,7 @@ AEM Forms 추가 기능 패키지는 기본 차트 구성 요소를 제공합니
 
 ### 사용자 정의 함수 {#custom-functions}
 
-차트에서 기본 함수를 사용하는 것 외에도 JavaScript에서 [사용자 지정 함수](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions)를 작성하여 차트 구성 요소의 함수 목록에서 사용할 수 있도록 할 수 있습니다.
+차트에서 기본 함수를 사용하는 것 외에도 JavaScript에서 [사용자 지정 함수](/help/forms/using/rule-editor.md#custom-functions)를 작성하여 차트 구성 요소의 함수 목록에서 사용할 수 있도록 할 수 있습니다.
 
 함수는 배열 또는 값과 카테고리 이름을 입력으로 취하여 값을 반환합니다. 예:
 
@@ -192,7 +192,7 @@ chartType 속성은 차트의 유형을 지정합니다. 가능한 값은 원형
 1. 적응형 양식의 AEM 사이드바에서 드롭다운 목록 구성 요소를 드래그 앤 드롭합니다.
 1. 구성 요소를 선택하고 ![설정](cmppr1.png)을 누릅니다.
 1. 드롭다운 목록의 제목을 지정합니다. 예를 들어 차트 유형을 선택합니다.
-1. 항목 섹션에 지원되는 차트 유형을 추가하여 드롭다운 목록을 채웁니다. **완료**&#x200B;를 클릭합니다.
+1. 항목 섹션에 지원되는 차트 유형을 추가하여 드롭다운 목록을 채웁니다. **완료**를 클릭합니다.
    ![차트 드롭다운 선택](chart-drop-down.png)
 
 1. 드롭다운 구성 요소를 선택하고 ![대체 텍스트](rule_editor_icon.png)를 탭합니다. 규칙 편집기에서 아래와 같이 시각적 규칙 편집기에서 규칙을 작성합니다.

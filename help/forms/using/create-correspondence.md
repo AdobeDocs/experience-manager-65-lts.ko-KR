@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3906'
 ht-degree: 0%
@@ -49,7 +49,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >데이터 사전이 편지와 연결되어 있지 않으면 편지 미리 보기가 열립니다. 그렇지 않으면 편지가 데이터 사전을 기반으로 하는 경우 서신 관리에서는 미리 보기 메뉴에 미리 보기 및 사용자 지정 옵션을 표시하며 두 옵션 중 하나를 선택할 수 있습니다. 테스트 데이터를 데이터 사전에 연결할 수도 있습니다. [데이터 사전이 테스트 데이터를 연결](../../forms/using/data-dictionary.md#p-working-with-test-data-p)한 다음 미리 보기 옵션을 선택하면 테스트 데이터가 채워진 일반 미리 보기가 열립니다.
+   >데이터 사전이 편지와 연결되어 있지 않으면 편지 미리 보기가 열립니다. 그렇지 않으면 편지가 데이터 사전을 기반으로 하는 경우 서신 관리에서는 미리 보기 메뉴에 미리 보기 및 사용자 지정 옵션을 표시하며 두 옵션 중 하나를 선택할 수 있습니다. 테스트 데이터를 데이터 사전에 연결할 수도 있습니다. [데이터 사전이 테스트 데이터를 연결](../../forms/using/data-dictionary.md#working-with-test-data)한 다음 미리 보기 옵션을 선택하면 테스트 데이터가 채워진 일반 미리 보기가 열립니다.
 
 1. 서신을 미리 보는 동안 서신을 렌더링하려면 관리자이거나 다음 그룹 중 하나의 일부여야 합니다.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
    필요한 권한이 없는 경우 관리자에게 적절한 액세스 권한을 요청하십시오. 사용자를 만들고 그룹에 추가하는 방법에 대한 자세한 내용은 [그룹에 사용자 또는 그룹 추가](/help/sites-administering/security.md)를 참조하십시오. 적절한 권한이 없는 상태에서 서신을 렌더링하려고 하면 404 오류 페이지가 나타납니다.
 
-1. **미리 보기** > **사용자 지정**&#x200B;을 선택한 경우 대화 상자가 열립니다. 대화 상자에서 데이터 사전에 해당하는 데이터 파일을 선택하여 편지를 미리 본 다음 **미리 보기**&#x200B;를 선택합니다. 데이터 파일은 특정 문자에 대한 데이터 사전을 기반으로 만들어집니다. 데이터 파일에 대한 자세한 내용은 [데이터 사전](../../forms/using/data-dictionary.md#p-working-with-test-data-p)을 참조하세요.
+1. **미리 보기** > **사용자 지정**&#x200B;을 선택한 경우 대화 상자가 열립니다. 대화 상자에서 데이터 사전에 해당하는 데이터 파일을 선택하여 편지를 미리 본 다음 **미리 보기**&#x200B;를 선택합니다. 데이터 파일은 특정 문자에 대한 데이터 사전을 기반으로 만들어집니다. 데이터 파일에 대한 자세한 내용은 [데이터 사전](../../forms/using/data-dictionary.md#working-with-test-data)을 참조하세요.
 
    ![편지 미리 보기](assets/8_previewcustomdatafile.png)
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >편지 미리 보기의 HTML 또는 PDF 렌디션 모드 간 전환에 대한 자세한 내용은 [편지 렌디션 모드 변경](#changerenditionmode)을 참조하십시오. 서신 관리 및 AEM의 PDF 지원에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/kr/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
+   >편지 미리 보기의 HTML 또는 PDF 렌디션 모드 간 전환에 대한 자세한 내용은 [편지 렌디션 모드 변경](#changerenditionmode)을 참조하십시오. 서신 관리 및 AEM의 PDF 지원에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
 
 ### 데이터 입력 {#enterdata}
 
@@ -254,7 +254,7 @@ ht-degree: 0%
 
    ![명시적 페이지 나누기](assets/8_pagebreak.png)
 
-1. 나중에 작업을 계속할 수 있도록 편지를 초안으로 저장하려면 초안으로 저장을 선택합니다. 이 옵션을 사용하려면 편지가 [게시](../../forms/using/publishing-unpublishing-forms.md#publishanasset)되어야 합니다. 자세한 내용은 [초안 저장 및 편지 인스턴스 제출](#savingdrafts)의 초안 인스턴스를 참조하십시오.
+1. 나중에 작업을 계속할 수 있도록 편지를 초안으로 저장하려면 초안으로 저장을 선택합니다. 이 옵션을 사용하려면 편지가 [게시](../../forms/using/publishing-unpublishing-forms.md#publish-an-asset)되어야 합니다. 자세한 내용은 [초안 저장 및 편지 인스턴스 제출](#savingdrafts)의 초안 인스턴스를 참조하십시오.
 
    ![saveasdraft](assets/saveasdraft.png)
 
@@ -284,7 +284,7 @@ ht-degree: 0%
 
 저장할 수 있는 문자 인스턴스에는 초안 인스턴스와 제출 인스턴스의 두 가지 유형이 있습니다.
 
-* **초안 인스턴스**: 초안 인스턴스는 미리 보고 있는 편지의 현재 상태를 캡처합니다. 초안 인스턴스를 저장하려면 먼저 편지와 그 편지가 참조하는 모든 에셋이 게시됨 상태인지 확인하십시오. 편지 게시에 대한 자세한 내용은 [자산 게시](../../forms/using/publishing-unpublishing-forms.md#publishanasset)를 참조하십시오. 편지를 게시하면 해당 시점에 편지 버전, 해당 종속 에셋 및 데이터가 만들어지므로 초안으로 저장하려면 먼저 편지를 게시해야 합니다. 편지의 게시된 버전은 사용자 또는 다른 사용자가 편집할 수 없으며 나중에 게시된 버전과 예기치 않은 불일치 없이 복원할 수 있습니다. 나중에 이 인스턴스로 돌아가서 이전 위치에서 계속 진행할 수 있습니다.
+* **초안 인스턴스**: 초안 인스턴스는 미리 보고 있는 편지의 현재 상태를 캡처합니다. 초안 인스턴스를 저장하려면 먼저 편지와 그 편지가 참조하는 모든 에셋이 게시됨 상태인지 확인하십시오. 편지 게시에 대한 자세한 내용은 [자산 게시](../../forms/using/publishing-unpublishing-forms.md#publish-an-asset)를 참조하십시오. 편지를 게시하면 해당 시점에 편지 버전, 해당 종속 에셋 및 데이터가 만들어지므로 초안으로 저장하려면 먼저 편지를 게시해야 합니다. 편지의 게시된 버전은 사용자 또는 다른 사용자가 편집할 수 없으며 나중에 게시된 버전과 예기치 않은 불일치 없이 복원할 수 있습니다. 나중에 이 인스턴스로 돌아가서 이전 위치에서 계속 진행할 수 있습니다.
 
 * **인스턴스 제출**: 제출 인스턴스는 제출되는 편지 상태를 캡처합니다. 제출 인스턴스는 사용자가 응답 만들기 사용자 인터페이스에서 입력한 데이터와 함께 게시물이 처리된 후 편지 인스턴스의 PDF 상태를 저장합니다.
 
@@ -376,7 +376,7 @@ AEM Forms 서신 관리에서는 서신 만들기 UI에서 문자를 HTML으로 
 * **페이지 나누기**: PDF 미리 보기에서 편지의 페이지 나누기가 출력에 미치는 영향을 정확히 볼 수 있습니다.
 * **최종 미리 보기**: PDF 미리 보기에서 편지가 출력에 표시될 때 편지의 정확한 서식과 모양을 볼 수 있습니다.
 
-PDF forms의 스크립팅 지원에 대한 자세한 내용은 [스크립팅 지원](https://help.adobe.com/ko_KR/livecycle/11.0/ScriptingSupport/index.html)을 참조하십시오.
+PDF forms의 스크립팅 지원에 대한 자세한 내용은 [스크립팅 지원](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)을 참조하십시오.
 
 HTML5 Forms의 스크립팅 지원에 대한 자세한 내용은 [HTML5 Forms에 대한 스크립팅 지원](/help/forms/using/scripting-support.md)을 참조하십시오.
 
@@ -384,7 +384,7 @@ HTML5 Forms의 스크립팅 지원에 대한 자세한 내용은 [HTML5 Forms에
 
 기본적으로 서신 만들기 UI는 HTML 또는 모바일 양식을 사용하여 편지 미리 보기를 렌더링합니다. 모바일 양식 미리 보기는 브라우저의 기본 플러그인을 사용하며 추가 플러그인이 필요하지 않으므로 어떤 브라우저에서도 렌더링하는 데 문제가 없습니다. 편지 미리 보기 모드를 PDF으로 변경할 수 있습니다. 그러나 브라우저 제한으로 인해 편지의 대화형 PDF 미리보기의 다양한 기능에 대한 문제가 발생할 수 있습니다.
 
-편지 미리 보기와의 브라우저 호환성에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/kr/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
+편지 미리 보기와의 브라우저 호환성에 대한 자세한 내용은 [NPAPI 브라우저 플러그인 중단 및 영향](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)을 참조하십시오.
 
 편지의 미리보기 모드를 변경하려면 다음 단계를 완료하십시오.
 

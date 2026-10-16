@@ -25,7 +25,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 6%
@@ -71,7 +71,7 @@ ht-degree: 6%
  </tbody>
 </table>
 
-TarMK는 성능을 위해 설계된 반면, MongoMK와 RDBMK는 확장성을 위해 설계되었습니다. Adobe은 [TarMK를 통해 Mongo 또는 관계형 데이터베이스 마이크로커널 선택](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p)에 설명된 사용 사례를 제외하고 작성자 및 게시 인스턴스 모두에 대해 모든 AEM Forms 배포 시나리오에 대한 기본 지속성 기술로 TarMK를 적극 권장합니다.
+TarMK는 성능을 위해 설계된 반면, MongoMK와 RDBMK는 확장성을 위해 설계되었습니다. Adobe은 [TarMK를 통해 Mongo 또는 관계형 데이터베이스 마이크로커널 선택](#choosing-mongo-or-a-relational-database-microkernel-over-tarmk)에 설명된 사용 사례를 제외하고 작성자 및 게시 인스턴스 모두에 대해 모든 AEM Forms 배포 시나리오에 대한 기본 지속성 기술로 TarMK를 적극 권장합니다.
 
 지원되는 마이크로커널 목록은 [OSGi 기술 요구 사항에 대한 AEM Forms](/help/sites-deploying/technical-requirements.md) <!--or [AEM Forms on JEE supported platform combinations](/help/forms/using/aem-forms-jee-supported-platforms.md) articles-->을(를) 참조하십시오.
 

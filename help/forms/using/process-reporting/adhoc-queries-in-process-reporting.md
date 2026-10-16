@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 0%
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 또한 프로세스 및 작업 속성 필터를 사용하여 임시 쿼리를 정의할 수 있습니다. 그런 다음 이러한 필터를 저장하고 나중에 보고서를 실행하는 데 사용할 수 있습니다.
 
-[**프로세스 검색**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p): 프로세스 특성을 기반으로 사용자 정의 검색 필터를 사용하여 프로세스 인스턴스를 검색합니다.
+[**프로세스 검색**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-search): 프로세스 특성을 기반으로 사용자 정의 검색 필터를 사용하여 프로세스 인스턴스를 검색합니다.
 
-[**프로세스 세부 정보**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p): 프로세스 ID를 지정하여 프로세스 인스턴스의 세부 정보를 봅니다.
+[**프로세스 세부 정보**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-details): 프로세스 ID를 지정하여 프로세스 인스턴스의 세부 정보를 봅니다.
 
 **작업 검색**: 작업 특성을 기반으로 사용자 정의 검색 필터를 사용하여 작업 인스턴스를 검색합니다.
 
@@ -165,7 +165,7 @@ ht-degree: 0%
    ![task_search_result](assets/task_search_result.png)
 
 1. 왼쪽 상단의 레일 단추 ![lc_pr_rail_button](assets/lc_pr_rail_button.png)을 클릭하여 **내 필터** 창을 축소하고 **보고서** 패널에 사용할 수 있는 공간을 확장합니다.
-1. 쿼리 결과에 대한 작업을 수행하려면 **보고서**&#x200B;패널의 오른쪽 위 모서리에 있는 옵션을 사용합니다.
+1. 쿼리 결과에 대한 작업을 수행하려면 **보고서**패널의 오른쪽 위 모서리에 있는 옵션을 사용합니다.
 
    * **새로 고침**: 저장소에 있는 최신 데이터로 보고서를 새로 고칩니다.
 

@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 1%
@@ -223,7 +223,7 @@ ht-degree: 1%
 
 적응형 양식 테마를 만든 후 다음 단계를 수행하여 적응형 양식에서 이 테마를 사용합니다.
 
-1. [에서 만든 테마를 포함하여 적응형 양식 테마](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p) 섹션을 만들려면 `cq:Component` 유형의 사용자 지정 페이지를 만드십시오.
+1. [에서 만든 테마를 포함하여 적응형 양식 테마](/help/forms/using/creating-custom-adaptive-form-themes.md#to-create-an-adaptive-form-theme) 섹션을 만들려면 `cq:Component` 유형의 사용자 지정 페이지를 만드십시오.
 
    예, `/apps/myAfCustomizations/myAfPages/forestPage`
 
