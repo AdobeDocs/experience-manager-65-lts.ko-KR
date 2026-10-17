@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -148,7 +148,7 @@ AEM Forms 추가 기능 패키지는 기본 차트 구성 요소를 제공합니
 
 ### 사용자 정의 함수 {#custom-functions}
 
-차트에서 기본 함수를 사용하는 것 외에도 JavaScript에서 [사용자 지정 함수](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions)를 작성하여 차트 구성 요소의 함수 목록에서 사용할 수 있도록 할 수 있습니다.
+차트에서 기본 함수를 사용하는 것 외에도 JavaScript에서 [사용자 지정 함수](/help/forms/using/rule-editor.md#custom-functions)를 작성하여 차트 구성 요소의 함수 목록에서 사용할 수 있도록 할 수 있습니다.
 
 함수는 배열 또는 값과 카테고리 이름을 입력으로 취하여 값을 반환합니다. 예:
 

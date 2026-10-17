@@ -29,7 +29,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1968'
 ht-degree: 12%
@@ -123,7 +123,7 @@ reCAPTCHA Enterprise 서비스가 활성화되면 적응형 양식에서 사용�
    1. 버전을 reCAPTCHA v2로 선택하고 이름, 사이트 키 및 reCAPTCHA 서비스에 대한 비밀 키(1단계에서 획득)를 지정한 다음 **[!UICONTROL 만들기]**&#x200B;를 선택하여 클라우드 서비스 구성을 만듭니다.
    1. 구성 요소 편집 대화 상자에서 1단계에서 얻은 사이트 및 비밀 키를 지정합니다. **[!UICONTROL 설정 저장]**&#x200B;을 선택한 다음 **확인**&#x200B;을 선택하여 구성을 완료합니다.
 
-   reCAPTCHA 서비스가 구성되면 적응형 양식에서 사용할 수 있습니다. 자세한 내용은 [적응형 양식에서 CAPTCHA 사용](#using-captcha)을 참조하세요.
+   reCAPTCHA 서비스가 구성되면 적응형 양식에서 사용할 수 있습니다. 자세한 내용은 [적응형 양식에서 CAPTCHA 사용](#using-captcha-in-adaptive-forms)을 참조하세요.
 
 ![reCAPTCHA v2](/help/forms/using/assets/recaptcha-v2.png)
 

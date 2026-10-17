@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 3%
@@ -240,7 +240,7 @@ function getAdobeSignRecipients() {
    </project>
    ```
 
-1. [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 작업 할당 단계에 대해 동적으로 사용자 또는 그룹을 선택하는 소스 코드를 추가하십시오. 샘플 코드가 필요하면 [Java 인터페이스를 사용하여 사용자 또는 그룹을 동적으로 선택하는 샘플](#-sample-scripts-for)을 참조하십시오.
+1. [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java 인터페이스를 사용하여 작업 할당 단계에 대해 동적으로 사용자 또는 그룹을 선택하는 소스 코드를 추가하십시오. 샘플 코드가 필요하면 [Java 인터페이스를 사용하여 사용자 또는 그룹을 동적으로 선택하는 샘플](#sample-java-code-to-dynamically-choose-a-user-or-a-group)을 참조하십시오.
 1. 명령 프롬프트를 열고 OSGi 번들 프로젝트가 포함된 디렉터리로 이동합니다. 다음 명령을 사용하여 OSGi 번들을 생성합니다.
 
    `mvn clean install`

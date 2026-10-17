@@ -27,7 +27,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2057'
 ht-degree: 11%
@@ -57,7 +57,7 @@ AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experie
    >기본 설치의 경우 로그인은 `admin`이고 암호는 `admin`입니다.
 
 1. **[!UICONTROL 만들기]**&#x200B;를 선택하고 **[!UICONTROL 적응형 양식]**&#x200B;을 선택하세요.
-1. 템플릿을 선택하는 옵션이 나타납니다. 템플릿에 대한 자세한 내용은 [적응형 양식 템플릿](creating-adaptive-form.md#p-adaptive-form-templates-p)을 참조하세요. 템플릿을 선택하여 선택하고 다음을 선택합니다.
+1. 템플릿을 선택하는 옵션이 나타납니다. 템플릿에 대한 자세한 내용은 [적응형 양식 템플릿](creating-adaptive-form.md#adaptive-form-templates)을 참조하세요. 템플릿을 선택하여 선택하고 다음을 선택합니다.
 1. &#39;속성 추가&#39; 옵션이 표시됩니다. 다음 속성 필드에 대한 값을 지정합니다. 제목 및 이름 필드는 필수입니다.
 
    * **[!UICONTROL 제목:]** 양식의 표시 이름을 지정합니다. 제목은 [!DNL Experience Manager Forms] 사용자 인터페이스에서 형식을 식별하는 데 도움이 됩니다.

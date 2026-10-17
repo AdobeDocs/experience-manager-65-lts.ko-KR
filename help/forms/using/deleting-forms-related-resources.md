@@ -24,7 +24,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 2%
@@ -58,6 +58,6 @@ ht-degree: 2%
 
 AEM Forms에서 XFA 양식 템플릿은 적응형 양식 또는 다른 XFA 양식 템플릿으로 참조할 수 있습니다. 또한 템플릿은 리소스 또는 다른 XFA 템플릿을 참조할 수 있습니다.
 
-적응형 양식에서 참조하는 XFA 양식은 적응형 양식을 손상시킬 수 있으므로 삭제하지 않는 것이 좋습니다. 적응형 양식이 XFA 양식을 참조하는 경우 해당 필드가 바인딩됩니다. XFA를 삭제한 후 적응형 양식은 해당 필드를 XFA 필드와 동기화할 수 없으며 해당 필드에 대한 오류 메시지를 표시합니다. 참조된 XFA 삭제의 영향 및 더티 AF에 대한 자세한 내용은 [참조된 XFA 양식 업데이트](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p)를 참조하십시오.
+적응형 양식에서 참조하는 XFA 양식은 적응형 양식을 손상시킬 수 있으므로 삭제하지 않는 것이 좋습니다. 적응형 양식이 XFA 양식을 참조하는 경우 해당 필드가 바인딩됩니다. XFA를 삭제한 후 적응형 양식은 해당 필드를 XFA 필드와 동기화할 수 없으며 해당 필드에 대한 오류 메시지를 표시합니다. 참조된 XFA 삭제의 영향 및 더티 AF에 대한 자세한 내용은 [참조된 XFA 양식 업데이트](/help/forms/using/get-xdp-pdf-documents-aem.md#updating-referenced-xfa-forms)를 참조하십시오.
 
 이러한 XFA 양식을 삭제하려면 적응형 양식을 업데이트하고 XFA 필드가 있는 바인딩을 제거합니다.

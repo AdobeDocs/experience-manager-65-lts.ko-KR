@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 9%
@@ -58,7 +58,7 @@ ht-degree: 9%
    * **[!UICONTROL 시간 기반]** 트리거를 선택하는 경우 시간 간격을 지정하십시오.
    * **[!UICONTROL 이벤트 기반]** 트리거를 선택하는 경우 이벤트 이름을 지정하십시오.
 
-   사용자 지정 전략을 만들어 목록에 추가할 수도 있습니다. 자세한 내용은 [양식을 자동으로 저장하는 사용자 지정 전략 구현](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p)을 참조하십시오.
+   사용자 지정 전략을 만들어 목록에 추가할 수도 있습니다. 자세한 내용은 [양식을 자동으로 저장하는 사용자 지정 전략 구현](/help/forms/using/auto-save-an-adaptive-form.md#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms)을 참조하십시오.
 
 1. (시간 기반 자동 저장만 해당) 다음 단계를 수행하여 시간 기반 자동 저장에 대한 옵션을 구성합니다.
 

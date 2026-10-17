@@ -32,7 +32,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 1%
@@ -148,11 +148,11 @@ CSS 사용자 지정의 최상위 단계는 다음과 같습니다.
 * 이 CSS에 스타일 항목을 추가합니다. 자세한 내용은 CSS 스타일 이해 를 참조하십시오.
 * `html.jsp`에서 참조를 업데이트합니다.
 
-이러한 사용자 지정을 수행하는 정확한 단계는 [AEM Forms 작업 영역 사용자 지정을 위한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md)를 참조하십시오. AEM Forms 작업 영역과 함께 제공되는 CSS 파일은 /libs/ws/css/에 있습니다. CSS 관련 사용자 지정의 경우 [패키지 배달](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)을 사용하십시오. CSS 관련 사용자 지정의 특정 예는 이 문서 끝에 있는 관련 도움말 항목을 참조하십시오.
+이러한 사용자 지정을 수행하는 정확한 단계는 [AEM Forms 작업 영역 사용자 지정을 위한 일반 단계](../../forms/using/generic-steps-html-workspace-customization.md)를 참조하십시오. AEM Forms 작업 영역과 함께 제공되는 CSS 파일은 /libs/ws/css/에 있습니다. CSS 관련 사용자 지정의 경우 [패키지 배달](../../forms/using/introduction-customizing-html-workspace.md#crx-package)을 사용하십시오. CSS 관련 사용자 지정의 특정 예는 이 문서 끝에 있는 관련 도움말 항목을 참조하십시오.
 
 #### 이미지 {#image}
 
-AEM Forms 작업 영역을 사용자 정의하여 사용자의 아바타를 추가하거나 조직의 로고를 추가할 수 있습니다. 이러한 사용자 지정의 경우 [패키지 배달](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)을 사용하십시오.
+AEM Forms 작업 영역을 사용자 정의하여 사용자의 아바타를 추가하거나 조직의 로고를 추가할 수 있습니다. 이러한 사용자 지정의 경우 [패키지 배달](../../forms/using/introduction-customizing-html-workspace.md#crx-package)을 사용하십시오.
 
 이미지 맞춤화에 대한 최상위 단계는 다음과 같습니다.
 
@@ -173,7 +173,7 @@ HTML 템플릿 맞춤화에 대한 최상위 단계는 다음과 같습니다.
 * 사용자 정의 폴더에 새 템플릿을 추가합니다.
 * 복사된 파일과 관련된 업데이트(예: 새 템플릿의 경로)를 수행합니다.
 
-이러한 사용자 지정의 특정 예는 이 문서의 끝에 제공된 도움말 항목을 참조하십시오. 사용자 지정할 템플릿에 따라 [패키지 배송](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) 또는 [패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) 중에서 선택하십시오.
+이러한 사용자 지정의 특정 예는 이 문서의 끝에 제공된 도움말 항목을 참조하십시오. 사용자 지정할 템플릿에 따라 [패키지 배송](../../forms/using/introduction-customizing-html-workspace.md#crx-package) 또는 [패키지](../../forms/using/introduction-customizing-html-workspace.md#crx-package) 중에서 선택하십시오.
 
 ### 의미 변화 {#semantic-changes}
 
@@ -202,7 +202,7 @@ AEM Forms 작업 영역은 구성 요소 기반 소프트웨어이므로 손쉽�
 
 다음을 생성하는 기능을 제공하므로 주로 사용자 지정을 위한 것입니다.
 
-* 배송, 디버그 및 개발 프로필용 CRX 패키지([CRX 패키지](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)에서 아래에 설명).
+* 배송, 디버그 및 개발 프로필용 CRX 패키지([CRX 패키지](../../forms/using/introduction-customizing-html-workspace.md#crx-package)에서 아래에 설명).
 * 사용자 지정된 코드의 축소된 버전(의미 체계 변경용).
 
 #### WS 콘텐츠 {#ws-content}

@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 93%
@@ -125,6 +125,6 @@ AEM Forms 백업 전략에는 다음과 같은 두 가지 유형의 백업이 �
 
 >[!NOTE]
 >
->이러한 상황에서만 해당 스크립트를 사용하여 GDS 위치를 변경해야 합니다. AEM Forms가 실행되는 동안 GDS 위치를 변경하려면 관리 콘솔을 사용하십시오. ([일반 AEM 양식 설정 구성](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)* 참조) *
+>이러한 상황에서만 해당 스크립트를 사용하여 GDS 위치를 변경해야 합니다. AEM Forms가 실행되는 동안 GDS 위치를 변경하려면 관리 콘솔을 사용하십시오. ([일반 AEM 양식 설정 구성](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings)* 참조) *
 
 GDS 경로를 설정한 후 유지 관리 모드에서 Forms 서버를 시작하고 관리 콘솔을 사용하여 새 노드의 나머지 파일 시스템 경로를 업데이트합니다. 모든 필수 구성이 업데이트되었는지 확인한 후 AEM Forms를 다시 시작하고 테스트합니다.

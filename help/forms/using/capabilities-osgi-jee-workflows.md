@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 24%
@@ -412,7 +412,7 @@ OSGi의 양식 중심의 AEM 워크플로와 JEE의 AEM Forms JEE 워크플로(J
 1. 기본 AEM Forms 문서 서비스는 OSGi의 양식 중심 AEM 워크플로와 JEE의 AEM Forms 워크플로 모두에서 사용할 수 있습니다. AEM Workflow는 OSGi 및 AEM Forms JEE(프로세스 관리) 워크플로의 양식 중심의 AEM 워크플로에 기본 문서 서비스를 사용합니다.
 1. AEM Forms JEE 워크플로우는 적응형 양식만 렌더링할 수 있습니다. 적응형 양식을 PDF 문서로 렌더링하는 것은 지원되지 않습니다.
 1. AEM forms JEE 워크플로에는 Adobe Sign에 대한 별도의 단계가 없습니다. AEM Forms JEE 워크플로우에 대한 Adobe Sign이 활성화된 적응형 양식이 필요합니다. 자세한 내용은 [Adobe Sign 설명서](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component)를 참조하세요.
-1. [양식 데이터 모델 서비스 호출](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) 단계를 사용하여 웹 서비스 서비스를 호출하고 타사 응용 프로그램에서 데이터를 게시하거나 검색할 수 있습니다.
+1. [양식 데이터 모델 서비스 호출](../../forms/using/aem-forms-workflow-step-reference.md#invoke-form-data-model-service-step) 단계를 사용하여 웹 서비스 서비스를 호출하고 타사 응용 프로그램에서 데이터를 게시하거나 검색할 수 있습니다.
 1. [전자 메일 보내기](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) 단계를 사용하여 전자 메일을 보낼 수 있습니다.
 
 ## AEM 받은 편지함 및 AEM Forms 앱 기능의 차이점 {#differences-between-aem-inbox-and-aem-forms-app-features}

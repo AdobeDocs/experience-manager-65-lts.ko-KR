@@ -24,7 +24,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 1%
@@ -66,7 +66,7 @@ AEM LiveCycle Connector는 [AEM Forms 추가 기능 패키지](/help/forms/using
 
 AEM LiveCycle Connector는 표준 OSGi를 사용하여 액세스할 수 있는 OSGi 서비스로 이러한 클라이언트 인스턴스를 노출하여 흐름을 간소화합니다. LiveCycle 커넥터는 다음 기능을 제공합니다.
 
-* OSGi 서비스로서의 클라이언트 인스턴스: OSGI 번들로 패키지된 클라이언트는 [Acrobat 서비스 목록](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) 섹션에 나열됩니다. 각 클라이언트 jar는 클라이언트 인스턴스를 OSGi 서비스 레지스트리에 OSGi 서비스로 등록합니다.
+* OSGi 서비스로서의 클라이언트 인스턴스: OSGI 번들로 패키지된 클라이언트는 [Acrobat 서비스 목록](/help/forms/using/aem-livecycle-connector.md#document-services-list) 섹션에 나열됩니다. 각 클라이언트 jar는 클라이언트 인스턴스를 OSGi 서비스 레지스트리에 OSGi 서비스로 등록합니다.
 * 사용자 자격 증명 전파: LiveCycle 서버에 연결하는 데 필요한 연결 세부 정보는 중앙 위치에서 관리됩니다.
 * ServiceClientFactory 서비스: 프로세스를 시작하기 위해 클라이언트 응용 프로그램이 ServiceClientFactory 인스턴스에 액세스할 수 있습니다.
 
@@ -94,7 +94,7 @@ AEM 내에서 노출된 서비스를 시작하려면 다음 단계를 수행하�
    </dependency>
    ```
 
-   서비스를 시작하려면 서비스에 해당하는 Maven 종속성을 추가하십시오. 종속성 목록은 [Acrobat 서비스 목록](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p)을 참조하세요. 예를 들어 PDF 생성 서비스의 경우 다음 종속성을 추가합니다.
+   서비스를 시작하려면 서비스에 해당하는 Maven 종속성을 추가하십시오. 종속성 목록은 [Acrobat 서비스 목록](/help/forms/using/aem-livecycle-connector.md#document-services-list)을 참조하세요. 예를 들어 PDF 생성 서비스의 경우 다음 종속성을 추가합니다.
 
    ```xml
    <dependency>

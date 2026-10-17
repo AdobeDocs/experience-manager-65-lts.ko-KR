@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 10%
@@ -126,7 +126,7 @@ ht-degree: 10%
 
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다. 테마가 만들어지고 편집할 양식을 여는 대화 상자가 나타납니다. 새 탭에서 새로 만든 테마를 열려면 **[!UICONTROL 열기]**&#x200B;를 선택합니다. 테마가 테마 편집기에서 열립니다. 스타일링을 위해 테마 편집기는 AEM [!DNL Forms]과(와) 함께 제공되는 기본 적응형 양식을 사용합니다.
 
-   테마 편집기 UI 사용에 대한 자세한 내용은 [테마 편집기 정보](/help/forms/using/themes.md#aboutthethemeeditor)를 참조하십시오.
+   테마 편집기 UI 사용에 대한 자세한 내용은 [테마 편집기 정보](/help/forms/using/themes.md#about-the-theme-editor)를 참조하십시오.
 
 1. **[!UICONTROL 테마 옵션]** ![테마 옵션](assets/theme-options.png) > **[!UICONTROL 구성]**&#x200B;을 선택합니다. **[!UICONTROL 미리 보기 양식]** 필드에서 **배송 주소 추가 업데이트 양식** 적응형 양식을 선택하고 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)를 선택한 다음 **[!UICONTROL 저장]**&#x200B;을 선택합니다. 이제 테마 편집기는 기본 적응형 양식 대신 고유한 적응형 양식을 사용하도록 구성되었습니다. 테마 편집기로 돌아가려면 **[!UICONTROL 취소]**&#x200B;를 선택하십시오.
 

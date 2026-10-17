@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
@@ -70,7 +70,7 @@ ht-degree: 3%
   * URL 형식 `http://host:port/content/forms/af/<afName>.<locale>.html`을(를) 사용하여 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>` 대신 지역화된 버전의 적응형 양식을 요청하세요.
   * `http://host:port/content/forms/af/<adaptivefName>.html` 형식의 URL에 대해 [브라우저 로캘을 사용하지 않도록 설정](supporting-new-language-localization.md#how-localization-of-adaptive-form-works).
   * 구성 관리자에서 URL 형식 `http://host:port/content/forms/af/<adaptivefName>.html`을(를) 사용하고 **[!UICONTROL 브라우저 로케일 사용]**&#x200B;을(를) 사용하지 않도록 설정한 경우 지역화되지 않은 버전의 적응형 양식이 제공됩니다. 현지화되지 않은 언어는 적응형 양식을 개발하는 동안 사용되는 언어입니다. 브라우저에 대해 구성된 로케일(브라우저 로케일)은 고려되지 않으며 현지화되지 않은 버전의 적응형 양식이 제공됩니다.
-  * 구성 관리자에서 URL 형식 `http://host:port/content/forms/af/<adaptivefName>.html`을(를) 사용하고 **[!UICONTROL 브라우저 로케일 사용]**&#x200B;을(를) 사용하도록 설정한 경우 지역화된 버전의 적응형 양식이 제공됩니다(사용 가능한 경우). 현지화된 적응형 양식의 언어는 브라우저에 대해 구성된 로케일(브라우저 로케일)을 기반으로 합니다. [적응형 양식의 첫 번째 인스턴스만 캐싱]할 수 있습니다. 인스턴스에서 문제가 발생하지 않도록 하려면 [문제 해결](#only-first-insatnce-of-adptive-forms-is-cached)을 참조하세요.
+  * 구성 관리자에서 URL 형식 `http://host:port/content/forms/af/<adaptivefName>.html`을(를) 사용하고 **[!UICONTROL 브라우저 로케일 사용]**&#x200B;을(를) 사용하도록 설정한 경우 지역화된 버전의 적응형 양식이 제공됩니다(사용 가능한 경우). 현지화된 적응형 양식의 언어는 브라우저에 대해 구성된 로케일(브라우저 로케일)을 기반으로 합니다. [적응형 양식의 첫 번째 인스턴스만 캐싱]할 수 있습니다. 인스턴스에서 문제가 발생하지 않도록 하려면 [문제 해결](#only-first-instance-of-adaptive-forms-is-cached)을 참조하세요.
 
 ### Dispatcher에서 캐싱 활성화
 

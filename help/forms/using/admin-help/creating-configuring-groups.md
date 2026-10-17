@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 100%
@@ -42,7 +42,7 @@ ht-degree: 100%
 
 그룹은 두 가지 유형이 있습니다. 그룹을 수동으로 만들고 사용자와 다른 그룹을 해당 그룹에 추가할 수 있습니다. 지정된 규칙 집합을 충족하는 모든 사용자를 자동으로 포함하는 동적 그룹을 만들 수도 있습니다.
 
-사용자가 여러 그룹에 속해 있거나(예: 500개 이상) 그룹이 깊이 중첩되어 있는 경우(예: 30개 수준) 응답 시간이 느려질 수 있습니다. 이러한 문제가 발생하는 경우 특정 도메인에서 정보를 미리 가져오도록 AEM Forms를 구성할 수 있습니다. ([도메인 정보를 미리 가져오도록 AEM Forms 구성](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information)을 참조하십시오.)
+사용자가 여러 그룹에 속해 있거나(예: 500개 이상) 그룹이 깊이 중첩되어 있는 경우(예: 30개 수준) 응답 시간이 느려질 수 있습니다. 이러한 문제가 발생하는 경우 특정 도메인에서 정보를 미리 가져오도록 AEM Forms를 구성할 수 있습니다. ([도메인 정보를 미리 가져오도록 AEM Forms 구성](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetchdomain-information)을 참조하십시오.)
 
 ## 수동으로 그룹 만들기 {#create-a-group-manually}
 

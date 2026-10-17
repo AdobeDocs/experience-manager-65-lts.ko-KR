@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2700'
 ht-degree: 49%
@@ -186,7 +186,7 @@ Forms 포털 및 제출 액션에 대한 자세한 내용은 [초안 및 제출 
 
 적응형 양식 편집기는 **Microsoft® Power Automate 흐름 호출** 제출 작업을 제공하여 적응형 양식 데이터, 첨부 파일 및 기록 문서를 Power Automate Cloud Flow로 전송합니다. 제출 액션을 사용하여 캡처된 데이터를 ® Power Automate로 보내려면 [AEM Forms 인스턴스와 Microsoft® Power Automate를 연결](/help/forms/using/forms-microsoft-power-automate-integration.md)하십시오
 
-성공적으로 구성한 후 [Microsoft® Power Automate 흐름 호출](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) 제출 액션을 사용하여 데이터를 Power Automate 흐름으로 전송합니다.
+성공적으로 구성한 후 [Microsoft® Power Automate 흐름 호출](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-microsoft-power-automate-flow-submit-action) 제출 액션을 사용하여 데이터를 Power Automate 흐름으로 전송합니다.
 
 ## ® SharePoint 목록에 제출{#submit-to-sharedrive}
 

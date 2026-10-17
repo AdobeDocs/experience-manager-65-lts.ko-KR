@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 2%
@@ -68,7 +68,7 @@ ht-degree: 2%
 
    **[!UICONTROL 제목]** 및 **[!UICONTROL 전자 메일 템플릿]** 필드에 각각 전자 메일 제목과 본문을 지정합니다.
 
-   필드에 변수 자리 표시자를 지정할 수도 있습니다. 이 경우 최종 사용자가 양식을 성공적으로 제출하면 필드 값이 처리됩니다. 자세한 내용은 [적응형 양식 필드 이름을 사용하여 전자 메일 콘텐츠를 동적으로 만들기](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p)를 참조하십시오.
+   필드에 변수 자리 표시자를 지정할 수도 있습니다. 이 경우 최종 사용자가 양식을 성공적으로 제출하면 필드 값이 처리됩니다. 자세한 내용은 [적응형 양식 필드 이름을 사용하여 전자 메일 콘텐츠를 동적으로 만들기](../../forms/using/form-submission-receipt-via-email.md#using-adaptive-form-field-names-to-dynamically-create-email-content)를 참조하십시오.
 
    양식에 첨부 파일이 포함되어 있고 전자 메일에 해당 파일을 첨부하려면 **[!UICONTROL 첨부 파일 포함]**&#x200B;을 선택합니다.
 

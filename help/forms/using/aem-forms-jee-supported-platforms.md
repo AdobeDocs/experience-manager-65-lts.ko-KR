@@ -27,7 +27,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2993'
 ht-degree: 3%
@@ -314,7 +314,7 @@ JEE 서버에서 AEM Forms을 설정할 플랫폼을 선택할 때 다음 예외
 
 - AEM Forms on JEE는 지원되는 소프트웨어의 지정된 주 버전 및 부 버전 위에 업데이트 및 수정 팩을 지원합니다. 그러나 지정하지 않는 한 다음 주 버전 또는 부 버전으로의 업데이트는 지원되지 않습니다.
 - 클러스터 기반 설치는 TarMK 지속성을 지원하지 않습니다. 지원되는 지속성에 대한 자세한 내용은 [AEM Forms 설치를 위한 지속성 유형 선택](/help/forms/using/choosing-persistence-type-for-aem-forms.md)을 참조하십시오.
-- AEM Forms on JEE는 Adobe의 [타사 소프트웨어 지원 정책](#third-party-patch-support-policy-third-party-patch-support-policy)에 따라 다양한 타사 소프트웨어를 지원합니다.
+- AEM Forms on JEE는 Adobe의 [타사 소프트웨어 지원 정책](#third-party-patch-support-policy)에 따라 다양한 타사 소프트웨어를 지원합니다.
 - 타사 공급업체에서 제공한 지원에 따라 JEE의 AEM Forms 지원 플랫폼입니다. 일부 조합은 서드파티 공급업체에서 허용하지 않을 수 있습니다. 예를 들어 많은 공급업체가 Oracle을 통해 애플리케이션 서버를 인증하지 않았습니다. 따라서 JEE의 AEM Forms 또한 이러한 조합을 지원하지 않습니다. 지원되는 소프트웨어 버전을 선택하려면 서드파티 공급업체의 지원 매트릭스도 확인하십시오.
 - JEE의 AEM Forms은 TarMK 콜드 대기를 지원하지 않습니다.
 - JEE의 AEM Forms은 수직 클러스터링을 지원하지 않습니다.

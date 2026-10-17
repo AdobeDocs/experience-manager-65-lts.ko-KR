@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 19%
@@ -32,7 +32,7 @@ ht-degree: 19%
 
 대화형 통신은 AEM Forms 6.5 LTS에서 고객 커뮤니케이션을 만들기 위한 기본적이고 권장되는 방법입니다. AEM Forms 6.5 LTS에서 문자를 계속 사용하려면 최신 [AEMFD 호환성 패키지](https://experienceleague.adobe.com/ko/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)를 설치해야 합니다.
 
-AEMFD 호환성 패키지를 통해 [AEM Forms에서 다음 자산을 사용할 수 있습니다. 6.5.22.0, 6.4, 6.3 및 6.2(AEM Forms 6.5 LTS](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms))
+AEMFD 호환성 패키지를 통해 [AEM Forms에서 다음 자산을 사용할 수 있습니다. 6.5.22.0, 6.4, 6.3 및 6.2(AEM Forms 6.5 LTS](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms-6.5.lts))
 
 * 문서 조각
 * 편지

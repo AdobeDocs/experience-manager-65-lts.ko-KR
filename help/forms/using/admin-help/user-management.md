@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 사용자 관리를 통해 SAML(Security Assertion Markup Language)을 사용하여 AEM Forms 모듈과 Netegrity SiteMinder로 보호되는 애플리케이션 간에 SSO(Single Sign-On)를 활성화할 수 있습니다. SSO를 구현하면 사용자가 이미 회사 포털을 통해 인증된 경우 AEM Forms 사용자 로그인 페이지가 필요하지 않으며 표시되지 않습니다.
 
-DB2의 데이터베이스 및 디렉터리 동기화 성능을 향상하는 방법에 대한 자세한 내용은 [IBM DB2 데이터베이스: 정기적 유지 관리를 위한 명령 실행](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance)을 참조하십시오.
+DB2의 데이터베이스 및 디렉터리 동기화 성능을 향상하는 방법에 대한 자세한 내용은 [IBM DB2 데이터베이스: 정기적 유지 관리를 위한 명령 실행](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db-database-running-commands-for-regular-maintenance)을 참조하십시오.
 
 ## SSL이 활성화된 LDAP 서버에 대한 사용자 관리 구성 {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 

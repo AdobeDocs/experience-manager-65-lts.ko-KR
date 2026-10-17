@@ -16,7 +16,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5707'
 ht-degree: 2%
@@ -102,7 +102,7 @@ AEM 프로젝트를 설정하고 나면 적응형 양식 템플릿 및 구성 �
   * /libs에서 즉시 사용 가능한 적응형 양식 구성 요소의 레이아웃을 사용자 지정하려면 [기본 레이아웃](/help/forms/using/layout-capabilities-adaptive-forms.md) 외에 [사용자 지정 레이아웃 구성 요소를 만듭니다](/help/forms/using/custom-layout-components-forms.md).
   * 사용자 정의 위젯 또는 모양을 만들어 사용자 정의 상호 작용을 소개합니다. 기본 구성 요소는 수정하지 않는 것이 좋습니다. 자세한 내용은 [모양 프레임워크](/help/forms/using/introduction-widgets.md)를 참조하십시오.
 
-* PII 데이터 처리에 대한 권장 사항은 [개인 식별 정보 처리](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p)를 참조하십시오.
+* PII 데이터 처리에 대한 권장 사항은 [개인 식별 정보 처리](/help/forms/using/adaptive-forms-best-practices.md#handling-personally-identifiable-information)를 참조하십시오.
 
 ### 양식 템플릿 만들기
 
@@ -288,7 +288,7 @@ AEM Forms에서는 적응형 양식 구성 요소에 동적 동작을 추가하�
 
 클라이언트에서의 유효성 검사를 우회하려는 시도와 데이터 제출 및 비즈니스 규칙 위반의 가능한 중단을 방지하기 위해 서버측 유효성 검사가 필요합니다. 서버측 유효성 검사는 필요한 클라이언트 라이브러리를 로드하여 서버에서 실행됩니다.
 
-* 적응형 양식의 표현식을 확인하기 위한 함수를 클라이언트 라이브러리에 포함하고 적응형 양식 컨테이너 대화 상자에서 클라이언트 라이브러리를 지정합니다. 자세한 내용은 [서버측 유효성 재검사](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p)를 참조하십시오.
+* 적응형 양식의 표현식을 확인하기 위한 함수를 클라이언트 라이브러리에 포함하고 적응형 양식 컨테이너 대화 상자에서 클라이언트 라이브러리를 지정합니다. 자세한 내용은 [서버측 유효성 재검사](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form)를 참조하십시오.
 * 서버측 유효성 검사는 양식 모델의 유효성을 검사합니다. 유효성 검사를 위해 별도의 클라이언트 라이브러리를 만들고 동일한 클라이언트 라이브러리에서 HTML 스타일 및 DOM 조작과 같은 다른 항목과 혼합하지 않는 것이 좋습니다.
 
 ### 적응형 양식 현지화 {#localizing-adaptive-forms}

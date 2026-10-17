@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 2%
@@ -256,4 +256,4 @@ AEM [!DNL Forms]은(는) 구성된 데이터 원본에서 [양식 데이터 모�
 
 >[!NOTE]
 >
-> 적응형 양식의 양식 데이터 모델을 사용하여 SharePoint 목록 구성을 생성 및 사용하여 데이터나 생성된 기록 문서를 SharePoint 목록에 저장할 수 있습니다. 자세한 단계는 [® SharePoint 목록에 적응형 양식 연결](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration)을 참조하세요.
+> 적응형 양식의 양식 데이터 모델을 사용하여 SharePoint 목록 구성을 생성 및 사용하여 데이터나 생성된 기록 문서를 SharePoint 목록에 저장할 수 있습니다. 자세한 단계는 [® SharePoint 목록에 적응형 양식 연결](/help/forms/using/configuring-submit-actions.md#connect-af-sharepoint-list)을 참조하세요.

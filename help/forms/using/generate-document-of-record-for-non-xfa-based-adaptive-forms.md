@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4354'
 ht-degree: 4%
@@ -433,7 +433,7 @@ AEM Designer에서 만든 **기본 템플릿(권장)** XFA 템플릿(XDP 파일)
   * **강조 색:** [!UICONTROL 기록 문서]의 서식 파일 색을 미리 정의할 수 있습니다.
   * **글꼴 모음:** [!UICONTROL 기록 문서] 텍스트에 대한 글꼴 유형을 선택합니다.
   * **DoR에 바인딩되지 않은 필드 포함:** 속성을 설정하면 [!UICONTROL 기록 문서]에서 스키마 기반 적응형 양식의 바인딩되지 않은 필드가 포함됩니다. 기본적으로 true입니다.
-  * **숨겨진 경우 DoR에서 필드 제외:** 양식 제출 시 [!UICONTROL 기록 문서]에서 숨겨진 필드를 제외하도록 속성을 설정합니다. [서버에서 다시 유효성 검사](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)를 사용하도록 설정하면 서버에서 숨겨진 필드를 다시 계산한 다음 [!UICONTROL 기록 문서]에서 해당 필드를 제외합니다.
+  * **숨겨진 경우 DoR에서 필드 제외:** 양식 제출 시 [!UICONTROL 기록 문서]에서 숨겨진 필드를 제외하도록 속성을 설정합니다. [서버에서 다시 유효성 검사](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form)를 사용하도록 설정하면 서버에서 숨겨진 필드를 다시 계산한 다음 [!UICONTROL 기록 문서]에서 해당 필드를 제외합니다.
 * **[!UICONTROL 양식 필드 속성]**
   * **확인란 및 라디오 단추 구성 요소에 대해 옵션**&#x200B;을(를) 선택하면 선택한 값만 표시되는 DoR 출력이 생성됩니다.
   * 선택한 여러 값에 대해 분리자를 선택하거나 다른 분리자 유형을 선택할 수 있습니다.

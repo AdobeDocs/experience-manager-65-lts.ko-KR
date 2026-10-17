@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 2%
@@ -125,7 +125,7 @@ ht-degree: 2%
 
 다음 단계를 수행하여 핫픽스를 다운로드하고 설치합니다.
 
-1. 소프트웨어 배포 링크에서 [핫픽스](#hotfix-for-adaptive-forms)를 다운로드합니다.
+1. 소프트웨어 배포 링크에서 [핫픽스](#hotfix-for-aem-forms)를 다운로드합니다.
 1. Experience Manager 패키지(.zip)를 가져오고 파일을 번들(.jar)할 수 있도록 핫픽스 아카이브 파일을 추출합니다.
 1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing)를 통해 패키지(.zip)를 업로드하고 설치합니다.
 1. Configuration Manager 번들 `https://server:host/system/console/bundles`을(를) 열고 번들(.jar)을 업로드한 후 설치합니다. 핫픽스가 설치되었습니다.

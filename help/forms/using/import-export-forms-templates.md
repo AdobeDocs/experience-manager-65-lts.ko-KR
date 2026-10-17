@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 1%
@@ -136,7 +136,7 @@ AEM Forms을 사용하여 테마를 만들거나, 다운로드하거나, 업로�
 
 이 옵션을 사용하여 모든 서신 관리 에셋 및 관련 종속성을 AEM Forms 인스턴스에서 패키지로 다운로드합니다.
 
-예를 들어 서신 관리에 이미지와 텍스트를 사용하는 문자가 있는 경우 다운로드한 패키지에는 문자와 관련된 이미지와 텍스트도 포함됩니다. 자산과 연결된 모든 메타데이터 속성(사용자 지정 속성 포함)도 다운로드됩니다. 패키지(.cmp)를 다운로드하면 [다른 AEM Forms 인스턴스로 패키지를 가져올 수 있습니다](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+예를 들어 서신 관리에 이미지와 텍스트를 사용하는 문자가 있는 경우 다운로드한 패키지에는 문자와 관련된 이미지와 텍스트도 포함됩니다. 자산과 연결된 모든 메타데이터 속성(사용자 지정 속성 포함)도 다운로드됩니다. 패키지(.cmp)를 다운로드하면 [다른 AEM Forms 인스턴스로 패키지를 가져올 수 있습니다](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management).
 
 모든 서신 관리 에셋 및 관련 종속성을 패키지로 다운로드하려면 다음 단계를 완료하십시오.
 
@@ -161,7 +161,7 @@ AEM Forms을 사용하여 테마를 만들거나, 다운로드하거나, 업로�
 
 1. 패키지 파일을 다운로드하려면 **내보낸 패키지 다운로드** 링크를 선택하십시오.
 
-   패키지의 자산을 서신 관리의 다른 인스턴스에 추가하려면 [패키지를 AEM Forms 인스턴스로 가져오기](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p)하십시오.
+   패키지의 자산을 서신 관리의 다른 인스턴스에 추가하려면 [패키지를 AEM Forms 인스턴스로 가져오기](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management)하십시오.
 
 ### 문서 단편, 편지 및/또는 데이터 사전을 서신 관리로 가져오기 {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 

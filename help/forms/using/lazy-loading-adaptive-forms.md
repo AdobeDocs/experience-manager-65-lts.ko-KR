@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 7%
@@ -59,7 +59,7 @@ AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experie
 * **전역 값 식별 및 표시**
 Forms 기반 트랜잭션에는 동적 요소가 포함되어 사용자로부터 관련 데이터를 캡처하고 이를 처리하여 양식 채우기 경험을 단순화합니다. 예를 들어 양식에 다른 조각의 필드 B의 유효성을 결정하는 값이 조각 X에 필드 A가 있습니다. 이 경우 조각 X가 지연 로드로 표시된 경우 조각 X가 로드되지 않은 경우에도 필드 B의 유효성을 검사하기 위해 필드 A의 값을 사용할 수 있어야 합니다. 이를 위해 필드 A를 글로벌로 표시하여 조각 X가 로드되지 않을 때 필드 B의 유효성 검사에 해당 값을 사용할 수 있도록 할 수 있습니다.
 
-  필드 값을 전역으로 만드는 방법에 대한 자세한 내용은 [소극적 로드 구성](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p)을 참조하십시오.
+  필드 값을 전역으로 만드는 방법에 대한 자세한 내용은 [소극적 로드 구성](../../forms/using/lazy-loading-adaptive-forms.md#configuring-lazy-loading)을 참조하십시오.
 
 * **필드의 가시성을 제어하는 규칙을 작성합니다.**
 Forms에는 모든 사용자 및 조건에 적용할 수 없는 일부 필드 및 섹션이 포함되어 있습니다. Forms 작성자 및 개발자는 가시성 또는 표시 숨기기 규칙을 사용하여 사용자 입력에 따라 가시성을 제어합니다. 예를 들어, Office 주소 필드는 Employment Status 필드에서 실업을 선택한 사용자에게 양식으로 표시되지 않습니다. 규칙 작성에 대한 자세한 내용은 [규칙 편집기 사용](../../forms/using/rule-editor.md)을 참조하십시오.

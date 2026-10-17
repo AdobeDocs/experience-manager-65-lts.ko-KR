@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 2%
@@ -96,7 +96,7 @@ JBoss® 서버 외에 모든 애플리케이션 서버의 서버 시작 스크�
 
 >[!NOTE]
 >
->구성된 Target URL을 나중에 업데이트하는 경우, 현재 URL을 가리키도록 실행 중인 A/B 테스트를 업데이트해야 합니다. A/B 테스트 업데이트에 대한 자세한 내용은 [A/B 테스트 업데이트](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p)를 참조하십시오.
+>구성된 Target URL을 나중에 업데이트하는 경우, 현재 URL을 가리키도록 실행 중인 A/B 테스트를 업데이트해야 합니다. A/B 테스트 업데이트에 대한 자세한 내용은 [A/B 테스트 업데이트](/help/forms/using/ab-testing-adaptive-forms.md#update-a-b-test)를 참조하십시오.
 >
 
 ## AEM 내에서 대상 만들기 {#create-audiences-within-aem}

@@ -22,7 +22,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 2%
@@ -244,7 +244,7 @@ ht-degree: 2%
 * 편지의 일부를 구성하는 기타 XDP([레이아웃 조각](document-fragments.md#document-fragments)). [Designer](https://www.adobe.com/go/learn_aemforms_designer_65_kr)에서 XDP\레이아웃을 만듭니다.
 * 관련 [데이터 사전](/help/forms/using/data-dictionary.md)(선택 사항).
 * 통신에서 사용할 [데이터 모듈](/help/forms/using/document-fragments.md)입니다.
-* [테스트 데이터](/help/forms/using/data-dictionary.md#p-working-with-test-data-p)은(는) 테스트 데이터가 포팅된 XML 파일입니다. 데이터 사전을 사용하는 경우 테스트 데이터가 필요합니다.
+* [테스트 데이터](/help/forms/using/data-dictionary.md#working-with-test-data)은(는) 테스트 데이터가 포팅된 XML 파일입니다. 데이터 사전을 사용하는 경우 테스트 데이터가 필요합니다.
 
 ## 편지 템플릿 만들기 {#create-a-letter-template}
 
@@ -275,7 +275,7 @@ ht-degree: 2%
 
    ![경고 메시지: 편지를 만들었습니다](assets/createcorrespondencecreated.png)
 
-   **다음**: **열기**&#x200B;를 선택하면 레이아웃(XDP)의 모든 구성 요소가 나열된 레이아웃 표시가 서신 관리에 표시됩니다. [데이터 모듈 및 레이아웃 단편을 삽입하고 구성](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p)하십시오.
+   **다음**: **열기**&#x200B;를 선택하면 레이아웃(XDP)의 모든 구성 요소가 나열된 레이아웃 표시가 서신 관리에 표시됩니다. [데이터 모듈 및 레이아웃 단편을 삽입하고 구성](/help/forms/using/create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them)하십시오.
 
 ### 편지에 데이터 모듈 및 레이아웃 단편 삽입 및 구성 {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 

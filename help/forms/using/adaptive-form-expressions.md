@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2871'
 ht-degree: 3%
@@ -219,7 +219,7 @@ JavaScript은 적응형 양식의 표현식 언어입니다. 모든 표현식은
 
 ### 유효성 검사 표현식 {#validation-expressions}
 
-필드 유효성 검사는 다른 필드의 표현식을 사용하여 계산할 수도 있습니다. 이러한 식은 구성 요소의 **편집** 대화 상자 **스크립트** 탭의 **유효성 검사 스크립트** 필드 내에 작성됩니다. 필드의 유효성 검사 상태는 표현식이 반환하는 값에 따라 다릅니다. 이러한 식을 작성하는 방법에 대한 자세한 내용은 [식 유효성 검사](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)를 참조하십시오.
+필드 유효성 검사는 다른 필드의 표현식을 사용하여 계산할 수도 있습니다. 이러한 식은 구성 요소의 **편집** 대화 상자 **스크립트** 탭의 **유효성 검사 스크립트** 필드 내에 작성됩니다. 필드의 유효성 검사 상태는 표현식이 반환하는 값에 따라 다릅니다. 이러한 식을 작성하는 방법에 대한 자세한 내용은 [식 유효성 검사](../../forms/using/adaptive-form-expressions.md#validate-expression)를 참조하십시오.
 
 ## 추가 정보 {#additional-information}
 

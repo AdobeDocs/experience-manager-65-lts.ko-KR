@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 4%
@@ -289,7 +289,7 @@ AEM Forms 환경에는 환경이 설정된 시점의 데이터가 포함됩니�
 
 마지막 업데이트 시간은 데이터 업데이트가 프로세스 보고 저장소로 푸시된 마지막 날짜와 시간을 표시합니다.
 
-데이터 게시 서비스 및 이 서비스를 예약하는 방법에 대한 자세한 내용은 프로세스 보고 시작 문서에서 [프로세스 데이터 게시 예약](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p)을 참조하십시오.
+데이터 게시 서비스 및 이 서비스를 예약하는 방법에 대한 자세한 내용은 프로세스 보고 시작 문서에서 [프로세스 데이터 게시 예약](/help/forms/using/process-reporting/install-start-process-reporting.md#schedule-process-data-publishing)을 참조하십시오.
 
 **프로세스 보고 사용자:** 로그인한 사용자 이름이 마지막 업데이트 시간 오른쪽에 표시됩니다.
 

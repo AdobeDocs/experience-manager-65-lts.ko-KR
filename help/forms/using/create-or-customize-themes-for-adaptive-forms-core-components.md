@@ -22,7 +22,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2092'
 ht-degree: 7%
@@ -115,7 +115,7 @@ AEM Forms 6.5는 적응형 Forms 기반의 핵심 구성 요소에 대해 아래
 1. [테마 모양 사용자 지정](#customize-the-theme)
 1. [로컬 배포에 대한 테마 준비](#generate-the-clientlib)
 1. [로컬 환경에 테마 배포](#deploy-the-theme-on-a-local-environment)
-1. [프로덕션 환경에 테마 배포](#5-deploy-a-theme-on-your-production-environment)
+1. [프로덕션 환경에 테마 배포](#deploy-theme)
 
 <!--
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)

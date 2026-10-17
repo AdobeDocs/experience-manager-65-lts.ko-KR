@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6814'
 ht-degree: 2%
@@ -215,7 +215,7 @@ When 규칙을 작성하는 동안 값 지우기 작업을 트리거할 수 있�
 
 **인스턴스 제거** 지정한 반복 가능한 패널 또는 테이블 행의 인스턴스를 제거합니다.
 
-**이동** 다른 대화형 통신, 적응형 양식, 이미지 또는 문서 조각과 같은 기타 에셋 또는 외부 URL로 이동합니다. 자세한 내용은 [대화형 통신에 추가 단추](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel)를 참조하십시오.
+**이동** 다른 대화형 통신, 적응형 양식, 이미지 또는 문서 조각과 같은 기타 에셋 또는 외부 URL로 이동합니다. 자세한 내용은 [대화형 통신에 추가 단추](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel)를 참조하십시오.
 
 ### 값 설정 {#set-value-of}
 

@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 10%
@@ -254,7 +254,7 @@ AEM Forms에서 Adobe Analytics을 사용하려면 [분석 및 보고서 구성]
 
 고객이 제공하는 경험이 매력적이지 않을 경우 양식을 포기할 가능성이 높습니다. 고객에게는 번거로운 일이지만, 조직의 지원 규모와 비용도 증가할 수 있습니다. 전환율을 높이는 올바른 고객 경험을 파악하고 제공하는 것은 중요하고 어려운 일입니다. 이 문제의 핵심은 AEM forms입니다.
 
-AEM forms는 Adobe Marketing Cloud 솔루션인 Adobe Target과 통합되어 여러 디지털 채널에서 개인화되고 매력적인 고객 경험을 제공합니다. Adobe Target을 사용하여 A/B 테스트 적응형 양식을 만들려면 [Adobe Target과 AEM Forms을 통합](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms)하십시오.
+AEM forms는 Adobe Marketing Cloud 솔루션인 Adobe Target과 통합되어 여러 디지털 채널에서 개인화되고 매력적인 고객 경험을 제공합니다. Adobe Target을 사용하여 A/B 테스트 적응형 양식을 만들려면 [Adobe Target과 AEM Forms을 통합](/help/forms/using/ab-testing-adaptive-forms.md#set-up-and-integrate-target-in-aem-forms)하십시오.
 
 ## 다음 단계 {#next-steps}
 

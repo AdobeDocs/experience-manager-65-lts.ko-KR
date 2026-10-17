@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 2%
@@ -88,7 +88,7 @@ AEM Forms은 양식의 성과를 모니터링하고 분석하는 데 도움이 �
 
 **Target 구성**
 
-적응형 양식에 대한 A/B 테스트를 만들고 실행하려면 [AEM Forms에서 Target 설정 및 통합](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p)에 설명된 대로 AEM Forms에서 Target을 구성하십시오.
+적응형 양식에 대한 A/B 테스트를 만들고 실행하려면 [AEM Forms에서 Target 설정 및 통합](../../forms/using/ab-testing-adaptive-forms.md#set-up-and-integrate-target-in-aem-forms)에 설명된 대로 AEM Forms에서 Target을 구성하십시오.
 
 #### 2단계: 분석 보고서 보기 {#step-view-analytics-report-br}
 

@@ -22,7 +22,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 2%
@@ -181,7 +181,7 @@ AEM Forms 6.5.22.0[&#128279;](/help/forms/using/upgrade-forms-osgi.md)에서 AEM
 
 1. 레이아웃 및 조각 레이아웃의 XFA 버전이 3.3 이상인지 확인합니다. 이전 버전의 레이아웃 및 단편 레이아웃을 사용하는 경우 편지 렌더링에 문제가 있을 수 있습니다. 이전 XFA 버전을 최신 버전으로 업데이트하려면 다음 단계를 완료하십시오.
 
-   1. Forms 사용자 인터페이스에서 [XFA를 zip 파일로 다운로드](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p)합니다.
+   1. Forms 사용자 인터페이스에서 [XFA를 zip 파일로 다운로드](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management)합니다.
    1. 파일을 추출합니다.
    1. 최신 Designer에서 XFA 파일을 열고 저장합니다. XFA 버전이 최신 버전으로 업데이트됩니다.
    1. Forms 사용자 인터페이스에서 XFA를 업로드합니다.

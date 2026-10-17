@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 6%
@@ -81,13 +81,13 @@ AEM Forms은 현재 영어(en), 스페인어(es), 프랑스어(fr), 이탈리아
 
 적응형 양식 런타임 시 새 로케일에 대한 지원을 추가하려면 다음 작업을 수행하십시오.
 
-1. [GuideLocalizationService 서비스에 로케일 추가](../../forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
+1. [GuideLocalizationService 서비스에 로케일 추가](../../forms/using/supporting-new-language-localization.md#add-a-locale-to-the-guide-localization-service-br)
 
-1. [로케일에 대한 XFA 클라이언트 라이브러리 추가](../../forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
+1. [로케일에 대한 XFA 클라이언트 라이브러리 추가](../../forms/using/supporting-new-language-localization.md#add-xfa-client-library-for-a-locale-br)
 
-1. [로케일에 대한 적응형 양식 클라이언트 라이브러리 추가](../../forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
-1. [사전에 대한 로케일 지원 추가](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
-1. [서버 다시 시작](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
+1. [로케일에 대한 적응형 양식 클라이언트 라이브러리 추가](../../forms/using/supporting-new-language-localization.md#add-adaptive-form-client-library-for-a-locale-br)
+1. [사전에 대한 로케일 지원 추가](../../forms/using/supporting-new-language-localization.md#add-locale-support-for-the-dictionary-br)
+1. [서버 다시 시작](../../forms/using/supporting-new-language-localization.md#restart-the-server)
 
 ### 가이드 현지화 서비스에 로케일 추가 {#add-a-locale-to-the-guide-localization-service-br}
 

@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 24%
@@ -62,9 +62,9 @@ ht-degree: 24%
 
    기록 문서 설정 및 구성에 대한 자세한 내용은 다음을 참조하십시오.
 
-   [기록 문서 템플릿 구성](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
+   [기록 문서 템플릿 구성](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-template-configuration)
 
-   [기록 문서 설정](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
+   [기록 문서 설정](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-settings)
 
 1. [기록 문서의 브랜딩 정보를 사용자 지정합니다](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md). 브라우저 로케일이 컴퓨터 언어를 사용하여 적응형 양식을 지역화한 언어와 동일한 언어로 설정되어 있는지 확인하십시오. 브라우저 로케일은 기록 문서의 브랜딩 정보를 현지화하는 데 도움이 됩니다.
 1. 현지화된 기록 문서를 보려면 미리보기 생성을 선택합니다. 기록 문서 PDF이 생성되고 브라우저의 새 탭에서 열립니다.

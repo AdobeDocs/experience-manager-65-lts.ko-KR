@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 6%
@@ -37,7 +37,7 @@ ht-degree: 6%
 
 ## 소개 {#introduction}
 
-XFA 양식 템플릿(`*.XDP` 파일)을 기반으로 적응형 양식을 만들 수 있습니다. 이러한 재사용을 통해 기존 XFA 양식에 대한 투자를 보존할 수 있습니다. 적응형 양식을 만들기 위해 XFA 양식 템플릿을 사용하는 방법에 대한 자세한 내용은 [템플릿을 기반으로 적응형 양식을 만들기](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p)를 참조하십시오.
+XFA 양식 템플릿(`*.XDP` 파일)을 기반으로 적응형 양식을 만들 수 있습니다. 이러한 재사용을 통해 기존 XFA 양식에 대한 투자를 보존할 수 있습니다. 적응형 양식을 만들기 위해 XFA 양식 템플릿을 사용하는 방법에 대한 자세한 내용은 [템플릿을 기반으로 적응형 양식을 만들기](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)를 참조하십시오.
 
 적응형 양식에 XDP 파일의 필드를 재사용할 수 있습니다. 이러한 필드를 바인딩된 필드라고 합니다. 바인딩된 필드의 속성(예: 스크립트, 레이블 및 표시 형식)은 XDP 파일에서 복사됩니다. 이러한 속성 중 일부 값을 재정의하도록 선택할 수도 있습니다.
 
@@ -55,11 +55,11 @@ AEM Forms 작성 환경에서 필드를 XFA 양식(왼쪽)에서 적응형 양�
 
 * XFA(XML Forms 아키텍처)
 
-이 문서에서 제공하는 에셋을 사용하려면 다음 섹션 [샘플 패키지](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p)에 설명된 대로 샘플 패키지를 다운로드하십시오.
+이 문서에서 제공하는 에셋을 사용하려면 다음 섹션 [샘플 패키지](../../forms/using/synchronizing-adaptive-forms-xfa.md#sample-package)에 설명된 대로 샘플 패키지를 다운로드하십시오.
 
 ## 샘플 패키지 {#sample-package}
 
-이 문서에서는 예제를 사용하여 적응형 양식을 업데이트된 XFA 양식 템플릿과 동기화하는 방법을 보여줍니다. 예제에 사용된 자산은 패키지로 제공되며, 이 문서의 [다운로드](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p) 섹션에서 다운로드할 수 있습니다.
+이 문서에서는 예제를 사용하여 적응형 양식을 업데이트된 XFA 양식 템플릿과 동기화하는 방법을 보여줍니다. 예제에 사용된 자산은 패키지로 제공되며, 이 문서의 [다운로드](../../forms/using/synchronizing-adaptive-forms-xfa.md#downloads) 섹션에서 다운로드할 수 있습니다.
 
 패키지를 업로드한 후 AEM Forms UI에서 이러한 에셋을 볼 수 있습니다.
 
@@ -122,7 +122,7 @@ XDP 파일에서 적응형 양식으로 복사된 모든 속성은 작성자가 
 
 >[!NOTE]
 >
->[적응형 양식에 콘텐츠 추가](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p)에 설명된 대로 구성 요소 속성 대화 상자에서 이 속성을 재정의했기 때문에 레이블 AF 숫자 필드가 변경되지 않았습니다.
+>[적응형 양식에 콘텐츠 추가](../../forms/using/synchronizing-adaptive-forms-xfa.md#add-content-to-adaptive-form-br)에 설명된 대로 구성 요소 속성 대화 상자에서 이 속성을 재정의했기 때문에 레이블 AF 숫자 필드가 변경되지 않았습니다.
 
 ### XDP 파일에서 적응형 양식에 새 필드 추가   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 

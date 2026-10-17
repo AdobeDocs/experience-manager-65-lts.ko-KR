@@ -18,7 +18,7 @@ level_v2:
     internal-label: Beginner
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5748'
 ht-degree: 3%
@@ -66,11 +66,11 @@ ht-degree: 3%
 >
 >규칙 편집기에서 정의하는 조건 및 작업을 포함한 사용 가능한 규칙 유형은 규칙을 만드는 양식 객체의 유형에 따라 다릅니다. 규칙 편집기에는 특정 양식 객체 유형에 대한 조건 및 작업 문을 작성하기 위한 유효한 규칙 유형 및 옵션만 표시됩니다. 예를 들어 패널 객체에 대한 유형의 유효성 검사 및 값 설정 은 표시되지 않습니다.
 
-규칙 편집기에서 사용할 수 있는 규칙 유형에 대한 자세한 내용은 [규칙 편집기에서 사용 가능한 규칙 유형](rule-editor.md#p-available-rule-types-in-rule-editor-p)을 참조하십시오.
+규칙 편집기에서 사용할 수 있는 규칙 유형에 대한 자세한 내용은 [규칙 편집기에서 사용 가능한 규칙 유형](rule-editor.md#available-rule-types-in-rule-editor)을 참조하십시오.
 
 ### 규칙 구성 선택 지침 {#guidelines-for-choosing-a-rule-construct}
 
-모든 규칙 구문을 사용하여 대부분의 사용 사례를 달성할 수 있지만, 다음은 한 구문을 다른 구문보다 선택하는 몇 가지 지침입니다. 규칙 편집기에서 사용 가능한 규칙에 대한 자세한 내용은 [규칙 편집기에서 사용 가능한 규칙 유형](rule-editor.md#p-available-rule-types-in-rule-editor-p)을 참조하십시오.
+모든 규칙 구문을 사용하여 대부분의 사용 사례를 달성할 수 있지만, 다음은 한 구문을 다른 구문보다 선택하는 몇 가지 지침입니다. 규칙 편집기에서 사용 가능한 규칙에 대한 자세한 내용은 [규칙 편집기에서 사용 가능한 규칙 유형](rule-editor.md#available-rule-types-in-rule-editor)을 참조하십시오.
 
 * 규칙을 작성할 때 일반적으로 경험하는 규칙은 규칙을 작성하는 객체의 컨텍스트에서 생각하는 것입니다. 필드 A에서 사용자가 지정하는 값에 따라 필드 B를 숨기거나 표시하려고 한다고 가정해 보겠습니다. 이 경우 필드 A에서 조건을 평가하고 반환되는 값을 기반으로 필드 B에서 작업을 트리거합니다.
 
@@ -111,7 +111,7 @@ ht-degree: 3%
 
 ## 규칙 편집기에서 사용 가능한 규칙 유형 {#available-rule-types-in-rule-editor}
 
-규칙 편집기는 규칙을 작성하는 데 사용할 수 있는 사전 정의된 규칙 유형 집합을 제공합니다. 각 규칙 유형을 자세히 살펴보겠습니다. 규칙 편집기에서 규칙을 작성하는 방법에 대한 자세한 내용은 [규칙 작성](rule-editor.md#p-write-rules-p)을 참조하십시오.
+규칙 편집기는 규칙을 작성하는 데 사용할 수 있는 사전 정의된 규칙 유형 집합을 제공합니다. 각 규칙 유형을 자세히 살펴보겠습니다. 규칙 편집기에서 규칙을 작성하는 방법에 대한 자세한 내용은 [규칙 작성](rule-editor.md#write-rules)을 참조하십시오.
 
 ### [!UICONTROL 언제] {#whenruletype}
 
@@ -413,7 +413,7 @@ To define a rule based on a form data model:
 
    ![create-rules](assets/create-rules.png)
 
-   선택한 양식 객체에 대한 기존 규칙이 이 뷰에 나열됩니다. 기존 규칙 관리에 대한 자세한 내용은 [규칙 관리](rule-editor.md#p-manage-rules-p)를 참조하십시오.
+   선택한 양식 객체에 대한 기존 규칙이 이 뷰에 나열됩니다. 기존 규칙 관리에 대한 자세한 내용은 [규칙 관리](rule-editor.md#manage-rules)를 참조하십시오.
 
 1. 새 규칙을 작성하려면 **[!UICONTROL 만들기]**&#x200B;를 선택하십시오. 규칙 편집기 사용자 인터페이스의 시각적 편집기는 규칙 편집기를 처음 실행할 때 기본적으로 열립니다.
 
@@ -443,7 +443,7 @@ To define a rule based on a form data model:
 >
 >Forms 개체 및 함수 탭에서 개체 및 함수 이름과 제목에 대해 텍스트 검색을 수행할 수 있습니다.
 
-양식 객체의 왼쪽 트리에서 양식 객체를 선택하여 각 객체에 적용된 규칙을 표시할 수 있습니다. 다양한 양식 객체의 규칙을 탐색할 수 있을 뿐만 아니라 양식 객체 간에 규칙을 복사하여 붙여넣을 수도 있습니다. 자세한 내용은 [규칙 복사-붙여넣기](rule-editor.md#p-copy-paste-rules-p)를 참조하십시오.
+양식 객체의 왼쪽 트리에서 양식 객체를 선택하여 각 객체에 적용된 규칙을 표시할 수 있습니다. 다양한 양식 객체의 규칙을 탐색할 수 있을 뿐만 아니라 양식 객체 간에 규칙을 복사하여 붙여넣을 수도 있습니다. 자세한 내용은 [규칙 복사-붙여넣기](rule-editor.md#copy-paste-rules)를 참조하십시오.
 
 ### C. 양식 개체 및 함수 전환 {#c-form-objects-and-functions-toggle-br}
 
@@ -453,7 +453,7 @@ To define a rule based on a form data model:
 
 시각적 규칙 편집기는 규칙 편집기 사용자 인터페이스의 시각적 편집기 모드에서 규칙을 작성하는 영역입니다. 규칙 유형을 선택하고 그에 따라 조건 및 작업을 정의할 수 있습니다. 규칙에서 조건 및 작업을 정의할 때 양식 개체 및 함수 창에서 양식 개체 및 함수를 드래그 앤 드롭할 수 있습니다.
 
-시각적 규칙 편집기 사용에 대한 자세한 내용은 [규칙 쓰기](rule-editor.md#p-write-rules-p)를 참조하십시오.
+시각적 규칙 편집기 사용에 대한 자세한 내용은 [규칙 쓰기](rule-editor.md#write-rules)를 참조하십시오.
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -470,7 +470,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. 완료 및 취소 단추 {#done-and-cancel-buttons}
 
-**[!UICONTROL 완료]** 버튼은 규칙을 저장하는 데 사용됩니다. 불완전한 규칙을 저장할 수 있습니다. 그러나 미완료는 유효하지 않으며 실행되지 않습니다. 다음에 동일한 양식 객체에서 규칙 편집기를 실행하면 양식 객체에 저장된 규칙이 나열됩니다. 해당 보기에서 기존 규칙을 관리할 수 있습니다. 자세한 내용은 [규칙 관리](rule-editor.md#p-manage-rules-p)를 참조하십시오.
+**[!UICONTROL 완료]** 버튼은 규칙을 저장하는 데 사용됩니다. 불완전한 규칙을 저장할 수 있습니다. 그러나 미완료는 유효하지 않으며 실행되지 않습니다. 다음에 동일한 양식 객체에서 규칙 편집기를 실행하면 양식 객체에 저장된 규칙이 나열됩니다. 해당 보기에서 기존 규칙을 관리할 수 있습니다. 자세한 내용은 [규칙 관리](rule-editor.md#manage-rules)를 참조하십시오.
 
 **[!UICONTROL 취소]** 단추를 사용하면 규칙에 대한 모든 변경 내용이 취소되고 규칙 편집기가 닫힙니다.
 
@@ -853,7 +853,7 @@ var c = {
 
    ![규칙 복사](assets/copyrule.png)
 
-   기존 규칙 관리에 대한 자세한 내용은 [규칙 관리](rule-editor.md#p-manage-rules-p)를 참조하십시오.
+   기존 규칙 관리에 대한 자세한 내용은 [규칙 관리](rule-editor.md#manage-rules)를 참조하십시오.
 
 1. 규칙 제목 옆에 있는 확인란을 선택하면 규칙을 관리하는 옵션이 나타납니다. **[!UICONTROL 복사]**&#x200B;를 선택합니다.
 

@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 0%
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 또한 프로세스 및 작업 속성 필터를 사용하여 임시 쿼리를 정의할 수 있습니다. 그런 다음 이러한 필터를 저장하고 나중에 보고서를 실행하는 데 사용할 수 있습니다.
 
-[**프로세스 검색**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p): 프로세스 특성을 기반으로 사용자 정의 검색 필터를 사용하여 프로세스 인스턴스를 검색합니다.
+[**프로세스 검색**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-search): 프로세스 특성을 기반으로 사용자 정의 검색 필터를 사용하여 프로세스 인스턴스를 검색합니다.
 
-[**프로세스 세부 정보**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p): 프로세스 ID를 지정하여 프로세스 인스턴스의 세부 정보를 봅니다.
+[**프로세스 세부 정보**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-details): 프로세스 ID를 지정하여 프로세스 인스턴스의 세부 정보를 봅니다.
 
 **작업 검색**: 작업 특성을 기반으로 사용자 정의 검색 필터를 사용하여 작업 인스턴스를 검색합니다.
 

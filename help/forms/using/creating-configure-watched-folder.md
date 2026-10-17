@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 18%
@@ -47,7 +47,7 @@ ht-degree: 18%
 
 * 감시 폴더는 AEM Forms의 고급 기능입니다. 이 기능을 사용하려면 AEM Forms 추가 기능 패키지가 필요합니다. 적절한 AEM Forms 추가 기능 패키지가 설치 및 구성되어 있는지 확인하십시오.
 * 공유 저장소 또는 로컬 저장소에서 감시 폴더를 만들 수 있습니다. 감시 폴더를 실행하도록 구성된 AEM Forms 사용자에게 감시 폴더에 대한 읽기 및 쓰기 권한이 있는지 확인합니다.
-* 서비스, 워크플로우 또는 스크립트를 사용하여 감시 폴더로 작업을 자동화할 수 있습니다. 해당 서비스, 워크플로우 또는 스크립트가 생성되어 실행할 준비가 되어 있는지 확인합니다. 서비스, 워크플로 및 스크립트 만들기에 대한 자세한 내용은 [다양한 파일 처리 방법](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files)을 참조하세요.
+* 서비스, 워크플로우 또는 스크립트를 사용하여 감시 폴더로 작업을 자동화할 수 있습니다. 해당 서비스, 워크플로우 또는 스크립트가 생성되어 실행할 준비가 되어 있는지 확인합니다. 서비스, 워크플로 및 스크립트 만들기에 대한 자세한 내용은 [다양한 파일 처리 방법](/help/forms/using/watched-folder-in-aem-forms.md#variousmethodsforprocessingfiles)을 참조하세요.
 * 감시 폴더에 다양한 속성이 있습니다. [감시 폴더 속성](watched-folder-in-aem-forms.md#watchedfolderproperties)을 참조하세요.
 
 감시 폴더를 만들려면 다음 단계를 수행하십시오.
