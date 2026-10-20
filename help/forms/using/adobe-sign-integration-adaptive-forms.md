@@ -57,7 +57,7 @@ AEM as a Cloud Service 설명서는 [Cloud Service의 AEM Forms](https://experie
 
 [!DNL Adobe Sign]을(를) AEM [!DNL Forms]과(와) 통합하려면 다음이 필요합니다.
 
-* 활성 [Adobe Sign 개발자 계정](https://www.adobe.com/acrobat/business/developer-form.html)
+* 활성 [Adobe Sign 개발자 계정](https://www.adobe.com/kr/acrobat/business/developer-form.html)
 * [SSL 사용](/help/sites-administering/ssl-by-default.md) AEM [!DNL Forms] 서버.
 * [Adobe Sign API 애플리케이션](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * [!DNL Adobe Sign] API 애플리케이션의 자격 증명(클라이언트 ID 및 클라이언트 보안).
