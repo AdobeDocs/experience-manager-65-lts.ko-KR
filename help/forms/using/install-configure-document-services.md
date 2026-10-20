@@ -219,7 +219,7 @@ PDF Generator 서비스를 사용하여 Microsoft® Word, Microsoft® Excel, Mic
 >* Adobe Acrobat, Microsoft® Word, Excel 및 Powerpoint는 Microsoft® Windows에서만 사용할 수 있습니다. UNIX 기반 운영 체제를 사용하는 경우 OpenOffice를 설치하여 리치 텍스트 파일과 지원되는 ® Office 파일을 PDF 문서로 변환합니다.
 >* PDF Generator 서비스를 사용하도록 구성된 모든 사용자에 대해 Adobe Acrobat 및 타사 소프트웨어를 설치한 후 표시되는 모든 대화 상자를 닫습니다.
 >* 설치된 모든 소프트웨어를 한 번 이상 시작합니다. PDF Generator 서비스를 사용하도록 구성된 모든 사용자의 대화 상자를 모두 닫습니다.
->* [Adobe Acrobat 일련 번호의 만료 날짜를 확인](https://helpx.adobe.com/kr/enterprise/kb/volume-license-expiration-check.html)하고 라이선스 업데이트 또는 만료 날짜를 기준으로 [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)하는 날짜를 설정하십시오.
+>* [Adobe Acrobat 일련 번호의 만료 날짜를 확인](https://helpx.adobe.com/kr/enterprise/kb/volume-license-expiration-check.html)하고 라이선스 업데이트 또는 만료 날짜를 기준으로 [일련 번호 마이그레이션](https://www.adobe.com/kr/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)하는 날짜를 설정하십시오.
 
 Acrobat을 설치한 후 Microsoft® Word를 엽니다. **Acrobat** 탭에서 **PDF 만들기**&#x200B;를 클릭하고 컴퓨터에서 사용할 수 있는 .doc 또는 .docx 파일을 PDF 문서로 변환합니다. 전환이 성공하면 AEM Forms은 PDF Generator 서비스와 함께 Acrobat을 사용할 준비가 되었습니다.
 
@@ -1494,9 +1494,9 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
 
 +++AEM Forms Server에 설치된 Adobe Acrobat 라이선스가 만료됨
 
-* Adobe Acrobat의 기존 라이선스가 만료된 경우 [최신 버전의 Adobe Application Manager을 다운로드](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html)하고 일련 번호를 마이그레이션하십시오. [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) 전.
+* Adobe Acrobat의 기존 라이선스가 만료된 경우 [최신 버전의 Adobe Application Manager을 다운로드](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html)하고 일련 번호를 마이그레이션하십시오. [일련 번호 마이그레이션](https://www.adobe.com/kr/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) 전.
 
-  * [일련 번호 마이그레이션](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) 번호 문서에 제공된 명령 대신 prov.xml 파일을 사용하여 prov.xml을 생성하고 기존 설치를 예약하려면 다음 명령을 사용하십시오.
+  * [일련 번호 마이그레이션](https://www.adobe.com/kr/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) 번호 문서에 제공된 명령 대신 prov.xml 파일을 사용하여 prov.xml을 생성하고 기존 설치를 예약하려면 다음 명령을 사용하십시오.
 
         &quot;
         
@@ -1511,7 +1511,7 @@ SRT 도구에서 보고한 모든 문제를 해결한 후에도 문제가 발생
         
         &quot;
     
-* 대규모 설치의 경우 [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html)를 사용하여 이전 버전의 Reader 및 Acrobat을 제거하십시오. 설치 관리자를 사용자 지정하고 조직의 모든 컴퓨터에 배포합니다.
+* 대규모 설치의 경우 [Acrobat Customization Wizard](https://www.adobe.com/kr/devnet-docs/acrobatetk/tools/Wizard/index.html)를 사용하여 이전 버전의 Reader 및 Acrobat을 제거하십시오. 설치 관리자를 사용자 지정하고 조직의 모든 컴퓨터에 배포합니다.
 
 +++
 
