@@ -7,9 +7,9 @@ user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: a895c5e5cb2a4e21d7460d598bd260a5292ed2ad
+source-git-commit: 82ad777feafc14635e26f445a1be6001a2b82672
 workflow-type: tm+mt
-source-wordcount: '7801'
+source-wordcount: '7809'
 ht-degree: 66%
 ---
 # Adobe Experience Manager 6.5 LTS 설명서 {#content}
@@ -462,6 +462,7 @@ ht-degree: 66%
     + [Designer 설치 및 구성](/help/forms/using/installing-configuring-designer.md)
     + AEM Forms 구성 {#configure-aem-forms}
       + [AEM Forms 서버의 성능 조정](/help/forms/using/performance-tuning-aem-forms.md)
+      + [적응형 양식 참조를 위한 사용자 지정 인덱스 만들기](/help/forms/using/create-custom-index-for-adaptive-forms-references.md)
       + [적응형 양식 캐시 구성](/help/forms/using/configure-adaptive-forms-cache.md)
       + [AEM DS 설정 구성](/help/forms/using/configuring-the-processing-server-url.md)
       + [동기화 스케줄러 구성](/help/forms/using/configure-synchronization-scheduler.md)
