@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a09b87b0103e007d357b8901233ae890998a307d
+source-git-commit: 7c3cc17781a4f5ca68ed738e76063a75c18beaeb
 workflow-type: tm+mt
-source-wordcount: '7815'
+source-wordcount: '7886'
 ht-degree: 21%
 ---
 
@@ -383,6 +383,8 @@ JEE에 AEM Forms 6.5 LTS SP3을 설치하려면 다음 단계를 순서대로 �
 
 * **JEE 6.5 LTS SP3**&#x200B;의 AEM Forms에서 **PostScript(PS), EPS 및 PRN 파일을 PDF으로 변환**&#x200B;하지 못했습니다. `PsToPdfSvc` 네이티브 프로세스가 예기치 않게 종료되어 `ALC-PDG-003-011` 및 `ALC-PDG-001-028`과(와) 같은 오류로 인해 전환 작업이 실패할 수 있습니다. 도움이 필요하면 Adobe 고객 지원 센터에 문의하십시오. (FORMS-28152)
 
+* **JEE 6.5의 AEM Forms LTS SP3**&#x200B;에서 디지털 서명된 PDF이 AEM Forms JEE Workspace의 작업에 연결되면 업로드가 업로드 상태에서 멈춘 상태로 유지되거나 &quot;잘못된 파일&quot; 오류로 인해 실패합니다. 따라서 더 큰 서명된 PDF 첨부 파일을 작업에 추가할 수 없습니다. 이 문제는 이후 버전에서 수정되었습니다. 현재 버전에 대한 핫픽스는 Adobe 지원 센터에 문의하십시오. (FORMS-28517)
+
 JEE의 AEM Forms에서는 Reader 확장이 WebSphere® Liberty Profile(WLP) 플랫폼에서 작동하지 않습니다. LTS SP3에 포함된 EAR 파일에 클래스 경로에 필요한 바운시 캐슬 라이브러리가 없습니다.
 
 **해결 방법**
@@ -710,7 +712,7 @@ Adobe 소프트웨어 배포 포털에서 인덱스 패키지 [cq-dam-cfm-indexe
 
 -->
 
-&#x200B;###
+###
 
 ### SSL 전용 기능을 사용한 Dispatcher 연결 실패 (AEM 6.5 LTS SP1 이상에서 수정됨){#ssl-only-feature}
 
