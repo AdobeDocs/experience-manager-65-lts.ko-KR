@@ -3,6 +3,7 @@ title: Adobe Experience Manager 6.5 LTS, SP3의 최신 릴리스 노트
 description: Adobe Experience Manager 6.5 LTS, 서비스 팩 3의 최신 릴리스 정보를 확인하십시오.
 solution: Experience Manager
 feature: Release Information
+owner: Rick Brough
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 product_v2:
@@ -21,10 +22,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7c3cc17781a4f5ca68ed738e76063a75c18beaeb
+source-git-commit: dc085d8f240ae633d82c0b03e8e30ccb82a92008
 workflow-type: tm+mt
-source-wordcount: '7886'
-ht-degree: 21%
+source-wordcount: '7820'
+ht-degree: 20%
 ---
 
 # Adobe Experience Manager 6.5 LTS, SP3의 최신 릴리스 노트 {#release-notes}
@@ -43,7 +44,7 @@ ht-degree: 21%
 
 >[!IMPORTANT]
 >
-> **필수 핫픽스** - 대기 상태에서 온라인 압축 시 SNFE(SegmentNotFoundException) 문제를 방지하려면 [알려진 문제 - 온라인 압축 시 저장소 손상](#repository-corruption-during-online-compaction-granite-73045)에 설명된 핫픽스를 설치하십시오.
+> **필수 핫픽스** - 대기 상태에서 온라인 압축 시 SNFE(SegmentNotFoundException) 문제를 방지하려면 [알려진 문제 - 온라인 압축 시 저장소 손상](#repository-corruption-during-online-compaction-on-standby)에 설명된 핫픽스를 설치하십시오.
 
 ## [!DNL Adobe Experience Manager] 6.5 LTS, SP3에 포함된 항목 {#what-is-new}
 
@@ -93,7 +94,7 @@ ht-degree: 21%
 
 * 이제 사용자 지정 속성 편집기에서 서식 지정 컨트롤과 키보드 상호 작용을 지원합니다. 작성자는 도구 모음 옵션 간에 포커스를 이동하고, 텍스트 스타일을 선택하고, 키보드만 사용하여 속성 값의 서식을 지정할 수 있습니다. (SITES-40333) 메이저
 
-* 이제 키보드 포커스는 사용 가능한 상호 작용에 끌어서 놓기가 필요할 때 사이드 패널 구성 요소 목록을 건너뜁니다. 이 변경 사항으로 인해 키보드 사용자는 사용할 수 없는 구성 요소 선택 워크플로우에 들어갈 수 없습니다. (SITES-40752)
+* 사용 가능한 상호 작용에 수동 이동이 필요한 경우 키보드 포커스가 이제 사이드 패널 구성 요소 목록을 건너뜁니다. 이 변경 사항으로 인해 키보드 사용자는 사용할 수 없는 구성 요소 선택 워크플로우에 들어갈 수 없습니다. (SITES-40752)
 * 이제 오버레이를 닫으면 포커스가 트리거 제어로 복원됩니다. 키보드 및 화면 판독기 사용자는 더 이상 오버레이로 돌아가거나 인터페이스에서 위치를 잃지 않습니다. (SITES-40819)
 * 키보드 탐색은 더 이상 포커스를 숨겨진 페이지 콘텐츠로 이동하지 않습니다. 이러한 변경은 예측 가능한 포커스 시퀀스를 유지하고 내비게이션 중단을 방지한다. (SITES-41430)
 * 이제 잠금 버튼을 사용하여 제목을 기반으로 정확한 화면 판독기 피드백을 제공할 수 있습니다. 사용자가 긴 설명 대신 명확한 작업 레이블을 듣습니다. (SITES-41431)
@@ -148,7 +149,7 @@ ht-degree: 21%
 * 머리글 메뉴 단추는 더 이상 화면 판독기에 대화 상자를 열었다는 것을 알리지 않습니다. 대신 화면 판독기는 각 단추의 확장 또는 축소 상태를 알려주므로 메뉴 동작을 정확하게 설명합니다. (SITES-24742)
 * 이제 삭제 단추의 텍스트가 빨간색 배경에 대해 충분한 대비를 제공합니다. 사용자는 삭제를 확인하기 전에 작업을 보다 쉽게 식별할 수 있습니다. (SITES-24772)
 * 캔버스 카드는 더 이상 동일한 대상으로 이어지는 별도의 이미지 및 제목 링크를 노출하지 않습니다. 단일 링크를 사용하면 중복 키보드 중지 및 반복적인 화면 판독기 알림이 줄어듭니다. (SITES-24947)
-* 이제 목록 보기에 시각적 효과가 더 뛰어난 드래그 앤 드롭 버튼이 표시됩니다. 업데이트된 아이콘 크기, 두께 및 대비를 통해 컨트롤을 쉽게 찾고 사용할 수 있습니다. (SITES-24951)
+* 이제 목록 보기에 시각적 효과가 더 뛰어난 수동 이동 버튼이 표시됩니다. 업데이트된 아이콘 크기, 두께 및 대비를 통해 컨트롤을 쉽게 찾고 사용할 수 있습니다. (SITES-24951)
 * 이제 헤더 단추에 검색, 앱, 도움말, 받은 편지함 및 사용자와 같은 간결한 액세스 가능한 이름이 제공됩니다. 화면 판독기에 키보드 탐색 중에 &quot;클릭 가능&quot; 또는 &quot;그래픽&quot;과 같은 중복 용어가 더 이상 표시되지 않습니다. (SITES-24715)
 * 이제 앱 탐색의 링크에 더 강한 시각적 강조가 표시됩니다. 텍스트 크기 및 무게가 증가하면 시력이 낮거나 색각 차이가 있는 사용자의 가독성이 향상됩니다. (SITES-24723)
 * 이제 받은 편지함 링크에서 의미 목록 마크업을 사용합니다. 화면 판독기는 링크를 관련 그룹으로 식별하고 항목 수를 알려주며 보다 효율적인 탐색을 지원할 수 있습니다. (SITES-24730)
@@ -175,7 +176,7 @@ ht-degree: 21%
 
 #### 관리자 사용자 인터페이스{#sites-adminui-65-lts-sp3}
 
-* 이제 AEM을 사용하여 관리 그룹의 구성원이 페이지의 잠금을 해제하고 사용자를 가장할 수 있습니다. 그룹 구성원은 기존 액세스를 통해 두 관리 작업을 모두 완료할 수 있습니다. (SITES-14732)
+* 이제 AEM을 사용하여 관리자 그룹의 구성원이 페이지의 잠금을 해제하고 사용자를 가장할 수 있습니다. 그룹 구성원은 기존 액세스를 통해 두 관리 작업을 모두 완료할 수 있습니다. (SITES-14732)
 * 이제 작성자가 타임라인에서 **이 버전으로 되돌리기**&#x200B;를 선택하면 Assets 관리 보기에서 에셋 카드를 업데이트합니다. 썸네일에 복원된 버전이 즉시 표시되고 더 이상 오래된 미리보기 콘텐츠가 표시되지 않습니다. (SITES-46590)
 
 
@@ -242,7 +243,7 @@ Headless 콘텐츠 조각 REST API 번들은 사용되지 않는 기능 전환 �
 
 #### 구성 요소 콘솔{#sites-component-console-65-lts-sp3}
 
-이제 컨텐츠 파인더에 실패하거나 예외를 생성하지 않고, 이름에 인코딩할 수 없는 문자가 포함된 자산이 나열됩니다. 또한 구성 요소 라이브 사용량 페이지는 스크롤하는 동안 빈 행을 표시하지 않고 큰 결과 세트를 연속적으로 로드합니다. (SITES-44672) 메이저
+이제 컨텐츠 파인더에 실패하거나 예외를 생성하지 않고, 이름에 인코딩할 수 없는 문자가 포함된 자산이 나열됩니다. 또한 구성 요소 라이브 사용량 페이지는 스크롤하는 동안 빈 행을 표시하지 않고 큰 결과 세트를 연속적으로 로드합니다. (SITES-44672)
 
 <!--
 #### Content API{#sites-content-api-65-lts-sp3}
@@ -325,51 +326,51 @@ Headless 콘텐츠 조각 REST API 번들은 사용되지 않는 기능 전환 �
 
 #### 개선 사항 {#forms-enhancements-65-lts-sp3}
 
-* FORMS-24360: Microsoft Office 2024에 대한 PDF Generator(PDFG) 지원을 추가했습니다. 이는 OSGi 및 JEE 배포에 모두 적용됩니다.
-* FORMS-24949: AEM Forms 6.5 LTS에 Forms 빌더 에이전트 지원을 추가했습니다. 이렇게 하면 에이전트가 필요로 하는 Forms Manager HTTP API 및 GenAI(양식 생성 AI) HTTP API를 지원합니다.
-* FORMS-25180: 작성자가 Adobe Sign 서명 기한 전까지 남은 일수를 수신자에게 표시할 수 있도록 AEM Forms 사용자 인터페이스에 `daysUntilSigningDeadline` 값을 추가했습니다.
-* FORMS-25182, FORMS-25181: 이제 PDF Generator(PDFG)가 단일 사용자 계정으로 구성된 경우 다중 스레드 문서 변환을 지원합니다. 이는 OSGi 및 JEE 배포에 모두 적용됩니다.
-* FORMS-27595: AEM Forms Document Security에서 동적 워터마크에 대한 **사용자 프로필 설명** 특성이 추가되어 워터마크에 사용자의 프로필 설명이 포함될 수 있습니다.
+* Microsoft Office 2024에 대한 PDF Generator(PDFG) 지원을 추가했습니다. 이는 OSGi 및 JEE 배포에 모두 적용됩니다. (FORMS-24360)
+* AEM Forms 6.5 LTS에 Forms Builder 에이전트 지원이 추가되었습니다. 이렇게 하면 에이전트가 필요로 하는 Forms Manager HTTP API 및 GenAI(양식 생성 AI) HTTP API를 지원합니다. (FORMS-24949)
+* `daysUntilSigningDeadline` 값을 AEM Forms 사용자 인터페이스에 추가했으므로 작성자는 수신자에게 Adobe Sign 서명 마감일 전까지 남은 일수를 표시할 수 있습니다. (FORMS-25180)
+* 이제 PDF Generator(PDFG)는 단일 사용자 계정으로 구성된 경우 다중 스레드 문서 변환을 지원합니다. 이는 OSGi 및 JEE 배포에 모두 적용됩니다. (FORMS-25182, FORMS-25181)
+* AEM Forms Document Security에서 동적 워터마크에 대한 **사용자 프로필 설명** 특성이 추가되어 워터마크에 사용자의 프로필 설명이 포함될 수 있습니다. (FORMS-27595)
 * WebSphere® Liberty Profile(WLP)은 이제 Oracle 데이터베이스 외에 Microsoft® SQL Server를 지원합니다.
 
 #### 해결된 문제 {#forms-fixed-issues-65-lts-sp3}
 
-* FORMS-23726: `xsom` 라이브러리가 충돌하여 적응형 Forms 속성에 XML 스키마를 적용하지 못했습니다. 이제 스키마 선택이 작동합니다.
-* FORMS-24296: Foundation 구성 요소 첨부 파일 필드는 업로드 시 허용되지 않는 파일 형식(예: `.xsd`)을 허용하고 차단된 다른 형식과 달리 제출 시에만 거부했습니다. 허용되지 않는 유형은 이제 업로드 시 차단됩니다.
-* FORMS-24603: 서신 관리 편지에서 초안으로 저장할 때 조건이 포함된 텍스트 조각이 줄바꿈을 잃었습니다. 이제 초안은 원래 줄바꿈을 유지합니다.
-* FORMS-24783: OSGi(Open Services Gateway Initiative) 기반 Forms 워크플로의 `assignTask` 단계에서 첨부 파일이 삭제되었습니다. 이제 작업 할당을 통해 첨부 파일이 유지됩니다.
-* FORMS-24877: 표시 패턴이 적용되면 날짜 선택기 달력 아이콘에 액세스 가능한 레이블이 노출되지 않으므로 NVDA 화면 판독기는 &quot;클릭 가능&quot;만 알렸습니다. 이제 아이콘에 설명 레이블이 제공됩니다.
-* FORMS-24913: 서명 상태가 반환되지 않아 Adobe Sign 단계 이후 AEM Forms 워크플로가 중단되었습니다. 이제 서명이 완료되면 워크플로우가 계속됩니다.
-* FORMS-25033: 키보드 탭 순서에서 스크리블 서명 구성 요소를 건너뛰어 키보드 전용 사용자를 위한 접근성 장벽을 만들었습니다. 이제 탭 탐색이 필드에 도달합니다.
-* FORMS-25045: 업그레이드 후 중국어(홍콩) 번화가 렌더링을 중지했으므로 양식이 기본 언어로 대체되었습니다. 현지화된 텍스트가 이제 올바르게 렌더링됩니다.
-* FORMS-25170: 시작 인스턴스 수가 0일 때 `addInstance()`을(를) 호출해도 동적으로 추가된 패널이 표시되지 않습니다. 추가된 패널이 이제 즉시 나타납니다.
-* FORMS-25225: 서버측 유효성 재검사에서 적응형 Forms의 조각 외부에 있는 필드 번역을 제거하여 레이블을 기본 언어로 되돌립니다. 이제 해당 번역이 유지됩니다.
-* FORMS-25233: OSGi 배포에서 어셈블러 서비스가 XDP 파일의 중첩된 조각 참조를 확인하지 못해 어셈블된 출력에서 누락되었습니다. 이제 중첩된 조각이 해결되었습니다.
-* FORMS-25289: Forms 렌더링 서비스가 서비스 팩에서 동일한 입력에 대해 다른 출력을 반환하여 서신 관리 편지에 영향을 미칩니다. 이제 렌더링 출력이 일관됩니다.
-* FORMS-25290: 저장된 서신 관리 편지가 공간을 잃고 다시 열었을 때 일부 위치에 흩어진 &quot;x&quot;가 표시되었습니다. 이제 저장된 편지 콘텐츠가 그대로 유지됩니다.
-* FORMS-25346: 서비스 팩을 업그레이드한 후 로딩 스피너에서 대화형 통신(IC) 문자가 동결되고 미리 보기에서 유실된 간격이 로드된 문자가 고정되었습니다. 이제 로드 및 간격이 올바르게 작동합니다.
-* FORMS-25431: 양식 조각 만들기 마법사가 제목 필드의 모든 키 입력에 대한 네트워크 요청을 보냈습니다. 중복 호출이 제거되었습니다.
-* FORMS-25645: &quot;ALC-FMG-700-009 잘못된 양식 모델이 지정되었습니다.&quot;(으)로 인라인으로 업로드된 JSON 스키마에서 적응형 양식 조각을 기반으로 핵심 구성 요소를 만들지 못했습니다. 이제 인라인 JSON 스키마가 허용됩니다.
-* FORMS-25646: JSON 스키마에서 작성한 적응형 양식 조각 기반의 핵심 구성 요소는 편집기에 빈 데이터 소스 패널을 표시했습니다. 이제 패널에 스키마 데이터 소스가 나열됩니다.
-* FORMS-25674: 대화형 통신(IC) 에이전트 사용자 인터페이스가 빈 페이지로 열려 에이전트가 IC 콘텐츠를 볼 수 없습니다. 이제 에이전트 사용자 인터페이스가 렌더링됩니다.
-* FORMS-25686: 적응형 양식 단편 만들기 마법사에서 스키마 유형 옵션을 전환해도 이전 옵션의 상태가 지워지지 않아 스키마 불일치가 발생합니다. 이제 마법사가 비활성 옵션을 재설정합니다.
-* FORMS-25757: 테마를 적용해도 기본 클라이언트 라이브러리가 업데이트되지 않으므로 테마 변경 내용이 적용되지 않습니다. 이제 테마가 기본 클라이언트 라이브러리를 업데이트합니다.
-* FORMS-25825: 모바일 햄버거 메뉴가 탭에 응답하지 않아 모바일 장치에서 탐색을 사용할 수 없습니다. 이제 예상대로 메뉴가 열립니다.
-* FORMS-26333: 양식 게시가 취소되어 다시 게시가 차단된 후 게시 작업이 사라졌습니다. 이제 게시 취소 후 게시를 사용할 수 있습니다.
-* FORMS-26763: Designer에서 정적 텍스트 개체 내의 하이퍼링크에 대한 굵은 서식은 텍스트를 편집한 후 손실되었습니다. 이제 편집한 후에도 굵게 서식이 적용됩니다.
-* FORMS-26817: 적응형 양식에서 재설정 을 클릭하면 이미지 구성 요소에서 작성자가 구성한 이미지가 지워지고 끊어진 이미지가 남으며, 다른 필드는 올바르게 재설정됩니다. 이제 재설정하면 구성된 이미지가 유지됩니다.
-* FORMS-26852: Agent 사용자 인터페이스에서 날짜/시간 필드는 저장된 값보다 1일 빠른 날짜를 표시합니다. 이제 필드에 올바른 날짜가 표시됩니다.
-* FORMS-26733, FORMS-26734: Apache Log4j가 버전 2.25.5으로 업데이트되었습니다.
+* `xsom` 라이브러리가 충돌하여 적응형 Forms 속성에 XML 스키마를 적용하지 못했습니다. 이제 스키마 선택이 작동합니다. (FORMS-23726)
+* Foundation 구성 요소 첨부 파일 필드에서 업로드 시 허용되지 않는 파일 형식(예: `.xsd`)을 수락하고 차단된 다른 형식과 달리 제출 시에만 거부했습니다. 허용되지 않는 유형은 이제 업로드 시 차단됩니다. (FORMS-24296)
+* 서신 관리 편지에서 초안으로 저장할 때 조건이 포함된 텍스트 조각의 줄 바꿈이 손실되었습니다. 이제 초안은 원래 줄바꿈을 유지합니다. (FORMS-24603)
+* OSGi(Open Services Gateway Initiative) 기반 Forms 워크플로의 `assignTask` 단계에서 첨부 파일이 삭제되었습니다. 이제 작업 할당을 통해 첨부 파일이 유지됩니다. (FORMS-24783)
+* 표시 패턴이 적용되었을 때 날짜 선택기 달력 아이콘에 액세스 가능한 레이블이 노출되지 않았으므로 NVDA 화면 판독기는 &quot;클릭 가능&quot;만 알렸습니다. 이제 아이콘에 설명 레이블이 제공됩니다. (FORMS-24877)
+* 서명 상태가 반환되지 않아 Adobe Sign 단계 이후 AEM Forms 워크플로가 중단되었습니다. 이제 서명이 완료되면 워크플로우가 계속됩니다. (FORMS-24913)
+* 키보드 탭 순서에서 스크리블 서명 구성 요소를 건너뛰어 키보드 전용 사용자를 위한 접근성 장벽을 만들었습니다. 이제 탭 탐색이 필드에 도달합니다. (FORMS-25033)
+* 중국어 번체(홍콩)는 업그레이드 후 렌더링이 중지되므로 양식이 기본 언어로 다시 이동되었습니다. 현지화된 텍스트가 이제 올바르게 렌더링됩니다. (FORMS-25045)
+* 시작 인스턴스 수가 0일 때 `addInstance()`을(를) 호출해도 동적으로 추가된 패널이 표시되지 않습니다. 추가된 패널이 이제 즉시 나타납니다. (FORMS-25170)
+* 서버측 유효성 재검사에서는 적응형 Forms의 조각 외부에 있는 필드 번역을 제거하여 레이블을 기본 언어로 되돌렸습니다. 이제 해당 번역이 유지됩니다. (FORMS-25225)
+* OSGi 배포에서 어셈블러 서비스가 XDP 파일의 중첩된 조각 참조를 확인하지 못해 어셈블된 출력에서 누락되었습니다. 이제 중첩된 조각이 해결되었습니다. (FORMS-25233)
+* Forms 렌더링 서비스가 서비스 팩에서 동일한 입력에 대해 다른 출력을 반환하여 서신 관리 편지에 영향을 주었습니다. 이제 렌더링 출력이 일관됩니다. (FORMS-25289)
+* 저장된 서신 관리 편지가 공간을 잃고 다시 열었을 때 일부 위치에 흩어진 &quot;x&quot;가 표시되었습니다. 이제 저장된 편지 콘텐츠가 그대로 유지됩니다. (FORMS-25290)
+* 서비스 팩을 업그레이드한 후 로드된 스피너에서 대화형 통신(IC) 문자가 동결되고 미리 보기에서 간격이 손실된 문자가 로드되었습니다. 이제 로드 및 간격이 올바르게 작동합니다. (FORMS-25346)
+* 양식 단편 만들기 마법사가 제목 필드의 모든 키 입력에 대한 네트워크 요청을 보냈습니다. 중복 호출이 제거되었습니다. (FORMS-25431)
+* &quot;ALC-FMG-700-009 잘못된 양식 모델이 지정되었습니다.&quot;로 인라인으로 업로드된 JSON 스키마에서 적응형 양식 조각을 기반으로 핵심 구성 요소를 만들지 못했습니다. 이제 인라인 JSON 스키마가 허용됩니다. (FORMS-25645)
+* JSON 스키마에서 작성한 적응형 양식 조각 기반의 핵심 구성 요소는 편집기에 빈 데이터 소스 패널을 표시했습니다. 이제 패널에 스키마 데이터 소스가 나열됩니다. (FORMS-25646)
+* IC(대화형 통신) 에이전트 사용자 인터페이스가 빈 페이지로 열려 에이전트가 IC 콘텐츠를 볼 수 없습니다. 이제 에이전트 사용자 인터페이스가 렌더링됩니다. (FORMS-25674)
+* 적응형 양식 단편 만들기 마법사에서 스키마 유형 옵션을 전환해도 이전 옵션의 상태가 지워지지 않아 스키마 불일치가 발생합니다. 이제 마법사가 비활성 옵션을 재설정합니다. (FORMS-25686)
+* 테마를 적용해도 기본 클라이언트 라이브러리가 업데이트되지 않으므로 테마 변경 사항은 영향을 주지 않습니다. 이제 테마가 기본 클라이언트 라이브러리를 업데이트합니다. (FORMS-25757)
+* 모바일 햄버거 메뉴가 탭에 응답하지 않아 모바일 장치에서 탐색을 사용할 수 없습니다. 이제 예상대로 메뉴가 열립니다. (FORMS-25825)
+* 양식 게시가 취소되어 다시 게시가 차단된 후 게시 작업이 사라졌습니다. 이제 게시 취소 후 게시를 사용할 수 있습니다. (FORMS-26333)
+* Designer에서 정적 텍스트 개체 내의 하이퍼링크의 굵은 서식은 텍스트를 편집한 후 손실되었습니다. 이제 편집한 후에도 굵게 서식이 적용됩니다. (FORMS-26763)
+* 적응형 양식에서 재설정 을 클릭하면 이미지 구성 요소에서 작성자가 구성한 이미지가 지워지고 손상된 이미지가 남으며 다른 필드는 올바르게 재설정됩니다. 이제 재설정하면 구성된 이미지가 유지됩니다. (FORMS-26817)
+* Agent 사용자 인터페이스에서 날짜/시간 필드는 저장된 값보다 1일 빠른 날짜를 표시합니다. 이제 필드에 올바른 날짜가 표시됩니다. (FORMS-26852)
+* Apache Log4j가 버전 2.25.5로 업데이트되었습니다. (FORMS-26733, FORMS-26734)
 
 6.5 LTS 서비스 팩 3의 JEE에서 AEM Forms에 대해 다음 문제가 해결되었습니다.
 
-* FORMS-27585: JEE의 AEM Forms에서 스크립트가 `closeDoc()`을(를) 호출할 때 XFA 기반 PDF forms 호출 `submitForm()`이(가) Adobe Reader 또는 Acrobat에 제출 결과를 표시하지 못했습니다. 이제 제출 결과가 올바르게 표시됩니다.
-* FORMS-25998: JEE의 AEM Forms에서 관리 콘솔에서 HSM 연결을 테스트할 때 Java 21에서 `IllegalAccessError`(으)로 HSM(Hardware Security Module) 개인 키 인증서를 등록하지 못했습니다. 이제 HSM 개인 키 인증서 등록이 작동합니다.
-* FORMS-24993: JEE의 AEM Forms에서 `SAXException`(으)로 인해 웹 서비스 호출 단계의 WSDL 로드가 실패했습니다(&quot;파일의 조기 끝&quot;). 이제 WSDL이 올바르게 로드됩니다.
-* FORMS-24518: JEE의 AEM Forms(JBoss)에서 레거시 JSTL taglib URI로 인해 Reader 확장 웹 애플리케이션이 새로 설치한 후 &quot;오류 처리 요청&quot;을 반환했습니다. 이제 Reader 확장 웹 애플리케이션이 로드됩니다.
-* FORMS-27495: JEE의 AEM Forms에서 단일 사용자 모드가 활성화된 경우 PDF Generator이 Excel(`.xlsx`) 파일을 전환하지 않았으며 전환이 무기한 중단되었습니다. 이제 Excel 전환이 단일 사용자 모드에서 완료됩니다.
-* FORMS-27098: JEE의 AEM Forms에서 SOAP SDK(`/sdk`) 인증 게이트로 인해 `/lc`에 관리자로 로그인하지 못했습니다. 이제 관리자 로그인이 성공했습니다.
-* FORMS-25869: JEE의 AEM Forms에서 PDF Generator은 변환 안정성을 개선하기 위해 업데이트된 변환 엔진 수정 사항을 통합합니다.
+* JEE의 AEM Forms에서 스크립트가 `closeDoc()`을(를) 호출할 때 XFA 기반 PDF forms 호출 `submitForm()`이(가) Acrobat Reader 또는 Acrobat에 제출 결과를 표시하지 못했습니다. 이제 제출 결과가 올바르게 표시됩니다. (FORMS-27585)
+* JEE의 AEM Forms에서 관리 콘솔에서 HSM 연결을 테스트할 때 Java 21에서 `IllegalAccessError`(으)로 HSM(Hardware Security Module) 개인 키 인증서를 등록하지 못했습니다. 이제 HSM 개인 키 인증서 등록이 작동합니다. (FORMS-25998)
+* JEE의 AEM Forms에서 `SAXException`(으)로 인해 웹 서비스 호출 단계에서 WSDL을 로드하지 못했습니다(&quot;Premature end of file&quot;). 이제 WSDL이 올바르게 로드됩니다. (FORMS-24993)
+* JEE(JBoss)의 AEM Forms에서 레거시 JSTL taglib URI로 인해 Reader 확장 웹 애플리케이션이 새로 설치한 후 &quot;오류 처리 요청&quot;을 반환했습니다. 이제 Reader 확장 웹 애플리케이션이 로드됩니다. (FORMS-24518)
+* JEE의 AEM Forms에서 PDF Generator은 단일 사용자 모드가 활성화된 경우 Excel(`.xlsx`) 파일을 변환하지 않았으며, 전환이 무기한 중단되었습니다. 이제 Excel 전환이 단일 사용자 모드에서 완료됩니다. (FORMS-27495)
+* JEE의 AEM Forms에서 SOAP SDK(`/sdk`) 인증 게이트로 인해 관리자로 `/lc`에 로그인하지 못했습니다. 이제 관리자 로그인이 성공했습니다. (FORMS-27098)
+* JEE의 AEM Forms에서 PDF Generator은 변환 안정성을 개선하기 위해 업데이트된 변환 엔진 수정 사항을 통합합니다. (FORMS-25869)
 
 **JEE에 AEM Forms 6.5 LTS SP3 설치**
 
@@ -383,7 +384,7 @@ JEE에 AEM Forms 6.5 LTS SP3을 설치하려면 다음 단계를 순서대로 �
 
 * **JEE 6.5 LTS SP3**&#x200B;의 AEM Forms에서 **PostScript(PS), EPS 및 PRN 파일을 PDF으로 변환**&#x200B;하지 못했습니다. `PsToPdfSvc` 네이티브 프로세스가 예기치 않게 종료되어 `ALC-PDG-003-011` 및 `ALC-PDG-001-028`과(와) 같은 오류로 인해 전환 작업이 실패할 수 있습니다. 도움이 필요하면 Adobe 고객 지원 센터에 문의하십시오. (FORMS-28152)
 
-* **JEE 6.5의 AEM Forms LTS SP3**&#x200B;에서 디지털 서명된 PDF이 AEM Forms JEE Workspace의 작업에 연결되면 업로드가 업로드 상태에서 멈춘 상태로 유지되거나 &quot;잘못된 파일&quot; 오류로 인해 실패합니다. 따라서 더 큰 서명된 PDF 첨부 파일을 작업에 추가할 수 없습니다. 이 문제는 이후 버전에서 수정되었습니다. 현재 버전에 대한 핫픽스는 Adobe 지원 센터에 문의하십시오. (FORMS-28517)
+* JEE 6.5의 **AEM Forms LTS SP3**&#x200B;에서 디지털 서명된 PDF을 AEM Forms JEE Workspace의 작업에 업로드하지 못하거나 중단합니다. 따라서 더 큰 서명된 PDF 첨부 파일을 작업에 추가할 수 없습니다. 이 문제는 이후 버전에서 수정되었습니다. 현재 버전에 대한 핫픽스는 Adobe 지원 센터에 문의하십시오. (FORMS-28517)
 
 JEE의 AEM Forms에서는 Reader 확장이 WebSphere® Liberty Profile(WLP) 플랫폼에서 작동하지 않습니다. LTS SP3에 포함된 EAR 파일에 클래스 경로에 필요한 바운시 캐슬 라이브러리가 없습니다.
 
@@ -404,9 +405,7 @@ JEE의 AEM Forms에서는 Reader 확장이 WebSphere® Liberty Profile(WLP) 플�
 
 #### 보안 수정 사항 {#forms-security-fixes-65-lts-sp3}
 
-이 릴리스는 XSS, SSRF 및 XXE를 포함하여 AEM Forms의 보안 취약점을 해결하고 라이브러리를 업데이트합니다.
-
-
+이 릴리스는 XSS, SSRF 및 XXE를 비롯한 AEM Forms 보안 취약점을 해결하고 라이브러리를 업데이트합니다.
 
 
 ### 기초 {#foundation-65-lts-sp3}
@@ -551,7 +550,7 @@ AEM 6.5 LTS SP3용 UberJar는 AEM 6.5 LTS UberJar 버전 6.6.3을 사용합니�
 
 적용 대상: AEM 6.5 LTS(온-프레미스) 고객이 서비스 팩 3(SP3)을 설치하는 경우 SP3는 Quickstart JAR로 제공됩니다.
 
-**이러한 업그레이드 사례가 중요한 이유**
+**이 업그레이드 방법이 중요한 이유**
 AEM 6.5 LTS용 SP2가 패키지 관리자를 통해 설치하기 위해 ZIP이 아닌 Quickstart JAR로 제공됩니다. On-Premise 고객은 Quickstart JAR를 교체하고, 압축을 푼 다음 다시 시작하여 업그레이드합니다. 이 방법은 Adobe의 표준 업그레이드 절차와 일치합니다.
 
 
@@ -667,19 +666,15 @@ Adobe는 투명성을 보장하고 적절한 계획을 수립할 수 있도록 A
 
 ## 알려진 문제 {#known-issues}
 
-### 대기 시 온라인 압축 중 저장소 손상(GRANITE-73045) {#repository-corruption-during-online-compaction-granite-73045}
+### 대기 시 온라인 압축 중 저장소 손상 {#repository-corruption-during-online-compaction-on-standby}
 
-인스턴스가 이전에 TarMK 콜드 대기 상태로 실행되었다가 나중에 기본 인스턴스로 승격된 경우 온라인 압축 중에 저장소 손상이 발생할 수 있습니다. 이 시나리오에서는 `SegmentNotFoundException`(SNFE)이 발생할 수 있으며 이로 인해 저장소가 손상될 수 있습니다.
+인스턴스가 이전에 TarMK 콜드 대기로 실행되었으며 나중에 기본 인스턴스로 승격된 경우 온라인 압축으로 JCR 저장소가 `SegmentNotFoundException`(SNFE)으로 손상될 수 있습니다.
 
-이 문제를 해결하려면 [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip)에서 핫픽스를 설치합니다. 핫픽스에 낮은 수준의 `oak-segment-tar` 번들이 포함되어 있으므로 설치 후 인스턴스가 다시 시작됩니다.
+**해결**
 
-인스턴스 적용 시 다운타임에 대한 계획을 수립합니다. 오프라인 압축을 위해 소프트웨어 배포에서도 사용할 수 있는 해당 [`oak-run` jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar)를 사용합니다.
-
->[!NOTE]
->
-> * `oak-run` 작업의 경우 [`oak-run` 2.4.1-B002 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar)을(를) 사용하십시오.
->
-> * 시스템 속성 `oak.segment.cleanup.skipDanglingFutureReclaim=true`를 설정하여 AEM을 시작합니다.
+1. 소프트웨어 배포에서 [핫픽스](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip)를 설치합니다. 낮은 수준의 `oak-segment-tar` 번들이 포함되어 있으므로 설치 후 인스턴스가 다시 시작되므로 다운타임을 계획할 수 있습니다.
+1. AEM을 시작할 때 시스템 속성 `oak.segment.cleanup.skipDanglingFutureReclaim=true`을(를) 설정합니다. 이 플래그는 오프라인 압축을 실행하는 중이 아니라 AEM 시작 시 필요합니다.
+1. `oak-run` 작업의 경우 소프트웨어 배포에서 일치하는 [`oak-run` 2.4.1-B002 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar)을(를) 사용합니다.
 
 ### AEM Forms
 
@@ -710,9 +705,8 @@ Sites Headless로 이동한 일부 API의 경우 전체 기능을 위해 추가 
 
 Adobe 소프트웨어 배포 포털에서 인덱스 패키지 [cq-dam-cfm-indexes](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip)를 다운로드합니다.
 
--->
 
-&#x200B;###
+###
 
 ### SSL 전용 기능을 사용한 Dispatcher 연결 실패 (AEM 6.5 LTS SP1 이상에서 수정됨){#ssl-only-feature}
 
