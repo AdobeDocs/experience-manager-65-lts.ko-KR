@@ -706,7 +706,7 @@ Sites Headless로 이동한 일부 API의 경우 전체 기능을 위해 추가 
 Adobe 소프트웨어 배포 포털에서 인덱스 패키지 [cq-dam-cfm-indexes](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip)를 다운로드합니다.
 
 
-###
+&#x200B;###
 
 ### SSL 전용 기능을 사용한 Dispatcher 연결 실패 (AEM 6.5 LTS SP1 이상에서 수정됨){#ssl-only-feature}
 
