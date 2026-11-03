@@ -7,9 +7,9 @@ user-guide-description: Adobe Experience Manager 6.5 LTS 설명서를 사용하�
 breadcrumb-title: 사용 안내서
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 82ad777feafc14635e26f445a1be6001a2b82672
+source-git-commit: bac5d173f2b6c822f2aa59a6647b5cb127788d2d
 workflow-type: tm+mt
-source-wordcount: '7809'
+source-wordcount: '7768'
 ht-degree: 66%
 ---
 # Adobe Experience Manager 6.5 LTS 설명서 {#content}
@@ -773,12 +773,6 @@ ht-degree: 66%
     + [다른 사용자를 대신하여 문서 보호](/help/forms/using/protect-document-on-behalf-of-another-user.md)
   + Forms Designer {#use-forms-designer}
     + [Forms Designer 도움말](/help/forms/using/forms-designer-help.md)
-    + [Designer 사용](https://www.adobe.com/go/learn_aemforms_designer_65_kr)
-    + [Designer 빠른 시작 자습서](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-    + [Designer 샘플](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
-    + [Designer 스크립팅 기본 사항](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_kr)
-    + [Designer 스크립팅 참조](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_kr)
-    + [Designer FormC 참조](https://www.adobe.com/go/learn_aemforms_formCalc_65_kr)
     + [HTML5 양식에서 자필 서명 사용](/help/forms/using/scribble-signature.md)
     + [Designer에서 Page Zero 콘텐츠 변경](/help/forms/using/changing-page-zero-content-designer.md)
     + 접근성 모범 사례 {#accessibility-best-practices}
