@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: dc085d8f240ae633d82c0b03e8e30ccb82a92008
+source-git-commit: 5bc7e1ae18a7ee667241c2c82b55d3f32e71ce41
 workflow-type: tm+mt
-source-wordcount: '7820'
+source-wordcount: '7863'
 ht-degree: 20%
 ---
 
@@ -382,6 +382,8 @@ JEE에 AEM Forms 6.5 LTS SP3을 설치하려면 다음 단계를 순서대로 �
 
 #### 알려진 문제 {#forms-known-issues-65-lts-sp3}
 
+* **JEE의 AEM Forms 6.5 LTS SP3 및 Windows의 OSGi**&#x200B;에서 기존 PDF 문서를 지원되는 다른 파일 형식으로 내보낼 때 PDF Generator(PDFG)가 중단됩니다. 내보내기 작업이 완료되지 않고 변환된 출력 파일이 반환되지 않습니다. (FORMS-29849)
+
 * **JEE 6.5 LTS SP3**&#x200B;의 AEM Forms에서 **PostScript(PS), EPS 및 PRN 파일을 PDF으로 변환**&#x200B;하지 못했습니다. `PsToPdfSvc` 네이티브 프로세스가 예기치 않게 종료되어 `ALC-PDG-003-011` 및 `ALC-PDG-001-028`과(와) 같은 오류로 인해 전환 작업이 실패할 수 있습니다. 도움이 필요하면 Adobe 고객 지원 센터에 문의하십시오. (FORMS-28152)
 
 * JEE 6.5의 **AEM Forms LTS SP3**&#x200B;에서 디지털 서명된 PDF을 AEM Forms JEE Workspace의 작업에 업로드하지 못하거나 중단합니다. 따라서 더 큰 서명된 PDF 첨부 파일을 작업에 추가할 수 없습니다. 이 문제는 이후 버전에서 수정되었습니다. 현재 버전에 대한 핫픽스는 Adobe 지원 센터에 문의하십시오. (FORMS-28517)
@@ -706,7 +708,7 @@ Sites Headless로 이동한 일부 API의 경우 전체 기능을 위해 추가 
 Adobe 소프트웨어 배포 포털에서 인덱스 패키지 [cq-dam-cfm-indexes](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip)를 다운로드합니다.
 
 
-&#x200B;###
+###
 
 ### SSL 전용 기능을 사용한 Dispatcher 연결 실패 (AEM 6.5 LTS SP1 이상에서 수정됨){#ssl-only-feature}
 
