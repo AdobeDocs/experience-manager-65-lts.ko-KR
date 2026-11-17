@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: dc085d8f240ae633d82c0b03e8e30ccb82a92008
+source-git-commit: 5bc7e1ae18a7ee667241c2c82b55d3f32e71ce41
 workflow-type: tm+mt
-source-wordcount: '7820'
+source-wordcount: '7863'
 ht-degree: 20%
 ---
 
@@ -381,6 +381,8 @@ JEE에 AEM Forms 6.5 LTS SP3을 설치하려면 다음 단계를 순서대로 �
 1. 프로젝트에서 `adobe-livecycle-client.jar` SDK 클라이언트 라이브러리를 사용하는 경우 프로젝트의 클래스 경로에서 업데이트합니다. `<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`에서 최신 버전을 사용할 수 있습니다.
 
 #### 알려진 문제 {#forms-known-issues-65-lts-sp3}
+
+* **JEE의 AEM Forms 6.5 LTS SP3 및 Windows의 OSGi**&#x200B;에서 기존 PDF 문서를 지원되는 다른 파일 형식으로 내보낼 때 PDF Generator(PDFG)가 중단됩니다. 내보내기 작업이 완료되지 않고 변환된 출력 파일이 반환되지 않습니다. (FORMS-29849)
 
 * **JEE 6.5 LTS SP3**&#x200B;의 AEM Forms에서 **PostScript(PS), EPS 및 PRN 파일을 PDF으로 변환**&#x200B;하지 못했습니다. `PsToPdfSvc` 네이티브 프로세스가 예기치 않게 종료되어 `ALC-PDG-003-011` 및 `ALC-PDG-001-028`과(와) 같은 오류로 인해 전환 작업이 실패할 수 있습니다. 도움이 필요하면 Adobe 고객 지원 센터에 문의하십시오. (FORMS-28152)
 
