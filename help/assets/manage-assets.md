@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: adca0a252dc42816ac61dd402c9102796ad47ead
 workflow-type: tm+mt
-source-wordcount: '10238'
+source-wordcount: '10248'
 ht-degree: 3%
 ---
 # 디지털 자산 관리 {#manage-digital-assets}
@@ -35,11 +35,11 @@ ht-degree: 3%
 
 [!DNL Adobe Experience Manager Assets]에서 에셋을 저장하고 제어하는 것 이상의 작업을 수행할 수 있습니다. [!DNL Experience Manager]은(는) 엔터프라이즈급 자산 관리 기능을 제공합니다. 에셋을 편집 및 공유하고, 고급 검색을 실행하고, 수십 개의 지원되는 파일 형식의 여러 렌디션을 만들 수 있습니다. 또한 버전 및 디지털 권한을 관리하고, 에셋 처리를 자동화하고, 메타데이터를 관리 및 관리하며, 주석을 사용하여 공동 작업을 수행할 수도 있습니다.
 
-이 문서에서는 에셋 생성 또는 업로드, 메타데이터 업데이트, 복사, 이동 및 삭제, 게시, 게시 취소 및 검색과 같은 기본 에셋 관리 작업에 대해 설명합니다. 사용자 인터페이스를 이해하려면 [자산 사용자 인터페이스 시작](/help/sites-authoring/basic-handling.md)을 참조하세요. 콘텐츠 조각을 관리하려면 [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md) 자산을 참조하십시오.
+이 문서에서는 메타데이터 만들기, 업로드, 업데이트, 복사, 이동, 삭제, 게시, 게시 취소 및 검색과 같은 기본 에셋 관리 작업에 대해 설명합니다. 사용자 인터페이스를 이해하려면 [자산 사용자 인터페이스 시작](/help/sites-authoring/basic-handling.md)을 참조하세요. 콘텐츠 조각을 관리하려면 [콘텐츠 조각 관리](/help/assets/content-fragments/content-fragments-managing.md) 자산을 참조하십시오.
 
 ## 폴더 만들기 {#creating-folders}
 
-모든 `Nature` 이미지와 같은 자산 컬렉션을 구성할 때 폴더를 만들어 둘 수 있습니다. 폴더를 사용하여 에셋을 분류하고 구성할 수 있습니다. [!DNL Experience Manager Assets]은(는) 폴더 내 자산을 구성할 필요가 없습니다.
+`Nature` 이미지와 같은 에셋 컬렉션을 함께 유지하려면 폴더를 만드십시오. 폴더를 사용하여 에셋을 분류하고 구성할 수 있습니다. [!DNL Experience Manager Assets]은(는) 폴더 내 자산을 구성할 필요가 없습니다.
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
 
-로컬 폴더 또는 네트워크 드라이브에서 [!DNL Experience Manager Assets]에 이미지, PDF 파일, RAW 파일 등의 다양한 유형의 자산을 업로드할 수 있습니다.
+로컬 폴더 또는 네트워크 드라이브에서 [!DNL Experience Manager Assets]&#x200B;(으)로 다양한 자산(이미지, PDF 및 RAW 파일 포함)을 업로드할 수 있습니다.
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 >
 >파일 이름이 100자를 초과하는 Experience Manager에 업로드하는 Assets을 Dynamic Media에서 사용할 때 이름이 단축됩니다.
 >
->파일 이름의 처음 100자는 그대로 사용되고, 나머지 문자는 영숫자 문자열로 대체됩니다. 이 이름 바꾸기 메서드는 Dynamic Media에서 자산을 사용할 때 고유한 이름을 보장합니다. 또한 Dynamic Media에서 허용되는 최대 에셋 파일 이름 길이를 수용하기 위한 것입니다.
+>[!DNL Experience Manager]은(는) 파일 이름의 처음 100자를 그대로 사용하고 나머지 문자는 영숫자 문자열로 바꿉니다. 이 이름 바꾸기 메서드는 Dynamic Media에서 자산을 사용할 때 고유한 이름을 보장합니다. 또한 Dynamic Media에서 허용되는 최대 에셋 파일 이름 길이를 수용하기 위한 것입니다.
 
 자산에 지정된 처리 프로필이 있거나 없는 폴더에 자산을 업로드하도록 선택할 수 있습니다.
 
@@ -97,7 +97,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
    ![자산 업로드 진행률 표시줄](assets/upload-progress-bar.png)
 
-큰 자산으로 간주되는 위의 크기를 구성할 수 있습니다. 예를 들어 1000MB(500MB가 아님) 이상의 자산을 큰 자산으로 간주하도록 시스템을 구성할 수 있습니다. 이 경우 크기가 1000MB보다 큰 에셋을 업로드하면 진행률 표시줄에 **[!UICONTROL 일시 중지]**&#x200B;가 나타납니다.
+큰 자산으로 간주되는 위의 크기를 구성할 수 있습니다. 1000MB(500MB 대신)를 초과하는 에셋을 큰 것으로 간주하려면 시스템을 구성합니다. 이 경우 크기가 1000MB보다 큰 에셋을 업로드하면 진행률 표시줄에 **[!UICONTROL 일시 중지]**&#x200B;가 나타납니다.
 
 1000MB보다 큰 파일을 1000MB 미만의 파일로 업로드하면 [!UICONTROL 일시 중지] 옵션이 표시되지 않습니다. 그러나 1000MB 미만의 파일 업로드를 취소하면 **[!UICONTROL 일시 중지]** 옵션이 나타납니다.
 
@@ -581,7 +581,11 @@ Adobe Experience Manager에 많은 에셋을 업로드하는 경우 서버에 �
 
 다른 페이지에서 들어오는 참조를 확인하거나 제거하려면 에셋을 삭제하기 전에 관련 참조를 업데이트하십시오. 사용자가 참조된 에셋을 삭제하고 끊어진 링크를 남기지 못하도록 하려면 오버레이를 사용하여 강제 삭제 옵션을 비활성화하십시오.
 
-에셋 또는 에셋이 포함된 폴더를 삭제하려면
+>[!IMPORTANT]
+>
+>Dynamic Media - Scene7 모드가 활성화되면 Experience Manager에서 자산을 삭제하면 Dynamic Media에서도 영구적으로 삭제됩니다. 자산은 Dynamic Media 휴지통 폴더로 이동되지 않으므로 Dynamic Media에서 복원할 수 없습니다.
+
+**에셋을 삭제하려면:**
 
 1. 삭제할 에셋 또는 폴더의 위치로 이동합니다.
 
